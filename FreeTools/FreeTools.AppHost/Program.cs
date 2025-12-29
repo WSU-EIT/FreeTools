@@ -58,15 +58,19 @@ static class AppHostRunner
         var branchName = GetGitBranch(toolsRoot) ?? "unknown";
         var safeBranchName = SanitizeFolderName(branchName);
 
-        // Define target project root (BlazorApp1 is in the same solution)
-        var projectRoot = Path.GetFullPath(Path.Combine(toolsRoot, target));
+        // Define target project root (BlazorApp1 is a sibling folder to FreeTools, not inside it)
+        // toolsRoot = .../FreeTools/FreeTools/  -> go up one level to find BlazorApp1
+        var repoRoot = Path.GetDirectoryName(toolsRoot) ?? toolsRoot;
+        var projectRoot = Path.GetFullPath(Path.Combine(repoRoot, target));
 
         Console.WriteLine("============================================================");
         Console.WriteLine(" FreeTools.AppHost — Project Analysis");
         Console.WriteLine("============================================================");
         Console.WriteLine($"Tools Root:     {toolsRoot}");
+        Console.WriteLine($"Repo Root:      {repoRoot}");
         Console.WriteLine($"Branch:         {branchName}");
         Console.WriteLine($"Target:         {target}");
+        Console.WriteLine($"Project Root:   {projectRoot}");
         Console.WriteLine($"Keep Backups:   {(keepBackups == 0 ? "None (latest only)" : keepBackups.ToString())}");
         Console.WriteLine("------------------------------------------------------------");
 
