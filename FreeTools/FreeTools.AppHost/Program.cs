@@ -15,8 +15,8 @@ var keepBackupsOption = new Option<int>(
 
 var targetOption = new Option<string>(
     name: "--target",
-    description: "Target project to analyze (default: 'freecrm')",
-    getDefaultValue: () => "freecrm");
+    description: "Target project to analyze (default: 'BlazorApp1')",
+    getDefaultValue: () => "BlazorApp1");
 
 var rootCommand = new RootCommand("FreeTools AppHost - Run analysis tools against Blazor web projects")
 {
@@ -27,7 +27,7 @@ var rootCommand = new RootCommand("FreeTools AppHost - Run analysis tools agains
 
 rootCommand.SetHandler((skipCleanup, keepBackups, target) =>
 {
-    AppHostRunner.Run(skipCleanup, keepBackups, target.ToLowerInvariant());
+    AppHostRunner.Run(skipCleanup, keepBackups, target);
 }, skipCleanupOption, keepBackupsOption, targetOption);
 
 await rootCommand.InvokeAsync(args);
@@ -55,11 +55,11 @@ static class AppHostRunner
         var runsRoot = Path.Combine(docsRoot, "runs");
 
         // Get current git branch name for folder naming
-        var branchName = GetGitBranch(Path.Combine(toolsRoot, "..")) ?? "unknown";
+        var branchName = GetGitBranch(toolsRoot) ?? "unknown";
         var safeBranchName = SanitizeFolderName(branchName);
 
-        // Define target project root (adjust path as needed for your Blazor project)
-        var projectRoot = Path.GetFullPath(Path.Combine(toolsRoot, "..", "FreeCRM-main"));
+        // Define target project root (BlazorApp1 is in the same solution)
+        var projectRoot = Path.GetFullPath(Path.Combine(toolsRoot, target));
 
         Console.WriteLine("============================================================");
         Console.WriteLine(" FreeTools.AppHost — Project Analysis");
@@ -71,16 +71,12 @@ static class AppHostRunner
         Console.WriteLine("------------------------------------------------------------");
 
         // =============================================================================
-        // Web App - Example for targeting a generic Blazor web application
+        // Web App - Run BlazorApp1 for HTTP testing
         // =============================================================================
-        // Uncomment and adjust when you have a Blazor project to run:
-        //
-        // var webApp = builder.AddProject<Projects.CRM>("crm-webapp", launchProfileName: "aspire")
-        //     .WithEnvironment("DatabaseType", "InMemory")
-        //     .WithEnvironment("ConnectionStrings__AppData", "")
-        //     .WithEnvironment("ASPNETCORE_ENVIRONMENT", "Development");
-        // 
-        // Console.WriteLine("  [WebApp] CRM - InMemory mode");
+        var webApp = builder.AddProject<Projects.BlazorApp1>("blazorapp1-webapp")
+            .WithEnvironment("ASPNETCORE_ENVIRONMENT", "Development");
+        
+        Console.WriteLine("  [WebApp] BlazorApp1 - Development mode");
 
         // =============================================================================
         // Static Analysis (no web app dependency)
@@ -113,26 +109,24 @@ static class AppHostRunner
         // =============================================================================
         // HTTP Tools - Example (requires running web app)
         // =============================================================================
-        // Uncomment when you have a web app running:
-        //
-        // var poker = builder.AddProject<Projects.FreeTools_EndpointPoker>("poker")
-        //     .WithEnvironment("BASE_URL", webApp.GetEndpoint("https"))
-        //     .WithEnvironment("CSV_PATH", projectConfig.PagesCsv)
-        //     .WithEnvironment("OUTPUT_DIR", projectConfig.SnapshotsDir)
-        //     .WithEnvironment("MAX_THREADS", "10")
-        //     .WithEnvironment("START_DELAY_MS", (WebAppStartupDelayMs + HttpToolDelayMs).ToString())
-        //     .WaitFor(webApp)
-        //     .WaitForCompletion(endpointMapper);
-        //
-        // var browser = builder.AddProject<Projects.FreeTools_BrowserSnapshot>("browser")
-        //     .WithEnvironment("BASE_URL", webApp.GetEndpoint("https"))
-        //     .WithEnvironment("CSV_PATH", projectConfig.PagesCsv)
-        //     .WithEnvironment("OUTPUT_DIR", projectConfig.SnapshotsDir)
-        //     .WithEnvironment("SCREENSHOT_BROWSER", "chromium")
-        //     .WithEnvironment("MAX_THREADS", "10")
-        //     .WithEnvironment("START_DELAY_MS", (WebAppStartupDelayMs + HttpToolDelayMs).ToString())
-        //     .WaitFor(webApp)
-        //     .WaitForCompletion(endpointMapper);
+        var poker = builder.AddProject<Projects.FreeTools_EndpointPoker>("poker")
+            .WithEnvironment("BASE_URL", webApp.GetEndpoint("https"))
+            .WithEnvironment("CSV_PATH", projectConfig.PagesCsv)
+            .WithEnvironment("OUTPUT_DIR", projectConfig.SnapshotsDir)
+            .WithEnvironment("MAX_THREADS", "10")
+            .WithEnvironment("START_DELAY_MS", (WebAppStartupDelayMs + HttpToolDelayMs).ToString())
+            .WaitFor(webApp)
+            .WaitForCompletion(endpointMapper);
+
+        var browser = builder.AddProject<Projects.FreeTools_BrowserSnapshot>("browser")
+            .WithEnvironment("BASE_URL", webApp.GetEndpoint("https"))
+            .WithEnvironment("CSV_PATH", projectConfig.PagesCsv)
+            .WithEnvironment("OUTPUT_DIR", projectConfig.SnapshotsDir)
+            .WithEnvironment("SCREENSHOT_BROWSER", "chromium")
+            .WithEnvironment("MAX_THREADS", "10")
+            .WithEnvironment("START_DELAY_MS", (WebAppStartupDelayMs + HttpToolDelayMs).ToString())
+            .WaitFor(webApp)
+            .WaitForCompletion(endpointMapper);
 
         // =============================================================================
         // Report Generation
@@ -145,10 +139,9 @@ static class AppHostRunner
             .WithEnvironment("SNAPSHOTS_DIR", projectConfig.SnapshotsDir)
             .WithEnvironment("START_DELAY_MS", ToolStartupDelayMs.ToString())
             .WaitForCompletion(inventory)
-            .WaitForCompletion(endpointMapper);
-        // Add these when HTTP tools are enabled:
-        // .WaitForCompletion(poker)
-        // .WaitForCompletion(browser);
+            .WaitForCompletion(endpointMapper)
+            .WaitForCompletion(poker)
+            .WaitForCompletion(browser);
 
         Console.WriteLine("============================================================");
         Console.WriteLine();
@@ -267,8 +260,8 @@ static class AppHostRunner
 // =============================================================================
 record ProjectConfig(string Name, string ProjectRoot, string Branch, string ToolsRoot)
 {
-    // Output folder: FreeTools.Docs/runs/{ProjectName}/{Branch}/latest
-    public string ProjectRunsDir { get; } = Path.Combine(ToolsRoot, "FreeTools.Docs", "runs", Name, Branch);
+    // Output folder: Docs/runs/{ProjectName}/{Branch}/latest
+    public string ProjectRunsDir { get; } = Path.Combine(ToolsRoot, "Docs", "runs", Name, Branch);
     public string LatestDir => Path.Combine(ProjectRunsDir, "latest");
     public string PagesCsv => Path.Combine(LatestDir, "pages.csv");
     public string InventoryCsv => Path.Combine(LatestDir, "workspace-inventory.csv");
