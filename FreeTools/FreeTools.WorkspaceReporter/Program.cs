@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using FreeTools.Core;
 
@@ -78,6 +79,7 @@ internal partial class Program
         sb.AppendLine("- [Large File Warnings](#%EF%B8%8F-large-file-warnings)");
         sb.AppendLine("- [Blazor Page Routes](#%EF%B8%8F-blazor-page-routes)");
         sb.AppendLine("- [Route Map](#-route-map)");
+        sb.AppendLine("- [Screenshot Health](#-screenshot-health)");
         sb.AppendLine("- [Screenshot Gallery](#-screenshot-gallery)");
         sb.AppendLine();
         sb.AppendLine("---");
@@ -116,6 +118,9 @@ internal partial class Program
 
         Console.WriteLine("Processing pages CSV...");
         await ProcessPagesCsvAsync(pagesCsv, sb);
+
+        Console.WriteLine("Processing screenshot health...");
+        await GenerateScreenshotHealthAsync(snapshotsDir, sb);
 
         Console.WriteLine("Generating screenshot gallery...");
         await GenerateScreenshotGalleryAsync(snapshotsDir, webProjectRoot, repoRoot, sb);
@@ -707,6 +712,151 @@ internal partial class Program
         sb.AppendLine();
     }
 
+    private static async Task GenerateScreenshotHealthAsync(string snapshotsDir, StringBuilder sb)
+    {
+        sb.AppendLine("## 📊 Screenshot Health");
+        sb.AppendLine();
+
+        if (!Directory.Exists(snapshotsDir))
+        {
+            sb.AppendLine("> Screenshots directory not found. Run BrowserSnapshot first.");
+            sb.AppendLine();
+            return;
+        }
+
+        // Find all metadata.json files
+        var metadataFiles = Directory.GetFiles(snapshotsDir, "metadata.json", SearchOption.AllDirectories)
+            .OrderBy(f => f)
+            .ToList();
+
+        if (metadataFiles.Count == 0)
+        {
+            sb.AppendLine("> No screenshot metadata found. Run BrowserSnapshot v2.1+ to generate metadata files.");
+            sb.AppendLine();
+            return;
+        }
+
+        // Parse all metadata
+        List<ScreenshotHealthEntry> entries = [];
+        foreach (var metadataFile in metadataFiles)
+        {
+            try
+            {
+                var json = await File.ReadAllTextAsync(metadataFile);
+                var metadata = JsonSerializer.Deserialize<ScreenshotHealthEntry>(json, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+                if (metadata != null)
+                {
+                    entries.Add(metadata);
+                }
+            }
+            catch
+            {
+                // Skip invalid metadata files
+            }
+        }
+
+        if (entries.Count == 0)
+        {
+            sb.AppendLine("> Could not parse any metadata files.");
+            sb.AppendLine();
+            return;
+        }
+
+        // Calculate statistics
+        var successCount = entries.Count(e => e.IsSuccess && !e.IsSuspiciouslySmall);
+        var suspiciousCount = entries.Count(e => e.IsSuspiciouslySmall);
+        var retriedCount = entries.Count(e => e.RetryAttempted);
+        var httpErrorCount = entries.Count(e => e.IsHttpError);
+        var errorCount = entries.Count(e => e.IsError);
+        var jsErrorCount = entries.Count(e => e.ConsoleErrors?.Count > 0);
+
+        sb.AppendLine("| Status | Count | Description |");
+        sb.AppendLine("|--------|------:|-------------|");
+        sb.AppendLine($"| ✅ Success | {successCount} | Screenshots > 10KB |");
+        sb.AppendLine($"| ⚠️ Suspicious | {suspiciousCount} | Screenshots < 10KB (possible blank) |");
+        sb.AppendLine($"| 🔄 Retried | {retriedCount} | Required retry attempt |");
+        sb.AppendLine($"| ❌ HTTP Error | {httpErrorCount} | 4xx/5xx responses |");
+        sb.AppendLine($"| 💥 Failed | {errorCount} | Browser/timeout errors |");
+        sb.AppendLine($"| 🔴 JS Errors | {jsErrorCount} | Pages with console errors |");
+        sb.AppendLine();
+
+        // Suspicious screenshots details
+        var suspicious = entries.Where(e => e.IsSuspiciouslySmall).ToList();
+        if (suspicious.Count > 0)
+        {
+            sb.AppendLine("<details>");
+            sb.AppendLine($"<summary>⚠️ <strong>Suspicious Screenshots</strong> ({suspicious.Count})</summary>");
+            sb.AppendLine();
+            sb.AppendLine("| Route | Size | Status | JS Errors |");
+            sb.AppendLine("|-------|-----:|:------:|----------:|");
+            foreach (var entry in suspicious.OrderBy(e => e.Route))
+            {
+                var size = PathSanitizer.FormatBytes(entry.FileSize);
+                var status = entry.RetryAttempted ? "🔄 Retried" : "⚠️";
+                var jsErrors = entry.ConsoleErrors?.Count ?? 0;
+                sb.AppendLine($"| `{entry.Route}` | {size} | {status} | {jsErrors} |");
+            }
+            sb.AppendLine();
+            sb.AppendLine("</details>");
+            sb.AppendLine();
+        }
+
+        // HTTP errors details
+        var httpErrors = entries.Where(e => e.IsHttpError).ToList();
+        if (httpErrors.Count > 0)
+        {
+            sb.AppendLine("<details>");
+            sb.AppendLine($"<summary>❌ <strong>HTTP Errors</strong> ({httpErrors.Count})</summary>");
+            sb.AppendLine();
+            sb.AppendLine("| Route | Status Code |");
+            sb.AppendLine("|-------|------------:|");
+            foreach (var entry in httpErrors.OrderBy(e => e.Route))
+            {
+                sb.AppendLine($"| `{entry.Route}` | {entry.StatusCode} |");
+            }
+            sb.AppendLine();
+            sb.AppendLine("</details>");
+            sb.AppendLine();
+        }
+
+        // JS errors details
+        var withJsErrors = entries.Where(e => e.ConsoleErrors?.Count > 0).ToList();
+        if (withJsErrors.Count > 0)
+        {
+            sb.AppendLine("<details>");
+            sb.AppendLine($"<summary>🔴 <strong>Pages with JavaScript Errors</strong> ({withJsErrors.Count})</summary>");
+            sb.AppendLine();
+            foreach (var entry in withJsErrors.OrderBy(e => e.Route))
+            {
+                sb.AppendLine($"**`{entry.Route}`** ({entry.ConsoleErrors!.Count} errors)");
+                sb.AppendLine();
+                sb.AppendLine("```");
+                foreach (var error in entry.ConsoleErrors.Take(5))
+                {
+                    var errorMsg = error.Length > 200 ? error[..200] + "..." : error;
+                    sb.AppendLine(errorMsg);
+                }
+                if (entry.ConsoleErrors.Count > 5)
+                {
+                    sb.AppendLine($"... and {entry.ConsoleErrors.Count - 5} more errors");
+                }
+                sb.AppendLine("```");
+                sb.AppendLine();
+            }
+            sb.AppendLine("</details>");
+            sb.AppendLine();
+        }
+
+        // Success rate
+        var totalAttempted = entries.Count;
+        var successRate = totalAttempted > 0 ? (successCount * 100.0 / totalAttempted) : 0;
+        sb.AppendLine($"**Overall Success Rate:** {successRate:F0}% ({successCount}/{totalAttempted} pages captured cleanly)");
+        sb.AppendLine();
+    }
+
     private static async Task GenerateScreenshotGalleryAsync(
         string snapshotsDir, string webProjectRoot, string repoRoot, StringBuilder sb)
     {
@@ -923,5 +1073,21 @@ internal partial class Program
         public int TotalFiles { get; set; }
         public long TotalLines { get; set; }
         public long TotalSize { get; set; }
+    }
+
+    private class ScreenshotHealthEntry
+    {
+        public string Route { get; set; } = "";
+        public string Url { get; set; } = "";
+        public int StatusCode { get; set; }
+        public long FileSize { get; set; }
+        public bool IsSuspiciouslySmall { get; set; }
+        public bool RetryAttempted { get; set; }
+        public List<string>? ConsoleErrors { get; set; }
+        public DateTime CapturedAt { get; set; }
+        public bool IsSuccess { get; set; }
+        public bool IsHttpError { get; set; }
+        public bool IsError { get; set; }
+        public string? ErrorMessage { get; set; }
     }
 }

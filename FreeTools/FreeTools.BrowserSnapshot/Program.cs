@@ -1,6 +1,5 @@
 ﻿using System.Collections.Concurrent;
-using System.Diagnostics;
-using System.Text;
+using System.Text.Json;
 using FreeTools.Core;
 using Microsoft.Playwright;
 
@@ -9,6 +8,10 @@ namespace FreeTools.BrowserSnapshot;
 internal class Program
 {
     private static readonly object _consoleLock = new();
+    
+    // P1: Configurable thresholds
+    private const int SuspiciousFileSizeThreshold = 10 * 1024; // 10KB
+    private const int RetryExtraDelayMs = 3000;
 
     private static async Task<int> Main(string[] args)
     {
@@ -25,6 +28,10 @@ internal class Program
         var browserEnv = Environment.GetEnvironmentVariable("SCREENSHOT_BROWSER");
         var viewportEnv = Environment.GetEnvironmentVariable("SCREENSHOT_VIEWPORT");
         
+        // P1: Configurable settle delay (default 3000ms, up from 1500ms)
+        var settleDelayEnv = Environment.GetEnvironmentVariable("PAGE_SETTLE_DELAY_MS");
+        var settleDelay = int.TryParse(settleDelayEnv, out var sd) && sd > 0 ? sd : 3000;
+        
         // Default to 10 threads for parallel processing
         var maxThreads = Math.Max(1, CliArgs.GetEnvOrArgInt("MAX_THREADS", args, 3, 10));
 
@@ -32,13 +39,14 @@ internal class Program
             ? "chromium"
             : browserEnv.Trim().ToLowerInvariant();
 
-        ConsoleOutput.PrintBanner("BrowserSnapshot (FreeTools)");
+        ConsoleOutput.PrintBanner("BrowserSnapshot (FreeTools)", "2.1");
         ConsoleOutput.PrintConfig("BASE_URL", baseUrl);
         ConsoleOutput.PrintConfig("CSV_PATH", csvPath);
         ConsoleOutput.PrintConfig("OUTPUT_DIR", outputDir);
         ConsoleOutput.PrintConfig("BROWSER", browserName);
         ConsoleOutput.PrintConfig("VIEWPORT", string.IsNullOrWhiteSpace(viewportEnv) ? "(default)" : viewportEnv);
         ConsoleOutput.PrintConfig("MAX_THREADS", maxThreads.ToString());
+        ConsoleOutput.PrintConfig("SETTLE_DELAY", $"{settleDelay}ms");
         ConsoleOutput.PrintDivider();
 
         if (!File.Exists(csvPath))
@@ -99,6 +107,8 @@ internal class Program
             var errorCount = 0;
             var httpErrorCount = 0;
             var successCount = 0;
+            var retryCount = 0;
+            var suspiciousCount = 0;
 
             // Track results by index for ordered output
             var results = new ConcurrentDictionary<int, ScreenshotResult>();
@@ -114,7 +124,7 @@ internal class Program
                 {
                     var result = await CaptureScreenshotAsync(
                         browser, route, index, totalCount, baseUrl, outputDir,
-                        viewportWidth, viewportHeight);
+                        viewportWidth, viewportHeight, settleDelay);
 
                     // Store result
                     results[index] = result;
@@ -132,6 +142,16 @@ internal class Program
                     {
                         Interlocked.Increment(ref errorCount);
                     }
+                    
+                    if (result.RetryAttempted)
+                    {
+                        Interlocked.Increment(ref retryCount);
+                    }
+                    
+                    if (result.IsSuspiciouslySmall)
+                    {
+                        Interlocked.Increment(ref suspiciousCount);
+                    }
 
                     // Try to write results in order
                     WriteResultsInOrder(results, ref nextIndexToWrite, writeLock);
@@ -148,16 +168,27 @@ internal class Program
             WriteResultsInOrder(results, ref nextIndexToWrite, writeLock, flush: true);
 
             Console.WriteLine();
+            ConsoleOutput.PrintDivider("Summary");
             Console.WriteLine($"Screenshot capture complete. Processed {totalCount} routes:");
-            Console.WriteLine($"  - Successful (2xx/3xx): {successCount}");
-            Console.WriteLine($"  - HTTP errors (4xx/5xx): {httpErrorCount}");
-            Console.WriteLine($"  - Browser/timeout errors: {errorCount}");
+            Console.WriteLine($"  ✅ Successful (2xx/3xx): {successCount}");
+            Console.WriteLine($"  ❌ HTTP errors (4xx/5xx): {httpErrorCount}");
+            Console.WriteLine($"  ⚠️ Browser/timeout errors: {errorCount}");
+            Console.WriteLine($"  🔄 Retried (small file): {retryCount}");
+            Console.WriteLine($"  ⚠️ Suspicious (<10KB): {suspiciousCount}");
 
             if (errorCount > 0)
             {
+                Console.WriteLine();
                 Console.WriteLine("WARNING: Some browser/timeout errors occurred (non-fatal).");
             }
+            
+            if (suspiciousCount > 0)
+            {
+                Console.WriteLine();
+                Console.WriteLine("WARNING: Some screenshots are suspiciously small and may be blank.");
+            }
 
+            Console.WriteLine();
             Console.WriteLine("Completed successfully.");
             return 0;
         }
@@ -177,14 +208,16 @@ internal class Program
         string baseUrl,
         string outputDir,
         int? viewportWidth,
-        int? viewportHeight)
+        int? viewportHeight,
+        int settleDelay)
     {
         var result = new ScreenshotResult
         {
             Index = index,
             Route = route,
             Number = index + 1,
-            TotalCount = totalCount
+            TotalCount = totalCount,
+            CapturedAt = DateTime.UtcNow
         };
 
         var contextOptions = new BrowserNewContextOptions();
@@ -203,12 +236,21 @@ internal class Program
             var page = await context.NewPageAsync();
             var url = RouteParser.BuildUrl(baseUrl, route);
             result.Url = url;
+            
+            // P2: Capture console errors
+            List<string> consoleErrors = [];
+            page.Console += (_, msg) =>
+            {
+                if (msg.Type == "error")
+                    consoleErrors.Add(msg.Text);
+            };
 
             try
             {
+                // P1: Use NetworkIdle instead of Load for better SPA support
                 var response = await page.GotoAsync(url, new PageGotoOptions
                 {
-                    WaitUntil = WaitUntilState.Load,
+                    WaitUntil = WaitUntilState.NetworkIdle,
                     Timeout = 60000
                 });
 
@@ -223,8 +265,8 @@ internal class Program
                     result.IsHttpError = true;
                 }
 
-                // Wait for page to settle
-                await page.WaitForTimeoutAsync(1500);
+                // P1: Configurable settle delay (default 3000ms)
+                await page.WaitForTimeoutAsync(settleDelay);
 
                 var screenshotPath = PathSanitizer.GetOutputFilePath(outputDir, route, "default.png");
                 PathSanitizer.EnsureDirectoryExists(screenshotPath);
@@ -236,18 +278,43 @@ internal class Program
                 });
 
                 var fi = new FileInfo(screenshotPath);
+                
+                // P1: Retry if screenshot is suspiciously small
+                if (fi.Length < SuspiciousFileSizeThreshold)
+                {
+                    result.RetryAttempted = true;
+                    
+                    // Wait extra time and retry
+                    await page.WaitForTimeoutAsync(RetryExtraDelayMs);
+                    
+                    await page.ScreenshotAsync(new PageScreenshotOptions
+                    {
+                        Path = screenshotPath,
+                        FullPage = true
+                    });
+                    
+                    fi = new FileInfo(screenshotPath);
+                }
+                
                 result.ScreenshotPath = screenshotPath;
                 result.FileSize = fi.Length;
+                result.IsSuspiciouslySmall = fi.Length < SuspiciousFileSizeThreshold;
+                result.ConsoleErrors = consoleErrors;
+                
+                // P2: Write metadata file for reporter
+                await WriteMetadataAsync(outputDir, route, result);
             }
             catch (TimeoutException)
             {
                 result.IsError = true;
                 result.ErrorMessage = "Navigation timed out";
+                result.ConsoleErrors = consoleErrors;
             }
             catch (Exception ex)
             {
                 result.IsError = true;
                 result.ErrorMessage = ex.Message;
+                result.ConsoleErrors = consoleErrors;
             }
         }
         finally
@@ -256,6 +323,35 @@ internal class Program
         }
 
         return result;
+    }
+    
+    // P2: Write metadata JSON for reporter to consume
+    private static async Task WriteMetadataAsync(string outputDir, string route, ScreenshotResult result)
+    {
+        var metadataPath = PathSanitizer.GetOutputFilePath(outputDir, route, "metadata.json");
+        
+        var metadata = new ScreenshotMetadata
+        {
+            Route = result.Route,
+            Url = result.Url,
+            StatusCode = result.StatusCode,
+            FileSize = result.FileSize,
+            IsSuspiciouslySmall = result.IsSuspiciouslySmall,
+            RetryAttempted = result.RetryAttempted,
+            ConsoleErrors = result.ConsoleErrors,
+            CapturedAt = result.CapturedAt,
+            IsSuccess = result.IsSuccess,
+            IsHttpError = result.IsHttpError,
+            IsError = result.IsError,
+            ErrorMessage = result.ErrorMessage
+        };
+        
+        var json = JsonSerializer.Serialize(metadata, new JsonSerializerOptions 
+        { 
+            WriteIndented = true 
+        });
+        
+        await File.WriteAllTextAsync(metadataPath, json);
     }
 
     private static void WriteResultsInOrder(
@@ -300,7 +396,15 @@ internal class Program
             Console.WriteLine($"  -> Status: {result.StatusCode}");
             if (!string.IsNullOrEmpty(result.ScreenshotPath))
             {
-                Console.WriteLine($"  -> Saved: {Path.GetFileName(result.ScreenshotPath)} ({PathSanitizer.FormatBytes(result.FileSize)})");
+                var sizeStr = PathSanitizer.FormatBytes(result.FileSize);
+                var warning = result.IsSuspiciouslySmall ? " ⚠️ SUSPICIOUS" : "";
+                var retry = result.RetryAttempted ? " (retried)" : "";
+                Console.WriteLine($"  -> Saved: {Path.GetFileName(result.ScreenshotPath)} ({sizeStr}){warning}{retry}");
+            }
+            
+            if (result.ConsoleErrors.Count > 0)
+            {
+                Console.WriteLine($"  -> JS Errors: {result.ConsoleErrors.Count}");
             }
         }
         Console.WriteLine();
@@ -354,4 +458,29 @@ internal class ScreenshotResult
     public string? ErrorMessage { get; set; }
     public string? ScreenshotPath { get; set; }
     public long FileSize { get; set; }
+    
+    // P1: New properties for retry and suspicious detection
+    public bool RetryAttempted { get; set; }
+    public bool IsSuspiciouslySmall { get; set; }
+    
+    // P2: Console error capture
+    public List<string> ConsoleErrors { get; set; } = [];
+    public DateTime CapturedAt { get; set; }
+}
+
+// P2: Metadata for reporter to consume
+internal class ScreenshotMetadata
+{
+    public string Route { get; set; } = "";
+    public string Url { get; set; } = "";
+    public int StatusCode { get; set; }
+    public long FileSize { get; set; }
+    public bool IsSuspiciouslySmall { get; set; }
+    public bool RetryAttempted { get; set; }
+    public List<string> ConsoleErrors { get; set; } = [];
+    public DateTime CapturedAt { get; set; }
+    public bool IsSuccess { get; set; }
+    public bool IsHttpError { get; set; }
+    public bool IsError { get; set; }
+    public string? ErrorMessage { get; set; }
 }
