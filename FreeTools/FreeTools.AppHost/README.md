@@ -1,8 +1,8 @@
 ﻿# FreeTools.AppHost — Aspire Pipeline Orchestrator
 
 > **Purpose:** Orchestrates the FreeTools pipeline using .NET Aspire to test web applications.  
-> **Version:** 1.0  
-> **Last Updated:** 2025-12-19
+> **Version:** 2.1  
+> **Last Updated:** 2025-12-30
 
 ---
 
@@ -10,10 +10,10 @@
 
 **FreeTools.AppHost** is an Aspire orchestrator that:
 
-1. **Starts** the target web application (FreeCRM-main by default)
+1. **Starts** the target web application (BlazorApp1 by default)
 2. **Runs** the tools pipeline in sequence
-3. **Collects** all outputs to `FreeTools.Docs/runs/{timestamp}/`
-4. **Copies** latest outputs to `FreeTools.Docs/latest/`
+3. **Collects** all outputs to `Docs/runs/{Project}/{Branch}/latest/`
+4. **Manages** backup retention (optional)
 
 ---
 
@@ -21,28 +21,31 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                         FreeTools Pipeline                                  │
+│                         FreeTools Pipeline v2.1                             │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
 │  Phase 0: Start Web App                                                     │
 │  ┌─────────────────────┐                                                    │
-│  │  FreeCRM-main/CRM   │ ◄─── Target web application                        │
+│  │  Target Web App     │ ◄─── BlazorApp1 or your project                    │
 │  │  (https://5001)     │                                                    │
 │  └─────────────────────┘                                                    │
 │           │                                                                 │
 │           ▼                                                                 │
-│  Phase 1: EndpointMapper ───────────────────► pages.csv                     │
-│           │                                                                 │
-│           ├──► Phase 2: WorkspaceInventory ─► workspace-inventory.csv       │
-│           │                                                                 │
-│           ▼                                                                 │
-│  Phase 3: EndpointPoker ────────────────────► snapshots/*.html              │
+│  Phase 1: Static Analysis (Parallel)                                        │
+│  ├─► EndpointMapper ────────────────────────► pages.csv                     │
+│  └─► WorkspaceInventory ────────────────────► workspace-inventory.csv       │
 │           │                                                                 │
 │           ▼                                                                 │
-│  Phase 4: BrowserSnapshot ──────────────────► snapshots/*.png               │
+│  Phase 2: EndpointPoker ────────────────────► snapshots/*.html              │
 │           │                                                                 │
 │           ▼                                                                 │
-│  Phase 5: WorkspaceReporter ────────────────► LatestReport.md               │
+│  Phase 3: BrowserSnapshot (v2.1) ───────────► snapshots/*.png               │
+│           │                                   snapshots/*/metadata.json     │
+│           ▼                                                                 │
+│  Phase 4: WorkspaceReporter (v2.0) ─────────► {Project}-Report.md           │
+│           │                                   (with Screenshot Health)      │
+│           ▼                                                                 │
+│  Outputs: Docs/runs/{Project}/{Branch}/latest/                              │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
@@ -54,24 +57,42 @@
 ### Run the Pipeline
 
 ```bash
-cd tools/FreeTools.AppHost
+cd FreeTools/FreeTools.AppHost
 dotnet run
 ```
 
 This will:
-1. Start FreeCRM on https://localhost:5001
+1. Start BlazorApp1 on https://localhost (random port)
 2. Run all tools in sequence
-3. Write outputs to `FreeTools.Docs/runs/2025-12-19_143052/`
-4. Copy to `FreeTools.Docs/latest/`
+3. Write outputs to `Docs/runs/BlazorApp1/main/latest/`
+
+### Run Against Your Project
+
+```bash
+dotnet run -- --target YourProjectName
+```
 
 ### View Outputs
 
 ```bash
 # Latest run
-ls tools/FreeTools.Docs/latest/
+ls Docs/runs/BlazorApp1/main/latest/
 
-# Historical runs
-ls tools/FreeTools.Docs/runs/
+# Generated report
+cat Docs/runs/BlazorApp1/main/latest/BlazorApp1-Report.md
+```
+
+---
+
+## Command Line Options
+
+```bash
+dotnet run -- [options]
+
+Options:
+  --target <name>       Target project folder name (default: BlazorApp1)
+  --keep-backups <n>    Number of timestamped backups to keep (default: 0)
+  --skip-cleanup        Skip cleanup of old run folders
 ```
 
 ---
@@ -115,7 +136,7 @@ The AppHost sets these for each tool:
 Each run creates:
 
 ```
-FreeTools.Docs/runs/2025-12-19_143052/
+Docs/runs/BlazorApp1/main/latest/
 ├── pages.csv                    # All Blazor routes
 ├── workspace-inventory.csv      # File inventory with metrics
 ├── snapshots/
@@ -127,7 +148,7 @@ FreeTools.Docs/runs/2025-12-19_143052/
 │   │       ├── default.html
 │   │       └── default.png
 │   └── ...
-└── LatestReport.md              # Summary report
+└── BlazorApp1-Report.md         # Summary report
 ```
 
 ---
@@ -164,3 +185,32 @@ var myTool = builder.AddProject<Projects.MyTool>("my-tool")
 ### Parallel Execution
 
 Tools with no dependencies run in parallel by default. Use `WaitFor()` to enforce ordering.
+
+---
+
+## Troubleshooting
+
+### Common Issues
+
+- **Port in Use**: If `https://localhost` fails to bind, specify a port in `launchSettings.json`:
+  ```json
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    }
+  }
+  ```
+- **Dependency Errors**: Ensure all dependencies are restored:
+  ```bash
+  dotnet restore
+  ```
+
+### Debugging Tips
+
+- Use `dotnet run --verbosity diagnostic` for detailed logs.
+- Check generated reports in `Docs/runs/{Project}/{Branch}/latest/` for insights.

@@ -1,8 +1,8 @@
 ﻿# WorkspaceReporter — Dashboard & Report Generator
 
-> **Purpose:** Generates a comprehensive markdown report (LatestReport.md) aggregating outputs from all other tools, including screenshot galleries, code statistics, and route analysis.  
-> **Last Reviewed:** 2025-12-19  
-> **Version:** 1.1
+> **Purpose:** Generates a comprehensive markdown report aggregating outputs from all tools, including screenshot galleries, code statistics, route analysis, and screenshot health monitoring.  
+> **Last Reviewed:** 2025-12-30  
+> **Version:** 2.0
 
 ---
 
@@ -10,11 +10,24 @@
 
 The **WorkspaceReporter** tool is a development utility that:
 
-- **Aggregates data:** Reads outputs from WorkspaceInventory, PageScanner, PageTester, and PageScreenshoter
+- **Aggregates data:** Reads outputs from WorkspaceInventory, EndpointMapper, EndpointPoker, and BrowserSnapshot
 - **Generates statistics:** File counts, line counts, code distribution charts
 - **Creates galleries:** Screenshot thumbnails with clickable full-size images
 - **Analyzes routes:** Auth requirements, route distribution by area
+- **Screenshot health:** NEW — Surfaces blank/failed screenshots with success rate metrics
+- **Console errors:** NEW — Reports JavaScript errors captured during screenshots
 - **Outputs markdown:** GitHub/Azure DevOps compatible report with collapsible sections
+
+---
+
+## What's New in v2.0
+
+| Feature | Description |
+|---------|-------------|
+| **Screenshot Health section** | Shows success rate, suspicious captures, HTTP errors |
+| **Console error reporting** | Surfaces JavaScript errors from BrowserSnapshot metadata |
+| **Metadata parsing** | Reads `metadata.json` files from BrowserSnapshot v2.1+ |
+| **Success rate metric** | Calculates overall capture success percentage |
 
 ---
 
@@ -38,6 +51,7 @@ Routes with parameters (e.g., `/Account/Manage/{Id}`) are detected and listed se
 | Technology | Version | Purpose |
 |------------|---------|---------|
 | .NET | 10.0 | Runtime framework |
+| System.Text.Json | Built-in | Metadata parsing |
 
 ---
 
@@ -45,17 +59,17 @@ Routes with parameters (e.g., `/Account/Manage/{Id}`) are detected and listed se
 
 ### Via Aspire AppHost (Recommended)
 
-The tool runs automatically as **Phase 5** after all other tools complete:
+The tool runs automatically as the final phase after all other tools complete:
 
 ```bash
-cd UnifiedAppHost
+cd FreeTools/FreeTools.AppHost
 dotnet run
 ```
 
 ### Standalone
 
 ```bash
-cd tools/WorkspaceReporter
+cd FreeTools/FreeTools.WorkspaceReporter
 dotnet run [repoRoot] [outputPath]
 ```
 
@@ -70,13 +84,13 @@ dotnet run [repoRoot] [outputPath]
 | `WORKSPACE_RAZOR_CSV` | Path to Razor files CSV | `<repo>/workspace-inventory-razor.csv` |
 | `PAGES_CSV` | Path to pages.csv | `<web>/pages.csv` |
 | `SNAPSHOTS_DIR` | Path to page-snapshots directory | `<web>/page-snapshots` |
-| `WEB_PROJECT_ROOT` | Path to web project | `<repo>/Web/FreeTools.Web` |
+| `START_DELAY_MS` | Startup delay in milliseconds | `0` |
 
 ---
 
 ## Output Format
 
-The generated `LatestReport.md` includes:
+The generated report includes:
 
 ### 📁 Workspace Overview
 - Total files, lines, characters, size
@@ -93,10 +107,21 @@ The generated `LatestReport.md` includes:
 - Top 15 C# files by line count
 - Top 15 Razor files by line count
 
+### ⚠️ Large File Warnings
+- LLM-friendly file size guide
+- Files exceeding 450/600/900 line thresholds
+
 ### 🛤️ Page Routes
 - Route summary (total, public, protected)
 - Access distribution chart
 - Collapsible route listings by area
+- Mermaid route hierarchy diagram
+
+### 📊 Screenshot Health (NEW in v2.0)
+- Success/suspicious/failed counts
+- HTTP error listing
+- JavaScript error details
+- Overall success rate percentage
 
 ### 📸 Screenshot Gallery
 - Organized by page area
@@ -105,27 +130,54 @@ The generated `LatestReport.md` includes:
 
 ---
 
+## Screenshot Health Section
+
+The new Screenshot Health section reads `metadata.json` files from BrowserSnapshot and reports:
+
+```markdown
+## 📊 Screenshot Health
+
+| Status | Count | Description |
+|--------|------:|-------------|
+| ✅ Success | 34 | Screenshots > 10KB |
+| ⚠️ Suspicious | 0 | Screenshots < 10KB (possible blank) |
+| 🔄 Retried | 0 | Required retry attempt |
+| ❌ HTTP Error | 2 | 4xx/5xx responses |
+| 💥 Failed | 0 | Browser/timeout errors |
+| 🔴 JS Errors | 36 | Pages with console errors |
+
+**Overall Success Rate:** 94% (34/36 pages captured cleanly)
+```
+
+Expandable sections show details for:
+- ⚠️ Suspicious screenshots (route, size, retry status)
+- ❌ HTTP errors (route, status code)
+- 🔴 JavaScript errors (route, error messages)
+
+---
+
 ## Integration
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                           Tool Pipeline                                     │
+│                           FreeTools Pipeline                                │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
-│  PHASE 3-4: Data Generation                                                 │
-│  ┌─────────────────┐  ┌────────────┐  ┌────────────────┐  ┌──────────────┐  │
-│  │WorkspaceInventory│  │ PageScanner│  │  PageTester    │  │PageScreenshoter│
-│  │                 │  │            │  │                │  │              │  │
-│  │ workspace-*.csv │  │ pages.csv  │  │  *.html files  │  │  *.png files │  │
-│  └────────┬────────┘  └─────┬──────┘  └───────┬────────┘  └──────┬───────┘  │
-│           │                 │                 │                  │          │
-│           └─────────────────┴─────────────────┴──────────────────┘          │
+│  Phase 1-3: Data Generation                                                 │
+│  ┌─────────────────┐  ┌──────────────┐  ┌────────────┐  ┌────────────────┐  │
+│  │WorkspaceInventory│ │EndpointMapper│  │EndpointPoker│ │BrowserSnapshot │  │
+│  │                 │  │              │  │            │  │                │  │
+│  │ workspace-*.csv │  │  pages.csv   │  │ *.html     │  │ *.png +        │  │
+│  │                 │  │              │  │            │  │ metadata.json  │  │
+│  └────────┬────────┘  └──────┬───────┘  └─────┬──────┘  └───────┬────────┘  │
+│           │                  │                │                 │           │
+│           └──────────────────┴────────────────┴─────────────────┘           │
 │                                       │                                     │
-│  PHASE 5: Report Generation           ▼                                     │
+│  Phase 4: Report Generation           ▼                                     │
 │  ┌───────────────────────────────────────────────────────────────────────┐  │
 │  │                        WorkspaceReporter                              │  │
 │  │                                                                       │  │
-│  │  Reads all outputs → Generates LatestReport.md                        │  │
+│  │  Reads all outputs + metadata.json → Generates Report.md              │  │
 │  └───────────────────────────────────────────────────────────────────────┘  │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
@@ -133,30 +185,9 @@ The generated `LatestReport.md` includes:
 
 ---
 
-## Sample Output
+## Dependencies
 
-```markdown
-# 📊 FreeTools Workspace Report
-
-> **Generated:** 2025-12-19 10:30:00
-> **Repository:** Public2
-
-## 📁 Workspace Overview
-
-| Metric | Value |
-|--------|-------|
-| **Total Files** | 523 |
-| **Total Lines** | 45,230 |
-| **Total Size** | 2.1 MB |
-
-## 📊 Code Distribution
-
-```
-CSharpSource         ████████████████████████████████████████ 28,450
-RazorPage            ████████████████████                     12,340
-Config               █████████                                 3,200
-...
-```
+Requires BrowserSnapshot v2.1+ for full Screenshot Health functionality. Without `metadata.json` files, the section shows a message to upgrade BrowserSnapshot.
 
 ---
 

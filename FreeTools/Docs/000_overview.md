@@ -4,11 +4,26 @@
 
 ## Summary
 
-FreeTools is a comprehensive CLI toolset for analyzing, testing, and documenting Blazor web applications. It discovers routes, captures screenshots, tests endpoints, and generates detailed markdown reports—all orchestrated via Microsoft Aspire.
+FreeTools is a comprehensive CLI toolset for analyzing, testing, and documenting Blazor web applications. It discovers routes, captures screenshots with smart SPA timing, tests endpoints, and generates detailed markdown reports with screenshot health monitoring—all orchestrated via Microsoft Aspire.
 
 **Use Case:** Point FreeTools at any Blazor project to automatically generate documentation, visual snapshots, and codebase analytics.
 
 **Application Type:** .NET 10.0 CLI Tools with Aspire Orchestration
+
+**Version:** 2.1
+
+---
+
+## What's New in v2.1
+
+| Feature | Tool | Description |
+|---------|------|-------------|
+| **Smart SPA timing** | BrowserSnapshot | Uses `NetworkIdle` instead of `Load` for better Blazor support |
+| **Configurable settle delay** | BrowserSnapshot | `PAGE_SETTLE_DELAY_MS` env var (default 3000ms) |
+| **Auto-retry** | BrowserSnapshot | Screenshots < 10KB automatically retried with extra delay |
+| **Console error capture** | BrowserSnapshot | JavaScript errors logged during page load |
+| **Metadata files** | BrowserSnapshot | Each screenshot has `metadata.json` with capture stats |
+| **Screenshot Health** | WorkspaceReporter | New report section showing success rates, errors, JS issues |
 
 ---
 
@@ -71,15 +86,16 @@ FreeTools/                          # Repository root
     ├── FreeTools.EndpointPoker/    # Phase 2: HTTP testing
     │   └── Program.cs              # GET requests → *.html snapshots
     │
-    ├── FreeTools.BrowserSnapshot/  # Phase 3: Visual capture
-    │   └── Program.cs              # Playwright → *.png screenshots
+    ├── FreeTools.BrowserSnapshot/  # Phase 3: Visual capture (v2.1)
+    │   └── Program.cs              # Playwright → *.png + metadata.json
     │
-    ├── FreeTools.WorkspaceReporter/# Phase 4: Report generation
+    ├── FreeTools.WorkspaceReporter/# Phase 4: Report generation (v2.0)
     │   └── Program.cs              # Aggregates all data → Report.md
     │
     └── Docs/                       # Output & documentation
         ├── runs/                   # Generated reports by project/branch
         │   └── {Project}/{Branch}/latest/
+        ├── focusgroup/             # Focus group review documents
         └── *.md                    # Project documentation
 ```
 
@@ -106,12 +122,12 @@ The AppHost orchestrates tools in dependency order:
 └─────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
-│  [3] Browser Screenshots (parallel with HTTP testing)       │
-│  └─ BrowserSnapshot   → snapshots/*.png                     │
+│  [3] Browser Screenshots (v2.1 - smart SPA timing)          │
+│  └─ BrowserSnapshot   → snapshots/*.png + metadata.json     │
 └─────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────┐
-│  [4] Report Generation (waits for all above)                │
+│  [4] Report Generation (v2.0 - screenshot health)           │
 │  └─ WorkspaceReporter → {Project}-Report.md                 │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -159,8 +175,10 @@ Docs/runs/
             ├── workspace-inventory-razor.csv
             ├── {ProjectName}-Report.md      # Main report
             └── snapshots/
-                ├── Account/Login/default.png
-                ├── Account/Login/default.html
+                ├── Account/Login/
+                │   ├── default.png
+                │   ├── default.html
+                │   └── metadata.json        # NEW in v2.1
                 └── ...
 ```
 
@@ -180,6 +198,7 @@ The `{Project}-Report.md` includes:
 | **Large File Warnings** | Files exceeding LLM-friendly thresholds (450+ lines) |
 | **Blazor Routes** | All discovered routes with auth requirements |
 | **Route Map** | Mermaid diagram of route hierarchy |
+| **Screenshot Health** | ✨ NEW — Success rates, HTTP errors, JS console errors |
 | **Screenshot Gallery** | Visual grid of all captured page screenshots |
 
 ---
@@ -199,18 +218,23 @@ The `{Project}-Report.md` includes:
 - ✅ HTML response capture
 - ✅ Route parameter detection (skips parameterized routes)
 
-### Browser Automation
+### Browser Automation (v2.1)
 - ✅ Playwright-based screenshots
 - ✅ Multi-browser support (Chromium, Firefox, WebKit)
+- ✅ **Smart SPA timing** — NetworkIdle + configurable settle delay
+- ✅ **Auto-retry** — Retries blank screenshots (< 10KB)
+- ✅ **Console error capture** — Logs JavaScript errors
+- ✅ **Metadata output** — JSON file with capture stats
 - ✅ Full-page capture
 - ✅ Configurable viewport
 
-### Reporting
+### Reporting (v2.0)
 - ✅ GitHub-flavored Markdown
 - ✅ Mermaid route diagrams
 - ✅ Expandable `<details>` sections
 - ✅ Relative links to source files
 - ✅ LLM-friendly file size warnings
+- ✅ **Screenshot Health section** — Success rates, errors, JS issues
 
 ---
 
@@ -247,6 +271,7 @@ Each tool supports configuration via environment variables:
 | `CSV_PATH` | Poker, Browser, Reporter | Path to pages.csv |
 | `OUTPUT_DIR` | Poker, Browser | Snapshot output directory |
 | `SCREENSHOT_BROWSER` | Browser | chromium, firefox, or webkit |
+| `PAGE_SETTLE_DELAY_MS` | Browser | Wait after NetworkIdle (default 3000) |
 
 ---
 
