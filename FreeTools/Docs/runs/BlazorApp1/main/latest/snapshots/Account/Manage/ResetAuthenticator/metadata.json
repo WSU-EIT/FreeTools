@@ -1,0 +1,20 @@
+{
+  "Route": "/Account/Manage/ResetAuthenticator",
+  "Url": "https://localhost:7161/Account/Manage/ResetAuthenticator",
+  "StatusCode": 200,
+  "FileSize": 55597,
+  "IsSuspiciouslySmall": false,
+  "RetryAttempted": false,
+  "ConsoleErrors": [
+    "NotSupportedError: Resident credentials or empty \u0027allowCredentials\u0027 lists are not supported at this time.",
+    "Access to XMLHttpRequest at \u0027http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets\u0026clientProtocol=2.1\u0026requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccount%2FLogin%3FReturnUrl%3D%252FAccount%252FManage%252FResetAuthenticator\u0026browserName=\u0026userAgent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F141.0.7390.37%20Safari%2F537.36\u0026browserIdKey=window.browserLink.initializationData.browserId\u0026browserId=a306-5bd3\u0026connectionToken=AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAABDp90XHsUkqffVEv%2Bu76MAAAAAACAAAAAAAQZgAAAAEAACAAAADus4AWamNZvb%2FtubrCYvRtIzTL1gOo21PXy%2Bi9GvSrhAAAAAAOgAAAAAIAACAAAAB7BNp4sL1SPjkVpXEQJR%2Bm6dJP%2F3PvRclb0EccClBmHTAAAAAjIN3wQbm4dheR8IGgE2gzUl3KchKX2nx6%2BJ1hwqRxadFYcxJMiXNsJyp2QEjyTsNAAAAAxZfSZ3O5txWRQnDWwRbbq3%2F37AIdHBBP20wPdjMmtzpdugRHSAPxmEAsV4%2BbUSqZVhpOuDBsSs74zv%2BLzvpUZA%3D%3D\u0026_=1767119165730\u0027 from origin \u0027https://localhost:7161\u0027 has been blocked by CORS policy: No \u0027Access-Control-Allow-Origin\u0027 header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to XMLHttpRequest at \u0027http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets\u0026clientProtocol=2.1\u0026requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccount%2FLogin%3FReturnUrl%3D%252FAccount%252FManage%252FResetAuthenticator\u0026browserName=\u0026userAgent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F141.0.7390.37%20Safari%2F537.36\u0026browserIdKey=window.browserLink.initializationData.browserId\u0026browserId=ddce-dcec\u0026connectionToken=AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAABDp90XHsUkqffVEv%2Bu76MAAAAAACAAAAAAAQZgAAAAEAACAAAACEwHg0gS4F1xvyv7gz%2F2G55MFDvliZtDv9k8YURbFiHQAAAAAOgAAAAAIAACAAAAA70amPyw1riATUQrkr8FdAxShxBxCZUrRGEuyQALRtuDAAAABtxPrumRe7KaPKarksAc0Y5D4TdJyTrSkOecQho7IRKqLu%2F9fBHydzAPLEGhHQqc1AAAAAhU9HBi%2BjEIuSHaY3bJ7QzrCm6ThBcqbEb8usJFHXNhhpXsWI3cKTmz8UNjufEyMzNhLFH59TF0tVrXFw8CGocg%3D%3D\u0026_=1767119165732\u0027 from origin \u0027https://localhost:7161\u0027 has been blocked by CORS policy: No \u0027Access-Control-Allow-Origin\u0027 header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED"
+  ],
+  "CapturedAt": "2025-12-30T18:26:05.5030429Z",
+  "IsSuccess": true,
+  "IsHttpError": false,
+  "IsError": false,
+  "ErrorMessage": null
+}

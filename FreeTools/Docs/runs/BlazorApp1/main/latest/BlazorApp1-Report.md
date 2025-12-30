@@ -1,6 +1,6 @@
 ﻿# 📊 FreeTools Workspace Report
 
-> **Generated:** 2025-12-29 16:46:04  
+> **Generated:** 2025-12-30 10:26:12  
 > **Repository:** BlazorApp1  
 > **Scope:** Blazor pages only — API endpoints not included  
 
@@ -16,6 +16,7 @@
 - [Large File Warnings](#%EF%B8%8F-large-file-warnings)
 - [Blazor Page Routes](#%EF%B8%8F-blazor-page-routes)
 - [Route Map](#-route-map)
+- [Screenshot Health](#-screenshot-health)
 - [Screenshot Gallery](#-screenshot-gallery)
 
 ---
@@ -400,6 +401,377 @@ graph TD
 | 2 | 18 | `/Account/AccessDenied`, `/Account/ConfirmEmail`, `/Account/ConfirmEmailChange` +15 more |
 | 3 | 12 | `/Account/Manage/ChangePassword`, `/Account/Manage/DeletePersonalData`, `/Account/Manage/Disable2fa` +9 more |
 | 4 | 1 | `/Account/Manage/RenamePasskey/{Id}` |
+
+## 📊 Screenshot Health
+
+| Status | Count | Description |
+|--------|------:|-------------|
+| ✅ Success | 34 | Screenshots > 10KB |
+| ⚠️ Suspicious | 0 | Screenshots < 10KB (possible blank) |
+| 🔄 Retried | 0 | Required retry attempt |
+| ❌ HTTP Error | 2 | 4xx/5xx responses |
+| 💥 Failed | 0 | Browser/timeout errors |
+| 🔴 JS Errors | 36 | Pages with console errors |
+
+<details>
+<summary>❌ <strong>HTTP Errors</strong> (2)</summary>
+
+| Route | Status Code |
+|-------|------------:|
+| `/Account/LoginWith2fa` | 500 |
+| `/Account/LoginWithRecoveryCode` | 500 |
+
+</details>
+
+<details>
+<summary>🔴 <strong>Pages with JavaScript Errors</strong> (36)</summary>
+
+**`/`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2F&brows...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2F&brows...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/AccessDenied`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/ConfirmEmail`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2F&brows...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2F&brows...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/ConfirmEmailChange`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/ExternalLogin`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/ForgotPassword`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/ForgotPasswordConfirmation`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/InvalidPasswordReset`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/InvalidUser`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Lockout`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Login`** (5 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+```
+
+**`/Account/LoginWith2fa`** (5 errors)
+
+```
+Failed to load resource: the server responded with a status of 500 ()
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/LoginWithRecoveryCode`** (5 errors)
+
+```
+Failed to load resource: the server responded with a status of 500 ()
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Manage`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Manage/ChangePassword`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Manage/DeletePersonalData`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Manage/Disable2fa`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Manage/Email`** (5 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Manage/EnableAuthenticator`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Manage/ExternalLogins`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Manage/GenerateRecoveryCodes`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Manage/Passkeys`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Manage/PersonalData`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Manage/ResetAuthenticator`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Manage/SetPassword`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Manage/TwoFactorAuthentication`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Register`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/RegisterConfirmation`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2F&brows...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2F&brows...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/ResendEmailConfirmation`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/ResetPassword`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/ResetPasswordConfirmation`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/auth`** (5 errors)
+
+```
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/counter`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2Fcounte...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2Fcounte...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Error`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FError&...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FError&...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/not-found`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2Fnot-fo...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2Fnot-fo...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/weather`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2Fweathe...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2Fweathe...
+Failed to load resource: net::ERR_FAILED
+```
+
+</details>
+
+**Overall Success Rate:** 94% (34/36 pages captured cleanly)
 
 ## 📸 Screenshot Gallery
 

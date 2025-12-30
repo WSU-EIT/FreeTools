@@ -1,0 +1,20 @@
+{
+  "Route": "/Account/Manage/GenerateRecoveryCodes",
+  "Url": "https://localhost:7161/Account/Manage/GenerateRecoveryCodes",
+  "StatusCode": 200,
+  "FileSize": 55597,
+  "IsSuspiciouslySmall": false,
+  "RetryAttempted": false,
+  "ConsoleErrors": [
+    "NotSupportedError: Resident credentials or empty \u0027allowCredentials\u0027 lists are not supported at this time.",
+    "Access to XMLHttpRequest at \u0027http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets\u0026clientProtocol=2.1\u0026requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccount%2FLogin%3FReturnUrl%3D%252FAccount%252FManage%252FGenerateRecoveryCodes\u0026browserName=\u0026userAgent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F141.0.7390.37%20Safari%2F537.36\u0026browserIdKey=window.browserLink.initializationData.browserId\u0026browserId=cb3b-6b4b\u0026connectionToken=AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAABDp90XHsUkqffVEv%2Bu76MAAAAAACAAAAAAAQZgAAAAEAACAAAABfXJwbFQ2PwSJ4b95zdGTrjoYsWDedH4kTPNGUdPsXswAAAAAOgAAAAAIAACAAAADQglP739bKWVgMpUM9cdDXfVkhgaiIlAXCXRZgwfa6SDAAAAC3cTqLju5S1rkQimYmlYRwx2nQse8%2Fb2cQg3HHqp1ERD9mmcuZWObvy7JdmnUF6V1AAAAANgOe0C8gQ%2BMhni1hJ%2BO6Txzob%2F8P4%2FJZCQr9ULPwR4vNJZG29jt5Im5OU92GRHGJ3p0RKA673GkZtU16Z%2Bllww%3D%3D\u0026_=1767119165610\u0027 from origin \u0027https://localhost:7161\u0027 has been blocked by CORS policy: No \u0027Access-Control-Allow-Origin\u0027 header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to XMLHttpRequest at \u0027http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets\u0026clientProtocol=2.1\u0026requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccount%2FLogin%3FReturnUrl%3D%252FAccount%252FManage%252FGenerateRecoveryCodes\u0026browserName=\u0026userAgent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F141.0.7390.37%20Safari%2F537.36\u0026browserIdKey=window.browserLink.initializationData.browserId\u0026browserId=012c-b73f\u0026connectionToken=AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAABDp90XHsUkqffVEv%2Bu76MAAAAAACAAAAAAAQZgAAAAEAACAAAADLj2L6ecLXas0b2J5uxjPxgr%2BzmkHSmmz0Gl65uSQ%2BGQAAAAAOgAAAAAIAACAAAADUt8JEJr5vwY0GFO1Jo%2FCYcrm71zcAAp89YXBeDEGaVDAAAAC2bKZQG%2FWQo2iV%2Bm1XBBYI7ugHQSElVK0qf2fA4oy2r%2BaBXU3jVd4S%2BJjC1MFhaxNAAAAAcsY6v7fl5S8VO5EK7J%2FRuPbjuRTSiBrnGY1m8QS4u47Q%2Bof0ufETdhbqZbz8LeFCieIBwbBWjWNOvAs3kn0xVQ%3D%3D\u0026_=1767119165612\u0027 from origin \u0027https://localhost:7161\u0027 has been blocked by CORS policy: No \u0027Access-Control-Allow-Origin\u0027 header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED"
+  ],
+  "CapturedAt": "2025-12-30T18:26:05.3893414Z",
+  "IsSuccess": true,
+  "IsHttpError": false,
+  "IsError": false,
+  "ErrorMessage": null
+}
