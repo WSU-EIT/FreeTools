@@ -75,7 +75,9 @@ internal partial class Program
         sb.AppendLine("- [File Statistics](#-file-statistics)");
         sb.AppendLine("- [Code Distribution](#-code-distribution)");
         sb.AppendLine("- [Largest Files](#-largest-files)");
-        sb.AppendLine("- [Blazor Page Routes](#-blazor-page-routes)");
+        sb.AppendLine("- [Large File Warnings](#%EF%B8%8F-large-file-warnings)");
+        sb.AppendLine("- [Blazor Page Routes](#%EF%B8%8F-blazor-page-routes)");
+        sb.AppendLine("- [Route Map](#-route-map)");
         sb.AppendLine("- [Screenshot Gallery](#-screenshot-gallery)");
         sb.AppendLine();
         sb.AppendLine("---");
@@ -213,6 +215,10 @@ internal partial class Program
         stats.TotalLines = totalLines;
         stats.TotalSize = totalSize;
 
+        // Calculate averages
+        var avgLinesPerFile = files.Count > 0 ? (double)totalLines / files.Count : 0;
+        var avgSizePerFile = files.Count > 0 ? (double)totalSize / files.Count : 0;
+
         sb.AppendLine("## 📁 Workspace Overview");
         sb.AppendLine();
         sb.AppendLine("| Metric | Value |");
@@ -221,20 +227,25 @@ internal partial class Program
         sb.AppendLine($"| **Total Lines** | {totalLines:N0} |");
         sb.AppendLine($"| **Total Characters** | {totalChars:N0} |");
         sb.AppendLine($"| **Total Size** | {PathSanitizer.FormatBytes(totalSize)} |");
+        sb.AppendLine($"| **Avg Lines/File** | {avgLinesPerFile:F1} |");
+        sb.AppendLine($"| **Avg Size/File** | {PathSanitizer.FormatBytes((long)avgSizePerFile)} |");
         sb.AppendLine();
 
         sb.AppendLine("## 📈 File Statistics");
         sb.AppendLine();
         sb.AppendLine("### By Category");
         sb.AppendLine();
-        sb.AppendLine("| Category | Count | Percentage |");
-        sb.AppendLine("|----------|------:|------------|");
+        sb.AppendLine("| Category | Count | Avg Lines | Total Lines | Percentage |");
+        sb.AppendLine("|----------|------:|----------:|------------:|------------|");
 
         foreach (var kvp in kindCounts.OrderByDescending(k => k.Value))
         {
             var pct = files.Count > 0 ? (kvp.Value * 100.0 / files.Count) : 0;
             var bar = GenerateProgressBar(pct, 20);
-            sb.AppendLine($"| {kvp.Key} | {kvp.Value:N0} | {bar} {pct:F1}% |");
+            var categoryFiles = files.Where(f => f.Kind == kvp.Key).ToList();
+            var categoryTotalLines = categoryFiles.Sum(f => f.LineCount);
+            var categoryAvgLines = categoryFiles.Count > 0 ? (double)categoryTotalLines / categoryFiles.Count : 0;
+            sb.AppendLine($"| {kvp.Key} | {kvp.Value:N0} | {categoryAvgLines:F0} | {categoryTotalLines:N0} | {bar} {pct:F1}% |");
         }
         sb.AppendLine();
 
@@ -361,7 +372,97 @@ internal partial class Program
         }
         sb.AppendLine();
 
+        // Large File Warnings - based on LLM-friendly file sizes
+        // LLMs read in ~150 line increments, so 150-450 is ideal (2-3 reads)
+        const int NoticeThreshold = 450;    // Starting to get long
+        const int WarningThreshold = 600;   // Too long for comfortable LLM processing  
+        const int CriticalThreshold = 900;  // Way too long
+        
+        var largeFiles = files
+            .Where(f => f.LineCount > NoticeThreshold)
+            .OrderByDescending(f => f.LineCount)
+            .ToList();
+
+        sb.AppendLine("## ⚠️ Large File Warnings");
+        sb.AppendLine();
+        sb.AppendLine("> **LLM-Friendly File Size Guide:**");
+        sb.AppendLine("> - ✅ **Ideal:** 0-450 lines (1-3 LLM reads at ~150 lines each)");
+        sb.AppendLine("> - 🟡 **Notice:** 450-600 lines (getting long)");
+        sb.AppendLine("> - 🟠 **Warning:** 600-900 lines (too long)");
+        sb.AppendLine("> - 🔴 **Critical:** >900 lines (should split)");
+        sb.AppendLine();
+
+        if (largeFiles.Count > 0)
+        {
+            sb.AppendLine($"**{largeFiles.Count} files** exceed the ideal threshold of {NoticeThreshold} lines:");
+            sb.AppendLine();
+            sb.AppendLine("| File | Lines | Kind | Severity | Recommendation |");
+            sb.AppendLine("|------|------:|------|:--------:|----------------|");
+
+            foreach (var f in largeFiles)
+            {
+                var linkPath = f.RelativePath.Replace('\\', '/');
+                var displayPath = ShortenPath(f.RelativePath, 40);
+                var recommendation = GetRefactoringRecommendation(f);
+                var (icon, severity) = f.LineCount switch
+                {
+                    > 900 => ("🔴", "Critical"),
+                    > 600 => ("🟠", "Warning"),
+                    _ => ("🟡", "Notice")
+                };
+                sb.AppendLine($"| [{displayPath}](../../../../{linkPath}) | {f.LineCount:N0} | {f.Kind} | {icon} {severity} | {recommendation} |");
+            }
+            sb.AppendLine();
+
+            // Summary by severity
+            var critical = largeFiles.Count(f => f.LineCount > CriticalThreshold);
+            var warning = largeFiles.Count(f => f.LineCount > WarningThreshold && f.LineCount <= CriticalThreshold);
+            var notice = largeFiles.Count(f => f.LineCount <= WarningThreshold);
+
+            sb.AppendLine("### Severity Summary");
+            sb.AppendLine();
+            sb.AppendLine("| Severity | Count | Description |");
+            sb.AppendLine("|----------|------:|-------------|");
+            sb.AppendLine($"| 🔴 Critical | {critical} | >900 lines — strongly consider splitting |");
+            sb.AppendLine($"| 🟠 Warning | {warning} | 600-900 lines — review for refactoring |");
+            sb.AppendLine($"| 🟡 Notice | {notice} | 450-600 lines — monitor for growth |");
+            sb.AppendLine();
+
+            // Add ideal file stats
+            var idealFiles = files.Count(f => f.LineCount <= NoticeThreshold);
+            var idealPct = files.Count > 0 ? (idealFiles * 100.0 / files.Count) : 0;
+            sb.AppendLine($"**{idealFiles} of {files.Count} files ({idealPct:F0}%)** are within the ideal range (≤{NoticeThreshold} lines).");
+        }
+        else
+        {
+            var idealFiles = files.Count(f => f.LineCount <= NoticeThreshold);
+            var idealPct = files.Count > 0 ? (idealFiles * 100.0 / files.Count) : 0;
+            sb.AppendLine($"✅ **Excellent!** All files are under {NoticeThreshold} lines.");
+            sb.AppendLine();
+            sb.AppendLine($"**{idealFiles} of {files.Count} files ({idealPct:F0}%)** are within the ideal LLM-friendly range.");
+        }
+        sb.AppendLine();
+
         return stats;
+    }
+
+    private static string GetRefactoringRecommendation(FileEntry file)
+    {
+        if (file.Kind == "RazorPage" && file.LineCount > 600)
+            return "Extract components urgently";
+        if (file.Kind == "RazorPage" && file.LineCount > 450)
+            return "Consider extracting components";
+        if (file.Kind == "CSharpSource" && file.RelativePath.Contains("Migration"))
+            return "Auto-generated (OK)";
+        if (file.Kind == "CSharpSource" && file.LineCount > 900)
+            return "Split into multiple services";
+        if (file.Kind == "CSharpSource" && file.LineCount > 600)
+            return "Consider splitting into services";
+        if (file.Kind == "CSharpSource")
+            return "Review for single responsibility";
+        if (file.Kind == "RazorComponent" && file.LineCount > 450)
+            return "Split into smaller components";
+        return "Review for refactoring opportunities";
     }
 
     private static async Task ProcessPagesCsvAsync(string pagesCsv, StringBuilder sb)
@@ -488,6 +589,122 @@ internal partial class Program
             sb.AppendLine("</details>");
             sb.AppendLine();
         }
+
+        // Generate Mermaid Route Map
+        GenerateRouteMap(routes.Concat(skippedRoutes).ToList(), sb);
+    }
+
+    private static void GenerateRouteMap(List<RouteEntry> allRoutes, StringBuilder sb)
+    {
+        sb.AppendLine("## 🗺️ Route Map");
+        sb.AppendLine();
+        sb.AppendLine("> Visual representation of the route hierarchy. GitHub renders this as an interactive diagram.");
+        sb.AppendLine();
+        sb.AppendLine("```mermaid");
+        sb.AppendLine("graph TD");
+        
+        // Build a tree structure
+        var nodeId = 0;
+        var nodeMap = new Dictionary<string, string>(); // path -> node id
+        
+        // Root node
+        sb.AppendLine("    ROOT[(\"/\")]");
+        nodeMap["/"] = "ROOT";
+
+        // Sort routes and build tree
+        var sortedRoutes = allRoutes.OrderBy(r => r.Route).ToList();
+        
+        foreach (var route in sortedRoutes)
+        {
+            var segments = route.Route.Trim('/').Split('/', StringSplitOptions.RemoveEmptyEntries);
+            if (segments.Length == 0) continue;
+
+            var currentPath = "";
+            var parentNode = "ROOT";
+
+            for (int i = 0; i < segments.Length; i++)
+            {
+                var segment = segments[i];
+                var isLast = i == segments.Length - 1;
+                currentPath += "/" + segment;
+
+                if (!nodeMap.ContainsKey(currentPath))
+                {
+                    nodeId++;
+                    var newNodeId = $"N{nodeId}";
+                    nodeMap[currentPath] = newNodeId;
+
+                    // Determine node style
+                    var hasParam = segment.Contains('{');
+                    var isAuthRequired = isLast && route.RequiresAuth;
+
+                    string nodeLabel;
+                    if (hasParam)
+                    {
+                        nodeLabel = $"{newNodeId}[[\"{segment}\"]]"; // Double bracket for parameters
+                    }
+                    else if (isLast && isAuthRequired)
+                    {
+                        nodeLabel = $"{newNodeId}[🔐 {segment}]";
+                    }
+                    else if (isLast)
+                    {
+                        nodeLabel = $"{newNodeId}[{segment}]";
+                    }
+                    else
+                    {
+                        nodeLabel = $"{newNodeId}({segment})"; // Rounded for intermediate
+                    }
+
+                    sb.AppendLine($"    {parentNode} --> {nodeLabel}");
+                }
+
+                parentNode = nodeMap[currentPath];
+            }
+        }
+
+        // Add styling
+        sb.AppendLine();
+        sb.AppendLine("    classDef authPage fill:#ff6b6b,stroke:#333,stroke-width:2px");
+        sb.AppendLine("    classDef paramRoute fill:#ffd93d,stroke:#333,stroke-width:2px");
+        
+        // Apply styles to auth nodes
+        var authNodes = allRoutes
+            .Where(r => r.RequiresAuth)
+            .Select(r => nodeMap.GetValueOrDefault("/" + r.Route.Trim('/').Split('/').Last()))
+            .Where(n => n != null)
+            .ToList();
+        
+        if (authNodes.Count > 0)
+        {
+            sb.AppendLine($"    class {string.Join(",", authNodes)} authPage");
+        }
+
+        sb.AppendLine("```");
+        sb.AppendLine();
+
+        // Route depth analysis
+        var routeDepths = allRoutes
+            .Select(r => new { Route = r, Depth = r.Route.Trim('/').Split('/', StringSplitOptions.RemoveEmptyEntries).Length })
+            .GroupBy(x => x.Depth)
+            .OrderBy(g => g.Key)
+            .ToList();
+
+        sb.AppendLine("### Route Depth Analysis");
+        sb.AppendLine();
+        sb.AppendLine("| Depth | Count | Routes |");
+        sb.AppendLine("|------:|------:|--------|");
+
+        foreach (var group in routeDepths)
+        {
+            var routeList = string.Join(", ", group.Take(3).Select(x => $"`{x.Route.Route}`"));
+            if (group.Count() > 3)
+            {
+                routeList += $" +{group.Count() - 3} more";
+            }
+            sb.AppendLine($"| {group.Key} | {group.Count()} | {routeList} |");
+        }
+        sb.AppendLine();
     }
 
     private static async Task GenerateScreenshotGalleryAsync(
