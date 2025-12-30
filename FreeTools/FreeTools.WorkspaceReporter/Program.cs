@@ -323,8 +323,9 @@ internal partial class Program
             for (int i = 0; i < topCsFiles.Count; i++)
             {
                 var f = topCsFiles[i];
-                var shortPath = ShortenPath(f.RelativePath, 50);
-                sb.AppendLine($"| {i + 1} | `{shortPath}` | {f.LineCount:N0} | {PathSanitizer.FormatBytes(f.SizeBytes)} |");
+                var linkPath = f.RelativePath.Replace('\\', '/');
+                var displayPath = ShortenPath(f.RelativePath, 50);
+                sb.AppendLine($"| {i + 1} | [{displayPath}](../../../../{linkPath}) | {f.LineCount:N0} | {PathSanitizer.FormatBytes(f.SizeBytes)} |");
             }
         }
         else
@@ -349,8 +350,9 @@ internal partial class Program
             for (int i = 0; i < topRazorFiles.Count; i++)
             {
                 var f = topRazorFiles[i];
-                var shortPath = ShortenPath(f.RelativePath, 50);
-                sb.AppendLine($"| {i + 1} | `{shortPath}` | {f.LineCount:N0} | {f.Kind} |");
+                var linkPath = f.RelativePath.Replace('\\', '/');
+                var displayPath = ShortenPath(f.RelativePath, 50);
+                sb.AppendLine($"| {i + 1} | [{displayPath}](../../../../{linkPath}) | {f.LineCount:N0} | {f.Kind} |");
             }
         }
         else
