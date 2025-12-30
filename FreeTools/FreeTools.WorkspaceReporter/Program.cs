@@ -238,6 +238,38 @@ internal partial class Program
         }
         sb.AppendLine();
 
+        // Add expandable file lists for each category
+        sb.AppendLine("### Files by Category");
+        sb.AppendLine();
+        
+        var filesByKind = files
+            .GroupBy(f => f.Kind ?? "Unknown")
+            .OrderByDescending(g => g.Count())
+            .ToList();
+
+        foreach (var group in filesByKind)
+        {
+            sb.AppendLine($"<details>");
+            sb.AppendLine($"<summary><strong>{group.Key}</strong> ({group.Count()} files)</summary>");
+            sb.AppendLine();
+            sb.AppendLine("| File | Lines | Size |");
+            sb.AppendLine("|------|------:|-----:|");
+            
+            foreach (var file in group.OrderBy(f => f.RelativePath))
+            {
+                // Create a relative link that works on GitHub (from report location to source file)
+                // The report is in Docs/runs/{Project}/{Branch}/latest/
+                // Source files are in the project root, so we need to go up and reference them
+                var linkPath = file.RelativePath.Replace('\\', '/');
+                var displayPath = ShortenPath(file.RelativePath, 60);
+                sb.AppendLine($"| [{displayPath}](../../../../{linkPath}) | {file.LineCount:N0} | {PathSanitizer.FormatBytes(file.SizeBytes)} |");
+            }
+            
+            sb.AppendLine();
+            sb.AppendLine("</details>");
+            sb.AppendLine();
+        }
+
         sb.AppendLine("## 📊 Code Distribution");
         sb.AppendLine();
         sb.AppendLine("### Lines of Code by Category");
