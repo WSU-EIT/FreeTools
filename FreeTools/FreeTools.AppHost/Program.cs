@@ -54,14 +54,14 @@ static class AppHostRunner
         var docsRoot = Path.Combine(toolsRoot, "Docs");
         var runsRoot = Path.Combine(docsRoot, "runs");
 
-        // Get current git branch name for folder naming
-        var branchName = GetGitBranch(toolsRoot) ?? "unknown";
-        var safeBranchName = SanitizeFolderName(branchName);
-
-        // Define target project root (BlazorApp1 is a sibling folder to FreeTools, not inside it)
-        // toolsRoot = .../FreeTools/FreeTools/  -> go up one level to find BlazorApp1
+        // Define repo root (BlazorApp1 is a sibling folder to FreeTools, not inside it)
+        // toolsRoot = .../FreeTools/FreeTools/  -> go up one level to find BlazorApp1 and .git
         var repoRoot = Path.GetDirectoryName(toolsRoot) ?? toolsRoot;
         var projectRoot = Path.GetFullPath(Path.Combine(repoRoot, target));
+
+        // Get current git branch name for folder naming (search from repoRoot where .git lives)
+        var branchName = GetGitBranch(repoRoot) ?? "unknown";
+        var safeBranchName = SanitizeFolderName(branchName);
 
         Console.WriteLine("============================================================");
         Console.WriteLine(" FreeTools.AppHost — Project Analysis");
