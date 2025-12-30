@@ -170,7 +170,7 @@ internal partial class Program
 
                 var item = new FileInventoryItem
                 {
-                    FilePath = absolutePath,
+                    FilePath = relativePath.Replace('\\', '/'),  // Use relative path, not absolute
                     RelativePath = relativePath.Replace('\\', '/'),
                     Extension = Path.GetExtension(absolutePath).ToLowerInvariant()
                 };

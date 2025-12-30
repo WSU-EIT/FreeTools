@@ -119,10 +119,13 @@ internal class Program
             if (requiresAuth) authRequiredCount++;
 
             var project = DetermineProject(file, root);
+            
+            // Use relative path instead of absolute path for privacy
+            var relativePath = Path.GetRelativePath(root, file).Replace('\\', '/');
 
             if (matches.Count == 0)
             {
-                var escapedFile = file.Replace("\"", "\\\"");
+                var escapedFile = relativePath.Replace("\"", "\\\"");
                 csvLines.Add($"\"{escapedFile}\",\"\",{requiresAuth.ToString().ToLower()},\"{project}\"");
                 filesWithoutRoutes++;
             }
@@ -131,7 +134,7 @@ internal class Program
                 foreach (Match m in matches)
                 {
                     var route = m.Groups["route"].Value.Replace(',', '?');
-                    var escapedFile = file.Replace("\"", "\\\"");
+                    var escapedFile = relativePath.Replace("\"", "\\\"");
                     csvLines.Add($"\"{escapedFile}\",\"{route}\",{requiresAuth.ToString().ToLower()},\"{project}\"");
                     routesFound++;
                 }
