@@ -1,104 +1,166 @@
-﻿# FreeTools.Docs — Centralized Tool Output Repository
+﻿# FreeTools Documentation
 
-> **Purpose:** Central location for all FreeTools pipeline outputs, organized by run timestamp.  
-> **Version:** 1.0  
-> **Last Updated:** 2025-12-19
-
----
-
-## Overview
-
-**FreeTools.Docs** is the output repository for the FreeTools pipeline. All tools write their outputs here, organized by timestamp.
+> **Purpose:** Documentation and output repository for the FreeTools analysis suite.  
+> **Version:** 2.0  
+> **Last Updated:** 2025-12-30
 
 ---
 
-## Directory Structure
+## What is FreeTools?
+
+FreeTools is a CLI toolset for analyzing and documenting Blazor web applications. It automatically:
+
+- 📄 Discovers all Blazor routes (`@page` directives)
+- 📊 Inventories your codebase (files, lines, types)
+- 🌐 Tests HTTP endpoints
+- 📸 Captures page screenshots
+- 📝 Generates comprehensive markdown reports
+
+---
+
+## Documentation Index
+
+| Document | Description |
+|----------|-------------|
+| [000_overview.md](000_overview.md) | Architecture, quick start, and usage guide |
+| [001_style_guide.md](001_style_guide.md) | Coding conventions and patterns |
+| [002_security.md](002_security.md) | Security considerations |
+| [003_shared_code.md](003_shared_code.md) | FreeTools.Core API reference |
+
+---
+
+## Output Structure
+
+All generated reports are saved to `Docs/runs/`, organized by project and git branch:
 
 ```
-FreeTools.Docs/
-├── latest/                    # Symlink/copy of most recent run
-│   ├── pages.csv              # Route inventory
-│   ├── workspace-inventory.csv
-│   ├── snapshots/             # Screenshots and HTML
-│   └── LatestReport.md        # Summary report
+Docs/
+├── runs/
+│   └── {ProjectName}/
+│       └── {BranchName}/
+│           └── latest/
+│               ├── {ProjectName}-Report.md    # Main report
+│               ├── pages.csv                   # Route inventory
+│               ├── workspace-inventory.csv     # File metrics
+│               ├── workspace-inventory-csharp.csv
+│               ├── workspace-inventory-razor.csv
+│               └── snapshots/
+│                   ├── Account/
+│                   │   ├── Login/
+│                   │   │   ├── default.html
+│                   │   │   └── default.png
+│                   │   └── Register/
+│                   │       └── ...
+│                   ├── counter/
+│                   │   └── default.png
+│                   └── weather/
+│                       └── default.png
 │
-├── runs/                      # Historical runs by timestamp
-│   ├── 2025-12-19_143052/     # Format: YYYY-MM-DD_HHMMSS
-│   │   ├── pages.csv
-│   │   ├── workspace-inventory.csv
-│   │   ├── snapshots/
-│   │   └── LatestReport.md
-│   │
-│   ├── 2025-12-19_150000/
-│   │   └── ...
-│   └── ...
-│
-└── README.md
+├── 000_overview.md
+├── 001_style_guide.md
+├── 002_security.md
+├── 003_shared_code.md
+└── README.md                                   # This file
 ```
 
 ---
 
-## Output Files
+## Quick Start
 
-| File | Source Tool | Description |
-|------|-------------|-------------|
-| `pages.csv` | EndpointMapper | All Blazor routes with auth requirements |
-| `workspace-inventory.csv` | WorkspaceInventory | File inventory with metrics |
-| `snapshots/` | EndpointPoker + BrowserSnapshot | HTML and PNG for each route |
-| `LatestReport.md` | WorkspaceReporter | Aggregated markdown report |
+```bash
+# Run analysis on the sample project
+cd FreeTools/FreeTools
+dotnet run --project FreeTools.AppHost
+
+# Run against your own project
+dotnet run --project FreeTools.AppHost -- --target YourProjectName
+```
+
+See [000_overview.md](000_overview.md) for detailed setup instructions.
 
 ---
 
-## Usage
+## Generated Report Contents
 
-### From AppHost (Recommended)
+The `{Project}-Report.md` includes:
 
-The AppHost automatically creates timestamped run folders:
+| Section | Description |
+|---------|-------------|
+| **Workspace Overview** | Total files, lines, size, averages |
+| **File Statistics** | Breakdown by category with progress bars |
+| **Files by Category** | Expandable lists with source links |
+| **Code Distribution** | Visual charts of code by type |
+| **Largest Files** | Top 15 C# and Razor files |
+| **Large File Warnings** | Files exceeding LLM-friendly thresholds |
+| **Blazor Routes** | All routes with auth indicators |
+| **Route Map** | Mermaid diagram of route hierarchy |
+| **Screenshot Gallery** | Visual grid of page captures |
 
-```bash
-cd tools/FreeTools.AppHost
-dotnet run
+---
+
+## Sample Projects
+
+The repository includes `BlazorApp1` as a sample target project. This is a standard Blazor Web App with ASP.NET Core Identity, demonstrating:
+
+- Multiple route depths (`/`, `/Account/Login`, `/Account/Manage/Email`)
+- Protected pages (`[Authorize]` attribute)
+- Parameterized routes (`/Account/Manage/RenamePasskey/{Id}`)
+
+**To analyze your own project:**
+1. Place it as a sibling folder to `FreeTools/`
+2. Run with `--target YourProjectName`
+
+---
+
+## CSV File Formats
+
+### pages.csv
+```csv
+FilePath,Route,RequiresAuth,Project
+"Components/Pages/Home.razor","/",false,"Components"
+"Components/Pages/Counter.razor","/counter",false,"Components"
+"Components/Pages/Auth.razor","/auth",true,"Components"
 ```
 
-Outputs go to `FreeTools.Docs/runs/YYYY-MM-DD_HHMMSS/`
-
-### Manual Tool Runs
-
-Set `OUTPUT_ROOT` to direct outputs here:
-
-```bash
-$env:OUTPUT_ROOT = "path/to/FreeTools.Docs/runs/$(Get-Date -Format 'yyyy-MM-dd_HHmmss')"
-
-dotnet run --project FreeTools.EndpointMapper
-dotnet run --project FreeTools.EndpointPoker
-dotnet run --project FreeTools.BrowserSnapshot
-dotnet run --project FreeTools.WorkspaceReporter
+### workspace-inventory.csv
+```csv
+FilePath,RelativePath,Extension,SizeBytes,LineCount,CharCount,CreatedUtc,ModifiedUtc,ReadError,Kind,Namespaces,DeclaredTypes,Routes,RequiresAuth,AzureDevOpsUrl
+"Program.cs","Program.cs",".cs",2949,71,2949,...,"CSharpSource","BlazorApp1","Program","",
+"Components/Pages/Home.razor","Components/Pages/Home.razor",".razor",99,7,96,...,"RazorPage","","","/",false,
 ```
 
 ---
 
-## Retention
+## Retention & Cleanup
 
-Historical runs are kept indefinitely by default. To clean up old runs:
+By default, only the `latest/` folder is kept. To preserve history:
 
 ```bash
-# Keep only last 10 runs
-Get-ChildItem -Path runs -Directory | 
-    Sort-Object Name -Descending | 
-    Select-Object -Skip 10 | 
+# Keep last 5 backups
+dotnet run --project FreeTools.AppHost -- --keep-backups 5
+```
+
+To manually clean old runs:
+```powershell
+# PowerShell: Keep only last 10 runs
+Get-ChildItem -Path Docs/runs/*/*/  -Directory |
+    Where-Object { $_.Name -ne "latest" } |
+    Sort-Object CreationTime -Descending |
+    Select-Object -Skip 10 |
     Remove-Item -Recurse -Force
 ```
 
 ---
 
-## Git Ignore
-
-Add to `.gitignore` to exclude outputs from version control:
+## .gitignore Recommendations
 
 ```gitignore
-# FreeTools outputs
-tools/FreeTools.Docs/runs/
-tools/FreeTools.Docs/latest/
-```
+# Ignore generated outputs (contains screenshots that may be large)
+Docs/runs/
 
-Or keep them tracked for historical reference — your choice.
+# Or keep reports but ignore snapshots
+Docs/runs/**/snapshots/
+
+# Or ignore only raw data files
+Docs/runs/**/*.csv
+Docs/runs/**/*.html

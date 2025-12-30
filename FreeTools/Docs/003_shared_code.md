@@ -1,141 +1,256 @@
-# FreeTools Shared Code Analysis
+﻿# FreeTools.Core — Shared Utilities
+
+Documentation of the shared utility library used across all FreeTools CLI tools.
+
+---
 
 ## Overview
 
-This document identifies shared code patterns in FreeTools common across the FreeManager2 ecosystem. FreeTools is unique as it uses a different architecture than the CRM-based projects.
+`FreeTools.Core` is a lightweight utility library providing common functionality for CLI tools. It has **zero external dependencies** and is designed for simplicity and reusability.
 
-## Shared Pattern Summary
+| Metric | Value |
+|--------|-------|
+| Dependencies | None (pure .NET) |
+| Files | 4 |
+| Approximate Lines | ~200 |
 
-| Pattern | Location | Reuse Potential |
-|---------|----------|-----------------|
-| CliArgs | `FreeTools.Core/CliArgs.cs` | High |
-| ConsoleOutput | `FreeTools.Core/ConsoleOutput.cs` | High |
-| PathSanitizer | `FreeTools.Core/PathSanitizer.cs` | High |
-| RouteParser | `FreeTools.Core/RouteParser.cs` | Medium |
+---
 
-## Core Utilities
+## Utilities
 
-### 1. CliArgs - Command Line Argument Parsing
+### 1. CliArgs — Command Line Parsing
 
-**Purpose:** Unified CLI argument and environment variable handling.
+**Purpose:** Unified CLI argument and environment variable handling with priority fallback.
 
 ```csharp
 public static class CliArgs
 {
+    // Flag detection (removes from args list)
+    public static bool HasFlag(List<string> args, string flag);
+    public static bool HasFlag(List<string> args, params string[] flags);
+
+    // Option parsing (e.g., --output=path)
+    public static string? GetOption(List<string> args, string prefix);
+    public static string? GetOption(List<string> args, params string[] prefixes);
+
+    // Positional arguments
+    public static string? GetPositional(List<string> args, int index, string? defaultValue = null);
+    public static int GetPositionalInt(List<string> args, int index, int defaultValue);
+    public static string GetRequired(List<string> args, int index, string name);
+
+    // Environment + CLI combined (priority: env → arg → default)
     public static string GetEnvOrArg(string envVar, string[] args, int argIndex, string defaultValue);
     public static int GetEnvOrArgInt(string envVar, string[] args, int argIndex, int defaultValue);
-    public static bool HasFlag(List<string> args, string flag);
-    public static string? GetOption(List<string> args, string option);
-    public static string? GetPositional(List<string> args, int index, string? defaultValue = null);
+    public static bool GetEnvBool(string envVar);
 }
 ```
 
-**Priority Order:**
-1. Environment variables (highest)
-2. CLI arguments
-3. Defaults (lowest)
+**Usage Example:**
+```csharp
+var baseUrl = CliArgs.GetEnvOrArg("BASE_URL", args, 0, "https://localhost:5001");
+var maxThreads = CliArgs.GetEnvOrArgInt("MAX_THREADS", args, 1, 10);
+var verbose = CliArgs.GetEnvBool("VERBOSE");
 
-### 2. ConsoleOutput - Formatted Console Output
+var argsList = args.ToList();
+var cleanMode = CliArgs.HasFlag(argsList, "--clean", "-c");
+var outputPath = CliArgs.GetOption(argsList, "--output=", "-o=");
+```
 
-**Purpose:** Consistent, thread-safe console output formatting.
+---
+
+### 2. ConsoleOutput — Formatted Output
+
+**Purpose:** Consistent, thread-safe console output with banner/section formatting.
 
 ```csharp
 public static class ConsoleOutput
 {
-    public static void PrintBanner(string title);
+    // Banners and sections
+    public static void PrintBanner(string title, string? version = null);
     public static void PrintConfig(string label, string value);
-    public static void PrintDivider();
+    public static void PrintDivider(string? title = null);
+
+    // Thread-safe output
     public static void WriteLine(string message, bool isError = false);
 }
 ```
 
-**Features:**
-- Thread-safe with locking
-- Error output to stderr
-- Consistent formatting
+**Output Format:**
+```
+============================================================
+ EndpointPoker (FreeTools) v2.0
+============================================================
+  Base URL:    https://localhost:5001
+  Max threads: 10
+------------------------------------------------------------
+```
 
-### 3. PathSanitizer - File Path Safety
+**Usage Example:**
+```csharp
+ConsoleOutput.PrintBanner("WorkspaceInventory (FreeTools)", "2.0");
+ConsoleOutput.PrintConfig("Root directory", root);
+ConsoleOutput.PrintConfig("Output CSV", csvPath);
+ConsoleOutput.PrintDivider();
 
-**Purpose:** Convert routes and strings to safe file system paths.
+// During processing
+ConsoleOutput.WriteLine($"  [1/50] Processing file.cs");
+ConsoleOutput.WriteLine("  !! Error occurred", isError: true);  // Goes to stderr
+```
+
+---
+
+### 3. PathSanitizer — Path Utilities
+
+**Purpose:** Convert routes to safe file system paths and format byte sizes.
 
 ```csharp
 public static class PathSanitizer
 {
+    // Route to directory path
+    // "/Account/Login" → "Account\Login" (Windows) or "Account/Login" (Unix)
     public static string RouteToDirectoryPath(string route);
-    public static string SanitizeFileName(string fileName);
+
+    // Get full output path for a route
+    public static string GetOutputFilePath(string outputDir, string route, string filename);
+
+    // Ensure directory exists
+    public static void EnsureDirectoryExists(string filePath);
+
+    // Human-readable byte formatting
+    // 1536 → "1.5 KB", 1048576 → "1.0 MB"
+    public static string FormatBytes(long bytes);
 }
 ```
 
-### 4. RouteParser - Route CSV Parsing
+**Usage Example:**
+```csharp
+// Convert route to output path
+var route = "/Account/Manage/Email";
+var outputPath = PathSanitizer.GetOutputFilePath(snapshotsDir, route, "default.png");
+// Result: "snapshots/Account/Manage/Email/default.png"
 
-**Purpose:** Parse route definitions from CSV files.
+PathSanitizer.EnsureDirectoryExists(outputPath);
+
+// Format file size
+var size = PathSanitizer.FormatBytes(12345678);  // "11.8 MB"
+```
+
+---
+
+### 4. RouteParser — CSV Route Handling
+
+**Purpose:** Parse route definitions from CSV files with parameter detection.
 
 ```csharp
 public static class RouteParser
 {
-    public static async Task<(List<Route> routes, List<string> skipped)> ParseRoutesFromCsvFileAsync(string path);
+    // Check for route parameters like {id}
+    public static bool HasParameter(string route);
+
+    // Parse routes from CSV lines
+    public static (List<string> routes, List<string> skipped) ParseRoutesFromCsv(
+        string[] csvLines,
+        int routeColumnIndex = 1,
+        bool skipParameterizedRoutes = true);
+
+    // Parse routes from file
+    public static async Task<(List<string> routes, List<string> skipped)> ParseRoutesFromCsvFileAsync(
+        string csvPath,
+        int routeColumnIndex = 1,
+        bool skipParameterizedRoutes = true);
+
+    // Build full URL
+    public static string BuildUrl(string baseUrl, string route);
 }
 ```
 
-## Architecture Differences
+**Usage Example:**
+```csharp
+// Parse routes, skipping those with parameters
+var (routes, skipped) = await RouteParser.ParseRoutesFromCsvFileAsync("pages.csv");
 
-FreeTools uses a different architecture than CRM-based projects:
+// routes:  ["/", "/Account/Login", "/weather"]
+// skipped: ["/Account/Manage/RenamePasskey/{Id}"]
 
-| Aspect | FreeTools | CRM Projects |
-|--------|-----------|--------------|
-| Pattern | Static utilities | DI with interfaces |
-| State | Stateless | Stateful (DbContext) |
-| Dependencies | Minimal | Full .NET stack |
-| Entry Point | `Main` in each tool | `Program.cs` + DI |
-| Configuration | Env vars + CLI | appsettings.json |
-
-## Tool Structure
-
-```
-tools/
-├── FreeTools.Core/              # Shared utilities
-├── FreeTools.AppHost/           # Aspire orchestrator
-├── FreeTools.EndpointMapper/    # Route scanner
-├── FreeTools.EndpointPoker/     # HTTP tester
-├── FreeTools.BrowserSnapshot/   # Screenshot tool
-├── FreeTools.WorkspaceInventory/# File inventory
-├── FreeTools.WorkspaceReporter/ # Report generator
-└── FreeTools.Tests/             # Tests
+foreach (var route in routes)
+{
+    var url = RouteParser.BuildUrl("https://localhost:5001", route);
+    // https://localhost:5001/Account/Login
+}
 ```
 
-## Integration with CRM Projects
+---
 
-FreeTools can be used to:
-- Test CRM API endpoints (EndpointPoker)
-- Generate screenshots of CRM pages (BrowserSnapshot)
-- Inventory CRM codebase (WorkspaceInventory)
-- Scan Razor routes (EndpointMapper)
+## Design Principles
 
-## Consolidation Recommendations
+### 1. Zero Dependencies
+FreeTools.Core has no NuGet dependencies, making it:
+- Fast to compile
+- Easy to maintain
+- Suitable for inclusion in any project
 
-### For FreeTools
-1. FreeTools.Core is already consolidated
-2. Could add more shared utilities as needed
-3. Keep CLI-focused architecture
+### 2. Static Utilities
+All classes are static with no state:
+```csharp
+// Good: Stateless utility
+public static class PathSanitizer { }
 
-### For Other Projects
-1. CLI argument patterns from FreeTools could be adopted
-2. ConsoleOutput pattern useful for CLI-based utilities
-3. Path sanitization patterns are reusable
+// Avoided: Instance-based with state
+public class PathSanitizer { private string _root; }
+```
 
-## Potential Shared Library
+### 3. Thread Safety
+`ConsoleOutput` uses locking for thread-safe console access:
+```csharp
+private static readonly object _consoleLock = new();
 
-Consider extracting to `FreeManager.Cli.Core`:
-- Command line argument parsing
-- Console output formatting
-- Path sanitization
-- Route parsing
+public static void WriteLine(string message, bool isError = false)
+{
+    lock (_consoleLock)
+    {
+        if (isError)
+            Console.Error.WriteLine(message);
+        else
+            Console.WriteLine(message);
+    }
+}
+```
 
-## Code Metrics
+### 4. Priority-Based Configuration
+Configuration follows a consistent priority:
+1. **Environment variables** (highest) — for CI/CD and orchestration
+2. **CLI arguments** — for manual runs
+3. **Default values** (lowest) — sensible fallbacks
 
-| Metric | Value |
-|--------|-------|
-| Shared patterns used | 4 (CLI-specific) |
-| Lines in FreeTools.Core | ~300 |
-| Reuse in CRM projects | Low (different architecture) |
-| Consolidation priority | Low (already consolidated) |
+---
+
+## Adding to Your Project
+
+Reference FreeTools.Core in your tool's `.csproj`:
+
+```xml
+<ItemGroup>
+  <ProjectReference Include="..\FreeTools.Core\FreeTools.Core.csproj" />
+</ItemGroup>
+```
+
+Then use in your Program.cs:
+```csharp
+using FreeTools.Core;
+
+ConsoleOutput.PrintBanner("MyTool (FreeTools)");
+var root = CliArgs.GetEnvOrArg("ROOT", args, 0, ".");
+```
+
+---
+
+## Extension Ideas
+
+FreeTools.Core could be extended with:
+
+| Utility | Purpose |
+|---------|---------|
+| `JsonConfig` | Read/write JSON configuration files |
+| `GitHelper` | Git branch detection, commit info |
+| `ProgressBar` | Visual progress indicators |
+| `TableFormatter` | ASCII table output |

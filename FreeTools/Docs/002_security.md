@@ -1,105 +1,175 @@
-# FreeTools Security Review
+﻿# FreeTools Security Considerations
 
-## Overview
+Security overview and best practices for the FreeTools documentation suite.
 
-This document identifies security concerns and recommendations for the FreeTools project. FreeTools is a collection of CLI utilities for development and testing.
-
-## Risk Summary
-
-| Severity | Count | Status |
-|----------|-------|--------|
-| Critical | 0 | N/A |
-| High | 2 | Should be addressed |
-| Medium | 2 | Plan for remediation |
-| Low | 1 | Address when convenient |
+---
 
 ## Security Profile
 
-FreeTools has a lower security risk profile compared to other projects because:
-- CLI tools run locally
-- No web-facing endpoints
-- No persistent data storage
-- No authentication system
+FreeTools has a **low security risk profile** because:
 
-## High Issues
+| Factor | Status |
+|--------|--------|
+| Web-facing endpoints | ❌ None — CLI tools only |
+| Persistent data storage | ❌ None — generates files only |
+| Authentication system | ❌ None — no user accounts |
+| Network access | ⚠️ Local only — connects to localhost dev server |
+| File system access | ⚠️ Yes — reads source, writes reports |
 
-### 1. HTTP Client Configuration
+---
 
-**Location:** `FreeTools.EndpointPoker/Program.cs`
+## Risk Summary
 
-**Issue:** HTTP client may not validate SSL certificates properly in some configurations.
+| Severity | Issue | Status |
+|----------|-------|--------|
+| Medium | File path exposure in outputs | ✅ Fixed — uses relative paths |
+| Medium | SSL certificate handling | ⚠️ Review for production use |
+| Low | Verbose output may expose paths | ℹ️ Expected for dev tool |
+| Low | Screenshot content sensitivity | ℹ️ User responsibility |
 
-```csharp
-var httpClientHandler = new HttpClientHandler
-{
-    // SSL validation configuration
-};
+---
+
+## Addressed Issues
+
+### File Path Privacy ✅
+
+**Issue:** CSV outputs previously contained absolute file paths exposing system structure.
+
+**Example of problem:**
+```csv
+"C:\Users\username\source\repos\Project\file.cs","file.cs",...
 ```
 
-**Remediation:** Ensure SSL validation is always enabled except in explicit development scenarios.
-
-### 2. File Path Handling
-
-**Location:** `FreeTools.BrowserSnapshot/`, `FreeTools.WorkspaceInventory/`
-
-**Issue:** File paths from user input should be validated to prevent path traversal.
-
-**Remediation:**
-```csharp
-var sanitizedPath = PathSanitizer.Sanitize(userPath);
-if (!sanitizedPath.StartsWith(allowedBaseDir))
-{
-    throw new SecurityException("Path outside allowed directory");
-}
+**Solution:** All CSV outputs now use relative paths only:
+```csv
+"Components/Pages/Home.razor","Components/Pages/Home.razor",...
 ```
 
-## Medium Issues
+**Affected files:**
+- `workspace-inventory.csv`
+- `workspace-inventory-csharp.csv`
+- `workspace-inventory-razor.csv`
+- `pages.csv`
 
-### 3. Environment Variable Exposure
+---
 
-**Location:** Multiple tools
+## Current Considerations
 
-**Issue:** Environment variables may contain sensitive data that could be logged.
+### 1. SSL Certificate Validation
 
-**Remediation:** Mask sensitive environment variables in output.
+**Location:** `FreeTools.EndpointPoker/Program.cs`, `FreeTools.BrowserSnapshot/Program.cs`
 
-### 4. Process Execution
+**Behavior:** Tools connect to `https://localhost` which uses development certificates.
 
-**Location:** `FreeTools.AppHost/`
+**Recommendation:** 
+- Default configuration is appropriate for local development
+- For production/CI use, ensure proper certificate validation
 
-**Issue:** Aspire orchestration executes processes that should be validated.
+### 2. Screenshot Content
 
-**Remediation:** Validate all process paths before execution.
+**Location:** `FreeTools.BrowserSnapshot/` output
 
-## Low Issues
+**Consideration:** Screenshots may capture:
+- Page content visible to unauthenticated users
+- Error messages with stack traces
+- Development environment indicators
 
-### 5. Verbose Output
+**Recommendation:**
+- Review screenshots before sharing publicly
+- Consider adding authentication for sensitive pages
+- Use `.gitignore` for screenshot output directories
 
-**Issue:** Debug output may expose internal paths or configuration.
+### 3. Git Branch in Output Paths
 
-**Recommendation:** Add output filtering for production use.
+**Behavior:** Output is organized by git branch name:
+```
+Docs/runs/{Project}/{Branch}/latest/
+```
 
-## Tool-Specific Considerations
+**Consideration:** Branch names are exposed in output structure.
 
-### EndpointPoker
-- Tests HTTP endpoints
-- May encounter sensitive data in responses
-- Should not log response bodies by default
+**Recommendation:** Use sanitized branch names (already implemented):
+```csharp
+var safeBranchName = SanitizeFolderName(branchName);
+```
 
-### BrowserSnapshot
-- Uses Playwright for screenshots
-- Captures potentially sensitive page content
-- Implement screenshot retention policies
+---
+
+## Tool-Specific Notes
+
+### EndpointMapper
+- Scans `.razor` files for `@page` directives
+- Detects `[Authorize]` attributes
+- **Output:** Route inventory with auth requirements
+- **Privacy:** Uses relative paths only
 
 ### WorkspaceInventory
-- Scans file system
-- May encounter sensitive files
-- Respect .gitignore and security exclusions
+- Enumerates files matching patterns
+- Extracts C# namespaces and types via Roslyn
+- **Output:** File metrics CSV
+- **Privacy:** Uses relative paths only
+- **Excludes:** `bin/`, `obj/`, `.git/`, `node_modules/`
 
-## Security Recommendations
+### EndpointPoker
+- HTTP GET requests to discovered routes
+- Saves HTML responses
+- **Consideration:** Response content may contain sensitive data
+- **Recommendation:** Don't commit HTML snapshots for sensitive pages
 
-1. Validate all file paths
-2. Ensure SSL validation is enabled
-3. Mask sensitive data in output
-4. Add .ignore file support for scanning tools
-5. Implement output filtering options
+### BrowserSnapshot
+- Playwright browser automation
+- Captures full-page screenshots
+- **Consideration:** Captures visible page content
+- **Recommendation:** Review before sharing
+
+### WorkspaceReporter
+- Aggregates data from other tools
+- Generates markdown report
+- **Output:** Human-readable documentation
+- **Privacy:** Links use relative paths (e.g., `../../../../Components/Pages/Home.razor`)
+
+---
+
+## Recommended .gitignore
+
+```gitignore
+# FreeTools outputs (may contain sensitive screenshots)
+Docs/runs/
+
+# Or selectively ignore snapshots only
+Docs/runs/**/snapshots/
+
+# Keep reports but not raw data
+Docs/runs/**/*.csv
+Docs/runs/**/*.html
+```
+
+---
+
+## CI/CD Considerations
+
+When running FreeTools in CI pipelines:
+
+1. **Secrets:** No secrets required — tools use localhost
+2. **Artifacts:** Consider which outputs to publish
+3. **Screenshots:** May fail without display (use headless mode)
+4. **Certificates:** Development certs may need trust configuration
+
+### Headless Browser Configuration
+```csharp
+var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
+{
+    Headless = true  // Required for CI
+});
+```
+
+---
+
+## Reporting Security Issues
+
+If you discover a security issue in FreeTools:
+
+1. **Do not** open a public GitHub issue
+2. Contact the maintainers directly
+3. Provide details and reproduction steps
+4. Allow time for a fix before disclosure
