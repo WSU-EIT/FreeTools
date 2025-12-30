@@ -141,6 +141,7 @@ static class AppHostRunner
             .WithEnvironment("WORKSPACE_CSV", projectConfig.InventoryCsv)
             .WithEnvironment("PAGES_CSV", projectConfig.PagesCsv)
             .WithEnvironment("SNAPSHOTS_DIR", projectConfig.SnapshotsDir)
+            .WithEnvironment("TARGET_PROJECT", target)
             .WithEnvironment("START_DELAY_MS", ToolStartupDelayMs.ToString())
             .WaitForCompletion(inventory)
             .WaitForCompletion(endpointMapper)

@@ -49,12 +49,20 @@ internal partial class Program
             ?? Path.Combine(webProjectRoot, "pages.csv");
         var snapshotsDir = Environment.GetEnvironmentVariable("SNAPSHOTS_DIR")
             ?? Path.Combine(webProjectRoot, "page-snapshots");
+        
+        // Get target project name for building correct GitHub links
+        // Report is at: Docs/runs/{Project}/{Branch}/latest/Report.md
+        // Target files are at: ../{Project}/...
+        // So relative path from report to target is: ../../../../../../{Project}/
+        var targetProject = Environment.GetEnvironmentVariable("TARGET_PROJECT")
+            ?? Path.GetFileName(repoRoot);
 
         ConsoleOutput.PrintConfig("Repo Root", repoRoot);
         ConsoleOutput.PrintConfig("Output Path", outputPath);
         ConsoleOutput.PrintConfig("Workspace CSV", workspaceCsv);
         ConsoleOutput.PrintConfig("Pages CSV", pagesCsv);
         ConsoleOutput.PrintConfig("Snapshots Dir", snapshotsDir);
+        ConsoleOutput.PrintConfig("Target Project", targetProject);
         ConsoleOutput.PrintDivider();
         Console.WriteLine();
 
@@ -114,7 +122,7 @@ internal partial class Program
         sb.AppendLine();
 
         Console.WriteLine("Processing workspace inventory...");
-        var workspaceStats = await ProcessWorkspaceInventoryAsync(workspaceCsv, workspaceCsharpCsv, workspaceRazorCsv, sb);
+        var workspaceStats = await ProcessWorkspaceInventoryAsync(workspaceCsv, workspaceCsharpCsv, workspaceRazorCsv, sb, targetProject);
 
         Console.WriteLine("Processing pages CSV...");
         await ProcessPagesCsvAsync(pagesCsv, sb);
@@ -163,7 +171,7 @@ internal partial class Program
     }
 
     private static async Task<WorkspaceStats> ProcessWorkspaceInventoryAsync(
-        string workspaceCsv, string csharpCsv, string razorCsv, StringBuilder sb)
+        string workspaceCsv, string csharpCsv, string razorCsv, StringBuilder sb, string targetProject)
     {
         var stats = new WorkspaceStats();
 
@@ -274,11 +282,12 @@ internal partial class Program
             foreach (var file in group.OrderBy(f => f.RelativePath))
             {
                 // Create a relative link that works on GitHub (from report location to source file)
-                // The report is in Docs/runs/{Project}/{Branch}/latest/
-                // Source files are in the project root, so we need to go up and reference them
+                // Report is at: Docs/runs/{Project}/{Branch}/latest/Report.md
+                // Target is at: {targetProject}/...
+                // Relative: ../../../../../../{targetProject}/...
                 var linkPath = file.RelativePath.Replace('\\', '/');
                 var displayPath = ShortenPath(file.RelativePath, 60);
-                sb.AppendLine($"| [{displayPath}](../../../../{linkPath}) | {file.LineCount:N0} | {PathSanitizer.FormatBytes(file.SizeBytes)} |");
+                sb.AppendLine($"| [{displayPath}](../../../../../../{targetProject}/{linkPath}) | {file.LineCount:N0} | {PathSanitizer.FormatBytes(file.SizeBytes)} |");
             }
             
             sb.AppendLine();
@@ -341,7 +350,7 @@ internal partial class Program
                 var f = topCsFiles[i];
                 var linkPath = f.RelativePath.Replace('\\', '/');
                 var displayPath = ShortenPath(f.RelativePath, 50);
-                sb.AppendLine($"| {i + 1} | [{displayPath}](../../../../{linkPath}) | {f.LineCount:N0} | {PathSanitizer.FormatBytes(f.SizeBytes)} |");
+                sb.AppendLine($"| {i + 1} | [{displayPath}](../../../../../../{targetProject}/{linkPath}) | {f.LineCount:N0} | {PathSanitizer.FormatBytes(f.SizeBytes)} |");
             }
         }
         else
@@ -368,7 +377,7 @@ internal partial class Program
                 var f = topRazorFiles[i];
                 var linkPath = f.RelativePath.Replace('\\', '/');
                 var displayPath = ShortenPath(f.RelativePath, 50);
-                sb.AppendLine($"| {i + 1} | [{displayPath}](../../../../{linkPath}) | {f.LineCount:N0} | {f.Kind} |");
+                sb.AppendLine($"| {i + 1} | [{displayPath}](../../../../../../{targetProject}/{linkPath}) | {f.LineCount:N0} | {f.Kind} |");
             }
         }
         else
@@ -415,7 +424,7 @@ internal partial class Program
                     > 600 => ("🟠", "Warning"),
                     _ => ("🟡", "Notice")
                 };
-                sb.AppendLine($"| [{displayPath}](../../../../{linkPath}) | {f.LineCount:N0} | {f.Kind} | {icon} {severity} | {recommendation} |");
+                sb.AppendLine($"| [{displayPath}](../../../../../../{targetProject}/{linkPath}) | {f.LineCount:N0} | {f.Kind} | {icon} {severity} | {recommendation} |");
             }
             sb.AppendLine();
 
