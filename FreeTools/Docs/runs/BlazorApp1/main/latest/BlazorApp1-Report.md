@@ -1,6 +1,6 @@
 ﻿# 📊 FreeTools Workspace Report
 
-> **Generated:** 2025-12-29 15:42:29  
+> **Generated:** 2025-12-29 16:09:31  
 > **Repository:** BlazorApp1  
 > **Scope:** Blazor pages only — API endpoints not included  
 
@@ -214,7 +214,325 @@ These routes contain parameters (e.g., `{Id}`) and cannot be tested without vali
 
 ## 📸 Screenshot Gallery
 
-> No screenshots found. Run PageScreenshoter first.
+**36 page screenshots captured**
+
+Click on a screenshot to view full size.
+
+<details open>
+<summary><strong>📁 Account</strong> (30 pages)</summary>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/AccessDenied/default.png">
+<img src="snapshots/Account/AccessDenied/default.png" width="250" alt="/Account/AccessDenied" />
+</a>
+<br /><code>/Account/AccessDenied</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/ConfirmEmail/default.png">
+<img src="snapshots/Account/ConfirmEmail/default.png" width="250" alt="/Account/ConfirmEmail" />
+</a>
+<br /><code>/Account/ConfirmEmail</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/ConfirmEmailChange/default.png">
+<img src="snapshots/Account/ConfirmEmailChange/default.png" width="250" alt="/Account/ConfirmEmailChange" />
+</a>
+<br /><code>...unt/ConfirmEmailChange</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/ExternalLogin/default.png">
+<img src="snapshots/Account/ExternalLogin/default.png" width="250" alt="/Account/ExternalLogin" />
+</a>
+<br /><code>/Account/ExternalLogin</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/ForgotPassword/default.png">
+<img src="snapshots/Account/ForgotPassword/default.png" width="250" alt="/Account/ForgotPassword" />
+</a>
+<br /><code>/Account/ForgotPassword</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/ForgotPasswordConfirmation/default.png">
+<img src="snapshots/Account/ForgotPasswordConfirmation/default.png" width="250" alt="/Account/ForgotPasswordConfirmation" />
+</a>
+<br /><code>...otPasswordConfirmation</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/InvalidPasswordReset/default.png">
+<img src="snapshots/Account/InvalidPasswordReset/default.png" width="250" alt="/Account/InvalidPasswordReset" />
+</a>
+<br /><code>...t/InvalidPasswordReset</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/InvalidUser/default.png">
+<img src="snapshots/Account/InvalidUser/default.png" width="250" alt="/Account/InvalidUser" />
+</a>
+<br /><code>/Account/InvalidUser</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Lockout/default.png">
+<img src="snapshots/Account/Lockout/default.png" width="250" alt="/Account/Lockout" />
+</a>
+<br /><code>/Account/Lockout</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/Login/default.png">
+<img src="snapshots/Account/Login/default.png" width="250" alt="/Account/Login" />
+</a>
+<br /><code>/Account/Login</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/LoginWith2fa/default.png">
+<img src="snapshots/Account/LoginWith2fa/default.png" width="250" alt="/Account/LoginWith2fa" />
+</a>
+<br /><code>/Account/LoginWith2fa</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/LoginWithRecoveryCode/default.png">
+<img src="snapshots/Account/LoginWithRecoveryCode/default.png" width="250" alt="/Account/LoginWithRecoveryCode" />
+</a>
+<br /><code>.../LoginWithRecoveryCode</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/ChangePassword/default.png">
+<img src="snapshots/Account/Manage/ChangePassword/default.png" width="250" alt="/Account/Manage/ChangePassword" />
+</a>
+<br /><code>.../ChangePassword</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/default.png">
+<img src="snapshots/Account/Manage/default.png" width="250" alt="/Account/Manage" />
+</a>
+<br /><code>/Account/Manage</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/DeletePersonalData/default.png">
+<img src="snapshots/Account/Manage/DeletePersonalData/default.png" width="250" alt="/Account/Manage/DeletePersonalData" />
+</a>
+<br /><code>.../DeletePersonalData</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/Disable2fa/default.png">
+<img src="snapshots/Account/Manage/Disable2fa/default.png" width="250" alt="/Account/Manage/Disable2fa" />
+</a>
+<br /><code>/Account/.../Disable2fa</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/Email/default.png">
+<img src="snapshots/Account/Manage/Email/default.png" width="250" alt="/Account/Manage/Email" />
+</a>
+<br /><code>/Account/Manage/Email</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/EnableAuthenticator/default.png">
+<img src="snapshots/Account/Manage/EnableAuthenticator/default.png" width="250" alt="/Account/Manage/EnableAuthenticator" />
+</a>
+<br /><code>.../EnableAuthenticator</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/ExternalLogins/default.png">
+<img src="snapshots/Account/Manage/ExternalLogins/default.png" width="250" alt="/Account/Manage/ExternalLogins" />
+</a>
+<br /><code>.../ExternalLogins</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/GenerateRecoveryCodes/default.png">
+<img src="snapshots/Account/Manage/GenerateRecoveryCodes/default.png" width="250" alt="/Account/Manage/GenerateRecoveryCodes" />
+</a>
+<br /><code>.../GenerateRecoveryCodes</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/Passkeys/default.png">
+<img src="snapshots/Account/Manage/Passkeys/default.png" width="250" alt="/Account/Manage/Passkeys" />
+</a>
+<br /><code>/Account/Manage/Passkeys</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/PersonalData/default.png">
+<img src="snapshots/Account/Manage/PersonalData/default.png" width="250" alt="/Account/Manage/PersonalData" />
+</a>
+<br /><code>/Account/.../PersonalData</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/ResetAuthenticator/default.png">
+<img src="snapshots/Account/Manage/ResetAuthenticator/default.png" width="250" alt="/Account/Manage/ResetAuthenticator" />
+</a>
+<br /><code>.../ResetAuthenticator</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/SetPassword/default.png">
+<img src="snapshots/Account/Manage/SetPassword/default.png" width="250" alt="/Account/Manage/SetPassword" />
+</a>
+<br /><code>/Account/.../SetPassword</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/TwoFactorAuthentication/default.png">
+<img src="snapshots/Account/Manage/TwoFactorAuthentication/default.png" width="250" alt="/Account/Manage/TwoFactorAuthentication" />
+</a>
+<br /><code>.../TwoFactorAuthentication</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Register/default.png">
+<img src="snapshots/Account/Register/default.png" width="250" alt="/Account/Register" />
+</a>
+<br /><code>/Account/Register</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/RegisterConfirmation/default.png">
+<img src="snapshots/Account/RegisterConfirmation/default.png" width="250" alt="/Account/RegisterConfirmation" />
+</a>
+<br /><code>...t/RegisterConfirmation</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/ResendEmailConfirmation/default.png">
+<img src="snapshots/Account/ResendEmailConfirmation/default.png" width="250" alt="/Account/ResendEmailConfirmation" />
+</a>
+<br /><code>...esendEmailConfirmation</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/ResetPassword/default.png">
+<img src="snapshots/Account/ResetPassword/default.png" width="250" alt="/Account/ResetPassword" />
+</a>
+<br /><code>/Account/ResetPassword</code>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/ResetPasswordConfirmation/default.png">
+<img src="snapshots/Account/ResetPasswordConfirmation/default.png" width="250" alt="/Account/ResetPasswordConfirmation" />
+</a>
+<br /><code>...etPasswordConfirmation</code>
+</td>
+</tr>
+</table>
+
+</details>
+
+<details open>
+<summary><strong>📁 auth</strong> (1 pages)</summary>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/auth/default.png">
+<img src="snapshots/auth/default.png" width="250" alt="/auth" />
+</a>
+<br /><code>/auth</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+</details>
+
+<details open>
+<summary><strong>📁 counter</strong> (1 pages)</summary>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/counter/default.png">
+<img src="snapshots/counter/default.png" width="250" alt="/counter" />
+</a>
+<br /><code>/counter</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+</details>
+
+<details open>
+<summary><strong>📁 Error</strong> (1 pages)</summary>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Error/default.png">
+<img src="snapshots/Error/default.png" width="250" alt="/Error" />
+</a>
+<br /><code>/Error</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+</details>
+
+<details open>
+<summary><strong>📁 not-found</strong> (1 pages)</summary>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/not-found/default.png">
+<img src="snapshots/not-found/default.png" width="250" alt="/not-found" />
+</a>
+<br /><code>/not-found</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+</details>
+
+<details open>
+<summary><strong>📁 Home</strong> (1 pages)</summary>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/root/default.png">
+<img src="snapshots/root/default.png" width="250" alt="/" />
+</a>
+<br /><code>/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+</details>
+
+<details open>
+<summary><strong>📁 weather</strong> (1 pages)</summary>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/weather/default.png">
+<img src="snapshots/weather/default.png" width="250" alt="/weather" />
+</a>
+<br /><code>/weather</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+</details>
 
 ---
 

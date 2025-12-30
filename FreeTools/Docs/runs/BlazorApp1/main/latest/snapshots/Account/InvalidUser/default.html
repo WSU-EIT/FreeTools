@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css" />
+    <link rel="stylesheet" href="app.khy4lop6wu.css" />
+    <link rel="stylesheet" href="BlazorApp1.km0leyii9q.styles.css" />
+    <script type="importmap">{
+  "imports": {
+    "./Components/Account/Shared/PasskeySubmit.razor.js": "./Components/Account/Shared/PasskeySubmit.pr21mg9rrw.razor.js",
+    "./Components/Layout/ReconnectModal.razor.js": "./Components/Layout/ReconnectModal.13ja33weya.razor.js",
+    "./_framework/blazor.server.js": "./_framework/blazor.server.2lgipwaf5j.js",
+    "./_framework/blazor.web.js": "./_framework/blazor.web.wmp8iwak4q.js",
+    "./lib/bootstrap/dist/js/bootstrap.bundle.js": "./lib/bootstrap/dist/js/bootstrap.bundle.6cfz1n2cew.js",
+    "./lib/bootstrap/dist/js/bootstrap.bundle.min.js": "./lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js",
+    "./lib/bootstrap/dist/js/bootstrap.esm.min.js": "./lib/bootstrap/dist/js/bootstrap.esm.min.jj8uyg4cgr.js",
+    "./lib/bootstrap/dist/js/bootstrap.esm.js": "./lib/bootstrap/dist/js/bootstrap.esm.vr1egmr9el.js",
+    "./lib/bootstrap/dist/js/bootstrap.min.js": "./lib/bootstrap/dist/js/bootstrap.min.63fj8s7r0e.js",
+    "./lib/bootstrap/dist/js/bootstrap.js": "./lib/bootstrap/dist/js/bootstrap.notf2xhcfb.js"
+  }
+}</script>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Invalid user</title></head>
+
+<body><div class="page" b-j65y7q72mt><div class="sidebar" b-j65y7q72mt><div class="top-row ps-3 navbar navbar-dark" b-5bndfk4shp><div class="container-fluid" b-5bndfk4shp><a class="navbar-brand" href b-5bndfk4shp>BlazorApp1</a></div></div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" b-5bndfk4shp>
+
+<div class="nav-scrollable" onclick="document.querySelector(&#x27;.navbar-toggler&#x27;).click()" b-5bndfk4shp><nav class="nav flex-column" b-5bndfk4shp><div class="nav-item px-3" b-5bndfk4shp><a href="" class="nav-link"><span class="bi bi-house-door-fill-nav-menu" aria-hidden="true" b-5bndfk4shp></span> Home
+            </a></div>
+
+        <div class="nav-item px-3" b-5bndfk4shp><a href="counter" class="nav-link"><span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true" b-5bndfk4shp></span> Counter
+            </a></div>
+
+        <div class="nav-item px-3" b-5bndfk4shp><a href="weather" class="nav-link"><span class="bi bi-list-nested-nav-menu" aria-hidden="true" b-5bndfk4shp></span> Weather
+            </a></div>
+
+        <div class="nav-item px-3" b-5bndfk4shp><a href="auth" class="nav-link"><span class="bi bi-lock-nav-menu" aria-hidden="true" b-5bndfk4shp></span> Auth Required
+            </a></div>
+
+        <div class="nav-item px-3" b-5bndfk4shp><a href="Account/Register" class="nav-link"><span class="bi bi-person-nav-menu" aria-hidden="true" b-5bndfk4shp></span> Register
+                    </a></div>
+                <div class="nav-item px-3" b-5bndfk4shp><a href="Account/Login" class="nav-link"><span class="bi bi-person-badge-nav-menu" aria-hidden="true" b-5bndfk4shp></span> Login
+                    </a></div></nav></div></div>
+
+    <main b-j65y7q72mt><div class="top-row px-4" b-j65y7q72mt><a href="https://learn.microsoft.com/aspnet/core/" target="_blank" b-j65y7q72mt>About</a></div>
+
+        <article class="content px-4" b-j65y7q72mt>
+
+<h3>Invalid user</h3>
+
+</article></main></div>
+
+<div id="blazor-error-ui" data-nosnippet b-j65y7q72mt>
+    An unhandled error has occurred.
+    <a href="." class="reload" b-j65y7q72mt>Reload</a>
+    <span class="dismiss" b-j65y7q72mt>🗙</span></div>
+        <blazor-focus-on-navigate selector="h1"></blazor-focus-on-navigate>
+    <script type="module" src="Components/Layout/ReconnectModal.13ja33weya.razor.js" b-rp7b9a9cad></script>
+
+<dialog id="components-reconnect-modal" data-nosnippet b-rp7b9a9cad><div class="components-reconnect-container" b-rp7b9a9cad><div class="components-rejoining-animation" aria-hidden="true" b-rp7b9a9cad><div b-rp7b9a9cad></div>
+            <div b-rp7b9a9cad></div></div>
+        <p class="components-reconnect-first-attempt-visible" b-rp7b9a9cad>
+            Rejoining the server...
+        </p>
+        <p class="components-reconnect-repeated-attempt-visible" b-rp7b9a9cad>
+            Rejoin failed... trying again in <span id="components-seconds-to-next-attempt" b-rp7b9a9cad></span> seconds.
+        </p>
+        <p class="components-reconnect-failed-visible" b-rp7b9a9cad>
+            Failed to rejoin.<br b-rp7b9a9cad>Please retry or reload the page.
+        </p>
+        <button id="components-reconnect-button" class="components-reconnect-failed-visible" b-rp7b9a9cad>
+            Retry
+        </button>
+        <p class="components-pause-visible" b-rp7b9a9cad>
+            The session has been paused by the server.
+        </p>
+        <button id="components-resume-button" class="components-pause-visible" b-rp7b9a9cad>
+            Resume
+        </button>
+        <p class="components-resume-failed-visible" b-rp7b9a9cad>
+            Failed to resume the session.<br b-rp7b9a9cad>Please reload the page.
+        </p></div></dialog>
+    <script src="_framework/blazor.web.wmp8iwak4q.js"></script>
+    <script src="Components/Account/Shared/PasskeySubmit.pr21mg9rrw.razor.js" type="module"></script></body></html><!--Blazor-Server-Component-State:CfDJ8PJapQCYp/BLh0XelZDauoyRfGKJBh9e/FaNe3hX2l1QMiVOSnFPmw7VDorKMj3BSecfNznt1Abd/JcZfz9k1IERzgkkYsZFP9LcciVzT/shQc0dI6e9WJmqdvZ8V1Nk00YqrLiGLJ4OVE4g+0YTUUcemyD2UVXbCWWVjDdgYLdkcpuvi06fxlpvF/Qje6M4aY6NAhOXgl/S/bws8yBRxRaW0vKe2iKCnIrsPQ6HPWx6JiU8thST/KTthBVLpH+HssZGzbZeMjz2WUHsKEjMc1jZ29wsMjfJx7fxqrMDzE8jDpJbPK63e0JY1YPYJ1asdGOMFoJu2dbwj/05jgQxC5JjPO2wYhKX72rbIsG5Jkvcc3YRcXOZ4bVaq3ENX5y3BjwvUnE4xSiNkVhCbtRiv/7l1R1BB3LDOD0yHp6vyoJAiPjNwIga6ZoWxyw+3foDuaVJh8iNK0g71xxRgeoT67A4hZTj5qMWmiaZ/U6PINuNrzB75hR3y8qUUYRhJEYITcQtl1LtwJUQJPcUihVzYV+8a1qxpmsjdLNn9Er9Wrq8XKHAVyyFk3Zo35EizYsn8OVKCgN/iwzjVAxKEy98MuZY4Pqk610UaTGVE9t08qq+db2htlZZEpFMjndg1LKelZG/SxL+vNPjAxirBLu4dAXd7aNBhzotSUIz92QJQUSF/nCnjYL04ivlbn4O5je+sMZ2eWL/aN06elOI//8Bgq5mgptzLKHPBTYm9ycTOrrHnlNfNcV2FMgLczIWnmDyUJNBuSwUsEr5iKzrqno0+3+He6zDwGAaP8Giy3BaJQDu73phEX1t636P7dZiOIelg4Vx9EKMIoYhTLozGCLQlGrawhQIA/K/pwjTGI4fIaPVedpx/38vGZBa2HNri312/Nu4wnS9v630iTzRdCHaorjB85XhduSayz2y5wU3Z4eQZZvCA+SFYH2iKEkslITSRjwQ4tGuzKjqr8r+ygSBtZbZvDm1AUdqVUPMW5+B5h7rJQNfwzZ5zNdld3xtQ4z8uzQVNW6gEQiE3Jvt36Dd796g1n74HGiTnSzv64oc3g1d0iVEgP1YmkXp+tuAYolxaBO4hMpGPkGMcgDEkwgOwi6Bjxw2aAnBJZHFLpJzv3VpGO0AGFIYoo854BIE2I1gkg==-->
