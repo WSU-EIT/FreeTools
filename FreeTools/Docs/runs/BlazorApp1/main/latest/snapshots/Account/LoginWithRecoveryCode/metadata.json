@@ -2,19 +2,21 @@
   "Route": "/Account/LoginWithRecoveryCode",
   "Url": "https://localhost:7161/Account/LoginWithRecoveryCode",
   "StatusCode": 500,
-  "FileSize": 131945,
+  "FileSize": 117029,
   "IsSuspiciouslySmall": false,
   "RetryAttempted": false,
   "ConsoleErrors": [
-    "Failed to load resource: the server responded with a status of 500 ()",
-    "Access to XMLHttpRequest at \u0027http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets\u0026clientProtocol=2.1\u0026requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccount%2FLoginWithRecoveryCode\u0026browserName=\u0026userAgent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F141.0.7390.37%20Safari%2F537.36\u0026browserIdKey=window.browserLink.initializationData.browserId\u0026browserId=ea96-cd89\u0026connectionToken=AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAABDp90XHsUkqffVEv%2Bu76MAAAAAACAAAAAAAQZgAAAAEAACAAAADYIMQe7tqDV1CDWGBxNfOsxNaBd9u4XD9VO52EKuHOkAAAAAAOgAAAAAIAACAAAABURmNeAcZ99%2BSmok3cTcPmYlLvGWK3SXCtHbKXHsiq0jAAAADtW5SydLR%2B0le9M0N5wl7bPkqwZiCFm%2F5jr1iUX11P%2FSKzOhQ%2BcssKBpJ3LpeJ0CRAAAAAFdmXxXOHvk7mfWmDr34gN2mSNEFkeb%2Fa4Lno9STY%2FvRoOyFm0QfTr0xI5nkx3Wzad6GPhw3zwEKAFzJOrcSfdw%3D%3D\u0026_=1767120679294\u0027 from origin \u0027https://localhost:7161\u0027 has been blocked by CORS policy: No \u0027Access-Control-Allow-Origin\u0027 header is present on the requested resource.",
-    "Failed to load resource: net::ERR_FAILED",
-    "Access to XMLHttpRequest at \u0027http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets\u0026clientProtocol=2.1\u0026requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccount%2FLoginWithRecoveryCode\u0026browserName=\u0026userAgent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F141.0.7390.37%20Safari%2F537.36\u0026browserIdKey=window.browserLink.initializationData.browserId\u0026browserId=68cc-3267\u0026connectionToken=AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAABDp90XHsUkqffVEv%2Bu76MAAAAAACAAAAAAAQZgAAAAEAACAAAABd4XVYluZm%2BH1sLPAvEtwSVW0D3icClDoBMrYqm5mLCgAAAAAOgAAAAAIAACAAAADVN3zl7%2BWZ2SVjA8oVuN2yabzT6OHvZgn%2BnR%2BNlbmmvDAAAAA8ZOoXKnyr0zamMNAy3poG201BEhnX9xYzYDVclhGEyEOe7NTIsX3JHazIu3%2FK%2BpNAAAAANCiKv4zbnvI%2BTuSUJoa0iHFnXeX3GNP9617ddhWxpJAR51UbZPGKDIEc1SifZR9z0gqck7%2BGEL2ExfjWEdwdOA%3D%3D\u0026_=1767120679296\u0027 from origin \u0027https://localhost:7161\u0027 has been blocked by CORS policy: No \u0027Access-Control-Allow-Origin\u0027 header is present on the requested resource.",
-    "Failed to load resource: net::ERR_FAILED"
+    "Failed to load resource: the server responded with a status of 500 ()"
   ],
-  "CapturedAt": "2025-12-30T18:51:18.6619286Z",
+  "CapturedAt": "2025-12-31T17:51:25.3634003Z",
   "IsSuccess": false,
   "IsHttpError": true,
   "IsError": false,
-  "ErrorMessage": null
+  "ErrorMessage": null,
+  "RequiresAuth": false,
+  "AuthFlowCompleted": false,
+  "AuthStep1Path": null,
+  "AuthStep2Path": null,
+  "AuthStep3Path": null,
+  "AuthFlowNote": null
 }

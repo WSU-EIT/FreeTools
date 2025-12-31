@@ -781,10 +781,18 @@ internal partial class Program
         var httpErrorCount = entries.Count(e => e.IsHttpError);
         var errorCount = entries.Count(e => e.IsError);
         var jsErrorCount = entries.Count(e => e.ConsoleErrors?.Count > 0);
+        
+        // Auth flow statistics
+        var authRequiredCount = entries.Count(e => e.RequiresAuth);
+        var authFlowCompletedCount = entries.Count(e => e.AuthFlowCompleted);
+        var publicCount = entries.Count - authRequiredCount;
 
         sb.AppendLine("| Status | Count | Description |");
         sb.AppendLine("|--------|------:|-------------|");
         sb.AppendLine($"| ✅ Success | {successCount} | Screenshots > 10KB |");
+        sb.AppendLine($"| 🔓 Public | {publicCount} | Single screenshot pages |");
+        sb.AppendLine($"| 🔐 Auth Required | {authRequiredCount} | Pages requiring login |");
+        sb.AppendLine($"| ✅ Auth Flow OK | {authFlowCompletedCount} | Login flow completed |");
         sb.AppendLine($"| ⚠️ Suspicious | {suspiciousCount} | Screenshots < 10KB (possible blank) |");
         sb.AppendLine($"| 🔄 Retried | {retriedCount} | Required retry attempt |");
         sb.AppendLine($"| ❌ HTTP Error | {httpErrorCount} | 4xx/5xx responses |");
@@ -874,53 +882,67 @@ internal partial class Program
 
         if (!Directory.Exists(snapshotsDir))
         {
-            sb.AppendLine("> Screenshots directory not found. Run PageScreenshoter first.");
+            sb.AppendLine("> Screenshots directory not found. Run BrowserSnapshot first.");
             sb.AppendLine();
             return;
         }
 
-        var pngFiles = Directory.GetFiles(snapshotsDir, "*.png", SearchOption.AllDirectories)
+        // Load metadata files to understand auth flow
+        var metadataFiles = Directory.GetFiles(snapshotsDir, "metadata.json", SearchOption.AllDirectories)
             .OrderBy(f => f)
             .ToList();
 
-        if (pngFiles.Count == 0)
+        // Build a dictionary of route -> metadata
+        var routeMetadata = new Dictionary<string, ScreenshotHealthEntry>();
+        foreach (var metadataFile in metadataFiles)
         {
-            sb.AppendLine("> No screenshots found. Run PageScreenshoter first.");
-            sb.AppendLine();
-            return;
+            try
+            {
+                var json = await File.ReadAllTextAsync(metadataFile);
+                var metadata = System.Text.Json.JsonSerializer.Deserialize<ScreenshotHealthEntry>(json, 
+                    new System.Text.Json.JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                if (metadata != null && !string.IsNullOrEmpty(metadata.Route))
+                {
+                    routeMetadata[metadata.Route] = metadata;
+                }
+            }
+            catch { /* Skip invalid metadata */ }
         }
 
-        sb.AppendLine($"**{pngFiles.Count} page screenshots captured**");
+        // Group screenshots by route directory (not individual files)
+        var routeDirs = Directory.GetDirectories(snapshotsDir, "*", SearchOption.AllDirectories)
+            .Where(d => Directory.GetFiles(d, "*.png").Length > 0)
+            .Concat(new[] { snapshotsDir }) // Include root if it has PNGs
+            .Where(d => Directory.GetFiles(d, "*.png").Length > 0)
+            .Select(d =>
+            {
+                var relativePath = d == snapshotsDir ? "" : Path.GetRelativePath(snapshotsDir, d).Replace('\\', '/');
+                var route = string.IsNullOrEmpty(relativePath) ? "/" : "/" + relativePath;
+                var category = relativePath.Contains('/') ? relativePath.Split('/')[0] : 
+                              (string.IsNullOrEmpty(relativePath) ? "root" : relativePath);
+                
+                return new RouteScreenshots
+                {
+                    Route = route,
+                    Category = category,
+                    Directory = d,
+                    RelativeDir = string.IsNullOrEmpty(relativePath) ? "snapshots" : "snapshots/" + relativePath,
+                    Metadata = routeMetadata.GetValueOrDefault(route)
+                };
+            })
+            .GroupBy(r => r.Category)
+            .OrderBy(g => g.Key)
+            .ToList();
+
+        // Count totals
+        var totalRoutes = routeDirs.Sum(g => g.Count());
+        
+        sb.AppendLine($"**{totalRoutes} page screenshots captured**");
         sb.AppendLine();
         sb.AppendLine("Click on a screenshot to view full size.");
         sb.AppendLine();
 
-        var groupedScreenshots = pngFiles
-            .Select(f =>
-            {
-                var relativePath = Path.GetRelativePath(snapshotsDir, f).Replace('\\', '/');
-                var parts = relativePath.Split('/');
-                var category = parts.Length > 1 ? parts[0] : "root";
-                var route = "/" + string.Join("/", parts.Take(parts.Length - 1));
-                if (route == "/root") route = "/";
-
-                // Make path relative to the snapshots directory (where report will be saved alongside)
-                // The report file and snapshots folder are siblings, so use snapshots/ prefix
-                var imageRelativePath = "snapshots/" + relativePath;
-
-                return new
-                {
-                    Category = category,
-                    Route = route,
-                    FullPath = f,
-                    RelativePath = imageRelativePath
-                };
-            })
-            .GroupBy(x => x.Category)
-            .OrderBy(g => g.Key)
-            .ToList();
-
-        foreach (var group in groupedScreenshots)
+        foreach (var group in routeDirs)
         {
             var categoryName = group.Key == "root" ? "Home" : group.Key;
             
@@ -928,37 +950,59 @@ internal partial class Program
             sb.AppendLine($"<summary><strong>📁 {categoryName}</strong> ({group.Count()} pages)</summary>");
             sb.AppendLine();
             sb.AppendLine("<table>");
-            sb.AppendLine("<tr>");
-
-            var itemsInRow = 0;
-            foreach (var item in group)
+            
+            // Build rows of 3 screenshots each
+            var routes = group.OrderBy(r => r.Route).ToList();
+            for (int i = 0; i < routes.Count; i += 3)
             {
-                if (itemsInRow >= 3)
+                sb.AppendLine("<tr>");
+                
+                for (int j = 0; j < 3; j++)
                 {
-                    sb.AppendLine("</tr>");
-                    sb.AppendLine("<tr>");
-                    itemsInRow = 0;
+                    var idx = i + j;
+                    if (idx < routes.Count)
+                    {
+                        var routeScreenshot = routes[idx];
+                        var displayRoute = ShortenRoute(routeScreenshot.Route, 25);
+                        
+                        // Find the default.png or any PNG
+                        var defaultPng = Path.Combine(routeScreenshot.Directory, "default.png");
+                        string? imgPath = null;
+                        
+                        if (File.Exists(defaultPng))
+                        {
+                            imgPath = $"{routeScreenshot.RelativeDir}/default.png";
+                        }
+                        else
+                        {
+                            var anyPng = Directory.GetFiles(routeScreenshot.Directory, "*.png").FirstOrDefault();
+                            if (anyPng != null)
+                            {
+                                var pngName = Path.GetFileName(anyPng);
+                                imgPath = $"{routeScreenshot.RelativeDir}/{pngName}";
+                            }
+                        }
+
+                        sb.AppendLine("<td align=\"center\" width=\"33%\">");
+                        if (imgPath != null)
+                        {
+                            sb.AppendLine($"<a href=\"{imgPath}\">");
+                            sb.AppendLine($"<img src=\"{imgPath}\" width=\"250\" alt=\"{routeScreenshot.Route}\" />");
+                            sb.AppendLine("</a>");
+                        }
+                        sb.AppendLine($"<br /><code>{displayRoute}</code>");
+                        sb.AppendLine("</td>");
+                    }
+                    else
+                    {
+                        // Empty cell for incomplete row
+                        sb.AppendLine("<td></td>");
+                    }
                 }
-
-                var routeDisplay = ShortenRoute(item.Route, 25);
-
-                sb.AppendLine($"<td align=\"center\" width=\"33%\">");
-                sb.AppendLine($"<a href=\"{item.RelativePath}\">");
-                sb.AppendLine($"<img src=\"{item.RelativePath}\" width=\"250\" alt=\"{item.Route}\" />");
-                sb.AppendLine($"</a>");
-                sb.AppendLine($"<br /><code>{routeDisplay}</code>");
-                sb.AppendLine($"</td>");
-
-                itemsInRow++;
+                
+                sb.AppendLine("</tr>");
             }
-
-            while (itemsInRow < 3 && itemsInRow > 0)
-            {
-                sb.AppendLine("<td></td>");
-                itemsInRow++;
-            }
-
-            sb.AppendLine("</tr>");
+            
             sb.AppendLine("</table>");
             sb.AppendLine();
             sb.AppendLine("</details>");
@@ -966,6 +1010,16 @@ internal partial class Program
         }
 
         await Task.CompletedTask;
+    }
+
+    // Helper class for route screenshots
+    private class RouteScreenshots
+    {
+        public string Route { get; set; } = "";
+        public string Category { get; set; } = "";
+        public string Directory { get; set; } = "";
+        public string RelativeDir { get; set; } = "";
+        public ScreenshotHealthEntry? Metadata { get; set; }
     }
 
     private static FileEntry? ParseCsvLine(string line)
@@ -1098,5 +1152,13 @@ internal partial class Program
         public bool IsHttpError { get; set; }
         public bool IsError { get; set; }
         public string? ErrorMessage { get; set; }
+        
+        // Auth flow fields
+        public bool RequiresAuth { get; set; }
+        public bool AuthFlowCompleted { get; set; }
+        public string? AuthStep1Path { get; set; }
+        public string? AuthStep2Path { get; set; }
+        public string? AuthStep3Path { get; set; }
+        public string? AuthFlowNote { get; set; }
     }
 }

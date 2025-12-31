@@ -2,19 +2,21 @@
   "Route": "/Account/Manage/ResetAuthenticator",
   "Url": "https://localhost:7161/Account/Manage/ResetAuthenticator",
   "StatusCode": 200,
-  "FileSize": 55597,
+  "FileSize": 59261,
   "IsSuspiciouslySmall": false,
   "RetryAttempted": false,
   "ConsoleErrors": [
-    "NotSupportedError: Resident credentials or empty \u0027allowCredentials\u0027 lists are not supported at this time.",
-    "Access to XMLHttpRequest at \u0027http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets\u0026clientProtocol=2.1\u0026requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccount%2FLogin%3FReturnUrl%3D%252FAccount%252FManage%252FResetAuthenticator\u0026browserName=\u0026userAgent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F141.0.7390.37%20Safari%2F537.36\u0026browserIdKey=window.browserLink.initializationData.browserId\u0026browserId=045c-a1de\u0026connectionToken=AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAABDp90XHsUkqffVEv%2Bu76MAAAAAACAAAAAAAQZgAAAAEAACAAAAC4Kqw%2FDS7NyhTTw5mKMcUdlUHlYYG%2BquWIFCjUh3uY6gAAAAAOgAAAAAIAACAAAACt3%2BPrY1%2FDgfUANgImfldyDvSSjPpKfnkFPSOA7QqIUzAAAADaius%2FcYOfs47JoV4OjqKGmc9j8abvNvcqxVKH%2FvTAS%2F0oZdfuwaAewyBnNkZOuJBAAAAAguoEAEmqFAyfkvtyW1KLLVC54gE189O4VGEcI8httnl%2FNQf6ak63p50987QRVDbjUYC1i%2F3VaoSNFvpKYX0RPg%3D%3D\u0026_=1767120686769\u0027 from origin \u0027https://localhost:7161\u0027 has been blocked by CORS policy: No \u0027Access-Control-Allow-Origin\u0027 header is present on the requested resource.",
-    "Failed to load resource: net::ERR_FAILED",
-    "Access to XMLHttpRequest at \u0027http://localhost:52002/81d8742caa484684bd5780caadd343bd/browserLinkSignalR/start?transport=webSockets\u0026clientProtocol=2.1\u0026requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccount%2FLogin%3FReturnUrl%3D%252FAccount%252FManage%252FResetAuthenticator\u0026browserName=\u0026userAgent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F141.0.7390.37%20Safari%2F537.36\u0026browserIdKey=window.browserLink.initializationData.browserId\u0026browserId=7e35-b136\u0026connectionToken=AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAABDp90XHsUkqffVEv%2Bu76MAAAAAACAAAAAAAQZgAAAAEAACAAAABlEmVblUXaWYb7uB5Kk5xxLYvqtLJcoEiV8Y2vp12XawAAAAAOgAAAAAIAACAAAACd5ROmvW7nUhVoBhGcqA6iCjzo1Gjv0sZ%2B%2F%2Fnqif6F4jAAAAD3axsZU81YP%2FYXycNcKj4N%2F6tEyiG8VmFSKnQkvCw2BFonjOOcZnpTB3%2FJDCkA3pxAAAAAWGo%2B5fX8S6Fas58bqnDRhWl8IymAH7kt58V3Nj6sIParn%2FkwLrOau2zpilIERt0CBKemiqrC4yI4Qfq7GZ%2BYzQ%3D%3D\u0026_=1767120686771\u0027 from origin \u0027https://localhost:7161\u0027 has been blocked by CORS policy: No \u0027Access-Control-Allow-Origin\u0027 header is present on the requested resource.",
-    "Failed to load resource: net::ERR_FAILED"
+    "NotSupportedError: Resident credentials or empty \u0027allowCredentials\u0027 lists are not supported at this time."
   ],
-  "CapturedAt": "2025-12-30T18:51:26.6043357Z",
+  "CapturedAt": "2025-12-31T17:51:33.1912357Z",
   "IsSuccess": true,
   "IsHttpError": false,
   "IsError": false,
-  "ErrorMessage": null
+  "ErrorMessage": null,
+  "RequiresAuth": false,
+  "AuthFlowCompleted": true,
+  "AuthStep1Path": "1-initial.png",
+  "AuthStep2Path": "2-filled.png",
+  "AuthStep3Path": "3-result.png",
+  "AuthFlowNote": "Redirected to login (unexpected)"
 }
