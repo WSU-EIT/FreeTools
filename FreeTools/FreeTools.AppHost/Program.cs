@@ -96,6 +96,19 @@ static class AppHostRunner
         {
             BackupLatestFolder(projectConfig.LatestDir, projectConfig.ProjectRunsDir, timestamp, keepBackups);
         }
+        else if (!skipCleanup && Directory.Exists(projectConfig.LatestDir))
+        {
+            // Clean previous run data to avoid displaying stale screenshots
+            Console.WriteLine($"  [Cleanup] Deleting previous run: {projectConfig.LatestDir}");
+            try
+            {
+                Directory.Delete(projectConfig.LatestDir, recursive: true);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  [Cleanup] Warning: Could not fully clean previous run: {ex.Message}");
+            }
+        }
 
         Directory.CreateDirectory(projectConfig.LatestDir);
         Directory.CreateDirectory(projectConfig.SnapshotsDir);
