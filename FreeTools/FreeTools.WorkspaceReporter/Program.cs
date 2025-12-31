@@ -142,11 +142,13 @@ internal partial class Program
         sb.AppendLine("| Tool | Purpose |");
         sb.AppendLine("|------|---------|");
         sb.AppendLine("| **WorkspaceInventory** | Scans codebase, extracts metrics and classifications |");
-        sb.AppendLine("| **PageScanner** | Discovers Blazor routes from @page directives |");
-        sb.AppendLine("| **PageTester** | Performs HTTP GET requests to verify routes |");
-        sb.AppendLine("| **PageScreenshoter** | Captures full-page screenshots with Playwright |");
+        sb.AppendLine("| **EndpointMapper** | Discovers Blazor routes from `@page` directives |");
+        sb.AppendLine("| **EndpointPoker** | Performs HTTP GET requests to verify routes |");
+        sb.AppendLine("| **BrowserSnapshot** | Captures full-page screenshots with Playwright |");
         sb.AppendLine();
-        sb.AppendLine("*Part of the FreeTools suite*");
+        sb.AppendLine("---");
+        sb.AppendLine();
+        sb.AppendLine("*Part of the [FreeTools](https://github.com/WSU-EIT/FreeTools) suite — Open source workspace analysis tools for .NET projects*");
 
         Console.WriteLine();
         Console.WriteLine($"Writing report to: {outputPath}");
@@ -1021,125 +1023,110 @@ internal partial class Program
             sb.AppendLine();
         }
 
-        // === AUTH-REQUIRED PAGES (8B Storyboard) ===
+        // === AUTH-REQUIRED PAGES (Compact Grid with Expandable Details) ===
         if (authPages.Count > 0)
         {
             sb.AppendLine("---");
             sb.AppendLine();
             sb.AppendLine($"### 🔐 Auth-Required Pages ({authPages.Count})");
             sb.AppendLine();
-            sb.AppendLine("These pages require authentication. Each storyboard shows the login flow:");
+            sb.AppendLine("These pages redirected to login. Showing **final result** after authentication.");
             sb.AppendLine();
+            sb.AppendLine("> 💡 Click step numbers to view: **①** redirect → **②** fill form → **③** result");
+            sb.AppendLine();
+            sb.AppendLine("<details open>");
+            sb.AppendLine($"<summary><strong>📁 Protected Routes</strong> ({authPages.Count} pages)</summary>");
+            sb.AppendLine();
+            sb.AppendLine("<table>");
+            
+            // Build rows of 3 screenshots each (like public pages)
+            var authRoutesList = authPages.OrderBy(r => r.Route).ToList();
+            for (int i = 0; i < authRoutesList.Count; i += 3)
+            {
+                sb.AppendLine("<tr>");
+                for (int j = 0; j < 3; j++)
+                {
+                    var idx = i + j;
+                    if (idx < authRoutesList.Count)
+                    {
+                        var authRoute = authRoutesList[idx];
+                        var displayRoute = ShortenRoute(authRoute.Route, 20);
+                        var dir = authRoute.Directory;
+                        var relDir = authRoute.RelativeDir;
+                        
+                        // Check which steps exist
+                        var hasStep1 = File.Exists(Path.Combine(dir, "1-initial.png"));
+                        var hasStep2 = File.Exists(Path.Combine(dir, "2-filled.png"));
+                        var hasStep3 = File.Exists(Path.Combine(dir, "3-result.png"));
+                        var hasDefault = File.Exists(Path.Combine(dir, "default.png"));
+                        
+                        // Show the final result (3-result.png) as the main image
+                        string? imgPath = null;
+                        if (hasStep3)
+                            imgPath = $"{relDir}/3-result.png";
+                        else if (hasDefault)
+                            imgPath = $"{relDir}/default.png";
 
-            foreach (var authRoute in authPages.OrderBy(r => r.Route))
-                GenerateAuthFlowStoryboard(authRoute, sb);
+                        sb.AppendLine("<td align=\"center\" width=\"33%\">");
+                        if (imgPath != null)
+                        {
+                            sb.AppendLine($"<a href=\"{imgPath}\">");
+                            sb.AppendLine($"<img src=\"{imgPath}\" width=\"250\" alt=\"{authRoute.Route}\" />");
+                            sb.AppendLine("</a>");
+                        }
+                        
+                        // Build step links: route 🔐 [①][②][③]
+                        var stepLinks = new StringBuilder();
+                        if (hasStep1)
+                            stepLinks.Append($"<a href=\"{relDir}/1-initial.png\" title=\"Step 1: Redirect\">①</a>");
+                        if (hasStep2)
+                            stepLinks.Append($"<a href=\"{relDir}/2-filled.png\" title=\"Step 2: Fill Form\">②</a>");
+                        if (hasStep3)
+                            stepLinks.Append($"<a href=\"{relDir}/3-result.png\" title=\"Step 3: Result\">③</a>");
+                        
+                        sb.AppendLine($"<br /><code>{displayRoute}</code> 🔐 {stepLinks}");
+                        sb.AppendLine("</td>");
+                    }
+                    else
+                        sb.AppendLine("<td></td>");
+                }
+                sb.AppendLine("</tr>");
+            }
+            
+            sb.AppendLine("</table>");
+            sb.AppendLine();
+            sb.AppendLine("</details>");
+            sb.AppendLine();
+            
+            // Add a single expandable section showing the auth flow pattern
+            sb.AppendLine("<details>");
+            sb.AppendLine("<summary>🔍 <strong>View Auth Flow Pattern</strong> (same for all protected pages)</summary>");
+            sb.AppendLine();
+            sb.AppendLine("All protected pages follow this login flow:");
+            sb.AppendLine();
+            sb.AppendLine("| Step | Action | Screenshot |");
+            sb.AppendLine("|:----:|--------|:----------:|");
+            
+            // Use first auth route as example
+            var exampleRoute = authRoutesList.First();
+            var exDir = exampleRoute.RelativeDir;
+            var hasEx1 = File.Exists(Path.Combine(exampleRoute.Directory, "1-initial.png"));
+            var hasEx2 = File.Exists(Path.Combine(exampleRoute.Directory, "2-filled.png"));
+            var hasEx3 = File.Exists(Path.Combine(exampleRoute.Directory, "3-result.png"));
+            
+            if (hasEx1)
+                sb.AppendLine($"| ① | **Redirect** — User hits protected route, sent to `/Account/Login` | <img src=\"{exDir}/1-initial.png\" width=\"150\"/> |");
+            if (hasEx2)
+                sb.AppendLine($"| ② | **Fill Form** — Enter credentials: `admin@test.com` | <img src=\"{exDir}/2-filled.png\" width=\"150\"/> |");
+            if (hasEx3)
+                sb.AppendLine($"| ③ | **Result** — Login successful, user sees protected content | <img src=\"{exDir}/3-result.png\" width=\"150\"/> |");
+            
+            sb.AppendLine();
+            sb.AppendLine("</details>");
+            sb.AppendLine();
         }
 
         await Task.CompletedTask;
-    }
-
-    /// <summary>
-    /// Generates 8B Scene Headers storyboard for an auth flow
-    /// </summary>
-    private static void GenerateAuthFlowStoryboard(RouteScreenshots route, StringBuilder sb)
-    {
-        var metadata = route.Metadata;
-        var dir = route.Directory;
-        var relDir = route.RelativeDir;
-        
-        var hasStep1 = File.Exists(Path.Combine(dir, "1-initial.png"));
-        var hasStep2 = File.Exists(Path.Combine(dir, "2-filled.png"));
-        var hasStep3 = File.Exists(Path.Combine(dir, "3-result.png"));
-        var hasDefault = File.Exists(Path.Combine(dir, "default.png"));
-        
-        sb.AppendLine($"#### `{route.Route}` — Login Flow");
-        sb.AppendLine();
-        
-        // 8B Scene Headers table
-        sb.AppendLine("<table>");
-        sb.AppendLine("<tr>");
-        sb.AppendLine("<th>Scene 1: Redirect</th>");
-        sb.AppendLine("<th></th>");
-        sb.AppendLine("<th>Scene 2: Fill Form</th>");
-        sb.AppendLine("<th></th>");
-        sb.AppendLine("<th>Scene 3: Result</th>");
-        sb.AppendLine("</tr>");
-        sb.AppendLine("<tr>");
-        
-        // Scene 1
-        sb.AppendLine("<td align=\"center\">");
-        if (hasStep1)
-        {
-            sb.AppendLine($"<a href=\"{relDir}/1-initial.png\"><img src=\"{relDir}/1-initial.png\" width=\"180\"/></a><br/>");
-        }
-        else
-            sb.AppendLine("<em>Not captured</em><br/>");
-        sb.AppendLine($"<em>User hits {route.Route}</em><br/><em>Redirected to login</em>");
-        sb.AppendLine("</td>");
-        sb.AppendLine("<td align=\"center\">→</td>");
-        
-        // Scene 2
-        sb.AppendLine("<td align=\"center\">");
-        if (hasStep2)
-        {
-            sb.AppendLine($"<a href=\"{relDir}/2-filled.png\"><img src=\"{relDir}/2-filled.png\" width=\"180\"/></a><br/>");
-        }
-        else
-            sb.AppendLine("<em>Not captured</em><br/>");
-        sb.AppendLine("<em>Fills login form</em><br/><code>admin@test.com</code>");
-        sb.AppendLine("</td>");
-        sb.AppendLine("<td align=\"center\">→</td>");
-        
-        // Scene 3
-        sb.AppendLine("<td align=\"center\">");
-        if (hasStep3)
-        {
-            sb.AppendLine($"<a href=\"{relDir}/3-result.png\"><img src=\"{relDir}/3-result.png\" width=\"180\"/></a><br/>");
-        }
-        else if (hasDefault)
-        {
-            sb.AppendLine($"<a href=\"{relDir}/default.png\"><img src=\"{relDir}/default.png\" width=\"180\"/></a><br/>");
-        }
-        else
-            sb.AppendLine("<em>Not captured</em><br/>");
-        
-        var resultDesc = metadata switch
-        {
-            { IsSuccess: true, AuthFlowCompleted: true } => "<strong>✅ Login successful</strong>",
-            { IsHttpError: true } => $"<strong>❌ HTTP {metadata.StatusCode}</strong>",
-            { IsError: true } => "<strong>❌ Error occurred</strong>",
-            _ => "<strong>❌ Invalid credentials</strong>"
-        };
-        sb.AppendLine($"<em>Submission result</em><br/>{resultDesc}");
-        sb.AppendLine("</td>");
-        
-        sb.AppendLine("</tr>");
-        sb.AppendLine("</table>");
-        sb.AppendLine();
-        
-        // Legend
-        sb.AppendLine("| Step | What Happened |");
-        sb.AppendLine("|:----:|---------------|");
-        sb.AppendLine($"| ① | User accessed `{route.Route}` → redirected to `/Account/Login` |");
-        sb.AppendLine("| ② | Entered test credentials: `admin@test.com` |");
-        var step3Desc = metadata switch
-        {
-            { IsSuccess: true, AuthFlowCompleted: true } => "Login successful — user sees protected content",
-            { IsHttpError: true } => $"HTTP error {metadata.StatusCode} — server error",
-            _ => "Login failed — invalid credentials or other error"
-        };
-        sb.AppendLine($"| ③ | {step3Desc} |");
-        sb.AppendLine();
-    }
-
-    // Helper class for route screenshots
-    private class RouteScreenshots
-    {
-        public string Route { get; set; } = "";
-        public string Category { get; set; } = "";
-        public string Directory { get; set; } = "";
-        public string RelativeDir { get; set; } = "";
-        public ScreenshotHealthEntry? Metadata { get; set; }
     }
 
     private static FileEntry? ParseCsvLine(string line)
@@ -1256,6 +1243,16 @@ internal partial class Program
         public int TotalFiles { get; set; }
         public long TotalLines { get; set; }
         public long TotalSize { get; set; }
+    }
+
+    // Helper class for route screenshots
+    private class RouteScreenshots
+    {
+        public string Route { get; set; } = "";
+        public string Category { get; set; } = "";
+        public string Directory { get; set; } = "";
+        public string RelativeDir { get; set; } = "";
+        public ScreenshotHealthEntry? Metadata { get; set; }
     }
 
     private class ScreenshotHealthEntry
