@@ -16,4 +16,8 @@
     <None Include="latest\**\*" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="focusgroup\" />
+  </ItemGroup>
+
 </Project>

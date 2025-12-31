@@ -1,6 +1,6 @@
 ﻿# 📊 FreeTools Workspace Report
 
-> **Generated:** 2025-12-31 09:51:47  
+> **Generated:** 2025-12-31 11:19:33  
 > **Repository:** BlazorApp1  
 > **Scope:** Blazor pages only — API endpoints not included  
 
@@ -414,7 +414,7 @@ graph TD
 | 🔄 Retried | 0 | Required retry attempt |
 | ❌ HTTP Error | 2 | 4xx/5xx responses |
 | 💥 Failed | 0 | Browser/timeout errors |
-| 🔴 JS Errors | 19 | Pages with console errors |
+| 🔴 JS Errors | 36 | Pages with console errors |
 
 <details>
 <summary>❌ <strong>HTTP Errors</strong> (2)</summary>
@@ -427,224 +427,368 @@ graph TD
 </details>
 
 <details>
-<summary>🔴 <strong>Pages with JavaScript Errors</strong> (19)</summary>
+<summary>🔴 <strong>Pages with JavaScript Errors</strong> (36)</summary>
 
-**`/Account/ConfirmEmailChange`** (1 errors)
+**`/`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2F&brows...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2F&brows...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/AccessDenied`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/ConfirmEmail`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2F&brows...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2F&brows...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/ConfirmEmailChange`** (9 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 4 more errors
+```
+
+**`/Account/ExternalLogin`** (9 errors)
 
 ```
 NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 4 more errors
 ```
 
-**`/Account/ExternalLogin`** (1 errors)
+**`/Account/ForgotPassword`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/ForgotPasswordConfirmation`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/InvalidPasswordReset`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/InvalidUser`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Lockout`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/Login`** (9 errors)
 
 ```
 NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 4 more errors
 ```
 
-**`/Account/Login`** (1 errors)
-
-```
-NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
-```
-
-**`/Account/LoginWith2fa`** (1 errors)
+**`/Account/LoginWith2fa`** (5 errors)
 
 ```
 Failed to load resource: the server responded with a status of 500 ()
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
 ```
 
-**`/Account/LoginWithRecoveryCode`** (1 errors)
+**`/Account/LoginWithRecoveryCode`** (5 errors)
 
 ```
 Failed to load resource: the server responded with a status of 500 ()
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
 ```
 
-**`/Account/Manage`** (4 errors)
-
-```
-NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
-Failed to load resource: the server responded with a status of 500 ()
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Internal Server Error</title>
-    <style>
-            body {
-    font-fami...
-Error: The server responded with status 500.
-    at fetchWithErrorHandling (https://localhost:7161/Components/Account/Shared/PasskeySubmit.pr21mg9rrw.razor.js:15:15)
-    at async requestCredential (ht...
-```
-
-**`/Account/Manage/ChangePassword`** (1 errors)
+**`/Account/Manage`** (12 errors)
 
 ```
 NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 7 more errors
 ```
 
-**`/Account/Manage/DeletePersonalData`** (4 errors)
-
-```
-NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
-Failed to load resource: the server responded with a status of 500 ()
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Internal Server Error</title>
-    <style>
-            body {
-    font-fami...
-Error: The server responded with status 500.
-    at fetchWithErrorHandling (https://localhost:7161/Components/Account/Shared/PasskeySubmit.pr21mg9rrw.razor.js:15:15)
-    at async requestCredential (ht...
-```
-
-**`/Account/Manage/Disable2fa`** (1 errors)
+**`/Account/Manage/ChangePassword`** (12 errors)
 
 ```
 NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 7 more errors
 ```
 
-**`/Account/Manage/Email`** (4 errors)
+**`/Account/Manage/DeletePersonalData`** (9 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+... and 4 more errors
+```
+
+**`/Account/Manage/Disable2fa`** (12 errors)
 
 ```
 NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
-Failed to load resource: the server responded with a status of 500 ()
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Internal Server Error</title>
-    <style>
-            body {
-    font-fami...
-Error: The server responded with status 500.
-    at fetchWithErrorHandling (https://localhost:7161/Components/Account/Shared/PasskeySubmit.pr21mg9rrw.razor.js:15:15)
-    at async requestCredential (ht...
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 7 more errors
 ```
 
-**`/Account/Manage/EnableAuthenticator`** (4 errors)
+**`/Account/Manage/Email`** (12 errors)
 
 ```
 NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
-Failed to load resource: the server responded with a status of 500 ()
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Internal Server Error</title>
-    <style>
-            body {
-    font-fami...
-Error: The server responded with status 500.
-    at fetchWithErrorHandling (https://localhost:7161/Components/Account/Shared/PasskeySubmit.pr21mg9rrw.razor.js:15:15)
-    at async requestCredential (ht...
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 7 more errors
 ```
 
-**`/Account/Manage/ExternalLogins`** (4 errors)
+**`/Account/Manage/EnableAuthenticator`** (12 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 7 more errors
+```
+
+**`/Account/Manage/ExternalLogins`** (12 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 7 more errors
+```
+
+**`/Account/Manage/GenerateRecoveryCodes`** (12 errors)
 
 ```
 NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
-Failed to load resource: the server responded with a status of 500 ()
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Internal Server Error</title>
-    <style>
-            body {
-    font-fami...
-Error: The server responded with status 500.
-    at fetchWithErrorHandling (https://localhost:7161/Components/Account/Shared/PasskeySubmit.pr21mg9rrw.razor.js:15:15)
-    at async requestCredential (ht...
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 7 more errors
 ```
 
-**`/Account/Manage/GenerateRecoveryCodes`** (4 errors)
+**`/Account/Manage/Passkeys`** (12 errors)
 
 ```
 NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
-Failed to load resource: the server responded with a status of 500 ()
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Internal Server Error</title>
-    <style>
-            body {
-    font-fami...
-Error: The server responded with status 500.
-    at fetchWithErrorHandling (https://localhost:7161/Components/Account/Shared/PasskeySubmit.pr21mg9rrw.razor.js:15:15)
-    at async requestCredential (ht...
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 7 more errors
 ```
 
-**`/Account/Manage/Passkeys`** (4 errors)
+**`/Account/Manage/PersonalData`** (12 errors)
 
 ```
 NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
-Failed to load resource: the server responded with a status of 500 ()
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Internal Server Error</title>
-    <style>
-            body {
-    font-fami...
-Error: The server responded with status 500.
-    at fetchWithErrorHandling (https://localhost:7161/Components/Account/Shared/PasskeySubmit.pr21mg9rrw.razor.js:15:15)
-    at async requestCredential (ht...
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 7 more errors
 ```
 
-**`/Account/Manage/PersonalData`** (4 errors)
+**`/Account/Manage/ResetAuthenticator`** (9 errors)
 
 ```
 NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
-Failed to load resource: the server responded with a status of 500 ()
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Internal Server Error</title>
-    <style>
-            body {
-    font-fami...
-Error: The server responded with status 500.
-    at fetchWithErrorHandling (https://localhost:7161/Components/Account/Shared/PasskeySubmit.pr21mg9rrw.razor.js:15:15)
-    at async requestCredential (ht...
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 4 more errors
 ```
 
-**`/Account/Manage/ResetAuthenticator`** (1 errors)
+**`/Account/Manage/SetPassword`** (12 errors)
 
 ```
 NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 7 more errors
 ```
 
-**`/Account/Manage/SetPassword`** (1 errors)
+**`/Account/Manage/TwoFactorAuthentication`** (9 errors)
 
 ```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
 NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 4 more errors
 ```
 
-**`/Account/Manage/TwoFactorAuthentication`** (1 errors)
+**`/Account/Register`** (8 errors)
 
 ```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+... and 3 more errors
+```
+
+**`/Account/RegisterConfirmation`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2F&brows...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2F&brows...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/ResendEmailConfirmation`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/ResetPassword`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Account/ResetPasswordConfirmation`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/auth`** (9 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
 NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FAccoun...
+Failed to load resource: net::ERR_FAILED
+... and 4 more errors
 ```
 
-**`/auth`** (1 errors)
+**`/counter`** (4 errors)
 
 ```
-NotSupportedError: Resident credentials or empty 'allowCredentials' lists are not supported at this time.
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2Fcounte...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2Fcounte...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/Error`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FError&...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2FError&...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/not-found`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2Fnot-fo...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2Fnot-fo...
+Failed to load resource: net::ERR_FAILED
+```
+
+**`/weather`** (4 errors)
+
+```
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2Fweathe...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'http://localhost:63028/710cf446006747979221431a65af8989/browserLinkSignalR/start?transport=webSockets&clientProtocol=2.1&requestUrl=https%3A%2F%2Flocalhost%3A7161%2Fweathe...
+Failed to load resource: net::ERR_FAILED
 ```
 
 </details>
@@ -655,10 +799,20 @@ NotSupportedError: Resident credentials or empty 'allowCredentials' lists are no
 
 **36 page screenshots captured**
 
+### Quick Status
+
+| ✅ Success | 🔐 Auth Flow | ❌ Errors |
+|:----------:|:------------:|:---------:|
+| 34 | 18 | 2 |
+
+---
+
+### 🔓 Public Pages (18)
+
 Click on a screenshot to view full size.
 
 <details open>
-<summary><strong>📁 Account</strong> (30 pages)</summary>
+<summary><strong>📁 Account</strong> (13 pages)</summary>
 
 <table>
 <tr>
@@ -675,33 +829,19 @@ Click on a screenshot to view full size.
 <br /><code>/Account/ConfirmEmail</code>
 </td>
 <td align="center" width="33%">
-<a href="snapshots/Account/ConfirmEmailChange/default.png">
-<img src="snapshots/Account/ConfirmEmailChange/default.png" width="250" alt="/Account/ConfirmEmailChange" />
-</a>
-<br /><code>...unt/ConfirmEmailChange</code>
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-<a href="snapshots/Account/ExternalLogin/default.png">
-<img src="snapshots/Account/ExternalLogin/default.png" width="250" alt="/Account/ExternalLogin" />
-</a>
-<br /><code>/Account/ExternalLogin</code>
-</td>
-<td align="center" width="33%">
 <a href="snapshots/Account/ForgotPassword/default.png">
 <img src="snapshots/Account/ForgotPassword/default.png" width="250" alt="/Account/ForgotPassword" />
 </a>
 <br /><code>/Account/ForgotPassword</code>
 </td>
+</tr>
+<tr>
 <td align="center" width="33%">
 <a href="snapshots/Account/ForgotPasswordConfirmation/default.png">
 <img src="snapshots/Account/ForgotPasswordConfirmation/default.png" width="250" alt="/Account/ForgotPasswordConfirmation" />
 </a>
 <br /><code>...otPasswordConfirmation</code>
 </td>
-</tr>
-<tr>
 <td align="center" width="33%">
 <a href="snapshots/Account/InvalidPasswordReset/default.png">
 <img src="snapshots/Account/InvalidPasswordReset/default.png" width="250" alt="/Account/InvalidPasswordReset" />
@@ -714,19 +854,13 @@ Click on a screenshot to view full size.
 </a>
 <br /><code>/Account/InvalidUser</code>
 </td>
+</tr>
+<tr>
 <td align="center" width="33%">
 <a href="snapshots/Account/Lockout/default.png">
 <img src="snapshots/Account/Lockout/default.png" width="250" alt="/Account/Lockout" />
 </a>
 <br /><code>/Account/Lockout</code>
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-<a href="snapshots/Account/Login/default.png">
-<img src="snapshots/Account/Login/default.png" width="250" alt="/Account/Login" />
-</a>
-<br /><code>/Account/Login</code>
 </td>
 <td align="center" width="33%">
 <a href="snapshots/Account/LoginWith2fa/default.png">
@@ -743,105 +877,11 @@ Click on a screenshot to view full size.
 </tr>
 <tr>
 <td align="center" width="33%">
-<a href="snapshots/Account/Manage/default.png">
-<img src="snapshots/Account/Manage/default.png" width="250" alt="/Account/Manage" />
-</a>
-<br /><code>/Account/Manage</code>
-</td>
-<td align="center" width="33%">
-<a href="snapshots/Account/Manage/ChangePassword/default.png">
-<img src="snapshots/Account/Manage/ChangePassword/default.png" width="250" alt="/Account/Manage/ChangePassword" />
-</a>
-<br /><code>.../ChangePassword</code>
-</td>
-<td align="center" width="33%">
-<a href="snapshots/Account/Manage/DeletePersonalData/default.png">
-<img src="snapshots/Account/Manage/DeletePersonalData/default.png" width="250" alt="/Account/Manage/DeletePersonalData" />
-</a>
-<br /><code>.../DeletePersonalData</code>
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-<a href="snapshots/Account/Manage/Disable2fa/default.png">
-<img src="snapshots/Account/Manage/Disable2fa/default.png" width="250" alt="/Account/Manage/Disable2fa" />
-</a>
-<br /><code>/Account/.../Disable2fa</code>
-</td>
-<td align="center" width="33%">
-<a href="snapshots/Account/Manage/Email/default.png">
-<img src="snapshots/Account/Manage/Email/default.png" width="250" alt="/Account/Manage/Email" />
-</a>
-<br /><code>/Account/Manage/Email</code>
-</td>
-<td align="center" width="33%">
-<a href="snapshots/Account/Manage/EnableAuthenticator/default.png">
-<img src="snapshots/Account/Manage/EnableAuthenticator/default.png" width="250" alt="/Account/Manage/EnableAuthenticator" />
-</a>
-<br /><code>.../EnableAuthenticator</code>
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-<a href="snapshots/Account/Manage/ExternalLogins/default.png">
-<img src="snapshots/Account/Manage/ExternalLogins/default.png" width="250" alt="/Account/Manage/ExternalLogins" />
-</a>
-<br /><code>.../ExternalLogins</code>
-</td>
-<td align="center" width="33%">
-<a href="snapshots/Account/Manage/GenerateRecoveryCodes/default.png">
-<img src="snapshots/Account/Manage/GenerateRecoveryCodes/default.png" width="250" alt="/Account/Manage/GenerateRecoveryCodes" />
-</a>
-<br /><code>.../GenerateRecoveryCodes</code>
-</td>
-<td align="center" width="33%">
-<a href="snapshots/Account/Manage/Passkeys/default.png">
-<img src="snapshots/Account/Manage/Passkeys/default.png" width="250" alt="/Account/Manage/Passkeys" />
-</a>
-<br /><code>/Account/Manage/Passkeys</code>
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-<a href="snapshots/Account/Manage/PersonalData/default.png">
-<img src="snapshots/Account/Manage/PersonalData/default.png" width="250" alt="/Account/Manage/PersonalData" />
-</a>
-<br /><code>/Account/.../PersonalData</code>
-</td>
-<td align="center" width="33%">
-<a href="snapshots/Account/Manage/ResetAuthenticator/default.png">
-<img src="snapshots/Account/Manage/ResetAuthenticator/default.png" width="250" alt="/Account/Manage/ResetAuthenticator" />
-</a>
-<br /><code>.../ResetAuthenticator</code>
-</td>
-<td align="center" width="33%">
-<a href="snapshots/Account/Manage/SetPassword/default.png">
-<img src="snapshots/Account/Manage/SetPassword/default.png" width="250" alt="/Account/Manage/SetPassword" />
-</a>
-<br /><code>/Account/.../SetPassword</code>
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-<a href="snapshots/Account/Manage/TwoFactorAuthentication/default.png">
-<img src="snapshots/Account/Manage/TwoFactorAuthentication/default.png" width="250" alt="/Account/Manage/TwoFactorAuthentication" />
-</a>
-<br /><code>.../TwoFactorAuthentication</code>
-</td>
-<td align="center" width="33%">
-<a href="snapshots/Account/Register/default.png">
-<img src="snapshots/Account/Register/default.png" width="250" alt="/Account/Register" />
-</a>
-<br /><code>/Account/Register</code>
-</td>
-<td align="center" width="33%">
 <a href="snapshots/Account/RegisterConfirmation/default.png">
 <img src="snapshots/Account/RegisterConfirmation/default.png" width="250" alt="/Account/RegisterConfirmation" />
 </a>
 <br /><code>...t/RegisterConfirmation</code>
 </td>
-</tr>
-<tr>
 <td align="center" width="33%">
 <a href="snapshots/Account/ResendEmailConfirmation/default.png">
 <img src="snapshots/Account/ResendEmailConfirmation/default.png" width="250" alt="/Account/ResendEmailConfirmation" />
@@ -854,27 +894,13 @@ Click on a screenshot to view full size.
 </a>
 <br /><code>/Account/ResetPassword</code>
 </td>
+</tr>
+<tr>
 <td align="center" width="33%">
 <a href="snapshots/Account/ResetPasswordConfirmation/default.png">
 <img src="snapshots/Account/ResetPasswordConfirmation/default.png" width="250" alt="/Account/ResetPasswordConfirmation" />
 </a>
 <br /><code>...etPasswordConfirmation</code>
-</td>
-</tr>
-</table>
-
-</details>
-
-<details open>
-<summary><strong>📁 auth</strong> (1 pages)</summary>
-
-<table>
-<tr>
-<td align="center" width="33%">
-<a href="snapshots/auth/default.png">
-<img src="snapshots/auth/default.png" width="250" alt="/auth" />
-</a>
-<br /><code>/auth</code>
 </td>
 <td></td>
 <td></td>
@@ -975,6 +1001,155 @@ Click on a screenshot to view full size.
 
 ---
 
+### 🔐 Auth-Required Pages (18)
+
+These pages redirected to login. Showing **final result** after authentication.
+
+> 💡 Click step numbers to view: **①** redirect → **②** fill form → **③** result
+
+<details open>
+<summary><strong>📁 Protected Routes</strong> (18 pages)</summary>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/ConfirmEmailChange/3-result.png">
+<img src="snapshots/Account/ConfirmEmailChange/3-result.png" width="250" alt="/Account/ConfirmEmailChange" />
+</a>
+<br /><code>...onfirmEmailChange</code> 🔐 <a href="snapshots/Account/ConfirmEmailChange/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/ConfirmEmailChange/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/ConfirmEmailChange/3-result.png" title="Step 3: Result">③</a>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/ExternalLogin/3-result.png">
+<img src="snapshots/Account/ExternalLogin/3-result.png" width="250" alt="/Account/ExternalLogin" />
+</a>
+<br /><code>...unt/ExternalLogin</code> 🔐 <a href="snapshots/Account/ExternalLogin/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/ExternalLogin/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/ExternalLogin/3-result.png" title="Step 3: Result">③</a>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Login/3-result.png">
+<img src="snapshots/Account/Login/3-result.png" width="250" alt="/Account/Login" />
+</a>
+<br /><code>/Account/Login</code> 🔐 <a href="snapshots/Account/Login/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Login/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Login/3-result.png" title="Step 3: Result">③</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/3-result.png">
+<img src="snapshots/Account/Manage/3-result.png" width="250" alt="/Account/Manage" />
+</a>
+<br /><code>/Account/Manage</code> 🔐 <a href="snapshots/Account/Manage/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Manage/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Manage/3-result.png" title="Step 3: Result">③</a>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/ChangePassword/3-result.png">
+<img src="snapshots/Account/Manage/ChangePassword/3-result.png" width="250" alt="/Account/Manage/ChangePassword" />
+</a>
+<br /><code>.../ChangePassword</code> 🔐 <a href="snapshots/Account/Manage/ChangePassword/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Manage/ChangePassword/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Manage/ChangePassword/3-result.png" title="Step 3: Result">③</a>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/DeletePersonalData/3-result.png">
+<img src="snapshots/Account/Manage/DeletePersonalData/3-result.png" width="250" alt="/Account/Manage/DeletePersonalData" />
+</a>
+<br /><code>.../DeletePersonalData</code> 🔐 <a href="snapshots/Account/Manage/DeletePersonalData/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Manage/DeletePersonalData/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Manage/DeletePersonalData/3-result.png" title="Step 3: Result">③</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/Disable2fa/3-result.png">
+<img src="snapshots/Account/Manage/Disable2fa/3-result.png" width="250" alt="/Account/Manage/Disable2fa" />
+</a>
+<br /><code>.../Disable2fa</code> 🔐 <a href="snapshots/Account/Manage/Disable2fa/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Manage/Disable2fa/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Manage/Disable2fa/3-result.png" title="Step 3: Result">③</a>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/Email/3-result.png">
+<img src="snapshots/Account/Manage/Email/3-result.png" width="250" alt="/Account/Manage/Email" />
+</a>
+<br /><code>/Account/.../Email</code> 🔐 <a href="snapshots/Account/Manage/Email/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Manage/Email/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Manage/Email/3-result.png" title="Step 3: Result">③</a>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/EnableAuthenticator/3-result.png">
+<img src="snapshots/Account/Manage/EnableAuthenticator/3-result.png" width="250" alt="/Account/Manage/EnableAuthenticator" />
+</a>
+<br /><code>.../EnableAuthenticator</code> 🔐 <a href="snapshots/Account/Manage/EnableAuthenticator/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Manage/EnableAuthenticator/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Manage/EnableAuthenticator/3-result.png" title="Step 3: Result">③</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/ExternalLogins/3-result.png">
+<img src="snapshots/Account/Manage/ExternalLogins/3-result.png" width="250" alt="/Account/Manage/ExternalLogins" />
+</a>
+<br /><code>.../ExternalLogins</code> 🔐 <a href="snapshots/Account/Manage/ExternalLogins/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Manage/ExternalLogins/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Manage/ExternalLogins/3-result.png" title="Step 3: Result">③</a>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/GenerateRecoveryCodes/3-result.png">
+<img src="snapshots/Account/Manage/GenerateRecoveryCodes/3-result.png" width="250" alt="/Account/Manage/GenerateRecoveryCodes" />
+</a>
+<br /><code>.../GenerateRecoveryCodes</code> 🔐 <a href="snapshots/Account/Manage/GenerateRecoveryCodes/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Manage/GenerateRecoveryCodes/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Manage/GenerateRecoveryCodes/3-result.png" title="Step 3: Result">③</a>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/Passkeys/3-result.png">
+<img src="snapshots/Account/Manage/Passkeys/3-result.png" width="250" alt="/Account/Manage/Passkeys" />
+</a>
+<br /><code>.../Passkeys</code> 🔐 <a href="snapshots/Account/Manage/Passkeys/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Manage/Passkeys/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Manage/Passkeys/3-result.png" title="Step 3: Result">③</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/PersonalData/3-result.png">
+<img src="snapshots/Account/Manage/PersonalData/3-result.png" width="250" alt="/Account/Manage/PersonalData" />
+</a>
+<br /><code>.../PersonalData</code> 🔐 <a href="snapshots/Account/Manage/PersonalData/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Manage/PersonalData/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Manage/PersonalData/3-result.png" title="Step 3: Result">③</a>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/ResetAuthenticator/3-result.png">
+<img src="snapshots/Account/Manage/ResetAuthenticator/3-result.png" width="250" alt="/Account/Manage/ResetAuthenticator" />
+</a>
+<br /><code>.../ResetAuthenticator</code> 🔐 <a href="snapshots/Account/Manage/ResetAuthenticator/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Manage/ResetAuthenticator/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Manage/ResetAuthenticator/3-result.png" title="Step 3: Result">③</a>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/SetPassword/3-result.png">
+<img src="snapshots/Account/Manage/SetPassword/3-result.png" width="250" alt="/Account/Manage/SetPassword" />
+</a>
+<br /><code>.../SetPassword</code> 🔐 <a href="snapshots/Account/Manage/SetPassword/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Manage/SetPassword/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Manage/SetPassword/3-result.png" title="Step 3: Result">③</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="snapshots/Account/Manage/TwoFactorAuthentication/3-result.png">
+<img src="snapshots/Account/Manage/TwoFactorAuthentication/3-result.png" width="250" alt="/Account/Manage/TwoFactorAuthentication" />
+</a>
+<br /><code>.../TwoFactorAuthentication</code> 🔐 <a href="snapshots/Account/Manage/TwoFactorAuthentication/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Manage/TwoFactorAuthentication/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Manage/TwoFactorAuthentication/3-result.png" title="Step 3: Result">③</a>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/Account/Register/3-result.png">
+<img src="snapshots/Account/Register/3-result.png" width="250" alt="/Account/Register" />
+</a>
+<br /><code>/Account/Register</code> 🔐 <a href="snapshots/Account/Register/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/Account/Register/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/Account/Register/3-result.png" title="Step 3: Result">③</a>
+</td>
+<td align="center" width="33%">
+<a href="snapshots/auth/3-result.png">
+<img src="snapshots/auth/3-result.png" width="250" alt="/auth" />
+</a>
+<br /><code>/auth</code> 🔐 <a href="snapshots/auth/1-initial.png" title="Step 1: Redirect">①</a><a href="snapshots/auth/2-filled.png" title="Step 2: Fill Form">②</a><a href="snapshots/auth/3-result.png" title="Step 3: Result">③</a>
+</td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary>🔍 <strong>View Auth Flow Pattern</strong> (same for all protected pages)</summary>
+
+All protected pages follow this login flow:
+
+| Step | Action | Screenshot |
+|:----:|--------|:----------:|
+| ① | **Redirect** — User hits protected route, sent to `/Account/Login` | <img src="snapshots/Account/ConfirmEmailChange/1-initial.png" width="150"/> |
+| ② | **Fill Form** — Enter credentials: `admin@test.com` | <img src="snapshots/Account/ConfirmEmailChange/2-filled.png" width="150"/> |
+| ③ | **Result** — Login successful, user sees protected content | <img src="snapshots/Account/ConfirmEmailChange/3-result.png" width="150"/> |
+
+</details>
+
+---
+
 ## 🔧 Tool Information
 
 This report was generated by the **WorkspaceReporter** tool, which aggregates outputs from:
@@ -982,8 +1157,10 @@ This report was generated by the **WorkspaceReporter** tool, which aggregates ou
 | Tool | Purpose |
 |------|---------|
 | **WorkspaceInventory** | Scans codebase, extracts metrics and classifications |
-| **PageScanner** | Discovers Blazor routes from @page directives |
-| **PageTester** | Performs HTTP GET requests to verify routes |
-| **PageScreenshoter** | Captures full-page screenshots with Playwright |
+| **EndpointMapper** | Discovers Blazor routes from `@page` directives |
+| **EndpointPoker** | Performs HTTP GET requests to verify routes |
+| **BrowserSnapshot** | Captures full-page screenshots with Playwright |
 
-*Part of the FreeTools suite*
+---
+
+*Part of the [FreeTools](https://github.com/WSU-EIT/FreeTools) suite — Open source workspace analysis tools for .NET projects*
