@@ -187,3 +187,14 @@ Docs/runs/**/snapshots/
 # Or ignore only raw data files
 Docs/runs/**/*.csv
 Docs/runs/**/*.html
+```
+
+---
+
+## 📬 About
+
+**FreeTools** is developed and maintained by **[Enrollment Information Technology (EIT)](https://em.wsu.edu/eit/meet-our-staff/)** at **Washington State University**.
+
+We build internal tools and automation to support enrollment management processes across WSU.
+
+📧 Questions or feedback? Visit our [team page](https://em.wsu.edu/eit/meet-our-staff/) or open an issue on [GitHub](https://github.com/WSU-EIT/FreeTools/issues)

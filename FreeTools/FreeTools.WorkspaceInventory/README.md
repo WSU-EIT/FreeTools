@@ -267,4 +267,8 @@ The tool is designed to be robust:
 
 ---
 
-*Part of the FreeTools suite — Version 2.0*
+## 📬 About
+
+**FreeTools** is developed and maintained by **[Enrollment Information Technology (EIT)](https://em.wsu.edu/eit/meet-our-staff/)** at **Washington State University**.
+
+📧 Questions or feedback? Visit our [team page](https://em.wsu.edu/eit/meet-our-staff/) or open an issue on [GitHub](https://github.com/WSU-EIT/FreeTools/issues)

@@ -148,7 +148,10 @@ internal partial class Program
         sb.AppendLine();
         sb.AppendLine("---");
         sb.AppendLine();
-        sb.AppendLine("*Part of the [FreeTools](https://github.com/WSU-EIT/FreeTools) suite — Open source workspace analysis tools for .NET projects*");
+        sb.AppendLine("**[FreeTools](https://github.com/WSU-EIT/FreeTools)** — Open source workspace analysis tools for .NET projects");
+        sb.AppendLine();
+        sb.AppendLine("Developed by [Enrollment Information Technology](https://em.wsu.edu/eit/meet-our-staff/) at Washington State University");
+        sb.AppendLine();
 
         Console.WriteLine();
         Console.WriteLine($"Writing report to: {outputPath}");
@@ -1023,7 +1026,7 @@ internal partial class Program
             sb.AppendLine();
         }
 
-        // === AUTH-REQUIRED PAGES (Compact Grid with Expandable Details) ===
+        // === AUTH-REQUIRED PAGES (Grouped by Category like Public Pages) ===
         if (authPages.Count > 0)
         {
             sb.AppendLine("---");
@@ -1034,70 +1037,77 @@ internal partial class Program
             sb.AppendLine();
             sb.AppendLine("> 💡 Click step numbers to view: **①** redirect → **②** fill form → **③** result");
             sb.AppendLine();
-            sb.AppendLine("<details open>");
-            sb.AppendLine($"<summary><strong>📁 Protected Routes</strong> ({authPages.Count} pages)</summary>");
-            sb.AppendLine();
-            sb.AppendLine("<table>");
-            
-            // Build rows of 3 screenshots each (like public pages)
-            var authRoutesList = authPages.OrderBy(r => r.Route).ToList();
-            for (int i = 0; i < authRoutesList.Count; i += 3)
-            {
-                sb.AppendLine("<tr>");
-                for (int j = 0; j < 3; j++)
-                {
-                    var idx = i + j;
-                    if (idx < authRoutesList.Count)
-                    {
-                        var authRoute = authRoutesList[idx];
-                        var displayRoute = ShortenRoute(authRoute.Route, 20);
-                        var dir = authRoute.Directory;
-                        var relDir = authRoute.RelativeDir;
-                        
-                        // Check which steps exist
-                        var hasStep1 = File.Exists(Path.Combine(dir, "1-initial.png"));
-                        var hasStep2 = File.Exists(Path.Combine(dir, "2-filled.png"));
-                        var hasStep3 = File.Exists(Path.Combine(dir, "3-result.png"));
-                        var hasDefault = File.Exists(Path.Combine(dir, "default.png"));
-                        
-                        // Show the final result (3-result.png) as the main image
-                        string? imgPath = null;
-                        if (hasStep3)
-                            imgPath = $"{relDir}/3-result.png";
-                        else if (hasDefault)
-                            imgPath = $"{relDir}/default.png";
 
-                        sb.AppendLine("<td align=\"center\" width=\"33%\">");
-                        if (imgPath != null)
+            // Group by category (same as public pages)
+            var authByCategory = authPages.GroupBy(r => r.Category).OrderBy(g => g.Key).ToList();
+
+            foreach (var group in authByCategory)
+            {
+                var categoryName = group.Key == "root" ? "Home" : group.Key;
+                sb.AppendLine($"<details open>");
+                sb.AppendLine($"<summary><strong>📁 {categoryName}</strong> ({group.Count()} pages)</summary>");
+                sb.AppendLine();
+                sb.AppendLine("<table>");
+                
+                var routes = group.OrderBy(r => r.Route).ToList();
+                for (int i = 0; i < routes.Count; i += 3)
+                {
+                    sb.AppendLine("<tr>");
+                    for (int j = 0; j < 3; j++)
+                    {
+                        var idx = i + j;
+                        if (idx < routes.Count)
                         {
-                            sb.AppendLine($"<a href=\"{imgPath}\">");
-                            sb.AppendLine($"<img src=\"{imgPath}\" width=\"250\" alt=\"{authRoute.Route}\" />");
-                            sb.AppendLine("</a>");
+                            var authRoute = routes[idx];
+                            var displayRoute = ShortenRoute(authRoute.Route, 20);
+                            var dir = authRoute.Directory;
+                            var relDir = authRoute.RelativeDir;
+                            
+                            // Check which steps exist
+                            var hasStep1 = File.Exists(Path.Combine(dir, "1-initial.png"));
+                            var hasStep2 = File.Exists(Path.Combine(dir, "2-filled.png"));
+                            var hasStep3 = File.Exists(Path.Combine(dir, "3-result.png"));
+                            var hasDefault = File.Exists(Path.Combine(dir, "default.png"));
+                            
+                            // Show the final result (3-result.png) as the main image
+                            string? imgPath = null;
+                            if (hasStep3)
+                                imgPath = $"{relDir}/3-result.png";
+                            else if (hasDefault)
+                                imgPath = $"{relDir}/default.png";
+
+                            sb.AppendLine("<td align=\"center\" width=\"33%\">");
+                            if (imgPath != null)
+                            {
+                                sb.AppendLine($"<a href=\"{imgPath}\">");
+                                sb.AppendLine($"<img src=\"{imgPath}\" width=\"250\" alt=\"{authRoute.Route}\" />");
+                                sb.AppendLine("</a>");
+                            }
+                            
+                            // Build step links: route 🔐 [①][②][③]
+                            var stepLinks = new StringBuilder();
+                            if (hasStep1)
+                                stepLinks.Append($"<a href=\"{relDir}/1-initial.png\" title=\"Step 1: Redirect\">①</a>");
+                            if (hasStep2)
+                                stepLinks.Append($"<a href=\"{relDir}/2-filled.png\" title=\"Step 2: Fill Form\">②</a>");
+                            if (hasStep3)
+                                stepLinks.Append($"<a href=\"{relDir}/3-result.png\" title=\"Step 3: Result\">③</a>");
+                            
+                            sb.AppendLine($"<br /><code>{displayRoute}</code> 🔐 {stepLinks}");
+                            sb.AppendLine("</td>");
                         }
-                        
-                        // Build step links: route 🔐 [①][②][③]
-                        var stepLinks = new StringBuilder();
-                        if (hasStep1)
-                            stepLinks.Append($"<a href=\"{relDir}/1-initial.png\" title=\"Step 1: Redirect\">①</a>");
-                        if (hasStep2)
-                            stepLinks.Append($"<a href=\"{relDir}/2-filled.png\" title=\"Step 2: Fill Form\">②</a>");
-                        if (hasStep3)
-                            stepLinks.Append($"<a href=\"{relDir}/3-result.png\" title=\"Step 3: Result\">③</a>");
-                        
-                        sb.AppendLine($"<br /><code>{displayRoute}</code> 🔐 {stepLinks}");
-                        sb.AppendLine("</td>");
+                        else
+                            sb.AppendLine("<td></td>");
                     }
-                    else
-                        sb.AppendLine("<td></td>");
+                    sb.AppendLine("</tr>");
                 }
-                sb.AppendLine("</tr>");
+                
+                sb.AppendLine("</table>");
+                sb.AppendLine();
+                sb.AppendLine("</details>");
+                sb.AppendLine();
             }
-            
-            sb.AppendLine("</table>");
-            sb.AppendLine();
-            sb.AppendLine("</details>");
-            sb.AppendLine();
-            
+
             // Add a single expandable section showing the auth flow pattern
             sb.AppendLine("<details>");
             sb.AppendLine("<summary>🔍 <strong>View Auth Flow Pattern</strong> (same for all protected pages)</summary>");
@@ -1108,7 +1118,7 @@ internal partial class Program
             sb.AppendLine("|:----:|--------|:----------:|");
             
             // Use first auth route as example
-            var exampleRoute = authRoutesList.First();
+            var exampleRoute = authPages.First();
             var exDir = exampleRoute.RelativeDir;
             var hasEx1 = File.Exists(Path.Combine(exampleRoute.Directory, "1-initial.png"));
             var hasEx2 = File.Exists(Path.Combine(exampleRoute.Directory, "2-filled.png"));

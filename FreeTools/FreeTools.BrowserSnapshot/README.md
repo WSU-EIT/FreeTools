@@ -213,4 +213,12 @@ pwsh bin/Debug/net10.0/playwright.ps1 install
 
 ---
 
+## 📬 About
+
+**FreeTools** is developed and maintained by **[Enrollment Information Technology (EIT)](https://em.wsu.edu/eit/meet-our-staff/)** at **Washington State University**.
+
+📧 Questions or feedback? Visit our [team page](https://em.wsu.edu/eit/meet-our-staff/) or open an issue on [GitHub](https://github.com/WSU-EIT/FreeTools/issues).
+
+---
+
 *Part of the FreeTools suite*

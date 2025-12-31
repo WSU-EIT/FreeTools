@@ -147,3 +147,11 @@ using FreeTools.Core;
 3. **Static Methods** — All utilities are static for simplicity
 4. **Thread-Safe** — Console output is synchronized for parallel use
 5. **Clear Naming** — Two-word descriptive file names
+
+---
+
+## 📬 About
+
+**FreeTools** is developed and maintained by **[Enrollment Information Technology (EIT)](https://em.wsu.edu/eit/meet-our-staff/)** at **Washington State University**.
+
+📧 Questions or feedback? Visit our [team page](https://em.wsu.edu/eit/meet-our-staff/) or open an issue on [GitHub](https://github.com/WSU-EIT/FreeTools/issues)
