@@ -933,8 +933,14 @@ internal partial class Program
             .ToList();
 
         // Split into public and auth-required pages
-        var authPages = allRoutes.Where(r => r.Metadata?.RequiresAuth == true).ToList();
-        var publicPages = allRoutes.Where(r => r.Metadata?.RequiresAuth != true).ToList();
+        // Check for actual auth flow screenshots (1-initial.png exists), not just RequiresAuth flag
+        // This catches pages that redirect to login even if not marked [Authorize] in code
+        var authPages = allRoutes.Where(r => 
+            File.Exists(Path.Combine(r.Directory, "1-initial.png")) ||
+            r.Metadata?.RequiresAuth == true ||
+            r.Metadata?.AuthFlowCompleted == true
+        ).ToList();
+        var publicPages = allRoutes.Where(r => !authPages.Contains(r)).ToList();
         
         var totalRoutes = allRoutes.Count;
         sb.AppendLine($"**{totalRoutes} page screenshots captured**");
