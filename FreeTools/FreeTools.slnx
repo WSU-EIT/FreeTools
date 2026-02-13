@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/FreeTools/">
     <Project Path="Docs/Docs.csproj" />
+    <Project Path="FreeTools.AccessibilityScanner/FreeTools.AccessibilityScanner.csproj" />
     <Project Path="FreeTools.AppHost/FreeTools.AppHost.csproj" />
     <Project Path="FreeTools.BrowserSnapshot/FreeTools.BrowserSnapshot.csproj" />
     <Project Path="FreeTools.Core/FreeTools.Core.csproj" />
