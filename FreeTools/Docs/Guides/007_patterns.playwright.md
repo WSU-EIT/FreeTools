@@ -13,7 +13,7 @@
 | [Core Lifecycle](#core-lifecycle) | ~90 | Create → Launch → Context → Page → Dispose |
 | [Navigation & Waiting](#navigation--waiting) | ~155 | WaitUntilState strategies for SPAs |
 | [Screenshot Capture](#screenshot-capture) | ~200 | Full-page capture, retry logic, file size checks |
-| [Page Interaction](#page-interaction) | ~260 | Full element reference: inputs, selects, checkboxes, tables, modals, keyboard, scrolling |
+| [Page Interaction](#page-interaction) | ~260 | Full element reference: inputs, selects, checkboxes, tables, modals, downloads, keyboard, scrolling |
 | [Auth Flow Pattern](#auth-flow-pattern) | ~340 | Multi-step login with screenshots at each stage |
 | [Console Error Capture](#console-error-capture) | ~410 | Capturing JavaScript errors during page load |
 | [Parallel Execution](#parallel-execution) | ~440 | SemaphoreSlim + ordered output pattern |
@@ -877,6 +877,168 @@ private static async Task<bool> HasLoginFormAsync(IPage page)
 
 ---
 
+### File Downloads
+
+Playwright intercepts browser downloads so you can save them, read their contents, and validate what was exported.
+
+#### Basic download — click a link/button that triggers a file download
+
+```csharp
+// Start waiting for the download BEFORE clicking
+var downloadTask = page.WaitForDownloadAsync();
+await page.Locator("a:has-text('Export CSV')").ClickAsync();
+var download = await downloadTask;
+
+// Get the suggested filename from the server (Content-Disposition header)
+string suggestedName = download.SuggestedFilename;
+Console.WriteLine($"Downloaded: {suggestedName}");
+
+// Save to a specific path on disk
+string savePath = Path.Combine(outputDir, suggestedName);
+await download.SaveAsAsync(savePath);
+
+Console.WriteLine($"Saved to: {savePath}");
+Console.WriteLine($"File size: {new FileInfo(savePath).Length} bytes");
+```
+
+#### Download and read CSV contents into objects
+
+```csharp
+// Trigger the download
+var downloadTask = page.WaitForDownloadAsync();
+await page.Locator("#export-csv-button").ClickAsync();
+var download = await downloadTask;
+
+// Save to a temp file, read it, then clean up
+string tempPath = Path.Combine(Path.GetTempPath(), download.SuggestedFilename);
+await download.SaveAsAsync(tempPath);
+
+// Read CSV lines into objects
+var lines = await File.ReadAllLinesAsync(tempPath);
+Console.WriteLine($"CSV has {lines.Length} lines (including header)");
+
+// Parse CSV into a list (skip header row)
+List<CsvRow> rows = new();
+for (int i = 1; i < lines.Length; i++) {
+    var parts = lines[i].Split(',');
+    if (parts.Length >= 3) {
+        rows.Add(new CsvRow
+        {
+            Name = parts[0].Trim('"'),
+            Status = parts[1].Trim('"'),
+            Count = int.TryParse(parts[2].Trim('"'), out var c) ? c : 0
+        });
+    }
+}
+
+Console.WriteLine($"Parsed {rows.Count} data rows from CSV");
+
+// Clean up temp file
+File.Delete(tempPath);
+```
+
+```csharp
+// Simple CSV row class
+internal class CsvRow
+{
+    public string Name { get; set; } = "";
+    public string Status { get; set; } = "";
+    public int Count { get; set; }
+}
+```
+
+#### Read file contents without saving to disk
+
+```csharp
+// Use the download stream directly (no temp file needed)
+var downloadTask = page.WaitForDownloadAsync();
+await page.Locator("button:has-text('Download Report')").ClickAsync();
+var download = await downloadTask;
+
+// Read straight from the stream
+await using var stream = await download.CreateReadStreamAsync();
+using var reader = new StreamReader(stream);
+string content = await reader.ReadToEndAsync();
+
+Console.WriteLine($"Downloaded {content.Length} characters");
+Console.WriteLine($"First 200 chars: {content[..Math.Min(200, content.Length)]}");
+```
+
+#### Download a JSON file and deserialize it
+
+```csharp
+var downloadTask = page.WaitForDownloadAsync();
+await page.Locator("a:has-text('Export JSON')").ClickAsync();
+var download = await downloadTask;
+
+await using var stream = await download.CreateReadStreamAsync();
+var report = await JsonSerializer.DeserializeAsync<ExportReport>(stream, new JsonSerializerOptions
+{
+    PropertyNameCaseInsensitive = true
+});
+
+if (report != null) {
+    Console.WriteLine($"Report: {report.Title}");
+    Console.WriteLine($"Items: {report.Items.Count}");
+}
+```
+
+#### Download triggered by navigation (e.g. clicking a direct file URL)
+
+```csharp
+// Some links navigate to a URL that returns a file instead of a page
+// Use page.ExpectDownloadAsync for this pattern
+var downloadTask = page.WaitForDownloadAsync();
+await page.GotoAsync("https://localhost:5001/api/Data/ExportAll");
+var download = await downloadTask;
+
+string savePath = Path.Combine(outputDir, download.SuggestedFilename);
+await download.SaveAsAsync(savePath);
+```
+
+#### Check for download errors
+
+```csharp
+var downloadTask = page.WaitForDownloadAsync();
+await page.Locator("#download-btn").ClickAsync();
+var download = await downloadTask;
+
+// Check if download failed (server error, cancelled, etc.)
+string? failure = await download.FailureAsync();
+if (failure != null) {
+    Console.WriteLine($"Download failed: {failure}");
+} else {
+    Console.WriteLine($"Download OK: {download.SuggestedFilename}");
+    string savePath = Path.Combine(outputDir, download.SuggestedFilename);
+    await download.SaveAsAsync(savePath);
+}
+```
+
+#### Multiple downloads from one action
+
+```csharp
+// Some buttons trigger multiple file downloads
+// Use a loop to capture them
+var downloads = new List<IDownload>();
+
+page.Download += (_, download) => downloads.Add(download);
+
+await page.Locator("#export-all-button").ClickAsync();
+
+// Wait a moment for all downloads to start
+await page.WaitForTimeoutAsync(2000);
+
+Console.WriteLine($"Captured {downloads.Count} downloads");
+
+foreach (var dl in downloads) {
+    string savePath = Path.Combine(outputDir, dl.SuggestedFilename);
+    await dl.SaveAsAsync(savePath);
+    Console.WriteLine($"  Saved: {dl.SuggestedFilename} ({new FileInfo(savePath).Length} bytes)");
+}
+```
+
+---
+
 ### Element Interaction Quick Reference
 
 | Element | Find It | Interact |
@@ -893,6 +1055,7 @@ private static async Task<bool> HasLoginFormAsync(IPage page)
 | Button | `page.GetByRole(AriaRole.Button, ...)` | `.ClickAsync()` |
 | Link | `page.GetByRole(AriaRole.Link, ...)` | `.ClickAsync()` |
 | File upload | `page.Locator("input[type='file']")` | `.SetInputFilesAsync("path")` |
+| File download | `page.WaitForDownloadAsync()` | `.SaveAsAsync("path")` / `.CreateReadStreamAsync()` |
 | Any element | `page.Locator(".my-class")` | `.InnerTextAsync()` / `.GetAttributeAsync("href")` |
 
 ---
