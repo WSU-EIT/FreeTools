@@ -93,8 +93,20 @@ internal class Program
 
             var tasks = config.Sites.Select(kvp => Task.Run(async () =>
             {
-                var result = await ScanSiteAsync(browser, kvp.Key, kvp.Value, config, runsDir);
-                allResults.Add(result);
+                try
+                {
+                    var result = await ScanSiteAsync(browser, kvp.Key, kvp.Value, config, runsDir);
+                    allResults.Add(result);
+                }
+                catch (Exception ex)
+                {
+                    Console.Error.WriteLine($"  [{kvp.Key}] Site scan failed: {ex.Message}");
+                    allResults.Add(new SiteResult
+                    {
+                        Url = kvp.Key,
+                        FolderName = new Uri(kvp.Key).Host.Replace('.', '-')
+                    });
+                }
             })).ToArray();
 
             await Task.WhenAll(tasks);
@@ -189,9 +201,25 @@ internal class Program
 
         foreach (var pagePath in pagePaths)
         {
-            var pageResult = await ScanPageAsync(
-                browser, uri, pagePath, siteConfig, scannerConfig, siteDir);
-            siteResult.Pages.Add(pageResult);
+            try
+            {
+                var pageResult = await ScanPageAsync(
+                    browser, uri, pagePath, siteConfig, scannerConfig, siteDir);
+                siteResult.Pages.Add(pageResult);
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"  [{uri.Host}] {pagePath} — Skipped (unhandled error): {ex.Message}");
+                siteResult.Pages.Add(new PageResult
+                {
+                    PagePath = pagePath,
+                    FullUrl = ResolvePageUrl(uri, pagePath),
+                    FolderName = PagePathToFolderName(pagePath),
+                    Success = false,
+                    ErrorMessage = ex.Message,
+                    CapturedAt = DateTime.UtcNow
+                });
+            }
         }
 
         // Write site-level summary report
@@ -1049,7 +1077,7 @@ internal class Program
 
     /// <summary>
     /// Convert a page path to a flat folder name.
-    /// "/" → "_root", "/site/page1" → "site_page1"
+    /// "/" → "_root", "/site/page1" → "site_page1", "/?c=A" → "_qc-A"
     /// </summary>
     private static string PagePathToFolderName(string pagePath)
     {
@@ -1058,7 +1086,7 @@ internal class Program
             pagePath.StartsWith("https://", StringComparison.OrdinalIgnoreCase))
         {
             var uri = new Uri(pagePath);
-            pagePath = uri.AbsolutePath;
+            pagePath = uri.PathAndQuery;
         }
 
         var trimmed = pagePath.Trim('/');
@@ -1068,7 +1096,20 @@ internal class Program
             return "_root";
         }
 
-        return trimmed.Replace('/', '_');
+        // Replace path separators and query string chars with safe alternatives
+        var folderName = trimmed
+            .Replace('/', '_')
+            .Replace("?", "_q")
+            .Replace('&', '_')
+            .Replace('=', '-');
+
+        // Strip any remaining invalid filesystem characters
+        foreach (var c in Path.GetInvalidFileNameChars())
+        {
+            folderName = folderName.Replace(c, '-');
+        }
+
+        return folderName;
     }
 
     // ========================================================================
@@ -1144,7 +1185,7 @@ internal class AppSettingsRoot
 internal class ScannerConfig
 {
     public int SettleDelayMs { get; set; } = 3000;
-    public int TimeoutMs { get; set; } = 60000;
+    public int TimeoutMs { get; set; } = 10000;
     public bool Headless { get; set; } = true;
     public string UserAgent { get; set; } = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
     public Dictionary<string, SiteConfig> Sites { get; set; } = new();
