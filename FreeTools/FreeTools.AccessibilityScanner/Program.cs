@@ -40,6 +40,7 @@ internal class Program
         ConsoleOutput.PrintConfig("Sites", config.Sites.Count.ToString());
         ConsoleOutput.PrintConfig("Settle delay", $"{config.SettleDelayMs}ms");
         ConsoleOutput.PrintConfig("Timeout", $"{config.TimeoutMs}ms");
+        ConsoleOutput.PrintConfig("Max concurrency", config.MaxConcurrency.ToString());
         ConsoleOutput.PrintConfig("Headless", config.Headless.ToString());
         ConsoleOutput.PrintDivider();
 
@@ -86,13 +87,18 @@ internal class Program
                 Headless = config.Headless
             });
 
-            Console.WriteLine("[3/3] Scanning sites in parallel...");
+            var maxConcurrency = Math.Max(1, config.MaxConcurrency);
+            Console.WriteLine($"[3/3] Scanning sites ({maxConcurrency} at a time)...");
             Console.WriteLine();
 
             var allResults = new ConcurrentBag<SiteResult>();
+            var completed = 0;
+            var siteTotal = config.Sites.Count;
+            var semaphore = new SemaphoreSlim(maxConcurrency, maxConcurrency);
 
             var tasks = config.Sites.Select(kvp => Task.Run(async () =>
             {
+                await semaphore.WaitAsync();
                 try
                 {
                     var result = await ScanSiteAsync(browser, kvp.Key, kvp.Value, config, runsDir);
@@ -106,6 +112,12 @@ internal class Program
                         Url = kvp.Key,
                         FolderName = new Uri(kvp.Key).Host.Replace('.', '-')
                     });
+                }
+                finally
+                {
+                    var done = Interlocked.Increment(ref completed);
+                    Console.WriteLine($"  ── Site {done}/{siteTotal} complete: {kvp.Key}");
+                    semaphore.Release();
                 }
             })).ToArray();
 
@@ -504,8 +516,32 @@ internal class Program
         var reportPath = Path.Combine(pageDir, "report.md");
         var reportSb = new StringBuilder();
         var statusEmoji = result.Success ? "✅" : "❌";
+        var missingAltCount = result.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText));
 
-        reportSb.AppendLine($"# Page Scan Report");
+        reportSb.AppendLine($"# 📄 Page Scan Report");
+        reportSb.AppendLine();
+        reportSb.AppendLine($"> **URL:** {result.FullUrl}  ");
+        reportSb.AppendLine($"> **Captured:** {result.CapturedAt:yyyy-MM-dd HH:mm:ss} UTC  ");
+        reportSb.AppendLine($"> **Status:** {statusEmoji} {result.StatusCode}  ");
+        reportSb.AppendLine();
+        reportSb.AppendLine("---");
+        reportSb.AppendLine();
+
+        // Table of Contents
+        reportSb.AppendLine("## 📑 Contents");
+        reportSb.AppendLine();
+        reportSb.AppendLine("- [Summary](#-summary)");
+        reportSb.AppendLine("- [Screenshots](#-screenshots)");
+        reportSb.AppendLine("- [Page Images](#-page-images)");
+        if (result.ConsoleErrors.Count > 0) reportSb.AppendLine("- [JavaScript Errors](#-javascript-errors)");
+        reportSb.AppendLine("- [Actions](#-actions)");
+        reportSb.AppendLine("- [Files](#-files)");
+        reportSb.AppendLine();
+        reportSb.AppendLine("---");
+        reportSb.AppendLine();
+
+        // Summary
+        reportSb.AppendLine($"## 📋 Summary");
         reportSb.AppendLine();
         reportSb.AppendLine($"| Field | Value |");
         reportSb.AppendLine($"|-------|-------|");
@@ -515,133 +551,207 @@ internal class Program
             reportSb.AppendLine($"| Redirected To | {result.FinalUrl} |");
         }
 
-        reportSb.AppendLine($"| Title | {result.Title ?? "(none)"} |");
+        reportSb.AppendLine($"| Title | {result.Title ?? "*(none)*"} |");
         reportSb.AppendLine($"| Status | {statusEmoji} {result.StatusCode} |");
         reportSb.AppendLine($"| HTML Size | {PathSanitizer.FormatBytes(result.HtmlSize)} |");
         reportSb.AppendLine($"| Screenshots | {result.Screenshots.Count} ({PathSanitizer.FormatBytes(result.ScreenshotSize)}) |");
         reportSb.AppendLine($"| Images | {result.Images.Count} ({PathSanitizer.FormatBytes(result.ImagesTotalSize)}) |");
-        reportSb.AppendLine($"| Images Missing Alt | {result.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText))} |");
-        reportSb.AppendLine($"| JS Errors | {result.ConsoleErrors.Count} |");
+        reportSb.AppendLine($"| Images Missing Alt | {(missingAltCount > 0 ? $"⚠️ {missingAltCount}" : "✅ 0")} |");
+        reportSb.AppendLine($"| JS Errors | {(result.ConsoleErrors.Count > 0 ? $"🔴 {result.ConsoleErrors.Count}" : "✅ 0")} |");
         reportSb.AppendLine($"| JS Warnings | {result.ConsoleWarnings.Count} |");
         reportSb.AppendLine($"| Auth | {result.CredentialUsed ?? "none"} |");
         reportSb.AppendLine($"| Captured | {result.CapturedAt:O} |");
+        reportSb.AppendLine();
 
         if (result.ErrorMessage != null)
         {
+            reportSb.AppendLine($"> ❌ **Error:** `{result.ErrorMessage}`");
             reportSb.AppendLine();
-            reportSb.AppendLine($"## Error");
-            reportSb.AppendLine();
-            reportSb.AppendLine($"```");
-            reportSb.AppendLine(result.ErrorMessage);
-            reportSb.AppendLine($"```");
         }
 
+        // Console errors — accordion
         if (result.ConsoleErrors.Count > 0)
         {
+            reportSb.AppendLine($"## 🔴 JavaScript Errors");
             reportSb.AppendLine();
-            reportSb.AppendLine($"## JavaScript Errors");
+            reportSb.AppendLine("<details>");
+            reportSb.AppendLine($"<summary><strong>{result.ConsoleErrors.Count} error(s) detected</strong></summary>");
             reportSb.AppendLine();
-            foreach (var error in result.ConsoleErrors)
+            reportSb.AppendLine("```");
+            foreach (var error in result.ConsoleErrors.Take(20))
             {
-                reportSb.AppendLine($"- `{error}`");
+                reportSb.AppendLine(error.Length > 200 ? error[..200] + "..." : error);
             }
+            if (result.ConsoleErrors.Count > 20)
+            {
+                reportSb.AppendLine($"... and {result.ConsoleErrors.Count - 20} more (see errors.log)");
+            }
+            reportSb.AppendLine("```");
+            reportSb.AppendLine();
+            reportSb.AppendLine("</details>");
+            reportSb.AppendLine();
         }
 
+        // Actions — accordion
+        reportSb.AppendLine($"## 🔧 Actions");
         reportSb.AppendLine();
-        reportSb.AppendLine($"## Actions");
+        reportSb.AppendLine("<details>");
+        reportSb.AppendLine($"<summary><strong>{actions.Count} action(s) performed</strong></summary>");
         reportSb.AppendLine();
         foreach (var action in actions)
         {
             reportSb.AppendLine($"- {action}");
         }
-
         reportSb.AppendLine();
-        reportSb.AppendLine($"## Screenshots");
+        reportSb.AppendLine("</details>");
+        reportSb.AppendLine();
+
+        // Screenshots — HTML gallery
+        reportSb.AppendLine($"## 📸 Screenshots");
         reportSb.AppendLine();
 
         if (result.Screenshots.Count > 0)
         {
-            foreach (var shot in result.Screenshots)
+            reportSb.AppendLine("<table>");
+            for (int i = 0; i < result.Screenshots.Count; i += 2)
             {
-                reportSb.AppendLine($"### {shot.StepNumber}. {shot.Label}");
-                reportSb.AppendLine();
-                reportSb.AppendLine($"![{shot.Label}]({shot.FileName})");
-                reportSb.AppendLine();
+                reportSb.AppendLine("<tr>");
+                for (int j = 0; j < 2; j++)
+                {
+                    var idx = i + j;
+                    if (idx < result.Screenshots.Count)
+                    {
+                        var shot = result.Screenshots[idx];
+                        reportSb.AppendLine("<td align=\"center\" width=\"50%\">");
+                        reportSb.AppendLine($"<a href=\"{shot.FileName}\">");
+                        reportSb.AppendLine($"<img src=\"{shot.FileName}\" width=\"400\" alt=\"{shot.Label}\" />");
+                        reportSb.AppendLine("</a>");
+                        reportSb.AppendLine($"<br /><strong>{shot.StepNumber}. {shot.Label}</strong>");
+                        reportSb.AppendLine($"<br /><sub>{PathSanitizer.FormatBytes(shot.FileSize)}</sub>");
+                        reportSb.AppendLine("</td>");
+                    }
+                    else
+                    {
+                        reportSb.AppendLine("<td></td>");
+                    }
+                }
+                reportSb.AppendLine("</tr>");
             }
+            reportSb.AppendLine("</table>");
         }
         else
         {
             reportSb.AppendLine("*No screenshots captured.*");
         }
-
-        // Image gallery
         reportSb.AppendLine();
-        reportSb.AppendLine($"## Page Images ({result.Images.Count})");
+
+        // Image gallery — HTML grid with accordions
+        reportSb.AppendLine($"## 🖼️ Page Images ({result.Images.Count})");
         reportSb.AppendLine();
 
         if (result.Images.Count > 0)
         {
-            // Summary table
+            // Summary table in accordion
+            reportSb.AppendLine("<details open>");
+            reportSb.AppendLine($"<summary><strong>📋 Image Index</strong> — {result.Images.Count} images, {PathSanitizer.FormatBytes(result.ImagesTotalSize)}</summary>");
+            reportSb.AppendLine();
             reportSb.AppendLine($"| # | Image | Alt Text | Size |");
-            reportSb.AppendLine($"|---|-------|----------|------|");
+            reportSb.AppendLine($"|--:|-------|----------|-----:|");
 
             var imgNum = 0;
             foreach (var img in result.Images)
             {
                 imgNum++;
                 var alt = Truncate(img.AltText, 40);
-                if (string.IsNullOrWhiteSpace(alt)) alt = "*(none)*";
+                if (string.IsNullOrWhiteSpace(alt)) alt = "⚠️ *(missing)*";
                 reportSb.AppendLine($"| {imgNum} | [{img.FileName}](images/{img.FileName}) | {alt} | {PathSanitizer.FormatBytes(img.FileSize)} |");
             }
-
-            // Thumbnails
             reportSb.AppendLine();
-            reportSb.AppendLine($"### Gallery");
+            reportSb.AppendLine("</details>");
             reportSb.AppendLine();
 
-            foreach (var img in result.Images)
+            // Thumbnail gallery — 3-column HTML grid
+            reportSb.AppendLine("<details open>");
+            reportSb.AppendLine($"<summary><strong>🖼️ Gallery</strong></summary>");
+            reportSb.AppendLine();
+            reportSb.AppendLine("<table>");
+            for (int i = 0; i < result.Images.Count; i += 3)
             {
-                var alt = string.IsNullOrWhiteSpace(img.AltText) ? img.FileName : img.AltText;
-                reportSb.AppendLine($"![{alt}](images/{img.FileName})");
-                reportSb.AppendLine();
+                reportSb.AppendLine("<tr>");
+                for (int j = 0; j < 3; j++)
+                {
+                    var idx = i + j;
+                    if (idx < result.Images.Count)
+                    {
+                        var img = result.Images[idx];
+                        var alt = string.IsNullOrWhiteSpace(img.AltText) ? img.FileName : img.AltText;
+                        var altBadge = string.IsNullOrWhiteSpace(img.AltText) ? " ⚠️" : "";
+                        reportSb.AppendLine("<td align=\"center\" width=\"33%\">");
+                        reportSb.AppendLine($"<a href=\"images/{img.FileName}\">");
+                        reportSb.AppendLine($"<img src=\"images/{img.FileName}\" width=\"200\" alt=\"{alt}\" />");
+                        reportSb.AppendLine("</a>");
+                        reportSb.AppendLine($"<br /><sub>{img.FileName}{altBadge}</sub>");
+                        reportSb.AppendLine("</td>");
+                    }
+                    else
+                    {
+                        reportSb.AppendLine("<td></td>");
+                    }
+                }
+                reportSb.AppendLine("</tr>");
             }
+            reportSb.AppendLine("</table>");
+            reportSb.AppendLine();
+            reportSb.AppendLine("</details>");
+            reportSb.AppendLine();
 
-            // Images without alt text (accessibility concern)
+            // Images missing alt text — accessibility flag
             var noAlt = result.Images.Where(i => string.IsNullOrWhiteSpace(i.AltText)).ToList();
             if (noAlt.Count > 0)
             {
+                reportSb.AppendLine("<details>");
+                reportSb.AppendLine($"<summary>⚠️ <strong>Images Missing Alt Text</strong> ({noAlt.Count})</summary>");
                 reportSb.AppendLine();
-                reportSb.AppendLine($"### ⚠️ Images Missing Alt Text ({noAlt.Count})");
-                reportSb.AppendLine();
+                reportSb.AppendLine("| Image | Source URL |");
+                reportSb.AppendLine("|-------|-----------|");
                 foreach (var img in noAlt)
                 {
-                    reportSb.AppendLine($"- `{img.FileName}` — {img.SourceUrl}");
+                    reportSb.AppendLine($"| `{img.FileName}` | {Truncate(img.SourceUrl, 80)} |");
                 }
+                reportSb.AppendLine();
+                reportSb.AppendLine("</details>");
+                reportSb.AppendLine();
             }
         }
         else
         {
             reportSb.AppendLine("*No images found on page.*");
+            reportSb.AppendLine();
         }
 
+        // Files section
+        reportSb.AppendLine($"## 📁 Files");
         reportSb.AppendLine();
-        reportSb.AppendLine($"## Files");
-        reportSb.AppendLine();
+        reportSb.AppendLine("| File | Description |");
+        reportSb.AppendLine("|------|-------------|");
         foreach (var shot in result.Screenshots)
         {
-            reportSb.AppendLine($"- `{shot.FileName}` — {shot.Label} ({PathSanitizer.FormatBytes(shot.FileSize)})");
+            reportSb.AppendLine($"| `{shot.FileName}` | {shot.Label} ({PathSanitizer.FormatBytes(shot.FileSize)}) |");
         }
-
-        reportSb.AppendLine($"- `page.html` — rendered HTML content");
-        reportSb.AppendLine($"- `metadata.json` — machine-readable scan data");
-        reportSb.AppendLine($"- `errors.log` — JavaScript console errors");
-        reportSb.AppendLine($"- `warnings.log` — JavaScript console warnings");
-        reportSb.AppendLine($"- `info.log` — navigation and timing details");
-        reportSb.AppendLine($"- `actions.log` — interactions performed on the page");
+        reportSb.AppendLine($"| `page.html` | Rendered HTML content |");
+        reportSb.AppendLine($"| `metadata.json` | Machine-readable scan data |");
+        reportSb.AppendLine($"| `errors.log` | JavaScript console errors |");
+        reportSb.AppendLine($"| `warnings.log` | JavaScript console warnings |");
+        reportSb.AppendLine($"| `info.log` | Navigation and timing details |");
+        reportSb.AppendLine($"| `actions.log` | Interactions performed |");
         if (result.Images.Count > 0)
         {
-            reportSb.AppendLine($"- `images/` — {result.Images.Count} page images ({PathSanitizer.FormatBytes(result.ImagesTotalSize)})");
+            reportSb.AppendLine($"| `images/` | {result.Images.Count} page images ({PathSanitizer.FormatBytes(result.ImagesTotalSize)}) |");
         }
+        reportSb.AppendLine();
+        reportSb.AppendLine("---");
+        reportSb.AppendLine();
+        reportSb.AppendLine("*Generated by AccessibilityScanner (FreeTools) v1.0*");
 
         await File.WriteAllTextAsync(reportPath, reportSb.ToString());
 
@@ -693,106 +803,149 @@ internal class Program
         var failedPages = site.Pages.Where(p => !p.Success).ToList();
         var pagesWithErrors = site.Pages.Where(p => p.ConsoleErrors.Count > 0).ToList();
         var statusEmoji = successCount == totalCount ? "✅" : "⚠️";
+        var successPct = totalCount > 0 ? (successCount * 100.0 / totalCount) : 0;
 
-        sb.AppendLine($"# Site Report: {site.Url}");
+        sb.AppendLine($"# 🌐 Site Report: {site.Url}");
+        sb.AppendLine();
+        sb.AppendLine($"> **Status:** {statusEmoji} {successCount}/{totalCount} pages OK  ");
+        sb.AppendLine($"> **Folder:** `{site.FolderName}/`  ");
+        sb.AppendLine();
+        sb.AppendLine("---");
+        sb.AppendLine();
+
+        // Summary dashboard
+        sb.AppendLine($"## 📋 Summary");
+        sb.AppendLine();
+        sb.AppendLine("```");
+        sb.AppendLine($"Success Rate:  {GenerateProgressBar(successPct, 30)} {successPct:F0}%");
+        sb.AppendLine("```");
         sb.AppendLine();
         sb.AppendLine($"| Metric | Value |");
         sb.AppendLine($"|--------|-------|");
-        sb.AppendLine($"| Status | {statusEmoji} {successCount}/{totalCount} pages OK |");
         sb.AppendLine($"| Pages Scanned | {totalCount} |");
-        sb.AppendLine($"| Pages Passed | {successCount} |");
-        sb.AppendLine($"| Pages Failed | {failedPages.Count} |");
-        sb.AppendLine($"| Total JS Errors | {totalErrors} |");
+        sb.AppendLine($"| Pages Passed | ✅ {successCount} |");
+        sb.AppendLine($"| Pages Failed | {(failedPages.Count > 0 ? $"❌ {failedPages.Count}" : "0")} |");
+        sb.AppendLine($"| Total JS Errors | {(totalErrors > 0 ? $"🔴 {totalErrors}" : "0")} |");
         sb.AppendLine($"| Total JS Warnings | {totalWarnings} |");
+        sb.AppendLine($"| Total Images | {totalImages} ({PathSanitizer.FormatBytes(totalImagesSize)}) |");
+        sb.AppendLine($"| Images Missing Alt | {(totalMissingAlt > 0 ? $"⚠️ {totalMissingAlt}" : "✅ 0")} |");
         sb.AppendLine($"| Total HTML | {PathSanitizer.FormatBytes(totalHtml)} |");
         sb.AppendLine($"| Total Screenshots | {PathSanitizer.FormatBytes(totalScreenshots)} |");
-        sb.AppendLine($"| Total Images | {totalImages} ({PathSanitizer.FormatBytes(totalImagesSize)}) |");
-        sb.AppendLine($"| Images Missing Alt | {totalMissingAlt} |");
-        sb.AppendLine($"| Folder | `{site.FolderName}/` |");
+        sb.AppendLine();
 
         // Page results table
-        sb.AppendLine();
-        sb.AppendLine($"## Pages");
+        sb.AppendLine($"## 📑 Pages");
         sb.AppendLine();
         sb.AppendLine($"| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |");
-        sb.AppendLine($"|--------|------|------|-------|-----------|--------|-------------|");
+        sb.AppendLine($"|:------:|------|:----:|-------|:---------:|:------:|:-----------:|");
 
         foreach (var page in site.Pages.OrderBy(p => p.PagePath))
         {
             var s = page.Success ? "✅" : "❌";
-            var title = Truncate(page.Title ?? "(none)", 40);
+            var title = Truncate(page.Title ?? "*(none)*", 40);
             var missingAlt = page.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText));
-            sb.AppendLine($"| {s} | [{page.PagePath}]({page.FolderName}/report.md) | {page.StatusCode} | {title} | {page.ConsoleErrors.Count} | {page.Images.Count} | {missingAlt} |");
+            var errBadge = page.ConsoleErrors.Count > 0 ? $"🔴 {page.ConsoleErrors.Count}" : "0";
+            var altBadge = missingAlt > 0 ? $"⚠️ {missingAlt}" : "0";
+            sb.AppendLine($"| {s} | [{page.PagePath}]({page.FolderName}/report.md) | {page.StatusCode} | {title} | {errBadge} | {page.Images.Count} | {altBadge} |");
         }
-
-        // Screenshot gallery — first screenshot from each page
-        sb.AppendLine();
-        sb.AppendLine($"## Page Screenshots");
         sb.AppendLine();
 
-        foreach (var page in site.Pages.OrderBy(p => p.PagePath))
+        // Screenshot gallery — 3-column HTML grid
+        sb.AppendLine($"## 📸 Page Screenshots");
+        sb.AppendLine();
+        sb.AppendLine("Click any thumbnail to view the full page report.");
+        sb.AppendLine();
+
+        var pagesWithShots = site.Pages.Where(p => p.Screenshots.Count > 0).OrderBy(p => p.PagePath).ToList();
+        if (pagesWithShots.Count > 0)
         {
-            var firstShot = page.Screenshots.FirstOrDefault();
-            if (firstShot != null)
+            sb.AppendLine("<table>");
+            for (int i = 0; i < pagesWithShots.Count; i += 3)
             {
-                sb.AppendLine($"### [{page.PagePath}]({page.FolderName}/report.md)");
-                sb.AppendLine();
-                sb.AppendLine($"![{page.PagePath}]({page.FolderName}/{firstShot.FileName})");
-                sb.AppendLine();
+                sb.AppendLine("<tr>");
+                for (int j = 0; j < 3; j++)
+                {
+                    var idx = i + j;
+                    if (idx < pagesWithShots.Count)
+                    {
+                        var page = pagesWithShots[idx];
+                        var firstShot = page.Screenshots.First();
+                        var statusIcon = page.Success ? "✅" : "❌";
+                        sb.AppendLine("<td align=\"center\" width=\"33%\">");
+                        sb.AppendLine($"<a href=\"{page.FolderName}/report.md\">");
+                        sb.AppendLine($"<img src=\"{page.FolderName}/{firstShot.FileName}\" width=\"250\" alt=\"{page.PagePath}\" />");
+                        sb.AppendLine("</a>");
+                        sb.AppendLine($"<br />{statusIcon} <code>{page.PagePath}</code>");
+                        sb.AppendLine("</td>");
+                    }
+                    else
+                    {
+                        sb.AppendLine("<td></td>");
+                    }
+                }
+                sb.AppendLine("</tr>");
             }
+            sb.AppendLine("</table>");
         }
+        else
+        {
+            sb.AppendLine("*No screenshots captured.*");
+        }
+        sb.AppendLine();
 
-        // Failed pages detail
+        // Failed pages — accordion
         if (failedPages.Count > 0)
         {
+            sb.AppendLine($"## ❌ Failed Pages");
             sb.AppendLine();
-            sb.AppendLine($"## Failed Pages");
+            sb.AppendLine("<details open>");
+            sb.AppendLine($"<summary><strong>{failedPages.Count} page(s) failed</strong></summary>");
             sb.AppendLine();
+            sb.AppendLine("| Page | HTTP | Error |");
+            sb.AppendLine("|------|:----:|-------|");
 
             foreach (var page in failedPages)
             {
-                sb.AppendLine($"### {page.PagePath}");
-                sb.AppendLine();
-                sb.AppendLine($"- **URL:** {page.FullUrl}");
-                sb.AppendLine($"- **Status:** {page.StatusCode}");
-                if (page.ErrorMessage != null)
-                {
-                    sb.AppendLine($"- **Error:** `{page.ErrorMessage}`");
-                }
-
-                sb.AppendLine();
+                var err = Truncate(page.ErrorMessage ?? "—", 60);
+                sb.AppendLine($"| [{page.PagePath}]({page.FolderName}/report.md) | {page.StatusCode} | {err} |");
             }
+            sb.AppendLine();
+            sb.AppendLine("</details>");
+            sb.AppendLine();
         }
 
-        // Pages with JS errors
+        // JS errors — accordion
         if (pagesWithErrors.Count > 0)
         {
+            sb.AppendLine($"## 🔴 JavaScript Errors");
             sb.AppendLine();
-            sb.AppendLine($"## Pages with JavaScript Errors");
+            sb.AppendLine("<details>");
+            sb.AppendLine($"<summary><strong>{totalErrors} error(s) across {pagesWithErrors.Count} page(s)</strong></summary>");
             sb.AppendLine();
 
             foreach (var page in pagesWithErrors.OrderByDescending(p => p.ConsoleErrors.Count))
             {
-                sb.AppendLine($"### {page.PagePath} ({page.ConsoleErrors.Count} errors)");
+                sb.AppendLine($"**{page.PagePath}** ({page.ConsoleErrors.Count} errors)");
                 sb.AppendLine();
-                foreach (var error in page.ConsoleErrors.Take(10))
+                sb.AppendLine("```");
+                foreach (var error in page.ConsoleErrors.Take(5))
                 {
-                    sb.AppendLine($"- `{Truncate(error, 120)}`");
+                    sb.AppendLine(error.Length > 200 ? error[..200] + "..." : error);
                 }
-
-                if (page.ConsoleErrors.Count > 10)
+                if (page.ConsoleErrors.Count > 5)
                 {
-                    sb.AppendLine($"- ... and {page.ConsoleErrors.Count - 10} more (see `{page.FolderName}/errors.log`)");
+                    sb.AppendLine($"... and {page.ConsoleErrors.Count - 5} more (see {page.FolderName}/errors.log)");
                 }
-
+                sb.AppendLine("```");
                 sb.AppendLine();
             }
+            sb.AppendLine("</details>");
+            sb.AppendLine();
         }
 
+        sb.AppendLine("---");
         sb.AppendLine();
-        sb.AppendLine($"---");
-        sb.AppendLine();
-        sb.AppendLine($"*Generated by AccessibilityScanner (FreeTools) v1.0*");
+        sb.AppendLine("*Generated by AccessibilityScanner (FreeTools) v1.0*");
 
         await File.WriteAllTextAsync(Path.Combine(siteDir, "report.md"), sb.ToString());
     }
@@ -817,31 +970,60 @@ internal class Program
         var totalImages = siteList.Sum(s => s.Pages.Sum(p => p.Images.Count));
         var totalImagesSize = siteList.Sum(s => s.Pages.Sum(p => p.ImagesTotalSize));
         var totalMissingAlt = siteList.Sum(s => s.Pages.Sum(p => p.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText))));
+        var successPct = totalPages > 0 ? (totalSuccess * 100.0 / totalPages) : 0;
         var runStatus = totalFailed == 0 ? "✅ All pages passed" : $"⚠️ {totalFailed} page(s) failed";
 
-        sb.AppendLine($"# Accessibility Scanner — Run Report");
+        sb.AppendLine($"# 📊 Accessibility Scanner — Run Report");
         sb.AppendLine();
+        sb.AppendLine($"> **Generated:** {DateTime.UtcNow:yyyy-MM-dd HH:mm:ss} UTC  ");
+        sb.AppendLine($"> **Status:** {runStatus}  ");
+        sb.AppendLine($"> **Sites:** {totalSites} | **Pages:** {totalPages}  ");
+        sb.AppendLine();
+        sb.AppendLine("---");
+        sb.AppendLine();
+
+        // Table of Contents
+        sb.AppendLine("## 📑 Contents");
+        sb.AppendLine();
+        sb.AppendLine("- [Dashboard](#-dashboard)");
+        sb.AppendLine("- [Sites](#-sites)");
+        sb.AppendLine("- [Screenshot Gallery](#-screenshot-gallery)");
+        sb.AppendLine("- [All Pages](#-all-pages)");
+        if (totalFailed > 0) sb.AppendLine("- [Failed Pages](#-failed-pages)");
+        if (totalErrors > 0) sb.AppendLine("- [JavaScript Errors](#-javascript-errors)");
+        sb.AppendLine();
+        sb.AppendLine("---");
+        sb.AppendLine();
+
+        // Dashboard
+        sb.AppendLine($"## 📋 Dashboard");
+        sb.AppendLine();
+        sb.AppendLine("```");
+        sb.AppendLine($"Page Success:     {GenerateProgressBar(successPct, 30)} {successPct:F0}%");
+        var altPct = totalImages > 0 ? ((totalImages - totalMissingAlt) * 100.0 / totalImages) : 100;
+        sb.AppendLine($"Alt Text Cover:   {GenerateProgressBar(altPct, 30)} {altPct:F0}%");
+        sb.AppendLine("```");
+        sb.AppendLine();
+
+        sb.AppendLine("| ✅ Passed | ❌ Failed | 🖼️ Images | ⚠️ Missing Alt | 🔴 JS Errors |");
+        sb.AppendLine("|:---------:|:---------:|:----------:|:--------------:|:------------:|");
+        sb.AppendLine($"| {totalSuccess} | {totalFailed} | {totalImages} | {totalMissingAlt} | {totalErrors} |");
+        sb.AppendLine();
+
         sb.AppendLine($"| Metric | Value |");
         sb.AppendLine($"|--------|-------|");
-        sb.AppendLine($"| Run Status | {runStatus} |");
         sb.AppendLine($"| Sites | {totalSites} |");
         sb.AppendLine($"| Total Pages | {totalPages} |");
-        sb.AppendLine($"| Pages Passed | {totalSuccess} |");
-        sb.AppendLine($"| Pages Failed | {totalFailed} |");
-        sb.AppendLine($"| Total JS Errors | {totalErrors} |");
-        sb.AppendLine($"| Total JS Warnings | {totalWarnings} |");
         sb.AppendLine($"| Total Images | {totalImages} ({PathSanitizer.FormatBytes(totalImagesSize)}) |");
-        sb.AppendLine($"| Images Missing Alt | {totalMissingAlt} |");
         sb.AppendLine($"| Total HTML | {PathSanitizer.FormatBytes(totalHtml)} |");
         sb.AppendLine($"| Total Screenshots | {PathSanitizer.FormatBytes(totalScreenshots)} |");
-        sb.AppendLine($"| Generated | {DateTime.UtcNow:O} |");
-
-        // Site summary table
         sb.AppendLine();
-        sb.AppendLine($"## Sites");
+
+        // Sites table
+        sb.AppendLine($"## 🌐 Sites");
         sb.AppendLine();
         sb.AppendLine($"| Status | Site | Pages | Passed | Failed | Images | Missing Alt |");
-        sb.AppendLine($"|--------|------|-------|--------|--------|--------|-------------|");
+        sb.AppendLine($"|:------:|------|:-----:|:------:|:------:|:------:|:-----------:|");
 
         foreach (var site in siteList)
         {
@@ -853,96 +1035,142 @@ internal class Program
 
             sb.AppendLine($"| {s} | [{site.Url}]({site.FolderName}/report.md) | {site.Pages.Count} | {siteSuccess} | {siteFailed} | {siteImages} | {siteMissingAlt} |");
         }
-
-        // All pages flat table
         sb.AppendLine();
-        sb.AppendLine($"## All Pages");
+
+        // Screenshot gallery — grouped by site, HTML 3-column grid, in accordions
+        sb.AppendLine($"## 📸 Screenshot Gallery");
+        sb.AppendLine();
+        sb.AppendLine($"**{totalPages} pages** across **{totalSites} sites**. Click any thumbnail to view the full page report.");
+        sb.AppendLine();
+
+        foreach (var site in siteList)
+        {
+            var host = new Uri(site.Url).Host;
+            var pagesWithShots = site.Pages.Where(p => p.Screenshots.Count > 0).OrderBy(p => p.PagePath).ToList();
+            if (pagesWithShots.Count == 0) continue;
+
+            var siteSuccess = site.Pages.Count(p => p.Success);
+            var siteFailed = site.Pages.Count - siteSuccess;
+            var siteEmoji = siteFailed == 0 ? "✅" : "⚠️";
+
+            sb.AppendLine("<details>");
+            sb.AppendLine($"<summary><strong>{siteEmoji} {host}</strong> — {pagesWithShots.Count} page(s)</summary>");
+            sb.AppendLine();
+            sb.AppendLine("<table>");
+
+            for (int i = 0; i < pagesWithShots.Count; i += 3)
+            {
+                sb.AppendLine("<tr>");
+                for (int j = 0; j < 3; j++)
+                {
+                    var idx = i + j;
+                    if (idx < pagesWithShots.Count)
+                    {
+                        var page = pagesWithShots[idx];
+                        var firstShot = page.Screenshots.First();
+                        var statusIcon = page.Success ? "✅" : "❌";
+                        sb.AppendLine("<td align=\"center\" width=\"33%\">");
+                        sb.AppendLine($"<a href=\"{site.FolderName}/{page.FolderName}/report.md\">");
+                        sb.AppendLine($"<img src=\"{site.FolderName}/{page.FolderName}/{firstShot.FileName}\" width=\"250\" alt=\"{host}{page.PagePath}\" />");
+                        sb.AppendLine("</a>");
+                        sb.AppendLine($"<br />{statusIcon} <code>{page.PagePath}</code>");
+                        sb.AppendLine("</td>");
+                    }
+                    else
+                    {
+                        sb.AppendLine("<td></td>");
+                    }
+                }
+                sb.AppendLine("</tr>");
+            }
+
+            sb.AppendLine("</table>");
+            sb.AppendLine();
+            sb.AppendLine("</details>");
+            sb.AppendLine();
+        }
+
+        // All pages flat table — in accordion because it can be huge
+        sb.AppendLine($"## 📑 All Pages");
+        sb.AppendLine();
+        sb.AppendLine("<details>");
+        sb.AppendLine($"<summary><strong>{totalPages} pages scanned</strong></summary>");
         sb.AppendLine();
         sb.AppendLine($"| Status | Site | Page | HTTP | Title | Images | Missing Alt |");
-        sb.AppendLine($"|--------|------|------|------|-------|--------|-------------|");
+        sb.AppendLine($"|:------:|------|------|:----:|-------|:------:|:-----------:|");
 
         foreach (var site in siteList)
         {
             foreach (var page in site.Pages.OrderBy(p => p.PagePath))
             {
                 var s = page.Success ? "✅" : "❌";
-                var title = Truncate(page.Title ?? "(none)", 35);
+                var title = Truncate(page.Title ?? "*(none)*", 35);
                 var host = new Uri(site.Url).Host;
                 var missingAlt = page.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText));
                 sb.AppendLine($"| {s} | {host} | [{page.PagePath}]({site.FolderName}/{page.FolderName}/report.md) | {page.StatusCode} | {title} | {page.Images.Count} | {missingAlt} |");
             }
         }
-
-        // Screenshot gallery — every page grouped by site
         sb.AppendLine();
-        sb.AppendLine($"## Screenshot Gallery");
+        sb.AppendLine("</details>");
         sb.AppendLine();
 
-        foreach (var site in siteList)
-        {
-            var host = new Uri(site.Url).Host;
-            sb.AppendLine($"### {host}");
-            sb.AppendLine();
-
-            foreach (var page in site.Pages.OrderBy(p => p.PagePath))
-            {
-                var firstShot = page.Screenshots.FirstOrDefault();
-                if (firstShot != null)
-                {
-                    sb.AppendLine($"#### [{page.PagePath}]({site.FolderName}/{page.FolderName}/report.md)");
-                    sb.AppendLine();
-                    sb.AppendLine($"![{host}{page.PagePath}]({site.FolderName}/{page.FolderName}/{firstShot.FileName})");
-                    sb.AppendLine();
-                }
-            }
-        }
-
-        // Failed pages across all sites
+        // Failed pages — accordion
         var allFailed = siteList.SelectMany(s => s.Pages.Where(p => !p.Success)
             .Select(p => (Site: s, Page: p))).ToList();
 
         if (allFailed.Count > 0)
         {
+            sb.AppendLine($"## ❌ Failed Pages");
             sb.AppendLine();
-            sb.AppendLine($"## Failed Pages");
+            sb.AppendLine("<details open>");
+            sb.AppendLine($"<summary><strong>{allFailed.Count} page(s) failed</strong></summary>");
             sb.AppendLine();
+            sb.AppendLine("| Site | Page | HTTP | Error |");
+            sb.AppendLine("|------|------|:----:|-------|");
 
             foreach (var (site, page) in allFailed)
             {
-                sb.AppendLine($"- **{new Uri(site.Url).Host}{page.PagePath}** — HTTP {page.StatusCode}");
-                if (page.ErrorMessage != null)
-                {
-                    sb.AppendLine($"  - `{page.ErrorMessage}`");
-                }
+                var host = new Uri(site.Url).Host;
+                var err = Truncate(page.ErrorMessage ?? "—", 50);
+                sb.AppendLine($"| {host} | {page.PagePath} | {page.StatusCode} | {err} |");
             }
+            sb.AppendLine();
+            sb.AppendLine("</details>");
+            sb.AppendLine();
         }
 
-        // Top JS error pages
+        // Top JS error pages — accordion
         var errorPages = siteList.SelectMany(s => s.Pages.Where(p => p.ConsoleErrors.Count > 0)
             .Select(p => (Site: s, Page: p)))
             .OrderByDescending(x => x.Page.ConsoleErrors.Count)
-            .Take(10)
+            .Take(15)
             .ToList();
 
         if (errorPages.Count > 0)
         {
+            sb.AppendLine($"## 🔴 JavaScript Errors");
             sb.AppendLine();
-            sb.AppendLine($"## Top Pages by JavaScript Errors");
+            sb.AppendLine("<details>");
+            sb.AppendLine($"<summary><strong>Top {errorPages.Count} pages by JS error count</strong></summary>");
             sb.AppendLine();
             sb.AppendLine($"| Errors | Site | Page |");
-            sb.AppendLine($"|--------|------|------|");
+            sb.AppendLine($"|:------:|------|------|");
 
             foreach (var (site, page) in errorPages)
             {
                 var host = new Uri(site.Url).Host;
-                sb.AppendLine($"| {page.ConsoleErrors.Count} | {host} | {page.PagePath} |");
+                sb.AppendLine($"| 🔴 {page.ConsoleErrors.Count} | {host} | [{page.PagePath}]({site.FolderName}/{page.FolderName}/report.md) |");
             }
+            sb.AppendLine();
+            sb.AppendLine("</details>");
+            sb.AppendLine();
         }
 
+        sb.AppendLine("---");
         sb.AppendLine();
-        sb.AppendLine($"---");
+        sb.AppendLine("*Generated by AccessibilityScanner (FreeTools) v1.0*");
         sb.AppendLine();
-        sb.AppendLine($"*Generated by AccessibilityScanner (FreeTools) v1.0*");
+        sb.AppendLine("**[FreeTools](https://github.com/WSU-EIT/FreeTools)** — Open source accessibility scanning tools for .NET projects");
 
         await File.WriteAllTextAsync(Path.Combine(runsDir, "report.md"), sb.ToString());
     }
@@ -953,6 +1181,14 @@ internal class Program
         // Escape pipe characters for markdown tables
         value = value.Replace("|", "\\|");
         return value.Length <= maxLength ? value : value[..(maxLength - 3)] + "...";
+    }
+
+    private static string GenerateProgressBar(double percentage, int width)
+    {
+        var filled = (int)(percentage * width / 100.0);
+        filled = Math.Clamp(filled, 0, width);
+        var empty = width - filled;
+        return $"[{new string('█', filled)}{new string('░', empty)}]";
     }
 
     // ========================================================================
@@ -1370,6 +1606,7 @@ internal class ScannerConfig
 {
     public int SettleDelayMs { get; set; } = 3000;
     public int TimeoutMs { get; set; } = 10000;
+    public int MaxConcurrency { get; set; } = 5;
     public bool Headless { get; set; } = true;
     public string UserAgent { get; set; } = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
     public Dictionary<string, SiteConfig> Sites { get; set; } = new();
