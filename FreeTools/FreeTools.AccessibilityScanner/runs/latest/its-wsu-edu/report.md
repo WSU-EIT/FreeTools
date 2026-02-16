@@ -9,7 +9,7 @@
 | Total JS Errors | 0 |
 | Total JS Warnings | 6 |
 | Total HTML | 6.1 MB |
-| Total Screenshots | 13.1 MB |
+| Total Screenshots | 12.5 MB |
 | Folder | `its-wsu-edu/` |
 
 ## Pages
@@ -18,25 +18,25 @@
 |--------|------|------|-------|-----------|-------------|-----------|
 | ✅ | [/](_root/report.md) | 200 | Information Technology Services \| Wa... | 0 | 0 | 248.1 KB |
 | ✅ | [/about-its/](about-its/report.md) | 200 | About ITS \| Information Technology S... | 0 | 0 | 231.3 KB |
-| ✅ | [/about-its/accreditation-submission-introduction-2025/](about-its_accreditation-submission-introduction-2025/report.md) | 200 | Accreditation Submission Introduction... | 0 | 0 | 231.1 KB |
+| ✅ | [/about-its/accreditation-submission-introduction-2025/](about-its_accreditation-submission-introduction-2025/report.md) | 200 | Accreditation Submission Introduction... | 0 | 0 | 230.6 KB |
 | ✅ | [/about-its/its-informational-series/](about-its_its-informational-series/report.md) | 200 | ITS Informational Series \| Informati... | 0 | 5 | 233.6 KB |
-| ✅ | [/about-its/its-leadership-team/](about-its_its-leadership-team/report.md) | 200 | ITS Leadership Team \| Information Te... | 0 | 0 | 255.0 KB |
+| ✅ | [/about-its/its-leadership-team/](about-its_its-leadership-team/report.md) | 200 | ITS Leadership Team \| Information Te... | 0 | 0 | 254.9 KB |
 | ✅ | [/crimson-service-desk/](crimson-service-desk/report.md) | 200 | Crimson Service Desk \| Information T... | 0 | 0 | 1.4 MB |
-| ✅ | [/enterprise-systems/](enterprise-systems/report.md) | 200 | Enterprise Systems \| Information Tec... | 0 | 0 | 230.3 KB |
+| ✅ | [/enterprise-systems/](enterprise-systems/report.md) | 200 | Enterprise Systems \| Information Tec... | 0 | 0 | 230.2 KB |
 | ✅ | [/enterprise-systems/enterprise-systems-project-overview/](enterprise-systems_enterprise-systems-project-overview/report.md) | 200 | Project Overview \| Information Techn... | 0 | 0 | 231.4 KB |
-| ✅ | [/how-can-we-help-contact-its/](how-can-we-help-contact-its/report.md) | 200 | How Can We Help? \| Information Techn... | 0 | 0 | 231.7 KB |
+| ✅ | [/how-can-we-help-contact-its/](how-can-we-help-contact-its/report.md) | 200 | How Can We Help? \| Information Techn... | 0 | 0 | 231.6 KB |
 | ✅ | [/information-security-services/](information-security-services/report.md) | 200 | Office of Information Security and As... | 0 | 0 | 231.1 KB |
 | ✅ | [/information-security-services/password-assistance/](information-security-services_password-assistance/report.md) | 200 | How to change your password \| Inform... | 0 | 0 | 234.8 KB |
 | ✅ | [/information-security-services/security-spam-phishing-and-malware/](information-security-services_security-spam-phishing-and-malware/report.md) | 200 | Spam, Phishing, and Malware \| Inform... | 0 | 1 | 251.2 KB |
 | ✅ | [/its-careers/](its-careers/report.md) | 200 | ITS Careers \| Information Technology... | 0 | 0 | 234.9 KB |
-| ✅ | [/its-scheduled-maintenance/](its-scheduled-maintenance/report.md) | 200 | ITS Scheduled Maintenance \| Informat... | 0 | 0 | 237.2 KB |
+| ✅ | [/its-scheduled-maintenance/](its-scheduled-maintenance/report.md) | 200 | ITS Scheduled Maintenance \| Informat... | 0 | 0 | 237.1 KB |
 | ✅ | [/msdata-storage/](msdata-storage/report.md) | 200 | How to Manage and Reduce Microsoft Cl... | 0 | 0 | 265.8 KB |
 | ✅ | [/news/](news/report.md) | 200 | News \| Information Technology Servic... | 0 | 0 | 234.6 KB |
-| ✅ | [/news/newsletters/](news_newsletters/report.md) | 200 | Newsletters \| Information Technology... | 0 | 0 | 230.5 KB |
-| ✅ | [/piat/](piat/report.md) | 200 | Piat \| Information Technology Servic... | 0 | 0 | 229.2 KB |
+| ✅ | [/news/newsletters/](news_newsletters/report.md) | 200 | Newsletters \| Information Technology... | 0 | 0 | 230.6 KB |
+| ✅ | [/piat/](piat/report.md) | 200 | Piat \| Information Technology Servic... | 0 | 0 | 229.3 KB |
 | ✅ | [/piat/buildings-and-spaces/](piat_buildings-and-spaces/report.md) | 200 | Buildings and Spaces \| Information T... | 0 | 0 | 232.1 KB |
 | ✅ | [/piat/instructor-support/](piat_instructor-support/report.md) | 200 | Instructor Support \| Information Tec... | 0 | 0 | 228.4 KB |
-| ✅ | [/services-a-z/](services-a-z/report.md) | 200 | Services A-Z \| Information Technolog... | 0 | 0 | 286.9 KB |
+| ✅ | [/services-a-z/](services-a-z/report.md) | 200 | Services A-Z \| Information Technolog... | 0 | 0 | 286.8 KB |
 
 ---
 

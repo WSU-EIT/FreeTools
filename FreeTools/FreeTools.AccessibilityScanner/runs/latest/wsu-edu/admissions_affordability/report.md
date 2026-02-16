@@ -10,7 +10,7 @@
 | JS Errors | 1 |
 | JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T18:43:11.4267618Z |
+| Captured | 2026-02-16T19:21:11.8311640Z |
 
 ## JavaScript Errors
 

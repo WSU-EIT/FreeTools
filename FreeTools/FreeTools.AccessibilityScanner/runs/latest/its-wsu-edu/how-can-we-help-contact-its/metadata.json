@@ -5,7 +5,7 @@
   "Title": "How Can We Help? | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 237229,
+  "HtmlSizeBytes": 237187,
   "ScreenshotSizeBytes": 210010,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -14,12 +14,12 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 18:42:59 GMT",
+    "date": "Mon, 16 Feb 2026 19:21:00 GMT",
     "etag": "\u002270e9e5974d5b1a758387034472b8d56e\u0022",
     "last-modified": "Mon, 16 Feb 2026 18:34:25 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/110\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=110\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-16T18:42:59.4634059Z"
+  "CapturedAt": "2026-02-16T19:21:00.0378322Z"
 }

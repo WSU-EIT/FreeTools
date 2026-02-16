@@ -5,12 +5,12 @@
 | URL | https://its.wsu.edu/news/newsletters/ |
 | Title | Newsletters | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 230.5 KB |
+| HTML Size | 230.6 KB |
 | Screenshot Size | 149.6 KB |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T18:43:47.2238410Z |
+| Captured | 2026-02-16T19:21:42.9232155Z |
 
 ## Actions
 

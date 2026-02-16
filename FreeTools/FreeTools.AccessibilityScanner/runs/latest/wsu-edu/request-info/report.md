@@ -5,12 +5,12 @@
 | URL | https://wsu.edu/request-info/ |
 | Title | Request for Information | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 519.2 KB |
+| HTML Size | 519.3 KB |
 | Screenshot Size | 194.8 KB |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T18:43:36.9759295Z |
+| Captured | 2026-02-16T19:21:38.0352393Z |
 
 ## Actions
 

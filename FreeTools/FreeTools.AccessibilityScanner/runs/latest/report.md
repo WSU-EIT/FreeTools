@@ -10,8 +10,8 @@
 | Total JS Errors | 16 |
 | Total JS Warnings | 16 |
 | Total HTML | 9.6 MB |
-| Total Screenshots | 57.6 MB |
-| Generated | 2026-02-16T18:44:15.9448677Z |
+| Total Screenshots | 57.3 MB |
+| Generated | 2026-02-16T19:22:15.2951462Z |
 
 ## Sites
 

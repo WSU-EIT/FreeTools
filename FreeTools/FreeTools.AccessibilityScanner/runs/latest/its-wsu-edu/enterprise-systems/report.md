@@ -5,12 +5,12 @@
 | URL | https://its.wsu.edu/enterprise-systems/ |
 | Title | Enterprise Systems | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 230.3 KB |
+| HTML Size | 230.2 KB |
 | Screenshot Size | 1.0 MB |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T18:42:48.2980219Z |
+| Captured | 2026-02-16T19:20:49.2607997Z |
 
 ## Actions
 

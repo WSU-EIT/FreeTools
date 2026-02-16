@@ -9,28 +9,28 @@
 | Total JS Errors | 12 |
 | Total JS Warnings | 8 |
 | Total HTML | 2.3 MB |
-| Total Screenshots | 44.2 MB |
+| Total Screenshots | 44.5 MB |
 | Folder | `wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
 |--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Washington State University \| Washin... | 1 | 0 | 210.2 KB |
-| ✅ | [/about/](about/report.md) | 200 | About WSU \| Washington State Univers... | 1 | 0 | 131.2 KB |
-| ✅ | [/about/accolades/](about_accolades/report.md) | 200 | Accolades \| Washington State Univers... | 1 | 0 | 114.9 KB |
-| ✅ | [/about/facts/](about_facts/report.md) | 200 | About WSU \| Washington State Univers... | 1 | 0 | 131.1 KB |
-| ✅ | [/about/land-acknowledgement/](about_land-acknowledgement/report.md) | 200 | Land Acknowledgement \| Washington St... | 1 | 0 | 97.9 KB |
+| ✅ | [/](_root/report.md) | 200 | Washington State University \| Washin... | 1 | 0 | 210.1 KB |
+| ✅ | [/about/](about/report.md) | 200 | About WSU \| Washington State Univers... | 1 | 0 | 131.1 KB |
+| ✅ | [/about/accolades/](about_accolades/report.md) | 200 | Accolades \| Washington State Univers... | 1 | 0 | 115.0 KB |
+| ✅ | [/about/facts/](about_facts/report.md) | 200 | About WSU \| Washington State Univers... | 1 | 0 | 131.2 KB |
+| ✅ | [/about/land-acknowledgement/](about_land-acknowledgement/report.md) | 200 | Land Acknowledgement \| Washington St... | 1 | 0 | 98.0 KB |
 | ✅ | [/about/leadership/](about_leadership/report.md) | 200 | Leadership \| Washington State Univer... | 1 | 0 | 112.0 KB |
 | ✅ | [/about/statewide-impact/](about_statewide-impact/report.md) | 200 | Statewide Impact \| Washington State ... | 1 | 0 | 103.4 KB |
 | ✅ | [/academics/](academics/report.md) | 200 | WSU Academics \| Washington State Uni... | 1 | 0 | 125.9 KB |
-| ✅ | [/admission/](admission/report.md) | 200 | WSU Admissions \| Washington State Un... | 1 | 2 | 118.2 KB |
-| ✅ | [/admissions/](admissions/report.md) | 200 | WSU Admissions \| Washington State Un... | 1 | 2 | 117.7 KB |
+| ✅ | [/admission/](admission/report.md) | 200 | WSU Admissions \| Washington State Un... | 1 | 2 | 117.7 KB |
+| ✅ | [/admissions/](admissions/report.md) | 200 | WSU Admissions \| Washington State Un... | 1 | 2 | 117.8 KB |
 | ✅ | [/admissions/affordability/](admissions_affordability/report.md) | 200 | Affordability \| Washington State Uni... | 1 | 2 | 111.5 KB |
 | ✅ | [/athletics/](athletics/report.md) | 200 | WSU Athletics \| Washington State Uni... | 0 | 0 | 118.3 KB |
 | ✅ | [/campuses/](campuses/report.md) | 200 | WSU Campuses \| Washington State Univ... | 1 | 0 | 140.5 KB |
-| ✅ | [/jobs/](jobs/report.md) | 200 | Careers – Human Resource Services, Wa... | 0 | 2 | 84.4 KB |
-| ✅ | [/request-info/](request-info/report.md) | 200 | Request for Information \| Washington... | 0 | 0 | 519.2 KB |
+| ✅ | [/jobs/](jobs/report.md) | 200 | Careers – Human Resource Services, Wa... | 0 | 2 | 84.3 KB |
+| ✅ | [/request-info/](request-info/report.md) | 200 | Request for Information \| Washington... | 0 | 0 | 519.3 KB |
 | ✅ | [/research/](research/report.md) | 200 | WSU Research \| Washington State Univ... | 0 | 0 | 125.1 KB |
 
 ## Pages with JavaScript Errors
