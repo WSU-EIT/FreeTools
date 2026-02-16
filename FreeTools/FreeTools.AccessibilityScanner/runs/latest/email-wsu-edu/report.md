@@ -1,90 +1,130 @@
-# Site Report: https://email.wsu.edu/
+# 🌐 Site Report: https://email.wsu.edu/
+
+> **Status:** ✅ 5/5 pages OK  
+> **Folder:** `email-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 0 |
-| Pages Failed | 5 |
-| Total JS Errors | 2 |
-| Total JS Warnings | 8 |
-| Total HTML | 145.7 KB |
-| Total Screenshots | 130.5 KB |
-| Total Images | 4 (21.6 KB) |
-| Images Missing Alt | 0 |
-| Folder | `email-wsu-edu/` |
+| Pages Passed | ✅ 5 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 20 |
+| Total JS Warnings | 10 |
+| Total Images | 5 (38.3 KB) |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 392.5 KB |
+| Total Screenshots | 245.0 KB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/access/](access/report.md) | 0 | Outlook | 0 | 1 | 0 |
-| ❌ | [/help/](help/report.md) | 0 | (none) | 0 | 1 | 0 |
-| ❌ | [/policies/](policies/report.md) | 0 | WSU \| There was an unexpected intern... | 2 | 1 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | WSU Authentication \| Washington Stat... | 0 | 1 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | WSU Authentication \| Washington Stat... | 🔴 3 | 1 | 0 |
+| ✅ | [/access/](access/report.md) | 200 | WSU Authentication \| Washington Stat... | 🔴 3 | 1 | 0 |
+| ✅ | [/help/](help/report.md) | 200 | WSU Authentication \| Washington Stat... | 🔴 4 | 1 | 0 |
+| ✅ | [/policies/](policies/report.md) | 200 | WSU Authentication \| Washington Stat... | 🔴 3 | 1 | 0 |
+| ✅ | [/resources/](resources/report.md) | 200 | WSU \| Sign In | 🔴 7 | 1 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/access/](access/report.md)
+Click any thumbnail to view the full page report.
 
-![/access/](access/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="access/report.md">
+<img src="access/01-page-loaded.png" width="250" alt="/access/" />
+</a>
+<br />✅ <code>/access/</code>
+</td>
+<td align="center" width="33%">
+<a href="help/report.md">
+<img src="help/01-page-loaded.png" width="250" alt="/help/" />
+</a>
+<br />✅ <code>/help/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="policies/report.md">
+<img src="policies/01-page-loaded.png" width="250" alt="/policies/" />
+</a>
+<br />✅ <code>/policies/</code>
+</td>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.png" width="250" alt="/resources/" />
+</a>
+<br />✅ <code>/resources/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
-### [/help/](help/report.md)
+## 🔴 JavaScript Errors
 
-![/help/](help/01-page-loaded.png)
+<details>
+<summary><strong>20 error(s) across 5 page(s)</strong></summary>
 
-### [/policies/](policies/report.md)
+**/resources/** (7 errors)
 
-![/policies/](policies/01-page-loaded.png)
+```
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+Something unexpected happened while we were checking url http://127.0.0.1:65131
+Something unexpected happened while we were checking url http://127.0.0.1:65141
+... and 2 more (see resources/errors.log)
+```
 
-### [/resources/](resources/report.md)
+**/help/** (4 errors)
 
-![/resources/](resources/01-page-loaded.png)
+```
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+Something unexpected happened while we were checking url http://127.0.0.1:65131
+```
 
+**/** (3 errors)
 
-## Failed Pages
+```
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+```
 
-### /
+**/access/** (3 errors)
 
-- **URL:** https://email.wsu.edu/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded`
+```
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+```
 
-### /access/
+**/policies/** (3 errors)
 
-- **URL:** https://email.wsu.edu/access/
-- **Status:** 0
+```
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+```
 
-### /help/
-
-- **URL:** https://email.wsu.edu/help/
-- **Status:** 0
-- **Error:** `Execution context was destroyed, most likely because of a navigation`
-
-### /policies/
-
-- **URL:** https://email.wsu.edu/policies/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://email.wsu.edu/resources/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /policies/ (2 errors)
-
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
-- `AuthApiError: Failed to fetch
-    at https://ok6static2.oktacdn.com/assets/js/sdk/okta-signin-widget/7.40.3/js/okta-s...`
-
+</details>
 
 ---
 

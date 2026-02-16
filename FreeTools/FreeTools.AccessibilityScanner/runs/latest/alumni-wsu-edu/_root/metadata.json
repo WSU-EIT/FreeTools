@@ -3,10 +3,10 @@
   "Url": "https://alumni.wsu.edu/",
   "FinalUrl": "https://alumni.wsu.edu/s/1613/18/home.aspx?gid=2\u0026pgid=61",
   "Title": "Washington State University Alumni Association - Home",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 112618,
-  "ScreenshotSizeBytes": 212516,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 113126,
+  "ScreenshotSizeBytes": 1094896,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 212516
+      "FileSize": 1094896
     }
   ],
   "ImageCount": 10,
@@ -84,6 +84,29 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4381748Z"
+  "Headers": {
+    "access-control-expose-headers": "Request-Context",
+    "cache-control": "no-cache, no-store",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "9cf0615f8cecaf88-SEA",
+    "content-encoding": "gzip",
+    "content-length": "26106",
+    "content-security-policy": "frame-ancestors \u0027self\u0027 imodules.com default-src \u0027self\u0027",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 22:11:22 GMT",
+    "expires": "-1",
+    "pragma": "no-cache",
+    "request-context": "appId=cid-v1:260dcd14-1564-44b4-b5c5-7abfe7739f73",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "vary": "Accept-Encoding",
+    "x-aspnet-version": "4.0.30319",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-powered-by": "ASP.NET",
+    "x-server": "uswebgreen03",
+    "x-stackifyid": "V2|bf3dfcab-2f5e-439c-b1bb-54933182e4be|C0|CD0",
+    "x-xss-protection": "1; mode=block"
+  },
+  "CapturedAt": "2026-02-16T22:11:21.5889576Z"
 }

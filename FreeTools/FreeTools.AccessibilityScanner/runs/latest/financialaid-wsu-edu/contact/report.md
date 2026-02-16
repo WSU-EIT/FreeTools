@@ -1,36 +1,70 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://financialaid.wsu.edu/contact/  
+> **Captured:** 2026-02-16 22:17:03 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://financialaid.wsu.edu/contact/ |
 | Redirected To | https://financialaid.wsu.edu/contact-page/ |
 | Title | Contact Page | Student Financial Services | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 236.3 KB |
+| Status | ✅ 200 |
+| HTML Size | 242.7 KB |
 | Screenshots | 1 (722.0 KB) |
 | Images | 7 (4.6 MB) |
-| Images Missing Alt | 0 |
-| JS Errors | 0 |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T21:00:33.4551769Z |
+| Captured | 2026-02-16T22:17:03.0530119Z |
 
-## Actions
+## 🔧 Actions
+
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
 - Screenshot #1: page-loaded (722.0 KB)
 - Downloaded 7 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>722.0 KB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (7)
 
-## Page Images (7)
+<details open>
+<summary><strong>📋 Image Index</strong> — 7 images, 4.6 MB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
+|--:|-------|----------|-----:|
 | 1 | [Lighty-in-Spring-scaled.jpg](images/Lighty-in-Spring-scaled.jpg) | An external shot of the Lighty Studen... | 914.0 KB |
 | 2 | [Spokane-Students.jpg](images/Spokane-Students.jpg) | Students sit at outside dining tables... | 614.6 KB |
 | 3 | [everett-campus-scaled.jpg](images/everett-campus-scaled.jpg) | An exterior view of the south entranc... | 827.5 KB |
@@ -39,30 +73,79 @@
 | 6 | [logo-and-leaves.jpg](images/logo-and-leaves.jpg) | Cougar Banner on a lamp post against ... | 759.2 KB |
 | 7 | [BryanHall.jpg](images/BryanHall.jpg) | Bryan Hall Clock Tower lit up at night. | 26.9 KB |
 
-### Gallery
+</details>
 
-![An external shot of the Lighty Student Services building front door, partially obscured by a blooming tree.](images/Lighty-in-Spring-scaled.jpg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![Students sit at outside dining tables during WSU Spokane's all-campus picnic.](images/Spokane-Students.jpg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/Lighty-in-Spring-scaled.jpg">
+<img src="images/Lighty-in-Spring-scaled.jpg" width="200" alt="An external shot of the Lighty Student Services building front door, partially obscured by a blooming tree." />
+</a>
+<br /><sub>Lighty-in-Spring-scaled.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Spokane-Students.jpg">
+<img src="images/Spokane-Students.jpg" width="200" alt="Students sit at outside dining tables during WSU Spokane's all-campus picnic." />
+</a>
+<br /><sub>Spokane-Students.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/everett-campus-scaled.jpg">
+<img src="images/everett-campus-scaled.jpg" width="200" alt="An exterior view of the south entrance of the WSU Everett campus's main building." />
+</a>
+<br /><sub>everett-campus-scaled.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/vancouver-cougar-statue-scaled.jpg">
+<img src="images/vancouver-cougar-statue-scaled.jpg" width="200" alt="The cougar pride statue on the WSU Vancouver campus during spring." />
+</a>
+<br /><sub>vancouver-cougar-statue-scaled.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/tri-cities-cougar-statue.jpg">
+<img src="images/tri-cities-cougar-statue.jpg" width="200" alt="The cougar statue at the WSU Tri-Cities campus against a backdrop of bright green trees." />
+</a>
+<br /><sub>tri-cities-cougar-statue.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/logo-and-leaves.jpg">
+<img src="images/logo-and-leaves.jpg" width="200" alt="Cougar Banner on a lamp post against a background of fall leaves on the campus of Washington State University" />
+</a>
+<br /><sub>logo-and-leaves.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/BryanHall.jpg">
+<img src="images/BryanHall.jpg" width="200" alt="Bryan Hall Clock Tower lit up at night." />
+</a>
+<br /><sub>BryanHall.jpg</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-![An exterior view of the south entrance of the WSU Everett campus's main building.](images/everett-campus-scaled.jpg)
+</details>
 
-![The cougar pride statue on the WSU Vancouver campus during spring.](images/vancouver-cougar-statue-scaled.jpg)
+## 📁 Files
 
-![The cougar statue at the WSU Tri-Cities campus against a backdrop of bright green trees.](images/tri-cities-cougar-statue.jpg)
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (722.0 KB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 7 page images (4.6 MB) |
 
-![Cougar Banner on a lamp post against a background of fall leaves on the campus of Washington State University](images/logo-and-leaves.jpg)
+---
 
-![Bryan Hall Clock Tower lit up at night.](images/BryanHall.jpg)
-
-
-## Files
-
-- `01-page-loaded.png` — page-loaded (722.0 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 7 page images (4.6 MB)
+*Generated by AccessibilityScanner (FreeTools) v1.0*

@@ -8,7 +8,7 @@
   "HtmlSizeBytes": 68191,
   "ScreenshotSizeBytes": 289853,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 4,
   "Screenshots": [
     {
@@ -26,12 +26,12 @@
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 21:01:47 GMT",
+    "date": "Mon, 16 Feb 2026 22:18:53 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-16T21:01:48.1462133Z"
+  "CapturedAt": "2026-02-16T22:18:53.6991872Z"
 }

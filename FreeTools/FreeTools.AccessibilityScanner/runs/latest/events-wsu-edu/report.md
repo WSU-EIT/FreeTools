@@ -1,62 +1,80 @@
-# Site Report: https://events.wsu.edu/
+# 🌐 Site Report: https://events.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `events-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
-| Total JS Errors | 4 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 7 |
 | Total JS Warnings | 0 |
-| Total HTML | 107.7 KB |
-| Total Screenshots | 311.1 KB |
 | Total Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| Folder | `events-wsu-edu/` |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 125.9 KB |
+| Total Screenshots | 283.7 KB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Events \| Washington State University | 1 | 0 | 0 |
-| ❌ | [/calendar/](calendar/report.md) | 0 | Calendar Redirect \| Events \| Washin... | 3 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Events \| Washington State University | 🔴 4 | 0 | 0 |
+| ✅ | [/calendar/](calendar/report.md) | 200 | Calendar Redirect \| Events \| Washin... | 🔴 3 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="calendar/report.md">
+<img src="calendar/01-page-loaded.png" width="250" alt="/calendar/" />
+</a>
+<br />✅ <code>/calendar/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
-### [/calendar/](calendar/report.md)
+## 🔴 JavaScript Errors
 
-![/calendar/](calendar/01-page-loaded.png)
+<details>
+<summary><strong>7 error(s) across 2 page(s)</strong></summary>
 
+**/** (4 errors)
 
-## Failed Pages
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### /
+**/calendar/** (3 errors)
 
-- **URL:** https://events.wsu.edu/
-- **Status:** 0
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### /calendar/
-
-- **URL:** https://events.wsu.edu/calendar/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /calendar/ (3 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### / (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
+</details>
 
 ---
 

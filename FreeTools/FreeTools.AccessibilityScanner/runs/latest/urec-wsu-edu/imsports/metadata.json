@@ -3,19 +3,19 @@
   "Url": "https://urec.wsu.edu/imsports/",
   "FinalUrl": null,
   "Title": "Intramurals",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 94898,
-  "ScreenshotSizeBytes": 685006,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 95043,
+  "ScreenshotSizeBytes": 785055,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 685006
+      "FileSize": 785055
     }
   ],
   "ImageCount": 3,
@@ -42,6 +42,15 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T21:00:36.4263122Z"
+  "Headers": {
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 22:12:22 GMT",
+    "frame-ancestors": "self https://*.risevision.com",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=2592000",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SameOrigin"
+  },
+  "CapturedAt": "2026-02-16T22:12:22.5431793Z"
 }

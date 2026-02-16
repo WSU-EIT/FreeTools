@@ -3,9 +3,9 @@
   "Url": "https://amdt.wsu.edu/faculty/",
   "FinalUrl": "https://amdt.wsu.edu/people/faculty/",
   "Title": "Faculty | Department of Apparel, Merchandising, Design and Textiles | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 223316,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 231673,
   "ScreenshotSizeBytes": 831619,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -72,6 +72,18 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T21:00:02.520289Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:11:45 GMT",
+    "etag": "\u002283878b595e070131c34cab38c592b4eb\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:11:44 GMT",
+    "link": "\u003Chttps://amdt.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://amdt.wsu.edu/wp-json/wp/v2/pages/6534\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://amdt.wsu.edu/?p=6534\u003E; rel=shortlink",
+    "server": "nginx/1.24.0",
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://amdt.wsu.edu",
+    "x-tec-api-root": "https://amdt.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-16T22:11:44.4821099Z"
 }

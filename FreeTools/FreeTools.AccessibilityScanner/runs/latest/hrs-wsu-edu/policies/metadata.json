@@ -3,10 +3,10 @@
   "Url": "https://hrs.wsu.edu/policies/",
   "FinalUrl": "https://hrs.wsu.edu/resources/policies-resources/",
   "Title": "Policies and Resources \u2013 Human Resource Services, Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 82730,
-  "ScreenshotSizeBytes": 442209,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 82746,
+  "ScreenshotSizeBytes": 453068,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 442209
+      "FileSize": 453068
     }
   ],
   "ImageCount": 0,
@@ -23,6 +23,15 @@
   "ImagesMissingAlt": 0,
   "Images": [],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T21:00:27.0846087Z"
+  "Headers": {
+    "cache-control": "max-age=300, must-revalidate",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:18:26 GMT",
+    "last-modified": "Mon, 16 Feb 2026 22:18:26 GMT",
+    "link": "\u003Chttps://hrs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://hrs.wsu.edu/wp-json/wp/v2/pages/341\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022, \u003Chttps://hrs.wsu.edu/?p=341\u003E; rel=shortlink",
+    "server": "nginx/1.14.1",
+    "vary": "Cookie",
+    "x-powered-by": "PHP/8.2.29"
+  },
+  "CapturedAt": "2026-02-16T22:18:25.9469149Z"
 }

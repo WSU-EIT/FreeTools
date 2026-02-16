@@ -1,56 +1,56 @@
-# Site Report: https://payroll.wsu.edu/
+# 🌐 Site Report: https://payroll.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `payroll-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
-| Total JS Errors | 1 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 120.8 KB |
-| Total Screenshots | 1.1 MB |
 | Total Images | 1 (297.3 KB) |
-| Images Missing Alt | 1 |
-| Folder | `payroll-wsu-edu/` |
+| Images Missing Alt | ⚠️ 1 |
+| Total HTML | 133.3 KB |
+| Total Screenshots | 1018.2 KB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Payroll Services \| Washington State ... | 1 | 1 | 1 |
-| ❌ | [/contact/](contact/report.md) | 0 | contact \| Payroll Services \| Washin... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Payroll Services \| Washington State ... | 0 | 1 | ⚠️ 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | contact \| Payroll Services \| Washin... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://payroll.wsu.edu/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://payroll.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

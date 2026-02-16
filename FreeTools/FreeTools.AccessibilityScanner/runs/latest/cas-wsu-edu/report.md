@@ -1,86 +1,79 @@
-# Site Report: https://cas.wsu.edu/
+# 🌐 Site Report: https://cas.wsu.edu/
+
+> **Status:** ✅ 5/5 pages OK  
+> **Folder:** `cas-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 0 |
-| Pages Failed | 5 |
-| Total JS Errors | 1 |
+| Pages Passed | ✅ 5 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.2 MB |
-| Total Screenshots | 2.3 MB |
-| Total Images | 14 (1.5 MB) |
-| Images Missing Alt | 0 |
-| Folder | `cas-wsu-edu/` |
+| Total Images | 18 (3.4 MB) |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 1.3 MB |
+| Total Screenshots | 3.2 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | College of Arts and Sciences \| Washi... | 1 | 4 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | About 16% of couples are divided on C... | 0 | 1 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| College of Arts and Sci... | 0 | 0 | 0 |
-| ❌ | [/news/](news/report.md) | 0 | News \| College of Arts and Sciences ... | 0 | 9 | 0 |
-| ❌ | [/research/](research/report.md) | 0 | Research and Creativity \| College of... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | College of Arts and Sciences \| Washi... | 0 | 8 | 0 |
+| ✅ | [/about/](about/report.md) | 200 | About 16% of couples are divided on C... | 0 | 1 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| College of Arts and Sci... | 0 | 0 | 0 |
+| ✅ | [/news/](news/report.md) | 200 | News \| College of Arts and Sciences ... | 0 | 9 | 0 |
+| ✅ | [/research/](research/report.md) | 200 | Research and Creativity \| College of... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/news/](news/report.md)
-
-![/news/](news/01-page-loaded.png)
-
-### [/research/](research/report.md)
-
-![/research/](research/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://cas.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://cas.wsu.edu/about/
-- **Status:** 0
-
-### /research/
-
-- **URL:** https://cas.wsu.edu/research/
-- **Status:** 0
-
-### /news/
-
-- **URL:** https://cas.wsu.edu/news/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://cas.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_CONNECTION_TIMED_OUT`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="news/report.md">
+<img src="news/01-page-loaded.png" width="250" alt="/news/" />
+</a>
+<br />✅ <code>/news/</code>
+</td>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

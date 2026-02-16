@@ -3,9 +3,9 @@
   "Url": "https://history.wsu.edu/graduate/",
   "FinalUrl": "https://history.wsu.edu/2016/02/17/graduate-assistant-positions-2016-2017-at-cdsc/",
   "Title": "Graduate Assistant Positions 2016-2017 at CDSC | Department of History | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 221991,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 229762,
   "ScreenshotSizeBytes": 152852,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -23,6 +23,17 @@
   "ImagesMissingAlt": 0,
   "Images": [],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:49.3956029Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:18:10 GMT",
+    "etag": "\u0022522b386761e9b89e174de04dccc2c036\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:18:10 GMT",
+    "link": "\u003Chttps://history.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://history.wsu.edu/wp-json/wp/v2/posts/1770\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://history.wsu.edu/?p=1770\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache": "EXPIRED",
+    "x-cache-status": "EXPIRED"
+  },
+  "CapturedAt": "2026-02-16T22:18:09.4597797Z"
 }

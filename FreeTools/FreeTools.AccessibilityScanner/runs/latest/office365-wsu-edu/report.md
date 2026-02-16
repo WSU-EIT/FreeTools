@@ -1,69 +1,73 @@
-# Site Report: https://office365.wsu.edu/
+# 🌐 Site Report: https://office365.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `office365-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 287.7 KB |
-| Total Screenshots | 580.5 KB |
-| Total Images | 4 (10.1 KB) |
-| Images Missing Alt | 1 |
-| Folder | `office365-wsu-edu/` |
+| Total Images | 8 (17.4 KB) |
+| Images Missing Alt | ⚠️ 4 |
+| Total HTML | 346.8 KB |
+| Total Screenshots | 1.1 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Sign in to your account | 0 | 2 | 1 |
-| ❌ | [/help/](help/report.md) | 0 | Sign in to your account | 0 | 1 | 0 |
-| ❌ | [/services/](services/report.md) | 0 | Sign in to your account | 0 | 1 | 0 |
-| ❌ | [/training/](training/report.md) | 0 | Sign in to your account | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Sign in to your account | 0 | 2 | ⚠️ 1 |
+| ✅ | [/help/](help/report.md) | 200 | Sign in to your account | 0 | 2 | ⚠️ 1 |
+| ✅ | [/services/](services/report.md) | 200 | Sign in to your account | 0 | 2 | ⚠️ 1 |
+| ✅ | [/training/](training/report.md) | 200 | Sign in to your account | 0 | 2 | ⚠️ 1 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/help/](help/report.md)
-
-![/help/](help/01-page-loaded.png)
-
-### [/services/](services/report.md)
-
-![/services/](services/01-page-loaded.png)
-
-### [/training/](training/report.md)
-
-![/training/](training/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://office365.wsu.edu/
-- **Status:** 0
-
-### /services/
-
-- **URL:** https://office365.wsu.edu/services/
-- **Status:** 0
-
-### /help/
-
-- **URL:** https://office365.wsu.edu/help/
-- **Status:** 0
-
-### /training/
-
-- **URL:** https://office365.wsu.edu/training/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="help/report.md">
+<img src="help/01-page-loaded.png" width="250" alt="/help/" />
+</a>
+<br />✅ <code>/help/</code>
+</td>
+<td align="center" width="33%">
+<a href="services/report.md">
+<img src="services/01-page-loaded.png" width="250" alt="/services/" />
+</a>
+<br />✅ <code>/services/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="training/report.md">
+<img src="training/01-page-loaded.png" width="250" alt="/training/" />
+</a>
+<br />✅ <code>/training/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

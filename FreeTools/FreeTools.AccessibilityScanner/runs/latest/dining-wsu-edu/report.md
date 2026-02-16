@@ -1,49 +1,56 @@
-# Site Report: https://dining.wsu.edu/
+# 🌐 Site Report: https://dining.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `dining-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 0 bytes |
-| Total Screenshots | 0 bytes |
-| Total Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| Folder | `dining-wsu-edu/` |
+| Total Images | 16 (11.3 MB) |
+| Images Missing Alt | ⚠️ 3 |
+| Total HTML | 163.7 KB |
+| Total Screenshots | 3.3 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/nutrition/](nutrition/report.md) | 0 | (none) | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Home | 0 | 5 | ⚠️ 2 |
+| ✅ | [/nutrition/](nutrition/report.md) | 200 | Nutrition | 0 | 11 | ⚠️ 1 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
+Click any thumbnail to view the full page report.
 
-## Failed Pages
-
-### /
-
-- **URL:** https://dining.wsu.edu/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
-
-### /nutrition/
-
-- **URL:** https://dining.wsu.edu/nutrition/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="nutrition/report.md">
+<img src="nutrition/01-page-loaded.png" width="250" alt="/nutrition/" />
+</a>
+<br />✅ <code>/nutrition/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

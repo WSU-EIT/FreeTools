@@ -2,20 +2,67 @@
   "PagePath": "/",
   "Url": "https://dining.wsu.edu/",
   "FinalUrl": null,
-  "Title": null,
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 0,
-  "ScreenshotSizeBytes": 0,
+  "Title": "Home",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 80509,
+  "ScreenshotSizeBytes": 2464836,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
-  "Screenshots": [],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
-  "ImagesMissingAlt": 0,
-  "Images": [],
-  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...",
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4522131Z"
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 2464836
+    }
+  ],
+  "ImageCount": 5,
+  "ImagesTotalSizeBytes": 5769248,
+  "ImagesMissingAlt": 2,
+  "Images": [
+    {
+      "FileName": "spark2.png",
+      "SourceUrl": "https://dining.wsu.edu/media/shjpiwft/spark2.png",
+      "AltText": "Southside",
+      "FileSize": 1608012
+    },
+    {
+      "FileName": "market2.png",
+      "SourceUrl": "https://dining.wsu.edu/media/h21n1cfk/market2.png",
+      "AltText": "Northside",
+      "FileSize": 1219471
+    },
+    {
+      "FileName": "freshens3.png",
+      "SourceUrl": "https://dining.wsu.edu/media/xkmnqg2a/freshens3.png",
+      "AltText": "Hillside/Central",
+      "FileSize": 1304434
+    },
+    {
+      "FileName": "_mg_5457.png",
+      "SourceUrl": "https://dining.wsu.edu/media/sm0jwthi/_mg_5457.png",
+      "AltText": "",
+      "FileSize": 996805
+    },
+    {
+      "FileName": "_mg_2370-2.png",
+      "SourceUrl": "https://dining.wsu.edu/media/eacl4xnm/_mg_2370-2.png",
+      "AltText": "",
+      "FileSize": 640526
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 22:15:10 GMT",
+    "frame-ancestors": "self https://*.risevision.com",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=2592000",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1"
+  },
+  "CapturedAt": "2026-02-16T22:15:09.9717095Z"
 }

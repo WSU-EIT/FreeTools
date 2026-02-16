@@ -3,10 +3,10 @@
   "Url": "https://gis.wsu.edu/training/",
   "FinalUrl": "https://wsuadmin.maps.arcgis.com/home/index.html",
   "Title": "WSU Administration GIS Portal",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 408822,
-  "ScreenshotSizeBytes": 4955,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 436294,
+  "ScreenshotSizeBytes": 1258148,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,14 +15,40 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 4955
+      "FileSize": 1258148
     }
   ],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 132337,
   "ImagesMissingAlt": 0,
-  "Images": [],
+  "Images": [
+    {
+      "FileName": "home.logo1648584847786.img",
+      "SourceUrl": "https://wsuadmin.maps.arcgis.com/sharing/rest/portals/self/resources/home.logo1648584847786.",
+      "AltText": "Home page logo",
+      "FileSize": 132337
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T21:00:42.2990744Z"
+  "Headers": {
+    "cache-control": "private, max-age=0",
+    "content-encoding": "br",
+    "content-length": "257",
+    "content-security-policy": "upgrade-insecure-requests",
+    "content-type": "text/html",
+    "date": "Mon, 16 Feb 2026 22:17:47 GMT",
+    "etag": "\u00224d8ff8b42c512f84405d3c19bc6e8bd6\u0022",
+    "expires": "-1",
+    "last-modified": "Sat, 08 Nov 2025 00:56:46 GMT",
+    "link": "\u003Chttps://www.arcgis.com/home/index.html\u003E; rel=\u0022canonical\u0022",
+    "referrer-policy": "no-referrer-when-downgrade",
+    "server": "ArcGIS Online",
+    "strict-transport-security": "max-age=63072000",
+    "via": "1.1 b970aff09746b2753d9d3b92b059f89e.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "k7ysqSjHCTGBISJxGyi7AFkUoGRIaA8s1k5a3hLaMQDUob133p1QFA==",
+    "x-amz-cf-pop": "SEA900-P3",
+    "x-cache": "Miss from cloudfront",
+    "x-cached": "HIT"
+  },
+  "CapturedAt": "2026-02-16T22:17:47.3453969Z"
 }

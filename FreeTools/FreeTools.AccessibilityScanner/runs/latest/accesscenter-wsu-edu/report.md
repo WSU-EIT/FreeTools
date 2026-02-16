@@ -1,84 +1,85 @@
-# Site Report: https://accesscenter.wsu.edu/
+# 🌐 Site Report: https://accesscenter.wsu.edu/
+
+> **Status:** ✅ 6/6 pages OK  
+> **Folder:** `accesscenter-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 1 |
-| Pages Failed | 5 |
+| Pages Passed | ✅ 6 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 225.2 KB |
-| Total Screenshots | 3.8 MB |
-| Total Images | 3 (774.8 KB) |
-| Images Missing Alt | 3 |
-| Folder | `accesscenter-wsu-edu/` |
+| Total Images | 6 (1.5 MB) |
+| Images Missing Alt | ⚠️ 6 |
+| Total HTML | 338.5 KB |
+| Total Screenshots | 7.5 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/accommodations/](accommodations/report.md) | 0 |  | 0 | 1 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 |  | 0 | 1 | 1 |
-| ❌ | [/faculty/](faculty/report.md) | 0 |  | 0 | 1 | 1 |
-| ❌ | [/services/](services/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/students/](students/report.md) | 0 |  | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 |  | 0 | 1 | ⚠️ 1 |
+| ✅ | [/accommodations/](accommodations/report.md) | 200 |  | 0 | 1 | ⚠️ 1 |
+| ✅ | [/contact/](contact/report.md) | 200 |  | 0 | 1 | ⚠️ 1 |
+| ✅ | [/faculty/](faculty/report.md) | 200 |  | 0 | 1 | ⚠️ 1 |
+| ✅ | [/services/](services/report.md) | 200 |  | 0 | 1 | ⚠️ 1 |
+| ✅ | [/students/](students/report.md) | 200 |  | 0 | 1 | ⚠️ 1 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/accommodations/](accommodations/report.md)
+Click any thumbnail to view the full page report.
 
-![/accommodations/](accommodations/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/faculty/](faculty/report.md)
-
-![/faculty/](faculty/01-page-loaded.png)
-
-### [/students/](students/report.md)
-
-![/students/](students/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://accesscenter.wsu.edu/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded`
-
-### /services/
-
-- **URL:** https://accesscenter.wsu.edu/services/
-- **Status:** 0
-- **Error:** `net::ERR_CONNECTION_RESET at https://accesscenter.wsu.edu/services/
-Call log:
-  - navigating to "https://accesscenter.wsu.edu/services/", waiting until "networkidle"`
-
-### /students/
-
-- **URL:** https://accesscenter.wsu.edu/students/
-- **Status:** 0
-
-### /faculty/
-
-- **URL:** https://accesscenter.wsu.edu/faculty/
-- **Status:** 0
-
-### /accommodations/
-
-- **URL:** https://accesscenter.wsu.edu/accommodations/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="accommodations/report.md">
+<img src="accommodations/01-page-loaded.png" width="250" alt="/accommodations/" />
+</a>
+<br />✅ <code>/accommodations/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+<td align="center" width="33%">
+<a href="services/report.md">
+<img src="services/01-page-loaded.png" width="250" alt="/services/" />
+</a>
+<br />✅ <code>/services/</code>
+</td>
+<td align="center" width="33%">
+<a href="students/report.md">
+<img src="students/01-page-loaded.png" width="250" alt="/students/" />
+</a>
+<br />✅ <code>/students/</code>
+</td>
+</tr>
+</table>
 
 ---
 

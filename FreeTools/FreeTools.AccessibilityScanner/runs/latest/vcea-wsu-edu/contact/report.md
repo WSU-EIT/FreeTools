@@ -1,66 +1,140 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://vcea.wsu.edu/contact/  
+> **Captured:** 2026-02-16 22:12:15 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://vcea.wsu.edu/contact/ |
 | Redirected To | https://vcea.wsu.edu/facilities-modernization/contact/ |
 | Title | Contacts | Voiland College of Engineering and Architecture | Washington State University |
-| Status | ❌ 0 |
+| Status | ✅ 200 |
 | HTML Size | 255.0 KB |
 | Screenshots | 1 (609.9 KB) |
 | Images | 4 (181.1 KB) |
-| Images Missing Alt | 4 |
-| JS Errors | 0 |
+| Images Missing Alt | ⚠️ 4 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T21:00:52.1740016Z |
+| Captured | 2026-02-16T22:12:15.8693817Z |
 
-## Actions
+## 🔧 Actions
+
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
 - Screenshot #1: page-loaded (609.9 KB)
 - Downloaded 4 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>609.9 KB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (4)
 
-## Page Images (4)
+<details open>
+<summary><strong>📋 Image Index</strong> — 4 images, 181.1 KB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
-| 1 | [Bridget-Pilcher1-396x396.jpg](images/Bridget-Pilcher1-396x396.jpg) | *(none)* | 49.7 KB |
-| 2 | [Dana-Sprouse_10380196-396x397.jpg](images/Dana-Sprouse_10380196-396x397.jpg) | *(none)* | 55.6 KB |
-| 3 | [Taylor-Kensel-396x396.jpg](images/Taylor-Kensel-396x396.jpg) | *(none)* | 51.4 KB |
-| 4 | [Fernanda-Amaral-scaled-e1742842564739-396x396.jpg](images/Fernanda-Amaral-scaled-e1742842564739-396x396.jpg) | *(none)* | 24.3 KB |
+|--:|-------|----------|-----:|
+| 1 | [Bridget-Pilcher1-396x396.jpg](images/Bridget-Pilcher1-396x396.jpg) | ⚠️ *(missing)* | 49.7 KB |
+| 2 | [Dana-Sprouse_10380196-396x397.jpg](images/Dana-Sprouse_10380196-396x397.jpg) | ⚠️ *(missing)* | 55.6 KB |
+| 3 | [Taylor-Kensel-396x396.jpg](images/Taylor-Kensel-396x396.jpg) | ⚠️ *(missing)* | 51.4 KB |
+| 4 | [Fernanda-Amaral-scaled-e1742842564739-396x396.jpg](images/Fernanda-Amaral-scaled-e1742842564739-396x396.jpg) | ⚠️ *(missing)* | 24.3 KB |
 
-### Gallery
+</details>
 
-![Bridget-Pilcher1-396x396.jpg](images/Bridget-Pilcher1-396x396.jpg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![Dana-Sprouse_10380196-396x397.jpg](images/Dana-Sprouse_10380196-396x397.jpg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/Bridget-Pilcher1-396x396.jpg">
+<img src="images/Bridget-Pilcher1-396x396.jpg" width="200" alt="Bridget-Pilcher1-396x396.jpg" />
+</a>
+<br /><sub>Bridget-Pilcher1-396x396.jpg ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Dana-Sprouse_10380196-396x397.jpg">
+<img src="images/Dana-Sprouse_10380196-396x397.jpg" width="200" alt="Dana-Sprouse_10380196-396x397.jpg" />
+</a>
+<br /><sub>Dana-Sprouse_10380196-396x397.jpg ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Taylor-Kensel-396x396.jpg">
+<img src="images/Taylor-Kensel-396x396.jpg" width="200" alt="Taylor-Kensel-396x396.jpg" />
+</a>
+<br /><sub>Taylor-Kensel-396x396.jpg ⚠️</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/Fernanda-Amaral-scaled-e1742842564739-396x396.jpg">
+<img src="images/Fernanda-Amaral-scaled-e1742842564739-396x396.jpg" width="200" alt="Fernanda-Amaral-scaled-e1742842564739-396x396.jpg" />
+</a>
+<br /><sub>Fernanda-Amaral-scaled-e1742842564739-396x396.jpg ⚠️</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-![Taylor-Kensel-396x396.jpg](images/Taylor-Kensel-396x396.jpg)
+</details>
 
-![Fernanda-Amaral-scaled-e1742842564739-396x396.jpg](images/Fernanda-Amaral-scaled-e1742842564739-396x396.jpg)
+<details>
+<summary>⚠️ <strong>Images Missing Alt Text</strong> (4)</summary>
 
+| Image | Source URL |
+|-------|-----------|
+| `Bridget-Pilcher1-396x396.jpg` | https://s3.wp.wsu.edu/uploads/sites/908/2018/05/Bridget-Pilcher1-396x396.jpg |
+| `Dana-Sprouse_10380196-396x397.jpg` | https://s3.wp.wsu.edu/uploads/sites/908/2021/11/Dana-Sprouse_10380196-396x397... |
+| `Taylor-Kensel-396x396.jpg` | https://s3.wp.wsu.edu/uploads/sites/908/2023/07/Taylor-Kensel-396x396.jpg |
+| `Fernanda-Amaral-scaled-e1742842564739-396x396.jpg` | https://s3.wp.wsu.edu/uploads/sites/908/2023/02/Fernanda-Amaral-scaled-e17428... |
 
-### ⚠️ Images Missing Alt Text (4)
+</details>
 
-- `Bridget-Pilcher1-396x396.jpg` — https://s3.wp.wsu.edu/uploads/sites/908/2018/05/Bridget-Pilcher1-396x396.jpg
-- `Dana-Sprouse_10380196-396x397.jpg` — https://s3.wp.wsu.edu/uploads/sites/908/2021/11/Dana-Sprouse_10380196-396x397.jpg
-- `Taylor-Kensel-396x396.jpg` — https://s3.wp.wsu.edu/uploads/sites/908/2023/07/Taylor-Kensel-396x396.jpg
-- `Fernanda-Amaral-scaled-e1742842564739-396x396.jpg` — https://s3.wp.wsu.edu/uploads/sites/908/2023/02/Fernanda-Amaral-scaled-e1742842564739-396x396.jpg
+## 📁 Files
 
-## Files
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (609.9 KB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 4 page images (181.1 KB) |
 
-- `01-page-loaded.png` — page-loaded (609.9 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 4 page images (181.1 KB)
+---
+
+*Generated by AccessibilityScanner (FreeTools) v1.0*

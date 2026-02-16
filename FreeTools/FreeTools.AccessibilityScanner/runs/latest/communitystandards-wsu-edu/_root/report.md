@@ -1,46 +1,162 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://communitystandards.wsu.edu/  
+> **Captured:** 2026-02-16 22:14:55 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://communitystandards.wsu.edu/ |
-| Title | (none) |
-| Status | ❌ 0 |
-| HTML Size | 0 bytes |
-| Screenshots | 0 (0 bytes) |
-| Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| JS Errors | 0 |
+| Title |  |
+| Status | ✅ 200 |
+| HTML Size | 66.0 KB |
+| Screenshots | 1 (2.3 MB) |
+| Images | 9 (10.0 MB) |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:58:42.4521784Z |
+| Captured | 2026-02-16T22:14:55.6106657Z |
 
-## Error
+## 🔧 Actions
 
-```
-Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded
-```
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
-## Actions
+- Screenshot #1: page-loaded (2.3 MB)
+- Downloaded 9 images to /images/
 
-- Scan aborted due to error
+</details>
 
-## Screenshots
+## 📸 Screenshots
 
-*No screenshots captured.*
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>2.3 MB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
-## Page Images (0)
+## 🖼️ Page Images (9)
 
-*No images found on page.*
+<details open>
+<summary><strong>📋 Image Index</strong> — 9 images, 10.0 MB</summary>
 
-## Files
+| # | Image | Alt Text | Size |
+|--:|-------|----------|-----:|
+| 1 | [6q6a1006.jpg](images/6q6a1006.jpg) | Student Resources | 395.6 KB |
+| 2 | [6q6a2049.jpg](images/6q6a2049.jpg) | Your Rights | 495.9 KB |
+| 3 | [study.jpg](images/study.jpg) | Conduct Advisors | 384.4 KB |
+| 4 | [6q6a2024.jpg](images/6q6a2024.jpg) | Faculty Resources | 538.6 KB |
+| 5 | [chun-ethan_peopleincub-1-of-6.jpg](images/chun-ethan_peopleincub-1-of-6.jpg) | Get Involved | 414.6 KB |
+| 6 | [_q6a1902.jpg](images/_q6a1902.jpg) | Academic Integrity Process | 920.3 KB |
+| 7 | [_q6a6636.jpg](images/_q6a6636.jpg) | Support Your Student | 454.0 KB |
+| 8 | [6q6a5819.jpg](images/6q6a5819.jpg) | Code of Conduct | 6.3 MB |
+| 9 | [_q6a5219.jpg](images/_q6a5219.jpg) | Hazing Prevention | 188.1 KB |
 
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
+</details>
+
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/6q6a1006.jpg">
+<img src="images/6q6a1006.jpg" width="200" alt="Student Resources" />
+</a>
+<br /><sub>6q6a1006.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/6q6a2049.jpg">
+<img src="images/6q6a2049.jpg" width="200" alt="Your Rights" />
+</a>
+<br /><sub>6q6a2049.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/study.jpg">
+<img src="images/study.jpg" width="200" alt="Conduct Advisors" />
+</a>
+<br /><sub>study.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/6q6a2024.jpg">
+<img src="images/6q6a2024.jpg" width="200" alt="Faculty Resources" />
+</a>
+<br /><sub>6q6a2024.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/chun-ethan_peopleincub-1-of-6.jpg">
+<img src="images/chun-ethan_peopleincub-1-of-6.jpg" width="200" alt="Get Involved" />
+</a>
+<br /><sub>chun-ethan_peopleincub-1-of-6.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/_q6a1902.jpg">
+<img src="images/_q6a1902.jpg" width="200" alt="Academic Integrity Process" />
+</a>
+<br /><sub>_q6a1902.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/_q6a6636.jpg">
+<img src="images/_q6a6636.jpg" width="200" alt="Support Your Student" />
+</a>
+<br /><sub>_q6a6636.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/6q6a5819.jpg">
+<img src="images/6q6a5819.jpg" width="200" alt="Code of Conduct" />
+</a>
+<br /><sub>6q6a5819.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/_q6a5219.jpg">
+<img src="images/_q6a5219.jpg" width="200" alt="Hazing Prevention" />
+</a>
+<br /><sub>_q6a5219.jpg</sub>
+</td>
+</tr>
+</table>
+
+</details>
+
+## 📁 Files
+
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (2.3 MB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 9 page images (10.0 MB) |
+
+---
+
+*Generated by AccessibilityScanner (FreeTools) v1.0*

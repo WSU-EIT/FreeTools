@@ -1,60 +1,86 @@
-# Site Report: https://education.wsu.edu/
+# 🌐 Site Report: https://education.wsu.edu/
+
+> **Status:** ⚠️ 1/2 pages OK  
+> **Folder:** `education-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [███████████████░░░░░░░░░░░░░░░] 50%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
-| Total JS Errors | 2 |
+| Pages Passed | ✅ 1 |
+| Pages Failed | ❌ 1 |
+| Total JS Errors | 🔴 2 |
 | Total JS Warnings | 2 |
-| Total HTML | 465.3 KB |
-| Total Screenshots | 2.8 MB |
-| Total Images | 7 (2.0 MB) |
-| Images Missing Alt | 5 |
-| Folder | `education-wsu-edu/` |
+| Total Images | 11 (17.5 MB) |
+| Images Missing Alt | ⚠️ 5 |
+| Total HTML | 479.2 KB |
+| Total Screenshots | 3.2 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | College of Education, Sport, and Huma... | 1 | 6 | 4 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | Office of Graduate Education \| Colle... | 1 | 1 | 1 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ❌ | [/](_root/report.md) | 0 | College of Education, Sport, and Huma... | 🔴 1 | 9 | ⚠️ 4 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Office of Graduate Education \| Colle... | 🔴 1 | 2 | ⚠️ 1 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />❌ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="graduate/report.md">
+<img src="graduate/01-page-loaded.png" width="250" alt="/graduate/" />
+</a>
+<br />✅ <code>/graduate/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
-### [/graduate/](graduate/report.md)
+## ❌ Failed Pages
 
-![/graduate/](graduate/01-page-loaded.png)
+<details open>
+<summary><strong>1 page(s) failed</strong></summary>
 
+| Page | HTTP | Error |
+|------|:----:|-------|
+| [/](_root/report.md) | 0 | — |
 
-## Failed Pages
+</details>
 
-### /
+## 🔴 JavaScript Errors
 
-- **URL:** https://education.wsu.edu/
-- **Status:** 0
+<details>
+<summary><strong>2 error(s) across 2 page(s)</strong></summary>
 
-### /graduate/
+**/** (1 errors)
 
-- **URL:** https://education.wsu.edu/graduate/
-- **Status:** 0
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
+**/graduate/** (1 errors)
 
-## Pages with JavaScript Errors
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /graduate/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
+</details>
 
 ---
 

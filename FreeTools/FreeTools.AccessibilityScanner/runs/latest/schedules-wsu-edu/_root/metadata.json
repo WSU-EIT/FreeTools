@@ -2,20 +2,32 @@
   "PagePath": "/",
   "Url": "https://schedules.wsu.edu/",
   "FinalUrl": null,
-  "Title": null,
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 0,
-  "ScreenshotSizeBytes": 0,
+  "Title": "Schedule of Classes",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 740222,
+  "ScreenshotSizeBytes": 152235,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
-  "Screenshots": [],
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 152235
+    }
+  ],
   "ImageCount": 0,
   "ImagesTotalSizeBytes": 0,
   "ImagesMissingAlt": 0,
   "Images": [],
-  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...",
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4718149Z"
+  "ErrorMessage": null,
+  "Headers": {
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 22:14:25 GMT",
+    "server": "Microsoft-IIS/10.0",
+    "x-powered-by": "ASP.NET"
+  },
+  "CapturedAt": "2026-02-16T22:14:24.919008Z"
 }

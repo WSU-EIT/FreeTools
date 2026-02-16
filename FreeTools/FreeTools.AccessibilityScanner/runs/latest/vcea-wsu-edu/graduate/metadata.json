@@ -3,9 +3,9 @@
   "Url": "https://vcea.wsu.edu/graduate/",
   "FinalUrl": "https://vcea.wsu.edu/graduate-students-present-research/",
   "Title": "Graduate Students Present Research | Voiland College of Engineering and Architecture | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 223748,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 230405,
   "ScreenshotSizeBytes": 185564,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -23,6 +23,15 @@
   "ImagesMissingAlt": 0,
   "Images": [],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T21:00:18.392118Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:12:04 GMT",
+    "etag": "\u002225922ca34fe39a22b82856994791de3a\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:12:04 GMT",
+    "link": "\u003Chttps://vcea.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://vcea.wsu.edu/wp-json/wp/v2/pages/248\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://vcea.wsu.edu/?p=248\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:12:04.2321498Z"
 }

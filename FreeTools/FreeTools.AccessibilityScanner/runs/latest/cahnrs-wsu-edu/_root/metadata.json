@@ -3,10 +3,10 @@
   "Url": "https://cahnrs.wsu.edu/",
   "FinalUrl": null,
   "Title": "College of Agricultural, Human, and Natural Resource Sciences | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 277387,
-  "ScreenshotSizeBytes": 2277866,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 283165,
+  "ScreenshotSizeBytes": 1805956,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,11 +15,11 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2277866
+      "FileSize": 1805956
     }
   ],
-  "ImageCount": 20,
-  "ImagesTotalSizeBytes": 3413162,
+  "ImageCount": 24,
+  "ImagesTotalSizeBytes": 7582207,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -33,6 +33,24 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/7/2025/04/53973329437_f76e3cb4fe_k.jpg",
       "AltText": "CAHNRS Academic Programs.",
       "FileSize": 575010
+    },
+    {
+      "FileName": "Wine-barrell-examine-whose-photo_.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/7/2025/04/Wine-barrell-examine-whose-photo_.jpg",
+      "AltText": "CAHNRS Office of Research.",
+      "FileSize": 824142
+    },
+    {
+      "FileName": "Lee-TFREC-Hubner-photo.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/7/2025/04/Lee-TFREC-Hubner-photo.jpg",
+      "AltText": "WSU Extension.",
+      "FileSize": 705387
+    },
+    {
+      "FileName": "Screenshot-2026-02-09-at-1.49.37%E2%80%AFPM-1024x686.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/Screenshot-2026-02-09-at-1.49.37%E2%80%AFPM-1024x686.png",
+      "AltText": "Cover crop seed mixes",
+      "FileSize": 1263367
     },
     {
       "FileName": "researchers-flying-drone-over-orchard-1024x676.jpg",
@@ -53,7 +71,7 @@
       "FileSize": 141523
     },
     {
-      "FileName": "image-6.jpg",
+      "FileName": "image-9.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/Michelle-Moyer-receives-Walter-Clore-Award-cropped-2-1024x768.jpg",
       "AltText": "Michelle Moyer holds the Walter Clore Award trophy.",
       "FileSize": 146914
@@ -113,7 +131,7 @@
       "FileSize": 153871
     },
     {
-      "FileName": "image-16.jpg",
+      "FileName": "image-19.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/Resized_NEAA-Marketing_Residential-Neighborhood-Vancouver-WA-1024x768.jpg",
       "AltText": "Aerial view of new Vancouver, Washington, residential development.",
       "FileSize": 145439
@@ -141,9 +159,24 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/AdobeStock_76098398-1024x683.jpeg",
       "AltText": "A student in a classroom raises her hand as a teacher at the front points at her. Everyone is wearing white lab coats.",
       "FileSize": 85570
+    },
+    {
+      "FileName": "elbatansieghead-1024x990.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/elbatansieghead-1024x990.png",
+      "AltText": "Headshot of Sieg Snapp.",
+      "FileSize": 1376149
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4465361Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:13:39 GMT",
+    "etag": "\u0022e8f1e61c58dec11690db4ebe0a7af13c\u0022",
+    "last-modified": "Mon, 16 Feb 2026 21:28:07 GMT",
+    "link": "\u003Chttps://cahnrs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://cahnrs.wsu.edu/wp-json/wp/v2/pages/4804\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://cahnrs.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx/1.24.0",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:13:39.1178749Z"
 }

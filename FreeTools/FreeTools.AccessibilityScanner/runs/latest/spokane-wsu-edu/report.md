@@ -1,74 +1,96 @@
-# Site Report: https://spokane.wsu.edu/
+# 🌐 Site Report: https://spokane.wsu.edu/
+
+> **Status:** ⚠️ 5/6 pages OK  
+> **Folder:** `spokane-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [█████████████████████████░░░░░] 83%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 3/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 3 |
-| Pages Failed | 3 |
+| Pages Passed | ✅ 5 |
+| Pages Failed | ❌ 1 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 2 |
-| Total HTML | 1.5 MB |
-| Total Screenshots | 13.5 MB |
-| Total Images | 65 (18.6 MB) |
-| Images Missing Alt | 8 |
-| Folder | `spokane-wsu-edu/` |
+| Total Images | 72 (36.5 MB) |
+| Images Missing Alt | ⚠️ 12 |
+| Total HTML | 1.6 MB |
+| Total Screenshots | 19.0 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Spokane \| Washington State Unive... | 0 | 24 | 2 |
-| ❌ | [/about/](about/report.md) | 0 | WSU Spokane \| Washington State Unive... | 0 | 27 | 2 |
-| ✅ | [/academics/](academics/report.md) | 200 | Academic Programs \| WSU Spokane \| W... | 0 | 4 | 3 |
-| ❌ | [/admissions/](admissions/report.md) | 0 | Admissions \| WSU Spokane \| Washingt... | 0 | 3 | 1 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | WSU Spokane \| Washington State Unive... | 0 | 29 | ⚠️ 4 |
+| ✅ | [/about/](about/report.md) | 200 | WSU Spokane \| Washington State Unive... | 0 | 29 | ⚠️ 4 |
+| ✅ | [/academics/](academics/report.md) | 200 | Academic Programs \| WSU Spokane \| W... | 0 | 4 | ⚠️ 3 |
+| ❌ | [/admissions/](admissions/report.md) | 0 | Admissions \| WSU Spokane \| Washingt... | 0 | 3 | ⚠️ 1 |
 | ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| WSU Spokane \| Washingt... | 0 | 2 | 0 |
 | ✅ | [/library/](library/report.md) | 200 | Health Sciences Library \| Washington... | 0 | 5 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="academics/report.md">
+<img src="academics/01-page-loaded.png" width="250" alt="/academics/" />
+</a>
+<br />✅ <code>/academics/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="admissions/report.md">
+<img src="admissions/01-page-loaded.png" width="250" alt="/admissions/" />
+</a>
+<br />❌ <code>/admissions/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td align="center" width="33%">
+<a href="library/report.md">
+<img src="library/01-page-loaded.png" width="250" alt="/library/" />
+</a>
+<br />✅ <code>/library/</code>
+</td>
+</tr>
+</table>
 
-### [/about/](about/report.md)
+## ❌ Failed Pages
 
-![/about/](about/01-page-loaded.png)
+<details open>
+<summary><strong>1 page(s) failed</strong></summary>
 
-### [/academics/](academics/report.md)
+| Page | HTTP | Error |
+|------|:----:|-------|
+| [/admissions/](admissions/report.md) | 0 | — |
 
-![/academics/](academics/01-page-loaded.png)
-
-### [/admissions/](admissions/report.md)
-
-![/admissions/](admissions/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/library/](library/report.md)
-
-![/library/](library/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://spokane.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://spokane.wsu.edu/about/
-- **Status:** 0
-
-### /admissions/
-
-- **URL:** https://spokane.wsu.edu/admissions/
-- **Status:** 0
-
+</details>
 
 ---
 

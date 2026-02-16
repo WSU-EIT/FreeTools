@@ -3,9 +3,9 @@
   "Url": "https://pullman.wsu.edu/academics/",
   "FinalUrl": null,
   "Title": "Academics | Pullman Campus | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 64340,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 71612,
   "ScreenshotSizeBytes": 2667560,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -54,6 +54,20 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T21:00:13.5174461Z"
+  "Headers": {
+    "cache-control": "max-age=600, must-revalidate",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:15:27 GMT",
+    "last-modified": "Mon, 16 Feb 2026 22:15:26 GMT",
+    "link": "\u003Chttps://pullman.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://pullman.wsu.edu/wp-json/wp/v2/pages/50\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
+    "server": "nginx",
+    "transfer-encoding": "chunked",
+    "vary": "Accept-Encoding\nCookie, Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-xss-protection": "1; mode=block"
+  },
+  "CapturedAt": "2026-02-16T22:15:26.8265889Z"
 }

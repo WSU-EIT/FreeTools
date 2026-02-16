@@ -3,10 +3,10 @@
   "Url": "https://math.wsu.edu/faculty/",
   "FinalUrl": null,
   "Title": "Faculty | Department of Mathematics and Statistics | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 323476,
-  "ScreenshotSizeBytes": 1417486,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 332117,
+  "ScreenshotSizeBytes": 1957617,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1417486
+      "FileSize": 1957617
     }
   ],
   "ImageCount": 41,
@@ -270,6 +270,15 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:52.8241639Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:19:18 GMT",
+    "etag": "\u00223845c4e271d3b1f0b35bdf1b2966532e\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:19:18 GMT",
+    "link": "\u003Chttps://math.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://math.wsu.edu/wp-json/wp/v2/pages/189\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://math.wsu.edu/?p=189\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:19:18.5629419Z"
 }

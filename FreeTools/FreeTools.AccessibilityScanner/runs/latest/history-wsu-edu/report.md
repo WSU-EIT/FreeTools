@@ -1,64 +1,73 @@
-# Site Report: https://history.wsu.edu/
+# 🌐 Site Report: https://history.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `history-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 1 |
-| Pages Failed | 3 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 985.9 KB |
-| Total Screenshots | 3.4 MB |
-| Total Images | 53 (4.4 MB) |
-| Images Missing Alt | 42 |
-| Folder | `history-wsu-edu/` |
+| Total Images | 54 (5.0 MB) |
+| Images Missing Alt | ⚠️ 42 |
+| Total HTML | 1012.9 KB |
+| Total Screenshots | 4.6 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Department of History \| Washington S... | 0 | 10 | 0 |
-| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| Department of History \| W... | 0 | 42 | 42 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Assistant Positions 2016-201... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Department of History \| Washington S... | 0 | 11 | 0 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Department of History \| W... | 0 | 42 | ⚠️ 42 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Assistant Positions 2016-201... | 0 | 0 | 0 |
 | ✅ | [/research/](research/report.md) | 200 | Research \| Department of History \| ... | 0 | 1 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/faculty/](faculty/report.md)
-
-![/faculty/](faculty/01-page-loaded.png)
-
-### [/graduate/](graduate/report.md)
-
-![/graduate/](graduate/01-page-loaded.png)
-
-### [/research/](research/report.md)
-
-![/research/](research/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://history.wsu.edu/
-- **Status:** 0
-
-### /graduate/
-
-- **URL:** https://history.wsu.edu/graduate/
-- **Status:** 0
-
-### /faculty/
-
-- **URL:** https://history.wsu.edu/faculty/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+<td align="center" width="33%">
+<a href="graduate/report.md">
+<img src="graduate/01-page-loaded.png" width="250" alt="/graduate/" />
+</a>
+<br />✅ <code>/graduate/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

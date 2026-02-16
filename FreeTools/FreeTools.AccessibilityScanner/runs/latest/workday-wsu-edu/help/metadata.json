@@ -2,20 +2,20 @@
   "PagePath": "/help/",
   "Url": "https://workday.wsu.edu/help/",
   "FinalUrl": "https://login.wsu.edu/app/workday/exk8wk0d1s55s30dD2p7/sso/saml",
-  "Title": "WSU Authentication | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 72621,
-  "ScreenshotSizeBytes": 41936,
+  "Title": "WSU | Sign In",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 141636,
+  "ScreenshotSizeBytes": 61875,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 7,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 41936
+      "FileSize": 61875
     }
   ],
   "ImageCount": 1,
@@ -30,6 +30,23 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:37.274969Z"
+  "Headers": {
+    "alt-svc": "h3=\u0022:443\u0022; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "9cf060836e77758a-SEA",
+    "content-encoding": "gzip",
+    "content-language": "en-US",
+    "content-security-policy-report-only": "script-src \u0027none\u0027; connect-src \u0027none\u0027; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=QBGwUZcco8XvyZU5XVdDh1Bgn8HpwlzL_1o2IW1RaY4-1771279846-1.0.1.1-4AwTLk2NdJsRW7lg.E5GJcoPlRC9jDiQpamyKn207yWZ4QV3FBtNreJUExh88OTTIumdWtnBF6lOOwMM4ZXo4Y4fSxiPCwzd.6Xrk5ObNkseTphaD0KlGYl8hVBJ33_3WJzs0_6vNwpghDHFEE70NYNx3aDh7MT2pIQHxexTFO.VWHo6e8aNIqYNjhUvzotRXF11ig_1i6jf2aAYIcgMkw; report-to cf-ichcmhsiceglsbzj",
+    "content-type": "text/html;charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:10:46 GMT",
+    "nel": "{\u0022success_fraction\u0022:0.01,\u0022report_to\u0022:\u0022cf-nel\u0022,\u0022max_age\u0022:604800}",
+    "report-to": "{\u0022endpoints\u0022:[{\u0022url\u0022:\u0022https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=wZ7qB6L%2FJdXOQrYTabWGqLfkqMbB9aVtyS%2Biyw4UZSeG7kKORvBqpojZiRJlt6wFKnsu6xhZChw6IPZjURMc%2FRHN%2BW2k2kTiVQOmq5V9Qxfv74eXCdkWNvwBFA2%2BIGcosXcj\u0022}],\u0022group\u0022:\u0022cf-nel\u0022,\u0022max_age\u0022:604800}\n{\u0022endpoints\u0022:[{\u0022url\u0022:\u0022https:\\/\\/csp-reporting.cloudflare.com\\/cdn-cgi\\/script_monitor\\/report?m=QBGwUZcco8XvyZU5XVdDh1Bgn8HpwlzL_1o2IW1RaY4-1771279846-1.0.1.1-4AwTLk2NdJsRW7lg.E5GJcoPlRC9jDiQpamyKn207yWZ4QV3FBtNreJUExh88OTTIumdWtnBF6lOOwMM4ZXo4Y4fSxiPCwzd.6Xrk5ObNkseTphaD0KlGYl8hVBJ33_3WJzs0_6vNwpghDHFEE70NYNx3aDh7MT2pIQHxexTFO.VWHo6e8aNIqYNjhUvzotRXF11ig_1i6jf2aAYIcgMkw\u0022}],\u0022group\u0022:\u0022cf-ichcmhsiceglsbzj\u0022,\u0022max_age\u0022:86400}",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "vary": "accept-encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-robots-tag": "noindex, nofollow"
+  },
+  "CapturedAt": "2026-02-16T22:10:46.6819771Z"
 }

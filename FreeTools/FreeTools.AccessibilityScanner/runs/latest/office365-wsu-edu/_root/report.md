@@ -1,57 +1,120 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://office365.wsu.edu/  
+> **Captured:** 2026-02-16 22:18:42 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://office365.wsu.edu/ |
-| Redirected To | about:blank |
+| Redirected To | https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&redirect_uri=https%3A%2F%2Fwww.microsoft365.com%2Flandingv2&response_type=code%20id_token&scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All&response_mode=form_post&nonce=639068771231463669.NzFiM2M0ZTUtMTZhNS00NDJiLWJkYjMtZWJiZTI3OTU5YTgzMTg0MDJjZWYtZmI2Zi00NmIxLTlmOTQtNTQzNjUyOWVmOWM0&ui_locales=en-US&mkt=en-US&client-request-id=8b2914f0-dade-4f23-bf8a-2e3484c4167a&state=mpeYX0bI9J1Q5McsCvnNlC988S87Tx9wUuO-tjZa7NcttCYlI466bqbbCJR43vi1DcrNRuPXU32Bu3bEFPo6raNlzfCN98ZLMPMU_p-urPe8WpcUt7bcx1vG4oS7uBJzA8v3BAjO3P8qe6BpJ7m7Soy1apI5VX2S04hKQfGnBNwoQGxQ1SU4Dnx6aYT7yfpQIDOh2KIViOjHIxOOelSaCouWzVQVEy2iNyQCWh0ZN3j8UFsREfzTYM3TU5uodycMlSfTA-nydyifvXK7LLdlOqYYJgrSikjGqKSP3NUCvKQ5eSkSYqAbvEtkfNog3z_PIE07i4pn-IDpks3zXlvxpw&x-client-SKU=ID_NET8_0&x-client-ver=8.5.0.0&sso_reload=true |
 | Title | Sign in to your account |
-| Status | ❌ 0 |
-| HTML Size | 75.9 KB |
-| Screenshots | 1 (4.6 KB) |
+| Status | ✅ 200 |
+| HTML Size | 86.7 KB |
+| Screenshots | 1 (284.1 KB) |
 | Images | 2 (5.1 KB) |
-| Images Missing Alt | 1 |
-| JS Errors | 0 |
+| Images Missing Alt | ⚠️ 1 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:58:42.4651134Z |
+| Captured | 2026-02-16T22:18:42.8033132Z |
 
-## Actions
+## 🔧 Actions
 
-- Screenshot #1: page-loaded (4.6 KB)
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
+
+- Screenshot #1: page-loaded (284.1 KB)
 - Downloaded 2 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>284.1 KB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (2)
 
-## Page Images (2)
+<details open>
+<summary><strong>📋 Image Index</strong> — 2 images, 5.1 KB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
+|--:|-------|----------|-----:|
 | 1 | [microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg](images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg) | Microsoft | 3.6 KB |
-| 2 | [signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg](images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg) | *(none)* | 1.6 KB |
+| 2 | [signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg](images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg) | ⚠️ *(missing)* | 1.6 KB |
 
-### Gallery
+</details>
 
-![Microsoft](images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg](images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg">
+<img src="images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg" width="200" alt="Microsoft" />
+</a>
+<br /><sub>microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg">
+<img src="images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg" width="200" alt="signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg" />
+</a>
+<br /><sub>signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg ⚠️</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+</details>
 
-### ⚠️ Images Missing Alt Text (1)
+<details>
+<summary>⚠️ <strong>Images Missing Alt Text</strong> (1)</summary>
 
-- `signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg` — https://aadcdn.msftauth.net/shared/1.0/content/images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg
+| Image | Source URL |
+|-------|-----------|
+| `signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg` | https://aadcdn.msftauth.net/shared/1.0/content/images/signin-options_3e3f6b73... |
 
-## Files
+</details>
 
-- `01-page-loaded.png` — page-loaded (4.6 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 2 page images (5.1 KB)
+## 📁 Files
+
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (284.1 KB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 2 page images (5.1 KB) |
+
+---
+
+*Generated by AccessibilityScanner (FreeTools) v1.0*

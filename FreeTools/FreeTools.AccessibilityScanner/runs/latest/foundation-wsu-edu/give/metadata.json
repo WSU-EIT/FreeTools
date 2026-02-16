@@ -3,9 +3,9 @@
   "Url": "https://foundation.wsu.edu/give/",
   "FinalUrl": null,
   "Title": "Make A Gift Today! | WSU Foundation | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 244832,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 252000,
   "ScreenshotSizeBytes": 524570,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -78,6 +78,16 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:45.3670795Z"
+  "Headers": {
+    "access-control-allow-origin": "*",
+    "content-encoding": "gzip",
+    "content-length": "18628",
+    "content-security-policy": "default-src * data: \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027;",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:16:58 GMT",
+    "link": "\u003Chttps://foundation.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://foundation.wsu.edu/wp-json/wp/v2/pages/6202\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://foundation.wsu.edu/?p=6202\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:16:57.8627497Z"
 }

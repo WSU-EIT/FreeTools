@@ -1,80 +1,85 @@
-# Site Report: https://orc.wsu.edu/
+# 🌐 Site Report: https://orc.wsu.edu/
+
+> **Status:** ✅ 6/6 pages OK  
+> **Folder:** `orc-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
+| Pages Passed | ✅ 6 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 307.8 KB |
-| Total Screenshots | 5.5 MB |
-| Total Images | 11 (1.6 MB) |
-| Images Missing Alt | 0 |
-| Folder | `orc-wsu-edu/` |
+| Total Images | 18 (2.5 MB) |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 461.6 KB |
+| Total Screenshots | 8.3 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | (none) | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Outdoor Recreation Center | 0 | 3 | 0 |
+| ✅ | [/about/](about/report.md) | 200 | Outdoor Recreation Center | 0 | 3 | 0 |
 | ✅ | [/contact/](contact/report.md) | 200 | Outdoor Recreation Center | 0 | 3 | 0 |
 | ✅ | [/programs/](programs/report.md) | 200 | Outdoor Recreation Center | 0 | 3 | 0 |
-| ❌ | [/rentals/](rentals/report.md) | 0 | Outdoor Recreation Center | 0 | 2 | 0 |
-| ❌ | [/trips/](trips/report.md) | 0 | Outdoor Recreation Center | 0 | 3 | 0 |
+| ✅ | [/rentals/](rentals/report.md) | 200 | Outdoor Recreation Center | 0 | 3 | 0 |
+| ✅ | [/trips/](trips/report.md) | 200 | Outdoor Recreation Center | 0 | 3 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/contact/](contact/report.md)
+Click any thumbnail to view the full page report.
 
-![/contact/](contact/01-page-loaded.png)
-
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
-
-### [/rentals/](rentals/report.md)
-
-![/rentals/](rentals/01-page-loaded.png)
-
-### [/trips/](trips/report.md)
-
-![/trips/](trips/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://orc.wsu.edu/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded`
-
-### /about/
-
-- **URL:** https://orc.wsu.edu/about/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
-
-### /rentals/
-
-- **URL:** https://orc.wsu.edu/rentals/
-- **Status:** 0
-
-### /trips/
-
-- **URL:** https://orc.wsu.edu/trips/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="programs/report.md">
+<img src="programs/01-page-loaded.png" width="250" alt="/programs/" />
+</a>
+<br />✅ <code>/programs/</code>
+</td>
+<td align="center" width="33%">
+<a href="rentals/report.md">
+<img src="rentals/01-page-loaded.png" width="250" alt="/rentals/" />
+</a>
+<br />✅ <code>/rentals/</code>
+</td>
+<td align="center" width="33%">
+<a href="trips/report.md">
+<img src="trips/01-page-loaded.png" width="250" alt="/trips/" />
+</a>
+<br />✅ <code>/trips/</code>
+</td>
+</tr>
+</table>
 
 ---
 

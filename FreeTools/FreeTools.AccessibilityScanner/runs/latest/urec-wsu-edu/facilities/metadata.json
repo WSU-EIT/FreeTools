@@ -2,20 +2,91 @@
   "PagePath": "/facilities/",
   "Url": "https://urec.wsu.edu/facilities/",
   "FinalUrl": null,
-  "Title": null,
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 0,
-  "ScreenshotSizeBytes": 0,
+  "Title": "Locations \u0026 Facilities",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 91265,
+  "ScreenshotSizeBytes": 1809316,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
-  "Screenshots": [],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
-  "ImagesMissingAlt": 0,
-  "Images": [],
-  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...",
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:37.1264471Z"
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1809316
+    }
+  ],
+  "ImageCount": 9,
+  "ImagesTotalSizeBytes": 1931256,
+  "ImagesMissingAlt": 9,
+  "Images": [
+    {
+      "FileName": "locations-and-facilities-page-src.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/g5vd5ohu/locations-and-facilities-page-src.jpg",
+      "AltText": "",
+      "FileSize": 227575
+    },
+    {
+      "FileName": "locations-and-facilities-page-climbing-wall-content-card.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/4l4bcif0/locations-and-facilities-page-climbing-wall-content-card.jpg",
+      "AltText": "",
+      "FileSize": 200368
+    },
+    {
+      "FileName": "locations-and-facilities-page-chinook.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/5aonng25/locations-and-facilities-page-chinook.jpg",
+      "AltText": "",
+      "FileSize": 153845
+    },
+    {
+      "FileName": "locations-and-facilities-page-stephenson-fitness-center.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/x4fndfdg/locations-and-facilities-page-stephenson-fitness-center.jpg",
+      "AltText": "",
+      "FileSize": 208226
+    },
+    {
+      "FileName": "locations-and-facilities-page-outdoor-recreation-center.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/jfzdvx1h/locations-and-facilities-page-outdoor-recreation-center.jpg",
+      "AltText": "",
+      "FileSize": 248137
+    },
+    {
+      "FileName": "locations-and-facilities-page-outdoor-facilites.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/muxhkykq/locations-and-facilities-page-outdoor-facilites.jpg",
+      "AltText": "",
+      "FileSize": 158534
+    },
+    {
+      "FileName": "_q6a5335.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/brwpqi1h/_q6a5335.jpg",
+      "AltText": "",
+      "FileSize": 261731
+    },
+    {
+      "FileName": "locations-and-facilities-page-challenge.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/jfebts4d/locations-and-facilities-page-challenge.jpg",
+      "AltText": "",
+      "FileSize": 254470
+    },
+    {
+      "FileName": "locations-and-facilities-page-facility-reservations.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/l0wn1xgp/locations-and-facilities-page-facility-reservations.jpg",
+      "AltText": "",
+      "FileSize": 218370
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 22:12:12 GMT",
+    "frame-ancestors": "self https://*.risevision.com",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=2592000",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SameOrigin"
+  },
+  "CapturedAt": "2026-02-16T22:12:12.893714Z"
 }

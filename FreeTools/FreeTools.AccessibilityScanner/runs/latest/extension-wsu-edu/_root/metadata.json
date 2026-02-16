@@ -3,10 +3,10 @@
   "Url": "https://extension.wsu.edu/",
   "FinalUrl": null,
   "Title": "WSU Extension | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 241021,
-  "ScreenshotSizeBytes": 651112,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 249998,
+  "ScreenshotSizeBytes": 1814919,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,13 +15,19 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 651112
+      "FileSize": 1814919
     }
   ],
-  "ImageCount": 10,
-  "ImagesTotalSizeBytes": 2338952,
+  "ImageCount": 12,
+  "ImagesTotalSizeBytes": 4306980,
   "ImagesMissingAlt": 0,
   "Images": [
+    {
+      "FileName": "Screenshot-2026-02-09-at-1.49.37%E2%80%AFPM-1024x686.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/Screenshot-2026-02-09-at-1.49.37%E2%80%AFPM-1024x686.png",
+      "AltText": "Cover crop seed mixes",
+      "FileSize": 1263367
+    },
     {
       "FileName": "researchers-flying-drone-over-orchard-1024x676.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/researchers-flying-drone-over-orchard-1024x676.jpg",
@@ -53,6 +59,12 @@
       "FileSize": 346501
     },
     {
+      "FileName": "Ecologically_grown_vegetables-scaled-e1629405080192.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/extension/uploads/sites/4/Ecologically_grown_vegetables-scaled-e1629405080192.jpg",
+      "AltText": "Variety of colorful vegetables.",
+      "FileSize": 704661
+    },
+    {
       "FileName": "Douglas-fir.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/extension/uploads/sites/4/Douglas-fir.jpg",
       "AltText": "Douglas Fir tree.",
@@ -65,7 +77,7 @@
       "FileSize": 242686
     },
     {
-      "FileName": "image-8.jpg",
+      "FileName": "image-10.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/Resized_NEAA-Marketing_Residential-Neighborhood-Vancouver-WA-1024x768.jpg",
       "AltText": "Aerial view of new Vancouver, Washington, residential development.",
       "FileSize": 145439
@@ -84,6 +96,15 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4537391Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:16:29 GMT",
+    "etag": "\u002288c8bcb30bffc4afbe036b34c7352d7b\u0022",
+    "last-modified": "Mon, 16 Feb 2026 21:51:55 GMT",
+    "link": "\u003Chttps://extension.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://extension.wsu.edu/wp-json/wp/v2/pages/6\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
+    "server": "nginx/1.24.0",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:16:29.5623653Z"
 }

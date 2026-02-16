@@ -1,59 +1,62 @@
-# Site Report: https://acctspay.wsu.edu/
+# 🌐 Site Report: https://acctspay.wsu.edu/
+
+> **Status:** ✅ 3/3 pages OK  
+> **Folder:** `acctspay-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/3 pages OK |
 | Pages Scanned | 3 |
-| Pages Passed | 0 |
-| Pages Failed | 3 |
+| Pages Passed | ✅ 3 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 165.3 KB |
-| Total Screenshots | 1.5 MB |
-| Total Images | 11 (3.4 MB) |
-| Images Missing Alt | 11 |
-| Folder | `acctspay-wsu-edu/` |
+| Total Images | 12 (3.8 MB) |
+| Images Missing Alt | ⚠️ 12 |
+| Total HTML | 193.0 KB |
+| Total Screenshots | 1.7 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Payment Services \| Washington State ... | 0 | 1 | 1 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Payment Services \| Was... | 0 | 10 | 10 |
-| ❌ | [/forms/](forms/report.md) | 0 | Forms \| Payment Services \| Washingt... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Payment Services \| Washington State ... | 0 | 1 | ⚠️ 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Payment Services \| Was... | 0 | 11 | ⚠️ 11 |
+| ✅ | [/forms/](forms/report.md) | 200 | Forms \| Payment Services \| Washingt... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/forms/](forms/report.md)
-
-![/forms/](forms/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://acctspay.wsu.edu/
-- **Status:** 0
-
-### /forms/
-
-- **URL:** https://acctspay.wsu.edu/forms/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://acctspay.wsu.edu/contact/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td align="center" width="33%">
+<a href="forms/report.md">
+<img src="forms/01-page-loaded.png" width="250" alt="/forms/" />
+</a>
+<br />✅ <code>/forms/</code>
+</td>
+</tr>
+</table>
 
 ---
 

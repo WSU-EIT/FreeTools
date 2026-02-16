@@ -1,93 +1,113 @@
-# Site Report: https://workday.wsu.edu/
+# 🌐 Site Report: https://workday.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `workday-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
-| Total JS Errors | 15 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 21 |
 | Total JS Warnings | 0 |
-| Total HTML | 354.7 KB |
-| Total Screenshots | 161.8 KB |
 | Total Images | 4 (30.7 KB) |
-| Images Missing Alt | 0 |
-| Folder | `workday-wsu-edu/` |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 483.6 KB |
+| Total Screenshots | 221.6 KB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU \| Sign In | 8 | 1 | 0 |
-| ❌ | [/help/](help/report.md) | 0 | WSU Authentication \| Washington Stat... | 0 | 1 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | WSU \| Sign In | 7 | 1 | 0 |
-| ❌ | [/training/](training/report.md) | 0 | WSU Authentication \| Washington Stat... | 0 | 1 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | WSU \| Sign In | 🔴 7 | 1 | 0 |
+| ✅ | [/help/](help/report.md) | 200 | WSU \| Sign In | 🔴 7 | 1 | 0 |
+| ✅ | [/resources/](resources/report.md) | 200 | WSU \| Sign In | 🔴 7 | 1 | 0 |
+| ✅ | [/training/](training/report.md) | 200 | WSU Authentication \| Washington Stat... | 0 | 1 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="help/report.md">
+<img src="help/01-page-loaded.png" width="250" alt="/help/" />
+</a>
+<br />✅ <code>/help/</code>
+</td>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.png" width="250" alt="/resources/" />
+</a>
+<br />✅ <code>/resources/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="training/report.md">
+<img src="training/01-page-loaded.png" width="250" alt="/training/" />
+</a>
+<br />✅ <code>/training/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-### [/help/](help/report.md)
+## 🔴 JavaScript Errors
 
-![/help/](help/01-page-loaded.png)
+<details>
+<summary><strong>21 error(s) across 3 page(s)</strong></summary>
 
-### [/resources/](resources/report.md)
+**/** (7 errors)
 
-![/resources/](resources/01-page-loaded.png)
+```
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+Something unexpected happened while we were checking url http://127.0.0.1:65131
+Something unexpected happened while we were checking url http://127.0.0.1:65141
+... and 2 more (see _root/errors.log)
+```
 
-### [/training/](training/report.md)
+**/help/** (7 errors)
 
-![/training/](training/01-page-loaded.png)
+```
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+Something unexpected happened while we were checking url http://127.0.0.1:65131
+Something unexpected happened while we were checking url http://127.0.0.1:65141
+... and 2 more (see help/errors.log)
+```
 
+**/resources/** (7 errors)
 
-## Failed Pages
+```
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+Something unexpected happened while we were checking url http://127.0.0.1:65131
+Something unexpected happened while we were checking url http://127.0.0.1:65141
+... and 2 more (see resources/errors.log)
+```
 
-### /
-
-- **URL:** https://workday.wsu.edu/
-- **Status:** 0
-
-### /help/
-
-- **URL:** https://workday.wsu.edu/help/
-- **Status:** 0
-
-### /training/
-
-- **URL:** https://workday.wsu.edu/training/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://workday.wsu.edu/resources/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (8 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
-- `No available ports. Loopback server failed and polling is cancelled.`
-
-### /resources/ (7 errors)
-
-- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
-- `No available ports. Loopback server failed and polling is cancelled.`
-
+</details>
 
 ---
 

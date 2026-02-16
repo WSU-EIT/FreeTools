@@ -1,50 +1,123 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://email.wsu.edu/resources/  
+> **Captured:** 2026-02-16 22:16:19 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [JavaScript Errors](#-javascript-errors)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://email.wsu.edu/resources/ |
-| Redirected To | https://outlook.office365.com/mail/?realm=wsu.edu |
-| Title | WSU Authentication | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 55.6 KB |
-| Screenshots | 1 (32.3 KB) |
+| Redirected To | https://login.wsu.edu/app/office365/exk16tq7sn2YTVo3i2p8/sso/wsfed/passive?client-request-id=f0ea6461-a505-d7f2-d69c-6c3b5565484c&username=&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=estsredirect%3d2%26estsrequest%3drQQIARAAjZJNaNNwGMbzX7quq851E4bsVOoQcTRN0qZtKjusH1u_0q5f64dI-Sf5p0ubNDVJu61zeBJ23FGmh6GIsIOOgSCePM_LLn6wix51F8dOO9riVUF4eXleeA4Pv-e1W30E7SfIOzhNkKE5lmJZXqJJN6S8kttHkQF3kBEFN0lTlC8QDCDJF9Sn7Q4onp2Pvrz48vmZcreE4uk9MLZudAkkdg_AzTXT7Bghj0frmoqmtQhNkmQBef0MIWiqR4Wy4nkHwAkAPwA4GJkjKVbwB4N-N2Qh5Q4wrDhQAutmRR_PQ0agvdB3OjKZXeyaa_RwabrcRxcjNkmHDRW1zT18H6DNZKcWSfgTzcWNbJmjs9EGnS7HmGoxZmbo3CZXoOQqnfOmi1UmW2yRmX6yxfVzJBdJGAmVUsTlmJxtGzIsM2StklyrevMdnmZKqBJWEk1NFtTVFqwklao3J0sVcuEhjOdJIc7505tsT6zkDZ5m9bTKqjVVadaKHJ0pME2eJnt8eanDR4IH-OzfsQyZHOETmt6AbbkPTVlrG8f44r_NHkJEEuwqplProLYsOju6JskKcg4sitxGdSgIyDC-4uDEAs4sMzaLY_YG5sRu3yLxkM1md2DD69ICno8Oivz5YOZbLfYo-vpF5tP4xxZ2POrxFb1mGcnc_FIpYIZTnTxf0ANqv5dCiXSR9PXNlLzirYYTiXJpwR-idq1g13r9yDpuwx2YC4-sUMfWSdWACtE0CF7X1g2kn1vBzhj2fvx_XuOJHRzY5wtcM1_JNzgFRevBpXUOxler4ZRZF3KZWq3Zz0XzyZiwnFutC6VDOzi5Ak6vBu1WQYGyakwTW64_EOqm1kJtV2jLtaEadUEYqh5Uushwhe65BlFd97e3tz9MYJfX3rx6vL_79umv-KED-z6YKexyyrkzjf0G0# |
+| Title | WSU | Sign In |
+| Status | ✅ 200 |
+| HTML Size | 126.9 KB |
+| Screenshots | 1 (60.4 KB) |
 | Images | 1 (7.7 KB) |
-| Images Missing Alt | 0 |
-| JS Errors | 0 |
-| JS Warnings | 5 |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | 🔴 7 |
+| JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T21:00:39.7756478Z |
+| Captured | 2026-02-16T22:16:19.6642088Z |
 
-## Actions
+## 🔴 JavaScript Errors
 
-- Screenshot #1: page-loaded (32.3 KB)
+<details>
+<summary><strong>7 error(s) detected</strong></summary>
+
+```
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+Something unexpected happened while we were checking url http://127.0.0.1:65131
+Something unexpected happened while we were checking url http://127.0.0.1:65141
+Something unexpected happened while we were checking url http://127.0.0.1:65151
+No available ports. Loopback server failed and polling is cancelled.
+```
+
+</details>
+
+## 🔧 Actions
+
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
+
+- Screenshot #1: page-loaded (60.4 KB)
 - Downloaded 1 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>60.4 KB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (1)
 
-## Page Images (1)
+<details open>
+<summary><strong>📋 Image Index</strong> — 1 images, 7.7 KB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
+|--:|-------|----------|-----:|
 | 1 | [fs015xh0tygNgGVxX2p8.img](images/fs015xh0tygNgGVxX2p8.img) | WSU logo | 7.7 KB |
 
-### Gallery
+</details>
 
-![WSU logo](images/fs015xh0tygNgGVxX2p8.img)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/fs015xh0tygNgGVxX2p8.img">
+<img src="images/fs015xh0tygNgGVxX2p8.img" width="200" alt="WSU logo" />
+</a>
+<br /><sub>fs015xh0tygNgGVxX2p8.img</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-## Files
+</details>
 
-- `01-page-loaded.png` — page-loaded (32.3 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 1 page images (7.7 KB)
+## 📁 Files
+
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (60.4 KB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 1 page images (7.7 KB) |
+
+---
+
+*Generated by AccessibilityScanner (FreeTools) v1.0*

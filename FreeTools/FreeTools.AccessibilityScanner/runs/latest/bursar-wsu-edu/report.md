@@ -1,86 +1,79 @@
-# Site Report: https://bursar.wsu.edu/
+# 🌐 Site Report: https://bursar.wsu.edu/
+
+> **Status:** ✅ 5/5 pages OK  
+> **Folder:** `bursar-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 0 |
-| Pages Failed | 5 |
-| Total JS Errors | 1 |
+| Pages Passed | ✅ 5 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 340.9 KB |
-| Total Screenshots | 2.4 MB |
-| Total Images | 16 (3.4 MB) |
-| Images Missing Alt | 15 |
-| Folder | `bursar-wsu-edu/` |
+| Total Images | 18 (6.9 MB) |
+| Images Missing Alt | ⚠️ 17 |
+| Total HTML | 367.9 KB |
+| Total Screenshots | 2.7 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Bursar \| Washington State University | 1 | 0 | 0 |
-| ❌ | [/billing/](billing/report.md) | 0 | Billing \| Bursar \| Washington State... | 0 | 1 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Information \| Bursar \| Wash... | 0 | 6 | 6 |
-| ❌ | [/payment/](payment/report.md) | 0 | Payment Plans \| Bursar \| Washington... | 0 | 9 | 9 |
-| ❌ | [/policies/](policies/report.md) | 0 | Policies & Procedures for Reporting t... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Bursar \| Washington State University | 0 | 1 | ⚠️ 1 |
+| ✅ | [/billing/](billing/report.md) | 200 | Billing \| Bursar \| Washington State... | 0 | 1 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Information \| Bursar \| Wash... | 0 | 7 | ⚠️ 7 |
+| ✅ | [/payment/](payment/report.md) | 200 | Payment Plans \| Bursar \| Washington... | 0 | 9 | ⚠️ 9 |
+| ✅ | [/policies/](policies/report.md) | 200 | Policies & Procedures for Reporting t... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/billing/](billing/report.md)
-
-![/billing/](billing/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/payment/](payment/report.md)
-
-![/payment/](payment/01-page-loaded.png)
-
-### [/policies/](policies/report.md)
-
-![/policies/](policies/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://bursar.wsu.edu/
-- **Status:** 0
-
-### /billing/
-
-- **URL:** https://bursar.wsu.edu/billing/
-- **Status:** 0
-
-### /payment/
-
-- **URL:** https://bursar.wsu.edu/payment/
-- **Status:** 0
-
-### /policies/
-
-- **URL:** https://bursar.wsu.edu/policies/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://bursar.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="billing/report.md">
+<img src="billing/01-page-loaded.png" width="250" alt="/billing/" />
+</a>
+<br />✅ <code>/billing/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="payment/report.md">
+<img src="payment/01-page-loaded.png" width="250" alt="/payment/" />
+</a>
+<br />✅ <code>/payment/</code>
+</td>
+<td align="center" width="33%">
+<a href="policies/report.md">
+<img src="policies/01-page-loaded.png" width="250" alt="/policies/" />
+</a>
+<br />✅ <code>/policies/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

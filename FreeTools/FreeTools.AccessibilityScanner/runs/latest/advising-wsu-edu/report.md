@@ -1,57 +1,56 @@
-# Site Report: https://advising.wsu.edu/
+# 🌐 Site Report: https://advising.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `advising-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
-| Total JS Errors | 2 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 217.5 KB |
-| Total Screenshots | 909.8 KB |
 | Total Images | 7 (405.6 KB) |
-| Images Missing Alt | 1 |
-| Folder | `advising-wsu-edu/` |
+| Images Missing Alt | ⚠️ 1 |
+| Total HTML | 230.9 KB |
+| Total Screenshots | 909.8 KB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Advising at WSU \| Washington State U... | 2 | 1 | 1 |
-| ❌ | [/students/](students/report.md) | 0 | Students \| Advising at WSU \| Washin... | 0 | 6 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Advising at WSU \| Washington State U... | 0 | 1 | ⚠️ 1 |
+| ✅ | [/students/](students/report.md) | 200 | Students \| Advising at WSU \| Washin... | 0 | 6 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/students/](students/report.md)
-
-![/students/](students/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://advising.wsu.edu/
-- **Status:** 0
-
-### /students/
-
-- **URL:** https://advising.wsu.edu/students/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (2 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="students/report.md">
+<img src="students/01-page-loaded.png" width="250" alt="/students/" />
+</a>
+<br />✅ <code>/students/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

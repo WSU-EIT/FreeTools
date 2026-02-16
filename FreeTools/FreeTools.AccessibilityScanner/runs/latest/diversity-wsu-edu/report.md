@@ -1,79 +1,85 @@
-# Site Report: https://diversity.wsu.edu/
+# 🌐 Site Report: https://diversity.wsu.edu/
+
+> **Status:** ✅ 6/6 pages OK  
+> **Folder:** `diversity-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
+| Pages Passed | ✅ 6 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 524.8 KB |
-| Total Screenshots | 6.4 MB |
-| Total Images | 33 (3.5 MB) |
-| Images Missing Alt | 27 |
-| Folder | `diversity-wsu-edu/` |
+| Total Images | 36 (4.2 MB) |
+| Images Missing Alt | ⚠️ 30 |
+| Total HTML | 551.2 KB |
+| Total Screenshots | 7.5 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Human Resource Services, Washington S... | 0 | 5 | 4 |
-| ❌ | [/about/](about/report.md) | 0 | Human Resource Services, Washington S... | 0 | 4 | 3 |
-| ✅ | [/contact/](contact/report.md) | 200 | Human Resource Services, Washington S... | 0 | 6 | 5 |
-| ✅ | [/events/](events/report.md) | 200 | Human Resource Services, Washington S... | 0 | 6 | 5 |
-| ❌ | [/programs/](programs/report.md) | 0 | Human Resource Services, Washington S... | 0 | 6 | 5 |
-| ❌ | [/resources/](resources/report.md) | 0 | Human Resource Services, Washington S... | 0 | 6 | 5 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Human Resource Services, Washington S... | 0 | 6 | ⚠️ 5 |
+| ✅ | [/about/](about/report.md) | 200 | Human Resource Services, Washington S... | 0 | 6 | ⚠️ 5 |
+| ✅ | [/contact/](contact/report.md) | 200 | Human Resource Services, Washington S... | 0 | 6 | ⚠️ 5 |
+| ✅ | [/events/](events/report.md) | 200 | Human Resource Services, Washington S... | 0 | 6 | ⚠️ 5 |
+| ✅ | [/programs/](programs/report.md) | 200 | Human Resource Services, Washington S... | 0 | 6 | ⚠️ 5 |
+| ✅ | [/resources/](resources/report.md) | 200 | Human Resource Services, Washington S... | 0 | 6 | ⚠️ 5 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/events/](events/report.md)
-
-![/events/](events/01-page-loaded.png)
-
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://diversity.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://diversity.wsu.edu/about/
-- **Status:** 0
-
-### /programs/
-
-- **URL:** https://diversity.wsu.edu/programs/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://diversity.wsu.edu/resources/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="events/report.md">
+<img src="events/01-page-loaded.png" width="250" alt="/events/" />
+</a>
+<br />✅ <code>/events/</code>
+</td>
+<td align="center" width="33%">
+<a href="programs/report.md">
+<img src="programs/01-page-loaded.png" width="250" alt="/programs/" />
+</a>
+<br />✅ <code>/programs/</code>
+</td>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.png" width="250" alt="/resources/" />
+</a>
+<br />✅ <code>/resources/</code>
+</td>
+</tr>
+</table>
 
 ---
 

@@ -1,59 +1,56 @@
-# Site Report: https://askdruniverse.wsu.edu/
+# 🌐 Site Report: https://askdruniverse.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `askdruniverse-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
-| Total JS Errors | 4 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 100.2 KB |
-| Total Screenshots | 1.0 MB |
 | Total Images | 16 (352.9 KB) |
-| Images Missing Alt | 9 |
-| Folder | `askdruniverse-wsu-edu/` |
+| Images Missing Alt | ⚠️ 9 |
+| Total HTML | 125.0 KB |
+| Total Screenshots | 2.2 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Ask Dr. Universe \| Washington State ... | 4 | 10 | 5 |
-| ❌ | [/about/](about/report.md) | 0 | About \| Ask Dr. Universe \| Washingt... | 0 | 6 | 4 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Ask Dr. Universe \| Washington State ... | 0 | 10 | ⚠️ 5 |
+| ✅ | [/about/](about/report.md) | 200 | About \| Ask Dr. Universe \| Washingt... | 0 | 6 | ⚠️ 4 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://askdruniverse.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://askdruniverse.wsu.edu/about/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (4 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

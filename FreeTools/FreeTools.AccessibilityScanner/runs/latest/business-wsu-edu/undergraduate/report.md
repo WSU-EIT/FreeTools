@@ -1,80 +1,176 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://business.wsu.edu/undergraduate/  
+> **Captured:** 2026-02-16 22:13:24 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [JavaScript Errors](#-javascript-errors)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://business.wsu.edu/undergraduate/ |
 | Redirected To | https://business.wsu.edu/advising/ |
 | Title | Academic Advising - Carson College of Business | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 179.0 KB |
+| Status | ✅ 200 |
+| HTML Size | 186.9 KB |
 | Screenshots | 1 (1.6 MB) |
 | Images | 7 (451.7 KB) |
-| Images Missing Alt | 4 |
-| JS Errors | 2 |
+| Images Missing Alt | ⚠️ 4 |
+| JS Errors | 🔴 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:59:54.0714387Z |
+| Captured | 2026-02-16T22:13:24.9846963Z |
 
-## JavaScript Errors
+## 🔴 JavaScript Errors
 
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
+<details>
+<summary><strong>2 error(s) detected</strong></summary>
 
-## Actions
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 404 ()
+```
+
+</details>
+
+## 🔧 Actions
+
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
 - Screenshot #1: page-loaded (1.6 MB)
 - Downloaded 7 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>1.6 MB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (7)
 
-## Page Images (7)
+<details open>
+<summary><strong>📋 Image Index</strong> — 7 images, 451.7 KB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
+|--:|-------|----------|-----:|
 | 1 | [wsu-logo.svg](images/wsu-logo.svg) | Carson College of Business \| Washing... | 33.8 KB |
 | 2 | [AcademicAdvising_banner.jpg](images/AcademicAdvising_banner.jpg) | Partner with your Academic Advisor | 243.6 KB |
-| 3 | [DawnForester_3x4.jpg](images/DawnForester_3x4.jpg) | *(none)* | 44.5 KB |
-| 4 | [MinjaeKim_3x4.jpg](images/MinjaeKim_3x4.jpg) | *(none)* | 58.1 KB |
-| 5 | [JuliaGrimaldo_3x4.jpg](images/JuliaGrimaldo_3x4.jpg) | *(none)* | 55.8 KB |
-| 6 | [wsu-mascot-logo.svg](images/wsu-mascot-logo.svg) | *(none)* | 5.3 KB |
+| 3 | [DawnForester_3x4.jpg](images/DawnForester_3x4.jpg) | ⚠️ *(missing)* | 44.5 KB |
+| 4 | [MinjaeKim_3x4.jpg](images/MinjaeKim_3x4.jpg) | ⚠️ *(missing)* | 58.1 KB |
+| 5 | [JuliaGrimaldo_3x4.jpg](images/JuliaGrimaldo_3x4.jpg) | ⚠️ *(missing)* | 55.8 KB |
+| 6 | [wsu-mascot-logo.svg](images/wsu-mascot-logo.svg) | ⚠️ *(missing)* | 5.3 KB |
 | 7 | [wsu-logo-1.svg](images/wsu-logo-1.svg) | drglow-footer-logo | 10.5 KB |
 
-### Gallery
+</details>
 
-![Carson College of Business | Washington State University](images/wsu-logo.svg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![Partner with your Academic Advisor](images/AcademicAdvising_banner.jpg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/wsu-logo.svg">
+<img src="images/wsu-logo.svg" width="200" alt="Carson College of Business | Washington State University" />
+</a>
+<br /><sub>wsu-logo.svg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/AcademicAdvising_banner.jpg">
+<img src="images/AcademicAdvising_banner.jpg" width="200" alt="Partner with your Academic Advisor" />
+</a>
+<br /><sub>AcademicAdvising_banner.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/DawnForester_3x4.jpg">
+<img src="images/DawnForester_3x4.jpg" width="200" alt="DawnForester_3x4.jpg" />
+</a>
+<br /><sub>DawnForester_3x4.jpg ⚠️</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/MinjaeKim_3x4.jpg">
+<img src="images/MinjaeKim_3x4.jpg" width="200" alt="MinjaeKim_3x4.jpg" />
+</a>
+<br /><sub>MinjaeKim_3x4.jpg ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/JuliaGrimaldo_3x4.jpg">
+<img src="images/JuliaGrimaldo_3x4.jpg" width="200" alt="JuliaGrimaldo_3x4.jpg" />
+</a>
+<br /><sub>JuliaGrimaldo_3x4.jpg ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/wsu-mascot-logo.svg">
+<img src="images/wsu-mascot-logo.svg" width="200" alt="wsu-mascot-logo.svg" />
+</a>
+<br /><sub>wsu-mascot-logo.svg ⚠️</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/wsu-logo-1.svg">
+<img src="images/wsu-logo-1.svg" width="200" alt="drglow-footer-logo" />
+</a>
+<br /><sub>wsu-logo-1.svg</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-![DawnForester_3x4.jpg](images/DawnForester_3x4.jpg)
+</details>
 
-![MinjaeKim_3x4.jpg](images/MinjaeKim_3x4.jpg)
+<details>
+<summary>⚠️ <strong>Images Missing Alt Text</strong> (4)</summary>
 
-![JuliaGrimaldo_3x4.jpg](images/JuliaGrimaldo_3x4.jpg)
+| Image | Source URL |
+|-------|-----------|
+| `DawnForester_3x4.jpg` | https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2024/08/DawnForester... |
+| `MinjaeKim_3x4.jpg` | https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2024/08/MinjaeKim_3x... |
+| `JuliaGrimaldo_3x4.jpg` | https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2024/08/JuliaGrimald... |
+| `wsu-mascot-logo.svg` | https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/06/wsu-mascot-l... |
 
-![wsu-mascot-logo.svg](images/wsu-mascot-logo.svg)
+</details>
 
-![drglow-footer-logo](images/wsu-logo-1.svg)
+## 📁 Files
 
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (1.6 MB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 7 page images (451.7 KB) |
 
-### ⚠️ Images Missing Alt Text (4)
+---
 
-- `DawnForester_3x4.jpg` — https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2024/08/DawnForester_3x4.jpg
-- `MinjaeKim_3x4.jpg` — https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2024/08/MinjaeKim_3x4.jpg
-- `JuliaGrimaldo_3x4.jpg` — https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2024/08/JuliaGrimaldo_3x4.jpg
-- `wsu-mascot-logo.svg` — https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/06/wsu-mascot-logo.svg
-
-## Files
-
-- `01-page-loaded.png` — page-loaded (1.6 MB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 7 page images (451.7 KB)
+*Generated by AccessibilityScanner (FreeTools) v1.0*

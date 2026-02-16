@@ -3,10 +3,10 @@
   "Url": "https://transportation.wsu.edu/contact/",
   "FinalUrl": "https://transportation.wsu.edu/contact-information/",
   "Title": "Contact | Transportation Services | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 62889,
-  "ScreenshotSizeBytes": 383407,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 69521,
+  "ScreenshotSizeBytes": 416110,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 383407
+      "FileSize": 416110
     }
   ],
   "ImageCount": 5,
@@ -54,6 +54,15 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T21:00:54.0024176Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:12:48 GMT",
+    "etag": "\u002277768b2ff5de12b36448c31a948f25cc\u0022",
+    "last-modified": "Mon, 16 Feb 2026 21:47:07 GMT",
+    "link": "\u003Chttps://transportation.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://transportation.wsu.edu/wp-json/wp/v2/pages/3155\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://transportation.wsu.edu/?p=3155\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:12:48.2329537Z"
 }

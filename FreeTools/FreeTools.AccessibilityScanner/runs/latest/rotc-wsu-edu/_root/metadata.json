@@ -3,19 +3,19 @@
   "Url": "https://rotc.wsu.edu/",
   "FinalUrl": null,
   "Title": "WSU Army ROTC | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 65282,
-  "ScreenshotSizeBytes": 212840,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 71967,
+  "ScreenshotSizeBytes": 924314,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
-  "ConsoleWarningCount": 12,
+  "ConsoleWarningCount": 2,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 212840
+      "FileSize": 924314
     }
   ],
   "ImageCount": 4,
@@ -48,6 +48,17 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4711951Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:14:44 GMT",
+    "etag": "\u00223632f4a130fb66041e252afbbb6a2143\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:14:44 GMT",
+    "link": "\u003Chttps://rotc.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://rotc.wsu.edu/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://rotc.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache": "MISS",
+    "x-cache-status": "MISS"
+  },
+  "CapturedAt": "2026-02-16T22:14:43.7038719Z"
 }

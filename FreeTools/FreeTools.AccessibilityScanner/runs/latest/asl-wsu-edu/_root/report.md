@@ -1,69 +1,152 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://asl.wsu.edu/  
+> **Captured:** 2026-02-16 22:12:38 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://asl.wsu.edu/ |
 | Title | Applied Sciences Laboratory | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 62.1 KB |
-| Screenshots | 1 (1.1 MB) |
-| Images | 4 (750.7 KB) |
-| Images Missing Alt | 4 |
-| JS Errors | 1 |
+| Status | ✅ 200 |
+| HTML Size | 68.2 KB |
+| Screenshots | 1 (1.2 MB) |
+| Images | 6 (2.4 MB) |
+| Images Missing Alt | ⚠️ 5 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:58:42.4454009Z |
+| Captured | 2026-02-16T22:12:38.8820641Z |
 
-## JavaScript Errors
+## 🔧 Actions
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
-## Actions
+- Screenshot #1: page-loaded (1.2 MB)
+- Downloaded 6 images to /images/
 
-- Screenshot #1: page-loaded (1.1 MB)
-- Downloaded 4 images to /images/
+</details>
 
-## Screenshots
+## 📸 Screenshots
 
-### 1. page-loaded
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>1.2 MB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
-![page-loaded](01-page-loaded.png)
+## 🖼️ Page Images (6)
 
-
-## Page Images (4)
+<details open>
+<summary><strong>📋 Image Index</strong> — 6 images, 2.4 MB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
-| 1 | [ISP-Building-at-Night-1-scaled.jpg](images/ISP-Building-at-Night-1-scaled.jpg) | *(none)* | 456.1 KB |
-| 2 | [RIVER2-e1666038606692.jpg](images/RIVER2-e1666038606692.jpg) | *(none)* | 58.8 KB |
-| 3 | [us_gov_in_nut_shell.jpg](images/us_gov_in_nut_shell.jpg) | *(none)* | 120.2 KB |
-| 4 | [contact_bubble.jpg](images/contact_bubble.jpg) | *(none)* | 115.5 KB |
+|--:|-------|----------|-----:|
+| 1 | [DSC_9095.jpg](images/DSC_9095.jpg) | Scientist working with laser | 783.8 KB |
+| 2 | [ISP-Building-at-Night-1-scaled.jpg](images/ISP-Building-at-Night-1-scaled.jpg) | ⚠️ *(missing)* | 456.1 KB |
+| 3 | [APS-Aerial-DCS-Circled.jpg](images/APS-Aerial-DCS-Circled.jpg) | ⚠️ *(missing)* | 887.0 KB |
+| 4 | [RIVER2-e1666038606692.jpg](images/RIVER2-e1666038606692.jpg) | ⚠️ *(missing)* | 58.8 KB |
+| 5 | [us_gov_in_nut_shell.jpg](images/us_gov_in_nut_shell.jpg) | ⚠️ *(missing)* | 120.2 KB |
+| 6 | [contact_bubble.jpg](images/contact_bubble.jpg) | ⚠️ *(missing)* | 115.5 KB |
 
-### Gallery
+</details>
 
-![ISP-Building-at-Night-1-scaled.jpg](images/ISP-Building-at-Night-1-scaled.jpg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![RIVER2-e1666038606692.jpg](images/RIVER2-e1666038606692.jpg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/DSC_9095.jpg">
+<img src="images/DSC_9095.jpg" width="200" alt="Scientist working with laser" />
+</a>
+<br /><sub>DSC_9095.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/ISP-Building-at-Night-1-scaled.jpg">
+<img src="images/ISP-Building-at-Night-1-scaled.jpg" width="200" alt="ISP-Building-at-Night-1-scaled.jpg" />
+</a>
+<br /><sub>ISP-Building-at-Night-1-scaled.jpg ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/APS-Aerial-DCS-Circled.jpg">
+<img src="images/APS-Aerial-DCS-Circled.jpg" width="200" alt="APS-Aerial-DCS-Circled.jpg" />
+</a>
+<br /><sub>APS-Aerial-DCS-Circled.jpg ⚠️</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/RIVER2-e1666038606692.jpg">
+<img src="images/RIVER2-e1666038606692.jpg" width="200" alt="RIVER2-e1666038606692.jpg" />
+</a>
+<br /><sub>RIVER2-e1666038606692.jpg ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/us_gov_in_nut_shell.jpg">
+<img src="images/us_gov_in_nut_shell.jpg" width="200" alt="us_gov_in_nut_shell.jpg" />
+</a>
+<br /><sub>us_gov_in_nut_shell.jpg ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/contact_bubble.jpg">
+<img src="images/contact_bubble.jpg" width="200" alt="contact_bubble.jpg" />
+</a>
+<br /><sub>contact_bubble.jpg ⚠️</sub>
+</td>
+</tr>
+</table>
 
-![us_gov_in_nut_shell.jpg](images/us_gov_in_nut_shell.jpg)
+</details>
 
-![contact_bubble.jpg](images/contact_bubble.jpg)
+<details>
+<summary>⚠️ <strong>Images Missing Alt Text</strong> (5)</summary>
 
+| Image | Source URL |
+|-------|-----------|
+| `ISP-Building-at-Night-1-scaled.jpg` | https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2026/01/ISP-Building-at-N... |
+| `APS-Aerial-DCS-Circled.jpg` | https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2026/01/APS-Aerial-DCS-Ci... |
+| `RIVER2-e1666038606692.jpg` | https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2016/12/RIVER2-e166603860... |
+| `us_gov_in_nut_shell.jpg` | https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2016/12/us_gov_in_nut_she... |
+| `contact_bubble.jpg` | https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2016/12/contact_bubble.jpg |
 
-### ⚠️ Images Missing Alt Text (4)
+</details>
 
-- `ISP-Building-at-Night-1-scaled.jpg` — https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2026/01/ISP-Building-at-Night-1-scaled.jpg
-- `RIVER2-e1666038606692.jpg` — https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2016/12/RIVER2-e1666038606692.jpg
-- `us_gov_in_nut_shell.jpg` — https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2016/12/us_gov_in_nut_shell.jpg
-- `contact_bubble.jpg` — https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2016/12/contact_bubble.jpg
+## 📁 Files
 
-## Files
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (1.2 MB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 6 page images (2.4 MB) |
 
-- `01-page-loaded.png` — page-loaded (1.1 MB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 4 page images (750.7 KB)
+---
+
+*Generated by AccessibilityScanner (FreeTools) v1.0*

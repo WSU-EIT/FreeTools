@@ -1,69 +1,73 @@
-# Site Report: https://medicine.wsu.edu/
+# 🌐 Site Report: https://medicine.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `medicine-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 4 |
-| Total HTML | 959.3 KB |
-| Total Screenshots | 7.0 MB |
-| Total Images | 43 (5.9 MB) |
-| Images Missing Alt | 8 |
-| Folder | `medicine-wsu-edu/` |
+| Total Images | 47 (9.1 MB) |
+| Images Missing Alt | ⚠️ 8 |
+| Total HTML | 982.0 KB |
+| Total Screenshots | 7.7 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Elson S. Floyd College of Medicine \|... | 0 | 13 | 1 |
-| ❌ | [/about/](about/report.md) | 0 | About \| Elson S. Floyd College of Me... | 0 | 8 | 0 |
-| ❌ | [/education/](education/report.md) | 0 | Education Scholars Program \| Elson S... | 0 | 3 | 2 |
-| ❌ | [/research/](research/report.md) | 0 | Research Overview \| Elson S. Floyd C... | 0 | 19 | 5 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Elson S. Floyd College of Medicine \|... | 0 | 13 | ⚠️ 1 |
+| ✅ | [/about/](about/report.md) | 200 | About \| Elson S. Floyd College of Me... | 0 | 12 | 0 |
+| ✅ | [/education/](education/report.md) | 200 | Education Scholars Program \| Elson S... | 0 | 3 | ⚠️ 2 |
+| ✅ | [/research/](research/report.md) | 200 | Research Overview \| Elson S. Floyd C... | 0 | 19 | ⚠️ 5 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/education/](education/report.md)
-
-![/education/](education/01-page-loaded.png)
-
-### [/research/](research/report.md)
-
-![/research/](research/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://medicine.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://medicine.wsu.edu/about/
-- **Status:** 0
-
-### /education/
-
-- **URL:** https://medicine.wsu.edu/education/
-- **Status:** 0
-
-### /research/
-
-- **URL:** https://medicine.wsu.edu/research/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="education/report.md">
+<img src="education/01-page-loaded.png" width="250" alt="/education/" />
+</a>
+<br />✅ <code>/education/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

@@ -5,8 +5,8 @@
   "Title": "College of Education, Sport, and Human Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 249008,
-  "ScreenshotSizeBytes": 1750929,
+  "HtmlSizeBytes": 255095,
+  "ScreenshotSizeBytes": 1419465,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 2,
@@ -15,11 +15,11 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1750929
+      "FileSize": 1419465
     }
   ],
-  "ImageCount": 6,
-  "ImagesTotalSizeBytes": 2028694,
+  "ImageCount": 9,
+  "ImagesTotalSizeBytes": 15898436,
   "ImagesMissingAlt": 4,
   "Images": [
     {
@@ -53,13 +53,31 @@
       "FileSize": 356725
     },
     {
+      "FileName": "WSU-Pullman-Grads.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/01/WSU-Pullman-Grads.jpg",
+      "AltText": "WSU Pullman Grads",
+      "FileSize": 2848268
+    },
+    {
+      "FileName": "4P7A5445adj.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2014/09/4P7A5445adj.jpg",
+      "AltText": "Tariq Akmal smiling at camera.",
+      "FileSize": 10291337
+    },
+    {
       "FileName": "Sue-Durrant-and-Jo-Washburn-in-1997-copy.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/Sue-Durrant-and-Jo-Washburn-in-1997-copy.jpg",
       "AltText": "Monica McNamara smiling at camera.",
       "FileSize": 141383
+    },
+    {
+      "FileName": "IMG_1009.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/IMG_1009.jpeg",
+      "AltText": "Colin Connolly smiling at camera with Comerica Park as his backdrop.",
+      "FileSize": 730137
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4510597Z"
+  "CapturedAt": "2026-02-16T22:15:34.8213454Z"
 }

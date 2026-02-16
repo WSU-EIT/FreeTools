@@ -1,103 +1,126 @@
-# Site Report: https://urec.wsu.edu/
+# 🌐 Site Report: https://urec.wsu.edu/
+
+> **Status:** ⚠️ 7/8 pages OK  
+> **Folder:** `urec-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████░░░░] 88%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 4/8 pages OK |
 | Pages Scanned | 8 |
-| Pages Passed | 4 |
-| Pages Failed | 4 |
-| Total JS Errors | 4 |
+| Pages Passed | ✅ 7 |
+| Pages Failed | ❌ 1 |
+| Total JS Errors | 🔴 1 |
 | Total JS Warnings | 1 |
-| Total HTML | 658.8 KB |
-| Total Screenshots | 4.3 MB |
-| Total Images | 23 (42.7 MB) |
-| Images Missing Alt | 4 |
-| Folder | `urec-wsu-edu/` |
+| Total Images | 36 (51.6 MB) |
+| Images Missing Alt | ⚠️ 13 |
+| Total HTML | 843.7 KB |
+| Total Screenshots | 7.3 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Home | 0 | 4 | 0 |
 | ✅ | [/employment/](employment/report.md) | 200 | Employment | 0 | 0 | 0 |
-| ❌ | [/facilities/](facilities/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/imsports/](imsports/report.md) | 0 | Intramurals | 3 | 3 | 3 |
+| ✅ | [/facilities/](facilities/report.md) | 200 | Locations & Facilities | 0 | 9 | ⚠️ 9 |
+| ✅ | [/imsports/](imsports/report.md) | 200 | Intramurals | 0 | 3 | ⚠️ 3 |
 | ✅ | [/membership/](membership/report.md) | 200 | Memberships & Lockers | 0 | 4 | 0 |
 | ✅ | [/orc/](orc/report.md) | 200 | Outdoor Adventures | 0 | 15 | 0 |
-| ❌ | [/programs/](programs/report.md) | 0 | Page Not Found | 1 | 0 | 0 |
-| ✅ | [/sportclubs/](sportclubs/report.md) | 200 | Sport Clubs | 0 | 1 | 1 |
+| ❌ | [/programs/](programs/report.md) | 404 | Page Not Found | 🔴 1 | 0 | 0 |
+| ✅ | [/sportclubs/](sportclubs/report.md) | 200 | Sport Clubs | 0 | 1 | ⚠️ 1 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/employment/](employment/report.md)
+Click any thumbnail to view the full page report.
 
-![/employment/](employment/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="employment/report.md">
+<img src="employment/01-page-loaded.png" width="250" alt="/employment/" />
+</a>
+<br />✅ <code>/employment/</code>
+</td>
+<td align="center" width="33%">
+<a href="facilities/report.md">
+<img src="facilities/01-page-loaded.png" width="250" alt="/facilities/" />
+</a>
+<br />✅ <code>/facilities/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="imsports/report.md">
+<img src="imsports/01-page-loaded.png" width="250" alt="/imsports/" />
+</a>
+<br />✅ <code>/imsports/</code>
+</td>
+<td align="center" width="33%">
+<a href="membership/report.md">
+<img src="membership/01-page-loaded.png" width="250" alt="/membership/" />
+</a>
+<br />✅ <code>/membership/</code>
+</td>
+<td align="center" width="33%">
+<a href="orc/report.md">
+<img src="orc/01-page-loaded.png" width="250" alt="/orc/" />
+</a>
+<br />✅ <code>/orc/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="programs/report.md">
+<img src="programs/01-page-loaded.png" width="250" alt="/programs/" />
+</a>
+<br />❌ <code>/programs/</code>
+</td>
+<td align="center" width="33%">
+<a href="sportclubs/report.md">
+<img src="sportclubs/01-page-loaded.png" width="250" alt="/sportclubs/" />
+</a>
+<br />✅ <code>/sportclubs/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
-### [/imsports/](imsports/report.md)
+## ❌ Failed Pages
 
-![/imsports/](imsports/01-page-loaded.png)
+<details open>
+<summary><strong>1 page(s) failed</strong></summary>
 
-### [/membership/](membership/report.md)
+| Page | HTTP | Error |
+|------|:----:|-------|
+| [/programs/](programs/report.md) | 404 | — |
 
-![/membership/](membership/01-page-loaded.png)
+</details>
 
-### [/orc/](orc/report.md)
+## 🔴 JavaScript Errors
 
-![/orc/](orc/01-page-loaded.png)
+<details>
+<summary><strong>1 error(s) across 1 page(s)</strong></summary>
 
-### [/programs/](programs/report.md)
+**/programs/** (1 errors)
 
-![/programs/](programs/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 404 ()
+```
 
-### [/sportclubs/](sportclubs/report.md)
-
-![/sportclubs/](sportclubs/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://urec.wsu.edu/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded`
-
-### /facilities/
-
-- **URL:** https://urec.wsu.edu/facilities/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
-
-### /programs/
-
-- **URL:** https://urec.wsu.edu/programs/
-- **Status:** 0
-
-### /imsports/
-
-- **URL:** https://urec.wsu.edu/imsports/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /imsports/ (3 errors)
-
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
-
-### /programs/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
+</details>
 
 ---
 

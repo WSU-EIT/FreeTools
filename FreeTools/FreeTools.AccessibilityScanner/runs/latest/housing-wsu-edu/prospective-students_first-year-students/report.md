@@ -1,35 +1,69 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://housing.wsu.edu/prospective-students/first-year-students/  
+> **Captured:** 2026-02-16 22:18:24 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://housing.wsu.edu/prospective-students/first-year-students/ |
 | Title | First Year Students |
-| Status | ❌ 0 |
-| HTML Size | 80.1 KB |
-| Screenshots | 1 (555.8 KB) |
+| Status | ✅ 200 |
+| HTML Size | 80.3 KB |
+| Screenshots | 1 (2.2 MB) |
 | Images | 13 (3.3 MB) |
-| Images Missing Alt | 0 |
-| JS Errors | 0 |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T21:00:42.0704974Z |
+| Captured | 2026-02-16T22:18:24.8982066Z |
 
-## Actions
+## 🔧 Actions
 
-- Screenshot #1: page-loaded (555.8 KB)
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
+
+- Screenshot #1: page-loaded (2.2 MB)
 - Downloaded 13 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>2.2 MB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (13)
 
-## Page Images (13)
+<details open>
+<summary><strong>📋 Image Index</strong> — 13 images, 3.3 MB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
+|--:|-------|----------|-----:|
 | 1 | [honors-exterior.jpg](images/honors-exterior.jpg) | Elmina White Honors | 174.2 KB |
 | 2 | [gg-exterior-side.jpg](images/gg-exterior-side.jpg) | Gannon Goldsworthy | 512.0 KB |
 | 3 | [mccroskey-exterior-side.jpg](images/mccroskey-exterior-side.jpg) | McCroskey | 285.1 KB |
@@ -44,42 +78,119 @@
 | 12 | [northside-desk-exterior.png](images/northside-desk-exterior.png) | Northside | 406.2 KB |
 | 13 | [gsh-exterior-cougar-way.jpg](images/gsh-exterior-cougar-way.jpg) | Global Scholars Hall | 433.4 KB |
 
-### Gallery
+</details>
 
-![Elmina White Honors](images/honors-exterior.jpg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![Gannon Goldsworthy](images/gg-exterior-side.jpg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/honors-exterior.jpg">
+<img src="images/honors-exterior.jpg" width="200" alt="Elmina White Honors" />
+</a>
+<br /><sub>honors-exterior.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/gg-exterior-side.jpg">
+<img src="images/gg-exterior-side.jpg" width="200" alt="Gannon Goldsworthy" />
+</a>
+<br /><sub>gg-exterior-side.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/mccroskey-exterior-side.jpg">
+<img src="images/mccroskey-exterior-side.jpg" width="200" alt="McCroskey" />
+</a>
+<br /><sub>mccroskey-exterior-side.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/olympia-exterior.jpg">
+<img src="images/olympia-exterior.jpg" width="200" alt="Olympia" />
+</a>
+<br /><sub>olympia-exterior.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/scott-coman-exterior.jpg">
+<img src="images/scott-coman-exterior.jpg" width="200" alt="Scott Coman" />
+</a>
+<br /><sub>scott-coman-exterior.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/stephenson-exterior-towers.jpg">
+<img src="images/stephenson-exterior-towers.jpg" width="200" alt="Stephenson Complex" />
+</a>
+<br /><sub>stephenson-exterior-towers.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/regents-exterior.jpg">
+<img src="images/regents-exterior.jpg" width="200" alt="Regents" />
+</a>
+<br /><sub>regents-exterior.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/streit-perham-exterior.jpg">
+<img src="images/streit-perham-exterior.jpg" width="200" alt="Streit Perham" />
+</a>
+<br /><sub>streit-perham-exterior.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/rogers-exterior-banner.jpg">
+<img src="images/rogers-exterior-banner.jpg" width="200" alt="Rogers" />
+</a>
+<br /><sub>rogers-exterior-banner.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/orton-exterior.jpg">
+<img src="images/orton-exterior.jpg" width="200" alt="Orton" />
+</a>
+<br /><sub>orton-exterior.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/community-duncan-dunn-exterior.jpg">
+<img src="images/community-duncan-dunn-exterior.jpg" width="200" alt="Community Duncan Dunn" />
+</a>
+<br /><sub>community-duncan-dunn-exterior.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/northside-desk-exterior.png">
+<img src="images/northside-desk-exterior.png" width="200" alt="Northside" />
+</a>
+<br /><sub>northside-desk-exterior.png</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/gsh-exterior-cougar-way.jpg">
+<img src="images/gsh-exterior-cougar-way.jpg" width="200" alt="Global Scholars Hall" />
+</a>
+<br /><sub>gsh-exterior-cougar-way.jpg</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-![McCroskey](images/mccroskey-exterior-side.jpg)
+</details>
 
-![Olympia](images/olympia-exterior.jpg)
+## 📁 Files
 
-![Scott Coman](images/scott-coman-exterior.jpg)
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (2.2 MB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 13 page images (3.3 MB) |
 
-![Stephenson Complex](images/stephenson-exterior-towers.jpg)
+---
 
-![Regents](images/regents-exterior.jpg)
-
-![Streit Perham](images/streit-perham-exterior.jpg)
-
-![Rogers](images/rogers-exterior-banner.jpg)
-
-![Orton](images/orton-exterior.jpg)
-
-![Community Duncan Dunn](images/community-duncan-dunn-exterior.jpg)
-
-![Northside](images/northside-desk-exterior.png)
-
-![Global Scholars Hall](images/gsh-exterior-cougar-way.jpg)
-
-
-## Files
-
-- `01-page-loaded.png` — page-loaded (555.8 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 13 page images (3.3 MB)
+*Generated by AccessibilityScanner (FreeTools) v1.0*

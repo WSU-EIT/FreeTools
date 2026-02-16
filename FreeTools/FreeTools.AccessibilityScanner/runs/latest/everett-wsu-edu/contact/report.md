@@ -1,4 +1,23 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://everett.wsu.edu/contact/  
+> **Captured:** 2026-02-16 22:17:24 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [JavaScript Errors](#-javascript-errors)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
@@ -6,112 +25,231 @@
 | Redirected To | https://everett.wsu.edu/about-wsu-everett/contact-us/ |
 | Title | Contact Us | Washington State University Everett | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 236.8 KB |
+| HTML Size | 236.9 KB |
 | Screenshots | 1 (977.6 KB) |
-| Images | 16 (450.1 KB) |
-| Images Missing Alt | 15 |
-| JS Errors | 1 |
+| Images | 16 (450.2 KB) |
+| Images Missing Alt | ⚠️ 15 |
+| JS Errors | 🔴 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T21:01:45.7032649Z |
+| Captured | 2026-02-16T22:17:24.6855912Z |
 
-## JavaScript Errors
+## 🔴 JavaScript Errors
 
-- `Failed to load resource: the server responded with a status of 405 ()`
+<details>
+<summary><strong>1 error(s) detected</strong></summary>
 
-## Actions
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
+
+</details>
+
+## 🔧 Actions
+
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
 - Screenshot #1: page-loaded (977.6 KB)
 - Downloaded 16 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>977.6 KB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (16)
 
-## Page Images (16)
+<details open>
+<summary><strong>📋 Image Index</strong> — 16 images, 450.2 KB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
-| 1 | [out.img](images/out.img) | *(none)* | 42 bytes |
-| 2 | [out-1.img](images/out-1.img) | *(none)* | 43 bytes |
-| 3 | [out-2.img](images/out-2.img) | *(none)* | 95 bytes |
-| 4 | [out-3.img](images/out-3.img) | *(none)* | 0 bytes |
-| 5 | [out-4.img](images/out-4.img) | *(none)* | 42 bytes |
-| 6 | [out-5.img](images/out-5.img) | *(none)* | 43 bytes |
-| 7 | [out-6.img](images/out-6.img) | *(none)* | 0 bytes |
-| 8 | [out-7.img](images/out-7.img) | *(none)* | 42 bytes |
-| 9 | [out-8.img](images/out-8.img) | *(none)* | 43 bytes |
-| 10 | [out-9.img](images/out-9.img) | *(none)* | 0 bytes |
-| 11 | [out-10.img](images/out-10.img) | *(none)* | 42 bytes |
-| 12 | [out-11.img](images/out-11.img) | *(none)* | 0 bytes |
-| 13 | [out-12.img](images/out-12.img) | *(none)* | 37 bytes |
-| 14 | [out-13.img](images/out-13.img) | *(none)* | 43 bytes |
-| 15 | [fire.img](images/fire.img) | *(none)* | 95 bytes |
+|--:|-------|----------|-----:|
+| 1 | [out.img](images/out.img) | ⚠️ *(missing)* | 42 bytes |
+| 2 | [out-1.img](images/out-1.img) | ⚠️ *(missing)* | 43 bytes |
+| 3 | [out-2.img](images/out-2.img) | ⚠️ *(missing)* | 95 bytes |
+| 4 | [out-3.img](images/out-3.img) | ⚠️ *(missing)* | 70 bytes |
+| 5 | [out-4.img](images/out-4.img) | ⚠️ *(missing)* | 42 bytes |
+| 6 | [out-5.img](images/out-5.img) | ⚠️ *(missing)* | 43 bytes |
+| 7 | [out-6.img](images/out-6.img) | ⚠️ *(missing)* | 0 bytes |
+| 8 | [out-7.img](images/out-7.img) | ⚠️ *(missing)* | 42 bytes |
+| 9 | [out-8.img](images/out-8.img) | ⚠️ *(missing)* | 43 bytes |
+| 10 | [out-9.img](images/out-9.img) | ⚠️ *(missing)* | 0 bytes |
+| 11 | [out-10.img](images/out-10.img) | ⚠️ *(missing)* | 42 bytes |
+| 12 | [out-11.img](images/out-11.img) | ⚠️ *(missing)* | 0 bytes |
+| 13 | [out-12.img](images/out-12.img) | ⚠️ *(missing)* | 37 bytes |
+| 14 | [out-13.img](images/out-13.img) | ⚠️ *(missing)* | 43 bytes |
+| 15 | [fire.img](images/fire.img) | ⚠️ *(missing)* | 95 bytes |
 | 16 | [everett-home-hero-1.jpg](images/everett-home-hero-1.jpg) | An academic building on the WSU Evere... | 449.6 KB |
 
-### Gallery
+</details>
 
-![out.img](images/out.img)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![out-1.img](images/out-1.img)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/out.img">
+<img src="images/out.img" width="200" alt="out.img" />
+</a>
+<br /><sub>out.img ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/out-1.img">
+<img src="images/out-1.img" width="200" alt="out-1.img" />
+</a>
+<br /><sub>out-1.img ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/out-2.img">
+<img src="images/out-2.img" width="200" alt="out-2.img" />
+</a>
+<br /><sub>out-2.img ⚠️</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/out-3.img">
+<img src="images/out-3.img" width="200" alt="out-3.img" />
+</a>
+<br /><sub>out-3.img ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/out-4.img">
+<img src="images/out-4.img" width="200" alt="out-4.img" />
+</a>
+<br /><sub>out-4.img ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/out-5.img">
+<img src="images/out-5.img" width="200" alt="out-5.img" />
+</a>
+<br /><sub>out-5.img ⚠️</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/out-6.img">
+<img src="images/out-6.img" width="200" alt="out-6.img" />
+</a>
+<br /><sub>out-6.img ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/out-7.img">
+<img src="images/out-7.img" width="200" alt="out-7.img" />
+</a>
+<br /><sub>out-7.img ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/out-8.img">
+<img src="images/out-8.img" width="200" alt="out-8.img" />
+</a>
+<br /><sub>out-8.img ⚠️</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/out-9.img">
+<img src="images/out-9.img" width="200" alt="out-9.img" />
+</a>
+<br /><sub>out-9.img ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/out-10.img">
+<img src="images/out-10.img" width="200" alt="out-10.img" />
+</a>
+<br /><sub>out-10.img ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/out-11.img">
+<img src="images/out-11.img" width="200" alt="out-11.img" />
+</a>
+<br /><sub>out-11.img ⚠️</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/out-12.img">
+<img src="images/out-12.img" width="200" alt="out-12.img" />
+</a>
+<br /><sub>out-12.img ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/out-13.img">
+<img src="images/out-13.img" width="200" alt="out-13.img" />
+</a>
+<br /><sub>out-13.img ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/fire.img">
+<img src="images/fire.img" width="200" alt="fire.img" />
+</a>
+<br /><sub>fire.img ⚠️</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/everett-home-hero-1.jpg">
+<img src="images/everett-home-hero-1.jpg" width="200" alt="An academic building on the WSU Everett campus with a statue of a cougar." />
+</a>
+<br /><sub>everett-home-hero-1.jpg</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-![out-2.img](images/out-2.img)
+</details>
 
-![out-3.img](images/out-3.img)
+<details>
+<summary>⚠️ <strong>Images Missing Alt Text</strong> (15)</summary>
 
-![out-4.img](images/out-4.img)
+| Image | Source URL |
+|-------|-----------|
+| `out.img` | https://d.adroll.com/cm/b/out?adroll_fpc=e604e6d81f28858c0be02b8638300a98-177... |
+| `out-1.img` | https://d.adroll.com/cm/bombora/out?adroll_fpc=e604e6d81f28858c0be02b8638300a... |
+| `out-2.img` | https://d.adroll.com/cm/experian/out?adroll_fpc=e604e6d81f28858c0be02b8638300... |
+| `out-3.img` | https://d.adroll.com/cm/eyeota/out?adroll_fpc=e604e6d81f28858c0be02b8638300a9... |
+| `out-4.img` | https://d.adroll.com/cm/g/out?adroll_fpc=e604e6d81f28858c0be02b8638300a98-177... |
+| `out-5.img` | https://d.adroll.com/cm/index/out?adroll_fpc=e604e6d81f28858c0be02b8638300a98... |
+| `out-6.img` | https://d.adroll.com/cm/l/out?adroll_fpc=e604e6d81f28858c0be02b8638300a98-177... |
+| `out-7.img` | https://d.adroll.com/cm/n/out?adroll_fpc=e604e6d81f28858c0be02b8638300a98-177... |
+| `out-8.img` | https://d.adroll.com/cm/o/out?adroll_fpc=e604e6d81f28858c0be02b8638300a98-177... |
+| `out-9.img` | https://d.adroll.com/cm/outbrain/out?adroll_fpc=e604e6d81f28858c0be02b8638300... |
+| `out-10.img` | https://d.adroll.com/cm/pubmatic/out?adroll_fpc=e604e6d81f28858c0be02b8638300... |
+| `out-11.img` | https://d.adroll.com/cm/taboola/out?adroll_fpc=e604e6d81f28858c0be02b8638300a... |
+| `out-12.img` | https://d.adroll.com/cm/triplelift/out?adroll_fpc=e604e6d81f28858c0be02b86383... |
+| `out-13.img` | https://d.adroll.com/cm/x/out?adroll_fpc=e604e6d81f28858c0be02b8638300a98-177... |
+| `fire.img` | https://us-25449-adswizz.attribution.adswizz.com/fire?pixelId=6221e178-910e-4... |
 
-![out-5.img](images/out-5.img)
+</details>
 
-![out-6.img](images/out-6.img)
+## 📁 Files
 
-![out-7.img](images/out-7.img)
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (977.6 KB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 16 page images (450.2 KB) |
 
-![out-8.img](images/out-8.img)
+---
 
-![out-9.img](images/out-9.img)
-
-![out-10.img](images/out-10.img)
-
-![out-11.img](images/out-11.img)
-
-![out-12.img](images/out-12.img)
-
-![out-13.img](images/out-13.img)
-
-![fire.img](images/fire.img)
-
-![An academic building on the WSU Everett campus with a statue of a cougar.](images/everett-home-hero-1.jpg)
-
-
-### ⚠️ Images Missing Alt Text (15)
-
-- `out.img` — https://d.adroll.com/cm/b/out?adroll_fpc=ee4bb46f3ec9220640f419acfb04d8c3-1771275706937&pv=20766868741.377724&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fabout-wsu-everett%2Fcontact-us%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-1.img` — https://d.adroll.com/cm/bombora/out?adroll_fpc=ee4bb46f3ec9220640f419acfb04d8c3-1771275706937&pv=20766868741.377724&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fabout-wsu-everett%2Fcontact-us%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-2.img` — https://d.adroll.com/cm/experian/out?adroll_fpc=ee4bb46f3ec9220640f419acfb04d8c3-1771275706937&pv=20766868741.377724&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fabout-wsu-everett%2Fcontact-us%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-3.img` — https://d.adroll.com/cm/eyeota/out?adroll_fpc=ee4bb46f3ec9220640f419acfb04d8c3-1771275706937&pv=20766868741.377724&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fabout-wsu-everett%2Fcontact-us%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-4.img` — https://d.adroll.com/cm/g/out?adroll_fpc=ee4bb46f3ec9220640f419acfb04d8c3-1771275706937&pv=20766868741.377724&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fabout-wsu-everett%2Fcontact-us%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-5.img` — https://d.adroll.com/cm/index/out?adroll_fpc=ee4bb46f3ec9220640f419acfb04d8c3-1771275706937&pv=20766868741.377724&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fabout-wsu-everett%2Fcontact-us%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-6.img` — https://d.adroll.com/cm/l/out?adroll_fpc=ee4bb46f3ec9220640f419acfb04d8c3-1771275706937&pv=20766868741.377724&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fabout-wsu-everett%2Fcontact-us%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-7.img` — https://d.adroll.com/cm/n/out?adroll_fpc=ee4bb46f3ec9220640f419acfb04d8c3-1771275706937&pv=20766868741.377724&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fabout-wsu-everett%2Fcontact-us%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-8.img` — https://d.adroll.com/cm/o/out?adroll_fpc=ee4bb46f3ec9220640f419acfb04d8c3-1771275706937&pv=20766868741.377724&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fabout-wsu-everett%2Fcontact-us%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-9.img` — https://d.adroll.com/cm/outbrain/out?adroll_fpc=ee4bb46f3ec9220640f419acfb04d8c3-1771275706937&pv=20766868741.377724&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fabout-wsu-everett%2Fcontact-us%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-10.img` — https://d.adroll.com/cm/pubmatic/out?adroll_fpc=ee4bb46f3ec9220640f419acfb04d8c3-1771275706937&pv=20766868741.377724&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fabout-wsu-everett%2Fcontact-us%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-11.img` — https://d.adroll.com/cm/taboola/out?adroll_fpc=ee4bb46f3ec9220640f419acfb04d8c3-1771275706937&pv=20766868741.377724&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fabout-wsu-everett%2Fcontact-us%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-12.img` — https://d.adroll.com/cm/triplelift/out?adroll_fpc=ee4bb46f3ec9220640f419acfb04d8c3-1771275706937&pv=20766868741.377724&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fabout-wsu-everett%2Fcontact-us%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-13.img` — https://d.adroll.com/cm/x/out?adroll_fpc=ee4bb46f3ec9220640f419acfb04d8c3-1771275706937&pv=20766868741.377724&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fabout-wsu-everett%2Fcontact-us%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `fire.img` — https://us-25449-adswizz.attribution.adswizz.com/fire?pixelId=6221e178-910e-4890-92a4-8ebdc3b7b18d&type=sitevisit&subtype=HomePage&aw_0_req.gdpr=true&redirectURL=aHR0cHM6Ly9waXhlbC50YXBhZC5jb20vaWRzeW5jL2V4L3JlY2VpdmU_cGFydG5lcl9pZD0yOTk0JjwjaWYgcmVxdWVzdC5saXN0ZW5lcklkP21hdGNoZXMoJ1swLTlhLWZdezh9LVswLTlhLWZdezR9LVswLTlhLWZdezR9LVswLTlhLWZdezR9LVswLTlhLWZdezEyfScpPnBhcnRuZXJfdHlwZWRfZGlkPSU3QiUyMkhBUkRXQVJFX0FORFJPSURfQURfSUQlMjIlM0ElMjIke3JlcXVlc3QubGlzdGVuZXJJZH0lMjIlN0Q8I2Vsc2VpZiByZXF1ZXN0Lmxpc3RlbmVySWQ_bWF0Y2hlcygnWzAtOUEtRl17OH0tWzAtOUEtRl17NH0tWzAtOUEtRl17NH0tWzAtOUEtRl17NH0tWzAtOUEtRl17MTJ9Jyk-cGFydG5lcl90eXBlZF9kaWQ9JTdCJTIySEFSRFdBUkVfSURGQSUyMiUzQSUyMiR7cmVxdWVzdC5saXN0ZW5lcklkfSUyMiU3RDwjZWxzZT5wYXJ0bmVyX2RldmljZV9pZD0ke3JlcXVlc3QubGlzdGVuZXJJZCF9PC8jaWY-
-
-## Files
-
-- `01-page-loaded.png` — page-loaded (977.6 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 16 page images (450.1 KB)
+*Generated by AccessibilityScanner (FreeTools) v1.0*

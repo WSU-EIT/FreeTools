@@ -1,69 +1,73 @@
-# Site Report: https://pullman.wsu.edu/
+# 🌐 Site Report: https://pullman.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `pullman-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 1 |
-| Total HTML | 303.3 KB |
-| Total Screenshots | 9.2 MB |
 | Total Images | 41 (6.2 MB) |
-| Images Missing Alt | 3 |
-| Folder | `pullman-wsu-edu/` |
+| Images Missing Alt | ⚠️ 3 |
+| Total HTML | 332.6 KB |
+| Total Screenshots | 10.5 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Pullman Campus \| Washington State Un... | 0 | 25 | 3 |
-| ❌ | [/about/](about/report.md) | 0 | About WSU Pullman \| Pullman Campus \... | 0 | 5 | 0 |
-| ❌ | [/academics/](academics/report.md) | 0 | Academics \| Pullman Campus \| Washin... | 0 | 5 | 0 |
-| ❌ | [/admissions/](admissions/report.md) | 0 | WSU Pullman Admissions \| Pullman Cam... | 0 | 6 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Pullman Campus \| Washington State Un... | 0 | 25 | ⚠️ 3 |
+| ✅ | [/about/](about/report.md) | 200 | About WSU Pullman \| Pullman Campus \... | 0 | 5 | 0 |
+| ✅ | [/academics/](academics/report.md) | 200 | Academics \| Pullman Campus \| Washin... | 0 | 5 | 0 |
+| ✅ | [/admissions/](admissions/report.md) | 200 | WSU Pullman Admissions \| Pullman Cam... | 0 | 6 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/academics/](academics/report.md)
-
-![/academics/](academics/01-page-loaded.png)
-
-### [/admissions/](admissions/report.md)
-
-![/admissions/](admissions/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://pullman.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://pullman.wsu.edu/about/
-- **Status:** 0
-
-### /academics/
-
-- **URL:** https://pullman.wsu.edu/academics/
-- **Status:** 0
-
-### /admissions/
-
-- **URL:** https://pullman.wsu.edu/admissions/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="academics/report.md">
+<img src="academics/01-page-loaded.png" width="250" alt="/academics/" />
+</a>
+<br />✅ <code>/academics/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="admissions/report.md">
+<img src="admissions/01-page-loaded.png" width="250" alt="/admissions/" />
+</a>
+<br />✅ <code>/admissions/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

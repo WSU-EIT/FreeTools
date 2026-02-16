@@ -1,61 +1,133 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://pullman.wsu.edu/about/  
+> **Captured:** 2026-02-16 22:15:21 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://pullman.wsu.edu/about/ |
 | Title | About WSU Pullman | Pullman Campus | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 54.1 KB |
+| Status | ✅ 200 |
+| HTML Size | 61.8 KB |
 | Screenshots | 1 (1.9 MB) |
 | Images | 5 (1010.0 KB) |
-| Images Missing Alt | 0 |
-| JS Errors | 0 |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:59:49.3976823Z |
+| Captured | 2026-02-16T22:15:21.1874594Z |
 
-## Actions
+## 🔧 Actions
+
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
 - Screenshot #1: page-loaded (1.9 MB)
 - Downloaded 5 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>1.9 MB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (5)
 
-## Page Images (5)
+<details open>
+<summary><strong>📋 Image Index</strong> — 5 images, 1010.0 KB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
+|--:|-------|----------|-----:|
 | 1 | [Campus-Night-View_7754-1900x1252-1.jpg](images/Campus-Night-View_7754-1900x1252-1.jpg) | Scenic view of campus at twilight on ... | 409.4 KB |
 | 2 | [SunsetStormClouds_0571-1900x1267-1-792x528.jpg](images/SunsetStormClouds_0571-1900x1267-1-792x528.jpg) | WSU Pullman from the horizion | 112.9 KB |
 | 3 | [library-road-e1605824401570-792x564.jpg](images/library-road-e1605824401570-792x564.jpg) | Students walk up the main mall on WSU... | 199.1 KB |
 | 4 | [Spark-Building_0032-1900x1241-1-792x517.jpg](images/Spark-Building_0032-1900x1241-1-792x517.jpg) | The Spark on the mall at WSU Pullman | 116.8 KB |
 | 5 | [Mask-Group-32@2x-scaled-2-792x566.jpg](images/Mask-Group-32@2x-scaled-2-792x566.jpg) | Students at a sporting event smile at... | 171.8 KB |
 
-### Gallery
+</details>
 
-![Scenic view of campus at twilight on the campus of Washington State University, Wednesday, July 8, 2020.](images/Campus-Night-View_7754-1900x1252-1.jpg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![WSU Pullman from the horizion](images/SunsetStormClouds_0571-1900x1267-1-792x528.jpg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/Campus-Night-View_7754-1900x1252-1.jpg">
+<img src="images/Campus-Night-View_7754-1900x1252-1.jpg" width="200" alt="Scenic view of campus at twilight on the campus of Washington State University, Wednesday, July 8, 2020." />
+</a>
+<br /><sub>Campus-Night-View_7754-1900x1252-1.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/SunsetStormClouds_0571-1900x1267-1-792x528.jpg">
+<img src="images/SunsetStormClouds_0571-1900x1267-1-792x528.jpg" width="200" alt="WSU Pullman from the horizion" />
+</a>
+<br /><sub>SunsetStormClouds_0571-1900x1267-1-792x528.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/library-road-e1605824401570-792x564.jpg">
+<img src="images/library-road-e1605824401570-792x564.jpg" width="200" alt="Students walk up the main mall on WSU Pullman Campus" />
+</a>
+<br /><sub>library-road-e1605824401570-792x564.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/Spark-Building_0032-1900x1241-1-792x517.jpg">
+<img src="images/Spark-Building_0032-1900x1241-1-792x517.jpg" width="200" alt="The Spark on the mall at WSU Pullman" />
+</a>
+<br /><sub>Spark-Building_0032-1900x1241-1-792x517.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Mask-Group-32@2x-scaled-2-792x566.jpg">
+<img src="images/Mask-Group-32@2x-scaled-2-792x566.jpg" width="200" alt="Students at a sporting event smile at the camera" />
+</a>
+<br /><sub>Mask-Group-32@2x-scaled-2-792x566.jpg</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
-![Students walk up the main mall on WSU Pullman Campus](images/library-road-e1605824401570-792x564.jpg)
+</details>
 
-![The Spark on the mall at WSU Pullman](images/Spark-Building_0032-1900x1241-1-792x517.jpg)
+## 📁 Files
 
-![Students at a sporting event smile at the camera](images/Mask-Group-32@2x-scaled-2-792x566.jpg)
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (1.9 MB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 5 page images (1010.0 KB) |
 
+---
 
-## Files
-
-- `01-page-loaded.png` — page-loaded (1.9 MB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 5 page images (1010.0 KB)
+*Generated by AccessibilityScanner (FreeTools) v1.0*

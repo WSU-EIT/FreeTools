@@ -1,69 +1,85 @@
-# Site Report: https://murrow.wsu.edu/
+# 🌐 Site Report: https://murrow.wsu.edu/
+
+> **Status:** ✅ 6/6 pages OK  
+> **Folder:** `murrow-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 4/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 4 |
-| Pages Failed | 2 |
+| Pages Passed | ✅ 6 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 1 |
+| Total Images | 93 (25.2 MB) |
+| Images Missing Alt | ⚠️ 16 |
 | Total HTML | 1.6 MB |
-| Total Screenshots | 10.2 MB |
-| Total Images | 87 (11.5 MB) |
-| Images Missing Alt | 10 |
-| Folder | `murrow-wsu-edu/` |
+| Total Screenshots | 10.7 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Edward R. Murrow College of Communica... | 0 | 40 | 3 |
-| ❌ | [/about/](about/report.md) | 0 | About Edward R. Murrow \| Edward R. M... | 0 | 10 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Edward R. Murrow College of Communica... | 0 | 46 | ⚠️ 9 |
+| ✅ | [/about/](about/report.md) | 200 | About Edward R. Murrow \| Edward R. M... | 0 | 10 | 0 |
 | ✅ | [/faculty/](faculty/report.md) | 200 | Faculty Directory Update Form \| Edwa... | 0 | 0 | 0 |
-| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Programs \| Edward R. Murrow... | 0 | 7 | 1 |
-| ✅ | [/news/](news/report.md) | 200 | News Articles \| Edward R. Murrow Col... | 0 | 7 | 2 |
-| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Programs \| Edward R. M... | 0 | 23 | 4 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Programs \| Edward R. Murrow... | 0 | 7 | ⚠️ 1 |
+| ✅ | [/news/](news/report.md) | 200 | News Articles \| Edward R. Murrow Col... | 0 | 7 | ⚠️ 2 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Programs \| Edward R. M... | 0 | 23 | ⚠️ 4 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/faculty/](faculty/report.md)
-
-![/faculty/](faculty/01-page-loaded.png)
-
-### [/graduate/](graduate/report.md)
-
-![/graduate/](graduate/01-page-loaded.png)
-
-### [/news/](news/report.md)
-
-![/news/](news/01-page-loaded.png)
-
-### [/undergraduate/](undergraduate/report.md)
-
-![/undergraduate/](undergraduate/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://murrow.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://murrow.wsu.edu/about/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="graduate/report.md">
+<img src="graduate/01-page-loaded.png" width="250" alt="/graduate/" />
+</a>
+<br />✅ <code>/graduate/</code>
+</td>
+<td align="center" width="33%">
+<a href="news/report.md">
+<img src="news/01-page-loaded.png" width="250" alt="/news/" />
+</a>
+<br />✅ <code>/news/</code>
+</td>
+<td align="center" width="33%">
+<a href="undergraduate/report.md">
+<img src="undergraduate/01-page-loaded.png" width="250" alt="/undergraduate/" />
+</a>
+<br />✅ <code>/undergraduate/</code>
+</td>
+</tr>
+</table>
 
 ---
 

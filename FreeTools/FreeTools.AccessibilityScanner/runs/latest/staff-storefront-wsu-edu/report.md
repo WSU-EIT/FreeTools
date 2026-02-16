@@ -1,49 +1,56 @@
-# Site Report: https://staff.storefront.wsu.edu/
+# 🌐 Site Report: https://staff.storefront.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `staff-storefront-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 2 |
+| Total Images | 9 (28.7 KB) |
+| Images Missing Alt | ⚠️ 7 |
 | Total HTML | 44.4 KB |
 | Total Screenshots | 158.4 KB |
-| Total Images | 9 (28.7 KB) |
-| Images Missing Alt | 7 |
-| Folder | `staff-storefront-wsu-edu/` |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Home - WSU Coug Prints Plus | 0 | 7 | 6 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us - WSU Coug Prints Plus | 0 | 2 | 1 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Home - WSU Coug Prints Plus | 0 | 7 | ⚠️ 6 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us - WSU Coug Prints Plus | 0 | 2 | ⚠️ 1 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://staff.storefront.wsu.edu/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://staff.storefront.wsu.edu/contact/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

@@ -3,25 +3,61 @@
   "Url": "https://president.wsu.edu/",
   "FinalUrl": null,
   "Title": "Office of the President | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 61053,
-  "ScreenshotSizeBytes": 318140,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 67015,
+  "ScreenshotSizeBytes": 1090577,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 2,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 318140
+      "FileSize": 1090577
     }
   ],
-  "ImageCount": 1,
-  "ImagesTotalSizeBytes": 63268,
-  "ImagesMissingAlt": 1,
+  "ImageCount": 7,
+  "ImagesTotalSizeBytes": 15250841,
+  "ImagesMissingAlt": 7,
   "Images": [
+    {
+      "FileName": "Aerial_BryanTower_0323-1-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-president/uploads/sites/3090/2022/08/Aerial_BryanTower_0323-1-1.jpg",
+      "AltText": "",
+      "FileSize": 2133661
+    },
+    {
+      "FileName": "WSU-Spokane-Campus_4822-1-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-president/uploads/sites/3090/2022/08/WSU-Spokane-Campus_4822-1-1.jpg",
+      "AltText": "",
+      "FileSize": 2849242
+    },
+    {
+      "FileName": "WSUTri_Cities_5842-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-president/uploads/sites/3090/2022/08/WSUTri_Cities_5842-1.jpg",
+      "AltText": "",
+      "FileSize": 2343254
+    },
+    {
+      "FileName": "Vancouver-Fall-Core_9402-2.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-president/uploads/sites/3090/2022/08/Vancouver-Fall-Core_9402-2.jpg",
+      "AltText": "",
+      "FileSize": 3641363
+    },
+    {
+      "FileName": "Everett_1947-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-president/uploads/sites/3090/2022/08/Everett_1947-1.jpg",
+      "AltText": "",
+      "FileSize": 2642687
+    },
+    {
+      "FileName": "20150429-Dead-Week-Studying-_-1020-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-president/uploads/sites/3090/2022/08/20150429-Dead-Week-Studying-_-1020-1.jpg",
+      "AltText": "",
+      "FileSize": 1577366
+    },
     {
       "FileName": "Elizabeth-Cantwell_1057-792x567.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-president/uploads/sites/3090/2025/04/Elizabeth-Cantwell_1057-792x567.jpg",
@@ -30,6 +66,15 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4691066Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:16:13 GMT",
+    "etag": "\u0022f6948beeb9f4ae31cfcffdf81201c1ad\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:11:14 GMT",
+    "link": "\u003Chttps://president.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://president.wsu.edu/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://president.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:16:12.9910184Z"
 }

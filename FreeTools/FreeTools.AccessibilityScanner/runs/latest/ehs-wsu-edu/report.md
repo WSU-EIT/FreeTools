@@ -1,59 +1,62 @@
-# Site Report: https://ehs.wsu.edu/
+# 🌐 Site Report: https://ehs.wsu.edu/
+
+> **Status:** ✅ 3/3 pages OK  
+> **Folder:** `ehs-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/3 pages OK |
 | Pages Scanned | 3 |
-| Pages Passed | 0 |
-| Pages Failed | 3 |
+| Pages Passed | ✅ 3 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 719.6 KB |
-| Total Screenshots | 1.2 MB |
-| Total Images | 11 (2.9 MB) |
-| Images Missing Alt | 10 |
-| Folder | `ehs-wsu-edu/` |
+| Total Images | 13 (8.8 MB) |
+| Images Missing Alt | ⚠️ 11 |
+| Total HTML | 740.8 KB |
+| Total Screenshots | 2.3 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Environmental Health & Safety \| Wash... | 0 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Environmental Health & ... | 0 | 11 | 10 |
-| ❌ | [/resources/](resources/report.md) | 0 | Resources & Contacts \| Environmental... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Environmental Health & Safety \| Wash... | 0 | 1 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Environmental Health & ... | 0 | 12 | ⚠️ 11 |
+| ✅ | [/resources/](resources/report.md) | 200 | Resources & Contacts \| Environmental... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://ehs.wsu.edu/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://ehs.wsu.edu/resources/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://ehs.wsu.edu/contact/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.png" width="250" alt="/resources/" />
+</a>
+<br />✅ <code>/resources/</code>
+</td>
+</tr>
+</table>
 
 ---
 

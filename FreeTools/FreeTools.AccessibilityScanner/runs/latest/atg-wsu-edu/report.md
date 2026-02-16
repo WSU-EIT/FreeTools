@@ -1,58 +1,56 @@
-# Site Report: https://atg.wsu.edu/
+# 🌐 Site Report: https://atg.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `atg-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
-| Total JS Errors | 3 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 74.0 KB |
-| Total Screenshots | 99.7 KB |
 | Total Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| Folder | `atg-wsu-edu/` |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 108.4 KB |
+| Total Screenshots | 99.7 KB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Office of the Attorney General \| Was... | 3 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Office of the Attorney ... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Office of the Attorney General \| Was... | 0 | 0 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Office of the Attorney ... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://atg.wsu.edu/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://atg.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (3 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

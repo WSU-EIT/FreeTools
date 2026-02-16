@@ -1,104 +1,128 @@
-# Site Report: https://everett.wsu.edu/
+# 🌐 Site Report: https://everett.wsu.edu/
+
+> **Status:** ✅ 6/6 pages OK  
+> **Folder:** `everett-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 3/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 3 |
-| Pages Failed | 3 |
-| Total JS Errors | 9 |
+| Pages Passed | ✅ 6 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 6 |
 | Total JS Warnings | 2 |
-| Total HTML | 1.4 MB |
+| Total Images | 115 (4.4 MB) |
+| Images Missing Alt | ⚠️ 94 |
+| Total HTML | 1.5 MB |
 | Total Screenshots | 8.6 MB |
-| Total Images | 113 (4.4 MB) |
-| Images Missing Alt | 92 |
-| Folder | `everett-wsu-edu/` |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Washington State University Everett \... | 4 | 23 | 14 |
-| ❌ | [/about/](about/report.md) | 0 | Washington State University Everett \... | 1 | 23 | 14 |
-| ❌ | [/academics/](academics/report.md) | 0 | Undergraduate \| Washington State Uni... | 1 | 17 | 16 |
-| ✅ | [/admissions/](admissions/report.md) | 200 | Apply to WSU Everett \| Washington St... | 1 | 19 | 18 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Washington State Univer... | 1 | 16 | 15 |
-| ✅ | [/student-services/](student-services/report.md) | 200 | Student Affairs Fall Preview \| Washi... | 1 | 15 | 15 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Washington State University Everett \... | 🔴 1 | 24 | ⚠️ 15 |
+| ✅ | [/about/](about/report.md) | 200 | Washington State University Everett \... | 🔴 1 | 24 | ⚠️ 15 |
+| ✅ | [/academics/](academics/report.md) | 200 | Undergraduate \| Washington State Uni... | 🔴 1 | 17 | ⚠️ 16 |
+| ✅ | [/admissions/](admissions/report.md) | 200 | Apply to WSU Everett \| Washington St... | 🔴 1 | 19 | ⚠️ 18 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Washington State Univer... | 🔴 1 | 16 | ⚠️ 15 |
+| ✅ | [/student-services/](student-services/report.md) | 200 | Student Affairs Fall Preview \| Washi... | 🔴 1 | 15 | ⚠️ 15 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="academics/report.md">
+<img src="academics/01-page-loaded.png" width="250" alt="/academics/" />
+</a>
+<br />✅ <code>/academics/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="admissions/report.md">
+<img src="admissions/01-page-loaded.png" width="250" alt="/admissions/" />
+</a>
+<br />✅ <code>/admissions/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td align="center" width="33%">
+<a href="student-services/report.md">
+<img src="student-services/01-page-loaded.png" width="250" alt="/student-services/" />
+</a>
+<br />✅ <code>/student-services/</code>
+</td>
+</tr>
+</table>
 
-### [/about/](about/report.md)
+## 🔴 JavaScript Errors
 
-![/about/](about/01-page-loaded.png)
+<details>
+<summary><strong>6 error(s) across 6 page(s)</strong></summary>
 
-### [/academics/](academics/report.md)
+**/** (1 errors)
 
-![/academics/](academics/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### [/admissions/](admissions/report.md)
+**/about/** (1 errors)
 
-![/admissions/](admissions/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### [/contact/](contact/report.md)
+**/academics/** (1 errors)
 
-![/contact/](contact/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### [/student-services/](student-services/report.md)
+**/admissions/** (1 errors)
 
-![/student-services/](student-services/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
+**/student-services/** (1 errors)
 
-## Failed Pages
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### /
+**/contact/** (1 errors)
 
-- **URL:** https://everett.wsu.edu/
-- **Status:** 0
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### /about/
-
-- **URL:** https://everett.wsu.edu/about/
-- **Status:** 0
-
-### /academics/
-
-- **URL:** https://everett.wsu.edu/academics/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (4 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /about/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /academics/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /admissions/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /student-services/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /contact/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
+</details>
 
 ---
 

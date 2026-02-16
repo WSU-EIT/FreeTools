@@ -1,49 +1,50 @@
-# Site Report: https://go.wsu.edu/
+# 🌐 Site Report: https://go.wsu.edu/
+
+> **Status:** ✅ 1/1 pages OK  
+> **Folder:** `go-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
 | Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 4 |
+| Pages Passed | ✅ 1 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 245.9 KB |
+| Total Images | 25 (173.1 MB) |
+| Images Missing Alt | ⚠️ 1 |
+| Total HTML | 252.0 KB |
 | Total Screenshots | 1.2 MB |
-| Total Images | 12 (5.1 MB) |
-| Images Missing Alt | 1 |
-| Folder | `go-wsu-edu/` |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Here. We. Go \| Washington State Univ... | 4 | 12 | 1 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Here. We. Go \| Washington State Univ... | 0 | 25 | ⚠️ 1 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://go.wsu.edu/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (4 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

@@ -1,89 +1,85 @@
-# Site Report: https://gis.wsu.edu/
+# 🌐 Site Report: https://gis.wsu.edu/
+
+> **Status:** ✅ 6/6 pages OK  
+> **Folder:** `gis-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 0 |
-| Pages Failed | 6 |
+| Pages Passed | ✅ 6 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.9 MB |
-| Total Screenshots | 977.9 KB |
-| Total Images | 1 (129.2 KB) |
-| Images Missing Alt | 0 |
-| Folder | `gis-wsu-edu/` |
+| Total Images | 6 (775.4 KB) |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 2.5 MB |
+| Total Screenshots | 7.2 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Administration GIS Portal | 0 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | WSU Administration GIS Portal | 0 | 1 | 0 |
-| ❌ | [/data/](data/report.md) | 0 |  | 0 | 0 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 |  | 0 | 0 | 0 |
-| ❌ | [/services/](services/report.md) | 0 |  | 0 | 0 | 0 |
-| ❌ | [/training/](training/report.md) | 0 | WSU Administration GIS Portal | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | WSU Administration GIS Portal | 0 | 1 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | WSU Administration GIS Portal | 0 | 1 | 0 |
+| ✅ | [/data/](data/report.md) | 200 | WSU Administration GIS Portal | 0 | 1 | 0 |
+| ✅ | [/resources/](resources/report.md) | 200 | WSU Administration GIS Portal | 0 | 1 | 0 |
+| ✅ | [/services/](services/report.md) | 200 | WSU Administration GIS Portal | 0 | 1 | 0 |
+| ✅ | [/training/](training/report.md) | 200 | WSU Administration GIS Portal | 0 | 1 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/data/](data/report.md)
-
-![/data/](data/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
-### [/services/](services/report.md)
-
-![/services/](services/01-page-loaded.png)
-
-### [/training/](training/report.md)
-
-![/training/](training/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://gis.wsu.edu/
-- **Status:** 0
-
-### /services/
-
-- **URL:** https://gis.wsu.edu/services/
-- **Status:** 0
-
-### /data/
-
-- **URL:** https://gis.wsu.edu/data/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://gis.wsu.edu/resources/
-- **Status:** 0
-
-### /training/
-
-- **URL:** https://gis.wsu.edu/training/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://gis.wsu.edu/contact/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td align="center" width="33%">
+<a href="data/report.md">
+<img src="data/01-page-loaded.png" width="250" alt="/data/" />
+</a>
+<br />✅ <code>/data/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.png" width="250" alt="/resources/" />
+</a>
+<br />✅ <code>/resources/</code>
+</td>
+<td align="center" width="33%">
+<a href="services/report.md">
+<img src="services/01-page-loaded.png" width="250" alt="/services/" />
+</a>
+<br />✅ <code>/services/</code>
+</td>
+<td align="center" width="33%">
+<a href="training/report.md">
+<img src="training/01-page-loaded.png" width="250" alt="/training/" />
+</a>
+<br />✅ <code>/training/</code>
+</td>
+</tr>
+</table>
 
 ---
 

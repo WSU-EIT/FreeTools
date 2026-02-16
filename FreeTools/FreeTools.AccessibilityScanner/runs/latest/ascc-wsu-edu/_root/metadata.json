@@ -3,10 +3,10 @@
   "Url": "https://ascc.wsu.edu/",
   "FinalUrl": null,
   "Title": "Academic Success \u0026 Career Center \u2013 Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 2021836,
-  "ScreenshotSizeBytes": 1232097,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 2085679,
+  "ScreenshotSizeBytes": 1039769,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,12 +15,12 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1232097
+      "FileSize": 1039769
     }
   ],
-  "ImageCount": 38,
-  "ImagesTotalSizeBytes": 638178,
-  "ImagesMissingAlt": 26,
+  "ImageCount": 40,
+  "ImagesTotalSizeBytes": 640838,
+  "ImagesMissingAlt": 28,
   "Images": [
     {
       "FileName": "wsu_logo.svg",
@@ -119,16 +119,28 @@
       "FileSize": 56125
     },
     {
+      "FileName": "a9faa6a487c088b8e59d42d0a6ac0ae1-hs-emp-logo-data.-45x45.png",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2022/03/a9faa6a487c088b8e59d42d0a6ac0ae1-hs-emp-logo-data.-45x45.png?v=311",
+      "AltText": "",
+      "FileSize": 3168
+    },
+    {
+      "FileName": "13be92ab4bf553a55a761787370babe4-hs-emp-logo-data.-45x45.png",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2023/05/13be92ab4bf553a55a761787370babe4-hs-emp-logo-data.-45x45.png?v=120719",
+      "AltText": "",
+      "FileSize": 2696
+    },
+    {
       "FileName": "e0ecf5db952e50fc46f5362db816f7ee-hs-emp-logo-data.-45x45.png",
       "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2022/06/e0ecf5db952e50fc46f5362db816f7ee-hs-emp-logo-data.-45x45.png?v=57641",
       "AltText": "",
       "FileSize": 1856
     },
     {
-      "FileName": "0777e8dc3392fbae4afc40b84c829c60-hs-emp-logo-data.-45x45.png",
-      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2022/03/0777e8dc3392fbae4afc40b84c829c60-hs-emp-logo-data.-45x45.png?v=267",
+      "FileName": "cc550a6c930e36f8f3d8e780007d7d88-hs-emp-logo-data.-45x45.png",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2022/03/cc550a6c930e36f8f3d8e780007d7d88-hs-emp-logo-data.-45x45.png?v=309",
       "AltText": "",
-      "FileSize": 5073
+      "FileSize": 1869
     },
     {
       "FileName": "lightcast-logo.svg",
@@ -252,6 +264,22 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.443936Z"
+  "Headers": {
+    "content-encoding": "br",
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.uconnectlabs.com https://*.gouconnect.com https://*.instructure.com https://wsu.edu https://*.wsu.edu;frame-src \u0027self\u0027 https://jobscan.co https://wsu.edu https://*.wsu.edu https://*.uconnectlabs.com https://*.candidcareer.com https://*.youtube.com/embed/ https://player.vimeo.com/video/ https://fast.wistia.net/embed/ https://cdnapisec.kaltura.com/p/ https://videopress.com https://www.tiktok.com https://www.loom.com https://embed.ted.com https://w.soundcloud.com https://open.spotify.com https://creators.spotify.com https://embed.podcasts.apple.com https://*.pinterest.com https://giphy.com https://www.canva.com/ https://*.google.com https://*.googletagmanager.com https://*.doubleclick.net https://*.qualtrics.com https://app.powerbi.com https://public.tableau.com https://www.instagram.com https://snapwidget.com https://www.facebook.com https://airtable.com https://*.typeform.com https://e.issuu.com https://forms.monday.com https://scribehow.com https://service.force.com https://forms.cloud.microsoft https://*.jobscan.co https://student.interstride.com https://www.careerspots.com https://mongoose.botpress.cloud;",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:12:12 GMT",
+    "link": "\u003Chttps://ascc.wsu.edu/api/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://ascc.wsu.edu/api/wp/v2/pages/6\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022\n\u003Chttps://ascc.wsu.edu/\u003E; rel=shortlink",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "server": "Pagely-ARES/1.22.2",
+    "strict-transport-security": "max-age=31536000",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-gateway-cache-key": "1771103709.146|standard|https|ascc.wsu.edu|||/|webp",
+    "x-gateway-cache-status": "HIT",
+    "x-gateway-request-id": "d0064eb787a38fef90f2eca51fadaad3",
+    "x-gateway-skip-cache": "0"
+  },
+  "CapturedAt": "2026-02-16T22:12:12.0391975Z"
 }

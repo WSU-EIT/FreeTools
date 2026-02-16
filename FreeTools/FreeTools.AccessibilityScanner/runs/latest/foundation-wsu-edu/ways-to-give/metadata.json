@@ -3,10 +3,10 @@
   "Url": "https://foundation.wsu.edu/ways-to-give/",
   "FinalUrl": null,
   "Title": "Ways to Give | WSU Foundation | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 271617,
-  "ScreenshotSizeBytes": 1444969,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 278193,
+  "ScreenshotSizeBytes": 1808050,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1444969
+      "FileSize": 1808050
     }
   ],
   "ImageCount": 15,
@@ -114,6 +114,16 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T21:00:09.9656422Z"
+  "Headers": {
+    "access-control-allow-origin": "*",
+    "content-encoding": "gzip",
+    "content-length": "22198",
+    "content-security-policy": "default-src * data: \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027;",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:17:03 GMT",
+    "link": "\u003Chttps://foundation.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://foundation.wsu.edu/wp-json/wp/v2/pages/102\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://foundation.wsu.edu/?p=102\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:17:03.649972Z"
 }

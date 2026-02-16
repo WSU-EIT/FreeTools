@@ -2,20 +2,103 @@
   "PagePath": "/nutrition/",
   "Url": "https://dining.wsu.edu/nutrition/",
   "FinalUrl": null,
-  "Title": null,
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 0,
-  "ScreenshotSizeBytes": 0,
+  "Title": "Nutrition",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 87138,
+  "ScreenshotSizeBytes": 1025112,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
-  "Screenshots": [],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
-  "ImagesMissingAlt": 0,
-  "Images": [],
-  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...",
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:36.7702283Z"
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1025112
+    }
+  ],
+  "ImageCount": 11,
+  "ImagesTotalSizeBytes": 6121735,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "bites-grab-and-go-cover.png",
+      "SourceUrl": "https://dining.wsu.edu/media/y4rbmuk0/bites-grab-and-go-cover.png",
+      "AltText": "",
+      "FileSize": 682529
+    },
+    {
+      "FileName": "allergen-icons-2024_eggs.png",
+      "SourceUrl": "https://dining.wsu.edu/media/uszgnskn/allergen-icons-2024_eggs.png",
+      "AltText": "egg allergen icon",
+      "FileSize": 474219
+    },
+    {
+      "FileName": "allergen-icons-2024_dairy.png",
+      "SourceUrl": "https://dining.wsu.edu/media/mtjjitni/allergen-icons-2024_dairy.png",
+      "AltText": "dairy allergen icon",
+      "FileSize": 509056
+    },
+    {
+      "FileName": "allergen-icons-2024_soy.png",
+      "SourceUrl": "https://dining.wsu.edu/media/f1edsy12/allergen-icons-2024_soy.png",
+      "AltText": "soy allergen icon",
+      "FileSize": 588802
+    },
+    {
+      "FileName": "allergen-icons-2024_gluten.png",
+      "SourceUrl": "https://dining.wsu.edu/media/rl1h5q4i/allergen-icons-2024_gluten.png",
+      "AltText": "wheat/gluten allergen icon",
+      "FileSize": 548266
+    },
+    {
+      "FileName": "allergen-icons-2024_fish.png",
+      "SourceUrl": "https://dining.wsu.edu/media/pfiagddd/allergen-icons-2024_fish.png",
+      "AltText": "fish allergen icon",
+      "FileSize": 526126
+    },
+    {
+      "FileName": "allergen-icons-2024_sesame.png",
+      "SourceUrl": "https://dining.wsu.edu/media/ysmdpkgv/allergen-icons-2024_sesame.png",
+      "AltText": "sesame allergen icon",
+      "FileSize": 691006
+    },
+    {
+      "FileName": "allergen-icons-2024_nuts.png",
+      "SourceUrl": "https://dining.wsu.edu/media/2h5mpswl/allergen-icons-2024_nuts.png",
+      "AltText": "nuts allergen icon",
+      "FileSize": 571274
+    },
+    {
+      "FileName": "allergen-icons-2024_vegetarian.png",
+      "SourceUrl": "https://dining.wsu.edu/media/wcmjtd2v/allergen-icons-2024_vegetarian.png?rmode=max\u0026width=500\u0026height=500",
+      "AltText": "vegetarian icon",
+      "FileSize": 492545
+    },
+    {
+      "FileName": "allergen-icons-2024_vegan.png",
+      "SourceUrl": "https://dining.wsu.edu/media/2ygbyzvt/allergen-icons-2024_vegan.png?rmode=max\u0026width=500\u0026height=500",
+      "AltText": "vegan icon",
+      "FileSize": 514726
+    },
+    {
+      "FileName": "allergen-icons-2024_halal.png",
+      "SourceUrl": "https://dining.wsu.edu/media/2ancfoeh/allergen-icons-2024_halal.png?rmode=max\u0026width=500\u0026height=500",
+      "AltText": "Halal icon",
+      "FileSize": 523186
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 22:15:16 GMT",
+    "frame-ancestors": "self https://*.risevision.com",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=2592000",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1"
+  },
+  "CapturedAt": "2026-02-16T22:15:16.8557426Z"
 }

@@ -3,10 +3,10 @@
   "Url": "https://hrs.wsu.edu/training/",
   "FinalUrl": null,
   "Title": "Learning \u0026 Organizational Development \u2013 Human Resource Services, Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 93011,
-  "ScreenshotSizeBytes": 842870,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 92231,
+  "ScreenshotSizeBytes": 820238,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 842870
+      "FileSize": 820238
     }
   ],
   "ImageCount": 7,
@@ -66,6 +66,13 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T21:00:40.5449562Z"
+  "Headers": {
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:18:31 GMT",
+    "link": "\u003Chttps://hrs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://hrs.wsu.edu/wp-json/wp/v2/pages/1522\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022, \u003Chttps://hrs.wsu.edu/?p=1522\u003E; rel=shortlink",
+    "server": "nginx/1.14.1",
+    "vary": "Cookie",
+    "x-powered-by": "PHP/8.2.29"
+  },
+  "CapturedAt": "2026-02-16T22:18:31.3487913Z"
 }

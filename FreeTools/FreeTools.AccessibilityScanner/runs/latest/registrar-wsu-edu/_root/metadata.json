@@ -2,20 +2,27 @@
   "PagePath": "/",
   "Url": "https://registrar.wsu.edu/",
   "FinalUrl": null,
-  "Title": null,
+  "Title": "Office of the Registrar",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 0,
-  "ScreenshotSizeBytes": 0,
+  "HtmlSizeBytes": 665458,
+  "ScreenshotSizeBytes": 445097,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
-  "ConsoleWarningCount": 0,
-  "Screenshots": [],
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 445097
+    }
+  ],
   "ImageCount": 0,
   "ImagesTotalSizeBytes": 0,
   "ImagesMissingAlt": 0,
   "Images": [],
-  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...",
+  "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4703668Z"
+  "CapturedAt": "2026-02-16T22:15:02.8069324Z"
 }

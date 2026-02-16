@@ -1,48 +1,50 @@
-# Site Report: https://sustainability.wsu.edu/
+# 🌐 Site Report: https://sustainability.wsu.edu/
+
+> **Status:** ✅ 1/1 pages OK  
+> **Folder:** `sustainability-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
 | Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 3 |
+| Pages Passed | ✅ 1 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 64.4 KB |
-| Total Screenshots | 990.8 KB |
-| Total Images | 3 (741.8 KB) |
-| Images Missing Alt | 3 |
-| Folder | `sustainability-wsu-edu/` |
+| Total Images | 7 (4.6 MB) |
+| Images Missing Alt | ⚠️ 7 |
+| Total HTML | 70.5 KB |
+| Total Screenshots | 1.1 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Sustainability \| Washington Stat... | 3 | 3 | 3 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | WSU Sustainability \| Washington Stat... | 0 | 7 | ⚠️ 7 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://sustainability.wsu.edu/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (3 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

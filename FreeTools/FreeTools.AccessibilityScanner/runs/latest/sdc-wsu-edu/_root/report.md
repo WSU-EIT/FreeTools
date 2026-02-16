@@ -1,55 +1,133 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://sdc.wsu.edu/  
+> **Captured:** 2026-02-16 22:13:50 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://sdc.wsu.edu/ |
 | Title | School of Design and Construction | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 235.3 KB |
-| Screenshots | 1 (2.4 MB) |
-| Images | 3 (389.9 KB) |
-| Images Missing Alt | 0 |
-| JS Errors | 0 |
+| Status | ✅ 200 |
+| HTML Size | 241.4 KB |
+| Screenshots | 1 (1.8 MB) |
+| Images | 5 (2.3 MB) |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:58:42.4719955Z |
+| Captured | 2026-02-16T22:13:50.3941242Z |
 
-## Actions
+## 🔧 Actions
 
-- Screenshot #1: page-loaded (2.4 MB)
-- Downloaded 3 images to /images/
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
-## Screenshots
+- Screenshot #1: page-loaded (1.8 MB)
+- Downloaded 5 images to /images/
 
-### 1. page-loaded
+</details>
 
-![page-loaded](01-page-loaded.png)
+## 📸 Screenshots
 
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>1.8 MB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
-## Page Images (3)
+## 🖼️ Page Images (5)
+
+<details open>
+<summary><strong>📋 Image Index</strong> — 5 images, 2.3 MB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
+|--:|-------|----------|-----:|
 | 1 | [Carpenter-hall-792x528-1.jpg](images/Carpenter-hall-792x528-1.jpg) | Carpenter Hall entrance in Fall. | 114.9 KB |
 | 2 | [Banner_Arch-Program-Landing-Page-scaled.jpg](images/Banner_Arch-Program-Landing-Page-scaled.jpg) | Architecture Students working on a bu... | 192.8 KB |
-| 3 | [115-792x446-1.jpg](images/115-792x446-1.jpg) | Interior design students gathered at ... | 82.3 KB |
+| 3 | [CM-homepage-scaled.jpg](images/CM-homepage-scaled.jpg) | Construction Management Students hold... | 1.0 MB |
+| 4 | [115-792x446-1.jpg](images/115-792x446-1.jpg) | Interior design students gathered at ... | 82.3 KB |
+| 5 | [Web-Image-8-scaled.jpg](images/Web-Image-8-scaled.jpg) | LA students on a site visit in Pullma... | 878.4 KB |
 
-### Gallery
+</details>
 
-![Carpenter Hall entrance in Fall.](images/Carpenter-hall-792x528-1.jpg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![Architecture Students working on a building model.](images/Banner_Arch-Program-Landing-Page-scaled.jpg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/Carpenter-hall-792x528-1.jpg">
+<img src="images/Carpenter-hall-792x528-1.jpg" width="200" alt="Carpenter Hall entrance in Fall." />
+</a>
+<br /><sub>Carpenter-hall-792x528-1.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Banner_Arch-Program-Landing-Page-scaled.jpg">
+<img src="images/Banner_Arch-Program-Landing-Page-scaled.jpg" width="200" alt="Architecture Students working on a building model." />
+</a>
+<br /><sub>Banner_Arch-Program-Landing-Page-scaled.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/CM-homepage-scaled.jpg">
+<img src="images/CM-homepage-scaled.jpg" width="200" alt="Construction Management Students holding competition 1st place plaque." />
+</a>
+<br /><sub>CM-homepage-scaled.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/115-792x446-1.jpg">
+<img src="images/115-792x446-1.jpg" width="200" alt="Interior design students gathered at a table and talking. " />
+</a>
+<br /><sub>115-792x446-1.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Web-Image-8-scaled.jpg">
+<img src="images/Web-Image-8-scaled.jpg" width="200" alt="LA students on a site visit in Pullman, Washington." />
+</a>
+<br /><sub>Web-Image-8-scaled.jpg</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
-![Interior design students gathered at a table and talking. ](images/115-792x446-1.jpg)
+</details>
 
+## 📁 Files
 
-## Files
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (1.8 MB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 5 page images (2.3 MB) |
 
-- `01-page-loaded.png` — page-loaded (2.4 MB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 3 page images (389.9 KB)
+---
+
+*Generated by AccessibilityScanner (FreeTools) v1.0*

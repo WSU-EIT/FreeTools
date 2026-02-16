@@ -5,8 +5,8 @@
   "Title": "Apartments",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 65846,
-  "ScreenshotSizeBytes": 763977,
+  "HtmlSizeBytes": 65843,
+  "ScreenshotSizeBytes": 765865,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 763977
+      "FileSize": 765865
     }
   ],
   "ImageCount": 9,
@@ -81,12 +81,12 @@
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 21:02:40 GMT",
+    "date": "Mon, 16 Feb 2026 22:19:45 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-16T21:02:40.0968317Z"
+  "CapturedAt": "2026-02-16T22:19:45.8352638Z"
 }

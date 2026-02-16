@@ -5,7 +5,7 @@
   "Title": "Connect | Admissions | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 85584,
+  "HtmlSizeBytes": 85519,
   "ScreenshotSizeBytes": 253282,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -26,14 +26,14 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 21:01:35 GMT",
-    "etag": "\u002298e392c5c7e79b952dfcf40843658ac5\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:15:42 GMT",
+    "date": "Mon, 16 Feb 2026 22:10:55 GMT",
+    "etag": "\u0022e56625e2038a17c984c97312630fb649\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:10:55 GMT",
     "link": "\u003Chttps://admission.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://admission.wsu.edu/wp-json/wp/v2/pages/48\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://admission.wsu.edu/?p=48\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding",
-    "x-cache": "EXPIRED",
-    "x-cache-status": "EXPIRED"
+    "x-cache": "MISS",
+    "x-cache-status": "MISS"
   },
-  "CapturedAt": "2026-02-16T21:01:34.7533437Z"
+  "CapturedAt": "2026-02-16T22:10:55.0478677Z"
 }

@@ -1,86 +1,79 @@
-# Site Report: https://brand.wsu.edu/
+# 🌐 Site Report: https://brand.wsu.edu/
+
+> **Status:** ✅ 5/5 pages OK  
+> **Folder:** `brand-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 0 |
-| Pages Failed | 5 |
-| Total JS Errors | 1 |
+| Pages Passed | ✅ 5 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 364.8 KB |
-| Total Screenshots | 3.6 MB |
 | Total Images | 44 (4.0 MB) |
-| Images Missing Alt | 44 |
-| Folder | `brand-wsu-edu/` |
+| Images Missing Alt | ⚠️ 44 |
+| Total HTML | 387.8 KB |
+| Total Screenshots | 3.3 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Washington State University – WSU Bra... | 1 | 0 | 0 |
-| ❌ | [/colors/](colors/report.md) | 0 | Colors – Washington State University | 0 | 6 | 6 |
-| ❌ | [/downloads/](downloads/report.md) | 0 | Downloads – Washington State University | 0 | 9 | 9 |
-| ❌ | [/logos/](logos/report.md) | 0 | Logos – Washington State University | 0 | 17 | 17 |
-| ❌ | [/typography/](typography/report.md) | 0 | Typography – Washington State University | 0 | 12 | 12 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Washington State University – WSU Bra... | 0 | 0 | 0 |
+| ✅ | [/colors/](colors/report.md) | 200 | Colors – Washington State University | 0 | 6 | ⚠️ 6 |
+| ✅ | [/downloads/](downloads/report.md) | 200 | Downloads – Washington State University | 0 | 9 | ⚠️ 9 |
+| ✅ | [/logos/](logos/report.md) | 200 | Logos – Washington State University | 0 | 17 | ⚠️ 17 |
+| ✅ | [/typography/](typography/report.md) | 200 | Typography – Washington State University | 0 | 12 | ⚠️ 12 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/colors/](colors/report.md)
-
-![/colors/](colors/01-page-loaded.png)
-
-### [/downloads/](downloads/report.md)
-
-![/downloads/](downloads/01-page-loaded.png)
-
-### [/logos/](logos/report.md)
-
-![/logos/](logos/01-page-loaded.png)
-
-### [/typography/](typography/report.md)
-
-![/typography/](typography/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://brand.wsu.edu/
-- **Status:** 0
-
-### /logos/
-
-- **URL:** https://brand.wsu.edu/logos/
-- **Status:** 0
-
-### /colors/
-
-- **URL:** https://brand.wsu.edu/colors/
-- **Status:** 0
-
-### /typography/
-
-- **URL:** https://brand.wsu.edu/typography/
-- **Status:** 0
-
-### /downloads/
-
-- **URL:** https://brand.wsu.edu/downloads/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="colors/report.md">
+<img src="colors/01-page-loaded.png" width="250" alt="/colors/" />
+</a>
+<br />✅ <code>/colors/</code>
+</td>
+<td align="center" width="33%">
+<a href="downloads/report.md">
+<img src="downloads/01-page-loaded.png" width="250" alt="/downloads/" />
+</a>
+<br />✅ <code>/downloads/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="logos/report.md">
+<img src="logos/01-page-loaded.png" width="250" alt="/logos/" />
+</a>
+<br />✅ <code>/logos/</code>
+</td>
+<td align="center" width="33%">
+<a href="typography/report.md">
+<img src="typography/01-page-loaded.png" width="250" alt="/typography/" />
+</a>
+<br />✅ <code>/typography/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

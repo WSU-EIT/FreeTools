@@ -3,10 +3,10 @@
   "Url": "https://vetmed.wsu.edu/",
   "FinalUrl": null,
   "Title": "College of Veterinary Medicine | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 271331,
-  "ScreenshotSizeBytes": 1019495,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 277578,
+  "ScreenshotSizeBytes": 1156853,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
@@ -15,11 +15,11 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1019495
+      "FileSize": 1156853
     }
   ],
-  "ImageCount": 12,
-  "ImagesTotalSizeBytes": 2705880,
+  "ImageCount": 13,
+  "ImagesTotalSizeBytes": 4069366,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -33,6 +33,12 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2024/03/Hero-kids-judge-2024-02-DSC_4641-1.jpg",
       "AltText": "Kids enjoying an activity at the 2024 Kids Judge! event.",
       "FileSize": 574410
+    },
+    {
+      "FileName": "81124257-GeminaGL_UWNews_OneHealthClinic4-hero.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2022/04/81124257-GeminaGL_UWNews_OneHealthClinic4-hero.png",
+      "AltText": "Small black terrier in the arms of it\u0027s owner while it\u0027s ears are being examined by a veterinarian.",
+      "FileSize": 1363486
     },
     {
       "FileName": "OpenHouse22ButchwDog-720x480-1.jpg",
@@ -96,6 +102,15 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4756837Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:11:24 GMT",
+    "etag": "\u0022735b68af295c330599277840a059bedd\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:02:17 GMT",
+    "link": "\u003Chttps://vetmed.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://vetmed.wsu.edu/wp-json/wp/v2/pages/1634\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://vetmed.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:11:23.9175697Z"
 }

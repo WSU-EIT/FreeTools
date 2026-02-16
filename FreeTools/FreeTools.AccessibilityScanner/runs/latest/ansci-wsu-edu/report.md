@@ -1,113 +1,85 @@
-# Site Report: https://ansci.wsu.edu/
+# 🌐 Site Report: https://ansci.wsu.edu/
+
+> **Status:** ✅ 6/6 pages OK  
+> **Folder:** `ansci-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 6 |
+| Pages Passed | ✅ 6 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.3 MB |
-| Total Screenshots | 7.0 MB |
 | Total Images | 45 (3.6 MB) |
-| Images Missing Alt | 33 |
-| Folder | `ansci-wsu-edu/` |
+| Images Missing Alt | ⚠️ 33 |
+| Total HTML | 1.4 MB |
+| Total Screenshots | 6.9 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Animal Sciences \| Washington State U... | 0 | 3 | 1 |
-| ❌ | [/about/](about/report.md) | 0 | About \| Animal Sciences \| Washingto... | 2 | 1 | 0 |
-| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| Animal Sciences \| Washing... | 1 | 28 | 28 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Studies \| Animal Sciences \... | 1 | 1 | 1 |
-| ❌ | [/research/](research/report.md) | 0 | Research \| Animal Sciences \| Washin... | 1 | 7 | 1 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Studies \| Animal Scien... | 1 | 5 | 2 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Animal Sciences \| Washington State U... | 0 | 3 | ⚠️ 1 |
+| ✅ | [/about/](about/report.md) | 200 | About \| Animal Sciences \| Washingto... | 0 | 1 | 0 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Animal Sciences \| Washing... | 0 | 28 | ⚠️ 28 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Studies \| Animal Sciences \... | 0 | 1 | ⚠️ 1 |
+| ✅ | [/research/](research/report.md) | 200 | Research \| Animal Sciences \| Washin... | 0 | 7 | ⚠️ 1 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Studies \| Animal Scien... | 0 | 5 | ⚠️ 2 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/faculty/](faculty/report.md)
-
-![/faculty/](faculty/01-page-loaded.png)
-
-### [/graduate/](graduate/report.md)
-
-![/graduate/](graduate/01-page-loaded.png)
-
-### [/research/](research/report.md)
-
-![/research/](research/01-page-loaded.png)
-
-### [/undergraduate/](undergraduate/report.md)
-
-![/undergraduate/](undergraduate/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://ansci.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://ansci.wsu.edu/about/
-- **Status:** 0
-
-### /undergraduate/
-
-- **URL:** https://ansci.wsu.edu/undergraduate/
-- **Status:** 0
-
-### /graduate/
-
-- **URL:** https://ansci.wsu.edu/graduate/
-- **Status:** 0
-
-### /research/
-
-- **URL:** https://ansci.wsu.edu/research/
-- **Status:** 0
-
-### /faculty/
-
-- **URL:** https://ansci.wsu.edu/faculty/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /about/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: net::ERR_CONNECTION_FAILED`
-
-### /undergraduate/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /graduate/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /research/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /faculty/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="graduate/report.md">
+<img src="graduate/01-page-loaded.png" width="250" alt="/graduate/" />
+</a>
+<br />✅ <code>/graduate/</code>
+</td>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+<td align="center" width="33%">
+<a href="undergraduate/report.md">
+<img src="undergraduate/01-page-loaded.png" width="250" alt="/undergraduate/" />
+</a>
+<br />✅ <code>/undergraduate/</code>
+</td>
+</tr>
+</table>
 
 ---
 

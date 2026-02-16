@@ -1,39 +1,50 @@
-# Site Report: https://afrotc.wsu.edu/
+# 🌐 Site Report: https://afrotc.wsu.edu/
+
+> **Status:** ✅ 1/1 pages OK  
+> **Folder:** `afrotc-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
 | Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
+| Pages Passed | ✅ 1 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 55.8 KB |
-| Total Screenshots | 151.6 KB |
-| Total Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| Folder | `afrotc-wsu-edu/` |
+| Total JS Warnings | 1 |
+| Total Images | 1 (192.7 KB) |
+| Images Missing Alt | ⚠️ 1 |
+| Total HTML | 63.9 KB |
+| Total Screenshots | 933.0 KB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Air Force ROTC \| Washington State Un... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Air Force ROTC \| Washington State Un... | 0 | 1 | ⚠️ 1 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://afrotc.wsu.edu/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

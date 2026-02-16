@@ -1,35 +1,69 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://vetmed.wsu.edu/education/  
+> **Captured:** 2026-02-16 22:11:39 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://vetmed.wsu.edu/education/ |
 | Title | Education | College of Veterinary Medicine | Washington State University |
-| Status | ❌ 0 |
+| Status | ✅ 200 |
 | HTML Size | 253.8 KB |
-| Screenshots | 1 (1.1 MB) |
+| Screenshots | 1 (1.2 MB) |
 | Images | 7 (916.2 KB) |
-| Images Missing Alt | 0 |
-| JS Errors | 0 |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T21:00:20.9704250Z |
+| Captured | 2026-02-16T22:11:39.3910820Z |
 
-## Actions
+## 🔧 Actions
 
-- Screenshot #1: page-loaded (1.1 MB)
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
+
+- Screenshot #1: page-loaded (1.2 MB)
 - Downloaded 7 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>1.2 MB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (7)
 
-## Page Images (7)
+<details open>
+<summary><strong>📋 Image Index</strong> — 7 images, 916.2 KB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
+|--:|-------|----------|-----:|
 | 1 | [SMB-undergrads-Kohler-lab-06-DSC_5439-792x528.jpg](images/SMB-undergrads-Kohler-lab-06-DSC_5439-792x528.jpg) | Two students working in a lab. Both a... | 90.6 KB |
 | 2 | [GraduateHero-1156x645-100121-792x442.jpg](images/GraduateHero-1156x645-100121-792x442.jpg) | Graduate student in lab | 76.4 KB |
 | 3 | [Zaripova-Elvira-03-24.jpg](images/Zaripova-Elvira-03-24.jpg) | Vet student with dog | 182.7 KB |
@@ -38,30 +72,79 @@
 | 6 | [image-6.jpg](images/image-6.jpg) | Anna Decan and Nolan Nansel, both fou... | 101.9 KB |
 | 7 | [rossman-scaled-e1770328567477-792x528.jpeg](images/rossman-scaled-e1770328567477-792x528.jpeg) | Genevea Rossman holds a small dog. | 72.0 KB |
 
-### Gallery
+</details>
 
-![Two students working in a lab. Both are wearing white coats and gloves.](images/SMB-undergrads-Kohler-lab-06-DSC_5439-792x528.jpg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![Graduate student in lab](images/GraduateHero-1156x645-100121-792x442.jpg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/SMB-undergrads-Kohler-lab-06-DSC_5439-792x528.jpg">
+<img src="images/SMB-undergrads-Kohler-lab-06-DSC_5439-792x528.jpg" width="200" alt="Two students working in a lab. Both are wearing white coats and gloves." />
+</a>
+<br /><sub>SMB-undergrads-Kohler-lab-06-DSC_5439-792x528.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/GraduateHero-1156x645-100121-792x442.jpg">
+<img src="images/GraduateHero-1156x645-100121-792x442.jpg" width="200" alt="Graduate student in lab" />
+</a>
+<br /><sub>GraduateHero-1156x645-100121-792x442.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Zaripova-Elvira-03-24.jpg">
+<img src="images/Zaripova-Elvira-03-24.jpg" width="200" alt="Vet student with dog" />
+</a>
+<br /><sub>Zaripova-Elvira-03-24.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/ResidentsInterns-Residentw4thYears-720x480-1.jpg">
+<img src="images/ResidentsInterns-Residentw4thYears-720x480-1.jpg" width="200" alt="A Teaching Hospital resident with four 4th-year DVM students." />
+</a>
+<br /><sub>ResidentsInterns-Residentw4thYears-720x480-1.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/catherine-hamisch-e1770310174765-792x528.jpg">
+<img src="images/catherine-hamisch-e1770310174765-792x528.jpg" width="200" alt="Catherine Hamisch poses for a photo." />
+</a>
+<br /><sub>catherine-hamisch-e1770310174765-792x528.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/image-6.jpg">
+<img src="images/image-6.jpg" width="200" alt="Anna Decan and Nolan Nansel, both fourth-year students in WSU's College of Veterinary Medicine, pose for a photo with their dog, West, near the entrance to the Veterinary Teaching Hospital." />
+</a>
+<br /><sub>image-6.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/rossman-scaled-e1770328567477-792x528.jpeg">
+<img src="images/rossman-scaled-e1770328567477-792x528.jpeg" width="200" alt="Genevea Rossman holds a small dog." />
+</a>
+<br /><sub>rossman-scaled-e1770328567477-792x528.jpeg</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-![Vet student with dog](images/Zaripova-Elvira-03-24.jpg)
+</details>
 
-![A Teaching Hospital resident with four 4th-year DVM students.](images/ResidentsInterns-Residentw4thYears-720x480-1.jpg)
+## 📁 Files
 
-![Catherine Hamisch poses for a photo.](images/catherine-hamisch-e1770310174765-792x528.jpg)
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (1.2 MB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 7 page images (916.2 KB) |
 
-![Anna Decan and Nolan Nansel, both fourth-year students in WSU's College of Veterinary Medicine, pose for a photo with their dog, West, near the entrance to the Veterinary Teaching Hospital.](images/image-6.jpg)
+---
 
-![Genevea Rossman holds a small dog.](images/rossman-scaled-e1770328567477-792x528.jpeg)
-
-
-## Files
-
-- `01-page-loaded.png` — page-loaded (1.1 MB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 7 page images (916.2 KB)
+*Generated by AccessibilityScanner (FreeTools) v1.0*

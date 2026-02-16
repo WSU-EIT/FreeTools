@@ -1,83 +1,96 @@
-# Site Report: https://tricities.wsu.edu/
+# 🌐 Site Report: https://tricities.wsu.edu/
+
+> **Status:** ✅ 7/7 pages OK  
+> **Folder:** `tricities-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 5 |
-| Pages Failed | 2 |
-| Total JS Errors | 3 |
-| Total JS Warnings | 13 |
-| Total HTML | 894.6 KB |
-| Total Screenshots | 6.4 MB |
-| Total Images | 71 (3.8 MB) |
-| Images Missing Alt | 22 |
-| Folder | `tricities-wsu-edu/` |
+| Pages Passed | ✅ 7 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
+| Total JS Warnings | 12 |
+| Total Images | 77 (5.1 MB) |
+| Images Missing Alt | ⚠️ 21 |
+| Total HTML | 927.0 KB |
+| Total Screenshots | 9.3 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Tri-Cities - apply now to earn yo... | 3 | 26 | 12 |
-| ❌ | [/about/](about/report.md) | 0 | About WSU Tri-Cities - WSU Tri-Cities | 0 | 16 | 9 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | WSU Tri-Cities - apply now to earn yo... | 0 | 32 | ⚠️ 11 |
+| ✅ | [/about/](about/report.md) | 200 | About WSU Tri-Cities - WSU Tri-Cities | 0 | 16 | ⚠️ 9 |
 | ✅ | [/academics/](academics/report.md) | 200 | Academics \| WSU Tri-Cities | 0 | 6 | 0 |
 | ✅ | [/admissions/](admissions/report.md) | 200 | Admissions \| WSU Tri-Cities | 0 | 12 | 0 |
 | ✅ | [/contact/](contact/report.md) | 200 | Contact Us - WSU Tri-Cities | 0 | 5 | 0 |
 | ✅ | [/library/](library/report.md) | 200 | WSU Tri-Cities Library | 0 | 5 | 0 |
-| ✅ | [/student-services/](student-services/report.md) | 200 | Student-Services.png (1680×700) | 0 | 1 | 1 |
+| ✅ | [/student-services/](student-services/report.md) | 200 | Student-Services.png (1680×700) | 0 | 1 | ⚠️ 1 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/academics/](academics/report.md)
-
-![/academics/](academics/01-page-loaded.png)
-
-### [/admissions/](admissions/report.md)
-
-![/admissions/](admissions/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/library/](library/report.md)
-
-![/library/](library/01-page-loaded.png)
-
-### [/student-services/](student-services/report.md)
-
-![/student-services/](student-services/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://tricities.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://tricities.wsu.edu/about/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (3 errors)
-
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="academics/report.md">
+<img src="academics/01-page-loaded.png" width="250" alt="/academics/" />
+</a>
+<br />✅ <code>/academics/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="admissions/report.md">
+<img src="admissions/01-page-loaded.png" width="250" alt="/admissions/" />
+</a>
+<br />✅ <code>/admissions/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td align="center" width="33%">
+<a href="library/report.md">
+<img src="library/01-page-loaded.png" width="250" alt="/library/" />
+</a>
+<br />✅ <code>/library/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="student-services/report.md">
+<img src="student-services/01-page-loaded.png" width="250" alt="/student-services/" />
+</a>
+<br />✅ <code>/student-services/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

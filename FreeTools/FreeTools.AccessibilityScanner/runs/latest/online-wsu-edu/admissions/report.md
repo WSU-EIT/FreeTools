@@ -1,36 +1,70 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://online.wsu.edu/admissions/  
+> **Captured:** 2026-02-16 22:18:34 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://online.wsu.edu/admissions/ |
 | Redirected To | https://online.wsu.edu/apply-now/ |
 | Title | Apply to WSU Global Campus | WSU Global Campus | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 71.8 KB |
-| Screenshots | 1 (853.2 KB) |
+| Status | ✅ 200 |
+| HTML Size | 79.9 KB |
+| Screenshots | 1 (1.2 MB) |
 | Images | 6 (547.5 KB) |
-| Images Missing Alt | 0 |
-| JS Errors | 0 |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:59:33.2062218Z |
+| Captured | 2026-02-16T22:18:34.5560203Z |
 
-## Actions
+## 🔧 Actions
 
-- Screenshot #1: page-loaded (853.2 KB)
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
+
+- Screenshot #1: page-loaded (1.2 MB)
 - Downloaded 6 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>1.2 MB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (6)
 
-## Page Images (6)
+<details open>
+<summary><strong>📋 Image Index</strong> — 6 images, 547.5 KB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
+|--:|-------|----------|-----:|
 | 1 | [iStock-1346545793-792x342.jpg](images/iStock-1346545793-792x342.jpg) | Photo of young woman relaxing on couch | 72.2 KB |
 | 2 | [iStock-1311084171-792x792.jpg](images/iStock-1311084171-792x792.jpg) | Young woman on laptop | 85.7 KB |
 | 3 | [iStock-1587712786-792x792.jpg](images/iStock-1587712786-792x792.jpg) | Young woman on laptop | 109.8 KB |
@@ -38,28 +72,69 @@
 | 5 | [iStock-1216763772-792x792.jpg](images/iStock-1216763772-792x792.jpg) | Woman on laptop | 105.3 KB |
 | 6 | [iStock-618348040-792x792.jpg](images/iStock-618348040-792x792.jpg) | Man in glasses looking into camera | 84.2 KB |
 
-### Gallery
+</details>
 
-![Photo of young woman relaxing on couch](images/iStock-1346545793-792x342.jpg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![Young woman on laptop](images/iStock-1311084171-792x792.jpg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/iStock-1346545793-792x342.jpg">
+<img src="images/iStock-1346545793-792x342.jpg" width="200" alt="Photo of young woman relaxing on couch" />
+</a>
+<br /><sub>iStock-1346545793-792x342.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/iStock-1311084171-792x792.jpg">
+<img src="images/iStock-1311084171-792x792.jpg" width="200" alt="Young woman on laptop" />
+</a>
+<br /><sub>iStock-1311084171-792x792.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/iStock-1587712786-792x792.jpg">
+<img src="images/iStock-1587712786-792x792.jpg" width="200" alt="Young woman on laptop" />
+</a>
+<br /><sub>iStock-1587712786-792x792.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/Beth-Freeman-792x792.jpg">
+<img src="images/Beth-Freeman-792x792.jpg" width="200" alt="Woman and man wearing WSU shirt" />
+</a>
+<br /><sub>Beth-Freeman-792x792.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/iStock-1216763772-792x792.jpg">
+<img src="images/iStock-1216763772-792x792.jpg" width="200" alt="Woman on laptop" />
+</a>
+<br /><sub>iStock-1216763772-792x792.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/iStock-618348040-792x792.jpg">
+<img src="images/iStock-618348040-792x792.jpg" width="200" alt="Man in glasses looking into camera" />
+</a>
+<br /><sub>iStock-618348040-792x792.jpg</sub>
+</td>
+</tr>
+</table>
 
-![Young woman on laptop](images/iStock-1587712786-792x792.jpg)
+</details>
 
-![Woman and man wearing WSU shirt](images/Beth-Freeman-792x792.jpg)
+## 📁 Files
 
-![Woman on laptop](images/iStock-1216763772-792x792.jpg)
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (1.2 MB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 6 page images (547.5 KB) |
 
-![Man in glasses looking into camera](images/iStock-618348040-792x792.jpg)
+---
 
-
-## Files
-
-- `01-page-loaded.png` — page-loaded (853.2 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 6 page images (547.5 KB)
+*Generated by AccessibilityScanner (FreeTools) v1.0*

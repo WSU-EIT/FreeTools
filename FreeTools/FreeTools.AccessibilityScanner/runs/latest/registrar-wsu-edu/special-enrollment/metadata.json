@@ -5,7 +5,7 @@
   "Title": "Special Enrollment | Office of the Registrar",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 662413,
+  "HtmlSizeBytes": 662417,
   "ScreenshotSizeBytes": 483439,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T21:02:52.1171147Z"
+  "CapturedAt": "2026-02-16T22:17:40.6472473Z"
 }

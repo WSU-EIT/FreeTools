@@ -3,9 +3,9 @@
   "Url": "https://li.wsu.edu/support/",
   "FinalUrl": "https://li.wsu.edu/teaching-toolkit/distance-delivery-for-faculty/supporting-students-who-have-approved-accommodations/",
   "Title": "Supporting Students Who have Approved Accommodations | Academic Outreach and Innovation | Learning Innovations | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 222194,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 229159,
   "ScreenshotSizeBytes": 199240,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -23,6 +23,20 @@
   "ImagesMissingAlt": 0,
   "Images": [],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:31.939533Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:18:54 GMT",
+    "etag": "\u00225a348dff1f94b43fd2cb894d057311bc\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:18:54 GMT",
+    "link": "\u003Chttps://li.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://li.wsu.edu/wp-json/wp/v2/pages/9214\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://li.wsu.edu/?p=9214\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache": "EXPIRED",
+    "x-cache-status": "EXPIRED",
+    "x-tec-api-origin": "https://li.wsu.edu",
+    "x-tec-api-root": "https://li.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-16T22:18:53.7034913Z"
 }

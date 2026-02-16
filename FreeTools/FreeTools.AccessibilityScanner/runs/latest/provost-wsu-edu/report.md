@@ -1,89 +1,85 @@
-# Site Report: https://provost.wsu.edu/
+# 🌐 Site Report: https://provost.wsu.edu/
+
+> **Status:** ✅ 6/6 pages OK  
+> **Folder:** `provost-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 0 |
-| Pages Failed | 6 |
+| Pages Passed | ✅ 6 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 636.4 KB |
-| Total Screenshots | 3.2 MB |
 | Total Images | 3 (145.8 KB) |
-| Images Missing Alt | 1 |
-| Folder | `provost-wsu-edu/` |
+| Images Missing Alt | ⚠️ 1 |
+| Total HTML | 669.5 KB |
+| Total Screenshots | 3.2 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Office of the Provost \| Washington S... | 0 | 1 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | About \| Office of the Provost \| Was... | 0 | 1 | 0 |
-| ❌ | [/academic-affairs/](academic-affairs/report.md) | 0 | Academic Affairs Program Optimization... | 0 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Office of the Provost \... | 0 | 0 | 0 |
-| ❌ | [/policies/](policies/report.md) | 0 | Policies and Reports \| Office of the... | 0 | 1 | 1 |
-| ❌ | [/resources/](resources/report.md) | 0 | Resources for our students \| Office ... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Office of the Provost \| Washington S... | 0 | 1 | 0 |
+| ✅ | [/about/](about/report.md) | 200 | About \| Office of the Provost \| Was... | 0 | 1 | 0 |
+| ✅ | [/academic-affairs/](academic-affairs/report.md) | 200 | Academic Affairs Program Optimization... | 0 | 0 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Office of the Provost \... | 0 | 0 | 0 |
+| ✅ | [/policies/](policies/report.md) | 200 | Policies and Reports \| Office of the... | 0 | 1 | ⚠️ 1 |
+| ✅ | [/resources/](resources/report.md) | 200 | Resources for our students \| Office ... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/academic-affairs/](academic-affairs/report.md)
-
-![/academic-affairs/](academic-affairs/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/policies/](policies/report.md)
-
-![/policies/](policies/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://provost.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://provost.wsu.edu/about/
-- **Status:** 0
-
-### /academic-affairs/
-
-- **URL:** https://provost.wsu.edu/academic-affairs/
-- **Status:** 0
-
-### /policies/
-
-- **URL:** https://provost.wsu.edu/policies/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://provost.wsu.edu/resources/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://provost.wsu.edu/contact/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="academic-affairs/report.md">
+<img src="academic-affairs/01-page-loaded.png" width="250" alt="/academic-affairs/" />
+</a>
+<br />✅ <code>/academic-affairs/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td align="center" width="33%">
+<a href="policies/report.md">
+<img src="policies/01-page-loaded.png" width="250" alt="/policies/" />
+</a>
+<br />✅ <code>/policies/</code>
+</td>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.png" width="250" alt="/resources/" />
+</a>
+<br />✅ <code>/resources/</code>
+</td>
+</tr>
+</table>
 
 ---
 

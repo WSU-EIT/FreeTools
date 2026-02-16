@@ -5,8 +5,8 @@
   "Title": "WSU Admissions | Washington State University | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 120492,
-  "ScreenshotSizeBytes": 1927714,
+  "HtmlSizeBytes": 120360,
+  "ScreenshotSizeBytes": 2069045,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 2,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1927714
+      "FileSize": 2069045
     }
   ],
   "ImageCount": 11,
@@ -91,12 +91,12 @@
   ],
   "ErrorMessage": null,
   "Headers": {
-    "cache-control": "max-age=7, must-revalidate",
+    "cache-control": "max-age=311, must-revalidate",
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 21:02:18 GMT",
-    "last-modified": "Mon, 16 Feb 2026 20:52:25 GMT",
+    "date": "Mon, 16 Feb 2026 22:10:26 GMT",
+    "last-modified": "Mon, 16 Feb 2026 22:05:37 GMT",
     "link": "\u003Chttps://wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://wsu.edu/wp-json/wp/v2/pages/13\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
     "server": "nginx",
     "transfer-encoding": "chunked",
@@ -105,5 +105,5 @@
     "x-frame-options": "DENY",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-16T21:02:18.5086137Z"
+  "CapturedAt": "2026-02-16T22:10:26.0801908Z"
 }

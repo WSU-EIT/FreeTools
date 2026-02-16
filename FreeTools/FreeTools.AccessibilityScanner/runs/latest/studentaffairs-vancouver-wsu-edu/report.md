@@ -1,49 +1,56 @@
-# Site Report: https://studentaffairs.vancouver.wsu.edu/
+# 🌐 Site Report: https://studentaffairs.vancouver.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `studentaffairs-vancouver-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 83.7 KB |
-| Total Screenshots | 914.2 KB |
-| Total Images | 11 (314.9 KB) |
-| Images Missing Alt | 7 |
-| Folder | `studentaffairs-vancouver-wsu-edu/` |
+| Total Images | 15 (3.6 MB) |
+| Images Missing Alt | ⚠️ 11 |
+| Total HTML | 85.1 KB |
+| Total Screenshots | 3.5 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Student Affairs - WSU Vancouver - WSU... | 0 | 3 | 1 |
-| ❌ | [/student-involvement/](student-involvement/report.md) | 0 | Office of Student Involvement - Home ... | 0 | 8 | 6 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Student Affairs - WSU Vancouver - WSU... | 0 | 4 | ⚠️ 2 |
+| ✅ | [/student-involvement/](student-involvement/report.md) | 200 | Office of Student Involvement - Home ... | 0 | 11 | ⚠️ 9 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/student-involvement/](student-involvement/report.md)
-
-![/student-involvement/](student-involvement/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://studentaffairs.vancouver.wsu.edu/
-- **Status:** 0
-
-### /student-involvement/
-
-- **URL:** https://studentaffairs.vancouver.wsu.edu/student-involvement/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="student-involvement/report.md">
+<img src="student-involvement/01-page-loaded.png" width="250" alt="/student-involvement/" />
+</a>
+<br />✅ <code>/student-involvement/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

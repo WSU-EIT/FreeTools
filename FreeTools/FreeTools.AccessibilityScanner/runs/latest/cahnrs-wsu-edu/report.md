@@ -1,74 +1,90 @@
-# Site Report: https://cahnrs.wsu.edu/
+# 🌐 Site Report: https://cahnrs.wsu.edu/
+
+> **Status:** ⚠️ 4/5 pages OK  
+> **Folder:** `cahnrs-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [████████████████████████░░░░░░] 80%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 1 |
-| Pages Failed | 4 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | ❌ 1 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 1 |
+| Total Images | 58 (17.3 MB) |
+| Images Missing Alt | ✅ 0 |
 | Total HTML | 1.2 MB |
-| Total Screenshots | 7.8 MB |
-| Total Images | 54 (13.4 MB) |
-| Images Missing Alt | 0 |
-| Folder | `cahnrs-wsu-edu/` |
+| Total Screenshots | 9.2 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | College of Agricultural, Human, and N... | 0 | 20 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | About CAHNRS \| College of Agricultur... | 0 | 3 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | College of Agricultural, Human, and N... | 0 | 24 | 0 |
+| ✅ | [/about/](about/report.md) | 200 | About CAHNRS \| College of Agricultur... | 0 | 3 | 0 |
 | ❌ | [/academics/](academics/report.md) | 0 | Academics \| Washington State University | 0 | 11 | 0 |
 | ✅ | [/extension/](extension/report.md) | 200 | WSU Extension \| Washington State Uni... | 0 | 12 | 0 |
-| ❌ | [/research/](research/report.md) | 0 | Office of Research \| Washington Stat... | 0 | 8 | 0 |
+| ✅ | [/research/](research/report.md) | 200 | Office of Research \| Washington Stat... | 0 | 8 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="academics/report.md">
+<img src="academics/01-page-loaded.png" width="250" alt="/academics/" />
+</a>
+<br />❌ <code>/academics/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="extension/report.md">
+<img src="extension/01-page-loaded.png" width="250" alt="/extension/" />
+</a>
+<br />✅ <code>/extension/</code>
+</td>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
-### [/about/](about/report.md)
+## ❌ Failed Pages
 
-![/about/](about/01-page-loaded.png)
+<details open>
+<summary><strong>1 page(s) failed</strong></summary>
 
-### [/academics/](academics/report.md)
+| Page | HTTP | Error |
+|------|:----:|-------|
+| [/academics/](academics/report.md) | 0 | — |
 
-![/academics/](academics/01-page-loaded.png)
-
-### [/extension/](extension/report.md)
-
-![/extension/](extension/01-page-loaded.png)
-
-### [/research/](research/report.md)
-
-![/research/](research/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://cahnrs.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://cahnrs.wsu.edu/about/
-- **Status:** 0
-
-### /academics/
-
-- **URL:** https://cahnrs.wsu.edu/academics/
-- **Status:** 0
-
-### /research/
-
-- **URL:** https://cahnrs.wsu.edu/research/
-- **Status:** 0
-
+</details>
 
 ---
 

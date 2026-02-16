@@ -5,7 +5,7 @@
   "Title": "ITS Scheduled Maintenance | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 242849,
+  "HtmlSizeBytes": 242843,
   "ScreenshotSizeBytes": 266431,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -26,12 +26,15 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 21:02:13 GMT",
-    "etag": "\u002291d30800e3aeb9bb2518b00d36af26bf\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:41:04 GMT",
+    "date": "Mon, 16 Feb 2026 22:10:38 GMT",
+    "etag": "\u00220b3158c65d996867278a5e883c8439db\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:10:38 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/114\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=114\u003E; rel=shortlink",
     "server": "nginx",
-    "vary": "Accept-Encoding"
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://its.wsu.edu",
+    "x-tec-api-root": "https://its.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
   },
-  "CapturedAt": "2026-02-16T21:02:13.6747036Z"
+  "CapturedAt": "2026-02-16T22:10:38.4050223Z"
 }

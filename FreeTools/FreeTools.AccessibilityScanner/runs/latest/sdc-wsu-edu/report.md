@@ -1,69 +1,73 @@
-# Site Report: https://sdc.wsu.edu/
+# 🌐 Site Report: https://sdc.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `sdc-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 1 |
-| Total HTML | 1011.3 KB |
-| Total Screenshots | 5.6 MB |
-| Total Images | 65 (3.1 MB) |
-| Images Missing Alt | 58 |
-| Folder | `sdc-wsu-edu/` |
+| Total Images | 67 (5.0 MB) |
+| Images Missing Alt | ⚠️ 58 |
+| Total HTML | 1.0 MB |
+| Total Screenshots | 6.3 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | School of Design and Construction \| ... | 0 | 3 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | About Us \| School of Design and Cons... | 0 | 3 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| School of Design and Co... | 0 | 1 | 0 |
-| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty and Staff \| School of Design... | 0 | 58 | 58 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | School of Design and Construction \| ... | 0 | 5 | 0 |
+| ✅ | [/about/](about/report.md) | 200 | About Us \| School of Design and Cons... | 0 | 3 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| School of Design and Co... | 0 | 1 | 0 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty and Staff \| School of Design... | 0 | 58 | ⚠️ 58 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/faculty/](faculty/report.md)
-
-![/faculty/](faculty/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://sdc.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://sdc.wsu.edu/about/
-- **Status:** 0
-
-### /faculty/
-
-- **URL:** https://sdc.wsu.edu/faculty/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://sdc.wsu.edu/contact/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

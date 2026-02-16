@@ -1,61 +1,127 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://online.wsu.edu/  
+> **Captured:** 2026-02-16 22:18:27 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://online.wsu.edu/ |
 | Title | WSU Global Campus | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 76.1 KB |
-| Screenshots | 1 (1.4 MB) |
-| Images | 3 (352.6 KB) |
-| Images Missing Alt | 0 |
-| JS Errors | 3 |
+| Status | ✅ 200 |
+| HTML Size | 82.7 KB |
+| Screenshots | 1 (1.6 MB) |
+| Images | 4 (1.7 MB) |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:58:42.4665113Z |
+| Captured | 2026-02-16T22:18:27.5731089Z |
 
-## JavaScript Errors
+## 🔧 Actions
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
-## Actions
+- Screenshot #1: page-loaded (1.6 MB)
+- Downloaded 4 images to /images/
 
-- Screenshot #1: page-loaded (1.4 MB)
-- Downloaded 3 images to /images/
+</details>
 
-## Screenshots
+## 📸 Screenshots
 
-### 1. page-loaded
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>1.6 MB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
-![page-loaded](01-page-loaded.png)
+## 🖼️ Page Images (4)
 
-
-## Page Images (3)
+<details open>
+<summary><strong>📋 Image Index</strong> — 4 images, 1.7 MB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
-| 1 | [Current-Students-Girl-web-440x608-396x547-2.jpg](images/Current-Students-Girl-web-440x608-396x547-2.jpg) | Photo: Smiling young woman holding a ... | 180.0 KB |
-| 2 | [FutureCoug-Collage-396x227.png](images/FutureCoug-Collage-396x227.png) | Photo collage: Future Online Cougs wi... | 128.6 KB |
-| 3 | [Picture2.jpg](images/Picture2.jpg) | Photo: Andrew Zander. | 44.0 KB |
+|--:|-------|----------|-----:|
+| 1 | [Homepage-Banner.jpg](images/Homepage-Banner.jpg) | Students facing the camera in a row, ... | 1.3 MB |
+| 2 | [Current-Students-Girl-web-440x608-396x547-2.jpg](images/Current-Students-Girl-web-440x608-396x547-2.jpg) | Photo: Smiling young woman holding a ... | 180.0 KB |
+| 3 | [FutureCoug-Collage-396x227.png](images/FutureCoug-Collage-396x227.png) | Photo collage: Future Online Cougs wi... | 128.6 KB |
+| 4 | [Picture2.jpg](images/Picture2.jpg) | Photo: Andrew Zander. | 44.0 KB |
 
-### Gallery
+</details>
 
-![Photo: Smiling young woman holding a smart phone.](images/Current-Students-Girl-web-440x608-396x547-2.jpg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![Photo collage: Future Online Cougs with big smiles displaying the #FutureCoug logo.](images/FutureCoug-Collage-396x227.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/Homepage-Banner.jpg">
+<img src="images/Homepage-Banner.jpg" width="200" alt="Students facing the camera in a row, holding and looking at laptops and other devices, with a blurred vivid blue background behind them." />
+</a>
+<br /><sub>Homepage-Banner.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Current-Students-Girl-web-440x608-396x547-2.jpg">
+<img src="images/Current-Students-Girl-web-440x608-396x547-2.jpg" width="200" alt="Photo: Smiling young woman holding a smart phone." />
+</a>
+<br /><sub>Current-Students-Girl-web-440x608-396x547-2.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/FutureCoug-Collage-396x227.png">
+<img src="images/FutureCoug-Collage-396x227.png" width="200" alt="Photo collage: Future Online Cougs with big smiles displaying the #FutureCoug logo." />
+</a>
+<br /><sub>FutureCoug-Collage-396x227.png</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/Picture2.jpg">
+<img src="images/Picture2.jpg" width="200" alt="Photo: Andrew Zander." />
+</a>
+<br /><sub>Picture2.jpg</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-![Photo: Andrew Zander.](images/Picture2.jpg)
+</details>
 
+## 📁 Files
 
-## Files
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (1.6 MB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 4 page images (1.7 MB) |
 
-- `01-page-loaded.png` — page-loaded (1.4 MB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 3 page images (352.6 KB)
+---
+
+*Generated by AccessibilityScanner (FreeTools) v1.0*

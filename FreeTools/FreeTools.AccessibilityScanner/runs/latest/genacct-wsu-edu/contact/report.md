@@ -1,62 +1,151 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://genacct.wsu.edu/contact/  
+> **Captured:** 2026-02-16 22:17:18 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://genacct.wsu.edu/contact/ |
 | Redirected To | https://genacct.wsu.edu/contact-information/ |
 | Title | Contact Us | University Accounting | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 59.6 KB |
-| Screenshots | 1 (517.4 KB) |
-| Images | 5 (1.1 MB) |
-| Images Missing Alt | 0 |
-| JS Errors | 0 |
+| Status | ✅ 200 |
+| HTML Size | 71.2 KB |
+| Screenshots | 1 (458.1 KB) |
+| Images | 7 (2.0 MB) |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:59:31.9381423Z |
+| Captured | 2026-02-16T22:17:18.6498064Z |
 
-## Actions
+## 🔧 Actions
 
-- Screenshot #1: page-loaded (517.4 KB)
-- Downloaded 5 images to /images/
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
-## Screenshots
+- Screenshot #1: page-loaded (458.1 KB)
+- Downloaded 7 images to /images/
 
-### 1. page-loaded
+</details>
 
-![page-loaded](01-page-loaded.png)
+## 📸 Screenshots
 
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>458.1 KB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
-## Page Images (5)
+## 🖼️ Page Images (7)
+
+<details open>
+<summary><strong>📋 Image Index</strong> — 7 images, 2.0 MB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
-| 1 | [blank-profile-picture.jpg](images/blank-profile-picture.jpg) | photo of employee placeholder | 5.9 KB |
-| 2 | [John-Keatts-scaled.jpg](images/John-Keatts-scaled.jpg) | photo of employee | 526.3 KB |
-| 3 | [Amberly-Marino-e1671752321999.jpg](images/Amberly-Marino-e1671752321999.jpg) | photo of employee | 89.6 KB |
-| 4 | [Craig-Stephens-e1683226588901.jpg](images/Craig-Stephens-e1683226588901.jpg) | photo of employee | 154.3 KB |
-| 5 | [Tarryn-Anderson-scaled.jpg](images/Tarryn-Anderson-scaled.jpg) | photo of employee | 381.5 KB |
+|--:|-------|----------|-----:|
+| 1 | [Tami-Bidle-scaled-e1671488721827.jpg](images/Tami-Bidle-scaled-e1671488721827.jpg) | photo of employee | 541.3 KB |
+| 2 | [Jennifer-Druffel-scaled-e1671488768239.jpg](images/Jennifer-Druffel-scaled-e1671488768239.jpg) | photo of employee | 395.5 KB |
+| 3 | [blank-profile-picture.jpg](images/blank-profile-picture.jpg) | photo of employee placeholder | 5.9 KB |
+| 4 | [John-Keatts-scaled.jpg](images/John-Keatts-scaled.jpg) | photo of employee | 526.3 KB |
+| 5 | [Amberly-Marino-e1671752321999.jpg](images/Amberly-Marino-e1671752321999.jpg) | photo of employee | 89.6 KB |
+| 6 | [Craig-Stephens-e1683226588901.jpg](images/Craig-Stephens-e1683226588901.jpg) | photo of employee | 154.3 KB |
+| 7 | [Tarryn-Anderson-scaled.jpg](images/Tarryn-Anderson-scaled.jpg) | photo of employee | 381.5 KB |
 
-### Gallery
+</details>
 
-![photo of employee placeholder](images/blank-profile-picture.jpg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![photo of employee](images/John-Keatts-scaled.jpg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/Tami-Bidle-scaled-e1671488721827.jpg">
+<img src="images/Tami-Bidle-scaled-e1671488721827.jpg" width="200" alt="photo of employee" />
+</a>
+<br /><sub>Tami-Bidle-scaled-e1671488721827.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Jennifer-Druffel-scaled-e1671488768239.jpg">
+<img src="images/Jennifer-Druffel-scaled-e1671488768239.jpg" width="200" alt="photo of employee" />
+</a>
+<br /><sub>Jennifer-Druffel-scaled-e1671488768239.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/blank-profile-picture.jpg">
+<img src="images/blank-profile-picture.jpg" width="200" alt="photo of employee placeholder" />
+</a>
+<br /><sub>blank-profile-picture.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/John-Keatts-scaled.jpg">
+<img src="images/John-Keatts-scaled.jpg" width="200" alt="photo of employee" />
+</a>
+<br /><sub>John-Keatts-scaled.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Amberly-Marino-e1671752321999.jpg">
+<img src="images/Amberly-Marino-e1671752321999.jpg" width="200" alt="photo of employee" />
+</a>
+<br /><sub>Amberly-Marino-e1671752321999.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Craig-Stephens-e1683226588901.jpg">
+<img src="images/Craig-Stephens-e1683226588901.jpg" width="200" alt="photo of employee" />
+</a>
+<br /><sub>Craig-Stephens-e1683226588901.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/Tarryn-Anderson-scaled.jpg">
+<img src="images/Tarryn-Anderson-scaled.jpg" width="200" alt="photo of employee" />
+</a>
+<br /><sub>Tarryn-Anderson-scaled.jpg</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-![photo of employee](images/Amberly-Marino-e1671752321999.jpg)
+</details>
 
-![photo of employee](images/Craig-Stephens-e1683226588901.jpg)
+## 📁 Files
 
-![photo of employee](images/Tarryn-Anderson-scaled.jpg)
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (458.1 KB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 7 page images (2.0 MB) |
 
+---
 
-## Files
-
-- `01-page-loaded.png` — page-loaded (517.4 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 5 page images (1.1 MB)
+*Generated by AccessibilityScanner (FreeTools) v1.0*

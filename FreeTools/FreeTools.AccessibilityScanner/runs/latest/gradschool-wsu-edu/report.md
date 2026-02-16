@@ -1,61 +1,75 @@
-# Site Report: https://gradschool.wsu.edu/
+# 🌐 Site Report: https://gradschool.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `gradschool-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
-| Total JS Errors | 3 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 2 |
 | Total JS Warnings | 0 |
-| Total HTML | 741.7 KB |
+| Total Images | 2 (1.2 MB) |
+| Images Missing Alt | ⚠️ 1 |
+| Total HTML | 764.8 KB |
 | Total Screenshots | 1.2 MB |
-| Total Images | 1 (693.3 KB) |
-| Images Missing Alt | 1 |
-| Folder | `gradschool-wsu-edu/` |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | The Graduate School \| Washington Sta... | 2 | 1 | 1 |
-| ❌ | [/admissions/](admissions/report.md) | 0 | Admissions Offer Letter \| The Gradua... | 1 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | The Graduate School \| Washington Sta... | 🔴 1 | 2 | ⚠️ 1 |
+| ✅ | [/admissions/](admissions/report.md) | 200 | Admissions Offer Letter \| The Gradua... | 🔴 1 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="admissions/report.md">
+<img src="admissions/01-page-loaded.png" width="250" alt="/admissions/" />
+</a>
+<br />✅ <code>/admissions/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
-### [/admissions/](admissions/report.md)
+## 🔴 JavaScript Errors
 
-![/admissions/](admissions/01-page-loaded.png)
+<details>
+<summary><strong>2 error(s) across 2 page(s)</strong></summary>
 
+**/** (1 errors)
 
-## Failed Pages
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### /
+**/admissions/** (1 errors)
 
-- **URL:** https://gradschool.wsu.edu/
-- **Status:** 0
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### /admissions/
-
-- **URL:** https://gradschool.wsu.edu/admissions/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (2 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /admissions/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
+</details>
 
 ---
 

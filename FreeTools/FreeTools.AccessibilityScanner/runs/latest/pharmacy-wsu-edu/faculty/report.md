@@ -1,4 +1,23 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://pharmacy.wsu.edu/faculty/  
+> **Captured:** 2026-02-16 22:17:53 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [JavaScript Errors](#-javascript-errors)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
@@ -6,278 +25,97 @@
 | Redirected To | https://pharmacy.wsu.edu/research/faculty-experts-index/ |
 | Title | Faculty Experts Index | Pharmacy and Pharmaceutical Sciences | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 439.1 KB |
+| HTML Size | 444.7 KB |
 | Screenshots | 1 (269.9 KB) |
 | Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| JS Errors | 82 |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | 🔴 76 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T21:01:26.6465952Z |
+| Captured | 2026-02-16T22:17:53.8025379Z |
 
-## JavaScript Errors
+## 🔴 JavaScript Errors
 
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=salah.ahmed,%20mary.paine&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=julie.akers&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=salah.ahmed,%20zhaokang.cheng,%20jiyue.zhu&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=zhaokang.cheng,%20susan.marsh&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=jiyue.zhu&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=zhaokang.cheng,%20travis.denton&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=salah.ahmed,%20zhaokang.cheng,%20shuwen.wang,%20jiyue.zhu&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=dbrand,%20stewas&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=julie.akers,%20dbrand,%20kimberly.mckeirnan,%20jennifer.c.miller,%20meganru,%20mwillson&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=kimberly.mckeirnan,%20jenirobinson&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=zhaokang.cheng,%20shuwen.wang,%20jiyue.zhu&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=travis.denton,%20senthil.natesan&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=jenirobinson&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=zhaokang.cheng,%20j.clarke,%20daoud&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=m.avtandilashvili,%20george.tabatadze,%20stolmachev&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=shuwen.wang,%20jiyue.zhu&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=susan.marsh&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=mwillson&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=salah.ahmed,%20senthil.natesan,%20shuwen.wang&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=zhaokang.cheng,%20j.clarke,%20senthil.natesan,%20mary.paine,%20whitej&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=dbrand&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=travis.denton&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=brian.gates&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=salah.ahmed,%20zhaokang.cheng,%20j.clarke,%20susan.marsh,kmeier,jiyue.zhu&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=dbrand&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=travis.denton&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107423
-    at NodeList.forEach (<anonymous>)
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107402
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107436
-    at https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:107440`
+<details>
+<summary><strong>76 error(s) detected</strong></summary>
 
-## Actions
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=julie.akers&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu....
+Failed to load resource: net::ERR_FAILED
+TypeError: Failed to fetch
+    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
+    at https://cdn.web.wsu.edu/designsystem/2.x/di...
+Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=salah.ahmed,%20zhaokang.cheng,%20shuwen.wang,%20jiyue.zhu&university-organization=college-of-pharmacy&photo-s...
+Failed to load resource: net::ERR_FAILED
+TypeError: Failed to fetch
+    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
+    at https://cdn.web.wsu.edu/designsystem/2.x/di...
+Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=salah.ahmed,%20zhaokang.cheng&university-organization=college-of-pharmacy&photo-size=medium' from origin 'htt...
+Failed to load resource: net::ERR_FAILED
+TypeError: Failed to fetch
+    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
+    at https://cdn.web.wsu.edu/designsystem/2.x/di...
+Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=zhaokang.cheng&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.w...
+Failed to load resource: net::ERR_FAILED
+TypeError: Failed to fetch
+    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
+    at https://cdn.web.wsu.edu/designsystem/2.x/di...
+Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=zhaokang.cheng,%20j.clarke,%20daoud&university-organization=college-of-pharmacy&photo-size=medium' from origi...
+Failed to load resource: net::ERR_FAILED
+TypeError: Failed to fetch
+    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list/scripts.js?ver=1.34.1:2:105922)
+    at https://cdn.web.wsu.edu/designsystem/2.x/di...
+Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=brian.gates&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu....
+... and 56 more (see errors.log)
+```
+
+</details>
+
+## 🔧 Actions
+
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
 - Screenshot #1: page-loaded (269.9 KB)
 - No images found on page
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>269.9 KB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
-
-## Page Images (0)
+## 🖼️ Page Images (0)
 
 *No images found on page.*
 
-## Files
+## 📁 Files
 
-- `01-page-loaded.png` — page-loaded (269.9 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (269.9 KB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+
+---
+
+*Generated by AccessibilityScanner (FreeTools) v1.0*

@@ -1,11 +1,11 @@
 {
   "PagePath": "/reshall/",
   "Url": "https://livingat.wsu.edu/reshall/",
-  "FinalUrl": "https://wsu.starrezhousing.com/StarRezPortalX/C252FF0F/1/1/Home-Home?UrlToken=FC3E9E97",
+  "FinalUrl": "https://wsu.starrezhousing.com/StarRezPortalX/11E25587/1/1/Home-Home?UrlToken=11D2BD23",
   "Title": "Home | StarRez Portal",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 28993,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 29002,
   "ScreenshotSizeBytes": 500248,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -48,6 +48,20 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:36.7997537Z"
+  "Headers": {
+    "cache-control": "private, no-store",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "9cf06ced6b1120bc-SEA",
+    "content-encoding": "br",
+    "content-security-policy": "media-src *",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 22:19:15 GMT",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN\nsameorigin",
+    "x-xss-protection": "1"
+  },
+  "CapturedAt": "2026-02-16T22:19:10.3626419Z"
 }

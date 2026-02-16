@@ -1,21 +1,21 @@
 {
   "PagePath": "/",
   "Url": "https://portal.wsu.edu/",
-  "FinalUrl": "https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7\u0026redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse\u0026response_type=code\u0026scope=openid%20profile%20sis.prd.groups\u0026state=ErxdndjWOflSWH3VV09kBvnTUyAlJMpOOvbF794jy4q0quN4TDYbDgCb56Iye6al9VOKMO1W%2B1ueGVrE5DWo4BgyD1NojAxe0kt%2F6%2FaG0ET%2Bv2YcVEOvXbfvBtHbqSFHlWQ6POVmkGn5UVfrLKT1jFatyoYvaWXeTXd1Vrdbn5KUvy1DpzYwJ6gNKKzlXKR8RuVysH%2FTThfcUTxpllWV4hUdvrUpTfLY0ln6AZ3zVVmgPNviRw%3D%3D",
+  "FinalUrl": "https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7\u0026redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse\u0026response_type=code\u0026scope=openid%20profile%20sis.prd.groups\u0026state=MNxgh1z%2FynLfOQrfqjKwEBRuU5xlLH0EM37GYX%2FC2ShC43L%2FTfhC003V%2B6gYhkZGOqkURd3Wf0Yg4gu42By6Y0U0MYZ3FjpaZ%2FW27aAb5JpoxFGt3t8UMxpPyyiqfq2h%2B5kVfgEnddzjlXInj%2FpMrCdfiQSWyuGnz3W9iMboUj6uBI%2B5hr3Dctgum%2FcXX31WXNJSn1q6ACR2KFmuRuDI1JpFDxRjJg4lIt8vJPEcUifRA2A1JQ%3D%3D",
   "Title": "WSU | Sign In",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 143855,
-  "ScreenshotSizeBytes": 34700,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 143879,
+  "ScreenshotSizeBytes": 61875,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 8,
+  "ConsoleErrorCount": 7,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 34700
+      "FileSize": 61875
     }
   ],
   "ImageCount": 1,
@@ -30,6 +30,29 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4685488Z"
+  "Headers": {
+    "accept-ch": "Sec-CH-UA-Platform-Version",
+    "cache-control": "no-cache, no-store",
+    "content-encoding": "gzip",
+    "content-language": "en",
+    "content-security-policy-report-only": "default-src \u0027self\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com; connect-src \u0027self\u0027 wsu.okta.com wsu-admin.okta.com login.wsu.edu *.oktacdn.com *.mixpanel.com *.mapbox.com wsu.kerberos.okta.com wsu.mtls.okta.com *.authenticatorlocalprod.com:8769 http://localhost:8769 http://127.0.0.1:8769 *.authenticatorlocalprod.com:65111 http://localhost:65111 http://127.0.0.1:65111 *.authenticatorlocalprod.com:65121 http://localhost:65121 http://127.0.0.1:65121 *.authenticatorlocalprod.com:65131 http://localhost:65131 http://127.0.0.1:65131 *.authenticatorlocalprod.com:65141 http://localhost:65141 http://127.0.0.1:65141 *.authenticatorlocalprod.com:65151 http://localhost:65151 http://127.0.0.1:65151 https://oinmanager.okta.com data: *.ingest.sentry.io; script-src \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 \u0027self\u0027 \u0027report-sample\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com; style-src \u0027unsafe-inline\u0027 \u0027self\u0027 \u0027report-sample\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com; frame-src \u0027self\u0027 wsu.okta.com wsu-admin.okta.com login.wsu.edu login.okta.com *.vidyard.com com-okta-authenticator:; img-src \u0027self\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com *.tiles.mapbox.com *.mapbox.com *.vidyard.com data: blob:; font-src \u0027self\u0027 wsu.okta.com login.wsu.edu data: *.oktacdn.com fonts.gstatic.com; frame-ancestors \u0027self\u0027 https://my.wsu.edu",
+    "content-type": "text/html;charset=utf-8",
+    "date": "Mon, 16 Feb 2026 22:16:30 GMT",
+    "expires": "0",
+    "p3p": "CP=\u0022HONK\u0022",
+    "pragma": "no-cache",
+    "referrer-policy": "no-referrer",
+    "server": "nginx",
+    "strict-transport-security": "max-age=315360000; includeSubDomains",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-okta-request-id": "aZOXPmu4Y0fSCUEELsfJ5QADUkk",
+    "x-rate-limit-limit": "60",
+    "x-rate-limit-remaining": "59",
+    "x-rate-limit-reset": "1771280250",
+    "x-robots-tag": "noindex,nofollow",
+    "x-ua-compatible": "IE=edge",
+    "x-xss-protection": "0"
+  },
+  "CapturedAt": "2026-02-16T22:16:29.6997538Z"
 }

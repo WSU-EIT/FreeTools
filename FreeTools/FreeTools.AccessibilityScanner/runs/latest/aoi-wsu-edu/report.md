@@ -1,39 +1,50 @@
-# Site Report: https://aoi.wsu.edu/
+# 🌐 Site Report: https://aoi.wsu.edu/
+
+> **Status:** ✅ 1/1 pages OK  
+> **Folder:** `aoi-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
 | Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
+| Pages Passed | ✅ 1 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 48.7 KB |
-| Total Screenshots | 561.1 KB |
 | Total Images | 1 (200.2 KB) |
-| Images Missing Alt | 0 |
-| Folder | `aoi-wsu-edu/` |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 58.5 KB |
+| Total Screenshots | 608.6 KB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Academic Outreach and Innovation \| W... | 0 | 1 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Academic Outreach and Innovation \| W... | 0 | 1 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://aoi.wsu.edu/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

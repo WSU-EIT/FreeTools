@@ -1,80 +1,97 @@
-# Site Report: https://campusvet.wsu.edu/
+# 🌐 Site Report: https://campusvet.wsu.edu/
+
+> **Status:** ⚠️ 3/4 pages OK  
+> **Folder:** `campusvet-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████░░░░░░░░] 75%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
-| Total JS Errors | 2 |
-| Total JS Warnings | 0 |
-| Total HTML | 843.0 KB |
-| Total Screenshots | 967.1 KB |
+| Pages Passed | ✅ 3 |
+| Pages Failed | ❌ 1 |
+| Total JS Errors | 🔴 1 |
+| Total JS Warnings | 1 |
 | Total Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| Folder | `campusvet-wsu-edu/` |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 870.6 KB |
+| Total Screenshots | 967.1 KB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Campus Veterinarian \| Washington Sta... | 1 | 0 | 0 |
-| ❌ | [/compliance/](compliance/report.md) | 0 | Page not found \| Campus Veterinarian... | 1 | 0 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | Resources \| Campus Veterinarian \| W... | 0 | 0 | 0 |
-| ❌ | [/training/](training/report.md) | 0 | Training \| Campus Veterinarian \| Wa... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Campus Veterinarian \| Washington Sta... | 0 | 0 | 0 |
+| ❌ | [/compliance/](compliance/report.md) | 404 | Page not found \| Campus Veterinarian... | 🔴 1 | 0 | 0 |
+| ✅ | [/resources/](resources/report.md) | 200 | Resources \| Campus Veterinarian \| W... | 0 | 0 | 0 |
+| ✅ | [/training/](training/report.md) | 200 | Training \| Campus Veterinarian \| Wa... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="compliance/report.md">
+<img src="compliance/01-page-loaded.png" width="250" alt="/compliance/" />
+</a>
+<br />❌ <code>/compliance/</code>
+</td>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.png" width="250" alt="/resources/" />
+</a>
+<br />✅ <code>/resources/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="training/report.md">
+<img src="training/01-page-loaded.png" width="250" alt="/training/" />
+</a>
+<br />✅ <code>/training/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-### [/compliance/](compliance/report.md)
+## ❌ Failed Pages
 
-![/compliance/](compliance/01-page-loaded.png)
+<details open>
+<summary><strong>1 page(s) failed</strong></summary>
 
-### [/resources/](resources/report.md)
+| Page | HTTP | Error |
+|------|:----:|-------|
+| [/compliance/](compliance/report.md) | 404 | — |
 
-![/resources/](resources/01-page-loaded.png)
+</details>
 
-### [/training/](training/report.md)
+## 🔴 JavaScript Errors
 
-![/training/](training/01-page-loaded.png)
+<details>
+<summary><strong>1 error(s) across 1 page(s)</strong></summary>
 
+**/compliance/** (1 errors)
 
-## Failed Pages
+```
+Failed to load resource: the server responded with a status of 404 ()
+```
 
-### /
-
-- **URL:** https://campusvet.wsu.edu/
-- **Status:** 0
-
-### /compliance/
-
-- **URL:** https://campusvet.wsu.edu/compliance/
-- **Status:** 0
-
-### /training/
-
-- **URL:** https://campusvet.wsu.edu/training/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://campusvet.wsu.edu/resources/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /compliance/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
+</details>
 
 ---
 

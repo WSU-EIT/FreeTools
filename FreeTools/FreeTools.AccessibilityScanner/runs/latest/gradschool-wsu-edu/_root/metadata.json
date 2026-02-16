@@ -3,12 +3,12 @@
   "Url": "https://gradschool.wsu.edu/",
   "FinalUrl": null,
   "Title": "The Graduate School | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 390147,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 396427,
   "ScreenshotSizeBytes": 1180503,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -18,10 +18,16 @@
       "FileSize": 1180503
     }
   ],
-  "ImageCount": 1,
-  "ImagesTotalSizeBytes": 709923,
+  "ImageCount": 2,
+  "ImagesTotalSizeBytes": 1272414,
   "ImagesMissingAlt": 1,
   "Images": [
+    {
+      "FileName": "graduation-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-gradschool/uploads/sites/3121/2025/09/graduation-scaled.jpg",
+      "AltText": "Students graduating",
+      "FileSize": 562491
+    },
     {
       "FileName": "headshot_MM-scaled.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-gradschool/uploads/sites/3121/2025/09/headshot_MM-scaled.jpg",
@@ -30,6 +36,15 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4603503Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:17:46 GMT",
+    "etag": "\u00226ac1ba5b1ef699d436f30b016fa434d1\u0022",
+    "last-modified": "Mon, 16 Feb 2026 21:30:35 GMT",
+    "link": "\u003Chttps://gradschool.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://gradschool.wsu.edu/wp-json/wp/v2/pages/31490\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://gradschool.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:17:46.5888958Z"
 }

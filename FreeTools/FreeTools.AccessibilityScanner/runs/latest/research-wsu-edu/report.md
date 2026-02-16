@@ -1,105 +1,121 @@
-# Site Report: https://research.wsu.edu/
+# 🌐 Site Report: https://research.wsu.edu/
+
+> **Status:** ✅ 7/7 pages OK  
+> **Folder:** `research-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 2 |
-| Pages Failed | 5 |
-| Total JS Errors | 4 |
+| Pages Passed | ✅ 7 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 3 |
 | Total JS Warnings | 1 |
-| Total HTML | 751.7 KB |
-| Total Screenshots | 2.9 MB |
-| Total Images | 18 (1.8 MB) |
-| Images Missing Alt | 17 |
-| Folder | `research-wsu-edu/` |
+| Total Images | 20 (3.0 MB) |
+| Images Missing Alt | ⚠️ 17 |
+| Total HTML | 765.7 KB |
+| Total Screenshots | 3.2 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Office of Research \| Washington Stat... | 2 | 18 | 17 |
-| ❌ | [/about/](about/report.md) | 0 | About Us \| Office of Research \| Was... | 1 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Office of Research \| Washington Stat... | 🔴 1 | 19 | ⚠️ 17 |
+| ✅ | [/about/](about/report.md) | 200 | About Us \| Office of Research \| Was... | 🔴 1 | 1 | 0 |
 | ✅ | [/compliance/](compliance/report.md) | 200 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Office of Research \| W... | 1 | 0 | 0 |
-| ❌ | [/funding/](funding/report.md) | 0 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
-| ❌ | [/research-areas/](research-areas/report.md) | 0 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Office of Research \| W... | 🔴 1 | 0 | 0 |
+| ✅ | [/funding/](funding/report.md) | 200 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
+| ✅ | [/research-areas/](research-areas/report.md) | 200 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
+| ✅ | [/resources/](resources/report.md) | 200 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="compliance/report.md">
+<img src="compliance/01-page-loaded.png" width="250" alt="/compliance/" />
+</a>
+<br />✅ <code>/compliance/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td align="center" width="33%">
+<a href="funding/report.md">
+<img src="funding/01-page-loaded.png" width="250" alt="/funding/" />
+</a>
+<br />✅ <code>/funding/</code>
+</td>
+<td align="center" width="33%">
+<a href="research-areas/report.md">
+<img src="research-areas/01-page-loaded.png" width="250" alt="/research-areas/" />
+</a>
+<br />✅ <code>/research-areas/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.png" width="250" alt="/resources/" />
+</a>
+<br />✅ <code>/resources/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-### [/about/](about/report.md)
+## 🔴 JavaScript Errors
 
-![/about/](about/01-page-loaded.png)
+<details>
+<summary><strong>3 error(s) across 3 page(s)</strong></summary>
 
-### [/compliance/](compliance/report.md)
+**/** (1 errors)
 
-![/compliance/](compliance/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### [/contact/](contact/report.md)
+**/about/** (1 errors)
 
-![/contact/](contact/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### [/funding/](funding/report.md)
+**/contact/** (1 errors)
 
-![/funding/](funding/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### [/research-areas/](research-areas/report.md)
-
-![/research-areas/](research-areas/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://research.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://research.wsu.edu/about/
-- **Status:** 0
-
-### /research-areas/
-
-- **URL:** https://research.wsu.edu/research-areas/
-- **Status:** 0
-
-### /funding/
-
-- **URL:** https://research.wsu.edu/funding/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://research.wsu.edu/resources/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (2 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /about/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /contact/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
+</details>
 
 ---
 

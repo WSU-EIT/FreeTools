@@ -1,71 +1,73 @@
-# Site Report: https://slcr.wsu.edu/
+# 🌐 Site Report: https://slcr.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `slcr-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 1 |
-| Pages Failed | 3 |
-| Total JS Errors | 1 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 263.1 KB |
-| Total Screenshots | 1.9 MB |
-| Total Images | 36 (9.1 MB) |
-| Images Missing Alt | 12 |
-| Folder | `slcr-wsu-edu/` |
+| Total Images | 39 (14.1 MB) |
+| Images Missing Alt | ⚠️ 12 |
+| Total HTML | 285.3 KB |
+| Total Screenshots | 2.6 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | School of Languages, Cultures, and Ra... | 1 | 1 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | School of Languages, Cultures, and Ra... | 0 | 1 | 0 |
 | ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| School of Languages, Cu... | 0 | 1 | 0 |
-| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| School of Languages, Cultu... | 0 | 34 | 12 |
-| ❌ | [/programs/](programs/report.md) | 0 | Programs \| School of Languages, Cult... | 0 | 0 | 0 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| School of Languages, Cultu... | 0 | 37 | ⚠️ 12 |
+| ✅ | [/programs/](programs/report.md) | 200 | Programs \| School of Languages, Cult... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/faculty/](faculty/report.md)
-
-![/faculty/](faculty/01-page-loaded.png)
-
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://slcr.wsu.edu/
-- **Status:** 0
-
-### /programs/
-
-- **URL:** https://slcr.wsu.edu/programs/
-- **Status:** 0
-
-### /faculty/
-
-- **URL:** https://slcr.wsu.edu/faculty/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_CONNECTION_ABORTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="programs/report.md">
+<img src="programs/01-page-loaded.png" width="250" alt="/programs/" />
+</a>
+<br />✅ <code>/programs/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

@@ -1,39 +1,50 @@
-# Site Report: https://afs.wsu.edu/
+# 🌐 Site Report: https://afs.wsu.edu/
+
+> **Status:** ✅ 1/1 pages OK  
+> **Folder:** `afs-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
 | Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
+| Pages Passed | ✅ 1 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 61.6 KB |
-| Total Screenshots | 980.1 KB |
-| Total Images | 9 (2.0 MB) |
-| Images Missing Alt | 9 |
-| Folder | `afs-wsu-edu/` |
+| Total Images | 13 (5.4 MB) |
+| Images Missing Alt | ⚠️ 13 |
+| Total HTML | 224.7 KB |
+| Total Screenshots | 1.7 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Agricultural and Food Systems \| Wash... | 0 | 9 | 9 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Agricultural and Food Systems \| Wash... | 0 | 13 | ⚠️ 13 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://afs.wsu.edu/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

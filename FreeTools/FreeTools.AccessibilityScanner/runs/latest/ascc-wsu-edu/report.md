@@ -1,49 +1,56 @@
-# Site Report: https://ascc.wsu.edu/
+# 🌐 Site Report: https://ascc.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `ascc-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 2.1 MB |
+| Total Images | 80 (1.2 MB) |
+| Images Missing Alt | ⚠️ 56 |
+| Total HTML | 4.0 MB |
 | Total Screenshots | 2.0 MB |
-| Total Images | 76 (1.2 MB) |
-| Images Missing Alt | 52 |
-| Folder | `ascc-wsu-edu/` |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Academic Success & Career Center – Wa... | 0 | 38 | 26 |
-| ❌ | [/career-services/](career-services/report.md) | 0 | Academic Success & Career Center – Wa... | 0 | 38 | 26 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Academic Success & Career Center – Wa... | 0 | 40 | ⚠️ 28 |
+| ✅ | [/career-services/](career-services/report.md) | 200 | Academic Success & Career Center – Wa... | 0 | 40 | ⚠️ 28 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/career-services/](career-services/report.md)
-
-![/career-services/](career-services/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://ascc.wsu.edu/
-- **Status:** 0
-
-### /career-services/
-
-- **URL:** https://ascc.wsu.edu/career-services/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="career-services/report.md">
+<img src="career-services/01-page-loaded.png" width="250" alt="/career-services/" />
+</a>
+<br />✅ <code>/career-services/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

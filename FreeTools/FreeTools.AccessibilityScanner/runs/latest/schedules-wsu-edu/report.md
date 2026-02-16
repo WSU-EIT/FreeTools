@@ -1,84 +1,96 @@
-# Site Report: https://schedules.wsu.edu/
+# 🌐 Site Report: https://schedules.wsu.edu/
+
+> **Status:** ✅ 7/7 pages OK  
+> **Folder:** `schedules-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 3/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 3 |
-| Pages Failed | 4 |
+| Pages Passed | ✅ 7 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 3.4 MB |
-| Total Screenshots | 272.1 KB |
 | Total Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| Folder | `schedules-wsu-edu/` |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 4.8 MB |
+| Total Screenshots | 456.7 KB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Schedule of Classes | 0 | 0 | 0 |
 | ✅ | [/Coop/](Coop/report.md) | 200 | Schedule of Classes | 0 | 0 | 0 |
 | ✅ | [/List/Everett/](List_Everett/report.md) | 200 | Schedule of Classes | 0 | 0 | 0 |
-| ❌ | [/List/Pullman/](List_Pullman/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/List/Spokane/](List_Spokane/report.md) | 0 | Schedule of Classes | 0 | 0 | 0 |
-| ❌ | [/List/TriCities/](List_TriCities/report.md) | 0 | Schedule of Classes | 0 | 0 | 0 |
+| ✅ | [/List/Pullman/](List_Pullman/report.md) | 200 | Schedule of Classes | 0 | 0 | 0 |
+| ✅ | [/List/Spokane/](List_Spokane/report.md) | 200 | Schedule of Classes | 0 | 0 | 0 |
+| ✅ | [/List/TriCities/](List_TriCities/report.md) | 200 | Schedule of Classes | 0 | 0 | 0 |
 | ✅ | [/List/Vancouver/](List_Vancouver/report.md) | 200 | Schedule of Classes | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/Coop/](Coop/report.md)
+Click any thumbnail to view the full page report.
 
-![/Coop/](Coop/01-page-loaded.png)
-
-### [/List/Everett/](List_Everett/report.md)
-
-![/List/Everett/](List_Everett/01-page-loaded.png)
-
-### [/List/Spokane/](List_Spokane/report.md)
-
-![/List/Spokane/](List_Spokane/01-page-loaded.png)
-
-### [/List/TriCities/](List_TriCities/report.md)
-
-![/List/TriCities/](List_TriCities/01-page-loaded.png)
-
-### [/List/Vancouver/](List_Vancouver/report.md)
-
-![/List/Vancouver/](List_Vancouver/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://schedules.wsu.edu/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
-
-### /List/Pullman/
-
-- **URL:** https://schedules.wsu.edu/List/Pullman/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
-
-### /List/Spokane/
-
-- **URL:** https://schedules.wsu.edu/List/Spokane/
-- **Status:** 0
-
-### /List/TriCities/
-
-- **URL:** https://schedules.wsu.edu/List/TriCities/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="Coop/report.md">
+<img src="Coop/01-page-loaded.png" width="250" alt="/Coop/" />
+</a>
+<br />✅ <code>/Coop/</code>
+</td>
+<td align="center" width="33%">
+<a href="List_Everett/report.md">
+<img src="List_Everett/01-page-loaded.png" width="250" alt="/List/Everett/" />
+</a>
+<br />✅ <code>/List/Everett/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="List_Pullman/report.md">
+<img src="List_Pullman/01-page-loaded.png" width="250" alt="/List/Pullman/" />
+</a>
+<br />✅ <code>/List/Pullman/</code>
+</td>
+<td align="center" width="33%">
+<a href="List_Spokane/report.md">
+<img src="List_Spokane/01-page-loaded.png" width="250" alt="/List/Spokane/" />
+</a>
+<br />✅ <code>/List/Spokane/</code>
+</td>
+<td align="center" width="33%">
+<a href="List_TriCities/report.md">
+<img src="List_TriCities/01-page-loaded.png" width="250" alt="/List/TriCities/" />
+</a>
+<br />✅ <code>/List/TriCities/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="List_Vancouver/report.md">
+<img src="List_Vancouver/01-page-loaded.png" width="250" alt="/List/Vancouver/" />
+</a>
+<br />✅ <code>/List/Vancouver/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

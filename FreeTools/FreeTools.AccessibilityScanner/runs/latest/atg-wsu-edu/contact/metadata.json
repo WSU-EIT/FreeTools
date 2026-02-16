@@ -3,9 +3,9 @@
   "Url": "https://atg.wsu.edu/contact/",
   "FinalUrl": "https://atg.wsu.edu/contact-us/",
   "Title": "Contact Us | Office of the Attorney General | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 37781,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 55534,
   "ScreenshotSizeBytes": 48522,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -23,6 +23,15 @@
   "ImagesMissingAlt": 0,
   "Images": [],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:33.2077135Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:13:06 GMT",
+    "etag": "\u0022e80496d5adbacaa71d18395c7e8e466b\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:13:06 GMT",
+    "link": "\u003Chttps://atg.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://atg.wsu.edu/wp-json/wp/v2/pages/25\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://atg.wsu.edu/?p=25\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:13:05.8589535Z"
 }

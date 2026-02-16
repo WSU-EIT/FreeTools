@@ -1,96 +1,85 @@
-# Site Report: https://index.wsu.edu/
+# 🌐 Site Report: https://index.wsu.edu/
+
+> **Status:** ✅ 6/6 pages OK  
+> **Folder:** `index-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 1 |
+| Pages Passed | ✅ 6 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | ✅ 0 |
 | Total HTML | 1.2 MB |
 | Total Screenshots | 1.3 MB |
-| Total Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| Folder | `index-wsu-edu/` |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU A-Z Index \| Washington State Uni... | 1 | 0 | 0 |
-| ❌ | [/?c=A](_qc-A/report.md) | 0 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
-| ❌ | [/?c=B](_qc-B/report.md) | 0 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
-| ❌ | [/?c=C](_qc-C/report.md) | 0 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
-| ❌ | [/?c=D](_qc-D/report.md) | 0 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
-| ❌ | [/?c=E](_qc-E/report.md) | 0 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
+| ✅ | [/?c=A](_qc-A/report.md) | 200 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
+| ✅ | [/?c=B](_qc-B/report.md) | 200 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
+| ✅ | [/?c=C](_qc-C/report.md) | 200 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
+| ✅ | [/?c=D](_qc-D/report.md) | 200 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
+| ✅ | [/?c=E](_qc-E/report.md) | 200 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/?c=A](_qc-A/report.md)
-
-![/?c=A](_qc-A/01-page-loaded.png)
-
-### [/?c=B](_qc-B/report.md)
-
-![/?c=B](_qc-B/01-page-loaded.png)
-
-### [/?c=C](_qc-C/report.md)
-
-![/?c=C](_qc-C/01-page-loaded.png)
-
-### [/?c=D](_qc-D/report.md)
-
-![/?c=D](_qc-D/01-page-loaded.png)
-
-### [/?c=E](_qc-E/report.md)
-
-![/?c=E](_qc-E/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://index.wsu.edu/
-- **Status:** 0
-
-### /?c=A
-
-- **URL:** https://index.wsu.edu/?c=A
-- **Status:** 0
-
-### /?c=B
-
-- **URL:** https://index.wsu.edu/?c=B
-- **Status:** 0
-
-### /?c=C
-
-- **URL:** https://index.wsu.edu/?c=C
-- **Status:** 0
-
-### /?c=D
-
-- **URL:** https://index.wsu.edu/?c=D
-- **Status:** 0
-
-### /?c=E
-
-- **URL:** https://index.wsu.edu/?c=E
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="_qc-A/report.md">
+<img src="_qc-A/01-page-loaded.png" width="250" alt="/?c=A" />
+</a>
+<br />✅ <code>/?c=A</code>
+</td>
+<td align="center" width="33%">
+<a href="_qc-B/report.md">
+<img src="_qc-B/01-page-loaded.png" width="250" alt="/?c=B" />
+</a>
+<br />✅ <code>/?c=B</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="_qc-C/report.md">
+<img src="_qc-C/01-page-loaded.png" width="250" alt="/?c=C" />
+</a>
+<br />✅ <code>/?c=C</code>
+</td>
+<td align="center" width="33%">
+<a href="_qc-D/report.md">
+<img src="_qc-D/01-page-loaded.png" width="250" alt="/?c=D" />
+</a>
+<br />✅ <code>/?c=D</code>
+</td>
+<td align="center" width="33%">
+<a href="_qc-E/report.md">
+<img src="_qc-E/01-page-loaded.png" width="250" alt="/?c=E" />
+</a>
+<br />✅ <code>/?c=E</code>
+</td>
+</tr>
+</table>
 
 ---
 

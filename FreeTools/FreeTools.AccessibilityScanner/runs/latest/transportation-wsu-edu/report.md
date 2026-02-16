@@ -1,79 +1,79 @@
-# Site Report: https://transportation.wsu.edu/
+# 🌐 Site Report: https://transportation.wsu.edu/
+
+> **Status:** ✅ 5/5 pages OK  
+> **Folder:** `transportation-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 0 |
-| Pages Failed | 5 |
+| Pages Passed | ✅ 5 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
-| Total JS Warnings | 3 |
-| Total HTML | 150.2 KB |
-| Total Screenshots | 584.6 KB |
-| Total Images | 8 (1.8 MB) |
-| Images Missing Alt | 0 |
-| Folder | `transportation-wsu-edu/` |
+| Total JS Warnings | 5 |
+| Total Images | 9 (1.9 MB) |
+| Images Missing Alt | ⚠️ 1 |
+| Total HTML | 327.1 KB |
+| Total Screenshots | 2.2 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/bike/](bike/report.md) | 0 | Bike_Ped_Plan \| Transportation Servi... | 0 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact \| Transportation Services \|... | 0 | 5 | 0 |
-| ❌ | [/parking/](parking/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/transit/](transit/report.md) | 0 | Transit Options \| Transportation Ser... | 0 | 3 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Transportation Services \| Washington... | 0 | 0 | 0 |
+| ✅ | [/bike/](bike/report.md) | 200 | Bike_Ped_Plan \| Transportation Servi... | 0 | 0 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact \| Transportation Services \|... | 0 | 5 | 0 |
+| ✅ | [/parking/](parking/report.md) | 200 | Parking \| Transportation Services \|... | 0 | 1 | ⚠️ 1 |
+| ✅ | [/transit/](transit/report.md) | 200 | Transit Options \| Transportation Ser... | 0 | 3 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/bike/](bike/report.md)
+Click any thumbnail to view the full page report.
 
-![/bike/](bike/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/transit/](transit/report.md)
-
-![/transit/](transit/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://transportation.wsu.edu/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
-
-### /parking/
-
-- **URL:** https://transportation.wsu.edu/parking/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
-
-### /transit/
-
-- **URL:** https://transportation.wsu.edu/transit/
-- **Status:** 0
-
-### /bike/
-
-- **URL:** https://transportation.wsu.edu/bike/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://transportation.wsu.edu/contact/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="bike/report.md">
+<img src="bike/01-page-loaded.png" width="250" alt="/bike/" />
+</a>
+<br />✅ <code>/bike/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="parking/report.md">
+<img src="parking/01-page-loaded.png" width="250" alt="/parking/" />
+</a>
+<br />✅ <code>/parking/</code>
+</td>
+<td align="center" width="33%">
+<a href="transit/report.md">
+<img src="transit/01-page-loaded.png" width="250" alt="/transit/" />
+</a>
+<br />✅ <code>/transit/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

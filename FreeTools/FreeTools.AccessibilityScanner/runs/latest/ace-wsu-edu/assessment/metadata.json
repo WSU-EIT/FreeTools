@@ -3,9 +3,9 @@
   "Url": "https://ace.wsu.edu/assessment/",
   "FinalUrl": "https://ace.wsu.edu/assessment-archives/",
   "Title": "Assessment Archives | Office of Assessment for Curricular Effectiveness | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 77105,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 84638,
   "ScreenshotSizeBytes": 410721,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -23,6 +23,15 @@
   "ImagesMissingAlt": 0,
   "Images": [],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:20.0241542Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:10:09 GMT",
+    "etag": "\u0022de5a64ae08b2c5230c1c48e253dcde80\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:10:09 GMT",
+    "link": "\u003Chttps://ace.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ace.wsu.edu/wp-json/wp/v2/pages/11341\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ace.wsu.edu/?p=11341\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:10:09.5149233Z"
 }

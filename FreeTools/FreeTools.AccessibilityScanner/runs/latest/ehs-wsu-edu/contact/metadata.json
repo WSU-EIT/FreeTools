@@ -3,10 +3,10 @@
   "Url": "https://ehs.wsu.edu/contact/",
   "FinalUrl": "https://ehs.wsu.edu/contact-information/",
   "Title": "Contact Us | Environmental Health \u0026 Safety | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 252180,
-  "ScreenshotSizeBytes": 717727,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 260795,
+  "ScreenshotSizeBytes": 1199728,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,12 +15,12 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 717727
+      "FileSize": 1199728
     }
   ],
-  "ImageCount": 11,
-  "ImagesTotalSizeBytes": 3069752,
-  "ImagesMissingAlt": 10,
+  "ImageCount": 12,
+  "ImagesTotalSizeBytes": 3879251,
+  "ImagesMissingAlt": 11,
   "Images": [
     {
       "FileName": "image-1.png",
@@ -83,6 +83,12 @@
       "FileSize": 448181
     },
     {
+      "FileName": "image-9-792x792.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/10/image-9-792x792.png",
+      "AltText": "",
+      "FileSize": 809499
+    },
+    {
       "FileName": "Jessica-Profile-792x799.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/06/Jessica-Profile-792x799.jpg",
       "AltText": "",
@@ -90,6 +96,15 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:51.723475Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:16:06 GMT",
+    "etag": "\u00220717362b01e92664b0551cc178a80517\u0022",
+    "last-modified": "Mon, 16 Feb 2026 21:53:51 GMT",
+    "link": "\u003Chttps://ehs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ehs.wsu.edu/wp-json/wp/v2/pages/500\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ehs.wsu.edu/?p=500\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:16:06.3950933Z"
 }

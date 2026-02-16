@@ -1,57 +1,56 @@
-# Site Report: https://maps.wsu.edu/
+# 🌐 Site Report: https://maps.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `maps-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
-| Total JS Errors | 2 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 73.3 KB |
-| Total Screenshots | 368.4 KB |
 | Total Images | 5 (1.2 MB) |
-| Images Missing Alt | 5 |
-| Folder | `maps-wsu-edu/` |
+| Images Missing Alt | ⚠️ 5 |
+| Total HTML | 78.6 KB |
+| Total Screenshots | 816.1 KB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Maps \| Washington State University | 2 | 5 | 5 |
-| ❌ | [/pullman/](pullman/report.md) | 0 | Pullman Campus \| WSU Maps \| Washing... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | WSU Maps \| Washington State University | 0 | 5 | ⚠️ 5 |
+| ✅ | [/pullman/](pullman/report.md) | 200 | Pullman Campus \| WSU Maps \| Washing... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/pullman/](pullman/report.md)
-
-![/pullman/](pullman/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://maps.wsu.edu/
-- **Status:** 0
-
-### /pullman/
-
-- **URL:** https://maps.wsu.edu/pullman/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (2 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="pullman/report.md">
+<img src="pullman/01-page-loaded.png" width="250" alt="/pullman/" />
+</a>
+<br />✅ <code>/pullman/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

@@ -1,64 +1,77 @@
-# Site Report: https://honors.wsu.edu/
+# 🌐 Site Report: https://honors.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `honors-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
-| Total JS Errors | 6 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 4 |
 | Total JS Warnings | 0 |
-| Total HTML | 156.8 KB |
-| Total Screenshots | 1.9 MB |
-| Total Images | 13 (232.3 KB) |
-| Images Missing Alt | 13 |
-| Folder | `honors-wsu-edu/` |
+| Total Images | 15 (3.4 MB) |
+| Images Missing Alt | ⚠️ 15 |
+| Total HTML | 177.7 KB |
+| Total Screenshots | 2.6 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | The Honors College \| Washington Stat... | 4 | 12 | 12 |
-| ❌ | [/about/](about/report.md) | 0 | Why Honors \| The Honors College \| W... | 2 | 1 | 1 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | The Honors College \| Washington Stat... | 🔴 2 | 12 | ⚠️ 12 |
+| ✅ | [/about/](about/report.md) | 200 | Why Honors \| The Honors College \| W... | 🔴 2 | 3 | ⚠️ 3 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
-### [/about/](about/report.md)
+## 🔴 JavaScript Errors
 
-![/about/](about/01-page-loaded.png)
+<details>
+<summary><strong>4 error(s) across 2 page(s)</strong></summary>
 
+**/** (2 errors)
 
-## Failed Pages
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 404 ()
+```
 
-### /
+**/about/** (2 errors)
 
-- **URL:** https://honors.wsu.edu/
-- **Status:** 0
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 404 ()
+```
 
-### /about/
-
-- **URL:** https://honors.wsu.edu/about/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (4 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /about/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
-
+</details>
 
 ---
 

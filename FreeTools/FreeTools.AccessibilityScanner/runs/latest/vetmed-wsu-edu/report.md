@@ -1,69 +1,73 @@
-# Site Report: https://vetmed.wsu.edu/
+# 🌐 Site Report: https://vetmed.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `vetmed-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 1 |
+| Total Images | 44 (9.3 MB) |
+| Images Missing Alt | ⚠️ 2 |
 | Total HTML | 1.0 MB |
-| Total Screenshots | 5.6 MB |
-| Total Images | 43 (8.0 MB) |
-| Images Missing Alt | 2 |
-| Folder | `vetmed-wsu-edu/` |
+| Total Screenshots | 5.9 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | College of Veterinary Medicine \| Was... | 0 | 12 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | About \| College of Veterinary Medici... | 0 | 4 | 0 |
-| ❌ | [/education/](education/report.md) | 0 | Education \| College of Veterinary Me... | 0 | 7 | 0 |
-| ❌ | [/research/](research/report.md) | 0 | Research \| College of Veterinary Med... | 0 | 20 | 2 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | College of Veterinary Medicine \| Was... | 0 | 13 | 0 |
+| ✅ | [/about/](about/report.md) | 200 | About \| College of Veterinary Medici... | 0 | 4 | 0 |
+| ✅ | [/education/](education/report.md) | 200 | Education \| College of Veterinary Me... | 0 | 7 | 0 |
+| ✅ | [/research/](research/report.md) | 200 | Research \| College of Veterinary Med... | 0 | 20 | ⚠️ 2 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/education/](education/report.md)
-
-![/education/](education/01-page-loaded.png)
-
-### [/research/](research/report.md)
-
-![/research/](research/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://vetmed.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://vetmed.wsu.edu/about/
-- **Status:** 0
-
-### /education/
-
-- **URL:** https://vetmed.wsu.edu/education/
-- **Status:** 0
-
-### /research/
-
-- **URL:** https://vetmed.wsu.edu/research/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="education/report.md">
+<img src="education/01-page-loaded.png" width="250" alt="/education/" />
+</a>
+<br />✅ <code>/education/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

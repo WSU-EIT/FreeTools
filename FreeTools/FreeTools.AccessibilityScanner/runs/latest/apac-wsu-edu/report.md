@@ -1,77 +1,88 @@
-# Site Report: https://apac.wsu.edu/
+# 🌐 Site Report: https://apac.wsu.edu/
+
+> **Status:** ✅ 3/3 pages OK  
+> **Folder:** `apac-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/3 pages OK |
 | Pages Scanned | 3 |
-| Pages Passed | 0 |
-| Pages Failed | 3 |
-| Total JS Errors | 6 |
+| Pages Passed | ✅ 3 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 4 |
 | Total JS Warnings | 0 |
-| Total HTML | 187.7 KB |
-| Total Screenshots | 791.8 KB |
 | Total Images | 6 (805.8 KB) |
-| Images Missing Alt | 3 |
-| Folder | `apac-wsu-edu/` |
+| Images Missing Alt | ⚠️ 3 |
+| Total HTML | 222.5 KB |
+| Total Screenshots | 2.0 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Administrative Professional Advisory ... | 2 | 6 | 3 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact \| Administrative Professiona... | 2 | 0 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | Resources for APs \| Administrative P... | 2 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Administrative Professional Advisory ... | 🔴 2 | 6 | ⚠️ 3 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact \| Administrative Professiona... | 🔴 1 | 0 | 0 |
+| ✅ | [/resources/](resources/report.md) | 200 | Resources for APs \| Administrative P... | 🔴 1 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.png" width="250" alt="/resources/" />
+</a>
+<br />✅ <code>/resources/</code>
+</td>
+</tr>
+</table>
 
-### [/contact/](contact/report.md)
+## 🔴 JavaScript Errors
 
-![/contact/](contact/01-page-loaded.png)
+<details>
+<summary><strong>4 error(s) across 3 page(s)</strong></summary>
 
-### [/resources/](resources/report.md)
+**/** (2 errors)
 
-![/resources/](resources/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 404 ()
+Failed to load resource: the server responded with a status of 404 ()
+```
 
+**/resources/** (1 errors)
 
-## Failed Pages
+```
+Failed to load resource: the server responded with a status of 404 ()
+```
 
-### /
+**/contact/** (1 errors)
 
-- **URL:** https://apac.wsu.edu/
-- **Status:** 0
+```
+Failed to load resource: the server responded with a status of 404 ()
+```
 
-### /resources/
-
-- **URL:** https://apac.wsu.edu/resources/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://apac.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (2 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /resources/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /contact/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
-
+</details>
 
 ---
 

@@ -1,68 +1,62 @@
-# Site Report: https://online.wsu.edu/
+# 🌐 Site Report: https://online.wsu.edu/
+
+> **Status:** ✅ 3/3 pages OK  
+> **Folder:** `online-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/3 pages OK |
 | Pages Scanned | 3 |
-| Pages Passed | 0 |
-| Pages Failed | 3 |
-| Total JS Errors | 3 |
+| Pages Passed | ✅ 3 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 1 |
-| Total HTML | 206.8 KB |
-| Total Screenshots | 2.4 MB |
-| Total Images | 9 (900.1 KB) |
-| Images Missing Alt | 0 |
-| Folder | `online-wsu-edu/` |
+| Total Images | 10 (2.2 MB) |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 233.7 KB |
+| Total Screenshots | 2.9 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Global Campus \| Washington State... | 3 | 3 | 0 |
-| ❌ | [/admissions/](admissions/report.md) | 0 | Apply to WSU Global Campus \| WSU Glo... | 0 | 6 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| WSU Global Campus \| Wa... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | WSU Global Campus \| Washington State... | 0 | 4 | 0 |
+| ✅ | [/admissions/](admissions/report.md) | 200 | Apply to WSU Global Campus \| WSU Glo... | 0 | 6 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| WSU Global Campus \| Wa... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/admissions/](admissions/report.md)
-
-![/admissions/](admissions/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://online.wsu.edu/
-- **Status:** 0
-
-### /admissions/
-
-- **URL:** https://online.wsu.edu/admissions/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://online.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (3 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="admissions/report.md">
+<img src="admissions/01-page-loaded.png" width="250" alt="/admissions/" />
+</a>
+<br />✅ <code>/admissions/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+</table>
 
 ---
 

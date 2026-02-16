@@ -15,7 +15,7 @@
     <link rel="stylesheet" id="wsu_design_system_css-css" media="all" href="https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/wsu-design-system.css">
     <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-2SK9Y0XXMP&amp;cx=c&amp;gtm=4e62b1h1"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-CFV4Y78L3N&amp;cx=c&amp;gtm=4e62b1h1"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-T266HC2L"></script><script id="wsu_design_system_js_init-js" src="https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/wsu-design-system.init.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="/css/wsuStyles.css?v=abe099271ebb49b3b1ef567a0d68839a">
+    <link rel="stylesheet" type="text/css" href="/css/wsuStyles.css?v=b740854091e04b609956fab90d1f089a">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/da9cb2f29a.js"></script><style media="all" id="fa-kit-upload"></style><style media="all" id="fa-v4-font-face">/*!
  * Font Awesome Pro 6.7.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Commercial License)
@@ -102,7 +102,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="/scripts/colorbox/colorbox.css">
     <link rel="stylesheet" type="text/css" href="/scripts/fancybox/jquery.fancybox.css">
-    <link rel="stylesheet" type="text/css" href="/css/base.css?v=abe099271ebb49b3b1ef567a0d68839a">
+    <link rel="stylesheet" type="text/css" href="/css/base.css?v=b740854091e04b609956fab90d1f089a">
     <link rel="stylesheet" type="text/css" href="/css/print.css">    
     <script integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
@@ -462,11 +462,11 @@
         function ssoSetRequestHeaders(xhr) {
         }
     </script>
-</head>
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
 <body id="body-element" data-bs-theme="">
     <div class="wsu-wrapper-global">
-        <a class="wsu-skip-to-main" href="#wsu-site-menu">Skip to menu</a>
-        <a class="wsu-skip-to-main" href="#wsu-content">Skip to content</a>
+        <a class="wsu-skip-to-main" href="https://registrar.wsu.edu/sessions/#wsu-site-menu">Skip to menu</a>
+        <a class="wsu-skip-to-main" href="https://registrar.wsu.edu/sessions/#wsu-content">Skip to content</a>
             <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T266HC2L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -605,7 +605,7 @@
         <!-- Standard Navigation Menu -->
         <div id="wsu-navigation-vertical" class="wsu-slide-in-panel  wsu-navigation-vertical wsu-slide-in-panel--position-left wsu-slide-in-panel--overlay-none wsu-slide-in-panel--position-left wsu-slide-in-panel--width-vertical-nav wsu-slide-in-panel--style-crimson-mark" aria-expanded="true" aria-haspopup="true" aria-label="Site menu">
             <div class="wsu-slide-in-panel__panel ">
-                <div class="wsu-slide-in-panel__panel-inner">
+                <div class="wsu-slide-in-panel__panel-inner" style="padding-top: 60px;">
                     <div class="wsu-navigation-vertical__menu-wrapper">
                             
                           <ul id="wsu-site-menu" class="wsu-menu wsu-menu--primary-vertical">
@@ -1210,4 +1210,205 @@
         </div>
 
         <script src="_content/MudBlazor/MudBlazor.min.js"></script>
-        <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script></div></body></html>
+        <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+        <script src="/_framework/blazor.server.js"></script>
+
+        <script type="text/javascript">
+            function ConsoleLog(message, objects) {
+                if (objects != undefined && objects != null) {
+                    if (message != undefined && message != null && message != "") {
+                        console.log(message, objects);
+                    } else {
+                        console.log(objects);
+                    }
+                } else if (message != undefined && message != null && message != "") {
+                    console.log(message);
+                }
+            }
+
+            function CookieRead(cname) {
+                let name = cname + "=";
+                let decodedCookie = decodeURIComponent(document.cookie);
+                let ca = decodedCookie.split(';');
+
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+
+                return "";
+            }
+
+            function CookieWrite(name, value, days) {
+                var expires;
+
+                if (days == undefined || days == null || days < 1) {
+                    days = 14;
+                }
+
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toGMTString();
+                } else {
+                    expires = "";
+                }
+
+                var setDomain = "";
+                if (window.cookieDomain != "") {
+                    setDomain = "; domain=" + window.cookieDomain;
+                }
+
+                document.cookie = name + "=" + value + expires + setDomain + "; path=/";
+            }
+
+            function CopyToClipboard(value) {
+                navigator.clipboard.writeText(value);
+            }
+
+            function DelayedFocus(element) {
+                setTimeout(() => DelayedFocusInternal(element, 0), 100);
+            }
+
+            function DelayedFocusInternal(element, safety) {
+                if (safety > 20) { return; }
+                safety++;
+
+                if ($("#" + element).is(":visible") == true) {
+                    // See if the element is a <div>. If so, find the first child that is an input.
+                    if ($("#" + element).is("div")) {
+                        var input = $("#" + element).find('input,textarea,select').filter(":visible:first");
+                        if (input != null) {
+                            input.trigger("focus");
+                        }
+                    } else {
+                        $("#" + element).trigger("focus");
+                    }
+                } else {
+                    setTimeout(() => DelayedFocusInternal(element, safety), 20);
+                }
+            }
+
+            function DelayedSelect(element) {
+                setTimeout(() => DelayedSelectInternal(element, 0), 100);
+            }
+
+            function DelayedSelectInternal(element, safety) {
+                if (safety > 20) { return; }
+                safety++;
+
+                if ($("#" + element).is(":visible") == true) {
+                    $("#" + element).trigger("select");
+                } else {
+                    setTimeout(() => DelayedSelectInternal(element, safety), 20);
+                }
+            }
+
+            async function DownloadFileFromStream(fileName, contentStreamReference) {
+                const arrayBuffer = await contentStreamReference.arrayBuffer();
+                const blob = new Blob([arrayBuffer]);
+                const url = URL.createObjectURL(blob);
+                const anchorElement = document.createElement('a');
+                anchorElement.href = url;
+                anchorElement.download = fileName ?? '';
+                anchorElement.click();
+                anchorElement.remove();
+                URL.revokeObjectURL(url);
+            }
+
+            function GetAjaxBase() {
+                var output = "";
+
+                if (window.ajaxBase != undefined && window.ajaxBase != null) {
+                    output += window.ajaxBase;
+                }
+
+                return output;
+            }
+
+            function HighlightElementByClass(c) {
+                $("." + c).off("click");
+                $("." + c).on("click", function () {
+                    RemoveElementHighlightByClass(c);
+                });
+                $("." + c).addClass("highlight");
+
+                $("." + c).fadeOut(200)
+                    .fadeIn(200)
+                    .fadeOut(200)
+                    .fadeIn(200)
+                    .fadeOut(200)
+                    .fadeIn(200);
+            }
+
+            function NavigateTo(url) {
+                window.location.href = url;
+            }
+
+            function ReloadCurrentPage() {
+                window.location.href = window.location.href;
+            }
+
+            function RemoveElementHighlightByClass(c) {
+                $("." + c).off("click");
+                $("." + c).removeClass("highlight");
+            }
+
+            function SetElementValue(id, value) {
+                $("#" + id).val(value);
+            }
+
+            function SetTheme(theme){
+                $("#main-theme-icon").removeClass();
+
+                switch(theme){
+                    case "light":
+                        $("#main-theme-icon").addClass("fa-regular fa-sun");
+                        CookieWrite("umbraco-wsu-spine-theme", "light");
+                        break;
+
+                    case "dark":
+                        $("#main-theme-icon").addClass("fa-solid fa-moon");
+                        CookieWrite("umbraco-wsu-spine-theme", "dark");
+                        break;
+
+                    default:
+                        $("#main-theme-icon").addClass("fa-solid fa-circle-half-stroke");
+                        CookieWrite("umbraco-wsu-spine-theme", "auto");
+                        break;
+                }
+
+                UpdateTheme();
+            }
+
+            function UpdateTheme(){
+                var theme = CookieRead("umbraco-wsu-spine-theme");
+
+                if(theme == "" || theme == "auto"){
+                    var colorScheme = getComputedStyle(document.body, ':after').content;
+                    theme = colorScheme.indexOf("dark") > -1 ? "dark" : "light";
+                }
+
+                if(theme == "dark"){
+                    $("#body-element").attr("data-bs-theme", "dark");
+                    $("#body-element").addClass("dark");
+                }else{
+                    $("#body-element").attr("data-bs-theme", "");
+                    $("#body-element").removeClass();
+                }
+
+                $("#body-element").removeClass("loading");
+            }
+        </script>
+    </div>
+    <script id="wsu_design_system_js-js" src="https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/wsu-design-system.js?ver=1.11.0-1.31.6"></script>
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" aria-label="Previous" id="cboxPrevious"></button><button type="button" aria-label="Next" id="cboxNext"></button><button type="button" aria-label="Slideshow" id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div></body></html>

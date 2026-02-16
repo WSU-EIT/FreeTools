@@ -3,10 +3,10 @@
   "Url": "https://studentaffairs.vancouver.wsu.edu/",
   "FinalUrl": null,
   "Title": "Student Affairs - WSU Vancouver - WSU Vancouver",
-  "StatusCode": 0,
-  "Success": false,
+  "StatusCode": 200,
+  "Success": true,
   "HtmlSizeBytes": 43390,
-  "ScreenshotSizeBytes": 679319,
+  "ScreenshotSizeBytes": 1426655,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,12 +15,12 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 679319
+      "FileSize": 1426655
     }
   ],
-  "ImageCount": 3,
-  "ImagesTotalSizeBytes": 124604,
-  "ImagesMissingAlt": 1,
+  "ImageCount": 4,
+  "ImagesTotalSizeBytes": 378654,
+  "ImagesMissingAlt": 2,
   "Images": [
     {
       "FileName": "wsu-vancouver-horizontal-logo-rgb.svg",
@@ -35,6 +35,12 @@
       "FileSize": 7922
     },
     {
+      "FileName": "students-walking-03-2400x1200.jpg",
+      "SourceUrl": "https://studentaffairs.vancouver.wsu.edu/files/hero/2019-05/students-walking-03-2400x1200.jpg",
+      "AltText": "",
+      "FileSize": 254050
+    },
+    {
       "FileName": "butch-waving-flag-900x750.jpg",
       "SourceUrl": "https://studentaffairs.vancouver.wsu.edu/files/2019-05/butch-waving-flag-900x750.jpg",
       "AltText": "",
@@ -42,6 +48,23 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4736552Z"
+  "Headers": {
+    "cache-control": "max-age=3600, public",
+    "content-encoding": "gzip",
+    "content-language": "en",
+    "content-length": "9688",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Wed, 11 Feb 2026 18:18:43 GMT",
+    "etag": "\u00221771239080-gzip\u0022",
+    "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+    "last-modified": "Mon, 16 Feb 2026 10:51:20 GMT",
+    "server": "Apache/2.4.62 (Debian)",
+    "vary": "Cookie,Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-drupal-cache": "HIT",
+    "x-drupal-dynamic-cache": "HIT",
+    "x-frame-options": "SAMEORIGIN",
+    "x-generator": "Drupal 10 (https://www.drupal.org)"
+  },
+  "CapturedAt": "2026-02-16T22:13:03.5104242Z"
 }

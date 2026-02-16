@@ -1,109 +1,133 @@
-# Site Report: https://pharmacy.wsu.edu/
+# 🌐 Site Report: https://pharmacy.wsu.edu/
+
+> **Status:** ✅ 5/5 pages OK  
+> **Folder:** `pharmacy-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 2 |
-| Pages Failed | 3 |
-| Total JS Errors | 94 |
+| Pages Passed | ✅ 5 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 92 |
 | Total JS Warnings | 0 |
+| Total Images | 55 (37.5 MB) |
+| Images Missing Alt | ⚠️ 35 |
 | Total HTML | 1.6 MB |
-| Total Screenshots | 6.4 MB |
-| Total Images | 45 (18.7 MB) |
-| Images Missing Alt | 26 |
-| Folder | `pharmacy-wsu-edu/` |
+| Total Screenshots | 6.6 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Pharmacy and Pharmaceutical Sciences ... | 0 | 13 | 8 |
-| ❌ | [/about/](about/report.md) | 0 | About the College \| Pharmacy and Pha... | 4 | 9 | 6 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Pharmacy and Pharmaceut... | 4 | 0 | 0 |
-| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty Experts Index \| Pharmacy and... | 82 | 0 | 0 |
-| ❌ | [/research/](research/report.md) | 0 | Research \| Pharmacy and Pharmaceutic... | 4 | 23 | 12 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Pharmacy and Pharmaceutical Sciences ... | 🔴 4 | 20 | ⚠️ 14 |
+| ✅ | [/about/](about/report.md) | 200 | About the College \| Pharmacy and Pha... | 🔴 4 | 11 | ⚠️ 8 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Pharmacy and Pharmaceut... | 🔴 4 | 0 | 0 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty Experts Index \| Pharmacy and... | 🔴 76 | 0 | 0 |
+| ✅ | [/research/](research/report.md) | 200 | Research \| Pharmacy and Pharmaceutic... | 🔴 4 | 24 | ⚠️ 13 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
-### [/about/](about/report.md)
+## 🔴 JavaScript Errors
 
-![/about/](about/01-page-loaded.png)
+<details>
+<summary><strong>92 error(s) across 5 page(s)</strong></summary>
 
-### [/contact/](contact/report.md)
+**/faculty/** (76 errors)
 
-![/contact/](contact/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=julie.akers&university-organization=college-of-pharmacy&photo-size=medium' from origin 'https://pharmacy.wsu....
+... and 71 more (see faculty/errors.log)
+```
 
-### [/faculty/](faculty/report.md)
+**/** (4 errors)
 
-![/faculty/](faculty/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### [/research/](research/report.md)
+**/about/** (4 errors)
 
-![/research/](research/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+```
 
+**/research/** (4 errors)
 
-## Failed Pages
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### /
+**/contact/** (4 errors)
 
-- **URL:** https://pharmacy.wsu.edu/
-- **Status:** 0
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### /about/
-
-- **URL:** https://pharmacy.wsu.edu/about/
-- **Status:** 0
-
-### /research/
-
-- **URL:** https://pharmacy.wsu.edu/research/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /faculty/ (82 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=salah.ahmed,%20mary.paine&...`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list...`
-- `Access to fetch at 'https://people.wsu.edu/wp-json/peopleapi/v1/people?count=10&page=1&nid=julie.akers&university-org...`
-- `Failed to load resource: net::ERR_FAILED`
-- `TypeError: Failed to fetch
-    at new G (https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/standalone/people-list...`
-- ... and 72 more (see `faculty/errors.log`)
-
-### /about/ (4 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /research/ (4 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /contact/ (4 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-
+</details>
 
 ---
 

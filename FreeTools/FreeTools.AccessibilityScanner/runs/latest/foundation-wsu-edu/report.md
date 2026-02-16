@@ -1,69 +1,73 @@
-# Site Report: https://foundation.wsu.edu/
+# 🌐 Site Report: https://foundation.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `foundation-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 3 |
-| Total HTML | 1019.7 KB |
-| Total Screenshots | 4.4 MB |
-| Total Images | 56 (9.2 MB) |
-| Images Missing Alt | 28 |
-| Folder | `foundation-wsu-edu/` |
+| Total Images | 58 (10.8 MB) |
+| Images Missing Alt | ⚠️ 30 |
+| Total HTML | 1.0 MB |
+| Total Screenshots | 5.1 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Foundation \| Washington State Un... | 0 | 11 | 4 |
-| ❌ | [/give/](give/report.md) | 0 | Make A Gift Today! \| WSU Foundation ... | 0 | 9 | 3 |
-| ❌ | [/impact/](impact/report.md) | 0 | Impact Report 2025 \| WSU Foundation ... | 0 | 21 | 15 |
-| ❌ | [/ways-to-give/](ways-to-give/report.md) | 0 | Ways to Give \| WSU Foundation \| Was... | 0 | 15 | 6 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | WSU Foundation \| Washington State Un... | 0 | 13 | ⚠️ 6 |
+| ✅ | [/give/](give/report.md) | 200 | Make A Gift Today! \| WSU Foundation ... | 0 | 9 | ⚠️ 3 |
+| ✅ | [/impact/](impact/report.md) | 200 | Impact Report 2025 \| WSU Foundation ... | 0 | 21 | ⚠️ 15 |
+| ✅ | [/ways-to-give/](ways-to-give/report.md) | 200 | Ways to Give \| WSU Foundation \| Was... | 0 | 15 | ⚠️ 6 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/give/](give/report.md)
-
-![/give/](give/01-page-loaded.png)
-
-### [/impact/](impact/report.md)
-
-![/impact/](impact/01-page-loaded.png)
-
-### [/ways-to-give/](ways-to-give/report.md)
-
-![/ways-to-give/](ways-to-give/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://foundation.wsu.edu/
-- **Status:** 0
-
-### /give/
-
-- **URL:** https://foundation.wsu.edu/give/
-- **Status:** 0
-
-### /ways-to-give/
-
-- **URL:** https://foundation.wsu.edu/ways-to-give/
-- **Status:** 0
-
-### /impact/
-
-- **URL:** https://foundation.wsu.edu/impact/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="give/report.md">
+<img src="give/01-page-loaded.png" width="250" alt="/give/" />
+</a>
+<br />✅ <code>/give/</code>
+</td>
+<td align="center" width="33%">
+<a href="impact/report.md">
+<img src="impact/01-page-loaded.png" width="250" alt="/impact/" />
+</a>
+<br />✅ <code>/impact/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="ways-to-give/report.md">
+<img src="ways-to-give/01-page-loaded.png" width="250" alt="/ways-to-give/" />
+</a>
+<br />✅ <code>/ways-to-give/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

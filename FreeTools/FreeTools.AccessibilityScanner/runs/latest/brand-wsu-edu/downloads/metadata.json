@@ -3,9 +3,9 @@
   "Url": "https://brand.wsu.edu/downloads/",
   "FinalUrl": null,
   "Title": "Downloads \u2013 Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 72279,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 73072,
   "ScreenshotSizeBytes": 354241,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -78,6 +78,16 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T21:00:32.7131161Z"
+  "Headers": {
+    "access-control-allow-origin": "*",
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:13:32 GMT",
+    "etag": "\u002261014a5ea68195e499fa3e2e55183f92\u0022",
+    "last-modified": "Mon, 16 Feb 2026 21:20:11 GMT",
+    "link": "\u003Chttps://brand.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://brand.wsu.edu/wp-json/wp/v2/pages/133\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://brand.wsu.edu/?p=133\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:13:32.4387593Z"
 }

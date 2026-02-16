@@ -1,61 +1,127 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://adarp.wsu.edu/  
+> **Captured:** 2026-02-16 22:10:08 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://adarp.wsu.edu/ |
 | Title | ADARP | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 49.4 KB |
-| Screenshots | 1 (534.5 KB) |
+| Status | ✅ 200 |
+| HTML Size | 61.0 KB |
+| Screenshots | 1 (687.9 KB) |
 | Images | 3 (283.2 KB) |
-| Images Missing Alt | 3 |
-| JS Errors | 0 |
+| Images Missing Alt | ⚠️ 3 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:58:42.4233324Z |
+| Captured | 2026-02-16T22:10:08.6740471Z |
 
-## Actions
+## 🔧 Actions
 
-- Screenshot #1: page-loaded (534.5 KB)
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
+
+- Screenshot #1: page-loaded (687.9 KB)
 - Downloaded 3 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>687.9 KB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (3)
 
-## Page Images (3)
+<details open>
+<summary><strong>📋 Image Index</strong> — 3 images, 283.2 KB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
-| 1 | [HomepageGraphic-753px.jpg](images/HomepageGraphic-753px.jpg) | *(none)* | 75.2 KB |
-| 2 | [Rita-Fuchs-cropped-2025-792x1085.jpg](images/Rita-Fuchs-cropped-2025-792x1085.jpg) | *(none)* | 101.9 KB |
-| 3 | [Amanda-Tanner-1-792x1025.jpg](images/Amanda-Tanner-1-792x1025.jpg) | *(none)* | 106.1 KB |
+|--:|-------|----------|-----:|
+| 1 | [HomepageGraphic-753px.jpg](images/HomepageGraphic-753px.jpg) | ⚠️ *(missing)* | 75.2 KB |
+| 2 | [Rita-Fuchs-cropped-2025-792x1085.jpg](images/Rita-Fuchs-cropped-2025-792x1085.jpg) | ⚠️ *(missing)* | 101.9 KB |
+| 3 | [Amanda-Tanner-1-792x1025.jpg](images/Amanda-Tanner-1-792x1025.jpg) | ⚠️ *(missing)* | 106.1 KB |
 
-### Gallery
+</details>
 
-![HomepageGraphic-753px.jpg](images/HomepageGraphic-753px.jpg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![Rita-Fuchs-cropped-2025-792x1085.jpg](images/Rita-Fuchs-cropped-2025-792x1085.jpg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/HomepageGraphic-753px.jpg">
+<img src="images/HomepageGraphic-753px.jpg" width="200" alt="HomepageGraphic-753px.jpg" />
+</a>
+<br /><sub>HomepageGraphic-753px.jpg ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Rita-Fuchs-cropped-2025-792x1085.jpg">
+<img src="images/Rita-Fuchs-cropped-2025-792x1085.jpg" width="200" alt="Rita-Fuchs-cropped-2025-792x1085.jpg" />
+</a>
+<br /><sub>Rita-Fuchs-cropped-2025-792x1085.jpg ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Amanda-Tanner-1-792x1025.jpg">
+<img src="images/Amanda-Tanner-1-792x1025.jpg" width="200" alt="Amanda-Tanner-1-792x1025.jpg" />
+</a>
+<br /><sub>Amanda-Tanner-1-792x1025.jpg ⚠️</sub>
+</td>
+</tr>
+</table>
 
-![Amanda-Tanner-1-792x1025.jpg](images/Amanda-Tanner-1-792x1025.jpg)
+</details>
 
+<details>
+<summary>⚠️ <strong>Images Missing Alt Text</strong> (3)</summary>
 
-### ⚠️ Images Missing Alt Text (3)
+| Image | Source URL |
+|-------|-----------|
+| `HomepageGraphic-753px.jpg` | https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2942/2014/07/HomepageGraph... |
+| `Rita-Fuchs-cropped-2025-792x1085.jpg` | https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2942/2025/07/Rita-Fuchs-cr... |
+| `Amanda-Tanner-1-792x1025.jpg` | https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2942/2023/09/Amanda-Tanner... |
 
-- `HomepageGraphic-753px.jpg` — https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2942/2014/07/HomepageGraphic-753px.jpg
-- `Rita-Fuchs-cropped-2025-792x1085.jpg` — https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2942/2025/07/Rita-Fuchs-cropped-2025-792x1085.jpg
-- `Amanda-Tanner-1-792x1025.jpg` — https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2942/2023/09/Amanda-Tanner-1-792x1025.jpg
+</details>
 
-## Files
+## 📁 Files
 
-- `01-page-loaded.png` — page-loaded (534.5 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 3 page images (283.2 KB)
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (687.9 KB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 3 page images (283.2 KB) |
+
+---
+
+*Generated by AccessibilityScanner (FreeTools) v1.0*

@@ -3,30 +3,66 @@
   "Url": "https://wsu.edu/",
   "FinalUrl": null,
   "Title": "Washington State University | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 191672,
-  "ScreenshotSizeBytes": 2742692,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 215530,
+  "ScreenshotSizeBytes": 6068990,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2742692
+      "FileSize": 6068990
     }
   ],
-  "ImageCount": 26,
-  "ImagesTotalSizeBytes": 2976768,
-  "ImagesMissingAlt": 7,
+  "ImageCount": 38,
+  "ImagesTotalSizeBytes": 10697350,
+  "ImagesMissingAlt": 13,
   "Images": [
+    {
+      "FileName": "Campus-photo-12.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-12.jpg",
+      "AltText": "",
+      "FileSize": 1524509
+    },
+    {
+      "FileName": "Campus-photo-13.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-13.jpg",
+      "AltText": "",
+      "FileSize": 1898570
+    },
+    {
+      "FileName": "Campus-photo-14.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-14.jpg",
+      "AltText": "",
+      "FileSize": 938665
+    },
+    {
+      "FileName": "Campus-photo-16.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-16.jpg",
+      "AltText": "",
+      "FileSize": 1545510
+    },
     {
       "FileName": "Campus-photo-17-scaled-e1661442335869.jpg",
       "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Campus-photo-17-scaled-e1661442335869.jpg",
       "AltText": "",
       "FileSize": 264265
+    },
+    {
+      "FileName": "Campus-photo-15.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-15.jpg",
+      "AltText": "",
+      "FileSize": 1011640
+    },
+    {
+      "FileName": "Chris-Stokes-portrait-and-bobsled-training-run.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2026/02/Chris-Stokes-portrait-and-bobsled-training-run.jpg",
+      "AltText": "",
+      "FileSize": 455579
     },
     {
       "FileName": "WSU-DAYn-11049_3x2-scaled.jpg",
@@ -95,10 +131,16 @@
       "FileSize": 2271
     },
     {
-      "FileName": "385172962_user_image.jpg",
-      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385172962_user_image.jpg?width=100",
-      "AltText": "Profile image for wsuglobal",
-      "FileSize": 2653
+      "FileName": "385165179.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385165179.jpg?width=480",
+      "AltText": "Image posted by wsueverett to instagram",
+      "FileSize": 56544
+    },
+    {
+      "FileName": "385165179_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385165179_user_image.jpg?width=100",
+      "AltText": "Profile image for wsueverett",
+      "FileSize": 2657
     },
     {
       "FileName": "385272025.jpg",
@@ -125,6 +167,12 @@
       "FileSize": 2523
     },
     {
+      "FileName": "385191223.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385191223.jpg?width=480",
+      "AltText": "Image posted by wsupullman to instagram",
+      "FileSize": 37240
+    },
+    {
       "FileName": "385191223_user_image.jpg",
       "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385191223_user_image.jpg?width=100",
       "AltText": "Profile image for wsupullman",
@@ -143,10 +191,22 @@
       "FileSize": 2653
     },
     {
+      "FileName": "385211494.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385211494.jpg?width=480",
+      "AltText": "Image posted by wsupullman to instagram",
+      "FileSize": 126628
+    },
+    {
       "FileName": "385211494_user_image.jpg",
       "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385211494_user_image.jpg?width=100",
       "AltText": "Profile image for wsupullman",
       "FileSize": 2523
+    },
+    {
+      "FileName": "385176190.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385176190.jpg?width=480",
+      "AltText": "Image posted by wsupullman to instagram",
+      "FileSize": 58741
     },
     {
       "FileName": "385176190_user_image.jpg",
@@ -167,19 +227,46 @@
       "FileSize": 2653
     },
     {
+      "FileName": "385208067.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385208067.jpg?width=480",
+      "AltText": "Image posted by wsuglobal to instagram",
+      "FileSize": 25640
+    },
+    {
       "FileName": "385208067_user_image.jpg",
       "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385208067_user_image.jpg?width=100",
       "AltText": "Profile image for wsuglobal",
       "FileSize": 2653
     },
     {
-      "FileName": "385165179_user_image.jpg",
-      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385165179_user_image.jpg?width=100",
-      "AltText": "Profile image for wsueverett",
-      "FileSize": 2657
+      "FileName": "385172962.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385172962.jpg?width=480",
+      "AltText": "Image posted by wsuglobal to instagram",
+      "FileSize": 41316
+    },
+    {
+      "FileName": "385172962_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385172962_user_image.jpg?width=100",
+      "AltText": "Profile image for wsuglobal",
+      "FileSize": 2653
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4233071Z"
+  "Headers": {
+    "cache-control": "max-age=545, must-revalidate",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:09:18 GMT",
+    "last-modified": "Mon, 16 Feb 2026 22:08:23 GMT",
+    "link": "\u003Chttps://wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://wsu.edu/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
+    "server": "nginx",
+    "transfer-encoding": "chunked",
+    "vary": "Accept-Encoding\nCookie, Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "x-pingback": "https://wsu.edu/xmlrpc.php",
+    "x-xss-protection": "1; mode=block"
+  },
+  "CapturedAt": "2026-02-16T22:09:15.2432002Z"
 }

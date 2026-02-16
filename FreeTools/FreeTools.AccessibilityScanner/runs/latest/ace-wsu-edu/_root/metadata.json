@@ -3,9 +3,9 @@
   "Url": "https://ace.wsu.edu/",
   "FinalUrl": null,
   "Title": "Office of Assessment for Curricular Effectiveness | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 68308,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 81200,
   "ScreenshotSizeBytes": 762156,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,10 +18,16 @@
       "FileSize": 762156
     }
   ],
-  "ImageCount": 1,
-  "ImagesTotalSizeBytes": 24342,
+  "ImageCount": 2,
+  "ImagesTotalSizeBytes": 346620,
   "ImagesMissingAlt": 0,
   "Images": [
+    {
+      "FileName": "AdobeStock_380887466-scaled.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-daesa/uploads/sites/2930/2022/04/AdobeStock_380887466-scaled.jpeg",
+      "AltText": "Group of students discussing a project.",
+      "FileSize": 322278
+    },
     {
       "FileName": "featuredwebsite-NILOA-download-gray.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-daesa/uploads/sites/2930/2017/04/featuredwebsite-NILOA-download-gray.jpg",
@@ -30,6 +36,15 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4233299Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:10:03 GMT",
+    "etag": "\u0022eaf189caed35297ade9ddb008312037b\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:09:21 GMT",
+    "link": "\u003Chttps://ace.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ace.wsu.edu/wp-json/wp/v2/pages/9680\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ace.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:10:03.8080634Z"
 }

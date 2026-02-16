@@ -1,59 +1,62 @@
-# Site Report: https://news.wsu.edu/
+# 🌐 Site Report: https://news.wsu.edu/
+
+> **Status:** ✅ 3/3 pages OK  
+> **Folder:** `news-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/3 pages OK |
 | Pages Scanned | 3 |
-| Pages Passed | 0 |
-| Pages Failed | 3 |
+| Pages Passed | ✅ 3 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 782.9 KB |
-| Total Screenshots | 4.2 MB |
-| Total Images | 31 (3.6 MB) |
-| Images Missing Alt | 1 |
-| Folder | `news-wsu-edu/` |
+| Total Images | 33 (4.7 MB) |
+| Images Missing Alt | ⚠️ 1 |
+| Total HTML | 801.8 KB |
+| Total Screenshots | 3.8 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Insider \| Washington State Unive... | 0 | 11 | 1 |
-| ❌ | [/news/](news/report.md) | 0 | News Articles \| WSU Insider \| Washi... | 0 | 11 | 0 |
-| ❌ | [/press-releases/](press-releases/report.md) | 0 | Press Releases \| WSU Insider \| Wash... | 0 | 9 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | WSU Insider \| Washington State Unive... | 0 | 11 | ⚠️ 1 |
+| ✅ | [/news/](news/report.md) | 200 | News Articles \| WSU Insider \| Washi... | 0 | 11 | 0 |
+| ✅ | [/press-releases/](press-releases/report.md) | 200 | Press Releases \| WSU Insider \| Wash... | 0 | 11 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/news/](news/report.md)
-
-![/news/](news/01-page-loaded.png)
-
-### [/press-releases/](press-releases/report.md)
-
-![/press-releases/](press-releases/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://news.wsu.edu/
-- **Status:** 0
-
-### /press-releases/
-
-- **URL:** https://news.wsu.edu/press-releases/
-- **Status:** 0
-
-### /news/
-
-- **URL:** https://news.wsu.edu/news/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="news/report.md">
+<img src="news/01-page-loaded.png" width="250" alt="/news/" />
+</a>
+<br />✅ <code>/news/</code>
+</td>
+<td align="center" width="33%">
+<a href="press-releases/report.md">
+<img src="press-releases/01-page-loaded.png" width="250" alt="/press-releases/" />
+</a>
+<br />✅ <code>/press-releases/</code>
+</td>
+</tr>
+</table>
 
 ---
 

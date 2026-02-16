@@ -1,49 +1,56 @@
-# Site Report: https://genacct.wsu.edu/
+# 🌐 Site Report: https://genacct.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `genacct-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 113.7 KB |
-| Total Screenshots | 992.3 KB |
-| Total Images | 5 (1.1 MB) |
-| Images Missing Alt | 0 |
-| Folder | `genacct-wsu-edu/` |
+| Total Images | 8 (5.0 MB) |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 130.7 KB |
+| Total Screenshots | 1.2 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | University Accounting \| Washington S... | 0 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| University Accounting \... | 0 | 5 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | University Accounting \| Washington S... | 0 | 1 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| University Accounting \... | 0 | 7 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://genacct.wsu.edu/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://genacct.wsu.edu/contact/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

@@ -1,92 +1,85 @@
-# Site Report: https://school.eecs.wsu.edu/
+# 🌐 Site Report: https://school.eecs.wsu.edu/
+
+> **Status:** ✅ 6/6 pages OK  
+> **Folder:** `school-eecs-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 1 |
-| Pages Failed | 5 |
-| Total JS Errors | 2 |
+| Pages Passed | ✅ 6 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
+| Total Images | 87 (7.4 MB) |
+| Images Missing Alt | ⚠️ 70 |
 | Total HTML | 1.5 MB |
-| Total Screenshots | 6.2 MB |
-| Total Images | 86 (6.9 MB) |
-| Images Missing Alt | 70 |
-| Folder | `school-eecs-wsu-edu/` |
+| Total Screenshots | 6.3 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | School of Electrical Engineering & Co... | 2 | 12 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | School of Electrical Engineering & Co... | 0 | 13 | 0 |
 | ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| School of Electrical En... | 0 | 0 | 0 |
-| ❌ | [/faculty/](faculty/report.md) | 0 | Directory \| School of Electrical Eng... | 0 | 70 | 70 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Course Transfer Requirements... | 0 | 0 | 0 |
-| ❌ | [/research/](research/report.md) | 0 | Research \| School of Electrical Engi... | 0 | 1 | 0 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Advising \| School of E... | 0 | 3 | 0 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Directory \| School of Electrical Eng... | 0 | 70 | ⚠️ 70 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Course Transfer Requirements... | 0 | 0 | 0 |
+| ✅ | [/research/](research/report.md) | 200 | Research \| School of Electrical Engi... | 0 | 1 | 0 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Advising \| School of E... | 0 | 3 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/faculty/](faculty/report.md)
-
-![/faculty/](faculty/01-page-loaded.png)
-
-### [/graduate/](graduate/report.md)
-
-![/graduate/](graduate/01-page-loaded.png)
-
-### [/research/](research/report.md)
-
-![/research/](research/01-page-loaded.png)
-
-### [/undergraduate/](undergraduate/report.md)
-
-![/undergraduate/](undergraduate/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://school.eecs.wsu.edu/
-- **Status:** 0
-
-### /undergraduate/
-
-- **URL:** https://school.eecs.wsu.edu/undergraduate/
-- **Status:** 0
-
-### /graduate/
-
-- **URL:** https://school.eecs.wsu.edu/graduate/
-- **Status:** 0
-
-### /research/
-
-- **URL:** https://school.eecs.wsu.edu/research/
-- **Status:** 0
-
-### /faculty/
-
-- **URL:** https://school.eecs.wsu.edu/faculty/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (2 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="graduate/report.md">
+<img src="graduate/01-page-loaded.png" width="250" alt="/graduate/" />
+</a>
+<br />✅ <code>/graduate/</code>
+</td>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+<td align="center" width="33%">
+<a href="undergraduate/report.md">
+<img src="undergraduate/01-page-loaded.png" width="250" alt="/undergraduate/" />
+</a>
+<br />✅ <code>/undergraduate/</code>
+</td>
+</tr>
+</table>
 
 ---
 

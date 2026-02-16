@@ -1,65 +1,139 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://rotc.wsu.edu/  
+> **Captured:** 2026-02-16 22:14:43 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://rotc.wsu.edu/ |
 | Title | WSU Army ROTC | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 63.8 KB |
-| Screenshots | 1 (207.9 KB) |
+| Status | ✅ 200 |
+| HTML Size | 70.3 KB |
+| Screenshots | 1 (902.7 KB) |
 | Images | 4 (378.7 KB) |
-| Images Missing Alt | 4 |
-| JS Errors | 0 |
-| JS Warnings | 12 |
+| Images Missing Alt | ⚠️ 4 |
+| JS Errors | ✅ 0 |
+| JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T20:58:42.4711951Z |
+| Captured | 2026-02-16T22:14:43.7038719Z |
 
-## Actions
+## 🔧 Actions
 
-- Screenshot #1: page-loaded (207.9 KB)
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
+
+- Screenshot #1: page-loaded (902.7 KB)
 - Downloaded 4 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>902.7 KB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (4)
 
-## Page Images (4)
+<details open>
+<summary><strong>📋 Image Index</strong> — 4 images, 378.7 KB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
-| 1 | [Cougar_BN_front-1-792x601.png](images/Cougar_BN_front-1-792x601.png) | *(none)* | 350.5 KB |
-| 2 | [instagram.jpg](images/instagram.jpg) | *(none)* | 7.8 KB |
-| 3 | [f_logo_RGB-Hex-Blue_512-396x396.png](images/f_logo_RGB-Hex-Blue_512-396x396.png) | *(none)* | 11.3 KB |
-| 4 | [googlemaps-1-396x396.jpg](images/googlemaps-1-396x396.jpg) | *(none)* | 9.2 KB |
+|--:|-------|----------|-----:|
+| 1 | [Cougar_BN_front-1-792x601.png](images/Cougar_BN_front-1-792x601.png) | ⚠️ *(missing)* | 350.5 KB |
+| 2 | [instagram.jpg](images/instagram.jpg) | ⚠️ *(missing)* | 7.8 KB |
+| 3 | [f_logo_RGB-Hex-Blue_512-396x396.png](images/f_logo_RGB-Hex-Blue_512-396x396.png) | ⚠️ *(missing)* | 11.3 KB |
+| 4 | [googlemaps-1-396x396.jpg](images/googlemaps-1-396x396.jpg) | ⚠️ *(missing)* | 9.2 KB |
 
-### Gallery
+</details>
 
-![Cougar_BN_front-1-792x601.png](images/Cougar_BN_front-1-792x601.png)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![instagram.jpg](images/instagram.jpg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/Cougar_BN_front-1-792x601.png">
+<img src="images/Cougar_BN_front-1-792x601.png" width="200" alt="Cougar_BN_front-1-792x601.png" />
+</a>
+<br /><sub>Cougar_BN_front-1-792x601.png ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/instagram.jpg">
+<img src="images/instagram.jpg" width="200" alt="instagram.jpg" />
+</a>
+<br /><sub>instagram.jpg ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/f_logo_RGB-Hex-Blue_512-396x396.png">
+<img src="images/f_logo_RGB-Hex-Blue_512-396x396.png" width="200" alt="f_logo_RGB-Hex-Blue_512-396x396.png" />
+</a>
+<br /><sub>f_logo_RGB-Hex-Blue_512-396x396.png ⚠️</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/googlemaps-1-396x396.jpg">
+<img src="images/googlemaps-1-396x396.jpg" width="200" alt="googlemaps-1-396x396.jpg" />
+</a>
+<br /><sub>googlemaps-1-396x396.jpg ⚠️</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-![f_logo_RGB-Hex-Blue_512-396x396.png](images/f_logo_RGB-Hex-Blue_512-396x396.png)
+</details>
 
-![googlemaps-1-396x396.jpg](images/googlemaps-1-396x396.jpg)
+<details>
+<summary>⚠️ <strong>Images Missing Alt Text</strong> (4)</summary>
 
+| Image | Source URL |
+|-------|-----------|
+| `Cougar_BN_front-1-792x601.png` | https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/Cougar_BN_fro... |
+| `instagram.jpg` | https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/instagram.jpg |
+| `f_logo_RGB-Hex-Blue_512-396x396.png` | https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/f_logo_RGB-He... |
+| `googlemaps-1-396x396.jpg` | https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/googlemaps-1-... |
 
-### ⚠️ Images Missing Alt Text (4)
+</details>
 
-- `Cougar_BN_front-1-792x601.png` — https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/Cougar_BN_front-1-792x601.png
-- `instagram.jpg` — https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/instagram.jpg
-- `f_logo_RGB-Hex-Blue_512-396x396.png` — https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/f_logo_RGB-Hex-Blue_512-396x396.png
-- `googlemaps-1-396x396.jpg` — https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/googlemaps-1-396x396.jpg
+## 📁 Files
 
-## Files
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (902.7 KB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 4 page images (378.7 KB) |
 
-- `01-page-loaded.png` — page-loaded (207.9 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 4 page images (378.7 KB)
+---
+
+*Generated by AccessibilityScanner (FreeTools) v1.0*

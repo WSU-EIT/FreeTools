@@ -6,7 +6,7 @@
   "StatusCode": 200,
   "Success": true,
   "HtmlSizeBytes": 53783,
-  "ScreenshotSizeBytes": 550703,
+  "ScreenshotSizeBytes": 276741,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 550703
+      "FileSize": 276741
     }
   ],
   "ImageCount": 2,
@@ -38,7 +38,7 @@
   "ErrorMessage": null,
   "Headers": {
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 21:02:31 GMT",
+    "date": "Mon, 16 Feb 2026 22:21:49 GMT",
     "link": "\u003Chttps://libraries.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://libraries.wsu.edu/wp-json/wp/v2/pages/3210\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022\n\u003Chttps://libraries.wsu.edu/?p=3210\u003E; rel=shortlink",
     "server": "nginx",
     "x-content-type-options": "nosniff",
@@ -46,5 +46,5 @@
     "x-powered-by": "PHP/8.3.30",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-16T21:02:31.3356308Z"
+  "CapturedAt": "2026-02-16T22:21:48.8621064Z"
 }

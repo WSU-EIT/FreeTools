@@ -2,20 +2,67 @@
   "PagePath": "/",
   "Url": "https://livingat.wsu.edu/",
   "FinalUrl": "https://housing.wsu.edu/",
-  "Title": null,
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 0,
-  "ScreenshotSizeBytes": 0,
+  "Title": "Home",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 104002,
+  "ScreenshotSizeBytes": 3519866,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
-  "Screenshots": [],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
-  "ImagesMissingAlt": 0,
-  "Images": [],
-  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...",
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4605062Z"
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 3519866
+    }
+  ],
+  "ImageCount": 5,
+  "ImagesTotalSizeBytes": 717486,
+  "ImagesMissingAlt": 3,
+  "Images": [
+    {
+      "FileName": "ra-group-photos.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/13bnr3rf/ra-group-photos.jpg",
+      "AltText": "Join Our Team",
+      "FileSize": 105773
+    },
+    {
+      "FileName": "students-eating-hillside.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/5hiblksa/students-eating-hillside.jpg",
+      "AltText": "On Campus Eats",
+      "FileSize": 207858
+    },
+    {
+      "FileName": "streit-perham-entrance.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/en3kkbri/streit-perham-entrance.jpg",
+      "AltText": "",
+      "FileSize": 210025
+    },
+    {
+      "FileName": "chinook.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/f1mpu2jj/chinook.jpg",
+      "AltText": "",
+      "FileSize": 146772
+    },
+    {
+      "FileName": "campus-map-snippet.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/jefihek4/campus-map-snippet.jpg",
+      "AltText": "",
+      "FileSize": 47058
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 22:19:03 GMT",
+    "frame-ancestors": "self https://*.risevision.com",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=2592000",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SameOrigin"
+  },
+  "CapturedAt": "2026-02-16T22:19:03.9520685Z"
 }

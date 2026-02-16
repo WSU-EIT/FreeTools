@@ -1,97 +1,85 @@
-# Site Report: https://psychology.wsu.edu/
+# 🌐 Site Report: https://psychology.wsu.edu/
+
+> **Status:** ✅ 6/6 pages OK  
+> **Folder:** `psychology-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 2 |
+| Pages Passed | ✅ 6 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.4 MB |
-| Total Screenshots | 5.6 MB |
-| Total Images | 62 (2.4 MB) |
-| Images Missing Alt | 37 |
-| Folder | `psychology-wsu-edu/` |
+| Total Images | 64 (8.4 MB) |
+| Images Missing Alt | ⚠️ 38 |
+| Total HTML | 1.5 MB |
+| Total Screenshots | 5.9 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Department of Psychology \| Washingto... | 2 | 5 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | About \| Department of Psychology \| ... | 0 | 1 | 0 |
-| ❌ | [/clinic/](clinic/report.md) | 0 | PhD in Clinical Psychology \| Departm... | 0 | 0 | 0 |
-| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| Department of Psychology \... | 0 | 36 | 36 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | Apply for Admissions \| Department of... | 0 | 0 | 0 |
-| ❌ | [/research/](research/report.md) | 0 | Research \| Department of Psychology ... | 0 | 20 | 1 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Department of Psychology \| Washingto... | 0 | 5 | 0 |
+| ✅ | [/about/](about/report.md) | 200 | About \| Department of Psychology \| ... | 0 | 1 | 0 |
+| ✅ | [/clinic/](clinic/report.md) | 200 | PhD in Clinical Psychology \| Departm... | 0 | 0 | 0 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Department of Psychology \... | 0 | 37 | ⚠️ 37 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Apply for Admissions \| Department of... | 0 | 0 | 0 |
+| ✅ | [/research/](research/report.md) | 200 | Research \| Department of Psychology ... | 0 | 21 | ⚠️ 1 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/clinic/](clinic/report.md)
-
-![/clinic/](clinic/01-page-loaded.png)
-
-### [/faculty/](faculty/report.md)
-
-![/faculty/](faculty/01-page-loaded.png)
-
-### [/graduate/](graduate/report.md)
-
-![/graduate/](graduate/01-page-loaded.png)
-
-### [/research/](research/report.md)
-
-![/research/](research/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://psychology.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://psychology.wsu.edu/about/
-- **Status:** 0
-
-### /graduate/
-
-- **URL:** https://psychology.wsu.edu/graduate/
-- **Status:** 0
-
-### /research/
-
-- **URL:** https://psychology.wsu.edu/research/
-- **Status:** 0
-
-### /faculty/
-
-- **URL:** https://psychology.wsu.edu/faculty/
-- **Status:** 0
-
-### /clinic/
-
-- **URL:** https://psychology.wsu.edu/clinic/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (2 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="clinic/report.md">
+<img src="clinic/01-page-loaded.png" width="250" alt="/clinic/" />
+</a>
+<br />✅ <code>/clinic/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+<td align="center" width="33%">
+<a href="graduate/report.md">
+<img src="graduate/01-page-loaded.png" width="250" alt="/graduate/" />
+</a>
+<br />✅ <code>/graduate/</code>
+</td>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+</tr>
+</table>
 
 ---
 

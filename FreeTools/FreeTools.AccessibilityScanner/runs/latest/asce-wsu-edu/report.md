@@ -1,49 +1,56 @@
-# Site Report: https://asce.wsu.edu/
+# 🌐 Site Report: https://asce.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `asce-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 112.1 KB |
-| Total Screenshots | 558.7 KB |
 | Total Images | 2 (237.1 KB) |
-| Images Missing Alt | 2 |
-| Folder | `asce-wsu-edu/` |
+| Images Missing Alt | ⚠️ 2 |
+| Total HTML | 125.3 KB |
+| Total Screenshots | 1.1 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | American Society of Civil Engineers \... | 0 | 2 | 2 |
-| ❌ | [/membership/](membership/report.md) | 0 | Membership \| American Society of Civ... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | American Society of Civil Engineers \... | 0 | 2 | ⚠️ 2 |
+| ✅ | [/membership/](membership/report.md) | 200 | Membership \| American Society of Civ... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/membership/](membership/report.md)
-
-![/membership/](membership/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://asce.wsu.edu/
-- **Status:** 0
-
-### /membership/
-
-- **URL:** https://asce.wsu.edu/membership/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="membership/report.md">
+<img src="membership/01-page-loaded.png" width="250" alt="/membership/" />
+</a>
+<br />✅ <code>/membership/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

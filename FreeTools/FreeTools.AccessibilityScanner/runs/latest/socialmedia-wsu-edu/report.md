@@ -1,46 +1,50 @@
-# Site Report: https://socialmedia.wsu.edu/
+# 🌐 Site Report: https://socialmedia.wsu.edu/
+
+> **Status:** ✅ 1/1 pages OK  
+> **Folder:** `socialmedia-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
 | Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 1 |
+| Pages Passed | ✅ 1 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 46.8 KB |
-| Total Screenshots | 2.3 MB |
-| Total Images | 2 (1.1 MB) |
-| Images Missing Alt | 0 |
-| Folder | `socialmedia-wsu-edu/` |
+| Total Images | 9 (6.1 MB) |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 53.1 KB |
+| Total Screenshots | 2.5 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Social Media at WSU \| Washington Sta... | 1 | 2 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Social Media at WSU \| Washington Sta... | 0 | 9 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://socialmedia.wsu.edu/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_TIMED_OUT`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

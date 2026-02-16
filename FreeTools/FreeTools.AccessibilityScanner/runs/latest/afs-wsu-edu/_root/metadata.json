@@ -3,10 +3,10 @@
   "Url": "https://afs.wsu.edu/",
   "FinalUrl": null,
   "Title": "Agricultural and Food Systems | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 63032,
-  "ScreenshotSizeBytes": 1003613,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 230090,
+  "ScreenshotSizeBytes": 1810333,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,13 +15,25 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1003613
+      "FileSize": 1810333
     }
   ],
-  "ImageCount": 9,
-  "ImagesTotalSizeBytes": 2051561,
-  "ImagesMissingAlt": 9,
+  "ImageCount": 13,
+  "ImagesTotalSizeBytes": 5634290,
+  "ImagesMissingAlt": 13,
   "Images": [
+    {
+      "FileName": "Screenshot-2025-10-28-142129.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/23/2025/10/Screenshot-2025-10-28-142129.png",
+      "AltText": "",
+      "FileSize": 1052379
+    },
+    {
+      "FileName": "Econ-in-Africa-e1571079286701-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/23/Econ-in-Africa-e1571079286701-scaled.jpg",
+      "AltText": "",
+      "FileSize": 784738
+    },
     {
       "FileName": "20230415_124327_7C2260.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/23/20230415_124327_7C2260.jpg",
@@ -45,6 +57,12 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/23/2025/10/thumbnail_IMG_6181.jpg",
       "AltText": "",
       "FileSize": 93001
+    },
+    {
+      "FileName": "Letty-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/23/2025/05/Letty-scaled.jpg",
+      "AltText": "",
+      "FileSize": 1034496
     },
     {
       "FileName": "Colette-Casavant.jpg",
@@ -71,6 +89,12 @@
       "FileSize": 353729
     },
     {
+      "FileName": "Karen-Jordan-2-141-scaled-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/23/2025/10/Karen-Jordan-2-141-scaled-1.jpg",
+      "AltText": "",
+      "FileSize": 711116
+    },
+    {
       "FileName": "Warner-Headshot-259x300-1.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/23/2025/10/Warner-Headshot-259x300-1.jpg",
       "AltText": "",
@@ -78,6 +102,15 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4241867Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:11:07 GMT",
+    "etag": "\u00224ea86fd133773408314dafdc34507365\u0022",
+    "last-modified": "Mon, 16 Feb 2026 21:28:24 GMT",
+    "link": "\u003Chttps://afs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://afs.wsu.edu/wp-json/wp/v2/pages/494\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://afs.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx/1.24.0",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:11:07.8074854Z"
 }

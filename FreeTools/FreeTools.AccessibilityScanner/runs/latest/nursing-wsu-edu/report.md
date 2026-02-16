@@ -1,95 +1,112 @@
-# Site Report: https://nursing.wsu.edu/
+# 🌐 Site Report: https://nursing.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `nursing-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
-| Total JS Errors | 11 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 12 |
 | Total JS Warnings | 0 |
+| Total Images | 15 (2.9 MB) |
+| Images Missing Alt | ✅ 0 |
 | Total HTML | 1.0 MB |
-| Total Screenshots | 2.9 MB |
-| Total Images | 14 (761.3 KB) |
-| Images Missing Alt | 0 |
-| Folder | `nursing-wsu-edu/` |
+| Total Screenshots | 3.4 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | College of Nursing \| Washington Stat... | 2 | 10 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | About RN to BSN Day \| College of Nur... | 3 | 1 | 0 |
-| ❌ | [/admissions/](admissions/report.md) | 0 | Admissions Appeal Policy \| College o... | 3 | 1 | 0 |
-| ❌ | [/students/](students/report.md) | 0 | Students can get COVID vax or booster... | 3 | 2 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | College of Nursing \| Washington Stat... | 🔴 3 | 11 | 0 |
+| ✅ | [/about/](about/report.md) | 200 | About RN to BSN Day \| College of Nur... | 🔴 3 | 1 | 0 |
+| ✅ | [/admissions/](admissions/report.md) | 200 | Admissions Appeal Policy \| College o... | 🔴 3 | 1 | 0 |
+| ✅ | [/students/](students/report.md) | 200 | Students can get COVID vax or booster... | 🔴 3 | 2 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="admissions/report.md">
+<img src="admissions/01-page-loaded.png" width="250" alt="/admissions/" />
+</a>
+<br />✅ <code>/admissions/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="students/report.md">
+<img src="students/01-page-loaded.png" width="250" alt="/students/" />
+</a>
+<br />✅ <code>/students/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-### [/about/](about/report.md)
+## 🔴 JavaScript Errors
 
-![/about/](about/01-page-loaded.png)
+<details>
+<summary><strong>12 error(s) across 4 page(s)</strong></summary>
 
-### [/admissions/](admissions/report.md)
+**/** (3 errors)
 
-![/admissions/](admissions/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### [/students/](students/report.md)
+**/about/** (3 errors)
 
-![/students/](students/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+```
 
+**/admissions/** (3 errors)
 
-## Failed Pages
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### /
+**/students/** (3 errors)
 
-- **URL:** https://nursing.wsu.edu/
-- **Status:** 0
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### /about/
-
-- **URL:** https://nursing.wsu.edu/about/
-- **Status:** 0
-
-### /admissions/
-
-- **URL:** https://nursing.wsu.edu/admissions/
-- **Status:** 0
-
-### /students/
-
-- **URL:** https://nursing.wsu.edu/students/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /about/ (3 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /admissions/ (3 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /students/ (3 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### / (2 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+</details>
 
 ---
 

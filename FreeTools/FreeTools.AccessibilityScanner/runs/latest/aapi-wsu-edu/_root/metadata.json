@@ -2,20 +2,43 @@
   "PagePath": "/",
   "Url": "https://aapi.wsu.edu/",
   "FinalUrl": null,
-  "Title": null,
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 0,
-  "ScreenshotSizeBytes": 0,
+  "Title": "APIDA Student Center",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 58727,
+  "ScreenshotSizeBytes": 389821,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
-  "Screenshots": [],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
-  "ImagesMissingAlt": 0,
-  "Images": [],
-  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded",
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4233086Z"
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 389821
+    }
+  ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 17710,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "aapi-banner.jpg",
+      "SourceUrl": "https://aapi.wsu.edu/media/rkimkh22/aapi-banner.jpg",
+      "AltText": "",
+      "FileSize": 17710
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 22:09:18 GMT",
+    "frame-ancestors": "self https://*.risevision.com",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=2592000",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SameOrigin"
+  },
+  "CapturedAt": "2026-02-16T22:09:15.2415874Z"
 }

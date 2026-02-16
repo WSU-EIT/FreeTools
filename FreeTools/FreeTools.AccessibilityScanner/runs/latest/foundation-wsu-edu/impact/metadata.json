@@ -3,9 +3,9 @@
   "Url": "https://foundation.wsu.edu/impact/",
   "FinalUrl": "https://foundation.wsu.edu/impact-report-2025/",
   "Title": "Impact Report 2025 | WSU Foundation | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 270593,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 277112,
   "ScreenshotSizeBytes": 1479797,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -150,6 +150,16 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T21:00:42.0755273Z"
+  "Headers": {
+    "access-control-allow-origin": "*",
+    "content-encoding": "gzip",
+    "content-length": "20851",
+    "content-security-policy": "default-src * data: \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027;",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:17:12 GMT",
+    "link": "\u003Chttps://foundation.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://foundation.wsu.edu/wp-json/wp/v2/pages/22373\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://foundation.wsu.edu/?p=22373\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:17:11.7095246Z"
 }

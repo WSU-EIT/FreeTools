@@ -1,69 +1,73 @@
-# Site Report: https://ace.wsu.edu/
+# 🌐 Site Report: https://ace.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `ace-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 299.6 KB |
+| Total Images | 2 (338.5 KB) |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 335.8 KB |
 | Total Screenshots | 1.9 MB |
-| Total Images | 1 (23.8 KB) |
-| Images Missing Alt | 0 |
-| Folder | `ace-wsu-edu/` |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Office of Assessment for Curricular E... | 0 | 1 | 0 |
-| ❌ | [/accreditation/](accreditation/report.md) | 0 | Accreditation Reaffirmed by NWCCU, WS... | 0 | 0 | 0 |
-| ❌ | [/assessment/](assessment/report.md) | 0 | Assessment Archives \| Office of Asse... | 0 | 0 | 0 |
-| ❌ | [/reporting/](reporting/report.md) | 0 | Reporting Program Assessment Activiti... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Office of Assessment for Curricular E... | 0 | 2 | 0 |
+| ✅ | [/accreditation/](accreditation/report.md) | 200 | Accreditation Reaffirmed by NWCCU, WS... | 0 | 0 | 0 |
+| ✅ | [/assessment/](assessment/report.md) | 200 | Assessment Archives \| Office of Asse... | 0 | 0 | 0 |
+| ✅ | [/reporting/](reporting/report.md) | 200 | Reporting Program Assessment Activiti... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/accreditation/](accreditation/report.md)
-
-![/accreditation/](accreditation/01-page-loaded.png)
-
-### [/assessment/](assessment/report.md)
-
-![/assessment/](assessment/01-page-loaded.png)
-
-### [/reporting/](reporting/report.md)
-
-![/reporting/](reporting/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://ace.wsu.edu/
-- **Status:** 0
-
-### /assessment/
-
-- **URL:** https://ace.wsu.edu/assessment/
-- **Status:** 0
-
-### /accreditation/
-
-- **URL:** https://ace.wsu.edu/accreditation/
-- **Status:** 0
-
-### /reporting/
-
-- **URL:** https://ace.wsu.edu/reporting/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="accreditation/report.md">
+<img src="accreditation/01-page-loaded.png" width="250" alt="/accreditation/" />
+</a>
+<br />✅ <code>/accreditation/</code>
+</td>
+<td align="center" width="33%">
+<a href="assessment/report.md">
+<img src="assessment/01-page-loaded.png" width="250" alt="/assessment/" />
+</a>
+<br />✅ <code>/assessment/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="reporting/report.md">
+<img src="reporting/01-page-loaded.png" width="250" alt="/reporting/" />
+</a>
+<br />✅ <code>/reporting/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

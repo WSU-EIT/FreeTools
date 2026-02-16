@@ -1,84 +1,104 @@
-# Site Report: https://facsen.wsu.edu/
+# 🌐 Site Report: https://facsen.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `facsen-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
-| Total JS Errors | 3 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 4 |
 | Total JS Warnings | 0 |
+| Total Images | 11 (14.2 MB) |
+| Images Missing Alt | ⚠️ 11 |
 | Total HTML | 1.0 MB |
-| Total Screenshots | 1.9 MB |
-| Total Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| Folder | `facsen-wsu-edu/` |
+| Total Screenshots | 2.3 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Faculty Senate \| Washington State Un... | 0 | 0 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | About the Course Review Process \| Fa... | 1 | 0 | 0 |
-| ❌ | [/documents/](documents/report.md) | 0 | Documents \| Faculty Senate \| Washin... | 1 | 0 | 0 |
-| ❌ | [/meetings/](meetings/report.md) | 0 | 2023-2024 Faculty Senate Agendas \| F... | 1 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Faculty Senate \| Washington State Un... | 🔴 1 | 11 | ⚠️ 11 |
+| ✅ | [/about/](about/report.md) | 200 | About the Course Review Process \| Fa... | 🔴 1 | 0 | 0 |
+| ✅ | [/documents/](documents/report.md) | 200 | Documents \| Faculty Senate \| Washin... | 🔴 1 | 0 | 0 |
+| ✅ | [/meetings/](meetings/report.md) | 200 | 2023-2024 Faculty Senate Agendas \| F... | 🔴 1 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="documents/report.md">
+<img src="documents/01-page-loaded.png" width="250" alt="/documents/" />
+</a>
+<br />✅ <code>/documents/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="meetings/report.md">
+<img src="meetings/01-page-loaded.png" width="250" alt="/meetings/" />
+</a>
+<br />✅ <code>/meetings/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-### [/about/](about/report.md)
+## 🔴 JavaScript Errors
 
-![/about/](about/01-page-loaded.png)
+<details>
+<summary><strong>4 error(s) across 4 page(s)</strong></summary>
 
-### [/documents/](documents/report.md)
+**/** (1 errors)
 
-![/documents/](documents/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### [/meetings/](meetings/report.md)
+**/about/** (1 errors)
 
-![/meetings/](meetings/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
+**/meetings/** (1 errors)
 
-## Failed Pages
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### /
+**/documents/** (1 errors)
 
-- **URL:** https://facsen.wsu.edu/
-- **Status:** 0
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### /about/
-
-- **URL:** https://facsen.wsu.edu/about/
-- **Status:** 0
-
-### /meetings/
-
-- **URL:** https://facsen.wsu.edu/meetings/
-- **Status:** 0
-
-### /documents/
-
-- **URL:** https://facsen.wsu.edu/documents/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /about/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /meetings/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /documents/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
+</details>
 
 ---
 

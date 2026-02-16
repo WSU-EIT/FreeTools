@@ -3,10 +3,10 @@
   "Url": "https://hrs.wsu.edu/benefits/",
   "FinalUrl": "https://hrs.wsu.edu/employees/benefits/",
   "Title": "Benefits \u2013 Human Resource Services, Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 82487,
-  "ScreenshotSizeBytes": 361819,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 89654,
+  "ScreenshotSizeBytes": 564544,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 361819
+      "FileSize": 564544
     }
   ],
   "ImageCount": 10,
@@ -84,6 +84,13 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:54.2238599Z"
+  "Headers": {
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:18:20 GMT",
+    "link": "\u003Chttps://hrs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://hrs.wsu.edu/wp-json/wp/v2/pages/88\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022, \u003Chttps://hrs.wsu.edu/?p=88\u003E; rel=shortlink",
+    "server": "nginx/1.14.1",
+    "vary": "Cookie",
+    "x-powered-by": "PHP/8.2.29"
+  },
+  "CapturedAt": "2026-02-16T22:18:20.0245179Z"
 }

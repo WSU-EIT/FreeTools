@@ -1,59 +1,62 @@
-# Site Report: https://advance.wsu.edu/
+# 🌐 Site Report: https://advance.wsu.edu/
+
+> **Status:** ✅ 3/3 pages OK  
+> **Folder:** `advance-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/3 pages OK |
 | Pages Scanned | 3 |
-| Pages Passed | 0 |
-| Pages Failed | 3 |
+| Pages Passed | ✅ 3 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 189.3 KB |
-| Total Screenshots | 1.4 MB |
 | Total Images | 5 (146.0 KB) |
-| Images Missing Alt | 3 |
-| Folder | `advance-wsu-edu/` |
+| Images Missing Alt | ⚠️ 3 |
+| Total HTML | 219.1 KB |
+| Total Screenshots | 1.5 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | ADVANCE at WSU \| Washington State Un... | 0 | 1 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | About the Program \| ADVANCE at WSU \... | 0 | 1 | 1 |
-| ❌ | [/resources/](resources/report.md) | 0 | Resources \| ADVANCE at WSU \| Washin... | 0 | 3 | 2 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | ADVANCE at WSU \| Washington State Un... | 0 | 1 | 0 |
+| ✅ | [/about/](about/report.md) | 200 | About the Program \| ADVANCE at WSU \... | 0 | 1 | ⚠️ 1 |
+| ✅ | [/resources/](resources/report.md) | 200 | Resources \| ADVANCE at WSU \| Washin... | 0 | 3 | ⚠️ 2 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://advance.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://advance.wsu.edu/about/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://advance.wsu.edu/resources/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.png" width="250" alt="/resources/" />
+</a>
+<br />✅ <code>/resources/</code>
+</td>
+</tr>
+</table>
 
 ---
 

@@ -1,4 +1,23 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://livingat.wsu.edu/fam/  
+> **Captured:** 2026-02-16 22:19:25 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [JavaScript Errors](#-javascript-errors)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
@@ -8,57 +27,101 @@
 | HTML Size | 15.9 KB |
 | Screenshots | 1 (101.4 KB) |
 | Images | 1 (23.9 KB) |
-| Images Missing Alt | 0 |
-| JS Errors | 12 |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | 🔴 12 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T21:00:27.0623471Z |
+| Captured | 2026-02-16T22:19:25.7015257Z |
 
-## JavaScript Errors
+## 🔴 JavaScript Errors
 
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Refused to apply style from 'https://housing.wsu.edu/css/contracts/contracts.css' because its MIME type ('') is not a supported stylesheet MIME type, and strict MIME checking is enabled.`
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Refused to apply style from 'https://housing.wsu.edu/css/normalize.css' because its MIME type ('') is not a supported stylesheet MIME type, and strict MIME checking is enabled.`
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: net::ERR_NAME_NOT_RESOLVED`
-- `Refused to execute script from 'https://housing.wsu.edu/scripts/modernizr-tunes.min.js' because its MIME type ('') is not executable, and strict MIME type checking is enabled.`
-- `Refused to execute script from 'https://housing.wsu.edu/scripts/jQueryString.js' because its MIME type ('') is not executable, and strict MIME type checking is enabled.`
-- `Refused to execute script from 'https://housing.wsu.edu/scripts/Foundation%205.2.3/foundation.js' because its MIME type ('') is not executable, and strict MIME type checking is enabled.`
-- `Refused to execute script from 'https://housing.wsu.edu/scripts/Foundation%205.2.3/foundation.reveal.js' because its MIME type ('') is not executable, and strict MIME type checking is enabled.`
+<details>
+<summary><strong>12 error(s) detected</strong></summary>
 
-## Actions
+```
+Failed to load resource: the server responded with a status of 404 ()
+Refused to apply style from 'https://housing.wsu.edu/css/normalize.css' because its MIME type ('') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+Refused to apply style from 'https://housing.wsu.edu/css/contracts/contracts.css' because its MIME type ('') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+Failed to load resource: the server responded with a status of 404 ()
+Failed to load resource: the server responded with a status of 404 ()
+Failed to load resource: the server responded with a status of 404 ()
+Failed to load resource: the server responded with a status of 404 ()
+Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+Refused to execute script from 'https://housing.wsu.edu/scripts/modernizr-tunes.min.js' because its MIME type ('') is not executable, and strict MIME type checking is enabled.
+Refused to execute script from 'https://housing.wsu.edu/scripts/jQueryString.js' because its MIME type ('') is not executable, and strict MIME type checking is enabled.
+Refused to execute script from 'https://housing.wsu.edu/scripts/Foundation%205.2.3/foundation.js' because its MIME type ('') is not executable, and strict MIME type checking is enabled.
+Refused to execute script from 'https://housing.wsu.edu/scripts/Foundation%205.2.3/foundation.reveal.js' because its MIME type ('') is not executable, and strict MIME type checking is enabled.
+```
+
+</details>
+
+## 🔧 Actions
+
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
 - Screenshot #1: page-loaded (101.4 KB)
 - Downloaded 1 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>101.4 KB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (1)
 
-## Page Images (1)
+<details open>
+<summary><strong>📋 Image Index</strong> — 1 images, 23.9 KB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
+|--:|-------|----------|-----:|
 | 1 | [housing-and-res-life-horizontal_201-431-k_newlogo.png](images/housing-and-res-life-horizontal_201-431-k_newlogo.png) | header image | 23.9 KB |
 
-### Gallery
+</details>
 
-![header image](images/housing-and-res-life-horizontal_201-431-k_newlogo.png)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/housing-and-res-life-horizontal_201-431-k_newlogo.png">
+<img src="images/housing-and-res-life-horizontal_201-431-k_newlogo.png" width="200" alt="header image" />
+</a>
+<br /><sub>housing-and-res-life-horizontal_201-431-k_newlogo.png</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-## Files
+</details>
 
-- `01-page-loaded.png` — page-loaded (101.4 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 1 page images (23.9 KB)
+## 📁 Files
+
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (101.4 KB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 1 page images (23.9 KB) |
+
+---
+
+*Generated by AccessibilityScanner (FreeTools) v1.0*

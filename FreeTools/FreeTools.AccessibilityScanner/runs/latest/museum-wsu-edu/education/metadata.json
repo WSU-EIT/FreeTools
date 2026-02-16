@@ -5,7 +5,7 @@
   "Title": "Education Highlights | Jordan Schnitzer Museum of Art WSU | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 238901,
+  "HtmlSizeBytes": 238877,
   "ScreenshotSizeBytes": 2243290,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -63,12 +63,15 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 21:01:18 GMT",
-    "etag": "\u0022e94ae81532611d14c2f614ccaa357146\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:13:34 GMT",
+    "date": "Mon, 16 Feb 2026 22:20:02 GMT",
+    "etag": "\u0022b919630b0f3cd1089571210183ea0a11\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:20:02 GMT",
     "link": "\u003Chttps://museum.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://museum.wsu.edu/wp-json/wp/v2/pages/15801\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://museum.wsu.edu/?p=15801\u003E; rel=shortlink",
     "server": "nginx",
-    "vary": "Accept-Encoding"
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://museum.wsu.edu",
+    "x-tec-api-root": "https://museum.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
   },
-  "CapturedAt": "2026-02-16T21:01:17.9980571Z"
+  "CapturedAt": "2026-02-16T22:20:01.9532969Z"
 }

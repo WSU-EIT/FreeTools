@@ -1,49 +1,56 @@
-# Site Report: https://rotc.wsu.edu/
+# 🌐 Site Report: https://rotc.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `rotc-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
-| Total JS Warnings | 13 |
-| Total HTML | 196.1 KB |
-| Total Screenshots | 335.4 KB |
+| Total JS Warnings | 2 |
 | Total Images | 7 (406.8 KB) |
-| Images Missing Alt | 7 |
-| Folder | `rotc-wsu-edu/` |
+| Images Missing Alt | ⚠️ 7 |
+| Total HTML | 211.5 KB |
+| Total Screenshots | 1.0 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Army ROTC \| Washington State Uni... | 0 | 4 | 4 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| WSU Army ROTC \| Washin... | 0 | 3 | 3 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | WSU Army ROTC \| Washington State Uni... | 0 | 4 | ⚠️ 4 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| WSU Army ROTC \| Washin... | 0 | 3 | ⚠️ 3 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://rotc.wsu.edu/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://rotc.wsu.edu/contact/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

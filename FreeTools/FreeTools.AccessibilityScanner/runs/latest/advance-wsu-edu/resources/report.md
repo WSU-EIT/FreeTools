@@ -1,60 +1,126 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://advance.wsu.edu/resources/  
+> **Captured:** 2026-02-16 22:10:31 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://advance.wsu.edu/resources/ |
 | Title | Resources | ADVANCE at WSU | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 69.6 KB |
-| Screenshots | 1 (681.5 KB) |
+| Status | ✅ 200 |
+| HTML Size | 76.8 KB |
+| Screenshots | 1 (677.0 KB) |
 | Images | 3 (98.2 KB) |
-| Images Missing Alt | 2 |
-| JS Errors | 0 |
+| Images Missing Alt | ⚠️ 2 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:59:37.8705341Z |
+| Captured | 2026-02-16T22:10:31.5912166Z |
 
-## Actions
+## 🔧 Actions
 
-- Screenshot #1: page-loaded (681.5 KB)
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
+
+- Screenshot #1: page-loaded (677.0 KB)
 - Downloaded 3 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>677.0 KB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (3)
 
-## Page Images (3)
+<details open>
+<summary><strong>📋 Image Index</strong> — 3 images, 98.2 KB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
-| 1 | [General-small-145x198.png](images/General-small-145x198.png) | *(none)* | 42.4 KB |
-| 2 | [faculty-friendly-policies-small-146x198.png](images/faculty-friendly-policies-small-146x198.png) | *(none)* | 47.3 KB |
+|--:|-------|----------|-----:|
+| 1 | [General-small-145x198.png](images/General-small-145x198.png) | ⚠️ *(missing)* | 42.4 KB |
+| 2 | [faculty-friendly-policies-small-146x198.png](images/faculty-friendly-policies-small-146x198.png) | ⚠️ *(missing)* | 47.3 KB |
 | 3 | [wsu-advance-logo-2026-v2.svg](images/wsu-advance-logo-2026-v2.svg) | WSU Cougars spirit mark. ADVANCE, Was... | 8.5 KB |
 
-### Gallery
+</details>
 
-![General-small-145x198.png](images/General-small-145x198.png)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![faculty-friendly-policies-small-146x198.png](images/faculty-friendly-policies-small-146x198.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/General-small-145x198.png">
+<img src="images/General-small-145x198.png" width="200" alt="General-small-145x198.png" />
+</a>
+<br /><sub>General-small-145x198.png ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/faculty-friendly-policies-small-146x198.png">
+<img src="images/faculty-friendly-policies-small-146x198.png" width="200" alt="faculty-friendly-policies-small-146x198.png" />
+</a>
+<br /><sub>faculty-friendly-policies-small-146x198.png ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/wsu-advance-logo-2026-v2.svg">
+<img src="images/wsu-advance-logo-2026-v2.svg" width="200" alt="WSU Cougars spirit mark. ADVANCE, Washington State University." />
+</a>
+<br /><sub>wsu-advance-logo-2026-v2.svg</sub>
+</td>
+</tr>
+</table>
 
-![WSU Cougars spirit mark. ADVANCE, Washington State University.](images/wsu-advance-logo-2026-v2.svg)
+</details>
 
+<details>
+<summary>⚠️ <strong>Images Missing Alt Text</strong> (2)</summary>
 
-### ⚠️ Images Missing Alt Text (2)
+| Image | Source URL |
+|-------|-----------|
+| `General-small-145x198.png` | https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/103/2018/06/General-small-... |
+| `faculty-friendly-policies-small-146x198.png` | https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/103/2018/06/faculty-friend... |
 
-- `General-small-145x198.png` — https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/103/2018/06/General-small-145x198.png
-- `faculty-friendly-policies-small-146x198.png` — https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/103/2018/06/faculty-friendly-policies-small-146x198.png
+</details>
 
-## Files
+## 📁 Files
 
-- `01-page-loaded.png` — page-loaded (681.5 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 3 page images (98.2 KB)
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (677.0 KB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 3 page images (98.2 KB) |
+
+---
+
+*Generated by AccessibilityScanner (FreeTools) v1.0*

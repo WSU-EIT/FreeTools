@@ -5,8 +5,8 @@
   "Title": "Academics | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 256825,
-  "ScreenshotSizeBytes": 756689,
+  "HtmlSizeBytes": 263052,
+  "ScreenshotSizeBytes": 2672750,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 756689
+      "FileSize": 2672750
     }
   ],
   "ImageCount": 11,
@@ -91,5 +91,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T21:00:35.768598Z"
+  "CapturedAt": "2026-02-16T22:13:54.4227092Z"
 }

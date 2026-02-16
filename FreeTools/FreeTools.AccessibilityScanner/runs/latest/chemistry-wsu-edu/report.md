@@ -1,89 +1,96 @@
-# Site Report: https://chemistry.wsu.edu/
+# 🌐 Site Report: https://chemistry.wsu.edu/
+
+> **Status:** ✅ 7/7 pages OK  
+> **Folder:** `chemistry-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 2 |
-| Pages Failed | 5 |
+| Pages Passed | ✅ 7 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
+| Total Images | 49 (7.3 MB) |
+| Images Missing Alt | ✅ 0 |
 | Total HTML | 1.6 MB |
-| Total Screenshots | 9.5 MB |
-| Total Images | 47 (6.0 MB) |
-| Images Missing Alt | 0 |
-| Folder | `chemistry-wsu-edu/` |
+| Total Screenshots | 9.6 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Department of Chemistry \| Washington... | 0 | 6 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | Department of Chemistry \| Washington... | 0 | 6 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
+| ✅ | [/about/](about/report.md) | 200 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
 | ✅ | [/facilities/](facilities/report.md) | 200 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
 | ✅ | [/faculty/](faculty/report.md) | 200 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
-| ❌ | [/research/](research/report.md) | 0 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
+| ✅ | [/research/](research/report.md) | 200 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/facilities/](facilities/report.md)
-
-![/facilities/](facilities/01-page-loaded.png)
-
-### [/faculty/](faculty/report.md)
-
-![/faculty/](faculty/01-page-loaded.png)
-
-### [/graduate/](graduate/report.md)
-
-![/graduate/](graduate/01-page-loaded.png)
-
-### [/research/](research/report.md)
-
-![/research/](research/01-page-loaded.png)
-
-### [/undergraduate/](undergraduate/report.md)
-
-![/undergraduate/](undergraduate/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://chemistry.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://chemistry.wsu.edu/about/
-- **Status:** 0
-
-### /undergraduate/
-
-- **URL:** https://chemistry.wsu.edu/undergraduate/
-- **Status:** 0
-
-### /graduate/
-
-- **URL:** https://chemistry.wsu.edu/graduate/
-- **Status:** 0
-
-### /research/
-
-- **URL:** https://chemistry.wsu.edu/research/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="facilities/report.md">
+<img src="facilities/01-page-loaded.png" width="250" alt="/facilities/" />
+</a>
+<br />✅ <code>/facilities/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+<td align="center" width="33%">
+<a href="graduate/report.md">
+<img src="graduate/01-page-loaded.png" width="250" alt="/graduate/" />
+</a>
+<br />✅ <code>/graduate/</code>
+</td>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="undergraduate/report.md">
+<img src="undergraduate/01-page-loaded.png" width="250" alt="/undergraduate/" />
+</a>
+<br />✅ <code>/undergraduate/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

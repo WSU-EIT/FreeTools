@@ -1,98 +1,117 @@
-# Site Report: https://threatassessment.wsu.edu/
+# 🌐 Site Report: https://threatassessment.wsu.edu/
+
+> **Status:** ⚠️ 2/5 pages OK  
+> **Folder:** `threatassessment-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [████████████░░░░░░░░░░░░░░░░░░] 40%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 0 |
-| Pages Failed | 5 |
-| Total JS Errors | 4 |
-| Total JS Warnings | 0 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | ❌ 3 |
+| Total JS Errors | 🔴 3 |
+| Total JS Warnings | 3 |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | ✅ 0 |
 | Total HTML | 1.0 MB |
 | Total Screenshots | 471.6 KB |
-| Total Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| Folder | `threatassessment-wsu-edu/` |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Threat Assessment \| Washington State... | 1 | 0 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | Page not found \| Threat Assessment \... | 1 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Threat Assessment Team \| Thr... | 0 | 0 | 0 |
-| ❌ | [/report-concern/](report-concern/report.md) | 0 | Page not found \| Threat Assessment \... | 1 | 0 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| Threat Assessment \... | 1 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Threat Assessment \| Washington State... | 0 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 404 | Page not found \| Threat Assessment \... | 🔴 1 | 0 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Threat Assessment Team \| Thr... | 0 | 0 | 0 |
+| ❌ | [/report-concern/](report-concern/report.md) | 404 | Page not found \| Threat Assessment \... | 🔴 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| Threat Assessment \... | 🔴 1 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />❌ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="report-concern/report.md">
+<img src="report-concern/01-page-loaded.png" width="250" alt="/report-concern/" />
+</a>
+<br />❌ <code>/report-concern/</code>
+</td>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.png" width="250" alt="/resources/" />
+</a>
+<br />❌ <code>/resources/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
-### [/about/](about/report.md)
+## ❌ Failed Pages
 
-![/about/](about/01-page-loaded.png)
+<details open>
+<summary><strong>3 page(s) failed</strong></summary>
 
-### [/contact/](contact/report.md)
+| Page | HTTP | Error |
+|------|:----:|-------|
+| [/about/](about/report.md) | 404 | — |
+| [/report-concern/](report-concern/report.md) | 404 | — |
+| [/resources/](resources/report.md) | 404 | — |
 
-![/contact/](contact/01-page-loaded.png)
+</details>
 
-### [/report-concern/](report-concern/report.md)
+## 🔴 JavaScript Errors
 
-![/report-concern/](report-concern/01-page-loaded.png)
+<details>
+<summary><strong>3 error(s) across 3 page(s)</strong></summary>
 
-### [/resources/](resources/report.md)
+**/about/** (1 errors)
 
-![/resources/](resources/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 404 ()
+```
 
+**/report-concern/** (1 errors)
 
-## Failed Pages
+```
+Failed to load resource: the server responded with a status of 404 ()
+```
 
-### /
+**/resources/** (1 errors)
 
-- **URL:** https://threatassessment.wsu.edu/
-- **Status:** 0
+```
+Failed to load resource: the server responded with a status of 404 ()
+```
 
-### /about/
-
-- **URL:** https://threatassessment.wsu.edu/about/
-- **Status:** 0
-
-### /report-concern/
-
-- **URL:** https://threatassessment.wsu.edu/report-concern/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://threatassessment.wsu.edu/resources/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://threatassessment.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /about/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /report-concern/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /resources/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
+</details>
 
 ---
 

@@ -1,79 +1,79 @@
-# Site Report: https://hrs.wsu.edu/
+# 🌐 Site Report: https://hrs.wsu.edu/
+
+> **Status:** ✅ 5/5 pages OK  
+> **Folder:** `hrs-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 0 |
-| Pages Failed | 5 |
+| Pages Passed | ✅ 5 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 477.0 KB |
-| Total Screenshots | 4.3 MB |
-| Total Images | 24 (2.3 MB) |
-| Images Missing Alt | 15 |
-| Folder | `hrs-wsu-edu/` |
+| Total Images | 25 (2.6 MB) |
+| Images Missing Alt | ⚠️ 16 |
+| Total HTML | 482.6 KB |
+| Total Screenshots | 4.4 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Human Resource Services, Washington S... | 0 | 5 | 4 |
-| ❌ | [/benefits/](benefits/report.md) | 0 | Benefits – Human Resource Services, W... | 0 | 10 | 3 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact HRS – Human Resource Services... | 0 | 2 | 2 |
-| ❌ | [/policies/](policies/report.md) | 0 | Policies and Resources – Human Resour... | 0 | 0 | 0 |
-| ❌ | [/training/](training/report.md) | 0 | Learning & Organizational Development... | 0 | 7 | 6 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Human Resource Services, Washington S... | 0 | 6 | ⚠️ 5 |
+| ✅ | [/benefits/](benefits/report.md) | 200 | Benefits – Human Resource Services, W... | 0 | 10 | ⚠️ 3 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact HRS – Human Resource Services... | 0 | 2 | ⚠️ 2 |
+| ✅ | [/policies/](policies/report.md) | 200 | Policies and Resources – Human Resour... | 0 | 0 | 0 |
+| ✅ | [/training/](training/report.md) | 200 | Learning & Organizational Development... | 0 | 7 | ⚠️ 6 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/benefits/](benefits/report.md)
-
-![/benefits/](benefits/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/policies/](policies/report.md)
-
-![/policies/](policies/01-page-loaded.png)
-
-### [/training/](training/report.md)
-
-![/training/](training/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://hrs.wsu.edu/
-- **Status:** 0
-
-### /benefits/
-
-- **URL:** https://hrs.wsu.edu/benefits/
-- **Status:** 0
-
-### /policies/
-
-- **URL:** https://hrs.wsu.edu/policies/
-- **Status:** 0
-
-### /training/
-
-- **URL:** https://hrs.wsu.edu/training/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://hrs.wsu.edu/contact/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="benefits/report.md">
+<img src="benefits/01-page-loaded.png" width="250" alt="/benefits/" />
+</a>
+<br />✅ <code>/benefits/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="policies/report.md">
+<img src="policies/01-page-loaded.png" width="250" alt="/policies/" />
+</a>
+<br />✅ <code>/policies/</code>
+</td>
+<td align="center" width="33%">
+<a href="training/report.md">
+<img src="training/01-page-loaded.png" width="250" alt="/training/" />
+</a>
+<br />✅ <code>/training/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

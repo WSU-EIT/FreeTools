@@ -1,56 +1,144 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://admission.wsu.edu/apply/  
+> **Captured:** 2026-02-16 22:10:29 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://admission.wsu.edu/apply/ |
 | Title | Apply | Admissions | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 93.1 KB |
-| Screenshots | 1 (783.4 KB) |
-| Images | 2 (561.4 KB) |
-| Images Missing Alt | 1 |
-| JS Errors | 0 |
+| Status | ✅ 200 |
+| HTML Size | 96.0 KB |
+| Screenshots | 1 (783.8 KB) |
+| Images | 5 (7.6 MB) |
+| Images Missing Alt | ⚠️ 3 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T21:00:16.6030255Z |
+| Captured | 2026-02-16T22:10:29.5021053Z |
 
-## Actions
+## 🔧 Actions
 
-- Screenshot #1: page-loaded (783.4 KB)
-- Downloaded 2 images to /images/
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
-## Screenshots
+- Screenshot #1: page-loaded (783.8 KB)
+- Downloaded 5 images to /images/
 
-### 1. page-loaded
+</details>
 
-![page-loaded](01-page-loaded.png)
+## 📸 Screenshots
 
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>783.8 KB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
-## Page Images (2)
+## 🖼️ Page Images (5)
+
+<details open>
+<summary><strong>📋 Image Index</strong> — 5 images, 7.6 MB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
-| 1 | [Football-Keys.jpg](images/Football-Keys.jpg) | *(none)* | 181.8 KB |
-| 2 | [students-on-grass-1188x553-1.png](images/students-on-grass-1188x553-1.png) | Students talking on campus lawn | 379.6 KB |
+|--:|-------|----------|-----:|
+| 1 | [Football-Keys.jpg](images/Football-Keys.jpg) | ⚠️ *(missing)* | 181.8 KB |
+| 2 | [Business-class.jpg](images/Business-class.jpg) | ⚠️ *(missing)* | 2.5 MB |
+| 3 | [CBBRBusinessClass_2046.jpg](images/CBBRBusinessClass_2046.jpg) | ⚠️ *(missing)* | 2.4 MB |
+| 4 | [Research.jpg](images/Research.jpg) | Student doing research in a lab | 2.1 MB |
+| 5 | [students-on-grass-1188x553-1.png](images/students-on-grass-1188x553-1.png) | Students talking on campus lawn | 379.6 KB |
 
-### Gallery
+</details>
 
-![Football-Keys.jpg](images/Football-Keys.jpg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![Students talking on campus lawn](images/students-on-grass-1188x553-1.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/Football-Keys.jpg">
+<img src="images/Football-Keys.jpg" width="200" alt="Football-Keys.jpg" />
+</a>
+<br /><sub>Football-Keys.jpg ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Business-class.jpg">
+<img src="images/Business-class.jpg" width="200" alt="Business-class.jpg" />
+</a>
+<br /><sub>Business-class.jpg ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/CBBRBusinessClass_2046.jpg">
+<img src="images/CBBRBusinessClass_2046.jpg" width="200" alt="CBBRBusinessClass_2046.jpg" />
+</a>
+<br /><sub>CBBRBusinessClass_2046.jpg ⚠️</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/Research.jpg">
+<img src="images/Research.jpg" width="200" alt="Student doing research in a lab" />
+</a>
+<br /><sub>Research.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/students-on-grass-1188x553-1.png">
+<img src="images/students-on-grass-1188x553-1.png" width="200" alt="Students talking on campus lawn" />
+</a>
+<br /><sub>students-on-grass-1188x553-1.png</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+</details>
 
-### ⚠️ Images Missing Alt Text (1)
+<details>
+<summary>⚠️ <strong>Images Missing Alt Text</strong> (3)</summary>
 
-- `Football-Keys.jpg` — https://wpcdn.web.wsu.edu/wp-admission/uploads/sites/3144/2025/07/Football-Keys.jpg
+| Image | Source URL |
+|-------|-----------|
+| `Football-Keys.jpg` | https://wpcdn.web.wsu.edu/wp-admission/uploads/sites/3144/2025/07/Football-Ke... |
+| `Business-class.jpg` | https://wpcdn.web.wsu.edu/wp-admission/uploads/sites/3144/2023/01/Business-cl... |
+| `CBBRBusinessClass_2046.jpg` | https://wpcdn.web.wsu.edu/wp-admission/uploads/sites/3144/2023/01/CBBRBusines... |
 
-## Files
+</details>
 
-- `01-page-loaded.png` — page-loaded (783.4 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 2 page images (561.4 KB)
+## 📁 Files
+
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (783.8 KB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 5 page images (7.6 MB) |
+
+---
+
+*Generated by AccessibilityScanner (FreeTools) v1.0*

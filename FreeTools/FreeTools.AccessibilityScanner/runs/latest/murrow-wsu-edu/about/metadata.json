@@ -3,9 +3,9 @@
   "Url": "https://murrow.wsu.edu/about/",
   "FinalUrl": "https://murrow.wsu.edu/about-edward-r-murrow/",
   "Title": "About Edward R. Murrow | Edward R. Murrow College of Communication | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 282937,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 282969,
   "ScreenshotSizeBytes": 2419082,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -84,6 +84,15 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T21:00:42.345506Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:19:34 GMT",
+    "etag": "\u0022d7a39b46bba460fa4e5de9cae676ae3e\u0022",
+    "last-modified": "Mon, 16 Feb 2026 21:38:48 GMT",
+    "link": "\u003Chttps://murrow.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://murrow.wsu.edu/wp-json/wp/v2/pages/14595\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://murrow.wsu.edu/?p=14595\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:19:34.7248599Z"
 }

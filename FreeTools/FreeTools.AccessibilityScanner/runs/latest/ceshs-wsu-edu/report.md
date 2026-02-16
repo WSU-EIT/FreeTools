@@ -1,89 +1,110 @@
-# Site Report: https://ceshs.wsu.edu/
+# 🌐 Site Report: https://ceshs.wsu.edu/
+
+> **Status:** ✅ 5/5 pages OK  
+> **Folder:** `ceshs-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 1 |
-| Pages Failed | 4 |
-| Total JS Errors | 3 |
+| Pages Passed | ✅ 5 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 4 |
 | Total JS Warnings | 2 |
-| Total HTML | 957.0 KB |
-| Total Screenshots | 8.6 MB |
-| Total Images | 23 (3.4 MB) |
-| Images Missing Alt | 17 |
-| Folder | `ceshs-wsu-edu/` |
+| Total Images | 29 (19.4 MB) |
+| Images Missing Alt | ⚠️ 18 |
+| Total HTML | 978.8 KB |
+| Total Screenshots | 8.4 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | College of Education, Sport, and Huma... | 0 | 5 | 3 |
-| ❌ | [/about/](about/report.md) | 0 | About WSU ROAR \| College of Educatio... | 1 | 2 | 0 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us! \| College of Education, ... | 1 | 2 | 0 |
-| ❌ | [/faculty/](faculty/report.md) | 0 | Kinesiology Faculty \| College of Edu... | 1 | 14 | 14 |
-| ❌ | [/research/](research/report.md) | 0 | Log In ‹ College of Education, Sport,... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | College of Education, Sport, and Huma... | 🔴 1 | 9 | ⚠️ 4 |
+| ✅ | [/about/](about/report.md) | 200 | About WSU ROAR \| College of Educatio... | 🔴 1 | 3 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us! \| College of Education, ... | 🔴 1 | 2 | 0 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Kinesiology Faculty \| College of Edu... | 🔴 1 | 15 | ⚠️ 14 |
+| ✅ | [/research/](research/report.md) | 200 | Log In ‹ College of Education, Sport,... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
-### [/about/](about/report.md)
+## 🔴 JavaScript Errors
 
-![/about/](about/01-page-loaded.png)
+<details>
+<summary><strong>4 error(s) across 4 page(s)</strong></summary>
 
-### [/contact/](contact/report.md)
+**/** (1 errors)
 
-![/contact/](contact/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### [/faculty/](faculty/report.md)
+**/about/** (1 errors)
 
-![/faculty/](faculty/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### [/research/](research/report.md)
+**/faculty/** (1 errors)
 
-![/research/](research/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
+**/contact/** (1 errors)
 
-## Failed Pages
+```
+Failed to load resource: the server responded with a status of 405 ()
+```
 
-### /
-
-- **URL:** https://ceshs.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://ceshs.wsu.edu/about/
-- **Status:** 0
-
-### /research/
-
-- **URL:** https://ceshs.wsu.edu/research/
-- **Status:** 0
-
-### /faculty/
-
-- **URL:** https://ceshs.wsu.edu/faculty/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /about/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /faculty/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /contact/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
+</details>
 
 ---
 

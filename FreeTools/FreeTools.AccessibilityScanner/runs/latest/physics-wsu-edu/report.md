@@ -1,87 +1,79 @@
-# Site Report: https://physics.wsu.edu/
+# 🌐 Site Report: https://physics.wsu.edu/
+
+> **Status:** ✅ 5/5 pages OK  
+> **Folder:** `physics-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 0 |
-| Pages Failed | 5 |
-| Total JS Errors | 2 |
+| Pages Passed | ✅ 5 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 1 |
+| Total Images | 49 (4.6 MB) |
+| Images Missing Alt | ⚠️ 38 |
 | Total HTML | 1.1 MB |
-| Total Screenshots | 5.1 MB |
-| Total Images | 48 (3.8 MB) |
-| Images Missing Alt | 38 |
-| Folder | `physics-wsu-edu/` |
+| Total Screenshots | 4.9 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Department of Physics & Astronomy \| ... | 2 | 6 | 0 |
-| ❌ | [/astronomy/](astronomy/report.md) | 0 | Astronomy and astrophysics \| Departm... | 0 | 10 | 7 |
-| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| Department of Physics & As... | 0 | 31 | 31 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | Application \| Department of Physics ... | 0 | 0 | 0 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate labs renovation \| Depa... | 0 | 1 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Department of Physics & Astronomy \| ... | 0 | 7 | 0 |
+| ✅ | [/astronomy/](astronomy/report.md) | 200 | Astronomy and astrophysics \| Departm... | 0 | 10 | ⚠️ 7 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Department of Physics & As... | 0 | 31 | ⚠️ 31 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Application \| Department of Physics ... | 0 | 0 | 0 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate labs renovation \| Depa... | 0 | 1 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/astronomy/](astronomy/report.md)
-
-![/astronomy/](astronomy/01-page-loaded.png)
-
-### [/faculty/](faculty/report.md)
-
-![/faculty/](faculty/01-page-loaded.png)
-
-### [/graduate/](graduate/report.md)
-
-![/graduate/](graduate/01-page-loaded.png)
-
-### [/undergraduate/](undergraduate/report.md)
-
-![/undergraduate/](undergraduate/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://physics.wsu.edu/
-- **Status:** 0
-
-### /undergraduate/
-
-- **URL:** https://physics.wsu.edu/undergraduate/
-- **Status:** 0
-
-### /graduate/
-
-- **URL:** https://physics.wsu.edu/graduate/
-- **Status:** 0
-
-### /faculty/
-
-- **URL:** https://physics.wsu.edu/faculty/
-- **Status:** 0
-
-### /astronomy/
-
-- **URL:** https://physics.wsu.edu/astronomy/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (2 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="astronomy/report.md">
+<img src="astronomy/01-page-loaded.png" width="250" alt="/astronomy/" />
+</a>
+<br />✅ <code>/astronomy/</code>
+</td>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="graduate/report.md">
+<img src="graduate/01-page-loaded.png" width="250" alt="/graduate/" />
+</a>
+<br />✅ <code>/graduate/</code>
+</td>
+<td align="center" width="33%">
+<a href="undergraduate/report.md">
+<img src="undergraduate/01-page-loaded.png" width="250" alt="/undergraduate/" />
+</a>
+<br />✅ <code>/undergraduate/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

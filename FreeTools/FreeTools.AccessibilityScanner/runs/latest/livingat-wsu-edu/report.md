@@ -1,81 +1,91 @@
-# Site Report: https://livingat.wsu.edu/
+# 🌐 Site Report: https://livingat.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `livingat-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 1 |
-| Pages Failed | 3 |
-| Total JS Errors | 12 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 12 |
 | Total JS Warnings | 2 |
-| Total HTML | 72.6 KB |
-| Total Screenshots | 1.1 MB |
-| Total Images | 9 (197.1 KB) |
-| Images Missing Alt | 0 |
-| Folder | `livingat-wsu-edu/` |
+| Total Images | 14 (897.7 KB) |
+| Images Missing Alt | ⚠️ 3 |
+| Total HTML | 174.2 KB |
+| Total Screenshots | 4.4 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ✅ | [/fam/](fam/report.md) | 200 | Online Family & Graduate Housing | 12 | 1 | 0 |
-| ❌ | [/reshall/](reshall/report.md) | 0 | Home \| StarRez Portal | 0 | 4 | 0 |
-| ❌ | [/ssa/](ssa/report.md) | 0 | Home \| StarRez Portal | 0 | 4 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Home | 0 | 5 | ⚠️ 3 |
+| ✅ | [/fam/](fam/report.md) | 200 | Online Family & Graduate Housing | 🔴 12 | 1 | 0 |
+| ✅ | [/reshall/](reshall/report.md) | 200 | Home \| StarRez Portal | 0 | 4 | 0 |
+| ✅ | [/ssa/](ssa/report.md) | 200 | Home \| StarRez Portal | 0 | 4 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/fam/](fam/report.md)
+Click any thumbnail to view the full page report.
 
-![/fam/](fam/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="fam/report.md">
+<img src="fam/01-page-loaded.png" width="250" alt="/fam/" />
+</a>
+<br />✅ <code>/fam/</code>
+</td>
+<td align="center" width="33%">
+<a href="reshall/report.md">
+<img src="reshall/01-page-loaded.png" width="250" alt="/reshall/" />
+</a>
+<br />✅ <code>/reshall/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="ssa/report.md">
+<img src="ssa/01-page-loaded.png" width="250" alt="/ssa/" />
+</a>
+<br />✅ <code>/ssa/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-### [/reshall/](reshall/report.md)
+## 🔴 JavaScript Errors
 
-![/reshall/](reshall/01-page-loaded.png)
+<details>
+<summary><strong>12 error(s) across 1 page(s)</strong></summary>
 
-### [/ssa/](ssa/report.md)
+**/fam/** (12 errors)
 
-![/ssa/](ssa/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 404 ()
+Refused to apply style from 'https://housing.wsu.edu/css/normalize.css' because its MIME type ('') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+Refused to apply style from 'https://housing.wsu.edu/css/contracts/contracts.css' because its MIME type ('') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+Failed to load resource: the server responded with a status of 404 ()
+Failed to load resource: the server responded with a status of 404 ()
+... and 7 more (see fam/errors.log)
+```
 
-
-## Failed Pages
-
-### /
-
-- **URL:** https://livingat.wsu.edu/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
-
-### /reshall/
-
-- **URL:** https://livingat.wsu.edu/reshall/
-- **Status:** 0
-
-### /ssa/
-
-- **URL:** https://livingat.wsu.edu/ssa/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /fam/ (12 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Refused to apply style from 'https://housing.wsu.edu/css/contracts/contracts.css' because its MIME type ('') is not a...`
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Refused to apply style from 'https://housing.wsu.edu/css/normalize.css' because its MIME type ('') is not a supported...`
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: net::ERR_NAME_NOT_RESOLVED`
-- `Refused to execute script from 'https://housing.wsu.edu/scripts/modernizr-tunes.min.js' because its MIME type ('') is...`
-- `Refused to execute script from 'https://housing.wsu.edu/scripts/jQueryString.js' because its MIME type ('') is not ex...`
-- ... and 2 more (see `fam/errors.log`)
-
+</details>
 
 ---
 

@@ -5,17 +5,17 @@
   "Title": "Department of Apparel, Merchandising, Design and Textiles | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 221942,
-  "ScreenshotSizeBytes": 1104395,
+  "HtmlSizeBytes": 237211,
+  "ScreenshotSizeBytes": 509873,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 4,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1104395
+      "FileSize": 509873
     }
   ],
   "ImageCount": 8,
@@ -73,5 +73,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4386494Z"
+  "CapturedAt": "2026-02-16T22:11:16.8511366Z"
 }

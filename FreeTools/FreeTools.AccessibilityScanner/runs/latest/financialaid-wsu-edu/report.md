@@ -1,68 +1,62 @@
-# Site Report: https://financialaid.wsu.edu/
+# 🌐 Site Report: https://financialaid.wsu.edu/
+
+> **Status:** ✅ 3/3 pages OK  
+> **Folder:** `financialaid-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/3 pages OK |
 | Pages Scanned | 3 |
-| Pages Passed | 0 |
-| Pages Failed | 3 |
-| Total JS Errors | 3 |
+| Pages Passed | ✅ 3 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 709.8 KB |
-| Total Screenshots | 2.8 MB |
-| Total Images | 21 (7.3 MB) |
-| Images Missing Alt | 0 |
-| Folder | `financialaid-wsu-edu/` |
+| Total Images | 26 (10.3 MB) |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 731.7 KB |
+| Total Screenshots | 4.5 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Student Financial Services \| Washing... | 3 | 8 | 0 |
-| ❌ | [/apply/](apply/report.md) | 0 | Apply for Aid \| Student Financial Se... | 0 | 6 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Page \| Student Financial Ser... | 0 | 7 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Student Financial Services \| Washing... | 0 | 10 | 0 |
+| ✅ | [/apply/](apply/report.md) | 200 | Apply for Aid \| Student Financial Se... | 0 | 9 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Page \| Student Financial Ser... | 0 | 7 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/apply/](apply/report.md)
-
-![/apply/](apply/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://financialaid.wsu.edu/
-- **Status:** 0
-
-### /apply/
-
-- **URL:** https://financialaid.wsu.edu/apply/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://financialaid.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (3 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_CONNECTION_TIMED_OUT`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="apply/report.md">
+<img src="apply/01-page-loaded.png" width="250" alt="/apply/" />
+</a>
+<br />✅ <code>/apply/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+</table>
 
 ---
 

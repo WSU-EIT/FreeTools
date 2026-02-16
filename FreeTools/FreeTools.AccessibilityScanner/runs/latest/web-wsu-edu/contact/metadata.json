@@ -3,12 +3,12 @@
   "Url": "https://web.wsu.edu/contact/",
   "FinalUrl": null,
   "Title": "Contact Web Communication | Web Communication | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 219677,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 226143,
   "ScreenshotSizeBytes": 156360,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -23,6 +23,21 @@
   "ImagesMissingAlt": 0,
   "Images": [],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T21:00:11.7398369Z"
+  "Headers": {
+    "access-control-allow-origin": "*",
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:11:37 GMT",
+    "etag": "\u002223b8306dbe06a27f6d3de0b2392bf430\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:11:37 GMT",
+    "link": "\u003Chttps://web.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://web.wsu.edu/wp-json/wp/v2/pages/53\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://web.wsu.edu/?p=53\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache": "EXPIRED",
+    "x-cache-status": "EXPIRED",
+    "x-tec-api-origin": "https://web.wsu.edu",
+    "x-tec-api-root": "https://web.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-16T22:11:37.3045618Z"
 }

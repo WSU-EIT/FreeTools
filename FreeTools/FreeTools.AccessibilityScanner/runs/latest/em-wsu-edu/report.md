@@ -1,81 +1,108 @@
-# Site Report: https://em.wsu.edu/
+# 🌐 Site Report: https://em.wsu.edu/
+
+> **Status:** ⚠️ 0/4 pages OK  
+> **Folder:** `em-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
-| Total JS Errors | 3 |
-| Total JS Warnings | 1 |
-| Total HTML | 2.5 MB |
-| Total Screenshots | 674.2 KB |
+| Pages Passed | ✅ 0 |
+| Pages Failed | ❌ 4 |
+| Total JS Errors | 🔴 4 |
+| Total JS Warnings | 4 |
 | Total Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| Folder | `em-wsu-edu/` |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 2.5 MB |
+| Total Screenshots | 668.5 KB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Enrollment Management | 2 | 0 | 0 |
-| ❌ | [/eit/](eit/report.md) | 0 | Enrollment IT | 0 | 0 | 0 |
-| ❌ | [/re411/](re411/report.md) | 0 | Registration & Enrollment 411 | 1 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ❌ | [/](_root/report.md) | 0 | Enrollment Management | 🔴 2 | 0 | 0 |
+| ❌ | [/eit/](eit/report.md) | 0 | Enrollment IT | 🔴 2 | 0 | 0 |
+| ❌ | [/re411/](re411/report.md) | 0 | Registration & Enrollment 411 | 0 | 0 | 0 |
 | ❌ | [/rr411/](rr411/report.md) | 0 | Registration & Enrollment 411 | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />❌ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="eit/report.md">
+<img src="eit/01-page-loaded.png" width="250" alt="/eit/" />
+</a>
+<br />❌ <code>/eit/</code>
+</td>
+<td align="center" width="33%">
+<a href="re411/report.md">
+<img src="re411/01-page-loaded.png" width="250" alt="/re411/" />
+</a>
+<br />❌ <code>/re411/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="rr411/report.md">
+<img src="rr411/01-page-loaded.png" width="250" alt="/rr411/" />
+</a>
+<br />❌ <code>/rr411/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-### [/eit/](eit/report.md)
+## ❌ Failed Pages
 
-![/eit/](eit/01-page-loaded.png)
+<details open>
+<summary><strong>4 page(s) failed</strong></summary>
 
-### [/re411/](re411/report.md)
+| Page | HTTP | Error |
+|------|:----:|-------|
+| [/](_root/report.md) | 0 | — |
+| [/eit/](eit/report.md) | 0 | — |
+| [/re411/](re411/report.md) | 0 | — |
+| [/rr411/](rr411/report.md) | 0 | — |
 
-![/re411/](re411/01-page-loaded.png)
+</details>
 
-### [/rr411/](rr411/report.md)
+## 🔴 JavaScript Errors
 
-![/rr411/](rr411/01-page-loaded.png)
+<details>
+<summary><strong>4 error(s) across 2 page(s)</strong></summary>
 
+**/** (2 errors)
 
-## Failed Pages
+```
+Access to XMLHttpRequest at 'https://api.oneorigin.us/p-cs/ref?required=y' from origin 'https://em.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the r...
+Failed to load resource: net::ERR_FAILED
+```
 
-### /
+**/eit/** (2 errors)
 
-- **URL:** https://em.wsu.edu/
-- **Status:** 0
+```
+Access to XMLHttpRequest at 'https://api.oneorigin.us/p-cs/ref?required=y' from origin 'https://em.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the r...
+Failed to load resource: net::ERR_FAILED
+```
 
-### /eit/
-
-- **URL:** https://em.wsu.edu/eit/
-- **Status:** 0
-
-### /re411/
-
-- **URL:** https://em.wsu.edu/re411/
-- **Status:** 0
-
-### /rr411/
-
-- **URL:** https://em.wsu.edu/rr411/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (2 errors)
-
-- `Access to XMLHttpRequest at 'https://api.oneorigin.us/p-cs/ref?required=y' from origin 'https://em.wsu.edu' has been ...`
-- `Failed to load resource: net::ERR_FAILED`
-
-### /re411/ (1 errors)
-
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
-
+</details>
 
 ---
 

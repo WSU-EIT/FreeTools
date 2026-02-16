@@ -1,78 +1,93 @@
-# Site Report: https://business.wsu.edu/
+# 🌐 Site Report: https://business.wsu.edu/
+
+> **Status:** ✅ 3/3 pages OK  
+> **Folder:** `business-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/3 pages OK |
 | Pages Scanned | 3 |
-| Pages Passed | 0 |
-| Pages Failed | 3 |
-| Total JS Errors | 7 |
+| Pages Passed | ✅ 3 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 9 |
 | Total JS Warnings | 0 |
-| Total HTML | 571.6 KB |
+| Total Images | 26 (2.8 MB) |
+| Images Missing Alt | ⚠️ 15 |
+| Total HTML | 585.3 KB |
 | Total Screenshots | 3.5 MB |
-| Total Images | 25 (2.5 MB) |
-| Images Missing Alt | 14 |
-| Folder | `business-wsu-edu/` |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Home - Carson College of Business \| ... | 3 | 14 | 9 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Placements - Carson College ... | 2 | 4 | 1 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Academic Advising - Carson College of... | 2 | 7 | 4 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Home - Carson College of Business \| ... | 🔴 5 | 15 | ⚠️ 10 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Placements - Carson College ... | 🔴 2 | 4 | ⚠️ 1 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Academic Advising - Carson College of... | 🔴 2 | 7 | ⚠️ 4 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="graduate/report.md">
+<img src="graduate/01-page-loaded.png" width="250" alt="/graduate/" />
+</a>
+<br />✅ <code>/graduate/</code>
+</td>
+<td align="center" width="33%">
+<a href="undergraduate/report.md">
+<img src="undergraduate/01-page-loaded.png" width="250" alt="/undergraduate/" />
+</a>
+<br />✅ <code>/undergraduate/</code>
+</td>
+</tr>
+</table>
 
-### [/graduate/](graduate/report.md)
+## 🔴 JavaScript Errors
 
-![/graduate/](graduate/01-page-loaded.png)
+<details>
+<summary><strong>9 error(s) across 3 page(s)</strong></summary>
 
-### [/undergraduate/](undergraduate/report.md)
+**/** (5 errors)
 
-![/undergraduate/](undergraduate/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 404 ()
+```
 
+**/undergraduate/** (2 errors)
 
-## Failed Pages
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 404 ()
+```
 
-### /
+**/graduate/** (2 errors)
 
-- **URL:** https://business.wsu.edu/
-- **Status:** 0
+```
+Failed to load resource: the server responded with a status of 405 ()
+Failed to load resource: the server responded with a status of 404 ()
+```
 
-### /undergraduate/
-
-- **URL:** https://business.wsu.edu/undergraduate/
-- **Status:** 0
-
-### /graduate/
-
-- **URL:** https://business.wsu.edu/graduate/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (3 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /undergraduate/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /graduate/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
-
+</details>
 
 ---
 

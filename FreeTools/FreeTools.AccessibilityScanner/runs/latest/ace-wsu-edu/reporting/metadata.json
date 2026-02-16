@@ -3,9 +3,9 @@
   "Url": "https://ace.wsu.edu/reporting/",
   "FinalUrl": "https://ace.wsu.edu/2020/01/29/reporting-program-assessment-activities-in-activity-insight-for-faculty-annual-review/",
   "Title": "Reporting Program Assessment Activities in Activity Insight for Faculty Annual Review | Office of Assessment for Curricular Effectiveness | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 83364,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 91286,
   "ScreenshotSizeBytes": 448958,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -23,6 +23,15 @@
   "ImagesMissingAlt": 0,
   "Images": [],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:54.4136398Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:10:22 GMT",
+    "etag": "\u0022da11e8ddc7d876d0e5eab38045c63950\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:10:22 GMT",
+    "link": "\u003Chttps://ace.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ace.wsu.edu/wp-json/wp/v2/posts/8385\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ace.wsu.edu/?p=8385\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:10:22.376667Z"
 }

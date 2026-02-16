@@ -3,10 +3,10 @@
   "Url": "https://murrow.wsu.edu/",
   "FinalUrl": null,
   "Title": "Edward R. Murrow College of Communication | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 294362,
-  "ScreenshotSizeBytes": 521913,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 304362,
+  "ScreenshotSizeBytes": 2855847,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,18 +15,54 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 521913
+      "FileSize": 2855847
     }
   ],
-  "ImageCount": 40,
-  "ImagesTotalSizeBytes": 5896383,
-  "ImagesMissingAlt": 3,
+  "ImageCount": 46,
+  "ImagesTotalSizeBytes": 20295277,
+  "ImagesMissingAlt": 9,
   "Images": [
     {
       "FileName": "COM-540-9.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/10/COM-540-9.jpg",
       "AltText": "Students working on laptops in the Communication 540 class.",
       "FileSize": 589062
+    },
+    {
+      "FileName": "News-Desk-1920x1200-1.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/05/News-Desk-1920x1200-1.png",
+      "AltText": "",
+      "FileSize": 2799262
+    },
+    {
+      "FileName": "BPJ-Greece-1920x1200-1.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/05/BPJ-Greece-1920x1200-1.png",
+      "AltText": "",
+      "FileSize": 2989888
+    },
+    {
+      "FileName": "Spring-Break-LA-1920x1200-1.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/05/Spring-Break-LA-1920x1200-1.png",
+      "AltText": "",
+      "FileSize": 2700550
+    },
+    {
+      "FileName": "Murrow-Standard-2.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/06/Murrow-Standard-2.png",
+      "AltText": "",
+      "FileSize": 1974220
+    },
+    {
+      "FileName": "NYC-2025_Bruce-w-Students.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/05/NYC-2025_Bruce-w-Students.png",
+      "AltText": "",
+      "FileSize": 2640663
+    },
+    {
+      "FileName": "WOWACK202517-1920x710-1.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/09/WOWACK202517-1920x710-1.png",
+      "AltText": "",
+      "FileSize": 1294311
     },
     {
       "FileName": "Experiential-Learning-Card-2.jpg",
@@ -173,7 +209,7 @@
       "FileSize": 142882
     },
     {
-      "FileName": "image-26.jpg",
+      "FileName": "image-32.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/05/girl-using-laptop-computer-from-home-while-studyin-2025-02-21-15-25-57-utc-scaled.jpg",
       "AltText": "",
       "FileSize": 395026
@@ -264,6 +300,15 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4635669Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:19:23 GMT",
+    "etag": "\u00222ec3c261f10d8476250638210682c583\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:01:46 GMT",
+    "link": "\u003Chttps://murrow.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://murrow.wsu.edu/wp-json/wp/v2/pages/14171\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://murrow.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:19:23.6350475Z"
 }

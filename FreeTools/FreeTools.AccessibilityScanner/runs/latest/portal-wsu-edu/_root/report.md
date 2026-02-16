@@ -1,61 +1,123 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://portal.wsu.edu/  
+> **Captured:** 2026-02-16 22:16:29 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [JavaScript Errors](#-javascript-errors)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://portal.wsu.edu/ |
-| Redirected To | https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7&redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse&response_type=code&scope=openid%20profile%20sis.prd.groups&state=ErxdndjWOflSWH3VV09kBvnTUyAlJMpOOvbF794jy4q0quN4TDYbDgCb56Iye6al9VOKMO1W%2B1ueGVrE5DWo4BgyD1NojAxe0kt%2F6%2FaG0ET%2Bv2YcVEOvXbfvBtHbqSFHlWQ6POVmkGn5UVfrLKT1jFatyoYvaWXeTXd1Vrdbn5KUvy1DpzYwJ6gNKKzlXKR8RuVysH%2FTThfcUTxpllWV4hUdvrUpTfLY0ln6AZ3zVVmgPNviRw%3D%3D |
+| Redirected To | https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7&redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse&response_type=code&scope=openid%20profile%20sis.prd.groups&state=MNxgh1z%2FynLfOQrfqjKwEBRuU5xlLH0EM37GYX%2FC2ShC43L%2FTfhC003V%2B6gYhkZGOqkURd3Wf0Yg4gu42By6Y0U0MYZ3FjpaZ%2FW27aAb5JpoxFGt3t8UMxpPyyiqfq2h%2B5kVfgEnddzjlXInj%2FpMrCdfiQSWyuGnz3W9iMboUj6uBI%2B5hr3Dctgum%2FcXX31WXNJSn1q6ACR2KFmuRuDI1JpFDxRjJg4lIt8vJPEcUifRA2A1JQ%3D%3D |
 | Title | WSU | Sign In |
-| Status | ❌ 0 |
+| Status | ✅ 200 |
 | HTML Size | 140.5 KB |
-| Screenshots | 1 (33.9 KB) |
+| Screenshots | 1 (60.4 KB) |
 | Images | 1 (7.7 KB) |
-| Images Missing Alt | 0 |
-| JS Errors | 8 |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | 🔴 7 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:58:42.4685488Z |
+| Captured | 2026-02-16T22:16:29.6997538Z |
 
-## JavaScript Errors
+## 🔴 JavaScript Errors
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
-- `No available ports. Loopback server failed and polling is cancelled.`
+<details>
+<summary><strong>7 error(s) detected</strong></summary>
 
-## Actions
+```
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+Something unexpected happened while we were checking url http://127.0.0.1:65131
+Something unexpected happened while we were checking url http://127.0.0.1:65141
+Something unexpected happened while we were checking url http://127.0.0.1:65151
+No available ports. Loopback server failed and polling is cancelled.
+```
 
-- Screenshot #1: page-loaded (33.9 KB)
+</details>
+
+## 🔧 Actions
+
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
+
+- Screenshot #1: page-loaded (60.4 KB)
 - Downloaded 1 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>60.4 KB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (1)
 
-## Page Images (1)
+<details open>
+<summary><strong>📋 Image Index</strong> — 1 images, 7.7 KB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
+|--:|-------|----------|-----:|
 | 1 | [fs015xh0tygNgGVxX2p8.img](images/fs015xh0tygNgGVxX2p8.img) | WSU logo | 7.7 KB |
 
-### Gallery
+</details>
 
-![WSU logo](images/fs015xh0tygNgGVxX2p8.img)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/fs015xh0tygNgGVxX2p8.img">
+<img src="images/fs015xh0tygNgGVxX2p8.img" width="200" alt="WSU logo" />
+</a>
+<br /><sub>fs015xh0tygNgGVxX2p8.img</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-## Files
+</details>
 
-- `01-page-loaded.png` — page-loaded (33.9 KB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 1 page images (7.7 KB)
+## 📁 Files
+
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (60.4 KB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 1 page images (7.7 KB) |
+
+---
+
+*Generated by AccessibilityScanner (FreeTools) v1.0*

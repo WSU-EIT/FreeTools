@@ -1,69 +1,150 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://physics.wsu.edu/  
+> **Captured:** 2026-02-16 22:17:09 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://physics.wsu.edu/ |
 | Title | Department of Physics & Astronomy | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 226.2 KB |
-| Screenshots | 1 (1.6 MB) |
-| Images | 6 (915.3 KB) |
-| Images Missing Alt | 0 |
-| JS Errors | 2 |
+| Status | ✅ 200 |
+| HTML Size | 226.1 KB |
+| Screenshots | 1 (1.4 MB) |
+| Images | 7 (1.7 MB) |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:58:42.4685449Z |
+| Captured | 2026-02-16T22:17:09.3303803Z |
 
-## JavaScript Errors
+## 🔧 Actions
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
-## Actions
+- Screenshot #1: page-loaded (1.4 MB)
+- Downloaded 7 images to /images/
 
-- Screenshot #1: page-loaded (1.6 MB)
-- Downloaded 6 images to /images/
+</details>
 
-## Screenshots
+## 📸 Screenshots
 
-### 1. page-loaded
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>1.4 MB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
-![page-loaded](01-page-loaded.png)
+## 🖼️ Page Images (7)
 
-
-## Page Images (6)
+<details open>
+<summary><strong>📋 Image Index</strong> — 7 images, 1.7 MB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
-| 1 | [Matt-McCluskey-and-Julie-Miller-03-1024x676-1-792x523.jpg](images/Matt-McCluskey-and-Julie-Miller-03-1024x676-1-792x523.jpg) | Julie Miller and Matt McCluskey conve... | 90.1 KB |
-| 2 | [Michael-Allen-and-Yang-Wendy-Liu-Award-792x523.jpg](images/Michael-Allen-and-Yang-Wendy-Liu-Award-792x523.jpg) | Two men stand side by side with smile... | 140.3 KB |
-| 3 | [Jensen-ImpactLab-792x528.jpg](images/Jensen-ImpactLab-792x528.jpg) | Three individuals standing in a lab w... | 74.4 KB |
-| 4 | [up25.jpg](images/up25.jpg) | A faculty mentor and student pose bes... | 204.0 KB |
-| 5 | [jacklambert1.png](images/jacklambert1.png) | Portrait of Jack Lambert. | 387.5 KB |
-| 6 | [PNNL_CENTER_FullColorSMALL.jpg](images/PNNL_CENTER_FullColorSMALL.jpg) | The logo of the Pacific Northwest Nat... | 19.0 KB |
+|--:|-------|----------|-----:|
+| 1 | [HomepageBanner-14.jpg](images/HomepageBanner-14.jpg) | 100 year anniversary banner; collage | 800.6 KB |
+| 2 | [Matt-McCluskey-and-Julie-Miller-03-1024x676-1-792x523.jpg](images/Matt-McCluskey-and-Julie-Miller-03-1024x676-1-792x523.jpg) | Julie Miller and Matt McCluskey conve... | 90.1 KB |
+| 3 | [Michael-Allen-and-Yang-Wendy-Liu-Award-792x523.jpg](images/Michael-Allen-and-Yang-Wendy-Liu-Award-792x523.jpg) | Two men stand side by side with smile... | 140.3 KB |
+| 4 | [Jensen-ImpactLab-792x528.jpg](images/Jensen-ImpactLab-792x528.jpg) | Three individuals standing in a lab w... | 74.4 KB |
+| 5 | [up25.jpg](images/up25.jpg) | A faculty mentor and student pose bes... | 204.0 KB |
+| 6 | [jacklambert1.png](images/jacklambert1.png) | Portrait of Jack Lambert. | 387.5 KB |
+| 7 | [PNNL_CENTER_FullColorSMALL.jpg](images/PNNL_CENTER_FullColorSMALL.jpg) | The logo of the Pacific Northwest Nat... | 19.0 KB |
 
-### Gallery
+</details>
 
-![Julie Miller and Matt McCluskey conversing in a research laboratory.](images/Matt-McCluskey-and-Julie-Miller-03-1024x676-1-792x523.jpg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![Two men stand side by side with smiles, as one holds an award.](images/Michael-Allen-and-Yang-Wendy-Liu-Award-792x523.jpg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/HomepageBanner-14.jpg">
+<img src="images/HomepageBanner-14.jpg" width="200" alt="100 year anniversary banner; collage" />
+</a>
+<br /><sub>HomepageBanner-14.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Matt-McCluskey-and-Julie-Miller-03-1024x676-1-792x523.jpg">
+<img src="images/Matt-McCluskey-and-Julie-Miller-03-1024x676-1-792x523.jpg" width="200" alt="Julie Miller and Matt McCluskey conversing in a research laboratory." />
+</a>
+<br /><sub>Matt-McCluskey-and-Julie-Miller-03-1024x676-1-792x523.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Michael-Allen-and-Yang-Wendy-Liu-Award-792x523.jpg">
+<img src="images/Michael-Allen-and-Yang-Wendy-Liu-Award-792x523.jpg" width="200" alt="Two men stand side by side with smiles, as one holds an award." />
+</a>
+<br /><sub>Michael-Allen-and-Yang-Wendy-Liu-Award-792x523.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/Jensen-ImpactLab-792x528.jpg">
+<img src="images/Jensen-ImpactLab-792x528.jpg" width="200" alt="Three individuals standing in a lab with large metal equipment in conversation." />
+</a>
+<br /><sub>Jensen-ImpactLab-792x528.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/up25.jpg">
+<img src="images/up25.jpg" width="200" alt="A faculty mentor and student pose beside a research poster" />
+</a>
+<br /><sub>up25.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/jacklambert1.png">
+<img src="images/jacklambert1.png" width="200" alt="Portrait of Jack Lambert." />
+</a>
+<br /><sub>jacklambert1.png</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/PNNL_CENTER_FullColorSMALL.jpg">
+<img src="images/PNNL_CENTER_FullColorSMALL.jpg" width="200" alt="The logo of the Pacific Northwest National Laboratory" />
+</a>
+<br /><sub>PNNL_CENTER_FullColorSMALL.jpg</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-![Three individuals standing in a lab with large metal equipment in conversation.](images/Jensen-ImpactLab-792x528.jpg)
+</details>
 
-![A faculty mentor and student pose beside a research poster](images/up25.jpg)
+## 📁 Files
 
-![Portrait of Jack Lambert.](images/jacklambert1.png)
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (1.4 MB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 7 page images (1.7 MB) |
 
-![The logo of the Pacific Northwest National Laboratory](images/PNNL_CENTER_FullColorSMALL.jpg)
+---
 
-
-## Files
-
-- `01-page-loaded.png` — page-loaded (1.6 MB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 6 page images (915.3 KB)
+*Generated by AccessibilityScanner (FreeTools) v1.0*

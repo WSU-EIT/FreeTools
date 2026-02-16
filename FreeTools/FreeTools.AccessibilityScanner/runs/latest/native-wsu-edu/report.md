@@ -1,66 +1,62 @@
-# Site Report: https://native.wsu.edu/
+# 🌐 Site Report: https://native.wsu.edu/
+
+> **Status:** ✅ 3/3 pages OK  
+> **Folder:** `native-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/3 pages OK |
 | Pages Scanned | 3 |
-| Pages Passed | 0 |
-| Pages Failed | 3 |
-| Total JS Errors | 1 |
+| Pages Passed | ✅ 3 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 654.7 KB |
-| Total Screenshots | 2.7 MB |
-| Total Images | 9 (4.2 MB) |
-| Images Missing Alt | 6 |
-| Folder | `native-wsu-edu/` |
+| Total Images | 11 (5.1 MB) |
+| Images Missing Alt | ⚠️ 7 |
+| Total HTML | 674.6 KB |
+| Total Screenshots | 3.0 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Office of Native American Programs \|... | 1 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Office of Native Americ... | 0 | 9 | 6 |
-| ❌ | [/resources/](resources/report.md) | 0 | Resources for Collaborative Research ... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Office of Native American Programs \|... | 0 | 1 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Office of Native Americ... | 0 | 10 | ⚠️ 7 |
+| ✅ | [/resources/](resources/report.md) | 200 | Resources for Collaborative Research ... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://native.wsu.edu/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://native.wsu.edu/resources/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://native.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.png" width="250" alt="/resources/" />
+</a>
+<br />✅ <code>/resources/</code>
+</td>
+</tr>
+</table>
 
 ---
 

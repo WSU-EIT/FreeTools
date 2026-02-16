@@ -1,69 +1,73 @@
-# Site Report: https://anthro.wsu.edu/
+# 🌐 Site Report: https://anthro.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `anthro-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 887.6 KB |
-| Total Screenshots | 2.8 MB |
-| Total Images | 23 (1.2 MB) |
-| Images Missing Alt | 18 |
-| Folder | `anthro-wsu-edu/` |
+| Total Images | 25 (4.4 MB) |
+| Images Missing Alt | ⚠️ 18 |
+| Total HTML | 921.8 KB |
+| Total Screenshots | 3.8 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Department of Anthropology \| Washing... | 0 | 3 | 0 |
-| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| Department of Anthropology... | 0 | 18 | 18 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Research and Training in Psy... | 0 | 1 | 0 |
-| ❌ | [/research/](research/report.md) | 0 | Research \| Department of Anthropolog... | 0 | 1 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Department of Anthropology \| Washing... | 0 | 5 | 0 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Department of Anthropology... | 0 | 18 | ⚠️ 18 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Research and Training in Psy... | 0 | 1 | 0 |
+| ✅ | [/research/](research/report.md) | 200 | Research \| Department of Anthropolog... | 0 | 1 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/faculty/](faculty/report.md)
-
-![/faculty/](faculty/01-page-loaded.png)
-
-### [/graduate/](graduate/report.md)
-
-![/graduate/](graduate/01-page-loaded.png)
-
-### [/research/](research/report.md)
-
-![/research/](research/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://anthro.wsu.edu/
-- **Status:** 0
-
-### /graduate/
-
-- **URL:** https://anthro.wsu.edu/graduate/
-- **Status:** 0
-
-### /faculty/
-
-- **URL:** https://anthro.wsu.edu/faculty/
-- **Status:** 0
-
-### /research/
-
-- **URL:** https://anthro.wsu.edu/research/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+<td align="center" width="33%">
+<a href="graduate/report.md">
+<img src="graduate/01-page-loaded.png" width="250" alt="/graduate/" />
+</a>
+<br />✅ <code>/graduate/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

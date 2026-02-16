@@ -1,57 +1,56 @@
-# Site Report: https://li.wsu.edu/
+# 🌐 Site Report: https://li.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `li-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
-| Total JS Errors | 2 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 1 |
-| Total HTML | 439.1 KB |
-| Total Screenshots | 1.3 MB |
 | Total Images | 2 (492.6 KB) |
-| Images Missing Alt | 0 |
-| Folder | `li-wsu-edu/` |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 452.0 KB |
+| Total Screenshots | 1.3 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Academic Outreach and Innovation \| L... | 2 | 2 | 0 |
-| ❌ | [/support/](support/report.md) | 0 | Supporting Students Who have Approved... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Academic Outreach and Innovation \| L... | 0 | 2 | 0 |
+| ✅ | [/support/](support/report.md) | 200 | Supporting Students Who have Approved... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/support/](support/report.md)
-
-![/support/](support/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://li.wsu.edu/
-- **Status:** 0
-
-### /support/
-
-- **URL:** https://li.wsu.edu/support/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (2 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_CONNECTION_RESET`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="support/report.md">
+<img src="support/01-page-loaded.png" width="250" alt="/support/" />
+</a>
+<br />✅ <code>/support/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

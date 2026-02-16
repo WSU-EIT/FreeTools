@@ -1,87 +1,79 @@
-# Site Report: https://vcea.wsu.edu/
+# 🌐 Site Report: https://vcea.wsu.edu/
+
+> **Status:** ✅ 5/5 pages OK  
+> **Folder:** `vcea-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 0 |
-| Pages Failed | 5 |
-| Total JS Errors | 2 |
+| Pages Passed | ✅ 5 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 1 |
+| Total Images | 21 (19.2 MB) |
+| Images Missing Alt | ⚠️ 4 |
 | Total HTML | 1.2 MB |
-| Total Screenshots | 2.9 MB |
-| Total Images | 18 (2.4 MB) |
-| Images Missing Alt | 4 |
-| Folder | `vcea-wsu-edu/` |
+| Total Screenshots | 3.9 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Voiland College of Engineering and Ar... | 2 | 7 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contacts \| Voiland College of Engine... | 0 | 4 | 4 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Students Present Research \|... | 0 | 0 | 0 |
-| ❌ | [/research/](research/report.md) | 0 | Research \| Voiland College of Engine... | 0 | 7 | 0 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Pass/Fail Option, Sprin... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Voiland College of Engineering and Ar... | 0 | 10 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contacts \| Voiland College of Engine... | 0 | 4 | ⚠️ 4 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Students Present Research \|... | 0 | 0 | 0 |
+| ✅ | [/research/](research/report.md) | 200 | Research \| Voiland College of Engine... | 0 | 7 | 0 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Pass/Fail Option, Sprin... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/graduate/](graduate/report.md)
-
-![/graduate/](graduate/01-page-loaded.png)
-
-### [/research/](research/report.md)
-
-![/research/](research/01-page-loaded.png)
-
-### [/undergraduate/](undergraduate/report.md)
-
-![/undergraduate/](undergraduate/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://vcea.wsu.edu/
-- **Status:** 0
-
-### /undergraduate/
-
-- **URL:** https://vcea.wsu.edu/undergraduate/
-- **Status:** 0
-
-### /graduate/
-
-- **URL:** https://vcea.wsu.edu/graduate/
-- **Status:** 0
-
-### /research/
-
-- **URL:** https://vcea.wsu.edu/research/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://vcea.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (2 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td align="center" width="33%">
+<a href="graduate/report.md">
+<img src="graduate/01-page-loaded.png" width="250" alt="/graduate/" />
+</a>
+<br />✅ <code>/graduate/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+<td align="center" width="33%">
+<a href="undergraduate/report.md">
+<img src="undergraduate/01-page-loaded.png" width="250" alt="/undergraduate/" />
+</a>
+<br />✅ <code>/undergraduate/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

@@ -1,21 +1,21 @@
 {
   "PagePath": "/",
   "Url": "https://my.wsu.edu/",
-  "FinalUrl": "https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7\u0026redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse\u0026response_type=code\u0026scope=openid%20profile%20sis.prd.groups\u0026state=fQY1AWc4SdysL1ROcAqHkJsQujPDR2WnYnW93qbVP8rL7XVsIFbvnVcOaKJbCCJcVGWq5RByFwDwBWrE0Ysqi%2Bc7kCP%2Fr06md7WtLXelaiU97KyJ1zQEnoS1KPYxuAmWFqqPCDddteVfYhFGmtXelMtDNub2K6UKl6UCVL9hoz%2F4szVSlrl4%2BBP0BoBDXGDWOJK1Z9xlSTAALFCkRGSRQB3AnnQ0IbNGkob%2Fl9%2BFvPOc4l5eUw%3D%3D",
+  "FinalUrl": "https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7\u0026redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse\u0026response_type=code\u0026scope=openid%20profile%20sis.prd.groups\u0026state=1B9MOZLgaTYvuUHnuwMI1vBB4TxN%2FWPCsJoFQ2N3aA%2B%2Fi9JS%2FW9RLgpI8PVEVGm%2FiYY%2FQX%2FrthYXVZtjNNkd0BE8Fied8Jy8cPX5zK2WLasBlcIHy8aS2ihM36%2BH7tKH8Q7U%2Bt8bct9QnYkNUPCXS87%2FHsDW8N1Oz99PE7WhS8BlO0vA10nvYNWRx5sh8dAfncVJrrFip40zTDWgM2xuhWRh2j0Eg3pMNcLHIL7PdYdYGNCpkA%3D%3D",
   "Title": "WSU Authentication | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 75321,
-  "ScreenshotSizeBytes": 34680,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 73609,
+  "ScreenshotSizeBytes": 41343,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 34680
+      "FileSize": 41343
     }
   ],
   "ImageCount": 1,
@@ -30,6 +30,29 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4645534Z"
+  "Headers": {
+    "accept-ch": "Sec-CH-UA-Platform-Version",
+    "cache-control": "no-cache, no-store",
+    "content-encoding": "gzip",
+    "content-language": "en",
+    "content-security-policy-report-only": "default-src \u0027self\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com; connect-src \u0027self\u0027 wsu.okta.com wsu-admin.okta.com login.wsu.edu *.oktacdn.com *.mixpanel.com *.mapbox.com wsu.kerberos.okta.com wsu.mtls.okta.com *.authenticatorlocalprod.com:8769 http://localhost:8769 http://127.0.0.1:8769 *.authenticatorlocalprod.com:65111 http://localhost:65111 http://127.0.0.1:65111 *.authenticatorlocalprod.com:65121 http://localhost:65121 http://127.0.0.1:65121 *.authenticatorlocalprod.com:65131 http://localhost:65131 http://127.0.0.1:65131 *.authenticatorlocalprod.com:65141 http://localhost:65141 http://127.0.0.1:65141 *.authenticatorlocalprod.com:65151 http://localhost:65151 http://127.0.0.1:65151 https://oinmanager.okta.com data: *.ingest.sentry.io; script-src \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 \u0027self\u0027 \u0027report-sample\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com; style-src \u0027unsafe-inline\u0027 \u0027self\u0027 \u0027report-sample\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com; frame-src \u0027self\u0027 wsu.okta.com wsu-admin.okta.com login.wsu.edu login.okta.com *.vidyard.com com-okta-authenticator:; img-src \u0027self\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com *.tiles.mapbox.com *.mapbox.com *.vidyard.com data: blob:; font-src \u0027self\u0027 wsu.okta.com login.wsu.edu data: *.oktacdn.com fonts.gstatic.com; frame-ancestors \u0027self\u0027 https://my.wsu.edu",
+    "content-type": "text/html;charset=utf-8",
+    "date": "Mon, 16 Feb 2026 22:19:35 GMT",
+    "expires": "0",
+    "p3p": "CP=\u0022HONK\u0022",
+    "pragma": "no-cache",
+    "referrer-policy": "no-referrer",
+    "server": "nginx",
+    "strict-transport-security": "max-age=315360000; includeSubDomains",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-okta-request-id": "aZOX94d4VrfHhc26AnO4qQAJ_D4",
+    "x-rate-limit-limit": "60",
+    "x-rate-limit-remaining": "59",
+    "x-rate-limit-reset": "1771280435",
+    "x-robots-tag": "noindex,nofollow",
+    "x-ua-compatible": "IE=edge",
+    "x-xss-protection": "0"
+  },
+  "CapturedAt": "2026-02-16T22:19:35.0557712Z"
 }

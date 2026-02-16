@@ -1,58 +1,56 @@
-# Site Report: https://president.wsu.edu/
+# 🌐 Site Report: https://president.wsu.edu/
+
+> **Status:** ✅ 2/2 pages OK  
+> **Folder:** `president-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
 | Pages Scanned | 2 |
-| Pages Passed | 0 |
-| Pages Failed | 2 |
-| Total JS Errors | 3 |
+| Pages Passed | ✅ 2 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 3 |
-| Total HTML | 185.6 KB |
-| Total Screenshots | 855.7 KB |
-| Total Images | 9 (299.2 KB) |
-| Images Missing Alt | 9 |
-| Folder | `president-wsu-edu/` |
+| Total Images | 15 (14.8 MB) |
+| Images Missing Alt | ⚠️ 15 |
+| Total HTML | 198.7 KB |
+| Total Screenshots | 1.7 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Office of the President \| Washington... | 3 | 1 | 1 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Office of the President... | 0 | 8 | 8 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Office of the President \| Washington... | 0 | 7 | ⚠️ 7 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Office of the President... | 0 | 8 | ⚠️ 8 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://president.wsu.edu/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://president.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (3 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td></td>
+</tr>
+</table>
 
 ---
 

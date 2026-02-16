@@ -1,71 +1,124 @@
-# Site Report: https://account.wsu.edu/
+# 🌐 Site Report: https://account.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `account-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
-| Total JS Errors | 0 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 32 |
 | Total JS Warnings | 0 |
-| Total HTML | 10.0 KB |
-| Total Screenshots | 31.9 KB |
-| Total Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| Folder | `account-wsu-edu/` |
+| Total Images | 4 (30.7 KB) |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 559.6 KB |
+| Total Screenshots | 241.7 KB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | My Settings \| WSU | 0 | 0 | 0 |
-| ❌ | [/password-reset/](password-reset/report.md) | 0 | My Settings \| WSU | 0 | 0 | 0 |
-| ❌ | [/security/](security/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/services/](services/report.md) | 0 | (none) | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | WSU \| Sign In | 🔴 8 | 1 | 0 |
+| ✅ | [/password-reset/](password-reset/report.md) | 200 | WSU \| Sign In | 🔴 8 | 1 | 0 |
+| ✅ | [/security/](security/report.md) | 200 | WSU \| Sign In | 🔴 8 | 1 | 0 |
+| ✅ | [/services/](services/report.md) | 200 | WSU \| Sign In | 🔴 8 | 1 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="password-reset/report.md">
+<img src="password-reset/01-page-loaded.png" width="250" alt="/password-reset/" />
+</a>
+<br />✅ <code>/password-reset/</code>
+</td>
+<td align="center" width="33%">
+<a href="security/report.md">
+<img src="security/01-page-loaded.png" width="250" alt="/security/" />
+</a>
+<br />✅ <code>/security/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="services/report.md">
+<img src="services/01-page-loaded.png" width="250" alt="/services/" />
+</a>
+<br />✅ <code>/services/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
-### [/password-reset/](password-reset/report.md)
+## 🔴 JavaScript Errors
 
-![/password-reset/](password-reset/01-page-loaded.png)
+<details>
+<summary><strong>32 error(s) across 4 page(s)</strong></summary>
 
-### [/security/](security/report.md)
+**/** (8 errors)
 
-![/security/](security/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 404 ()
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+Something unexpected happened while we were checking url http://127.0.0.1:65131
+... and 3 more (see _root/errors.log)
+```
 
-### [/services/](services/report.md)
+**/services/** (8 errors)
 
-![/services/](services/01-page-loaded.png)
+```
+Failed to load resource: the server responded with a status of 404 ()
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+Something unexpected happened while we were checking url http://127.0.0.1:65131
+... and 3 more (see services/errors.log)
+```
 
+**/password-reset/** (8 errors)
 
-## Failed Pages
+```
+Failed to load resource: the server responded with a status of 404 ()
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+Something unexpected happened while we were checking url http://127.0.0.1:65131
+... and 3 more (see password-reset/errors.log)
+```
 
-### /
+**/security/** (8 errors)
 
-- **URL:** https://account.wsu.edu/
-- **Status:** 0
+```
+Failed to load resource: the server responded with a status of 404 ()
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+Something unexpected happened while we were checking url http://127.0.0.1:65131
+... and 3 more (see security/errors.log)
+```
 
-### /services/
-
-- **URL:** https://account.wsu.edu/services/
-- **Status:** 0
-- **Error:** `Execution context was destroyed, most likely because of a navigation`
-
-### /password-reset/
-
-- **URL:** https://account.wsu.edu/password-reset/
-- **Status:** 0
-
-### /security/
-
-- **URL:** https://account.wsu.edu/security/
-- **Status:** 0
-- **Error:** `Unable to retrieve content because the page is navigating and changing the content.`
-
+</details>
 
 ---
 

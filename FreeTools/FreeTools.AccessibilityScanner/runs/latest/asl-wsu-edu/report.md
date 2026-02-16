@@ -1,96 +1,85 @@
-# Site Report: https://asl.wsu.edu/
+# 🌐 Site Report: https://asl.wsu.edu/
+
+> **Status:** ✅ 6/6 pages OK  
+> **Folder:** `asl-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 1 |
+| Pages Passed | ✅ 6 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 379.1 KB |
-| Total Screenshots | 4.9 MB |
-| Total Images | 15 (2.2 MB) |
-| Images Missing Alt | 12 |
-| Folder | `asl-wsu-edu/` |
+| Total Images | 18 (4.3 MB) |
+| Images Missing Alt | ⚠️ 13 |
+| Total HTML | 398.4 KB |
+| Total Screenshots | 5.6 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Applied Sciences Laboratory \| Washin... | 1 | 4 | 4 |
-| ❌ | [/about/](about/report.md) | 0 | About \| Applied Sciences Laboratory ... | 0 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact \| Applied Sciences Laborator... | 0 | 1 | 0 |
-| ❌ | [/facilities/](facilities/report.md) | 0 | Facilities \| Applied Sciences Labora... | 0 | 1 | 0 |
-| ❌ | [/publications/](publications/report.md) | 0 | Publications \| Applied Sciences Labo... | 0 | 1 | 0 |
-| ❌ | [/research/](research/report.md) | 0 | Research Staff \| Applied Sciences La... | 0 | 8 | 8 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Applied Sciences Laboratory \| Washin... | 0 | 6 | ⚠️ 5 |
+| ✅ | [/about/](about/report.md) | 200 | About \| Applied Sciences Laboratory ... | 0 | 1 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact \| Applied Sciences Laborator... | 0 | 1 | 0 |
+| ✅ | [/facilities/](facilities/report.md) | 200 | Facilities \| Applied Sciences Labora... | 0 | 1 | 0 |
+| ✅ | [/publications/](publications/report.md) | 200 | Publications \| Applied Sciences Labo... | 0 | 1 | 0 |
+| ✅ | [/research/](research/report.md) | 200 | Research Staff \| Applied Sciences La... | 0 | 8 | ⚠️ 8 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/facilities/](facilities/report.md)
-
-![/facilities/](facilities/01-page-loaded.png)
-
-### [/publications/](publications/report.md)
-
-![/publications/](publications/01-page-loaded.png)
-
-### [/research/](research/report.md)
-
-![/research/](research/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://asl.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://asl.wsu.edu/about/
-- **Status:** 0
-
-### /research/
-
-- **URL:** https://asl.wsu.edu/research/
-- **Status:** 0
-
-### /facilities/
-
-- **URL:** https://asl.wsu.edu/facilities/
-- **Status:** 0
-
-### /publications/
-
-- **URL:** https://asl.wsu.edu/publications/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://asl.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />✅ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="facilities/report.md">
+<img src="facilities/01-page-loaded.png" width="250" alt="/facilities/" />
+</a>
+<br />✅ <code>/facilities/</code>
+</td>
+<td align="center" width="33%">
+<a href="publications/report.md">
+<img src="publications/01-page-loaded.png" width="250" alt="/publications/" />
+</a>
+<br />✅ <code>/publications/</code>
+</td>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+</tr>
+</table>
 
 ---
 

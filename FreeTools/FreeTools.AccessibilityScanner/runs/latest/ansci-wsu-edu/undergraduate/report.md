@@ -1,70 +1,143 @@
-# Page Scan Report
+# 📄 Page Scan Report
+
+> **URL:** https://ansci.wsu.edu/undergraduate/  
+> **Captured:** 2026-02-16 22:11:44 UTC  
+> **Status:** ✅ 200  
+
+---
+
+## 📑 Contents
+
+- [Summary](#-summary)
+- [Screenshots](#-screenshots)
+- [Page Images](#-page-images)
+- [Actions](#-actions)
+- [Files](#-files)
+
+---
+
+## 📋 Summary
 
 | Field | Value |
 |-------|-------|
 | URL | https://ansci.wsu.edu/undergraduate/ |
 | Title | Undergraduate Studies | Animal Sciences | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 217.2 KB |
+| Status | ✅ 200 |
+| HTML Size | 224.1 KB |
 | Screenshots | 1 (1.8 MB) |
 | Images | 5 (458.1 KB) |
-| Images Missing Alt | 2 |
-| JS Errors | 1 |
+| Images Missing Alt | ⚠️ 2 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:59:42.0261766Z |
+| Captured | 2026-02-16T22:11:44.7770208Z |
 
-## JavaScript Errors
+## 🔧 Actions
 
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-## Actions
+<details>
+<summary><strong>2 action(s) performed</strong></summary>
 
 - Screenshot #1: page-loaded (1.8 MB)
 - Downloaded 5 images to /images/
 
-## Screenshots
+</details>
 
-### 1. page-loaded
+## 📸 Screenshots
 
-![page-loaded](01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="01-page-loaded.png">
+<img src="01-page-loaded.png" width="400" alt="page-loaded" />
+</a>
+<br /><strong>1. page-loaded</strong>
+<br /><sub>1.8 MB</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
+## 🖼️ Page Images (5)
 
-## Page Images (5)
+<details open>
+<summary><strong>📋 Image Index</strong> — 5 images, 458.1 KB</summary>
 
 | # | Image | Alt Text | Size |
-|---|-------|----------|------|
-| 1 | [Hernandez_Square.jpg](images/Hernandez_Square.jpg) | *(none)* | 39.0 KB |
-| 2 | [HunterLisaSquare.jpg](images/HunterLisaSquare.jpg) | *(none)* | 58.7 KB |
+|--:|-------|----------|-----:|
+| 1 | [Hernandez_Square.jpg](images/Hernandez_Square.jpg) | ⚠️ *(missing)* | 39.0 KB |
+| 2 | [HunterLisaSquare.jpg](images/HunterLisaSquare.jpg) | ⚠️ *(missing)* | 58.7 KB |
 | 3 | [Student_with_cattle-396x528-2.jpg](images/Student_with_cattle-396x528-2.jpg) | Student with cattle | 102.4 KB |
 | 4 | [Student_with_pigs-396x527-2.jpg](images/Student_with_pigs-396x527-2.jpg) | Student with pigs | 100.2 KB |
 | 5 | [Junseok_in_Lab_792x446.jpg](images/Junseok_in_Lab_792x446.jpg) | Student in the lab | 157.8 KB |
 
-### Gallery
+</details>
 
-![Hernandez_Square.jpg](images/Hernandez_Square.jpg)
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
 
-![HunterLisaSquare.jpg](images/HunterLisaSquare.jpg)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="images/Hernandez_Square.jpg">
+<img src="images/Hernandez_Square.jpg" width="200" alt="Hernandez_Square.jpg" />
+</a>
+<br /><sub>Hernandez_Square.jpg ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/HunterLisaSquare.jpg">
+<img src="images/HunterLisaSquare.jpg" width="200" alt="HunterLisaSquare.jpg" />
+</a>
+<br /><sub>HunterLisaSquare.jpg ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Student_with_cattle-396x528-2.jpg">
+<img src="images/Student_with_cattle-396x528-2.jpg" width="200" alt="Student with cattle" />
+</a>
+<br /><sub>Student_with_cattle-396x528-2.jpg</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="images/Student_with_pigs-396x527-2.jpg">
+<img src="images/Student_with_pigs-396x527-2.jpg" width="200" alt="Student with pigs" />
+</a>
+<br /><sub>Student_with_pigs-396x527-2.jpg</sub>
+</td>
+<td align="center" width="33%">
+<a href="images/Junseok_in_Lab_792x446.jpg">
+<img src="images/Junseok_in_Lab_792x446.jpg" width="200" alt="Student in the lab" />
+</a>
+<br /><sub>Junseok_in_Lab_792x446.jpg</sub>
+</td>
+<td></td>
+</tr>
+</table>
 
-![Student with cattle](images/Student_with_cattle-396x528-2.jpg)
+</details>
 
-![Student with pigs](images/Student_with_pigs-396x527-2.jpg)
+<details>
+<summary>⚠️ <strong>Images Missing Alt Text</strong> (2)</summary>
 
-![Student in the lab](images/Junseok_in_Lab_792x446.jpg)
+| Image | Source URL |
+|-------|-----------|
+| `Hernandez_Square.jpg` | https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/3004/2025/10/Hernandez_Squ... |
+| `HunterLisaSquare.jpg` | https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/3004/2025/10/HunterLisaSqu... |
 
+</details>
 
-### ⚠️ Images Missing Alt Text (2)
+## 📁 Files
 
-- `Hernandez_Square.jpg` — https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/3004/2025/10/Hernandez_Square.jpg
-- `HunterLisaSquare.jpg` — https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/3004/2025/10/HunterLisaSquare.jpg
+| File | Description |
+|------|-------------|
+| `01-page-loaded.png` | page-loaded (1.8 MB) |
+| `page.html` | Rendered HTML content |
+| `metadata.json` | Machine-readable scan data |
+| `errors.log` | JavaScript console errors |
+| `warnings.log` | JavaScript console warnings |
+| `info.log` | Navigation and timing details |
+| `actions.log` | Interactions performed |
+| `images/` | 5 page images (458.1 KB) |
 
-## Files
+---
 
-- `01-page-loaded.png` — page-loaded (1.8 MB)
-- `page.html` — rendered HTML content
-- `metadata.json` — machine-readable scan data
-- `errors.log` — JavaScript console errors
-- `warnings.log` — JavaScript console warnings
-- `info.log` — navigation and timing details
-- `actions.log` — interactions performed on the page
-- `images/` — 5 page images (458.1 KB)
+*Generated by AccessibilityScanner (FreeTools) v1.0*

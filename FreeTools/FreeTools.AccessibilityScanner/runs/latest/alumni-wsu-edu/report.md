@@ -1,106 +1,128 @@
-# Site Report: https://alumni.wsu.edu/
+# 🌐 Site Report: https://alumni.wsu.edu/
+
+> **Status:** ✅ 6/6 pages OK  
+> **Folder:** `alumni-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
-| Total JS Errors | 6 |
+| Pages Passed | ✅ 6 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 6 |
 | Total JS Warnings | 0 |
-| Total HTML | 494.6 KB |
-| Total Screenshots | 1.4 MB |
 | Total Images | 25 (1.1 MB) |
-| Images Missing Alt | 6 |
-| Folder | `alumni-wsu-edu/` |
+| Images Missing Alt | ⚠️ 6 |
+| Total HTML | 495.1 KB |
+| Total Screenshots | 2.2 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Washington State University Alumni As... | 1 | 10 | 6 |
-| ❌ | [/benefits/](benefits/report.md) | 0 | Washington State University Alumni As... | 1 | 3 | 0 |
-| ✅ | [/chapters/](chapters/report.md) | 200 | Washington State University Alumni As... | 1 | 3 | 0 |
-| ✅ | [/contact/](contact/report.md) | 200 | Washington State University Alumni As... | 1 | 3 | 0 |
-| ❌ | [/events/](events/report.md) | 0 | Washington State University Alumni As... | 1 | 3 | 0 |
-| ❌ | [/giving/](giving/report.md) | 0 | Washington State University Alumni As... | 1 | 3 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Washington State University Alumni As... | 🔴 1 | 10 | ⚠️ 6 |
+| ✅ | [/benefits/](benefits/report.md) | 200 | Washington State University Alumni As... | 🔴 1 | 3 | 0 |
+| ✅ | [/chapters/](chapters/report.md) | 200 | Washington State University Alumni As... | 🔴 1 | 3 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Washington State University Alumni As... | 🔴 1 | 3 | 0 |
+| ✅ | [/events/](events/report.md) | 200 | Washington State University Alumni As... | 🔴 1 | 3 | 0 |
+| ✅ | [/giving/](giving/report.md) | 200 | Washington State University Alumni As... | 🔴 1 | 3 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="benefits/report.md">
+<img src="benefits/01-page-loaded.png" width="250" alt="/benefits/" />
+</a>
+<br />✅ <code>/benefits/</code>
+</td>
+<td align="center" width="33%">
+<a href="chapters/report.md">
+<img src="chapters/01-page-loaded.png" width="250" alt="/chapters/" />
+</a>
+<br />✅ <code>/chapters/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+<td align="center" width="33%">
+<a href="events/report.md">
+<img src="events/01-page-loaded.png" width="250" alt="/events/" />
+</a>
+<br />✅ <code>/events/</code>
+</td>
+<td align="center" width="33%">
+<a href="giving/report.md">
+<img src="giving/01-page-loaded.png" width="250" alt="/giving/" />
+</a>
+<br />✅ <code>/giving/</code>
+</td>
+</tr>
+</table>
 
-### [/benefits/](benefits/report.md)
+## 🔴 JavaScript Errors
 
-![/benefits/](benefits/01-page-loaded.png)
+<details>
+<summary><strong>6 error(s) across 6 page(s)</strong></summary>
 
-### [/chapters/](chapters/report.md)
+**/** (1 errors)
 
-![/chapters/](chapters/01-page-loaded.png)
+```
+The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want to add it as a directive and forget a semicolon?
+```
 
-### [/contact/](contact/report.md)
+**/benefits/** (1 errors)
 
-![/contact/](contact/01-page-loaded.png)
+```
+The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want to add it as a directive and forget a semicolon?
+```
 
-### [/events/](events/report.md)
+**/events/** (1 errors)
 
-![/events/](events/01-page-loaded.png)
+```
+The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want to add it as a directive and forget a semicolon?
+```
 
-### [/giving/](giving/report.md)
+**/giving/** (1 errors)
 
-![/giving/](giving/01-page-loaded.png)
+```
+The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want to add it as a directive and forget a semicolon?
+```
 
+**/chapters/** (1 errors)
 
-## Failed Pages
+```
+The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want to add it as a directive and forget a semicolon?
+```
 
-### /
+**/contact/** (1 errors)
 
-- **URL:** https://alumni.wsu.edu/
-- **Status:** 0
+```
+The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want to add it as a directive and forget a semicolon?
+```
 
-### /benefits/
-
-- **URL:** https://alumni.wsu.edu/benefits/
-- **Status:** 0
-
-### /events/
-
-- **URL:** https://alumni.wsu.edu/events/
-- **Status:** 0
-
-### /giving/
-
-- **URL:** https://alumni.wsu.edu/giving/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want t...`
-
-### /benefits/ (1 errors)
-
-- `The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want t...`
-
-### /events/ (1 errors)
-
-- `The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want t...`
-
-### /giving/ (1 errors)
-
-- `The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want t...`
-
-### /chapters/ (1 errors)
-
-- `The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want t...`
-
-### /contact/ (1 errors)
-
-- `The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want t...`
-
+</details>
 
 ---
 

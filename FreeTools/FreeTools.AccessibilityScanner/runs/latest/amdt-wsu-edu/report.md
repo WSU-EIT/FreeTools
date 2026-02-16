@@ -1,66 +1,74 @@
-# Site Report: https://amdt.wsu.edu/
+# 🌐 Site Report: https://amdt.wsu.edu/
+
+> **Status:** ⚠️ 1/3 pages OK  
+> **Folder:** `amdt-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████░░░░░░░░░░░░░░░░░░░░] 33%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/3 pages OK |
 | Pages Scanned | 3 |
-| Pages Passed | 0 |
-| Pages Failed | 3 |
-| Total JS Errors | 1 |
+| Pages Passed | ✅ 1 |
+| Pages Failed | ❌ 2 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 8 |
-| Total HTML | 660.1 KB |
-| Total Screenshots | 2.4 MB |
 | Total Images | 24 (3.7 MB) |
-| Images Missing Alt | 8 |
-| Folder | `amdt-wsu-edu/` |
+| Images Missing Alt | ⚠️ 8 |
+| Total HTML | 689.6 KB |
+| Total Screenshots | 2.2 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Department of Apparel, Merchandising,... | 1 | 8 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ❌ | [/](_root/report.md) | 0 | Department of Apparel, Merchandising,... | 0 | 8 | 0 |
 | ❌ | [/about/](about/report.md) | 0 | Department of Apparel, Merchandising,... | 0 | 8 | 0 |
-| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| Department of Apparel, Mer... | 0 | 8 | 8 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Department of Apparel, Mer... | 0 | 8 | ⚠️ 8 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />❌ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.png" width="250" alt="/about/" />
+</a>
+<br />❌ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+</tr>
+</table>
 
-### [/about/](about/report.md)
+## ❌ Failed Pages
 
-![/about/](about/01-page-loaded.png)
+<details open>
+<summary><strong>2 page(s) failed</strong></summary>
 
-### [/faculty/](faculty/report.md)
+| Page | HTTP | Error |
+|------|:----:|-------|
+| [/](_root/report.md) | 0 | — |
+| [/about/](about/report.md) | 0 | — |
 
-![/faculty/](faculty/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://amdt.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://amdt.wsu.edu/about/
-- **Status:** 0
-
-### /faculty/
-
-- **URL:** https://amdt.wsu.edu/faculty/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+</details>
 
 ---
 

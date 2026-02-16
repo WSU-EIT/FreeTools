@@ -1,69 +1,73 @@
-# Site Report: https://math.wsu.edu/
+# 🌐 Site Report: https://math.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `math-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 1004.4 KB |
-| Total Screenshots | 3.7 MB |
 | Total Images | 50 (2.6 MB) |
-| Images Missing Alt | 41 |
-| Folder | `math-wsu-edu/` |
+| Images Missing Alt | ⚠️ 41 |
+| Total HTML | 1.0 MB |
+| Total Screenshots | 4.3 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Department of Mathematics and Statist... | 0 | 9 | 0 |
-| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| Department of Mathematics ... | 0 | 41 | 41 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Course Rotation \| Departmen... | 0 | 0 | 0 |
-| ❌ | [/research/](research/report.md) | 0 | Research Strengths \| Department of M... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Department of Mathematics and Statist... | 0 | 9 | 0 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Department of Mathematics ... | 0 | 41 | ⚠️ 41 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Course Rotation \| Departmen... | 0 | 0 | 0 |
+| ✅ | [/research/](research/report.md) | 200 | Research Strengths \| Department of M... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/faculty/](faculty/report.md)
-
-![/faculty/](faculty/01-page-loaded.png)
-
-### [/graduate/](graduate/report.md)
-
-![/graduate/](graduate/01-page-loaded.png)
-
-### [/research/](research/report.md)
-
-![/research/](research/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://math.wsu.edu/
-- **Status:** 0
-
-### /graduate/
-
-- **URL:** https://math.wsu.edu/graduate/
-- **Status:** 0
-
-### /faculty/
-
-- **URL:** https://math.wsu.edu/faculty/
-- **Status:** 0
-
-### /research/
-
-- **URL:** https://math.wsu.edu/research/
-- **Status:** 0
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="faculty/report.md">
+<img src="faculty/01-page-loaded.png" width="250" alt="/faculty/" />
+</a>
+<br />✅ <code>/faculty/</code>
+</td>
+<td align="center" width="33%">
+<a href="graduate/report.md">
+<img src="graduate/01-page-loaded.png" width="250" alt="/graduate/" />
+</a>
+<br />✅ <code>/graduate/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="research/report.md">
+<img src="research/01-page-loaded.png" width="250" alt="/research/" />
+</a>
+<br />✅ <code>/research/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

@@ -3,10 +3,10 @@
   "Url": "https://vancouver.wsu.edu/about/",
   "FinalUrl": "https://www.vancouver.wsu.edu/about-wsu-vancouver",
   "Title": "About WSU Vancouver - About - WSU Vancouver",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 33108,
-  "ScreenshotSizeBytes": 602674,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 39411,
+  "ScreenshotSizeBytes": 849861,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,11 +15,11 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 602674
+      "FileSize": 849861
     }
   ],
-  "ImageCount": 2,
-  "ImagesTotalSizeBytes": 14935,
+  "ImageCount": 3,
+  "ImagesTotalSizeBytes": 247235,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -33,9 +33,32 @@
       "SourceUrl": "https://www.vancouver.wsu.edu/themes/bootstrap_sass_wsuv/images/wsu-vancouver-primary-logo-rgb.svg",
       "AltText": "WSU Vancouver home page",
       "FileSize": 7922
+    },
+    {
+      "FileName": "Banner%20Website_01-WSU-Vancouver.jpg",
+      "SourceUrl": "https://www.vancouver.wsu.edu/files/2024-09/Banner%20Website_01-WSU-Vancouver.jpg",
+      "AltText": "About WSU Vancouver",
+      "FileSize": 232300
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:58.4390301Z"
+  "Headers": {
+    "cache-control": "max-age=1800, public",
+    "content-encoding": "gzip",
+    "content-language": "en",
+    "content-length": "9011",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 05:51:09 GMT",
+    "etag": "\u00221771221069-gzip\u0022",
+    "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+    "last-modified": "Mon, 16 Feb 2026 05:51:09 GMT",
+    "server": "Apache/2.4.62 (Debian)",
+    "vary": "Cookie,Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-drupal-cache": "HIT",
+    "x-drupal-dynamic-cache": "MISS",
+    "x-frame-options": "SAMEORIGIN",
+    "x-generator": "Drupal 10 (https://www.drupal.org)"
+  },
+  "CapturedAt": "2026-02-16T22:12:00.2367683Z"
 }

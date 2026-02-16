@@ -1,40 +1,50 @@
-# Site Report: https://communitystandards.wsu.edu/
+# 🌐 Site Report: https://communitystandards.wsu.edu/
+
+> **Status:** ✅ 1/1 pages OK  
+> **Folder:** `communitystandards-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
 | Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
+| Pages Passed | ✅ 1 |
+| Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 0 bytes |
-| Total Screenshots | 0 bytes |
-| Total Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| Folder | `communitystandards-wsu-edu/` |
+| Total Images | 9 (10.0 MB) |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 66.0 KB |
+| Total Screenshots | 2.3 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 |  | 0 | 9 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
+Click any thumbnail to view the full page report.
 
-## Failed Pages
-
-### /
-
-- **URL:** https://communitystandards.wsu.edu/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 

@@ -3,19 +3,19 @@
   "Url": "https://events.wsu.edu/",
   "FinalUrl": null,
   "Title": "Events | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 64695,
-  "ScreenshotSizeBytes": 274591,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 70643,
+  "ScreenshotSizeBytes": 246465,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 4,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 274591
+      "FileSize": 246465
     }
   ],
   "ImageCount": 0,
@@ -23,6 +23,15 @@
   "ImagesMissingAlt": 0,
   "Images": [],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4528045Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:16:18 GMT",
+    "etag": "\u0022e01f31f74a4fdcbe21df9bece2b1f036\u0022",
+    "last-modified": "Mon, 16 Feb 2026 21:47:34 GMT",
+    "link": "\u003Chttps://events.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://events.wsu.edu/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://events.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:16:18.50007Z"
 }

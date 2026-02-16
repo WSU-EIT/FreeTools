@@ -32,7 +32,7 @@
   "ErrorMessage": null,
   "Headers": {
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 21:00:26 GMT",
+    "date": "Mon, 16 Feb 2026 22:20:28 GMT",
     "link": "\u003Chttps://libraries.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://libraries.wsu.edu/wp-json/wp/v2/pages/170\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022\n\u003Chttps://libraries.wsu.edu/?p=170\u003E; rel=shortlink",
     "server": "nginx",
     "x-content-type-options": "nosniff",
@@ -40,5 +40,5 @@
     "x-powered-by": "PHP/8.3.30",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-16T21:00:25.1202309Z"
+  "CapturedAt": "2026-02-16T22:20:28.292276Z"
 }

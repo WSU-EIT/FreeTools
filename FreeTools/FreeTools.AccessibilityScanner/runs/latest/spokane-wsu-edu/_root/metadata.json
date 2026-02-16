@@ -3,10 +3,10 @@
   "Url": "https://spokane.wsu.edu/",
   "FinalUrl": null,
   "Title": "WSU Spokane | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 318500,
-  "ScreenshotSizeBytes": 3178602,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 329724,
+  "ScreenshotSizeBytes": 6965830,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,12 +15,12 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 3178602
+      "FileSize": 6965830
     }
   ],
-  "ImageCount": 24,
-  "ImagesTotalSizeBytes": 3348239,
-  "ImagesMissingAlt": 2,
+  "ImageCount": 29,
+  "ImagesTotalSizeBytes": 14724206,
+  "ImagesMissingAlt": 4,
   "Images": [
     {
       "FileName": "Home-pharmacy-edit-792x528.jpg",
@@ -33,6 +33,36 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/06/Students-on-Campus-Oct-2022-10-792x528.jpg",
       "AltText": "Nursing students walking on campus",
       "FileSize": 134404
+    },
+    {
+      "FileName": "Crimson-Gala-2023-4.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/01/Crimson-Gala-2023-4.jpg",
+      "AltText": "",
+      "FileSize": 2326797
+    },
+    {
+      "FileName": "campus-activities.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/05/campus-activities.jpg",
+      "AltText": "students playing yard games on campus",
+      "FileSize": 1317214
+    },
+    {
+      "FileName": "Spokane-and-Surrounding-area-824.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/03/Spokane-and-Surrounding-area-824.jpg",
+      "AltText": "",
+      "FileSize": 5109224
+    },
+    {
+      "FileName": "Cultural-Vibrancy.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/05/Cultural-Vibrancy.jpg",
+      "AltText": "McGlade farmer\u0027s market",
+      "FileSize": 1377794
+    },
+    {
+      "FileName": "savor-culinary-delights.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/05/savor-culinary-delights.jpg",
+      "AltText": "Outside view of Caf\u00E9 Capri",
+      "FileSize": 1244938
     },
     {
       "FileName": "Community-Health-Fair-2019-622.jpg",
@@ -168,6 +198,17 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4731492Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:13:16 GMT",
+    "etag": "\u0022c2bb6a03ec0bf94904ffb5b073da9610\u0022",
+    "last-modified": "Mon, 16 Feb 2026 21:54:38 GMT",
+    "link": "\u003Chttps://spokane.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://spokane.wsu.edu/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://spokane.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache": "MISS",
+    "x-cache-status": "MISS"
+  },
+  "CapturedAt": "2026-02-16T22:13:16.1508717Z"
 }

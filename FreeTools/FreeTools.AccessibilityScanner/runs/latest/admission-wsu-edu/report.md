@@ -1,81 +1,98 @@
-# Site Report: https://admission.wsu.edu/
+# 🌐 Site Report: https://admission.wsu.edu/
+
+> **Status:** ✅ 6/6 pages OK  
+> **Folder:** `admission-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 3/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 3 |
-| Pages Failed | 3 |
-| Total JS Errors | 1 |
+| Pages Passed | ✅ 6 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 1 |
 | Total JS Warnings | 3 |
-| Total HTML | 641.2 KB |
-| Total Screenshots | 4.4 MB |
-| Total Images | 33 (5.7 MB) |
-| Images Missing Alt | 5 |
-| Folder | `admission-wsu-edu/` |
+| Total Images | 48 (22.4 MB) |
+| Images Missing Alt | ⚠️ 7 |
+| Total HTML | 643.6 KB |
+| Total Screenshots | 6.3 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Admissions \| Washington State Univer... | 1 | 18 | 0 |
-| ❌ | [/apply/](apply/report.md) | 0 | Apply \| Admissions \| Washington Sta... | 0 | 2 | 1 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Admissions \| Washington State Univer... | 🔴 1 | 30 | 0 |
+| ✅ | [/apply/](apply/report.md) | 200 | Apply \| Admissions \| Washington Sta... | 0 | 5 | ⚠️ 3 |
 | ✅ | [/contact/](contact/report.md) | 200 | Connect \| Admissions \| Washington S... | 0 | 0 | 0 |
 | ✅ | [/international/](international/report.md) | 200 | International Students \| Admissions ... | 0 | 0 | 0 |
-| ✅ | [/transfer/](transfer/report.md) | 200 | Transfer Students \| Admissions \| Wa... | 0 | 1 | 1 |
-| ❌ | [/visit/](visit/report.md) | 0 | Visit & Explore \| Admissions \| Wash... | 0 | 12 | 3 |
+| ✅ | [/transfer/](transfer/report.md) | 200 | Transfer Students \| Admissions \| Wa... | 0 | 1 | ⚠️ 1 |
+| ✅ | [/visit/](visit/report.md) | 200 | Visit & Explore \| Admissions \| Wash... | 0 | 12 | ⚠️ 3 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="apply/report.md">
+<img src="apply/01-page-loaded.png" width="250" alt="/apply/" />
+</a>
+<br />✅ <code>/apply/</code>
+</td>
+<td align="center" width="33%">
+<a href="contact/report.md">
+<img src="contact/01-page-loaded.png" width="250" alt="/contact/" />
+</a>
+<br />✅ <code>/contact/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="international/report.md">
+<img src="international/01-page-loaded.png" width="250" alt="/international/" />
+</a>
+<br />✅ <code>/international/</code>
+</td>
+<td align="center" width="33%">
+<a href="transfer/report.md">
+<img src="transfer/01-page-loaded.png" width="250" alt="/transfer/" />
+</a>
+<br />✅ <code>/transfer/</code>
+</td>
+<td align="center" width="33%">
+<a href="visit/report.md">
+<img src="visit/01-page-loaded.png" width="250" alt="/visit/" />
+</a>
+<br />✅ <code>/visit/</code>
+</td>
+</tr>
+</table>
 
-### [/apply/](apply/report.md)
+## 🔴 JavaScript Errors
 
-![/apply/](apply/01-page-loaded.png)
+<details>
+<summary><strong>1 error(s) across 1 page(s)</strong></summary>
 
-### [/contact/](contact/report.md)
+**/** (1 errors)
 
-![/contact/](contact/01-page-loaded.png)
+```
+Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
+```
 
-### [/international/](international/report.md)
-
-![/international/](international/01-page-loaded.png)
-
-### [/transfer/](transfer/report.md)
-
-![/transfer/](transfer/01-page-loaded.png)
-
-### [/visit/](visit/report.md)
-
-![/visit/](visit/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://admission.wsu.edu/
-- **Status:** 0
-
-### /apply/
-
-- **URL:** https://admission.wsu.edu/apply/
-- **Status:** 0
-
-### /visit/
-
-- **URL:** https://admission.wsu.edu/visit/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_TOO_MANY_REDIRECTS`
-
+</details>
 
 ---
 

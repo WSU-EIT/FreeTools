@@ -3,25 +3,31 @@
   "Url": "https://ccr.wsu.edu/",
   "FinalUrl": null,
   "Title": "Compliance and Civil Rights | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 236193,
-  "ScreenshotSizeBytes": 1602949,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 242508,
+  "ScreenshotSizeBytes": 1901955,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1602949
+      "FileSize": 1901955
     }
   ],
-  "ImageCount": 10,
-  "ImagesTotalSizeBytes": 1626897,
+  "ImageCount": 11,
+  "ImagesTotalSizeBytes": 2166928,
   "ImagesMissingAlt": 0,
   "Images": [
+    {
+      "FileName": "hannah-busing-Zyx1bK9mqmA-unsplash-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ccr/uploads/sites/2951/2022/05/hannah-busing-Zyx1bK9mqmA-unsplash-scaled.jpg",
+      "AltText": "Hands on top of each other, in a circle",
+      "FileSize": 540031
+    },
     {
       "FileName": "Books-Detail.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ccr/uploads/sites/2951/2022/05/Books-Detail.jpg",
@@ -84,6 +90,15 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.446421Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:14:18 GMT",
+    "etag": "\u00221ee601b10f5b590c2eb5c4d7ab6f76a3\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:00:07 GMT",
+    "link": "\u003Chttps://ccr.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ccr.wsu.edu/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ccr.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T22:14:17.9274712Z"
 }

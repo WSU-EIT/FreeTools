@@ -3,10 +3,10 @@
   "Url": "https://studentaffairs.vancouver.wsu.edu/student-involvement/",
   "FinalUrl": "https://studentaffairs.vancouver.wsu.edu/osi",
   "Title": "Office of Student Involvement - Home - WSU Vancouver",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 42299,
-  "ScreenshotSizeBytes": 256831,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 43781,
+  "ScreenshotSizeBytes": 2211151,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,12 +15,12 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 256831
+      "FileSize": 2211151
     }
   ],
-  "ImageCount": 8,
-  "ImagesTotalSizeBytes": 197811,
-  "ImagesMissingAlt": 6,
+  "ImageCount": 11,
+  "ImagesTotalSizeBytes": 3353252,
+  "ImagesMissingAlt": 9,
   "Images": [
     {
       "FileName": "wsu-vancouver-horizontal-logo-rgb.svg",
@@ -35,6 +35,12 @@
       "FileSize": 7922
     },
     {
+      "FileName": "quad-cougar-canopies-01-2400x1200.jpg",
+      "SourceUrl": "https://studentaffairs.vancouver.wsu.edu/files/hero/2019-05/quad-cougar-canopies-01-2400x1200.jpg",
+      "AltText": "",
+      "FileSize": 285291
+    },
+    {
       "FileName": "osi-symbols-400-organizations.png",
       "SourceUrl": "https://studentaffairs.vancouver.wsu.edu/files/inserted-images/osi-symbols-400-organizations.png",
       "AltText": "",
@@ -47,10 +53,22 @@
       "FileSize": 78728
     },
     {
+      "FileName": "SmithRock_Group_900x750.jpg",
+      "SourceUrl": "https://studentaffairs.vancouver.wsu.edu/files/2024-07/SmithRock_Group_900x750.jpg",
+      "AltText": "",
+      "FileSize": 2862573
+    },
+    {
       "FileName": "osi-symbols-400-recreation.png",
       "SourceUrl": "https://studentaffairs.vancouver.wsu.edu/files/inserted-images/osi-symbols-400-recreation.png",
       "AltText": "",
       "FileSize": 14928
+    },
+    {
+      "FileName": "osi-symbols-400-leadership.png",
+      "SourceUrl": "https://studentaffairs.vancouver.wsu.edu/files/inserted-images/osi-symbols-400-leadership.png",
+      "AltText": "",
+      "FileSize": 7577
     },
     {
       "FileName": "slrp-award-recipients-02-900x750.jpg",
@@ -72,6 +90,23 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:59:36.801256Z"
+  "Headers": {
+    "cache-control": "max-age=3600, public",
+    "content-encoding": "gzip",
+    "content-language": "en",
+    "content-length": "9293",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Wed, 11 Feb 2026 20:50:50 GMT",
+    "etag": "\u00221771243293-gzip\u0022",
+    "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+    "last-modified": "Mon, 16 Feb 2026 12:01:33 GMT",
+    "server": "Apache/2.4.62 (Debian)",
+    "vary": "Cookie,Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-drupal-cache": "HIT",
+    "x-drupal-dynamic-cache": "HIT",
+    "x-frame-options": "SAMEORIGIN",
+    "x-generator": "Drupal 10 (https://www.drupal.org)"
+  },
+  "CapturedAt": "2026-02-16T22:13:08.9399888Z"
 }

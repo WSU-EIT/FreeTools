@@ -26,12 +26,12 @@
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 21:02:31 GMT",
+    "date": "Mon, 16 Feb 2026 22:19:36 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-16T21:02:31.3143157Z"
+  "CapturedAt": "2026-02-16T22:19:37.1417373Z"
 }

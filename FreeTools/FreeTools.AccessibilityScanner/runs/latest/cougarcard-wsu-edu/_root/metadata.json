@@ -3,10 +3,10 @@
   "Url": "https://cougarcard.wsu.edu/",
   "FinalUrl": null,
   "Title": "Home",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 35644,
-  "ScreenshotSizeBytes": 489718,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 35671,
+  "ScreenshotSizeBytes": 961569,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 489718
+      "FileSize": 961569
     }
   ],
   "ImageCount": 0,
@@ -23,6 +23,15 @@
   "ImagesMissingAlt": 0,
   "Images": [],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4517114Z"
+  "Headers": {
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 22:14:57 GMT",
+    "frame-ancestors": "self https://*.risevision.com",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=2592000",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1"
+  },
+  "CapturedAt": "2026-02-16T22:14:57.9625308Z"
 }

@@ -1,73 +1,91 @@
-# Site Report: https://portal.wsu.edu/
+# 🌐 Site Report: https://portal.wsu.edu/
+
+> **Status:** ✅ 3/3 pages OK  
+> **Folder:** `portal-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/3 pages OK |
 | Pages Scanned | 3 |
-| Pages Passed | 0 |
-| Pages Failed | 3 |
-| Total JS Errors | 8 |
+| Pages Passed | ✅ 3 |
+| Pages Failed | 0 |
+| Total JS Errors | 🔴 14 |
 | Total JS Warnings | 0 |
-| Total HTML | 282.7 KB |
-| Total Screenshots | 114.5 KB |
 | Total Images | 3 (23.0 KB) |
-| Images Missing Alt | 0 |
-| Folder | `portal-wsu-edu/` |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 352.2 KB |
+| Total Screenshots | 161.2 KB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU \| Sign In | 8 | 1 | 0 |
-| ❌ | [/help/](help/report.md) | 0 | WSU Authentication \| Washington Stat... | 0 | 1 | 0 |
-| ❌ | [/services/](services/report.md) | 0 | WSU Authentication \| Washington Stat... | 0 | 1 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | WSU \| Sign In | 🔴 7 | 1 | 0 |
+| ✅ | [/help/](help/report.md) | 200 | WSU \| Sign In | 🔴 7 | 1 | 0 |
+| ✅ | [/services/](services/report.md) | 200 | WSU Authentication \| Washington Stat... | 0 | 1 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="help/report.md">
+<img src="help/01-page-loaded.png" width="250" alt="/help/" />
+</a>
+<br />✅ <code>/help/</code>
+</td>
+<td align="center" width="33%">
+<a href="services/report.md">
+<img src="services/01-page-loaded.png" width="250" alt="/services/" />
+</a>
+<br />✅ <code>/services/</code>
+</td>
+</tr>
+</table>
 
-### [/help/](help/report.md)
+## 🔴 JavaScript Errors
 
-![/help/](help/01-page-loaded.png)
+<details>
+<summary><strong>14 error(s) across 2 page(s)</strong></summary>
 
-### [/services/](services/report.md)
+**/** (7 errors)
 
-![/services/](services/01-page-loaded.png)
+```
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+Something unexpected happened while we were checking url http://127.0.0.1:65131
+Something unexpected happened while we were checking url http://127.0.0.1:65141
+... and 2 more (see _root/errors.log)
+```
 
+**/help/** (7 errors)
 
-## Failed Pages
+```
+Something unexpected happened while we were checking url http://127.0.0.1:8769
+Something unexpected happened while we were checking url http://127.0.0.1:65111
+Something unexpected happened while we were checking url http://127.0.0.1:65121
+Something unexpected happened while we were checking url http://127.0.0.1:65131
+Something unexpected happened while we were checking url http://127.0.0.1:65141
+... and 2 more (see help/errors.log)
+```
 
-### /
-
-- **URL:** https://portal.wsu.edu/
-- **Status:** 0
-
-### /help/
-
-- **URL:** https://portal.wsu.edu/help/
-- **Status:** 0
-
-### /services/
-
-- **URL:** https://portal.wsu.edu/services/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (8 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
-- `No available ports. Loopback server failed and polling is cancelled.`
-
+</details>
 
 ---
 

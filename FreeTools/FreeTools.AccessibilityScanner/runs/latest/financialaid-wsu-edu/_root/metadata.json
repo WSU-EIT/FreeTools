@@ -3,25 +3,31 @@
   "Url": "https://financialaid.wsu.edu/",
   "FinalUrl": null,
   "Title": "Student Financial Services | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 252645,
-  "ScreenshotSizeBytes": 1167088,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 260443,
+  "ScreenshotSizeBytes": 2389726,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1167088
+      "FileSize": 2389726
     }
   ],
-  "ImageCount": 8,
-  "ImagesTotalSizeBytes": 1889278,
+  "ImageCount": 10,
+  "ImagesTotalSizeBytes": 3263364,
   "ImagesMissingAlt": 0,
   "Images": [
+    {
+      "FileName": "Thompson-Hall.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-financialaid/uploads/sites/2322/2024/12/Thompson-Hall.jpg",
+      "AltText": "A full view of WSU Pullman\u0027s Thompson Hall in late spring with blooming tree flowers in the foreground.",
+      "FileSize": 712129
+    },
     {
       "FileName": "CougsatPlayfair.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-financialaid/uploads/sites/2322/2024/08/CougsatPlayfair.jpg",
@@ -39,6 +45,12 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-financialaid/uploads/sites/2322/2024/03/DRAFT-SITE-stock-photo.jpg",
       "AltText": "Five WSU students outdoors on campus holding up a cougar head flag.",
       "FileSize": 157776
+    },
+    {
+      "FileName": "ButchonFootballField.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-financialaid/uploads/sites/2322/2024/08/ButchonFootballField.jpg",
+      "AltText": "Washington State mascot Butch T. Cougar cheers with the marching band before a WSU football game.",
+      "FileSize": 661957
     },
     {
       "FileName": "StudentGroupHandshake.jpg",
@@ -72,6 +84,17 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:58:42.4538699Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 22:16:49 GMT",
+    "etag": "\u0022035cd5e94d4b76f1b66c09fd9be82df4\u0022",
+    "last-modified": "Mon, 16 Feb 2026 22:07:06 GMT",
+    "link": "\u003Chttps://financialaid.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://financialaid.wsu.edu/wp-json/wp/v2/pages/10\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://financialaid.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache": "HIT",
+    "x-cache-status": "HIT"
+  },
+  "CapturedAt": "2026-02-16T22:16:48.8905521Z"
 }

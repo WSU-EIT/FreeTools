@@ -1,76 +1,73 @@
-# Site Report: https://ccr.wsu.edu/
+# 🌐 Site Report: https://ccr.wsu.edu/
+
+> **Status:** ✅ 4/4 pages OK  
+> **Folder:** `ccr-wsu-edu/`  
+
+---
+
+## 📋 Summary
+
+```
+Success Rate:  [██████████████████████████████] 100%
+```
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 0 |
-| Pages Failed | 4 |
-| Total JS Errors | 1 |
-| Total JS Warnings | 0 |
-| Total HTML | 884.5 KB |
-| Total Screenshots | 2.3 MB |
-| Total Images | 10 (1.6 MB) |
-| Images Missing Alt | 0 |
-| Folder | `ccr-wsu-edu/` |
+| Pages Passed | ✅ 4 |
+| Pages Failed | 0 |
+| Total JS Errors | 0 |
+| Total JS Warnings | 1 |
+| Total Images | 11 (2.1 MB) |
+| Images Missing Alt | ✅ 0 |
+| Total HTML | 918.3 KB |
+| Total Screenshots | 2.6 MB |
 
-## Pages
+## 📑 Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
-|--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Compliance and Civil Rights \| Washin... | 1 | 10 | 0 |
-| ❌ | [/policies/](policies/report.md) | 0 | Policies & Procedures \| Compliance a... | 0 | 0 | 0 |
-| ❌ | [/reporting/](reporting/report.md) | 0 | File A Report or Complaint \| Complia... | 0 | 0 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | Resources \| Compliance and Civil Rig... | 0 | 0 | 0 |
+|:------:|------|:----:|-------|:---------:|:------:|:-----------:|
+| ✅ | [/](_root/report.md) | 200 | Compliance and Civil Rights \| Washin... | 0 | 11 | 0 |
+| ✅ | [/policies/](policies/report.md) | 200 | Policies & Procedures \| Compliance a... | 0 | 0 | 0 |
+| ✅ | [/reporting/](reporting/report.md) | 200 | File A Report or Complaint \| Complia... | 0 | 0 | 0 |
+| ✅ | [/resources/](resources/report.md) | 200 | Resources \| Compliance and Civil Rig... | 0 | 0 | 0 |
 
-## Page Screenshots
+## 📸 Page Screenshots
 
-### [/](_root/report.md)
+Click any thumbnail to view the full page report.
 
-![/](_root/01-page-loaded.png)
-
-### [/policies/](policies/report.md)
-
-![/policies/](policies/01-page-loaded.png)
-
-### [/reporting/](reporting/report.md)
-
-![/reporting/](reporting/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
-
-## Failed Pages
-
-### /
-
-- **URL:** https://ccr.wsu.edu/
-- **Status:** 0
-
-### /policies/
-
-- **URL:** https://ccr.wsu.edu/policies/
-- **Status:** 0
-
-### /reporting/
-
-- **URL:** https://ccr.wsu.edu/reporting/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://ccr.wsu.edu/resources/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="_root/report.md">
+<img src="_root/01-page-loaded.png" width="250" alt="/" />
+</a>
+<br />✅ <code>/</code>
+</td>
+<td align="center" width="33%">
+<a href="policies/report.md">
+<img src="policies/01-page-loaded.png" width="250" alt="/policies/" />
+</a>
+<br />✅ <code>/policies/</code>
+</td>
+<td align="center" width="33%">
+<a href="reporting/report.md">
+<img src="reporting/01-page-loaded.png" width="250" alt="/reporting/" />
+</a>
+<br />✅ <code>/reporting/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.png" width="250" alt="/resources/" />
+</a>
+<br />✅ <code>/resources/</code>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ---
 
