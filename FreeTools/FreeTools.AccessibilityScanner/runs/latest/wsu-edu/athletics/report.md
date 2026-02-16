@@ -5,18 +5,18 @@
 | URL | https://wsu.edu/athletics/ |
 | Title | WSU Athletics | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 118.3 KB |
-| Screenshots | 1 (3.9 MB) |
+| HTML Size | 118.4 KB |
+| Screenshots | 1 (4.2 MB) |
 | Images | 14 (15.6 MB) |
 | Images Missing Alt | 8 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:41:23.5307592Z |
+| Captured | 2026-02-16T21:02:32.5266825Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (3.9 MB)
+- Screenshot #1: page-loaded (4.2 MB)
 - Downloaded 14 images to /images/
 
 ## Screenshots
@@ -89,7 +89,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (3.9 MB)
+- `01-page-loaded.png` — page-loaded (4.2 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

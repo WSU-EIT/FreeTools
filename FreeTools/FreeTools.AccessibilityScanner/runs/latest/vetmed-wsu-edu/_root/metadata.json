@@ -5,21 +5,21 @@
   "Title": "College of Veterinary Medicine | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 269680,
-  "ScreenshotSizeBytes": 883483,
+  "HtmlSizeBytes": 271331,
+  "ScreenshotSizeBytes": 1019495,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 883483
+      "FileSize": 1019495
     }
   ],
-  "ImageCount": 11,
-  "ImagesTotalSizeBytes": 2131470,
+  "ImageCount": 12,
+  "ImagesTotalSizeBytes": 2705880,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -27,6 +27,12 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2022/04/HealthyPeoplePets-DogLickingDr-News720x480.jpg",
       "AltText": "Young black lab licking the masked face of a veterinarian.",
       "FileSize": 250726
+    },
+    {
+      "FileName": "Hero-kids-judge-2024-02-DSC_4641-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2024/03/Hero-kids-judge-2024-02-DSC_4641-1.jpg",
+      "AltText": "Kids enjoying an activity at the 2024 Kids Judge! event.",
+      "FileSize": 574410
     },
     {
       "FileName": "OpenHouse22ButchwDog-720x480-1.jpg",
@@ -91,5 +97,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1819823Z"
+  "CapturedAt": "2026-02-16T20:58:42.4756837Z"
 }

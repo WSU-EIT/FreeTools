@@ -7,17 +7,17 @@
 | Title | My Settings | WSU |
 | Status | ❌ 0 |
 | HTML Size | 3.9 KB |
-| Screenshots | 1 (7.6 KB) |
+| Screenshots | 1 (10.0 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:24.0231864Z |
+| Captured | 2026-02-16T20:59:37.2758288Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (7.6 KB)
+- Screenshot #1: page-loaded (10.0 KB)
 - No images found on page
 
 ## Screenshots
@@ -33,7 +33,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (7.6 KB)
+- `01-page-loaded.png` — page-loaded (10.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

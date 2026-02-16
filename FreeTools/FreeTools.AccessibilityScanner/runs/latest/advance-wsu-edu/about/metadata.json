@@ -1,12 +1,12 @@
 {
   "PagePath": "/about/",
   "Url": "https://advance.wsu.edu/about/",
-  "FinalUrl": "https://advance.wsu.edu/about-the-program/",
+  "FinalUrl": "about:blank",
   "Title": "About the Program | ADVANCE at WSU | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 68375,
-  "ScreenshotSizeBytes": 683249,
+  "HtmlSizeBytes": 68719,
+  "ScreenshotSizeBytes": 525337,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 683249
+      "FileSize": 525337
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:42.4329196Z"
+  "CapturedAt": "2026-02-16T20:59:04.8430271Z"
 }

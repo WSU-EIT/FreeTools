@@ -5,14 +5,14 @@
 | URL | https://index.wsu.edu/?c=D |
 | Title | WSU A-Z Index | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 200.8 KB |
+| HTML Size | 206.8 KB |
 | Screenshots | 1 (138.0 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:39.3880246Z |
+| Captured | 2026-02-16T21:00:23.6559838Z |
 
 ## Actions
 

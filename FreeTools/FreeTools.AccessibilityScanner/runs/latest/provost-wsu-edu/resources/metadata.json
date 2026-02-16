@@ -5,10 +5,10 @@
   "Title": "Resources for our students | Office of the Provost | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 112153,
+  "HtmlSizeBytes": 113669,
   "ScreenshotSizeBytes": 202330,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:42.4732325Z"
+  "CapturedAt": "2026-02-16T21:00:13.3848466Z"
 }

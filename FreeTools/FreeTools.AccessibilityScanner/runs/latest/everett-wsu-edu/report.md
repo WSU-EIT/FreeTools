@@ -6,11 +6,11 @@
 | Pages Scanned | 6 |
 | Pages Passed | 3 |
 | Pages Failed | 3 |
-| Total JS Errors | 15 |
+| Total JS Errors | 9 |
 | Total JS Warnings | 2 |
 | Total HTML | 1.4 MB |
-| Total Screenshots | 9.2 MB |
-| Total Images | 112 (3.9 MB) |
+| Total Screenshots | 8.6 MB |
+| Total Images | 113 (4.4 MB) |
 | Images Missing Alt | 92 |
 | Folder | `everett-wsu-edu/` |
 
@@ -18,12 +18,12 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Washington State University Everett \... | 10 | 24 | 15 |
-| ❌ | [/about/](about/report.md) | 0 | Washington State University Everett \... | 1 | 22 | 14 |
+| ❌ | [/](_root/report.md) | 0 | Washington State University Everett \... | 4 | 23 | 14 |
+| ❌ | [/about/](about/report.md) | 0 | Washington State University Everett \... | 1 | 23 | 14 |
 | ❌ | [/academics/](academics/report.md) | 0 | Undergraduate \| Washington State Uni... | 1 | 17 | 16 |
 | ✅ | [/admissions/](admissions/report.md) | 200 | Apply to WSU Everett \| Washington St... | 1 | 19 | 18 |
 | ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Washington State Univer... | 1 | 16 | 15 |
-| ✅ | [/student-services/](student-services/report.md) | 200 | Student Affairs Fall Preview \| Washi... | 1 | 14 | 14 |
+| ✅ | [/student-services/](student-services/report.md) | 200 | Student Affairs Fall Preview \| Washi... | 1 | 15 | 15 |
 
 ## Page Screenshots
 
@@ -72,14 +72,8 @@
 
 ## Pages with JavaScript Errors
 
-### / (10 errors)
+### / (4 errors)
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_CONNECTION_ABORTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`

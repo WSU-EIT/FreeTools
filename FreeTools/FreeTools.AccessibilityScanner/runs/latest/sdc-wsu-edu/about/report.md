@@ -6,14 +6,14 @@
 | Redirected To | https://sdc.wsu.edu/about-us/ |
 | Title | About Us | School of Design and Construction | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 213.9 KB |
+| HTML Size | 221.3 KB |
 | Screenshots | 1 (1.0 MB) |
 | Images | 3 (272.5 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:18.2795469Z |
+| Captured | 2026-02-16T20:59:42.6244209Z |
 
 ## Actions
 

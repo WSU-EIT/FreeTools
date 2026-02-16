@@ -5,17 +5,17 @@
   "Title": "WSU Department of English | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 66655,
-  "ScreenshotSizeBytes": 1239380,
+  "HtmlSizeBytes": 62232,
+  "ScreenshotSizeBytes": 1232744,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 4,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1239380
+      "FileSize": 1232744
     }
   ],
   "ImageCount": 0,
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0583675Z"
+  "CapturedAt": "2026-02-16T20:58:42.4528413Z"
 }

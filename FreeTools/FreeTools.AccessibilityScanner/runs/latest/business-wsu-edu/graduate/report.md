@@ -6,14 +6,14 @@
 | Redirected To | https://business.wsu.edu/graduate-placements/ |
 | Title | Graduate Placements - Carson College of Business | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 181.4 KB |
+| HTML Size | 181.3 KB |
 | Screenshots | 1 (541.4 KB) |
 | Images | 4 (526.2 KB) |
 | Images Missing Alt | 1 |
 | JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:52.7906609Z |
+| Captured | 2026-02-16T21:00:17.9350288Z |
 
 ## JavaScript Errors
 

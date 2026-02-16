@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/7 pages OK |
+| Status | ⚠️ 2/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 0 |
-| Pages Failed | 7 |
-| Total JS Errors | 2 |
+| Pages Passed | 2 |
+| Pages Failed | 5 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.5 MB |
-| Total Screenshots | 8.8 MB |
-| Total Images | 46 (5.3 MB) |
+| Total HTML | 1.6 MB |
+| Total Screenshots | 9.5 MB |
+| Total Images | 47 (6.0 MB) |
 | Images Missing Alt | 0 |
 | Folder | `chemistry-wsu-edu/` |
 
@@ -18,13 +18,13 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Department of Chemistry \| Washington... | 1 | 6 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | Department of Chemistry \| Washington... | 1 | 7 | 0 |
-| ❌ | [/facilities/](facilities/report.md) | 0 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
-| ❌ | [/faculty/](faculty/report.md) | 0 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | Department of Chemistry \| Washington... | 0 | 6 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Department of Chemistry \| Washington... | 0 | 6 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | Department of Chemistry \| Washington... | 0 | 6 | 0 |
+| ✅ | [/facilities/](facilities/report.md) | 200 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
+| ❌ | [/graduate/](graduate/report.md) | 0 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
 | ❌ | [/research/](research/report.md) | 0 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Department of Chemistry \| Washington... | 0 | 6 | 0 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Department of Chemistry \| Washington... | 0 | 7 | 0 |
 
 ## Page Screenshots
 
@@ -83,27 +83,6 @@
 
 - **URL:** https://chemistry.wsu.edu/research/
 - **Status:** 0
-
-### /faculty/
-
-- **URL:** https://chemistry.wsu.edu/faculty/
-- **Status:** 0
-
-### /facilities/
-
-- **URL:** https://chemistry.wsu.edu/facilities/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /about/ (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

@@ -5,25 +5,22 @@
 | URL | https://bursar.wsu.edu/ |
 | Title | Bursar | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 56.5 KB |
-| Screenshots | 1 (554.3 KB) |
+| HTML Size | 60.8 KB |
+| Screenshots | 1 (584.5 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 4 |
+| JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0413466Z |
+| Captured | 2026-02-16T20:58:42.4455746Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- Screenshot #1: page-loaded (554.3 KB)
+- Screenshot #1: page-loaded (584.5 KB)
 - Downloaded 0 images to /images/
 
 ## Screenshots
@@ -39,7 +36,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (554.3 KB)
+- `01-page-loaded.png` — page-loaded (584.5 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

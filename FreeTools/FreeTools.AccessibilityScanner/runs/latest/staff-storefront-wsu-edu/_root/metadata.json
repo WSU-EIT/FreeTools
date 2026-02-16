@@ -5,17 +5,17 @@
   "Title": "Home - WSU Coug Prints Plus",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 26062,
-  "ScreenshotSizeBytes": 84677,
+  "HtmlSizeBytes": 26064,
+  "ScreenshotSizeBytes": 89263,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 84677
+      "FileSize": 89263
     }
   ],
   "ImageCount": 7,
@@ -67,5 +67,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.155705Z"
+  "CapturedAt": "2026-02-16T20:58:42.4745267Z"
 }

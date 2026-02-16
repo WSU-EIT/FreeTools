@@ -6,14 +6,14 @@
 | Redirected To | https://physics.wsu.edu/2025/07/10/undergraduate-labs-renovation/ |
 | Title | Undergraduate labs renovation | Department of Physics & Astronomy | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 207.3 KB |
+| HTML Size | 212.3 KB |
 | Screenshots | 1 (412.8 KB) |
 | Images | 1 (86.4 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:18.6828982Z |
+| Captured | 2026-02-16T20:59:49.3976995Z |
 
 ## Actions
 

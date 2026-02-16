@@ -5,8 +5,8 @@
   "Title": "News Articles | WSU Insider | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 274210,
-  "ScreenshotSizeBytes": 850195,
+  "HtmlSizeBytes": 281526,
+  "ScreenshotSizeBytes": 842300,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 850195
+      "FileSize": 842300
     }
   ],
   "ImageCount": 11,
@@ -91,5 +91,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:33.7901411Z"
+  "CapturedAt": "2026-02-16T21:00:15.3527044Z"
 }

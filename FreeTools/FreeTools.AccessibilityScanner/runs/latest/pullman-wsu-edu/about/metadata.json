@@ -5,8 +5,8 @@
   "Title": "About WSU Pullman | Pullman Campus | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 55104,
-  "ScreenshotSizeBytes": 1514292,
+  "HtmlSizeBytes": 55397,
+  "ScreenshotSizeBytes": 1995832,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1514292
+      "FileSize": 1995832
     }
   ],
   "ImageCount": 5,
@@ -55,5 +55,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:59.9456455Z"
+  "CapturedAt": "2026-02-16T20:59:49.3976823Z"
 }

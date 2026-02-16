@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
-| Pages Scanned | 4 |
+| Status | ⚠️ 0/2 pages OK |
+| Pages Scanned | 2 |
 | Pages Passed | 0 |
-| Pages Failed | 4 |
-| Total JS Errors | 30 |
+| Pages Failed | 2 |
+| Total JS Errors | 4 |
 | Total JS Warnings | 0 |
-| Total HTML | 204.1 KB |
-| Total Screenshots | 336.6 KB |
+| Total HTML | 107.7 KB |
+| Total Screenshots | 311.1 KB |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `events-wsu-edu/` |
@@ -18,10 +18,8 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Events \| Washington State University | 19 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Events \| Washington State University | 1 | 0 | 0 |
 | ❌ | [/calendar/](calendar/report.md) | 0 | Calendar Redirect \| Events \| Washin... | 3 | 0 | 0 |
-| ❌ | [/categories/](categories/report.md) | 0 | Page not found \| Events \| Washingto... | 4 | 0 | 0 |
-| ❌ | [/submit-event/](submit-event/report.md) | 0 | Page not found \| Events \| Washingto... | 4 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -32,14 +30,6 @@
 ### [/calendar/](calendar/report.md)
 
 ![/calendar/](calendar/01-page-loaded.png)
-
-### [/categories/](categories/report.md)
-
-![/categories/](categories/01-page-loaded.png)
-
-### [/submit-event/](submit-event/report.md)
-
-![/submit-event/](submit-event/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -54,51 +44,17 @@
 - **URL:** https://events.wsu.edu/calendar/
 - **Status:** 0
 
-### /submit-event/
-
-- **URL:** https://events.wsu.edu/submit-event/
-- **Status:** 0
-
-### /categories/
-
-- **URL:** https://events.wsu.edu/categories/
-- **Status:** 0
-
 
 ## Pages with JavaScript Errors
-
-### / (19 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- ... and 9 more (see `_root/errors.log`)
-
-### /submit-event/ (4 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /categories/ (4 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
 
 ### /calendar/ (3 errors)
 
 - `Failed to load resource: the server responded with a status of 405 ()`
 - `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### / (1 errors)
+
 - `Failed to load resource: the server responded with a status of 405 ()`
 
 

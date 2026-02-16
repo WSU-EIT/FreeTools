@@ -6,14 +6,14 @@
 | Redirected To | https://nursing.wsu.edu/ug-programs/rn-bsn/about-rn-to-bsn-day/ |
 | Title | About RN to BSN Day | College of Nursing | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 234.0 KB |
+| HTML Size | 237.2 KB |
 | Screenshots | 1 (252.0 KB) |
 | Images | 1 (10.5 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 3 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:59.8215557Z |
+| Captured | 2026-02-16T20:59:37.5735415Z |
 
 ## JavaScript Errors
 

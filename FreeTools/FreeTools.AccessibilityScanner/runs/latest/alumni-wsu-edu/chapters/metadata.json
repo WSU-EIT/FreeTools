@@ -3,8 +3,8 @@
   "Url": "https://alumni.wsu.edu/chapters/",
   "FinalUrl": "https://alumni.wsu.edu/s/1613/18/interior.aspx?sid=1613\u0026gid=2\u0026pgid=60\u0026cid=169\u0026referer=\u0026query=chapters%2f",
   "Title": "Washington State University Alumni Association - Alumni Travel Offerings 2025 - 2026",
-  "StatusCode": 0,
-  "Success": false,
+  "StatusCode": 200,
+  "Success": true,
   "HtmlSizeBytes": 78770,
   "ScreenshotSizeBytes": 244797,
   "CredentialUsed": null,
@@ -42,6 +42,29 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:57.3817675Z"
+  "Headers": {
+    "access-control-expose-headers": "Request-Context",
+    "cache-control": "no-cache, no-store",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "9ceff94a0caaa389-SEA",
+    "content-encoding": "gzip",
+    "content-length": "17767",
+    "content-security-policy": "frame-ancestors \u0027self\u0027 imodules.com default-src \u0027self\u0027",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 21:00:19 GMT",
+    "expires": "-1",
+    "pragma": "no-cache",
+    "request-context": "appId=cid-v1:260dcd14-1564-44b4-b5c5-7abfe7739f73",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "vary": "Accept-Encoding",
+    "x-aspnet-version": "4.0.30319",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-powered-by": "ASP.NET",
+    "x-server": "uswebgreen05",
+    "x-stackifyid": "V2|b9b3ed70-573f-4a8c-b275-010c5cd8957d|C0|CD0",
+    "x-xss-protection": "1; mode=block"
+  },
+  "CapturedAt": "2026-02-16T21:00:15.3655527Z"
 }

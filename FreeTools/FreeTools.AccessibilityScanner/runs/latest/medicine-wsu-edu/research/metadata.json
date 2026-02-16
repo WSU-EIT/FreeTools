@@ -5,8 +5,8 @@
   "Title": "Research Overview | Elson S. Floyd College of Medicine | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 257655,
-  "ScreenshotSizeBytes": 2479305,
+  "HtmlSizeBytes": 264202,
+  "ScreenshotSizeBytes": 2431466,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2479305
+      "FileSize": 2431466
     }
   ],
   "ImageCount": 19,
@@ -139,5 +139,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:36.0585724Z"
+  "CapturedAt": "2026-02-16T21:00:48.6267067Z"
 }

@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/7 pages OK |
+| Status | ⚠️ 2/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 0 |
-| Pages Failed | 7 |
+| Pages Passed | 2 |
+| Pages Failed | 5 |
 | Total JS Errors | 4 |
 | Total JS Warnings | 1 |
-| Total HTML | 748.9 KB |
-| Total Screenshots | 1.9 MB |
+| Total HTML | 751.7 KB |
+| Total Screenshots | 2.9 MB |
 | Total Images | 18 (1.8 MB) |
 | Images Missing Alt | 17 |
 | Folder | `research-wsu-edu/` |
@@ -20,8 +20,8 @@
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | Office of Research \| Washington Stat... | 2 | 18 | 17 |
 | ❌ | [/about/](about/report.md) | 0 | About Us \| Office of Research \| Was... | 1 | 0 | 0 |
-| ❌ | [/compliance/](compliance/report.md) | 0 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Office of Research \| W... | 1 | 0 | 0 |
+| ✅ | [/compliance/](compliance/report.md) | 200 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Office of Research \| W... | 1 | 0 | 0 |
 | ❌ | [/funding/](funding/report.md) | 0 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
 | ❌ | [/research-areas/](research-areas/report.md) | 0 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
 | ❌ | [/resources/](resources/report.md) | 0 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
@@ -79,19 +79,9 @@
 - **URL:** https://research.wsu.edu/funding/
 - **Status:** 0
 
-### /compliance/
-
-- **URL:** https://research.wsu.edu/compliance/
-- **Status:** 0
-
 ### /resources/
 
 - **URL:** https://research.wsu.edu/resources/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://research.wsu.edu/contact/
 - **Status:** 0
 
 

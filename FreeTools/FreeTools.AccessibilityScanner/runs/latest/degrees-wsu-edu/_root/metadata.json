@@ -5,17 +5,17 @@
   "Title": "Degree Finder | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 412816,
-  "ScreenshotSizeBytes": 752232,
+  "HtmlSizeBytes": 417087,
+  "ScreenshotSizeBytes": 250230,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 7,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 752232
+      "FileSize": 250230
     }
   ],
   "ImageCount": 7,
@@ -67,5 +67,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0414287Z"
+  "CapturedAt": "2026-02-16T20:58:42.4510559Z"
 }

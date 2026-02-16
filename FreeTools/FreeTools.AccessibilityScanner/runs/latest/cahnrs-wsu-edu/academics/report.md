@@ -5,19 +5,19 @@
 | URL | https://cahnrs.wsu.edu/academics/ |
 | Title | Academics | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 240.3 KB |
-| Screenshots | 1 (686.1 KB) |
-| Images | 9 (1.5 MB) |
+| HTML Size | 250.8 KB |
+| Screenshots | 1 (739.0 KB) |
+| Images | 11 (3.0 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:01.6828698Z |
+| Captured | 2026-02-16T21:00:35.7685980Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (686.1 KB)
-- Downloaded 9 images to /images/
+- Screenshot #1: page-loaded (739.0 KB)
+- Downloaded 11 images to /images/
 
 ## Screenshots
 
@@ -26,7 +26,7 @@
 ![page-loaded](01-page-loaded.png)
 
 
-## Page Images (9)
+## Page Images (11)
 
 | # | Image | Alt Text | Size |
 |---|-------|----------|------|
@@ -34,11 +34,13 @@
 | 2 | [Elle-Jennings-with-grapes-featured-1024x824.jpg](images/Elle-Jennings-with-grapes-featured-1024x824.jpg) | A person in a warehouse holds a rake ... | 125.3 KB |
 | 3 | [54799163289_6a04c12550_o-683x1024.jpg](images/54799163289_6a04c12550_o-683x1024.jpg) | Student in the field holding a salmon. | 132.5 KB |
 | 4 | [cropped-APS-2022-61-1024x684.jpg](images/cropped-APS-2022-61-1024x684.jpg) | Female graduate student presenting re... | 160.7 KB |
-| 5 | [Brenda.jpg](images/Brenda.jpg) | Student weeding in the dirt. | 73.5 KB |
-| 6 | [Letty.jpg](images/Letty.jpg) | Student standing in front of wooden c... | 62.1 KB |
-| 7 | [Ian-Nickels.png](images/Ian-Nickels.png) | Ian Nickels stands next to a cliff. | 725.2 KB |
-| 8 | [Plant-Pathology-alums-group-photo-1024x645.jpg](images/Plant-Pathology-alums-group-photo-1024x645.jpg) | Plant Pathology alumni group photo | 157.5 KB |
-| 9 | [JD-Baser-1.jpg](images/JD-Baser-1.jpg) | Formal portrait of J.D. Baser. | 64.8 KB |
+| 5 | [Giraffe.png](images/Giraffe.png) | Female student with a Giraffe. | 847.2 KB |
+| 6 | [Watering.png](images/Watering.png) | Man watering baseball field. | 666.4 KB |
+| 7 | [Brenda.jpg](images/Brenda.jpg) | Student weeding in the dirt. | 73.5 KB |
+| 8 | [Letty.jpg](images/Letty.jpg) | Student standing in front of wooden c... | 62.1 KB |
+| 9 | [Ian-Nickels.png](images/Ian-Nickels.png) | Ian Nickels stands next to a cliff. | 725.2 KB |
+| 10 | [Plant-Pathology-alums-group-photo-1024x645.jpg](images/Plant-Pathology-alums-group-photo-1024x645.jpg) | Plant Pathology alumni group photo | 157.5 KB |
+| 11 | [JD-Baser-1.jpg](images/JD-Baser-1.jpg) | Formal portrait of J.D. Baser. | 64.8 KB |
 
 ### Gallery
 
@@ -49,6 +51,10 @@
 ![Student in the field holding a salmon.](images/54799163289_6a04c12550_o-683x1024.jpg)
 
 ![Female graduate student presenting research poster at conference.](images/cropped-APS-2022-61-1024x684.jpg)
+
+![Female student with a Giraffe.](images/Giraffe.png)
+
+![Man watering baseball field.](images/Watering.png)
 
 ![Student weeding in the dirt.](images/Brenda.jpg)
 
@@ -63,11 +69,11 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (686.1 KB)
+- `01-page-loaded.png` — page-loaded (739.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
-- `images/` — 9 page images (1.5 MB)
+- `images/` — 11 page images (3.0 MB)

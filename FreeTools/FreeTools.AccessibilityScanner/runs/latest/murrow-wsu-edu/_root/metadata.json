@@ -5,8 +5,8 @@
   "Title": "Edward R. Murrow College of Communication | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 297705,
-  "ScreenshotSizeBytes": 521635,
+  "HtmlSizeBytes": 294362,
+  "ScreenshotSizeBytes": 521913,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,13 +15,19 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 521635
+      "FileSize": 521913
     }
   ],
-  "ImageCount": 39,
-  "ImagesTotalSizeBytes": 5307321,
+  "ImageCount": 40,
+  "ImagesTotalSizeBytes": 5896383,
   "ImagesMissingAlt": 3,
   "Images": [
+    {
+      "FileName": "COM-540-9.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/10/COM-540-9.jpg",
+      "AltText": "Students working on laptops in the Communication 540 class.",
+      "FileSize": 589062
+    },
     {
       "FileName": "Experiential-Learning-Card-2.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/Experiential-Learning-Card-2.jpg",
@@ -167,7 +173,7 @@
       "FileSize": 142882
     },
     {
-      "FileName": "image-25.jpg",
+      "FileName": "image-26.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/05/girl-using-laptop-computer-from-home-while-studyin-2025-02-21-15-25-57-utc-scaled.jpg",
       "AltText": "",
       "FileSize": 395026
@@ -259,5 +265,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1339345Z"
+  "CapturedAt": "2026-02-16T20:58:42.4635669Z"
 }

@@ -6,18 +6,18 @@
 | Redirected To | https://hrs.wsu.edu/employees/benefits/ |
 | Title | Benefits – Human Resource Services, Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 81.4 KB |
-| Screenshots | 1 (380.0 KB) |
+| HTML Size | 80.6 KB |
+| Screenshots | 1 (353.3 KB) |
 | Images | 10 (255.5 KB) |
 | Images Missing Alt | 3 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:51.3828828Z |
+| Captured | 2026-02-16T20:59:54.2238599Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (380.0 KB)
+- Screenshot #1: page-loaded (353.3 KB)
 - Downloaded 10 images to /images/
 
 ## Screenshots
@@ -73,7 +73,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (380.0 KB)
+- `01-page-loaded.png` — page-loaded (353.3 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -4,7 +4,7 @@
 |-------|-------|
 | URL | https://housing.wsu.edu/prospective-students/transfer-students/ |
 | Title | Transfer Students |
-| Status | ❌ 0 |
+| Status | ✅ 200 |
 | HTML Size | 66.1 KB |
 | Screenshots | 1 (1.1 MB) |
 | Images | 6 (2.9 MB) |
@@ -12,7 +12,7 @@
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:08.1963867Z |
+| Captured | 2026-02-16T21:01:15.0025305Z |
 
 ## Actions
 

@@ -47,8 +47,7 @@
 - **Error:** `Timeout 30000ms exceeded.
 Call log:
   - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded`
+  - waiting for fonts to load...`
 
 ### /reshall/
 
@@ -65,10 +64,10 @@ Call log:
 
 ### /fam/ (12 errors)
 
-- `Refused to apply style from 'https://housing.wsu.edu/css/normalize.css' because its MIME type ('') is not a supported...`
 - `Failed to load resource: the server responded with a status of 404 ()`
 - `Refused to apply style from 'https://housing.wsu.edu/css/contracts/contracts.css' because its MIME type ('') is not a...`
 - `Failed to load resource: the server responded with a status of 404 ()`
+- `Refused to apply style from 'https://housing.wsu.edu/css/normalize.css' because its MIME type ('') is not a supported...`
 - `Failed to load resource: the server responded with a status of 404 ()`
 - `Failed to load resource: the server responded with a status of 404 ()`
 - `Failed to load resource: the server responded with a status of 404 ()`

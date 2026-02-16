@@ -5,14 +5,14 @@
 | URL | https://its.wsu.edu/enterprise-systems/enterprise-systems-project-overview/ |
 | Title | Project Overview | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 231.3 KB |
+| HTML Size | 231.4 KB |
 | Screenshots | 1 (347.3 KB) |
 | Images | 1 (32.2 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:22.0226641Z |
+| Captured | 2026-02-16T21:01:34.8721876Z |
 
 ## Actions
 

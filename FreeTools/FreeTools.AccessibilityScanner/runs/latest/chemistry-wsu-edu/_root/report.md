@@ -3,21 +3,17 @@
 | Field | Value |
 |-------|-------|
 | URL | https://chemistry.wsu.edu/ |
-| Redirected To | https://chem.wsu.edu/ |
+| Redirected To | about:blank |
 | Title | Department of Chemistry | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 227.6 KB |
+| HTML Size | 211.9 KB |
 | Screenshots | 1 (1.3 MB) |
 | Images | 6 (386.3 KB) |
 | Images Missing Alt | 0 |
-| JS Errors | 1 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0342079Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:58:42.4493887Z |
 
 ## Actions
 

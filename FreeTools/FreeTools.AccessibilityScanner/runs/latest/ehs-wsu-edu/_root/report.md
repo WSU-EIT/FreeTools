@@ -5,22 +5,18 @@
 | URL | https://ehs.wsu.edu/ |
 | Title | Environmental Health & Safety | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 231.9 KB |
-| Screenshots | 1 (405.3 KB) |
+| HTML Size | 236.1 KB |
+| Screenshots | 1 (431.0 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 1 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0589478Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:58:42.4522726Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (405.3 KB)
+- Screenshot #1: page-loaded (431.0 KB)
 - Downloaded 0 images to /images/
 
 ## Screenshots
@@ -36,7 +32,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (405.3 KB)
+- `01-page-loaded.png` — page-loaded (431.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -5,8 +5,8 @@
   "Title": "ITS Leadership Team | Information Technology Services | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 243529,
-  "ScreenshotSizeBytes": 550376,
+  "HtmlSizeBytes": 252974,
+  "ScreenshotSizeBytes": 625108,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,11 +15,11 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 550376
+      "FileSize": 625108
     }
   ],
-  "ImageCount": 11,
-  "ImagesTotalSizeBytes": 2450040,
+  "ImageCount": 15,
+  "ImagesTotalSizeBytes": 4419526,
   "ImagesMissingAlt": 1,
   "Images": [
     {
@@ -39,6 +39,12 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-its/uploads/sites/2898/2024/06/Michael_Walters.jpg",
       "AltText": "Photo of Michael Walters Interim CISO/Information Security Services (ISS)",
       "FileSize": 167632
+    },
+    {
+      "FileName": "Justin-Hughes-0824.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-its/uploads/sites/2898/2024/08/Justin-Hughes-0824.jpg",
+      "AltText": "Cougar Head Logo",
+      "FileSize": 474549
     },
     {
       "FileName": "Coug-GREY-photo-place-holder-768x849-1.png",
@@ -71,10 +77,28 @@
       "FileSize": 427039
     },
     {
+      "FileName": "Gary-Saunders-0824.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-its/uploads/sites/2898/2024/08/Gary-Saunders-0824.jpg",
+      "AltText": "Gary Saunders",
+      "FileSize": 509663
+    },
+    {
+      "FileName": "JS_v2_2024.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-its/uploads/sites/2898/2024/07/JS_v2_2024.jpg",
+      "AltText": "Photo of Jacqueline Southwick Director Systems Communication \u0026 Customer Experience",
+      "FileSize": 495197
+    },
+    {
       "FileName": "Bryan_Valley_2025.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-its/uploads/sites/2898/2025/02/Bryan_Valley_2025.jpg",
       "AltText": "Cougar Head Logo",
       "FileSize": 281856
+    },
+    {
+      "FileName": "Dave-Whelchel-0824.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-its/uploads/sites/2898/2024/08/Dave-Whelchel-0824.jpg",
+      "AltText": "Cougar Head Logo",
+      "FileSize": 490077
     },
     {
       "FileName": "Carrie_Johnson.jpg",
@@ -91,5 +115,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:21.4578014Z"
+  "CapturedAt": "2026-02-16T20:59:55.0903642Z"
 }

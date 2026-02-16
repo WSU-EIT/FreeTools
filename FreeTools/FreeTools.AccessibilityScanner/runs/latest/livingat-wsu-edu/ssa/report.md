@@ -3,7 +3,7 @@
 | Field | Value |
 |-------|-------|
 | URL | https://livingat.wsu.edu/ssa/ |
-| Redirected To | https://wsu.starrezhousing.com/StarRezPortalX/08CFF2CC/1/1/Home-Home?UrlToken=4390A529 |
+| Redirected To | https://wsu.starrezhousing.com/StarRezPortalX/84106B87/1/1/Home-Home?UrlToken=5D7AE414 |
 | Title | Home | StarRez Portal |
 | Status | ❌ 0 |
 | HTML Size | 28.3 KB |
@@ -13,7 +13,7 @@
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:26.9223384Z |
+| Captured | 2026-02-16T21:00:03.8924570Z |
 
 ## Actions
 

@@ -6,20 +6,14 @@
 | Redirected To | about:blank |
 | Title | Sign in to your account |
 | Status | ❌ 0 |
-| HTML Size | 87.7 KB |
+| HTML Size | 75.9 KB |
 | Screenshots | 1 (4.6 KB) |
-| Images | 2 (2.0 KB) |
+| Images | 2 (5.1 KB) |
 | Images Missing Alt | 1 |
-| JS Errors | 3 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1352587Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:58:42.4651134Z |
 
 ## Actions
 
@@ -37,8 +31,8 @@
 
 | # | Image | Alt Text | Size |
 |---|-------|----------|------|
-| 1 | [microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg](images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg) | Microsoft | 1.4 KB |
-| 2 | [signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg](images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg) | *(none)* | 621 bytes |
+| 1 | [microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg](images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg) | Microsoft | 3.6 KB |
+| 2 | [signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg](images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg) | *(none)* | 1.6 KB |
 
 ### Gallery
 
@@ -49,7 +43,7 @@
 
 ### ⚠️ Images Missing Alt Text (1)
 
-- `signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg` — https://aadcdn.msauth.net/shared/1.0/content/images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg
+- `signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg` — https://aadcdn.msftauth.net/shared/1.0/content/images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg
 
 ## Files
 
@@ -60,4 +54,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
-- `images/` — 2 page images (2.0 KB)
+- `images/` — 2 page images (5.1 KB)

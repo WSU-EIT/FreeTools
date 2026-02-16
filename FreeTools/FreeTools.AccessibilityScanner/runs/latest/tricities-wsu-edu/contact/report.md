@@ -5,14 +5,14 @@
 | URL | https://tricities.wsu.edu/contact/ |
 | Title | Contact Us - WSU Tri-Cities |
 | Status | ✅ 200 |
-| HTML Size | 120.6 KB |
+| HTML Size | 120.9 KB |
 | Screenshots | 1 (123.0 KB) |
 | Images | 5 (50.6 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:45.1724426Z |
+| Captured | 2026-02-16T21:01:44.5715210Z |
 
 ## Actions
 

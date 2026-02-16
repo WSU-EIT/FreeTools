@@ -6,14 +6,14 @@
 | Redirected To | https://admission.wsu.edu/apply/international-students/ |
 | Title | International Students | Admissions | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 84.7 KB |
+| HTML Size | 84.6 KB |
 | Screenshots | 1 (260.9 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:09.4592063Z |
+| Captured | 2026-02-16T21:01:26.0924724Z |
 
 ## Actions
 

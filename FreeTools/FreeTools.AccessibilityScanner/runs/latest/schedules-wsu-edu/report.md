@@ -8,8 +8,8 @@
 | Pages Failed | 4 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 2.7 MB |
-| Total Screenshots | 230.6 KB |
+| Total HTML | 3.4 MB |
+| Total Screenshots | 272.1 KB |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `schedules-wsu-edu/` |
@@ -22,7 +22,7 @@
 | ✅ | [/Coop/](Coop/report.md) | 200 | Schedule of Classes | 0 | 0 | 0 |
 | ✅ | [/List/Everett/](List_Everett/report.md) | 200 | Schedule of Classes | 0 | 0 | 0 |
 | ❌ | [/List/Pullman/](List_Pullman/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/List/Spokane/](List_Spokane/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/List/Spokane/](List_Spokane/report.md) | 0 | Schedule of Classes | 0 | 0 | 0 |
 | ❌ | [/List/TriCities/](List_TriCities/report.md) | 0 | Schedule of Classes | 0 | 0 | 0 |
 | ✅ | [/List/Vancouver/](List_Vancouver/report.md) | 200 | Schedule of Classes | 0 | 0 | 0 |
 
@@ -35,6 +35,10 @@
 ### [/List/Everett/](List_Everett/report.md)
 
 ![/List/Everett/](List_Everett/01-page-loaded.png)
+
+### [/List/Spokane/](List_Spokane/report.md)
+
+![/List/Spokane/](List_Spokane/01-page-loaded.png)
 
 ### [/List/TriCities/](List_TriCities/report.md)
 
@@ -54,8 +58,7 @@
 - **Error:** `Timeout 30000ms exceeded.
 Call log:
   - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded`
+  - waiting for fonts to load...`
 
 ### /List/Pullman/
 
@@ -70,10 +73,6 @@ Call log:
 
 - **URL:** https://schedules.wsu.edu/List/Spokane/
 - **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
 
 ### /List/TriCities/
 

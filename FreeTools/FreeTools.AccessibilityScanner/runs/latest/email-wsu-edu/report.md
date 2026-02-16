@@ -6,11 +6,11 @@
 | Pages Scanned | 5 |
 | Pages Passed | 0 |
 | Pages Failed | 5 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 4 |
-| Total HTML | 57.2 KB |
-| Total Screenshots | 125.7 KB |
-| Total Images | 4 (12.5 KB) |
+| Total JS Errors | 2 |
+| Total JS Warnings | 8 |
+| Total HTML | 145.7 KB |
+| Total Screenshots | 130.5 KB |
+| Total Images | 4 (21.6 KB) |
 | Images Missing Alt | 0 |
 | Folder | `email-wsu-edu/` |
 
@@ -20,15 +20,11 @@
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
 | ❌ | [/access/](access/report.md) | 0 | Outlook | 0 | 1 | 0 |
-| ❌ | [/help/](help/report.md) | 0 | Outlook | 0 | 1 | 0 |
-| ❌ | [/policies/](policies/report.md) | 0 | (none) | 0 | 1 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | Outlook | 0 | 1 | 0 |
+| ❌ | [/help/](help/report.md) | 0 | (none) | 0 | 1 | 0 |
+| ❌ | [/policies/](policies/report.md) | 0 | WSU \| There was an unexpected intern... | 2 | 1 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | WSU Authentication \| Washington Stat... | 0 | 1 | 0 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
 
 ### [/access/](access/report.md)
 
@@ -53,7 +49,11 @@
 
 - **URL:** https://email.wsu.edu/
 - **Status:** 0
-- **Error:** `Unable to retrieve content because the page is navigating and changing the content.`
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded`
 
 ### /access/
 
@@ -64,17 +64,26 @@
 
 - **URL:** https://email.wsu.edu/help/
 - **Status:** 0
+- **Error:** `Execution context was destroyed, most likely because of a navigation`
 
 ### /policies/
 
 - **URL:** https://email.wsu.edu/policies/
 - **Status:** 0
-- **Error:** `Execution context was destroyed, most likely because of a navigation`
 
 ### /resources/
 
 - **URL:** https://email.wsu.edu/resources/
 - **Status:** 0
+
+
+## Pages with JavaScript Errors
+
+### /policies/ (2 errors)
+
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+- `AuthApiError: Failed to fetch
+    at https://ok6static2.oktacdn.com/assets/js/sdk/okta-signin-widget/7.40.3/js/okta-s...`
 
 
 ---

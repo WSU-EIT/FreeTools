@@ -5,14 +5,14 @@
 | URL | https://em.wsu.edu/eit/ |
 | Title | Enrollment IT |
 | Status | ❌ 0 |
-| HTML Size | 625.4 KB |
+| HTML Size | 625.6 KB |
 | Screenshots | 1 (170.8 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:00.2625579Z |
+| Captured | 2026-02-16T20:59:34.8233897Z |
 
 ## Actions
 

@@ -5,8 +5,8 @@
   "Title": "Contact Us | Office of Native American Programs | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 228158,
-  "ScreenshotSizeBytes": 734246,
+  "HtmlSizeBytes": 229294,
+  "ScreenshotSizeBytes": 819337,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,18 +15,30 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 734246
+      "FileSize": 819337
     }
   ],
-  "ImageCount": 7,
-  "ImagesTotalSizeBytes": 2399444,
-  "ImagesMissingAlt": 4,
+  "ImageCount": 9,
+  "ImagesTotalSizeBytes": 4353133,
+  "ImagesMissingAlt": 6,
   "Images": [
     {
       "FileName": "Boyd-AD-792x528.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/3277/2025/12/Boyd-AD-792x528.jpg",
       "AltText": "",
       "FileSize": 75124
+    },
+    {
+      "FileName": "Screenshot-2025-10-08-at-9.46.58%E2%80%AFAM.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/3277/2025/10/Screenshot-2025-10-08-at-9.46.58%E2%80%AFAM.png",
+      "AltText": "",
+      "FileSize": 812840
+    },
+    {
+      "FileName": "Gomez_4-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/3277/2024/08/Gomez_4-scaled.jpg",
+      "AltText": "",
+      "FileSize": 747217
     },
     {
       "FileName": "ff27d9c7-e4a5-4d09-9737-d6aac6da1448.jpg",
@@ -41,10 +53,10 @@
       "FileSize": 248719
     },
     {
-      "FileName": "Document-Name-30-scaled.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/3277/2025/08/Document-Name-30-scaled.jpg",
+      "FileName": "Screenshot-2025-10-08-at-9.48.04%E2%80%AFAM.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/3277/2025/10/Screenshot-2025-10-08-at-9.48.04%E2%80%AFAM.png",
       "AltText": "",
-      "FileSize": 508136
+      "FileSize": 901768
     },
     {
       "FileName": "Jamie-11-scaled.jpg",
@@ -67,5 +79,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:03.9963255Z"
+  "CapturedAt": "2026-02-16T20:59:51.7293771Z"
 }

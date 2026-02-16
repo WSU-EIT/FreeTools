@@ -5,17 +5,17 @@
   "Title": "Washington State University Alumni Association - Home",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 112667,
-  "ScreenshotSizeBytes": 221877,
+  "HtmlSizeBytes": 112618,
+  "ScreenshotSizeBytes": 212516,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 221877
+      "FileSize": 212516
     }
   ],
   "ImageCount": 10,
@@ -85,5 +85,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:04.9807837Z"
+  "CapturedAt": "2026-02-16T20:58:42.4381748Z"
 }

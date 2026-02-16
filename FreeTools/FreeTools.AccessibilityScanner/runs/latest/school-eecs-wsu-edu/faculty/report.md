@@ -6,18 +6,18 @@
 | Redirected To | https://school.eecs.wsu.edu/directory/ |
 | Title | Directory | School of Electrical Engineering & Computer Science | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 347.1 KB |
-| Screenshots | 1 (1.7 MB) |
+| HTML Size | 353.4 KB |
+| Screenshots | 1 (2.0 MB) |
 | Images | 70 (3.9 MB) |
 | Images Missing Alt | 70 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:23.8091722Z |
+| Captured | 2026-02-16T21:00:47.7556215Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.7 MB)
+- Screenshot #1: page-loaded (2.0 MB)
 - Downloaded 70 images to /images/
 
 ## Screenshots
@@ -320,7 +320,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.7 MB)
+- `01-page-loaded.png` — page-loaded (2.0 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

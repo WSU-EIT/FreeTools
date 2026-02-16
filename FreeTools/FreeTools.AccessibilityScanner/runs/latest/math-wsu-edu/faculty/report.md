@@ -5,18 +5,18 @@
 | URL | https://math.wsu.edu/faculty/ |
 | Title | Faculty | Department of Mathematics and Statistics | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 318.0 KB |
-| Screenshots | 1 (1.7 MB) |
+| HTML Size | 315.9 KB |
+| Screenshots | 1 (1.4 MB) |
 | Images | 41 (1.5 MB) |
 | Images Missing Alt | 41 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:51.3122091Z |
+| Captured | 2026-02-16T20:59:52.8241639Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.7 MB)
+- Screenshot #1: page-loaded (1.4 MB)
 - Downloaded 41 images to /images/
 
 ## Screenshots
@@ -203,7 +203,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.7 MB)
+- `01-page-loaded.png` — page-loaded (1.4 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

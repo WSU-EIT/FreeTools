@@ -3,32 +3,33 @@
 | Field | Value |
 |-------|-------|
 | URL | https://registrar.wsu.edu/ |
-| Title | Office of the Registrar |
+| Title | (none) |
 | Status | ❌ 0 |
-| HTML Size | 649.9 KB |
-| Screenshots | 1 (432.0 KB) |
+| HTML Size | 0 bytes |
+| Screenshots | 0 (0 bytes) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Errors | 0 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1519575Z |
+| Captured | 2026-02-16T20:58:42.4703668Z |
 
-## JavaScript Errors
+## Error
 
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+```
+Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+```
 
 ## Actions
 
-- Screenshot #1: page-loaded (432.0 KB)
-- No images found on page
+- Scan aborted due to error
 
 ## Screenshots
 
-### 1. page-loaded
-
-![page-loaded](01-page-loaded.png)
-
+*No screenshots captured.*
 
 ## Page Images (0)
 
@@ -36,7 +37,6 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (432.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

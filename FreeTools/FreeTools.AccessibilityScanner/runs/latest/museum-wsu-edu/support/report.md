@@ -7,13 +7,13 @@
 | Title | Support the Museum | Jordan Schnitzer Museum of Art WSU | Washington State University |
 | Status | ✅ 200 |
 | HTML Size | 233.4 KB |
-| Screenshots | 1 (1.5 MB) |
+| Screenshots | 1 (2.1 MB) |
 | Images | 5 (1.5 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:36.2949892Z |
+| Captured | 2026-02-16T21:01:28.8237162Z |
 
 ## JavaScript Errors
 
@@ -21,7 +21,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.5 MB)
+- Screenshot #1: page-loaded (2.1 MB)
 - Downloaded 5 images to /images/
 
 ## Screenshots
@@ -56,7 +56,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.5 MB)
+- `01-page-loaded.png` — page-loaded (2.1 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

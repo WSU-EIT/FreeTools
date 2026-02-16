@@ -5,25 +5,23 @@
 | URL | https://physics.wsu.edu/ |
 | Title | Department of Physics & Astronomy | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 214.9 KB |
-| Screenshots | 1 (1.3 MB) |
+| HTML Size | 226.2 KB |
+| Screenshots | 1 (1.6 MB) |
 | Images | 6 (915.3 KB) |
 | Images Missing Alt | 0 |
-| JS Errors | 4 |
+| JS Errors | 2 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1368841Z |
+| Captured | 2026-02-16T20:58:42.4685449Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.3 MB)
+- Screenshot #1: page-loaded (1.6 MB)
 - Downloaded 6 images to /images/
 
 ## Screenshots
@@ -61,7 +59,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.3 MB)
+- `01-page-loaded.png` — page-loaded (1.6 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -5,8 +5,8 @@
   "Title": "School of Electrical Engineering \u0026 Computer Science | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 248243,
-  "ScreenshotSizeBytes": 1552983,
+  "HtmlSizeBytes": 251012,
+  "ScreenshotSizeBytes": 1915004,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,13 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1552983
+      "FileSize": 1915004
     }
   ],
-  "ImageCount": 13,
-  "ImagesTotalSizeBytes": 2392001,
+  "ImageCount": 12,
+  "ImagesTotalSizeBytes": 1832326,
   "ImagesMissingAlt": 0,
   "Images": [
-    {
-      "FileName": "Computer-Science-in-AI-scaled.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3427/2026/01/Computer-Science-in-AI-scaled.jpg",
-      "AltText": "A professor and three students using laptops shown against an abstract AI-themed background.",
-      "FileSize": 559675
-    },
     {
       "FileName": "Yassine-NeurIPS-2025-e1768322109629.jpeg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3427/2026/01/Yassine-NeurIPS-2025-e1768322109629.jpeg",
@@ -103,5 +97,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1539145Z"
+  "CapturedAt": "2026-02-16T20:58:42.4715458Z"
 }

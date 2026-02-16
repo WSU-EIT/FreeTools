@@ -6,18 +6,18 @@
 | Title | First Year Students |
 | Status | ❌ 0 |
 | HTML Size | 80.1 KB |
-| Screenshots | 1 (572.0 KB) |
-| Images | 11 (2.5 MB) |
+| Screenshots | 1 (555.8 KB) |
+| Images | 13 (3.3 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:58.2437136Z |
+| Captured | 2026-02-16T21:00:42.0704974Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (572.0 KB)
-- Downloaded 11 images to /images/
+- Screenshot #1: page-loaded (555.8 KB)
+- Downloaded 13 images to /images/
 
 ## Screenshots
 
@@ -26,25 +26,31 @@
 ![page-loaded](01-page-loaded.png)
 
 
-## Page Images (11)
+## Page Images (13)
 
 | # | Image | Alt Text | Size |
 |---|-------|----------|------|
 | 1 | [honors-exterior.jpg](images/honors-exterior.jpg) | Elmina White Honors | 174.2 KB |
-| 2 | [olympia-exterior.jpg](images/olympia-exterior.jpg) | Olympia | 217.8 KB |
-| 3 | [scott-coman-exterior.jpg](images/scott-coman-exterior.jpg) | Scott Coman | 182.3 KB |
-| 4 | [stephenson-exterior-towers.jpg](images/stephenson-exterior-towers.jpg) | Stephenson Complex | 119.2 KB |
-| 5 | [regents-exterior.jpg](images/regents-exterior.jpg) | Regents | 139.0 KB |
-| 6 | [streit-perham-exterior.jpg](images/streit-perham-exterior.jpg) | Streit Perham | 184.5 KB |
-| 7 | [rogers-exterior-banner.jpg](images/rogers-exterior-banner.jpg) | Rogers | 336.2 KB |
-| 8 | [orton-exterior.jpg](images/orton-exterior.jpg) | Orton | 254.2 KB |
-| 9 | [community-duncan-dunn-exterior.jpg](images/community-duncan-dunn-exterior.jpg) | Community Duncan Dunn | 134.6 KB |
-| 10 | [northside-desk-exterior.png](images/northside-desk-exterior.png) | Northside | 406.2 KB |
-| 11 | [gsh-exterior-cougar-way.jpg](images/gsh-exterior-cougar-way.jpg) | Global Scholars Hall | 433.4 KB |
+| 2 | [gg-exterior-side.jpg](images/gg-exterior-side.jpg) | Gannon Goldsworthy | 512.0 KB |
+| 3 | [mccroskey-exterior-side.jpg](images/mccroskey-exterior-side.jpg) | McCroskey | 285.1 KB |
+| 4 | [olympia-exterior.jpg](images/olympia-exterior.jpg) | Olympia | 217.8 KB |
+| 5 | [scott-coman-exterior.jpg](images/scott-coman-exterior.jpg) | Scott Coman | 182.3 KB |
+| 6 | [stephenson-exterior-towers.jpg](images/stephenson-exterior-towers.jpg) | Stephenson Complex | 119.2 KB |
+| 7 | [regents-exterior.jpg](images/regents-exterior.jpg) | Regents | 139.0 KB |
+| 8 | [streit-perham-exterior.jpg](images/streit-perham-exterior.jpg) | Streit Perham | 184.5 KB |
+| 9 | [rogers-exterior-banner.jpg](images/rogers-exterior-banner.jpg) | Rogers | 336.2 KB |
+| 10 | [orton-exterior.jpg](images/orton-exterior.jpg) | Orton | 254.2 KB |
+| 11 | [community-duncan-dunn-exterior.jpg](images/community-duncan-dunn-exterior.jpg) | Community Duncan Dunn | 134.6 KB |
+| 12 | [northside-desk-exterior.png](images/northside-desk-exterior.png) | Northside | 406.2 KB |
+| 13 | [gsh-exterior-cougar-way.jpg](images/gsh-exterior-cougar-way.jpg) | Global Scholars Hall | 433.4 KB |
 
 ### Gallery
 
 ![Elmina White Honors](images/honors-exterior.jpg)
+
+![Gannon Goldsworthy](images/gg-exterior-side.jpg)
+
+![McCroskey](images/mccroskey-exterior-side.jpg)
 
 ![Olympia](images/olympia-exterior.jpg)
 
@@ -69,11 +75,11 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (572.0 KB)
+- `01-page-loaded.png` — page-loaded (555.8 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
-- `images/` — 11 page images (2.5 MB)
+- `images/` — 13 page images (3.3 MB)

@@ -5,18 +5,18 @@
 | URL | https://its.wsu.edu/its-careers/ |
 | Title | ITS Careers | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 234.8 KB |
-| Screenshots | 1 (1.9 MB) |
+| HTML Size | 235.0 KB |
+| Screenshots | 1 (1.2 MB) |
 | Images | 4 (1.0 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:57.2683883Z |
+| Captured | 2026-02-16T21:02:05.9132856Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.9 MB)
+- Screenshot #1: page-loaded (1.2 MB)
 - Downloaded 4 images to /images/
 
 ## Screenshots
@@ -48,7 +48,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.9 MB)
+- `01-page-loaded.png` — page-loaded (1.2 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

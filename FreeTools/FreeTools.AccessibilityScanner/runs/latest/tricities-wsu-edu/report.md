@@ -2,25 +2,25 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 4/7 pages OK |
+| Status | ⚠️ 5/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 4 |
-| Pages Failed | 3 |
-| Total JS Errors | 9 |
+| Pages Passed | 5 |
+| Pages Failed | 2 |
+| Total JS Errors | 3 |
 | Total JS Warnings | 13 |
-| Total HTML | 895.3 KB |
-| Total Screenshots | 6.3 MB |
-| Total Images | 66 (3.4 MB) |
-| Images Missing Alt | 19 |
+| Total HTML | 894.6 KB |
+| Total Screenshots | 6.4 MB |
+| Total Images | 71 (3.8 MB) |
+| Images Missing Alt | 22 |
 | Folder | `tricities-wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Tri-Cities - apply now to earn yo... | 9 | 21 | 9 |
+| ❌ | [/](_root/report.md) | 0 | WSU Tri-Cities - apply now to earn yo... | 3 | 26 | 12 |
 | ❌ | [/about/](about/report.md) | 0 | About WSU Tri-Cities - WSU Tri-Cities | 0 | 16 | 9 |
-| ❌ | [/academics/](academics/report.md) | 0 | Academics \| WSU Tri-Cities | 0 | 6 | 0 |
+| ✅ | [/academics/](academics/report.md) | 200 | Academics \| WSU Tri-Cities | 0 | 6 | 0 |
 | ✅ | [/admissions/](admissions/report.md) | 200 | Admissions \| WSU Tri-Cities | 0 | 12 | 0 |
 | ✅ | [/contact/](contact/report.md) | 200 | Contact Us - WSU Tri-Cities | 0 | 5 | 0 |
 | ✅ | [/library/](library/report.md) | 200 | WSU Tri-Cities Library | 0 | 5 | 0 |
@@ -69,22 +69,11 @@
 - **URL:** https://tricities.wsu.edu/about/
 - **Status:** 0
 
-### /academics/
-
-- **URL:** https://tricities.wsu.edu/academics/
-- **Status:** 0
-
 
 ## Pages with JavaScript Errors
 
-### / (9 errors)
+### / (3 errors)
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 - `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 - `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 - `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`

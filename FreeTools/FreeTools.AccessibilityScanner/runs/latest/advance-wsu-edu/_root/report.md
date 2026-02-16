@@ -5,14 +5,14 @@
 | URL | https://advance.wsu.edu/ |
 | Title | ADVANCE at WSU | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 60.7 KB |
+| HTML Size | 52.6 KB |
 | Screenshots | 1 (238.8 KB) |
 | Images | 1 (8.5 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:04.9083199Z |
+| Captured | 2026-02-16T20:58:42.4233289Z |
 
 ## Actions
 

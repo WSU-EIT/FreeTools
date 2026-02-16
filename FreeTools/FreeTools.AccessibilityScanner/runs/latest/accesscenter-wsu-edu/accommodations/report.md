@@ -5,19 +5,19 @@
 | URL | https://accesscenter.wsu.edu/accommodations/ |
 | Redirected To | https://accommodations.wsu.edu/ |
 | Title |  |
-| Status | ✅ 200 |
-| HTML Size | 56.4 KB |
-| Screenshots | 1 (1.3 MB) |
+| Status | ❌ 0 |
+| HTML Size | 56.3 KB |
+| Screenshots | 1 (748.0 KB) |
 | Images | 1 (258.3 KB) |
 | Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:52.7572088Z |
+| Captured | 2026-02-16T21:00:45.7419960Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.3 MB)
+- Screenshot #1: page-loaded (748.0 KB)
 - Downloaded 1 images to /images/
 
 ## Screenshots
@@ -44,7 +44,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.3 MB)
+- `01-page-loaded.png` — page-loaded (748.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -5,17 +5,17 @@
   "Title": "Ask Dr. Universe | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 64981,
-  "ScreenshotSizeBytes": 963581,
+  "HtmlSizeBytes": 62551,
+  "ScreenshotSizeBytes": 760770,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 4,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 963581
+      "FileSize": 760770
     }
   ],
   "ImageCount": 10,
@@ -85,5 +85,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0061491Z"
+  "CapturedAt": "2026-02-16T20:58:42.4433674Z"
 }

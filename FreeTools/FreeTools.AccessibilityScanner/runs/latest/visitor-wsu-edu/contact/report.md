@@ -6,14 +6,14 @@
 | Redirected To | https://visitor.wsu.edu/contact-us/ |
 | Title | Contact Us | Brelsford WSU Visitor Center | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 216.1 KB |
+| HTML Size | 216.2 KB |
 | Screenshots | 1 (1.8 MB) |
 | Images | 2 (560.5 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:38.7660803Z |
+| Captured | 2026-02-16T21:00:30.5987548Z |
 
 ## Actions
 

@@ -5,18 +5,18 @@
 | URL | https://its.wsu.edu/about-its/ |
 | Title | About ITS | Information Technology Services | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 221.4 KB |
-| Screenshots | 1 (1001.6 KB) |
+| HTML Size | 224.8 KB |
+| Screenshots | 1 (991.8 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:55.7279411Z |
+| Captured | 2026-02-16T20:59:31.7134569Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1001.6 KB)
+- Screenshot #1: page-loaded (991.8 KB)
 - Downloaded 0 images to /images/
 
 ## Screenshots
@@ -32,7 +32,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1001.6 KB)
+- `01-page-loaded.png` — page-loaded (991.8 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

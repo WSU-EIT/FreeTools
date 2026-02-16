@@ -5,21 +5,21 @@
   "Title": "Washington State University Vancouver - Vancouver, WA, USA",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 65764,
-  "ScreenshotSizeBytes": 1260219,
+  "HtmlSizeBytes": 72168,
+  "ScreenshotSizeBytes": 519062,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 4,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1260219
+      "FileSize": 519062
     }
   ],
   "ImageCount": 12,
-  "ImagesTotalSizeBytes": 323765,
+  "ImagesTotalSizeBytes": 321475,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -47,10 +47,10 @@
       "FileSize": 157943
     },
     {
-      "FileName": "Notable%20Alumni%20Award_01-WSU-Vancouver_0.jpg",
-      "SourceUrl": "https://www.vancouver.wsu.edu/files/2025-10/Notable%20Alumni%20Award_01-WSU-Vancouver_0.jpg",
-      "AltText": "2025 Notable Alumni Award Recipient: Bryan Stebbins",
-      "FileSize": 101235
+      "FileName": "2026%20-%20Winter%20-%20Cougar%20Quarterly_28.jpg",
+      "SourceUrl": "https://www.vancouver.wsu.edu/files/2026-02/2026%20-%20Winter%20-%20Cougar%20Quarterly_28.jpg",
+      "AltText": "Alumni Spotlight: Aaron and Jen Thorne",
+      "FileSize": 98945
     },
     {
       "FileName": "Facebook-white.svg",
@@ -97,5 +97,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.181558Z"
+  "CapturedAt": "2026-02-16T20:58:42.4756571Z"
 }

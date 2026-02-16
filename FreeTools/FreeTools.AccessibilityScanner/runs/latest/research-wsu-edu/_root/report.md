@@ -5,14 +5,14 @@
 | URL | https://research.wsu.edu/ |
 | Title | Office of Research | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 257.3 KB |
-| Screenshots | 1 (249.5 KB) |
+| HTML Size | 260.8 KB |
+| Screenshots | 1 (1.2 MB) |
 | Images | 18 (1.8 MB) |
 | Images Missing Alt | 17 |
 | JS Errors | 2 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1524560Z |
+| Captured | 2026-02-16T20:58:42.4707592Z |
 
 ## JavaScript Errors
 
@@ -21,7 +21,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (249.5 KB)
+- Screenshot #1: page-loaded (1.2 MB)
 - Downloaded 18 images to /images/
 
 ## Screenshots
@@ -115,7 +115,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (249.5 KB)
+- `01-page-loaded.png` — page-loaded (1.2 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

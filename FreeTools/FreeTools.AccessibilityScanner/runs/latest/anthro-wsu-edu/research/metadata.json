@@ -5,7 +5,7 @@
   "Title": "Research | Department of Anthropology | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 216005,
+  "HtmlSizeBytes": 214186,
   "ScreenshotSizeBytes": 374835,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:31.3964046Z"
+  "CapturedAt": "2026-02-16T21:00:05.7441298Z"
 }

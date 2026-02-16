@@ -5,19 +5,19 @@
 | URL | https://cahnrs.wsu.edu/extension/ |
 | Redirected To | https://extension.wsu.edu/ |
 | Title | WSU Extension | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 244.1 KB |
-| Screenshots | 1 (1.6 MB) |
+| Status | ✅ 200 |
+| HTML Size | 244.0 KB |
+| Screenshots | 1 (1.7 MB) |
 | Images | 12 (4.1 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:07.7499981Z |
+| Captured | 2026-02-16T21:01:22.6902912Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.6 MB)
+- Screenshot #1: page-loaded (1.7 MB)
 - Downloaded 12 images to /images/
 
 ## Screenshots
@@ -73,7 +73,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.6 MB)
+- `01-page-loaded.png` — page-loaded (1.7 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

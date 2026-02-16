@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/5 pages OK |
+| Pages Scanned | 5 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 8 |
+| Pages Failed | 5 |
+| Total JS Errors | 4 |
 | Total JS Warnings | 0 |
 | Total HTML | 1.1 MB |
-| Total Screenshots | 1.4 MB |
+| Total Screenshots | 1.3 MB |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `web-wsu-edu/` |
@@ -18,12 +18,11 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Web Communication \| Washington State... | 2 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Web Communication \| Washington State... | 0 | 0 | 0 |
 | ❌ | [/contact/](contact/report.md) | 0 | Contact Web Communication \| Web Comm... | 1 | 0 | 0 |
 | ❌ | [/request/](request/report.md) | 0 | Request a Website \| Web Communicatio... | 1 | 0 | 0 |
 | ❌ | [/resources/](resources/report.md) | 0 | Resources \| Web Communication \| Was... | 1 | 0 | 0 |
 | ❌ | [/services/](services/report.md) | 0 | Procedures & Web Services \| Web Comm... | 1 | 0 | 0 |
-| ❌ | [/training/](training/report.md) | 0 | Page not found \| Web Communication \... | 2 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -47,10 +46,6 @@
 
 ![/services/](services/01-page-loaded.png)
 
-### [/training/](training/report.md)
-
-![/training/](training/01-page-loaded.png)
-
 
 ## Failed Pages
 
@@ -69,11 +64,6 @@
 - **URL:** https://web.wsu.edu/resources/
 - **Status:** 0
 
-### /training/
-
-- **URL:** https://web.wsu.edu/training/
-- **Status:** 0
-
 ### /request/
 
 - **URL:** https://web.wsu.edu/request/
@@ -86,16 +76,6 @@
 
 
 ## Pages with JavaScript Errors
-
-### / (2 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /training/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
 
 ### /services/ (1 errors)
 

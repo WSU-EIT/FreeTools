@@ -5,7 +5,7 @@
   "Title": "Students | Advising at WSU | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 106491,
+  "HtmlSizeBytes": 112743,
   "ScreenshotSizeBytes": 140713,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -61,5 +61,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:42.7062683Z"
+  "CapturedAt": "2026-02-16T20:59:20.7015933Z"
 }

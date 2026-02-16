@@ -5,14 +5,14 @@
 | URL | https://asl.wsu.edu/publications/ |
 | Title | Publications | Applied Sciences Laboratory | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 56.8 KB |
+| HTML Size | 63.0 KB |
 | Screenshots | 1 (754.6 KB) |
 | Images | 1 (170.9 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:09.5139054Z |
+| Captured | 2026-02-16T21:00:35.8169919Z |
 
 ## Actions
 

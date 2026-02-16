@@ -1,12 +1,12 @@
 {
   "PagePath": "/services/",
   "Url": "https://account.wsu.edu/services/",
-  "FinalUrl": "https://login.wsu.edu/account-settings/home",
+  "FinalUrl": "about:blank",
   "Title": null,
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 4005,
-  "ScreenshotSizeBytes": 10418,
+  "HtmlSizeBytes": 2251,
+  "ScreenshotSizeBytes": 4253,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 10418
+      "FileSize": 4253
     }
   ],
   "ImageCount": 0,
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": "Execution context was destroyed, most likely because of a navigation",
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:59.3390454Z"
+  "CapturedAt": "2026-02-16T20:59:02.1577006Z"
 }

@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/1 pages OK |
+| Pages Scanned | 1 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 12 |
+| Pages Failed | 1 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.4 MB |
-| Total Screenshots | 990.7 KB |
+| Total HTML | 407.3 KB |
+| Total Screenshots | 244.4 KB |
 | Total Images | 7 (579.6 KB) |
 | Images Missing Alt | 7 |
 | Folder | `degrees-wsu-edu/` |
@@ -18,38 +18,13 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Degree Finder \| Washington State Uni... | 7 | 7 | 7 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | Page not found \| Degree Finder \| Wa... | 1 | 0 | 0 |
-| ❌ | [/online/](online/report.md) | 0 | Page not found \| Degree Finder \| Wa... | 1 | 0 | 0 |
-| ❌ | [/professional/](professional/report.md) | 0 | Page not found \| Degree Finder \| Wa... | 1 | 0 | 0 |
-| ❌ | [/search/](search/report.md) | 0 | Page not found \| Degree Finder \| Wa... | 1 | 0 | 0 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Page not found \| Degree Finder \| Wa... | 1 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Degree Finder \| Washington State Uni... | 0 | 7 | 7 |
 
 ## Page Screenshots
 
 ### [/](_root/report.md)
 
 ![/](_root/01-page-loaded.png)
-
-### [/graduate/](graduate/report.md)
-
-![/graduate/](graduate/01-page-loaded.png)
-
-### [/online/](online/report.md)
-
-![/online/](online/01-page-loaded.png)
-
-### [/professional/](professional/report.md)
-
-![/professional/](professional/01-page-loaded.png)
-
-### [/search/](search/report.md)
-
-![/search/](search/01-page-loaded.png)
-
-### [/undergraduate/](undergraduate/report.md)
-
-![/undergraduate/](undergraduate/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -58,64 +33,6 @@
 
 - **URL:** https://degrees.wsu.edu/
 - **Status:** 0
-
-### /search/
-
-- **URL:** https://degrees.wsu.edu/search/
-- **Status:** 0
-
-### /undergraduate/
-
-- **URL:** https://degrees.wsu.edu/undergraduate/
-- **Status:** 0
-
-### /graduate/
-
-- **URL:** https://degrees.wsu.edu/graduate/
-- **Status:** 0
-
-### /online/
-
-- **URL:** https://degrees.wsu.edu/online/
-- **Status:** 0
-
-### /professional/
-
-- **URL:** https://degrees.wsu.edu/professional/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (7 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /search/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /undergraduate/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /graduate/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /online/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /professional/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

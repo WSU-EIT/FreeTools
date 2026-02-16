@@ -5,18 +5,18 @@
 | URL | https://vetmed.wsu.edu/about/ |
 | Title | About | College of Veterinary Medicine | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 238.4 KB |
-| Screenshots | 1 (677.7 KB) |
+| HTML Size | 239.8 KB |
+| Screenshots | 1 (752.4 KB) |
 | Images | 4 (793.0 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:20.7696513Z |
+| Captured | 2026-02-16T20:59:59.7547171Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (677.7 KB)
+- Screenshot #1: page-loaded (752.4 KB)
 - Downloaded 4 images to /images/
 
 ## Screenshots
@@ -48,7 +48,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (677.7 KB)
+- `01-page-loaded.png` — page-loaded (752.4 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

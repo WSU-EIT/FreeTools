@@ -5,8 +5,8 @@
   "Title": "Payment Services | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 48206,
-  "ScreenshotSizeBytes": 910480,
+  "HtmlSizeBytes": 54745,
+  "ScreenshotSizeBytes": 906770,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 910480
+      "FileSize": 906770
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:04.9082807Z"
+  "CapturedAt": "2026-02-16T20:58:42.4233198Z"
 }

@@ -3,9 +3,9 @@
   "Url": "https://psychology.wsu.edu/clinic/",
   "FinalUrl": "https://psychology.wsu.edu/clinical/",
   "Title": "PhD in Clinical Psychology | Department of Psychology | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 230368,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 230379,
   "ScreenshotSizeBytes": 552473,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -23,15 +23,6 @@
   "ImagesMissingAlt": 0,
   "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:40:10 GMT",
-    "etag": "\u0022ac018be8f30afdbb6a78f0b24b38052b\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:34:18 GMT",
-    "link": "\u003Chttps://psychology.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://psychology.wsu.edu/wp-json/wp/v2/pages/2988\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://psychology.wsu.edu/?p=2988\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:40:10.1540519Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T21:01:06.348769Z"
 }

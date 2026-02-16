@@ -5,8 +5,8 @@
   "Title": "About WSU ROAR | College of Education, Sport, and Human Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 229117,
-  "ScreenshotSizeBytes": 1514235,
+  "HtmlSizeBytes": 231030,
+  "ScreenshotSizeBytes": 1712877,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1514235
+      "FileSize": 1712877
     }
   ],
   "ImageCount": 2,
@@ -37,5 +37,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:18.3708767Z"
+  "CapturedAt": "2026-02-16T20:59:59.7404304Z"
 }

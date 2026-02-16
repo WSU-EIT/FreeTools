@@ -2,30 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/8 pages OK |
-| Pages Scanned | 8 |
-| Pages Passed | 2 |
-| Pages Failed | 6 |
-| Total JS Errors | 4 |
+| Status | ⚠️ 3/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 3 |
+| Pages Failed | 3 |
+| Total JS Errors | 1 |
 | Total JS Warnings | 3 |
-| Total HTML | 693.9 KB |
-| Total Screenshots | 5.5 MB |
-| Total Images | 16 (4.3 MB) |
-| Images Missing Alt | 3 |
+| Total HTML | 641.2 KB |
+| Total Screenshots | 4.4 MB |
+| Total Images | 33 (5.7 MB) |
+| Images Missing Alt | 5 |
 | Folder | `admission-wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Admissions \| Washington State Univer... | 2 | 5 | 0 |
-| ❌ | [/apply/](apply/report.md) | 0 | Apply \| Admissions \| Washington Sta... | 0 | 1 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Admissions \| Washington State Univer... | 1 | 18 | 0 |
+| ❌ | [/apply/](apply/report.md) | 0 | Apply \| Admissions \| Washington Sta... | 0 | 2 | 1 |
 | ✅ | [/contact/](contact/report.md) | 200 | Connect \| Admissions \| Washington S... | 0 | 0 | 0 |
-| ❌ | [/costs-aid/](costs-aid/report.md) | 404 | Page not found \| Admissions \| Washi... | 1 | 0 | 0 |
-| ❌ | [/freshman/](freshman/report.md) | 0 | Page not found \| Admissions \| Washi... | 1 | 0 | 0 |
 | ✅ | [/international/](international/report.md) | 200 | International Students \| Admissions ... | 0 | 0 | 0 |
-| ❌ | [/transfer/](transfer/report.md) | 0 | Transfer Students \| Admissions \| Wa... | 0 | 1 | 1 |
-| ❌ | [/visit/](visit/report.md) | 0 | Visit & Explore \| Admissions \| Wash... | 0 | 9 | 2 |
+| ✅ | [/transfer/](transfer/report.md) | 200 | Transfer Students \| Admissions \| Wa... | 0 | 1 | 1 |
+| ❌ | [/visit/](visit/report.md) | 0 | Visit & Explore \| Admissions \| Wash... | 0 | 12 | 3 |
 
 ## Page Screenshots
 
@@ -40,14 +38,6 @@
 ### [/contact/](contact/report.md)
 
 ![/contact/](contact/01-page-loaded.png)
-
-### [/costs-aid/](costs-aid/report.md)
-
-![/costs-aid/](costs-aid/01-page-loaded.png)
-
-### [/freshman/](freshman/report.md)
-
-![/freshman/](freshman/01-page-loaded.png)
 
 ### [/international/](international/report.md)
 
@@ -79,36 +69,12 @@
 - **URL:** https://admission.wsu.edu/visit/
 - **Status:** 0
 
-### /freshman/
-
-- **URL:** https://admission.wsu.edu/freshman/
-- **Status:** 0
-
-### /transfer/
-
-- **URL:** https://admission.wsu.edu/transfer/
-- **Status:** 0
-
-### /costs-aid/
-
-- **URL:** https://admission.wsu.edu/costs-aid/
-- **Status:** 404
-
 
 ## Pages with JavaScript Errors
 
-### / (2 errors)
+### / (1 errors)
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /freshman/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /costs-aid/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_TOO_MANY_REDIRECTS`
 
 
 ---

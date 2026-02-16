@@ -5,18 +5,18 @@
 | URL | https://acctspay.wsu.edu/ |
 | Title | Payment Services | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 47.1 KB |
-| Screenshots | 1 (889.1 KB) |
+| HTML Size | 53.5 KB |
+| Screenshots | 1 (885.5 KB) |
 | Images | 1 (84.3 KB) |
 | Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:04.9082807Z |
+| Captured | 2026-02-16T20:58:42.4233198Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (889.1 KB)
+- Screenshot #1: page-loaded (885.5 KB)
 - Downloaded 1 images to /images/
 
 ## Screenshots
@@ -43,7 +43,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (889.1 KB)
+- `01-page-loaded.png` — page-loaded (885.5 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

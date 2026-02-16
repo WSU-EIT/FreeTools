@@ -5,7 +5,7 @@
   "Title": "School of Languages, Cultures, and Race | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 63263,
+  "HtmlSizeBytes": 62653,
   "ScreenshotSizeBytes": 658504,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1553631Z"
+  "CapturedAt": "2026-02-16T20:58:42.4726386Z"
 }

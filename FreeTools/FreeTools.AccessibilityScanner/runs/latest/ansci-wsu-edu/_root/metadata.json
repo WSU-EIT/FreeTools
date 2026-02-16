@@ -5,7 +5,7 @@
   "Title": "Animal Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 208563,
+  "HtmlSizeBytes": 210760,
   "ScreenshotSizeBytes": 1060309,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,10 +18,16 @@
       "FileSize": 1060309
     }
   ],
-  "ImageCount": 2,
-  "ImagesTotalSizeBytes": 142086,
-  "ImagesMissingAlt": 0,
+  "ImageCount": 3,
+  "ImagesTotalSizeBytes": 673695,
+  "ImagesMissingAlt": 1,
   "Images": [
+    {
+      "FileName": "IMG_5086_1920x1001.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/3004/2024/04/IMG_5086_1920x1001.jpg",
+      "AltText": "",
+      "FileSize": 531609
+    },
     {
       "FileName": "Animal_logo_729px-1.png",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/3004/2022/05/Animal_logo_729px-1.png",
@@ -37,5 +43,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:04.9813695Z"
+  "CapturedAt": "2026-02-16T20:58:42.4427779Z"
 }

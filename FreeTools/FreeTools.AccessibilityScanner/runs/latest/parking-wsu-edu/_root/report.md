@@ -3,33 +3,33 @@
 | Field | Value |
 |-------|-------|
 | URL | https://parking.wsu.edu/ |
-| Title | (none) |
+| Title | Home Page | Washington State University Parking |
 | Status | ❌ 0 |
-| HTML Size | 0 bytes |
-| Screenshots | 0 (0 bytes) |
+| HTML Size | 50.5 KB |
+| Screenshots | 1 (48.9 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 0 |
+| JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1360208Z |
+| Captured | 2026-02-16T20:58:42.4671636Z |
 
-## Error
+## JavaScript Errors
 
-```
-Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-```
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- Scan aborted due to error
+- Screenshot #1: page-loaded (48.9 KB)
+- Downloaded 0 images to /images/
 
 ## Screenshots
 
-*No screenshots captured.*
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Page Images (0)
 
@@ -37,6 +37,7 @@ Call log:
 
 ## Files
 
+- `01-page-loaded.png` — page-loaded (48.9 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

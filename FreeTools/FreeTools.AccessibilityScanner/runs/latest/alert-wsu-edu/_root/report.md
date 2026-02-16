@@ -5,14 +5,14 @@
 | URL | https://alert.wsu.edu/ |
 | Title | Alert | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 69.0 KB |
+| HTML Size | 73.7 KB |
 | Screenshots | 1 (416.4 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:04.9971736Z |
+| Captured | 2026-02-16T20:58:42.4315068Z |
 
 ## Actions
 

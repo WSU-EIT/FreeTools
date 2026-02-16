@@ -5,7 +5,7 @@
   "Title": "Publications | Applied Sciences Laboratory | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 58123,
+  "HtmlSizeBytes": 64522,
   "ScreenshotSizeBytes": 772715,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:09.5139054Z"
+  "CapturedAt": "2026-02-16T21:00:35.8169919Z"
 }

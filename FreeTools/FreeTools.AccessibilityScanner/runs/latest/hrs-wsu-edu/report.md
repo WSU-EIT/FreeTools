@@ -2,26 +2,25 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/6 pages OK |
-| Pages Scanned | 6 |
-| Pages Passed | 1 |
+| Status | ⚠️ 0/5 pages OK |
+| Pages Scanned | 5 |
+| Pages Passed | 0 |
 | Pages Failed | 5 |
-| Total JS Errors | 3 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 531.2 KB |
+| Total HTML | 477.0 KB |
 | Total Screenshots | 4.3 MB |
-| Total Images | 23 (2.2 MB) |
-| Images Missing Alt | 14 |
+| Total Images | 24 (2.3 MB) |
+| Images Missing Alt | 15 |
 | Folder | `hrs-wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Human Resource Services, Washington S... | 2 | 4 | 3 |
+| ❌ | [/](_root/report.md) | 0 | Human Resource Services, Washington S... | 0 | 5 | 4 |
 | ❌ | [/benefits/](benefits/report.md) | 0 | Benefits – Human Resource Services, W... | 0 | 10 | 3 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact HRS – Human Resource Services... | 0 | 2 | 2 |
-| ❌ | [/employment/](employment/report.md) | 0 | Page not found – Human Resource Servi... | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact HRS – Human Resource Services... | 0 | 2 | 2 |
 | ❌ | [/policies/](policies/report.md) | 0 | Policies and Resources – Human Resour... | 0 | 0 | 0 |
 | ❌ | [/training/](training/report.md) | 0 | Learning & Organizational Development... | 0 | 7 | 6 |
 
@@ -39,10 +38,6 @@
 
 ![/contact/](contact/01-page-loaded.png)
 
-### [/employment/](employment/report.md)
-
-![/employment/](employment/01-page-loaded.png)
-
 ### [/policies/](policies/report.md)
 
 ![/policies/](policies/01-page-loaded.png)
@@ -57,11 +52,6 @@
 ### /
 
 - **URL:** https://hrs.wsu.edu/
-- **Status:** 0
-
-### /employment/
-
-- **URL:** https://hrs.wsu.edu/employment/
 - **Status:** 0
 
 ### /benefits/
@@ -79,17 +69,10 @@
 - **URL:** https://hrs.wsu.edu/training/
 - **Status:** 0
 
+### /contact/
 
-## Pages with JavaScript Errors
-
-### / (2 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_CONNECTION_TIMED_OUT`
-
-### /employment/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
+- **URL:** https://hrs.wsu.edu/contact/
+- **Status:** 0
 
 
 ---

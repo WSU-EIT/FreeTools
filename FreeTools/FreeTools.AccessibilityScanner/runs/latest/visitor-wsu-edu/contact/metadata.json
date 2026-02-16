@@ -5,7 +5,7 @@
   "Title": "Contact Us | Brelsford WSU Visitor Center | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 221322,
+  "HtmlSizeBytes": 221401,
   "ScreenshotSizeBytes": 1868627,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -37,5 +37,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:38.7660803Z"
+  "CapturedAt": "2026-02-16T21:00:30.5987548Z"
 }

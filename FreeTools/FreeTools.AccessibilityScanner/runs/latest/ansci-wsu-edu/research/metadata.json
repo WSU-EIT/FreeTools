@@ -5,7 +5,7 @@
   "Title": "Research | Animal Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 213118,
+  "HtmlSizeBytes": 230965,
   "ScreenshotSizeBytes": 1149667,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -67,5 +67,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:56.5649897Z"
+  "CapturedAt": "2026-02-16T21:00:19.3209657Z"
 }

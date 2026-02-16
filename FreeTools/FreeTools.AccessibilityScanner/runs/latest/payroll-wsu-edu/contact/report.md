@@ -5,18 +5,18 @@
 | URL | https://payroll.wsu.edu/contact/ |
 | Title | contact | Payroll Services | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 52.0 KB |
-| Screenshots | 1 (55.6 KB) |
+| HTML Size | 52.9 KB |
+| Screenshots | 1 (60.4 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:56.6286783Z |
+| Captured | 2026-02-16T20:59:27.2981097Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (55.6 KB)
+- Screenshot #1: page-loaded (60.4 KB)
 - No images found on page
 
 ## Screenshots
@@ -32,7 +32,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (55.6 KB)
+- `01-page-loaded.png` — page-loaded (60.4 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -5,19 +5,26 @@
 | URL | https://go.wsu.edu/ |
 | Title | Here. We. Go | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 243.1 KB |
+| HTML Size | 245.9 KB |
 | Screenshots | 1 (1.2 MB) |
-| Images | 9 (2.8 MB) |
+| Images | 12 (5.1 MB) |
 | Images Missing Alt | 1 |
-| JS Errors | 0 |
+| JS Errors | 4 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0826857Z |
+| Captured | 2026-02-16T20:58:42.4586362Z |
+
+## JavaScript Errors
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
 - Screenshot #1: page-loaded (1.2 MB)
-- Downloaded 9 images to /images/
+- Downloaded 12 images to /images/
 
 ## Screenshots
 
@@ -26,7 +33,7 @@
 ![page-loaded](01-page-loaded.png)
 
 
-## Page Images (9)
+## Page Images (12)
 
 | # | Image | Alt Text | Size |
 |---|-------|----------|------|
@@ -36,9 +43,12 @@
 | 4 | [Catalina-Yepez_8213-1024x683.jpg](images/Catalina-Yepez_8213-1024x683.jpg) | A pharmacy student wearing a white co... | 122.8 KB |
 | 5 | [HWG_Impact-scaled.jpg](images/HWG_Impact-scaled.jpg) | Large text reading Go overlaying a pe... | 562.0 KB |
 | 6 | [AF07-TW7_6520-scaled.jpg](images/AF07-TW7_6520-scaled.jpg) | A microbiologist in blue protective e... | 426.6 KB |
-| 7 | [Bear-video-screenshot-1.jpg](images/Bear-video-screenshot-1.jpg) | A grizzly bear rolling a cooler while... | 559.9 KB |
-| 8 | [worker-with-child-scaled.jpg](images/worker-with-child-scaled.jpg) | Medical person giving a shot to a child. | 664.2 KB |
-| 9 | [wordmark.jpg](images/wordmark.jpg) | Coug Head Washington State University | 21.2 KB |
+| 7 | [Archeology-Field-School-Excavation-_-335-scaled-1.jpg](images/Archeology-Field-School-Excavation-_-335-scaled-1.jpg) | Three people working with soil samples. | 860.5 KB |
+| 8 | [Bear-video-screenshot-1.jpg](images/Bear-video-screenshot-1.jpg) | A grizzly bear rolling a cooler while... | 559.9 KB |
+| 9 | [2023fall-master-gardeners-2INL.jpg](images/2023fall-master-gardeners-2INL.jpg) | A gravel path winds through flowers, ... | 729.4 KB |
+| 10 | [NCO-and-La-Bienvenida-2024-_-0083-cropped-scaled.jpg](images/NCO-and-La-Bienvenida-2024-_-0083-cropped-scaled.jpg) | Child holding up familia coug shirt a... | 733.3 KB |
+| 11 | [worker-with-child-scaled.jpg](images/worker-with-child-scaled.jpg) | Medical person giving a shot to a child. | 664.2 KB |
+| 12 | [wordmark.jpg](images/wordmark.jpg) | Coug Head Washington State University | 21.2 KB |
 
 ### Gallery
 
@@ -54,7 +64,13 @@
 
 ![A microbiologist in blue protective equipment works at a biosafety cabinet.](images/AF07-TW7_6520-scaled.jpg)
 
+![Three people working with soil samples.](images/Archeology-Field-School-Excavation-_-335-scaled-1.jpg)
+
 ![A grizzly bear rolling a cooler while another sniffs the ground nearby.](images/Bear-video-screenshot-1.jpg)
+
+![A gravel path winds through flowers, trees, and other plants.](images/2023fall-master-gardeners-2INL.jpg)
+
+![Child holding up familia coug shirt at New Coug Orientation.](images/NCO-and-La-Bienvenida-2024-_-0083-cropped-scaled.jpg)
 
 ![Medical person giving a shot to a child.](images/worker-with-child-scaled.jpg)
 
@@ -74,4 +90,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
-- `images/` — 9 page images (2.8 MB)
+- `images/` — 12 page images (5.1 MB)

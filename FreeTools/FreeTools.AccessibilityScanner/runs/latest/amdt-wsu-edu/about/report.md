@@ -6,18 +6,18 @@
 | Redirected To | https://amdt.wsu.edu/ |
 | Title | Department of Apparel, Merchandising, Design and Textiles | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 219.4 KB |
-| Screenshots | 1 (938.4 KB) |
+| HTML Size | 225.3 KB |
+| Screenshots | 1 (551.0 KB) |
 | Images | 8 (1.7 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 4 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:18.4727017Z |
+| Captured | 2026-02-16T20:59:25.2811267Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (938.4 KB)
+- Screenshot #1: page-loaded (551.0 KB)
 - Downloaded 8 images to /images/
 
 ## Screenshots
@@ -61,7 +61,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (938.4 KB)
+- `01-page-loaded.png` — page-loaded (551.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

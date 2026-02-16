@@ -7,23 +7,17 @@
 | Title | Home - WSU Coug Prints Plus |
 | Status | ❌ 0 |
 | HTML Size | 25.5 KB |
-| Screenshots | 1 (82.7 KB) |
+| Screenshots | 1 (87.2 KB) |
 | Images | 7 (21.9 KB) |
 | Images Missing Alt | 6 |
-| JS Errors | 3 |
+| JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1557050Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:58:42.4745267Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (82.7 KB)
+- Screenshot #1: page-loaded (87.2 KB)
 - Downloaded 7 images to /images/
 
 ## Screenshots
@@ -73,7 +67,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (82.7 KB)
+- `01-page-loaded.png` — page-loaded (87.2 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

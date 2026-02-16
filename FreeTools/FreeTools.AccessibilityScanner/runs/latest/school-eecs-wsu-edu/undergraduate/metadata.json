@@ -5,8 +5,8 @@
   "Title": "Undergraduate Advising | School of Electrical Engineering \u0026 Computer Science | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 223094,
-  "ScreenshotSizeBytes": 869461,
+  "HtmlSizeBytes": 222423,
+  "ScreenshotSizeBytes": 823357,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,13 +15,19 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 869461
+      "FileSize": 823357
     }
   ],
-  "ImageCount": 2,
-  "ImagesTotalSizeBytes": 338291,
+  "ImageCount": 3,
+  "ImagesTotalSizeBytes": 658778,
   "ImagesMissingAlt": 0,
   "Images": [
+    {
+      "FileName": "advising-header-scaled-e1646243787278.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3427/2022/03/advising-header-scaled-e1646243787278.jpeg",
+      "AltText": "Brick building displaying the name Voiland College of Engineering and Architecture.",
+      "FileSize": 320487
+    },
     {
       "FileName": "academic-advising.png",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3427/2022/03/academic-advising.png",
@@ -37,5 +43,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:25.5571325Z"
+  "CapturedAt": "2026-02-16T20:59:55.0796592Z"
 }

@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/3 pages OK |
+| Pages Scanned | 3 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 6 |
-| Total JS Warnings | 1 |
-| Total HTML | 302.7 KB |
-| Total Screenshots | 1.8 MB |
+| Pages Failed | 3 |
+| Total JS Errors | 0 |
+| Total JS Warnings | 0 |
+| Total HTML | 189.3 KB |
+| Total Screenshots | 1.4 MB |
 | Total Images | 5 (146.0 KB) |
 | Images Missing Alt | 3 |
 | Folder | `advance-wsu-edu/` |
@@ -18,11 +18,8 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | ADVANCE at WSU \| Washington State Un... | 2 | 1 | 0 |
+| ❌ | [/](_root/report.md) | 0 | ADVANCE at WSU \| Washington State Un... | 0 | 1 | 0 |
 | ❌ | [/about/](about/report.md) | 0 | About the Program \| ADVANCE at WSU \... | 0 | 1 | 1 |
-| ❌ | [/data/](data/report.md) | 0 | Page not found \| ADVANCE at WSU \| W... | 1 | 0 | 0 |
-| ❌ | [/events/](events/report.md) | 0 | Human Verification | 1 | 0 | 0 |
-| ❌ | [/programs/](programs/report.md) | 0 | Page not found \| ADVANCE at WSU \| W... | 2 | 0 | 0 |
 | ❌ | [/resources/](resources/report.md) | 0 | Resources \| ADVANCE at WSU \| Washin... | 0 | 3 | 2 |
 
 ## Page Screenshots
@@ -34,18 +31,6 @@
 ### [/about/](about/report.md)
 
 ![/about/](about/01-page-loaded.png)
-
-### [/data/](data/report.md)
-
-![/data/](data/01-page-loaded.png)
-
-### [/events/](events/report.md)
-
-![/events/](events/01-page-loaded.png)
-
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
 
 ### [/resources/](resources/report.md)
 
@@ -64,46 +49,10 @@
 - **URL:** https://advance.wsu.edu/about/
 - **Status:** 0
 
-### /programs/
-
-- **URL:** https://advance.wsu.edu/programs/
-- **Status:** 0
-
 ### /resources/
 
 - **URL:** https://advance.wsu.edu/resources/
 - **Status:** 0
-
-### /events/
-
-- **URL:** https://advance.wsu.edu/events/
-- **Status:** 0
-
-### /data/
-
-- **URL:** https://advance.wsu.edu/data/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (2 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /programs/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /events/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /data/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

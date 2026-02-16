@@ -5,10 +5,10 @@
   "Title": "Office of Native American Programs | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 217371,
+  "HtmlSizeBytes": 219778,
   "ScreenshotSizeBytes": 1509260,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 4,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -18,18 +18,11 @@
       "FileSize": 1509260
     }
   ],
-  "ImageCount": 1,
-  "ImagesTotalSizeBytes": 505161,
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
   "ImagesMissingAlt": 0,
-  "Images": [
-    {
-      "FileName": "cultural-center-exterior-scaled.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/3277/2023/01/cultural-center-exterior-scaled.jpg",
-      "AltText": "Photo of ESFCC",
-      "FileSize": 505161
-    }
-  ],
+  "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1343661Z"
+  "CapturedAt": "2026-02-16T20:58:42.4659402Z"
 }

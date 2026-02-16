@@ -6,14 +6,14 @@
 | Redirected To | https://bursar.wsu.edu/policies-procedures-for-reporting-to-credit-bureau/ |
 | Title | Policies & Procedures for Reporting to Credit Bureau | Bursar | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 61.0 KB |
+| HTML Size | 68.2 KB |
 | Screenshots | 1 (299.0 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:56.6285968Z |
+| Captured | 2026-02-16T21:00:18.3381860Z |
 
 ## Actions
 

@@ -5,18 +5,17 @@
 | URL | https://psychology.wsu.edu/ |
 | Title | Department of Psychology | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 217.1 KB |
+| HTML Size | 221.7 KB |
 | Screenshots | 1 (852.4 KB) |
 | Images | 5 (283.1 KB) |
 | Images Missing Alt | 0 |
-| JS Errors | 3 |
+| JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1507211Z |
+| Captured | 2026-02-16T20:58:42.4695394Z |
 
 ## JavaScript Errors
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 

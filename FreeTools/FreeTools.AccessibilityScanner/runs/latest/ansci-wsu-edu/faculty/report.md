@@ -6,14 +6,14 @@
 | Redirected To | https://ansci.wsu.edu/people/faculty/ |
 | Title | Faculty | Animal Sciences | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 268.0 KB |
-| Screenshots | 1 (1.2 MB) |
+| HTML Size | 268.8 KB |
+| Screenshots | 1 (1.7 MB) |
 | Images | 28 (1.1 MB) |
 | Images Missing Alt | 28 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:22.2310897Z |
+| Captured | 2026-02-16T21:00:39.7609726Z |
 
 ## JavaScript Errors
 
@@ -21,7 +21,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.2 MB)
+- Screenshot #1: page-loaded (1.7 MB)
 - Downloaded 28 images to /images/
 
 ## Screenshots
@@ -156,7 +156,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.2 MB)
+- `01-page-loaded.png` — page-loaded (1.7 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -5,8 +5,8 @@
   "Title": "Academics | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 246045,
-  "ScreenshotSizeBytes": 702562,
+  "HtmlSizeBytes": 256825,
+  "ScreenshotSizeBytes": 756689,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
@@ -15,11 +15,11 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 702562
+      "FileSize": 756689
     }
   ],
-  "ImageCount": 9,
-  "ImagesTotalSizeBytes": 1597486,
+  "ImageCount": 11,
+  "ImagesTotalSizeBytes": 3147413,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -45,6 +45,18 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/11/cropped-APS-2022-61-1024x684.jpg",
       "AltText": "Female graduate student presenting research poster at conference.",
       "FileSize": 164528
+    },
+    {
+      "FileName": "Giraffe.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/11/Giraffe.png",
+      "AltText": "Female student with a Giraffe.",
+      "FileSize": 867493
+    },
+    {
+      "FileName": "Watering.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/11/Watering.png",
+      "AltText": "Man watering baseball field.",
+      "FileSize": 682434
     },
     {
       "FileName": "Brenda.jpg",
@@ -79,5 +91,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:01.6828698Z"
+  "CapturedAt": "2026-02-16T21:00:35.768598Z"
 }

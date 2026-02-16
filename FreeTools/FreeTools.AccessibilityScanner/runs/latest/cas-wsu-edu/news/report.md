@@ -7,17 +7,17 @@
 | Title | News | College of Arts and Sciences | Washington State University |
 | Status | ❌ 0 |
 | HTML Size | 292.5 KB |
-| Screenshots | 1 (657.0 KB) |
+| Screenshots | 1 (693.1 KB) |
 | Images | 9 (819.6 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:40.7117106Z |
+| Captured | 2026-02-16T21:00:20.8257194Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (657.0 KB)
+- Screenshot #1: page-loaded (693.1 KB)
 - Downloaded 9 images to /images/
 
 ## Screenshots
@@ -64,7 +64,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (657.0 KB)
+- `01-page-loaded.png` — page-loaded (693.1 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

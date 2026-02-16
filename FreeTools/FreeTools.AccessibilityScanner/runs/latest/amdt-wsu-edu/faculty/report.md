@@ -6,14 +6,14 @@
 | Redirected To | https://amdt.wsu.edu/people/faculty/ |
 | Title | Faculty | Department of Apparel, Merchandising, Design and Textiles | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 214.0 KB |
+| HTML Size | 218.1 KB |
 | Screenshots | 1 (812.1 KB) |
 | Images | 8 (255.9 KB) |
 | Images Missing Alt | 8 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:09.8816945Z |
+| Captured | 2026-02-16T21:00:02.5202890Z |
 
 ## Actions
 

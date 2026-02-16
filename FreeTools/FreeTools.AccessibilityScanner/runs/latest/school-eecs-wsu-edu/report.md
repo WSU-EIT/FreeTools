@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/7 pages OK |
-| Pages Scanned | 7 |
+| Status | ⚠️ 1/6 pages OK |
+| Pages Scanned | 6 |
 | Pages Passed | 1 |
-| Pages Failed | 6 |
-| Total JS Errors | 4 |
+| Pages Failed | 5 |
+| Total JS Errors | 2 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.7 MB |
-| Total Screenshots | 5.8 MB |
-| Total Images | 85 (6.5 MB) |
+| Total HTML | 1.5 MB |
+| Total Screenshots | 6.2 MB |
+| Total Images | 86 (6.9 MB) |
 | Images Missing Alt | 70 |
 | Folder | `school-eecs-wsu-edu/` |
 
@@ -18,23 +18,18 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | School of Electrical Engineering & Co... | 2 | 13 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | Page not found \| School of Electrica... | 2 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | School of Electrical Engineering & Co... | 2 | 12 | 0 |
 | ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| School of Electrical En... | 0 | 0 | 0 |
 | ❌ | [/faculty/](faculty/report.md) | 0 | Directory \| School of Electrical Eng... | 0 | 70 | 70 |
 | ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Course Transfer Requirements... | 0 | 0 | 0 |
-| ❌ | [/research/](research/report.md) | 0 | Research \| School of Electrical Engi... | 0 | 0 | 0 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Advising \| School of E... | 0 | 2 | 0 |
+| ❌ | [/research/](research/report.md) | 0 | Research \| School of Electrical Engi... | 0 | 1 | 0 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Advising \| School of E... | 0 | 3 | 0 |
 
 ## Page Screenshots
 
 ### [/](_root/report.md)
 
 ![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
 
 ### [/contact/](contact/report.md)
 
@@ -64,11 +59,6 @@
 - **URL:** https://school.eecs.wsu.edu/
 - **Status:** 0
 
-### /about/
-
-- **URL:** https://school.eecs.wsu.edu/about/
-- **Status:** 0
-
 ### /undergraduate/
 
 - **URL:** https://school.eecs.wsu.edu/undergraduate/
@@ -95,11 +85,6 @@
 ### / (2 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /about/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 

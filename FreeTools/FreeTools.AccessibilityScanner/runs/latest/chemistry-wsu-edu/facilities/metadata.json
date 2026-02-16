@@ -3,10 +3,10 @@
   "Url": "https://chemistry.wsu.edu/facilities/",
   "FinalUrl": "https://chem.wsu.edu/",
   "Title": "Department of Chemistry | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 238649,
-  "ScreenshotSizeBytes": 1207017,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 238674,
+  "ScreenshotSizeBytes": 1429149,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1207017
+      "FileSize": 1429149
     }
   ],
   "ImageCount": 7,
@@ -66,6 +66,15 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:58.4715032Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 21:01:21 GMT",
+    "etag": "\u00221d9f2e02bb9bb5ddcbe8d6fb58d26e88\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:10:20 GMT",
+    "link": "\u003Chttps://chem.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://chem.wsu.edu/wp-json/wp/v2/pages/310\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://chem.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T21:01:20.879397Z"
 }

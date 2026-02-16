@@ -5,8 +5,8 @@
   "Title": "Exhibitions \u0026 Programs | Jordan Schnitzer Museum of Art WSU | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 227678,
-  "ScreenshotSizeBytes": 1140627,
+  "HtmlSizeBytes": 233232,
+  "ScreenshotSizeBytes": 2670308,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,11 +15,11 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1140627
+      "FileSize": 2670308
     }
   ],
-  "ImageCount": 3,
-  "ImagesTotalSizeBytes": 1191048,
+  "ImageCount": 7,
+  "ImagesTotalSizeBytes": 4775653,
   "ImagesMissingAlt": 1,
   "Images": [
     {
@@ -39,9 +39,33 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2023/06/Schnitzer-Museum-of-Art-Clouds_3446-cropped-scaled.jpg",
       "AltText": "",
       "FileSize": 597278
+    },
+    {
+      "FileName": "JSMA-Exterior-19-8.22-4-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2023/04/JSMA-Exterior-19-8.22-4-scaled.jpg",
+      "AltText": "An outdoor photo of the back of the art museum",
+      "FileSize": 1058626
+    },
+    {
+      "FileName": "Mount-St.-Helens-Ash-Plates-12_Program-Calendar.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2025/08/Mount-St.-Helens-Ash-Plates-12_Program-Calendar.jpg",
+      "AltText": "Three women smile and hold unique ceramic plates in the next to a window.",
+      "FileSize": 1000036
+    },
+    {
+      "FileName": "DSC_4463_cc_Exhibition-Archive.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2025/08/DSC_4463_cc_Exhibition-Archive.jpg",
+      "AltText": "A visitor observes a colorful set of elk hide drums hung on the gallery wall.",
+      "FileSize": 728791
+    },
+    {
+      "FileName": "DSC_8835_Programs.Archive-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2025/08/DSC_8835_Programs.Archive-1.jpg",
+      "AltText": "A parent and child smile while looking at an art installation on the gallery floor.",
+      "FileSize": 797152
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:59.9439759Z"
+  "CapturedAt": "2026-02-16T21:00:30.8502849Z"
 }

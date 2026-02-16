@@ -5,14 +5,14 @@
 | URL | https://ip.wsu.edu/ |
 | Title | WSU International | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 300.6 KB |
-| Screenshots | 1 (1.4 MB) |
+| HTML Size | 293.2 KB |
+| Screenshots | 1 (1.5 MB) |
 | Images | 4 (662.1 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1119428Z |
+| Captured | 2026-02-16T20:58:42.4606135Z |
 
 ## JavaScript Errors
 
@@ -21,7 +21,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.4 MB)
+- Screenshot #1: page-loaded (1.5 MB)
 - Downloaded 4 images to /images/
 
 ## Screenshots
@@ -53,7 +53,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.4 MB)
+- `01-page-loaded.png` — page-loaded (1.5 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

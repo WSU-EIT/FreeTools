@@ -1,12 +1,12 @@
 {
   "PagePath": "/apply/",
   "Url": "https://admission.wsu.edu/apply/",
-  "FinalUrl": "about:blank",
+  "FinalUrl": null,
   "Title": "Apply | Admissions | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 80517,
-  "ScreenshotSizeBytes": 701172,
+  "HtmlSizeBytes": 95317,
+  "ScreenshotSizeBytes": 802181,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,13 +15,19 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 701172
+      "FileSize": 802181
     }
   ],
-  "ImageCount": 1,
-  "ImagesTotalSizeBytes": 388678,
-  "ImagesMissingAlt": 0,
+  "ImageCount": 2,
+  "ImagesTotalSizeBytes": 574880,
+  "ImagesMissingAlt": 1,
   "Images": [
+    {
+      "FileName": "Football-Keys.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-admission/uploads/sites/3144/2025/07/Football-Keys.jpg",
+      "AltText": "",
+      "FileSize": 186202
+    },
     {
       "FileName": "students-on-grass-1188x553-1.png",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-admission/uploads/sites/3144/2022/11/students-on-grass-1188x553-1.png",
@@ -31,5 +37,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:59.3969195Z"
+  "CapturedAt": "2026-02-16T21:00:16.6030255Z"
 }

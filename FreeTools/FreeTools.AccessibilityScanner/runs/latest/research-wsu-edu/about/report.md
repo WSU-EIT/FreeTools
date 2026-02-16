@@ -5,14 +5,14 @@
 | URL | https://research.wsu.edu/about/ |
 | Title | About Us | Office of Research | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 228.3 KB |
+| HTML Size | 226.0 KB |
 | Screenshots | 1 (1.4 MB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:12.3808381Z |
+| Captured | 2026-02-16T20:59:49.3690815Z |
 
 ## JavaScript Errors
 

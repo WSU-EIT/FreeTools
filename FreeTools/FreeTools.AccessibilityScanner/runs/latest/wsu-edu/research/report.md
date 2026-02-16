@@ -5,14 +5,14 @@
 | URL | https://wsu.edu/research/ |
 | Title | WSU Research | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 125.2 KB |
+| HTML Size | 125.0 KB |
 | Screenshots | 1 (4.4 MB) |
 | Images | 16 (9.4 MB) |
 | Images Missing Alt | 11 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:41:54.3248475Z |
+| Captured | 2026-02-16T21:03:02.5614645Z |
 
 ## Actions
 

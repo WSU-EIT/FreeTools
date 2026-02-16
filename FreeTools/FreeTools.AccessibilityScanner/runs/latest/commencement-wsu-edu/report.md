@@ -2,28 +2,24 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/2 pages OK |
+| Pages Scanned | 2 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 4 |
-| Total JS Warnings | 2 |
-| Total HTML | 264.3 KB |
-| Total Screenshots | 1.6 MB |
-| Total Images | 6 (2.3 MB) |
-| Images Missing Alt | 5 |
+| Pages Failed | 2 |
+| Total JS Errors | 2 |
+| Total JS Warnings | 0 |
+| Total HTML | 99.6 KB |
+| Total Screenshots | 948.1 KB |
+| Total Images | 5 (1.8 MB) |
+| Images Missing Alt | 4 |
 | Folder | `commencement-wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Commencement \| Washington State ... | 1 | 6 | 5 |
-| ❌ | [/ceremony-info/](ceremony-info/report.md) | 0 | Page not found \| WSU Commencement \|... | 1 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact us \| WSU Commencement \| Was... | 0 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | WSU Commencement \| Washington State ... | 2 | 5 | 4 |
 | ❌ | [/regalia/](regalia/report.md) | 0 | Regalia \| WSU Commencement \| Washin... | 0 | 0 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| WSU Commencement \|... | 1 | 0 | 0 |
-| ❌ | [/tickets/](tickets/report.md) | 0 | Page not found \| WSU Commencement \|... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -31,25 +27,9 @@
 
 ![/](_root/01-page-loaded.png)
 
-### [/ceremony-info/](ceremony-info/report.md)
-
-![/ceremony-info/](ceremony-info/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
 ### [/regalia/](regalia/report.md)
 
 ![/regalia/](regalia/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
-### [/tickets/](tickets/report.md)
-
-![/tickets/](tickets/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -59,49 +39,18 @@
 - **URL:** https://commencement.wsu.edu/
 - **Status:** 0
 
-### /ceremony-info/
-
-- **URL:** https://commencement.wsu.edu/ceremony-info/
-- **Status:** 0
-
-### /tickets/
-
-- **URL:** https://commencement.wsu.edu/tickets/
-- **Status:** 0
-
 ### /regalia/
 
 - **URL:** https://commencement.wsu.edu/regalia/
 - **Status:** 0
 
-### /resources/
-
-- **URL:** https://commencement.wsu.edu/resources/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://commencement.wsu.edu/contact/
-- **Status:** 0
-
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### / (2 errors)
 
-- `Failed to load resource: the server responded with a status of 403 ()`
-
-### /ceremony-info/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 (Not Found)`
-
-### /tickets/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 (Not Found)`
-
-### /resources/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

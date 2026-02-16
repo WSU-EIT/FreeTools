@@ -6,14 +6,14 @@
 | Redirected To | https://psychology.wsu.edu/research-labs/ |
 | Title | Research | Department of Psychology | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 302.9 KB |
+| HTML Size | 303.4 KB |
 | Screenshots | 1 (1.5 MB) |
 | Images | 20 (925.3 KB) |
 | Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:06.4293387Z |
+| Captured | 2026-02-16T21:00:08.0963146Z |
 
 ## Actions
 

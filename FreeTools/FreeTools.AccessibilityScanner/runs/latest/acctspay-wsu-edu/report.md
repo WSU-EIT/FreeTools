@@ -2,16 +2,16 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/3 pages OK |
+| Pages Scanned | 3 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 3 |
+| Pages Failed | 3 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 308.0 KB |
-| Total Screenshots | 1.7 MB |
-| Total Images | 9 (2.3 MB) |
-| Images Missing Alt | 9 |
+| Total HTML | 165.3 KB |
+| Total Screenshots | 1.5 MB |
+| Total Images | 11 (3.4 MB) |
+| Images Missing Alt | 11 |
 | Folder | `acctspay-wsu-edu/` |
 
 ## Pages
@@ -19,11 +19,8 @@
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | Payment Services \| Washington State ... | 0 | 1 | 1 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Payment Services \| Was... | 0 | 8 | 8 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Payment Services \| Was... | 0 | 10 | 10 |
 | ❌ | [/forms/](forms/report.md) | 0 | Forms \| Payment Services \| Washingt... | 0 | 0 | 0 |
-| ❌ | [/policies/](policies/report.md) | 0 | Page not found \| Payment Services \|... | 1 | 0 | 0 |
-| ❌ | [/purchasing/](purchasing/report.md) | 0 | Page not found \| Payment Services \|... | 1 | 0 | 0 |
-| ❌ | [/travel/](travel/report.md) | 0 | Page not found \| Payment Services \|... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -39,18 +36,6 @@
 
 ![/forms/](forms/01-page-loaded.png)
 
-### [/policies/](policies/report.md)
-
-![/policies/](policies/01-page-loaded.png)
-
-### [/purchasing/](purchasing/report.md)
-
-![/purchasing/](purchasing/01-page-loaded.png)
-
-### [/travel/](travel/report.md)
-
-![/travel/](travel/01-page-loaded.png)
-
 
 ## Failed Pages
 
@@ -64,40 +49,10 @@
 - **URL:** https://acctspay.wsu.edu/forms/
 - **Status:** 0
 
-### /policies/
-
-- **URL:** https://acctspay.wsu.edu/policies/
-- **Status:** 0
-
 ### /contact/
 
 - **URL:** https://acctspay.wsu.edu/contact/
 - **Status:** 0
-
-### /travel/
-
-- **URL:** https://acctspay.wsu.edu/travel/
-- **Status:** 0
-
-### /purchasing/
-
-- **URL:** https://acctspay.wsu.edu/purchasing/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /policies/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /travel/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /purchasing/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

@@ -5,11 +5,11 @@
   "Title": "ITS Informational Series | Information Technology Services | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 232552,
+  "HtmlSizeBytes": 239222,
   "ScreenshotSizeBytes": 278625,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
-  "ConsoleWarningCount": 0,
+  "ConsoleWarningCount": 5,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:23.8128648Z"
+  "CapturedAt": "2026-02-16T21:00:42.6533421Z"
 }

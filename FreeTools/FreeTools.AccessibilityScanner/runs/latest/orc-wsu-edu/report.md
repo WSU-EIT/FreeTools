@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/6 pages OK |
+| Status | ⚠️ 2/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 1 |
-| Pages Failed | 5 |
+| Pages Passed | 2 |
+| Pages Failed | 4 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 230.8 KB |
-| Total Screenshots | 4.1 MB |
-| Total Images | 9 (1.3 MB) |
+| Total HTML | 307.8 KB |
+| Total Screenshots | 5.5 MB |
+| Total Images | 11 (1.6 MB) |
 | Images Missing Alt | 0 |
 | Folder | `orc-wsu-edu/` |
 
@@ -21,8 +21,8 @@
 | ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
 | ❌ | [/about/](about/report.md) | 0 | (none) | 0 | 0 | 0 |
 | ✅ | [/contact/](contact/report.md) | 200 | Outdoor Recreation Center | 0 | 3 | 0 |
-| ❌ | [/programs/](programs/report.md) | 0 | Outdoor Recreation Center | 0 | 3 | 0 |
-| ❌ | [/rentals/](rentals/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ✅ | [/programs/](programs/report.md) | 200 | Outdoor Recreation Center | 0 | 3 | 0 |
+| ❌ | [/rentals/](rentals/report.md) | 0 | Outdoor Recreation Center | 0 | 2 | 0 |
 | ❌ | [/trips/](trips/report.md) | 0 | Outdoor Recreation Center | 0 | 3 | 0 |
 
 ## Page Screenshots
@@ -34,6 +34,10 @@
 ### [/programs/](programs/report.md)
 
 ![/programs/](programs/01-page-loaded.png)
+
+### [/rentals/](rentals/report.md)
+
+![/rentals/](rentals/01-page-loaded.png)
 
 ### [/trips/](trips/report.md)
 
@@ -65,19 +69,10 @@ Call log:
 
 - **URL:** https://orc.wsu.edu/rentals/
 - **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
 
 ### /trips/
 
 - **URL:** https://orc.wsu.edu/trips/
-- **Status:** 0
-
-### /programs/
-
-- **URL:** https://orc.wsu.edu/programs/
 - **Status:** 0
 
 

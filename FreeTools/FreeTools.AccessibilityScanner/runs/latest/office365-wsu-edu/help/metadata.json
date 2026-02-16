@@ -1,12 +1,12 @@
 {
   "PagePath": "/help/",
   "Url": "https://office365.wsu.edu/help/",
-  "FinalUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca\u0026redirect_uri=https%3A%2F%2Fwww.microsoft365.com%2Flandingv2\u0026response_type=code%20id_token\u0026scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All\u0026response_mode=form_post\u0026nonce=639068711068103368.NDI3MGYwZDQtOWU5OC00ZDY3LWE2MTAtZTgyNGQzNmVhMGFiNmMyMTllN2QtNzE5YS00OWJmLThhNzktYzVhZTMzYmJhZmVi\u0026ui_locales=en-US\u0026mkt=en-US\u0026client-request-id=ea8948d6-2be8-462c-b53c-91d8073156cd\u0026state=KbVp5IwX4qTznrosTiqxJZHpFf6vF_kQUv9C3o9Szk9Xq3S6eGh4bZLkMvn2xAlERPqOkywSdMxWvirK3TFgaGC_aoS-E2eiOlBCdh8p2a9FHMKWZnk5JRsnw9-QhP9GNMfOxpJdPmj8hmksIRGmCh935pNhwpRbImfC5u-dwZPSWhKSAsODlsy26UFpT4xdE6siAWyHha84jgGNfQLkUfLz6vz8pvi3_GiU1FdDzU1CqpzZQBA2pBAqy6B8WMXiMouTCX8PZLYgegifxHMwZ30jIGqOW7I3xn2mTjUwmLFYzgFzcoCn17pGVl438pBGnoIOYMmNFJjANGrVTj68KA\u0026x-client-SKU=ID_NET8_0\u0026x-client-ver=8.5.0.0",
+  "FinalUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca\u0026redirect_uri=https%3A%2F%2Fwww.microsoft365.com%2Flandingv2\u0026response_type=code%20id_token\u0026scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All\u0026response_mode=form_post\u0026nonce=639068723872186717.ZjZiY2E2NmUtNWIxYi00OWQyLWFiYzUtM2MyMGYyNDg3MjIyNmRjMGViMzItZWVjMi00NTY3LTk5ZTEtNDY1M2JmOGMwZGNh\u0026ui_locales=en-US\u0026mkt=en-US\u0026client-request-id=1df86568-841d-4553-bed7-41dda2eaa4f1\u0026state=4xUgU2Q2HTwY0fgowgU_rSO8s4VVViV6bSUQHLfrKDWtx_4GZ5pIqjwC7Ak1XWCAbcE2R8dlk7oPpujf218fs2bpk-__qxPYte_d5Cq0aanKuC4MY6tW45bFVufqDGYQ2cVRkq0lK457i_3w13quUH80wNH6ICKG-wCnMtnli4k-fmpjFkRM4We6NY32_EZDy_QZN33LXPpzcc9aChC8l5TEedzraNQ4pFAkinO2A30TdNNxd0ep03VoDMQQOsM0jNC4YgjN779-aGF2tLEjAOp-Qv0v06UNLzMh8Pkn-gXpMnva4NVmWIuiX7_S0AwmApY2EmUoyQXYtCIMBccvgA\u0026x-client-SKU=ID_NET8_0\u0026x-client-ver=8.5.0.0\u0026sso_reload=true",
   "Title": "Sign in to your account",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 61179,
-  "ScreenshotSizeBytes": 4701,
+  "HtmlSizeBytes": 77790,
+  "ScreenshotSizeBytes": 292509,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,14 +15,21 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 4701
+      "FileSize": 292509
     }
   ],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 3651,
   "ImagesMissingAlt": 0,
-  "Images": [],
+  "Images": [
+    {
+      "FileName": "microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg",
+      "SourceUrl": "https://aadcdn.msftauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg",
+      "AltText": "Microsoft",
+      "FileSize": 3651
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:21.4503161Z"
+  "CapturedAt": "2026-02-16T20:59:43.7604067Z"
 }

@@ -5,22 +5,24 @@
 | URL | https://online.wsu.edu/ |
 | Title | WSU Global Campus | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 72.5 KB |
-| Screenshots | 1 (1.3 MB) |
+| HTML Size | 76.1 KB |
+| Screenshots | 1 (1.4 MB) |
 | Images | 3 (352.6 KB) |
 | Images Missing Alt | 0 |
-| JS Errors | 1 |
+| JS Errors | 3 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1345973Z |
+| Captured | 2026-02-16T20:58:42.4665113Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.3 MB)
+- Screenshot #1: page-loaded (1.4 MB)
 - Downloaded 3 images to /images/
 
 ## Screenshots
@@ -49,7 +51,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.3 MB)
+- `01-page-loaded.png` — page-loaded (1.4 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

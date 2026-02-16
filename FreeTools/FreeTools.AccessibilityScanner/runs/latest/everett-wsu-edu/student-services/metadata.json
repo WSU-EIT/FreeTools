@@ -5,7 +5,7 @@
   "Title": "Student Affairs Fall Preview | Washington State University Everett | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 249011,
+  "HtmlSizeBytes": 249009,
   "ScreenshotSizeBytes": 409203,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -18,85 +18,91 @@
       "FileSize": 409203
     }
   ],
-  "ImageCount": 14,
-  "ImagesTotalSizeBytes": 594,
-  "ImagesMissingAlt": 14,
+  "ImageCount": 15,
+  "ImagesTotalSizeBytes": 567,
+  "ImagesMissingAlt": 15,
   "Images": [
     {
       "FileName": "out.img",
-      "SourceUrl": "https://d.adroll.com/cm/b/out?adroll_fpc=a6d052b3ac54f98de0fa9c359544f559-1771274426208\u0026pv=19333928694.47881\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
+      "SourceUrl": "https://d.adroll.com/cm/b/out?adroll_fpc=bf13acdd5241f2026618d927ed12f8cd-1771275695573\u0026pv=16732498504.462017\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
       "AltText": "",
       "FileSize": 42
     },
     {
       "FileName": "out-1.img",
-      "SourceUrl": "https://d.adroll.com/cm/bombora/out?adroll_fpc=a6d052b3ac54f98de0fa9c359544f559-1771274426208\u0026pv=19333928694.47881\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
+      "SourceUrl": "https://d.adroll.com/cm/bombora/out?adroll_fpc=bf13acdd5241f2026618d927ed12f8cd-1771275695573\u0026pv=16732498504.462017\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
       "AltText": "",
       "FileSize": 43
     },
     {
       "FileName": "out-2.img",
-      "SourceUrl": "https://d.adroll.com/cm/experian/out?adroll_fpc=a6d052b3ac54f98de0fa9c359544f559-1771274426208\u0026pv=19333928694.47881\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
+      "SourceUrl": "https://d.adroll.com/cm/experian/out?adroll_fpc=bf13acdd5241f2026618d927ed12f8cd-1771275695573\u0026pv=16732498504.462017\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
       "AltText": "",
       "FileSize": 95
     },
     {
       "FileName": "out-3.img",
-      "SourceUrl": "https://d.adroll.com/cm/eyeota/out?adroll_fpc=a6d052b3ac54f98de0fa9c359544f559-1771274426208\u0026pv=19333928694.47881\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
+      "SourceUrl": "https://d.adroll.com/cm/eyeota/out?adroll_fpc=bf13acdd5241f2026618d927ed12f8cd-1771275695573\u0026pv=16732498504.462017\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
       "AltText": "",
-      "FileSize": 70
+      "FileSize": 0
     },
     {
       "FileName": "out-4.img",
-      "SourceUrl": "https://d.adroll.com/cm/g/out?adroll_fpc=a6d052b3ac54f98de0fa9c359544f559-1771274426208\u0026pv=19333928694.47881\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
+      "SourceUrl": "https://d.adroll.com/cm/g/out?adroll_fpc=bf13acdd5241f2026618d927ed12f8cd-1771275695573\u0026pv=16732498504.462017\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
       "AltText": "",
       "FileSize": 42
     },
     {
       "FileName": "out-5.img",
-      "SourceUrl": "https://d.adroll.com/cm/l/out?adroll_fpc=a6d052b3ac54f98de0fa9c359544f559-1771274426208\u0026pv=19333928694.47881\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
-      "AltText": "",
-      "FileSize": 0
-    },
-    {
-      "FileName": "out-6.img",
-      "SourceUrl": "https://d.adroll.com/cm/n/out?adroll_fpc=a6d052b3ac54f98de0fa9c359544f559-1771274426208\u0026pv=19333928694.47881\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
-      "AltText": "",
-      "FileSize": 42
-    },
-    {
-      "FileName": "out-7.img",
-      "SourceUrl": "https://d.adroll.com/cm/o/out?adroll_fpc=a6d052b3ac54f98de0fa9c359544f559-1771274426208\u0026pv=19333928694.47881\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
+      "SourceUrl": "https://d.adroll.com/cm/index/out?adroll_fpc=bf13acdd5241f2026618d927ed12f8cd-1771275695573\u0026pv=16732498504.462017\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
       "AltText": "",
       "FileSize": 43
     },
     {
-      "FileName": "out-8.img",
-      "SourceUrl": "https://d.adroll.com/cm/outbrain/out?adroll_fpc=a6d052b3ac54f98de0fa9c359544f559-1771274426208\u0026pv=19333928694.47881\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
+      "FileName": "out-6.img",
+      "SourceUrl": "https://d.adroll.com/cm/l/out?adroll_fpc=bf13acdd5241f2026618d927ed12f8cd-1771275695573\u0026pv=16732498504.462017\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
       "AltText": "",
       "FileSize": 0
     },
     {
-      "FileName": "out-9.img",
-      "SourceUrl": "https://d.adroll.com/cm/pubmatic/out?adroll_fpc=a6d052b3ac54f98de0fa9c359544f559-1771274426208\u0026pv=19333928694.47881\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
+      "FileName": "out-7.img",
+      "SourceUrl": "https://d.adroll.com/cm/n/out?adroll_fpc=bf13acdd5241f2026618d927ed12f8cd-1771275695573\u0026pv=16732498504.462017\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
       "AltText": "",
       "FileSize": 42
     },
     {
-      "FileName": "out-10.img",
-      "SourceUrl": "https://d.adroll.com/cm/taboola/out?adroll_fpc=a6d052b3ac54f98de0fa9c359544f559-1771274426208\u0026pv=19333928694.47881\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
+      "FileName": "out-8.img",
+      "SourceUrl": "https://d.adroll.com/cm/o/out?adroll_fpc=bf13acdd5241f2026618d927ed12f8cd-1771275695573\u0026pv=16732498504.462017\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
+      "AltText": "",
+      "FileSize": 43
+    },
+    {
+      "FileName": "out-9.img",
+      "SourceUrl": "https://d.adroll.com/cm/outbrain/out?adroll_fpc=bf13acdd5241f2026618d927ed12f8cd-1771275695573\u0026pv=16732498504.462017\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
       "AltText": "",
       "FileSize": 0
     },
     {
+      "FileName": "out-10.img",
+      "SourceUrl": "https://d.adroll.com/cm/pubmatic/out?adroll_fpc=bf13acdd5241f2026618d927ed12f8cd-1771275695573\u0026pv=16732498504.462017\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
+      "AltText": "",
+      "FileSize": 42
+    },
+    {
       "FileName": "out-11.img",
-      "SourceUrl": "https://d.adroll.com/cm/triplelift/out?adroll_fpc=a6d052b3ac54f98de0fa9c359544f559-1771274426208\u0026pv=19333928694.47881\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
+      "SourceUrl": "https://d.adroll.com/cm/taboola/out?adroll_fpc=bf13acdd5241f2026618d927ed12f8cd-1771275695573\u0026pv=16732498504.462017\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
+      "AltText": "",
+      "FileSize": 0
+    },
+    {
+      "FileName": "out-12.img",
+      "SourceUrl": "https://d.adroll.com/cm/triplelift/out?adroll_fpc=bf13acdd5241f2026618d927ed12f8cd-1771275695573\u0026pv=16732498504.462017\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
       "AltText": "",
       "FileSize": 37
     },
     {
-      "FileName": "out-12.img",
-      "SourceUrl": "https://d.adroll.com/cm/x/out?adroll_fpc=a6d052b3ac54f98de0fa9c359544f559-1771274426208\u0026pv=19333928694.47881\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
+      "FileName": "out-13.img",
+      "SourceUrl": "https://d.adroll.com/cm/x/out?adroll_fpc=bf13acdd5241f2026618d927ed12f8cd-1771275695573\u0026pv=16732498504.462017\u0026arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fstudent-services-in-fall-2020%2F\u0026advertisable=YMTA77XBNRAH5MZTHYW3XY",
       "AltText": "",
       "FileSize": 43
     },
@@ -111,7 +117,7 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:40:25 GMT",
+    "date": "Mon, 16 Feb 2026 21:01:34 GMT",
     "etag": "\u002250c5fb0f1e27088636d2d3a4e371bab8\u0022",
     "last-modified": "Mon, 16 Feb 2026 20:13:39 GMT",
     "link": "\u003Chttps://everett.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://everett.wsu.edu/wp-json/wp/v2/posts/15282\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://everett.wsu.edu/?p=15282\u003E; rel=shortlink",
@@ -120,5 +126,5 @@
     "x-cache": "EXPIRED",
     "x-cache-status": "EXPIRED"
   },
-  "CapturedAt": "2026-02-16T20:40:24.1792215Z"
+  "CapturedAt": "2026-02-16T21:01:34.6983037Z"
 }

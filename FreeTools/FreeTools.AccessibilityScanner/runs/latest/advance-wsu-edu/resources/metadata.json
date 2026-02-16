@@ -5,8 +5,8 @@
   "Title": "Resources | ADVANCE at WSU | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 67673,
-  "ScreenshotSizeBytes": 698880,
+  "HtmlSizeBytes": 71262,
+  "ScreenshotSizeBytes": 697890,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 698880
+      "FileSize": 697890
     }
   ],
   "ImageCount": 3,
@@ -43,5 +43,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:22.0943036Z"
+  "CapturedAt": "2026-02-16T20:59:37.8705341Z"
 }

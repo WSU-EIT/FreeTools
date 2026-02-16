@@ -5,28 +5,18 @@
 | URL | https://degrees.wsu.edu/ |
 | Title | Degree Finder | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 403.1 KB |
-| Screenshots | 1 (734.6 KB) |
+| HTML Size | 407.3 KB |
+| Screenshots | 1 (244.4 KB) |
 | Images | 7 (579.6 KB) |
 | Images Missing Alt | 7 |
-| JS Errors | 7 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0414287Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:58:42.4510559Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (734.6 KB)
+- Screenshot #1: page-loaded (244.4 KB)
 - Downloaded 7 images to /images/
 
 ## Screenshots
@@ -77,7 +67,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (734.6 KB)
+- `01-page-loaded.png` — page-loaded (244.4 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

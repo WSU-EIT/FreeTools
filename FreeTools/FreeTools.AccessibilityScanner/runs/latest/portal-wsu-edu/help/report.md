@@ -3,25 +3,21 @@
 | Field | Value |
 |-------|-------|
 | URL | https://portal.wsu.edu/help/ |
-| Redirected To | https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7&redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse&response_type=code&scope=openid%20profile%20sis.prd.groups&state=tRYvAOto3LBxINtiSJbm0YPrjn6s8VqG7YGVkMCULg3VDwZysCYTN9m1hg%2BVR70hDENvnTHu4hx1ii3uR6ygU1EQMZOtc7xLBQIrPnwDJeDKjiC6enHaZzGc4PlnnAxFduelQgPzYNxVGkA6HFrlWrw4LLm7tQlygiVsZW3rFgqRhupEzUHUN3AisieipTQbsCsMlTw%2FtM43Vtu%2F%2Bxwwl%2Fqrhti8NCPfi%2Bn79xlAMK3Tpv2Qny99%2FxgZ |
+| Redirected To | https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7&redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse&response_type=code&scope=openid%20profile%20sis.prd.groups&state=1yR0E3McHrHAuUKXSB%2BrL8DkHKp2kQ4k36hk5YFObnBtrNe1v2mPV1rzASlSsBA5vxVsP96lyO3mBTZkRIitpPcJPiwMuS6ndK%2Fb08D1ltoAm1aIJwx2T273wZBfwxqq3XT0IZ%2FlMFR8U1w2%2B4kgJSaJGut9kzCKs%2Bd9a%2FgFP0UvgC7vYFwCibhMHY1DK6TYheN3GjrO2dR9kZ7MhYcYMy2O2iO%2BB23IgadYzZ8bvQlwkMv3t22BhcI2 |
 | Title | WSU Authentication | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 72.2 KB |
-| Screenshots | 1 (40.9 KB) |
+| HTML Size | 70.6 KB |
+| Screenshots | 1 (40.3 KB) |
 | Images | 1 (7.7 KB) |
 | Images Missing Alt | 0 |
-| JS Errors | 1 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:01.1622093Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+| Captured | 2026-02-16T20:59:37.5723537Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (40.9 KB)
+- Screenshot #1: page-loaded (40.3 KB)
 - Downloaded 1 images to /images/
 
 ## Screenshots
@@ -44,7 +40,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (40.9 KB)
+- `01-page-loaded.png` — page-loaded (40.3 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

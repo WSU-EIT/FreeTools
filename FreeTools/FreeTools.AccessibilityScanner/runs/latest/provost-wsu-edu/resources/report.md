@@ -6,18 +6,14 @@
 | Redirected To | https://provost.wsu.edu/2017/11/28/resources-for-our-students/ |
 | Title | Resources for our students | Office of the Provost | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 109.5 KB |
+| HTML Size | 111.0 KB |
 | Screenshots | 1 (197.6 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 1 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:42.4732325Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T21:00:13.3848466Z |
 
 ## Actions
 

@@ -5,22 +5,22 @@
   "Title": "WSU Commencement | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 52440,
-  "ScreenshotSizeBytes": 596221,
+  "HtmlSizeBytes": 52659,
+  "ScreenshotSizeBytes": 658394,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
-  "ConsoleWarningCount": 2,
+  "ConsoleErrorCount": 2,
+  "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 596221
+      "FileSize": 658394
     }
   ],
-  "ImageCount": 6,
-  "ImagesTotalSizeBytes": 2381495,
-  "ImagesMissingAlt": 5,
+  "ImageCount": 5,
+  "ImagesTotalSizeBytes": 1918934,
+  "ImagesMissingAlt": 4,
   "Images": [
     {
       "FileName": "DSC_7622-scaled.jpg",
@@ -33,12 +33,6 @@
       "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/2627/2025/05/DSC_6469-scaled.jpg",
       "AltText": "",
       "FileSize": 474464
-    },
-    {
-      "FileName": "DSC_8899-scaled.jpg",
-      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/2627/2025/05/DSC_8899-scaled.jpg",
-      "AltText": "",
-      "FileSize": 462561
     },
     {
       "FileName": "DSC_6471-scaled.jpg",
@@ -61,5 +55,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0341505Z"
+  "CapturedAt": "2026-02-16T20:58:42.4510173Z"
 }

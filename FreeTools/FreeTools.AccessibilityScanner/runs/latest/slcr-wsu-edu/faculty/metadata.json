@@ -5,8 +5,8 @@
   "Title": "Faculty | School of Languages, Cultures, and Race | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 68362,
-  "ScreenshotSizeBytes": 658374,
+  "HtmlSizeBytes": 79984,
+  "ScreenshotSizeBytes": 705730,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,11 +15,11 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 658374
+      "FileSize": 705730
     }
   ],
-  "ImageCount": 33,
-  "ImagesTotalSizeBytes": 8452210,
+  "ImageCount": 34,
+  "ImagesTotalSizeBytes": 9225276,
   "ImagesMissingAlt": 12,
   "Images": [
     {
@@ -47,10 +47,10 @@
       "FileSize": 200501
     },
     {
-      "FileName": "IMG_0624-scaled.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2020/07/IMG_0624-scaled.jpg",
-      "AltText": "Weiguo Cao",
-      "FileSize": 567291
+      "FileName": "IMG_0622-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2020/07/IMG_0622-scaled.jpg",
+      "AltText": "Joshua Bonzo",
+      "FileSize": 613323
     },
     {
       "FileName": "SabineDavis-88x106.jpg",
@@ -75,6 +75,12 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2024/09/20230519_1451272-scaled-e1725555299646-396x503.jpg",
       "AltText": "",
       "FileSize": 34445
+    },
+    {
+      "FileName": "Mike-Hubert-1-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2020/07/Mike-Hubert-1-scaled.jpg",
+      "AltText": "Michael Hubert",
+      "FileSize": 727034
     },
     {
       "FileName": "IMG_0046-scaled.jpg",
@@ -223,5 +229,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:52.1917857Z"
+  "CapturedAt": "2026-02-16T20:59:45.1696585Z"
 }

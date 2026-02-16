@@ -5,8 +5,8 @@
   "Title": "Research | College of Veterinary Medicine | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 276833,
-  "ScreenshotSizeBytes": 2521013,
+  "HtmlSizeBytes": 281589,
+  "ScreenshotSizeBytes": 2997771,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2521013
+      "FileSize": 2997771
     }
   ],
   "ImageCount": 20,
@@ -145,5 +145,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:40.6978311Z"
+  "CapturedAt": "2026-02-16T21:00:42.630216Z"
 }

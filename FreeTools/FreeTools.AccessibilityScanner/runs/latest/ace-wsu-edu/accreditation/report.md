@@ -6,18 +6,18 @@
 | Redirected To | https://ace.wsu.edu/2018/11/05/accreditation-reaffirmed-by-nwccu-wsus-next-steps-take-shape/ |
 | Title | Accreditation Reaffirmed by NWCCU, WSU’s Next Steps Take Shape | Office of Assessment for Curricular Effectiveness | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 71.5 KB |
-| Screenshots | 1 (346.0 KB) |
+| HTML Size | 76.2 KB |
+| Screenshots | 1 (356.3 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:02.7408716Z |
+| Captured | 2026-02-16T20:59:38.8846412Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (346.0 KB)
+- Screenshot #1: page-loaded (356.3 KB)
 - No images found on page
 
 ## Screenshots
@@ -33,7 +33,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (346.0 KB)
+- `01-page-loaded.png` — page-loaded (356.3 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

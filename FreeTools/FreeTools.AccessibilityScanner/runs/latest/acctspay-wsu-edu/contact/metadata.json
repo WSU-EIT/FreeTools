@@ -5,8 +5,8 @@
   "Title": "Contact Us | Payment Services | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 57581,
-  "ScreenshotSizeBytes": 472091,
+  "HtmlSizeBytes": 62667,
+  "ScreenshotSizeBytes": 541465,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,12 +15,12 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 472091
+      "FileSize": 541465
     }
   ],
-  "ImageCount": 8,
-  "ImagesTotalSizeBytes": 2289309,
-  "ImagesMissingAlt": 8,
+  "ImageCount": 10,
+  "ImagesTotalSizeBytes": 3495682,
+  "ImagesMissingAlt": 10,
   "Images": [
     {
       "FileName": "charee-morris.jpg",
@@ -35,10 +35,10 @@
       "FileSize": 413095
     },
     {
-      "FileName": "Diane-Humphreys-scaled.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3031/2022/12/Diane-Humphreys-scaled.jpg",
+      "FileName": "Brenda-Hiatt-scaled-e1671232632348.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3031/2022/12/Brenda-Hiatt-scaled-e1671232632348.jpg",
       "AltText": "",
-      "FileSize": 422682
+      "FileSize": 524894
     },
     {
       "FileName": "Troy-Jackson-scaled.jpg",
@@ -51,6 +51,18 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3031/2024/03/blank-profile-picture.jpg",
       "AltText": "",
       "FileSize": 6031
+    },
+    {
+      "FileName": "Vivian-Miller-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3031/2022/12/Vivian-Miller-scaled.jpg",
+      "AltText": "",
+      "FileSize": 554769
+    },
+    {
+      "FileName": "Nancy-Olin-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3031/2022/12/Nancy-Olin-scaled.jpg",
+      "AltText": "",
+      "FileSize": 549392
     },
     {
       "FileName": "Deanna-Sullivan-scaled-e1671232485545.jpg",
@@ -73,5 +85,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:22.032521Z"
+  "CapturedAt": "2026-02-16T20:59:39.7536706Z"
 }

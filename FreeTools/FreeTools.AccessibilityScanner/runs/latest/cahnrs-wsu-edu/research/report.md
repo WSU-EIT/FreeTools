@@ -5,14 +5,14 @@
 | URL | https://cahnrs.wsu.edu/research/ |
 | Title | Office of Research | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 207.4 KB |
+| HTML Size | 207.3 KB |
 | Screenshots | 1 (1.6 MB) |
 | Images | 8 (2.7 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:44.8255356Z |
+| Captured | 2026-02-16T21:01:04.3257078Z |
 
 ## Actions
 

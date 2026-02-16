@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/4 pages OK |
+| Pages Scanned | 4 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 5 |
-| Total JS Warnings | 6 |
-| Total HTML | 1.4 MB |
-| Total Screenshots | 7.9 MB |
-| Total Images | 44 (5.2 MB) |
+| Pages Failed | 4 |
+| Total JS Errors | 0 |
+| Total JS Warnings | 4 |
+| Total HTML | 959.3 KB |
+| Total Screenshots | 7.0 MB |
+| Total Images | 43 (5.9 MB) |
 | Images Missing Alt | 8 |
 | Folder | `medicine-wsu-edu/` |
 
@@ -18,10 +18,8 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Elson S. Floyd College of Medicine \|... | 3 | 13 | 1 |
-| ❌ | [/about/](about/report.md) | 0 | About \| Elson S. Floyd College of Me... | 0 | 7 | 0 |
-| ❌ | [/admissions/](admissions/report.md) | 0 | Page not found \| Elson S. Floyd Coll... | 1 | 1 | 0 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| Elson S. Floyd Coll... | 1 | 1 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Elson S. Floyd College of Medicine \|... | 0 | 13 | 1 |
+| ❌ | [/about/](about/report.md) | 0 | About \| Elson S. Floyd College of Me... | 0 | 8 | 0 |
 | ❌ | [/education/](education/report.md) | 0 | Education Scholars Program \| Elson S... | 0 | 3 | 2 |
 | ❌ | [/research/](research/report.md) | 0 | Research Overview \| Elson S. Floyd C... | 0 | 19 | 5 |
 
@@ -34,14 +32,6 @@
 ### [/about/](about/report.md)
 
 ![/about/](about/01-page-loaded.png)
-
-### [/admissions/](admissions/report.md)
-
-![/admissions/](admissions/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
 
 ### [/education/](education/report.md)
 
@@ -64,11 +54,6 @@
 - **URL:** https://medicine.wsu.edu/about/
 - **Status:** 0
 
-### /admissions/
-
-- **URL:** https://medicine.wsu.edu/admissions/
-- **Status:** 0
-
 ### /education/
 
 - **URL:** https://medicine.wsu.edu/education/
@@ -78,28 +63,6 @@
 
 - **URL:** https://medicine.wsu.edu/research/
 - **Status:** 0
-
-### /contact/
-
-- **URL:** https://medicine.wsu.edu/contact/
-- **Status:** 404
-
-
-## Pages with JavaScript Errors
-
-### / (3 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /admissions/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /contact/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

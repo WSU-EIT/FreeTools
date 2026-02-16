@@ -5,14 +5,14 @@
 | URL | https://wsu.edu/campuses/ |
 | Title | WSU Campuses | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 140.5 KB |
-| Screenshots | 1 (7.6 MB) |
+| HTML Size | 140.6 KB |
+| Screenshots | 1 (7.7 MB) |
 | Images | 12 (8.6 MB) |
 | Images Missing Alt | 6 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:41:34.0264513Z |
+| Captured | 2026-02-16T21:02:42.8129926Z |
 
 ## JavaScript Errors
 
@@ -20,7 +20,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (7.6 MB)
+- Screenshot #1: page-loaded (7.7 MB)
 - Downloaded 12 images to /images/
 
 ## Screenshots
@@ -85,7 +85,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (7.6 MB)
+- `01-page-loaded.png` — page-loaded (7.7 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

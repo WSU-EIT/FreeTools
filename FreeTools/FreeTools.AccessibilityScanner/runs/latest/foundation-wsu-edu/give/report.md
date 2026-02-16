@@ -5,14 +5,14 @@
 | URL | https://foundation.wsu.edu/give/ |
 | Title | Make A Gift Today! | WSU Foundation | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 238.3 KB |
+| HTML Size | 239.1 KB |
 | Screenshots | 1 (512.3 KB) |
 | Images | 9 (935.3 KB) |
 | Images Missing Alt | 3 |
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:02.5297953Z |
+| Captured | 2026-02-16T20:59:45.3670795Z |
 
 ## Actions
 

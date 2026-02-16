@@ -5,14 +5,14 @@
 | URL | https://brand.wsu.edu/colors/ |
 | Title | Colors – Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 59.2 KB |
+| HTML Size | 64.5 KB |
 | Screenshots | 1 (712.2 KB) |
 | Images | 6 (500.5 KB) |
 | Images Missing Alt | 6 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:38.2396858Z |
+| Captured | 2026-02-16T20:59:54.5646308Z |
 
 ## Actions
 

@@ -5,15 +5,15 @@
 | URL | https://slcr.wsu.edu/contact/ |
 | Redirected To | https://slcr.wsu.edu/contact-us/ |
 | Title | Contact Us | School of Languages, Cultures, and Race | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 65.2 KB |
+| Status | ✅ 200 |
+| HTML Size | 65.3 KB |
 | Screenshots | 1 (417.4 KB) |
 | Images | 1 (70.6 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:11.7057964Z |
+| Captured | 2026-02-16T21:01:03.1938770Z |
 
 ## Actions
 

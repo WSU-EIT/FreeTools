@@ -5,7 +5,7 @@
   "Title": "Policies and Reports | Office of the Provost | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 93158,
+  "HtmlSizeBytes": 104390,
   "ScreenshotSizeBytes": 532955,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:27.2178459Z"
+  "CapturedAt": "2026-02-16T20:59:57.7431972Z"
 }

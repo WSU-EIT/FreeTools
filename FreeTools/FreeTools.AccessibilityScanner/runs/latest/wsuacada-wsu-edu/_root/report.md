@@ -5,18 +5,19 @@
 | URL | https://wsuacada.wsu.edu/ |
 | Title | WSU Academic Advising Association | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 49.8 KB |
+| HTML Size | 56.8 KB |
 | Screenshots | 1 (129.1 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 3 |
+| JS Errors | 4 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0059437Z |
+| Captured | 2026-02-16T20:58:42.4233107Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 

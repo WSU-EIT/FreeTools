@@ -5,40 +5,28 @@
   "Title": "Washington State University | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 109584,
-  "ScreenshotSizeBytes": 945708,
+  "HtmlSizeBytes": 191672,
+  "ScreenshotSizeBytes": 2742692,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 4,
+  "ConsoleErrorCount": 3,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 945708
+      "FileSize": 2742692
     }
   ],
-  "ImageCount": 9,
-  "ImagesTotalSizeBytes": 3565163,
-  "ImagesMissingAlt": 8,
+  "ImageCount": 26,
+  "ImagesTotalSizeBytes": 2976768,
+  "ImagesMissingAlt": 7,
   "Images": [
-    {
-      "FileName": "Campus-photo-14.jpg",
-      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-14.jpg",
-      "AltText": "",
-      "FileSize": 938665
-    },
     {
       "FileName": "Campus-photo-17-scaled-e1661442335869.jpg",
       "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Campus-photo-17-scaled-e1661442335869.jpg",
       "AltText": "",
       "FileSize": 264265
-    },
-    {
-      "FileName": "Chris-Stokes-portrait-and-bobsled-training-run.jpg",
-      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2026/02/Chris-Stokes-portrait-and-bobsled-training-run.jpg",
-      "AltText": "",
-      "FileSize": 455579
     },
     {
       "FileName": "WSU-DAYn-11049_3x2-scaled.jpg",
@@ -75,9 +63,123 @@
       "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-5-792x535.jpg",
       "AltText": "",
       "FileSize": 141229
+    },
+    {
+      "FileName": "Mask-group-6.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-6.jpg",
+      "AltText": "",
+      "FileSize": 443049
+    },
+    {
+      "FileName": "385282960.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385282960.jpg?width=480",
+      "AltText": "Image posted by wsuglobal to instagram",
+      "FileSize": 46949
+    },
+    {
+      "FileName": "385282960_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385282960_user_image.jpg?width=100",
+      "AltText": "Profile image for wsuglobal",
+      "FileSize": 2653
+    },
+    {
+      "FileName": "385241110.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385241110.jpg?width=480",
+      "AltText": "Image posted by wsu to instagram",
+      "FileSize": 76716
+    },
+    {
+      "FileName": "385241110_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385241110_user_image.jpg?width=100",
+      "AltText": "Profile image for wsu",
+      "FileSize": 2271
+    },
+    {
+      "FileName": "385172962_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385172962_user_image.jpg?width=100",
+      "AltText": "Profile image for wsuglobal",
+      "FileSize": 2653
+    },
+    {
+      "FileName": "385272025.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385272025.jpg?width=480",
+      "AltText": "Image posted by wsupullman to instagram",
+      "FileSize": 54019
+    },
+    {
+      "FileName": "385272025_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385272025_user_image.jpg?width=100",
+      "AltText": "Profile image for wsupullman",
+      "FileSize": 2523
+    },
+    {
+      "FileName": "385244080.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385244080.jpg?width=480",
+      "AltText": "Image posted by wsupullman to instagram",
+      "FileSize": 45418
+    },
+    {
+      "FileName": "385244080_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385244080_user_image.jpg?width=100",
+      "AltText": "Profile image for wsupullman",
+      "FileSize": 2523
+    },
+    {
+      "FileName": "385191223_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385191223_user_image.jpg?width=100",
+      "AltText": "Profile image for wsupullman",
+      "FileSize": 2523
+    },
+    {
+      "FileName": "385262532.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385262532.jpg?width=480",
+      "AltText": "Image posted by wsuglobal to instagram",
+      "FileSize": 46949
+    },
+    {
+      "FileName": "385262532_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385262532_user_image.jpg?width=100",
+      "AltText": "Profile image for wsuglobal",
+      "FileSize": 2653
+    },
+    {
+      "FileName": "385211494_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385211494_user_image.jpg?width=100",
+      "AltText": "Profile image for wsupullman",
+      "FileSize": 2523
+    },
+    {
+      "FileName": "385176190_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385176190_user_image.jpg?width=100",
+      "AltText": "Profile image for wsupullman",
+      "FileSize": 2523
+    },
+    {
+      "FileName": "385246168.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385246168.jpg?width=480",
+      "AltText": "Image posted by wsuglobal to instagram",
+      "FileSize": 61941
+    },
+    {
+      "FileName": "385246168_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385246168_user_image.jpg?width=100",
+      "AltText": "Profile image for wsuglobal",
+      "FileSize": 2653
+    },
+    {
+      "FileName": "385208067_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385208067_user_image.jpg?width=100",
+      "AltText": "Profile image for wsuglobal",
+      "FileSize": 2653
+    },
+    {
+      "FileName": "385165179_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/655259a3-1b3e-4d24-9fcf-940885db13b3/385165179_user_image.jpg?width=100",
+      "AltText": "Profile image for wsueverett",
+      "FileSize": 2657
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:04.9082914Z"
+  "CapturedAt": "2026-02-16T20:58:42.4233071Z"
 }

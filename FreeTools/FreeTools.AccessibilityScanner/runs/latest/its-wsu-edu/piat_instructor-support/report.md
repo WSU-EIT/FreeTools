@@ -5,14 +5,14 @@
 | URL | https://its.wsu.edu/piat/instructor-support/ |
 | Title | Instructor Support | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 228.3 KB |
+| HTML Size | 228.4 KB |
 | Screenshots | 1 (160.3 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:41:36.0494701Z |
+| Captured | 2026-02-16T21:02:47.0787163Z |
 
 ## Actions
 

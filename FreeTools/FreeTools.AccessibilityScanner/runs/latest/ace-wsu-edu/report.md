@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/4 pages OK |
+| Pages Scanned | 4 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 10 |
+| Pages Failed | 4 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 418.4 KB |
-| Total Screenshots | 2.1 MB |
+| Total HTML | 299.6 KB |
+| Total Screenshots | 1.9 MB |
 | Total Images | 1 (23.8 KB) |
 | Images Missing Alt | 0 |
 | Folder | `ace-wsu-edu/` |
@@ -18,12 +18,10 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Office of Assessment for Curricular E... | 8 | 1 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Office of Assessment for Curricular E... | 0 | 1 | 0 |
 | ❌ | [/accreditation/](accreditation/report.md) | 0 | Accreditation Reaffirmed by NWCCU, WS... | 0 | 0 | 0 |
 | ❌ | [/assessment/](assessment/report.md) | 0 | Assessment Archives \| Office of Asse... | 0 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| Office of Assessmen... | 1 | 0 | 0 |
 | ❌ | [/reporting/](reporting/report.md) | 0 | Reporting Program Assessment Activiti... | 0 | 0 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| Office of Assessmen... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -39,17 +37,9 @@
 
 ![/assessment/](assessment/01-page-loaded.png)
 
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
 ### [/reporting/](reporting/report.md)
 
 ![/reporting/](reporting/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -73,38 +63,6 @@
 
 - **URL:** https://ace.wsu.edu/reporting/
 - **Status:** 0
-
-### /resources/
-
-- **URL:** https://ace.wsu.edu/resources/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://ace.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (8 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /resources/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /contact/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

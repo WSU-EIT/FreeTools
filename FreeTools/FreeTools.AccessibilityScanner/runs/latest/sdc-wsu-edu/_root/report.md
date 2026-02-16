@@ -5,26 +5,18 @@
 | URL | https://sdc.wsu.edu/ |
 | Title | School of Design and Construction | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 224.3 KB |
-| Screenshots | 1 (1.6 MB) |
+| HTML Size | 235.3 KB |
+| Screenshots | 1 (2.4 MB) |
 | Images | 3 (389.9 KB) |
 | Images Missing Alt | 0 |
-| JS Errors | 5 |
+| JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1544376Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:58:42.4719955Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.6 MB)
+- Screenshot #1: page-loaded (2.4 MB)
 - Downloaded 3 images to /images/
 
 ## Screenshots
@@ -53,7 +45,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.6 MB)
+- `01-page-loaded.png` — page-loaded (2.4 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

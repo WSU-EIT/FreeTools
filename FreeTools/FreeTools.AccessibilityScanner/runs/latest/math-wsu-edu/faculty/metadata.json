@@ -5,8 +5,8 @@
   "Title": "Faculty | Department of Mathematics and Statistics | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 325663,
-  "ScreenshotSizeBytes": 1764578,
+  "HtmlSizeBytes": 323476,
+  "ScreenshotSizeBytes": 1417486,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1764578
+      "FileSize": 1417486
     }
   ],
   "ImageCount": 41,
@@ -271,5 +271,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:51.3122091Z"
+  "CapturedAt": "2026-02-16T20:59:52.8241639Z"
 }

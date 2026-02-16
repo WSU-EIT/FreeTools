@@ -5,18 +5,18 @@
 | URL | https://pullman.wsu.edu/about/ |
 | Title | About WSU Pullman | Pullman Campus | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 53.8 KB |
-| Screenshots | 1 (1.4 MB) |
+| HTML Size | 54.1 KB |
+| Screenshots | 1 (1.9 MB) |
 | Images | 5 (1010.0 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:59.9456455Z |
+| Captured | 2026-02-16T20:59:49.3976823Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.4 MB)
+- Screenshot #1: page-loaded (1.9 MB)
 - Downloaded 5 images to /images/
 
 ## Screenshots
@@ -51,7 +51,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.4 MB)
+- `01-page-loaded.png` — page-loaded (1.9 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

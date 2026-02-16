@@ -5,8 +5,8 @@
   "Title": "College of Education, Sport, and Human Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 246190,
-  "ScreenshotSizeBytes": 1623044,
+  "HtmlSizeBytes": 248974,
+  "ScreenshotSizeBytes": 1652101,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 2,
@@ -15,12 +15,12 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1623044
+      "FileSize": 1652101
     }
   ],
-  "ImageCount": 6,
-  "ImagesTotalSizeBytes": 2028694,
-  "ImagesMissingAlt": 4,
+  "ImageCount": 5,
+  "ImagesTotalSizeBytes": 1531313,
+  "ImagesMissingAlt": 3,
   "Images": [
     {
       "FileName": "Parents-Weekend-2023-dh-Smiley-Faces-_-07-1900x1325-1.jpg",
@@ -41,12 +41,6 @@
       "FileSize": 250993
     },
     {
-      "FileName": "Spring2023_8468-1900x1267-1.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/Spring2023_8468-1900x1267-1.jpg",
-      "AltText": "",
-      "FileSize": 497381
-    },
-    {
       "FileName": "2024SpringGraduation_6810-1900x1267-1.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/2024SpringGraduation_6810-1900x1267-1.jpg",
       "AltText": "I did it anyway",
@@ -61,5 +55,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0339589Z"
+  "CapturedAt": "2026-02-16T20:58:42.4453011Z"
 }

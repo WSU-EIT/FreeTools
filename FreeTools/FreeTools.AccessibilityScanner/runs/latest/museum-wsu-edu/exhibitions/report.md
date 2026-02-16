@@ -6,14 +6,14 @@
 | Redirected To | https://museum.wsu.edu/exhibitions-events/ |
 | Title | Exhibitions & Programs | Jordan Schnitzer Museum of Art WSU | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 222.3 KB |
-| Screenshots | 1 (1.1 MB) |
-| Images | 3 (1.1 MB) |
+| HTML Size | 227.8 KB |
+| Screenshots | 1 (2.5 MB) |
+| Images | 7 (4.6 MB) |
 | Images Missing Alt | 1 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:59.9439759Z |
+| Captured | 2026-02-16T21:00:30.8502849Z |
 
 ## JavaScript Errors
 
@@ -21,8 +21,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.1 MB)
-- Downloaded 3 images to /images/
+- Screenshot #1: page-loaded (2.5 MB)
+- Downloaded 7 images to /images/
 
 ## Screenshots
 
@@ -31,13 +31,17 @@
 ![page-loaded](01-page-loaded.png)
 
 
-## Page Images (3)
+## Page Images (7)
 
 | # | Image | Alt Text | Size |
 |---|-------|----------|------|
 | 1 | [JSMOAWSU-LOGO-DOUBLE-LINE-396x99-1.jpg](images/JSMOAWSU-LOGO-DOUBLE-LINE-396x99-1.jpg) | Jordan Schnitzer Museum of Art WSU | 10.2 KB |
 | 2 | [First-Year-Programs24-9_HeroBanner-_Exhib-scaled.jpg](images/First-Year-Programs24-9_HeroBanner-_Exhib-scaled.jpg) | A student observes two watercolor pai... | 569.6 KB |
 | 3 | [Schnitzer-Museum-of-Art-Clouds_3446-cropped-scaled.jpg](images/Schnitzer-Museum-of-Art-Clouds_3446-cropped-scaled.jpg) | *(none)* | 583.3 KB |
+| 4 | [JSMA-Exterior-19-8.22-4-scaled.jpg](images/JSMA-Exterior-19-8.22-4-scaled.jpg) | An outdoor photo of the back of the a... | 1.0 MB |
+| 5 | [Mount-St.-Helens-Ash-Plates-12_Program-Calendar.jpg](images/Mount-St.-Helens-Ash-Plates-12_Program-Calendar.jpg) | Three women smile and hold unique cer... | 976.6 KB |
+| 6 | [DSC_4463_cc_Exhibition-Archive.jpg](images/DSC_4463_cc_Exhibition-Archive.jpg) | A visitor observes a colorful set of ... | 711.7 KB |
+| 7 | [DSC_8835_Programs.Archive-1.jpg](images/DSC_8835_Programs.Archive-1.jpg) | A parent and child smile while lookin... | 778.5 KB |
 
 ### Gallery
 
@@ -47,6 +51,14 @@
 
 ![Schnitzer-Museum-of-Art-Clouds_3446-cropped-scaled.jpg](images/Schnitzer-Museum-of-Art-Clouds_3446-cropped-scaled.jpg)
 
+![An outdoor photo of the back of the art museum](images/JSMA-Exterior-19-8.22-4-scaled.jpg)
+
+![Three women smile and hold unique ceramic plates in the next to a window.](images/Mount-St.-Helens-Ash-Plates-12_Program-Calendar.jpg)
+
+![A visitor observes a colorful set of elk hide drums hung on the gallery wall.](images/DSC_4463_cc_Exhibition-Archive.jpg)
+
+![A parent and child smile while looking at an art installation on the gallery floor.](images/DSC_8835_Programs.Archive-1.jpg)
+
 
 ### ⚠️ Images Missing Alt Text (1)
 
@@ -54,11 +66,11 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.1 MB)
+- `01-page-loaded.png` — page-loaded (2.5 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
-- `images/` — 3 page images (1.1 MB)
+- `images/` — 7 page images (4.6 MB)

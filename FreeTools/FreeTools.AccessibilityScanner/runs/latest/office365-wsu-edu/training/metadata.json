@@ -1,11 +1,11 @@
 {
   "PagePath": "/training/",
   "Url": "https://office365.wsu.edu/training/",
-  "FinalUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca\u0026redirect_uri=https%3A%2F%2Fwww.microsoft365.com%2Flandingv2\u0026response_type=code%20id_token\u0026scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All\u0026response_mode=form_post\u0026nonce=639068711238690327.ZmQ3NzBmNzctODUwNi00MzI4LTg4NDctMTI5MDI2ZjI2ODdmODA1MjYwMTQtZTc2ZS00NWM5LTk1MTctN2RhYjMyZmYwZDhk\u0026ui_locales=en-US\u0026mkt=en-US\u0026client-request-id=84d2ab01-be83-4e18-84b8-2ca97da8fed6\u0026state=t-vUEqzPegWQQGGjhKQeOiYR1PZaHGRXdVM0_JCbbMOIf1C-ubo-aMKgEAvGxUzhZ6fA7rEdA_t85HOM-2lBa0JnzyuCM4zXwxhx87yWE8RNo58BDe5yqgVvlFqjPIt3jykPvXCsi3JKq6DgJnQEqtYRZ7zvNMgm_fPR7CH2oXiw2gPzDQzzzqa-jbfgQK_ARCLsLXyF66tBcNgv9b__1xzJqwfkHXHvS07H7BlG2jIiznfxlnAnYE4x_4jVXbs7cDzsHrHvy1UB-sjh4sesV9yvWDyH9alR2kTns8yvtcbGyv1nWW07jXWTJNPoaHHsn5jkuQ-9xEzNxzCVFQnkTQ\u0026x-client-SKU=ID_NET8_0\u0026x-client-ver=8.5.0.0",
+  "FinalUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca\u0026redirect_uri=https%3A%2F%2Fwww.microsoft365.com%2Flandingv2\u0026response_type=code%20id_token\u0026scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All\u0026response_mode=form_post\u0026nonce=639068724022844994.YWRmNzZhNzMtYTViOS00OGVjLTk4ZWEtZmM5NTZkOWRlNWEyYzI0NzM5YjgtY2YxMC00N2M5LTgxMGItNWRmY2Q4NDQ1OTI2\u0026ui_locales=en-US\u0026mkt=en-US\u0026client-request-id=f83e922c-22a8-4abd-8900-8b223a5eb1aa\u0026state=WG5tPtqUbEQclrp6mimPxRFEcewMFqXU3337zMMIIU0FXJ122NPTVtx6wqGc18PWwHFHj1YxDZmDRXp08pKKa934gpX69GylCFqf23SLRQiH5ARdDQ5xxsr2XkFjcXlQjRnjEvcYg9swWuKwk1868JC71LPxXcK1zIWUXiE1rZRuWVKkzanWNyaKpEKR7mnBe5LEaWif3mKpA3zd-RLkzBGJ0qbi3I1gaWC2D_BC_Lnk7xwZCJcZ1zSwNldOBsZl7M86_S8VxCJgWAkV1vBVi4fn18DWcsvGcKWViLpnsEZ4WcTxCzkD9iQMRMl8IMRy2H5lZf9o7zu_0kBTJUUeCA\u0026x-client-SKU=ID_NET8_0\u0026x-client-ver=8.5.0.0",
   "Title": "Sign in to your account",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 61092,
+  "HtmlSizeBytes": 61317,
   "ScreenshotSizeBytes": 4701,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:38.4205662Z"
+  "CapturedAt": "2026-02-16T20:59:59.7274803Z"
 }

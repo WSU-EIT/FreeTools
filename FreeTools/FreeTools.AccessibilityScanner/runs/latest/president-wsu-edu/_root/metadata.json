@@ -5,17 +5,17 @@
   "Title": "Office of the President | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 56805,
-  "ScreenshotSizeBytes": 433856,
+  "HtmlSizeBytes": 61053,
+  "ScreenshotSizeBytes": 318140,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 3,
   "ConsoleWarningCount": 2,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 433856
+      "FileSize": 318140
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1507485Z"
+  "CapturedAt": "2026-02-16T20:58:42.4691066Z"
 }

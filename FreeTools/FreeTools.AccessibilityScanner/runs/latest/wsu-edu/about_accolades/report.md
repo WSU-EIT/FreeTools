@@ -5,14 +5,14 @@
 | URL | https://wsu.edu/about/accolades/ |
 | Title | Accolades | Washington State University | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 107.9 KB |
+| HTML Size | 115.0 KB |
 | Screenshots | 1 (2.6 MB) |
 | Images | 11 (1.7 MB) |
 | Images Missing Alt | 11 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:23.0693690Z |
+| Captured | 2026-02-16T21:01:12.0582110Z |
 
 ## JavaScript Errors
 

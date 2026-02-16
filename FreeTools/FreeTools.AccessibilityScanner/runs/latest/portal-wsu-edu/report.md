@@ -6,10 +6,10 @@
 | Pages Scanned | 3 |
 | Pages Passed | 0 |
 | Pages Failed | 3 |
-| Total JS Errors | 13 |
+| Total JS Errors | 8 |
 | Total JS Warnings | 0 |
-| Total HTML | 283.2 KB |
-| Total Screenshots | 116.1 KB |
+| Total HTML | 282.7 KB |
+| Total Screenshots | 114.5 KB |
 | Total Images | 3 (23.0 KB) |
 | Images Missing Alt | 0 |
 | Folder | `portal-wsu-edu/` |
@@ -19,8 +19,8 @@
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | WSU \| Sign In | 8 | 1 | 0 |
-| ❌ | [/help/](help/report.md) | 0 | WSU Authentication \| Washington Stat... | 1 | 1 | 0 |
-| ❌ | [/services/](services/report.md) | 0 | WSU Authentication \| Washington Stat... | 4 | 1 | 0 |
+| ❌ | [/help/](help/report.md) | 0 | WSU Authentication \| Washington Stat... | 0 | 1 | 0 |
+| ❌ | [/services/](services/report.md) | 0 | WSU Authentication \| Washington Stat... | 0 | 1 | 0 |
 
 ## Page Screenshots
 
@@ -67,17 +67,6 @@
 - `Something unexpected happened while we were checking url http://127.0.0.1:65141`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65151`
 - `No available ports. Loopback server failed and polling is cancelled.`
-
-### /services/ (4 errors)
-
-- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
-
-### /help/ (1 errors)
-
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 
 
 ---

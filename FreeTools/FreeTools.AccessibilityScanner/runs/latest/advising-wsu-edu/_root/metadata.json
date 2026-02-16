@@ -5,10 +5,10 @@
   "Title": "Advising at WSU | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 106465,
+  "HtmlSizeBytes": 109936,
   "ScreenshotSizeBytes": 790895,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -18,11 +18,18 @@
       "FileSize": 790895
     }
   ],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
-  "ImagesMissingAlt": 0,
-  "Images": [],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 353878,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "Advis-web_600x39921.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-daesa/uploads/sites/634/2015/03/Advis-web_600x39921.jpg",
+      "AltText": "",
+      "FileSize": 353878
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:04.9083155Z"
+  "CapturedAt": "2026-02-16T20:58:42.4233383Z"
 }

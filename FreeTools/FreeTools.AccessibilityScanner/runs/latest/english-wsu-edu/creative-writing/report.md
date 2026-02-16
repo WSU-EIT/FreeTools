@@ -4,15 +4,15 @@
 |-------|-------|
 | URL | https://english.wsu.edu/creative-writing/ |
 | Title | Creative Writing Community | WSU Department of English | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 58.7 KB |
+| Status | ✅ 200 |
+| HTML Size | 70.5 KB |
 | Screenshots | 1 (422.2 KB) |
 | Images | 1 (43.3 KB) |
 | Images Missing Alt | 1 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:53.2392065Z |
+| Captured | 2026-02-16T21:00:27.1376856Z |
 
 ## JavaScript Errors
 

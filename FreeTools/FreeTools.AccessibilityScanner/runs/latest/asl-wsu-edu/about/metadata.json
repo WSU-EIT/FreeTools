@@ -5,8 +5,8 @@
   "Title": "About | Applied Sciences Laboratory | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 56256,
-  "ScreenshotSizeBytes": 940774,
+  "HtmlSizeBytes": 57083,
+  "ScreenshotSizeBytes": 1031861,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,21 +15,14 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 940774
+      "FileSize": 1031861
     }
   ],
-  "ImageCount": 1,
-  "ImagesTotalSizeBytes": 530683,
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
   "ImagesMissingAlt": 0,
-  "Images": [
-    {
-      "FileName": "6_DSC3488_web.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2016/12/6_DSC3488_web.jpg",
-      "AltText": "Scientists working with equipment",
-      "FileSize": 530683
-    }
-  ],
+  "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:02.4089753Z"
+  "CapturedAt": "2026-02-16T20:59:41.8045884Z"
 }

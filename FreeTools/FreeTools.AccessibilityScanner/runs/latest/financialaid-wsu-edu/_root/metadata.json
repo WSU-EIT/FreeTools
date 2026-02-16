@@ -5,8 +5,8 @@
   "Title": "Student Financial Services | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 252521,
-  "ScreenshotSizeBytes": 1376152,
+  "HtmlSizeBytes": 252645,
+  "ScreenshotSizeBytes": 1167088,
   "CredentialUsed": null,
   "ConsoleErrorCount": 3,
   "ConsoleWarningCount": 0,
@@ -15,11 +15,11 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1376152
+      "FileSize": 1167088
     }
   ],
-  "ImageCount": 9,
-  "ImagesTotalSizeBytes": 2551235,
+  "ImageCount": 8,
+  "ImagesTotalSizeBytes": 1889278,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -39,12 +39,6 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-financialaid/uploads/sites/2322/2024/03/DRAFT-SITE-stock-photo.jpg",
       "AltText": "Five WSU students outdoors on campus holding up a cougar head flag.",
       "FileSize": 157776
-    },
-    {
-      "FileName": "ButchonFootballField.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-financialaid/uploads/sites/2322/2024/08/ButchonFootballField.jpg",
-      "AltText": "Washington State mascot Butch T. Cougar cheers with the marching band before a WSU football game.",
-      "FileSize": 661957
     },
     {
       "FileName": "StudentGroupHandshake.jpg",
@@ -79,5 +73,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0806281Z"
+  "CapturedAt": "2026-02-16T20:58:42.4538699Z"
 }

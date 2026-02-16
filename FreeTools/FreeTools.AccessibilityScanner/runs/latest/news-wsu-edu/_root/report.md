@@ -5,24 +5,18 @@
 | URL | https://news.wsu.edu/ |
 | Title | WSU Insider | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 265.8 KB |
-| Screenshots | 1 (1.8 MB) |
+| HTML Size | 266.0 KB |
+| Screenshots | 1 (2.1 MB) |
 | Images | 11 (1.4 MB) |
 | Images Missing Alt | 1 |
-| JS Errors | 3 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1331713Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
-- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:58:42.4682871Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.8 MB)
+- Screenshot #1: page-loaded (2.1 MB)
 - Downloaded 11 images to /images/
 
 ## Screenshots
@@ -79,7 +73,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.8 MB)
+- `01-page-loaded.png` — page-loaded (2.1 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

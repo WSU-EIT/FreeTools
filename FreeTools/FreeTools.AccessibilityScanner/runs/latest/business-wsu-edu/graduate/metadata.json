@@ -5,7 +5,7 @@
   "Title": "Graduate Placements - Carson College of Business | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 185726,
+  "HtmlSizeBytes": 185620,
   "ScreenshotSizeBytes": 554415,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
@@ -49,5 +49,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:52.7906609Z"
+  "CapturedAt": "2026-02-16T21:00:17.9350288Z"
 }

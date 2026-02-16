@@ -8,21 +8,21 @@
 | Pages Failed | 4 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 516.0 KB |
-| Total Screenshots | 6.2 MB |
-| Total Images | 30 (3.0 MB) |
-| Images Missing Alt | 25 |
+| Total HTML | 524.8 KB |
+| Total Screenshots | 6.4 MB |
+| Total Images | 33 (3.5 MB) |
+| Images Missing Alt | 27 |
 | Folder | `diversity-wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Human Resource Services, Washington S... | 0 | 3 | 3 |
+| ❌ | [/](_root/report.md) | 0 | Human Resource Services, Washington S... | 0 | 5 | 4 |
 | ❌ | [/about/](about/report.md) | 0 | Human Resource Services, Washington S... | 0 | 4 | 3 |
 | ✅ | [/contact/](contact/report.md) | 200 | Human Resource Services, Washington S... | 0 | 6 | 5 |
 | ✅ | [/events/](events/report.md) | 200 | Human Resource Services, Washington S... | 0 | 6 | 5 |
-| ❌ | [/programs/](programs/report.md) | 0 | Human Resource Services, Washington S... | 0 | 5 | 4 |
+| ❌ | [/programs/](programs/report.md) | 0 | Human Resource Services, Washington S... | 0 | 6 | 5 |
 | ❌ | [/resources/](resources/report.md) | 0 | Human Resource Services, Washington S... | 0 | 6 | 5 |
 
 ## Page Screenshots

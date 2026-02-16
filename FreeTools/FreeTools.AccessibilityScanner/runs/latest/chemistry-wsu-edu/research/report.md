@@ -6,14 +6,14 @@
 | Redirected To | https://chem.wsu.edu/ |
 | Title | Department of Chemistry | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 225.9 KB |
+| HTML Size | 232.5 KB |
 | Screenshots | 1 (1.4 MB) |
 | Images | 7 (1.0 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:18.5121356Z |
+| Captured | 2026-02-16T21:00:52.1739378Z |
 
 ## Actions
 

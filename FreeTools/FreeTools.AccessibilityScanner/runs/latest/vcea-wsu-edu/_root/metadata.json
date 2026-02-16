@@ -1,25 +1,25 @@
 {
   "PagePath": "/",
   "Url": "https://vcea.wsu.edu/",
-  "FinalUrl": null,
+  "FinalUrl": "about:blank",
   "Title": "Voiland College of Engineering and Architecture | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 250120,
-  "ScreenshotSizeBytes": 600918,
+  "HtmlSizeBytes": 253647,
+  "ScreenshotSizeBytes": 536003,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 600918
+      "FileSize": 536003
     }
   ],
   "ImageCount": 7,
-  "ImagesTotalSizeBytes": 1419467,
+  "ImagesTotalSizeBytes": 1507900,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -41,16 +41,16 @@
       "FileSize": 28112
     },
     {
+      "FileName": "Partha-Pande-VCEA_8556-2-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3049/2024/01/Partha-Pande-VCEA_8556-2-scaled.jpg",
+      "AltText": "Partha Pande standing outside a building.",
+      "FileSize": 648385
+    },
+    {
       "FileName": "yong-wang-1.jpeg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3049/2024/12/yong-wang-1.jpeg",
       "AltText": "Yong Wang.",
       "FileSize": 57780
-    },
-    {
-      "FileName": "SEH-northwest-corner-cropped.png",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3049/2024/05/SEH-northwest-corner-cropped.png",
-      "AltText": "Exterior corner of a brick and glass building.",
-      "FileSize": 559952
     },
     {
       "FileName": "GRID-PHOTO-1024x676.jpg",
@@ -67,5 +67,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.181759Z"
+  "CapturedAt": "2026-02-16T20:58:42.4761463Z"
 }

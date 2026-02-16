@@ -5,18 +5,23 @@
 | URL | https://nursing.wsu.edu/ |
 | Title | College of Nursing | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 280.5 KB |
-| Screenshots | 1 (1.2 MB) |
+| HTML Size | 284.5 KB |
+| Screenshots | 1 (1.4 MB) |
 | Images | 10 (617.8 KB) |
 | Images Missing Alt | 0 |
-| JS Errors | 0 |
+| JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1350775Z |
+| Captured | 2026-02-16T20:58:42.4657280Z |
+
+## JavaScript Errors
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.2 MB)
+- Screenshot #1: page-loaded (1.4 MB)
 - Downloaded 10 images to /images/
 
 ## Screenshots
@@ -66,7 +71,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.2 MB)
+- `01-page-loaded.png` — page-loaded (1.4 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

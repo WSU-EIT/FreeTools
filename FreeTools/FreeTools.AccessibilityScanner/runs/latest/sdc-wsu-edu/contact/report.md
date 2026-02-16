@@ -7,17 +7,17 @@
 | Title | Contact Us | School of Design and Construction | Washington State University |
 | Status | ❌ 0 |
 | HTML Size | 227.2 KB |
-| Screenshots | 1 (882.0 KB) |
+| Screenshots | 1 (875.0 KB) |
 | Images | 1 (107.5 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:55.0442519Z |
+| Captured | 2026-02-16T21:00:44.3052919Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (882.0 KB)
+- Screenshot #1: page-loaded (875.0 KB)
 - Downloaded 1 images to /images/
 
 ## Screenshots
@@ -40,7 +40,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (882.0 KB)
+- `01-page-loaded.png` — page-loaded (875.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

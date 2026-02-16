@@ -5,8 +5,8 @@
   "Title": "Office of Research | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 263526,
-  "ScreenshotSizeBytes": 255443,
+  "HtmlSizeBytes": 267019,
+  "ScreenshotSizeBytes": 1301187,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 1,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 255443
+      "FileSize": 1301187
     }
   ],
   "ImageCount": 18,
@@ -133,5 +133,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.152456Z"
+  "CapturedAt": "2026-02-16T20:58:42.4707592Z"
 }

@@ -6,14 +6,14 @@
 | Redirected To | https://ehs.wsu.edu/workplace-safety/ergonomics/resources-contacts/ |
 | Title | Resources & Contacts | Environmental Health & Safety | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 232.7 KB |
+| HTML Size | 237.2 KB |
 | Screenshots | 1 (144.0 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:40.6195798Z |
+| Captured | 2026-02-16T20:59:31.9390348Z |
 
 ## Actions
 

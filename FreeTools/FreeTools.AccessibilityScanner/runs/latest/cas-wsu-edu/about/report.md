@@ -6,14 +6,14 @@
 | Redirected To | https://cas.wsu.edu/2022/03/22/about-16-of-couples-are-divided-on-covid-19-vaccination/ |
 | Title | About 16% of couples are divided on COVID-19 vaccination | College of Arts and Sciences | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 237.6 KB |
+| HTML Size | 240.6 KB |
 | Screenshots | 1 (325.5 KB) |
 | Images | 1 (25.7 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:24.7128124Z |
+| Captured | 2026-02-16T20:59:51.6648935Z |
 
 ## Actions
 

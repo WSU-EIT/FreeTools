@@ -2,27 +2,20 @@
   "PagePath": "/prospective-students/",
   "Url": "https://housing.wsu.edu/prospective-students/",
   "FinalUrl": null,
-  "Title": "Prospective Students",
+  "Title": null,
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 63027,
-  "ScreenshotSizeBytes": 317857,
+  "HtmlSizeBytes": 0,
+  "ScreenshotSizeBytes": 0,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
-  "Screenshots": [
-    {
-      "FileName": "01-page-loaded.png",
-      "Label": "page-loaded",
-      "StepNumber": 1,
-      "FileSize": 317857
-    }
-  ],
+  "Screenshots": [],
   "ImageCount": 0,
   "ImagesTotalSizeBytes": 0,
   "ImagesMissingAlt": 0,
   "Images": [],
-  "ErrorMessage": null,
+  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...",
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:59.334408Z"
+  "CapturedAt": "2026-02-16T20:59:57.6699694Z"
 }

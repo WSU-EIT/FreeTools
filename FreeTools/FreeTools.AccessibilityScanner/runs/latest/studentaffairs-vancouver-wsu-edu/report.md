@@ -2,50 +2,30 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/2 pages OK |
+| Pages Scanned | 2 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 5 |
+| Pages Failed | 2 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 204.9 KB |
-| Total Screenshots | 1.2 MB |
-| Total Images | 20 (380.6 KB) |
-| Images Missing Alt | 8 |
+| Total HTML | 83.7 KB |
+| Total Screenshots | 914.2 KB |
+| Total Images | 11 (314.9 KB) |
+| Images Missing Alt | 7 |
 | Folder | `studentaffairs-vancouver-wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Student Affairs - WSU Vancouver - WSU... | 1 | 3 | 1 |
-| ❌ | [/about/](about/report.md) | 0 | Page not found - Student Affairs - WS... | 1 | 2 | 0 |
-| ❌ | [/contact/](contact/report.md) | 403 | Access denied - Student Affairs - WSU... | 1 | 2 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | Page not found - Student Affairs - WS... | 1 | 2 | 0 |
-| ❌ | [/services/](services/report.md) | 0 | Page not found - Student Affairs - WS... | 1 | 2 | 0 |
-| ❌ | [/student-involvement/](student-involvement/report.md) | 0 | Office of Student Involvement - Home ... | 0 | 9 | 7 |
+| ❌ | [/](_root/report.md) | 0 | Student Affairs - WSU Vancouver - WSU... | 0 | 3 | 1 |
+| ❌ | [/student-involvement/](student-involvement/report.md) | 0 | Office of Student Involvement - Home ... | 0 | 8 | 6 |
 
 ## Page Screenshots
 
 ### [/](_root/report.md)
 
 ![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
-### [/services/](services/report.md)
-
-![/services/](services/01-page-loaded.png)
 
 ### [/student-involvement/](student-involvement/report.md)
 
@@ -59,53 +39,10 @@
 - **URL:** https://studentaffairs.vancouver.wsu.edu/
 - **Status:** 0
 
-### /about/
-
-- **URL:** https://studentaffairs.vancouver.wsu.edu/about/
-- **Status:** 0
-
-### /services/
-
-- **URL:** https://studentaffairs.vancouver.wsu.edu/services/
-- **Status:** 0
-
 ### /student-involvement/
 
 - **URL:** https://studentaffairs.vancouver.wsu.edu/student-involvement/
 - **Status:** 0
-
-### /resources/
-
-- **URL:** https://studentaffairs.vancouver.wsu.edu/resources/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://studentaffairs.vancouver.wsu.edu/contact/
-- **Status:** 403
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /about/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /services/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /resources/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /contact/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 403 ()`
 
 
 ---

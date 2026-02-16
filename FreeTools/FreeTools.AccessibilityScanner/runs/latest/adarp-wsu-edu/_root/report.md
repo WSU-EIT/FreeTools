@@ -6,17 +6,17 @@
 | Title | ADARP | Washington State University |
 | Status | ❌ 0 |
 | HTML Size | 49.4 KB |
-| Screenshots | 1 (687.9 KB) |
+| Screenshots | 1 (534.5 KB) |
 | Images | 3 (283.2 KB) |
 | Images Missing Alt | 3 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:04.9609751Z |
+| Captured | 2026-02-16T20:58:42.4233324Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (687.9 KB)
+- Screenshot #1: page-loaded (534.5 KB)
 - Downloaded 3 images to /images/
 
 ## Screenshots
@@ -51,7 +51,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (687.9 KB)
+- `01-page-loaded.png` — page-loaded (534.5 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

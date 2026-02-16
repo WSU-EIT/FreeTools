@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 17/25 pages OK |
+| Status | ⚠️ 20/25 pages OK |
 | Pages Scanned | 25 |
-| Pages Passed | 17 |
-| Pages Failed | 8 |
+| Pages Passed | 20 |
+| Pages Failed | 5 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 24 |
 | Total HTML | 1.1 MB |
-| Total Screenshots | 5.9 MB |
-| Total Images | 39 (1.8 MB) |
+| Total Screenshots | 6.2 MB |
+| Total Images | 40 (1.8 MB) |
 | Images Missing Alt | 17 |
 | Folder | `libraries-wsu-edu/` |
 
@@ -20,7 +20,7 @@
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | WSU Libraries | 0 | 2 | 0 |
 | ❌ | [/about/](about/report.md) | 0 | About the WSU Libraries – WSU Libraries | 0 | 0 | 0 |
-| ❌ | [/about/departments/](about_departments/report.md) | 0 | Departments – WSU Libraries | 0 | 0 | 0 |
+| ✅ | [/about/departments/](about_departments/report.md) | 200 | Departments – WSU Libraries | 0 | 0 | 0 |
 | ✅ | [/accessibility/](accessibility/report.md) | 200 | Accessibility – WSU Libraries | 0 | 2 | 0 |
 | ✅ | [/ask/](ask/report.md) | 200 | Ask Us – WSU Libraries | 0 | 0 | 0 |
 | ❌ | [/contact/](contact/report.md) | 0 | Contact Us – WSU Libraries | 0 | 0 | 0 |
@@ -38,11 +38,11 @@
 | ✅ | [/information-for/](information-for/report.md) | 200 | Info For – WSU Libraries | 0 | 0 | 0 |
 | ✅ | [/interlibrary-loan/](interlibrary-loan/report.md) | 200 | Interlibrary Loan – WSU Libraries | 0 | 17 | 17 |
 | ✅ | [/jobs/](jobs/report.md) | 200 | Jobs in the WSU Pullman Libraries – W... | 0 | 0 | 0 |
-| ❌ | [/library-map/](library-map/report.md) | 0 | Library Map – WSU Libraries | 0 | 13 | 0 |
+| ✅ | [/library-map/](library-map/report.md) | 200 | Library Map – WSU Libraries | 0 | 13 | 0 |
 | ✅ | [/my-accounts/](my-accounts/report.md) | 200 | My Accounts – WSU Libraries | 0 | 0 | 0 |
 | ✅ | [/policies/](policies/report.md) | 200 | Policies – WSU Libraries | 0 | 0 | 0 |
 | ✅ | [/services/](services/report.md) | 200 | Services – WSU Libraries | 0 | 0 | 0 |
-| ❌ | [/spaces/](spaces/report.md) | 0 | Library Locations and Spaces – WSU Li... | 0 | 0 | 0 |
+| ✅ | [/spaces/](spaces/report.md) | 200 | Library Locations and Spaces – WSU Li... | 0 | 1 | 0 |
 
 ## Page Screenshots
 
@@ -169,24 +169,9 @@
 - **URL:** https://libraries.wsu.edu/hours/
 - **Status:** 0
 
-### /spaces/
-
-- **URL:** https://libraries.wsu.edu/spaces/
-- **Status:** 0
-
-### /about/departments/
-
-- **URL:** https://libraries.wsu.edu/about/departments/
-- **Status:** 0
-
 ### /directory/
 
 - **URL:** https://libraries.wsu.edu/directory/
-- **Status:** 0
-
-### /library-map/
-
-- **URL:** https://libraries.wsu.edu/library-map/
 - **Status:** 0
 
 

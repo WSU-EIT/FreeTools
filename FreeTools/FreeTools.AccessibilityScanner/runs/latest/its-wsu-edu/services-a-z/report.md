@@ -5,14 +5,14 @@
 | URL | https://its.wsu.edu/services-a-z/ |
 | Title | Services A-Z | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 286.9 KB |
+| HTML Size | 286.8 KB |
 | Screenshots | 1 (1.7 MB) |
 | Images | 1 (515.7 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:41:41.3096730Z |
+| Captured | 2026-02-16T21:02:53.0785151Z |
 
 ## Actions
 

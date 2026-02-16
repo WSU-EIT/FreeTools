@@ -6,17 +6,17 @@
 | Title | Apartments |
 | Status | ✅ 200 |
 | HTML Size | 64.3 KB |
-| Screenshots | 1 (747.9 KB) |
+| Screenshots | 1 (746.1 KB) |
 | Images | 9 (4.4 MB) |
 | Images Missing Alt | 9 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:41:41.0092186Z |
+| Captured | 2026-02-16T21:02:40.0968317Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (747.9 KB)
+- Screenshot #1: page-loaded (746.1 KB)
 - Downloaded 9 images to /images/
 
 ## Screenshots
@@ -75,7 +75,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (747.9 KB)
+- `01-page-loaded.png` — page-loaded (746.1 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

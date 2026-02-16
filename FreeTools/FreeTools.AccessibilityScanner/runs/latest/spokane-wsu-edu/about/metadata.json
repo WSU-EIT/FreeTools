@@ -5,8 +5,8 @@
   "Title": "WSU Spokane | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 306684,
-  "ScreenshotSizeBytes": 2976993,
+  "HtmlSizeBytes": 317474,
+  "ScreenshotSizeBytes": 3870982,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,11 +15,11 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2976993
+      "FileSize": 3870982
     }
   ],
-  "ImageCount": 23,
-  "ImagesTotalSizeBytes": 3309512,
+  "ImageCount": 27,
+  "ImagesTotalSizeBytes": 7288185,
   "ImagesMissingAlt": 2,
   "Images": [
     {
@@ -33,6 +33,24 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/06/Students-on-Campus-Oct-2022-10-792x528.jpg",
       "AltText": "Nursing students walking on campus",
       "FileSize": 134404
+    },
+    {
+      "FileName": "campus-activities.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/05/campus-activities.jpg",
+      "AltText": "students playing yard games on campus",
+      "FileSize": 1317214
+    },
+    {
+      "FileName": "Cultural-Vibrancy.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/05/Cultural-Vibrancy.jpg",
+      "AltText": "McGlade farmer\u0027s market",
+      "FileSize": 1377794
+    },
+    {
+      "FileName": "savor-culinary-delights.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/05/savor-culinary-delights.jpg",
+      "AltText": "Outside view of Caf\u00E9 Capri",
+      "FileSize": 1244938
     },
     {
       "FileName": "Community-Health-Fair-2019-622.jpg",
@@ -125,6 +143,12 @@
       "FileSize": 2525
     },
     {
+      "FileName": "384665250.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384665250.jpg?width=480",
+      "AltText": "Image posted by wsuspokane to instagram",
+      "FileSize": 38727
+    },
+    {
       "FileName": "384665250_user_image.jpg",
       "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384665250_user_image.jpg?width=100",
       "AltText": "Profile image for wsuspokane",
@@ -163,5 +187,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:49.3326463Z"
+  "CapturedAt": "2026-02-16T21:00:27.8318734Z"
 }

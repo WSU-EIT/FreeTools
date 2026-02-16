@@ -5,17 +5,17 @@
   "Title": "Home - Carson College of Business | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 216339,
-  "ScreenshotSizeBytes": 1451201,
+  "HtmlSizeBytes": 216341,
+  "ScreenshotSizeBytes": 1451499,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 3,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1451201
+      "FileSize": 1451499
     }
   ],
   "ImageCount": 14,
@@ -109,5 +109,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0335206Z"
+  "CapturedAt": "2026-02-16T20:58:42.4450731Z"
 }

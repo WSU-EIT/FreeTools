@@ -2,34 +2,34 @@
   "PagePath": "/resources/",
   "Url": "https://email.wsu.edu/resources/",
   "FinalUrl": "https://outlook.office365.com/mail/?realm=wsu.edu",
-  "Title": "Outlook",
+  "Title": "WSU Authentication | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 14656,
-  "ScreenshotSizeBytes": 24974,
+  "HtmlSizeBytes": 56921,
+  "ScreenshotSizeBytes": 33078,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
-  "ConsoleWarningCount": 1,
+  "ConsoleWarningCount": 5,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 24974
+      "FileSize": 33078
     }
   ],
   "ImageCount": 1,
-  "ImagesTotalSizeBytes": 3202,
+  "ImagesTotalSizeBytes": 7853,
   "ImagesMissingAlt": 0,
   "Images": [
     {
-      "FileName": "microsoft.svg",
-      "SourceUrl": "https://res.public.onecdn.static.microsoft/assets/framework/microsoft.svg",
-      "AltText": "Microsoft",
-      "FileSize": 3202
+      "FileName": "fs015xh0tygNgGVxX2p8.img",
+      "SourceUrl": "https://ok6static2.oktacdn.com/fs/bco/1/fs015xh0tygNgGVxX2p8",
+      "AltText": "WSU logo",
+      "FileSize": 7853
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:32.8824242Z"
+  "CapturedAt": "2026-02-16T21:00:39.7756478Z"
 }

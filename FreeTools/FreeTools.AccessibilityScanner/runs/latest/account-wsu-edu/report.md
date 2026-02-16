@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
-| Pages Scanned | 5 |
+| Status | ⚠️ 0/4 pages OK |
+| Pages Scanned | 4 |
 | Pages Passed | 0 |
-| Pages Failed | 5 |
+| Pages Failed | 4 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 15.7 KB |
-| Total Screenshots | 35.8 KB |
+| Total HTML | 10.0 KB |
+| Total Screenshots | 31.9 KB |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `account-wsu-edu/` |
@@ -18,17 +18,16 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/help/](help/report.md) | 0 | My Settings \| WSU | 0 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | My Settings \| WSU | 0 | 0 | 0 |
 | ❌ | [/password-reset/](password-reset/report.md) | 0 | My Settings \| WSU | 0 | 0 | 0 |
-| ❌ | [/security/](security/report.md) | 0 | My Settings \| WSU | 0 | 0 | 0 |
+| ❌ | [/security/](security/report.md) | 0 | (none) | 0 | 0 | 0 |
 | ❌ | [/services/](services/report.md) | 0 | (none) | 0 | 0 | 0 |
 
 ## Page Screenshots
 
-### [/help/](help/report.md)
+### [/](_root/report.md)
 
-![/help/](help/01-page-loaded.png)
+![/](_root/01-page-loaded.png)
 
 ### [/password-reset/](password-reset/report.md)
 
@@ -49,11 +48,6 @@
 
 - **URL:** https://account.wsu.edu/
 - **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded`
 
 ### /services/
 
@@ -70,11 +64,7 @@ Call log:
 
 - **URL:** https://account.wsu.edu/security/
 - **Status:** 0
-
-### /help/
-
-- **URL:** https://account.wsu.edu/help/
-- **Status:** 0
+- **Error:** `Unable to retrieve content because the page is navigating and changing the content.`
 
 
 ---

@@ -6,19 +6,19 @@
 | Redirected To | https://studentaffairs.vancouver.wsu.edu/osi |
 | Title | Office of Student Involvement - Home - WSU Vancouver |
 | Status | ❌ 0 |
-| HTML Size | 40.5 KB |
+| HTML Size | 41.3 KB |
 | Screenshots | 1 (250.8 KB) |
-| Images | 9 (200.6 KB) |
-| Images Missing Alt | 7 |
+| Images | 8 (193.2 KB) |
+| Images Missing Alt | 6 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:39.1171741Z |
+| Captured | 2026-02-16T20:59:36.8012560Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (250.8 KB)
-- Downloaded 9 images to /images/
+- Downloaded 8 images to /images/
 
 ## Screenshots
 
@@ -27,7 +27,7 @@
 ![page-loaded](01-page-loaded.png)
 
 
-## Page Images (9)
+## Page Images (8)
 
 | # | Image | Alt Text | Size |
 |---|-------|----------|------|
@@ -36,10 +36,9 @@
 | 3 | [osi-symbols-400-organizations.png](images/osi-symbols-400-organizations.png) | *(none)* | 9.1 KB |
 | 4 | [student-involvement-fair-01-900x750.jpg](images/student-involvement-fair-01-900x750.jpg) | *(none)* | 76.9 KB |
 | 5 | [osi-symbols-400-recreation.png](images/osi-symbols-400-recreation.png) | *(none)* | 14.6 KB |
-| 6 | [osi-symbols-400-leadership.png](images/osi-symbols-400-leadership.png) | *(none)* | 7.4 KB |
-| 7 | [slrp-award-recipients-02-900x750.jpg](images/slrp-award-recipients-02-900x750.jpg) | *(none)* | 74.9 KB |
-| 8 | [facebook-white.svg](images/facebook-white.svg) | *(none)* | 1.1 KB |
-| 9 | [instagram-white.svg](images/instagram-white.svg) | *(none)* | 2.1 KB |
+| 6 | [slrp-award-recipients-02-900x750.jpg](images/slrp-award-recipients-02-900x750.jpg) | *(none)* | 74.9 KB |
+| 7 | [facebook-white.svg](images/facebook-white.svg) | *(none)* | 1.1 KB |
+| 8 | [instagram-white.svg](images/instagram-white.svg) | *(none)* | 2.1 KB |
 
 ### Gallery
 
@@ -53,8 +52,6 @@
 
 ![osi-symbols-400-recreation.png](images/osi-symbols-400-recreation.png)
 
-![osi-symbols-400-leadership.png](images/osi-symbols-400-leadership.png)
-
 ![slrp-award-recipients-02-900x750.jpg](images/slrp-award-recipients-02-900x750.jpg)
 
 ![facebook-white.svg](images/facebook-white.svg)
@@ -62,12 +59,11 @@
 ![instagram-white.svg](images/instagram-white.svg)
 
 
-### ⚠️ Images Missing Alt Text (7)
+### ⚠️ Images Missing Alt Text (6)
 
 - `osi-symbols-400-organizations.png` — https://studentaffairs.vancouver.wsu.edu/files/inserted-images/osi-symbols-400-organizations.png
 - `student-involvement-fair-01-900x750.jpg` — https://studentaffairs.vancouver.wsu.edu/files/2019-05/student-involvement-fair-01-900x750.jpg
 - `osi-symbols-400-recreation.png` — https://studentaffairs.vancouver.wsu.edu/files/inserted-images/osi-symbols-400-recreation.png
-- `osi-symbols-400-leadership.png` — https://studentaffairs.vancouver.wsu.edu/files/inserted-images/osi-symbols-400-leadership.png
 - `slrp-award-recipients-02-900x750.jpg` — https://studentaffairs.vancouver.wsu.edu/files/2019-05/slrp-award-recipients-02-900x750.jpg
 - `facebook-white.svg` — https://studentaffairs.vancouver.wsu.edu/themes/bootstrap_sass_wsuv/images/facebook-white.svg
 - `instagram-white.svg` — https://studentaffairs.vancouver.wsu.edu/themes/bootstrap_sass_wsuv/images/instagram-white.svg
@@ -81,4 +77,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
-- `images/` — 9 page images (200.6 KB)
+- `images/` — 8 page images (193.2 KB)

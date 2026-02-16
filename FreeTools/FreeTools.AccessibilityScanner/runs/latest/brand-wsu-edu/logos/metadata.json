@@ -5,7 +5,7 @@
   "Title": "Logos \u2013 Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 95645,
+  "HtmlSizeBytes": 97447,
   "ScreenshotSizeBytes": 1185349,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -127,5 +127,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:06.4154535Z"
+  "CapturedAt": "2026-02-16T20:59:24.3500349Z"
 }

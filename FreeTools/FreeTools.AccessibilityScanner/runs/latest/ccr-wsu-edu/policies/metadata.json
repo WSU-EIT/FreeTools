@@ -5,8 +5,8 @@
   "Title": "Policies \u0026 Procedures | Compliance and Civil Rights | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 225090,
-  "ScreenshotSizeBytes": 413589,
+  "HtmlSizeBytes": 224047,
+  "ScreenshotSizeBytes": 410169,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 413589
+      "FileSize": 410169
     }
   ],
   "ImageCount": 0,
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:06.8045302Z"
+  "CapturedAt": "2026-02-16T20:59:42.5999262Z"
 }

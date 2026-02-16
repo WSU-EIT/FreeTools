@@ -6,14 +6,14 @@
 | Redirected To | https://www.vancouver.wsu.edu/about-wsu-vancouver |
 | Title | About WSU Vancouver - About - WSU Vancouver |
 | Status | ❌ 0 |
-| HTML Size | 32.1 KB |
+| HTML Size | 32.3 KB |
 | Screenshots | 1 (588.5 KB) |
 | Images | 2 (14.6 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:21.8962865Z |
+| Captured | 2026-02-16T20:59:58.4390301Z |
 
 ## Actions
 

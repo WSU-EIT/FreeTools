@@ -5,7 +5,7 @@
   "Title": "Contact | Applied Sciences Laboratory | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 54494,
+  "HtmlSizeBytes": 65887,
   "ScreenshotSizeBytes": 1012030,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,11 +18,18 @@
       "FileSize": 1012030
     }
   ],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 611012,
   "ImagesMissingAlt": 0,
-  "Images": [],
+  "Images": [
+    {
+      "FileName": "cont_norm.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2016/12/cont_norm.jpg",
+      "AltText": "Exterior of ASL building.",
+      "FileSize": 611012
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:25.96577Z"
+  "CapturedAt": "2026-02-16T21:00:53.0984884Z"
 }

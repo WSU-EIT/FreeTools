@@ -3,29 +3,32 @@
 | Field | Value |
 |-------|-------|
 | URL | https://accesscenter.wsu.edu/services/ |
-| Redirected To | https://accommodations.wsu.edu/ |
-| Title |  |
+| Title | (none) |
 | Status | ❌ 0 |
-| HTML Size | 56.3 KB |
-| Screenshots | 1 (461.6 KB) |
+| HTML Size | 0 bytes |
+| Screenshots | 0 (0 bytes) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:55.7329323Z |
+| Captured | 2026-02-16T20:59:36.6008706Z |
+
+## Error
+
+```
+net::ERR_CONNECTION_RESET at https://accesscenter.wsu.edu/services/
+Call log:
+  - navigating to "https://accesscenter.wsu.edu/services/", waiting until "networkidle"
+```
 
 ## Actions
 
-- Screenshot #1: page-loaded (461.6 KB)
-- Downloaded 0 images to /images/
+- Scan aborted due to error
 
 ## Screenshots
 
-### 1. page-loaded
-
-![page-loaded](01-page-loaded.png)
-
+*No screenshots captured.*
 
 ## Page Images (0)
 
@@ -33,7 +36,6 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (461.6 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

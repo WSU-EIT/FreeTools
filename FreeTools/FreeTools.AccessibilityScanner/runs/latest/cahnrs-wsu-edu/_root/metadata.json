@@ -5,21 +5,21 @@
   "Title": "College of Agricultural, Human, and Natural Resource Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 124855,
-  "ScreenshotSizeBytes": 2136780,
+  "HtmlSizeBytes": 277387,
+  "ScreenshotSizeBytes": 2277866,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2136780
+      "FileSize": 2277866
     }
   ],
-  "ImageCount": 22,
-  "ImagesTotalSizeBytes": 4942691,
+  "ImageCount": 20,
+  "ImagesTotalSizeBytes": 3413162,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -33,18 +33,6 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/7/2025/04/53973329437_f76e3cb4fe_k.jpg",
       "AltText": "CAHNRS Academic Programs.",
       "FileSize": 575010
-    },
-    {
-      "FileName": "Wine-barrell-examine-whose-photo_.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/7/2025/04/Wine-barrell-examine-whose-photo_.jpg",
-      "AltText": "CAHNRS Office of Research.",
-      "FileSize": 824142
-    },
-    {
-      "FileName": "Lee-TFREC-Hubner-photo.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/7/2025/04/Lee-TFREC-Hubner-photo.jpg",
-      "AltText": "WSU Extension.",
-      "FileSize": 705387
     },
     {
       "FileName": "researchers-flying-drone-over-orchard-1024x676.jpg",
@@ -65,7 +53,7 @@
       "FileSize": 141523
     },
     {
-      "FileName": "image-8.jpg",
+      "FileName": "image-6.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/Michelle-Moyer-receives-Walter-Clore-Award-cropped-2-1024x768.jpg",
       "AltText": "Michelle Moyer holds the Walter Clore Award trophy.",
       "FileSize": 146914
@@ -125,7 +113,7 @@
       "FileSize": 153871
     },
     {
-      "FileName": "image-18.jpg",
+      "FileName": "image-16.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/Resized_NEAA-Marketing_Residential-Neighborhood-Vancouver-WA-1024x768.jpg",
       "AltText": "Aerial view of new Vancouver, Washington, residential development.",
       "FileSize": 145439
@@ -157,5 +145,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0061343Z"
+  "CapturedAt": "2026-02-16T20:58:42.4465361Z"
 }

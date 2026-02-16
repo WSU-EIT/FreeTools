@@ -6,14 +6,14 @@
 | Redirected To | https://vcea.wsu.edu/facilities-modernization/contact/ |
 | Title | Contacts | Voiland College of Engineering and Architecture | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 254.0 KB |
+| HTML Size | 255.0 KB |
 | Screenshots | 1 (609.9 KB) |
 | Images | 4 (181.1 KB) |
 | Images Missing Alt | 4 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:34.3150445Z |
+| Captured | 2026-02-16T21:00:52.1740016Z |
 
 ## Actions
 

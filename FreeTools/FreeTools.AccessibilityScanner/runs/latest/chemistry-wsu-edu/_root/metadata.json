@@ -1,21 +1,21 @@
 {
   "PagePath": "/",
   "Url": "https://chemistry.wsu.edu/",
-  "FinalUrl": "https://chem.wsu.edu/",
+  "FinalUrl": "about:blank",
   "Title": "Department of Chemistry | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 233102,
-  "ScreenshotSizeBytes": 1392729,
+  "HtmlSizeBytes": 216996,
+  "ScreenshotSizeBytes": 1349442,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1392729
+      "FileSize": 1349442
     }
   ],
   "ImageCount": 6,
@@ -61,5 +61,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0342079Z"
+  "CapturedAt": "2026-02-16T20:58:42.4493887Z"
 }

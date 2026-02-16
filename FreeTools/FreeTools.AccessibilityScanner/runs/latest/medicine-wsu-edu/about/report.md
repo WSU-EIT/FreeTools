@@ -5,19 +5,19 @@
 | URL | https://medicine.wsu.edu/about/ |
 | Title | About | Elson S. Floyd College of Medicine | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 237.5 KB |
-| Screenshots | 1 (2.4 MB) |
-| Images | 7 (1.3 MB) |
+| HTML Size | 229.2 KB |
+| Screenshots | 1 (1.7 MB) |
+| Images | 8 (2.1 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:04.5700132Z |
+| Captured | 2026-02-16T20:59:44.1502125Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (2.4 MB)
-- Downloaded 7 images to /images/
+- Screenshot #1: page-loaded (1.7 MB)
+- Downloaded 8 images to /images/
 
 ## Screenshots
 
@@ -26,7 +26,7 @@
 ![page-loaded](01-page-loaded.png)
 
 
-## Page Images (7)
+## Page Images (8)
 
 | # | Image | Alt Text | Size |
 |---|-------|----------|------|
@@ -36,7 +36,8 @@
 | 4 | [WSUMED-Education-792x792.jpg](images/WSUMED-Education-792x792.jpg) | students learning how to use a breath... | 131.8 KB |
 | 5 | [WSUMED-MD-23.jpg](images/WSUMED-MD-23.jpg) | Marcos Frank working in Lab | 282.9 KB |
 | 6 | [WSU-Health2.jpg](images/WSU-Health2.jpg) | Doctor checking the heart rate of a p... | 184.7 KB |
-| 7 | [Elson-S-Floyd.jpg](images/Elson-S-Floyd.jpg) | Elson S Floyd | 228.0 KB |
+| 7 | [pullman-regional-hospital.jpg](images/pullman-regional-hospital.jpg) | Pullman Regional Hospital | 832.9 KB |
+| 8 | [Elson-S-Floyd.jpg](images/Elson-S-Floyd.jpg) | Elson S Floyd | 228.0 KB |
 
 ### Gallery
 
@@ -52,16 +53,18 @@
 
 ![Doctor checking the heart rate of a patient.](images/WSU-Health2.jpg)
 
+![Pullman Regional Hospital](images/pullman-regional-hospital.jpg)
+
 ![Elson S Floyd](images/Elson-S-Floyd.jpg)
 
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (2.4 MB)
+- `01-page-loaded.png` — page-loaded (1.7 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
-- `images/` — 7 page images (1.3 MB)
+- `images/` — 8 page images (2.1 MB)

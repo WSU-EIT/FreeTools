@@ -5,8 +5,8 @@
   "Title": "Faculty | Animal Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 274390,
-  "ScreenshotSizeBytes": 1213570,
+  "HtmlSizeBytes": 275208,
+  "ScreenshotSizeBytes": 1794957,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1213570
+      "FileSize": 1794957
     }
   ],
   "ImageCount": 28,
@@ -193,5 +193,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:22.2310897Z"
+  "CapturedAt": "2026-02-16T21:00:39.7609726Z"
 }

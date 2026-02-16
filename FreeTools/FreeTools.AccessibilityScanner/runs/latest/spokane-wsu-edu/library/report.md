@@ -5,14 +5,14 @@
 | URL | https://spokane.wsu.edu/library/ |
 | Title | Health Sciences Library | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 236.9 KB |
+| HTML Size | 237.0 KB |
 | Screenshots | 1 (1.6 MB) |
 | Images | 5 (3.9 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:35.7669792Z |
+| Captured | 2026-02-16T21:01:37.6928996Z |
 
 ## Actions
 

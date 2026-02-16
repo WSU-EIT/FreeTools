@@ -5,18 +5,18 @@
 | URL | https://brand.wsu.edu/downloads/ |
 | Title | Downloads – Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 65.0 KB |
-| Screenshots | 1 (612.6 KB) |
+| HTML Size | 70.6 KB |
+| Screenshots | 1 (345.9 KB) |
 | Images | 9 (2.3 MB) |
 | Images Missing Alt | 9 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:33.8035249Z |
+| Captured | 2026-02-16T21:00:32.7131161Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (612.6 KB)
+- Screenshot #1: page-loaded (345.9 KB)
 - Downloaded 9 images to /images/
 
 ## Screenshots
@@ -75,7 +75,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (612.6 KB)
+- `01-page-loaded.png` — page-loaded (345.9 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

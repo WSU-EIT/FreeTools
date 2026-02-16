@@ -5,17 +5,17 @@
   "Title": "Washington State University Policies | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 55514,
-  "ScreenshotSizeBytes": 299569,
+  "HtmlSizeBytes": 43912,
+  "ScreenshotSizeBytes": 300693,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 3,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 299569
+      "FileSize": 300693
     }
   ],
   "ImageCount": 0,
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1377566Z"
+  "CapturedAt": "2026-02-16T20:58:42.468141Z"
 }

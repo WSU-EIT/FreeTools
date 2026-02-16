@@ -5,21 +5,17 @@
 | URL | https://threatassessment.wsu.edu/ |
 | Title | Threat Assessment | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 194.8 KB |
+| HTML Size | 198.0 KB |
 | Screenshots | 1 (118.2 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 5 |
+| JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1803656Z |
+| Captured | 2026-02-16T20:58:42.4753667Z |
 
 ## JavaScript Errors
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions

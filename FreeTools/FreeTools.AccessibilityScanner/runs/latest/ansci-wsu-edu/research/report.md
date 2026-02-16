@@ -5,14 +5,14 @@
 | URL | https://ansci.wsu.edu/research/ |
 | Title | Research | Animal Sciences | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 208.1 KB |
+| HTML Size | 225.6 KB |
 | Screenshots | 1 (1.1 MB) |
 | Images | 7 (1.2 MB) |
 | Images Missing Alt | 1 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:56.5649897Z |
+| Captured | 2026-02-16T21:00:19.3209657Z |
 
 ## JavaScript Errors
 

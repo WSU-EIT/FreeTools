@@ -5,17 +5,17 @@
   "Title": "The Honors College | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 83408,
-  "ScreenshotSizeBytes": 1149226,
+  "HtmlSizeBytes": 86411,
+  "ScreenshotSizeBytes": 1381726,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 4,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1149226
+      "FileSize": 1381726
     }
   ],
   "ImageCount": 12,
@@ -97,5 +97,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0837489Z"
+  "CapturedAt": "2026-02-16T20:58:42.4605657Z"
 }

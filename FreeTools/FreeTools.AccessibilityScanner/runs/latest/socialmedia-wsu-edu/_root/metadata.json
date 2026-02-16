@@ -5,8 +5,8 @@
   "Title": "Social Media at WSU | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 45169,
-  "ScreenshotSizeBytes": 1563781,
+  "HtmlSizeBytes": 47974,
+  "ScreenshotSizeBytes": 2387561,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,27 +15,27 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1563781
+      "FileSize": 2387561
     }
   ],
   "ImageCount": 2,
-  "ImagesTotalSizeBytes": 1395386,
+  "ImagesTotalSizeBytes": 1117511,
   "ImagesMissingAlt": 0,
   "Images": [
     {
-      "FileName": "Screen-Shot-2016-01-07-at-4.17.05-PM.png",
-      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3197/2015/11/Screen-Shot-2016-01-07-at-4.17.05-PM.png",
-      "AltText": "Two WSU students jumping for joy at the top on Machu Picchu.",
-      "FileSize": 677319
+      "FileName": "Screen-Shot-2016-01-07-at-4.18.56-PM.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3197/2015/11/Screen-Shot-2016-01-07-at-4.18.56-PM.png",
+      "AltText": "A WSU fan with a #1 WSU Cougar foam finger. ",
+      "FileSize": 555708
     },
     {
-      "FileName": "Screen-Shot-2016-01-07-at-4.18.22-PM.png",
-      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3197/2015/11/Screen-Shot-2016-01-07-at-4.18.22-PM.png",
-      "AltText": "A child dressed as a WSU cheerleader with two WSU cheerleaders on the basketball court.",
-      "FileSize": 718067
+      "FileName": "Screen-Shot-2016-01-07-at-4.24.21-PM.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3197/2015/11/Screen-Shot-2016-01-07-at-4.24.21-PM.png",
+      "AltText": "A WSU Future Coug displaying their acceptance letter and a Future Coug banner. ",
+      "FileSize": 561803
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1549057Z"
+  "CapturedAt": "2026-02-16T20:58:42.4729626Z"
 }

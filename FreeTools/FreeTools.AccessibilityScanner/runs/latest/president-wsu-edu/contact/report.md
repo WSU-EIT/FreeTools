@@ -6,18 +6,18 @@
 | Redirected To | https://president.wsu.edu/contact-us/ |
 | Title | Contact Us | Office of the President | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 131.4 KB |
-| Screenshots | 1 (673.3 KB) |
+| HTML Size | 126.0 KB |
+| Screenshots | 1 (545.0 KB) |
 | Images | 8 (237.4 KB) |
 | Images Missing Alt | 8 |
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:20.2959674Z |
+| Captured | 2026-02-16T20:59:56.5178123Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (673.3 KB)
+- Screenshot #1: page-loaded (545.0 KB)
 - Downloaded 8 images to /images/
 
 ## Screenshots
@@ -72,7 +72,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (673.3 KB)
+- `01-page-loaded.png` — page-loaded (545.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

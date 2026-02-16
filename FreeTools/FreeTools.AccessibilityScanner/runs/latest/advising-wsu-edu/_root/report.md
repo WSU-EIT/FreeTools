@@ -5,23 +5,19 @@
 | URL | https://advising.wsu.edu/ |
 | Title | Advising at WSU | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 104.0 KB |
+| HTML Size | 107.4 KB |
 | Screenshots | 1 (772.4 KB) |
-| Images | 0 (0 bytes) |
-| Images Missing Alt | 0 |
-| JS Errors | 1 |
+| Images | 1 (345.6 KB) |
+| Images Missing Alt | 1 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:04.9083155Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:58:42.4233383Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (772.4 KB)
-- Downloaded 0 images to /images/
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -30,9 +26,20 @@
 ![page-loaded](01-page-loaded.png)
 
 
-## Page Images (0)
+## Page Images (1)
 
-*No images found on page.*
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [Advis-web_600x39921.jpg](images/Advis-web_600x39921.jpg) | *(none)* | 345.6 KB |
+
+### Gallery
+
+![Advis-web_600x39921.jpg](images/Advis-web_600x39921.jpg)
+
+
+### ⚠️ Images Missing Alt Text (1)
+
+- `Advis-web_600x39921.jpg` — https://wpcdn.web.wsu.edu/wp-daesa/uploads/sites/634/2015/03/Advis-web_600x39921.jpg
 
 ## Files
 
@@ -43,3 +50,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (345.6 KB)

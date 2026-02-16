@@ -5,8 +5,8 @@
   "Title": "Agricultural and Food Systems | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 221087,
-  "ScreenshotSizeBytes": 1146036,
+  "HtmlSizeBytes": 63032,
+  "ScreenshotSizeBytes": 1003613,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,24 +15,24 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1146036
+      "FileSize": 1003613
     }
   ],
   "ImageCount": 9,
-  "ImagesTotalSizeBytes": 2692238,
+  "ImagesTotalSizeBytes": 2051561,
   "ImagesMissingAlt": 9,
   "Images": [
-    {
-      "FileName": "Econ-in-Africa-e1571079286701-scaled.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/23/Econ-in-Africa-e1571079286701-scaled.jpg",
-      "AltText": "",
-      "FileSize": 784738
-    },
     {
       "FileName": "20230415_124327_7C2260.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/23/20230415_124327_7C2260.jpg",
       "AltText": "",
       "FileSize": 519573
+    },
+    {
+      "FileName": "Ag-ed-cover.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/23/Ag-ed-cover.jpg",
+      "AltText": "",
+      "FileSize": 740812
     },
     {
       "FileName": "Image-24.jpg",
@@ -45,6 +45,12 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/23/2025/10/thumbnail_IMG_6181.jpg",
       "AltText": "",
       "FileSize": 93001
+    },
+    {
+      "FileName": "Colette-Casavant.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/23/2025/10/Colette-Casavant.jpg",
+      "AltText": "",
+      "FileSize": 114365
     },
     {
       "FileName": "Shanna-Hiscock-1-768x768-1.jpg",
@@ -65,12 +71,6 @@
       "FileSize": 353729
     },
     {
-      "FileName": "Karen-Jordan-2-141-scaled-1.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/23/2025/10/Karen-Jordan-2-141-scaled-1.jpg",
-      "AltText": "",
-      "FileSize": 711116
-    },
-    {
       "FileName": "Warner-Headshot-259x300-1.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/23/2025/10/Warner-Headshot-259x300-1.jpg",
       "AltText": "",
@@ -79,5 +79,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0031738Z"
+  "CapturedAt": "2026-02-16T20:58:42.4241867Z"
 }

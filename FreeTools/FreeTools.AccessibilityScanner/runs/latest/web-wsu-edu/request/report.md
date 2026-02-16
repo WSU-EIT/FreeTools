@@ -6,14 +6,14 @@
 | Redirected To | https://web.wsu.edu/services/request-a-website/ |
 | Title | Request a Website | Web Communication | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 220.0 KB |
-| Screenshots | 1 (381.0 KB) |
+| HTML Size | 219.2 KB |
+| Screenshots | 1 (382.6 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:39.5489881Z |
+| Captured | 2026-02-16T20:59:56.6121071Z |
 
 ## JavaScript Errors
 
@@ -21,7 +21,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (381.0 KB)
+- Screenshot #1: page-loaded (382.6 KB)
 - No images found on page
 
 ## Screenshots
@@ -37,7 +37,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (381.0 KB)
+- `01-page-loaded.png` — page-loaded (382.6 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

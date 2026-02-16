@@ -5,18 +5,18 @@
 | URL | https://asce.wsu.edu/ |
 | Title | American Society of Civil Engineers | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 60.0 KB |
-| Screenshots | 1 (420.9 KB) |
+| HTML Size | 63.1 KB |
+| Screenshots | 1 (473.3 KB) |
 | Images | 2 (237.1 KB) |
 | Images Missing Alt | 2 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:04.9816519Z |
+| Captured | 2026-02-16T20:58:42.4447876Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (420.9 KB)
+- Screenshot #1: page-loaded (473.3 KB)
 - Downloaded 2 images to /images/
 
 ## Screenshots
@@ -47,7 +47,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (420.9 KB)
+- `01-page-loaded.png` — page-loaded (473.3 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

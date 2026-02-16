@@ -5,14 +5,14 @@
 | URL | https://psychology.wsu.edu/about/ |
 | Title | About | Department of Psychology | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 206.2 KB |
+| HTML Size | 209.4 KB |
 | Screenshots | 1 (588.2 KB) |
 | Images | 1 (274.0 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:49.5268866Z |
+| Captured | 2026-02-16T20:59:31.7370873Z |
 
 ## Actions
 

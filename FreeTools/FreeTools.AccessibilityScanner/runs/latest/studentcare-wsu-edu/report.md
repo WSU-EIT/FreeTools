@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
-| Pages Scanned | 5 |
+| Status | ⚠️ 0/1 pages OK |
+| Pages Scanned | 1 |
 | Pages Passed | 0 |
-| Pages Failed | 5 |
-| Total JS Errors | 4 |
+| Pages Failed | 1 |
+| Total JS Errors | 2 |
 | Total JS Warnings | 0 |
-| Total HTML | 3.3 KB |
-| Total Screenshots | 615.8 KB |
+| Total HTML | 45.2 KB |
+| Total Screenshots | 155.2 KB |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `studentcare-wsu-edu/` |
@@ -18,29 +18,13 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/for-faculty-staff/](for-faculty-staff/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
-| ❌ | [/resources/](resources/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
-| ❌ | [/services/](services/report.md) | 0 | Page Not Found | 1 | 0 | 0 |
-| ❌ | [/submit-concern/](submit-concern/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 |  | 2 | 0 | 0 |
 
 ## Page Screenshots
 
-### [/for-faculty-staff/](for-faculty-staff/report.md)
+### [/](_root/report.md)
 
-![/for-faculty-staff/](for-faculty-staff/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
-### [/services/](services/report.md)
-
-![/services/](services/01-page-loaded.png)
-
-### [/submit-concern/](submit-concern/report.md)
-
-![/submit-concern/](submit-concern/01-page-loaded.png)
+![/](_root/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -49,50 +33,14 @@
 
 - **URL:** https://studentcare.wsu.edu/
 - **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded`
-
-### /services/
-
-- **URL:** https://studentcare.wsu.edu/services/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://studentcare.wsu.edu/resources/
-- **Status:** 404
-
-### /submit-concern/
-
-- **URL:** https://studentcare.wsu.edu/submit-concern/
-- **Status:** 404
-
-### /for-faculty-staff/
-
-- **URL:** https://studentcare.wsu.edu/for-faculty-staff/
-- **Status:** 404
 
 
 ## Pages with JavaScript Errors
 
-### /services/ (1 errors)
+### / (2 errors)
 
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /resources/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /submit-concern/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /for-faculty-staff/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

@@ -4,28 +4,28 @@
 |-------|-------|
 | URL | https://email.wsu.edu/policies/ |
 | Redirected To | https://outlook.office365.com/mail/?realm=wsu.edu |
-| Title | (none) |
+| Title | WSU | There was an unexpected internal error. Please try again. |
 | Status | ❌ 0 |
-| HTML Size | 14.3 KB |
-| Screenshots | 1 (22.5 KB) |
-| Images | 1 (3.1 KB) |
+| HTML Size | 61.5 KB |
+| Screenshots | 1 (45.7 KB) |
+| Images | 1 (7.7 KB) |
 | Images Missing Alt | 0 |
-| JS Errors | 0 |
-| JS Warnings | 0 |
+| JS Errors | 2 |
+| JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:55.9082737Z |
+| Captured | 2026-02-16T21:00:22.4576908Z |
 
-## Error
+## JavaScript Errors
 
-```
-Execution context was destroyed, most likely because of a navigation
-```
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+- `AuthApiError: Failed to fetch
+    at https://ok6static2.oktacdn.com/assets/js/sdk/okta-signin-widget/7.40.3/js/okta-sign-in.next.js:185:47710
+    at https://ok6static2.oktacdn.com/assets/js/sdk/okta-signin-widget/7.40.3/js/okta-sign-in.next.js:185:48578`
 
 ## Actions
 
-- Screenshot #1: page-loaded (22.5 KB)
+- Screenshot #1: page-loaded (45.7 KB)
 - Downloaded 1 images to /images/
-- Scan aborted due to error
 
 ## Screenshots
 
@@ -38,20 +38,20 @@ Execution context was destroyed, most likely because of a navigation
 
 | # | Image | Alt Text | Size |
 |---|-------|----------|------|
-| 1 | [microsoft.svg](images/microsoft.svg) | Microsoft | 3.1 KB |
+| 1 | [fs015xh0tygNgGVxX2p8.img](images/fs015xh0tygNgGVxX2p8.img) | WSU logo | 7.7 KB |
 
 ### Gallery
 
-![Microsoft](images/microsoft.svg)
+![WSU logo](images/fs015xh0tygNgGVxX2p8.img)
 
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (22.5 KB)
+- `01-page-loaded.png` — page-loaded (45.7 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
-- `images/` — 1 page images (3.1 KB)
+- `images/` — 1 page images (7.7 KB)

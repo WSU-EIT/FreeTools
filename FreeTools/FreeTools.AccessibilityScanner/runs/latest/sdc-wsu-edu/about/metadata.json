@@ -5,7 +5,7 @@
   "Title": "About Us | School of Design and Construction | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 219081,
+  "HtmlSizeBytes": 226608,
   "ScreenshotSizeBytes": 1061063,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -43,5 +43,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:18.2795469Z"
+  "CapturedAt": "2026-02-16T20:59:42.6244209Z"
 }

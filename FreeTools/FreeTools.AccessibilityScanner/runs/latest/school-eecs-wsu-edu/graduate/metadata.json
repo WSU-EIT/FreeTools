@@ -5,8 +5,8 @@
   "Title": "Graduate Course Transfer Requirements | School of Electrical Engineering \u0026 Computer Science | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 221227,
-  "ScreenshotSizeBytes": 311637,
+  "HtmlSizeBytes": 230261,
+  "ScreenshotSizeBytes": 313618,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 311637
+      "FileSize": 313618
     }
   ],
   "ImageCount": 0,
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:49.3457856Z"
+  "CapturedAt": "2026-02-16T21:00:16.5901493Z"
 }

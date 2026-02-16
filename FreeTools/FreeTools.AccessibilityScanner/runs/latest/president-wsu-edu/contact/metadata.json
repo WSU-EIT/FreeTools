@@ -5,8 +5,8 @@
   "Title": "Contact Us | Office of the President | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 134508,
-  "ScreenshotSizeBytes": 689453,
+  "HtmlSizeBytes": 129017,
+  "ScreenshotSizeBytes": 558095,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 689453
+      "FileSize": 558095
     }
   ],
   "ImageCount": 8,
@@ -73,5 +73,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:20.2959674Z"
+  "CapturedAt": "2026-02-16T20:59:56.5178123Z"
 }

@@ -5,14 +5,14 @@
 | URL | https://its.wsu.edu/how-can-we-help-contact-its/ |
 | Title | How Can We Help? | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 231.7 KB |
+| HTML Size | 231.6 KB |
 | Screenshots | 1 (205.1 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:31.4079481Z |
+| Captured | 2026-02-16T21:01:42.4066908Z |
 
 ## Actions
 

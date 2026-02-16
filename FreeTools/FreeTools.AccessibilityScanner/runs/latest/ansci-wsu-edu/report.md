@@ -2,27 +2,26 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/7 pages OK |
-| Pages Scanned | 7 |
+| Status | ⚠️ 0/6 pages OK |
+| Pages Scanned | 6 |
 | Pages Passed | 0 |
-| Pages Failed | 7 |
-| Total JS Errors | 9 |
-| Total JS Warnings | 1 |
-| Total HTML | 1.5 MB |
-| Total Screenshots | 6.5 MB |
-| Total Images | 44 (3.1 MB) |
-| Images Missing Alt | 32 |
+| Pages Failed | 6 |
+| Total JS Errors | 6 |
+| Total JS Warnings | 0 |
+| Total HTML | 1.3 MB |
+| Total Screenshots | 7.0 MB |
+| Total Images | 45 (3.6 MB) |
+| Images Missing Alt | 33 |
 | Folder | `ansci-wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Animal Sciences \| Washington State U... | 0 | 2 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | About \| Animal Sciences \| Washingto... | 1 | 1 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| Animal Sciences \| ... | 2 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Animal Sciences \| Washington State U... | 0 | 3 | 1 |
+| ❌ | [/about/](about/report.md) | 0 | About \| Animal Sciences \| Washingto... | 2 | 1 | 0 |
 | ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| Animal Sciences \| Washing... | 1 | 28 | 28 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Studies \| Animal Sciences \... | 3 | 1 | 1 |
+| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Studies \| Animal Sciences \... | 1 | 1 | 1 |
 | ❌ | [/research/](research/report.md) | 0 | Research \| Animal Sciences \| Washin... | 1 | 7 | 1 |
 | ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Studies \| Animal Scien... | 1 | 5 | 2 |
 
@@ -35,10 +34,6 @@
 ### [/about/](about/report.md)
 
 ![/about/](about/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
 
 ### [/faculty/](faculty/report.md)
 
@@ -89,30 +84,19 @@
 - **URL:** https://ansci.wsu.edu/faculty/
 - **Status:** 0
 
-### /contact/
-
-- **URL:** https://ansci.wsu.edu/contact/
-- **Status:** 0
-
 
 ## Pages with JavaScript Errors
 
-### /graduate/ (3 errors)
+### /about/ (2 errors)
 
 - `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_CONNECTION_RESET`
-
-### /contact/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /about/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: net::ERR_CONNECTION_FAILED`
 
 ### /undergraduate/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /graduate/ (1 errors)
 
 - `Failed to load resource: the server responded with a status of 405 ()`
 

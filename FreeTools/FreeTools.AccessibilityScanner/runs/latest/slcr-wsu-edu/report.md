@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
-| Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 3 |
+| Status | ⚠️ 1/4 pages OK |
+| Pages Scanned | 4 |
+| Pages Passed | 1 |
+| Pages Failed | 3 |
+| Total JS Errors | 1 |
 | Total JS Warnings | 0 |
-| Total HTML | 349.6 KB |
-| Total Screenshots | 2.0 MB |
-| Total Images | 35 (8.4 MB) |
+| Total HTML | 263.1 KB |
+| Total Screenshots | 1.9 MB |
+| Total Images | 36 (9.1 MB) |
 | Images Missing Alt | 12 |
 | Folder | `slcr-wsu-edu/` |
 
@@ -19,10 +19,8 @@
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | School of Languages, Cultures, and Ra... | 1 | 1 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | Page not found \| School of Languages... | 1 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| School of Languages, Cu... | 0 | 1 | 0 |
-| ❌ | [/courses/](courses/report.md) | 0 | Page not found \| School of Languages... | 1 | 0 | 0 |
-| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| School of Languages, Cultu... | 0 | 33 | 12 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| School of Languages, Cu... | 0 | 1 | 0 |
+| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| School of Languages, Cultu... | 0 | 34 | 12 |
 | ❌ | [/programs/](programs/report.md) | 0 | Programs \| School of Languages, Cult... | 0 | 0 | 0 |
 
 ## Page Screenshots
@@ -31,17 +29,9 @@
 
 ![/](_root/01-page-loaded.png)
 
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
 ### [/contact/](contact/report.md)
 
 ![/contact/](contact/01-page-loaded.png)
-
-### [/courses/](courses/report.md)
-
-![/courses/](courses/01-page-loaded.png)
 
 ### [/faculty/](faculty/report.md)
 
@@ -59,19 +49,9 @@
 - **URL:** https://slcr.wsu.edu/
 - **Status:** 0
 
-### /about/
-
-- **URL:** https://slcr.wsu.edu/about/
-- **Status:** 0
-
 ### /programs/
 
 - **URL:** https://slcr.wsu.edu/programs/
-- **Status:** 0
-
-### /courses/
-
-- **URL:** https://slcr.wsu.edu/courses/
 - **Status:** 0
 
 ### /faculty/
@@ -79,25 +59,12 @@
 - **URL:** https://slcr.wsu.edu/faculty/
 - **Status:** 0
 
-### /contact/
-
-- **URL:** https://slcr.wsu.edu/contact/
-- **Status:** 0
-
 
 ## Pages with JavaScript Errors
 
 ### / (1 errors)
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /about/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /courses/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_CONNECTION_ABORTED`
 
 
 ---

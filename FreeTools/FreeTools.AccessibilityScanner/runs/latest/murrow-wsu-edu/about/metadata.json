@@ -5,7 +5,7 @@
   "Title": "About Edward R. Murrow | Edward R. Murrow College of Communication | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 282976,
+  "HtmlSizeBytes": 282937,
   "ScreenshotSizeBytes": 2419082,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -85,5 +85,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:54.8574543Z"
+  "CapturedAt": "2026-02-16T21:00:42.345506Z"
 }

@@ -6,7 +6,7 @@
   "StatusCode": 0,
   "Success": false,
   "HtmlSizeBytes": 82040,
-  "ScreenshotSizeBytes": 585770,
+  "ScreenshotSizeBytes": 569168,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,11 +15,11 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 585770
+      "FileSize": 569168
     }
   ],
-  "ImageCount": 11,
-  "ImagesTotalSizeBytes": 2643458,
+  "ImageCount": 13,
+  "ImagesTotalSizeBytes": 3459711,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -27,6 +27,18 @@
       "SourceUrl": "https://housing.wsu.edu/media/yvafwp15/honors-exterior.jpg",
       "AltText": "Elmina White Honors",
       "FileSize": 178384
+    },
+    {
+      "FileName": "gg-exterior-side.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/elbfi15c/gg-exterior-side.jpg",
+      "AltText": "Gannon Goldsworthy",
+      "FileSize": 524294
+    },
+    {
+      "FileName": "mccroskey-exterior-side.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/4vbb1phv/mccroskey-exterior-side.jpg",
+      "AltText": "McCroskey",
+      "FileSize": 291959
     },
     {
       "FileName": "olympia-exterior.jpg",
@@ -91,5 +103,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:58.2437136Z"
+  "CapturedAt": "2026-02-16T21:00:42.0704974Z"
 }

@@ -5,14 +5,14 @@
 | URL | https://threatassessment.wsu.edu/about/ |
 | Title | Page not found | Threat Assessment | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 205.3 KB |
+| HTML Size | 201.2 KB |
 | Screenshots | 1 (59.8 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:45.2889184Z |
+| Captured | 2026-02-16T20:59:24.0911058Z |
 
 ## JavaScript Errors
 

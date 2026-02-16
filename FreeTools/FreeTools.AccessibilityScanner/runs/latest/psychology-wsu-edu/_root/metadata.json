@@ -5,10 +5,10 @@
   "Title": "Department of Psychology | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 222260,
+  "HtmlSizeBytes": 226985,
   "ScreenshotSizeBytes": 872851,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -55,5 +55,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1507211Z"
+  "CapturedAt": "2026-02-16T20:58:42.4695394Z"
 }

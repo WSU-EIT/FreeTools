@@ -4,43 +4,53 @@
 |-------|-------|
 | URL | https://transportation.wsu.edu/transit/ |
 | Redirected To | https://transportation.wsu.edu/transportation-options/transit-options/ |
-| Title | (none) |
+| Title | Transit Options | Transportation Services | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 0 bytes |
-| Screenshots | 0 (0 bytes) |
-| Images | 0 (0 bytes) |
+| HTML Size | 43.9 KB |
+| Screenshots | 1 (143.0 KB) |
+| Images | 3 (134.7 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
-| JS Warnings | 0 |
+| JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:46.0514823Z |
-
-## Error
-
-```
-Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-```
+| Captured | 2026-02-16T21:00:22.4576432Z |
 
 ## Actions
 
-- Scan aborted due to error
+- Screenshot #1: page-loaded (143.0 KB)
+- Downloaded 3 images to /images/
 
 ## Screenshots
 
-*No screenshots captured.*
+### 1. page-loaded
 
-## Page Images (0)
+![page-loaded](01-page-loaded.png)
 
-*No images found on page.*
+
+## Page Images (3)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [PTBusBeacon_cropped.png](images/PTBusBeacon_cropped.png) | Android app download | 27.1 KB |
+| 2 | [Gooogle_Play_2.png](images/Gooogle_Play_2.png) | Android app download | 33.7 KB |
+| 3 | [appstore2.png](images/appstore2.png) | Apple app download | 73.8 KB |
+
+### Gallery
+
+![Android app download](images/PTBusBeacon_cropped.png)
+
+![Android app download](images/Gooogle_Play_2.png)
+
+![Apple app download](images/appstore2.png)
+
 
 ## Files
 
+- `01-page-loaded.png` — page-loaded (143.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 3 page images (134.7 KB)

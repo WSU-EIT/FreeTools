@@ -6,16 +6,16 @@
   "StatusCode": 0,
   "Success": false,
   "HtmlSizeBytes": 43390,
-  "ScreenshotSizeBytes": 700152,
+  "ScreenshotSizeBytes": 679319,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 700152
+      "FileSize": 679319
     }
   ],
   "ImageCount": 3,
@@ -43,5 +43,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1560759Z"
+  "CapturedAt": "2026-02-16T20:58:42.4736552Z"
 }

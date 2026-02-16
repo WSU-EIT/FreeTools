@@ -5,14 +5,18 @@
 | URL | https://catalog.wsu.edu/ |
 | Title |  |
 | Status | ❌ 0 |
-| HTML Size | 160.6 KB |
+| HTML Size | 160.4 KB |
 | Screenshots | 1 (4.2 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 0 |
+| JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0070606Z |
+| Captured | 2026-02-16T20:58:42.4463919Z |
+
+## JavaScript Errors
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 

@@ -5,14 +5,14 @@
 | URL | https://ace.wsu.edu/ |
 | Title | Office of Assessment for Curricular Effectiveness | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 64.9 KB |
+| HTML Size | 66.7 KB |
 | Screenshots | 1 (744.3 KB) |
 | Images | 1 (23.8 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:04.9610133Z |
+| Captured | 2026-02-16T20:58:42.4233299Z |
 
 ## Actions
 

@@ -6,14 +6,14 @@
 | Redirected To | https://online.wsu.edu/contact-us/ |
 | Title | Contact Us | WSU Global Campus | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 56.9 KB |
+| HTML Size | 58.9 KB |
 | Screenshots | 1 (152.1 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:11.1036217Z |
+| Captured | 2026-02-16T20:59:59.0418032Z |
 
 ## Actions
 

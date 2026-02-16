@@ -5,7 +5,7 @@
   "Title": "Application | Department of Physics \u0026 Astronomy | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 214847,
+  "HtmlSizeBytes": 223885,
   "ScreenshotSizeBytes": 511174,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:37.7622643Z"
+  "CapturedAt": "2026-02-16T21:00:07.8115752Z"
 }

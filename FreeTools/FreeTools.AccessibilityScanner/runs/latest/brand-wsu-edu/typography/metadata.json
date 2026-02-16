@@ -5,8 +5,8 @@
   "Title": "Typography \u2013 Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 67193,
-  "ScreenshotSizeBytes": 639321,
+  "HtmlSizeBytes": 81797,
+  "ScreenshotSizeBytes": 561028,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 639321
+      "FileSize": 561028
     }
   ],
   "ImageCount": 12,
@@ -97,5 +97,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:58.4390267Z"
+  "CapturedAt": "2026-02-16T21:00:14.4676997Z"
 }

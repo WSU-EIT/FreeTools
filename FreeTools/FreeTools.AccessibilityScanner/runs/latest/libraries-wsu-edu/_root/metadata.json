@@ -5,8 +5,8 @@
   "Title": "WSU Libraries",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 52110,
-  "ScreenshotSizeBytes": 160667,
+  "HtmlSizeBytes": 51979,
+  "ScreenshotSizeBytes": 134061,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 160667
+      "FileSize": 134061
     }
   ],
   "ImageCount": 2,
@@ -37,5 +37,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1129853Z"
+  "CapturedAt": "2026-02-16T20:58:42.4606197Z"
 }

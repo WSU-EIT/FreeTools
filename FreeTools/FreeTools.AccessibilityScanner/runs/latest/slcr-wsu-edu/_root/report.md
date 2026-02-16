@@ -5,18 +5,18 @@
 | URL | https://slcr.wsu.edu/ |
 | Title | School of Languages, Cultures, and Race | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 61.8 KB |
+| HTML Size | 61.2 KB |
 | Screenshots | 1 (643.1 KB) |
 | Images | 1 (266.0 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1553631Z |
+| Captured | 2026-02-16T20:58:42.4726386Z |
 
 ## JavaScript Errors
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_CONNECTION_ABORTED`
 
 ## Actions
 

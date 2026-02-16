@@ -5,22 +5,23 @@
 | URL | https://ansci.wsu.edu/about/ |
 | Title | About | Animal Sciences | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 199.7 KB |
-| Screenshots | 1 (877.7 KB) |
+| HTML Size | 209.8 KB |
+| Screenshots | 1 (849.7 KB) |
 | Images | 1 (116.3 KB) |
 | Images Missing Alt | 0 |
-| JS Errors | 1 |
+| JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:43.0497862Z |
+| Captured | 2026-02-16T20:59:20.9003689Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: net::ERR_CONNECTION_FAILED`
 
 ## Actions
 
-- Screenshot #1: page-loaded (877.7 KB)
+- Screenshot #1: page-loaded (849.7 KB)
 - Downloaded 1 images to /images/
 
 ## Screenshots
@@ -43,7 +44,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (877.7 KB)
+- `01-page-loaded.png` — page-loaded (849.7 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

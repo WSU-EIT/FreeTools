@@ -5,21 +5,21 @@
   "Title": "Press Releases | WSU Insider | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 243799,
-  "ScreenshotSizeBytes": 1495228,
+  "HtmlSizeBytes": 247774,
+  "ScreenshotSizeBytes": 1442022,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1495228
+      "FileSize": 1442022
     }
   ],
-  "ImageCount": 10,
-  "ImagesTotalSizeBytes": 1044077,
+  "ImageCount": 9,
+  "ImagesTotalSizeBytes": 880288,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -53,12 +53,6 @@
       "FileSize": 55196
     },
     {
-      "FileName": "Ryan-Driskell-and-Sean-Thompson-with-pigs-1024x676.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/Ryan-Driskell-and-Sean-Thompson-with-pigs-1024x676.jpg",
-      "AltText": "Two WSU researchers petting piglets in a pen.",
-      "FileSize": 163789
-    },
-    {
       "FileName": "bull-elk-in-snow-1024x676.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/bull-elk-in-snow-1024x676.jpg",
       "AltText": "A pair of bull elk standing in the snow.",
@@ -85,5 +79,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:59.9460265Z"
+  "CapturedAt": "2026-02-16T20:59:38.3884206Z"
 }

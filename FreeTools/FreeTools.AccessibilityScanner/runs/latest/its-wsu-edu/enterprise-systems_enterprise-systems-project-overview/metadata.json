@@ -5,7 +5,7 @@
   "Title": "Project Overview | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 236883,
+  "HtmlSizeBytes": 236943,
   "ScreenshotSizeBytes": 355589,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -33,12 +33,12 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:40:22 GMT",
-    "etag": "\u0022110967e52888fa1c5b2cd6beeed5c0bf\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:53:01 GMT",
+    "date": "Mon, 16 Feb 2026 21:01:35 GMT",
+    "etag": "\u00221e861016409804ae773bc4b340df4f31\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:54:43 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/538\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=538\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-16T20:40:22.0226641Z"
+  "CapturedAt": "2026-02-16T21:01:34.8721876Z"
 }

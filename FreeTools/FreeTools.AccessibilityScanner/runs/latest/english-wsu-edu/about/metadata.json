@@ -5,7 +5,7 @@
   "Title": "Overview | WSU Department of English | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 62581,
+  "HtmlSizeBytes": 54043,
   "ScreenshotSizeBytes": 552013,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:55.728677Z"
+  "CapturedAt": "2026-02-16T20:59:31.9410365Z"
 }

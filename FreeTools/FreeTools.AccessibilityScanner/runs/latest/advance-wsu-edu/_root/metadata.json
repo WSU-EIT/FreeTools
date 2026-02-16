@@ -5,7 +5,7 @@
   "Title": "ADVANCE at WSU | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 62182,
+  "HtmlSizeBytes": 53819,
   "ScreenshotSizeBytes": 244549,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:04.9083199Z"
+  "CapturedAt": "2026-02-16T20:58:42.4233289Z"
 }

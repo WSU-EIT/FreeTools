@@ -5,7 +5,7 @@
 | URL | https://orc.wsu.edu/programs/ |
 | Redirected To | https://urec.wsu.edu/locations-facilities/outdoor-recreation-center |
 | Title | Outdoor Recreation Center |
-| Status | ❌ 0 |
+| Status | ✅ 200 |
 | HTML Size | 76.9 KB |
 | Screenshots | 1 (1.4 MB) |
 | Images | 3 (427.5 KB) |
@@ -13,7 +13,7 @@
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:57.0929153Z |
+| Captured | 2026-02-16T21:01:08.2874901Z |
 
 ## Actions
 

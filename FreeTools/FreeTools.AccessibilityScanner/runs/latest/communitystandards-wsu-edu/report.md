@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/1 pages OK |
+| Pages Scanned | 1 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 4 |
+| Pages Failed | 1 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 3.3 KB |
-| Total Screenshots | 615.8 KB |
+| Total HTML | 0 bytes |
+| Total Screenshots | 0 bytes |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `communitystandards-wsu-edu/` |
@@ -19,29 +19,8 @@
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/conduct-process/](conduct-process/report.md) | 0 | Page Not Found | 1 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
-| ❌ | [/for-students/](for-students/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
-| ❌ | [/policies/](policies/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | (none) | 0 | 0 | 0 |
 
 ## Page Screenshots
-
-### [/conduct-process/](conduct-process/report.md)
-
-![/conduct-process/](conduct-process/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/for-students/](for-students/report.md)
-
-![/for-students/](for-students/01-page-loaded.png)
-
-### [/policies/](policies/report.md)
-
-![/policies/](policies/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -55,54 +34,6 @@ Call log:
   - taking page screenshot
   - waiting for fonts to load...
   - fonts loaded`
-
-### /conduct-process/
-
-- **URL:** https://communitystandards.wsu.edu/conduct-process/
-- **Status:** 0
-
-### /policies/
-
-- **URL:** https://communitystandards.wsu.edu/policies/
-- **Status:** 404
-
-### /resources/
-
-- **URL:** https://communitystandards.wsu.edu/resources/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
-
-### /for-students/
-
-- **URL:** https://communitystandards.wsu.edu/for-students/
-- **Status:** 404
-
-### /contact/
-
-- **URL:** https://communitystandards.wsu.edu/contact/
-- **Status:** 404
-
-
-## Pages with JavaScript Errors
-
-### /conduct-process/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /policies/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /for-students/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /contact/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

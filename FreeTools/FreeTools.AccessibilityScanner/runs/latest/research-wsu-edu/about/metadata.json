@@ -5,7 +5,7 @@
   "Title": "About Us | Office of Research | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 233773,
+  "HtmlSizeBytes": 231411,
   "ScreenshotSizeBytes": 1461315,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:12.3808381Z"
+  "CapturedAt": "2026-02-16T20:59:49.3690815Z"
 }

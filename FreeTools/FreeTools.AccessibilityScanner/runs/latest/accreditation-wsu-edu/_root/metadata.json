@@ -5,7 +5,7 @@
   "Title": "Accreditation Site | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 52707,
+  "HtmlSizeBytes": 54232,
   "ScreenshotSizeBytes": 395042,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -18,16 +18,10 @@
       "FileSize": 395042
     }
   ],
-  "ImageCount": 2,
-  "ImagesTotalSizeBytes": 78651,
-  "ImagesMissingAlt": 1,
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 6156,
+  "ImagesMissingAlt": 0,
   "Images": [
-    {
-      "FileName": "Visitor-Center_3902-Pano-792x410.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/154/2017/11/Visitor-Center_3902-Pano-792x410.jpg",
-      "AltText": "",
-      "FileSize": 72495
-    },
     {
       "FileName": "nwccu_logo_lighthouse-500x200-1-396x158.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/154/2023/02/nwccu_logo_lighthouse-500x200-1-396x158.jpg",
@@ -37,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:04.9808661Z"
+  "CapturedAt": "2026-02-16T20:58:42.4233202Z"
 }

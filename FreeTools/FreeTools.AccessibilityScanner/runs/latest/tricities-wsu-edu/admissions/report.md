@@ -6,17 +6,17 @@
 | Title | Admissions | WSU Tri-Cities |
 | Status | ✅ 200 |
 | HTML Size | 166.0 KB |
-| Screenshots | 1 (2.6 MB) |
+| Screenshots | 1 (2.2 MB) |
 | Images | 12 (638.2 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 3 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:22.5939748Z |
+| Captured | 2026-02-16T21:01:22.0216477Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (2.6 MB)
+- Screenshot #1: page-loaded (2.2 MB)
 - Downloaded 12 images to /images/
 
 ## Screenshots
@@ -72,7 +72,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (2.6 MB)
+- `01-page-loaded.png` — page-loaded (2.2 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

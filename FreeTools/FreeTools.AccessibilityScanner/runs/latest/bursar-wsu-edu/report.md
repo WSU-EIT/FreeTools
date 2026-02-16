@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/5 pages OK |
+| Pages Scanned | 5 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 5 |
+| Pages Failed | 5 |
+| Total JS Errors | 1 |
 | Total JS Warnings | 0 |
-| Total HTML | 372.9 KB |
+| Total HTML | 340.9 KB |
 | Total Screenshots | 2.4 MB |
-| Total Images | 16 (3.5 MB) |
+| Total Images | 16 (3.4 MB) |
 | Images Missing Alt | 15 |
 | Folder | `bursar-wsu-edu/` |
 
@@ -18,12 +18,11 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Bursar \| Washington State University | 4 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Bursar \| Washington State University | 1 | 0 | 0 |
 | ❌ | [/billing/](billing/report.md) | 0 | Billing \| Bursar \| Washington State... | 0 | 1 | 0 |
 | ❌ | [/contact/](contact/report.md) | 0 | Contact Information \| Bursar \| Wash... | 0 | 6 | 6 |
 | ❌ | [/payment/](payment/report.md) | 0 | Payment Plans \| Bursar \| Washington... | 0 | 9 | 9 |
 | ❌ | [/policies/](policies/report.md) | 0 | Policies & Procedures for Reporting t... | 0 | 0 | 0 |
-| ❌ | [/refunds/](refunds/report.md) | 0 | Page not found \| Bursar \| Washingto... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -47,10 +46,6 @@
 
 ![/policies/](policies/01-page-loaded.png)
 
-### [/refunds/](refunds/report.md)
-
-![/refunds/](refunds/01-page-loaded.png)
-
 
 ## Failed Pages
 
@@ -69,11 +64,6 @@
 - **URL:** https://bursar.wsu.edu/payment/
 - **Status:** 0
 
-### /refunds/
-
-- **URL:** https://bursar.wsu.edu/refunds/
-- **Status:** 0
-
 ### /policies/
 
 - **URL:** https://bursar.wsu.edu/policies/
@@ -87,16 +77,9 @@
 
 ## Pages with JavaScript Errors
 
-### / (4 errors)
+### / (1 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /refunds/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

@@ -5,8 +5,8 @@
   "Title": "Compliance and Civil Rights | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 232248,
-  "ScreenshotSizeBytes": 1303390,
+  "HtmlSizeBytes": 236193,
+  "ScreenshotSizeBytes": 1602949,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,13 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1303390
+      "FileSize": 1602949
     }
   ],
   "ImageCount": 10,
-  "ImagesTotalSizeBytes": 1719314,
+  "ImagesTotalSizeBytes": 1626897,
   "ImagesMissingAlt": 0,
   "Images": [
-    {
-      "FileName": "hannah-busing-Zyx1bK9mqmA-unsplash-scaled.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ccr/uploads/sites/2951/2022/05/hannah-busing-Zyx1bK9mqmA-unsplash-scaled.jpg",
-      "AltText": "Hands on top of each other, in a circle",
-      "FileSize": 540031
-    },
     {
       "FileName": "Books-Detail.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ccr/uploads/sites/2951/2022/05/Books-Detail.jpg",
@@ -51,6 +45,12 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ccr/uploads/sites/2951/2022/05/andrew-neel-cckf4TsHAuw-unsplash-scaled.jpg",
       "AltText": "Desk with coffee, a notepad, phone and laptop",
       "FileSize": 383092
+    },
+    {
+      "FileName": "katie-moum-o0kbc907i20-unsplash-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ccr/uploads/sites/2951/2022/05/katie-moum-o0kbc907i20-unsplash-scaled.jpg",
+      "AltText": "Marble columned building",
+      "FileSize": 447614
     },
     {
       "FileName": "Student-with-Guide-Dog-on-the-mall.jpg",
@@ -85,5 +85,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0334923Z"
+  "CapturedAt": "2026-02-16T20:58:42.446421Z"
 }

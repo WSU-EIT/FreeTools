@@ -5,8 +5,8 @@
   "Title": "Research | Department of Psychology | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 310200,
-  "ScreenshotSizeBytes": 1565360,
+  "HtmlSizeBytes": 310656,
+  "ScreenshotSizeBytes": 1609738,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1565360
+      "FileSize": 1609738
     }
   ],
   "ImageCount": 20,
@@ -145,5 +145,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:06.4293387Z"
+  "CapturedAt": "2026-02-16T21:00:08.0963146Z"
 }

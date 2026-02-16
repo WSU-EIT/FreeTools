@@ -5,18 +5,18 @@
 | URL | https://provost.wsu.edu/ |
 | Title | Office of the Provost | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 103.8 KB |
-| Screenshots | 1 (1.1 MB) |
+| HTML Size | 108.9 KB |
+| Screenshots | 1 (1.5 MB) |
 | Images | 1 (97.8 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1500568Z |
+| Captured | 2026-02-16T20:58:42.4693096Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.1 MB)
+- Screenshot #1: page-loaded (1.5 MB)
 - Downloaded 1 images to /images/
 
 ## Screenshots
@@ -39,7 +39,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.1 MB)
+- `01-page-loaded.png` — page-loaded (1.5 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/7 pages OK |
-| Pages Scanned | 7 |
+| Status | ⚠️ 2/6 pages OK |
+| Pages Scanned | 6 |
 | Pages Passed | 2 |
-| Pages Failed | 5 |
-| Total JS Errors | 6 |
-| Total JS Warnings | 1 |
+| Pages Failed | 4 |
+| Total JS Errors | 7 |
+| Total JS Warnings | 0 |
 | Total HTML | 1.4 MB |
-| Total Screenshots | 11.7 MB |
-| Total Images | 48 (14.0 MB) |
+| Total Screenshots | 12.8 MB |
+| Total Images | 51 (17.1 MB) |
 | Images Missing Alt | 5 |
 | Folder | `museum-wsu-edu/` |
 
@@ -18,11 +18,10 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Jordan Schnitzer Museum of Art WSU \|... | 0 | 10 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Jordan Schnitzer Museum of Art WSU \|... | 2 | 9 | 0 |
 | ❌ | [/collections/](collections/report.md) | 0 | Museum Collections \| Jordan Schnitze... | 1 | 12 | 4 |
 | ✅ | [/education/](education/report.md) | 200 | Education Highlights \| Jordan Schnit... | 1 | 6 | 0 |
-| ❌ | [/events/](events/report.md) | 405 | Human Verification | 1 | 0 | 0 |
-| ❌ | [/exhibitions/](exhibitions/report.md) | 0 | Exhibitions & Programs \| Jordan Schn... | 1 | 3 | 1 |
+| ❌ | [/exhibitions/](exhibitions/report.md) | 0 | Exhibitions & Programs \| Jordan Schn... | 1 | 7 | 1 |
 | ✅ | [/support/](support/report.md) | 200 | Support the Museum \| Jordan Schnitze... | 1 | 5 | 0 |
 | ❌ | [/visit/](visit/report.md) | 0 | Visit \| Jordan Schnitzer Museum of A... | 1 | 12 | 0 |
 
@@ -39,10 +38,6 @@
 ### [/education/](education/report.md)
 
 ![/education/](education/01-page-loaded.png)
-
-### [/events/](events/report.md)
-
-![/events/](events/01-page-loaded.png)
 
 ### [/exhibitions/](exhibitions/report.md)
 
@@ -79,13 +74,13 @@
 - **URL:** https://museum.wsu.edu/collections/
 - **Status:** 0
 
-### /events/
-
-- **URL:** https://museum.wsu.edu/events/
-- **Status:** 405
-
 
 ## Pages with JavaScript Errors
+
+### / (2 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /visit/ (1 errors)
 
@@ -100,10 +95,6 @@
 - `Failed to load resource: the server responded with a status of 405 ()`
 
 ### /education/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /events/ (1 errors)
 
 - `Failed to load resource: the server responded with a status of 405 ()`
 

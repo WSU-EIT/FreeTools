@@ -6,14 +6,14 @@
 | Redirected To | https://provost.wsu.edu/2024/09/23/academic-affairs-program-optimization-process/ |
 | Title | Academic Affairs Program Optimization Process | Office of the Provost | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 111.3 KB |
+| HTML Size | 111.7 KB |
 | Screenshots | 1 (212.6 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:12.3841550Z |
+| Captured | 2026-02-16T20:59:43.2509869Z |
 
 ## Actions
 

@@ -5,8 +5,8 @@
   "Title": "Contact Us | Environmental Health \u0026 Safety | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 252713,
-  "ScreenshotSizeBytes": 754030,
+  "HtmlSizeBytes": 252180,
+  "ScreenshotSizeBytes": 717727,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,12 +15,12 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 754030
+      "FileSize": 717727
     }
   ],
-  "ImageCount": 10,
-  "ImagesTotalSizeBytes": 2807224,
-  "ImagesMissingAlt": 9,
+  "ImageCount": 11,
+  "ImagesTotalSizeBytes": 3069752,
+  "ImagesMissingAlt": 10,
   "Images": [
     {
       "FileName": "image-1.png",
@@ -39,6 +39,12 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/10/image-7.png",
       "AltText": "",
       "FileSize": 242883
+    },
+    {
+      "FileName": "image-2.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/10/image-2.png",
+      "AltText": "",
+      "FileSize": 623846
     },
     {
       "FileName": "image-5.png",
@@ -71,10 +77,10 @@
       "FileSize": 229361
     },
     {
-      "FileName": "image-9-792x792.png",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/10/image-9-792x792.png",
+      "FileName": "image-4.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/10/image-4.png",
       "AltText": "",
-      "FileSize": 809499
+      "FileSize": 448181
     },
     {
       "FileName": "Jessica-Profile-792x799.jpg",
@@ -85,5 +91,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:55.2002633Z"
+  "CapturedAt": "2026-02-16T20:59:51.723475Z"
 }

@@ -3,7 +3,7 @@
 | Field | Value |
 |-------|-------|
 | URL | https://livingat.wsu.edu/reshall/ |
-| Redirected To | https://wsu.starrezhousing.com/StarRezPortalX/4DF0BDF1/1/1/Home-Home?UrlToken=EB7F0D6E |
+| Redirected To | https://wsu.starrezhousing.com/StarRezPortalX/C252FF0F/1/1/Home-Home?UrlToken=FC3E9E97 |
 | Title | Home | StarRez Portal |
 | Status | ❌ 0 |
 | HTML Size | 28.3 KB |
@@ -13,7 +13,7 @@
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:59.7975529Z |
+| Captured | 2026-02-16T20:59:36.7997537Z |
 
 ## Actions
 

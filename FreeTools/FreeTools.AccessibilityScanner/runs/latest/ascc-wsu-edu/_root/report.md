@@ -6,17 +6,17 @@
 | Title | Academic Success & Career Center – Washington State University |
 | Status | ❌ 0 |
 | HTML Size | 1.9 MB |
-| Screenshots | 1 (768.2 KB) |
+| Screenshots | 1 (1.2 MB) |
 | Images | 38 (623.2 KB) |
 | Images Missing Alt | 26 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0024896Z |
+| Captured | 2026-02-16T20:58:42.4439360Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (768.2 KB)
+- Screenshot #1: page-loaded (1.2 MB)
 - Downloaded 38 images to /images/
 
 ## Screenshots
@@ -179,7 +179,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (768.2 KB)
+- `01-page-loaded.png` — page-loaded (1.2 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

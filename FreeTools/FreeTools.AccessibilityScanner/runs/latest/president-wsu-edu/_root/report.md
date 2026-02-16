@@ -5,23 +5,24 @@
 | URL | https://president.wsu.edu/ |
 | Title | Office of the President | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 55.5 KB |
-| Screenshots | 1 (423.7 KB) |
+| HTML Size | 59.6 KB |
+| Screenshots | 1 (310.7 KB) |
 | Images | 1 (61.8 KB) |
 | Images Missing Alt | 1 |
-| JS Errors | 2 |
+| JS Errors | 3 |
 | JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1507485Z |
+| Captured | 2026-02-16T20:58:42.4691066Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- Screenshot #1: page-loaded (423.7 KB)
+- Screenshot #1: page-loaded (310.7 KB)
 - Downloaded 1 images to /images/
 
 ## Screenshots
@@ -48,7 +49,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (423.7 KB)
+- `01-page-loaded.png` — page-loaded (310.7 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

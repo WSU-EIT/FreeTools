@@ -5,8 +5,8 @@
   "Title": "Faculty and Staff | School of Design and Construction | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 336714,
-  "ScreenshotSizeBytes": 1084857,
+  "HtmlSizeBytes": 335373,
+  "ScreenshotSizeBytes": 1403108,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1084857
+      "FileSize": 1403108
     }
   ],
   "ImageCount": 58,
@@ -373,5 +373,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:11.0747116Z"
+  "CapturedAt": "2026-02-16T21:00:01.7110671Z"
 }

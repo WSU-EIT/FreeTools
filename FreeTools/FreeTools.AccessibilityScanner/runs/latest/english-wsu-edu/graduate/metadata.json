@@ -5,7 +5,7 @@
   "Title": "Graduate Certificates | WSU Department of English | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 65747,
+  "HtmlSizeBytes": 74583,
   "ScreenshotSizeBytes": 575852,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:37.7642359Z"
+  "CapturedAt": "2026-02-16T21:00:12.3960045Z"
 }

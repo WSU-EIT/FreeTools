@@ -5,14 +5,14 @@
 | URL | https://provost.wsu.edu/about/ |
 | Title | About | Office of the Provost | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 98.2 KB |
+| HTML Size | 97.9 KB |
 | Screenshots | 1 (677.0 KB) |
 | Images | 1 (3.0 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:48.4226487Z |
+| Captured | 2026-02-16T20:59:25.7701970Z |
 
 ## Actions
 

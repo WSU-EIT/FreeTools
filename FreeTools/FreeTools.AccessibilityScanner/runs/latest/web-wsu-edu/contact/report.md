@@ -5,14 +5,14 @@
 | URL | https://web.wsu.edu/contact/ |
 | Title | Contact Web Communication | Web Communication | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 203.6 KB |
+| HTML Size | 214.5 KB |
 | Screenshots | 1 (152.7 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:54.5619427Z |
+| Captured | 2026-02-16T21:00:11.7398369Z |
 
 ## JavaScript Errors
 

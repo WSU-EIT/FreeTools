@@ -5,14 +5,14 @@
 | URL | https://accreditation.wsu.edu/documents/ |
 | Title | Documents | Accreditation Site | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 52.3 KB |
-| Screenshots | 1 (136.7 KB) |
+| HTML Size | 49.5 KB |
+| Screenshots | 1 (136.4 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:23.4341374Z |
+| Captured | 2026-02-16T21:00:00.0683301Z |
 
 ## JavaScript Errors
 
@@ -20,7 +20,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (136.7 KB)
+- Screenshot #1: page-loaded (136.4 KB)
 - No images found on page
 
 ## Screenshots
@@ -36,7 +36,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (136.7 KB)
+- `01-page-loaded.png` — page-loaded (136.4 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

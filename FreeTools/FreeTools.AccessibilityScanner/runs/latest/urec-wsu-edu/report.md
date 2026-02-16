@@ -6,12 +6,12 @@
 | Pages Scanned | 8 |
 | Pages Passed | 4 |
 | Pages Failed | 4 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 498.3 KB |
-| Total Screenshots | 3.5 MB |
-| Total Images | 20 (34.6 MB) |
-| Images Missing Alt | 1 |
+| Total JS Errors | 4 |
+| Total JS Warnings | 1 |
+| Total HTML | 658.8 KB |
+| Total Screenshots | 4.3 MB |
+| Total Images | 23 (42.7 MB) |
+| Images Missing Alt | 4 |
 | Folder | `urec-wsu-edu/` |
 
 ## Pages
@@ -21,10 +21,10 @@
 | ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
 | ✅ | [/employment/](employment/report.md) | 200 | Employment | 0 | 0 | 0 |
 | ❌ | [/facilities/](facilities/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/imsports/](imsports/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/imsports/](imsports/report.md) | 0 | Intramurals | 3 | 3 | 3 |
 | ✅ | [/membership/](membership/report.md) | 200 | Memberships & Lockers | 0 | 4 | 0 |
 | ✅ | [/orc/](orc/report.md) | 200 | Outdoor Adventures | 0 | 15 | 0 |
-| ❌ | [/programs/](programs/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/programs/](programs/report.md) | 0 | Page Not Found | 1 | 0 | 0 |
 | ✅ | [/sportclubs/](sportclubs/report.md) | 200 | Sport Clubs | 0 | 1 | 1 |
 
 ## Page Screenshots
@@ -33,6 +33,10 @@
 
 ![/employment/](employment/01-page-loaded.png)
 
+### [/imsports/](imsports/report.md)
+
+![/imsports/](imsports/01-page-loaded.png)
+
 ### [/membership/](membership/report.md)
 
 ![/membership/](membership/01-page-loaded.png)
@@ -40,6 +44,10 @@
 ### [/orc/](orc/report.md)
 
 ![/orc/](orc/01-page-loaded.png)
+
+### [/programs/](programs/report.md)
+
+![/programs/](programs/01-page-loaded.png)
 
 ### [/sportclubs/](sportclubs/report.md)
 
@@ -55,7 +63,8 @@
 - **Error:** `Timeout 30000ms exceeded.
 Call log:
   - taking page screenshot
-  - waiting for fonts to load...`
+  - waiting for fonts to load...
+  - fonts loaded`
 
 ### /facilities/
 
@@ -70,19 +79,24 @@ Call log:
 
 - **URL:** https://urec.wsu.edu/programs/
 - **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
 
 ### /imsports/
 
 - **URL:** https://urec.wsu.edu/imsports/
 - **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
+
+
+## Pages with JavaScript Errors
+
+### /imsports/ (3 errors)
+
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+
+### /programs/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

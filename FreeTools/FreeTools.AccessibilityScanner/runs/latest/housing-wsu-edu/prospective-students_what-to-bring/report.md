@@ -5,14 +5,14 @@
 | URL | https://housing.wsu.edu/prospective-students/what-to-bring/ |
 | Title | What to Bring |
 | Status | ✅ 200 |
-| HTML Size | 58.0 KB |
+| HTML Size | 58.1 KB |
 | Screenshots | 1 (703.7 KB) |
 | Images | 1 (258.6 KB) |
 | Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:33.7847431Z |
+| Captured | 2026-02-16T21:01:31.4393100Z |
 
 ## Actions
 

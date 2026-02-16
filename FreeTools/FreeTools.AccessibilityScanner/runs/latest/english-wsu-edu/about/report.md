@@ -6,14 +6,14 @@
 | Redirected To | https://english.wsu.edu/about-english/ |
 | Title | Overview | WSU Department of English | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 61.1 KB |
+| HTML Size | 52.8 KB |
 | Screenshots | 1 (539.1 KB) |
 | Images | 1 (144.0 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:55.7286770Z |
+| Captured | 2026-02-16T20:59:31.9410365Z |
 
 ## JavaScript Errors
 

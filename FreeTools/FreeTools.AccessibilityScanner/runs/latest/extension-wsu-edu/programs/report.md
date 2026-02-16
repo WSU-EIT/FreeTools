@@ -6,18 +6,18 @@
 | Redirected To | https://extension.wsu.edu/topics/ |
 | Title | WSU Extension Programs and Topics A-Z | WSU Extension | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 194.6 KB |
-| Screenshots | 1 (169.9 KB) |
+| HTML Size | 215.4 KB |
+| Screenshots | 1 (170.8 KB) |
 | Images | 1 (165.0 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:18.4763384Z |
+| Captured | 2026-02-16T20:59:55.7367419Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (169.9 KB)
+- Screenshot #1: page-loaded (170.8 KB)
 - Downloaded 1 images to /images/
 
 ## Screenshots
@@ -40,7 +40,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (169.9 KB)
+- `01-page-loaded.png` — page-loaded (170.8 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

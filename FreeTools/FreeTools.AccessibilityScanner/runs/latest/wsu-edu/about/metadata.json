@@ -5,23 +5,47 @@
   "Title": "About WSU | Washington State University | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 116559,
-  "ScreenshotSizeBytes": 1178489,
+  "HtmlSizeBytes": 127834,
+  "ScreenshotSizeBytes": 1992932,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1178489
+      "FileSize": 1992932
     }
   ],
-  "ImageCount": 11,
-  "ImagesTotalSizeBytes": 2523387,
+  "ImageCount": 15,
+  "ImagesTotalSizeBytes": 7868922,
   "ImagesMissingAlt": 10,
   "Images": [
+    {
+      "FileName": "2019-Move-in-Saturday-_-179.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/2019-Move-in-Saturday-_-179.jpg",
+      "AltText": "Washington State University students move into their residence halls with the assistance of family members and volunteers during Move-in Saturday as part of the Week of Welcome festivities, Saturday, August 10, 2019 in Pullman.",
+      "FileSize": 1350692
+    },
+    {
+      "FileName": "Oct-7-Mural-Painting-_-65.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Oct-7-Mural-Painting-_-65.jpg",
+      "AltText": "Washington State University Intermediate Painting (Fine_Art 321) students paint in the final areas of murals on wallball walls at Kamiak Elementary School, Monday, Oct. 7, 2019 in Pullman, Wash. KES is a new school in the Pullman School District No. 267. The paint used on these two murals will change colors as temperatures change, and was formulated by the WSU chemistry department.",
+      "FileSize": 1186860
+    },
+    {
+      "FileName": "PhD-Student-Kaitlin-Witherell_5035.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/PhD-Student-Kaitlin-Witherell_5035.jpg",
+      "AltText": "PhD student on the campus of Washington State University, Monday, June 17, 2019.",
+      "FileSize": 1002321
+    },
+    {
+      "FileName": "Students-Football-Atmosphere_5321.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Students-Football-Atmosphere_5321.jpg",
+      "AltText": "Happy fans in the crowd cheering the football team on Game Day, Washington State University, Saturday, September, 11, 2021",
+      "FileSize": 1805662
+    },
     {
       "FileName": "Campus-photo.jpg",
       "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo.jpg",
@@ -91,5 +115,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:14.9193645Z"
+  "CapturedAt": "2026-02-16T21:00:35.8022116Z"
 }

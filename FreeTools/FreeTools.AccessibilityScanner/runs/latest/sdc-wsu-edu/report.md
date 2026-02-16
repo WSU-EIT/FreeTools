@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/7 pages OK |
-| Pages Scanned | 7 |
+| Status | ⚠️ 0/4 pages OK |
+| Pages Scanned | 4 |
 | Pages Passed | 0 |
-| Pages Failed | 7 |
-| Total JS Errors | 7 |
+| Pages Failed | 4 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 1 |
-| Total HTML | 1.4 MB |
-| Total Screenshots | 4.7 MB |
+| Total HTML | 1011.3 KB |
+| Total Screenshots | 5.6 MB |
 | Total Images | 65 (3.1 MB) |
 | Images Missing Alt | 58 |
 | Folder | `sdc-wsu-edu/` |
@@ -18,13 +18,10 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | School of Design and Construction \| ... | 5 | 3 | 0 |
+| ❌ | [/](_root/report.md) | 0 | School of Design and Construction \| ... | 0 | 3 | 0 |
 | ❌ | [/about/](about/report.md) | 0 | About Us \| School of Design and Cons... | 0 | 3 | 0 |
 | ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| School of Design and Co... | 0 | 1 | 0 |
 | ❌ | [/faculty/](faculty/report.md) | 0 | Faculty and Staff \| School of Design... | 0 | 58 | 58 |
-| ❌ | [/graduate/](graduate/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/programs/](programs/report.md) | 0 | Page not found \| School of Design an... | 1 | 0 | 0 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Page not found \| School of Design an... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -44,14 +41,6 @@
 
 ![/faculty/](faculty/01-page-loaded.png)
 
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
-
-### [/undergraduate/](undergraduate/report.md)
-
-![/undergraduate/](undergraduate/01-page-loaded.png)
-
 
 ## Failed Pages
 
@@ -65,24 +54,6 @@
 - **URL:** https://sdc.wsu.edu/about/
 - **Status:** 0
 
-### /programs/
-
-- **URL:** https://sdc.wsu.edu/programs/
-- **Status:** 0
-
-### /undergraduate/
-
-- **URL:** https://sdc.wsu.edu/undergraduate/
-- **Status:** 0
-
-### /graduate/
-
-- **URL:** https://sdc.wsu.edu/graduate/
-- **Status:** 0
-- **Error:** `Download is starting
-Call log:
-  - navigating to "https://sdc.wsu.edu/graduate/", waiting until "networkidle"`
-
 ### /faculty/
 
 - **URL:** https://sdc.wsu.edu/faculty/
@@ -92,25 +63,6 @@ Call log:
 
 - **URL:** https://sdc.wsu.edu/contact/
 - **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (5 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /programs/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /undergraduate/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

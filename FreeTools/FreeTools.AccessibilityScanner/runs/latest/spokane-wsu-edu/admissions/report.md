@@ -5,18 +5,18 @@
 | URL | https://spokane.wsu.edu/admissions/ |
 | Title | Admissions | WSU Spokane | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 242.1 KB |
-| Screenshots | 1 (615.8 KB) |
+| HTML Size | 242.2 KB |
+| Screenshots | 1 (1.8 MB) |
 | Images | 3 (1.2 MB) |
 | Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:14.1986641Z |
+| Captured | 2026-02-16T21:01:22.5459915Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (615.8 KB)
+- Screenshot #1: page-loaded (1.8 MB)
 - Downloaded 3 images to /images/
 
 ## Screenshots
@@ -49,7 +49,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (615.8 KB)
+- `01-page-loaded.png` — page-loaded (1.8 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

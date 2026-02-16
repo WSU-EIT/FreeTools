@@ -5,14 +5,14 @@
 | URL | https://em.wsu.edu/re411/ |
 | Title | Registration & Enrollment 411 |
 | Status | ❌ 0 |
-| HTML Size | 38.8 KB |
+| HTML Size | 639.3 KB |
 | Screenshots | 1 (195.3 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:30.4629127Z |
+| Captured | 2026-02-16T21:00:01.7151693Z |
 
 ## JavaScript Errors
 

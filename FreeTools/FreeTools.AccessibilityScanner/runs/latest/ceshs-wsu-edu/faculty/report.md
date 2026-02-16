@@ -6,14 +6,14 @@
 | Redirected To | https://ceshs.wsu.edu/department-of-kinesiology-and-educational-psychology/faculty/ |
 | Title | Kinesiology Faculty | College of Education, Sport, and Human Sciences | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 240.2 KB |
-| Screenshots | 1 (987.2 KB) |
+| HTML Size | 252.0 KB |
+| Screenshots | 1 (3.6 MB) |
 | Images | 14 (1.0 MB) |
 | Images Missing Alt | 14 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:12.2367708Z |
+| Captured | 2026-02-16T21:00:36.5060559Z |
 
 ## JavaScript Errors
 
@@ -21,7 +21,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (987.2 KB)
+- Screenshot #1: page-loaded (3.6 MB)
 - Downloaded 14 images to /images/
 
 ## Screenshots
@@ -100,7 +100,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (987.2 KB)
+- `01-page-loaded.png` — page-loaded (3.6 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

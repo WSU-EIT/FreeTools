@@ -6,14 +6,14 @@
 | Redirected To | https://tricities.wsu.edu/wsu-tri-cities-library |
 | Title | WSU Tri-Cities Library |
 | Status | ✅ 200 |
-| HTML Size | 127.9 KB |
+| HTML Size | 128.0 KB |
 | Screenshots | 1 (210.3 KB) |
 | Images | 5 (50.6 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:39.3037242Z |
+| Captured | 2026-02-16T21:01:36.7835570Z |
 
 ## Actions
 

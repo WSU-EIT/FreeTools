@@ -12,14 +12,14 @@
 | JS Errors | 12 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:52.1055796Z |
+| Captured | 2026-02-16T21:00:27.0623471Z |
 
 ## JavaScript Errors
 
-- `Refused to apply style from 'https://housing.wsu.edu/css/normalize.css' because its MIME type ('') is not a supported stylesheet MIME type, and strict MIME checking is enabled.`
 - `Failed to load resource: the server responded with a status of 404 ()`
 - `Refused to apply style from 'https://housing.wsu.edu/css/contracts/contracts.css' because its MIME type ('') is not a supported stylesheet MIME type, and strict MIME checking is enabled.`
 - `Failed to load resource: the server responded with a status of 404 ()`
+- `Refused to apply style from 'https://housing.wsu.edu/css/normalize.css' because its MIME type ('') is not a supported stylesheet MIME type, and strict MIME checking is enabled.`
 - `Failed to load resource: the server responded with a status of 404 ()`
 - `Failed to load resource: the server responded with a status of 404 ()`
 - `Failed to load resource: the server responded with a status of 404 ()`

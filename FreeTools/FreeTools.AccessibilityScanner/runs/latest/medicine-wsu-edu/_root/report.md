@@ -5,24 +5,18 @@
 | URL | https://medicine.wsu.edu/ |
 | Title | Elson S. Floyd College of Medicine | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 228.4 KB |
-| Screenshots | 1 (2.1 MB) |
+| HTML Size | 240.5 KB |
+| Screenshots | 1 (2.2 MB) |
 | Images | 13 (1.5 MB) |
 | Images Missing Alt | 1 |
-| JS Errors | 3 |
+| JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1180819Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:58:42.4636485Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (2.1 MB)
+- Screenshot #1: page-loaded (2.2 MB)
 - Downloaded 13 images to /images/
 
 ## Screenshots
@@ -85,7 +79,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (2.1 MB)
+- `01-page-loaded.png` — page-loaded (2.2 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

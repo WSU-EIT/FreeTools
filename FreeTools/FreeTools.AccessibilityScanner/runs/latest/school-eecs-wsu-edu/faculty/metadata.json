@@ -5,8 +5,8 @@
   "Title": "Directory | School of Electrical Engineering \u0026 Computer Science | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 355451,
-  "ScreenshotSizeBytes": 1774879,
+  "HtmlSizeBytes": 361922,
+  "ScreenshotSizeBytes": 2073168,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1774879
+      "FileSize": 2073168
     }
   ],
   "ImageCount": 70,
@@ -445,5 +445,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:23.8091722Z"
+  "CapturedAt": "2026-02-16T21:00:47.7556215Z"
 }

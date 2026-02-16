@@ -5,8 +5,8 @@
   "Title": "Department of Chemistry | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 221502,
-  "ScreenshotSizeBytes": 1438186,
+  "HtmlSizeBytes": 230739,
+  "ScreenshotSizeBytes": 1455898,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,13 +15,19 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1438186
+      "FileSize": 1455898
     }
   ],
-  "ImageCount": 6,
-  "ImagesTotalSizeBytes": 395606,
+  "ImageCount": 7,
+  "ImagesTotalSizeBytes": 1090904,
   "ImagesMissingAlt": 0,
   "Images": [
+    {
+      "FileName": "fulvio-ciccolo-EM9Mu_uLUj4-unsplash-web.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-chem/uploads/sites/9/2023/10/fulvio-ciccolo-EM9Mu_uLUj4-unsplash-web.jpg",
+      "AltText": "Clear glass vials.",
+      "FileSize": 695298
+    },
     {
       "FileName": "terry-vlisidis-RflgrtzU3Cw-unsplash-web-792x529.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-chem/uploads/sites/9/2023/10/terry-vlisidis-RflgrtzU3Cw-unsplash-web-792x529.jpg",
@@ -61,5 +67,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:27.4757775Z"
+  "CapturedAt": "2026-02-16T21:00:09.8993444Z"
 }

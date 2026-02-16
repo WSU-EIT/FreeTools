@@ -5,10 +5,10 @@
   "Title": "Academic Outreach and Innovation | Learning Innovations | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 227367,
+  "HtmlSizeBytes": 227482,
   "ScreenshotSizeBytes": 1141900,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
@@ -18,10 +18,16 @@
       "FileSize": 1141900
     }
   ],
-  "ImageCount": 1,
-  "ImagesTotalSizeBytes": 136483,
+  "ImageCount": 2,
+  "ImagesTotalSizeBytes": 504434,
   "ImagesMissingAlt": 0,
   "Images": [
+    {
+      "FileName": "Spark-G45-0K6A2191_990x376.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-global/uploads/sites/3067/2017/12/Spark-G45-0K6A2191_990x376.jpg",
+      "AltText": "Teaching in the Round in Spark G45",
+      "FileSize": 367951
+    },
     {
       "FileName": "faculty-theron-DSC_1717_500x235.jpg",
       "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3067/2017/12/faculty-theron-DSC_1717_500x235.jpg",
@@ -31,5 +37,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1124829Z"
+  "CapturedAt": "2026-02-16T20:58:42.4613531Z"
 }

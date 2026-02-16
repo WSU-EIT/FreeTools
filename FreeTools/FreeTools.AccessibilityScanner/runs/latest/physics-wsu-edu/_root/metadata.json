@@ -5,17 +5,17 @@
   "Title": "Department of Physics \u0026 Astronomy | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 220054,
-  "ScreenshotSizeBytes": 1340274,
+  "HtmlSizeBytes": 231587,
+  "ScreenshotSizeBytes": 1728927,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 4,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1340274
+      "FileSize": 1728927
     }
   ],
   "ImageCount": 6,
@@ -61,5 +61,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1368841Z"
+  "CapturedAt": "2026-02-16T20:58:42.4685449Z"
 }

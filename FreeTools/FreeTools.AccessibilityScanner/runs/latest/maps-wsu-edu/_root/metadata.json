@@ -2,20 +2,58 @@
   "PagePath": "/",
   "Url": "https://maps.wsu.edu/",
   "FinalUrl": null,
-  "Title": null,
+  "Title": "WSU Maps | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 0,
-  "ScreenshotSizeBytes": 0,
+  "HtmlSizeBytes": 43563,
+  "ScreenshotSizeBytes": 351996,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
-  "Screenshots": [],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
-  "ImagesMissingAlt": 0,
-  "Images": [],
-  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded",
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 351996
+    }
+  ],
+  "ImageCount": 5,
+  "ImagesTotalSizeBytes": 1301208,
+  "ImagesMissingAlt": 5,
+  "Images": [
+    {
+      "FileName": "img_0006_Bryan-Hall-Tower-sh_3739-sm.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/2671/2021/01/img_0006_Bryan-Hall-Tower-sh_3739-sm.jpg",
+      "AltText": "",
+      "FileSize": 288023
+    },
+    {
+      "FileName": "img_0005_Everett_1947-sm.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/2671/2021/01/img_0005_Everett_1947-sm.jpg",
+      "AltText": "",
+      "FileSize": 227385
+    },
+    {
+      "FileName": "img_0004_Spokane_1099.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/2671/2021/01/img_0004_Spokane_1099.jpg",
+      "AltText": "",
+      "FileSize": 250554
+    },
+    {
+      "FileName": "img_0003_TriCities_0627.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/2671/2021/01/img_0003_TriCities_0627.jpg",
+      "AltText": "",
+      "FileSize": 244598
+    },
+    {
+      "FileName": "img_0002_Vancouver_3541.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/2671/2021/01/img_0002_Vancouver_3541.jpg",
+      "AltText": "",
+      "FileSize": 290648
+    }
+  ],
+  "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1171752Z"
+  "CapturedAt": "2026-02-16T20:58:42.4604387Z"
 }

@@ -5,24 +5,31 @@
   "Title": "The Graduate School | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 378851,
-  "ScreenshotSizeBytes": 798523,
+  "HtmlSizeBytes": 390147,
+  "ScreenshotSizeBytes": 1180503,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 5,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 798523
+      "FileSize": 1180503
     }
   ],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
-  "ImagesMissingAlt": 0,
-  "Images": [],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 709923,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "headshot_MM-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-gradschool/uploads/sites/3121/2025/09/headshot_MM-scaled.jpg",
+      "AltText": "",
+      "FileSize": 709923
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0831067Z"
+  "CapturedAt": "2026-02-16T20:58:42.4603503Z"
 }

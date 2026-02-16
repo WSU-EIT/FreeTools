@@ -5,8 +5,8 @@
   "Title": "Department of Chemistry | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 231275,
-  "ScreenshotSizeBytes": 1429730,
+  "HtmlSizeBytes": 238082,
+  "ScreenshotSizeBytes": 1450603,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1429730
+      "FileSize": 1450603
     }
   ],
   "ImageCount": 7,
@@ -67,5 +67,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:18.5121356Z"
+  "CapturedAt": "2026-02-16T21:00:52.1739378Z"
 }

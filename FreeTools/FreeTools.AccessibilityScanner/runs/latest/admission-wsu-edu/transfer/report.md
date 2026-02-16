@@ -5,7 +5,7 @@
 | URL | https://admission.wsu.edu/transfer/ |
 | Redirected To | https://admission.wsu.edu/apply/transfer-students/ |
 | Title | Transfer Students | Admissions | Washington State University |
-| Status | ❌ 0 |
+| Status | ✅ 200 |
 | HTML Size | 90.1 KB |
 | Screenshots | 1 (788.4 KB) |
 | Images | 1 (1.2 MB) |
@@ -13,7 +13,7 @@
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:53.9386552Z |
+| Captured | 2026-02-16T21:01:15.8642213Z |
 
 ## Actions
 

@@ -7,17 +7,17 @@
 | Title |  |
 | Status | ❌ 0 |
 | HTML Size | 56.3 KB |
-| Screenshots | 1 (744.0 KB) |
+| Screenshots | 1 (1.1 MB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:39.1165523Z |
+| Captured | 2026-02-16T20:59:45.7258119Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (744.0 KB)
+- Screenshot #1: page-loaded (1.1 MB)
 - Downloaded 0 images to /images/
 
 ## Screenshots
@@ -33,7 +33,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (744.0 KB)
+- `01-page-loaded.png` — page-loaded (1.1 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -5,18 +5,18 @@
 | URL | https://tricities.wsu.edu/about/ |
 | Title | About WSU Tri-Cities - WSU Tri-Cities |
 | Status | ❌ 0 |
-| HTML Size | 123.4 KB |
-| Screenshots | 1 (724.3 KB) |
+| HTML Size | 125.1 KB |
+| Screenshots | 1 (724.8 KB) |
 | Images | 16 (1.1 MB) |
 | Images Missing Alt | 9 |
 | JS Errors | 0 |
 | JS Warnings | 5 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:30.1078043Z |
+| Captured | 2026-02-16T21:00:45.7525316Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (724.3 KB)
+- Screenshot #1: page-loaded (724.8 KB)
 - Downloaded 16 images to /images/
 
 ## Screenshots
@@ -96,7 +96,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (724.3 KB)
+- `01-page-loaded.png` — page-loaded (724.8 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

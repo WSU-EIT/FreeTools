@@ -5,21 +5,21 @@
   "Title": "Department of Apparel, Merchandising, Design and Textiles | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 229840,
-  "ScreenshotSizeBytes": 1185180,
+  "HtmlSizeBytes": 221942,
+  "ScreenshotSizeBytes": 1104395,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 4,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1185180
+      "FileSize": 1104395
     }
   ],
-  "ImageCount": 7,
-  "ImagesTotalSizeBytes": 1456074,
+  "ImageCount": 8,
+  "ImagesTotalSizeBytes": 1821032,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -39,6 +39,12 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/14/Chinook_9710-1900x1304-1.jpg",
       "AltText": "The Coughead on the Chinook building on the campus of Washington State University.",
       "FileSize": 193297
+    },
+    {
+      "FileName": "Sarah-Kim-cropped.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/14/Sarah-Kim-cropped.jpg",
+      "AltText": "Sarah Kim holding board with fabric samples.",
+      "FileSize": 364958
     },
     {
       "FileName": "Featured-image-1024x576.jpg",
@@ -67,5 +73,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0025927Z"
+  "CapturedAt": "2026-02-16T20:58:42.4386494Z"
 }

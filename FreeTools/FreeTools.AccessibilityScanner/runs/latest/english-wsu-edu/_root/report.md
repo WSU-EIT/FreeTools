@@ -5,21 +5,14 @@
 | URL | https://english.wsu.edu/ |
 | Title | WSU Department of English | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 65.1 KB |
+| HTML Size | 60.8 KB |
 | Screenshots | 1 (1.2 MB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 4 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0583675Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:58:42.4528413Z |
 
 ## Actions
 

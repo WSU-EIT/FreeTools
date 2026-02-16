@@ -5,10 +5,10 @@
   "Title": "Sign in to your account",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 89832,
+  "HtmlSizeBytes": 77731,
   "ScreenshotSizeBytes": 4701,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -19,23 +19,23 @@
     }
   ],
   "ImageCount": 2,
-  "ImagesTotalSizeBytes": 2056,
+  "ImagesTotalSizeBytes": 5243,
   "ImagesMissingAlt": 1,
   "Images": [
     {
       "FileName": "microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg",
-      "SourceUrl": "https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg",
+      "SourceUrl": "https://aadcdn.msftauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg",
       "AltText": "Microsoft",
-      "FileSize": 1435
+      "FileSize": 3651
     },
     {
       "FileName": "signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg",
-      "SourceUrl": "https://aadcdn.msauth.net/shared/1.0/content/images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg",
+      "SourceUrl": "https://aadcdn.msftauth.net/shared/1.0/content/images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg",
       "AltText": "",
-      "FileSize": 621
+      "FileSize": 1592
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1352587Z"
+  "CapturedAt": "2026-02-16T20:58:42.4651134Z"
 }

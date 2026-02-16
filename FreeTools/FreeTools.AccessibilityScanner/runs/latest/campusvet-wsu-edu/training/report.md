@@ -5,14 +5,14 @@
 | URL | https://campusvet.wsu.edu/training/ |
 | Title | Training | Campus Veterinarian | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 200.8 KB |
+| HTML Size | 211.4 KB |
 | Screenshots | 1 (306.7 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:18.6927813Z |
+| Captured | 2026-02-16T20:59:42.6275508Z |
 
 ## Actions
 

@@ -6,14 +6,14 @@
 | Redirected To | https://math.wsu.edu/about/research-strengths/ |
 | Title | Research Strengths | Department of Mathematics and Statistics | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 229.2 KB |
+| HTML Size | 235.6 KB |
 | Screenshots | 1 (265.5 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:29.8629649Z |
+| Captured | 2026-02-16T21:00:35.8022321Z |
 
 ## Actions
 

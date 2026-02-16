@@ -5,14 +5,14 @@
 | URL | https://events.wsu.edu/calendar/ |
 | Title | Calendar Redirect | Events | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 44.3 KB |
+| HTML Size | 44.5 KB |
 | Screenshots | 1 (43.0 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 3 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:00.3522143Z |
+| Captured | 2026-02-16T20:59:25.2804561Z |
 
 ## JavaScript Errors
 

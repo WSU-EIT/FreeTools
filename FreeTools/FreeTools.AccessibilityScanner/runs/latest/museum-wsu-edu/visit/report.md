@@ -5,14 +5,14 @@
 | URL | https://museum.wsu.edu/visit/ |
 | Title | Visit | Jordan Schnitzer Museum of Art WSU | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 230.6 KB |
-| Screenshots | 1 (1.6 MB) |
+| HTML Size | 237.4 KB |
+| Screenshots | 1 (2.0 MB) |
 | Images | 12 (1.3 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:21.2748721Z |
+| Captured | 2026-02-16T20:59:56.3232314Z |
 
 ## JavaScript Errors
 
@@ -20,7 +20,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.6 MB)
+- Screenshot #1: page-loaded (2.0 MB)
 - Downloaded 12 images to /images/
 
 ## Screenshots
@@ -76,7 +76,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.6 MB)
+- `01-page-loaded.png` — page-loaded (2.0 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

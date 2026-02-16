@@ -12,7 +12,7 @@
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1813483Z |
+| Captured | 2026-02-16T20:58:42.4757387Z |
 
 ## Error
 
@@ -21,6 +21,7 @@ Timeout 30000ms exceeded.
 Call log:
   - taking page screenshot
   - waiting for fonts to load...
+  - fonts loaded
 ```
 
 ## Actions

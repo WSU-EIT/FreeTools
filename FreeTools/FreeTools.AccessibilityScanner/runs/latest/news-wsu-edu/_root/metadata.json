@@ -5,17 +5,17 @@
   "Title": "WSU Insider | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 272137,
-  "ScreenshotSizeBytes": 1913473,
+  "HtmlSizeBytes": 272425,
+  "ScreenshotSizeBytes": 2160788,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1913473
+      "FileSize": 2160788
     }
   ],
   "ImageCount": 11,
@@ -91,5 +91,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1331713Z"
+  "CapturedAt": "2026-02-16T20:58:42.4682871Z"
 }

@@ -5,8 +5,8 @@
   "Title": "Research | Pharmacy and Pharmaceutical Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 304912,
-  "ScreenshotSizeBytes": 2101051,
+  "HtmlSizeBytes": 304923,
+  "ScreenshotSizeBytes": 1928350,
   "CredentialUsed": null,
   "ConsoleErrorCount": 4,
   "ConsoleWarningCount": 0,
@@ -15,12 +15,12 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2101051
+      "FileSize": 1928350
     }
   ],
-  "ImageCount": 24,
-  "ImagesTotalSizeBytes": 27655582,
-  "ImagesMissingAlt": 13,
+  "ImageCount": 23,
+  "ImagesTotalSizeBytes": 15614988,
+  "ImagesMissingAlt": 12,
   "Images": [
     {
       "FileName": "Dr.-Paine-Lab-Pharmacy-Oct-2022-4-scaled.jpg",
@@ -107,12 +107,6 @@
       "FileSize": 510398
     },
     {
-      "FileName": "Kolter-Grisby-Pharmacy-portrait_1_AI-BGextend2.png",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3060/2025/08/Kolter-Grisby-Pharmacy-portrait_1_AI-BGextend2.png",
-      "AltText": "",
-      "FileSize": 12040594
-    },
-    {
       "FileName": "Annie-Du_horizontal-scaled.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3060/2025/11/Annie-Du_horizontal-scaled.jpg",
       "AltText": "",
@@ -169,5 +163,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:40:01.9890608Z"
+  "CapturedAt": "2026-02-16T21:00:52.3563986Z"
 }

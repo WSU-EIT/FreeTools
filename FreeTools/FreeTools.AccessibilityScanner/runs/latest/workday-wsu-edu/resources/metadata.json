@@ -5,8 +5,8 @@
   "Title": "WSU | Sign In",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 141658,
-  "ScreenshotSizeBytes": 61875,
+  "HtmlSizeBytes": 80759,
+  "ScreenshotSizeBytes": 48325,
   "CredentialUsed": null,
   "ConsoleErrorCount": 7,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 61875
+      "FileSize": 48325
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:57.3821711Z"
+  "CapturedAt": "2026-02-16T21:00:16.7173979Z"
 }

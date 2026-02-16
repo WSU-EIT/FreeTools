@@ -8,9 +8,9 @@
 | Pages Failed | 6 |
 | Total JS Errors | 1 |
 | Total JS Warnings | 0 |
-| Total HTML | 345.4 KB |
-| Total Screenshots | 4.5 MB |
-| Total Images | 14 (1.7 MB) |
+| Total HTML | 379.1 KB |
+| Total Screenshots | 4.9 MB |
+| Total Images | 15 (2.2 MB) |
 | Images Missing Alt | 12 |
 | Folder | `asl-wsu-edu/` |
 
@@ -19,9 +19,9 @@
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | Applied Sciences Laboratory \| Washin... | 1 | 4 | 4 |
-| ❌ | [/about/](about/report.md) | 0 | About \| Applied Sciences Laboratory ... | 0 | 1 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact \| Applied Sciences Laborator... | 0 | 0 | 0 |
-| ❌ | [/facilities/](facilities/report.md) | 0 | Facilities \| Applied Sciences Labora... | 0 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | About \| Applied Sciences Laboratory ... | 0 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact \| Applied Sciences Laborator... | 0 | 1 | 0 |
+| ❌ | [/facilities/](facilities/report.md) | 0 | Facilities \| Applied Sciences Labora... | 0 | 1 | 0 |
 | ❌ | [/publications/](publications/report.md) | 0 | Publications \| Applied Sciences Labo... | 0 | 1 | 0 |
 | ❌ | [/research/](research/report.md) | 0 | Research Staff \| Applied Sciences La... | 0 | 8 | 8 |
 

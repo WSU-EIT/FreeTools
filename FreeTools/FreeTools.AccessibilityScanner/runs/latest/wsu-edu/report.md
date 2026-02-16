@@ -2,26 +2,26 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 12/16 pages OK |
+| Status | ⚠️ 13/16 pages OK |
 | Pages Scanned | 16 |
-| Pages Passed | 12 |
-| Pages Failed | 4 |
-| Total JS Errors | 16 |
+| Pages Passed | 13 |
+| Pages Failed | 3 |
+| Total JS Errors | 14 |
 | Total JS Warnings | 8 |
-| Total HTML | 2.2 MB |
-| Total Screenshots | 36.9 MB |
-| Total Images | 147 (77.0 MB) |
-| Images Missing Alt | 97 |
+| Total HTML | 2.3 MB |
+| Total Screenshots | 40.3 MB |
+| Total Images | 168 (81.5 MB) |
+| Images Missing Alt | 96 |
 | Folder | `wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Washington State University \| Washin... | 4 | 9 | 8 |
-| ❌ | [/about/](about/report.md) | 0 | About WSU \| Washington State Univers... | 2 | 11 | 10 |
+| ❌ | [/](_root/report.md) | 0 | Washington State University \| Washin... | 3 | 26 | 7 |
+| ❌ | [/about/](about/report.md) | 0 | About WSU \| Washington State Univers... | 1 | 15 | 10 |
 | ❌ | [/about/accolades/](about_accolades/report.md) | 0 | Accolades \| Washington State Univers... | 1 | 11 | 11 |
-| ❌ | [/about/facts/](about_facts/report.md) | 0 | About WSU \| Washington State Univers... | 1 | 16 | 10 |
+| ✅ | [/about/facts/](about_facts/report.md) | 200 | About WSU \| Washington State Univers... | 1 | 16 | 10 |
 | ✅ | [/about/land-acknowledgement/](about_land-acknowledgement/report.md) | 200 | Land Acknowledgement \| Washington St... | 1 | 0 | 0 |
 | ✅ | [/about/leadership/](about_leadership/report.md) | 200 | Leadership \| Washington State Univer... | 1 | 15 | 13 |
 | ✅ | [/about/statewide-impact/](about_statewide-impact/report.md) | 200 | Statewide Impact \| Washington State ... | 1 | 2 | 2 |
@@ -119,25 +119,18 @@
 - **URL:** https://wsu.edu/about/accolades/
 - **Status:** 0
 
-### /about/facts/
-
-- **URL:** https://wsu.edu/about/facts/
-- **Status:** 0
-
 
 ## Pages with JavaScript Errors
 
-### / (4 errors)
+### / (3 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /about/ (1 errors)
+
 - `Failed to load resource: net::ERR_TOO_MANY_REDIRECTS`
-
-### /about/ (2 errors)
-
-- `Failed to load resource: net::ERR_TOO_MANY_REDIRECTS`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /about/accolades/ (1 errors)
 

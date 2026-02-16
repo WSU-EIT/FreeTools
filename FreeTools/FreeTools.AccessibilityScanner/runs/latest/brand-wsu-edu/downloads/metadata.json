@@ -5,8 +5,8 @@
   "Title": "Downloads \u2013 Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 66533,
-  "ScreenshotSizeBytes": 627350,
+  "HtmlSizeBytes": 72279,
+  "ScreenshotSizeBytes": 354241,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 627350
+      "FileSize": 354241
     }
   ],
   "ImageCount": 9,
@@ -79,5 +79,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:33.8035249Z"
+  "CapturedAt": "2026-02-16T21:00:32.7131161Z"
 }

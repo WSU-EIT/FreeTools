@@ -6,14 +6,14 @@
 | Redirected To | https://rotc.wsu.edu/contact-us/ |
 | Title | Contact Us | WSU Army ROTC | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 133.0 KB |
+| HTML Size | 132.4 KB |
 | Screenshots | 1 (127.5 KB) |
 | Images | 3 (28.2 KB) |
 | Images Missing Alt | 3 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:32.8438919Z |
+| Captured | 2026-02-16T20:59:31.7509465Z |
 
 ## Actions
 

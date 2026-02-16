@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
+| Status | ⚠️ 1/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
+| Pages Passed | 1 |
+| Pages Failed | 5 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 281.6 KB |
-| Total Screenshots | 4.8 MB |
+| Total HTML | 225.2 KB |
+| Total Screenshots | 3.8 MB |
 | Total Images | 3 (774.8 KB) |
 | Images Missing Alt | 3 |
 | Folder | `accesscenter-wsu-edu/` |
@@ -19,10 +19,10 @@
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ✅ | [/accommodations/](accommodations/report.md) | 200 |  | 0 | 1 | 1 |
+| ❌ | [/accommodations/](accommodations/report.md) | 0 |  | 0 | 1 | 1 |
 | ✅ | [/contact/](contact/report.md) | 200 |  | 0 | 1 | 1 |
 | ❌ | [/faculty/](faculty/report.md) | 0 |  | 0 | 1 | 1 |
-| ❌ | [/services/](services/report.md) | 0 |  | 0 | 0 | 0 |
+| ❌ | [/services/](services/report.md) | 0 | (none) | 0 | 0 | 0 |
 | ❌ | [/students/](students/report.md) | 0 |  | 0 | 0 | 0 |
 
 ## Page Screenshots
@@ -39,10 +39,6 @@
 
 ![/faculty/](faculty/01-page-loaded.png)
 
-### [/services/](services/report.md)
-
-![/services/](services/01-page-loaded.png)
-
 ### [/students/](students/report.md)
 
 ![/students/](students/01-page-loaded.png)
@@ -57,12 +53,16 @@
 - **Error:** `Timeout 30000ms exceeded.
 Call log:
   - taking page screenshot
-  - waiting for fonts to load...`
+  - waiting for fonts to load...
+  - fonts loaded`
 
 ### /services/
 
 - **URL:** https://accesscenter.wsu.edu/services/
 - **Status:** 0
+- **Error:** `net::ERR_CONNECTION_RESET at https://accesscenter.wsu.edu/services/
+Call log:
+  - navigating to "https://accesscenter.wsu.edu/services/", waiting until "networkidle"`
 
 ### /students/
 
@@ -72,6 +72,11 @@ Call log:
 ### /faculty/
 
 - **URL:** https://accesscenter.wsu.edu/faculty/
+- **Status:** 0
+
+### /accommodations/
+
+- **URL:** https://accesscenter.wsu.edu/accommodations/
 - **Status:** 0
 
 

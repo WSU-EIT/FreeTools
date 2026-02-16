@@ -5,8 +5,8 @@
   "Title": "Why Honors | The Honors College | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 73851,
-  "ScreenshotSizeBytes": 565852,
+  "HtmlSizeBytes": 74123,
+  "ScreenshotSizeBytes": 598341,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 565852
+      "FileSize": 598341
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:59.3303549Z"
+  "CapturedAt": "2026-02-16T20:59:40.3228818Z"
 }

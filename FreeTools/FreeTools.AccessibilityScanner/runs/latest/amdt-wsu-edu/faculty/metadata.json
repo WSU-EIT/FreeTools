@@ -5,7 +5,7 @@
   "Title": "Faculty | Department of Apparel, Merchandising, Design and Textiles | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 219166,
+  "HtmlSizeBytes": 223316,
   "ScreenshotSizeBytes": 831619,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -73,5 +73,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:09.8816945Z"
+  "CapturedAt": "2026-02-16T21:00:02.520289Z"
 }

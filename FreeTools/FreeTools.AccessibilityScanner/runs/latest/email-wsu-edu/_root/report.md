@@ -7,31 +7,31 @@
 | Title | (none) |
 | Status | ❌ 0 |
 | HTML Size | 0 bytes |
-| Screenshots | 1 (26.3 KB) |
+| Screenshots | 0 (0 bytes) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0829184Z |
+| Captured | 2026-02-16T20:58:42.4530025Z |
 
 ## Error
 
 ```
-Unable to retrieve content because the page is navigating and changing the content.
+Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
 ```
 
 ## Actions
 
-- Screenshot #1: page-loaded (26.3 KB)
 - Scan aborted due to error
 
 ## Screenshots
 
-### 1. page-loaded
-
-![page-loaded](01-page-loaded.png)
-
+*No screenshots captured.*
 
 ## Page Images (0)
 
@@ -39,7 +39,6 @@ Unable to retrieve content because the page is navigating and changing the conte
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (26.3 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
-| Pages Scanned | 5 |
+| Status | ⚠️ 0/1 pages OK |
+| Pages Scanned | 1 |
 | Pages Passed | 0 |
-| Pages Failed | 5 |
-| Total JS Errors | 4 |
+| Pages Failed | 1 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 256.7 KB |
-| Total Screenshots | 1004.9 KB |
+| Total HTML | 73.7 KB |
+| Total Screenshots | 416.4 KB |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `alert-wsu-edu/` |
@@ -19,32 +19,12 @@
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | Alert \| Washington State University | 0 | 0 | 0 |
-| ❌ | [/emergency-info/](emergency-info/report.md) | 0 | Page not found \| Alert \| Washington... | 1 | 0 | 0 |
-| ❌ | [/procedures/](procedures/report.md) | 0 | Page not found \| Alert \| Washington... | 1 | 0 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| Alert \| Washington... | 1 | 0 | 0 |
-| ❌ | [/signup/](signup/report.md) | 0 | Page not found \| Alert \| Washington... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
 ### [/](_root/report.md)
 
 ![/](_root/01-page-loaded.png)
-
-### [/emergency-info/](emergency-info/report.md)
-
-![/emergency-info/](emergency-info/01-page-loaded.png)
-
-### [/procedures/](procedures/report.md)
-
-![/procedures/](procedures/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
-### [/signup/](signup/report.md)
-
-![/signup/](signup/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -53,45 +33,6 @@
 
 - **URL:** https://alert.wsu.edu/
 - **Status:** 0
-
-### /emergency-info/
-
-- **URL:** https://alert.wsu.edu/emergency-info/
-- **Status:** 0
-
-### /signup/
-
-- **URL:** https://alert.wsu.edu/signup/
-- **Status:** 0
-
-### /procedures/
-
-- **URL:** https://alert.wsu.edu/procedures/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://alert.wsu.edu/resources/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /emergency-info/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /signup/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /procedures/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /resources/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

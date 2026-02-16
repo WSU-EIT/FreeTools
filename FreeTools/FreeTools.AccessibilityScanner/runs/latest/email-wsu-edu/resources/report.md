@@ -4,20 +4,20 @@
 |-------|-------|
 | URL | https://email.wsu.edu/resources/ |
 | Redirected To | https://outlook.office365.com/mail/?realm=wsu.edu |
-| Title | Outlook |
+| Title | WSU Authentication | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 14.3 KB |
-| Screenshots | 1 (24.4 KB) |
-| Images | 1 (3.1 KB) |
+| HTML Size | 55.6 KB |
+| Screenshots | 1 (32.3 KB) |
+| Images | 1 (7.7 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
-| JS Warnings | 1 |
+| JS Warnings | 5 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:32.8824242Z |
+| Captured | 2026-02-16T21:00:39.7756478Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (24.4 KB)
+- Screenshot #1: page-loaded (32.3 KB)
 - Downloaded 1 images to /images/
 
 ## Screenshots
@@ -31,20 +31,20 @@
 
 | # | Image | Alt Text | Size |
 |---|-------|----------|------|
-| 1 | [microsoft.svg](images/microsoft.svg) | Microsoft | 3.1 KB |
+| 1 | [fs015xh0tygNgGVxX2p8.img](images/fs015xh0tygNgGVxX2p8.img) | WSU logo | 7.7 KB |
 
 ### Gallery
 
-![Microsoft](images/microsoft.svg)
+![WSU logo](images/fs015xh0tygNgGVxX2p8.img)
 
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (24.4 KB)
+- `01-page-loaded.png` — page-loaded (32.3 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
-- `images/` — 1 page images (3.1 KB)
+- `images/` — 1 page images (7.7 KB)

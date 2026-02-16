@@ -6,18 +6,18 @@
 | Redirected To | https://online.wsu.edu/apply-now/ |
 | Title | Apply to WSU Global Campus | WSU Global Campus | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 62.8 KB |
-| Screenshots | 1 (1.0 MB) |
+| HTML Size | 71.8 KB |
+| Screenshots | 1 (853.2 KB) |
 | Images | 6 (547.5 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:16.0647298Z |
+| Captured | 2026-02-16T20:59:33.2062218Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.0 MB)
+- Screenshot #1: page-loaded (853.2 KB)
 - Downloaded 6 images to /images/
 
 ## Screenshots
@@ -55,7 +55,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.0 MB)
+- `01-page-loaded.png` — page-loaded (853.2 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

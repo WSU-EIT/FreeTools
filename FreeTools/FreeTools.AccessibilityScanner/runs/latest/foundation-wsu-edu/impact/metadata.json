@@ -5,7 +5,7 @@
   "Title": "Impact Report 2025 | WSU Foundation | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 269748,
+  "HtmlSizeBytes": 270593,
   "ScreenshotSizeBytes": 1479797,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,10 +18,16 @@
       "FileSize": 1479797
     }
   ],
-  "ImageCount": 20,
-  "ImagesTotalSizeBytes": 4308471,
-  "ImagesMissingAlt": 14,
+  "ImageCount": 21,
+  "ImagesTotalSizeBytes": 4929032,
+  "ImagesMissingAlt": 15,
   "Images": [
+    {
+      "FileName": "216182413_10157596813911525_370263267015786382_n.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-foundation/uploads/sites/632/2025/10/216182413_10157596813911525_370263267015786382_n.jpg",
+      "AltText": "",
+      "FileSize": 620561
+    },
     {
       "FileName": "Mike-Connell-Foundation_headshot-1-edited.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-foundation/uploads/sites/632/2025/09/Mike-Connell-Foundation_headshot-1-edited.jpg",
@@ -145,5 +151,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:18.5120283Z"
+  "CapturedAt": "2026-02-16T21:00:42.0755273Z"
 }

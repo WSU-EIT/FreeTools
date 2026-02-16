@@ -4,19 +4,19 @@
 |-------|-------|
 | URL | https://tricities.wsu.edu/academics/ |
 | Title | Academics | WSU Tri-Cities |
-| Status | ❌ 0 |
-| HTML Size | 152.0 KB |
-| Screenshots | 1 (1.3 MB) |
+| Status | ✅ 200 |
+| HTML Size | 151.9 KB |
+| Screenshots | 1 (1.8 MB) |
 | Images | 6 (217.1 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:07.0078971Z |
+| Captured | 2026-02-16T21:01:08.3515323Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.3 MB)
+- Screenshot #1: page-loaded (1.8 MB)
 - Downloaded 6 images to /images/
 
 ## Screenshots
@@ -54,7 +54,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.3 MB)
+- `01-page-loaded.png` — page-loaded (1.8 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

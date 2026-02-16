@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
-| Pages Scanned | 5 |
+| Status | ⚠️ 0/2 pages OK |
+| Pages Scanned | 2 |
 | Pages Passed | 0 |
-| Pages Failed | 5 |
-| Total JS Errors | 3 |
+| Pages Failed | 2 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 245.3 KB |
-| Total Screenshots | 698.0 KB |
+| Total HTML | 109.5 KB |
+| Total Screenshots | 369.7 KB |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `access-wsu-edu/` |
@@ -19,9 +19,6 @@
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | Access at WSU \| Washington State Uni... | 0 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| Access at WSU \| Wa... | 1 | 0 | 0 |
-| ❌ | [/digital-accessibility/](digital-accessibility/report.md) | 0 | Page not found \| Access at WSU \| Wa... | 1 | 0 | 0 |
-| ❌ | [/policy/](policy/report.md) | 0 | Page not found \| Access at WSU \| Wa... | 1 | 0 | 0 |
 | ❌ | [/resources/](resources/report.md) | 0 | Resources for Employees \| Access at ... | 0 | 0 | 0 |
 
 ## Page Screenshots
@@ -29,18 +26,6 @@
 ### [/](_root/report.md)
 
 ![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/digital-accessibility/](digital-accessibility/report.md)
-
-![/digital-accessibility/](digital-accessibility/01-page-loaded.png)
-
-### [/policy/](policy/report.md)
-
-![/policy/](policy/01-page-loaded.png)
 
 ### [/resources/](resources/report.md)
 
@@ -54,40 +39,10 @@
 - **URL:** https://access.wsu.edu/
 - **Status:** 0
 
-### /policy/
-
-- **URL:** https://access.wsu.edu/policy/
-- **Status:** 0
-
-### /digital-accessibility/
-
-- **URL:** https://access.wsu.edu/digital-accessibility/
-- **Status:** 0
-
 ### /resources/
 
 - **URL:** https://access.wsu.edu/resources/
 - **Status:** 0
-
-### /contact/
-
-- **URL:** https://access.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /policy/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /digital-accessibility/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /contact/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

@@ -6,14 +6,14 @@
 | Redirected To | https://nursing.wsu.edu/2022/01/12/students-can-get-covid-vax-or-boosters-at-upcoming-clinics/ |
 | Title | Students can get COVID vax or boosters at upcoming clinics | College of Nursing | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 250.3 KB |
-| Screenshots | 1 (865.0 KB) |
+| HTML Size | 275.6 KB |
+| Screenshots | 1 (880.1 KB) |
 | Images | 2 (122.7 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 3 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:57.3774120Z |
+| Captured | 2026-02-16T21:00:12.4486688Z |
 
 ## JavaScript Errors
 
@@ -23,7 +23,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (865.0 KB)
+- Screenshot #1: page-loaded (880.1 KB)
 - Downloaded 2 images to /images/
 
 ## Screenshots
@@ -49,7 +49,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (865.0 KB)
+- `01-page-loaded.png` — page-loaded (880.1 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

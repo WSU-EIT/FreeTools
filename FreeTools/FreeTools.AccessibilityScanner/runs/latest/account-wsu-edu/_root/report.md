@@ -4,34 +4,28 @@
 |-------|-------|
 | URL | https://account.wsu.edu/ |
 | Redirected To | https://login.wsu.edu/account-settings/home |
-| Title | (none) |
+| Title | My Settings | WSU |
 | Status | ❌ 0 |
-| HTML Size | 0 bytes |
-| Screenshots | 0 (0 bytes) |
+| HTML Size | 3.9 KB |
+| Screenshots | 1 (8.1 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:04.9082980Z |
-
-## Error
-
-```
-Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded
-```
+| Captured | 2026-02-16T20:58:42.4233140Z |
 
 ## Actions
 
-- Scan aborted due to error
+- Screenshot #1: page-loaded (8.1 KB)
+- No images found on page
 
 ## Screenshots
 
-*No screenshots captured.*
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Page Images (0)
 
@@ -39,6 +33,7 @@ Call log:
 
 ## Files
 
+- `01-page-loaded.png` — page-loaded (8.1 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

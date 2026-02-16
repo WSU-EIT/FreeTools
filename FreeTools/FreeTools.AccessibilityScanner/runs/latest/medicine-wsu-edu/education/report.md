@@ -6,14 +6,14 @@
 | Redirected To | https://medicine.wsu.edu/about/departments-units/ciphers/education-scholars-program/ |
 | Title | Education Scholars Program | Elson S. Floyd College of Medicine | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 225.9 KB |
+| HTML Size | 231.6 KB |
 | Screenshots | 1 (828.0 KB) |
 | Images | 3 (244.6 KB) |
 | Images Missing Alt | 2 |
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:18.9358558Z |
+| Captured | 2026-02-16T21:00:32.5623020Z |
 
 ## Actions
 

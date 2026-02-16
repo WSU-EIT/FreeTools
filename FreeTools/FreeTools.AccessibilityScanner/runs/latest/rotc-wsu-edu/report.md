@@ -2,28 +2,24 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/2 pages OK |
+| Pages Scanned | 2 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 10 |
-| Total JS Warnings | 3 |
-| Total HTML | 412.7 KB |
-| Total Screenshots | 613.9 KB |
-| Total Images | 19 (519.5 KB) |
-| Images Missing Alt | 19 |
+| Pages Failed | 2 |
+| Total JS Errors | 0 |
+| Total JS Warnings | 13 |
+| Total HTML | 196.1 KB |
+| Total Screenshots | 335.4 KB |
+| Total Images | 7 (406.8 KB) |
+| Images Missing Alt | 7 |
 | Folder | `rotc-wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Army ROTC \| Washington State Uni... | 4 | 4 | 4 |
-| ❌ | [/about/](about/report.md) | 0 | Page not found \| WSU Army ROTC \| Wa... | 1 | 3 | 3 |
-| ❌ | [/admissions/](admissions/report.md) | 0 | Page not found \| WSU Army ROTC \| Wa... | 1 | 3 | 3 |
-| ❌ | [/cadets/](cadets/report.md) | 0 | Page not found \| WSU Army ROTC \| Wa... | 3 | 3 | 3 |
+| ❌ | [/](_root/report.md) | 0 | WSU Army ROTC \| Washington State Uni... | 0 | 4 | 4 |
 | ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| WSU Army ROTC \| Washin... | 0 | 3 | 3 |
-| ❌ | [/scholarships/](scholarships/report.md) | 0 | Page not found \| WSU Army ROTC \| Wa... | 1 | 3 | 3 |
 
 ## Page Screenshots
 
@@ -31,25 +27,9 @@
 
 ![/](_root/01-page-loaded.png)
 
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/admissions/](admissions/report.md)
-
-![/admissions/](admissions/01-page-loaded.png)
-
-### [/cadets/](cadets/report.md)
-
-![/cadets/](cadets/01-page-loaded.png)
-
 ### [/contact/](contact/report.md)
 
 ![/contact/](contact/01-page-loaded.png)
-
-### [/scholarships/](scholarships/report.md)
-
-![/scholarships/](scholarships/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -59,58 +39,10 @@
 - **URL:** https://rotc.wsu.edu/
 - **Status:** 0
 
-### /about/
-
-- **URL:** https://rotc.wsu.edu/about/
-- **Status:** 0
-
-### /admissions/
-
-- **URL:** https://rotc.wsu.edu/admissions/
-- **Status:** 0
-
-### /cadets/
-
-- **URL:** https://rotc.wsu.edu/cadets/
-- **Status:** 0
-
-### /scholarships/
-
-- **URL:** https://rotc.wsu.edu/scholarships/
-- **Status:** 0
-
 ### /contact/
 
 - **URL:** https://rotc.wsu.edu/contact/
 - **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (4 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /cadets/ (3 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /about/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /admissions/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /scholarships/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

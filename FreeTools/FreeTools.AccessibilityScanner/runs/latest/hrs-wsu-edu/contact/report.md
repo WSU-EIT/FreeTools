@@ -4,15 +4,15 @@
 |-------|-------|
 | URL | https://hrs.wsu.edu/contact/ |
 | Title | Contact HRS – Human Resource Services, Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 132.1 KB |
+| Status | ❌ 0 |
+| HTML Size | 132.2 KB |
 | Screenshots | 1 (1.4 MB) |
 | Images | 2 (1.2 MB) |
 | Images Missing Alt | 2 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:07.0079421Z |
+| Captured | 2026-02-16T21:01:03.1920490Z |
 
 ## Actions
 

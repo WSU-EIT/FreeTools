@@ -5,18 +5,18 @@
 | URL | https://murrow.wsu.edu/news/ |
 | Title | News Articles | Edward R. Murrow College of Communication | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 275.2 KB |
-| Screenshots | 1 (983.7 KB) |
+| HTML Size | 275.3 KB |
+| Screenshots | 1 (1.0 MB) |
 | Images | 7 (406.6 KB) |
 | Images Missing Alt | 2 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:51.5544070Z |
+| Captured | 2026-02-16T21:01:37.7452343Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (983.7 KB)
+- Screenshot #1: page-loaded (1.0 MB)
 - Downloaded 7 images to /images/
 
 ## Screenshots
@@ -62,7 +62,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (983.7 KB)
+- `01-page-loaded.png` — page-loaded (1.0 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

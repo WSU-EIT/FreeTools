@@ -5,7 +5,7 @@
   "Title": "Academic Advising - Carson College of Business | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 182404,
+  "HtmlSizeBytes": 183312,
   "ScreenshotSizeBytes": 1681145,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
@@ -67,5 +67,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:34.7890797Z"
+  "CapturedAt": "2026-02-16T20:59:54.0714387Z"
 }

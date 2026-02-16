@@ -5,14 +5,14 @@
 | URL | https://afw.wsu.edu/ |
 | Title | Association for Faculty Women | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 50.9 KB |
+| HTML Size | 53.4 KB |
 | Screenshots | 1 (203.9 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0025667Z |
+| Captured | 2026-02-16T20:58:42.4280828Z |
 
 ## Actions
 

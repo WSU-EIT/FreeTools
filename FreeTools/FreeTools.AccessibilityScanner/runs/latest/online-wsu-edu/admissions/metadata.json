@@ -5,8 +5,8 @@
   "Title": "Apply to WSU Global Campus | WSU Global Campus | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 64316,
-  "ScreenshotSizeBytes": 1096734,
+  "HtmlSizeBytes": 73472,
+  "ScreenshotSizeBytes": 873724,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1096734
+      "FileSize": 873724
     }
   ],
   "ImageCount": 6,
@@ -61,5 +61,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:16.0647298Z"
+  "CapturedAt": "2026-02-16T20:59:33.2062218Z"
 }

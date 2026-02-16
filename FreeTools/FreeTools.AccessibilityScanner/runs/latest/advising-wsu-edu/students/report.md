@@ -5,14 +5,14 @@
 | URL | https://advising.wsu.edu/students/ |
 | Title | Students | Advising at WSU | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 104.0 KB |
+| HTML Size | 110.1 KB |
 | Screenshots | 1 (137.4 KB) |
 | Images | 6 (60.1 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:42.7062683Z |
+| Captured | 2026-02-16T20:59:20.7015933Z |
 
 ## Actions
 

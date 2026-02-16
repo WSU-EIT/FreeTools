@@ -6,14 +6,14 @@
 | Redirected To | https://facsen.wsu.edu/about-the-course-challenge-process/ |
 | Title | About the Course Review Process | Faculty Senate | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 217.8 KB |
+| HTML Size | 225.5 KB |
 | Screenshots | 1 (168.5 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:44.0156505Z |
+| Captured | 2026-02-16T21:00:20.7787305Z |
 
 ## JavaScript Errors
 

@@ -5,17 +5,19 @@
 | URL | https://atg.wsu.edu/ |
 | Title | Office of the Attorney General | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 48.4 KB |
+| HTML Size | 37.1 KB |
 | Screenshots | 1 (52.4 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 1 |
+| JS Errors | 3 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0067798Z |
+| Captured | 2026-02-16T20:58:42.4448917Z |
 
 ## JavaScript Errors
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions

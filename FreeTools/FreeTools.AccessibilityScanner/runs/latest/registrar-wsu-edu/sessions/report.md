@@ -5,14 +5,14 @@
 | URL | https://registrar.wsu.edu/sessions/ |
 | Title | Sessions | Office of the Registrar |
 | Status | ❌ 0 |
-| HTML Size | 653.8 KB |
+| HTML Size | 654.0 KB |
 | Screenshots | 1 (261.0 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:35.4201704Z |
+| Captured | 2026-02-16T21:00:10.0051794Z |
 
 ## JavaScript Errors
 

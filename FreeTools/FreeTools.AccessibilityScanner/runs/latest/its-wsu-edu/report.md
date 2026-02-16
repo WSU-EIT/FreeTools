@@ -6,11 +6,11 @@
 | Pages Scanned | 21 |
 | Pages Passed | 15 |
 | Pages Failed | 6 |
-| Total JS Errors | 2 |
-| Total JS Warnings | 1 |
-| Total HTML | 6.0 MB |
-| Total Screenshots | 12.8 MB |
-| Total Images | 34 (8.0 MB) |
+| Total JS Errors | 1 |
+| Total JS Warnings | 6 |
+| Total HTML | 6.1 MB |
+| Total Screenshots | 12.3 MB |
+| Total Images | 38 (9.8 MB) |
 | Images Missing Alt | 2 |
 | Folder | `its-wsu-edu/` |
 
@@ -18,11 +18,11 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Information Technology Services \| Wa... | 2 | 7 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Information Technology Services \| Wa... | 1 | 7 | 0 |
 | ❌ | [/about-its/](about-its/report.md) | 0 | About ITS \| Information Technology S... | 0 | 0 | 0 |
 | ❌ | [/about-its/accreditation-submission-introduction-2025/](about-its_accreditation-submission-introduction-2025/report.md) | 0 | Accreditation Submission Introduction... | 0 | 0 | 0 |
 | ❌ | [/about-its/its-informational-series/](about-its_its-informational-series/report.md) | 0 | ITS Informational Series \| Informati... | 0 | 0 | 0 |
-| ❌ | [/about-its/its-leadership-team/](about-its_its-leadership-team/report.md) | 0 | ITS Leadership Team \| Information Te... | 0 | 11 | 1 |
+| ❌ | [/about-its/its-leadership-team/](about-its_its-leadership-team/report.md) | 0 | ITS Leadership Team \| Information Te... | 0 | 15 | 1 |
 | ❌ | [/crimson-service-desk/](crimson-service-desk/report.md) | 0 | Crimson Service Desk \| Information T... | 0 | 4 | 0 |
 | ✅ | [/enterprise-systems/](enterprise-systems/report.md) | 200 | Enterprise Systems \| Information Tec... | 0 | 1 | 0 |
 | ✅ | [/enterprise-systems/enterprise-systems-project-overview/](enterprise-systems_enterprise-systems-project-overview/report.md) | 200 | Project Overview \| Information Techn... | 0 | 1 | 0 |
@@ -162,9 +162,8 @@
 
 ## Pages with JavaScript Errors
 
-### / (2 errors)
+### / (1 errors)
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 

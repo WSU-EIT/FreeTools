@@ -6,14 +6,14 @@
 | Redirected To | https://web.wsu.edu/web-training/resources/ |
 | Title | Resources | Web Communication | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 75.8 KB |
-| Screenshots | 1 (288.9 KB) |
+| HTML Size | 220.6 KB |
+| Screenshots | 1 (287.8 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:06.4211220Z |
+| Captured | 2026-02-16T20:59:41.2733900Z |
 
 ## JavaScript Errors
 
@@ -21,7 +21,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (288.9 KB)
+- Screenshot #1: page-loaded (287.8 KB)
 - No images found on page
 
 ## Screenshots
@@ -37,7 +37,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (288.9 KB)
+- `01-page-loaded.png` — page-loaded (287.8 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

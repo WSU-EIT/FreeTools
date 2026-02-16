@@ -5,17 +5,17 @@
   "Title": "Administrative Professional Advisory Council | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 68805,
-  "ScreenshotSizeBytes": 480345,
+  "HtmlSizeBytes": 78207,
+  "ScreenshotSizeBytes": 593231,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 480345
+      "FileSize": 593231
     }
   ],
   "ImageCount": 6,
@@ -61,5 +61,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:04.9818214Z"
+  "CapturedAt": "2026-02-16T20:58:42.4430489Z"
 }

@@ -6,18 +6,18 @@
 | Redirected To | https://wsuadmin.maps.arcgis.com/home/index.html |
 | Title | WSU Administration GIS Portal |
 | Status | ❌ 0 |
-| HTML Size | 408.3 KB |
-| Screenshots | 1 (67.5 KB) |
+| HTML Size | 426.1 KB |
+| Screenshots | 1 (946.6 KB) |
 | Images | 1 (129.2 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:40.4423260Z |
+| Captured | 2026-02-16T21:00:55.7788567Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (67.5 KB)
+- Screenshot #1: page-loaded (946.6 KB)
 - Downloaded 1 images to /images/
 
 ## Screenshots
@@ -40,7 +40,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (67.5 KB)
+- `01-page-loaded.png` — page-loaded (946.6 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -5,7 +5,7 @@
   "Title": "Colors \u2013 Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 60610,
+  "HtmlSizeBytes": 66002,
   "ScreenshotSizeBytes": 729310,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -61,5 +61,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:38.2396858Z"
+  "CapturedAt": "2026-02-16T20:59:54.5646308Z"
 }

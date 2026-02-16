@@ -5,22 +5,22 @@
   "Title": "WSU Foundation | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 259495,
-  "ScreenshotSizeBytes": 771561,
+  "HtmlSizeBytes": 257168,
+  "ScreenshotSizeBytes": 1194879,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 2,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 771561
+      "FileSize": 1194879
     }
   ],
-  "ImageCount": 12,
-  "ImagesTotalSizeBytes": 1562523,
-  "ImagesMissingAlt": 5,
+  "ImageCount": 11,
+  "ImagesTotalSizeBytes": 948984,
+  "ImagesMissingAlt": 4,
   "Images": [
     {
       "FileName": "Melissa-Parkhurst-1024x676-1-792x523.jpg",
@@ -59,12 +59,6 @@
       "FileSize": 289427
     },
     {
-      "FileName": "Heald-1-1.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-foundation/uploads/sites/632/2025/11/Heald-1-1.jpg",
-      "AltText": "",
-      "FileSize": 613539
-    },
-    {
       "FileName": "Crimson-Opp.-Scholarship-1701x1276-1-792x594.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-foundation/uploads/sites/632/2024/04/Crimson-Opp.-Scholarship-1701x1276-1-792x594.jpg",
       "AltText": "WSU students working together",
@@ -97,5 +91,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0818884Z"
+  "CapturedAt": "2026-02-16T20:58:42.4542642Z"
 }

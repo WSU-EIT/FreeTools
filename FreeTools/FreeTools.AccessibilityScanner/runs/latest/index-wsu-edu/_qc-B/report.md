@@ -5,18 +5,14 @@
 | URL | https://index.wsu.edu/?c=B |
 | Title | WSU A-Z Index | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 198.5 KB |
+| HTML Size | 199.4 KB |
 | Screenshots | 1 (122.9 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 1 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:06.1392909Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:59:51.7086481Z |
 
 ## Actions
 

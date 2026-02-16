@@ -5,8 +5,8 @@
   "Title": "Students can get COVID vax or boosters at upcoming clinics | College of Nursing | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 256301,
-  "ScreenshotSizeBytes": 885759,
+  "HtmlSizeBytes": 282240,
+  "ScreenshotSizeBytes": 901176,
   "CredentialUsed": null,
   "ConsoleErrorCount": 3,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 885759
+      "FileSize": 901176
     }
   ],
   "ImageCount": 2,
@@ -37,5 +37,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:57.377412Z"
+  "CapturedAt": "2026-02-16T21:00:12.4486688Z"
 }

@@ -6,14 +6,14 @@
 | Redirected To | https://hrs.wsu.edu/resources/policies-resources/ |
 | Title | Policies and Resources – Human Resource Services, Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 74.3 KB |
+| HTML Size | 80.8 KB |
 | Screenshots | 1 (431.8 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:28.3216768Z |
+| Captured | 2026-02-16T21:00:27.0846087Z |
 
 ## Actions
 

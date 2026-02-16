@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/1 pages OK |
+| Pages Scanned | 1 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 3 |
+| Pages Failed | 1 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 666.2 KB |
-| Total Screenshots | 5.4 MB |
+| Total HTML | 43.2 KB |
+| Total Screenshots | 985.7 KB |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `aswsu-wsu-edu/` |
@@ -18,26 +18,13 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 404 | MARCOM - MARCOM | 1 | 0 | 0 |
-| ❌ | [/get-involved/](get-involved/report.md) | 0 | MARCOM - MARCOM | 1 | 0 | 0 |
-| ❌ | [/senate/](senate/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/services/](services/report.md) | 0 | MARCOM - MARCOM | 1 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Home | 0 | 0 | 0 |
 
 ## Page Screenshots
 
-### [/contact/](contact/report.md)
+### [/](_root/report.md)
 
-![/contact/](contact/01-page-loaded.png)
-
-### [/get-involved/](get-involved/report.md)
-
-![/get-involved/](get-involved/01-page-loaded.png)
-
-### [/services/](services/report.md)
-
-![/services/](services/01-page-loaded.png)
+![/](_root/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -46,61 +33,6 @@
 
 - **URL:** https://aswsu.wsu.edu/
 - **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded`
-
-### /about/
-
-- **URL:** https://aswsu.wsu.edu/about/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded`
-
-### /senate/
-
-- **URL:** https://aswsu.wsu.edu/senate/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded`
-
-### /services/
-
-- **URL:** https://aswsu.wsu.edu/services/
-- **Status:** 0
-
-### /get-involved/
-
-- **URL:** https://aswsu.wsu.edu/get-involved/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://aswsu.wsu.edu/contact/
-- **Status:** 404
-
-
-## Pages with JavaScript Errors
-
-### /services/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /get-involved/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /contact/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

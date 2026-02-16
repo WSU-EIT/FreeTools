@@ -17,5 +17,5 @@
   "Images": [],
   "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded",
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1651575Z"
+  "CapturedAt": "2026-02-16T20:58:42.4744614Z"
 }

@@ -5,18 +5,18 @@
 | URL | https://vetmed.wsu.edu/research/ |
 | Title | Research | College of Veterinary Medicine | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 270.3 KB |
-| Screenshots | 1 (2.4 MB) |
+| HTML Size | 275.0 KB |
+| Screenshots | 1 (2.9 MB) |
 | Images | 20 (3.8 MB) |
 | Images Missing Alt | 2 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:40.6978311Z |
+| Captured | 2026-02-16T21:00:42.6302160Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (2.4 MB)
+- Screenshot #1: page-loaded (2.9 MB)
 - Downloaded 20 images to /images/
 
 ## Screenshots
@@ -101,7 +101,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (2.4 MB)
+- `01-page-loaded.png` — page-loaded (2.9 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

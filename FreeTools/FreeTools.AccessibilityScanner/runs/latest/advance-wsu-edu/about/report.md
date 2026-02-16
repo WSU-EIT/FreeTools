@@ -3,21 +3,21 @@
 | Field | Value |
 |-------|-------|
 | URL | https://advance.wsu.edu/about/ |
-| Redirected To | https://advance.wsu.edu/about-the-program/ |
+| Redirected To | about:blank |
 | Title | About the Program | ADVANCE at WSU | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 66.8 KB |
-| Screenshots | 1 (667.2 KB) |
+| HTML Size | 67.1 KB |
+| Screenshots | 1 (513.0 KB) |
 | Images | 1 (39.4 KB) |
 | Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:42.4329196Z |
+| Captured | 2026-02-16T20:59:04.8430271Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (667.2 KB)
+- Screenshot #1: page-loaded (513.0 KB)
 - Downloaded 1 images to /images/
 
 ## Screenshots
@@ -44,7 +44,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (667.2 KB)
+- `01-page-loaded.png` — page-loaded (513.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

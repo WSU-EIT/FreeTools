@@ -6,21 +6,17 @@
 | Title | Student Affairs - WSU Vancouver - WSU Vancouver |
 | Status | ❌ 0 |
 | HTML Size | 42.4 KB |
-| Screenshots | 1 (683.7 KB) |
+| Screenshots | 1 (663.4 KB) |
 | Images | 3 (121.7 KB) |
 | Images Missing Alt | 1 |
-| JS Errors | 1 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1560759Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:58:42.4736552Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (683.7 KB)
+- Screenshot #1: page-loaded (663.4 KB)
 - Downloaded 3 images to /images/
 
 ## Screenshots
@@ -53,7 +49,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (683.7 KB)
+- `01-page-loaded.png` — page-loaded (663.4 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

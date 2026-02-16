@@ -3,34 +3,33 @@
 | Field | Value |
 |-------|-------|
 | URL | https://studentcare.wsu.edu/ |
-| Title | (none) |
+| Title |  |
 | Status | ❌ 0 |
-| HTML Size | 0 bytes |
-| Screenshots | 0 (0 bytes) |
+| HTML Size | 45.2 KB |
+| Screenshots | 1 (155.2 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 0 |
+| JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1650906Z |
+| Captured | 2026-02-16T20:58:42.4744140Z |
 
-## Error
+## JavaScript Errors
 
-```
-Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded
-```
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- Scan aborted due to error
+- Screenshot #1: page-loaded (155.2 KB)
+- No images found on page
 
 ## Screenshots
 
-*No screenshots captured.*
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Page Images (0)
 
@@ -38,6 +37,7 @@ Call log:
 
 ## Files
 
+- `01-page-loaded.png` — page-loaded (155.2 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

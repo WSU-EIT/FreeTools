@@ -5,14 +5,14 @@
 | URL | https://housing.wsu.edu/prospective-students/families-grad-students/ |
 | Title | Families & Grad Students |
 | Status | ✅ 200 |
-| HTML Size | 62.3 KB |
+| HTML Size | 62.2 KB |
 | Screenshots | 1 (1015.2 KB) |
 | Images | 5 (1.6 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:25.7357184Z |
+| Captured | 2026-02-16T21:01:24.4450473Z |
 
 ## Actions
 

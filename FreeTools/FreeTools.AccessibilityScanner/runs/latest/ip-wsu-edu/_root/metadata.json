@@ -5,8 +5,8 @@
   "Title": "WSU International | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 307820,
-  "ScreenshotSizeBytes": 1455754,
+  "HtmlSizeBytes": 300246,
+  "ScreenshotSizeBytes": 1585538,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1455754
+      "FileSize": 1585538
     }
   ],
   "ImageCount": 4,
@@ -49,5 +49,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1119428Z"
+  "CapturedAt": "2026-02-16T20:58:42.4606135Z"
 }

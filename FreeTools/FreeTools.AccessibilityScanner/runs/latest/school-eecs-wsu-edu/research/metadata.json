@@ -5,8 +5,8 @@
   "Title": "Research | School of Electrical Engineering \u0026 Computer Science | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 224847,
-  "ScreenshotSizeBytes": 1085594,
+  "HtmlSizeBytes": 232137,
+  "ScreenshotSizeBytes": 1079393,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,14 +15,21 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1085594
+      "FileSize": 1079393
     }
   ],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 703621,
   "ImagesMissingAlt": 0,
-  "Images": [],
+  "Images": [
+    {
+      "FileName": "DSC_5389-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3427/2024/03/DSC_5389-scaled.jpg",
+      "AltText": "Two men look up at a monitor in a lab containing scientific equipment.",
+      "FileSize": 703621
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:04.132663Z"
+  "CapturedAt": "2026-02-16T21:00:30.4960582Z"
 }

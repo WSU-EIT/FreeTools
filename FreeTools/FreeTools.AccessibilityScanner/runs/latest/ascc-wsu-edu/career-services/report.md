@@ -6,18 +6,18 @@
 | Redirected To | https://ascc.wsu.edu/ |
 | Title | Academic Success & Career Center – Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 607.8 KB |
-| Screenshots | 1 (794.5 KB) |
+| HTML Size | 153.5 KB |
+| Screenshots | 1 (856.0 KB) |
 | Images | 38 (623.2 KB) |
 | Images Missing Alt | 26 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:27.6613102Z |
+| Captured | 2026-02-16T20:59:41.9268429Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (794.5 KB)
+- Screenshot #1: page-loaded (856.0 KB)
 - Downloaded 38 images to /images/
 
 ## Screenshots
@@ -180,7 +180,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (794.5 KB)
+- `01-page-loaded.png` — page-loaded (856.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

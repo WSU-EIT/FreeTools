@@ -5,8 +5,8 @@
   "Title": "Accolades | Washington State University | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 110523,
-  "ScreenshotSizeBytes": 2770696,
+  "HtmlSizeBytes": 117731,
+  "ScreenshotSizeBytes": 2771817,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2770696
+      "FileSize": 2771817
     }
   ],
   "ImageCount": 11,
@@ -91,5 +91,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:23.069369Z"
+  "CapturedAt": "2026-02-16T21:01:12.058211Z"
 }

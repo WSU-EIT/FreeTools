@@ -5,24 +5,23 @@
 | URL | https://apac.wsu.edu/ |
 | Title | Administrative Professional Advisory Council | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 67.2 KB |
-| Screenshots | 1 (469.1 KB) |
+| HTML Size | 76.4 KB |
+| Screenshots | 1 (579.3 KB) |
 | Images | 6 (805.8 KB) |
 | Images Missing Alt | 3 |
-| JS Errors | 3 |
+| JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:04.9818214Z |
+| Captured | 2026-02-16T20:58:42.4430489Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: the server responded with a status of 404 ()`
 - `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- Screenshot #1: page-loaded (469.1 KB)
+- Screenshot #1: page-loaded (579.3 KB)
 - Downloaded 6 images to /images/
 
 ## Screenshots
@@ -66,7 +65,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (469.1 KB)
+- `01-page-loaded.png` — page-loaded (579.3 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

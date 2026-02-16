@@ -5,19 +5,19 @@
 | URL | https://asl.wsu.edu/facilities/ |
 | Title | Facilities | Applied Sciences Laboratory | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 55.0 KB |
+| HTML Size | 62.3 KB |
 | Screenshots | 1 (758.5 KB) |
-| Images | 0 (0 bytes) |
+| Images | 1 (392.1 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:49.3344502Z |
+| Captured | 2026-02-16T21:00:19.4530864Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (758.5 KB)
-- Downloaded 0 images to /images/
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -26,9 +26,16 @@
 ![page-loaded](01-page-loaded.png)
 
 
-## Page Images (0)
+## Page Images (1)
 
-*No images found on page.*
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [DSC_6046.jpg](images/DSC_6046.jpg) | Person inside of large equipment in lab. | 392.1 KB |
+
+### Gallery
+
+![Person inside of large equipment in lab.](images/DSC_6046.jpg)
+
 
 ## Files
 
@@ -39,3 +46,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (392.1 KB)

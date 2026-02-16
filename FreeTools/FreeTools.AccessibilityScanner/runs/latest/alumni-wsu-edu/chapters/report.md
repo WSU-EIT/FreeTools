@@ -5,7 +5,7 @@
 | URL | https://alumni.wsu.edu/chapters/ |
 | Redirected To | https://alumni.wsu.edu/s/1613/18/interior.aspx?sid=1613&gid=2&pgid=60&cid=169&referer=&query=chapters%2f |
 | Title | Washington State University Alumni Association - Alumni Travel Offerings 2025 - 2026 |
-| Status | ❌ 0 |
+| Status | ✅ 200 |
 | HTML Size | 76.9 KB |
 | Screenshots | 1 (239.1 KB) |
 | Images | 3 (32.0 KB) |
@@ -13,7 +13,7 @@
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:57.3817675Z |
+| Captured | 2026-02-16T21:00:15.3655527Z |
 
 ## JavaScript Errors
 

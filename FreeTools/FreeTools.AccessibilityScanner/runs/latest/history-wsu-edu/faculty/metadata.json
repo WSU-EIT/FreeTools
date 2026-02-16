@@ -5,8 +5,8 @@
   "Title": "Faculty | Department of History | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 316117,
-  "ScreenshotSizeBytes": 906781,
+  "HtmlSizeBytes": 325488,
+  "ScreenshotSizeBytes": 1261837,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 906781
+      "FileSize": 1261837
     }
   ],
   "ImageCount": 42,
@@ -277,5 +277,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:51.3799407Z"
+  "CapturedAt": "2026-02-16T21:00:03.9399157Z"
 }

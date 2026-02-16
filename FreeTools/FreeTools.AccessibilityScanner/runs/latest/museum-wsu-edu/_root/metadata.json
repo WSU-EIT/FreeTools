@@ -5,21 +5,21 @@
   "Title": "Jordan Schnitzer Museum of Art WSU | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 240850,
-  "ScreenshotSizeBytes": 1723501,
+  "HtmlSizeBytes": 241106,
+  "ScreenshotSizeBytes": 2152605,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1723501
+      "FileSize": 2152605
     }
   ],
-  "ImageCount": 10,
-  "ImagesTotalSizeBytes": 2347539,
+  "ImageCount": 9,
+  "ImagesTotalSizeBytes": 1993893,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -45,12 +45,6 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2023/03/733.014_@_Nic_Lehoux-scaled.jpg",
       "AltText": "People walking near the museum door.",
       "FileSize": 453419
-    },
-    {
-      "FileName": "JSMA-Exterior-19-8.22-13.new_-scaled.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2023/04/JSMA-Exterior-19-8.22-13.new_-scaled.jpg",
-      "AltText": "A group of WSU students gathered outside the Museum\u0027s crimson facade",
-      "FileSize": 353646
     },
     {
       "FileName": "smithexhibition-1024x676.jpg",
@@ -85,5 +79,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.132805Z"
+  "CapturedAt": "2026-02-16T20:58:42.464199Z"
 }

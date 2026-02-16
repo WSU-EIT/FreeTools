@@ -8,9 +8,9 @@
 | Pages Failed | 6 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.6 MB |
-| Total Screenshots | 88.3 KB |
-| Total Images | 2 (258.5 KB) |
+| Total HTML | 1.9 MB |
+| Total Screenshots | 977.9 KB |
+| Total Images | 1 (129.2 KB) |
 | Images Missing Alt | 0 |
 | Folder | `gis-wsu-edu/` |
 
@@ -18,12 +18,12 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Administration GIS Portal | 0 | 1 | 0 |
+| ❌ | [/](_root/report.md) | 0 | WSU Administration GIS Portal | 0 | 0 | 0 |
 | ❌ | [/contact/](contact/report.md) | 0 | WSU Administration GIS Portal | 0 | 1 | 0 |
 | ❌ | [/data/](data/report.md) | 0 |  | 0 | 0 | 0 |
 | ❌ | [/resources/](resources/report.md) | 0 |  | 0 | 0 | 0 |
 | ❌ | [/services/](services/report.md) | 0 |  | 0 | 0 | 0 |
-| ❌ | [/training/](training/report.md) | 0 |  | 0 | 0 | 0 |
+| ❌ | [/training/](training/report.md) | 0 | WSU Administration GIS Portal | 0 | 0 | 0 |
 
 ## Page Screenshots
 

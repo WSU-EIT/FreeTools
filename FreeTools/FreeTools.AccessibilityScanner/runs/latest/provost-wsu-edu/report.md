@@ -6,10 +6,10 @@
 | Pages Scanned | 6 |
 | Pages Passed | 0 |
 | Pages Failed | 6 |
-| Total JS Errors | 1 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 610.2 KB |
-| Total Screenshots | 2.8 MB |
+| Total HTML | 636.4 KB |
+| Total Screenshots | 3.2 MB |
 | Total Images | 3 (145.8 KB) |
 | Images Missing Alt | 1 |
 | Folder | `provost-wsu-edu/` |
@@ -23,7 +23,7 @@
 | ❌ | [/academic-affairs/](academic-affairs/report.md) | 0 | Academic Affairs Program Optimization... | 0 | 0 | 0 |
 | ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Office of the Provost \... | 0 | 0 | 0 |
 | ❌ | [/policies/](policies/report.md) | 0 | Policies and Reports \| Office of the... | 0 | 1 | 1 |
-| ❌ | [/resources/](resources/report.md) | 0 | Resources for our students \| Office ... | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Resources for our students \| Office ... | 0 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -83,13 +83,6 @@
 
 - **URL:** https://provost.wsu.edu/contact/
 - **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /resources/ (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

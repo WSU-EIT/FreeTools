@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
-| Pages Scanned | 5 |
+| Status | ⚠️ 0/1 pages OK |
+| Pages Scanned | 1 |
 | Pages Passed | 0 |
-| Pages Failed | 5 |
-| Total JS Errors | 3 |
+| Pages Failed | 1 |
+| Total JS Errors | 1 |
 | Total JS Warnings | 0 |
-| Total HTML | 321.4 KB |
-| Total Screenshots | 20.8 KB |
+| Total HTML | 160.4 KB |
+| Total Screenshots | 4.2 KB |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `catalog-wsu-edu/` |
@@ -18,33 +18,13 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 |  | 0 | 0 | 0 |
-| ❌ | [/academic-regulations/](academic-regulations/report.md) | 404 |  | 1 | 0 | 0 |
-| ❌ | [/courses/](courses/report.md) | 0 |  | 0 | 0 | 0 |
-| ❌ | [/general-requirements/](general-requirements/report.md) | 404 |  | 1 | 0 | 0 |
-| ❌ | [/programs/](programs/report.md) | 404 |  | 1 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 |  | 1 | 0 | 0 |
 
 ## Page Screenshots
 
 ### [/](_root/report.md)
 
 ![/](_root/01-page-loaded.png)
-
-### [/academic-regulations/](academic-regulations/report.md)
-
-![/academic-regulations/](academic-regulations/01-page-loaded.png)
-
-### [/courses/](courses/report.md)
-
-![/courses/](courses/01-page-loaded.png)
-
-### [/general-requirements/](general-requirements/report.md)
-
-![/general-requirements/](general-requirements/01-page-loaded.png)
-
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -54,40 +34,12 @@
 - **URL:** https://catalog.wsu.edu/
 - **Status:** 0
 
-### /programs/
-
-- **URL:** https://catalog.wsu.edu/programs/
-- **Status:** 404
-
-### /courses/
-
-- **URL:** https://catalog.wsu.edu/courses/
-- **Status:** 0
-
-### /academic-regulations/
-
-- **URL:** https://catalog.wsu.edu/academic-regulations/
-- **Status:** 404
-
-### /general-requirements/
-
-- **URL:** https://catalog.wsu.edu/general-requirements/
-- **Status:** 404
-
 
 ## Pages with JavaScript Errors
 
-### /programs/ (1 errors)
+### / (1 errors)
 
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /academic-regulations/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /general-requirements/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

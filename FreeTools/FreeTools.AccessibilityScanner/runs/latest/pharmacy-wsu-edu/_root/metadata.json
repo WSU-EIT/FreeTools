@@ -5,58 +5,34 @@
   "Title": "Pharmacy and Pharmaceutical Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 334543,
-  "ScreenshotSizeBytes": 1643695,
+  "HtmlSizeBytes": 335028,
+  "ScreenshotSizeBytes": 1696292,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 5,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1643695
+      "FileSize": 1696292
     }
   ],
-  "ImageCount": 17,
-  "ImagesTotalSizeBytes": 4331413,
-  "ImagesMissingAlt": 11,
+  "ImageCount": 13,
+  "ImagesTotalSizeBytes": 2035789,
+  "ImagesMissingAlt": 8,
   "Images": [
     {
-      "FileName": "Dr.-Paine-Lab-Pharmacy-Oct-2022-8-scaled.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3060/2023/07/Dr.-Paine-Lab-Pharmacy-Oct-2022-8-scaled.jpg",
-      "AltText": "",
-      "FileSize": 586938
-    },
-    {
-      "FileName": "image-2.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3060/2023/08/Pharmacy-Immunization-lecture-and-training-Aug-2022-69-Copy-scaled.jpg",
-      "AltText": "",
-      "FileSize": 592440
-    },
-    {
-      "FileName": "image-3.jpg",
+      "FileName": "image-1.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3060/2023/04/Pharmacy-Compound-Lab-shoot-Sep-2022-39-scaled-e1681407575281.jpg",
       "AltText": "",
       "FileSize": 550860
-    },
-    {
-      "FileName": "Pharmacy-point-of-care-Aug-2022-56-scaled-e1671572456261.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3060/2022/12/Pharmacy-point-of-care-Aug-2022-56-scaled-e1671572456261.jpg",
-      "AltText": "",
-      "FileSize": 508631
     },
     {
       "FileName": "SAS-EarlyAdmissions_header.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3060/2022/07/SAS-EarlyAdmissions_header.jpg",
       "AltText": "",
       "FileSize": 152145
-    },
-    {
-      "FileName": "11-gaddameedhi-lab_27_49134620932_o-scaled.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3060/2023/08/11-gaddameedhi-lab_27_49134620932_o-scaled.jpg",
-      "AltText": "Bachelor of Science in Pharmaceutical and Medical Sciences",
-      "FileSize": 607615
     },
     {
       "FileName": "Senthil-Natesan-Lab-Oct-2022-10-scaled-e1755879716397.jpg",
@@ -127,5 +103,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1372068Z"
+  "CapturedAt": "2026-02-16T20:58:42.4671737Z"
 }

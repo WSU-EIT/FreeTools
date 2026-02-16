@@ -2,20 +2,27 @@
   "PagePath": "/academic-regulations/",
   "Url": "https://registrar.wsu.edu/academic-regulations/",
   "FinalUrl": null,
-  "Title": null,
+  "Title": "Academic Regulations | Office of the Registrar",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 0,
-  "ScreenshotSizeBytes": 0,
+  "HtmlSizeBytes": 835408,
+  "ScreenshotSizeBytes": 9071514,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
-  "ConsoleWarningCount": 0,
-  "Screenshots": [],
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 9071514
+    }
+  ],
   "ImageCount": 0,
   "ImagesTotalSizeBytes": 0,
   "ImagesMissingAlt": 0,
   "Images": [],
-  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...",
+  "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:02.380119Z"
+  "CapturedAt": "2026-02-16T21:00:43.5757592Z"
 }

@@ -6,14 +6,14 @@
 | Redirected To | https://business.wsu.edu/advising/ |
 | Title | Academic Advising - Carson College of Business | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 178.1 KB |
+| HTML Size | 179.0 KB |
 | Screenshots | 1 (1.6 MB) |
 | Images | 7 (451.7 KB) |
 | Images Missing Alt | 4 |
 | JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:34.7890797Z |
+| Captured | 2026-02-16T20:59:54.0714387Z |
 
 ## JavaScript Errors
 

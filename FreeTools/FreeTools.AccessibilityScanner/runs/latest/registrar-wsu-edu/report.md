@@ -6,10 +6,10 @@
 | Pages Scanned | 14 |
 | Pages Passed | 0 |
 | Pages Failed | 14 |
-| Total JS Errors | 2 |
-| Total JS Warnings | 10 |
-| Total HTML | 7.9 MB |
-| Total Screenshots | 3.4 MB |
+| Total JS Errors | 1 |
+| Total JS Warnings | 11 |
+| Total HTML | 8.0 MB |
+| Total Screenshots | 11.6 MB |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `registrar-wsu-edu/` |
@@ -18,9 +18,9 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Office of the Registrar | 1 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
 | ❌ | [/academic-calendar/](academic-calendar/report.md) | 0 |  | 0 | 0 | 0 |
-| ❌ | [/academic-regulations/](academic-regulations/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/academic-regulations/](academic-regulations/report.md) | 0 | Academic Regulations \| Office of the... | 0 | 0 | 0 |
 | ❌ | [/change-of-campus/](change-of-campus/report.md) | 0 | Undergraduate Change of Campus Form \... | 0 | 0 | 0 |
 | ❌ | [/contact-us/](contact-us/report.md) | 0 | Contact Us \| Office of the Registrar | 0 | 0 | 0 |
 | ❌ | [/grades-and-gpa/](grades-and-gpa/report.md) | 0 | Grades and GPA \| Office of the Regis... | 0 | 0 | 0 |
@@ -35,13 +35,13 @@
 
 ## Page Screenshots
 
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
-
 ### [/academic-calendar/](academic-calendar/report.md)
 
 ![/academic-calendar/](academic-calendar/01-page-loaded.png)
+
+### [/academic-regulations/](academic-regulations/report.md)
+
+![/academic-regulations/](academic-regulations/01-page-loaded.png)
 
 ### [/change-of-campus/](change-of-campus/report.md)
 
@@ -94,6 +94,10 @@
 
 - **URL:** https://registrar.wsu.edu/
 - **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
 
 ### /academic-calendar/
 
@@ -109,10 +113,6 @@
 
 - **URL:** https://registrar.wsu.edu/academic-regulations/
 - **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
 
 ### /contact-us/
 
@@ -166,10 +166,6 @@ Call log:
 
 
 ## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 
 ### /sessions/ (1 errors)
 

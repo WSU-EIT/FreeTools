@@ -5,35 +5,23 @@
   "Title": "Admissions | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 100399,
-  "ScreenshotSizeBytes": 1432428,
+  "HtmlSizeBytes": 184820,
+  "ScreenshotSizeBytes": 914562,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1432428
+      "FileSize": 914562
     }
   ],
-  "ImageCount": 5,
-  "ImagesTotalSizeBytes": 1514511,
+  "ImageCount": 18,
+  "ImagesTotalSizeBytes": 742266,
   "ImagesMissingAlt": 0,
   "Images": [
-    {
-      "FileName": "students-on-grass-1188x553-1.png",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-admission/uploads/sites/3144/2022/11/students-on-grass-1188x553-1.png",
-      "AltText": "Students sitting on lawn talking",
-      "FileSize": 388678
-    },
-    {
-      "FileName": "Mask-group-23.png",
-      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3144/2022/11/Mask-group-23.png",
-      "AltText": "Students working together",
-      "FileSize": 686277
-    },
     {
       "FileName": "library-road-e1605824401570-792x564-1.jpg",
       "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3144/2022/11/library-road-e1605824401570-792x564-1.jpg",
@@ -51,9 +39,99 @@
       "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3144/2022/11/Bike-Trail_0006@2x-792x567.jpg",
       "AltText": "Students biking",
       "FileSize": 59736
+    },
+    {
+      "FileName": "385273602.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385273602.jpg?width=480",
+      "AltText": "Image posted by WSUPullman to facebook",
+      "FileSize": 46057
+    },
+    {
+      "FileName": "385273602_user_image.img",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385273602_user_image",
+      "AltText": "Profile image for WSU Pullman",
+      "FileSize": 1285
+    },
+    {
+      "FileName": "385254882.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385254882.jpg?width=480",
+      "AltText": "Image posted by WSUPullman to facebook",
+      "FileSize": 86916
+    },
+    {
+      "FileName": "picture.img",
+      "SourceUrl": "https://graph.facebook.com/133018306730783/picture",
+      "AltText": "Profile image for WSU Pullman",
+      "FileSize": 1285
+    },
+    {
+      "FileName": "385211718_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385211718_user_image.jpg?width=100",
+      "AltText": "Profile image for wsupullman",
+      "FileSize": 2523
+    },
+    {
+      "FileName": "385190975_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385190975_user_image.jpg?width=100",
+      "AltText": "Profile image for wsupullman",
+      "FileSize": 2523
+    },
+    {
+      "FileName": "385272197.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385272197.jpg?width=480",
+      "AltText": "Image posted by wsupullman to instagram",
+      "FileSize": 54019
+    },
+    {
+      "FileName": "385272197_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385272197_user_image.jpg?width=100",
+      "AltText": "Profile image for wsupullman",
+      "FileSize": 2523
+    },
+    {
+      "FileName": "385262531.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385262531.jpg?width=480",
+      "AltText": "Image posted by WSUPullman to facebook",
+      "FileSize": 35316
+    },
+    {
+      "FileName": "385262531_user_image.img",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385262531_user_image",
+      "AltText": "Profile image for WSU Pullman",
+      "FileSize": 1285
+    },
+    {
+      "FileName": "HBNiNC_bMAAZN2i.img",
+      "SourceUrl": "https://pbs.twimg.com/tweet_video_thumb/HBNiNC_bMAAZN2i.jpg:medium",
+      "AltText": "Image posted by WSUPullman to twitter",
+      "FileSize": 17778
+    },
+    {
+      "FileName": "cxupnNSr_normal.jpg",
+      "SourceUrl": "https://pbs.twimg.com/profile_images/1438135903071858694/cxupnNSr_normal.jpg",
+      "AltText": "Profile image for WSU Pullman",
+      "FileSize": 1959
+    },
+    {
+      "FileName": "385244271.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385244271.jpg?width=480",
+      "AltText": "Image posted by wsupullman to instagram",
+      "FileSize": 45418
+    },
+    {
+      "FileName": "385244271_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385244271_user_image.jpg?width=100",
+      "AltText": "Profile image for wsupullman",
+      "FileSize": 2523
+    },
+    {
+      "FileName": "182239.webp",
+      "SourceUrl": "https://curator-assets.b-cdn.net/source_default_image/182239.webp",
+      "AltText": "Profile image for ",
+      "FileSize": 1300
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:04.9611141Z"
+  "CapturedAt": "2026-02-16T20:58:42.4233302Z"
 }

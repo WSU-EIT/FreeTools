@@ -5,8 +5,8 @@
   "Title": "Ways to Give | WSU Foundation | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 266485,
-  "ScreenshotSizeBytes": 1374520,
+  "HtmlSizeBytes": 271617,
+  "ScreenshotSizeBytes": 1444969,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,13 +15,19 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1374520
+      "FileSize": 1444969
     }
   ],
-  "ImageCount": 14,
-  "ImagesTotalSizeBytes": 2228371,
+  "ImageCount": 15,
+  "ImagesTotalSizeBytes": 2818335,
   "ImagesMissingAlt": 6,
   "Images": [
+    {
+      "FileName": "204081234_10157571621941525_7947429030486602647_n.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-foundation/uploads/sites/632/2024/05/204081234_10157571621941525_7947429030486602647_n.jpg",
+      "AltText": "Ariel view of WSU Pullman",
+      "FileSize": 589964
+    },
     {
       "FileName": "WSU-College-Card-Image-792x594-1.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-foundation/uploads/sites/632/2024/05/WSU-College-Card-Image-792x594-1.jpg",
@@ -83,7 +89,7 @@
       "FileSize": 66407
     },
     {
-      "FileName": "image-11.jpg",
+      "FileName": "image-12.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-foundation/uploads/sites/632/2026/01/2025-aerial-view-of-wsu-cougar-football-at-Gesa-Field-1024x676-1-792x523.jpg",
       "AltText": "Aerial view of Gesa Field",
       "FileSize": 152763
@@ -95,7 +101,7 @@
       "FileSize": 242986
     },
     {
-      "FileName": "image-13.jpg",
+      "FileName": "image-14.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-foundation/uploads/sites/632/2026/01/Zornes-Katy-Touretsky-04-_0T88415-scaled-e1766429404480-792x528-1.jpg",
       "AltText": "Katy Touretsky, right, a neuroscience major in Washington State University\u0027s College of Veterinary Medicine, talks with Kristen Delevich, left, an assistant professor in the department of Integrative Physiology \u0026 Neuroscience, on Tuesday, March 18, 2025, in Pullman. Touretsky is also an EschLEAD researcher and a Zornes scholar. (College of Veterinary Medicine/Ted S. Warren)",
       "FileSize": 100667
@@ -109,5 +115,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:32.7001208Z"
+  "CapturedAt": "2026-02-16T21:00:09.9656422Z"
 }

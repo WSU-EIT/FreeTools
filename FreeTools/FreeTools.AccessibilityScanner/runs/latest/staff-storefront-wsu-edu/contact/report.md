@@ -4,7 +4,7 @@
 |-------|-------|
 | URL | https://staff.storefront.wsu.edu/contact/ |
 | Title | Contact Us - WSU Coug Prints Plus |
-| Status | ✅ 200 |
+| Status | ❌ 0 |
 | HTML Size | 18.9 KB |
 | Screenshots | 1 (71.2 KB) |
 | Images | 2 (6.8 KB) |
@@ -12,7 +12,7 @@
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:33.4645892Z |
+| Captured | 2026-02-16T20:59:37.5106915Z |
 
 ## Actions
 

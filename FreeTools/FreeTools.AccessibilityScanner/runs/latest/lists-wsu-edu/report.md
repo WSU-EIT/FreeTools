@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/4 pages OK |
-| Pages Scanned | 4 |
+| Status | ⚠️ 0/1 pages OK |
+| Pages Scanned | 1 |
 | Pages Passed | 0 |
-| Pages Failed | 4 |
-| Total JS Errors | 3 |
+| Pages Failed | 1 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 13.2 KB |
-| Total Screenshots | 151.9 KB |
+| Total HTML | 12.6 KB |
+| Total Screenshots | 128.3 KB |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `lists-wsu-edu/` |
@@ -19,27 +19,12 @@
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | Home \| Information Technology Services | 0 | 0 | 0 |
-| ❌ | [/help/](help/report.md) | 404 | 404 Not Found | 1 | 0 | 0 |
-| ❌ | [/manage/](manage/report.md) | 404 | 404 Not Found | 1 | 0 | 0 |
-| ❌ | [/subscribe/](subscribe/report.md) | 404 | 404 Not Found | 1 | 0 | 0 |
 
 ## Page Screenshots
 
 ### [/](_root/report.md)
 
 ![/](_root/01-page-loaded.png)
-
-### [/help/](help/report.md)
-
-![/help/](help/01-page-loaded.png)
-
-### [/manage/](manage/report.md)
-
-![/manage/](manage/01-page-loaded.png)
-
-### [/subscribe/](subscribe/report.md)
-
-![/subscribe/](subscribe/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -48,36 +33,6 @@
 
 - **URL:** https://lists.wsu.edu/
 - **Status:** 0
-
-### /help/
-
-- **URL:** https://lists.wsu.edu/help/
-- **Status:** 404
-
-### /subscribe/
-
-- **URL:** https://lists.wsu.edu/subscribe/
-- **Status:** 404
-
-### /manage/
-
-- **URL:** https://lists.wsu.edu/manage/
-- **Status:** 404
-
-
-## Pages with JavaScript Errors
-
-### /help/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 (Not Found)`
-
-### /subscribe/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 (Not Found)`
-
-### /manage/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 (Not Found)`
 
 
 ---

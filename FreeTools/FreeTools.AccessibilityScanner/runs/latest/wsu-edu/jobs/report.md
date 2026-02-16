@@ -6,14 +6,14 @@
 | Redirected To | https://hrs.wsu.edu/careers/ |
 | Title | Careers – Human Resource Services, Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 84.2 KB |
+| HTML Size | 84.3 KB |
 | Screenshots | 1 (598.2 KB) |
 | Images | 2 (530.3 KB) |
 | Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T20:41:43.5929144Z |
+| Captured | 2026-02-16T21:02:51.9190909Z |
 
 ## Actions
 

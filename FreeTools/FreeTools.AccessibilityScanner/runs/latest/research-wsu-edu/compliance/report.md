@@ -5,7 +5,7 @@
 | URL | https://research.wsu.edu/compliance/ |
 | Redirected To | https://research.wsu.edu/login?redirect_to=/compliance/ |
 | Title | Log In ‹ Office of Research — WordPress |
-| Status | ❌ 0 |
+| Status | ✅ 200 |
 | HTML Size | 6.4 KB |
 | Screenshots | 1 (24.2 KB) |
 | Images | 0 (0 bytes) |
@@ -13,7 +13,7 @@
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:07.0107322Z |
+| Captured | 2026-02-16T21:00:37.3409453Z |
 
 ## Actions
 

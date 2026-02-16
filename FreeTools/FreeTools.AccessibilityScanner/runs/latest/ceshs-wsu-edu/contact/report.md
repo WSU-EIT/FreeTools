@@ -5,15 +5,15 @@
 | URL | https://ceshs.wsu.edu/contact/ |
 | Redirected To | https://ceshs.wsu.edu/contact-us/ |
 | Title | Contact Us! | College of Education, Sport, and Human Sciences | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 230.0 KB |
+| Status | ✅ 200 |
+| HTML Size | 229.9 KB |
 | Screenshots | 1 (1.8 MB) |
 | Images | 2 (642.7 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:42.2597594Z |
+| Captured | 2026-02-16T21:01:04.3469839Z |
 
 ## JavaScript Errors
 

@@ -5,21 +5,21 @@
   "Title": "Pullman Campus | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 123121,
-  "ScreenshotSizeBytes": 2101721,
+  "HtmlSizeBytes": 127128,
+  "ScreenshotSizeBytes": 2523039,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2101721
+      "FileSize": 2523039
     }
   ],
-  "ImageCount": 15,
-  "ImagesTotalSizeBytes": 644809,
+  "ImageCount": 25,
+  "ImagesTotalSizeBytes": 1394714,
   "ImagesMissingAlt": 3,
   "Images": [
     {
@@ -59,10 +59,22 @@
       "FileSize": 1285
     },
     {
+      "FileName": "385244271.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385244271.jpg?width=480",
+      "AltText": "Image posted by wsupullman to instagram",
+      "FileSize": 45418
+    },
+    {
       "FileName": "385244271_user_image.jpg",
       "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385244271_user_image.jpg?width=100",
       "AltText": "Profile image for wsupullman",
       "FileSize": 2523
+    },
+    {
+      "FileName": "385211718.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385211718.jpg?width=480",
+      "AltText": "Image posted by wsupullman to instagram",
+      "FileSize": 126628
     },
     {
       "FileName": "385211718_user_image.jpg",
@@ -83,10 +95,22 @@
       "FileSize": 2523
     },
     {
+      "FileName": "385254882.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385254882.jpg?width=480",
+      "AltText": "Image posted by WSUPullman to facebook",
+      "FileSize": 86916
+    },
+    {
       "FileName": "picture.img",
       "SourceUrl": "https://graph.facebook.com/133018306730783/picture",
       "AltText": "Profile image for WSU Pullman",
       "FileSize": 1285
+    },
+    {
+      "FileName": "385190975.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385190975.jpg?width=480",
+      "AltText": "Image posted by wsupullman to instagram",
+      "FileSize": 37240
     },
     {
       "FileName": "385190975_user_image.jpg",
@@ -95,10 +119,28 @@
       "FileSize": 2523
     },
     {
+      "FileName": "HBNiNC_bMAAZN2i.img",
+      "SourceUrl": "https://pbs.twimg.com/tweet_video_thumb/HBNiNC_bMAAZN2i.jpg:medium",
+      "AltText": "Image posted by WSUPullman to twitter",
+      "FileSize": 17778
+    },
+    {
       "FileName": "cxupnNSr_normal.jpg",
       "SourceUrl": "https://pbs.twimg.com/profile_images/1438135903071858694/cxupnNSr_normal.jpg",
       "AltText": "Profile image for WSU Pullman",
       "FileSize": 1959
+    },
+    {
+      "FileName": "HBKgIWdakAAiGOz.img",
+      "SourceUrl": "https://pbs.twimg.com/media/HBKgIWdakAAiGOz.jpg:medium",
+      "AltText": "Image posted by WSUPullman to twitter",
+      "FileSize": 294690
+    },
+    {
+      "FileName": "385211354.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385211354.jpg?width=480",
+      "AltText": "Image posted by wsupullman to tiktok",
+      "FileSize": 40843
     },
     {
       "FileName": "182239.webp",
@@ -107,13 +149,31 @@
       "FileSize": 1300
     },
     {
+      "FileName": "385262531.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385262531.jpg?width=480",
+      "AltText": "Image posted by WSUPullman to facebook",
+      "FileSize": 35316
+    },
+    {
       "FileName": "385262531_user_image.img",
       "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385262531_user_image",
       "AltText": "Profile image for WSU Pullman",
       "FileSize": 1285
+    },
+    {
+      "FileName": "385237686.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385237686.jpg?width=480",
+      "AltText": "Image posted by WSUPullman to facebook",
+      "FileSize": 28404
+    },
+    {
+      "FileName": "385190922.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385190922.jpg?width=480",
+      "AltText": "Image posted by WSUPullman to facebook",
+      "FileSize": 36672
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1514166Z"
+  "CapturedAt": "2026-02-16T20:58:42.4702171Z"
 }

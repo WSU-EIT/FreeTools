@@ -6,19 +6,19 @@
 | Redirected To | https://hrs.wsu.edu/ |
 | Title | Human Resource Services, Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 81.4 KB |
-| Screenshots | 1 (774.1 KB) |
-| Images | 5 (422.1 KB) |
-| Images Missing Alt | 4 |
+| HTML Size | 85.6 KB |
+| Screenshots | 1 (863.1 KB) |
+| Images | 6 (710.4 KB) |
+| Images Missing Alt | 5 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:15.0972633Z |
+| Captured | 2026-02-16T21:00:35.8158836Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (774.1 KB)
-- Downloaded 5 images to /images/
+- Screenshot #1: page-loaded (863.1 KB)
+- Downloaded 6 images to /images/
 
 ## Screenshots
 
@@ -27,21 +27,24 @@
 ![page-loaded](01-page-loaded.png)
 
 
-## Page Images (5)
+## Page Images (6)
 
 | # | Image | Alt Text | Size |
 |---|-------|----------|------|
 | 1 | [all-campus-homepage-header_1386x260.jpg](images/all-campus-homepage-header_1386x260.jpg) | *(none)* | 133.9 KB |
 | 2 | [calculator-385506_1920-e1579117519523-792x594-1-720x540.jpg](images/calculator-385506_1920-e1579117519523-792x594-1-720x540.jpg) | *(none)* | 53.2 KB |
-| 3 | [LOD-Highlights-720x540.png](images/LOD-Highlights-720x540.png) | *(none)* | 131.0 KB |
-| 4 | [flagpicture-e1593015279940-720x539.jpg](images/flagpicture-e1593015279940-720x539.jpg) | A close-up of a flag with the WSU log... | 68.3 KB |
-| 5 | [retirement-dollars-720x540.png](images/retirement-dollars-720x540.png) | *(none)* | 35.7 KB |
+| 3 | [course-updates-720x540.png](images/course-updates-720x540.png) | *(none)* | 288.3 KB |
+| 4 | [LOD-Highlights-720x540.png](images/LOD-Highlights-720x540.png) | *(none)* | 131.0 KB |
+| 5 | [flagpicture-e1593015279940-720x539.jpg](images/flagpicture-e1593015279940-720x539.jpg) | A close-up of a flag with the WSU log... | 68.3 KB |
+| 6 | [retirement-dollars-720x540.png](images/retirement-dollars-720x540.png) | *(none)* | 35.7 KB |
 
 ### Gallery
 
 ![all-campus-homepage-header_1386x260.jpg](images/all-campus-homepage-header_1386x260.jpg)
 
 ![calculator-385506_1920-e1579117519523-792x594-1-720x540.jpg](images/calculator-385506_1920-e1579117519523-792x594-1-720x540.jpg)
+
+![course-updates-720x540.png](images/course-updates-720x540.png)
 
 ![LOD-Highlights-720x540.png](images/LOD-Highlights-720x540.png)
 
@@ -50,20 +53,21 @@
 ![retirement-dollars-720x540.png](images/retirement-dollars-720x540.png)
 
 
-### ⚠️ Images Missing Alt Text (4)
+### ⚠️ Images Missing Alt Text (5)
 
 - `all-campus-homepage-header_1386x260.jpg` — https://hrs.wsu.edu/wp-content/uploads/2021/02/all-campus-homepage-header_1386x260.jpg
 - `calculator-385506_1920-e1579117519523-792x594-1-720x540.jpg` — https://hrs.wsu.edu/wp-content/uploads/2023/02/calculator-385506_1920-e1579117519523-792x594-1-720x540.jpg
+- `course-updates-720x540.png` — https://hrs.wsu.edu/wp-content/uploads/2026/01/course-updates-720x540.png
 - `LOD-Highlights-720x540.png` — https://hrs.wsu.edu/wp-content/uploads/2026/01/LOD-Highlights-720x540.png
 - `retirement-dollars-720x540.png` — https://hrs.wsu.edu/wp-content/uploads/2026/01/retirement-dollars-720x540.png
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (774.1 KB)
+- `01-page-loaded.png` — page-loaded (863.1 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
-- `images/` — 5 page images (422.1 KB)
+- `images/` — 6 page images (710.4 KB)

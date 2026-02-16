@@ -6,14 +6,14 @@
 | Redirected To | https://nursing.wsu.edu/student-policies-procedures/admissions-appeal-policy/ |
 | Title | Admissions Appeal Policy | College of Nursing | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 233.7 KB |
+| HTML Size | 236.7 KB |
 | Screenshots | 1 (386.2 KB) |
 | Images | 1 (10.5 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 3 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:41.4407790Z |
+| Captured | 2026-02-16T20:59:55.0832206Z |
 
 ## JavaScript Errors
 

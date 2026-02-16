@@ -5,8 +5,8 @@
   "Title": "Outlook",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 14656,
-  "ScreenshotSizeBytes": 26899,
+  "HtmlSizeBytes": 14654,
+  "ScreenshotSizeBytes": 26902,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 26899
+      "FileSize": 26902
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:55.6938463Z"
+  "CapturedAt": "2026-02-16T20:59:37.1260985Z"
 }

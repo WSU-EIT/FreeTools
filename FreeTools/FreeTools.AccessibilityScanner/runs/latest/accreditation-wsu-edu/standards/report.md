@@ -6,14 +6,14 @@
 | Redirected To | https://accreditation.wsu.edu/accreditation-home/standards/ |
 | Title | Standards | Accreditation Site | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 47.6 KB |
+| HTML Size | 41.8 KB |
 | Screenshots | 1 (313.7 KB) |
 | Images | 1 (33.6 KB) |
 | Images Missing Alt | 1 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:04.5757053Z |
+| Captured | 2026-02-16T20:59:44.6133357Z |
 
 ## JavaScript Errors
 

@@ -5,23 +5,29 @@
   "Title": "Department of Mathematics and Statistics | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 236809,
-  "ScreenshotSizeBytes": 1686909,
+  "HtmlSizeBytes": 234256,
+  "ScreenshotSizeBytes": 1685722,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 5,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1686909
+      "FileSize": 1685722
     }
   ],
-  "ImageCount": 8,
-  "ImagesTotalSizeBytes": 491299,
+  "ImageCount": 9,
+  "ImagesTotalSizeBytes": 1093379,
   "ImagesMissingAlt": 0,
   "Images": [
+    {
+      "FileName": "Students-Outdoors-Studing-DSC_0177-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3414/2024/10/Students-Outdoors-Studing-DSC_0177-scaled.jpg",
+      "AltText": "Students outside studying together at a table.",
+      "FileSize": 602080
+    },
     {
       "FileName": "research900x200-792x176.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3414/2024/10/research900x200-792x176.jpg",
@@ -73,5 +79,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1174071Z"
+  "CapturedAt": "2026-02-16T20:58:42.4632874Z"
 }

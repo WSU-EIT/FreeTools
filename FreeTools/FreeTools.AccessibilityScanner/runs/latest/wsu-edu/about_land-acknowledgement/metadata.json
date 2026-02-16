@@ -5,7 +5,7 @@
   "Title": "Land Acknowledgement | Washington State University | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 100356,
+  "HtmlSizeBytes": 100317,
   "ScreenshotSizeBytes": 281625,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -24,12 +24,12 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": {
-    "cache-control": "max-age=509, must-revalidate",
+    "cache-control": "max-age=600, must-revalidate",
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:40:23 GMT",
-    "last-modified": "Mon, 16 Feb 2026 20:38:52 GMT",
+    "date": "Mon, 16 Feb 2026 21:01:41 GMT",
+    "last-modified": "Mon, 16 Feb 2026 21:01:41 GMT",
     "link": "\u003Chttps://wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://wsu.edu/wp-json/wp/v2/pages/3375\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
     "server": "nginx",
     "transfer-encoding": "chunked",
@@ -38,5 +38,5 @@
     "x-frame-options": "DENY",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-16T20:40:22.5056342Z"
+  "CapturedAt": "2026-02-16T21:01:41.125168Z"
 }

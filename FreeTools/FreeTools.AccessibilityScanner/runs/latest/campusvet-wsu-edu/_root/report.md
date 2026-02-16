@@ -5,20 +5,17 @@
 | URL | https://campusvet.wsu.edu/ |
 | Title | Campus Veterinarian | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 209.1 KB |
+| HTML Size | 208.7 KB |
 | Screenshots | 1 (313.6 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 4 |
+| JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0323619Z |
+| Captured | 2026-02-16T20:58:42.4469421Z |
 
 ## JavaScript Errors
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions

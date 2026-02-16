@@ -5,8 +5,8 @@
   "Title": "Office of the Provost | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 106336,
-  "ScreenshotSizeBytes": 1198536,
+  "HtmlSizeBytes": 111514,
+  "ScreenshotSizeBytes": 1608956,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1198536
+      "FileSize": 1608956
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1500568Z"
+  "CapturedAt": "2026-02-16T20:58:42.4693096Z"
 }

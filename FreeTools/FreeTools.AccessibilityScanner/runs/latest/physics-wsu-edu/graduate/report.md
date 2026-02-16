@@ -6,14 +6,14 @@
 | Redirected To | https://physics.wsu.edu/overview-academics/graduate-program/application-faqs/ |
 | Title | Application | Department of Physics & Astronomy | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 209.8 KB |
+| HTML Size | 218.6 KB |
 | Screenshots | 1 (499.2 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:37.7622643Z |
+| Captured | 2026-02-16T21:00:07.8115752Z |
 
 ## Actions
 

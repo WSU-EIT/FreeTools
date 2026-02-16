@@ -5,8 +5,8 @@
   "Title": "Office of Graduate Education | College of Education, Sport, and Human Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 229045,
-  "ScreenshotSizeBytes": 1229349,
+  "HtmlSizeBytes": 227439,
+  "ScreenshotSizeBytes": 1189646,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1229349
+      "FileSize": 1189646
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:26.3476883Z"
+  "CapturedAt": "2026-02-16T21:00:01.2069649Z"
 }

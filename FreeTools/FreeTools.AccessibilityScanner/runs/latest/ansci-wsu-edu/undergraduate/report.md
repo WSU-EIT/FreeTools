@@ -5,14 +5,14 @@
 | URL | https://ansci.wsu.edu/undergraduate/ |
 | Title | Undergraduate Studies | Animal Sciences | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 216.2 KB |
+| HTML Size | 217.2 KB |
 | Screenshots | 1 (1.8 MB) |
 | Images | 5 (458.1 KB) |
 | Images Missing Alt | 2 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:04.0710156Z |
+| Captured | 2026-02-16T20:59:42.0261766Z |
 
 ## JavaScript Errors
 

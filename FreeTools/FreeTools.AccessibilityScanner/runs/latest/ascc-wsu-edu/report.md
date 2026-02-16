@@ -2,16 +2,16 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/2 pages OK |
+| Pages Scanned | 2 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 2 |
+| Pages Failed | 2 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 3.5 MB |
-| Total Screenshots | 3.4 MB |
-| Total Images | 175 (2.5 MB) |
-| Images Missing Alt | 132 |
+| Total HTML | 2.1 MB |
+| Total Screenshots | 2.0 MB |
+| Total Images | 76 (1.2 MB) |
+| Images Missing Alt | 52 |
 | Folder | `ascc-wsu-edu/` |
 
 ## Pages
@@ -19,11 +19,7 @@
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | Academic Success & Career Center – Wa... | 0 | 38 | 26 |
-| ❌ | [/academic-success/](academic-success/report.md) | 0 | Page not found – Academic Success & C... | 1 | 20 | 18 |
-| ❌ | [/appointments/](appointments/report.md) | 0 | Academic Success & Career Center – Wa... | 0 | 38 | 26 |
 | ❌ | [/career-services/](career-services/report.md) | 0 | Academic Success & Career Center – Wa... | 0 | 38 | 26 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found – Academic Success & C... | 1 | 20 | 18 |
-| ❌ | [/resources/](resources/report.md) | 0 | Resources – Academic Success & Career... | 0 | 21 | 18 |
 
 ## Page Screenshots
 
@@ -31,25 +27,9 @@
 
 ![/](_root/01-page-loaded.png)
 
-### [/academic-success/](academic-success/report.md)
-
-![/academic-success/](academic-success/01-page-loaded.png)
-
-### [/appointments/](appointments/report.md)
-
-![/appointments/](appointments/01-page-loaded.png)
-
 ### [/career-services/](career-services/report.md)
 
 ![/career-services/](career-services/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -59,41 +39,10 @@
 - **URL:** https://ascc.wsu.edu/
 - **Status:** 0
 
-### /academic-success/
-
-- **URL:** https://ascc.wsu.edu/academic-success/
-- **Status:** 0
-
 ### /career-services/
 
 - **URL:** https://ascc.wsu.edu/career-services/
 - **Status:** 0
-
-### /appointments/
-
-- **URL:** https://ascc.wsu.edu/appointments/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://ascc.wsu.edu/resources/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://ascc.wsu.edu/contact/
-- **Status:** 404
-
-
-## Pages with JavaScript Errors
-
-### /academic-success/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /contact/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

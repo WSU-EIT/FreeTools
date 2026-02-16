@@ -5,18 +5,18 @@
 | URL | https://news.wsu.edu/news/ |
 | Title | News Articles | WSU Insider | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 267.8 KB |
-| Screenshots | 1 (830.3 KB) |
+| HTML Size | 274.9 KB |
+| Screenshots | 1 (822.6 KB) |
 | Images | 11 (1.4 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:33.7901411Z |
+| Captured | 2026-02-16T21:00:15.3527044Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (830.3 KB)
+- Screenshot #1: page-loaded (822.6 KB)
 - Downloaded 11 images to /images/
 
 ## Screenshots
@@ -69,7 +69,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (830.3 KB)
+- `01-page-loaded.png` — page-loaded (822.6 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

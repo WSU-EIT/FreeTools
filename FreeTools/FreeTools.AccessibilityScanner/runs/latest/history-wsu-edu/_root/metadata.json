@@ -2,20 +2,88 @@
   "PagePath": "/",
   "Url": "https://history.wsu.edu/",
   "FinalUrl": null,
-  "Title": null,
+  "Title": "Department of History | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 0,
-  "ScreenshotSizeBytes": 0,
+  "HtmlSizeBytes": 234066,
+  "ScreenshotSizeBytes": 1700733,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
-  "Screenshots": [],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1700733
+    }
+  ],
+  "ImageCount": 10,
+  "ImagesTotalSizeBytes": 1964426,
   "ImagesMissingAlt": 0,
-  "Images": [],
-  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded",
+  "Images": [
+    {
+      "FileName": "Protest2.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3482/2025/12/Protest2.jpg",
+      "AltText": "Picketers march down a sidewalk in this historic black and white photo.",
+      "FileSize": 43705
+    },
+    {
+      "FileName": "Administration-Building-Thompson-Hall-1915-Retouched.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3482/2025/12/Administration-Building-Thompson-Hall-1915-Retouched.jpg",
+      "AltText": "Historic photograph of Thompson Hall administration building.",
+      "FileSize": 152034
+    },
+    {
+      "FileName": "TiPi.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3482/2020/01/TiPi.jpg",
+      "AltText": "Illustration of historic Native Americans meeting with settlers.",
+      "FileSize": 689987
+    },
+    {
+      "FileName": "2020winter-fallen.1200-2.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3482/2025/10/2020winter-fallen.1200-2.jpg",
+      "AltText": "Veteran\u0027s Memorial on the WSU Pullman campus.",
+      "FileSize": 303968
+    },
+    {
+      "FileName": "Reactor.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3482/2020/01/Reactor.jpg",
+      "AltText": "Historic photo of the Hanford nuclear facility.",
+      "FileSize": 386984
+    },
+    {
+      "FileName": "Theatre.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3482/2020/01/Theatre.jpg",
+      "AltText": "Tourists visit an ancient stone amphitheater. ",
+      "FileSize": 65734
+    },
+    {
+      "FileName": "Constitution-of-the-United-States-1024x676-1-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2026/02/Constitution-of-the-United-States-1024x676-1-792x523.jpg",
+      "AltText": "Closeup of the Constitution of the United States.",
+      "FileSize": 171922
+    },
+    {
+      "FileName": "Upper-Skagit-MOU-signing-1024x676-1-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2025/11/Upper-Skagit-MOU-signing-1024x676-1-792x523.jpg",
+      "AltText": "WSU representatives show a signed memorandum of understanding to Zoom attendees.",
+      "FileSize": 100882
+    },
+    {
+      "FileName": "College-Arts-Sciences-FeaturedImage-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2023/09/College-Arts-Sciences-FeaturedImage-792x523.jpg",
+      "AltText": "Washington State University. College of Arts and Sciences.",
+      "FileSize": 30304
+    },
+    {
+      "FileName": "In-the-media-header-792x445.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2024/12/In-the-media-header-792x445.png",
+      "AltText": "In the media.",
+      "FileSize": 18906
+    }
+  ],
+  "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.082953Z"
+  "CapturedAt": "2026-02-16T20:58:42.4604697Z"
 }

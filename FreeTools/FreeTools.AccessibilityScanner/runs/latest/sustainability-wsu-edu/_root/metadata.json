@@ -5,22 +5,22 @@
   "Title": "WSU Sustainability | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 61609,
-  "ScreenshotSizeBytes": 819642,
+  "HtmlSizeBytes": 65991,
+  "ScreenshotSizeBytes": 1014596,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 5,
+  "ConsoleErrorCount": 3,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 819642
+      "FileSize": 1014596
     }
   ],
-  "ImageCount": 2,
-  "ImagesTotalSizeBytes": 449819,
-  "ImagesMissingAlt": 2,
+  "ImageCount": 3,
+  "ImagesTotalSizeBytes": 759563,
+  "ImagesMissingAlt": 3,
   "Images": [
     {
       "FileName": "market.jpg",
@@ -33,9 +33,15 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2960/2024/09/reusable-containers-bin-1024x676-1.jpg",
       "AltText": "",
       "FileSize": 140908
+    },
+    {
+      "FileName": "pastureland.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2960/2024/04/pastureland.jpg",
+      "AltText": "",
+      "FileSize": 309744
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.165084Z"
+  "CapturedAt": "2026-02-16T20:58:42.4750327Z"
 }

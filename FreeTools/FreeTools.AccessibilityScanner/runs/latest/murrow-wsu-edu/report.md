@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 3/7 pages OK |
-| Pages Scanned | 7 |
-| Pages Passed | 3 |
-| Pages Failed | 4 |
-| Total JS Errors | 1 |
-| Total JS Warnings | 2 |
-| Total HTML | 1.8 MB |
-| Total Screenshots | 8.8 MB |
-| Total Images | 86 (11.0 MB) |
+| Status | ⚠️ 4/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 4 |
+| Pages Failed | 2 |
+| Total JS Errors | 0 |
+| Total JS Warnings | 1 |
+| Total HTML | 1.6 MB |
+| Total Screenshots | 10.2 MB |
+| Total Images | 87 (11.5 MB) |
 | Images Missing Alt | 10 |
 | Folder | `murrow-wsu-edu/` |
 
@@ -18,13 +18,12 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Edward R. Murrow College of Communica... | 0 | 39 | 3 |
+| ❌ | [/](_root/report.md) | 0 | Edward R. Murrow College of Communica... | 0 | 40 | 3 |
 | ❌ | [/about/](about/report.md) | 0 | About Edward R. Murrow \| Edward R. M... | 0 | 10 | 0 |
 | ✅ | [/faculty/](faculty/report.md) | 200 | Faculty Directory Update Form \| Edwa... | 0 | 0 | 0 |
 | ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Programs \| Edward R. Murrow... | 0 | 7 | 1 |
 | ✅ | [/news/](news/report.md) | 200 | News Articles \| Edward R. Murrow Col... | 0 | 7 | 2 |
-| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| Edward R. Murrow Co... | 1 | 0 | 0 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Programs \| Edward R. M... | 0 | 23 | 4 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Programs \| Edward R. M... | 0 | 23 | 4 |
 
 ## Page Screenshots
 
@@ -48,10 +47,6 @@
 
 ![/news/](news/01-page-loaded.png)
 
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
-
 ### [/undergraduate/](undergraduate/report.md)
 
 ![/undergraduate/](undergraduate/01-page-loaded.png)
@@ -68,23 +63,6 @@
 
 - **URL:** https://murrow.wsu.edu/about/
 - **Status:** 0
-
-### /undergraduate/
-
-- **URL:** https://murrow.wsu.edu/undergraduate/
-- **Status:** 0
-
-### /programs/
-
-- **URL:** https://murrow.wsu.edu/programs/
-- **Status:** 404
-
-
-## Pages with JavaScript Errors
-
-### /programs/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

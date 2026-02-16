@@ -5,23 +5,19 @@
 | URL | https://foundation.wsu.edu/ |
 | Title | WSU Foundation | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 253.4 KB |
-| Screenshots | 1 (753.5 KB) |
-| Images | 12 (1.5 MB) |
-| Images Missing Alt | 5 |
-| JS Errors | 1 |
+| HTML Size | 251.1 KB |
+| Screenshots | 1 (1.1 MB) |
+| Images | 11 (926.7 KB) |
+| Images Missing Alt | 4 |
+| JS Errors | 0 |
 | JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0818884Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:58:42.4542642Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (753.5 KB)
-- Downloaded 12 images to /images/
+- Screenshot #1: page-loaded (1.1 MB)
+- Downloaded 11 images to /images/
 
 ## Screenshots
 
@@ -30,7 +26,7 @@
 ![page-loaded](01-page-loaded.png)
 
 
-## Page Images (12)
+## Page Images (11)
 
 | # | Image | Alt Text | Size |
 |---|-------|----------|------|
@@ -40,12 +36,11 @@
 | 4 | [Delisa-news-792x520-2.jpg](images/Delisa-news-792x520-2.jpg) | *(none)* | 86.5 KB |
 | 5 | [planes-on-tarmac-1024x676-2.jpg](images/planes-on-tarmac-1024x676-2.jpg) | *(none)* | 64.9 KB |
 | 6 | [Butch_1672-792x594-1.jpg](images/Butch_1672-792x594-1.jpg) | *(none)* | 282.6 KB |
-| 7 | [Heald-1-1.jpg](images/Heald-1-1.jpg) | *(none)* | 599.2 KB |
-| 8 | [Crimson-Opp.-Scholarship-1701x1276-1-792x594.jpg](images/Crimson-Opp.-Scholarship-1701x1276-1-792x594.jpg) | WSU students working together | 91.0 KB |
-| 9 | [Presidents-excellence-fund-card-image-794x592-1.jpg](images/Presidents-excellence-fund-card-image-794x592-1.jpg) | *(none)* | 137.9 KB |
-| 10 | [foundation-icons-01-198x198.png](images/foundation-icons-01-198x198.png) | Hands and hearts icon | 8.9 KB |
-| 11 | [foundation-icons-02-198x198.png](images/foundation-icons-02-198x198.png) | Hands holding heart icon | 10.9 KB |
-| 12 | [foundation-icons-03-198x198.png](images/foundation-icons-03-198x198.png) | People icon | 10.2 KB |
+| 7 | [Crimson-Opp.-Scholarship-1701x1276-1-792x594.jpg](images/Crimson-Opp.-Scholarship-1701x1276-1-792x594.jpg) | WSU students working together | 91.0 KB |
+| 8 | [Presidents-excellence-fund-card-image-794x592-1.jpg](images/Presidents-excellence-fund-card-image-794x592-1.jpg) | *(none)* | 137.9 KB |
+| 9 | [foundation-icons-01-198x198.png](images/foundation-icons-01-198x198.png) | Hands and hearts icon | 8.9 KB |
+| 10 | [foundation-icons-02-198x198.png](images/foundation-icons-02-198x198.png) | Hands holding heart icon | 10.9 KB |
+| 11 | [foundation-icons-03-198x198.png](images/foundation-icons-03-198x198.png) | People icon | 10.2 KB |
 
 ### Gallery
 
@@ -61,8 +56,6 @@
 
 ![Butch_1672-792x594-1.jpg](images/Butch_1672-792x594-1.jpg)
 
-![Heald-1-1.jpg](images/Heald-1-1.jpg)
-
 ![WSU students working together](images/Crimson-Opp.-Scholarship-1701x1276-1-792x594.jpg)
 
 ![Presidents-excellence-fund-card-image-794x592-1.jpg](images/Presidents-excellence-fund-card-image-794x592-1.jpg)
@@ -74,21 +67,20 @@
 ![People icon](images/foundation-icons-03-198x198.png)
 
 
-### ⚠️ Images Missing Alt Text (5)
+### ⚠️ Images Missing Alt Text (4)
 
 - `Delisa-news-792x520-2.jpg` — https://wpcdn.web.wsu.edu/wp-foundation/uploads/sites/632/2026/01/Delisa-news-792x520-2.jpg
 - `planes-on-tarmac-1024x676-2.jpg` — https://wpcdn.web.wsu.edu/wp-foundation/uploads/sites/632/2026/01/planes-on-tarmac-1024x676-2.jpg
 - `Butch_1672-792x594-1.jpg` — https://wpcdn.web.wsu.edu/wp-foundation/uploads/sites/632/2025/02/Butch_1672-792x594-1.jpg
-- `Heald-1-1.jpg` — https://wpcdn.web.wsu.edu/wp-foundation/uploads/sites/632/2025/11/Heald-1-1.jpg
 - `Presidents-excellence-fund-card-image-794x592-1.jpg` — https://wpcdn.web.wsu.edu/wp-foundation/uploads/sites/632/2024/05/Presidents-excellence-fund-card-image-794x592-1.jpg
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (753.5 KB)
+- `01-page-loaded.png` — page-loaded (1.1 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
-- `images/` — 12 page images (1.5 MB)
+- `images/` — 11 page images (926.7 KB)

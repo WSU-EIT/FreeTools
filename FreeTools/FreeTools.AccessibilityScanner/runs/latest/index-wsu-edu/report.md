@@ -6,7 +6,7 @@
 | Pages Scanned | 6 |
 | Pages Passed | 0 |
 | Pages Failed | 6 |
-| Total JS Errors | 6 |
+| Total JS Errors | 1 |
 | Total JS Warnings | 0 |
 | Total HTML | 1.2 MB |
 | Total Screenshots | 1.3 MB |
@@ -18,9 +18,9 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU A-Z Index \| Washington State Uni... | 5 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | WSU A-Z Index \| Washington State Uni... | 1 | 0 | 0 |
 | ❌ | [/?c=A](_qc-A/report.md) | 0 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
-| ❌ | [/?c=B](_qc-B/report.md) | 0 | WSU A-Z Index \| Washington State Uni... | 1 | 0 | 0 |
+| ❌ | [/?c=B](_qc-B/report.md) | 0 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
 | ❌ | [/?c=C](_qc-C/report.md) | 0 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
 | ❌ | [/?c=D](_qc-D/report.md) | 0 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
 | ❌ | [/?c=E](_qc-E/report.md) | 0 | WSU A-Z Index \| Washington State Uni... | 0 | 0 | 0 |
@@ -87,15 +87,7 @@
 
 ## Pages with JavaScript Errors
 
-### / (5 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /?c=B (1 errors)
+### / (1 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 

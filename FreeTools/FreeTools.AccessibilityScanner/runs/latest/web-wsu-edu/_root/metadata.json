@@ -5,10 +5,10 @@
   "Title": "Web Communication | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 218156,
+  "HtmlSizeBytes": 222295,
   "ScreenshotSizeBytes": 210256,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1535101Z"
+  "CapturedAt": "2026-02-16T20:58:42.4604985Z"
 }

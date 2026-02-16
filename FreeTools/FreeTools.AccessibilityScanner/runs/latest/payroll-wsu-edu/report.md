@@ -2,13 +2,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/2 pages OK |
+| Pages Scanned | 2 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 4 |
+| Pages Failed | 2 |
+| Total JS Errors | 1 |
 | Total JS Warnings | 0 |
-| Total HTML | 307.4 KB |
+| Total HTML | 120.8 KB |
 | Total Screenshots | 1.1 MB |
 | Total Images | 1 (297.3 KB) |
 | Images Missing Alt | 1 |
@@ -18,12 +18,8 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Payroll Services \| Washington State ... | 0 | 1 | 1 |
+| ❌ | [/](_root/report.md) | 0 | Payroll Services \| Washington State ... | 1 | 1 | 1 |
 | ❌ | [/contact/](contact/report.md) | 0 | contact \| Payroll Services \| Washin... | 0 | 0 | 0 |
-| ❌ | [/forms/](forms/report.md) | 0 | Page not found \| Payroll Services \|... | 1 | 0 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| Payroll Services \|... | 1 | 0 | 0 |
-| ❌ | [/services/](services/report.md) | 0 | Page not found \| Payroll Services \|... | 1 | 0 | 0 |
-| ❌ | [/tax-information/](tax-information/report.md) | 0 | Page not found \| Payroll Services \|... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -35,48 +31,12 @@
 
 ![/contact/](contact/01-page-loaded.png)
 
-### [/forms/](forms/report.md)
-
-![/forms/](forms/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
-### [/services/](services/report.md)
-
-![/services/](services/01-page-loaded.png)
-
-### [/tax-information/](tax-information/report.md)
-
-![/tax-information/](tax-information/01-page-loaded.png)
-
 
 ## Failed Pages
 
 ### /
 
 - **URL:** https://payroll.wsu.edu/
-- **Status:** 0
-
-### /services/
-
-- **URL:** https://payroll.wsu.edu/services/
-- **Status:** 0
-
-### /forms/
-
-- **URL:** https://payroll.wsu.edu/forms/
-- **Status:** 0
-
-### /tax-information/
-
-- **URL:** https://payroll.wsu.edu/tax-information/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://payroll.wsu.edu/resources/
 - **Status:** 0
 
 ### /contact/
@@ -87,21 +47,9 @@
 
 ## Pages with JavaScript Errors
 
-### /services/ (1 errors)
+### / (1 errors)
 
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /forms/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /tax-information/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /resources/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

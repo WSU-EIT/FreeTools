@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/7 pages OK |
-| Pages Scanned | 7 |
+| Status | ⚠️ 0/5 pages OK |
+| Pages Scanned | 5 |
 | Pages Passed | 0 |
-| Pages Failed | 7 |
-| Total JS Errors | 3 |
+| Pages Failed | 5 |
+| Total JS Errors | 1 |
 | Total JS Warnings | 0 |
-| Total HTML | 434.0 KB |
-| Total Screenshots | 4.1 MB |
+| Total HTML | 364.8 KB |
+| Total Screenshots | 3.6 MB |
 | Total Images | 44 (4.0 MB) |
 | Images Missing Alt | 44 |
 | Folder | `brand-wsu-edu/` |
@@ -22,9 +22,7 @@
 | ❌ | [/colors/](colors/report.md) | 0 | Colors – Washington State University | 0 | 6 | 6 |
 | ❌ | [/downloads/](downloads/report.md) | 0 | Downloads – Washington State University | 0 | 9 | 9 |
 | ❌ | [/logos/](logos/report.md) | 0 | Logos – Washington State University | 0 | 17 | 17 |
-| ❌ | [/templates/](templates/report.md) | 0 | Page not found – Washington State Uni... | 1 | 0 | 0 |
 | ❌ | [/typography/](typography/report.md) | 0 | Typography – Washington State University | 0 | 12 | 12 |
-| ❌ | [/visual-identity/](visual-identity/report.md) | 0 | Page not found – Washington State Uni... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -44,17 +42,9 @@
 
 ![/logos/](logos/01-page-loaded.png)
 
-### [/templates/](templates/report.md)
-
-![/templates/](templates/01-page-loaded.png)
-
 ### [/typography/](typography/report.md)
 
 ![/typography/](typography/01-page-loaded.png)
-
-### [/visual-identity/](visual-identity/report.md)
-
-![/visual-identity/](visual-identity/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -62,11 +52,6 @@
 ### /
 
 - **URL:** https://brand.wsu.edu/
-- **Status:** 0
-
-### /visual-identity/
-
-- **URL:** https://brand.wsu.edu/visual-identity/
 - **Status:** 0
 
 ### /logos/
@@ -84,11 +69,6 @@
 - **URL:** https://brand.wsu.edu/typography/
 - **Status:** 0
 
-### /templates/
-
-- **URL:** https://brand.wsu.edu/templates/
-- **Status:** 0
-
 ### /downloads/
 
 - **URL:** https://brand.wsu.edu/downloads/
@@ -100,14 +80,6 @@
 ### / (1 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /visual-identity/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /templates/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

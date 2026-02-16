@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/1 pages OK |
+| Pages Scanned | 1 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 4 |
+| Pages Failed | 1 |
+| Total JS Errors | 2 |
 | Total JS Warnings | 0 |
-| Total HTML | 64.8 KB |
-| Total Screenshots | 67.5 KB |
+| Total HTML | 50.5 KB |
+| Total Screenshots | 48.9 KB |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `parking-wsu-edu/` |
@@ -18,34 +18,13 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 404 | 404 Not Found | 1 | 0 | 0 |
-| ❌ | [/maps/](maps/report.md) | 404 | 404 Not Found | 1 | 0 | 0 |
-| ❌ | [/permits/](permits/report.md) | 0 | Login \| Washington State University ... | 0 | 0 | 0 |
-| ❌ | [/policies/](policies/report.md) | 404 | 404 Not Found | 1 | 0 | 0 |
-| ❌ | [/visitor-parking/](visitor-parking/report.md) | 404 | 404 Not Found | 1 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Home Page \| Washington State Univers... | 2 | 0 | 0 |
 
 ## Page Screenshots
 
-### [/contact/](contact/report.md)
+### [/](_root/report.md)
 
-![/contact/](contact/01-page-loaded.png)
-
-### [/maps/](maps/report.md)
-
-![/maps/](maps/01-page-loaded.png)
-
-### [/permits/](permits/report.md)
-
-![/permits/](permits/01-page-loaded.png)
-
-### [/policies/](policies/report.md)
-
-![/policies/](policies/01-page-loaded.png)
-
-### [/visitor-parking/](visitor-parking/report.md)
-
-![/visitor-parking/](visitor-parking/01-page-loaded.png)
+![/](_root/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -54,54 +33,14 @@
 
 - **URL:** https://parking.wsu.edu/
 - **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
-
-### /permits/
-
-- **URL:** https://parking.wsu.edu/permits/
-- **Status:** 0
-
-### /maps/
-
-- **URL:** https://parking.wsu.edu/maps/
-- **Status:** 404
-
-### /visitor-parking/
-
-- **URL:** https://parking.wsu.edu/visitor-parking/
-- **Status:** 404
-
-### /policies/
-
-- **URL:** https://parking.wsu.edu/policies/
-- **Status:** 404
-
-### /contact/
-
-- **URL:** https://parking.wsu.edu/contact/
-- **Status:** 404
 
 
 ## Pages with JavaScript Errors
 
-### /maps/ (1 errors)
+### / (2 errors)
 
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /visitor-parking/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /policies/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /contact/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

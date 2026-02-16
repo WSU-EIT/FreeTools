@@ -5,8 +5,8 @@
   "Title": "Education | College of Veterinary Medicine | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 249018,
-  "ScreenshotSizeBytes": 776034,
+  "HtmlSizeBytes": 259929,
+  "ScreenshotSizeBytes": 1101688,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 776034
+      "FileSize": 1101688
     }
   ],
   "ImageCount": 7,
@@ -67,5 +67,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:02.5595759Z"
+  "CapturedAt": "2026-02-16T21:00:20.970425Z"
 }

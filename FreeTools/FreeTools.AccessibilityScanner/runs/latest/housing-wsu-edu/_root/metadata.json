@@ -2,20 +2,40 @@
   "PagePath": "/",
   "Url": "https://housing.wsu.edu/",
   "FinalUrl": null,
-  "Title": null,
+  "Title": "Home",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 0,
-  "ScreenshotSizeBytes": 0,
+  "HtmlSizeBytes": 69630,
+  "ScreenshotSizeBytes": 2053069,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
-  "Screenshots": [],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
-  "ImagesMissingAlt": 0,
-  "Images": [],
-  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded",
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 2053069
+    }
+  ],
+  "ImageCount": 2,
+  "ImagesTotalSizeBytes": 193830,
+  "ImagesMissingAlt": 2,
+  "Images": [
+    {
+      "FileName": "chinook.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/f1mpu2jj/chinook.jpg",
+      "AltText": "",
+      "FileSize": 146772
+    },
+    {
+      "FileName": "campus-map-snippet.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/jefihek4/campus-map-snippet.jpg",
+      "AltText": "",
+      "FileSize": 47058
+    }
+  ],
+  "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0836393Z"
+  "CapturedAt": "2026-02-16T20:58:42.4605917Z"
 }

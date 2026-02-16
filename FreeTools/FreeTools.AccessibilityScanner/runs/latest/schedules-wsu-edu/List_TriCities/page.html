@@ -107,14 +107,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js" integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data-2012-2022.min.js" integrity="sha512-+7gFvmqJKLT2C38z54c1ZjDan+XbYyNUK8rzsTXKEOLp/gsv+BJ5GtxlbvyyZCfmE+uk0TjtaUExB9cpSKhqmw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://knockoutjs.com/downloads/knockout-3.5.1.js"></script>
-    <link rel="stylesheet" href="/css/site.css?v=fe962b60314b41028f00c6d159bba092">
-    <link rel="stylesheet" href="/css/theme.light.css?v=fe962b60314b41028f00c6d159bba092">
-    <link rel="stylesheet" href="/css/theme.dark.css?v=fe962b60314b41028f00c6d159bba092">
+    <link rel="stylesheet" href="/css/site.css?v=bc8a061003c4475ab79e1e56f03c066c">
+    <link rel="stylesheet" href="/css/theme.light.css?v=bc8a061003c4475ab79e1e56f03c066c">
+    <link rel="stylesheet" href="/css/theme.dark.css?v=bc8a061003c4475ab79e1e56f03c066c">
     <script src="/js/prism/prism.js" data-manual=""></script>
-    <script src="/js/tsUtilities/utilModels.js?v=fe962b60314b41028f00c6d159bba092"></script>
-    <script src="/js/tsUtilities/utilFunctions.js?v=fe962b60314b41028f00c6d159bba092"></script>
-    <script src="/js/pagedRecordset/pagedRecordset.js?v=fe962b60314b41028f00c6d159bba092"></script>
-    <script src="/js/Models.js?v=fe962b60314b41028f00c6d159bba092"></script>
+    <script src="/js/tsUtilities/utilModels.js?v=bc8a061003c4475ab79e1e56f03c066c"></script>
+    <script src="/js/tsUtilities/utilFunctions.js?v=bc8a061003c4475ab79e1e56f03c066c"></script>
+    <script src="/js/pagedRecordset/pagedRecordset.js?v=bc8a061003c4475ab79e1e56f03c066c"></script>
+    <script src="/js/Models.js?v=bc8a061003c4475ab79e1e56f03c066c"></script>
     <script src="https://code.highcharts.com/stock/highstock.js" type="text/javascript"></script>
     <script src="https://code.highcharts.com/stock/modules/drilldown.js" type="text/javascript"></script>
     <script src="https://code.highcharts.com/highcharts-3d.js" type="text/javascript"></script>
@@ -123,11 +123,11 @@
 <link rel="stylesheet" id="wsu_design_system_css-css" href="https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/wsu-design-system.css?ver=1.7.10-1.26.2" media="all">
 <link rel="stylesheet" id="wsu_design_system_css_wordpress-css" href="https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/wsu-design-system.wordpress.css?ver=1.7.10-1.26.2" media="all">
 <script src="https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/wsu-design-system.init.js?ver=1.7.10-1.26.2" id="wsu_design_system_js_init-js"></script>
-    <script src="/js/viewModels/main.js?v=f9ceaa600a084fcebfdc615603ee8bb3"></script>
+    <script src="/js/viewModels/main.js?v=f270ade6ca9e4c3dbfa7428d529ddd5d"></script>
     <script src="/js/signalr/dist/browser/signalr.js"></script>
 </head>
 
-<body id="body-element">
+<body id="body-element" data-bs-theme="light">
     <a class="wsu-skip-to-main" href="#wsu-site-menu">Skip to menu</a>
     <a class="wsu-skip-to-main" href="#wsu-content">Skip to content</a>
     <div class="wsu-wrapper-global">
@@ -175,7 +175,7 @@
             </div>
         </header>
 
-        <script src="/js/viewModels/nav.js?v=6460fd28e9a34e3489eec0745b0acc79"></script>
+        <script src="/js/viewModels/nav.js?v=9a2d66c76d164f609451ef22ec9f4d1f"></script>
 <!-- Site Nav Vertical -->
 <nav id="nav" class="wsu-navigation-site-vertical wsu-navigation-site-vertical--color-dark" aria-expanded="true" aria-haspopup="true" aria-label="Site menu">
 	<button class="wsu-navigation-site-vertical__overlay wsu-navigation-site-vertical--close" aria-label="Close site menu"></button>
@@ -252,136 +252,42 @@
                 <main main="" role="main" id="wsu-content" class="wsu-wrapper-main" tabindex="-1">
                     <article class="wsu-article">
                         <div id="content" class="wsu-c-container wsu-c-content">
-<script src="/js/viewModels/home.js?v=3bd523d39005492d8fdcae250dbba8b9"></script>
-<div id="view-home" style="display: none;" data-bind="visible: true">
-	<div data-bind="visible:MainModel().CurrentView() == ''">
+<script src="/js/viewModels/home.js?v=2c42f58be04747688b7fefa6b27bd258"></script>
+<div id="view-home" style="" data-bind="visible: true">
+	<div data-bind="visible:MainModel().CurrentView() == ''" style="display: none;">
 		<div data-bind="css:{fixed: MainModel().StickyMenus() == true}">
-			<div data-bind="with: HomePageVM" class="wsu-c-column">
-				<div data-bind="foreach: termList" class="schedule-container">
-						<div class="header_wrapper ">
-							<h4 class="City" data-bind="text: $data.campus() == 'DDP' ? 'Global' : $data.campus"></h4>
-							<ul class="Semesters" data-bind="foreach: $data.terms">
-								<li class="nav-item semester" data-bind="visible: show()">
-								<a href="#" class="nav-main" data-bind="attr: {'aria-label':campus() + term() + year()}, text: term() + ' ' + year(), click: ()=&gt; { $root.SetCampusLinkVariables($data.campus(), term(), year())}"></a>
-								</li>
-							<li class="nav-item-inactive semester nav-main" data-bind="visible: !show(), text: term() + ' ' + year()"></li>
-							<!-- ko if: $data.campus() == 'Pullman' && $index() == 2 -->
-							<li class="nav-item">
-								<a class="nav-main" aria-lable="Pullman textbooks" target="_blank" href="https://wsubookie.bncollege.com/webapp/wcs/stores/servlet/BNCBHomePage?storeId=15064&amp;catalogId=10001">Pullman textbooks</a>
-							</li>
-							<!-- /ko -->
-							<!-- ko if: $data.campus() == 'Spokane' && $index() == 2 -->
-							<li class="nav-item">
-								<a class="nav-main" aria-lable="Spokane textbooks" target="_blank" href="https://spokane.wsu.edu/current/the-bookie/">Spokane textbooks</a>
-							</li>
-							<!-- /ko -->
-							<!-- ko if: $data.campus() == 'Tri-Cities' && $index() == 2 -->
-							<li class="nav-item">
-								<a class="nav-main" aria-lable="Tri-Cities textbooks" target="_blank" href="https://wsubookie.bncollege.com/ ">Tri-Cities textbooks</a>
-							</li>
-							<!-- /ko -->
-							<!-- ko if: $data.campus() == 'Vancouver' && $index() == 2 -->
-							<li class="nav-item">
-								<a class="nav-main" aria-lable="Vancouver textbooks" target="_blank" href="https://wsubookie.bncollege.com/">Vancouver textbooks</a>
-							</li>
-							<!-- /ko -->
-							<!-- ko if: $data.campus() == 'DDP' && $index() == 2 -->
-							<li class="nav-item">
-								<a class="nav-main" aria-lable="Global campus textbooks" target="_blank" href="https://online.wsu.edu/currentStudent/courses/textbooks.aspx">Global Campus textbooks</a>
-							</li>
-							<!-- /ko -->
-							<!-- ko if: $data.campus() == 'Everett' && $index() == 2 -->
-							<li class="nav-item">
-								<a class="nav-main" aria-lable="Everett textbooks" target="_blank" href="https://wsubookie.bncollege.com/course-material/course-finder">Everett textbooks</a>
-							</li>
-							<!-- /ko -->
-							</ul>
-						</div>
-				</div>
-				<h2 class="wsu-c-heading wsu-c-heading--full">Textbook Information</h2>
-
-				<p>
-					Select the textbook links above for a direct link the WSU Bookie page for each campus.
-					Select your campus at the top of the page near the “Bookstore” tab.
-				</p>
-
-				<hr class="solid">
-
-				<h2 class="wsu-c-heading wsu-c-heading--full">Site-Based Classes</h2>
-				<p class="Basic-text">Washington State University also offers many off-campus or site-based courses. </p>
-				<div class="col-sm-4">
-					<select id="OffCampusOrSiteBasedCourses" data-bind="options: siteTerms,
-						   optionsText: 'label',
-						   optionsValue: 'value',
-							optionsBind: 'attr: {aria-lable: value;}',
-						   value: $root.SelectedFilter"></select>
-					<span>&nbsp;</span><button class="wsu-button" data-bind="click: ()=&gt; { $root.SetReportInfo($root.SelectedFilter())}">Report</button>
-				</div>
-
-				<hr class="solid">
-
-				<h2 class="wsu-c-heading wsu-c-heading--full">Coming Academic Events</h2>
-
-				<dl data-bind="foreach: calendarEvents">
-					<dt data-bind="text: dateTime"></dt>
-					<dd data-bind="text: description() + ' ' + additionalDescription()"></dd>
-				</dl>
-
-				<hr class="solid">
-
-				<h2 class="wsu-c-heading wsu-c-heading--full">Announcements</h2>
-				<p data-bind="visible: announcements().length &lt; 1">There are currently no announcements.</p>
-				<dl data-bind="foreach: announcements">
-					<dt data-bind="text: title()"></dt>
-					<dd>
-						<p data-bind="html: narrative()"></p>
-						<span data-bind="visible: relatedURL() != '', text: 'Related Link: '">
-
-						</span>
-						<a data-bind="attr: { 'aria-label': relatedLinkText(), href: relatedURL(), title: relatedLinkText() }, text: relatedLinkText()"></a>
-						<p data-bind="visible: showUserInfo()">Contact: <a data-bind="attr: { 'aria-label': userName(), href: 'mailto:'+userEmail()}, text: userName()"></a></p>
-					</dd>
-				</dl>
-			</div>
+			<div data-bind="with: HomePageVM" class="wsu-c-column"></div>
 		</div>
 	</div>
 </div>
-<script src="/js/viewModels/prefixList.js?v=e95b5062991d4cb185f9beb28e419c20"></script>
-<div id="view-prefixList" style="display: none;" data-bind="visible: true">
-    <div data-bind="visible:MainModel().CurrentView().substring(0, 10) == 'prefixlist'">
-        <p data-bind="visible: Loading() == true, text: 'Loading the prefix list...'"></p>
-        <div data-bind="visible: Loading() == false, css:{fixed: MainModel().StickyMenus() == true}">
+<script src="/js/viewModels/prefixList.js?v=6207b5abc2e94041a6dbd1fec526ea33"></script>
+<div id="view-prefixList" style="" data-bind="visible: true">
+    <div data-bind="visible:MainModel().CurrentView().substring(0, 10) == 'prefixlist'" style="display: none;">
+        <p data-bind="visible: Loading() == true, text: 'Loading the prefix list...'" style="">Loading the prefix list...</p>
+        <div data-bind="visible: Loading() == false, css:{fixed: MainModel().StickyMenus() == true}" style="display: none;">
             <div class="wsu-c-column">
                 <p class="page-sentence">This page lists the prefixes of sections offered for the campus, term, and year you selected.</p>
                 <table class="wsu-c-table wsu-c-table--striped soc-table">
                     <thead class="soc_thead">
                         <tr class="zebratable">
                             <th class="zebratablecell" data-bind="visible: ShowSubject() == false">Prefix</th>
-                            <th class="zebratablesubject" data-bind="visible: ShowSubject() == true">Subject</th>
+                            <th class="zebratablesubject" data-bind="visible: ShowSubject() == true" style="display: none;">Subject</th>
                             <th class="zebratabletitle">Title</th>
-                            <th class="zebratablelocation" data-bind="visible: ShowSubject() == true">Location</th>
-                            <th class="zebratablenumber" data-bind="visible: ShowSubject() == true">Phone Number</th>
+                            <th class="zebratablelocation" data-bind="visible: ShowSubject() == true" style="display: none;">Location</th>
+                            <th class="zebratablenumber" data-bind="visible: ShowSubject() == true" style="display: none;">Phone Number</th>
                         </tr>
                     </thead>
-                    <tbody class="wsu-c-table wsu-c-table--striped" data-bind="foreach: Prefixes">
-                        <tr class="zebratable">
-                            <td class="zebratablecell" data-bind="visible: $parent.ShowSubject() == false"><a href="#" data-bind="text: prefix(), click: ()=&gt; { $root.SetSectionList(prefix(), subject())}"></a></td>
-                            <td class="zebratablesubject" data-bind="visible: $parent.ShowSubject() == true"><a href="#" data-bind="attr: { 'aria-label': title()}, text: subject(), click: ()=&gt; { $root.SetSectionList(prefix(), subject())}"></a></td>
-                            <td class="zebratabletitle" data-bind="text:title()"></td>
-                            <td class="zebratablelocation" data-bind="visible: $parent.ShowSubject() == true, text:address()"></td>
-                            <td class="zebratablenumber" data-bind="visible: $parent.ShowSubject() == true, text:phoneNumber()"></td>
-                        </tr>
-                    </tbody>
+                    <tbody class="wsu-c-table wsu-c-table--striped" data-bind="foreach: Prefixes"></tbody>
                 </table>
             </div>
         </div>
     </div>
-</div><script src="/js/viewModels/sectionList.js?v=b79a3e0690554efda62a43403bf9e911"></script>
-    <div id="view-sectionList" style="display: none;" data-bind="visible: true">
-        <div data-bind="visible: MainModel().CurrentView().substring(0, 11) == 'sectionlist' || MainModel().CurrentView().substring(0, 10) == 'reportlist' || MainModel().CurrentView().substring(0, 14) == 'feesectionlist' || MainModel().CurrentView().substring(0, 15) == 'coopsectionlist' || MainModel().CurrentView().substring(0, 10) == 'searchlist'">
-            <p data-bind="visible: Loading() == true, text: 'Loading the section list...'"></p>
-            <div data-bind="visible: Loading() == false, with: SectionListDTO" class="wsu-c-column">
-                <p class="inlineparagraph sectionbolding" data-bind="text: $parent.SectionCount() + ' sections were found.'"></p>
+</div><script src="/js/viewModels/sectionList.js?v=8f1a33e24f504d4baa9a6c7acce23157"></script>
+    <div id="view-sectionList" style="" data-bind="visible: true">
+        <div data-bind="visible: MainModel().CurrentView().substring(0, 11) == 'sectionlist' || MainModel().CurrentView().substring(0, 10) == 'reportlist' || MainModel().CurrentView().substring(0, 14) == 'feesectionlist' || MainModel().CurrentView().substring(0, 15) == 'coopsectionlist' || MainModel().CurrentView().substring(0, 10) == 'searchlist'" style="display: none;">
+            <p data-bind="visible: Loading() == true, text: 'Loading the section list...'" style="">Loading the section list...</p>
+            <div data-bind="visible: Loading() == false, with: SectionListDTO" class="wsu-c-column" style="display: none;">
+                <p class="inlineparagraph sectionbolding" data-bind="text: $parent.SectionCount() + ' sections were found.'">0 sections were found.</p>
                 <p class="inlineparagraph"> Sections in gray are full/closed. Click on section number to see full details of a course.
                     Arranged under Bldg &amp; Room indicates a classroom is not assigned.
                     Please contact the department for more information.</p>
@@ -404,137 +310,20 @@
                             <th class="sched_enrl" abbr="Current Enrollment" id="sched_enrl">Enrolled</th>
                         </tr>
                     </thead>
-                    <tbody data-bind="foreach: sections">
-                        <!-- ko if: $index() == 0 -->
-                        <tr class="specialTable">
-                        <td style="font-weight: bold; font-size: 16px; background-color: #868686; color:#FFFFFF" colspan="10" data-bind="text: $root.ShowSubject() == false ? title() : subject() + ' ' + courseNumber() + ' ' + gradCaps() + ' ' + uCore() + ' ' + ger() + ' ' + writing() + title()"></td>
-                        </tr>
-                        <!-- /ko -->
-                        <!-- ko if: $index() != 0 -->
-                        <tr data-bind="visible: courseNumber() != $parent.sections()[$index() - 1].courseNumber() || prefix() != $parent.sections()[$index() - 1].prefix()">
-                            <td style="font-weight: bold; font-size: 16px; background-color: #868686; color:#FFFFFF" colspan="10" data-bind="text: $root.ShowSubject() == false ? title() : subject() + ' ' + courseNumber() + ' ' + gradCaps() + ' ' + uCore() + ' ' + ger() + ' ' + writing() + title()"></td>
-                        </tr>
-                        <!-- /ko -->
-                        <tr class="sectionlistdivider" data-bind="css: { grayOut: enrollment() &gt;= enrollmentLimit() }">
-                            <td class="sched_notes" headers="sched_notes" data-bind="html: $root.GetHtmlFromNotes(footNotes(), courseFee(), isMultipleFees(), coop())">
-                            </td>
-                        <td class="sched_sec" headers="sched_sec">
-                            <a class="wsu-button reduce-btn-size" href="#" data-bind="text: sectionNumber(), click: ()=&gt; { $root.SetSectionInfo(courseNumber(), sectionNumber(), isLab(), prefix(), subject())}"></a>
-                        </td>
-                            <td class="sched_sln" headers="sched_sln" data-bind="text: sln()"></td>
-                            <td class="sched_cr" headers="sched_cr" data-bind="text: credits()"></td>
-                            <td class="sched_days" headers="sched_days" data-bind="text: dayTime()"></td>
-                            <td class="sched_loc" headers="sched_loc" data-bind="text: location()"></td>
-                            <td class="sched_dates" headers="sched_dates" data-bind="text: startDate() + '--' + endDate()"></td>
-                            <td class="sched_instructor" headers="sched_instructor" data-bind="text: instructor()"></td>
-                            <td class="sched_limit" headers="sched_limit" data-bind="text: enrollmentLimit()"></td>
-                            <td class="sched_enrl" headers="sched_enrl" data-bind="text: enrollment()"></td>
-                        </tr>
-                        <tr data-bind="visible: titleAllowed() != false &amp;&amp; title().length &gt; 0">
-                        <td style="padding-left:5vw;" colspan="8" data-bind="text: 'Special Topic Title: ' + sectionTitle()"></td>
-                        </tr>
-                        <tr data-bind="visible: sectionURL() != ''">
-                            <td class="sectionlistnotes" style="padding-left:5vw;" colspan="4">
-                                <a target="_blank" data-bind="attr: { href: sectionURL() }">More Information</a>
-                            </td>
-                        </tr>
-                        <tr data-bind="visible: sectionComment() != ''">
-                            <td class="comment-text" style="padding-left:5vw;" colspan="10" data-bind="html: sectionComment()"></td>
-                        </tr>
-                        <tr data-bind="visible: site() != ''">
-                            <td style="padding-left:5vw;" class="sectionlistnotes" colspan="6" data-bind="text: 'Location: ' + site()"></td>
-                        </tr>
-                    </tbody>
+                    <tbody data-bind="foreach: sections"></tbody>
                 </table>
             </div>
     </div>
-</div><script src="/js/viewModels/sectionInfo.js?v=78e12209a74547769e174339a8d27c66"></script>
-<div id="view-sectionInfo" style="display: none;" data-bind="visible: true"> 
-    <div data-bind="visible:MainModel().CurrentView().substring(0, 11) == 'sectioninfo'">
-        <p data-bind="visible: Loading() == true, text: 'Loading the section information...'"></p>
-        <div data-bind="visible: Loading() == false, with: SectionInfoDTO" class="wsu-c-column">
-            <dl class="pagesdl" data-bind="with: sectionInfo">
-                <dt>Course Description</dt>
-                <dd data-bind="html: courseDescription()"></dd>
-                <dt data-bind="visible: coursePrerequisite() != ''">Course Prerequisite</dt>
-                <dd data-bind="visible: coursePrerequisite() != '', html: coursePrerequisite()"></dd>
-                <dt>Course Credit</dt>
-                <dd data-bind="visible: minUnits() == maxUnits(), text: credits()"></dd>
-                <dd data-bind="visible: minUnits() != maxUnits(), text: minUnits() + '- ' + maxUnits()"></dd>
-                <dt data-bind="visible: consent() != 'N'">Consent required: </dt>
-                <dd data-bind="visible: consent() != 'N', text: consent()"></dd>
-                <dt data-bind="visible: !slnRestrict()">Class Number</dt>
-                <dd data-bind="visible: !slnRestrict(), text: sln()"></dd>
-
-                <dt data-bind="visible: courseFee() != 0">Special Course Fee</dt>
-                <dd data-bind="visible: courseFee() != 0">
-                    <span data-bind="text: '$' + courseFee()"></span>
-                    <small data-bind="visible: isMultipleFees() == true">(This amount is the sum of multiple fees.)</small>
-                </dd>
-                <dt data-bind="visible: $root.GetCrosslistHTML($parent.crossConjointList(), prefix(), courseNumber()).length &gt; 0">Crosslisted Courses</dt>
-                <dd data-bind="visible: $root.GetCrosslistHTML($parent.crossConjointList(), prefix(), courseNumber()).length &gt; 0, html: $root.GetCrosslistHTML($parent.crossConjointList(), prefix(), courseNumber())"></dd>
-                <dt data-bind="visible: $root.GetConjointHTML($parent.crossConjointList(), prefix(), courseNumber()).length &gt; 0">Conjoint Courses</dt>
-                <dd data-bind="visible: $root.GetConjointHTML($parent.crossConjointList(), prefix(), courseNumber()).length &gt; 0, html: $root.GetConjointHTML($parent.crossConjointList(), prefix(), courseNumber())"></dd>
-                <dt data-bind="visible: uCore() != ''">UCORE</dt>
-                <dd data-bind="visible: uCore() != '', text: uCore()"></dd>
-                <dt data-bind="visible: gradCaps() != ''">[GRADCAPS] Graduate Capstone</dt>
-                <dd data-bind="visible: gradCaps() != ''">Yes</dd>
-                <dt data-bind="visible: $root.ShowGER &amp;&amp; ger() != ''">GER Code</dt>
-                <dd data-bind="visible: $root.ShowGER &amp;&amp; ger() != '', text: $root.GetGERLabel(ger())"></dd>
-                <dt>Writing in the Major</dt>
-                <dd data-bind="text: writing() ? 'Yes' : 'No'"></dd>
-                <dt data-bind="visible: coop() != ''">Cooperative</dt>
-                <dd data-bind="visible: coop() != ''">Open to UI degree-seeking students</dd>
-                <dt>Meetings Info</dt>
-                <dd>
-                <ul class="sectionmeeting" data-bind="foreach: meetings()">
-                    <li class="sectionmeetingitem">
-                        <span class="sectionmeetingspanitem" data-bind="text: dayTime()"></span>
-                        <span class="sectionmeetingspanitem" data-bind="text: location()"></span>
-                        <span class="sectionmeetingspanitem" data-bind="text: start() + '--' + end()"></span>
-                    </li>
-                </ul>
-                </dd>
-                <dt data-bind="visible: site() != ''">Location</dt>
-                <dd data-bind="visible: site() != '', text: site()"></dd>
-                <dt>Instructor(s)</dt>
-                <dd>
-                    <ul class="sectioninfolist" data-bind="visible: instructors().length &gt; 0,foreach: instructors()">
-                        <li style="font-weight:Bold" data-bind="visible: isPrimary(), text: firstName() + ' ' + lastName()"></li>
-                        <li data-bind="visible: !isPrimary(), text: firstName() + ' ' + lastName()"></li>
-                    </ul>
-                    <span data-bind="visible: instructors().length == 0">None listed</span>
-                </dd>
-                <dt data-bind="visible: instructionMode() == 'SO' || instructionMode() == '30' || instructionMode() == '40' || instructionMode() == 'HY' || instructionMode() == 'VR' || instructionMode() == 'VC' || instructionMode() == 'VO' || instructionMode() == 'VS' || instructionMode() == 'P'">Instruction Mode</dt>
-                <dd data-bind="visible: instructionMode() == 'SO', text: '25% or more in person'"></dd>
-                <dd data-bind="visible: instructionMode() == '30', text: '100% web-based instruction'"></dd>
-                <dd data-bind="visible: instructionMode() == '40', text: 'Video conference'"></dd>
-                <dd data-bind="visible: instructionMode() == 'HY', text: '75% or more online'"></dd>
-                <dd data-bind="visible: instructionMode() == 'P', text: '100% in person'"></dd>
-                <dd data-bind="visible: instructionMode() == 'VR', text: 'VC Receiving in a VC GUC'"></dd>
-                <dd data-bind="visible: instructionMode() == 'VO', text: 'Videoconference in another space'"></dd>
-                <dd data-bind="visible: instructionMode() == 'VC', text: 'Videoconference in a VC GUC'"></dd>
-                <dd data-bind="visible: instructionMode() == 'VS', text: 'Videoconference streaming'"></dd>
-                <dt>Enrollment Limit</dt>
-                <dd data-bind="text: enrollmentLimit()"></dd>
-                <dt>Current Enrollment</dt>
-                <dd data-bind="text: enrollment()"></dd>
-                <dt data-bind="visible: !sectionComment() == ' '">Comment</dt>
-                <dd data-bind="visible: !sectionComment() == ' ', html: sectionComment()"></dd>
-                <dt>Start Date</dt>
-                <dd data-bind="text: startDate()"></dd>
-                <dt>End Date</dt>
-                <dd data-bind="text: endDate()"></dd>
-                <dt data-bind="visible: footNotes().length != 0">Footnotes</dt>
-                <dd data-bind="visible: footNotes().length != 0, html: $root.GetHtmlFromFootnotes(footNotes())"></dd>
-            </dl>
-            <a class="wsu-button--style-action" href="https://registrar.wsu.edu/deadlines-drop-withdrawal/" target="_blank">Deadlines: Drop, Withdrawal, Pass/Fail, and Audit | Office of the Registrar (wsu.edu)</a>
-        </div>
+</div><script src="/js/viewModels/sectionInfo.js?v=7dc504b3e3c14a90beabfc997578ae5a"></script>
+<div id="view-sectionInfo" style="" data-bind="visible: true"> 
+    <div data-bind="visible:MainModel().CurrentView().substring(0, 11) == 'sectioninfo'" style="display: none;">
+        <p data-bind="visible: Loading() == true, text: 'Loading the section information...'" style="">Loading the section information...</p>
+        <div data-bind="visible: Loading() == false, with: SectionInfoDTO" class="wsu-c-column" style="display: none;"></div>
     </div>
 </div>
-<script src="/js/viewModels/about.js?v=0d1943ed3a154af2ae944072dd747cb3"></script>
-<div id="view-about" style="display: none;" data-bind="visible: true">
-    <div data-bind="visible:MainModel().CurrentView() == 'about'">
+<script src="/js/viewModels/about.js?v=18ae189cd3d04757892b79c04794a566"></script>
+<div id="view-about" style="" data-bind="visible: true">
+    <div data-bind="visible:MainModel().CurrentView() == 'about'" style="display: none;">
         <p class="Basic-text">
             <span class="message_is_prompt">Here are a few important things to know about this web site. </span>
         </p>
@@ -546,32 +335,27 @@
         <p class="Basic-text">The information provided by this web site is updated hourly every weekday.</p>
     </div>
 </div>
-<script src="/js/viewModels/absenceRequest.js?v=63742d8392e149668e696f0492c3e16c"></script>
-<div id="view-absenceRequest" style="display: none;" data-bind="visible: true">
-    <div data-bind="visible:MainModel().CurrentView() == 'absencerequest'">
+<script src="/js/viewModels/absenceRequest.js?v=7ed831b476b446bab09135a4459be7cf"></script>
+<div id="view-absenceRequest" style="" data-bind="visible: true">
+    <div data-bind="visible:MainModel().CurrentView() == 'absencerequest'" style="display: none;">
         <p class="Basic-text">This page provides a link to, and an explanation of, the Class Absence Request form.</p>
         <h3><a aria-label="Class Absence Request Form" href="http://schedules.wsu.edu/Schedules/Content/CLASS_ABSENCE_REQUEST.PDF">Class Absence Request Form</a></h3>
         <p class="Basic-text">Any student who is required to participate in off-campus, university-sponsored activities such as field trips, musical performances, judging teams, intercollegiate athletic events, etc. should obtain an official <a aria-label="Class Absence Request Form" href="http://schedules.wsu.edu/Schedules/Content/CLASS_ABSENCE_REQUEST.PDF">Class Absence Request Form</a> from the faculty of staff member supervising the off-campus activity. The form must contain specific information concerning the activity and date, be signed by the supervising faculty or staff member, and be submitted by the student, at least one week in advance, to the individual instructors of the student's classes. It is requested that students not be penalized for absence from class provided a properly signed Class Absence Request Form has been filed with the instructor prior to the absence. In all instances, it is the students' responsibility to make up all work missed. Problem cases should follow the Academic Complaint Procedures, Rule 104.</p>
     </div>
 </div>
-<script src="/js/viewModels/footnotes.js?v=ca0fbdf12f454c20b00c3ac5c3b805fb"></script>
-<div id="view-footnotes" style="display: none;" data-bind="visible: true">
-    <div data-bind="visible:MainModel().CurrentView() == 'footnotes'">
+<script src="/js/viewModels/footnotes.js?v=8d944a864d16457f89f130f2ec181b0a"></script>
+<div id="view-footnotes" style="" data-bind="visible: true">
+    <div data-bind="visible:MainModel().CurrentView() == 'footnotes'" style="display: none;">
         <p>This page lists and explains the notes shown on the left-most column of the section list.</p>
 
         <table data-bind="with: Footnotes">
-            <tbody data-bind="foreach: footNotes">
-                <tr class="zebratable">
-                    <td class="footnotesdata" data-bind="text: note()"></td>
-                    <td class="footnotesdesc" data-bind="text: description()"></td>
-                </tr>
-            </tbody>
+            <tbody data-bind="foreach: footNotes"></tbody>
         </table>
     </div>
 </div>
-<script src="/js/viewModels/archives.js?v=7dc707ce8ee546c286830626bae74c2b"></script>
-<div id="view-archives" style="display: none;" data-bind="visible: true">
-    <div data-bind="visible:MainModel().CurrentView() == 'archives'">
+<script src="/js/viewModels/archives.js?v=eb1ebe848b634b9fb91210d2290bc612"></script>
+<div id="view-archives" style="" data-bind="visible: true">
+    <div data-bind="visible:MainModel().CurrentView() == 'archives'" style="display: none;">
         <p>The data below is based on Census snapshots typically taken the second friday after the term.</p>
         <font color="#a60f2d">ADVISORY:</font>
         <p>Archive data is based on Census snapshots typically taken the second Friday of the term and is available through 2012 on most campuses. 
@@ -589,15 +373,11 @@
                             optionsValue: 'campus',
                             value: Linkz">
         </select>
-        <div data-bind="foreach: Terms">
-            <ul class="termlist" data-bind="visible: $parent.Linkz() == $data.campus(),  foreach: $data.terms">
-                <li class="term"><a href="#" class="nav-link archive-link" data-bind=" text: term() + ' ' + year(), click: ()=&gt; { $root.SetCampusLinkVariables($data.campus(), term(), year())}"></a></li>
-            </ul>
-        </div> 
+        <div data-bind="foreach: Terms"></div> 
     </div>
-</div><script src="/js/viewModels/buildings.js?v=d1d38ae7662b4ade9a0e5f1e0d13bfb1"></script>
-<div id="view-buildings" style="display: none;" data-bind="visible: true">
-    <div data-bind="visible:MainModel().CurrentView() == 'buildings'">
+</div><script src="/js/viewModels/buildings.js?v=49b5ce1543454135a009899706e7d307"></script>
+<div id="view-buildings" style="" data-bind="visible: true">
+    <div data-bind="visible:MainModel().CurrentView() == 'buildings'" style="display: none;">
         <p>A list of all building abbreviations for the WSU System.</p>
         <table data-bind="with: Buildings">
             <thead>
@@ -607,42 +387,15 @@
                     <td class="buildinglocation"><h2 class="wsu-c-heading wsu-c-heading--full">Location</h2></td>
                 </tr>
             </thead>
-            <tbody data-bind="foreach: buildings">
-                <tr class="zebratable">
-                    <td class="buildingabbr" data-bind="text: abbreviation()"></td>
-                    <td class="buildingname" data-bind="text: fullName()"></td>
-                    <td class="buildinglocation" data-bind="visible: mapLocation() != null"><a class="wsu-button--style-action" data-bind="attr: { 'aria-label': location(), href: mapLocation(), title: location() }, text: location()"></a></td>
-                    <td class="buildinglocation" data-bind="visible: mapLocation() == null, text: location()"></td>
-                </tr>
-            </tbody>
+            <tbody data-bind="foreach: buildings"></tbody>
         </table>
     </div>
 </div>
-<script src="/js/viewModels/coop.js?v=ec5a1736964844338606b7f96a88ddf6"></script>
-<div id="view-coop" style="display: none;" data-bind="visible: true">
-    <div data-bind="visible:MainModel().CurrentView() == 'coop'">
+<script src="/js/viewModels/coop.js?v=2319d6bdf00b4c2294a353c2894ec626"></script>
+<div id="view-coop" style="" data-bind="visible: true">
+    <div data-bind="visible:MainModel().CurrentView() == 'coop'" style="display: none;">
 		<h2 class="wsu-c-heading wsu-c-heading--full">WSU Coop Course Search</h2>
-		<span data-bind="with: CoopVM">
-            <p>
-                Term and Year
-                <select aria-label="term and year drop menu" data-bind="options: termList,
-                           optionsText: 'label',
-                           optionsValue: 'value',
-                           optionsBind: 'attr: {aria-lable: value;}',
-                           value: $parent.SelectedFilter,
-                           event: { change: $root.GetCoopSubjectList($root.SelectedFilter())}
-                            "></select>
-                <span><button class="wsu-button" data-bind="click: ()=&gt; { $root.SetCoopInfo($root.SelectedFilter(), $root.Code())}">Coop</button></span>
-            </p>
-            <p>
-                <label for="report">Subject</label>
-                <select aria-label="subject drop menu" name="report" data-bind="options: subjectList,
-                            optionsText: 'label',
-                            optionsValue: 'value',
-                            optionsBind: 'attr: {aria-lable: value;}',
-                            value: $parent.Code"></select>
-            </p>
-        </span>
+		<span data-bind="with: CoopVM"></span>
         <hr>
 		<h2 class="wsu-c-heading wsu-c-heading--full">Coop program for UI students attending WSU:</h2>
 		<ul>
@@ -662,4 +415,318 @@
         <p>UI will not release official transcripts to WSU for any WSU student who owes a debt to UI. Ensure all your fees and tuition not covered by the cooperative agreement and financial aid are paid in full to the UI by the end of the term.</p>
     </div>
 </div>
-<script src="/js/viewModels/fees.js?v=26ff2147ce6e4d8384574bdc665eb977"></script></div></article></main></div></div></div></body></html>
+<script src="/js/viewModels/fees.js?v=68e9ad9191804226b5acc00b4adae414"></script>
+<div id="view-fees" style="" data-bind="visible: true">
+    <div data-bind="visible:MainModel().CurrentView() == 'fees'" style="display: none;">
+        <span data-bind="with: FeesVM"></span>
+    </div>
+</div>
+<script src="/js/viewModels/reports.js?v=d55495d98f28472b956aa164da6d231a"></script>
+<div id="view-reports" class="wsu-c-column" style="" data-bind="visible: true">
+    <div data-bind="visible:MainModel().CurrentView() == 'reports'" style="display: none;">
+        <p>Use this page to run some predefined reports.</p>
+        <p>
+            Term, Year, and Campus
+            <select aria-label="term, year, campus drop menu" data-bind="options: Terms,
+                       optionsText: 'label',
+                       optionsValue: 'value',
+                        optionsBind: 'attr: {aria-lable: value;}',
+                       value: SelectedFilter"></select>
+            <span><button class="wsu-button" data-bind="click: ()=&gt; { $root.SetReportInfo($root.SelectedFilter(), $root.Code())}">Report</button></span>
+        </p>
+        <p>
+            <label for="report">Report Type</label>
+            <select aria-label="Report types drop menu" name="report" data-bind="options: ReportFilter,
+                        optionsText: 'label',
+                        optionsValue: 'value',
+                        optionsBind: 'attr: {aria-lable: value;}',
+                        value: Code"><option value="P">Percent Filled: List all sections that are 75 or more percent full.</option><option value="C">Closed Sections: List all sections that are 100 or more percent full.</option><option value="G">GER Enrollment: List all sections with a GER code.</option></select>
+        </p>
+    </div>
+</div>
+<script src="/js/viewModels/search.js?v=cce9513fa795425d93f019e07e5238ed"></script>
+<div id="view-search" style="" data-bind="visible: true">
+    <div data-bind="visible:MainModel().CurrentView() == 'search'" style="display: none;">
+		<div data-bind="with: SearchVM"></div>
+    </div>
+</div>
+                        </div>
+                    </article>
+                </main>
+            </div>
+        </div>
+        <!-- Global Footer -->
+        <div class="wsu-g-footer-wrapper" role="contentinfo">
+            <footer class="wsu-footer-global">
+                <div class="wsu-footer-global__copyright">
+                    © Washington State University 2026
+                </div>
+                <nav class="wsu-footer-global__navigation">
+                    <ul class="wsu-menu-tertiary">
+                        <li>
+                            <a href="https://access.wsu.edu/">Access</a>
+                        </li>
+                        <li>
+                            <a href="https://policies.wsu.edu/">Policies</a>
+                        </li>
+                        <li>
+                            <a href="https://portal.wsu.edu/">MyWSU</a>
+                        </li>
+                        <li>
+                            <a href="https://socialmedia.wsu.edu/">Follow WSU</a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+        <script src="https://cdn.web.wsu.edu/designsystem/2.x/dist/bundles/wsu-design-system.js?ver=1.7.10-1.26.2" id="wsu_design_system_js-js"></script>
+    </div>
+     
+    
+
+<script type="text/javascript">
+    window.action = "List";
+    window.adminUser = false;
+    window.appName = "SOC";
+    window.appTitle = "SOC";
+    window.baseURL = "https://schedules.wsu.edu/";
+    window.culture = "";
+    window.GuidEmpty = "00000000-0000-0000-0000-000000000000";
+    window.id = "TriCities";
+    window.loggedIn = true;
+    window.appAdmin = false;
+    window.mainModel;
+    window.models = [];
+    window.missingTenantCode = true;
+    window.objCultureCodes = [{"id":"aa-DJ","value":"Afar (Djibouti)"},{"id":"aa-ER","value":"Afar (Eritrea)"},{"id":"aa-ET","value":"Afar (Ethiopia)"},{"id":"af-NA","value":"Afrikaans (Namibia)"},{"id":"af-ZA","value":"Afrikaans (South Africa)"},{"id":"agq-CM","value":"Aghem (Cameroon)"},{"id":"ak-GH","value":"Akan (Ghana)"},{"id":"sq-AL","value":"Albanian (Albania)"},{"id":"sq-XK","value":"Albanian (Kosovo)"},{"id":"sq-MK","value":"Albanian (North Macedonia)"},{"id":"am-ET","value":"Amharic (Ethiopia)"},{"id":"ar-DZ","value":"Arabic (Algeria)"},{"id":"ar-BH","value":"Arabic (Bahrain)"},{"id":"ar-TD","value":"Arabic (Chad)"},{"id":"ar-KM","value":"Arabic (Comoros)"},{"id":"ar-DJ","value":"Arabic (Djibouti)"},{"id":"ar-EG","value":"Arabic (Egypt)"},{"id":"ar-ER","value":"Arabic (Eritrea)"},{"id":"ar-IQ","value":"Arabic (Iraq)"},{"id":"ar-IL","value":"Arabic (Israel)"},{"id":"ar-JO","value":"Arabic (Jordan)"},{"id":"ar-KW","value":"Arabic (Kuwait)"},{"id":"ar-LB","value":"Arabic (Lebanon)"},{"id":"ar-LY","value":"Arabic (Libya)"},{"id":"ar-MR","value":"Arabic (Mauritania)"},{"id":"ar-MA","value":"Arabic (Morocco)"},{"id":"ar-OM","value":"Arabic (Oman)"},{"id":"ar-PS","value":"Arabic (Palestinian Authority)"},{"id":"ar-QA","value":"Arabic (Qatar)"},{"id":"ar-SA","value":"Arabic (Saudi Arabia)"},{"id":"ar-SO","value":"Arabic (Somalia)"},{"id":"ar-SS","value":"Arabic (South Sudan)"},{"id":"ar-SD","value":"Arabic (Sudan)"},{"id":"ar-SY","value":"Arabic (Syria)"},{"id":"ar-TN","value":"Arabic (Tunisia)"},{"id":"ar-AE","value":"Arabic (United Arab Emirates)"},{"id":"ar-001","value":"Arabic (World)"},{"id":"ar-YE","value":"Arabic (Yemen)"},{"id":"hy-AM","value":"Armenian (Armenia)"},{"id":"as-IN","value":"Assamese (India)"},{"id":"ast-ES","value":"Asturian (Spain)"},{"id":"asa-TZ","value":"Asu (Tanzania)"},{"id":"az-Cyrl-AZ","value":"Azerbaijani (Cyrillic, Azerbaijan)"},{"id":"az-Latn-AZ","value":"Azerbaijani (Latin, Azerbaijan)"},{"id":"ksf-CM","value":"Bafia (Cameroon)"},{"id":"bm-ML","value":"Bamanankan (Mali)"},{"id":"bn-BD","value":"Bangla (Bangladesh)"},{"id":"bn-IN","value":"Bangla (India)"},{"id":"bas-CM","value":"Basaa (Cameroon)"},{"id":"ba-RU","value":"Bashkir (Russia)"},{"id":"eu-ES","value":"Basque (Spain)"},{"id":"be-BY","value":"Belarusian (Belarus)"},{"id":"bem-ZM","value":"Bemba (Zambia)"},{"id":"bez-TZ","value":"Bena (Tanzania)"},{"id":"byn-ER","value":"Blin (Eritrea)"},{"id":"brx-IN","value":"Bodo (India)"},{"id":"bs-Cyrl-BA","value":"Bosnian (Cyrillic, Bosnia & Herzegovina)"},{"id":"bs-Latn-BA","value":"Bosnian (Latin, Bosnia & Herzegovina)"},{"id":"br-FR","value":"Breton (France)"},{"id":"bg-BG","value":"Bulgarian (Bulgaria)"},{"id":"my-MM","value":"Burmese (Myanmar)"},{"id":"ca-AD","value":"Catalan (Andorra)"},{"id":"ca-FR","value":"Catalan (France)"},{"id":"ca-IT","value":"Catalan (Italy)"},{"id":"ca-ES","value":"Catalan (Spain)"},{"id":"ceb-PH","value":"Cebuano (Philippines)"},{"id":"tzm-MA","value":"Central Atlas Tamazight (Morocco)"},{"id":"ckb-IR","value":"Central Kurdish (Iran)"},{"id":"ckb-IQ","value":"Central Kurdish (Iraq)"},{"id":"ccp-BD","value":"Chakma (Bangladesh)"},{"id":"ccp-IN","value":"Chakma (India)"},{"id":"ce-RU","value":"Chechen (Russia)"},{"id":"chr-US","value":"Cherokee (United States)"},{"id":"cgg-UG","value":"Chiga (Uganda)"},{"id":"zh-Hans-CN","value":"Chinese (Simplified, China)"},{"id":"zh-Hans-HK","value":"Chinese (Simplified, Hong Kong SAR)"},{"id":"zh-Hans-MO","value":"Chinese (Simplified, Macao SAR)"},{"id":"zh-Hans-SG","value":"Chinese (Simplified, Singapore)"},{"id":"zh-Hant-HK","value":"Chinese (Traditional, Hong Kong SAR)"},{"id":"zh-Hant-MO","value":"Chinese (Traditional, Macao SAR)"},{"id":"zh-Hant-TW","value":"Chinese (Traditional, Taiwan)"},{"id":"cu-RU","value":"Church Slavic (Russia)"},{"id":"ksh-DE","value":"Colognian (Germany)"},{"id":"kw-GB","value":"Cornish (United Kingdom)"},{"id":"co-FR","value":"Corsican (France)"},{"id":"hr-BA","value":"Croatian (Bosnia & Herzegovina)"},{"id":"hr-HR","value":"Croatian (Croatia)"},{"id":"cs-CZ","value":"Czech (Czechia)"},{"id":"da-DK","value":"Danish (Denmark)"},{"id":"da-GL","value":"Danish (Greenland)"},{"id":"dv-MV","value":"Divehi (Maldives)"},{"id":"dua-CM","value":"Duala (Cameroon)"},{"id":"nl-AW","value":"Dutch (Aruba)"},{"id":"nl-BE","value":"Dutch (Belgium)"},{"id":"nl-BQ","value":"Dutch (Bonaire, Sint Eustatius and Saba)"},{"id":"nl-CW","value":"Dutch (Curaçao)"},{"id":"nl-NL","value":"Dutch (Netherlands)"},{"id":"nl-SX","value":"Dutch (Sint Maarten)"},{"id":"nl-SR","value":"Dutch (Suriname)"},{"id":"dz-BT","value":"Dzongkha (Bhutan)"},{"id":"ebu-KE","value":"Embu (Kenya)"},{"id":"en-AS","value":"English (American Samoa)"},{"id":"en-AI","value":"English (Anguilla)"},{"id":"en-AG","value":"English (Antigua & Barbuda)"},{"id":"en-AU","value":"English (Australia)"},{"id":"en-AT","value":"English (Austria)"},{"id":"en-BS","value":"English (Bahamas)"},{"id":"en-BB","value":"English (Barbados)"},{"id":"en-BE","value":"English (Belgium)"},{"id":"en-BZ","value":"English (Belize)"},{"id":"en-BM","value":"English (Bermuda)"},{"id":"en-BW","value":"English (Botswana)"},{"id":"en-IO","value":"English (British Indian Ocean Territory)"},{"id":"en-VG","value":"English (British Virgin Islands)"},{"id":"en-BI","value":"English (Burundi)"},{"id":"en-CM","value":"English (Cameroon)"},{"id":"en-CA","value":"English (Canada)"},{"id":"en-KY","value":"English (Cayman Islands)"},{"id":"en-CX","value":"English (Christmas Island)"},{"id":"en-CC","value":"English (Cocos [Keeling] Islands)"},{"id":"en-CK","value":"English (Cook Islands)"},{"id":"en-CY","value":"English (Cyprus)"},{"id":"en-DK","value":"English (Denmark)"},{"id":"en-DM","value":"English (Dominica)"},{"id":"en-ER","value":"English (Eritrea)"},{"id":"en-SZ","value":"English (Eswatini)"},{"id":"en-150","value":"English (Europe)"},{"id":"en-FK","value":"English (Falkland Islands)"},{"id":"en-FJ","value":"English (Fiji)"},{"id":"en-FI","value":"English (Finland)"},{"id":"en-GM","value":"English (Gambia)"},{"id":"en-DE","value":"English (Germany)"},{"id":"en-GH","value":"English (Ghana)"},{"id":"en-GI","value":"English (Gibraltar)"},{"id":"en-GD","value":"English (Grenada)"},{"id":"en-GU","value":"English (Guam)"},{"id":"en-GG","value":"English (Guernsey)"},{"id":"en-GY","value":"English (Guyana)"},{"id":"en-HK","value":"English (Hong Kong SAR)"},{"id":"en-IN","value":"English (India)"},{"id":"en-IE","value":"English (Ireland)"},{"id":"en-IM","value":"English (Isle of Man)"},{"id":"en-IL","value":"English (Israel)"},{"id":"en-JM","value":"English (Jamaica)"},{"id":"en-JE","value":"English (Jersey)"},{"id":"en-KE","value":"English (Kenya)"},{"id":"en-KI","value":"English (Kiribati)"},{"id":"en-LS","value":"English (Lesotho)"},{"id":"en-LR","value":"English (Liberia)"},{"id":"en-MO","value":"English (Macao SAR)"},{"id":"en-MG","value":"English (Madagascar)"},{"id":"en-MW","value":"English (Malawi)"},{"id":"en-MY","value":"English (Malaysia)"},{"id":"en-MT","value":"English (Malta)"},{"id":"en-MH","value":"English (Marshall Islands)"},{"id":"en-MU","value":"English (Mauritius)"},{"id":"en-FM","value":"English (Micronesia)"},{"id":"en-MS","value":"English (Montserrat)"},{"id":"en-NA","value":"English (Namibia)"},{"id":"en-NR","value":"English (Nauru)"},{"id":"en-NL","value":"English (Netherlands)"},{"id":"en-NZ","value":"English (New Zealand)"},{"id":"en-NG","value":"English (Nigeria)"},{"id":"en-NU","value":"English (Niue)"},{"id":"en-NF","value":"English (Norfolk Island)"},{"id":"en-MP","value":"English (Northern Mariana Islands)"},{"id":"en-PK","value":"English (Pakistan)"},{"id":"en-PW","value":"English (Palau)"},{"id":"en-PG","value":"English (Papua New Guinea)"},{"id":"en-PH","value":"English (Philippines)"},{"id":"en-PN","value":"English (Pitcairn Islands)"},{"id":"en-PR","value":"English (Puerto Rico)"},{"id":"en-RW","value":"English (Rwanda)"},{"id":"en-WS","value":"English (Samoa)"},{"id":"en-SC","value":"English (Seychelles)"},{"id":"en-SL","value":"English (Sierra Leone)"},{"id":"en-SG","value":"English (Singapore)"},{"id":"en-SX","value":"English (Sint Maarten)"},{"id":"en-SI","value":"English (Slovenia)"},{"id":"en-SB","value":"English (Solomon Islands)"},{"id":"en-ZA","value":"English (South Africa)"},{"id":"en-SS","value":"English (South Sudan)"},{"id":"en-SH","value":"English (St Helena, Ascension, Tristan da Cunha)"},{"id":"en-KN","value":"English (St. Kitts & Nevis)"},{"id":"en-LC","value":"English (St. Lucia)"},{"id":"en-VC","value":"English (St. Vincent & Grenadines)"},{"id":"en-SD","value":"English (Sudan)"},{"id":"en-SE","value":"English (Sweden)"},{"id":"en-CH","value":"English (Switzerland)"},{"id":"en-TZ","value":"English (Tanzania)"},{"id":"en-TK","value":"English (Tokelau)"},{"id":"en-TO","value":"English (Tonga)"},{"id":"en-TT","value":"English (Trinidad & Tobago)"},{"id":"en-TC","value":"English (Turks & Caicos Islands)"},{"id":"en-TV","value":"English (Tuvalu)"},{"id":"en-UM","value":"English (U.S. Outlying Islands)"},{"id":"en-VI","value":"English (U.S. Virgin Islands)"},{"id":"en-UG","value":"English (Uganda)"},{"id":"en-AE","value":"English (United Arab Emirates)"},{"id":"en-GB","value":"English (United Kingdom)"},{"id":"en-US-POSIX","value":"English (United States, Computer)"},{"id":"en-US","value":"English (United States)"},{"id":"en-VU","value":"English (Vanuatu)"},{"id":"en-001","value":"English (World)"},{"id":"en-ZM","value":"English (Zambia)"},{"id":"en-ZW","value":"English (Zimbabwe)"},{"id":"eo-001","value":"Esperanto (World)"},{"id":"et-EE","value":"Estonian (Estonia)"},{"id":"ee-GH","value":"Ewe (Ghana)"},{"id":"ee-TG","value":"Ewe (Togo)"},{"id":"ewo-CM","value":"Ewondo (Cameroon)"},{"id":"fo-DK","value":"Faroese (Denmark)"},{"id":"fo-FO","value":"Faroese (Faroe Islands)"},{"id":"fil-PH","value":"Filipino (Philippines)"},{"id":"fi-FI","value":"Finnish (Finland)"},{"id":"fr-DZ","value":"French (Algeria)"},{"id":"fr-BE","value":"French (Belgium)"},{"id":"fr-BJ","value":"French (Benin)"},{"id":"fr-BF","value":"French (Burkina Faso)"},{"id":"fr-BI","value":"French (Burundi)"},{"id":"fr-CM","value":"French (Cameroon)"},{"id":"fr-CA","value":"French (Canada)"},{"id":"fr-CF","value":"French (Central African Republic)"},{"id":"fr-TD","value":"French (Chad)"},{"id":"fr-KM","value":"French (Comoros)"},{"id":"fr-CD","value":"French (Congo [DRC])"},{"id":"fr-CG","value":"French (Congo)"},{"id":"fr-CI","value":"French (Côte d’Ivoire)"},{"id":"fr-DJ","value":"French (Djibouti)"},{"id":"fr-GQ","value":"French (Equatorial Guinea)"},{"id":"fr-FR","value":"French (France)"},{"id":"fr-GF","value":"French (French Guiana)"},{"id":"fr-PF","value":"French (French Polynesia)"},{"id":"fr-GA","value":"French (Gabon)"},{"id":"fr-GP","value":"French (Guadeloupe)"},{"id":"fr-GN","value":"French (Guinea)"},{"id":"fr-HT","value":"French (Haiti)"},{"id":"fr-LU","value":"French (Luxembourg)"},{"id":"fr-MG","value":"French (Madagascar)"},{"id":"fr-ML","value":"French (Mali)"},{"id":"fr-MQ","value":"French (Martinique)"},{"id":"fr-MR","value":"French (Mauritania)"},{"id":"fr-MU","value":"French (Mauritius)"},{"id":"fr-YT","value":"French (Mayotte)"},{"id":"fr-MC","value":"French (Monaco)"},{"id":"fr-MA","value":"French (Morocco)"},{"id":"fr-NC","value":"French (New Caledonia)"},{"id":"fr-NE","value":"French (Niger)"},{"id":"fr-RE","value":"French (Réunion)"},{"id":"fr-RW","value":"French (Rwanda)"},{"id":"fr-SN","value":"French (Senegal)"},{"id":"fr-SC","value":"French (Seychelles)"},{"id":"fr-BL","value":"French (St. Barthélemy)"},{"id":"fr-MF","value":"French (St. Martin)"},{"id":"fr-PM","value":"French (St. Pierre & Miquelon)"},{"id":"fr-CH","value":"French (Switzerland)"},{"id":"fr-SY","value":"French (Syria)"},{"id":"fr-TG","value":"French (Togo)"},{"id":"fr-TN","value":"French (Tunisia)"},{"id":"fr-VU","value":"French (Vanuatu)"},{"id":"fr-WF","value":"French (Wallis & Futuna)"},{"id":"fur-IT","value":"Friulian (Italy)"},{"id":"ff-Latn-BF","value":"Fulah (Latin, Burkina Faso)"},{"id":"ff-Latn-CM","value":"Fulah (Latin, Cameroon)"},{"id":"ff-Latn-GM","value":"Fulah (Latin, Gambia)"},{"id":"ff-Latn-GH","value":"Fulah (Latin, Ghana)"},{"id":"ff-Latn-GW","value":"Fulah (Latin, Guinea-Bissau)"},{"id":"ff-Latn-GN","value":"Fulah (Latin, Guinea)"},{"id":"ff-Latn-LR","value":"Fulah (Latin, Liberia)"},{"id":"ff-Latn-MR","value":"Fulah (Latin, Mauritania)"},{"id":"ff-Latn-NE","value":"Fulah (Latin, Niger)"},{"id":"ff-Latn-NG","value":"Fulah (Latin, Nigeria)"},{"id":"ff-Latn-SN","value":"Fulah (Latin, Senegal)"},{"id":"ff-Latn-SL","value":"Fulah (Latin, Sierra Leone)"},{"id":"gl-ES","value":"Galician (Spain)"},{"id":"lg-UG","value":"Ganda (Uganda)"},{"id":"ka-GE","value":"Georgian (Georgia)"},{"id":"de-AT","value":"German (Austria)"},{"id":"de-BE","value":"German (Belgium)"},{"id":"de-DE","value":"German (Germany)"},{"id":"de-IT","value":"German (Italy)"},{"id":"de-LI","value":"German (Liechtenstein)"},{"id":"de-LU","value":"German (Luxembourg)"},{"id":"de-CH","value":"German (Switzerland)"},{"id":"el-CY","value":"Greek (Cyprus)"},{"id":"el-GR","value":"Greek (Greece)"},{"id":"gn-PY","value":"Guarani (Paraguay)"},{"id":"gu-IN","value":"Gujarati (India)"},{"id":"guz-KE","value":"Gusii (Kenya)"},{"id":"ha-GH","value":"Hausa (Ghana)"},{"id":"ha-NE","value":"Hausa (Niger)"},{"id":"ha-NG","value":"Hausa (Nigeria)"},{"id":"haw-US","value":"Hawaiian (United States)"},{"id":"he-IL","value":"Hebrew (Israel)"},{"id":"hi-IN","value":"Hindi (India)"},{"id":"hu-HU","value":"Hungarian (Hungary)"},{"id":"is-IS","value":"Icelandic (Iceland)"},{"id":"ig-NG","value":"Igbo (Nigeria)"},{"id":"smn-FI","value":"Inari Sami (Finland)"},{"id":"id-ID","value":"Indonesian (Indonesia)"},{"id":"ia-001","value":"Interlingua (World)"},{"id":"iu-CA","value":"Inuktitut (Canada)"},{"id":"iu-Latn-CA","value":"Inuktitut (Latin, Canada)"},{"id":"ga-IE","value":"Irish (Ireland)"},{"id":"xh-ZA","value":"isiXhosa (South Africa)"},{"id":"zu-ZA","value":"isiZulu (South Africa)"},{"id":"it-IT","value":"Italian (Italy)"},{"id":"it-SM","value":"Italian (San Marino)"},{"id":"it-CH","value":"Italian (Switzerland)"},{"id":"it-VA","value":"Italian (Vatican City)"},{"id":"ja-JP","value":"Japanese (Japan)"},{"id":"jv-ID","value":"Javanese (Indonesia)"},{"id":"dyo-SN","value":"Jola-Fonyi (Senegal)"},{"id":"kea-CV","value":"Kabuverdianu (Cabo Verde)"},{"id":"kab-DZ","value":"Kabyle (Algeria)"},{"id":"kkj-CM","value":"Kako (Cameroon)"},{"id":"kl-GL","value":"Kalaallisut (Greenland)"},{"id":"kln-KE","value":"Kalenjin (Kenya)"},{"id":"kam-KE","value":"Kamba (Kenya)"},{"id":"kn-IN","value":"Kannada (India)"},{"id":"ks-IN","value":"Kashmiri (India)"},{"id":"kk-KZ","value":"Kazakh (Kazakhstan)"},{"id":"km-KH","value":"Khmer (Cambodia)"},{"id":"ki-KE","value":"Kikuyu (Kenya)"},{"id":"rw-RW","value":"Kinyarwanda (Rwanda)"},{"id":"sw-CD","value":"Kiswahili (Congo [DRC])"},{"id":"sw-KE","value":"Kiswahili (Kenya)"},{"id":"sw-TZ","value":"Kiswahili (Tanzania)"},{"id":"sw-UG","value":"Kiswahili (Uganda)"},{"id":"kok-IN","value":"Konkani (India)"},{"id":"ko-KR","value":"Korean (Korea)"},{"id":"ko-KP","value":"Korean (North Korea)"},{"id":"khq-ML","value":"Koyra Chiini (Mali)"},{"id":"ses-ML","value":"Koyraboro Senni (Mali)"},{"id":"nmg-CM","value":"Kwasio (Cameroon)"},{"id":"ky-KG","value":"Kyrgyz (Kyrgyzstan)"},{"id":"quc-GT","value":"Kʼicheʼ (Guatemala)"},{"id":"lkt-US","value":"Lakota (United States)"},{"id":"lag-TZ","value":"Langi (Tanzania)"},{"id":"lo-LA","value":"Lao (Laos)"},{"id":"lv-LV","value":"Latvian (Latvia)"},{"id":"ln-AO","value":"Lingala (Angola)"},{"id":"ln-CF","value":"Lingala (Central African Republic)"},{"id":"ln-CD","value":"Lingala (Congo [DRC])"},{"id":"ln-CG","value":"Lingala (Congo)"},{"id":"lt-LT","value":"Lithuanian (Lithuania)"},{"id":"nds-DE","value":"Low German (Germany)"},{"id":"nds-NL","value":"Low German (Netherlands)"},{"id":"dsb-DE","value":"Lower Sorbian (Germany)"},{"id":"lu-CD","value":"Luba-Katanga (Congo [DRC])"},{"id":"smj-NO","value":"Lule Sami (Norway)"},{"id":"smj-SE","value":"Lule Sami (Sweden)"},{"id":"luo-KE","value":"Luo (Kenya)"},{"id":"lb-LU","value":"Luxembourgish (Luxembourg)"},{"id":"luy-KE","value":"Luyia (Kenya)"},{"id":"mk-MK","value":"Macedonian (North Macedonia)"},{"id":"jmc-TZ","value":"Machame (Tanzania)"},{"id":"mgh-MZ","value":"Makhuwa-Meetto (Mozambique)"},{"id":"kde-TZ","value":"Makonde (Tanzania)"},{"id":"mg-MG","value":"Malagasy (Madagascar)"},{"id":"ms-BN","value":"Malay (Brunei)"},{"id":"ms-MY","value":"Malay (Malaysia)"},{"id":"ms-SG","value":"Malay (Singapore)"},{"id":"ml-IN","value":"Malayalam (India)"},{"id":"mt-MT","value":"Maltese (Malta)"},{"id":"gv-IM","value":"Manx (Isle of Man)"},{"id":"mi-NZ","value":"Maori (New Zealand)"},{"id":"arn-CL","value":"Mapuche (Chile)"},{"id":"mr-IN","value":"Marathi (India)"},{"id":"mas-KE","value":"Masai (Kenya)"},{"id":"mas-TZ","value":"Masai (Tanzania)"},{"id":"mzn-IR","value":"Mazanderani (Iran)"},{"id":"mer-KE","value":"Meru (Kenya)"},{"id":"mgo-CM","value":"Metaʼ (Cameroon)"},{"id":"moh-CA","value":"Mohawk (Canada)"},{"id":"mn-MN","value":"Mongolian (Mongolia)"},{"id":"mn-Mong-CN","value":"Mongolian (Mongolian, China)"},{"id":"mn-Mong-MN","value":"Mongolian (Mongolian, Mongolia)"},{"id":"mfe-MU","value":"Morisyen (Mauritius)"},{"id":"mua-CM","value":"Mundang (Cameroon)"},{"id":"nqo-GN","value":"N’Ko (Guinea)"},{"id":"naq-NA","value":"Nama (Namibia)"},{"id":"ne-IN","value":"Nepali (India)"},{"id":"ne-NP","value":"Nepali (Nepal)"},{"id":"nnh-CM","value":"Ngiemboon (Cameroon)"},{"id":"jgo-CM","value":"Ngomba (Cameroon)"},{"id":"nd-ZW","value":"North Ndebele (Zimbabwe)"},{"id":"lrc-IR","value":"Northern Luri (Iran)"},{"id":"lrc-IQ","value":"Northern Luri (Iraq)"},{"id":"se-FI","value":"Northern Sami (Finland)"},{"id":"se-NO","value":"Northern Sami (Norway)"},{"id":"se-SE","value":"Northern Sami (Sweden)"},{"id":"nb-NO","value":"Norwegian Bokmål (Norway)"},{"id":"nb-SJ","value":"Norwegian Bokmål (Svalbard & Jan Mayen)"},{"id":"nn-NO","value":"Norwegian Nynorsk (Norway)"},{"id":"nus-SS","value":"Nuer (South Sudan)"},{"id":"nyn-UG","value":"Nyankole (Uganda)"},{"id":"oc-FR","value":"Occitan (France)"},{"id":"or-IN","value":"Odia (India)"},{"id":"om-ET","value":"Oromo (Ethiopia)"},{"id":"om-KE","value":"Oromo (Kenya)"},{"id":"os-GE","value":"Ossetic (Georgia)"},{"id":"os-RU","value":"Ossetic (Russia)"},{"id":"ps-AF","value":"Pashto (Afghanistan)"},{"id":"ps-PK","value":"Pashto (Pakistan)"},{"id":"fa-AF","value":"Persian (Afghanistan)"},{"id":"fa-IR","value":"Persian (Iran)"},{"id":"pl-PL","value":"Polish (Poland)"},{"id":"pt-AO","value":"Portuguese (Angola)"},{"id":"pt-BR","value":"Portuguese (Brazil)"},{"id":"pt-CV","value":"Portuguese (Cabo Verde)"},{"id":"pt-GQ","value":"Portuguese (Equatorial Guinea)"},{"id":"pt-GW","value":"Portuguese (Guinea-Bissau)"},{"id":"pt-LU","value":"Portuguese (Luxembourg)"},{"id":"pt-MO","value":"Portuguese (Macao SAR)"},{"id":"pt-MZ","value":"Portuguese (Mozambique)"},{"id":"pt-PT","value":"Portuguese (Portugal)"},{"id":"pt-ST","value":"Portuguese (São Tomé & Príncipe)"},{"id":"pt-CH","value":"Portuguese (Switzerland)"},{"id":"pt-TL","value":"Portuguese (Timor-Leste)"},{"id":"prg-001","value":"Prussian (World)"},{"id":"pa-Arab-PK","value":"Punjabi (Arabic, Pakistan)"},{"id":"pa-Guru-IN","value":"Punjabi (Gurmukhi, India)"},{"id":"qu-BO","value":"Quechua (Bolivia)"},{"id":"qu-EC","value":"Quechua (Ecuador)"},{"id":"qu-PE","value":"Quechua (Peru)"},{"id":"ro-MD","value":"Romanian (Moldova)"},{"id":"ro-RO","value":"Romanian (Romania)"},{"id":"rm-CH","value":"Romansh (Switzerland)"},{"id":"rof-TZ","value":"Rombo (Tanzania)"},{"id":"rn-BI","value":"Rundi (Burundi)"},{"id":"ru-BY","value":"Russian (Belarus)"},{"id":"ru-KZ","value":"Russian (Kazakhstan)"},{"id":"ru-KG","value":"Russian (Kyrgyzstan)"},{"id":"ru-MD","value":"Russian (Moldova)"},{"id":"ru-RU","value":"Russian (Russia)"},{"id":"ru-UA","value":"Russian (Ukraine)"},{"id":"rwk-TZ","value":"Rwa (Tanzania)"},{"id":"ssy-ER","value":"Saho (Eritrea)"},{"id":"sah-RU","value":"Sakha (Russia)"},{"id":"saq-KE","value":"Samburu (Kenya)"},{"id":"sg-CF","value":"Sango (Central African Republic)"},{"id":"sbp-TZ","value":"Sangu (Tanzania)"},{"id":"sa-IN","value":"Sanskrit (India)"},{"id":"gd-GB","value":"Scottish Gaelic (United Kingdom)"},{"id":"seh-MZ","value":"Sena (Mozambique)"},{"id":"sr-Cyrl-BA","value":"Serbian (Cyrillic, Bosnia & Herzegovina)"},{"id":"sr-Cyrl-XK","value":"Serbian (Cyrillic, Kosovo)"},{"id":"sr-Cyrl-ME","value":"Serbian (Cyrillic, Montenegro)"},{"id":"sr-Cyrl-RS","value":"Serbian (Cyrillic, Serbia)"},{"id":"sr-Latn-BA","value":"Serbian (Latin, Bosnia & Herzegovina)"},{"id":"sr-Latn-XK","value":"Serbian (Latin, Kosovo)"},{"id":"sr-Latn-ME","value":"Serbian (Latin, Montenegro)"},{"id":"sr-Latn-RS","value":"Serbian (Latin, Serbia)"},{"id":"st-LS","value":"Sesotho (Lesotho)"},{"id":"st-ZA","value":"Sesotho (South Africa)"},{"id":"nso-ZA","value":"Sesotho sa Leboa (South Africa)"},{"id":"tn-BW","value":"Setswana (Botswana)"},{"id":"tn-ZA","value":"Setswana (South Africa)"},{"id":"ksb-TZ","value":"Shambala (Tanzania)"},{"id":"sn-ZW","value":"Shona (Zimbabwe)"},{"id":"sd-PK","value":"Sindhi (Pakistan)"},{"id":"si-LK","value":"Sinhala (Sri Lanka)"},{"id":"ss-SZ","value":"siSwati (Eswatini)"},{"id":"ss-ZA","value":"siSwati (South Africa)"},{"id":"sms-FI","value":"Skolt Sami (Finland)"},{"id":"sk-SK","value":"Slovak (Slovakia)"},{"id":"sl-SI","value":"Slovenian (Slovenia)"},{"id":"xog-UG","value":"Soga (Uganda)"},{"id":"so-DJ","value":"Somali (Djibouti)"},{"id":"so-ET","value":"Somali (Ethiopia)"},{"id":"so-KE","value":"Somali (Kenya)"},{"id":"so-SO","value":"Somali (Somalia)"},{"id":"nr-ZA","value":"South Ndebele (South Africa)"},{"id":"sma-NO","value":"Southern Sami (Norway)"},{"id":"sma-SE","value":"Southern Sami (Sweden)"},{"id":"es-AR","value":"Spanish (Argentina)"},{"id":"es-BZ","value":"Spanish (Belize)"},{"id":"es-BO","value":"Spanish (Bolivia)"},{"id":"es-BR","value":"Spanish (Brazil)"},{"id":"es-CL","value":"Spanish (Chile)"},{"id":"es-CO","value":"Spanish (Colombia)"},{"id":"es-CR","value":"Spanish (Costa Rica)"},{"id":"es-CU","value":"Spanish (Cuba)"},{"id":"es-DO","value":"Spanish (Dominican Republic)"},{"id":"es-EC","value":"Spanish (Ecuador)"},{"id":"es-SV","value":"Spanish (El Salvador)"},{"id":"es-GQ","value":"Spanish (Equatorial Guinea)"},{"id":"es-GT","value":"Spanish (Guatemala)"},{"id":"es-HN","value":"Spanish (Honduras)"},{"id":"es-419","value":"Spanish (Latin America)"},{"id":"es-MX","value":"Spanish (Mexico)"},{"id":"es-NI","value":"Spanish (Nicaragua)"},{"id":"es-PA","value":"Spanish (Panama)"},{"id":"es-PY","value":"Spanish (Paraguay)"},{"id":"es-PE","value":"Spanish (Peru)"},{"id":"es-PH","value":"Spanish (Philippines)"},{"id":"es-PR","value":"Spanish (Puerto Rico)"},{"id":"es-ES","value":"Spanish (Spain)"},{"id":"es-US","value":"Spanish (United States)"},{"id":"es-UY","value":"Spanish (Uruguay)"},{"id":"es-VE","value":"Spanish (Venezuela)"},{"id":"zgh-MA","value":"Standard Moroccan Tamazight (Morocco)"},{"id":"sv-AX","value":"Swedish (Åland Islands)"},{"id":"sv-FI","value":"Swedish (Finland)"},{"id":"sv-SE","value":"Swedish (Sweden)"},{"id":"gsw-FR","value":"Swiss German (France)"},{"id":"gsw-LI","value":"Swiss German (Liechtenstein)"},{"id":"gsw-CH","value":"Swiss German (Switzerland)"},{"id":"syr-SY","value":"Syriac (Syria)"},{"id":"shi-Latn-MA","value":"Tachelhit (Latin, Morocco)"},{"id":"shi-Tfng-MA","value":"Tachelhit (Tifinagh, Morocco)"},{"id":"dav-KE","value":"Taita (Kenya)"},{"id":"tg-TJ","value":"Tajik (Tajikistan)"},{"id":"ta-IN","value":"Tamil (India)"},{"id":"ta-MY","value":"Tamil (Malaysia)"},{"id":"ta-SG","value":"Tamil (Singapore)"},{"id":"ta-LK","value":"Tamil (Sri Lanka)"},{"id":"twq-NE","value":"Tasawaq (Niger)"},{"id":"tt-RU","value":"Tatar (Russia)"},{"id":"te-IN","value":"Telugu (India)"},{"id":"teo-KE","value":"Teso (Kenya)"},{"id":"teo-UG","value":"Teso (Uganda)"},{"id":"th-TH","value":"Thai (Thailand)"},{"id":"bo-CN","value":"Tibetan (China)"},{"id":"bo-IN","value":"Tibetan (India)"},{"id":"tig-ER","value":"Tigre (Eritrea)"},{"id":"ti-ER","value":"Tigrinya (Eritrea)"},{"id":"ti-ET","value":"Tigrinya (Ethiopia)"},{"id":"to-TO","value":"Tongan (Tonga)"},{"id":"tr-CY","value":"Turkish (Cyprus)"},{"id":"tr-TR","value":"Turkish (Turkey)"},{"id":"tk-TM","value":"Turkmen (Turkmenistan)"},{"id":"uk-UA","value":"Ukrainian (Ukraine)"},{"id":"hsb-DE","value":"Upper Sorbian (Germany)"},{"id":"ur-IN","value":"Urdu (India)"},{"id":"ur-PK","value":"Urdu (Pakistan)"},{"id":"ug-CN","value":"Uyghur (China)"},{"id":"uz-Arab-AF","value":"Uzbek (Arabic, Afghanistan)"},{"id":"uz-Cyrl-UZ","value":"Uzbek (Cyrillic, Uzbekistan)"},{"id":"uz-Latn-UZ","value":"Uzbek (Latin, Uzbekistan)"},{"id":"vai-Latn-LR","value":"Vai (Latin, Liberia)"},{"id":"vai-Vaii-LR","value":"Vai (Vai, Liberia)"},{"id":"ve-ZA","value":"Venda (South Africa)"},{"id":"vi-VN","value":"Vietnamese (Vietnam)"},{"id":"vo-001","value":"Volapük (World)"},{"id":"vun-TZ","value":"Vunjo (Tanzania)"},{"id":"wae-CH","value":"Walser (Switzerland)"},{"id":"cy-GB","value":"Welsh (United Kingdom)"},{"id":"fy-NL","value":"Western Frisian (Netherlands)"},{"id":"wal-ET","value":"Wolaytta (Ethiopia)"},{"id":"wo-SN","value":"Wolof (Senegal)"},{"id":"ts-ZA","value":"Xitsonga (South Africa)"},{"id":"yav-CM","value":"Yangben (Cameroon)"},{"id":"ii-CN","value":"Yi (China)"},{"id":"yi-001","value":"Yiddish (World)"},{"id":"yo-BJ","value":"Yoruba (Benin)"},{"id":"yo-NG","value":"Yoruba (Nigeria)"},{"id":"dje-NE","value":"Zarma (Niger)"}];
+    window.objCultures = [];
+    window.objDefaultLanguage = [{"id":"AccessDenied","value":"Access Denied"},{"id":"Action","value":"Action"},{"id":"Active","value":"Active"},{"id":"ActiveDirectoryNames","value":"Active Directory Names"},{"id":"ActiveDirectoryNamesInfo","value":"Bracket-separated names of AD groups to match for this department (eg: {Enrollment IT]{Admissions}, etc.)"},{"id":"Add","value":"Add"},{"id":"Added","value":"Added"},{"id":"AddLanguage","value":"Add a Language"},{"id":"AddLanguageInfo","value":"Select a new language to add. The default English (en-US) language elements will be copied into a new language set for the selected language. You can then translate the words and phrases into the desired language."},{"id":"AddModule","value":"Add a New Module"},{"id":"AddNewDepartment","value":"Add a New Department"},{"id":"AddNewDepartmentGroup","value":"Add a New Department Group"},{"id":"AddNewUser","value":"Add a New User"},{"id":"AddNewUserGroup","value":"Add a New User Group"},{"id":"AddTenant","value":"Add a New Tenant"},{"id":"AddUsersToGroup","value":"Add Users to Group"},{"id":"Admin","value":"Admin"},{"id":"AllItems","value":"All Items"},{"id":"AllowedFileTypes","value":"Allowed File Types"},{"id":"AllowUsersToManageAvatar","value":"Allow Users to Manage Avatars"},{"id":"AllowUsersToManageBasicProfileInfo","value":"Allow Users to Manage Basic Profile Info"},{"id":"AllowUsersToManageBasicProfileInfoElements","value":"Select the User Profile Elements Users Can Edit"},{"id":"AllowUsersToResetLocalPasswordsAtLogin","value":"Allow Users to Reset Passwords on the Local Login Form"},{"id":"AllowUsersToSignUpAtLogin","value":"Allow Users to Sign Up for an Account on the Local Login Form"},{"id":"AppSettings","value":"Application Settings"},{"id":"AppTitle","value":"App Title"},{"id":"AppUrl","value":"Application URL"},{"id":"AutoCompleteUserLookup","value":"User Lookup"},{"id":"Back","value":"Back"},{"id":"BackToLogin","value":"Back to Login"},{"id":"Cancel","value":"Cancel"},{"id":"ChangePassword","value":"Change Password"},{"id":"ChangePasswordInstructions","value":"To change your password enter your current password, your new password, and confirm your new password."},{"id":"Clear","value":"Clear"},{"id":"Code","value":"Code"},{"id":"ConfirmDelete","value":"Confirm Delete"},{"id":"ConfirmDeleteTenant","value":"Confirm Delete Tenant"},{"id":"ConfirmPassword","value":"Confirm Password"},{"id":"CookieDomain","value":"CookieDomain"},{"id":"Created","value":"Created"},{"id":"CurrentPassword","value":"Current Password"},{"id":"DefaultCultureCode","value":"Default Culture Code"},{"id":"DefaultReplyToAddress","value":"Default Reply-to Email Address"},{"id":"DefaultTenantCode","value":"Default Tenant Code"},{"id":"Delete","value":"Delete"},{"id":"DeleteAvatar","value":"Delete Current Avatar Photo"},{"id":"DeleteTenant","value":"Delete Tenant"},{"id":"DeleteTenantWarning","value":"WARNING: Your are about to delete a tenant. There is no 'undo' for this operation. To confirm, type 'CONFIRM' below:"},{"id":"DeletingTenant","value":"Deleting Tenant, Please Wait..."},{"id":"DeletingTenantNotification","value":"Deleting tenant. Do not close this window until complete."},{"id":"DeletingWait","value":"Deleting, Please Wait..."},{"id":"Department","value":"Department"},{"id":"DepartmentGroup","value":"Department Group"},{"id":"DepartmentGroupName","value":"Department Group Name"},{"id":"DepartmentGroups","value":"Department Groups"},{"id":"DepartmentName","value":"Department Name"},{"id":"Departments","value":"Departments"},{"id":"Description","value":"Description"},{"id":"Edit","value":"Edit"},{"id":"EditDepartment","value":"Edit Department"},{"id":"EditDepartmentGroup","value":"Edit Department Group"},{"id":"EditLanguage","value":"Edit Language"},{"id":"EditTenant","value":"Edit Tenant"},{"id":"EditUser","value":"Edit User"},{"id":"EditUserGroup","value":"Edit User Group"},{"id":"Email","value":"Email"},{"id":"EmailAddress","value":"Email Address"},{"id":"EmployeeId","value":"Employee ID"},{"id":"Enabled","value":"Enabled"},{"id":"EncryptionKey","value":"Encryption Key"},{"id":"EncryptionKeyWarning","value":"<strong>WARNING</strong><br />Modifying the Encryption Key is very dangerous. This is the key used by the application to encrypt all sensitive data.<br /><br />When changing this value you must supply a valid 32-bit key represeted as a byte array string (eg: 0x00,0x01,0x02,etc.).<br /><br />When this value is changed the software will attempt to decrypt all values in the database, the key will be updated, then those values will be re-encrypted. If this fails you will be left with encrypted data that cannot be accessed."},{"id":"EndDate","value":"End Date"},{"id":"FirstName","value":"First Name"},{"id":"ForgotPassword","value":"Forgot Password"},{"id":"ForgotPasswordValidateInstructions","value":"To validate your new password, enter the code that was emailed to the address you provided."},{"id":"Help","value":"Help"},{"id":"HideHelp","value":"Hide Help"},{"id":"HideFilter","value":"Hide Filter"},{"id":"HomeMenuIcon","value":"<i class=\"fa-solid fa-house\"></i>"},{"id":"HomeMenuText","value":"Home"},{"id":"HomePage","value":"Home Page"},{"id":"HtmlEditorPlaceholder","value":"Enter Your HTML Here"},{"id":"IncludeInSearch","value":"Include in Search"},{"id":"IncludeInSearchInfo","value":"If this option is selected this field will be included when using the keyword search."},{"id":"IndicatesRequiredField","value":"Indicates a Required Field"},{"id":"InvalidImageFileType","value":"Invalid Image File Type"},{"id":"InvalidLogin","value":"Invalid Login"},{"id":"InvalidLoginNoLocalAccount","value":"Your credentials were valid, but you do not have an account configured in this application."},{"id":"InvalidTenantCode","value":"Invalid Tenant Code"},{"id":"InvalidTenantCodeMessage","value":"Please check your URL and ensure a valid URL is used."},{"id":"InvalidUsernameOrPassword","value":"Invalid Username or Password"},{"id":"JwtRsaPrivateKey","value":"JSON Web Token RSA Private Key"},{"id":"JwtRsaPrivateKeyInfo","value":"The private RSA key in the PEM format used to encrypt JSON Web Tokens."},{"id":"JwtRsaPublicKey","value":"JSON Web Token RSA Public Key"},{"id":"JwtRsaPublicKeyInfo","value":"The public RSA key in the PEM format used to encrypt JSON Web Tokens."},{"id":"Label","value":"Label"},{"id":"Language","value":"Language"},{"id":"LastLogin","value":"Last Login"},{"id":"LastName","value":"Last Name"},{"id":"Loading","value":"Loading"},{"id":"LoadingWait","value":"Loading, Please Wait..."},{"id":"Location","value":"Location"},{"id":"Login","value":"Login"},{"id":"LoginIntro","value":"Select a login option below:"},{"id":"LoginOptions","value":"Login Options"},{"id":"LoginTextPassword","value":"Password"},{"id":"LoginTextTenantCode","value":"Tenant Code"},{"id":"LoginTextUsername","value":"Username"},{"id":"LoginTitle","value":"Login Required"},{"id":"LoginSuccessMessage","value":"Logged In, Please Wait..."},{"id":"LoginWithEITSSO","value":"Login with OKTA Single Sign-On"},{"id":"LoginWithFacebook","value":"Log in with Facebook"},{"id":"LoginWithGoogle","value":"Log in with Google"},{"id":"LoginWithLocalAccount","value":"Log in with a Local Account"},{"id":"LoginWithMicrosoftAccount","value":"Log in with a Microsoft Account"},{"id":"LoginWithOpenId","value":"Log in with OpenId"},{"id":"Log-in","value":"Log In"},{"id":"Logout","value":"Logout"},{"id":"Log-out","value":"Log Out"},{"id":"MailServer","value":"Mail Server"},{"id":"MailServerConfiguration","value":"Mail Server Configuration"},{"id":"MailServerPassword","value":"Mail Server Password"},{"id":"MailServerPort","value":"Mail Server Port"},{"id":"MailServerUsername","value":"Mail Server Username"},{"id":"MailServerUsesSSL","value":"Mail Server Uses SSL"},{"id":"ManageAvatar","value":"Manage Your Avatar"},{"id":"ManageAvatarInstructions","value":"Drag and drop an image here to upload a user image. Images are limited to a maximum of 5MB."},{"id":"ManageAvatarInstructionsAdmin","value":"Drag and drop an image here to upload a user image. Images are limited to a maximum of 5MB. There is no need to save after uploading the user photo, as the photo is saved automatically."},{"id":"ManageProfile","value":"Manage Profile"},{"id":"ManageProfileInfo","value":"Manage Basic Profile Info"},{"id":"ManageProfileInfoInstructions","value":"You can make some basic profile updates below."},{"id":"MenuAdmin","value":"Admin"},{"id":"MenuAdminDepartments","value":"Departments"},{"id":"MenuAdminSettings","value":"Settings"},{"id":"MenuAdminUDFLabels","value":"UDF Labels"},{"id":"MenuAdminUsers","value":"Users"},{"id":"Modified","value":"Modified"},{"id":"ModifiedItems","value":"Modified Items"},{"id":"Module","value":"Module"},{"id":"ModuleName","value":"Module Name"},{"id":"ModuleNameInfo","value":"Use a name in Pascal Case with no spaces (eg: MyModule)"},{"id":"MostRecentFirst","value":"most-recent items listed first"},{"id":"Name","value":"Name"},{"id":"New","value":"New"},{"id":"NewPassword","value":"New Password"},{"id":"NewPasswordAndConfirmDontMatch","value":"New Password and Confirm Password Don't Match"},{"id":"NewTenant","value":"New Tenant"},{"id":"NewUserGroup","value":"New User Group"},{"id":"NoItemsToShow","value":"There are no items to show."},{"id":"Ok","value":"Ok"},{"id":"Option","value":"Option"},{"id":"Password","value":"Password"},{"id":"PasswordChanged","value":"Password Changed"},{"id":"PasswordReset","value":"Password Reset"},{"id":"PasswordResetMessage","value":"Your password has been updated. You may now return to the login page and log in using your new password."},{"id":"PhoneNumber","value":"Phone Number"},{"id":"Photo","value":"Photo"},{"id":"PreventPasswordChange","value":"Prevent User from Changing Password"},{"id":"ProcessingWait","value":"Processing, Please Wait..."},{"id":"RecordNavigationFirst","value":"Go to First Page of Records"},{"id":"RecordNavigationLast","value":"Go to Last Page of Records"},{"id":"RecordNavigationNext","value":"Go to Next Page of Records"},{"id":"RecordNavigationPrevious","value":"Go to Previous Page of Records"},{"id":"Refresh","value":"Refresh"},{"id":"RequiredMissing","value":"{0} is Required"},{"id":"RequirePreExistingAccount","value":"Require Pre-Existing Account to Log In"},{"id":"RequirePreExistingAccountInfo","value":"If this is set to true then a user cannot login unless a user account already exists in the database. For applications that should allow any user to log in set this to false and a new user account will be created when they log in if there is no user account already in the users table."},{"id":"ResetLanguageDefaults","value":"Reset All Language to Defaults"},{"id":"ResetPassword","value":"Reset Password"},{"id":"ResetUserPassword","value":"Reset User Password"},{"id":"SamplePage","value":"Sample Page"},{"id":"Save","value":"Save"},{"id":"Saved","value":"Saved"},{"id":"SavedAt","value":"Saved at"},{"id":"Saving","value":"Saving"},{"id":"SavingWait","value":"Saving, Please Wait..."},{"id":"SelectCulture","value":"Select a Language Culture"},{"id":"SelectTenant","value":"Select a Tenant"},{"id":"SelectTheme","value":"Select Theme"},{"id":"Settings","value":"Settings"},{"id":"ServerOffline","value":"Server Offline, Attempting to Reconnect..."},{"id":"ServerUpdated","value":"Server Updated"},{"id":"ServerUpdatedMessage","value":"The server has been updated, refreshing the application..."},{"id":"ShowColumn","value":"Show Column"},{"id":"ShowColumnInfo","value":"Indicates if this field should be show when listing records. Any UDF with a value in the Label field will be shown when editing a record. The Show Column is only used to toggle this column on and off in the records view."},{"id":"ShowFilter","value":"Show Filter"},{"id":"ShowHelp","value":"Show Help"},{"id":"ShowInFilter","value":"Show in Filter"},{"id":"ShowInFilterInfo","value":"If this option is selected this field will be shown in the filter options as a select list. Only use this option on fields with limited values, as every distinct value from the records will be used to create this list."},{"id":"ShowTenantCodeFieldOnLoginForm","value":"Show Tenant Code Field on Login Form"},{"id":"ShowTenantListingWhenMissingTenantCode","value":"Show Tenant Listing When Missing Tenant Code"},{"id":"SignUp","value":"Sign Up"},{"id":"SignUpInstructions","value":"Complete all of the following fields to sign up for an account. A confirmation code will be emailed to the address you provide to confirm that it is a valid email address. You will then enter that validation code to finish the sign up process."},{"id":"Sort","value":"Sort"},{"id":"SortOrder","value":"Sort Order"},{"id":"Source","value":"Source"},{"id":"StartDate","value":"Start Date"},{"id":"SupportedFileTypes","value":"Supported File Types"},{"id":"SwitchAccountMessage","value":"You have access to multiple app instances. You can switch to another instance below:"},{"id":"Tenant","value":"Tenant"},{"id":"TenantCode","value":"Code"},{"id":"TenantId","value":"TenantId"},{"id":"TenantName","value":"Name"},{"id":"Tenants","value":"Tenants"},{"id":"Theme","value":"Theme"},{"id":"ThemeAuto","value":"Auto (based on system settings)"},{"id":"ThemeDark","value":"Dark"},{"id":"ThemeLight","value":"Light"},{"id":"Title","value":"Title"},{"id":"UDF","value":"UDF"},{"id":"UdfHelpIntro","value":"For a simple text input just enter the field name in the Label field.<br /><br />Alternatively, you can specify that the field should be a select element or a list of radio buttons by using the following format:<br /><br />Label|select|options,separated,by,commas<br />Label|radio|options,separated,by,commas"},{"id":"UdfLabel","value":"User-Defined Field Label"},{"id":"UdfLabels","value":"User-Defined Field Labels"},{"id":"UdfOptions","value":"Options:"},{"id":"UdfShowConflictNote","value":"NOTE: While it is possible to use both Show in Filter and Include in Search for an item, this is not recommended as it is a duplication of searching. If the item is shown as a filter you can quickly find those items by clicking the appropriate filter option. Adding unneccesary fields to the Include in Search can affect performance."},{"id":"UnlockUserAccount","value":"Unlock User Account"},{"id":"UserLockedOut","value":"User account is locked out at {0} due to too many failed login attempts."},{"id":"UpdatePassword","value":"Update Password"},{"id":"UploadFile","value":"Upload a File"},{"id":"UseLocalJavascriptLibraries","value":"Use Local Javascript Libraries Instead of CDN Hosting"},{"id":"User","value":"User"},{"id":"UserGroups","value":"User Groups"},{"id":"Username","value":"Username"},{"id":"Users","value":"Users"},{"id":"UsersInGroup","value":"Users in Group"},{"id":"UseTenantCodeInUrl","value":"Use Tenant Code in URL"},{"id":"ValidateConfirmationCode","value":"Validate Confirmation Code"},{"id":"ValidatingLogin","value":"Validating Login, Please Wait..."},{"id":"ValidationCode","value":"Validation Code"},{"id":"Welcome","value":"Welcome"}];
+    window.objExtra = [];
+    window.objLanguage = {"culture":"en-US","phrases":[{"id":"AccessDenied","value":"Access Denied"},{"id":"Action","value":"Action"},{"id":"Active","value":"Active"},{"id":"ActiveDirectoryNames","value":"Active Directory Names"},{"id":"ActiveDirectoryNamesInfo","value":"Bracket-separated names of AD groups to match for this department (eg: {Enrollment IT]{Admissions}, etc.)"},{"id":"Add","value":"Add"},{"id":"Added","value":"Added"},{"id":"AddLanguage","value":"Add a Language"},{"id":"AddLanguageInfo","value":"Select a new language to add. The default English (en-US) language elements will be copied into a new language set for the selected language. You can then translate the words and phrases into the desired language."},{"id":"AddModule","value":"Add a New Module"},{"id":"AddNewDepartment","value":"Add a New Department"},{"id":"AddNewDepartmentGroup","value":"Add a New Department Group"},{"id":"AddNewUser","value":"Add a New User"},{"id":"AddNewUserGroup","value":"Add a New User Group"},{"id":"AddTenant","value":"Add a New Tenant"},{"id":"AddUsersToGroup","value":"Add Users to Group"},{"id":"Admin","value":"Admin"},{"id":"AllItems","value":"All Items"},{"id":"AllowedFileTypes","value":"Allowed File Types"},{"id":"AllowUsersToManageAvatar","value":"Allow Users to Manage Avatars"},{"id":"AllowUsersToManageBasicProfileInfo","value":"Allow Users to Manage Basic Profile Info"},{"id":"AllowUsersToManageBasicProfileInfoElements","value":"Select the User Profile Elements Users Can Edit"},{"id":"AllowUsersToResetLocalPasswordsAtLogin","value":"Allow Users to Reset Passwords on the Local Login Form"},{"id":"AllowUsersToSignUpAtLogin","value":"Allow Users to Sign Up for an Account on the Local Login Form"},{"id":"AppSettings","value":"Application Settings"},{"id":"AppTitle","value":"App Title"},{"id":"AppUrl","value":"Application URL"},{"id":"AutoCompleteUserLookup","value":"User Lookup"},{"id":"Back","value":"Back"},{"id":"BackToLogin","value":"Back to Login"},{"id":"Cancel","value":"Cancel"},{"id":"ChangePassword","value":"Change Password"},{"id":"ChangePasswordInstructions","value":"To change your password enter your current password, your new password, and confirm your new password."},{"id":"Clear","value":"Clear"},{"id":"Code","value":"Code"},{"id":"ConfirmDelete","value":"Confirm Delete"},{"id":"ConfirmDeleteTenant","value":"Confirm Delete Tenant"},{"id":"ConfirmPassword","value":"Confirm Password"},{"id":"CookieDomain","value":"CookieDomain"},{"id":"Created","value":"Created"},{"id":"CurrentPassword","value":"Current Password"},{"id":"DefaultCultureCode","value":"Default Culture Code"},{"id":"DefaultReplyToAddress","value":"Default Reply-to Email Address"},{"id":"DefaultTenantCode","value":"Default Tenant Code"},{"id":"Delete","value":"Delete"},{"id":"DeleteAvatar","value":"Delete Current Avatar Photo"},{"id":"DeleteTenant","value":"Delete Tenant"},{"id":"DeleteTenantWarning","value":"WARNING: Your are about to delete a tenant. There is no 'undo' for this operation. To confirm, type 'CONFIRM' below:"},{"id":"DeletingTenant","value":"Deleting Tenant, Please Wait..."},{"id":"DeletingTenantNotification","value":"Deleting tenant. Do not close this window until complete."},{"id":"DeletingWait","value":"Deleting, Please Wait..."},{"id":"Department","value":"Department"},{"id":"DepartmentGroup","value":"Department Group"},{"id":"DepartmentGroupName","value":"Department Group Name"},{"id":"DepartmentGroups","value":"Department Groups"},{"id":"DepartmentName","value":"Department Name"},{"id":"Departments","value":"Departments"},{"id":"Description","value":"Description"},{"id":"Edit","value":"Edit"},{"id":"EditDepartment","value":"Edit Department"},{"id":"EditDepartmentGroup","value":"Edit Department Group"},{"id":"EditLanguage","value":"Edit Language"},{"id":"EditTenant","value":"Edit Tenant"},{"id":"EditUser","value":"Edit User"},{"id":"EditUserGroup","value":"Edit User Group"},{"id":"Email","value":"Email"},{"id":"EmailAddress","value":"Email Address"},{"id":"EmployeeId","value":"Employee ID"},{"id":"Enabled","value":"Enabled"},{"id":"EncryptionKey","value":"Encryption Key"},{"id":"EncryptionKeyWarning","value":"<strong>WARNING</strong><br />Modifying the Encryption Key is very dangerous. This is the key used by the application to encrypt all sensitive data.<br /><br />When changing this value you must supply a valid 32-bit key represeted as a byte array string (eg: 0x00,0x01,0x02,etc.).<br /><br />When this value is changed the software will attempt to decrypt all values in the database, the key will be updated, then those values will be re-encrypted. If this fails you will be left with encrypted data that cannot be accessed."},{"id":"EndDate","value":"End Date"},{"id":"FirstName","value":"First Name"},{"id":"ForgotPassword","value":"Forgot Password"},{"id":"ForgotPasswordValidateInstructions","value":"To validate your new password, enter the code that was emailed to the address you provided."},{"id":"Help","value":"Help"},{"id":"HideHelp","value":"Hide Help"},{"id":"HideFilter","value":"Hide Filter"},{"id":"HomeMenuIcon","value":"<i class=\"fa-solid fa-house\"></i>"},{"id":"HomeMenuText","value":"Home"},{"id":"HomePage","value":"Home Page"},{"id":"HtmlEditorPlaceholder","value":"Enter Your HTML Here"},{"id":"IncludeInSearch","value":"Include in Search"},{"id":"IncludeInSearchInfo","value":"If this option is selected this field will be included when using the keyword search."},{"id":"IndicatesRequiredField","value":"Indicates a Required Field"},{"id":"InvalidImageFileType","value":"Invalid Image File Type"},{"id":"InvalidLogin","value":"Invalid Login"},{"id":"InvalidLoginNoLocalAccount","value":"Your credentials were valid, but you do not have an account configured in this application."},{"id":"InvalidTenantCode","value":"Invalid Tenant Code"},{"id":"InvalidTenantCodeMessage","value":"Please check your URL and ensure a valid URL is used."},{"id":"InvalidUsernameOrPassword","value":"Invalid Username or Password"},{"id":"JwtRsaPrivateKey","value":"JSON Web Token RSA Private Key"},{"id":"JwtRsaPrivateKeyInfo","value":"The private RSA key in the PEM format used to encrypt JSON Web Tokens."},{"id":"JwtRsaPublicKey","value":"JSON Web Token RSA Public Key"},{"id":"JwtRsaPublicKeyInfo","value":"The public RSA key in the PEM format used to encrypt JSON Web Tokens."},{"id":"Label","value":"Label"},{"id":"Language","value":"Language"},{"id":"LastLogin","value":"Last Login"},{"id":"LastName","value":"Last Name"},{"id":"Loading","value":"Loading"},{"id":"LoadingWait","value":"Loading, Please Wait..."},{"id":"Location","value":"Location"},{"id":"Login","value":"Login"},{"id":"LoginIntro","value":"Select a login option below:"},{"id":"LoginOptions","value":"Login Options"},{"id":"LoginTextPassword","value":"Password"},{"id":"LoginTextTenantCode","value":"Tenant Code"},{"id":"LoginTextUsername","value":"Username"},{"id":"LoginTitle","value":"Login Required"},{"id":"LoginSuccessMessage","value":"Logged In, Please Wait..."},{"id":"LoginWithEITSSO","value":"Login with OKTA Single Sign-On"},{"id":"LoginWithFacebook","value":"Log in with Facebook"},{"id":"LoginWithGoogle","value":"Log in with Google"},{"id":"LoginWithLocalAccount","value":"Log in with a Local Account"},{"id":"LoginWithMicrosoftAccount","value":"Log in with a Microsoft Account"},{"id":"LoginWithOpenId","value":"Log in with OpenId"},{"id":"Log-in","value":"Log In"},{"id":"Logout","value":"Logout"},{"id":"Log-out","value":"Log Out"},{"id":"MailServer","value":"Mail Server"},{"id":"MailServerConfiguration","value":"Mail Server Configuration"},{"id":"MailServerPassword","value":"Mail Server Password"},{"id":"MailServerPort","value":"Mail Server Port"},{"id":"MailServerUsername","value":"Mail Server Username"},{"id":"MailServerUsesSSL","value":"Mail Server Uses SSL"},{"id":"ManageAvatar","value":"Manage Your Avatar"},{"id":"ManageAvatarInstructions","value":"Drag and drop an image here to upload a user image. Images are limited to a maximum of 5MB."},{"id":"ManageAvatarInstructionsAdmin","value":"Drag and drop an image here to upload a user image. Images are limited to a maximum of 5MB. There is no need to save after uploading the user photo, as the photo is saved automatically."},{"id":"ManageProfile","value":"Manage Profile"},{"id":"ManageProfileInfo","value":"Manage Basic Profile Info"},{"id":"ManageProfileInfoInstructions","value":"You can make some basic profile updates below."},{"id":"MenuAdmin","value":"Admin"},{"id":"MenuAdminDepartments","value":"Departments"},{"id":"MenuAdminSettings","value":"Settings"},{"id":"MenuAdminUDFLabels","value":"UDF Labels"},{"id":"MenuAdminUsers","value":"Users"},{"id":"Modified","value":"Modified"},{"id":"ModifiedItems","value":"Modified Items"},{"id":"Module","value":"Module"},{"id":"ModuleName","value":"Module Name"},{"id":"ModuleNameInfo","value":"Use a name in Pascal Case with no spaces (eg: MyModule)"},{"id":"MostRecentFirst","value":"most-recent items listed first"},{"id":"Name","value":"Name"},{"id":"New","value":"New"},{"id":"NewPassword","value":"New Password"},{"id":"NewPasswordAndConfirmDontMatch","value":"New Password and Confirm Password Don't Match"},{"id":"NewTenant","value":"New Tenant"},{"id":"NewUserGroup","value":"New User Group"},{"id":"NoItemsToShow","value":"There are no items to show."},{"id":"Ok","value":"Ok"},{"id":"Option","value":"Option"},{"id":"Password","value":"Password"},{"id":"PasswordChanged","value":"Password Changed"},{"id":"PasswordReset","value":"Password Reset"},{"id":"PasswordResetMessage","value":"Your password has been updated. You may now return to the login page and log in using your new password."},{"id":"PhoneNumber","value":"Phone Number"},{"id":"Photo","value":"Photo"},{"id":"PreventPasswordChange","value":"Prevent User from Changing Password"},{"id":"ProcessingWait","value":"Processing, Please Wait..."},{"id":"RecordNavigationFirst","value":"Go to First Page of Records"},{"id":"RecordNavigationLast","value":"Go to Last Page of Records"},{"id":"RecordNavigationNext","value":"Go to Next Page of Records"},{"id":"RecordNavigationPrevious","value":"Go to Previous Page of Records"},{"id":"Refresh","value":"Refresh"},{"id":"RequiredMissing","value":"{0} is Required"},{"id":"RequirePreExistingAccount","value":"Require Pre-Existing Account to Log In"},{"id":"RequirePreExistingAccountInfo","value":"If this is set to true then a user cannot login unless a user account already exists in the database. For applications that should allow any user to log in set this to false and a new user account will be created when they log in if there is no user account already in the users table."},{"id":"ResetLanguageDefaults","value":"Reset All Language to Defaults"},{"id":"ResetPassword","value":"Reset Password"},{"id":"ResetUserPassword","value":"Reset User Password"},{"id":"SamplePage","value":"Sample Page"},{"id":"Save","value":"Save"},{"id":"Saved","value":"Saved"},{"id":"SavedAt","value":"Saved at"},{"id":"Saving","value":"Saving"},{"id":"SavingWait","value":"Saving, Please Wait..."},{"id":"SelectCulture","value":"Select a Language Culture"},{"id":"SelectTenant","value":"Select a Tenant"},{"id":"SelectTheme","value":"Select Theme"},{"id":"Settings","value":"Settings"},{"id":"ServerOffline","value":"Server Offline, Attempting to Reconnect..."},{"id":"ServerUpdated","value":"Server Updated"},{"id":"ServerUpdatedMessage","value":"The server has been updated, refreshing the application..."},{"id":"ShowColumn","value":"Show Column"},{"id":"ShowColumnInfo","value":"Indicates if this field should be show when listing records. Any UDF with a value in the Label field will be shown when editing a record. The Show Column is only used to toggle this column on and off in the records view."},{"id":"ShowFilter","value":"Show Filter"},{"id":"ShowHelp","value":"Show Help"},{"id":"ShowInFilter","value":"Show in Filter"},{"id":"ShowInFilterInfo","value":"If this option is selected this field will be shown in the filter options as a select list. Only use this option on fields with limited values, as every distinct value from the records will be used to create this list."},{"id":"ShowTenantCodeFieldOnLoginForm","value":"Show Tenant Code Field on Login Form"},{"id":"ShowTenantListingWhenMissingTenantCode","value":"Show Tenant Listing When Missing Tenant Code"},{"id":"SignUp","value":"Sign Up"},{"id":"SignUpInstructions","value":"Complete all of the following fields to sign up for an account. A confirmation code will be emailed to the address you provide to confirm that it is a valid email address. You will then enter that validation code to finish the sign up process."},{"id":"Sort","value":"Sort"},{"id":"SortOrder","value":"Sort Order"},{"id":"Source","value":"Source"},{"id":"StartDate","value":"Start Date"},{"id":"SupportedFileTypes","value":"Supported File Types"},{"id":"SwitchAccountMessage","value":"You have access to multiple app instances. You can switch to another instance below:"},{"id":"Tenant","value":"Tenant"},{"id":"TenantCode","value":"Code"},{"id":"TenantId","value":"TenantId"},{"id":"TenantName","value":"Name"},{"id":"Tenants","value":"Tenants"},{"id":"Theme","value":"Theme"},{"id":"ThemeAuto","value":"Auto (based on system settings)"},{"id":"ThemeDark","value":"Dark"},{"id":"ThemeLight","value":"Light"},{"id":"Title","value":"Title"},{"id":"UDF","value":"UDF"},{"id":"UdfHelpIntro","value":"For a simple text input just enter the field name in the Label field.<br /><br />Alternatively, you can specify that the field should be a select element or a list of radio buttons by using the following format:<br /><br />Label|select|options,separated,by,commas<br />Label|radio|options,separated,by,commas"},{"id":"UdfLabel","value":"User-Defined Field Label"},{"id":"UdfLabels","value":"User-Defined Field Labels"},{"id":"UdfOptions","value":"Options:"},{"id":"UdfShowConflictNote","value":"NOTE: While it is possible to use both Show in Filter and Include in Search for an item, this is not recommended as it is a duplication of searching. If the item is shown as a filter you can quickly find those items by clicking the appropriate filter option. Adding unneccesary fields to the Include in Search can affect performance."},{"id":"UnlockUserAccount","value":"Unlock User Account"},{"id":"UserLockedOut","value":"User account is locked out at {0} due to too many failed login attempts."},{"id":"UpdatePassword","value":"Update Password"},{"id":"UploadFile","value":"Upload a File"},{"id":"UseLocalJavascriptLibraries","value":"Use Local Javascript Libraries Instead of CDN Hosting"},{"id":"User","value":"User"},{"id":"UserGroups","value":"User Groups"},{"id":"Username","value":"Username"},{"id":"Users","value":"Users"},{"id":"UsersInGroup","value":"Users in Group"},{"id":"UseTenantCodeInUrl","value":"Use Tenant Code in URL"},{"id":"ValidateConfirmationCode","value":"Validate Confirmation Code"},{"id":"ValidatingLogin","value":"Validating Login, Please Wait..."},{"id":"ValidationCode","value":"Validation Code"},{"id":"Welcome","value":"Welcome"}]};
+    window.objTenant = {"tenantId":"00000000-0000-0000-0000-000000000000","name":null,"tenantCode":null,"enabled":false,"departments":null,"departmentGroups":null,"tenantSettings":{"allowUsersToManageAvatars":false,"allowUsersToManageBasicProfileInfo":false,"allowUsersToManageBasicProfileInfoElements":null,"allowUsersToResetPasswordsForLocalLogin":false,"allowUsersToSignUpForLocalLogin":false,"cookieDomain":null,"customAuthenticationCode":null,"customAuthenticationName":null,"defaultCultureCode":null,"defaultReplyToAddress":null,"eitSsoUrl":null,"ldapLookupRoot":null,"ldapLookupUsername":null,"ldapLookupPassword":null,"ldapLookupSearchBase":null,"ldapLookupLocationAttribute":null,"ldapLookupPort":0,"loginOptions":[],"moduleHideElements":[],"workSchedule":{"sunday":false,"sundayAllDay":false,"sundayStart":null,"sundayEnd":null,"monday":false,"mondayAllDay":false,"mondayStart":null,"mondayEnd":null,"tuesday":false,"tuesdayAllDay":false,"tuesdayStart":null,"tuesdayEnd":null,"wednesday":false,"wednesdayAllDay":false,"wednesdayStart":null,"wednesdayEnd":null,"thursday":false,"thursdayAllDay":false,"thursdayStart":null,"thursdayEnd":null,"friday":false,"fridayAllDay":false,"fridayStart":null,"fridayEnd":null,"saturday":false,"saturdayAllDay":false,"saturdayStart":null,"saturdayEnd":null},"requirePreExistingAccountToLogIn":false,"listItems":null,"externalUserDataSources":null,"jwtRsaPrivateKey":null,"jwtRsaPublicKey":null},"udfLabels":null,"actionResponse":{"messages":["Invalid Tenant Code ''"],"result":false}};
+    window.objTenantList = [{"tenantId":"00000000-0000-0000-0000-000000000002","name":"Tenant1","tenantCode":"Tenant1"}];
+    window.objUser = {};
+    window.objUserGroups = [];
+    window.objUserListing = [];
+    window.objVersionInfo = {"released":"2023-06-23T11:45:00Z","runningSince":1771228950.0,"version":"1.0.0"};
+    window.showTenantCodeFieldOnLoginForm = false;
+    window.showTenantListingWhenMissingTenantCode = false;
+    window.settingsModel;
+    window.tenantCode = "";
+    window.tenantId = "";
+    window.token = "";
+    window.useAuthProviderCustom = false;
+    window.useAuthProviderFacebook = false;
+    window.useAuthProviderGoogle = false;
+    window.useAuthProviderMicrosoftAccount = false;
+    window.useAuthProviderOpenId = false;
+    window.useTenantCodeInUrl = false;
+
+    $(document).ready(function(){
+        Dropzone.autoDiscover = false;
+
+        if(window.missingTenantCode && window.useTenantCodeInUrl){
+            if (window.tenantCode == undefined || window.tenantCode == null || window.tenantCode == "") {
+                // Missing a tenant code
+            } else {
+                var url = window.baseURL + window.tenantCode + "/";
+                window.history.pushState(null, null, url);
+            }
+        }
+
+        // <BEGIN PUBLIC MODELS>
+        window.mainModel = new MainModel();
+        ko.applyBindings(window.mainModel, document.getElementById('main-model'));
+        window.models.push("MainModel");
+
+        window.navModel = new NavModel();
+        ko.applyBindings(window.navModel, document.getElementById('nav'));
+        window.models.push("NavModel");
+
+        // window.loginModel = new LoginModel();
+        // ko.applyBindings(window.loginModel, document.getElementById('view-login'));
+        // window.models.push("LoginModel");
+        // <END PUBLIC MODELS>
+
+        if(window.loggedIn){
+            // <BEGIN LOGGED IN MODELS>
+            window.homeModel = new HomeModel();
+            ko.applyBindings(window.homeModel, document.getElementById('view-home'));
+            window.models.push("HomeModel");
+
+            // window.profileModel = new ProfileModel();
+            // ko.applyBindings(window.profileModel, document.getElementById('view-profile'));
+                // window.models.push("ProfileModel");
+
+            window.prefixListModel = new PrefixListModel();
+            ko.applyBindings(window.prefixListModel, document.getElementById('view-prefixList'));
+            window.models.push("PrefixListModel");
+
+            window.sectionListModel = new SectionListModel();
+            ko.applyBindings(window.sectionListModel, document.getElementById('view-sectionList'));
+            window.models.push("SectionListModel");
+
+            window.sectionInfoModel = new SectionInfoModel();
+            ko.applyBindings(window.sectionInfoModel, document.getElementById('view-sectionInfo'));
+            window.models.push("SectionInfoModel");
+
+            window.aboutModel = new AboutModel();
+            ko.applyBindings(window.aboutModel, document.getElementById('view-about'));
+            window.models.push("AboutModel");
+
+            window.absenceRequestModel = new AbsenceRequestModel();
+            ko.applyBindings(window.absenceRequestModel, document.getElementById('view-absenceRequest'));
+            window.models.push("AbsenceRequestModel");
+
+            window.footnotesModel = new FootnotesModel();
+            ko.applyBindings(window.footnotesModel, document.getElementById('view-footnotes'));
+            window.models.push("FootnotesModel");
+
+            window.archivesModel = new ArchivesModel();
+            ko.applyBindings(window.archivesModel, document.getElementById('view-archives'));
+            window.models.push("ArchivesModel");
+
+            window.buildingsModel = new BuildingsModel();
+            ko.applyBindings(window.buildingsModel, document.getElementById('view-buildings'));
+            window.models.push("BuildingsModel");
+
+            window.coopModel = new CoopModel();
+            ko.applyBindings(window.coopModel, document.getElementById('view-coop'));
+            window.models.push("CoopModel");
+
+            window.feesModel = new FeesModel();
+            ko.applyBindings(window.feesModel, document.getElementById('view-fees'));
+            window.models.push("FeesModel");
+
+            window.reportsModel = new ReportsModel();
+            ko.applyBindings(window.reportsModel, document.getElementById('view-reports'));
+            window.models.push("ReportsModel");
+
+            window.searchModel = new SearchModel();
+            ko.applyBindings(window.searchModel, document.getElementById('view-search'));
+            window.models.push("SearchModel");
+
+            // window.samplePageModel = new SamplePageModel();
+            // ko.applyBindings(window.samplePageModel, document.getElementById('view-samplepage'));
+            // window.models.push("SamplePageModel");
+            // <END LOGGED IN MODELS>
+
+            // if(window.adminUser){
+            //     // <BEGIN ADMIN MODELS>
+            //     window.settingsModel = new SettingsModel();
+            //     ko.applyBindings(window.settingsModel, document.getElementById('view-settings'));
+            //     window.models.push("SettingsModel");
+
+            //     window.departmentsModel = new DepartmentsModel();
+            //     ko.applyBindings(window.departmentsModel, document.getElementById('view-departments'));
+            //     window.models.push("DepartmentsModel");
+
+            //     window.languageModel = new LanguageModel();
+            //     ko.applyBindings(window.languageModel, document.getElementById('view-language'));
+            //     window.models.push("LanguageModel");
+
+            //     window.udfLabelsModel = new UdfLabelsModel();
+            //     ko.applyBindings(window.udfLabelsModel, document.getElementById('view-udflabels'));
+            //     window.models.push("UdfLabelsModel");
+
+            //     window.usersModel = new UsersModel();
+            //     ko.applyBindings(window.usersModel, document.getElementById('view-users'));
+            //     window.models.push("UsersModel");
+
+            //     window.userGroupsModel = new UserGroupsModel();
+            //     ko.applyBindings(window.userGroupsModel, document.getElementById('view-usergroups'));
+            //     window.models.push("UserGroupsModel");
+            //     // <END ADMIN MODELS>
+            // }
+
+            // if (window.appAdmin) {
+            //     // <BEGIN APPADMIN MODELS>
+            //     window.appSettingsModel = new AppSettingsModel();
+            //     ko.applyBindings(window.appSettingsModel, document.getElementById('view-appsettings'));
+            //     window.models.push("AppSettingsModel");
+
+            //     window.tenantsModel = new TenantsModel();
+            //     ko.applyBindings(window.tenantsModel, document.getElementById('view-tenants'));
+            //     window.models.push("TenantsModel");
+            //     // <END APPADMIN MODELS>
+            // }
+
+            var connection = new signalR.HubConnectionBuilder().withUrl(window.baseURL + "signalRHub_SOC").withAutomaticReconnect().build();
+
+            connection.on("SignalRUpdate", function (update) {
+                //console.log("js SignalR Update", update);
+                window.mainModel.SignalRUpdateHandler(update);
+            });
+
+            connection.start().then(function(){
+                connection.invoke("JoinTenantId", window.tenantId);
+            });
+        }
+
+        configureDatePickers();
+        setupScrolling();
+    });
+
+    function configureDatePickers() {
+        $(".datePicker").datepicker({
+            showAnim: 'fadeIn',
+            dateFormat: "m/d/yy",
+            defaultDate: null
+        });
+        $(".dateTimePicker").datetimepicker({
+            showAnim: 'fadeIn',
+            dateFormat: "m/d/yy",
+            timeFormat: "h:mm tt"
+        });
+    }
+
+    function formatCodeBlock(elementId) {
+        var el = document.getElementById(elementId);
+        Prism.highlightAllUnder(el);
+    }
+
+    function insertAtCursor(field, value) {
+        var $txt = jQuery("#" + field);
+        var caretPos = $txt[0].selectionStart;
+        var textAreaTxt = $txt.val();
+        $txt.val(textAreaTxt.substring(0, caretPos) + value + textAreaTxt.substring(caretPos));
+    }
+
+    function RefreshChosenElements() {
+        $(".enhanced-select").each(function () {
+            $(this).chosen("destroy");
+            $(this).chosen({
+                width: "100%",
+                single_backstroke_delete: false
+            });
+        });
+    }
+
+    function setupScrolling(){
+        $(document).on('scroll', function () {
+            var height = 10;
+            var scrollTop = $(document).scrollTop();
+            if (scrollTop < height) {
+                scrollTop = 0;
+            } else {
+                scrollTop = scrollTop - height;
+            }
+            $(".fixed").stop().animate({ "top": scrollTop + "px" }, 0);
+        });
+    }
+
+    function changeIndex() {
+        if (document.getElementById("closebtn").tabIndex == 0 || document.getElementById("openbtn").tabIndex == -1) {
+            document.getElementById("closebtn").tabIndex = -1;
+            document.getElementById("openbtn").tabIndex = 0;
+        }
+        else {
+            document.getElementById("openbtn").tabIndex = -1;
+            document.getElementById("closebtn").tabIndex = 0;
+        }
+    }
+</script>
+
+
+
+</body><!-- Google Tag Manager (noscript) --><!-- End Google Tag Manager (noscript) --></html>

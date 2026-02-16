@@ -5,8 +5,8 @@
   "Title": "Human Resource Services, Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 82457,
-  "ScreenshotSizeBytes": 674508,
+  "HtmlSizeBytes": 83296,
+  "ScreenshotSizeBytes": 749610,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,24 +15,24 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 674508
+      "FileSize": 749610
     }
   ],
   "ImageCount": 4,
-  "ImagesTotalSizeBytes": 298100,
+  "ImagesTotalSizeBytes": 295078,
   "ImagesMissingAlt": 3,
   "Images": [
-    {
-      "FileName": "all-campus-homepage-header_1386x260.jpg",
-      "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2021/02/all-campus-homepage-header_1386x260.jpg",
-      "AltText": "",
-      "FileSize": 137150
-    },
     {
       "FileName": "calculator-385506_1920-e1579117519523-792x594-1-720x540.jpg",
       "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2023/02/calculator-385506_1920-e1579117519523-792x594-1-720x540.jpg",
       "AltText": "",
       "FileSize": 54470
+    },
+    {
+      "FileName": "LOD-Highlights-720x540.png",
+      "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2026/01/LOD-Highlights-720x540.png",
+      "AltText": "",
+      "FileSize": 134128
     },
     {
       "FileName": "flagpicture-e1593015279940-720x539.jpg",
@@ -49,5 +49,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:18.28886Z"
+  "CapturedAt": "2026-02-16T20:59:50.5679999Z"
 }

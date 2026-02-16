@@ -5,19 +5,19 @@
 | URL | https://murrow.wsu.edu/undergraduate/ |
 | Redirected To | https://murrow.wsu.edu/undergraduate-programs/ |
 | Title | Undergraduate Programs | Edward R. Murrow College of Communication | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 273.2 KB |
-| Screenshots | 1 (3.2 MB) |
+| Status | ✅ 200 |
+| HTML Size | 273.4 KB |
+| Screenshots | 1 (4.6 MB) |
 | Images | 23 (3.3 MB) |
 | Images Missing Alt | 4 |
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:12.4403068Z |
+| Captured | 2026-02-16T21:01:03.1924395Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (3.2 MB)
+- Screenshot #1: page-loaded (4.6 MB)
 - Downloaded 23 images to /images/
 
 ## Screenshots
@@ -113,7 +113,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (3.2 MB)
+- `01-page-loaded.png` — page-loaded (4.6 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

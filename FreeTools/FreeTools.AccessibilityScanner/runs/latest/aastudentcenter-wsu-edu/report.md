@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/1 pages OK |
+| Pages Scanned | 1 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 3 |
+| Pages Failed | 1 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 2.4 KB |
-| Total Screenshots | 461.8 KB |
+| Total HTML | 0 bytes |
+| Total Screenshots | 0 bytes |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `aastudentcenter-wsu-edu/` |
@@ -19,25 +19,8 @@
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/about/](about/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
-| ❌ | [/events/](events/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
-| ❌ | [/get-involved/](get-involved/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/programs/](programs/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | (none) | 0 | 0 | 0 |
 
 ## Page Screenshots
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/events/](events/report.md)
-
-![/events/](events/01-page-loaded.png)
-
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -50,54 +33,6 @@
 Call log:
   - taking page screenshot
   - waiting for fonts to load...`
-
-### /about/
-
-- **URL:** https://aastudentcenter.wsu.edu/about/
-- **Status:** 404
-
-### /programs/
-
-- **URL:** https://aastudentcenter.wsu.edu/programs/
-- **Status:** 404
-
-### /events/
-
-- **URL:** https://aastudentcenter.wsu.edu/events/
-- **Status:** 404
-
-### /resources/
-
-- **URL:** https://aastudentcenter.wsu.edu/resources/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
-
-### /get-involved/
-
-- **URL:** https://aastudentcenter.wsu.edu/get-involved/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
-
-
-## Pages with JavaScript Errors
-
-### /about/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /programs/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /events/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

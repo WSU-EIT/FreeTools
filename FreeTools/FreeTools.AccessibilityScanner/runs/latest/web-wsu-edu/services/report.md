@@ -5,14 +5,14 @@
 | URL | https://web.wsu.edu/services/ |
 | Title | Procedures & Web Services | Web Communication | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 212.1 KB |
+| HTML Size | 216.2 KB |
 | Screenshots | 1 (301.5 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:47.6111352Z |
+| Captured | 2026-02-16T20:59:24.0910161Z |
 
 ## JavaScript Errors
 

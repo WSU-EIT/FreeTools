@@ -5,8 +5,8 @@
   "Title": "Academics | Pullman Campus | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 63572,
-  "ScreenshotSizeBytes": 1846284,
+  "HtmlSizeBytes": 64340,
+  "ScreenshotSizeBytes": 2667560,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,13 +15,19 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1846284
+      "FileSize": 2667560
     }
   ],
-  "ImageCount": 4,
-  "ImagesTotalSizeBytes": 506243,
+  "ImageCount": 5,
+  "ImagesTotalSizeBytes": 1567379,
   "ImagesMissingAlt": 0,
   "Images": [
+    {
+      "FileName": "library-road-e1605824401570.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3165/2022/11/library-road-e1605824401570.jpg",
+      "AltText": "Students walk up the Library Road",
+      "FileSize": 1061136
+    },
     {
       "FileName": "The-Spark-and-Waller-Hall-view_0021-1900x1267-1-792x528.jpg",
       "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3165/2022/11/The-Spark-and-Waller-Hall-view_0021-1900x1267-1-792x528.jpg",
@@ -49,5 +55,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:32.7063349Z"
+  "CapturedAt": "2026-02-16T21:00:13.5174461Z"
 }

@@ -5,7 +5,7 @@
   "Title": "Facilities | Applied Sciences Laboratory | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 56330,
+  "HtmlSizeBytes": 63789,
   "ScreenshotSizeBytes": 776695,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,11 +18,18 @@
       "FileSize": 776695
     }
   ],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 401475,
   "ImagesMissingAlt": 0,
-  "Images": [],
+  "Images": [
+    {
+      "FileName": "DSC_6046.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2016/12/DSC_6046.jpg",
+      "AltText": "Person inside of large equipment in lab.",
+      "FileSize": 401475
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:49.3344502Z"
+  "CapturedAt": "2026-02-16T21:00:19.4530864Z"
 }

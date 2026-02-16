@@ -5,8 +5,8 @@
   "Title": "Faculty | Department of Anthropology | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 257296,
-  "ScreenshotSizeBytes": 985219,
+  "HtmlSizeBytes": 257252,
+  "ScreenshotSizeBytes": 793815,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 985219
+      "FileSize": 793815
     }
   ],
   "ImageCount": 18,
@@ -133,5 +133,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:06.99419Z"
+  "CapturedAt": "2026-02-16T20:59:41.7671698Z"
 }

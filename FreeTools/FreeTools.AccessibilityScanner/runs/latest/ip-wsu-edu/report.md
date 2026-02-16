@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/4 pages OK |
+| Pages Scanned | 4 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 32 |
+| Pages Failed | 4 |
+| Total JS Errors | 28 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.7 MB |
-| Total Screenshots | 3.7 MB |
-| Total Images | 8 (1.3 MB) |
+| Total HTML | 1.1 MB |
+| Total Screenshots | 3.9 MB |
+| Total Images | 9 (1.7 MB) |
 | Images Missing Alt | 0 |
 | Folder | `ip-wsu-edu/` |
 
@@ -20,10 +20,8 @@
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | WSU International \| Washington State... | 2 | 4 | 0 |
 | ❌ | [/contact/](contact/report.md) | 0 | Contact GPRS \| WSU International \| ... | 1 | 0 | 0 |
-| ❌ | [/international-students/](international-students/report.md) | 0 | Page not found \| WSU International \... | 2 | 0 | 0 |
-| ❌ | [/programs/](programs/report.md) | 0 | Page not found \| WSU International \... | 2 | 0 | 0 |
 | ❌ | [/resources/](resources/report.md) | 0 | Resources \| WSU International \| Was... | 1 | 0 | 0 |
-| ❌ | [/study-abroad/](study-abroad/report.md) | 0 | Education Abroad \| WSU International... | 24 | 4 | 0 |
+| ❌ | [/study-abroad/](study-abroad/report.md) | 0 | Education Abroad \| WSU International... | 24 | 5 | 0 |
 
 ## Page Screenshots
 
@@ -34,14 +32,6 @@
 ### [/contact/](contact/report.md)
 
 ![/contact/](contact/01-page-loaded.png)
-
-### [/international-students/](international-students/report.md)
-
-![/international-students/](international-students/01-page-loaded.png)
-
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
 
 ### [/resources/](resources/report.md)
 
@@ -62,16 +52,6 @@
 ### /study-abroad/
 
 - **URL:** https://ip.wsu.edu/study-abroad/
-- **Status:** 0
-
-### /international-students/
-
-- **URL:** https://ip.wsu.edu/international-students/
-- **Status:** 0
-
-### /programs/
-
-- **URL:** https://ip.wsu.edu/programs/
 - **Status:** 0
 
 ### /resources/
@@ -105,16 +85,6 @@
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /international-students/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /programs/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
 
 ### /resources/ (1 errors)
 

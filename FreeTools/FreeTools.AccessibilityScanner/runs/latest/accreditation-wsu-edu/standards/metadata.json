@@ -5,7 +5,7 @@
   "Title": "Standards | Accreditation Site | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 48720,
+  "HtmlSizeBytes": 42787,
   "ScreenshotSizeBytes": 321259,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:04.5757053Z"
+  "CapturedAt": "2026-02-16T20:59:44.6133357Z"
 }

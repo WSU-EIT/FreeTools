@@ -5,19 +5,19 @@
 | URL | https://chemistry.wsu.edu/facilities/ |
 | Redirected To | https://chem.wsu.edu/ |
 | Title | Department of Chemistry | Washington State University |
-| Status | ❌ 0 |
+| Status | ✅ 200 |
 | HTML Size | 233.1 KB |
-| Screenshots | 1 (1.2 MB) |
+| Screenshots | 1 (1.4 MB) |
 | Images | 7 (1.0 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:58.4715032Z |
+| Captured | 2026-02-16T21:01:20.8793970Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.2 MB)
+- Screenshot #1: page-loaded (1.4 MB)
 - Downloaded 7 images to /images/
 
 ## Screenshots
@@ -58,7 +58,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.2 MB)
+- `01-page-loaded.png` — page-loaded (1.4 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -5,18 +5,18 @@
 | URL | https://anthro.wsu.edu/faculty/ |
 | Title | Faculty | Department of Anthropology | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 251.3 KB |
-| Screenshots | 1 (962.1 KB) |
+| HTML Size | 251.2 KB |
+| Screenshots | 1 (775.2 KB) |
 | Images | 18 (678.3 KB) |
 | Images Missing Alt | 18 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:06.9941900Z |
+| Captured | 2026-02-16T20:59:41.7671698Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (962.1 KB)
+- Screenshot #1: page-loaded (775.2 KB)
 - Downloaded 18 images to /images/
 
 ## Screenshots
@@ -111,7 +111,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (962.1 KB)
+- `01-page-loaded.png` — page-loaded (775.2 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

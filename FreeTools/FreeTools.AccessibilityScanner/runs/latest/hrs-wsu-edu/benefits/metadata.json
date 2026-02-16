@@ -5,8 +5,8 @@
   "Title": "Benefits \u2013 Human Resource Services, Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 83390,
-  "ScreenshotSizeBytes": 389142,
+  "HtmlSizeBytes": 82487,
+  "ScreenshotSizeBytes": 361819,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 389142
+      "FileSize": 361819
     }
   ],
   "ImageCount": 10,
@@ -85,5 +85,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:51.3828828Z"
+  "CapturedAt": "2026-02-16T20:59:54.2238599Z"
 }

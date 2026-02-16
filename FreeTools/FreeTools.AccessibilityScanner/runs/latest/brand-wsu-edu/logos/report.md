@@ -5,14 +5,14 @@
 | URL | https://brand.wsu.edu/logos/ |
 | Title | Logos – Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 93.4 KB |
+| HTML Size | 95.2 KB |
 | Screenshots | 1 (1.1 MB) |
 | Images | 17 (671.0 KB) |
 | Images Missing Alt | 17 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:06.4154535Z |
+| Captured | 2026-02-16T20:59:24.3500349Z |
 
 ## Actions
 

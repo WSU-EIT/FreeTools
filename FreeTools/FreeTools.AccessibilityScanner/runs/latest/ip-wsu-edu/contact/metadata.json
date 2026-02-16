@@ -5,7 +5,7 @@
   "Title": "Contact GPRS | WSU International | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 277456,
+  "HtmlSizeBytes": 269969,
   "ScreenshotSizeBytes": 215878,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:38.7180831Z"
+  "CapturedAt": "2026-02-16T21:00:35.8170196Z"
 }

@@ -2,20 +2,27 @@
   "PagePath": "/",
   "Url": "https://cougarcard.wsu.edu/",
   "FinalUrl": null,
-  "Title": null,
+  "Title": "Home",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 0,
-  "ScreenshotSizeBytes": 0,
+  "HtmlSizeBytes": 35644,
+  "ScreenshotSizeBytes": 489718,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
-  "Screenshots": [],
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 489718
+    }
+  ],
   "ImageCount": 0,
   "ImagesTotalSizeBytes": 0,
   "ImagesMissingAlt": 0,
   "Images": [],
-  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded",
+  "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0566305Z"
+  "CapturedAt": "2026-02-16T20:58:42.4517114Z"
 }

@@ -5,14 +5,14 @@
 | URL | https://wsu.edu/about/statewide-impact/ |
 | Title | Statewide Impact | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 103.5 KB |
+| HTML Size | 103.4 KB |
 | Screenshots | 1 (1.5 MB) |
 | Images | 2 (291.7 KB) |
 | Images Missing Alt | 2 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:41.6129598Z |
+| Captured | 2026-02-16T21:01:54.4416167Z |
 
 ## JavaScript Errors
 

@@ -5,17 +5,17 @@
   "Title": "WSU Global Campus | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 74193,
-  "ScreenshotSizeBytes": 1399757,
+  "HtmlSizeBytes": 77909,
+  "ScreenshotSizeBytes": 1438396,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 3,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1399757
+      "FileSize": 1438396
     }
   ],
   "ImageCount": 3,
@@ -43,5 +43,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1345973Z"
+  "CapturedAt": "2026-02-16T20:58:42.4665113Z"
 }

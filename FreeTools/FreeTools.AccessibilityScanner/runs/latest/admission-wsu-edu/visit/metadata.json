@@ -5,8 +5,8 @@
   "Title": "Visit \u0026 Explore | Admissions | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 103729,
-  "ScreenshotSizeBytes": 2037028,
+  "HtmlSizeBytes": 112011,
+  "ScreenshotSizeBytes": 1535661,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 2,
@@ -15,13 +15,25 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2037028
+      "FileSize": 1535661
     }
   ],
-  "ImageCount": 9,
-  "ImagesTotalSizeBytes": 1373549,
-  "ImagesMissingAlt": 2,
+  "ImageCount": 12,
+  "ImagesTotalSizeBytes": 3428345,
+  "ImagesMissingAlt": 3,
   "Images": [
+    {
+      "FileName": "Summer2020DroneAerialThompsonCore_0920-1900x1068-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-admission/uploads/sites/3144/2022/11/Summer2020DroneAerialThompsonCore_0920-1900x1068-1.jpg",
+      "AltText": "Summer aerials with a drone on the campus of Washington State University, Monday, June 22, 2020.",
+      "FileSize": 619355
+    },
+    {
+      "FileName": "vlcsnap-2024-08-14-08h45m34s225-edited-1.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-admission/uploads/sites/3144/2024/08/vlcsnap-2024-08-14-08h45m34s225-edited-1.png",
+      "AltText": "",
+      "FileSize": 715419
+    },
     {
       "FileName": "Group-tour-cut-edited-792x594.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-admission/uploads/sites/3144/2024/08/Group-tour-cut-edited-792x594.jpg",
@@ -75,9 +87,15 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-admission/uploads/sites/3144/2025/07/Cougs-Run-On_8846-792x529.jpg",
       "AltText": "Aerial view of Gesa field with fireworks going off.",
       "FileSize": 192920
+    },
+    {
+      "FileName": "Pullman-Road-Sign_4981-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-admission/uploads/sites/3144/2024/10/Pullman-Road-Sign_4981-scaled.jpg",
+      "AltText": "Sign pointing to turn for Pullman on the way to Washington State University, Friday, April 30, 2021.",
+      "FileSize": 720022
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:49.8563414Z"
+  "CapturedAt": "2026-02-16T21:00:51.9586888Z"
 }

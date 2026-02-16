@@ -5,14 +5,14 @@
 | URL | https://asl.wsu.edu/ |
 | Title | Applied Sciences Laboratory | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 58.3 KB |
-| Screenshots | 1 (848.9 KB) |
+| HTML Size | 62.1 KB |
+| Screenshots | 1 (1.1 MB) |
 | Images | 4 (750.7 KB) |
 | Images Missing Alt | 4 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0332968Z |
+| Captured | 2026-02-16T20:58:42.4454009Z |
 
 ## JavaScript Errors
 
@@ -20,7 +20,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (848.9 KB)
+- Screenshot #1: page-loaded (1.1 MB)
 - Downloaded 4 images to /images/
 
 ## Screenshots
@@ -59,7 +59,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (848.9 KB)
+- `01-page-loaded.png` — page-loaded (1.1 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -5,14 +5,14 @@
 | URL | https://its.wsu.edu/about-its/accreditation-submission-introduction-2025/ |
 | Title | Accreditation Submission Introduction 2025 | Information Technology Services | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 230.6 KB |
+| HTML Size | 230.5 KB |
 | Screenshots | 1 (167.0 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:38.7292628Z |
+| Captured | 2026-02-16T21:00:58.0429234Z |
 
 ## Actions
 

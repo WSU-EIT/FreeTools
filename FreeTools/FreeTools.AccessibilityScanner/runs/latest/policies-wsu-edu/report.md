@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
-| Pages Scanned | 5 |
+| Status | ⚠️ 0/1 pages OK |
+| Pages Scanned | 1 |
 | Pages Passed | 0 |
-| Pages Failed | 5 |
-| Total JS Errors | 5 |
+| Pages Failed | 1 |
+| Total JS Errors | 3 |
 | Total JS Warnings | 0 |
-| Total HTML | 240.9 KB |
-| Total Screenshots | 667.6 KB |
+| Total HTML | 42.9 KB |
+| Total Screenshots | 293.6 KB |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | Folder | `policies-wsu-edu/` |
@@ -18,33 +18,13 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Washington State University Policies ... | 1 | 0 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | Page not found \| Washington State Un... | 1 | 0 | 0 |
-| ❌ | [/bppm/](bppm/report.md) | 0 | Page not found \| Washington State Un... | 1 | 0 | 0 |
-| ❌ | [/manuals/](manuals/report.md) | 0 | Page not found \| Washington State Un... | 1 | 0 | 0 |
-| ❌ | [/search/](search/report.md) | 0 | Page not found \| Washington State Un... | 1 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Washington State University Policies ... | 3 | 0 | 0 |
 
 ## Page Screenshots
 
 ### [/](_root/report.md)
 
 ![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/bppm/](bppm/report.md)
-
-![/bppm/](bppm/01-page-loaded.png)
-
-### [/manuals/](manuals/report.md)
-
-![/manuals/](manuals/01-page-loaded.png)
-
-### [/search/](search/report.md)
-
-![/search/](search/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -54,48 +34,14 @@
 - **URL:** https://policies.wsu.edu/
 - **Status:** 0
 
-### /manuals/
-
-- **URL:** https://policies.wsu.edu/manuals/
-- **Status:** 0
-
-### /search/
-
-- **URL:** https://policies.wsu.edu/search/
-- **Status:** 0
-
-### /bppm/
-
-- **URL:** https://policies.wsu.edu/bppm/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://policies.wsu.edu/about/
-- **Status:** 0
-
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### / (3 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /manuals/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /search/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /bppm/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /about/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

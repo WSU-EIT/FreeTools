@@ -5,22 +5,25 @@
 | URL | https://honors.wsu.edu/ |
 | Title | The Honors College | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 81.5 KB |
-| Screenshots | 1 (1.1 MB) |
+| HTML Size | 84.4 KB |
+| Screenshots | 1 (1.3 MB) |
 | Images | 12 (200.5 KB) |
 | Images Missing Alt | 12 |
-| JS Errors | 1 |
+| JS Errors | 4 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0837489Z |
+| Captured | 2026-02-16T20:58:42.4605657Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.1 MB)
+- Screenshot #1: page-loaded (1.3 MB)
 - Downloaded 12 images to /images/
 
 ## Screenshots
@@ -91,7 +94,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.1 MB)
+- `01-page-loaded.png` — page-loaded (1.3 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

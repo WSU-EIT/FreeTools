@@ -5,29 +5,23 @@
   "Title": "Brelsford WSU Visitor Center | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 224669,
-  "ScreenshotSizeBytes": 1377043,
+  "HtmlSizeBytes": 230261,
+  "ScreenshotSizeBytes": 203686,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1377043
+      "FileSize": 203686
     }
   ],
-  "ImageCount": 5,
-  "ImagesTotalSizeBytes": 2630830,
+  "ImageCount": 7,
+  "ImagesTotalSizeBytes": 3868325,
   "ImagesMissingAlt": 0,
   "Images": [
-    {
-      "FileName": "7-3-4thJulyClosure-scaled-e1656453368336.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2888/2022/06/7-3-4thJulyClosure-scaled-e1656453368336.jpg",
-      "AltText": "An image of the exterior of the Brelsford Washington State University Visitor Center in Pullman, Washington.",
-      "FileSize": 605488
-    },
     {
       "FileName": "BVC-Game-Day-Hours-group-Kylie-Reeder-scaled.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2888/2025/07/BVC-Game-Day-Hours-group-Kylie-Reeder-scaled.jpg",
@@ -41,6 +35,12 @@
       "FileSize": 429892
     },
     {
+      "FileName": "Family-Weekend-2024-feat-Keleigh-M-visitor-assist-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2888/2025/07/Family-Weekend-2024-feat-Keleigh-M-visitor-assist-scaled.jpg",
+      "AltText": "An image of a Brelsford Washington State University Visitor Center employee talking with visitors inside the facility during a campus event weekend.",
+      "FileSize": 623774
+    },
+    {
       "FileName": "Visitors-Looking-at-Timeline-Rose-Pineda-scaled.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2888/2025/07/Visitors-Looking-at-Timeline-Rose-Pineda-scaled.jpg",
       "AltText": "An image of a pair of visitors looking at a historical timeline inside the Brelsford WSU Visitor Center in Pullman, Washington.",
@@ -51,9 +51,21 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2888/2025/07/WSU-Hourly-Parking-Rose-Pineda-1-scaled.jpg",
       "AltText": "image of a parking station along a row of cars on a campus street.",
       "FileSize": 465299
+    },
+    {
+      "FileName": "Wine-Display-Rose-Pineda-1-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2888/2025/07/Wine-Display-Rose-Pineda-1-scaled.jpg",
+      "AltText": "An image of Cougar-connected wines on display inside the Brelsford Washington State University Visitor Center.",
+      "FileSize": 503625
+    },
+    {
+      "FileName": "K-8-Field-Trips-Daniel-Kim-e1752247665984.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2888/2025/07/K-8-Field-Trips-Daniel-Kim-e1752247665984.jpg",
+      "AltText": "Kids posing for a group photo in front of the WSU concrete letters at the WSU Visitor Center.",
+      "FileSize": 715584
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1812534Z"
+  "CapturedAt": "2026-02-16T20:58:42.4705053Z"
 }

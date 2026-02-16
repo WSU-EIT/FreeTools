@@ -2,20 +2,20 @@
   "PagePath": "/",
   "Url": "https://workday.wsu.edu/",
   "FinalUrl": "https://login.wsu.edu/app/workday/exk8wk0d1s55s30dD2p7/sso/saml",
-  "Title": "WSU | Bad request.",
+  "Title": "WSU | Sign In",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 140578,
-  "ScreenshotSizeBytes": 38449,
+  "HtmlSizeBytes": 140275,
+  "ScreenshotSizeBytes": 35206,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 9,
+  "ConsoleErrorCount": 8,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 38449
+      "FileSize": 35206
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1340811Z"
+  "CapturedAt": "2026-02-16T20:58:42.4468279Z"
 }

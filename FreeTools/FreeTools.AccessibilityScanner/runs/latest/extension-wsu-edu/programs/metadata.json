@@ -5,8 +5,8 @@
   "Title": "WSU Extension Programs and Topics A-Z | WSU Extension | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 199257,
-  "ScreenshotSizeBytes": 173939,
+  "HtmlSizeBytes": 220597,
+  "ScreenshotSizeBytes": 174865,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 173939
+      "FileSize": 174865
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:18.4763384Z"
+  "CapturedAt": "2026-02-16T20:59:55.7367419Z"
 }

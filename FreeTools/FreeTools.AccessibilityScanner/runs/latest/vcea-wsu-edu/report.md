@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/7 pages OK |
-| Pages Scanned | 7 |
+| Status | ⚠️ 0/5 pages OK |
+| Pages Scanned | 5 |
 | Pages Passed | 0 |
-| Pages Failed | 7 |
-| Total JS Errors | 1 |
+| Pages Failed | 5 |
+| Total JS Errors | 2 |
 | Total JS Warnings | 1 |
-| Total HTML | 1.6 MB |
-| Total Screenshots | 4.0 MB |
-| Total Images | 19 (2.6 MB) |
+| Total HTML | 1.2 MB |
+| Total Screenshots | 2.9 MB |
+| Total Images | 18 (2.4 MB) |
 | Images Missing Alt | 4 |
 | Folder | `vcea-wsu-edu/` |
 
@@ -18,10 +18,8 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Voiland College of Engineering and Ar... | 0 | 7 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | Page not found \| Voiland College of ... | 1 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Voiland College of Engineering and Ar... | 2 | 7 | 0 |
 | ❌ | [/contact/](contact/report.md) | 0 | Contacts \| Voiland College of Engine... | 0 | 4 | 4 |
-| ❌ | [/departments/](departments/report.md) | 0 | Schools and Departments \| Voiland Co... | 0 | 1 | 0 |
 | ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Students Present Research \|... | 0 | 0 | 0 |
 | ❌ | [/research/](research/report.md) | 0 | Research \| Voiland College of Engine... | 0 | 7 | 0 |
 | ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Pass/Fail Option, Sprin... | 0 | 0 | 0 |
@@ -32,17 +30,9 @@
 
 ![/](_root/01-page-loaded.png)
 
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
 ### [/contact/](contact/report.md)
 
 ![/contact/](contact/01-page-loaded.png)
-
-### [/departments/](departments/report.md)
-
-![/departments/](departments/01-page-loaded.png)
 
 ### [/graduate/](graduate/report.md)
 
@@ -62,16 +52,6 @@
 ### /
 
 - **URL:** https://vcea.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://vcea.wsu.edu/about/
-- **Status:** 0
-
-### /departments/
-
-- **URL:** https://vcea.wsu.edu/departments/
 - **Status:** 0
 
 ### /undergraduate/
@@ -97,9 +77,10 @@
 
 ## Pages with JavaScript Errors
 
-### /about/ (1 errors)
+### / (2 errors)
 
-- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

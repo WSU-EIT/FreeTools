@@ -6,14 +6,14 @@
 | Redirected To | https://maps.wsu.edu/pullman-campus/ |
 | Title | Pullman Campus | WSU Maps | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 30.6 KB |
+| HTML Size | 30.8 KB |
 | Screenshots | 1 (24.7 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:59.9374465Z |
+| Captured | 2026-02-16T20:59:37.8656623Z |
 
 ## Actions
 

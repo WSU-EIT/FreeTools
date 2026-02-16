@@ -5,8 +5,8 @@
   "Title": "Education Abroad | WSU International | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 326947,
-  "ScreenshotSizeBytes": 1236210,
+  "HtmlSizeBytes": 326910,
+  "ScreenshotSizeBytes": 1213330,
   "CredentialUsed": null,
   "ConsoleErrorCount": 24,
   "ConsoleWarningCount": 0,
@@ -15,11 +15,11 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1236210
+      "FileSize": 1213330
     }
   ],
-  "ImageCount": 4,
-  "ImagesTotalSizeBytes": 726288,
+  "ImageCount": 5,
+  "ImagesTotalSizeBytes": 1133579,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -29,10 +29,16 @@
       "FileSize": 26708
     },
     {
-      "FileName": "EA_Contest_winner_EducationalMoments_3.png",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ip/uploads/sites/2794/2026/01/EA_Contest_winner_EducationalMoments_3.png",
-      "AltText": "A WSU student holds tea leaves in a Kenyan tea plantation.",
-      "FileSize": 612149
+      "FileName": "EA_Contest_winner_WindowsToTheWorld_5.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ip/uploads/sites/2794/2026/01/EA_Contest_winner_WindowsToTheWorld_5.png",
+      "AltText": "Elephant crossing a shallow stream in a lush, green Tanzanian landscape.",
+      "FileSize": 443553
+    },
+    {
+      "FileName": "EA_Contest_winner_ExperiencingLocalCulture_4.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ip/uploads/sites/2794/2026/01/EA_Contest_winner_ExperiencingLocalCulture_4.png",
+      "AltText": "WSU student in a hanbok by a pond with a Korean pavilion and mountains in the background.",
+      "FileSize": 575887
     },
     {
       "FileName": "EA_Contest_winner_WildlifeAndNaturalEncounters_6.jpg",
@@ -49,5 +55,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:59.3343492Z"
+  "CapturedAt": "2026-02-16T20:59:37.2177055Z"
 }

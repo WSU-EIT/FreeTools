@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/5 pages OK |
-| Pages Scanned | 5 |
+| Status | ⚠️ 0/4 pages OK |
+| Pages Scanned | 4 |
 | Pages Passed | 0 |
-| Pages Failed | 5 |
-| Total JS Errors | 2 |
-| Total JS Warnings | 4 |
-| Total HTML | 1.2 MB |
-| Total Screenshots | 4.0 MB |
-| Total Images | 55 (8.6 MB) |
+| Pages Failed | 4 |
+| Total JS Errors | 0 |
+| Total JS Warnings | 3 |
+| Total HTML | 1019.7 KB |
+| Total Screenshots | 4.4 MB |
+| Total Images | 56 (9.2 MB) |
 | Images Missing Alt | 28 |
 | Folder | `foundation-wsu-edu/` |
 
@@ -18,21 +18,16 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Foundation \| Washington State Un... | 1 | 12 | 5 |
-| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| WSU Foundation \| W... | 1 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | WSU Foundation \| Washington State Un... | 0 | 11 | 4 |
 | ❌ | [/give/](give/report.md) | 0 | Make A Gift Today! \| WSU Foundation ... | 0 | 9 | 3 |
-| ❌ | [/impact/](impact/report.md) | 0 | Impact Report 2025 \| WSU Foundation ... | 0 | 20 | 14 |
-| ❌ | [/ways-to-give/](ways-to-give/report.md) | 0 | Ways to Give \| WSU Foundation \| Was... | 0 | 14 | 6 |
+| ❌ | [/impact/](impact/report.md) | 0 | Impact Report 2025 \| WSU Foundation ... | 0 | 21 | 15 |
+| ❌ | [/ways-to-give/](ways-to-give/report.md) | 0 | Ways to Give \| WSU Foundation \| Was... | 0 | 15 | 6 |
 
 ## Page Screenshots
 
 ### [/](_root/report.md)
 
 ![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
 
 ### [/give/](give/report.md)
 
@@ -68,22 +63,6 @@
 
 - **URL:** https://foundation.wsu.edu/impact/
 - **Status:** 0
-
-### /contact/
-
-- **URL:** https://foundation.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /contact/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

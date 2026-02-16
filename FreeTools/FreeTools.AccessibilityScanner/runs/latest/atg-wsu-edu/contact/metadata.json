@@ -5,7 +5,7 @@
   "Title": "Contact Us | Office of the Attorney General | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 47041,
+  "HtmlSizeBytes": 37781,
   "ScreenshotSizeBytes": 48522,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:39.7085649Z"
+  "CapturedAt": "2026-02-16T20:59:33.2077135Z"
 }

@@ -5,7 +5,7 @@
   "Title": "Faculty | Department of Psychology | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 311417,
+  "HtmlSizeBytes": 311377,
   "ScreenshotSizeBytes": 1827133,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,21 +18,15 @@
       "FileSize": 1827133
     }
   ],
-  "ImageCount": 37,
-  "ImagesTotalSizeBytes": 2088262,
-  "ImagesMissingAlt": 37,
+  "ImageCount": 36,
+  "ImagesTotalSizeBytes": 947031,
+  "ImagesMissingAlt": 36,
   "Images": [
     {
       "FileName": "C.-Barry-Head-shot-396x396.jpg",
       "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/03/C.-Barry-Head-shot-396x396.jpg",
       "AltText": "",
       "FileSize": 19191
-    },
-    {
-      "FileName": "Tammy-Barry-sq-1.png",
-      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2023/01/Tammy-Barry-sq-1.png",
-      "AltText": "",
-      "FileSize": 1141231
     },
     {
       "FileName": "s-bauman-481x720-1-396x396.jpg",
@@ -247,5 +241,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:41.4059167Z"
+  "CapturedAt": "2026-02-16T21:00:36.5391875Z"
 }

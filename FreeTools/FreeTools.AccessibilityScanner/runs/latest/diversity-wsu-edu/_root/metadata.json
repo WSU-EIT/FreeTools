@@ -5,8 +5,8 @@
   "Title": "Human Resource Services, Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 86635,
-  "ScreenshotSizeBytes": 1304508,
+  "HtmlSizeBytes": 84132,
+  "ScreenshotSizeBytes": 1103293,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,12 +15,12 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1304508
+      "FileSize": 1103293
     }
   ],
-  "ImageCount": 3,
-  "ImagesTotalSizeBytes": 228187,
-  "ImagesMissingAlt": 3,
+  "ImageCount": 5,
+  "ImagesTotalSizeBytes": 432228,
+  "ImagesMissingAlt": 4,
   "Images": [
     {
       "FileName": "all-campus-homepage-header_1386x260.jpg",
@@ -35,6 +35,18 @@
       "FileSize": 54470
     },
     {
+      "FileName": "LOD-Highlights-720x540.png",
+      "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2026/01/LOD-Highlights-720x540.png",
+      "AltText": "",
+      "FileSize": 134128
+    },
+    {
+      "FileName": "flagpicture-e1593015279940-720x539.jpg",
+      "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2020/06/flagpicture-e1593015279940-720x539.jpg",
+      "AltText": "A close-up of a flag with the WSU logo on it.",
+      "FileSize": 69913
+    },
+    {
       "FileName": "retirement-dollars-720x540.png",
       "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2026/01/retirement-dollars-720x540.png",
       "AltText": "",
@@ -43,5 +55,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0597818Z"
+  "CapturedAt": "2026-02-16T20:58:42.4517602Z"
 }

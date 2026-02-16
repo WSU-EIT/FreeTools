@@ -5,8 +5,8 @@
   "Title": "Office of Admissions - Home - WSU Vancouver",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 39943,
-  "ScreenshotSizeBytes": 524829,
+  "HtmlSizeBytes": 46539,
+  "ScreenshotSizeBytes": 565703,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,12 +15,12 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 524829
+      "FileSize": 565703
     }
   ],
-  "ImageCount": 12,
-  "ImagesTotalSizeBytes": 365316,
-  "ImagesMissingAlt": 5,
+  "ImageCount": 13,
+  "ImagesTotalSizeBytes": 541609,
+  "ImagesMissingAlt": 6,
   "Images": [
     {
       "FileName": "wsu-vancouver-horizontal-logo-rgb.svg",
@@ -33,6 +33,12 @@
       "SourceUrl": "https://studentaffairs.vancouver.wsu.edu/themes/bootstrap_sass_wsuv/images/wsu-vancouver-primary-logo-rgb.svg",
       "AltText": "WSU Vancouver home page",
       "FileSize": 7922
+    },
+    {
+      "FileName": "hood-01-hero-2400x1200.jpg",
+      "SourceUrl": "https://studentaffairs.vancouver.wsu.edu/files/hero/2018-11/hood-01-hero-2400x1200.jpg",
+      "AltText": "",
+      "FileSize": 176293
     },
     {
       "FileName": "solar-car-competition.jpg",
@@ -97,5 +103,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:06.3232556Z"
+  "CapturedAt": "2026-02-16T21:00:20.2992238Z"
 }

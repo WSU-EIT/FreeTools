@@ -2,11 +2,11 @@
   "PagePath": "/security/",
   "Url": "https://account.wsu.edu/security/",
   "FinalUrl": "https://login.wsu.edu/account-settings/home",
-  "Title": "My Settings | WSU",
+  "Title": null,
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 4017,
-  "ScreenshotSizeBytes": 11210,
+  "HtmlSizeBytes": 0,
+  "ScreenshotSizeBytes": 9836,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,14 +15,14 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 11210
+      "FileSize": 9836
     }
   ],
   "ImageCount": 0,
   "ImagesTotalSizeBytes": 0,
   "ImagesMissingAlt": 0,
   "Images": [],
-  "ErrorMessage": null,
+  "ErrorMessage": "Unable to retrieve content because the page is navigating and changing the content.",
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:40.5243339Z"
+  "CapturedAt": "2026-02-16T20:59:55.3201318Z"
 }

@@ -6,14 +6,14 @@
 | Redirected To | https://history.wsu.edu/2016/02/17/graduate-assistant-positions-2016-2017-at-cdsc/ |
 | Title | Graduate Assistant Positions 2016-2017 at CDSC | Department of History | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 212.4 KB |
+| HTML Size | 216.8 KB |
 | Screenshots | 1 (149.3 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:35.8494818Z |
+| Captured | 2026-02-16T20:59:49.3956029Z |
 
 ## Actions
 

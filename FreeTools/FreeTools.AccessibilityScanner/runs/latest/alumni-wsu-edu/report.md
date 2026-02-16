@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/6 pages OK |
+| Status | ⚠️ 2/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 1 |
-| Pages Failed | 5 |
-| Total JS Errors | 7 |
+| Pages Passed | 2 |
+| Pages Failed | 4 |
+| Total JS Errors | 6 |
 | Total JS Warnings | 0 |
-| Total HTML | 494.7 KB |
+| Total HTML | 494.6 KB |
 | Total Screenshots | 1.4 MB |
-| Total Images | 24 (1.1 MB) |
+| Total Images | 25 (1.1 MB) |
 | Images Missing Alt | 6 |
 | Folder | `alumni-wsu-edu/` |
 
@@ -18,10 +18,10 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Washington State University Alumni As... | 2 | 10 | 6 |
-| ✅ | [/benefits/](benefits/report.md) | 200 | Washington State University Alumni As... | 1 | 2 | 0 |
-| ❌ | [/chapters/](chapters/report.md) | 0 | Washington State University Alumni As... | 1 | 3 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Washington State University Alumni As... | 1 | 3 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Washington State University Alumni As... | 1 | 10 | 6 |
+| ❌ | [/benefits/](benefits/report.md) | 0 | Washington State University Alumni As... | 1 | 3 | 0 |
+| ✅ | [/chapters/](chapters/report.md) | 200 | Washington State University Alumni As... | 1 | 3 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Washington State University Alumni As... | 1 | 3 | 0 |
 | ❌ | [/events/](events/report.md) | 0 | Washington State University Alumni As... | 1 | 3 | 0 |
 | ❌ | [/giving/](giving/report.md) | 0 | Washington State University Alumni As... | 1 | 3 | 0 |
 
@@ -59,6 +59,11 @@
 - **URL:** https://alumni.wsu.edu/
 - **Status:** 0
 
+### /benefits/
+
+- **URL:** https://alumni.wsu.edu/benefits/
+- **Status:** 0
+
 ### /events/
 
 - **URL:** https://alumni.wsu.edu/events/
@@ -69,23 +74,12 @@
 - **URL:** https://alumni.wsu.edu/giving/
 - **Status:** 0
 
-### /chapters/
-
-- **URL:** https://alumni.wsu.edu/chapters/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://alumni.wsu.edu/contact/
-- **Status:** 0
-
 
 ## Pages with JavaScript Errors
 
-### / (2 errors)
+### / (1 errors)
 
 - `The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want t...`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /benefits/ (1 errors)
 

@@ -6,11 +6,11 @@
 | Pages Scanned | 4 |
 | Pages Passed | 0 |
 | Pages Failed | 4 |
-| Total JS Errors | 3 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 283.1 KB |
-| Total Screenshots | 19.5 KB |
-| Total Images | 3 (3.4 KB) |
+| Total HTML | 287.7 KB |
+| Total Screenshots | 580.5 KB |
+| Total Images | 4 (10.1 KB) |
 | Images Missing Alt | 1 |
 | Folder | `office365-wsu-edu/` |
 
@@ -18,8 +18,8 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Sign in to your account | 3 | 2 | 1 |
-| ❌ | [/help/](help/report.md) | 0 | Sign in to your account | 0 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Sign in to your account | 0 | 2 | 1 |
+| ❌ | [/help/](help/report.md) | 0 | Sign in to your account | 0 | 1 | 0 |
 | ❌ | [/services/](services/report.md) | 0 | Sign in to your account | 0 | 1 | 0 |
 | ❌ | [/training/](training/report.md) | 0 | Sign in to your account | 0 | 0 | 0 |
 
@@ -63,15 +63,6 @@
 
 - **URL:** https://office365.wsu.edu/training/
 - **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (3 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

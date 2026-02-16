@@ -2,29 +2,24 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/8 pages OK |
-| Pages Scanned | 8 |
-| Pages Passed | 1 |
-| Pages Failed | 7 |
-| Total JS Errors | 14 |
-| Total JS Warnings | 1 |
-| Total HTML | 1.1 MB |
-| Total Screenshots | 5.7 MB |
-| Total Images | 57 (2.9 MB) |
-| Images Missing Alt | 19 |
+| Status | ⚠️ 0/3 pages OK |
+| Pages Scanned | 3 |
+| Pages Passed | 0 |
+| Pages Failed | 3 |
+| Total JS Errors | 7 |
+| Total JS Warnings | 0 |
+| Total HTML | 571.6 KB |
+| Total Screenshots | 3.5 MB |
+| Total Images | 25 (2.5 MB) |
+| Images Missing Alt | 14 |
 | Folder | `business-wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Home - Carson College of Business \| ... | 1 | 14 | 9 |
-| ❌ | [/about/](about/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/admissions/](admissions/report.md) | 404 | Page not found - Carson College of Bu... | 3 | 3 | 1 |
-| ❌ | [/faculty/](faculty/report.md) | 405 | Human Verification | 1 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Home - Carson College of Business \| ... | 3 | 14 | 9 |
 | ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Placements - Carson College ... | 2 | 4 | 1 |
-| ✅ | [/news/](news/report.md) | 200 | Carson College News & Research - Cars... | 2 | 26 | 3 |
-| ❌ | [/programs/](programs/report.md) | 0 | Page not found - Carson College of Bu... | 3 | 3 | 1 |
 | ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Academic Advising - Carson College of... | 2 | 7 | 4 |
 
 ## Page Screenshots
@@ -33,25 +28,9 @@
 
 ![/](_root/01-page-loaded.png)
 
-### [/admissions/](admissions/report.md)
-
-![/admissions/](admissions/01-page-loaded.png)
-
-### [/faculty/](faculty/report.md)
-
-![/faculty/](faculty/01-page-loaded.png)
-
 ### [/graduate/](graduate/report.md)
 
 ![/graduate/](graduate/01-page-loaded.png)
-
-### [/news/](news/report.md)
-
-![/news/](news/01-page-loaded.png)
-
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
 
 ### [/undergraduate/](undergraduate/report.md)
 
@@ -65,20 +44,6 @@
 - **URL:** https://business.wsu.edu/
 - **Status:** 0
 
-### /about/
-
-- **URL:** https://business.wsu.edu/about/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...`
-
-### /programs/
-
-- **URL:** https://business.wsu.edu/programs/
-- **Status:** 0
-
 ### /undergraduate/
 
 - **URL:** https://business.wsu.edu/undergraduate/
@@ -89,29 +54,13 @@ Call log:
 - **URL:** https://business.wsu.edu/graduate/
 - **Status:** 0
 
-### /faculty/
-
-- **URL:** https://business.wsu.edu/faculty/
-- **Status:** 405
-
-### /admissions/
-
-- **URL:** https://business.wsu.edu/admissions/
-- **Status:** 404
-
 
 ## Pages with JavaScript Errors
 
-### /programs/ (3 errors)
+### / (3 errors)
 
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /admissions/ (3 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: the server responded with a status of 404 ()`
 
 ### /undergraduate/ (2 errors)
@@ -123,19 +72,6 @@ Call log:
 
 - `Failed to load resource: the server responded with a status of 405 ()`
 - `Failed to load resource: the server responded with a status of 404 ()`
-
-### /news/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### / (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /faculty/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
 
 
 ---

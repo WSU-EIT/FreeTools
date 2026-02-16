@@ -2,16 +2,16 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/1 pages OK |
+| Pages Scanned | 1 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 3 |
-| Total JS Warnings | 1 |
-| Total HTML | 293.6 KB |
-| Total Screenshots | 1.9 MB |
-| Total Images | 2 (46.1 KB) |
-| Images Missing Alt | 2 |
+| Pages Failed | 1 |
+| Total JS Errors | 0 |
+| Total JS Warnings | 0 |
+| Total HTML | 55.8 KB |
+| Total Screenshots | 151.6 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `afrotc-wsu-edu/` |
 
 ## Pages
@@ -19,37 +19,12 @@
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | Air Force ROTC \| Washington State Un... | 0 | 0 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | About AFROTC \| Air Force ROTC \| Was... | 0 | 2 | 2 |
-| ❌ | [/academics/](academics/report.md) | 0 | Page not found \| Air Force ROTC \| W... | 1 | 0 | 0 |
-| ❌ | [/admissions/](admissions/report.md) | 0 | Page not found \| Air Force ROTC \| W... | 1 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| Air Force ROTC \| W... | 1 | 0 | 0 |
-| ❌ | [/scholarships/](scholarships/report.md) | 0 | Scholarships \| Air Force ROTC \| Was... | 0 | 0 | 0 |
 
 ## Page Screenshots
 
 ### [/](_root/report.md)
 
 ![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
-### [/academics/](academics/report.md)
-
-![/academics/](academics/01-page-loaded.png)
-
-### [/admissions/](admissions/report.md)
-
-![/admissions/](admissions/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/scholarships/](scholarships/report.md)
-
-![/scholarships/](scholarships/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -58,46 +33,6 @@
 
 - **URL:** https://afrotc.wsu.edu/
 - **Status:** 0
-
-### /about/
-
-- **URL:** https://afrotc.wsu.edu/about/
-- **Status:** 0
-
-### /admissions/
-
-- **URL:** https://afrotc.wsu.edu/admissions/
-- **Status:** 0
-
-### /academics/
-
-- **URL:** https://afrotc.wsu.edu/academics/
-- **Status:** 0
-
-### /scholarships/
-
-- **URL:** https://afrotc.wsu.edu/scholarships/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://afrotc.wsu.edu/contact/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /admissions/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /academics/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /contact/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

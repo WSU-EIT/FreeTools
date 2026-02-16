@@ -5,8 +5,8 @@
   "Title": "Resources for Employees | Access at WSU | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 51958,
-  "ScreenshotSizeBytes": 168871,
+  "HtmlSizeBytes": 56982,
+  "ScreenshotSizeBytes": 175257,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 168871
+      "FileSize": 175257
     }
   ],
   "ImageCount": 0,
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:18.6705058Z"
+  "CapturedAt": "2026-02-16T20:59:05.461609Z"
 }

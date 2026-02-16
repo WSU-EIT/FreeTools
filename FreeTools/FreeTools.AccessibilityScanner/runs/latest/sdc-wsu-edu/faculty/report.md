@@ -6,18 +6,18 @@
 | Redirected To | https://sdc.wsu.edu/faculty-and-staff/ |
 | Title | Faculty and Staff | School of Design and Construction | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 328.8 KB |
-| Screenshots | 1 (1.0 MB) |
+| HTML Size | 327.5 KB |
+| Screenshots | 1 (1.3 MB) |
 | Images | 58 (2.4 MB) |
 | Images Missing Alt | 58 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:11.0747116Z |
+| Captured | 2026-02-16T21:00:01.7110671Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.0 MB)
+- Screenshot #1: page-loaded (1.3 MB)
 - Downloaded 58 images to /images/
 
 ## Screenshots
@@ -272,7 +272,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.0 MB)
+- `01-page-loaded.png` — page-loaded (1.3 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

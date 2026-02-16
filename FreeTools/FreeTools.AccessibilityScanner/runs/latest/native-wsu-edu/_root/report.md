@@ -5,26 +5,23 @@
 | URL | https://native.wsu.edu/ |
 | Title | Office of Native American Programs | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 212.3 KB |
+| HTML Size | 214.6 KB |
 | Screenshots | 1 (1.4 MB) |
-| Images | 1 (493.3 KB) |
+| Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 4 |
+| JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1343661Z |
+| Captured | 2026-02-16T20:58:42.4659402Z |
 
 ## JavaScript Errors
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
 - Screenshot #1: page-loaded (1.4 MB)
-- Downloaded 1 images to /images/
+- Downloaded 0 images to /images/
 
 ## Screenshots
 
@@ -33,16 +30,9 @@
 ![page-loaded](01-page-loaded.png)
 
 
-## Page Images (1)
+## Page Images (0)
 
-| # | Image | Alt Text | Size |
-|---|-------|----------|------|
-| 1 | [cultural-center-exterior-scaled.jpg](images/cultural-center-exterior-scaled.jpg) | Photo of ESFCC | 493.3 KB |
-
-### Gallery
-
-![Photo of ESFCC](images/cultural-center-exterior-scaled.jpg)
-
+*No images found on page.*
 
 ## Files
 
@@ -53,4 +43,3 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
-- `images/` — 1 page images (493.3 KB)

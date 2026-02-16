@@ -1,7 +1,7 @@
 {
   "PagePath": "/reshall/",
   "Url": "https://livingat.wsu.edu/reshall/",
-  "FinalUrl": "https://wsu.starrezhousing.com/StarRezPortalX/4DF0BDF1/1/1/Home-Home?UrlToken=EB7F0D6E",
+  "FinalUrl": "https://wsu.starrezhousing.com/StarRezPortalX/C252FF0F/1/1/Home-Home?UrlToken=FC3E9E97",
   "Title": "Home | StarRez Portal",
   "StatusCode": 0,
   "Success": false,
@@ -49,5 +49,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:59.7975529Z"
+  "CapturedAt": "2026-02-16T20:59:36.7997537Z"
 }

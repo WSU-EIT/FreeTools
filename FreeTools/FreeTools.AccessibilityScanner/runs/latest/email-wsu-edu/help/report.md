@@ -4,21 +4,28 @@
 |-------|-------|
 | URL | https://email.wsu.edu/help/ |
 | Redirected To | https://outlook.office365.com/mail/?realm=wsu.edu |
-| Title | Outlook |
+| Title | (none) |
 | Status | ❌ 0 |
 | HTML Size | 14.3 KB |
 | Screenshots | 1 (26.3 KB) |
 | Images | 1 (3.1 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:26.9142869Z |
+| Captured | 2026-02-16T21:00:00.8351533Z |
+
+## Error
+
+```
+Execution context was destroyed, most likely because of a navigation
+```
 
 ## Actions
 
 - Screenshot #1: page-loaded (26.3 KB)
 - Downloaded 1 images to /images/
+- Scan aborted due to error
 
 ## Screenshots
 

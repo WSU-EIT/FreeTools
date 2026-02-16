@@ -5,17 +5,17 @@
   "Title": "University Accounting | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 55012,
-  "ScreenshotSizeBytes": 419178,
+  "HtmlSizeBytes": 55405,
+  "ScreenshotSizeBytes": 486308,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 419178
+      "FileSize": 486308
     }
   ],
   "ImageCount": 0,
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0822699Z"
+  "CapturedAt": "2026-02-16T20:58:42.4587044Z"
 }

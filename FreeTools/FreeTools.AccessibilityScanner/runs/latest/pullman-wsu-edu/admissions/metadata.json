@@ -5,8 +5,8 @@
   "Title": "WSU Pullman Admissions | Pullman Campus | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 49291,
-  "ScreenshotSizeBytes": 2205391,
+  "HtmlSizeBytes": 63672,
+  "ScreenshotSizeBytes": 2503076,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,13 +15,19 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2205391
+      "FileSize": 2503076
     }
   ],
-  "ImageCount": 3,
-  "ImagesTotalSizeBytes": 766506,
+  "ImageCount": 6,
+  "ImagesTotalSizeBytes": 2461463,
   "ImagesMissingAlt": 0,
   "Images": [
+    {
+      "FileName": "Repeat-Grid-1@2x-scaled-e1603917692316.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3165/2022/11/Repeat-Grid-1@2x-scaled-e1603917692316.jpg",
+      "AltText": "The bronze Cougar statue in front of Martin Stadium, framed by red leaves",
+      "FileSize": 472642
+    },
     {
       "FileName": "classroom-1-792x566.jpg",
       "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3165/2022/11/classroom-1-792x566.jpg",
@@ -39,9 +45,21 @@
       "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3165/2022/11/DroneAerial_0677-1900x1266-1-792x528.jpg",
       "AltText": "Campus from above, shown near the Chinook",
       "FileSize": 121215
+    },
+    {
+      "FileName": "Mask-group-23.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3165/2022/11/Mask-group-23.png",
+      "AltText": "Two students look at a laptop, smiling",
+      "FileSize": 686277
+    },
+    {
+      "FileName": "Mask-group-17.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3165/2022/11/Mask-group-17.png",
+      "AltText": "A student conducts an experiement in protective equipment",
+      "FileSize": 536038
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:59.7157354Z"
+  "CapturedAt": "2026-02-16T21:00:35.8023837Z"
 }

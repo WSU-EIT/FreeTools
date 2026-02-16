@@ -5,17 +5,17 @@
   "Title": "Academic Outreach and Innovation | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 53845,
-  "ScreenshotSizeBytes": 634786,
+  "HtmlSizeBytes": 49906,
+  "ScreenshotSizeBytes": 574556,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 5,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 634786
+      "FileSize": 574556
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:04.9973622Z"
+  "CapturedAt": "2026-02-16T20:58:42.4436264Z"
 }

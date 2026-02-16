@@ -6,14 +6,14 @@
 | Redirected To | https://ip.wsu.edu/gprs/contact/ |
 | Title | Contact GPRS | WSU International | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 271.0 KB |
+| HTML Size | 263.6 KB |
 | Screenshots | 1 (210.8 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:38.7180831Z |
+| Captured | 2026-02-16T21:00:35.8170196Z |
 
 ## JavaScript Errors
 

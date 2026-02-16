@@ -5,14 +5,14 @@
 | URL | https://ccr.wsu.edu/resources/ |
 | Title | Resources | Compliance and Civil Rights | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 211.1 KB |
+| HTML Size | 215.1 KB |
 | Screenshots | 1 (153.9 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:39.3882449Z |
+| Captured | 2026-02-16T21:00:12.5455230Z |
 
 ## Actions
 

@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
-| Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 1 |
+| Status | ⚠️ 1/4 pages OK |
+| Pages Scanned | 4 |
+| Pages Passed | 1 |
+| Pages Failed | 3 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.2 MB |
-| Total Screenshots | 1.7 MB |
-| Total Images | 43 (2.6 MB) |
+| Total HTML | 985.9 KB |
+| Total Screenshots | 3.4 MB |
+| Total Images | 53 (4.4 MB) |
 | Images Missing Alt | 42 |
 | Folder | `history-wsu-edu/` |
 
@@ -18,18 +18,16 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | Page not found \| Department of Histo... | 1 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Department of History \| Washington S... | 0 | 10 | 0 |
 | ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| Department of History \| W... | 0 | 42 | 42 |
 | ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Assistant Positions 2016-201... | 0 | 0 | 0 |
-| ❌ | [/research/](research/report.md) | 0 | Research \| Department of History \| ... | 0 | 1 | 0 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate, Dean Reuterdahl, prese... | 0 | 0 | 0 |
+| ✅ | [/research/](research/report.md) | 200 | Research \| Department of History \| ... | 0 | 1 | 0 |
 
 ## Page Screenshots
 
-### [/about/](about/report.md)
+### [/](_root/report.md)
 
-![/about/](about/01-page-loaded.png)
+![/](_root/01-page-loaded.png)
 
 ### [/faculty/](faculty/report.md)
 
@@ -43,31 +41,12 @@
 
 ![/research/](research/01-page-loaded.png)
 
-### [/undergraduate/](undergraduate/report.md)
-
-![/undergraduate/](undergraduate/01-page-loaded.png)
-
 
 ## Failed Pages
 
 ### /
 
 - **URL:** https://history.wsu.edu/
-- **Status:** 0
-- **Error:** `Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-  - fonts loaded`
-
-### /about/
-
-- **URL:** https://history.wsu.edu/about/
-- **Status:** 0
-
-### /undergraduate/
-
-- **URL:** https://history.wsu.edu/undergraduate/
 - **Status:** 0
 
 ### /graduate/
@@ -79,18 +58,6 @@ Call log:
 
 - **URL:** https://history.wsu.edu/faculty/
 - **Status:** 0
-
-### /research/
-
-- **URL:** https://history.wsu.edu/research/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### /about/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

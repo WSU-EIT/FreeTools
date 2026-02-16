@@ -5,7 +5,7 @@
   "Title": "About WSU Vancouver - About - WSU Vancouver",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 32835,
+  "HtmlSizeBytes": 33108,
   "ScreenshotSizeBytes": 602674,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -37,5 +37,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:21.8962865Z"
+  "CapturedAt": "2026-02-16T20:59:58.4390301Z"
 }

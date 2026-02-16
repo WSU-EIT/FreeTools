@@ -1,12 +1,12 @@
 {
   "PagePath": "/",
   "Url": "https://education.wsu.edu/",
-  "FinalUrl": "about:blank",
+  "FinalUrl": "https://ceshs.wsu.edu/",
   "Title": "College of Education, Sport, and Human Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 247698,
-  "ScreenshotSizeBytes": 1631372,
+  "HtmlSizeBytes": 249008,
+  "ScreenshotSizeBytes": 1750929,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 2,
@@ -15,13 +15,19 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1631372
+      "FileSize": 1750929
     }
   ],
-  "ImageCount": 4,
-  "ImagesTotalSizeBytes": 1123915,
-  "ImagesMissingAlt": 2,
+  "ImageCount": 6,
+  "ImagesTotalSizeBytes": 2028694,
+  "ImagesMissingAlt": 4,
   "Images": [
+    {
+      "FileName": "Parents-Weekend-2023-dh-Smiley-Faces-_-07-1900x1325-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/Parents-Weekend-2023-dh-Smiley-Faces-_-07-1900x1325-1.jpg",
+      "AltText": "",
+      "FileSize": 407398
+    },
     {
       "FileName": "2024FirstDayFall_4184-1900x1267-1.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/2024FirstDayFall_4184-1900x1267-1.jpg",
@@ -33,6 +39,12 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/FirstWeek_9678-1900x1267-1.jpg",
       "AltText": "",
       "FileSize": 250993
+    },
+    {
+      "FileName": "Spring2023_8468-1900x1267-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/Spring2023_8468-1900x1267-1.jpg",
+      "AltText": "",
+      "FileSize": 497381
     },
     {
       "FileName": "2024SpringGraduation_6810-1900x1267-1.jpg",
@@ -49,5 +61,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0572326Z"
+  "CapturedAt": "2026-02-16T20:58:42.4510597Z"
 }

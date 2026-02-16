@@ -5,7 +5,7 @@
   "Title": "About CAHNRS | College of Agricultural, Human, and Natural Resource Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 228999,
+  "HtmlSizeBytes": 236190,
   "ScreenshotSizeBytes": 1665555,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -43,5 +43,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:44.0388627Z"
+  "CapturedAt": "2026-02-16T21:00:17.9172133Z"
 }

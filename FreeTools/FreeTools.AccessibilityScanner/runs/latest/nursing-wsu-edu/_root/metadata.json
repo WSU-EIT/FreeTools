@@ -5,17 +5,17 @@
   "Title": "College of Nursing | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 287184,
-  "ScreenshotSizeBytes": 1300683,
+  "HtmlSizeBytes": 291377,
+  "ScreenshotSizeBytes": 1500470,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1300683
+      "FileSize": 1500470
     }
   ],
   "ImageCount": 10,
@@ -85,5 +85,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1350775Z"
+  "CapturedAt": "2026-02-16T20:58:42.465728Z"
 }

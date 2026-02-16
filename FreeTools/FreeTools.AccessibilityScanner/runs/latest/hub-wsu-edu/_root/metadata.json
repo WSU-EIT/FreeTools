@@ -5,10 +5,10 @@
   "Title": "WSU Hub | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 45284,
+  "HtmlSizeBytes": 43535,
   "ScreenshotSizeBytes": 54480,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 4,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -24,5 +24,5 @@
   "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1133131Z"
+  "CapturedAt": "2026-02-16T20:58:42.460339Z"
 }

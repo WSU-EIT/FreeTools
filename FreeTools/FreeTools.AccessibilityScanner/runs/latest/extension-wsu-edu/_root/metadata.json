@@ -5,8 +5,8 @@
   "Title": "WSU Extension | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 241023,
-  "ScreenshotSizeBytes": 653330,
+  "HtmlSizeBytes": 241021,
+  "ScreenshotSizeBytes": 651112,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 653330
+      "FileSize": 651112
     }
   ],
   "ImageCount": 10,
@@ -85,5 +85,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.0594222Z"
+  "CapturedAt": "2026-02-16T20:58:42.4537391Z"
 }

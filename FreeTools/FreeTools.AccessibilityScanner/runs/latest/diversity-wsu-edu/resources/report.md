@@ -6,18 +6,18 @@
 | Redirected To | https://hrs.wsu.edu/ |
 | Title | Human Resource Services, Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 85.7 KB |
-| Screenshots | 1 (1.0 MB) |
+| HTML Size | 91.9 KB |
+| Screenshots | 1 (1.2 MB) |
 | Images | 6 (710.4 KB) |
 | Images Missing Alt | 5 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:52.7578819Z |
+| Captured | 2026-02-16T21:01:03.4203634Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.0 MB)
+- Screenshot #1: page-loaded (1.2 MB)
 - Downloaded 6 images to /images/
 
 ## Screenshots
@@ -63,7 +63,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.0 MB)
+- `01-page-loaded.png` — page-loaded (1.2 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

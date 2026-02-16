@@ -6,17 +6,17 @@
 | Title | WSU Extension | Washington State University |
 | Status | ❌ 0 |
 | HTML Size | 235.4 KB |
-| Screenshots | 1 (638.0 KB) |
+| Screenshots | 1 (635.9 KB) |
 | Images | 10 (2.2 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0594222Z |
+| Captured | 2026-02-16T20:58:42.4537391Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (638.0 KB)
+- Screenshot #1: page-loaded (635.9 KB)
 - Downloaded 10 images to /images/
 
 ## Screenshots
@@ -66,7 +66,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (638.0 KB)
+- `01-page-loaded.png` — page-loaded (635.9 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

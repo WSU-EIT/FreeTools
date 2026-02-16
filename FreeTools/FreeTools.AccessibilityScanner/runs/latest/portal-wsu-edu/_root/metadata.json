@@ -1,12 +1,12 @@
 {
   "PagePath": "/",
   "Url": "https://portal.wsu.edu/",
-  "FinalUrl": "https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7\u0026redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse\u0026response_type=code\u0026scope=openid%20profile%20sis.prd.groups\u0026state=DFABI%2BrqA9tEfJ3cFXsENEIhbsqsSayOGDmO5MxP7c59xG41MEXOKf7emutulY5XjGQadxiKuox%2FNK3qqiMzNWe9HFBc1h1g43yoJRElhu7AdKt19NBLq6VNbcKAoU2k4axaKNidh0wDaQzVcxAF1yrJ69nS21IahiQLxSXZpM6Y3THoUPXpGDarLwqRHg%2BQL4wfeK1MXChlkcsX%2Bf7l%2FdwB1Locr97IjFvXvJuH51rq%2BXT4iQ%3D%3D",
+  "FinalUrl": "https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7\u0026redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse\u0026response_type=code\u0026scope=openid%20profile%20sis.prd.groups\u0026state=ErxdndjWOflSWH3VV09kBvnTUyAlJMpOOvbF794jy4q0quN4TDYbDgCb56Iye6al9VOKMO1W%2B1ueGVrE5DWo4BgyD1NojAxe0kt%2F6%2FaG0ET%2Bv2YcVEOvXbfvBtHbqSFHlWQ6POVmkGn5UVfrLKT1jFatyoYvaWXeTXd1Vrdbn5KUvy1DpzYwJ6gNKKzlXKR8RuVysH%2FTThfcUTxpllWV4hUdvrUpTfLY0ln6AZ3zVVmgPNviRw%3D%3D",
   "Title": "WSU | Sign In",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 142601,
-  "ScreenshotSizeBytes": 35726,
+  "HtmlSizeBytes": 143855,
+  "ScreenshotSizeBytes": 34700,
   "CredentialUsed": null,
   "ConsoleErrorCount": 8,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 35726
+      "FileSize": 34700
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1500119Z"
+  "CapturedAt": "2026-02-16T20:58:42.4685488Z"
 }

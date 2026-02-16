@@ -5,8 +5,8 @@
   "Title": "About WSU Tri-Cities - WSU Tri-Cities",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 126348,
-  "ScreenshotSizeBytes": 741690,
+  "HtmlSizeBytes": 128072,
+  "ScreenshotSizeBytes": 742227,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 5,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 741690
+      "FileSize": 742227
     }
   ],
   "ImageCount": 16,
@@ -121,5 +121,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:30.1078043Z"
+  "CapturedAt": "2026-02-16T21:00:45.7525316Z"
 }

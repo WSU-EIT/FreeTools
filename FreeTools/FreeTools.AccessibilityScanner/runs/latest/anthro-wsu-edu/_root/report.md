@@ -5,26 +5,18 @@
 | URL | https://anthro.wsu.edu/ |
 | Title | Department of Anthropology | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 208.2 KB |
-| Screenshots | 1 (1.2 MB) |
+| HTML Size | 213.9 KB |
+| Screenshots | 1 (1.3 MB) |
 | Images | 3 (431.3 KB) |
 | Images Missing Alt | 0 |
-| JS Errors | 5 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0035883Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:58:42.4426889Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.2 MB)
+- Screenshot #1: page-loaded (1.3 MB)
 - Downloaded 3 images to /images/
 
 ## Screenshots
@@ -53,7 +45,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.2 MB)
+- `01-page-loaded.png` — page-loaded (1.3 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

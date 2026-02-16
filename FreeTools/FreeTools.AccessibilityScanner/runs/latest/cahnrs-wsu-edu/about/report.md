@@ -5,14 +5,14 @@
 | URL | https://cahnrs.wsu.edu/about/ |
 | Title | About CAHNRS | College of Agricultural, Human, and Natural Resource Sciences | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 223.6 KB |
+| HTML Size | 230.7 KB |
 | Screenshots | 1 (1.6 MB) |
 | Images | 3 (319.9 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:44.0388627Z |
+| Captured | 2026-02-16T21:00:17.9172133Z |
 
 ## Actions
 

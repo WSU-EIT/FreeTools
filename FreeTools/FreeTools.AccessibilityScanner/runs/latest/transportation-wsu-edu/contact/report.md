@@ -6,18 +6,18 @@
 | Redirected To | https://transportation.wsu.edu/contact-information/ |
 | Title | Contact | Transportation Services | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 67.9 KB |
-| Screenshots | 1 (406.4 KB) |
+| HTML Size | 61.4 KB |
+| Screenshots | 1 (374.4 KB) |
 | Images | 5 (1.7 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:58.4355865Z |
+| Captured | 2026-02-16T21:00:54.0024176Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (406.4 KB)
+- Screenshot #1: page-loaded (374.4 KB)
 - Downloaded 5 images to /images/
 
 ## Screenshots
@@ -52,7 +52,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (406.4 KB)
+- `01-page-loaded.png` — page-loaded (374.4 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

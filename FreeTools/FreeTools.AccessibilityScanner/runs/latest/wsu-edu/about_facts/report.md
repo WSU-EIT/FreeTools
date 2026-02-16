@@ -5,15 +5,15 @@
 | URL | https://wsu.edu/about/facts/ |
 | Redirected To | https://wsu.edu/about/ |
 | Title | About WSU | Washington State University | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 124.8 KB |
-| Screenshots | 1 (2.0 MB) |
+| Status | ✅ 200 |
+| HTML Size | 131.1 KB |
+| Screenshots | 1 (3.0 MB) |
 | Images | 16 (9.8 MB) |
 | Images Missing Alt | 10 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:52.7258742Z |
+| Captured | 2026-02-16T21:01:28.1414496Z |
 
 ## JavaScript Errors
 
@@ -21,7 +21,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (2.0 MB)
+- Screenshot #1: page-loaded (3.0 MB)
 - Downloaded 16 images to /images/
 
 ## Screenshots
@@ -102,7 +102,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (2.0 MB)
+- `01-page-loaded.png` — page-loaded (3.0 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

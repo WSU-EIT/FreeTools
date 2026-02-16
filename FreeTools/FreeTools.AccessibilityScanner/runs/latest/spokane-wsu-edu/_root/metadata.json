@@ -5,8 +5,8 @@
   "Title": "WSU Spokane | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 317207,
-  "ScreenshotSizeBytes": 2388454,
+  "HtmlSizeBytes": 318500,
+  "ScreenshotSizeBytes": 3178602,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,12 +15,12 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2388454
+      "FileSize": 3178602
     }
   ],
-  "ImageCount": 18,
-  "ImagesTotalSizeBytes": 2128718,
-  "ImagesMissingAlt": 0,
+  "ImageCount": 24,
+  "ImagesTotalSizeBytes": 3348239,
+  "ImagesMissingAlt": 2,
   "Images": [
     {
       "FileName": "Home-pharmacy-edit-792x528.jpg",
@@ -59,6 +59,18 @@
       "FileSize": 113554
     },
     {
+      "FileName": "DNP-White-Coat-Campaign-Interview-26.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/03/DNP-White-Coat-Campaign-Interview-26.jpg",
+      "AltText": "",
+      "FileSize": 524968
+    },
+    {
+      "FileName": "Pharmacy-Immunization-lecture-and-training-Aug-2022-55.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/03/Pharmacy-Immunization-lecture-and-training-Aug-2022-55.jpg",
+      "AltText": "",
+      "FileSize": 514070
+    },
+    {
       "FileName": "gloves-holding-smartphone-and-glucose-monitor-1024x676.jpg",
       "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/gloves-holding-smartphone-and-glucose-monitor-1024x676.jpg",
       "AltText": "Gloved hands holding a smartphone and a glucose monitor.",
@@ -89,6 +101,12 @@
       "FileSize": 2525
     },
     {
+      "FileName": "384665249.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384665249.jpg?width=480",
+      "AltText": "Image posted by wsuspokane to instagram",
+      "FileSize": 41954
+    },
+    {
       "FileName": "384665249_user_image.jpg",
       "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384665249_user_image.jpg?width=100",
       "AltText": "Profile image for wsuspokane",
@@ -107,16 +125,34 @@
       "FileSize": 2525
     },
     {
+      "FileName": "384665250.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384665250.jpg?width=480",
+      "AltText": "Image posted by wsuspokane to instagram",
+      "FileSize": 38727
+    },
+    {
       "FileName": "384665250_user_image.jpg",
       "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384665250_user_image.jpg?width=100",
       "AltText": "Profile image for wsuspokane",
       "FileSize": 2525
     },
     {
+      "FileName": "384728211.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384728211.jpg?width=480",
+      "AltText": "Image posted by wsuspokane to instagram",
+      "FileSize": 69921
+    },
+    {
       "FileName": "384728211_user_image.jpg",
       "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384728211_user_image.jpg?width=100",
       "AltText": "Profile image for wsuspokane",
       "FileSize": 2525
+    },
+    {
+      "FileName": "384665240.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384665240.jpg?width=480",
+      "AltText": "Image posted by wsuspokane to instagram",
+      "FileSize": 29881
     },
     {
       "FileName": "384665240_user_image.jpg",
@@ -133,5 +169,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.155613Z"
+  "CapturedAt": "2026-02-16T20:58:42.4731492Z"
 }

@@ -5,14 +5,14 @@
 | URL | https://anthro.wsu.edu/research/ |
 | Title | Research | Department of Anthropology | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 210.9 KB |
+| HTML Size | 209.2 KB |
 | Screenshots | 1 (366.0 KB) |
 | Images | 1 (133.9 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:31.3964046Z |
+| Captured | 2026-02-16T21:00:05.7441298Z |
 
 ## Actions
 

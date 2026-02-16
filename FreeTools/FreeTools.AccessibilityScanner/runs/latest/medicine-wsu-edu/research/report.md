@@ -5,18 +5,18 @@
 | URL | https://medicine.wsu.edu/research/ |
 | Title | Research Overview | Elson S. Floyd College of Medicine | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 251.6 KB |
-| Screenshots | 1 (2.4 MB) |
+| HTML Size | 258.0 KB |
+| Screenshots | 1 (2.3 MB) |
 | Images | 19 (2.2 MB) |
 | Images Missing Alt | 5 |
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:36.0585724Z |
+| Captured | 2026-02-16T21:00:48.6267067Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (2.4 MB)
+- Screenshot #1: page-loaded (2.3 MB)
 - Downloaded 19 images to /images/
 
 ## Screenshots
@@ -101,7 +101,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (2.4 MB)
+- `01-page-loaded.png` — page-loaded (2.3 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

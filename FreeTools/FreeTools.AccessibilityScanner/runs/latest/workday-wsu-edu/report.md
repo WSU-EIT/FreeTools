@@ -6,10 +6,10 @@
 | Pages Scanned | 4 |
 | Pages Passed | 0 |
 | Pages Failed | 4 |
-| Total JS Errors | 16 |
+| Total JS Errors | 15 |
 | Total JS Warnings | 0 |
-| Total HTML | 414.0 KB |
-| Total Screenshots | 178.6 KB |
+| Total HTML | 354.7 KB |
+| Total Screenshots | 161.8 KB |
 | Total Images | 4 (30.7 KB) |
 | Images Missing Alt | 0 |
 | Folder | `workday-wsu-edu/` |
@@ -18,7 +18,7 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU \| Bad request. | 9 | 1 | 0 |
+| ❌ | [/](_root/report.md) | 0 | WSU \| Sign In | 8 | 1 | 0 |
 | ❌ | [/help/](help/report.md) | 0 | WSU Authentication \| Washington Stat... | 0 | 1 | 0 |
 | ❌ | [/resources/](resources/report.md) | 0 | WSU \| Sign In | 7 | 1 | 0 |
 | ❌ | [/training/](training/report.md) | 0 | WSU Authentication \| Washington Stat... | 0 | 1 | 0 |
@@ -67,7 +67,7 @@
 
 ## Pages with JavaScript Errors
 
-### / (9 errors)
+### / (8 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Something unexpected happened while we were checking url http://127.0.0.1:8769`
@@ -77,7 +77,6 @@
 - `Something unexpected happened while we were checking url http://127.0.0.1:65141`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65151`
 - `No available ports. Loopback server failed and polling is cancelled.`
-- `Failed to load resource: the server responded with a status of 400 ()`
 
 ### /resources/ (7 errors)
 

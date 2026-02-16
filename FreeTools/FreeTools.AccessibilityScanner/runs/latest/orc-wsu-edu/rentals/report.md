@@ -4,43 +4,50 @@
 |-------|-------|
 | URL | https://orc.wsu.edu/rentals/ |
 | Redirected To | https://urec.wsu.edu/locations-facilities/outdoor-recreation-center |
-| Title | (none) |
+| Title | Outdoor Recreation Center |
 | Status | ❌ 0 |
-| HTML Size | 0 bytes |
-| Screenshots | 0 (0 bytes) |
-| Images | 0 (0 bytes) |
+| HTML Size | 76.9 KB |
+| Screenshots | 1 (1.4 MB) |
+| Images | 2 (338.7 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:45.9724559Z |
-
-## Error
-
-```
-Timeout 30000ms exceeded.
-Call log:
-  - taking page screenshot
-  - waiting for fonts to load...
-```
+| Captured | 2026-02-16T21:00:22.4572113Z |
 
 ## Actions
 
-- Scan aborted due to error
+- Screenshot #1: page-loaded (1.4 MB)
+- Downloaded 2 images to /images/
 
 ## Screenshots
 
-*No screenshots captured.*
+### 1. page-loaded
 
-## Page Images (0)
+![page-loaded](01-page-loaded.png)
 
-*No images found on page.*
+
+## Page Images (2)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [orc-page-rental-shop-content-card.jpg](images/orc-page-rental-shop-content-card.jpg) | Rental Shop | 239.9 KB |
+| 2 | [orc-page-ski-tune-up-content-card.jpg](images/orc-page-ski-tune-up-content-card.jpg) | Ski & Snowboard Tuning | 98.8 KB |
+
+### Gallery
+
+![Rental Shop](images/orc-page-rental-shop-content-card.jpg)
+
+![Ski & Snowboard Tuning](images/orc-page-ski-tune-up-content-card.jpg)
+
 
 ## Files
 
+- `01-page-loaded.png` — page-loaded (1.4 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 2 page images (338.7 KB)

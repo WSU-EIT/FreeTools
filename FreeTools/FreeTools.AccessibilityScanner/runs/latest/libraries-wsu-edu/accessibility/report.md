@@ -6,17 +6,17 @@
 | Title | Accessibility – WSU Libraries |
 | Status | ✅ 200 |
 | HTML Size | 52.5 KB |
-| Screenshots | 1 (270.3 KB) |
+| Screenshots | 1 (537.8 KB) |
 | Images | 2 (99.0 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:41:24.5648739Z |
+| Captured | 2026-02-16T21:02:31.3356308Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (270.3 KB)
+- Screenshot #1: page-loaded (537.8 KB)
 - Downloaded 2 images to /images/
 
 ## Screenshots
@@ -42,7 +42,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (270.3 KB)
+- `01-page-loaded.png` — page-loaded (537.8 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

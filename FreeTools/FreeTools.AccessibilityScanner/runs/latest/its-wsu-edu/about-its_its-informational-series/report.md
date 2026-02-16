@@ -5,14 +5,14 @@
 | URL | https://its.wsu.edu/about-its/its-informational-series/ |
 | Title | ITS Informational Series | Information Technology Services | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 227.1 KB |
+| HTML Size | 233.6 KB |
 | Screenshots | 1 (272.1 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
-| JS Warnings | 0 |
+| JS Warnings | 5 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:23.8128648Z |
+| Captured | 2026-02-16T21:00:42.6533421Z |
 
 ## Actions
 

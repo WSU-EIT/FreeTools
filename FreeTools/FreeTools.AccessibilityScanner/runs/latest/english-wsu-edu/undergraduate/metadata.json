@@ -5,7 +5,7 @@
   "Title": "Undergraduate Studies | WSU Department of English | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 52151,
+  "HtmlSizeBytes": 63183,
   "ScreenshotSizeBytes": 484400,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:18.472256Z"
+  "CapturedAt": "2026-02-16T20:59:55.2916816Z"
 }

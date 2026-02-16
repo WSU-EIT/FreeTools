@@ -2,34 +2,34 @@
   "PagePath": "/policies/",
   "Url": "https://email.wsu.edu/policies/",
   "FinalUrl": "https://outlook.office365.com/mail/?realm=wsu.edu",
-  "Title": null,
+  "Title": "WSU | There was an unexpected internal error. Please try again.",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 14656,
-  "ScreenshotSizeBytes": 22994,
+  "HtmlSizeBytes": 63005,
+  "ScreenshotSizeBytes": 46794,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
-  "ConsoleWarningCount": 0,
+  "ConsoleErrorCount": 2,
+  "ConsoleWarningCount": 2,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 22994
+      "FileSize": 46794
     }
   ],
   "ImageCount": 1,
-  "ImagesTotalSizeBytes": 3202,
+  "ImagesTotalSizeBytes": 7853,
   "ImagesMissingAlt": 0,
   "Images": [
     {
-      "FileName": "microsoft.svg",
-      "SourceUrl": "https://res.public.onecdn.static.microsoft/assets/framework/microsoft.svg",
-      "AltText": "Microsoft",
-      "FileSize": 3202
+      "FileName": "fs015xh0tygNgGVxX2p8.img",
+      "SourceUrl": "https://ok6static2.oktacdn.com/fs/bco/1/fs015xh0tygNgGVxX2p8",
+      "AltText": "WSU logo",
+      "FileSize": 7853
     }
   ],
-  "ErrorMessage": "Execution context was destroyed, most likely because of a navigation",
+  "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:55.9082737Z"
+  "CapturedAt": "2026-02-16T21:00:22.4576908Z"
 }

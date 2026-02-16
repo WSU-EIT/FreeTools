@@ -5,14 +5,14 @@
 | URL | https://its.wsu.edu/information-security-services/password-assistance/ |
 | Title | How to change your password | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 234.7 KB |
+| HTML Size | 234.6 KB |
 | Screenshots | 1 (171.7 KB) |
 | Images | 1 (17.8 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:45.0891119Z |
+| Captured | 2026-02-16T21:01:53.8449771Z |
 
 ## Actions
 

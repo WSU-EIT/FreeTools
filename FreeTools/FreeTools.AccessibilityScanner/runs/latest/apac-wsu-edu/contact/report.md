@@ -5,14 +5,14 @@
 | URL | https://apac.wsu.edu/contact/ |
 | Title | Contact | Administrative Professional Advisory Council | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 66.0 KB |
+| HTML Size | 63.0 KB |
 | Screenshots | 1 (82.5 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:04.9136802Z |
+| Captured | 2026-02-16T21:00:01.8681245Z |
 
 ## JavaScript Errors
 

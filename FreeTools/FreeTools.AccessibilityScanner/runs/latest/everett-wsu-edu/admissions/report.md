@@ -13,7 +13,7 @@
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:59.6482800Z |
+| Captured | 2026-02-16T21:01:18.1086852Z |
 
 ## JavaScript Errors
 
@@ -98,20 +98,20 @@
 
 ### ⚠️ Images Missing Alt Text (18)
 
-- `out.img` — https://d.adroll.com/cm/b/out?adroll_fpc=94db15effaa622da3a2a6d8f0d24487c-1771274403284&pv=36682900674.49414&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-1.img` — https://d.adroll.com/cm/bombora/out?adroll_fpc=94db15effaa622da3a2a6d8f0d24487c-1771274403284&pv=36682900674.49414&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-2.img` — https://d.adroll.com/cm/experian/out?adroll_fpc=94db15effaa622da3a2a6d8f0d24487c-1771274403284&pv=36682900674.49414&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-3.img` — https://d.adroll.com/cm/eyeota/out?adroll_fpc=94db15effaa622da3a2a6d8f0d24487c-1771274403284&pv=36682900674.49414&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-4.img` — https://d.adroll.com/cm/g/out?adroll_fpc=94db15effaa622da3a2a6d8f0d24487c-1771274403284&pv=36682900674.49414&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-5.img` — https://d.adroll.com/cm/index/out?adroll_fpc=94db15effaa622da3a2a6d8f0d24487c-1771274403284&pv=36682900674.49414&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-6.img` — https://d.adroll.com/cm/l/out?adroll_fpc=94db15effaa622da3a2a6d8f0d24487c-1771274403284&pv=36682900674.49414&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-7.img` — https://d.adroll.com/cm/n/out?adroll_fpc=94db15effaa622da3a2a6d8f0d24487c-1771274403284&pv=36682900674.49414&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-8.img` — https://d.adroll.com/cm/o/out?adroll_fpc=94db15effaa622da3a2a6d8f0d24487c-1771274403284&pv=36682900674.49414&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-9.img` — https://d.adroll.com/cm/outbrain/out?adroll_fpc=94db15effaa622da3a2a6d8f0d24487c-1771274403284&pv=36682900674.49414&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-10.img` — https://d.adroll.com/cm/pubmatic/out?adroll_fpc=94db15effaa622da3a2a6d8f0d24487c-1771274403284&pv=36682900674.49414&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-11.img` — https://d.adroll.com/cm/taboola/out?adroll_fpc=94db15effaa622da3a2a6d8f0d24487c-1771274403284&pv=36682900674.49414&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-12.img` — https://d.adroll.com/cm/triplelift/out?adroll_fpc=94db15effaa622da3a2a6d8f0d24487c-1771274403284&pv=36682900674.49414&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
-- `out-13.img` — https://d.adroll.com/cm/x/out?adroll_fpc=94db15effaa622da3a2a6d8f0d24487c-1771274403284&pv=36682900674.49414&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
+- `out.img` — https://d.adroll.com/cm/b/out?adroll_fpc=4c89ab58f5a931094b812ee90e996c1e-1771275680944&pv=58828991434.03013&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
+- `out-1.img` — https://d.adroll.com/cm/bombora/out?adroll_fpc=4c89ab58f5a931094b812ee90e996c1e-1771275680944&pv=58828991434.03013&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
+- `out-2.img` — https://d.adroll.com/cm/experian/out?adroll_fpc=4c89ab58f5a931094b812ee90e996c1e-1771275680944&pv=58828991434.03013&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
+- `out-3.img` — https://d.adroll.com/cm/eyeota/out?adroll_fpc=4c89ab58f5a931094b812ee90e996c1e-1771275680944&pv=58828991434.03013&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
+- `out-4.img` — https://d.adroll.com/cm/g/out?adroll_fpc=4c89ab58f5a931094b812ee90e996c1e-1771275680944&pv=58828991434.03013&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
+- `out-5.img` — https://d.adroll.com/cm/index/out?adroll_fpc=4c89ab58f5a931094b812ee90e996c1e-1771275680944&pv=58828991434.03013&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
+- `out-6.img` — https://d.adroll.com/cm/l/out?adroll_fpc=4c89ab58f5a931094b812ee90e996c1e-1771275680944&pv=58828991434.03013&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
+- `out-7.img` — https://d.adroll.com/cm/n/out?adroll_fpc=4c89ab58f5a931094b812ee90e996c1e-1771275680944&pv=58828991434.03013&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
+- `out-8.img` — https://d.adroll.com/cm/o/out?adroll_fpc=4c89ab58f5a931094b812ee90e996c1e-1771275680944&pv=58828991434.03013&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
+- `out-9.img` — https://d.adroll.com/cm/outbrain/out?adroll_fpc=4c89ab58f5a931094b812ee90e996c1e-1771275680944&pv=58828991434.03013&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
+- `out-10.img` — https://d.adroll.com/cm/pubmatic/out?adroll_fpc=4c89ab58f5a931094b812ee90e996c1e-1771275680944&pv=58828991434.03013&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
+- `out-11.img` — https://d.adroll.com/cm/taboola/out?adroll_fpc=4c89ab58f5a931094b812ee90e996c1e-1771275680944&pv=58828991434.03013&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
+- `out-12.img` — https://d.adroll.com/cm/triplelift/out?adroll_fpc=4c89ab58f5a931094b812ee90e996c1e-1771275680944&pv=58828991434.03013&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
+- `out-13.img` — https://d.adroll.com/cm/x/out?adroll_fpc=4c89ab58f5a931094b812ee90e996c1e-1771275680944&pv=58828991434.03013&arrfrr=https%3A%2F%2Feverett.wsu.edu%2Fadmissions%2Fapply-to-wsu-everett%2F&advertisable=YMTA77XBNRAH5MZTHYW3XY
 - `fire.img` — https://us-25449-adswizz.attribution.adswizz.com/fire?pixelId=6221e178-910e-4890-92a4-8ebdc3b7b18d&type=sitevisit&subtype=HomePage&aw_0_req.gdpr=true&redirectURL=aHR0cHM6Ly9waXhlbC50YXBhZC5jb20vaWRzeW5jL2V4L3JlY2VpdmU_cGFydG5lcl9pZD0yOTk0JjwjaWYgcmVxdWVzdC5saXN0ZW5lcklkP21hdGNoZXMoJ1swLTlhLWZdezh9LVswLTlhLWZdezR9LVswLTlhLWZdezR9LVswLTlhLWZdezR9LVswLTlhLWZdezEyfScpPnBhcnRuZXJfdHlwZWRfZGlkPSU3QiUyMkhBUkRXQVJFX0FORFJPSURfQURfSUQlMjIlM0ElMjIke3JlcXVlc3QubGlzdGVuZXJJZH0lMjIlN0Q8I2Vsc2VpZiByZXF1ZXN0Lmxpc3RlbmVySWQ_bWF0Y2hlcygnWzAtOUEtRl17OH0tWzAtOUEtRl17NH0tWzAtOUEtRl17NH0tWzAtOUEtRl17NH0tWzAtOUEtRl17MTJ9Jyk-cGFydG5lcl90eXBlZF9kaWQ9JTdCJTIySEFSRFdBUkVfSURGQSUyMiUzQSUyMiR7cmVxdWVzdC5saXN0ZW5lcklkfSUyMiU3RDwjZWxzZT5wYXJ0bmVyX2RldmljZV9pZD0ke3JlcXVlc3QubGlzdGVuZXJJZCF9PC8jaWY-
 - `alex-396x396.jpeg` — https://s3.wp.wsu.edu/uploads/sites/908/2025/02/alex-396x396.jpeg
 - `Jess-Loree-Bio-Pic-396x393.jpg` — https://s3.wp.wsu.edu/uploads/sites/908/2025/02/Jess-Loree-Bio-Pic-396x393.jpg

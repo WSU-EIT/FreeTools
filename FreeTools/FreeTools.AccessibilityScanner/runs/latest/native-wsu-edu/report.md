@@ -2,28 +2,25 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/3 pages OK |
+| Pages Scanned | 3 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 6 |
+| Pages Failed | 3 |
+| Total JS Errors | 1 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.3 MB |
-| Total Screenshots | 3.2 MB |
-| Total Images | 9 (2.8 MB) |
-| Images Missing Alt | 5 |
+| Total HTML | 654.7 KB |
+| Total Screenshots | 2.7 MB |
+| Total Images | 9 (4.2 MB) |
+| Images Missing Alt | 6 |
 | Folder | `native-wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Office of Native American Programs \|... | 4 | 1 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | Page not found \| Office of Native Am... | 1 | 0 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Office of Native Americ... | 0 | 7 | 4 |
-| ❌ | [/programs/](programs/report.md) | 0 | Page not found \| Office of Native Am... | 1 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Office of Native American Programs \|... | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Office of Native Americ... | 0 | 9 | 6 |
 | ❌ | [/resources/](resources/report.md) | 0 | Resources for Collaborative Research ... | 0 | 0 | 0 |
-| ❌ | [/students/](students/report.md) | 0 | students \| Office of Native American... | 0 | 1 | 1 |
 
 ## Page Screenshots
 
@@ -31,25 +28,13 @@
 
 ![/](_root/01-page-loaded.png)
 
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
-
 ### [/contact/](contact/report.md)
 
 ![/contact/](contact/01-page-loaded.png)
 
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
-
 ### [/resources/](resources/report.md)
 
 ![/resources/](resources/01-page-loaded.png)
-
-### [/students/](students/report.md)
-
-![/students/](students/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -57,21 +42,6 @@
 ### /
 
 - **URL:** https://native.wsu.edu/
-- **Status:** 0
-
-### /about/
-
-- **URL:** https://native.wsu.edu/about/
-- **Status:** 0
-
-### /students/
-
-- **URL:** https://native.wsu.edu/students/
-- **Status:** 0
-
-### /programs/
-
-- **URL:** https://native.wsu.edu/programs/
 - **Status:** 0
 
 ### /resources/
@@ -87,20 +57,9 @@
 
 ## Pages with JavaScript Errors
 
-### / (4 errors)
+### / (1 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /about/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /programs/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

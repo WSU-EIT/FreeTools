@@ -2,20 +2,20 @@
   "PagePath": "/help/",
   "Url": "https://email.wsu.edu/help/",
   "FinalUrl": "https://outlook.office365.com/mail/?realm=wsu.edu",
-  "Title": "Outlook",
+  "Title": null,
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 14656,
-  "ScreenshotSizeBytes": 26911,
+  "HtmlSizeBytes": 14644,
+  "ScreenshotSizeBytes": 26899,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
-  "ConsoleWarningCount": 1,
+  "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 26911
+      "FileSize": 26899
     }
   ],
   "ImageCount": 1,
@@ -29,7 +29,7 @@
       "FileSize": 3202
     }
   ],
-  "ErrorMessage": null,
+  "ErrorMessage": "Execution context was destroyed, most likely because of a navigation",
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:26.9142869Z"
+  "CapturedAt": "2026-02-16T21:00:00.8351533Z"
 }

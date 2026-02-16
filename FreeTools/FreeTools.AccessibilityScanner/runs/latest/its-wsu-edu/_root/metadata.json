@@ -5,17 +5,17 @@
   "Title": "Information Technology Services | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 236733,
-  "ScreenshotSizeBytes": 1346196,
+  "HtmlSizeBytes": 239856,
+  "ScreenshotSizeBytes": 1477876,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1346196
+      "FileSize": 1477876
     }
   ],
   "ImageCount": 7,
@@ -67,5 +67,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:04.9610684Z"
+  "CapturedAt": "2026-02-16T20:58:42.423298Z"
 }

@@ -6,14 +6,14 @@
 | Redirected To | https://provost.wsu.edu/transformational-change-initiative/contact-us/ |
 | Title | Contact Us | Office of the Provost | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 96.3 KB |
+| HTML Size | 105.0 KB |
 | Screenshots | 1 (113.1 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:58.2644717Z |
+| Captured | 2026-02-16T21:00:27.6509577Z |
 
 ## Actions
 

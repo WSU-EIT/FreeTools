@@ -6,14 +6,14 @@
 | Redirected To | https://physics.wsu.edu/overview-research/astronomy-and-astrophysics/ |
 | Title | Astronomy and astrophysics | Department of Physics & Astronomy | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 222.0 KB |
+| HTML Size | 228.5 KB |
 | Screenshots | 1 (911.6 KB) |
 | Images | 10 (1.4 MB) |
 | Images Missing Alt | 7 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:21.3030999Z |
+| Captured | 2026-02-16T21:00:52.1741398Z |
 
 ## Actions
 

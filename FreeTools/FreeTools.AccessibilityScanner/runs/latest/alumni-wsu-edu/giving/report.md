@@ -6,14 +6,14 @@
 | Redirected To | https://alumni.wsu.edu/s/1613/18/interior.aspx?sid=1613&gid=2&pgid=60&cid=169&referer=&query=giving%2f |
 | Title | Washington State University Alumni Association - Alumni Travel Offerings 2025 - 2026 |
 | Status | ❌ 0 |
-| HTML Size | 77.0 KB |
+| HTML Size | 76.9 KB |
 | Screenshots | 1 (239.1 KB) |
 | Images | 3 (32.0 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:41.6006084Z |
+| Captured | 2026-02-16T20:59:58.4405464Z |
 
 ## JavaScript Errors
 

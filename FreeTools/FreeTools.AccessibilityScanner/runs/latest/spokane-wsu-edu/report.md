@@ -2,29 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/7 pages OK |
-| Pages Scanned | 7 |
-| Pages Passed | 2 |
-| Pages Failed | 5 |
-| Total JS Errors | 1 |
-| Total JS Warnings | 3 |
-| Total HTML | 1.8 MB |
-| Total Screenshots | 11.9 MB |
-| Total Images | 56 (13.8 MB) |
-| Images Missing Alt | 6 |
+| Status | ⚠️ 3/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 3 |
+| Pages Failed | 3 |
+| Total JS Errors | 0 |
+| Total JS Warnings | 2 |
+| Total HTML | 1.5 MB |
+| Total Screenshots | 13.5 MB |
+| Total Images | 65 (18.6 MB) |
+| Images Missing Alt | 8 |
 | Folder | `spokane-wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Spokane \| Washington State Unive... | 0 | 18 | 0 |
-| ❌ | [/about/](about/report.md) | 0 | WSU Spokane \| Washington State Unive... | 0 | 23 | 2 |
-| ❌ | [/academics/](academics/report.md) | 0 | Academic Programs \| WSU Spokane \| W... | 0 | 4 | 3 |
+| ❌ | [/](_root/report.md) | 0 | WSU Spokane \| Washington State Unive... | 0 | 24 | 2 |
+| ❌ | [/about/](about/report.md) | 0 | WSU Spokane \| Washington State Unive... | 0 | 27 | 2 |
+| ✅ | [/academics/](academics/report.md) | 200 | Academic Programs \| WSU Spokane \| W... | 0 | 4 | 3 |
 | ❌ | [/admissions/](admissions/report.md) | 0 | Admissions \| WSU Spokane \| Washingt... | 0 | 3 | 1 |
 | ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| WSU Spokane \| Washingt... | 0 | 2 | 0 |
 | ✅ | [/library/](library/report.md) | 200 | Health Sciences Library \| Washington... | 0 | 5 | 0 |
-| ❌ | [/student-services/](student-services/report.md) | 404 | Page not found \| WSU Spokane \| Wash... | 1 | 1 | 0 |
 
 ## Page Screenshots
 
@@ -52,10 +51,6 @@
 
 ![/library/](library/01-page-loaded.png)
 
-### [/student-services/](student-services/report.md)
-
-![/student-services/](student-services/01-page-loaded.png)
-
 
 ## Failed Pages
 
@@ -69,27 +64,10 @@
 - **URL:** https://spokane.wsu.edu/about/
 - **Status:** 0
 
-### /academics/
-
-- **URL:** https://spokane.wsu.edu/academics/
-- **Status:** 0
-
 ### /admissions/
 
 - **URL:** https://spokane.wsu.edu/admissions/
 - **Status:** 0
-
-### /student-services/
-
-- **URL:** https://spokane.wsu.edu/student-services/
-- **Status:** 404
-
-
-## Pages with JavaScript Errors
-
-### /student-services/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

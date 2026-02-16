@@ -6,14 +6,14 @@
 | Redirected To | https://native.wsu.edu/cnrc/resources/ |
 | Title | Resources for Collaborative Research with Native American and Alaska Native Communities | Office of Native American Programs | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 213.9 KB |
+| HTML Size | 216.1 KB |
 | Screenshots | 1 (536.8 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:48.6322337Z |
+| Captured | 2026-02-16T20:59:31.9397712Z |
 
 ## Actions
 

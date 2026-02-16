@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/3 pages OK |
+| Pages Scanned | 3 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 6 |
+| Pages Failed | 3 |
+| Total JS Errors | 3 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.3 MB |
-| Total Screenshots | 4.4 MB |
-| Total Images | 22 (7.8 MB) |
+| Total HTML | 709.8 KB |
+| Total Screenshots | 2.8 MB |
+| Total Images | 21 (7.3 MB) |
 | Images Missing Alt | 0 |
 | Folder | `financialaid-wsu-edu/` |
 
@@ -18,12 +18,9 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Student Financial Services \| Washing... | 3 | 9 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Student Financial Services \| Washing... | 3 | 8 | 0 |
 | ❌ | [/apply/](apply/report.md) | 0 | Apply for Aid \| Student Financial Se... | 0 | 6 | 0 |
 | ❌ | [/contact/](contact/report.md) | 0 | Contact Page \| Student Financial Ser... | 0 | 7 | 0 |
-| ❌ | [/eligibility/](eligibility/report.md) | 0 | Page not found \| Student Financial S... | 1 | 0 | 0 |
-| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| Student Financial S... | 1 | 0 | 0 |
-| ❌ | [/types-of-aid/](types-of-aid/report.md) | 0 | Page not found \| Student Financial S... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -39,18 +36,6 @@
 
 ![/contact/](contact/01-page-loaded.png)
 
-### [/eligibility/](eligibility/report.md)
-
-![/eligibility/](eligibility/01-page-loaded.png)
-
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
-### [/types-of-aid/](types-of-aid/report.md)
-
-![/types-of-aid/](types-of-aid/01-page-loaded.png)
-
 
 ## Failed Pages
 
@@ -62,21 +47,6 @@
 ### /apply/
 
 - **URL:** https://financialaid.wsu.edu/apply/
-- **Status:** 0
-
-### /types-of-aid/
-
-- **URL:** https://financialaid.wsu.edu/types-of-aid/
-- **Status:** 0
-
-### /eligibility/
-
-- **URL:** https://financialaid.wsu.edu/eligibility/
-- **Status:** 0
-
-### /resources/
-
-- **URL:** https://financialaid.wsu.edu/resources/
 - **Status:** 0
 
 ### /contact/
@@ -91,19 +61,7 @@
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /types-of-aid/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /eligibility/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /resources/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_CONNECTION_TIMED_OUT`
 
 
 ---

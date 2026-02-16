@@ -2,27 +2,26 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
-| Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 5 |
+| Status | ⚠️ 1/5 pages OK |
+| Pages Scanned | 5 |
+| Pages Passed | 1 |
+| Pages Failed | 4 |
+| Total JS Errors | 3 |
 | Total JS Warnings | 2 |
-| Total HTML | 1.1 MB |
-| Total Screenshots | 5.9 MB |
-| Total Images | 24 (3.9 MB) |
-| Images Missing Alt | 18 |
+| Total HTML | 957.0 KB |
+| Total Screenshots | 8.6 MB |
+| Total Images | 23 (3.4 MB) |
+| Images Missing Alt | 17 |
 | Folder | `ceshs-wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | College of Education, Sport, and Huma... | 0 | 6 | 4 |
+| ❌ | [/](_root/report.md) | 0 | College of Education, Sport, and Huma... | 0 | 5 | 3 |
 | ❌ | [/about/](about/report.md) | 0 | About WSU ROAR \| College of Educatio... | 1 | 2 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us! \| College of Education, ... | 1 | 2 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us! \| College of Education, ... | 1 | 2 | 0 |
 | ❌ | [/faculty/](faculty/report.md) | 0 | Kinesiology Faculty \| College of Edu... | 1 | 14 | 14 |
-| ❌ | [/programs/](programs/report.md) | 0 | Page not found \| College of Educatio... | 2 | 0 | 0 |
 | ❌ | [/research/](research/report.md) | 0 | Log In ‹ College of Education, Sport,... | 0 | 0 | 0 |
 
 ## Page Screenshots
@@ -43,10 +42,6 @@
 
 ![/faculty/](faculty/01-page-loaded.png)
 
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
-
 ### [/research/](research/report.md)
 
 ![/research/](research/01-page-loaded.png)
@@ -64,11 +59,6 @@
 - **URL:** https://ceshs.wsu.edu/about/
 - **Status:** 0
 
-### /programs/
-
-- **URL:** https://ceshs.wsu.edu/programs/
-- **Status:** 0
-
 ### /research/
 
 - **URL:** https://ceshs.wsu.edu/research/
@@ -79,18 +69,8 @@
 - **URL:** https://ceshs.wsu.edu/faculty/
 - **Status:** 0
 
-### /contact/
-
-- **URL:** https://ceshs.wsu.edu/contact/
-- **Status:** 0
-
 
 ## Pages with JavaScript Errors
-
-### /programs/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
 
 ### /about/ (1 errors)
 

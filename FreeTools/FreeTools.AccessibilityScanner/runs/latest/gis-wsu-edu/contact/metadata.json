@@ -5,8 +5,8 @@
   "Title": "WSU Administration GIS Portal",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 418123,
-  "ScreenshotSizeBytes": 69108,
+  "HtmlSizeBytes": 436294,
+  "ScreenshotSizeBytes": 969314,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 69108
+      "FileSize": 969314
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:40.442326Z"
+  "CapturedAt": "2026-02-16T21:00:55.7788567Z"
 }

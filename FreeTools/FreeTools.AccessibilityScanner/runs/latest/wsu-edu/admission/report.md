@@ -6,14 +6,14 @@
 | Redirected To | https://wsu.edu/admissions/ |
 | Title | WSU Admissions | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 117.6 KB |
-| Screenshots | 1 (1.8 MB) |
+| HTML Size | 117.7 KB |
+| Screenshots | 1 (1.9 MB) |
 | Images | 11 (5.8 MB) |
 | Images Missing Alt | 2 |
 | JS Errors | 1 |
 | JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:59.5454837Z |
+| Captured | 2026-02-16T21:02:10.3498461Z |
 
 ## JavaScript Errors
 
@@ -21,7 +21,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.8 MB)
+- Screenshot #1: page-loaded (1.9 MB)
 - Downloaded 11 images to /images/
 
 ## Screenshots
@@ -79,7 +79,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.8 MB)
+- `01-page-loaded.png` — page-loaded (1.9 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -5,14 +5,14 @@
 | URL | https://asce.wsu.edu/membership/ |
 | Title | Membership | American Society of Civil Engineers | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 44.2 KB |
+| HTML Size | 49.1 KB |
 | Screenshots | 1 (85.4 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:38.1553573Z |
+| Captured | 2026-02-16T20:59:36.8089794Z |
 
 ## Actions
 

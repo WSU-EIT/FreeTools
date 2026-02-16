@@ -2,29 +2,27 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/7 pages OK |
-| Pages Scanned | 7 |
+| Status | ⚠️ 1/5 pages OK |
+| Pages Scanned | 5 |
 | Pages Passed | 1 |
-| Pages Failed | 6 |
-| Total JS Errors | 4 |
+| Pages Failed | 4 |
+| Total JS Errors | 5 |
 | Total JS Warnings | 0 |
-| Total HTML | 277.6 KB |
-| Total Screenshots | 2.8 MB |
-| Total Images | 38 (828.3 KB) |
-| Images Missing Alt | 5 |
+| Total HTML | 224.5 KB |
+| Total Screenshots | 1.9 MB |
+| Total Images | 35 (969.1 KB) |
+| Images Missing Alt | 6 |
 | Folder | `vancouver-wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Washington State University Vancouver... | 1 | 12 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Washington State University Vancouver... | 4 | 12 | 0 |
 | ❌ | [/about/](about/report.md) | 0 | About WSU Vancouver - About - WSU Van... | 0 | 2 | 0 |
-| ❌ | [/academics/](academics/report.md) | 0 | Page not found - About - WSU Vancouver | 1 | 2 | 0 |
-| ❌ | [/admissions/](admissions/report.md) | 0 | Office of Admissions - Home - WSU Van... | 0 | 12 | 5 |
+| ❌ | [/admissions/](admissions/report.md) | 0 | Office of Admissions - Home - WSU Van... | 0 | 13 | 6 |
 | ❌ | [/contact/](contact/report.md) | 403 | Access denied - About - WSU Vancouver | 1 | 2 | 0 |
 | ✅ | [/library/](library/report.md) | 200 | Library - Home - WSU Vancouver | 0 | 6 | 0 |
-| ❌ | [/student-services/](student-services/report.md) | 404 | Page not found - About - WSU Vancouver | 1 | 2 | 0 |
 
 ## Page Screenshots
 
@@ -35,10 +33,6 @@
 ### [/about/](about/report.md)
 
 ![/about/](about/01-page-loaded.png)
-
-### [/academics/](academics/report.md)
-
-![/academics/](academics/01-page-loaded.png)
 
 ### [/admissions/](admissions/report.md)
 
@@ -51,10 +45,6 @@
 ### [/library/](library/report.md)
 
 ![/library/](library/01-page-loaded.png)
-
-### [/student-services/](student-services/report.md)
-
-![/student-services/](student-services/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -69,20 +59,10 @@
 - **URL:** https://vancouver.wsu.edu/about/
 - **Status:** 0
 
-### /academics/
-
-- **URL:** https://vancouver.wsu.edu/academics/
-- **Status:** 0
-
 ### /admissions/
 
 - **URL:** https://vancouver.wsu.edu/admissions/
 - **Status:** 0
-
-### /student-services/
-
-- **URL:** https://vancouver.wsu.edu/student-services/
-- **Status:** 404
 
 ### /contact/
 
@@ -92,17 +72,12 @@
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### / (4 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /academics/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /student-services/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /contact/ (1 errors)
 

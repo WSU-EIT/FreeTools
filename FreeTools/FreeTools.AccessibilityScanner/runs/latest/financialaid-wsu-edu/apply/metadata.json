@@ -5,8 +5,8 @@
   "Title": "Apply for Aid | Student Financial Services | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 227572,
-  "ScreenshotSizeBytes": 1047272,
+  "HtmlSizeBytes": 232228,
+  "ScreenshotSizeBytes": 983656,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,11 +15,11 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1047272
+      "FileSize": 983656
     }
   ],
   "ImageCount": 6,
-  "ImagesTotalSizeBytes": 840254,
+  "ImagesTotalSizeBytes": 953956,
   "ImagesMissingAlt": 0,
   "Images": [
     {
@@ -27,12 +27,6 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-financialaid/uploads/sites/2322/2025/04/boy-reading.jpg",
       "AltText": "A student reads a book outside the library.",
       "FileSize": 54866
-    },
-    {
-      "FileName": "SpeedDating.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-financialaid/uploads/sites/2322/2024/11/SpeedDating.jpg",
-      "AltText": "Students sit at a table getting to know each other during orientation week.",
-      "FileSize": 398708
     },
     {
       "FileName": "lounging-student.jpg",
@@ -45,6 +39,12 @@
       "SourceUrl": "https://wpcdn.web.wsu.edu/wp-financialaid/uploads/sites/2322/2024/03/DRAFT-SITE-stock-photo.jpg",
       "AltText": "Five WSU students outdoors on campus holding up a cougar head flag.",
       "FileSize": 157776
+    },
+    {
+      "FileName": "CougHug.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-financialaid/uploads/sites/2322/2024/08/CougHug.jpg",
+      "AltText": "Student friends hug on Terrell Mall on the campus of Washington State University",
+      "FileSize": 512410
     },
     {
       "FileName": "StudentEmployee.jpg",
@@ -61,5 +61,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:12.3539506Z"
+  "CapturedAt": "2026-02-16T20:59:52.5037307Z"
 }

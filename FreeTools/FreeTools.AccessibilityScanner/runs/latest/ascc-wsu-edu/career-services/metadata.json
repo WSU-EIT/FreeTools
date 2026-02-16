@@ -5,8 +5,8 @@
   "Title": "Academic Success \u0026 Career Center \u2013 Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 622384,
-  "ScreenshotSizeBytes": 813579,
+  "HtmlSizeBytes": 157141,
+  "ScreenshotSizeBytes": 876571,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 813579
+      "FileSize": 876571
     }
   ],
   "ImageCount": 38,
@@ -253,5 +253,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:27.6613102Z"
+  "CapturedAt": "2026-02-16T20:59:41.9268429Z"
 }

@@ -6,9 +6,9 @@
 | Pages Scanned | 5 |
 | Pages Passed | 0 |
 | Pages Failed | 5 |
-| Total JS Errors | 8 |
+| Total JS Errors | 4 |
 | Total JS Warnings | 0 |
-| Total HTML | 1003.0 KB |
+| Total HTML | 1.0 MB |
 | Total Screenshots | 471.6 KB |
 | Total Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
@@ -18,7 +18,7 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Threat Assessment \| Washington State... | 5 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | Threat Assessment \| Washington State... | 1 | 0 | 0 |
 | ❌ | [/about/](about/report.md) | 0 | Page not found \| Threat Assessment \... | 1 | 0 | 0 |
 | ❌ | [/contact/](contact/report.md) | 0 | Contact Threat Assessment Team \| Thr... | 0 | 0 | 0 |
 | ❌ | [/report-concern/](report-concern/report.md) | 0 | Page not found \| Threat Assessment \... | 1 | 0 | 0 |
@@ -77,12 +77,8 @@
 
 ## Pages with JavaScript Errors
 
-### / (5 errors)
+### / (1 errors)
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /about/ (1 errors)

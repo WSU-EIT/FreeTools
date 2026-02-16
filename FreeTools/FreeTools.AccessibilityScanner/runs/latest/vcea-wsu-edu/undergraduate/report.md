@@ -6,14 +6,14 @@
 | Redirected To | https://vcea.wsu.edu/2020/03/30/undergraduate-pass-fail-option-spring-2020/ |
 | Title | Undergraduate Pass/Fail Option, Spring 2020 | Voiland College of Engineering and Architecture | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 228.5 KB |
+| HTML Size | 229.3 KB |
 | Screenshots | 1 (162.0 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:44.9128189Z |
+| Captured | 2026-02-16T21:00:04.6170641Z |
 
 ## Actions
 

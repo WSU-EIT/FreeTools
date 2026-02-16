@@ -5,8 +5,8 @@
   "Title": "WSU Administration GIS Portal",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 413529,
-  "ScreenshotSizeBytes": 4253,
+  "HtmlSizeBytes": 417992,
+  "ScreenshotSizeBytes": 14366,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,21 +15,14 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 4253
+      "FileSize": 14366
     }
   ],
-  "ImageCount": 1,
-  "ImagesTotalSizeBytes": 132337,
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
   "ImagesMissingAlt": 0,
-  "Images": [
-    {
-      "FileName": "home.logo1648584847786.img",
-      "SourceUrl": "https://wsuadmin.maps.arcgis.com/sharing/rest/portals/self/resources/home.logo1648584847786.",
-      "AltText": "Home page logo",
-      "FileSize": 132337
-    }
-  ],
+  "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.110447Z"
+  "CapturedAt": "2026-02-16T20:58:42.4585432Z"
 }

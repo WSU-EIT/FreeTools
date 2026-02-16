@@ -5,18 +5,22 @@
 | URL | https://payroll.wsu.edu/ |
 | Title | Payroll Services | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 68.3 KB |
-| Screenshots | 1 (612.3 KB) |
+| HTML Size | 67.9 KB |
+| Screenshots | 1 (1.0 MB) |
 | Images | 1 (297.3 KB) |
 | Images Missing Alt | 1 |
-| JS Errors | 0 |
+| JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1363567Z |
+| Captured | 2026-02-16T20:58:42.4672868Z |
+
+## JavaScript Errors
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- Screenshot #1: page-loaded (612.3 KB)
+- Screenshot #1: page-loaded (1.0 MB)
 - Downloaded 1 images to /images/
 
 ## Screenshots
@@ -43,7 +47,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (612.3 KB)
+- `01-page-loaded.png` — page-loaded (1.0 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

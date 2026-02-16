@@ -6,18 +6,18 @@
 | Redirected To | https://asl.wsu.edu/research-staff/ |
 | Title | Research Staff | Applied Sciences Laboratory | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 67.2 KB |
-| Screenshots | 1 (363.5 KB) |
+| HTML Size | 71.6 KB |
+| Screenshots | 1 (349.1 KB) |
 | Images | 8 (296.4 KB) |
 | Images Missing Alt | 8 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:24.0208813Z |
+| Captured | 2026-02-16T21:00:01.7017993Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (363.5 KB)
+- Screenshot #1: page-loaded (349.1 KB)
 - Downloaded 8 images to /images/
 
 ## Screenshots
@@ -72,7 +72,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (363.5 KB)
+- `01-page-loaded.png` — page-loaded (349.1 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

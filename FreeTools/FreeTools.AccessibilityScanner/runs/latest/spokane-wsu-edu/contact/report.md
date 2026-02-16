@@ -6,14 +6,14 @@
 | Redirected To | https://spokane.wsu.edu/contact-us/ |
 | Title | Contact Us | WSU Spokane | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 236.4 KB |
+| HTML Size | 236.5 KB |
 | Screenshots | 1 (1.8 MB) |
 | Images | 2 (1.5 MB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:44.2711574Z |
+| Captured | 2026-02-16T21:01:46.5422701Z |
 
 ## Actions
 

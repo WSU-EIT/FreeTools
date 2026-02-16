@@ -5,23 +5,25 @@
 | URL | https://askdruniverse.wsu.edu/ |
 | Title | Ask Dr. Universe | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 63.5 KB |
-| Screenshots | 1 (941.0 KB) |
+| HTML Size | 61.1 KB |
+| Screenshots | 1 (742.9 KB) |
 | Images | 10 (252.6 KB) |
 | Images Missing Alt | 5 |
-| JS Errors | 2 |
+| JS Errors | 4 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.0061491Z |
+| Captured | 2026-02-16T20:58:42.4433674Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- Screenshot #1: page-loaded (941.0 KB)
+- Screenshot #1: page-loaded (742.9 KB)
 - Downloaded 10 images to /images/
 
 ## Screenshots
@@ -79,7 +81,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (941.0 KB)
+- `01-page-loaded.png` — page-loaded (742.9 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

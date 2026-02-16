@@ -4,19 +4,19 @@
 |-------|-------|
 | URL | https://libraries.wsu.edu/library-map/ |
 | Title | Library Map – WSU Libraries |
-| Status | ❌ 0 |
+| Status | ✅ 200 |
 | HTML Size | 47.9 KB |
-| Screenshots | 1 (425.0 KB) |
+| Screenshots | 1 (485.6 KB) |
 | Images | 13 (716.9 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 20 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:41.9154795Z |
+| Captured | 2026-02-16T21:01:03.4523440Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (425.0 KB)
+- Screenshot #1: page-loaded (485.6 KB)
 - Downloaded 13 images to /images/
 
 ## Screenshots
@@ -75,7 +75,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (425.0 KB)
+- `01-page-loaded.png` — page-loaded (485.6 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

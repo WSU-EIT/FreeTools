@@ -5,17 +5,17 @@
   "Title": "Payroll Services | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 69935,
-  "ScreenshotSizeBytes": 627010,
+  "HtmlSizeBytes": 69507,
+  "ScreenshotSizeBytes": 1066275,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 627010
+      "FileSize": 1066275
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1363567Z"
+  "CapturedAt": "2026-02-16T20:58:42.4672868Z"
 }

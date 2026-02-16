@@ -5,14 +5,14 @@
 | URL | https://bursar.wsu.edu/billing/ |
 | Title | Billing | Bursar | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 70.5 KB |
+| HTML Size | 62.5 KB |
 | Screenshots | 1 (664.4 KB) |
 | Images | 1 (59.5 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:55.7300517Z |
+| Captured | 2026-02-16T20:59:31.9409422Z |
 
 ## Actions
 

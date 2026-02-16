@@ -5,18 +5,18 @@
 | URL | https://history.wsu.edu/faculty/ |
 | Title | Faculty | Department of History | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 308.7 KB |
-| Screenshots | 1 (885.5 KB) |
+| HTML Size | 317.9 KB |
+| Screenshots | 1 (1.2 MB) |
 | Images | 42 (2.5 MB) |
 | Images Missing Alt | 42 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:51.3799407Z |
+| Captured | 2026-02-16T21:00:03.9399157Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (885.5 KB)
+- Screenshot #1: page-loaded (1.2 MB)
 - Downloaded 42 images to /images/
 
 ## Screenshots
@@ -207,7 +207,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (885.5 KB)
+- `01-page-loaded.png` — page-loaded (1.2 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -6,14 +6,14 @@
 | Redirected To | https://wsuadmin.maps.arcgis.com/home/index.html |
 | Title |  |
 | Status | ❌ 0 |
-| HTML Size | 158.9 KB |
+| HTML Size | 392.4 KB |
 | Screenshots | 1 (4.2 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:54.5152896Z |
+| Captured | 2026-02-16T21:00:24.9772844Z |
 
 ## Actions
 

@@ -2,38 +2,31 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/3 pages OK |
+| Pages Scanned | 3 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 2 |
+| Pages Failed | 3 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.2 MB |
-| Total Screenshots | 1.4 MB |
-| Total Images | 11 (2.7 MB) |
-| Images Missing Alt | 9 |
+| Total HTML | 719.6 KB |
+| Total Screenshots | 1.2 MB |
+| Total Images | 11 (2.9 MB) |
+| Images Missing Alt | 10 |
 | Folder | `ehs-wsu-edu/` |
 
 ## Pages
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Environmental Health & Safety \| Wash... | 1 | 0 | 0 |
-| ❌ | [/compliance/](compliance/report.md) | 0 | Compliance \| Environmental Health & ... | 0 | 1 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Environmental Health & ... | 0 | 10 | 9 |
+| ❌ | [/](_root/report.md) | 0 | Environmental Health & Safety \| Wash... | 0 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Environmental Health & ... | 0 | 11 | 10 |
 | ❌ | [/resources/](resources/report.md) | 0 | Resources & Contacts \| Environmental... | 0 | 0 | 0 |
-| ❌ | [/services/](services/report.md) | 0 | Page not found \| Environmental Healt... | 1 | 0 | 0 |
-| ❌ | [/training/](training/report.md) | 0 | (none) | 0 | 0 | 0 |
 
 ## Page Screenshots
 
 ### [/](_root/report.md)
 
 ![/](_root/01-page-loaded.png)
-
-### [/compliance/](compliance/report.md)
-
-![/compliance/](compliance/01-page-loaded.png)
 
 ### [/contact/](contact/report.md)
 
@@ -43,34 +36,12 @@
 
 ![/resources/](resources/01-page-loaded.png)
 
-### [/services/](services/report.md)
-
-![/services/](services/01-page-loaded.png)
-
 
 ## Failed Pages
 
 ### /
 
 - **URL:** https://ehs.wsu.edu/
-- **Status:** 0
-
-### /services/
-
-- **URL:** https://ehs.wsu.edu/services/
-- **Status:** 0
-
-### /training/
-
-- **URL:** https://ehs.wsu.edu/training/
-- **Status:** 0
-- **Error:** `Download is starting
-Call log:
-  - navigating to "https://ehs.wsu.edu/training/", waiting until "networkidle"`
-
-### /compliance/
-
-- **URL:** https://ehs.wsu.edu/compliance/
 - **Status:** 0
 
 ### /resources/
@@ -82,17 +53,6 @@ Call log:
 
 - **URL:** https://ehs.wsu.edu/contact/
 - **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /services/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

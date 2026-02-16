@@ -5,8 +5,8 @@
   "Title": "Contact | Transportation Services | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 69521,
-  "ScreenshotSizeBytes": 416110,
+  "HtmlSizeBytes": 62889,
+  "ScreenshotSizeBytes": 383407,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 416110
+      "FileSize": 383407
     }
   ],
   "ImageCount": 5,
@@ -55,5 +55,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:58.4355865Z"
+  "CapturedAt": "2026-02-16T21:00:54.0024176Z"
 }

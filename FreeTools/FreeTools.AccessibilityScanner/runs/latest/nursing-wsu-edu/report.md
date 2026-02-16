@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/7 pages OK |
-| Pages Scanned | 7 |
+| Status | ⚠️ 0/4 pages OK |
+| Pages Scanned | 4 |
 | Pages Passed | 0 |
-| Pages Failed | 7 |
-| Total JS Errors | 20 |
+| Pages Failed | 4 |
+| Total JS Errors | 11 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.7 MB |
-| Total Screenshots | 3.4 MB |
-| Total Images | 17 (792.7 KB) |
+| Total HTML | 1.0 MB |
+| Total Screenshots | 2.9 MB |
+| Total Images | 14 (761.3 KB) |
 | Images Missing Alt | 0 |
 | Folder | `nursing-wsu-edu/` |
 
@@ -18,12 +18,9 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | College of Nursing \| Washington Stat... | 0 | 10 | 0 |
+| ❌ | [/](_root/report.md) | 0 | College of Nursing \| Washington Stat... | 2 | 10 | 0 |
 | ❌ | [/about/](about/report.md) | 0 | About RN to BSN Day \| College of Nur... | 3 | 1 | 0 |
 | ❌ | [/admissions/](admissions/report.md) | 0 | Admissions Appeal Policy \| College o... | 3 | 1 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| College of Nursing ... | 4 | 1 | 0 |
-| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty Biosketch Form \| College of ... | 3 | 1 | 0 |
-| ❌ | [/programs/](programs/report.md) | 0 | Page not found \| College of Nursing ... | 4 | 1 | 0 |
 | ❌ | [/students/](students/report.md) | 0 | Students can get COVID vax or booster... | 3 | 2 | 0 |
 
 ## Page Screenshots
@@ -39,18 +36,6 @@
 ### [/admissions/](admissions/report.md)
 
 ![/admissions/](admissions/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
-
-### [/faculty/](faculty/report.md)
-
-![/faculty/](faculty/01-page-loaded.png)
-
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
 
 ### [/students/](students/report.md)
 
@@ -69,11 +54,6 @@
 - **URL:** https://nursing.wsu.edu/about/
 - **Status:** 0
 
-### /programs/
-
-- **URL:** https://nursing.wsu.edu/programs/
-- **Status:** 0
-
 ### /admissions/
 
 - **URL:** https://nursing.wsu.edu/admissions/
@@ -84,32 +64,8 @@
 - **URL:** https://nursing.wsu.edu/students/
 - **Status:** 0
 
-### /faculty/
-
-- **URL:** https://nursing.wsu.edu/faculty/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://nursing.wsu.edu/contact/
-- **Status:** 0
-
 
 ## Pages with JavaScript Errors
-
-### /programs/ (4 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /contact/ (4 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
 
 ### /about/ (3 errors)
 
@@ -129,11 +85,10 @@
 - `Failed to load resource: the server responded with a status of 405 ()`
 - `Failed to load resource: the server responded with a status of 405 ()`
 
-### /faculty/ (3 errors)
+### / (2 errors)
 
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

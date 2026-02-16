@@ -6,14 +6,14 @@
 | Redirected To | https://ccr.wsu.edu/file-a-report/ |
 | Title | File A Report or Complaint | Compliance and Civil Rights | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 219.9 KB |
+| HTML Size | 220.0 KB |
 | Screenshots | 1 (212.0 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:24.0466226Z |
+| Captured | 2026-02-16T20:59:57.7431682Z |
 
 ## Actions
 

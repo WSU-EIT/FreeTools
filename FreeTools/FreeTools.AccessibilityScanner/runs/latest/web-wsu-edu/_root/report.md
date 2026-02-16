@@ -5,19 +5,14 @@
 | URL | https://web.wsu.edu/ |
 | Title | Web Communication | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 213.0 KB |
+| HTML Size | 217.1 KB |
 | Screenshots | 1 (205.3 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
-| JS Errors | 2 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1535101Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:58:42.4604985Z |
 
 ## Actions
 

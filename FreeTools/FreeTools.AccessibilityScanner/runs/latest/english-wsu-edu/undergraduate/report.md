@@ -6,14 +6,14 @@
 | Redirected To | https://english.wsu.edu/undergraduate-studies/ |
 | Title | Undergraduate Studies | WSU Department of English | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 50.9 KB |
+| HTML Size | 61.7 KB |
 | Screenshots | 1 (473.0 KB) |
 | Images | 1 (184.7 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:18.4722560Z |
+| Captured | 2026-02-16T20:59:55.2916816Z |
 
 ## JavaScript Errors
 

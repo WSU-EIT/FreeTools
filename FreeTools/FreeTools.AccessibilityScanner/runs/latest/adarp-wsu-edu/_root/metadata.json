@@ -5,8 +5,8 @@
   "Title": "ADARP | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 50616,
-  "ScreenshotSizeBytes": 704360,
+  "HtmlSizeBytes": 50609,
+  "ScreenshotSizeBytes": 547319,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 704360
+      "FileSize": 547319
     }
   ],
   "ImageCount": 3,
@@ -43,5 +43,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:04.9609751Z"
+  "CapturedAt": "2026-02-16T20:58:42.4233324Z"
 }

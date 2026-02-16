@@ -6,14 +6,14 @@
 | Redirected To | https://threatassessment.wsu.edu/resources/#gsc.tab=0 |
 | Title | Page not found | Threat Assessment | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 199.8 KB |
-| Screenshots | 1 (59.7 KB) |
+| HTML Size | 213.9 KB |
+| Screenshots | 1 (59.8 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:22.0528366Z |
+| Captured | 2026-02-16T20:59:55.4632006Z |
 
 ## JavaScript Errors
 
@@ -21,7 +21,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (59.7 KB)
+- Screenshot #1: page-loaded (59.8 KB)
 - No images found on page
 
 ## Screenshots
@@ -37,7 +37,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (59.7 KB)
+- `01-page-loaded.png` — page-loaded (59.8 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

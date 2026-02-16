@@ -6,14 +6,14 @@
 | Redirected To | https://provost.wsu.edu/procedures/classrooms/policies-and-reports/ |
 | Title | Policies and Reports | Office of the Provost | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 91.0 KB |
+| HTML Size | 101.9 KB |
 | Screenshots | 1 (520.5 KB) |
 | Images | 1 (45.0 KB) |
 | Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:27.2178459Z |
+| Captured | 2026-02-16T20:59:57.7431972Z |
 
 ## Actions
 

@@ -5,8 +5,8 @@
   "Title": "Kinesiology Faculty | College of Education, Sport, and Human Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 245917,
-  "ScreenshotSizeBytes": 1010931,
+  "HtmlSizeBytes": 258031,
+  "ScreenshotSizeBytes": 3727300,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1010931
+      "FileSize": 3727300
     }
   ],
   "ImageCount": 14,
@@ -109,5 +109,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:12.2367708Z"
+  "CapturedAt": "2026-02-16T21:00:36.5060559Z"
 }

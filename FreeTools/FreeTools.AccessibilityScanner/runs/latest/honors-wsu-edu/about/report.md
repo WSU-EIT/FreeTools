@@ -6,14 +6,14 @@
 | Redirected To | https://honors.wsu.edu/about-honors/ |
 | Title | Why Honors | The Honors College | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 72.1 KB |
-| Screenshots | 1 (552.6 KB) |
+| HTML Size | 72.4 KB |
+| Screenshots | 1 (584.3 KB) |
 | Images | 1 (31.9 KB) |
 | Images Missing Alt | 1 |
 | JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:59.3303549Z |
+| Captured | 2026-02-16T20:59:40.3228818Z |
 
 ## JavaScript Errors
 
@@ -22,7 +22,7 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (552.6 KB)
+- Screenshot #1: page-loaded (584.3 KB)
 - Downloaded 1 images to /images/
 
 ## Screenshots
@@ -49,7 +49,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (552.6 KB)
+- `01-page-loaded.png` — page-loaded (584.3 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

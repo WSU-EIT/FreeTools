@@ -2,20 +2,46 @@
   "PagePath": "/imsports/",
   "Url": "https://urec.wsu.edu/imsports/",
   "FinalUrl": null,
-  "Title": null,
+  "Title": "Intramurals",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 0,
-  "ScreenshotSizeBytes": 0,
+  "HtmlSizeBytes": 94898,
+  "ScreenshotSizeBytes": 685006,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
-  "ConsoleWarningCount": 0,
-  "Screenshots": [],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
-  "ImagesMissingAlt": 0,
-  "Images": [],
-  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...",
+  "ConsoleErrorCount": 3,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 685006
+    }
+  ],
+  "ImageCount": 3,
+  "ImagesTotalSizeBytes": 8540193,
+  "ImagesMissingAlt": 3,
+  "Images": [
+    {
+      "FileName": "fustal-square.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/kisf3ygq/fustal-square.jpg",
+      "AltText": "",
+      "FileSize": 335203
+    },
+    {
+      "FileName": "spike-ball-5.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/msri3ol3/spike-ball-5.jpg",
+      "AltText": "",
+      "FileSize": 4468966
+    },
+    {
+      "FileName": "6q6a4973.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/e03pmbur/6q6a4973.jpg",
+      "AltText": "",
+      "FileSize": 3736024
+    }
+  ],
+  "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:28.3240595Z"
+  "CapturedAt": "2026-02-16T21:00:36.4263122Z"
 }

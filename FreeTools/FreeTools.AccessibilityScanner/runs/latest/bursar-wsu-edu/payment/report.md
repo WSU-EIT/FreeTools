@@ -6,14 +6,14 @@
 | Redirected To | https://bursar.wsu.edu/payment-plans/ |
 | Title | Payment Plans | Bursar | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 59.3 KB |
+| HTML Size | 70.6 KB |
 | Screenshots | 1 (506.1 KB) |
 | Images | 9 (732.1 KB) |
 | Images Missing Alt | 9 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:18.0123300Z |
+| Captured | 2026-02-16T20:59:55.1643557Z |
 
 ## Actions
 

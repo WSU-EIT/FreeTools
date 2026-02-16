@@ -3,28 +3,33 @@
 | Field | Value |
 |-------|-------|
 | URL | https://housing.wsu.edu/prospective-students/ |
-| Title | Prospective Students |
+| Title | (none) |
 | Status | ❌ 0 |
-| HTML Size | 61.5 KB |
-| Screenshots | 1 (310.4 KB) |
+| HTML Size | 0 bytes |
+| Screenshots | 0 (0 bytes) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:59.3344080Z |
+| Captured | 2026-02-16T20:59:57.6699694Z |
+
+## Error
+
+```
+Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+```
 
 ## Actions
 
-- Screenshot #1: page-loaded (310.4 KB)
-- Downloaded 0 images to /images/
+- Scan aborted due to error
 
 ## Screenshots
 
-### 1. page-loaded
-
-![page-loaded](01-page-loaded.png)
-
+*No screenshots captured.*
 
 ## Page Images (0)
 
@@ -32,7 +37,6 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (310.4 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

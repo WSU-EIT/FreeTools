@@ -5,18 +5,18 @@
 | URL | https://brand.wsu.edu/typography/ |
 | Title | Typography – Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 65.6 KB |
-| Screenshots | 1 (624.3 KB) |
+| HTML Size | 79.9 KB |
+| Screenshots | 1 (547.9 KB) |
 | Images | 12 (532.2 KB) |
 | Images Missing Alt | 12 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:58.4390267Z |
+| Captured | 2026-02-16T21:00:14.4676997Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (624.3 KB)
+- Screenshot #1: page-loaded (547.9 KB)
 - Downloaded 12 images to /images/
 
 ## Screenshots
@@ -87,7 +87,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (624.3 KB)
+- `01-page-loaded.png` — page-loaded (547.9 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

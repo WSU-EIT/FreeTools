@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/7 pages OK |
-| Pages Scanned | 7 |
-| Pages Passed | 1 |
-| Pages Failed | 6 |
-| Total JS Errors | 4 |
+| Status | ⚠️ 0/5 pages OK |
+| Pages Scanned | 5 |
+| Pages Passed | 0 |
+| Pages Failed | 5 |
+| Total JS Errors | 1 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.7 MB |
-| Total Screenshots | 3.1 MB |
-| Total Images | 16 (2.2 MB) |
+| Total HTML | 1.2 MB |
+| Total Screenshots | 2.3 MB |
+| Total Images | 14 (1.5 MB) |
 | Images Missing Alt | 0 |
 | Folder | `cas-wsu-edu/` |
 
@@ -18,12 +18,10 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | College of Arts and Sciences \| Washi... | 2 | 6 | 0 |
+| ❌ | [/](_root/report.md) | 0 | College of Arts and Sciences \| Washi... | 1 | 4 | 0 |
 | ❌ | [/about/](about/report.md) | 0 | About 16% of couples are divided on C... | 0 | 1 | 0 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| College of Arts and Sci... | 0 | 0 | 0 |
-| ❌ | [/departments/](departments/report.md) | 0 | Page not found \| College of Arts and... | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| College of Arts and Sci... | 0 | 0 | 0 |
 | ❌ | [/news/](news/report.md) | 0 | News \| College of Arts and Sciences ... | 0 | 9 | 0 |
-| ❌ | [/programs/](programs/report.md) | 0 | Page not found \| College of Arts and... | 1 | 0 | 0 |
 | ❌ | [/research/](research/report.md) | 0 | Research and Creativity \| College of... | 0 | 0 | 0 |
 
 ## Page Screenshots
@@ -40,17 +38,9 @@
 
 ![/contact/](contact/01-page-loaded.png)
 
-### [/departments/](departments/report.md)
-
-![/departments/](departments/01-page-loaded.png)
-
 ### [/news/](news/report.md)
 
 ![/news/](news/01-page-loaded.png)
-
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
 
 ### [/research/](research/report.md)
 
@@ -69,16 +59,6 @@
 - **URL:** https://cas.wsu.edu/about/
 - **Status:** 0
 
-### /departments/
-
-- **URL:** https://cas.wsu.edu/departments/
-- **Status:** 0
-
-### /programs/
-
-- **URL:** https://cas.wsu.edu/programs/
-- **Status:** 0
-
 ### /research/
 
 - **URL:** https://cas.wsu.edu/research/
@@ -89,21 +69,17 @@
 - **URL:** https://cas.wsu.edu/news/
 - **Status:** 0
 
+### /contact/
+
+- **URL:** https://cas.wsu.edu/contact/
+- **Status:** 0
+
 
 ## Pages with JavaScript Errors
 
-### / (2 errors)
+### / (1 errors)
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /departments/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /programs/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_CONNECTION_TIMED_OUT`
 
 
 ---

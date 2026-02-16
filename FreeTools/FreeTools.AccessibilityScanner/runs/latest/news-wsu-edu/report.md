@@ -2,15 +2,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/3 pages OK |
+| Pages Scanned | 3 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 7 |
+| Pages Failed | 3 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.4 MB |
-| Total Screenshots | 4.5 MB |
-| Total Images | 32 (3.8 MB) |
+| Total HTML | 782.9 KB |
+| Total Screenshots | 4.2 MB |
+| Total Images | 31 (3.6 MB) |
 | Images Missing Alt | 1 |
 | Folder | `news-wsu-edu/` |
 
@@ -18,22 +18,15 @@
 
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Insider \| Washington State Unive... | 3 | 11 | 1 |
-| ❌ | [/media-contacts/](media-contacts/report.md) | 0 | Page not found \| WSU Insider \| Wash... | 1 | 0 | 0 |
+| ❌ | [/](_root/report.md) | 0 | WSU Insider \| Washington State Unive... | 0 | 11 | 1 |
 | ❌ | [/news/](news/report.md) | 0 | News Articles \| WSU Insider \| Washi... | 0 | 11 | 0 |
-| ❌ | [/press-releases/](press-releases/report.md) | 0 | Press Releases \| WSU Insider \| Wash... | 1 | 10 | 0 |
-| ❌ | [/stories/](stories/report.md) | 0 | Page not found \| WSU Insider \| Wash... | 1 | 0 | 0 |
-| ❌ | [/submit-news/](submit-news/report.md) | 0 | Page not found \| WSU Insider \| Wash... | 1 | 0 | 0 |
+| ❌ | [/press-releases/](press-releases/report.md) | 0 | Press Releases \| WSU Insider \| Wash... | 0 | 9 | 0 |
 
 ## Page Screenshots
 
 ### [/](_root/report.md)
 
 ![/](_root/01-page-loaded.png)
-
-### [/media-contacts/](media-contacts/report.md)
-
-![/media-contacts/](media-contacts/01-page-loaded.png)
 
 ### [/news/](news/report.md)
 
@@ -42,14 +35,6 @@
 ### [/press-releases/](press-releases/report.md)
 
 ![/press-releases/](press-releases/01-page-loaded.png)
-
-### [/stories/](stories/report.md)
-
-![/stories/](stories/01-page-loaded.png)
-
-### [/submit-news/](submit-news/report.md)
-
-![/submit-news/](submit-news/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -68,46 +53,6 @@
 
 - **URL:** https://news.wsu.edu/news/
 - **Status:** 0
-
-### /stories/
-
-- **URL:** https://news.wsu.edu/stories/
-- **Status:** 0
-
-### /media-contacts/
-
-- **URL:** https://news.wsu.edu/media-contacts/
-- **Status:** 0
-
-### /submit-news/
-
-- **URL:** https://news.wsu.edu/submit-news/
-- **Status:** 0
-
-
-## Pages with JavaScript Errors
-
-### / (3 errors)
-
-- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
-- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /press-releases/ (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /stories/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /media-contacts/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /submit-news/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

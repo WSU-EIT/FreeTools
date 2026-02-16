@@ -2,20 +2,46 @@
   "PagePath": "/transit/",
   "Url": "https://transportation.wsu.edu/transit/",
   "FinalUrl": "https://transportation.wsu.edu/transportation-options/transit-options/",
-  "Title": null,
+  "Title": "Transit Options | Transportation Services | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 0,
-  "ScreenshotSizeBytes": 0,
+  "HtmlSizeBytes": 44920,
+  "ScreenshotSizeBytes": 146398,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
-  "ConsoleWarningCount": 0,
-  "Screenshots": [],
-  "ImageCount": 0,
-  "ImagesTotalSizeBytes": 0,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 146398
+    }
+  ],
+  "ImageCount": 3,
+  "ImagesTotalSizeBytes": 137962,
   "ImagesMissingAlt": 0,
-  "Images": [],
-  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...",
+  "Images": [
+    {
+      "FileName": "PTBusBeacon_cropped.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/216/2018/05/PTBusBeacon_cropped.png",
+      "AltText": "Android app download",
+      "FileSize": 27800
+    },
+    {
+      "FileName": "Gooogle_Play_2.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/216/2018/05/Gooogle_Play_2.png",
+      "AltText": "Android app download",
+      "FileSize": 34542
+    },
+    {
+      "FileName": "appstore2.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/216/2018/05/appstore2.png",
+      "AltText": "Apple app download",
+      "FileSize": 75620
+    }
+  ],
+  "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:46.0514823Z"
+  "CapturedAt": "2026-02-16T21:00:22.4576432Z"
 }

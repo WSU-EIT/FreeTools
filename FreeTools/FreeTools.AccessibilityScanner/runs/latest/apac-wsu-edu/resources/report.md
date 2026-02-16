@@ -6,14 +6,14 @@
 | Redirected To | https://apac.wsu.edu/resources-for-aps/ |
 | Title | Resources for APs | Administrative Professional Advisory Council | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 53.1 KB |
+| HTML Size | 48.3 KB |
 | Screenshots | 1 (130.0 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:48.6409874Z |
+| Captured | 2026-02-16T20:59:47.2355687Z |
 
 ## JavaScript Errors
 

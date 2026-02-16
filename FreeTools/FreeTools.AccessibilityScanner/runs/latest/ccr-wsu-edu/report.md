@@ -2,14 +2,14 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/6 pages OK |
-| Pages Scanned | 6 |
+| Status | ⚠️ 0/4 pages OK |
+| Pages Scanned | 4 |
 | Pages Passed | 0 |
-| Pages Failed | 6 |
-| Total JS Errors | 2 |
+| Pages Failed | 4 |
+| Total JS Errors | 1 |
 | Total JS Warnings | 0 |
-| Total HTML | 1.3 MB |
-| Total Screenshots | 2.4 MB |
+| Total HTML | 884.5 KB |
+| Total Screenshots | 2.3 MB |
 | Total Images | 10 (1.6 MB) |
 | Images Missing Alt | 0 |
 | Folder | `ccr-wsu-edu/` |
@@ -19,21 +19,15 @@
 | Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
 |--------|------|------|-------|-----------|--------|-------------|
 | ❌ | [/](_root/report.md) | 0 | Compliance and Civil Rights \| Washin... | 1 | 10 | 0 |
-| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Compliance and Civil Ri... | 0 | 0 | 0 |
 | ❌ | [/policies/](policies/report.md) | 0 | Policies & Procedures \| Compliance a... | 0 | 0 | 0 |
 | ❌ | [/reporting/](reporting/report.md) | 0 | File A Report or Complaint \| Complia... | 0 | 0 | 0 |
 | ❌ | [/resources/](resources/report.md) | 0 | Resources \| Compliance and Civil Rig... | 0 | 0 | 0 |
-| ❌ | [/training/](training/report.md) | 0 | Page not found \| Compliance and Civi... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
 ### [/](_root/report.md)
 
 ![/](_root/01-page-loaded.png)
-
-### [/contact/](contact/report.md)
-
-![/contact/](contact/01-page-loaded.png)
 
 ### [/policies/](policies/report.md)
 
@@ -46,10 +40,6 @@
 ### [/resources/](resources/report.md)
 
 ![/resources/](resources/01-page-loaded.png)
-
-### [/training/](training/report.md)
-
-![/training/](training/01-page-loaded.png)
 
 
 ## Failed Pages
@@ -74,26 +64,12 @@
 - **URL:** https://ccr.wsu.edu/resources/
 - **Status:** 0
 
-### /training/
-
-- **URL:** https://ccr.wsu.edu/training/
-- **Status:** 0
-
-### /contact/
-
-- **URL:** https://ccr.wsu.edu/contact/
-- **Status:** 0
-
 
 ## Pages with JavaScript Errors
 
 ### / (1 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /training/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

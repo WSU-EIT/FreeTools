@@ -5,7 +5,7 @@
   "Title": "Careers \u2013 Human Resource Services, Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 86218,
+  "HtmlSizeBytes": 86307,
   "ScreenshotSizeBytes": 612569,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -39,12 +39,12 @@
   "Headers": {
     "cache-control": "max-age=300, must-revalidate",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:41:43 GMT",
-    "last-modified": "Mon, 16 Feb 2026 20:41:43 GMT",
+    "date": "Mon, 16 Feb 2026 21:02:52 GMT",
+    "last-modified": "Mon, 16 Feb 2026 21:02:52 GMT",
     "link": "\u003Chttps://hrs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://hrs.wsu.edu/wp-json/wp/v2/pages/50556\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022, \u003Chttps://hrs.wsu.edu/?p=50556\u003E; rel=shortlink",
     "server": "nginx/1.14.1",
     "vary": "Cookie",
     "x-powered-by": "PHP/8.2.29"
   },
-  "CapturedAt": "2026-02-16T20:41:43.5929144Z"
+  "CapturedAt": "2026-02-16T21:02:51.9190909Z"
 }

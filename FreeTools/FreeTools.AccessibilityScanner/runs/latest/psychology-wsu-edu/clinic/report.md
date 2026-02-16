@@ -5,7 +5,7 @@
 | URL | https://psychology.wsu.edu/clinic/ |
 | Redirected To | https://psychology.wsu.edu/clinical/ |
 | Title | PhD in Clinical Psychology | Department of Psychology | Washington State University |
-| Status | ✅ 200 |
+| Status | ❌ 0 |
 | HTML Size | 225.0 KB |
 | Screenshots | 1 (539.5 KB) |
 | Images | 0 (0 bytes) |
@@ -13,7 +13,7 @@
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:40:10.1540519Z |
+| Captured | 2026-02-16T21:01:06.3487690Z |
 
 ## Actions
 

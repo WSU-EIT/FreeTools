@@ -5,14 +5,14 @@
 | URL | https://hrs.wsu.edu/training/ |
 | Title | Learning & Organizational Development – Human Resource Services, Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 90.9 KB |
+| HTML Size | 90.8 KB |
 | Screenshots | 1 (823.1 KB) |
 | Images | 7 (415.2 KB) |
 | Images Missing Alt | 6 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:47.4363431Z |
+| Captured | 2026-02-16T21:00:40.5449562Z |
 
 ## Actions
 

@@ -5,7 +5,7 @@
   "Title": "Billing | Bursar | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 72170,
+  "HtmlSizeBytes": 63973,
   "ScreenshotSizeBytes": 680349,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:55.7300517Z"
+  "CapturedAt": "2026-02-16T20:59:31.9409422Z"
 }

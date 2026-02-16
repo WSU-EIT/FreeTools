@@ -5,31 +5,24 @@
   "Title": "Faculty Senate | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 252900,
-  "ScreenshotSizeBytes": 1123061,
+  "HtmlSizeBytes": 257007,
+  "ScreenshotSizeBytes": 835959,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1123061
+      "FileSize": 835959
     }
   ],
-  "ImageCount": 1,
-  "ImagesTotalSizeBytes": 919056,
-  "ImagesMissingAlt": 1,
-  "Images": [
-    {
-      "FileName": "Everett_1947-scaled.jpg",
-      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/3253/2023/05/Everett_1947-scaled.jpg",
-      "AltText": "",
-      "FileSize": 919056
-    }
-  ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.08147Z"
+  "CapturedAt": "2026-02-16T20:58:42.4537705Z"
 }

@@ -5,7 +5,7 @@
   "Title": "How to change your password | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 240369,
+  "HtmlSizeBytes": 240272,
   "ScreenshotSizeBytes": 175824,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -33,12 +33,15 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:40:45 GMT",
-    "etag": "\u002259e7d72900ad5e6eb9e162d920899493\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:53:18 GMT",
+    "date": "Mon, 16 Feb 2026 21:01:54 GMT",
+    "etag": "\u0022c5ae201baad62e986ad0caa370aa2b62\u0022",
+    "last-modified": "Mon, 16 Feb 2026 21:01:54 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/500\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=500\u003E; rel=shortlink",
     "server": "nginx",
-    "vary": "Accept-Encoding"
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://its.wsu.edu",
+    "x-tec-api-root": "https://its.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
   },
-  "CapturedAt": "2026-02-16T20:40:45.0891119Z"
+  "CapturedAt": "2026-02-16T21:01:53.8449771Z"
 }

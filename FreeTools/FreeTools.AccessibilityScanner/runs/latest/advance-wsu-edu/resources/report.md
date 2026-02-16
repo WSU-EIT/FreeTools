@@ -5,18 +5,18 @@
 | URL | https://advance.wsu.edu/resources/ |
 | Title | Resources | ADVANCE at WSU | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 66.1 KB |
-| Screenshots | 1 (682.5 KB) |
+| HTML Size | 69.6 KB |
+| Screenshots | 1 (681.5 KB) |
 | Images | 3 (98.2 KB) |
 | Images Missing Alt | 2 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:22.0943036Z |
+| Captured | 2026-02-16T20:59:37.8705341Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (682.5 KB)
+- Screenshot #1: page-loaded (681.5 KB)
 - Downloaded 3 images to /images/
 
 ## Screenshots
@@ -50,7 +50,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (682.5 KB)
+- `01-page-loaded.png` — page-loaded (681.5 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

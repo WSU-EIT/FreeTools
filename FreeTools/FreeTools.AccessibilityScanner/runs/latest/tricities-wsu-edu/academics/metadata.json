@@ -3,10 +3,10 @@
   "Url": "https://tricities.wsu.edu/academics/",
   "FinalUrl": null,
   "Title": "Academics | WSU Tri-Cities",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 155617,
-  "ScreenshotSizeBytes": 1390670,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 155592,
+  "ScreenshotSizeBytes": 1850883,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1390670
+      "FileSize": 1850883
     }
   ],
   "ImageCount": 6,
@@ -60,6 +60,21 @@
     }
   ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T20:40:07.0078971Z"
+  "Headers": {
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 21:01:08 GMT",
+    "link": "\u003Chttps://tricities.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://tricities.wsu.edu/wp-json/wp/v2/pages/15630\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022\n\u003Chttps://tricities.wsu.edu/?p=15630\u003E; rel=shortlink",
+    "server": "nginx/1.14.2",
+    "vary": "Accept-Encoding",
+    "x-args": "https://tricities.wsu.edu/academics/",
+    "x-cache-status": "HIT",
+    "x-et-api-origin": "https://tricities.wsu.edu",
+    "x-et-api-root": "https://tricities.wsu.edu/wp-json/tribe/tickets/v1/",
+    "x-et-api-version": "v1",
+    "x-frame-options": "ALLOWFROM https://apis.google.com/",
+    "x-tec-api-origin": "https://tricities.wsu.edu",
+    "x-tec-api-root": "https://tricities.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-16T21:01:08.3515323Z"
 }

@@ -4,7 +4,7 @@
 |-------|-------|
 | URL | https://libraries.wsu.edu/about/departments/ |
 | Title | Departments – WSU Libraries |
-| Status | ❌ 0 |
+| Status | ✅ 200 |
 | HTML Size | 40.3 KB |
 | Screenshots | 1 (147.9 KB) |
 | Images | 0 (0 bytes) |
@@ -12,7 +12,7 @@
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:39:13.3607978Z |
+| Captured | 2026-02-16T21:00:38.6989490Z |
 
 ## Actions
 

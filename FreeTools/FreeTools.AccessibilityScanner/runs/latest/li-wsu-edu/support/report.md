@@ -6,14 +6,14 @@
 | Redirected To | https://li.wsu.edu/teaching-toolkit/distance-delivery-for-faculty/supporting-students-who-have-approved-accommodations/ |
 | Title | Supporting Students Who have Approved Accommodations | Academic Outreach and Innovation | Learning Innovations | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 207.7 KB |
+| HTML Size | 217.0 KB |
 | Screenshots | 1 (194.6 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:45.0803370Z |
+| Captured | 2026-02-16T20:59:31.9395330Z |
 
 ## Actions
 

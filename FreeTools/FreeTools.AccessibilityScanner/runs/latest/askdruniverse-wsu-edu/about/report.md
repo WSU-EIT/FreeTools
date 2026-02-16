@@ -5,18 +5,18 @@
 | URL | https://askdruniverse.wsu.edu/about/ |
 | Title | About | Ask Dr. Universe | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 41.8 KB |
-| Screenshots | 1 (231.5 KB) |
+| HTML Size | 39.1 KB |
+| Screenshots | 1 (308.4 KB) |
 | Images | 6 (100.4 KB) |
 | Images Missing Alt | 4 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:55.7269393Z |
+| Captured | 2026-02-16T20:59:25.7846627Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (231.5 KB)
+- Screenshot #1: page-loaded (308.4 KB)
 - Downloaded 6 images to /images/
 
 ## Screenshots
@@ -61,7 +61,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (231.5 KB)
+- `01-page-loaded.png` — page-loaded (308.4 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

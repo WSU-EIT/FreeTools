@@ -5,14 +5,14 @@
 | URL | https://threatassessment.wsu.edu/contact/ |
 | Title | Contact Threat Assessment Team | Threat Assessment | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 197.3 KB |
+| HTML Size | 204.1 KB |
 | Screenshots | 1 (174.1 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:38.1552710Z |
+| Captured | 2026-02-16T21:00:11.7357400Z |
 
 ## Actions
 

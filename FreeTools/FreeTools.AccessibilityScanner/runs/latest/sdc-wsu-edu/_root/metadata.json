@@ -5,17 +5,17 @@
   "Title": "School of Design and Construction | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 229665,
-  "ScreenshotSizeBytes": 1723277,
+  "HtmlSizeBytes": 240976,
+  "ScreenshotSizeBytes": 2480733,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 5,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1723277
+      "FileSize": 2480733
     }
   ],
   "ImageCount": 3,
@@ -43,5 +43,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:37:05.1544376Z"
+  "CapturedAt": "2026-02-16T20:58:42.4719955Z"
 }

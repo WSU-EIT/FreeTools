@@ -5,7 +5,7 @@
   "Title": "Office of Student Involvement - Home - WSU Vancouver",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 41513,
+  "HtmlSizeBytes": 42299,
   "ScreenshotSizeBytes": 256831,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,9 +18,9 @@
       "FileSize": 256831
     }
   ],
-  "ImageCount": 9,
-  "ImagesTotalSizeBytes": 205388,
-  "ImagesMissingAlt": 7,
+  "ImageCount": 8,
+  "ImagesTotalSizeBytes": 197811,
+  "ImagesMissingAlt": 6,
   "Images": [
     {
       "FileName": "wsu-vancouver-horizontal-logo-rgb.svg",
@@ -53,12 +53,6 @@
       "FileSize": 14928
     },
     {
-      "FileName": "osi-symbols-400-leadership.png",
-      "SourceUrl": "https://studentaffairs.vancouver.wsu.edu/files/inserted-images/osi-symbols-400-leadership.png",
-      "AltText": "",
-      "FileSize": 7577
-    },
-    {
       "FileName": "slrp-award-recipients-02-900x750.jpg",
       "SourceUrl": "https://studentaffairs.vancouver.wsu.edu/files/2019-05/slrp-award-recipients-02-900x750.jpg",
       "AltText": "",
@@ -79,5 +73,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:39.1171741Z"
+  "CapturedAt": "2026-02-16T20:59:36.801256Z"
 }

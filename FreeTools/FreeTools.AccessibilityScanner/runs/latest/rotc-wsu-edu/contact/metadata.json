@@ -5,7 +5,7 @@
   "Title": "Contact Us | WSU Army ROTC | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 136150,
+  "HtmlSizeBytes": 135534,
   "ScreenshotSizeBytes": 130572,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -43,5 +43,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:32.8438919Z"
+  "CapturedAt": "2026-02-16T20:59:31.7509465Z"
 }

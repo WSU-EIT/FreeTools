@@ -5,23 +5,19 @@
 | URL | https://news.wsu.edu/press-releases/ |
 | Title | Press Releases | WSU Insider | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 238.1 KB |
+| HTML Size | 242.0 KB |
 | Screenshots | 1 (1.4 MB) |
-| Images | 10 (1019.6 KB) |
+| Images | 9 (859.7 KB) |
 | Images Missing Alt | 0 |
-| JS Errors | 1 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:59.9460265Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:59:38.3884206Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (1.4 MB)
-- Downloaded 10 images to /images/
+- Downloaded 9 images to /images/
 
 ## Screenshots
 
@@ -30,7 +26,7 @@
 ![page-loaded](01-page-loaded.png)
 
 
-## Page Images (10)
+## Page Images (9)
 
 | # | Image | Alt Text | Size |
 |---|-------|----------|------|
@@ -39,11 +35,10 @@
 | 3 | [gloves-holding-smartphone-and-glucose-monitor-1024x676.jpg](images/gloves-holding-smartphone-and-glucose-monitor-1024x676.jpg) | Gloved hands holding a smartphone and... | 78.7 KB |
 | 4 | [Hadza-man-cooking-over-fire-in-Tanzania-1024x676.jpg](images/Hadza-man-cooking-over-fire-in-Tanzania-1024x676.jpg) | A Hadza man in Tanzania cooks over an... | 177.5 KB |
 | 5 | [couple-in-warm-embrace-1024x676.jpg](images/couple-in-warm-embrace-1024x676.jpg) | Silhouette of a couple in a romantic ... | 53.9 KB |
-| 6 | [Ryan-Driskell-and-Sean-Thompson-with-pigs-1024x676.jpg](images/Ryan-Driskell-and-Sean-Thompson-with-pigs-1024x676.jpg) | Two WSU researchers petting piglets i... | 160.0 KB |
-| 7 | [bull-elk-in-snow-1024x676.jpg](images/bull-elk-in-snow-1024x676.jpg) | A pair of bull elk standing in the snow. | 189.0 KB |
-| 8 | [Angelica-Bautista-1024x676.jpg](images/Angelica-Bautista-1024x676.jpg) | Closeup of Anjelica Bautista holding ... | 84.3 KB |
-| 9 | [generic-system-logo-crimson-bkgrd-1024x676.jpg](images/generic-system-logo-crimson-bkgrd-1024x676.jpg) | Washington State University logo. | 50.5 KB |
-| 10 | [podcast-icon.png](images/podcast-icon.png) | A microphone and a pair of headphones. | 19.6 KB |
+| 6 | [bull-elk-in-snow-1024x676.jpg](images/bull-elk-in-snow-1024x676.jpg) | A pair of bull elk standing in the snow. | 189.0 KB |
+| 7 | [Angelica-Bautista-1024x676.jpg](images/Angelica-Bautista-1024x676.jpg) | Closeup of Anjelica Bautista holding ... | 84.3 KB |
+| 8 | [generic-system-logo-crimson-bkgrd-1024x676.jpg](images/generic-system-logo-crimson-bkgrd-1024x676.jpg) | Washington State University logo. | 50.5 KB |
+| 9 | [podcast-icon.png](images/podcast-icon.png) | A microphone and a pair of headphones. | 19.6 KB |
 
 ### Gallery
 
@@ -56,8 +51,6 @@
 ![A Hadza man in Tanzania cooks over an open fire.](images/Hadza-man-cooking-over-fire-in-Tanzania-1024x676.jpg)
 
 ![Silhouette of a couple in a romantic embrace at sunset.](images/couple-in-warm-embrace-1024x676.jpg)
-
-![Two WSU researchers petting piglets in a pen.](images/Ryan-Driskell-and-Sean-Thompson-with-pigs-1024x676.jpg)
 
 ![A pair of bull elk standing in the snow.](images/bull-elk-in-snow-1024x676.jpg)
 
@@ -77,4 +70,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
-- `images/` — 10 page images (1019.6 KB)
+- `images/` — 9 page images (859.7 KB)

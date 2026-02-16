@@ -5,18 +5,18 @@
 | URL | https://libraries.wsu.edu/ |
 | Title | WSU Libraries |
 | Status | ❌ 0 |
-| HTML Size | 50.9 KB |
-| Screenshots | 1 (156.9 KB) |
+| HTML Size | 50.8 KB |
+| Screenshots | 1 (130.9 KB) |
 | Images | 2 (75.9 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:37:05.1129853Z |
+| Captured | 2026-02-16T20:58:42.4606197Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (156.9 KB)
+- Screenshot #1: page-loaded (130.9 KB)
 - Downloaded 2 images to /images/
 
 ## Screenshots
@@ -42,7 +42,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (156.9 KB)
+- `01-page-loaded.png` — page-loaded (130.9 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

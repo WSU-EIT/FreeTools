@@ -5,8 +5,8 @@
   "Title": "Admissions | WSU Spokane | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 247914,
-  "ScreenshotSizeBytes": 630528,
+  "HtmlSizeBytes": 248018,
+  "ScreenshotSizeBytes": 1937689,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 2,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 630528
+      "FileSize": 1937689
     }
   ],
   "ImageCount": 3,
@@ -43,5 +43,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:40:14.1986641Z"
+  "CapturedAt": "2026-02-16T21:01:22.5459915Z"
 }

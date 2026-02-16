@@ -1,21 +1,21 @@
 {
   "PagePath": "/services/",
   "Url": "https://my.wsu.edu/services/",
-  "FinalUrl": "https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7\u0026redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse\u0026response_type=code\u0026scope=openid%20profile%20sis.prd.groups\u0026state=GVJDAheU%2BDPjHzIF4IHL9iAxtS2k%2BIfmVBO2hi2mhl%2F%2BH1fvq%2FKvIrJX8BjhdUGKVhRoVjtUIew2BJp73zXi%2FlIe5YKVEyde3%2FxFGTuS3AsYdBKeA7M%2BWERBDAXOWw4gibv9jrjFZWhsRmxGw9JanShRo28s0fkyB0TB0g7xPi%2BABIiup%2FO4fYRjNmyz6lYs3Xghkxs1q55ivCfyns2UeAix7TscHZm4k6y8FJAHffPp6kzE1MHMHJX4hsI73A%3D%3D",
-  "Title": "WSU | Sign In",
+  "FinalUrl": "https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7\u0026redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse\u0026response_type=code\u0026scope=openid%20profile%20sis.prd.groups\u0026state=rHbOb%2B7FRwtfRzYEamKvqeNge%2BLWyUqwiSXgMnNHABnocwPaHa2BUchu2O712TYExSbnfoZqyOn17T9oW917isuOZfso%2FJgCTtNarfVoWEJo3RP0%2BNM4HeLH4I7wNooAyV47WEd0VTi%2BVI4g6Oge%2FRbVhNQl%2BOsi%2ByqCTPgnU7R40sajB%2FiIEmZgpg8EnwPPZsw1AaG3d7bHxSp4JDp6G%2FAD4cqWVNYHOntg5ggP2wH3ocivCGNsxkM98WWomA%3D%3D",
+  "Title": "WSU Authentication | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 142815,
-  "ScreenshotSizeBytes": 47706,
+  "HtmlSizeBytes": 72460,
+  "ScreenshotSizeBytes": 40215,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 7,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 47706
+      "FileSize": 40215
     }
   ],
   "ImageCount": 1,
@@ -31,5 +31,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:38:24.7917235Z"
+  "CapturedAt": "2026-02-16T20:59:56.3232826Z"
 }

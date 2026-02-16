@@ -5,8 +5,8 @@
   "Title": "Human Resource Services, Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 87731,
-  "ScreenshotSizeBytes": 1080255,
+  "HtmlSizeBytes": 94122,
+  "ScreenshotSizeBytes": 1309306,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1080255
+      "FileSize": 1309306
     }
   ],
   "ImageCount": 6,
@@ -61,5 +61,5 @@
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:39:52.7578819Z"
+  "CapturedAt": "2026-02-16T21:01:03.4203634Z"
 }

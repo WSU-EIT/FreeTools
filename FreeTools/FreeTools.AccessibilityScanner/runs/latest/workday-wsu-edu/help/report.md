@@ -6,18 +6,18 @@
 | Redirected To | https://login.wsu.edu/app/workday/exk8wk0d1s55s30dD2p7/sso/saml |
 | Title | WSU Authentication | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 68.4 KB |
-| Screenshots | 1 (39.3 KB) |
+| HTML Size | 70.9 KB |
+| Screenshots | 1 (41.0 KB) |
 | Images | 1 (7.7 KB) |
 | Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:01.0751053Z |
+| Captured | 2026-02-16T20:59:37.2749690Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (39.3 KB)
+- Screenshot #1: page-loaded (41.0 KB)
 - Downloaded 1 images to /images/
 
 ## Screenshots
@@ -40,7 +40,7 @@
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (39.3 KB)
+- `01-page-loaded.png` — page-loaded (41.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

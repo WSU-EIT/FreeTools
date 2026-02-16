@@ -6,14 +6,14 @@
 | Redirected To | https://gradschool.wsu.edu/admissions-offer-letter/ |
 | Title | Admissions Offer Letter | The Graduate School | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 365.2 KB |
+| HTML Size | 360.6 KB |
 | Screenshots | 1 (98.5 KB) |
 | Images | 0 (0 bytes) |
 | Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:38:09.9624602Z |
+| Captured | 2026-02-16T20:59:37.2176816Z |
 
 ## JavaScript Errors
 
