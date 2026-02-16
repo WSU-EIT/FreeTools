@@ -1,0 +1,33 @@
+{
+  "PagePath": "/about/",
+  "Url": "https://medicine.wsu.edu/about/",
+  "FinalUrl": null,
+  "Title": "About | Elson S. Floyd College of Medicine | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 250200,
+  "ScreenshotSizeBytes": 2781887,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 2781887
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:11:56 GMT",
+    "etag": "\u0022130a782f3969e2f496803ab7a7f4a27f\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:11:56 GMT",
+    "link": "\u003Chttps://medicine.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://medicine.wsu.edu/wp-json/wp/v2/pages/230\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://medicine.wsu.edu/?p=230\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T20:11:54.2806984Z"
+}

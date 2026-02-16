@@ -14,9 +14,16 @@
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 403 |  | 1 | 0 | 2.3 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 403 |  | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
 
 ## Failed Pages
 

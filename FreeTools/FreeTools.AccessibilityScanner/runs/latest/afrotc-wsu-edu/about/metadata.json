@@ -1,0 +1,24 @@
+{
+  "PagePath": "/about/",
+  "Url": "https://afrotc.wsu.edu/about/",
+  "FinalUrl": null,
+  "Title": "About AFROTC | Air Force ROTC | Washington State University",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 71920,
+  "ScreenshotSizeBytes": 1408180,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1408180
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:11:30.0775572Z"
+}

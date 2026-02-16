@@ -1,0 +1,38 @@
+{
+  "PagePath": "/reshall/",
+  "Url": "https://livingat.wsu.edu/reshall/",
+  "FinalUrl": "https://wsu.starrezhousing.com/StarRezPortalX/CD861C25/1/1/Home-Home?UrlToken=8F930833",
+  "Title": "Home | StarRez Portal",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 29002,
+  "ScreenshotSizeBytes": 500248,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 500248
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "private, no-store",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "9cefb2898f9c7678-SEA",
+    "content-encoding": "br",
+    "content-security-policy": "media-src *",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 20:12:01 GMT",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN\nsameorigin",
+    "x-xss-protection": "1"
+  },
+  "CapturedAt": "2026-02-16T20:11:45.071767Z"
+}

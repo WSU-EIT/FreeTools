@@ -5,12 +5,20 @@
   "Title": "WSU Army ROTC | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 72117,
+  "HtmlSizeBytes": 71938,
   "ScreenshotSizeBytes": 924182,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
-  "ConsoleWarningCount": 5,
+  "ConsoleErrorCount": 2,
+  "ConsoleWarningCount": 3,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 924182
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T19:51:11.3727611Z"
+  "CapturedAt": "2026-02-16T20:10:26.140994Z"
 }

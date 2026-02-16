@@ -1,0 +1,33 @@
+{
+  "PagePath": "/undergraduate/",
+  "Url": "https://murrow.wsu.edu/undergraduate/",
+  "FinalUrl": "https://murrow.wsu.edu/undergraduate-programs/",
+  "Title": "Undergraduate Programs | Edward R. Murrow College of Communication | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 279933,
+  "ScreenshotSizeBytes": 4839277,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 4839277
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:12:49 GMT",
+    "etag": "\u002202cc1039b342c195c2e45249b5129f7f\u0022",
+    "last-modified": "Mon, 16 Feb 2026 19:31:45 GMT",
+    "link": "\u003Chttps://murrow.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://murrow.wsu.edu/wp-json/wp/v2/pages/14288\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://murrow.wsu.edu/?p=14288\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T20:12:41.6626792Z"
+}

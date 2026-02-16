@@ -2,21 +2,98 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 245.8 KB |
-| Total Screenshots | 3.9 MB |
+| Status | ⚠️ 6/7 pages OK |
+| Pages Scanned | 7 |
+| Pages Passed | 6 |
+| Pages Failed | 1 |
+| Total JS Errors | 11 |
+| Total JS Warnings | 1 |
+| Total HTML | 1.4 MB |
+| Total Screenshots | 15.2 MB |
 | Folder | `museum-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Jordan Schnitzer Museum of Art WSU \|... | 0 | 0 | 245.8 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Jordan Schnitzer Museum of Art WSU \|... | 0 | 0 | 1 |
+| ✅ | [/collections/](collections/report.md) | 200 | Museum Collections \| Jordan Schnitze... | 1 | 0 | 1 |
+| ✅ | [/education/](education/report.md) | 200 | Education Highlights \| Jordan Schnit... | 1 | 0 | 1 |
+| ❌ | [/events/](events/report.md) | 405 | Human Verification | 1 | 1 | 1 |
+| ✅ | [/exhibitions/](exhibitions/report.md) | 200 | Exhibitions & Programs \| Jordan Schn... | 1 | 0 | 1 |
+| ✅ | [/support/](support/report.md) | 200 | Support the Museum \| Jordan Schnitze... | 1 | 0 | 1 |
+| ✅ | [/visit/](visit/report.md) | 200 | Visit \| Jordan Schnitzer Museum of A... | 6 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/collections/](collections/report.md)
+
+![/collections/](collections/01-page-loaded.png)
+
+### [/education/](education/report.md)
+
+![/education/](education/01-page-loaded.png)
+
+### [/events/](events/report.md)
+
+![/events/](events/01-page-loaded.png)
+
+### [/exhibitions/](exhibitions/report.md)
+
+![/exhibitions/](exhibitions/01-page-loaded.png)
+
+### [/support/](support/report.md)
+
+![/support/](support/01-page-loaded.png)
+
+### [/visit/](visit/report.md)
+
+![/visit/](visit/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /events/
+
+- **URL:** https://museum.wsu.edu/events/
+- **Status:** 405
+
+
+## Pages with JavaScript Errors
+
+### /visit/ (6 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /exhibitions/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /collections/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /education/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /events/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /support/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
 
 ---
 

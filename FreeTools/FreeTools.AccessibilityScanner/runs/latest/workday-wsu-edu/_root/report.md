@@ -4,14 +4,14 @@
 |-------|-------|
 | URL | https://workday.wsu.edu/ |
 | Redirected To | https://login.wsu.edu/app/workday/exk8wk0d1s55s30dD2p7/sso/saml |
-| Title | WSU | Sign In |
+| Title | WSU | Bad request. |
 | Status | ✅ 200 |
-| HTML Size | 137.2 KB |
-| Screenshot Size | 60.4 KB |
-| JS Errors | 7 |
+| HTML Size | 134.9 KB |
+| Screenshots | 1 (44.1 KB) |
+| JS Errors | 8 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:51:11.3632959Z |
+| Captured | 2026-02-16T20:10:26.1299313Z |
 
 ## JavaScript Errors
 
@@ -22,14 +22,22 @@
 - `Something unexpected happened while we were checking url http://127.0.0.1:65141`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65151`
 - `No available ports. Loopback server failed and polling is cancelled.`
+- `Failed to load resource: the server responded with a status of 400 ()`
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (44.1 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (44.1 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

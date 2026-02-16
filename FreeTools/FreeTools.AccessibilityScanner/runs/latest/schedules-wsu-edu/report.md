@@ -2,21 +2,58 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
+| Status | ✅ 7/7 pages OK |
+| Pages Scanned | 7 |
+| Pages Passed | 7 |
 | Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 722.9 KB |
-| Total Screenshots | 148.7 KB |
+| Total HTML | 4.8 MB |
+| Total Screenshots | 462.6 KB |
 | Folder | `schedules-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Schedule of Classes | 0 | 0 | 722.9 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Schedule of Classes | 0 | 0 | 1 |
+| ✅ | [/Coop/](Coop/report.md) | 200 | Schedule of Classes | 0 | 0 | 1 |
+| ✅ | [/List/Everett/](List_Everett/report.md) | 200 | Schedule of Classes | 0 | 0 | 1 |
+| ✅ | [/List/Pullman/](List_Pullman/report.md) | 200 | Schedule of Classes | 0 | 0 | 1 |
+| ✅ | [/List/Spokane/](List_Spokane/report.md) | 200 | Schedule of Classes | 0 | 0 | 1 |
+| ✅ | [/List/TriCities/](List_TriCities/report.md) | 200 | Schedule of Classes | 0 | 0 | 1 |
+| ✅ | [/List/Vancouver/](List_Vancouver/report.md) | 200 | Schedule of Classes | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/Coop/](Coop/report.md)
+
+![/Coop/](Coop/01-page-loaded.png)
+
+### [/List/Everett/](List_Everett/report.md)
+
+![/List/Everett/](List_Everett/01-page-loaded.png)
+
+### [/List/Pullman/](List_Pullman/report.md)
+
+![/List/Pullman/](List_Pullman/01-page-loaded.png)
+
+### [/List/Spokane/](List_Spokane/report.md)
+
+![/List/Spokane/](List_Spokane/01-page-loaded.png)
+
+### [/List/TriCities/](List_TriCities/report.md)
+
+![/List/TriCities/](List_TriCities/01-page-loaded.png)
+
+### [/List/Vancouver/](List_Vancouver/report.md)
+
+![/List/Vancouver/](List_Vancouver/01-page-loaded.png)
+
 
 ---
 

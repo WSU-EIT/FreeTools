@@ -5,12 +5,12 @@
 | URL | https://wsu.edu/about/ |
 | Title | About WSU | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 131.1 KB |
-| Screenshot Size | 3.0 MB |
+| HTML Size | 131.0 KB |
+| Screenshots | 1 (2.5 MB) |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:52:19.2144768Z |
+| Captured | 2026-02-16T20:11:45.9156519Z |
 
 ## JavaScript Errors
 
@@ -18,11 +18,18 @@
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (2.5 MB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (2.5 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

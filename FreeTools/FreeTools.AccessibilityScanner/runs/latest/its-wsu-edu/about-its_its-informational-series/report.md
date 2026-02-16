@@ -6,19 +6,26 @@
 | Title | ITS Informational Series | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
 | HTML Size | 233.6 KB |
-| Screenshot Size | 272.1 KB |
+| Screenshots | 1 (272.1 KB) |
 | JS Errors | 0 |
 | JS Warnings | 5 |
 | Auth | none |
-| Captured | 2026-02-16T19:52:36.8554404Z |
+| Captured | 2026-02-16T20:12:49.2291017Z |
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (272.1 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (272.1 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

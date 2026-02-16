@@ -2,21 +2,58 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 1 |
-| Total JS Warnings | 1 |
-| Total HTML | 253.6 KB |
-| Total Screenshots | 1.7 MB |
+| Status | ⚠️ 5/7 pages OK |
+| Pages Scanned | 7 |
+| Pages Passed | 5 |
+| Pages Failed | 2 |
+| Total JS Errors | 5 |
+| Total JS Warnings | 2 |
+| Total HTML | 1.6 MB |
+| Total Screenshots | 5.7 MB |
 | Folder | `vcea-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Voiland College of Engineering and Ar... | 1 | 1 | 253.6 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Voiland College of Engineering and Ar... | 4 | 1 | 1 |
+| ❌ | [/about/](about/report.md) | 404 | Page not found \| Voiland College of ... | 1 | 1 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contacts \| Voiland College of Engine... | 0 | 0 | 1 |
+| ✅ | [/departments/](departments/report.md) | 200 | Schools and Departments \| Voiland Co... | 0 | 0 | 1 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Students Present Research \|... | 0 | 0 | 1 |
+| ✅ | [/research/](research/report.md) | 200 | Research \| Voiland College of Engine... | 0 | 0 | 1 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Pass/Fail Option, Sprin... | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/departments/](departments/report.md)
+
+![/departments/](departments/01-page-loaded.png)
+
+### [/graduate/](graduate/report.md)
+
+![/graduate/](graduate/01-page-loaded.png)
+
+### [/research/](research/report.md)
+
+![/research/](research/01-page-loaded.png)
+
+### [/undergraduate/](undergraduate/report.md)
+
+![/undergraduate/](undergraduate/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -25,12 +62,24 @@
 - **URL:** https://vcea.wsu.edu/
 - **Status:** 0
 
+### /about/
+
+- **URL:** https://vcea.wsu.edu/about/
+- **Status:** 404
+
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### / (4 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /about/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

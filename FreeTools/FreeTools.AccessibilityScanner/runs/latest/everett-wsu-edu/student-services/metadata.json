@@ -1,0 +1,38 @@
+{
+  "PagePath": "/student-services/",
+  "Url": "https://everett.wsu.edu/student-services/",
+  "FinalUrl": "https://everett.wsu.edu/student-services-in-fall-2020/",
+  "Title": "Student Affairs Fall Preview | Washington State University Everett | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 249010,
+  "ScreenshotSizeBytes": 409203,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 409203
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:13:39 GMT",
+    "etag": "\u002250c5fb0f1e27088636d2d3a4e371bab8\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:13:39 GMT",
+    "link": "\u003Chttps://everett.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://everett.wsu.edu/wp-json/wp/v2/posts/15282\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://everett.wsu.edu/?p=15282\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache": "MISS",
+    "x-cache-status": "MISS",
+    "x-tec-api-origin": "https://everett.wsu.edu",
+    "x-tec-api-root": "https://everett.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-16T20:13:37.0096041Z"
+}

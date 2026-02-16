@@ -1,0 +1,34 @@
+{
+  "PagePath": "/admissions/",
+  "Url": "https://amdt.wsu.edu/admissions/",
+  "FinalUrl": "https://amdt.wsu.edu/admissions/#gsc.tab=0",
+  "Title": "Page not found | Department of Apparel, Merchandising, Design and Textiles | Washington State University",
+  "StatusCode": 404,
+  "Success": false,
+  "HtmlSizeBytes": 225307,
+  "ScreenshotSizeBytes": 80936,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 80936
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "no-cache, must-revalidate, max-age=0",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:14:11 GMT",
+    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "link": "\u003Chttps://amdt.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
+    "server": "nginx/1.24.0",
+    "x-tec-api-origin": "https://amdt.wsu.edu",
+    "x-tec-api-root": "https://amdt.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-16T20:14:09.1418864Z"
+}

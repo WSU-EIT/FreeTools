@@ -2,21 +2,53 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
+| Status | ✅ 6/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 6 |
 | Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 91.8 KB |
-| Total Screenshots | 1.2 MB |
+| Total HTML | 551.2 KB |
+| Total Screenshots | 7.5 MB |
 | Folder | `diversity-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Human Resource Services, Washington S... | 0 | 0 | 91.8 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Human Resource Services, Washington S... | 0 | 0 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | Human Resource Services, Washington S... | 0 | 0 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Human Resource Services, Washington S... | 0 | 0 | 1 |
+| ✅ | [/events/](events/report.md) | 200 | Human Resource Services, Washington S... | 0 | 0 | 1 |
+| ✅ | [/programs/](programs/report.md) | 200 | Human Resource Services, Washington S... | 0 | 0 | 1 |
+| ✅ | [/resources/](resources/report.md) | 200 | Human Resource Services, Washington S... | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/events/](events/report.md)
+
+![/events/](events/01-page-loaded.png)
+
+### [/programs/](programs/report.md)
+
+![/programs/](programs/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
 
 ---
 

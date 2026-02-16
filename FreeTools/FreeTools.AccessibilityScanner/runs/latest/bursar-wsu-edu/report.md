@@ -2,27 +2,71 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 1 |
+| Status | ⚠️ 5/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 5 |
+| Pages Failed | 1 |
+| Total JS Errors | 2 |
 | Total JS Warnings | 0 |
-| Total HTML | 66.9 KB |
-| Total Screenshots | 917.3 KB |
+| Total HTML | 431.3 KB |
+| Total Screenshots | 2.8 MB |
 | Folder | `bursar-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Bursar \| Washington State University | 1 | 0 | 66.9 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Bursar \| Washington State University | 1 | 0 | 1 |
+| ✅ | [/billing/](billing/report.md) | 200 | Billing \| Bursar \| Washington State... | 0 | 0 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Information \| Bursar \| Wash... | 0 | 0 | 1 |
+| ✅ | [/payment/](payment/report.md) | 200 | Payment Plans \| Bursar \| Washington... | 0 | 0 | 1 |
+| ✅ | [/policies/](policies/report.md) | 200 | Policies & Procedures for Reporting t... | 0 | 0 | 1 |
+| ❌ | [/refunds/](refunds/report.md) | 404 | Page not found \| Bursar \| Washingto... | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/billing/](billing/report.md)
+
+![/billing/](billing/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/payment/](payment/report.md)
+
+![/payment/](payment/01-page-loaded.png)
+
+### [/policies/](policies/report.md)
+
+![/policies/](policies/01-page-loaded.png)
+
+### [/refunds/](refunds/report.md)
+
+![/refunds/](refunds/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /refunds/
+
+- **URL:** https://bursar.wsu.edu/refunds/
+- **Status:** 404
+
 
 ## Pages with JavaScript Errors
 
 ### / (1 errors)
 
-- `Failed to load resource: net::ERR_CONNECTION_TIMED_OUT`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /refunds/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

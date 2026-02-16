@@ -5,24 +5,29 @@
   "Title": "Accreditation Submission Introduction 2025 | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 236057,
+  "HtmlSizeBytes": 236087,
   "ScreenshotSizeBytes": 171033,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 171033
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 19:52:43 GMT",
+    "date": "Mon, 16 Feb 2026 20:13:36 GMT",
     "etag": "\u00227b38f51fd1b3a5d83e2b342cbd996b76\u0022",
     "last-modified": "Mon, 16 Feb 2026 19:52:43 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/9304\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=9304\u003E; rel=shortlink",
     "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://its.wsu.edu",
-    "x-tec-api-root": "https://its.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
+    "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-16T19:52:43.1694569Z"
+  "CapturedAt": "2026-02-16T20:13:34.4901376Z"
 }

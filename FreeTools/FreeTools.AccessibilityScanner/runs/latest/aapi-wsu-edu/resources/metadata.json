@@ -1,0 +1,33 @@
+{
+  "PagePath": "/resources/",
+  "Url": "https://aapi.wsu.edu/resources/",
+  "FinalUrl": null,
+  "Title": "Resources",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 52683,
+  "ScreenshotSizeBytes": 219780,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 219780
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 20:12:07 GMT",
+    "frame-ancestors": "self https://*.risevision.com",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=2592000",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SameOrigin"
+  },
+  "CapturedAt": "2026-02-16T20:12:05.8138432Z"
+}

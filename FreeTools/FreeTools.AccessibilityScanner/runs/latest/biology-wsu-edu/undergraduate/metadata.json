@@ -1,0 +1,17 @@
+{
+  "PagePath": "/undergraduate/",
+  "Url": "https://biology.wsu.edu/undergraduate/",
+  "FinalUrl": null,
+  "Title": null,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 0,
+  "ScreenshotSizeBytes": 0,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [],
+  "ErrorMessage": "net::ERR_NAME_NOT_RESOLVED at https://biology.wsu.edu/undergraduate/\nCall log:\n  - navigating to \u0022https://biology.wsu.edu/undergraduate/\u0022, waiting until \u0022networkidle\u0022",
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:10:31.6833428Z"
+}

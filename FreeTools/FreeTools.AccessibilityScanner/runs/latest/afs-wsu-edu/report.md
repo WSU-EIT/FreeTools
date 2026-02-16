@@ -2,21 +2,104 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
+| Status | ⚠️ 1/6 pages OK |
+| Pages Scanned | 6 |
 | Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 224.7 KB |
-| Total Screenshots | 2.6 MB |
+| Pages Failed | 5 |
+| Total JS Errors | 5 |
+| Total JS Warnings | 5 |
+| Total HTML | 1.3 MB |
+| Total Screenshots | 3.0 MB |
 | Folder | `afs-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Agricultural and Food Systems \| Wash... | 0 | 0 | 224.7 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Agricultural and Food Systems \| Wash... | 0 | 0 | 1 |
+| ❌ | [/news/](news/report.md) | 404 | Page not found \| Agricultural and Fo... | 1 | 1 | 1 |
+| ❌ | [/people/](people/report.md) | 404 | Page not found \| Agricultural and Fo... | 1 | 1 | 1 |
+| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| Agricultural and Fo... | 1 | 1 | 1 |
+| ❌ | [/publications/](publications/report.md) | 404 | Page not found \| Agricultural and Fo... | 1 | 1 | 1 |
+| ❌ | [/research/](research/report.md) | 404 | Page not found \| Agricultural and Fo... | 1 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/news/](news/report.md)
+
+![/news/](news/01-page-loaded.png)
+
+### [/people/](people/report.md)
+
+![/people/](people/01-page-loaded.png)
+
+### [/programs/](programs/report.md)
+
+![/programs/](programs/01-page-loaded.png)
+
+### [/publications/](publications/report.md)
+
+![/publications/](publications/01-page-loaded.png)
+
+### [/research/](research/report.md)
+
+![/research/](research/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /research/
+
+- **URL:** https://afs.wsu.edu/research/
+- **Status:** 404
+
+### /programs/
+
+- **URL:** https://afs.wsu.edu/programs/
+- **Status:** 404
+
+### /people/
+
+- **URL:** https://afs.wsu.edu/people/
+- **Status:** 404
+
+### /publications/
+
+- **URL:** https://afs.wsu.edu/publications/
+- **Status:** 404
+
+### /news/
+
+- **URL:** https://afs.wsu.edu/news/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /research/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /programs/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /people/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /publications/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /news/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

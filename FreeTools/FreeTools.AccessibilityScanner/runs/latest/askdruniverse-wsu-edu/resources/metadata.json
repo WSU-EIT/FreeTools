@@ -1,0 +1,38 @@
+{
+  "PagePath": "/resources/",
+  "Url": "https://askdruniverse.wsu.edu/resources/",
+  "FinalUrl": null,
+  "Title": "Page not found | Ask Dr. Universe | Washington State University",
+  "StatusCode": 404,
+  "Success": false,
+  "HtmlSizeBytes": 46976,
+  "ScreenshotSizeBytes": 1049993,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1049993
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "no-cache, must-revalidate, max-age=0",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:13:37 GMT",
+    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "link": "\u003Chttps://askdruniverse.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
+    "server": "nginx",
+    "transfer-encoding": "chunked",
+    "vary": "Accept-Encoding\nCookie, Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-xss-protection": "1; mode=block"
+  },
+  "CapturedAt": "2026-02-16T20:13:35.8146659Z"
+}

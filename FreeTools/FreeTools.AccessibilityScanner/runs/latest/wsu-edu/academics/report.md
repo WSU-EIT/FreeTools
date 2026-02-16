@@ -5,12 +5,12 @@
 | URL | https://wsu.edu/academics/ |
 | Title | WSU Academics | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 125.9 KB |
-| Screenshot Size | 3.7 MB |
+| HTML Size | 126.0 KB |
+| Screenshots | 1 (3.9 MB) |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:53:04.7868815Z |
+| Captured | 2026-02-16T20:15:04.2882081Z |
 
 ## JavaScript Errors
 
@@ -18,11 +18,18 @@
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (3.9 MB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (3.9 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

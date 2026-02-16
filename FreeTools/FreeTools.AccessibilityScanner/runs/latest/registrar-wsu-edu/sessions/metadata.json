@@ -1,0 +1,24 @@
+{
+  "PagePath": "/sessions/",
+  "Url": "https://registrar.wsu.edu/sessions/",
+  "FinalUrl": null,
+  "Title": "Sessions | Office of the Registrar",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 678286,
+  "ScreenshotSizeBytes": 262588,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 262588
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:12:50.0811923Z"
+}

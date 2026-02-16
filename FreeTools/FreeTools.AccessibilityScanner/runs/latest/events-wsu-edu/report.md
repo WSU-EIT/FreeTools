@@ -2,26 +2,82 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 1 |
+| Status | ⚠️ 2/4 pages OK |
+| Pages Scanned | 4 |
+| Pages Passed | 2 |
+| Pages Failed | 2 |
+| Total JS Errors | 13 |
 | Total JS Warnings | 0 |
-| Total HTML | 69.2 KB |
-| Total Screenshots | 722.9 KB |
+| Total HTML | 238.8 KB |
+| Total Screenshots | 861.7 KB |
 | Folder | `events-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Events \| Washington State University | 1 | 0 | 69.2 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Events \| Washington State University | 2 | 0 | 1 |
+| ✅ | [/calendar/](calendar/report.md) | 200 | Calendar Redirect \| Events \| Washin... | 3 | 0 | 1 |
+| ❌ | [/categories/](categories/report.md) | 404 | Page not found \| Events \| Washingto... | 4 | 0 | 1 |
+| ❌ | [/submit-event/](submit-event/report.md) | 404 | Page not found \| Events \| Washingto... | 4 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/calendar/](calendar/report.md)
+
+![/calendar/](calendar/01-page-loaded.png)
+
+### [/categories/](categories/report.md)
+
+![/categories/](categories/01-page-loaded.png)
+
+### [/submit-event/](submit-event/report.md)
+
+![/submit-event/](submit-event/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /submit-event/
+
+- **URL:** https://events.wsu.edu/submit-event/
+- **Status:** 404
+
+### /categories/
+
+- **URL:** https://events.wsu.edu/categories/
+- **Status:** 404
+
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### /submit-event/ (4 errors)
 
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /categories/ (4 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /calendar/ (3 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### / (2 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: the server responded with a status of 405 ()`
 
 

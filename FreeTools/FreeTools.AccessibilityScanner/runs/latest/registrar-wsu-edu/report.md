@@ -2,27 +2,159 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
+| Status | ⚠️ 1/14 pages OK |
+| Pages Scanned | 14 |
+| Pages Passed | 1 |
+| Pages Failed | 13 |
 | Total JS Errors | 2 |
-| Total JS Warnings | 1 |
-| Total HTML | 649.9 KB |
-| Total Screenshots | 434.7 KB |
+| Total JS Warnings | 13 |
+| Total HTML | 8.7 MB |
+| Total Screenshots | 12.1 MB |
 | Folder | `registrar-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Office of the Registrar | 2 | 1 | 649.9 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Office of the Registrar | 2 | 1 | 1 |
+| ✅ | [/academic-calendar/](academic-calendar/report.md) | 200 |  | 0 | 0 | 1 |
+| ❌ | [/academic-regulations/](academic-regulations/report.md) | 0 | Academic Regulations \| Office of the... | 0 | 1 | 1 |
+| ❌ | [/change-of-campus/](change-of-campus/report.md) | 0 | Undergraduate Change of Campus Form \... | 0 | 1 | 1 |
+| ❌ | [/contact-us/](contact-us/report.md) | 0 | Contact Us \| Office of the Registrar | 0 | 1 | 1 |
+| ❌ | [/grades-and-gpa/](grades-and-gpa/report.md) | 0 | Grades and GPA \| Office of the Regis... | 0 | 1 | 1 |
+| ❌ | [/how-to-videos/](how-to-videos/report.md) | 0 | How-To Videos \| Office of the Registrar | 0 | 1 | 1 |
+| ❌ | [/petitions/](petitions/report.md) | 0 | Academic Calendar Petitions \| Office... | 0 | 1 | 1 |
+| ❌ | [/sessions/](sessions/report.md) | 0 | Sessions \| Office of the Registrar | 0 | 1 | 1 |
+| ❌ | [/special-enrollment/](special-enrollment/report.md) | 0 | Special Enrollment \| Office of the R... | 0 | 1 | 1 |
+| ❌ | [/staff-forms/](staff-forms/report.md) | 0 | Staff Forms \| Office of the Registrar | 0 | 1 | 1 |
+| ❌ | [/student-forms/](student-forms/report.md) | 0 | Student Forms \| Office of the Registrar | 0 | 1 | 1 |
+| ❌ | [/term-withdrawal/](term-withdrawal/report.md) | 0 | Term Withdrawal \| Office of the Regi... | 0 | 1 | 1 |
+| ❌ | [/tuition-adjustments/](tuition-adjustments/report.md) | 0 | Tuition Adjustments \| Office of the ... | 0 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/academic-calendar/](academic-calendar/report.md)
+
+![/academic-calendar/](academic-calendar/01-page-loaded.png)
+
+### [/academic-regulations/](academic-regulations/report.md)
+
+![/academic-regulations/](academic-regulations/01-page-loaded.png)
+
+### [/change-of-campus/](change-of-campus/report.md)
+
+![/change-of-campus/](change-of-campus/01-page-loaded.png)
+
+### [/contact-us/](contact-us/report.md)
+
+![/contact-us/](contact-us/01-page-loaded.png)
+
+### [/grades-and-gpa/](grades-and-gpa/report.md)
+
+![/grades-and-gpa/](grades-and-gpa/01-page-loaded.png)
+
+### [/how-to-videos/](how-to-videos/report.md)
+
+![/how-to-videos/](how-to-videos/01-page-loaded.png)
+
+### [/petitions/](petitions/report.md)
+
+![/petitions/](petitions/01-page-loaded.png)
+
+### [/sessions/](sessions/report.md)
+
+![/sessions/](sessions/01-page-loaded.png)
+
+### [/special-enrollment/](special-enrollment/report.md)
+
+![/special-enrollment/](special-enrollment/01-page-loaded.png)
+
+### [/staff-forms/](staff-forms/report.md)
+
+![/staff-forms/](staff-forms/01-page-loaded.png)
+
+### [/student-forms/](student-forms/report.md)
+
+![/student-forms/](student-forms/01-page-loaded.png)
+
+### [/term-withdrawal/](term-withdrawal/report.md)
+
+![/term-withdrawal/](term-withdrawal/01-page-loaded.png)
+
+### [/tuition-adjustments/](tuition-adjustments/report.md)
+
+![/tuition-adjustments/](tuition-adjustments/01-page-loaded.png)
+
 
 ## Failed Pages
 
 ### /
 
 - **URL:** https://registrar.wsu.edu/
+- **Status:** 0
+
+### /sessions/
+
+- **URL:** https://registrar.wsu.edu/sessions/
+- **Status:** 0
+
+### /academic-regulations/
+
+- **URL:** https://registrar.wsu.edu/academic-regulations/
+- **Status:** 0
+
+### /contact-us/
+
+- **URL:** https://registrar.wsu.edu/contact-us/
+- **Status:** 0
+
+### /staff-forms/
+
+- **URL:** https://registrar.wsu.edu/staff-forms/
+- **Status:** 0
+
+### /student-forms/
+
+- **URL:** https://registrar.wsu.edu/student-forms/
+- **Status:** 0
+
+### /how-to-videos/
+
+- **URL:** https://registrar.wsu.edu/how-to-videos/
+- **Status:** 0
+
+### /petitions/
+
+- **URL:** https://registrar.wsu.edu/petitions/
+- **Status:** 0
+
+### /term-withdrawal/
+
+- **URL:** https://registrar.wsu.edu/term-withdrawal/
+- **Status:** 0
+
+### /tuition-adjustments/
+
+- **URL:** https://registrar.wsu.edu/tuition-adjustments/
+- **Status:** 0
+
+### /grades-and-gpa/
+
+- **URL:** https://registrar.wsu.edu/grades-and-gpa/
+- **Status:** 0
+
+### /special-enrollment/
+
+- **URL:** https://registrar.wsu.edu/special-enrollment/
+- **Status:** 0
+
+### /change-of-campus/
+
+- **URL:** https://registrar.wsu.edu/change-of-campus/
 - **Status:** 0
 
 

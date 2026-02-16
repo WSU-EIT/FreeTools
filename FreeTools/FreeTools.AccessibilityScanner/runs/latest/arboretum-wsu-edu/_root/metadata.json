@@ -10,10 +10,18 @@
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 9095
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "cache-control": "no-cache",
     "content-type": "text/html"
   },
-  "CapturedAt": "2026-02-16T19:51:11.3494593Z"
+  "CapturedAt": "2026-02-16T20:10:26.110283Z"
 }

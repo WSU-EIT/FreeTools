@@ -2,21 +2,53 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 1 |
-| Total JS Warnings | 0 |
-| Total HTML | 256.9 KB |
-| Total Screenshots | 1.3 MB |
+| Status | ⚠️ 3/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 3 |
+| Pages Failed | 3 |
+| Total JS Errors | 10 |
+| Total JS Warnings | 2 |
+| Total HTML | 1.5 MB |
+| Total Screenshots | 2.6 MB |
 | Folder | `facsen-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Faculty Senate \| Washington State Un... | 1 | 0 | 256.9 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Faculty Senate \| Washington State Un... | 3 | 0 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | About the Course Review Process \| Fa... | 1 | 0 | 1 |
+| ❌ | [/committees/](committees/report.md) | 404 | Page not found \| Faculty Senate \| W... | 2 | 1 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| Faculty Senate \| W... | 2 | 1 | 1 |
+| ✅ | [/documents/](documents/report.md) | 200 | Documents \| Faculty Senate \| Washin... | 1 | 0 | 1 |
+| ✅ | [/meetings/](meetings/report.md) | 200 | 2023-2024 Faculty Senate Agendas \| F... | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/committees/](committees/report.md)
+
+![/committees/](committees/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/documents/](documents/report.md)
+
+![/documents/](documents/01-page-loaded.png)
+
+### [/meetings/](meetings/report.md)
+
+![/meetings/](meetings/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -25,12 +57,46 @@
 - **URL:** https://facsen.wsu.edu/
 - **Status:** 0
 
+### /committees/
+
+- **URL:** https://facsen.wsu.edu/committees/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://facsen.wsu.edu/contact/
+- **Status:** 404
+
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### / (3 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /committees/ (2 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /contact/ (2 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /about/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /meetings/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /documents/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
 
 
 ---

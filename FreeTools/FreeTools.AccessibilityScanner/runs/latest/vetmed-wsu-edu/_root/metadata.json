@@ -3,14 +3,31 @@
   "Url": "https://vetmed.wsu.edu/",
   "FinalUrl": null,
   "Title": "College of Veterinary Medicine | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 277582,
-  "ScreenshotSizeBytes": 956582,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 277567,
+  "ScreenshotSizeBytes": 846868,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 846868
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T19:51:11.3789607Z"
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
+    "etag": "\u0022fba383808b5167e414efc3958d3d87aa\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:01:52 GMT",
+    "link": "\u003Chttps://vetmed.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://vetmed.wsu.edu/wp-json/wp/v2/pages/1634\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://vetmed.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T20:10:26.1684652Z"
 }

@@ -2,10 +2,10 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
+| Status | ⚠️ 0/4 pages OK |
+| Pages Scanned | 4 |
 | Pages Passed | 0 |
-| Pages Failed | 1 |
+| Pages Failed | 4 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
 | Total HTML | 0 bytes |
@@ -14,9 +14,15 @@
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 bytes |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/services/](services/report.md) | 0 | (none) | 0 | 0 | 0 |
+
+## Page Screenshots
+
 
 ## Failed Pages
 
@@ -27,6 +33,30 @@
 - **Error:** `net::ERR_NAME_NOT_RESOLVED at https://library.wsu.edu/
 Call log:
   - navigating to "https://library.wsu.edu/", waiting until "networkidle"`
+
+### /about/
+
+- **URL:** https://library.wsu.edu/about/
+- **Status:** 0
+- **Error:** `net::ERR_NAME_NOT_RESOLVED at https://library.wsu.edu/about/
+Call log:
+  - navigating to "https://library.wsu.edu/about/", waiting until "networkidle"`
+
+### /services/
+
+- **URL:** https://library.wsu.edu/services/
+- **Status:** 0
+- **Error:** `net::ERR_NAME_NOT_RESOLVED at https://library.wsu.edu/services/
+Call log:
+  - navigating to "https://library.wsu.edu/services/", waiting until "networkidle"`
+
+### /resources/
+
+- **URL:** https://library.wsu.edu/resources/
+- **Status:** 0
+- **Error:** `net::ERR_NAME_NOT_RESOLVED at https://library.wsu.edu/resources/
+Call log:
+  - navigating to "https://library.wsu.edu/resources/", waiting until "networkidle"`
 
 
 ---

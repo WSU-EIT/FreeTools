@@ -2,28 +2,93 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
+| Status | ⚠️ 1/5 pages OK |
+| Pages Scanned | 5 |
+| Pages Passed | 1 |
+| Pages Failed | 4 |
+| Total JS Errors | 5 |
 | Total JS Warnings | 0 |
-| Total HTML | 81.3 KB |
-| Total Screenshots | 416.4 KB |
+| Total HTML | 317.1 KB |
+| Total Screenshots | 1004.9 KB |
 | Folder | `alert-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Alert \| Washington State University | 0 | 0 | 81.3 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Alert \| Washington State University | 1 | 0 | 1 |
+| ❌ | [/emergency-info/](emergency-info/report.md) | 404 | Page not found \| Alert \| Washington... | 1 | 0 | 1 |
+| ❌ | [/procedures/](procedures/report.md) | 404 | Page not found \| Alert \| Washington... | 1 | 0 | 1 |
+| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| Alert \| Washington... | 1 | 0 | 1 |
+| ❌ | [/signup/](signup/report.md) | 404 | Page not found \| Alert \| Washington... | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/emergency-info/](emergency-info/report.md)
+
+![/emergency-info/](emergency-info/01-page-loaded.png)
+
+### [/procedures/](procedures/report.md)
+
+![/procedures/](procedures/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+### [/signup/](signup/report.md)
+
+![/signup/](signup/01-page-loaded.png)
+
 
 ## Failed Pages
 
-### /
+### /emergency-info/
 
-- **URL:** https://alert.wsu.edu/
-- **Status:** 0
+- **URL:** https://alert.wsu.edu/emergency-info/
+- **Status:** 404
+
+### /signup/
+
+- **URL:** https://alert.wsu.edu/signup/
+- **Status:** 404
+
+### /procedures/
+
+- **URL:** https://alert.wsu.edu/procedures/
+- **Status:** 404
+
+### /resources/
+
+- **URL:** https://alert.wsu.edu/resources/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /emergency-info/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /signup/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /procedures/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /resources/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

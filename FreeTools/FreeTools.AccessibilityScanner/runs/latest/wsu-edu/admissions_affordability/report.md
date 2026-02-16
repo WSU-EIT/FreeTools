@@ -6,11 +6,11 @@
 | Title | Affordability | Washington State University | Washington State University |
 | Status | ✅ 200 |
 | HTML Size | 111.6 KB |
-| Screenshot Size | 1.9 MB |
+| Screenshots | 1 (1.9 MB) |
 | JS Errors | 1 |
 | JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T19:53:23.9933899Z |
+| Captured | 2026-02-16T20:15:23.6119569Z |
 
 ## JavaScript Errors
 
@@ -18,11 +18,18 @@
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (1.9 MB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (1.9 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

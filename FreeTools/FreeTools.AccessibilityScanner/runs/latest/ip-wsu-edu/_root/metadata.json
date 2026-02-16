@@ -5,21 +5,29 @@
   "Title": "WSU International | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 319372,
+  "HtmlSizeBytes": 319416,
   "ScreenshotSizeBytes": 1587073,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1587073
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 19:51:14 GMT",
-    "etag": "\u00224cba07f386c50378fdf26a661fea0572\u0022",
-    "last-modified": "Mon, 16 Feb 2026 18:57:31 GMT",
+    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
+    "etag": "\u0022a77620816817b3154097795120eaf7d5\u0022",
+    "last-modified": "Mon, 16 Feb 2026 19:59:40 GMT",
     "link": "\u003Chttps://ip.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ip.wsu.edu/wp-json/wp/v2/pages/8447\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ip.wsu.edu/\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-16T19:51:11.3644886Z"
+  "CapturedAt": "2026-02-16T20:10:26.1302691Z"
 }

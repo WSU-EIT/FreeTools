@@ -3,14 +3,39 @@
   "Url": "https://vancouver.wsu.edu/",
   "FinalUrl": "https://www.vancouver.wsu.edu//",
   "Title": "Washington State University Vancouver - Vancouver, WA, USA",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 72168,
-  "ScreenshotSizeBytes": 1313469,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 72172,
+  "ScreenshotSizeBytes": 1275784,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1275784
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-16T19:51:11.3788923Z"
+  "Headers": {
+    "cache-control": "max-age=1800, public",
+    "content-encoding": "gzip",
+    "content-language": "en",
+    "content-length": "14221",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:10:28 GMT",
+    "etag": "\u00221771272628-gzip\u0022",
+    "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+    "last-modified": "Mon, 16 Feb 2026 20:10:28 GMT",
+    "server": "Apache/2.4.62 (Debian)",
+    "vary": "Cookie,Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-drupal-cache": "HIT",
+    "x-drupal-dynamic-cache": "MISS",
+    "x-frame-options": "SAMEORIGIN",
+    "x-generator": "Drupal 10 (https://www.drupal.org)"
+  },
+  "CapturedAt": "2026-02-16T20:10:26.1680937Z"
 }

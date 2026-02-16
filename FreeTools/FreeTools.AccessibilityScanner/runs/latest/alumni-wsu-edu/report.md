@@ -2,28 +2,79 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
+| Status | ✅ 6/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 6 |
 | Pages Failed | 0 |
-| Total JS Errors | 2 |
+| Total JS Errors | 6 |
 | Total JS Warnings | 0 |
-| Total HTML | 110.5 KB |
-| Total Screenshots | 1.1 MB |
+| Total HTML | 495.2 KB |
+| Total Screenshots | 2.0 MB |
 | Folder | `alumni-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Washington State University Alumni As... | 2 | 0 | 110.5 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Washington State University Alumni As... | 1 | 0 | 1 |
+| ✅ | [/benefits/](benefits/report.md) | 200 | Washington State University Alumni As... | 1 | 0 | 1 |
+| ✅ | [/chapters/](chapters/report.md) | 200 | Washington State University Alumni As... | 1 | 0 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Washington State University Alumni As... | 1 | 0 | 1 |
+| ✅ | [/events/](events/report.md) | 200 | Washington State University Alumni As... | 1 | 0 | 1 |
+| ✅ | [/giving/](giving/report.md) | 200 | Washington State University Alumni As... | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/benefits/](benefits/report.md)
+
+![/benefits/](benefits/01-page-loaded.png)
+
+### [/chapters/](chapters/report.md)
+
+![/chapters/](chapters/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/events/](events/report.md)
+
+![/events/](events/01-page-loaded.png)
+
+### [/giving/](giving/report.md)
+
+![/giving/](giving/01-page-loaded.png)
+
 
 ## Pages with JavaScript Errors
 
-### / (2 errors)
+### / (1 errors)
 
 - `The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want t...`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /benefits/ (1 errors)
+
+- `The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want t...`
+
+### /events/ (1 errors)
+
+- `The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want t...`
+
+### /giving/ (1 errors)
+
+- `The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want t...`
+
+### /chapters/ (1 errors)
+
+- `The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want t...`
+
+### /contact/ (1 errors)
+
+- `The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want t...`
 
 
 ---

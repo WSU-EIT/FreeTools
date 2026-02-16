@@ -1,0 +1,40 @@
+{
+  "PagePath": "/career-services/",
+  "Url": "https://ascc.wsu.edu/career-services/",
+  "FinalUrl": "https://ascc.wsu.edu/",
+  "Title": "Academic Success \u0026 Career Center \u2013 Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 2021825,
+  "ScreenshotSizeBytes": 1013575,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1013575
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "br",
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.uconnectlabs.com https://*.gouconnect.com https://*.instructure.com https://wsu.edu https://*.wsu.edu;frame-src \u0027self\u0027 https://jobscan.co https://wsu.edu https://*.wsu.edu https://*.uconnectlabs.com https://*.candidcareer.com https://*.youtube.com/embed/ https://player.vimeo.com/video/ https://fast.wistia.net/embed/ https://cdnapisec.kaltura.com/p/ https://videopress.com https://www.tiktok.com https://www.loom.com https://embed.ted.com https://w.soundcloud.com https://open.spotify.com https://creators.spotify.com https://embed.podcasts.apple.com https://*.pinterest.com https://giphy.com https://www.canva.com/ https://*.google.com https://*.googletagmanager.com https://*.doubleclick.net https://*.qualtrics.com https://app.powerbi.com https://public.tableau.com https://www.instagram.com https://snapwidget.com https://www.facebook.com https://airtable.com https://*.typeform.com https://e.issuu.com https://forms.monday.com https://scribehow.com https://service.force.com https://forms.cloud.microsoft https://*.jobscan.co https://student.interstride.com https://www.careerspots.com https://mongoose.botpress.cloud;",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:11:45 GMT",
+    "link": "\u003Chttps://ascc.wsu.edu/api/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://ascc.wsu.edu/api/wp/v2/pages/6\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022\n\u003Chttps://ascc.wsu.edu/\u003E; rel=shortlink",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "server": "Pagely-ARES/1.22.2",
+    "strict-transport-security": "max-age=31536000",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-gateway-cache-key": "1771103709.151|standard|https|ascc.wsu.edu|||/|webp",
+    "x-gateway-cache-status": "HIT",
+    "x-gateway-request-id": "aea0ec1dacc2eb5497a608dc9e0bf4ba",
+    "x-gateway-skip-cache": "0"
+  },
+  "CapturedAt": "2026-02-16T20:11:30.0743669Z"
+}

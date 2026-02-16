@@ -6,19 +6,30 @@
 | Title | Advising at WSU | Washington State University |
 | Status | ✅ 200 |
 | HTML Size | 114.5 KB |
-| Screenshot Size | 772.4 KB |
-| JS Errors | 0 |
+| Screenshots | 1 (772.4 KB) |
+| JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:51:11.3352164Z |
+| Captured | 2026-02-16T20:10:26.0929097Z |
+
+## JavaScript Errors
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (772.4 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (772.4 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

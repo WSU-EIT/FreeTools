@@ -1,0 +1,36 @@
+{
+  "PagePath": "/forms/",
+  "Url": "https://acctspay.wsu.edu/forms/",
+  "FinalUrl": null,
+  "Title": "Forms | Payment Services | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 59742,
+  "ScreenshotSizeBytes": 78987,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 5,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 78987
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:11:28 GMT",
+    "etag": "\u00223b2ae2413589167298ff486b41eab7be\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:11:28 GMT",
+    "link": "\u003Chttps://acctspay.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://acctspay.wsu.edu/wp-json/wp/v2/pages/367\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://acctspay.wsu.edu/?p=367\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://acctspay.wsu.edu",
+    "x-tec-api-root": "https://acctspay.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-16T20:11:21.0952873Z"
+}

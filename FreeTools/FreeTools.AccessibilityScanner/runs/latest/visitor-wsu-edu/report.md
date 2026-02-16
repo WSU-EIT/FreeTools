@@ -2,21 +2,95 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 230.9 KB |
-| Total Screenshots | 1.7 MB |
+| Status | ⚠️ 2/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 2 |
+| Pages Failed | 4 |
+| Total JS Errors | 4 |
+| Total JS Warnings | 4 |
+| Total HTML | 1.3 MB |
+| Total Screenshots | 3.8 MB |
 | Folder | `visitor-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Brelsford WSU Visitor Center \| Washi... | 0 | 0 | 230.9 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Brelsford WSU Visitor Center \| Washi... | 0 | 0 | 1 |
+| ❌ | [/accommodations/](accommodations/report.md) | 404 | Page not found \| Brelsford WSU Visit... | 1 | 1 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Brelsford WSU Visitor C... | 0 | 0 | 1 |
+| ❌ | [/dining/](dining/report.md) | 404 | Page not found \| Brelsford WSU Visit... | 1 | 1 | 1 |
+| ❌ | [/plan-visit/](plan-visit/report.md) | 404 | Page not found \| Brelsford WSU Visit... | 1 | 1 | 1 |
+| ❌ | [/tours/](tours/report.md) | 404 | Page not found \| Brelsford WSU Visit... | 1 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/accommodations/](accommodations/report.md)
+
+![/accommodations/](accommodations/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/dining/](dining/report.md)
+
+![/dining/](dining/01-page-loaded.png)
+
+### [/plan-visit/](plan-visit/report.md)
+
+![/plan-visit/](plan-visit/01-page-loaded.png)
+
+### [/tours/](tours/report.md)
+
+![/tours/](tours/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /plan-visit/
+
+- **URL:** https://visitor.wsu.edu/plan-visit/
+- **Status:** 404
+
+### /tours/
+
+- **URL:** https://visitor.wsu.edu/tours/
+- **Status:** 404
+
+### /accommodations/
+
+- **URL:** https://visitor.wsu.edu/accommodations/
+- **Status:** 404
+
+### /dining/
+
+- **URL:** https://visitor.wsu.edu/dining/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /plan-visit/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /tours/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /accommodations/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /dining/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

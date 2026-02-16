@@ -2,21 +2,53 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
+| Status | ✅ 6/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 6 |
 | Pages Failed | 0 |
 | Total JS Errors | 1 |
 | Total JS Warnings | 0 |
-| Total HTML | 56.4 KB |
-| Total Screenshots | 1.3 MB |
+| Total HTML | 338.3 KB |
+| Total Screenshots | 7.3 MB |
 | Folder | `accesscenter-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 |  | 1 | 0 | 56.4 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 |  | 1 | 0 | 1 |
+| ✅ | [/accommodations/](accommodations/report.md) | 200 |  | 0 | 0 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 |  | 0 | 0 | 1 |
+| ✅ | [/faculty/](faculty/report.md) | 200 |  | 0 | 0 | 1 |
+| ✅ | [/services/](services/report.md) | 200 |  | 0 | 0 | 1 |
+| ✅ | [/students/](students/report.md) | 200 |  | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/accommodations/](accommodations/report.md)
+
+![/accommodations/](accommodations/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/faculty/](faculty/report.md)
+
+![/faculty/](faculty/01-page-loaded.png)
+
+### [/services/](services/report.md)
+
+![/services/](services/01-page-loaded.png)
+
+### [/students/](students/report.md)
+
+![/students/](students/01-page-loaded.png)
+
 
 ## Pages with JavaScript Errors
 

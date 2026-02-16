@@ -2,21 +2,43 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
+| Status | ✅ 4/4 pages OK |
+| Pages Scanned | 4 |
+| Pages Passed | 4 |
 | Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 86.7 KB |
-| Total Screenshots | 284.2 KB |
+| Total HTML | 346.6 KB |
+| Total Screenshots | 1.1 MB |
 | Folder | `office365-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Sign in to your account | 0 | 0 | 86.7 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Sign in to your account | 0 | 0 | 1 |
+| ✅ | [/help/](help/report.md) | 200 | Sign in to your account | 0 | 0 | 1 |
+| ✅ | [/services/](services/report.md) | 200 | Sign in to your account | 0 | 0 | 1 |
+| ✅ | [/training/](training/report.md) | 200 | Sign in to your account | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/help/](help/report.md)
+
+![/help/](help/01-page-loaded.png)
+
+### [/services/](services/report.md)
+
+![/services/](services/01-page-loaded.png)
+
+### [/training/](training/report.md)
+
+![/training/](training/01-page-loaded.png)
+
 
 ---
 

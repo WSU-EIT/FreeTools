@@ -1,0 +1,36 @@
+{
+  "PagePath": "/about/",
+  "Url": "https://facsen.wsu.edu/about/",
+  "FinalUrl": "https://facsen.wsu.edu/about-the-course-challenge-process/",
+  "Title": "About the Course Review Process | Faculty Senate | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 230892,
+  "ScreenshotSizeBytes": 172593,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 172593
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:11:57 GMT",
+    "etag": "\u002288234454b01e8324eee7aa76319cdccd\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:11:57 GMT",
+    "link": "\u003Chttps://facsen.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://facsen.wsu.edu/wp-json/wp/v2/pages/11574\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://facsen.wsu.edu/?p=11574\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://facsen.wsu.edu",
+    "x-tec-api-root": "https://facsen.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-16T20:11:46.3658737Z"
+}

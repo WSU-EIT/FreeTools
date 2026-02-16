@@ -2,21 +2,58 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
+| Status | ⚠️ 6/7 pages OK |
+| Pages Scanned | 7 |
+| Pages Passed | 6 |
 | Pages Failed | 1 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 1 |
-| Total HTML | 207.9 KB |
-| Total Screenshots | 887.5 KB |
+| Total JS Errors | 1 |
+| Total JS Warnings | 12 |
+| Total HTML | 923.6 KB |
+| Total Screenshots | 8.1 MB |
 | Folder | `tricities-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | WSU Tri-Cities - apply now to earn yo... | 0 | 1 | 207.9 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Tri-Cities - apply now to earn yo... | 0 | 1 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | About WSU Tri-Cities - WSU Tri-Cities | 0 | 4 | 1 |
+| ✅ | [/academics/](academics/report.md) | 200 | Academics \| WSU Tri-Cities | 0 | 1 | 1 |
+| ✅ | [/admissions/](admissions/report.md) | 200 | Admissions \| WSU Tri-Cities | 0 | 3 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us - WSU Tri-Cities | 1 | 2 | 1 |
+| ✅ | [/library/](library/report.md) | 200 | WSU Tri-Cities Library | 0 | 1 | 1 |
+| ✅ | [/student-services/](student-services/report.md) | 200 | Student-Services.png (1680×700) | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/academics/](academics/report.md)
+
+![/academics/](academics/01-page-loaded.png)
+
+### [/admissions/](admissions/report.md)
+
+![/admissions/](admissions/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/library/](library/report.md)
+
+![/library/](library/01-page-loaded.png)
+
+### [/student-services/](student-services/report.md)
+
+![/student-services/](student-services/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -24,6 +61,13 @@
 
 - **URL:** https://tricities.wsu.edu/
 - **Status:** 0
+
+
+## Pages with JavaScript Errors
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: net::ERR_CONNECTION_FAILED`
 
 
 ---

@@ -2,21 +2,58 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 322.7 KB |
-| Total Screenshots | 7.4 MB |
+| Status | ⚠️ 5/7 pages OK |
+| Pages Scanned | 7 |
+| Pages Passed | 5 |
+| Pages Failed | 2 |
+| Total JS Errors | 2 |
+| Total JS Warnings | 3 |
+| Total HTML | 1.8 MB |
+| Total Screenshots | 24.0 MB |
 | Folder | `spokane-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | WSU Spokane \| Washington State Unive... | 0 | 0 | 322.7 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Spokane \| Washington State Unive... | 1 | 0 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | WSU Spokane \| Washington State Unive... | 0 | 0 | 1 |
+| ✅ | [/academics/](academics/report.md) | 200 | Academic Programs \| WSU Spokane \| W... | 0 | 0 | 1 |
+| ✅ | [/admissions/](admissions/report.md) | 200 | Admissions \| WSU Spokane \| Washingt... | 0 | 2 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| WSU Spokane \| Washingt... | 0 | 0 | 1 |
+| ✅ | [/library/](library/report.md) | 200 | Health Sciences Library \| Washington... | 0 | 0 | 1 |
+| ❌ | [/student-services/](student-services/report.md) | 404 | Page not found \| WSU Spokane \| Wash... | 1 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/academics/](academics/report.md)
+
+![/academics/](academics/01-page-loaded.png)
+
+### [/admissions/](admissions/report.md)
+
+![/admissions/](admissions/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/library/](library/report.md)
+
+![/library/](library/01-page-loaded.png)
+
+### [/student-services/](student-services/report.md)
+
+![/student-services/](student-services/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -24,6 +61,22 @@
 
 - **URL:** https://spokane.wsu.edu/
 - **Status:** 0
+
+### /student-services/
+
+- **URL:** https://spokane.wsu.edu/student-services/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /student-services/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

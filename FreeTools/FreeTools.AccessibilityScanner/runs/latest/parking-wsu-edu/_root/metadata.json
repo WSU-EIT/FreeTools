@@ -5,17 +5,25 @@
   "Title": "Home Page | Washington State University Parking",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 52127,
+  "HtmlSizeBytes": 52125,
   "ScreenshotSizeBytes": 57766,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 57766
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
-    "content-security-policy": "script-src \u0027self\u0027 https://esqa.moneris.com https://cert-tls12.payconex.net https://www.convergepay.com https://js.authorize.net https://hpp.clearent.net https://gateway.moneris.com https://api.heartlandportico.com https://js.globalpay.com https://secure.payconex.net https://www.google-analytics.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://platform.twitter.com  \u0027nonce-069937532c09f9\u0027 \u0027unsafe-eval\u0027 \u0027strict-dynamic\u0027; connect-src \u0027self\u0027 https://esqa.moneris.com https://cert-tls12.payconex.net https://www.convergepay.com https://js.authorize.net https://hpp.clearent.net https://gateway.moneris.com https://api.heartlandportico.com https://js.globalpay.com https://secure.payconex.net https://www.google-analytics.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://platform.twitter.com ; report-uri https://parking.wsu.edu/api/common/index.php?cmd=record_csp_violation;",
+    "content-security-policy": "script-src \u0027self\u0027 https://esqa.moneris.com https://cert-tls12.payconex.net https://www.convergepay.com https://js.authorize.net https://hpp.clearent.net https://gateway.moneris.com https://api.heartlandportico.com https://js.globalpay.com https://secure.payconex.net https://www.google-analytics.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://platform.twitter.com  \u0027nonce-0699379b58bfda\u0027 \u0027unsafe-eval\u0027 \u0027strict-dynamic\u0027; connect-src \u0027self\u0027 https://esqa.moneris.com https://cert-tls12.payconex.net https://www.convergepay.com https://js.authorize.net https://hpp.clearent.net https://gateway.moneris.com https://api.heartlandportico.com https://js.globalpay.com https://secure.payconex.net https://www.google-analytics.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://platform.twitter.com ; report-uri https://parking.wsu.edu/api/common/index.php?cmd=record_csp_violation;",
     "content-type": "text/html;charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 19:51:14 GMT",
+    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
     "server": "nginx/1.28.1"
   },
-  "CapturedAt": "2026-02-16T19:51:11.3707182Z"
+  "CapturedAt": "2026-02-16T20:10:26.1378465Z"
 }

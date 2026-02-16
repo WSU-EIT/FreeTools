@@ -1,0 +1,39 @@
+{
+  "PagePath": "/academic-success/",
+  "Url": "https://ascc.wsu.edu/academic-success/",
+  "FinalUrl": null,
+  "Title": "Page not found \u2013 Academic Success \u0026 Career Center \u2013 Washington State University",
+  "StatusCode": 404,
+  "Success": false,
+  "HtmlSizeBytes": 71550,
+  "ScreenshotSizeBytes": 144780,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 144780
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "no-cache, must-revalidate, max-age=0, no-store, private",
+    "content-encoding": "br",
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.uconnectlabs.com https://*.gouconnect.com https://*.instructure.com https://wsu.edu https://*.wsu.edu;frame-src \u0027self\u0027 https://jobscan.co https://wsu.edu https://*.wsu.edu https://*.uconnectlabs.com https://*.candidcareer.com https://*.youtube.com/embed/ https://player.vimeo.com/video/ https://fast.wistia.net/embed/ https://cdnapisec.kaltura.com/p/ https://videopress.com https://www.tiktok.com https://www.loom.com https://embed.ted.com https://w.soundcloud.com https://open.spotify.com https://creators.spotify.com https://embed.podcasts.apple.com https://*.pinterest.com https://giphy.com https://www.canva.com/ https://*.google.com https://*.googletagmanager.com https://*.doubleclick.net https://*.qualtrics.com https://app.powerbi.com https://public.tableau.com https://www.instagram.com https://snapwidget.com https://www.facebook.com https://airtable.com https://*.typeform.com https://e.issuu.com https://forms.monday.com https://scribehow.com https://service.force.com https://forms.cloud.microsoft https://*.jobscan.co https://student.interstride.com https://www.careerspots.com https://mongoose.botpress.cloud;",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:11:09 GMT",
+    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "link": "\u003Chttps://ascc.wsu.edu/api/\u003E; rel=\u0022https://api.w.org/\u0022",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "server": "Pagely-ARES/1.22.2",
+    "strict-transport-security": "max-age=31536000",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-gateway-request-id": "672680bce7b3f8cd6ada5399ac220c52"
+  },
+  "CapturedAt": "2026-02-16T20:11:07.6038668Z"
+}

@@ -2,21 +2,108 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
+| Status | ⚠️ 1/6 pages OK |
+| Pages Scanned | 6 |
 | Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Pages Failed | 5 |
+| Total JS Errors | 6 |
 | Total JS Warnings | 0 |
-| Total HTML | 177.0 KB |
-| Total Screenshots | 5.3 MB |
+| Total HTML | 181.0 KB |
+| Total Screenshots | 6.0 MB |
 | Folder | `studentaffairs-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 |  | 0 | 0 | 177.0 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 |  | 1 | 0 | 1 |
+| ❌ | [/about/](about/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/departments/](departments/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/policies/](policies/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/resources/](resources/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/departments/](departments/report.md)
+
+![/departments/](departments/01-page-loaded.png)
+
+### [/policies/](policies/report.md)
+
+![/policies/](policies/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /about/
+
+- **URL:** https://studentaffairs.wsu.edu/about/
+- **Status:** 404
+
+### /departments/
+
+- **URL:** https://studentaffairs.wsu.edu/departments/
+- **Status:** 404
+
+### /resources/
+
+- **URL:** https://studentaffairs.wsu.edu/resources/
+- **Status:** 404
+
+### /policies/
+
+- **URL:** https://studentaffairs.wsu.edu/policies/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://studentaffairs.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /about/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /departments/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /resources/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /policies/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

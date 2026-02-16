@@ -2,22 +2,43 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/2 pages OK |
-| Pages Scanned | 2 |
+| Status | ⚠️ 0/4 pages OK |
+| Pages Scanned | 4 |
 | Pages Passed | 0 |
-| Pages Failed | 2 |
-| Total JS Errors | 5 |
-| Total JS Warnings | 2 |
-| Total HTML | 1.2 MB |
-| Total Screenshots | 286.4 KB |
+| Pages Failed | 4 |
+| Total JS Errors | 7 |
+| Total JS Warnings | 4 |
+| Total HTML | 2.5 MB |
+| Total Screenshots | 671.6 KB |
 | Folder | `em-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Enrollment Management | 3 | 1 | 633.9 KB |
-| ❌ | [/eit/](eit/report.md) | 0 | Enrollment IT | 2 | 1 | 634.3 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Enrollment Management | 5 | 1 | 1 |
+| ❌ | [/eit/](eit/report.md) | 0 | Enrollment IT | 2 | 1 | 1 |
+| ❌ | [/re411/](re411/report.md) | 0 | Registration & Enrollment 411 | 0 | 1 | 1 |
+| ❌ | [/rr411/](rr411/report.md) | 0 | Registration & Enrollment 411 | 0 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/eit/](eit/report.md)
+
+![/eit/](eit/01-page-loaded.png)
+
+### [/re411/](re411/report.md)
+
+![/re411/](re411/01-page-loaded.png)
+
+### [/rr411/](rr411/report.md)
+
+![/rr411/](rr411/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -31,11 +52,23 @@
 - **URL:** https://em.wsu.edu/eit/
 - **Status:** 0
 
+### /re411/
+
+- **URL:** https://em.wsu.edu/re411/
+- **Status:** 0
+
+### /rr411/
+
+- **URL:** https://em.wsu.edu/rr411/
+- **Status:** 0
+
 
 ## Pages with JavaScript Errors
 
-### / (3 errors)
+### / (5 errors)
 
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 - `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 - `Access to XMLHttpRequest at 'https://api.oneorigin.us/p-cs/ref?required=y' from origin 'https://em.wsu.edu' has been ...`
 - `Failed to load resource: net::ERR_FAILED`

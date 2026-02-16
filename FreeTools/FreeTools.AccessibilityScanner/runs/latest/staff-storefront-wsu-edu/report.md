@@ -2,21 +2,85 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 1 |
-| Total HTML | 25.5 KB |
-| Total Screenshots | 87.2 KB |
+| Status | ⚠️ 2/5 pages OK |
+| Pages Scanned | 5 |
+| Pages Passed | 2 |
+| Pages Failed | 3 |
+| Total JS Errors | 4 |
+| Total JS Warnings | 5 |
+| Total HTML | 85.1 KB |
+| Total Screenshots | 313.3 KB |
 | Folder | `staff-storefront-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Home - WSU Coug Prints Plus | 0 | 1 | 25.5 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Home - WSU Coug Prints Plus | 1 | 1 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us - WSU Coug Prints Plus | 0 | 1 | 1 |
+| ❌ | [/design/](design/report.md) | 404 | 404 Page Error - WSU Coug Prints Plus | 1 | 1 | 1 |
+| ❌ | [/printing/](printing/report.md) | 404 | 404 Page Error - WSU Coug Prints Plus | 1 | 1 | 1 |
+| ❌ | [/services/](services/report.md) | 404 | 404 Page Error - WSU Coug Prints Plus | 1 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/design/](design/report.md)
+
+![/design/](design/01-page-loaded.png)
+
+### [/printing/](printing/report.md)
+
+![/printing/](printing/01-page-loaded.png)
+
+### [/services/](services/report.md)
+
+![/services/](services/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /services/
+
+- **URL:** https://staff.storefront.wsu.edu/services/
+- **Status:** 404
+
+### /printing/
+
+- **URL:** https://staff.storefront.wsu.edu/printing/
+- **Status:** 404
+
+### /design/
+
+- **URL:** https://staff.storefront.wsu.edu/design/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /services/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+
+### /printing/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+
+### /design/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+
 
 ---
 

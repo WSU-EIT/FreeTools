@@ -1,0 +1,41 @@
+{
+  "PagePath": "/student-involvement/",
+  "Url": "https://studentaffairs.vancouver.wsu.edu/student-involvement/",
+  "FinalUrl": "https://studentaffairs.vancouver.wsu.edu/osi",
+  "Title": "Office of Student Involvement - Home - WSU Vancouver",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 43781,
+  "ScreenshotSizeBytes": 2211151,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 2211151
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "max-age=3600, public",
+    "content-encoding": "gzip",
+    "content-language": "en",
+    "content-length": "9293",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Wed, 11 Feb 2026 20:50:50 GMT",
+    "etag": "\u00221771243293-gzip\u0022",
+    "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+    "last-modified": "Mon, 16 Feb 2026 12:01:33 GMT",
+    "server": "Apache/2.4.62 (Debian)",
+    "vary": "Cookie,Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-drupal-cache": "HIT",
+    "x-drupal-dynamic-cache": "HIT",
+    "x-frame-options": "SAMEORIGIN",
+    "x-generator": "Drupal 10 (https://www.drupal.org)"
+  },
+  "CapturedAt": "2026-02-16T20:11:55.6552279Z"
+}

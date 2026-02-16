@@ -2,10 +2,10 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
+| Status | ⚠️ 0/7 pages OK |
+| Pages Scanned | 7 |
 | Pages Passed | 0 |
-| Pages Failed | 1 |
+| Pages Failed | 7 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
 | Total HTML | 0 bytes |
@@ -14,9 +14,18 @@
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 bytes |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/facilities/](facilities/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/faculty/](faculty/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/graduate/](graduate/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/research/](research/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | (none) | 0 | 0 | 0 |
+
+## Page Screenshots
+
 
 ## Failed Pages
 
@@ -27,6 +36,54 @@
 - **Error:** `net::ERR_NAME_NOT_RESOLVED at https://biology.wsu.edu/
 Call log:
   - navigating to "https://biology.wsu.edu/", waiting until "networkidle"`
+
+### /about/
+
+- **URL:** https://biology.wsu.edu/about/
+- **Status:** 0
+- **Error:** `net::ERR_NAME_NOT_RESOLVED at https://biology.wsu.edu/about/
+Call log:
+  - navigating to "https://biology.wsu.edu/about/", waiting until "networkidle"`
+
+### /undergraduate/
+
+- **URL:** https://biology.wsu.edu/undergraduate/
+- **Status:** 0
+- **Error:** `net::ERR_NAME_NOT_RESOLVED at https://biology.wsu.edu/undergraduate/
+Call log:
+  - navigating to "https://biology.wsu.edu/undergraduate/", waiting until "networkidle"`
+
+### /graduate/
+
+- **URL:** https://biology.wsu.edu/graduate/
+- **Status:** 0
+- **Error:** `net::ERR_NAME_NOT_RESOLVED at https://biology.wsu.edu/graduate/
+Call log:
+  - navigating to "https://biology.wsu.edu/graduate/", waiting until "networkidle"`
+
+### /research/
+
+- **URL:** https://biology.wsu.edu/research/
+- **Status:** 0
+- **Error:** `net::ERR_NAME_NOT_RESOLVED at https://biology.wsu.edu/research/
+Call log:
+  - navigating to "https://biology.wsu.edu/research/", waiting until "networkidle"`
+
+### /faculty/
+
+- **URL:** https://biology.wsu.edu/faculty/
+- **Status:** 0
+- **Error:** `net::ERR_NAME_NOT_RESOLVED at https://biology.wsu.edu/faculty/
+Call log:
+  - navigating to "https://biology.wsu.edu/faculty/", waiting until "networkidle"`
+
+### /facilities/
+
+- **URL:** https://biology.wsu.edu/facilities/
+- **Status:** 0
+- **Error:** `net::ERR_NAME_NOT_RESOLVED at https://biology.wsu.edu/facilities/
+Call log:
+  - navigating to "https://biology.wsu.edu/facilities/", waiting until "networkidle"`
 
 
 ---

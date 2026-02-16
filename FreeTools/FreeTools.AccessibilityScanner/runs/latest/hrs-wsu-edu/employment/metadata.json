@@ -1,0 +1,33 @@
+{
+  "PagePath": "/employment/",
+  "Url": "https://hrs.wsu.edu/employment/",
+  "FinalUrl": null,
+  "Title": "Page not found \u2013 Human Resource Services, Washington State University",
+  "StatusCode": 404,
+  "Success": false,
+  "HtmlSizeBytes": 69641,
+  "ScreenshotSizeBytes": 64176,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 64176
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "no-cache, must-revalidate, max-age=0, no-store, private",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:11:44 GMT",
+    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "link": "\u003Chttps://hrs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
+    "server": "nginx/1.14.1",
+    "vary": "Cookie",
+    "x-powered-by": "PHP/8.2.29"
+  },
+  "CapturedAt": "2026-02-16T20:11:30.1544786Z"
+}

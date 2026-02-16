@@ -1,0 +1,39 @@
+{
+  "PagePath": "/library/",
+  "Url": "https://vancouver.wsu.edu/library/",
+  "FinalUrl": "https://library.vancouver.wsu.edu/",
+  "Title": "Library - Home - WSU Vancouver",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 43791,
+  "ScreenshotSizeBytes": 281582,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 281582
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "must-revalidate, no-cache, private",
+    "content-encoding": "gzip",
+    "content-language": "en",
+    "content-length": "9581",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Thu, 05 Feb 2026 17:09:40 GMT",
+    "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+    "server": "Apache/2.4.62 (Debian)",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-drupal-cache": "HIT",
+    "x-drupal-dynamic-cache": "MISS",
+    "x-frame-options": "SAMEORIGIN",
+    "x-generator": "Drupal 10 (https://www.drupal.org)"
+  },
+  "CapturedAt": "2026-02-16T20:12:56.0675675Z"
+}

@@ -1,0 +1,47 @@
+{
+  "PagePath": "/services/",
+  "Url": "https://my.wsu.edu/services/",
+  "FinalUrl": "https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7\u0026redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse\u0026response_type=code\u0026scope=openid%20profile%20sis.prd.groups\u0026state=5PaDhTOHja0FgGGhXyHGSaryF9CcHphp3Ah%2Fs%2Bcz6u2RI%2FUwYG7ZQfeWOgOH%2BxF4NyzTQdsiNhqv2Qw3e1yAin%2FWvpnubAr5fPhHuR%2FC9CGFEakyb2nt1V4QVqdazlWYTJh0m3%2BVnzUj13FdNJFGkPgZwi4GScFqkxe9H4m7bqAmsSQ4mDIFA54JggR3etnb6JmVqw2DLBxlTPxwA6uyODwCeiqR7yjpgMFQK0kPajC58JD6Ie94hMLMJPTfKA%3D%3D",
+  "Title": "WSU | Sign In",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 145198,
+  "ScreenshotSizeBytes": 61875,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 7,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 61875
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "accept-ch": "Sec-CH-UA-Platform-Version",
+    "cache-control": "no-cache, no-store",
+    "content-encoding": "gzip",
+    "content-language": "en",
+    "content-security-policy-report-only": "default-src \u0027self\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com; connect-src \u0027self\u0027 wsu.okta.com wsu-admin.okta.com login.wsu.edu *.oktacdn.com *.mixpanel.com *.mapbox.com wsu.kerberos.okta.com wsu.mtls.okta.com *.authenticatorlocalprod.com:8769 http://localhost:8769 http://127.0.0.1:8769 *.authenticatorlocalprod.com:65111 http://localhost:65111 http://127.0.0.1:65111 *.authenticatorlocalprod.com:65121 http://localhost:65121 http://127.0.0.1:65121 *.authenticatorlocalprod.com:65131 http://localhost:65131 http://127.0.0.1:65131 *.authenticatorlocalprod.com:65141 http://localhost:65141 http://127.0.0.1:65141 *.authenticatorlocalprod.com:65151 http://localhost:65151 http://127.0.0.1:65151 https://oinmanager.okta.com data: *.ingest.sentry.io; script-src \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 \u0027self\u0027 \u0027report-sample\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com; style-src \u0027unsafe-inline\u0027 \u0027self\u0027 \u0027report-sample\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com; frame-src \u0027self\u0027 wsu.okta.com wsu-admin.okta.com login.wsu.edu login.okta.com *.vidyard.com com-okta-authenticator:; img-src \u0027self\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com *.tiles.mapbox.com *.mapbox.com *.vidyard.com data: blob:; font-src \u0027self\u0027 wsu.okta.com login.wsu.edu data: *.oktacdn.com fonts.gstatic.com; frame-ancestors \u0027self\u0027 https://my.wsu.edu",
+    "content-type": "text/html;charset=utf-8",
+    "date": "Mon, 16 Feb 2026 20:11:58 GMT",
+    "expires": "0",
+    "p3p": "CP=\u0022HONK\u0022",
+    "pragma": "no-cache",
+    "referrer-policy": "no-referrer",
+    "server": "nginx",
+    "strict-transport-security": "max-age=315360000; includeSubDomains",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-okta-request-id": "aZN6Dkt5NHKp1mgpU3LAwAABC4A",
+    "x-rate-limit-limit": "60",
+    "x-rate-limit-remaining": "59",
+    "x-rate-limit-reset": "1771272778",
+    "x-robots-tag": "noindex,nofollow",
+    "x-ua-compatible": "IE=edge",
+    "x-xss-protection": "0"
+  },
+  "CapturedAt": "2026-02-16T20:11:54.312423Z"
+}

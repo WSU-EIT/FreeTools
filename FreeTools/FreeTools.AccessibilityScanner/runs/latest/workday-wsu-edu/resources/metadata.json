@@ -1,0 +1,41 @@
+{
+  "PagePath": "/resources/",
+  "Url": "https://workday.wsu.edu/resources/",
+  "FinalUrl": "https://login.wsu.edu/app/workday/exk8wk0d1s55s30dD2p7/sso/saml",
+  "Title": "WSU | Sign In",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 140325,
+  "ScreenshotSizeBytes": 61875,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 7,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 61875
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "alt-svc": "h3=\u0022:443\u0022; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "9cefb3498f116ac0-SEA",
+    "content-encoding": "gzip",
+    "content-language": "en-US",
+    "content-security-policy-report-only": "script-src \u0027none\u0027; connect-src \u0027none\u0027; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=zn10a8hFzAvYQ2Tyuk9.w.rwdbAhrEWUtm0aLhVFe3I-1771272751-1.0.1.1-WjKb1bVCOnWZ7OPnQ9rEvXSUbvNOf2FnN3DEMmGbHL7P6zYi.hFXZKVNWPBD5_sSweCT_WOrXXG3_5RuZguir1BD9xPsig2Qlr0kc7zfZeXDiAmNFxnPLuefavKPmUyTWz4TpVEFzZd_ZqWyxQyEktjo7jdaEjdK4QAR3x5tq_RVJkSWGCCfwMKfw6_G9rwrTeO2scf2fJFcnmoMYU7Iig; report-to cf-zppemflyggivfjxk",
+    "content-type": "text/html;charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:12:31 GMT",
+    "nel": "{\u0022success_fraction\u0022:0.01,\u0022report_to\u0022:\u0022cf-nel\u0022,\u0022max_age\u0022:604800}",
+    "report-to": "{\u0022endpoints\u0022:[{\u0022url\u0022:\u0022https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=YpKtxQWGkEsXi4Z6Xa01xsUxFSBSv9BdEhQv1rL9mR6RlGDCnJmpmZooiXrI%2BiuMLnpqTJZ8WGRBSjz5yl6w3BEjBq7R9fy3VZfvF4ZhL3mWfX5n87fDlObETQSxBcWHsOBN\u0022}],\u0022group\u0022:\u0022cf-nel\u0022,\u0022max_age\u0022:604800}\n{\u0022endpoints\u0022:[{\u0022url\u0022:\u0022https:\\/\\/csp-reporting.cloudflare.com\\/cdn-cgi\\/script_monitor\\/report?m=zn10a8hFzAvYQ2Tyuk9.w.rwdbAhrEWUtm0aLhVFe3I-1771272751-1.0.1.1-WjKb1bVCOnWZ7OPnQ9rEvXSUbvNOf2FnN3DEMmGbHL7P6zYi.hFXZKVNWPBD5_sSweCT_WOrXXG3_5RuZguir1BD9xPsig2Qlr0kc7zfZeXDiAmNFxnPLuefavKPmUyTWz4TpVEFzZd_ZqWyxQyEktjo7jdaEjdK4QAR3x5tq_RVJkSWGCCfwMKfw6_G9rwrTeO2scf2fJFcnmoMYU7Iig\u0022}],\u0022group\u0022:\u0022cf-zppemflyggivfjxk\u0022,\u0022max_age\u0022:86400}",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "vary": "accept-encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-robots-tag": "noindex, nofollow"
+  },
+  "CapturedAt": "2026-02-16T20:12:26.2010258Z"
+}

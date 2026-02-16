@@ -1,0 +1,33 @@
+{
+  "PagePath": "/about-us/temporary-housing-summer-conferences/",
+  "Url": "https://housing.wsu.edu/about-us/temporary-housing-summer-conferences/",
+  "FinalUrl": null,
+  "Title": "Temporary Housing \u0026 Summer Conferences",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 69234,
+  "ScreenshotSizeBytes": 194143,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 194143
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 20:16:18 GMT",
+    "frame-ancestors": "self https://*.risevision.com",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=2592000",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SameOrigin"
+  },
+  "CapturedAt": "2026-02-16T20:16:18.4522199Z"
+}

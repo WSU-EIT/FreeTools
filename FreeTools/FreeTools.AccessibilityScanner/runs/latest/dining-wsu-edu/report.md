@@ -2,21 +2,53 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
+| Status | ⚠️ 2/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 2 |
+| Pages Failed | 4 |
+| Total JS Errors | 3 |
 | Total JS Warnings | 0 |
-| Total HTML | 78.6 KB |
-| Total Screenshots | 2.1 MB |
+| Total HTML | 350.6 KB |
+| Total Screenshots | 4.1 MB |
 | Folder | `dining-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Home | 0 | 0 | 78.6 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Home | 0 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/locations/](locations/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ✅ | [/meal-plans/](meal-plans/report.md) | 200 | Meal Plans | 0 | 0 | 1 |
+| ❌ | [/menus/](menus/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ✅ | [/nutrition/](nutrition/report.md) | 200 | Nutrition | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/locations/](locations/report.md)
+
+![/locations/](locations/01-page-loaded.png)
+
+### [/meal-plans/](meal-plans/report.md)
+
+![/meal-plans/](meal-plans/01-page-loaded.png)
+
+### [/menus/](menus/report.md)
+
+![/menus/](menus/01-page-loaded.png)
+
+### [/nutrition/](nutrition/report.md)
+
+![/nutrition/](nutrition/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -24,6 +56,36 @@
 
 - **URL:** https://dining.wsu.edu/
 - **Status:** 0
+
+### /locations/
+
+- **URL:** https://dining.wsu.edu/locations/
+- **Status:** 404
+
+### /menus/
+
+- **URL:** https://dining.wsu.edu/menus/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://dining.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /locations/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /menus/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

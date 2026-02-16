@@ -2,23 +2,111 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 2 |
-| Total JS Warnings | 0 |
-| Total HTML | 290.8 KB |
-| Total Screenshots | 2.0 MB |
+| Status | ⚠️ 5/7 pages OK |
+| Pages Scanned | 7 |
+| Pages Passed | 5 |
+| Pages Failed | 2 |
+| Total JS Errors | 22 |
+| Total JS Warnings | 2 |
+| Total HTML | 1.8 MB |
+| Total Screenshots | 4.1 MB |
 | Folder | `nursing-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | College of Nursing \| Washington Stat... | 2 | 0 | 290.8 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | College of Nursing \| Washington Stat... | 2 | 0 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | About RN to BSN Day \| College of Nur... | 3 | 0 | 1 |
+| ✅ | [/admissions/](admissions/report.md) | 200 | Admissions Appeal Policy \| College o... | 3 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| College of Nursing ... | 4 | 1 | 1 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty Biosketch Form \| College of ... | 3 | 0 | 1 |
+| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| College of Nursing ... | 4 | 1 | 1 |
+| ✅ | [/students/](students/report.md) | 200 | Students can get COVID vax or booster... | 3 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/admissions/](admissions/report.md)
+
+![/admissions/](admissions/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/faculty/](faculty/report.md)
+
+![/faculty/](faculty/01-page-loaded.png)
+
+### [/programs/](programs/report.md)
+
+![/programs/](programs/01-page-loaded.png)
+
+### [/students/](students/report.md)
+
+![/students/](students/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /programs/
+
+- **URL:** https://nursing.wsu.edu/programs/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://nursing.wsu.edu/contact/
+- **Status:** 404
+
 
 ## Pages with JavaScript Errors
+
+### /programs/ (4 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /contact/ (4 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /about/ (3 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /admissions/ (3 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /students/ (3 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /faculty/ (3 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
 
 ### / (2 errors)
 

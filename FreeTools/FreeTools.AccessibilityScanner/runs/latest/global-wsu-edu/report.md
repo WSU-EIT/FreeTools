@@ -2,10 +2,10 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
+| Status | ⚠️ 0/6 pages OK |
+| Pages Scanned | 6 |
 | Pages Passed | 0 |
-| Pages Failed | 1 |
+| Pages Failed | 6 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
 | Total HTML | 0 bytes |
@@ -14,9 +14,17 @@
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 bytes |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/admissions/](admissions/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/programs/](programs/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/student-services/](student-services/report.md) | 0 | (none) | 0 | 0 | 0 |
+
+## Page Screenshots
+
 
 ## Failed Pages
 
@@ -27,6 +35,46 @@
 - **Error:** `net::ERR_CERT_DATE_INVALID at https://global.wsu.edu/
 Call log:
   - navigating to "https://global.wsu.edu/", waiting until "networkidle"`
+
+### /programs/
+
+- **URL:** https://global.wsu.edu/programs/
+- **Status:** 0
+- **Error:** `net::ERR_CERT_DATE_INVALID at https://global.wsu.edu/programs/
+Call log:
+  - navigating to "https://global.wsu.edu/programs/", waiting until "networkidle"`
+
+### /admissions/
+
+- **URL:** https://global.wsu.edu/admissions/
+- **Status:** 0
+- **Error:** `net::ERR_CERT_DATE_INVALID at https://global.wsu.edu/admissions/
+Call log:
+  - navigating to "https://global.wsu.edu/admissions/", waiting until "networkidle"`
+
+### /student-services/
+
+- **URL:** https://global.wsu.edu/student-services/
+- **Status:** 0
+- **Error:** `net::ERR_CERT_DATE_INVALID at https://global.wsu.edu/student-services/
+Call log:
+  - navigating to "https://global.wsu.edu/student-services/", waiting until "networkidle"`
+
+### /resources/
+
+- **URL:** https://global.wsu.edu/resources/
+- **Status:** 0
+- **Error:** `net::ERR_CERT_DATE_INVALID at https://global.wsu.edu/resources/
+Call log:
+  - navigating to "https://global.wsu.edu/resources/", waiting until "networkidle"`
+
+### /contact/
+
+- **URL:** https://global.wsu.edu/contact/
+- **Status:** 0
+- **Error:** `net::ERR_CERT_DATE_INVALID at https://global.wsu.edu/contact/
+Call log:
+  - navigating to "https://global.wsu.edu/contact/", waiting until "networkidle"`
 
 
 ---

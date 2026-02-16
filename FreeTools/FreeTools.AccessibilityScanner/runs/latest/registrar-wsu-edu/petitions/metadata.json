@@ -1,0 +1,24 @@
+{
+  "PagePath": "/petitions/",
+  "Url": "https://registrar.wsu.edu/petitions/",
+  "FinalUrl": null,
+  "Title": "Academic Calendar Petitions | Office of the Registrar",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 668476,
+  "ScreenshotSizeBytes": 323712,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 323712
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:19:14.0246631Z"
+}

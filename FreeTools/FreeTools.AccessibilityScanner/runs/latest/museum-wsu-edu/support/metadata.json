@@ -1,0 +1,36 @@
+{
+  "PagePath": "/support/",
+  "Url": "https://museum.wsu.edu/support/",
+  "FinalUrl": "https://museum.wsu.edu/support-the-museum/",
+  "Title": "Support the Museum | Jordan Schnitzer Museum of Art WSU | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 238963,
+  "ScreenshotSizeBytes": 1209051,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1209051
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:14:24 GMT",
+    "etag": "\u0022d3456dd2168227e1463d7a4bdff87598\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:14:24 GMT",
+    "link": "\u003Chttps://museum.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://museum.wsu.edu/wp-json/wp/v2/pages/15810\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://museum.wsu.edu/?p=15810\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://museum.wsu.edu",
+    "x-tec-api-root": "https://museum.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-16T20:14:20.5574543Z"
+}

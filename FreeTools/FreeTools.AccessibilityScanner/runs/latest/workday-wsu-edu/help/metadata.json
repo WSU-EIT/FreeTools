@@ -1,0 +1,41 @@
+{
+  "PagePath": "/help/",
+  "Url": "https://workday.wsu.edu/help/",
+  "FinalUrl": "https://login.wsu.edu/app/workday/exk8wk0d1s55s30dD2p7/sso/saml",
+  "Title": "WSU | Bad request.",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 139340,
+  "ScreenshotSizeBytes": 45187,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 8,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 45187
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "alt-svc": "h3=\u0022:443\u0022; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "9cefb187fc3eadb4-SEA",
+    "content-encoding": "gzip",
+    "content-language": "en-US",
+    "content-security-policy-report-only": "script-src \u0027none\u0027; connect-src \u0027none\u0027; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=Mj5_qRBXs_r005_qBZdxRTd9aE1X2gauOEYthKdNtdE-1771272679-1.0.1.1-NlFr9fZr9pnqtssADj4OWExLHy4dwdQ.LWSkQHDN1rfLbciMKi9x7MqsHYhzUFuR0TQoSwBjqth6KKhbtsFXN1KcWmzHqR96nKdPm.nMKVPrISa_B.O_E7fC8U.WX6C2rmDIeK6s2tcP4J.a5eALG.UqLkSNeiIm9EkokIpf3YuE6foQsOmaUhfBtfi.KPjHC6zvJbJbaUhn5R4i_S8a0Q; report-to cf-rfiywwjthgcneebv",
+    "content-type": "text/html;charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:11:19 GMT",
+    "nel": "{\u0022success_fraction\u0022:0.01,\u0022report_to\u0022:\u0022cf-nel\u0022,\u0022max_age\u0022:604800}",
+    "report-to": "{\u0022endpoints\u0022:[{\u0022url\u0022:\u0022https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=sIDblvowLTIegHIsQgfY9ZeKRj5DtwnMgqhnfDoWkens42QpyvZxcpPhGSNBN6e5uuffAFNNg5%2B1C9%2FGLp4vQEDjvIMqeYgubSVbRTbiSrWi0o1xGXdn2mZxTJ%2BUg5D8IQmE\u0022}],\u0022group\u0022:\u0022cf-nel\u0022,\u0022max_age\u0022:604800}\n{\u0022endpoints\u0022:[{\u0022url\u0022:\u0022https:\\/\\/csp-reporting.cloudflare.com\\/cdn-cgi\\/script_monitor\\/report?m=Mj5_qRBXs_r005_qBZdxRTd9aE1X2gauOEYthKdNtdE-1771272679-1.0.1.1-NlFr9fZr9pnqtssADj4OWExLHy4dwdQ.LWSkQHDN1rfLbciMKi9x7MqsHYhzUFuR0TQoSwBjqth6KKhbtsFXN1KcWmzHqR96nKdPm.nMKVPrISa_B.O_E7fC8U.WX6C2rmDIeK6s2tcP4J.a5eALG.UqLkSNeiIm9EkokIpf3YuE6foQsOmaUhfBtfi.KPjHC6zvJbJbaUhn5R4i_S8a0Q\u0022}],\u0022group\u0022:\u0022cf-rfiywwjthgcneebv\u0022,\u0022max_age\u0022:86400}",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "vary": "accept-encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-robots-tag": "noindex, nofollow"
+  },
+  "CapturedAt": "2026-02-16T20:11:15.0116461Z"
+}

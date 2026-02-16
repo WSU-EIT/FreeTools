@@ -1,0 +1,24 @@
+{
+  "PagePath": "/academic-regulations/",
+  "Url": "https://registrar.wsu.edu/academic-regulations/",
+  "FinalUrl": null,
+  "Title": "Academic Regulations | Office of the Registrar",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 835431,
+  "ScreenshotSizeBytes": 9066603,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 9066603
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:13:53.5475223Z"
+}

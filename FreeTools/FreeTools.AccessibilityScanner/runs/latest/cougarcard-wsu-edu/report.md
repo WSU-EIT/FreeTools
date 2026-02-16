@@ -2,21 +2,104 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
+| Status | ⚠️ 1/6 pages OK |
+| Pages Scanned | 6 |
 | Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Pages Failed | 5 |
+| Total JS Errors | 5 |
 | Total JS Warnings | 0 |
-| Total HTML | 34.8 KB |
-| Total Screenshots | 939.0 KB |
+| Total HTML | 180.9 KB |
+| Total Screenshots | 930.4 KB |
 | Folder | `cougarcard-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Home | 0 | 0 | 34.8 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Home | 0 | 0 | 1 |
+| ❌ | [/add-funds/](add-funds/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/get-card/](get-card/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/lost-stolen/](lost-stolen/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/services/](services/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/add-funds/](add-funds/report.md)
+
+![/add-funds/](add-funds/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/get-card/](get-card/report.md)
+
+![/get-card/](get-card/01-page-loaded.png)
+
+### [/lost-stolen/](lost-stolen/report.md)
+
+![/lost-stolen/](lost-stolen/01-page-loaded.png)
+
+### [/services/](services/report.md)
+
+![/services/](services/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /services/
+
+- **URL:** https://cougarcard.wsu.edu/services/
+- **Status:** 404
+
+### /get-card/
+
+- **URL:** https://cougarcard.wsu.edu/get-card/
+- **Status:** 404
+
+### /add-funds/
+
+- **URL:** https://cougarcard.wsu.edu/add-funds/
+- **Status:** 404
+
+### /lost-stolen/
+
+- **URL:** https://cougarcard.wsu.edu/lost-stolen/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://cougarcard.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /services/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /get-card/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /add-funds/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /lost-stolen/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

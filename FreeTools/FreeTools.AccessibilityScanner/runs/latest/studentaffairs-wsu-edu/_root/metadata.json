@@ -8,18 +8,26 @@
   "HtmlSizeBytes": 181204,
   "ScreenshotSizeBytes": 5508107,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 5508107
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 19:51:13 GMT",
+    "date": "Mon, 16 Feb 2026 20:10:28 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-16T19:51:11.3778177Z"
+  "CapturedAt": "2026-02-16T20:10:26.1668498Z"
 }

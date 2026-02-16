@@ -2,21 +2,53 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 4 |
-| Total HTML | 231.7 KB |
-| Total Screenshots | 635.0 KB |
+| Status | ⚠️ 1/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 1 |
+| Pages Failed | 5 |
+| Total JS Errors | 4 |
+| Total JS Warnings | 11 |
+| Total HTML | 1.3 MB |
+| Total Screenshots | 2.9 MB |
 | Folder | `amdt-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Department of Apparel, Merchandising,... | 0 | 4 | 231.7 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Department of Apparel, Merchandising,... | 1 | 4 | 1 |
+| ❌ | [/about/](about/report.md) | 0 | Department of Apparel, Merchandising,... | 0 | 4 | 1 |
+| ❌ | [/admissions/](admissions/report.md) | 404 | Page not found \| Department of Appar... | 1 | 1 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| Department of Appar... | 1 | 1 | 1 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Department of Apparel, Mer... | 0 | 0 | 1 |
+| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| Department of Appar... | 1 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/admissions/](admissions/report.md)
+
+![/admissions/](admissions/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/faculty/](faculty/report.md)
+
+![/faculty/](faculty/01-page-loaded.png)
+
+### [/programs/](programs/report.md)
+
+![/programs/](programs/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -24,6 +56,45 @@
 
 - **URL:** https://amdt.wsu.edu/
 - **Status:** 0
+
+### /about/
+
+- **URL:** https://amdt.wsu.edu/about/
+- **Status:** 0
+
+### /programs/
+
+- **URL:** https://amdt.wsu.edu/programs/
+- **Status:** 404
+
+### /admissions/
+
+- **URL:** https://amdt.wsu.edu/admissions/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://amdt.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /programs/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /admissions/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

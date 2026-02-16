@@ -2,21 +2,53 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
+| Status | ⚠️ 0/6 pages OK |
+| Pages Scanned | 6 |
 | Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 1 |
+| Pages Failed | 6 |
+| Total JS Errors | 6 |
 | Total JS Warnings | 0 |
-| Total HTML | 107 bytes |
-| Total Screenshots | 8.9 KB |
+| Total HTML | 642 bytes |
+| Total Screenshots | 53.3 KB |
 | Folder | `arboretum-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 403 |  | 1 | 0 | 107 bytes |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 403 |  | 1 | 0 | 1 |
+| ❌ | [/about/](about/report.md) | 403 |  | 1 | 0 | 1 |
+| ❌ | [/collections/](collections/report.md) | 403 |  | 1 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 403 |  | 1 | 0 | 1 |
+| ❌ | [/events/](events/report.md) | 403 |  | 1 | 0 | 1 |
+| ❌ | [/visit/](visit/report.md) | 403 |  | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/collections/](collections/report.md)
+
+![/collections/](collections/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/events/](events/report.md)
+
+![/events/](events/01-page-loaded.png)
+
+### [/visit/](visit/report.md)
+
+![/visit/](visit/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -25,10 +57,55 @@
 - **URL:** https://arboretum.wsu.edu/
 - **Status:** 403
 
+### /about/
+
+- **URL:** https://arboretum.wsu.edu/about/
+- **Status:** 403
+
+### /visit/
+
+- **URL:** https://arboretum.wsu.edu/visit/
+- **Status:** 403
+
+### /collections/
+
+- **URL:** https://arboretum.wsu.edu/collections/
+- **Status:** 403
+
+### /events/
+
+- **URL:** https://arboretum.wsu.edu/events/
+- **Status:** 403
+
+### /contact/
+
+- **URL:** https://arboretum.wsu.edu/contact/
+- **Status:** 403
+
 
 ## Pages with JavaScript Errors
 
 ### / (1 errors)
+
+- `Failed to load resource: the server responded with a status of 403 ()`
+
+### /about/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 403 ()`
+
+### /visit/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 403 ()`
+
+### /collections/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 403 ()`
+
+### /events/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 403 ()`
+
+### /contact/ (1 errors)
 
 - `Failed to load resource: the server responded with a status of 403 ()`
 

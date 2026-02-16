@@ -2,27 +2,67 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
+| Status | ⚠️ 5/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 5 |
+| Pages Failed | 1 |
 | Total JS Errors | 1 |
-| Total JS Warnings | 0 |
-| Total HTML | 240.0 KB |
-| Total Screenshots | 1.1 MB |
+| Total JS Warnings | 1 |
+| Total HTML | 1.5 MB |
+| Total Screenshots | 4.7 MB |
 | Folder | `math-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Department of Mathematics and Statist... | 1 | 0 | 240.0 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Department of Mathematics and Statist... | 0 | 0 | 1 |
+| ❌ | [/about/](about/report.md) | 404 | Page not found \| Department of Mathe... | 1 | 1 | 1 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Department of Mathematics ... | 0 | 0 | 1 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Course Rotation \| Departmen... | 0 | 0 | 1 |
+| ✅ | [/research/](research/report.md) | 200 | Research Strengths \| Department of M... | 0 | 0 | 1 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Learning Assistance \| ... | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/faculty/](faculty/report.md)
+
+![/faculty/](faculty/01-page-loaded.png)
+
+### [/graduate/](graduate/report.md)
+
+![/graduate/](graduate/01-page-loaded.png)
+
+### [/research/](research/report.md)
+
+![/research/](research/01-page-loaded.png)
+
+### [/undergraduate/](undergraduate/report.md)
+
+![/undergraduate/](undergraduate/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /about/
+
+- **URL:** https://math.wsu.edu/about/
+- **Status:** 404
+
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### /about/ (1 errors)
 
-- `Failed to load resource: net::ERR_TIMED_OUT`
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

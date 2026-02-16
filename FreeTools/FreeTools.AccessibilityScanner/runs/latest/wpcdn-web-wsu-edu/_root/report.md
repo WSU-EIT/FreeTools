@@ -6,11 +6,11 @@
 | Title | 404 Not Found |
 | Status | ❌ 404 |
 | HTML Size | 343 bytes |
-| Screenshot Size | 16.8 KB |
+| Screenshots | 1 (16.6 KB) |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:51:11.3547720Z |
+| Captured | 2026-02-16T20:10:26.1220429Z |
 
 ## JavaScript Errors
 
@@ -18,11 +18,18 @@
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (16.6 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (16.6 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

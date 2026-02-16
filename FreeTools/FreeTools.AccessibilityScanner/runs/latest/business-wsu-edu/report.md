@@ -2,28 +2,133 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 2 |
-| Total JS Warnings | 0 |
-| Total HTML | 217.1 KB |
-| Total Screenshots | 1.5 MB |
+| Status | ⚠️ 4/8 pages OK |
+| Pages Scanned | 8 |
+| Pages Passed | 4 |
+| Pages Failed | 4 |
+| Total JS Errors | 21 |
+| Total JS Warnings | 1 |
+| Total HTML | 1.3 MB |
+| Total Screenshots | 6.0 MB |
 | Folder | `business-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Home - Carson College of Business \| ... | 2 | 0 | 217.1 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Home - Carson College of Business \| ... | 7 | 0 | 1 |
+| ❌ | [/about/](about/report.md) | 404 | Page not found - Carson College of Bu... | 3 | 0 | 1 |
+| ❌ | [/admissions/](admissions/report.md) | 404 | Page not found - Carson College of Bu... | 3 | 0 | 1 |
+| ❌ | [/faculty/](faculty/report.md) | 405 | Human Verification | 1 | 1 | 1 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Placements - Carson College ... | 2 | 0 | 1 |
+| ✅ | [/news/](news/report.md) | 200 | Carson College News & Research - Cars... | 2 | 0 | 1 |
+| ❌ | [/programs/](programs/report.md) | 404 | Page not found - Carson College of Bu... | 2 | 0 | 1 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Academic Advising - Carson College of... | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/admissions/](admissions/report.md)
+
+![/admissions/](admissions/01-page-loaded.png)
+
+### [/faculty/](faculty/report.md)
+
+![/faculty/](faculty/01-page-loaded.png)
+
+### [/graduate/](graduate/report.md)
+
+![/graduate/](graduate/01-page-loaded.png)
+
+### [/news/](news/report.md)
+
+![/news/](news/01-page-loaded.png)
+
+### [/programs/](programs/report.md)
+
+![/programs/](programs/01-page-loaded.png)
+
+### [/undergraduate/](undergraduate/report.md)
+
+![/undergraduate/](undergraduate/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /about/
+
+- **URL:** https://business.wsu.edu/about/
+- **Status:** 404
+
+### /programs/
+
+- **URL:** https://business.wsu.edu/programs/
+- **Status:** 404
+
+### /faculty/
+
+- **URL:** https://business.wsu.edu/faculty/
+- **Status:** 405
+
+### /admissions/
+
+- **URL:** https://business.wsu.edu/admissions/
+- **Status:** 404
+
 
 ## Pages with JavaScript Errors
 
-### / (2 errors)
+### / (7 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: the server responded with a status of 404 ()`
+
+### /about/ (3 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /admissions/ (3 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /programs/ (2 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /graduate/ (2 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /news/ (2 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /undergraduate/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /faculty/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
 
 
 ---

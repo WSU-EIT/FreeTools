@@ -2,21 +2,85 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Status | ⚠️ 2/5 pages OK |
+| Pages Scanned | 5 |
+| Pages Passed | 2 |
+| Pages Failed | 3 |
+| Total JS Errors | 4 |
 | Total JS Warnings | 0 |
-| Total HTML | 54.3 KB |
-| Total Screenshots | 52.4 KB |
+| Total HTML | 268.0 KB |
+| Total Screenshots | 206.2 KB |
 | Folder | `atg-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Office of the Attorney General \| Was... | 0 | 0 | 54.3 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Office of the Attorney General \| Was... | 1 | 0 | 1 |
+| ❌ | [/compliance/](compliance/report.md) | 404 | Page not found \| Office of the Attor... | 1 | 0 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Office of the Attorney ... | 0 | 0 | 1 |
+| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| Office of the Attor... | 1 | 0 | 1 |
+| ❌ | [/services/](services/report.md) | 404 | Page not found \| Office of the Attor... | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/compliance/](compliance/report.md)
+
+![/compliance/](compliance/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+### [/services/](services/report.md)
+
+![/services/](services/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /services/
+
+- **URL:** https://atg.wsu.edu/services/
+- **Status:** 404
+
+### /resources/
+
+- **URL:** https://atg.wsu.edu/resources/
+- **Status:** 404
+
+### /compliance/
+
+- **URL:** https://atg.wsu.edu/compliance/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /services/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /resources/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /compliance/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

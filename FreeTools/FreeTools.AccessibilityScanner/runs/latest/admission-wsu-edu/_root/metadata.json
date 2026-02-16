@@ -5,12 +5,20 @@
   "Title": "Admissions | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 185056,
-  "ScreenshotSizeBytes": 4193279,
+  "HtmlSizeBytes": 185065,
+  "ScreenshotSizeBytes": 2957564,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 4,
   "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 2957564
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T19:51:11.3352137Z"
+  "CapturedAt": "2026-02-16T20:10:26.0929307Z"
 }

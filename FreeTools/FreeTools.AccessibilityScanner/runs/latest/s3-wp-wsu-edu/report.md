@@ -9,14 +9,21 @@
 | Total JS Errors | 1 |
 | Total JS Warnings | 0 |
 | Total HTML | 2.8 KB |
-| Total Screenshots | 18.2 KB |
+| Total Screenshots | 17.6 KB |
 | Folder | `s3-wp-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 403 |  | 1 | 0 | 2.8 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 403 |  | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
 
 ## Failed Pages
 

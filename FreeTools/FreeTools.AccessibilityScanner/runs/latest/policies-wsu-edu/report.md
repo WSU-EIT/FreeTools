@@ -2,21 +2,97 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
+| Status | ⚠️ 1/5 pages OK |
+| Pages Scanned | 5 |
 | Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Pages Failed | 4 |
+| Total JS Errors | 8 |
 | Total JS Warnings | 0 |
-| Total HTML | 60.1 KB |
-| Total Screenshots | 293.5 KB |
+| Total HTML | 283.0 KB |
+| Total Screenshots | 661.6 KB |
 | Folder | `policies-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Washington State University Policies ... | 0 | 0 | 60.1 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Washington State University Policies ... | 4 | 0 | 1 |
+| ❌ | [/about/](about/report.md) | 404 | Page not found \| Washington State Un... | 1 | 0 | 1 |
+| ❌ | [/bppm/](bppm/report.md) | 404 | Page not found \| Washington State Un... | 1 | 0 | 1 |
+| ❌ | [/manuals/](manuals/report.md) | 404 | Page not found \| Washington State Un... | 1 | 0 | 1 |
+| ❌ | [/search/](search/report.md) | 404 | Page not found \| Washington State Un... | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/bppm/](bppm/report.md)
+
+![/bppm/](bppm/01-page-loaded.png)
+
+### [/manuals/](manuals/report.md)
+
+![/manuals/](manuals/01-page-loaded.png)
+
+### [/search/](search/report.md)
+
+![/search/](search/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /manuals/
+
+- **URL:** https://policies.wsu.edu/manuals/
+- **Status:** 404
+
+### /search/
+
+- **URL:** https://policies.wsu.edu/search/
+- **Status:** 404
+
+### /bppm/
+
+- **URL:** https://policies.wsu.edu/bppm/
+- **Status:** 404
+
+### /about/
+
+- **URL:** https://policies.wsu.edu/about/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (4 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /manuals/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /search/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /bppm/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /about/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

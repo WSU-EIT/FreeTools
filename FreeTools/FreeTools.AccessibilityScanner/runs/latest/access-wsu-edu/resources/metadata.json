@@ -1,0 +1,33 @@
+{
+  "PagePath": "/resources/",
+  "Url": "https://access.wsu.edu/resources/",
+  "FinalUrl": "https://access.wsu.edu/pregnant-and-parenting-students-and-employees/resources-for-employees/",
+  "Title": "Resources for Employees | Access at WSU | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 64712,
+  "ScreenshotSizeBytes": 168871,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 168871
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:12:52 GMT",
+    "etag": "\u00221f0ccd99c89d84b91509d632a2f3b3e4\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:12:52 GMT",
+    "link": "\u003Chttps://access.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://access.wsu.edu/wp-json/wp/v2/pages/586\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://access.wsu.edu/?p=586\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T20:12:50.1063801Z"
+}

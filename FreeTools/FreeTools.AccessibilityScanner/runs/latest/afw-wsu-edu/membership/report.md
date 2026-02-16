@@ -1,0 +1,39 @@
+# Page Scan Report
+
+| Field | Value |
+|-------|-------|
+| URL | https://afw.wsu.edu/membership/ |
+| Redirected To | https://afw.wsu.edu/event/membership-meeting-with-provost-chilton/ |
+| Title | Human Verification |
+| Status | ❌ 405 |
+| HTML Size | 9.1 KB |
+| Screenshots | 1 (18.0 KB) |
+| JS Errors | 1 |
+| JS Warnings | 1 |
+| Auth | none |
+| Captured | 2026-02-16T20:12:10.0948108Z |
+
+## JavaScript Errors
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+## Actions
+
+- Screenshot #1: page-loaded (18.0 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
+
+## Files
+
+- `01-page-loaded.png` — page-loaded (18.0 KB)
+- `page.html` — rendered HTML content
+- `metadata.json` — machine-readable scan data
+- `errors.log` — JavaScript console errors
+- `warnings.log` — JavaScript console warnings
+- `info.log` — navigation and timing details
+- `actions.log` — interactions performed on the page

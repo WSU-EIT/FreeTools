@@ -5,21 +5,29 @@
   "Title": "Office of Native American Programs | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 226260,
+  "HtmlSizeBytes": 226264,
   "ScreenshotSizeBytes": 1509260,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1509260
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 19:51:14 GMT",
+    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
     "etag": "\u002258449d16405e7cb2e5d9f47cdad3caa4\u0022",
     "last-modified": "Mon, 16 Feb 2026 19:31:23 GMT",
     "link": "\u003Chttps://native.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://native.wsu.edu/wp-json/wp/v2/pages/6\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://native.wsu.edu/\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-16T19:51:11.3686543Z"
+  "CapturedAt": "2026-02-16T20:10:26.1326699Z"
 }

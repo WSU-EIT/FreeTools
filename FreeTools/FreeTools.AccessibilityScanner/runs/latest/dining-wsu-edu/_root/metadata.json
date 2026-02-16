@@ -5,12 +5,20 @@
   "Title": "Home",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 80503,
-  "ScreenshotSizeBytes": 2252060,
+  "HtmlSizeBytes": 80364,
+  "ScreenshotSizeBytes": 2274150,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 2274150
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T19:51:11.3549714Z"
+  "CapturedAt": "2026-02-16T20:10:26.1178729Z"
 }

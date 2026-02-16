@@ -2,27 +2,74 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 1 |
-| Total JS Warnings | 0 |
-| Total HTML | 239.9 KB |
-| Total Screenshots | 2.8 MB |
+| Status | ⚠️ 5/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 5 |
+| Pages Failed | 1 |
+| Total JS Errors | 5 |
+| Total JS Warnings | 1 |
+| Total HTML | 1.4 MB |
+| Total Screenshots | 5.8 MB |
 | Folder | `history-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Department of History \| Washington S... | 1 | 0 | 239.9 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Department of History \| Washington S... | 4 | 0 | 1 |
+| ❌ | [/about/](about/report.md) | 404 | Page not found \| Department of Histo... | 1 | 1 | 1 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Department of History \| W... | 0 | 0 | 1 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Assistant Positions 2016-201... | 0 | 0 | 1 |
+| ✅ | [/research/](research/report.md) | 200 | Research \| Department of History \| ... | 0 | 0 | 1 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate, Dean Reuterdahl, prese... | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/faculty/](faculty/report.md)
+
+![/faculty/](faculty/01-page-loaded.png)
+
+### [/graduate/](graduate/report.md)
+
+![/graduate/](graduate/01-page-loaded.png)
+
+### [/research/](research/report.md)
+
+![/research/](research/01-page-loaded.png)
+
+### [/undergraduate/](undergraduate/report.md)
+
+![/undergraduate/](undergraduate/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /about/
+
+- **URL:** https://history.wsu.edu/about/
+- **Status:** 404
+
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### / (4 errors)
 
-- `Failed to load resource: net::ERR_CONNECTION_TIMED_OUT`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /about/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

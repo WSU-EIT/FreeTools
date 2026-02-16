@@ -4,21 +4,36 @@
 |-------|-------|
 | URL | https://afrotc.wsu.edu/ |
 | Title | Air Force ROTC | Washington State University |
-| Status | ❌ 0 |
-| HTML Size | 64.1 KB |
-| Screenshot Size | 933.0 KB |
-| JS Errors | 0 |
+| Status | ✅ 200 |
+| HTML Size | 47.2 KB |
+| Screenshots | 1 (901.8 KB) |
+| JS Errors | 5 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T19:51:11.3352222Z |
+| Captured | 2026-02-16T20:10:26.0929346Z |
+
+## JavaScript Errors
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (901.8 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (901.8 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

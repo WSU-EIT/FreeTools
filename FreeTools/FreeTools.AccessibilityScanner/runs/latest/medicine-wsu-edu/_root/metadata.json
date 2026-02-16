@@ -5,12 +5,20 @@
   "Title": "Elson S. Floyd College of Medicine | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 252575,
+  "HtmlSizeBytes": 252506,
   "ScreenshotSizeBytes": 3606605,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 3606605
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T19:51:11.3646072Z"
+  "CapturedAt": "2026-02-16T20:10:26.1345151Z"
 }

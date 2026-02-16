@@ -2,21 +2,85 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 215.2 KB |
-| Total Screenshots | 313.6 KB |
+| Status | ⚠️ 3/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 3 |
+| Pages Failed | 3 |
+| Total JS Errors | 3 |
+| Total JS Warnings | 2 |
+| Total HTML | 1.1 MB |
+| Total Screenshots | 1.0 MB |
 | Folder | `campusvet-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Campus Veterinarian \| Washington Sta... | 0 | 0 | 215.2 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Campus Veterinarian \| Washington Sta... | 1 | 0 | 1 |
+| ❌ | [/animal-care/](animal-care/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/compliance/](compliance/report.md) | 404 | Page not found \| Campus Veterinarian... | 1 | 1 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| Campus Veterinarian... | 1 | 1 | 1 |
+| ✅ | [/resources/](resources/report.md) | 200 | Resources \| Campus Veterinarian \| W... | 0 | 0 | 1 |
+| ✅ | [/training/](training/report.md) | 200 | Training \| Campus Veterinarian \| Wa... | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/compliance/](compliance/report.md)
+
+![/compliance/](compliance/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+### [/training/](training/report.md)
+
+![/training/](training/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /animal-care/
+
+- **URL:** https://campusvet.wsu.edu/animal-care/
+- **Status:** 0
+- **Error:** `Download is starting
+Call log:
+  - navigating to "https://campusvet.wsu.edu/animal-care/", waiting until "networkidle"`
+
+### /compliance/
+
+- **URL:** https://campusvet.wsu.edu/compliance/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://campusvet.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /compliance/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

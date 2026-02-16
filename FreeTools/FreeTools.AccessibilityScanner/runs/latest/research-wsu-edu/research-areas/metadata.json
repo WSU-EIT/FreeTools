@@ -1,0 +1,34 @@
+{
+  "PagePath": "/research-areas/",
+  "Url": "https://research.wsu.edu/research-areas/",
+  "FinalUrl": "https://research.wsu.edu/login?redirect_to=/research-areas/",
+  "Title": "Log In \u2039 Office of Research \u2014 WordPress",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 6534,
+  "ScreenshotSizeBytes": 24809,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 24809
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "no-cache, must-revalidate, max-age=0",
+    "content-encoding": "gzip",
+    "content-length": "2380",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:11:57 GMT",
+    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-frame-options": "SAMEORIGIN"
+  },
+  "CapturedAt": "2026-02-16T20:11:55.7071862Z"
+}

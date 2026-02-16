@@ -6,19 +6,26 @@
 | Title | ITS Leadership Team | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
 | HTML Size | 255.1 KB |
-| Screenshot Size | 764.0 KB |
+| Screenshots | 1 (1.1 MB) |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:52:30.4885874Z |
+| Captured | 2026-02-16T20:12:14.3843470Z |
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (1.1 MB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (1.1 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

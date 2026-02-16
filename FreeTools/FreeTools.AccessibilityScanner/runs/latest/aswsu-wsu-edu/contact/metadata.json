@@ -1,0 +1,33 @@
+{
+  "PagePath": "/contact/",
+  "Url": "https://aswsu.wsu.edu/contact/",
+  "FinalUrl": "https://trafficcop.asis.wsu.edu/?https://aswsu.wsu.edu/contact/",
+  "Title": "MARCOM - MARCOM",
+  "StatusCode": 404,
+  "Success": false,
+  "HtmlSizeBytes": 227382,
+  "ScreenshotSizeBytes": 2203082,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 2203082
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 20:13:26 GMT",
+    "frame-ancestors": "self https://*.risevision.com",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=2592000",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SameOrigin"
+  },
+  "CapturedAt": "2026-02-16T20:13:23.5693914Z"
+}

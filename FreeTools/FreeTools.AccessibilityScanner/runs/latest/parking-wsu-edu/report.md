@@ -2,21 +2,95 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Status | ⚠️ 2/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 2 |
+| Pages Failed | 4 |
+| Total JS Errors | 4 |
 | Total JS Warnings | 0 |
-| Total HTML | 50.9 KB |
-| Total Screenshots | 56.4 KB |
+| Total HTML | 116.2 KB |
+| Total Screenshots | 132.3 KB |
 | Folder | `parking-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Home Page \| Washington State Univers... | 0 | 0 | 50.9 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Home Page \| Washington State Univers... | 0 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
+| ❌ | [/maps/](maps/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
+| ✅ | [/permits/](permits/report.md) | 200 | Login \| Washington State University ... | 0 | 0 | 1 |
+| ❌ | [/policies/](policies/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
+| ❌ | [/visitor-parking/](visitor-parking/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/maps/](maps/report.md)
+
+![/maps/](maps/01-page-loaded.png)
+
+### [/permits/](permits/report.md)
+
+![/permits/](permits/01-page-loaded.png)
+
+### [/policies/](policies/report.md)
+
+![/policies/](policies/01-page-loaded.png)
+
+### [/visitor-parking/](visitor-parking/report.md)
+
+![/visitor-parking/](visitor-parking/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /maps/
+
+- **URL:** https://parking.wsu.edu/maps/
+- **Status:** 404
+
+### /visitor-parking/
+
+- **URL:** https://parking.wsu.edu/visitor-parking/
+- **Status:** 404
+
+### /policies/
+
+- **URL:** https://parking.wsu.edu/policies/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://parking.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /maps/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /visitor-parking/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /policies/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

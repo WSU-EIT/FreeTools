@@ -1,0 +1,35 @@
+{
+  "PagePath": "/visit/",
+  "Url": "https://admission.wsu.edu/visit/",
+  "FinalUrl": null,
+  "Title": "Visit \u0026 Explore | Admissions | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 112116,
+  "ScreenshotSizeBytes": 1535661,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 2,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1535661
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:12:35 GMT",
+    "etag": "\u00226dcb131e4c5a905b0c583babcad02753\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:12:35 GMT",
+    "link": "\u003Chttps://admission.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://admission.wsu.edu/wp-json/wp/v2/pages/32\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://admission.wsu.edu/?p=32\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache": "EXPIRED",
+    "x-cache-status": "EXPIRED"
+  },
+  "CapturedAt": "2026-02-16T20:12:32.6530101Z"
+}

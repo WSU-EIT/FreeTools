@@ -1,0 +1,33 @@
+{
+  "PagePath": "/prospective-students/what-to-bring/",
+  "Url": "https://housing.wsu.edu/prospective-students/what-to-bring/",
+  "FinalUrl": null,
+  "Title": "What to Bring",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 59493,
+  "ScreenshotSizeBytes": 720583,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 720583
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 20:13:20 GMT",
+    "frame-ancestors": "self https://*.risevision.com",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=2592000",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SameOrigin"
+  },
+  "CapturedAt": "2026-02-16T20:13:20.2834159Z"
+}

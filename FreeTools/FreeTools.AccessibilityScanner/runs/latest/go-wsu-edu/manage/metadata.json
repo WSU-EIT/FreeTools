@@ -1,0 +1,32 @@
+{
+  "PagePath": "/manage/",
+  "Url": "https://go.wsu.edu/manage/",
+  "FinalUrl": "https://go.wsu.edu/manage/#gsc.tab=0",
+  "Title": "Page not found | Here. We. Go | Washington State University",
+  "StatusCode": 404,
+  "Success": false,
+  "HtmlSizeBytes": 225693,
+  "ScreenshotSizeBytes": 58653,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 58653
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "access-control-allow-origin": "*",
+    "cache-control": "no-cache, must-revalidate, max-age=0",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:13:33 GMT",
+    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "link": "\u003Chttps://go.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
+    "server": "nginx"
+  },
+  "CapturedAt": "2026-02-16T20:13:32.8119569Z"
+}

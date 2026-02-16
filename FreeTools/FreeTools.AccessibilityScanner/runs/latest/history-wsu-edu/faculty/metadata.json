@@ -1,0 +1,35 @@
+{
+  "PagePath": "/faculty/",
+  "Url": "https://history.wsu.edu/faculty/",
+  "FinalUrl": null,
+  "Title": "Faculty | Department of History | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 333762,
+  "ScreenshotSizeBytes": 2220461,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 2220461
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:13:50 GMT",
+    "etag": "\u0022ed6f08beead92f90631a2e18d7944238\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:13:50 GMT",
+    "link": "\u003Chttps://history.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://history.wsu.edu/wp-json/wp/v2/pages/11209\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://history.wsu.edu/?p=11209\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache": "EXPIRED",
+    "x-cache-status": "EXPIRED"
+  },
+  "CapturedAt": "2026-02-16T20:13:47.8416899Z"
+}

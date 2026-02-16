@@ -2,21 +2,99 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Status | ⚠️ 2/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 2 |
+| Pages Failed | 4 |
+| Total JS Errors | 5 |
 | Total JS Warnings | 0 |
-| Total HTML | 114.5 KB |
-| Total Screenshots | 772.4 KB |
+| Total HTML | 680.3 KB |
+| Total Screenshots | 1.3 MB |
 | Folder | `advising-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Advising at WSU \| Washington State U... | 0 | 0 | 114.5 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Advising at WSU \| Washington State U... | 1 | 0 | 1 |
+| ❌ | [/advisors/](advisors/report.md) | 404 | Page not found \| Advising at WSU \| ... | 1 | 0 | 1 |
+| ❌ | [/appointments/](appointments/report.md) | 404 | Page not found \| Advising at WSU \| ... | 1 | 0 | 1 |
+| ❌ | [/policies/](policies/report.md) | 404 | Page not found \| Advising at WSU \| ... | 1 | 0 | 1 |
+| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| Advising at WSU \| ... | 1 | 0 | 1 |
+| ✅ | [/students/](students/report.md) | 200 | Students \| Advising at WSU \| Washin... | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/advisors/](advisors/report.md)
+
+![/advisors/](advisors/01-page-loaded.png)
+
+### [/appointments/](appointments/report.md)
+
+![/appointments/](appointments/01-page-loaded.png)
+
+### [/policies/](policies/report.md)
+
+![/policies/](policies/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+### [/students/](students/report.md)
+
+![/students/](students/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /advisors/
+
+- **URL:** https://advising.wsu.edu/advisors/
+- **Status:** 404
+
+### /resources/
+
+- **URL:** https://advising.wsu.edu/resources/
+- **Status:** 404
+
+### /appointments/
+
+- **URL:** https://advising.wsu.edu/appointments/
+- **Status:** 404
+
+### /policies/
+
+- **URL:** https://advising.wsu.edu/policies/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /advisors/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /resources/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /appointments/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /policies/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

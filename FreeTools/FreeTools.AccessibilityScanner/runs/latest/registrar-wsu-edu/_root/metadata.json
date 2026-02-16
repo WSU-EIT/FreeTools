@@ -5,12 +5,20 @@
   "Title": "Office of the Registrar",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 665462,
+  "HtmlSizeBytes": 665458,
   "ScreenshotSizeBytes": 445097,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 445097
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T19:51:11.3723256Z"
+  "CapturedAt": "2026-02-16T20:10:26.1416231Z"
 }

@@ -1,0 +1,24 @@
+{
+  "PagePath": "/help/",
+  "Url": "https://account.wsu.edu/help/",
+  "FinalUrl": "https://login.wsu.edu/account-settings/home",
+  "Title": null,
+  "StatusCode": 200,
+  "Success": false,
+  "HtmlSizeBytes": 0,
+  "ScreenshotSizeBytes": 8518,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 8518
+    }
+  ],
+  "ErrorMessage": "Unable to retrieve content because the page is navigating and changing the content.",
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:12:35.3794221Z"
+}

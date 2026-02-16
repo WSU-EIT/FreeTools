@@ -2,21 +2,60 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
+| Status | ✅ 4/4 pages OK |
+| Pages Scanned | 4 |
+| Pages Passed | 4 |
 | Pages Failed | 0 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 100.0 KB |
-| Total Screenshots | 3.3 MB |
+| Total JS Errors | 12 |
+| Total JS Warnings | 2 |
+| Total HTML | 172.6 KB |
+| Total Screenshots | 4.3 MB |
 | Folder | `livingat-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Home | 0 | 0 | 100.0 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Home | 0 | 0 | 1 |
+| ✅ | [/fam/](fam/report.md) | 200 | Online Family & Graduate Housing | 12 | 0 | 1 |
+| ✅ | [/reshall/](reshall/report.md) | 200 | Home \| StarRez Portal | 0 | 1 | 1 |
+| ✅ | [/ssa/](ssa/report.md) | 200 | Home \| StarRez Portal | 0 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/fam/](fam/report.md)
+
+![/fam/](fam/01-page-loaded.png)
+
+### [/reshall/](reshall/report.md)
+
+![/reshall/](reshall/01-page-loaded.png)
+
+### [/ssa/](ssa/report.md)
+
+![/ssa/](ssa/01-page-loaded.png)
+
+
+## Pages with JavaScript Errors
+
+### /fam/ (12 errors)
+
+- `Refused to apply style from 'https://housing.wsu.edu/css/normalize.css' because its MIME type ('') is not a supported...`
+- `Refused to apply style from 'https://housing.wsu.edu/css/contracts/contracts.css' because its MIME type ('') is not a...`
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_NAME_NOT_RESOLVED`
+- `Refused to execute script from 'https://housing.wsu.edu/scripts/modernizr-tunes.min.js' because its MIME type ('') is...`
+- `Refused to execute script from 'https://housing.wsu.edu/scripts/jQueryString.js' because its MIME type ('') is not ex...`
+- ... and 2 more (see `fam/errors.log`)
+
 
 ---
 

@@ -2,21 +2,76 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
+| Status | ⚠️ 1/4 pages OK |
+| Pages Scanned | 4 |
 | Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Pages Failed | 3 |
+| Total JS Errors | 3 |
 | Total JS Warnings | 0 |
-| Total HTML | 12.6 KB |
-| Total Screenshots | 128.3 KB |
+| Total HTML | 13.2 KB |
+| Total Screenshots | 151.9 KB |
 | Folder | `lists-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Home \| Information Technology Services | 0 | 0 | 12.6 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Home \| Information Technology Services | 0 | 0 | 1 |
+| ❌ | [/help/](help/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
+| ❌ | [/manage/](manage/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
+| ❌ | [/subscribe/](subscribe/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/help/](help/report.md)
+
+![/help/](help/01-page-loaded.png)
+
+### [/manage/](manage/report.md)
+
+![/manage/](manage/01-page-loaded.png)
+
+### [/subscribe/](subscribe/report.md)
+
+![/subscribe/](subscribe/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /help/
+
+- **URL:** https://lists.wsu.edu/help/
+- **Status:** 404
+
+### /subscribe/
+
+- **URL:** https://lists.wsu.edu/subscribe/
+- **Status:** 404
+
+### /manage/
+
+- **URL:** https://lists.wsu.edu/manage/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /help/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+
+### /subscribe/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+
+### /manage/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+
 
 ---
 

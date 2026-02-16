@@ -2,25 +2,61 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 6 |
+| Status | ⚠️ 4/5 pages OK |
+| Pages Scanned | 5 |
+| Pages Passed | 4 |
+| Pages Failed | 1 |
+| Total JS Errors | 12 |
 | Total JS Warnings | 0 |
-| Total HTML | 80.6 KB |
-| Total Screenshots | 47.2 KB |
+| Total HTML | 220.1 KB |
+| Total Screenshots | 114.4 KB |
 | Folder | `account-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | WSU Authentication \| Washington Stat... | 6 | 0 | 80.6 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | My Settings \| WSU | 1 | 0 | 1 |
+| ❌ | [/help/](help/report.md) | 200 | (none) | 0 | 0 | 1 |
+| ✅ | [/password-reset/](password-reset/report.md) | 200 | My Settings \| WSU | 1 | 0 | 1 |
+| ✅ | [/security/](security/report.md) | 200 | WSU Authentication \| Washington Stat... | 1 | 0 | 1 |
+| ✅ | [/services/](services/report.md) | 200 | WSU \| Bad request. | 9 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/help/](help/report.md)
+
+![/help/](help/01-page-loaded.png)
+
+### [/password-reset/](password-reset/report.md)
+
+![/password-reset/](password-reset/01-page-loaded.png)
+
+### [/security/](security/report.md)
+
+![/security/](security/01-page-loaded.png)
+
+### [/services/](services/report.md)
+
+![/services/](services/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /help/
+
+- **URL:** https://account.wsu.edu/help/
+- **Status:** 200
+- **Error:** `Unable to retrieve content because the page is navigating and changing the content.`
+
 
 ## Pages with JavaScript Errors
 
-### / (6 errors)
+### /services/ (9 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
 - `Something unexpected happened while we were checking url http://127.0.0.1:8769`
@@ -28,6 +64,21 @@
 - `Something unexpected happened while we were checking url http://127.0.0.1:65121`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65131`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65141`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
+- `No available ports. Loopback server failed and polling is cancelled.`
+- `Failed to load resource: the server responded with a status of 400 ()`
+
+### / (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /password-reset/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /security/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

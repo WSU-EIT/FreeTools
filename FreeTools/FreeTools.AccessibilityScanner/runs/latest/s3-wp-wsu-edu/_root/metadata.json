@@ -5,21 +5,29 @@
   "Title": "",
   "StatusCode": 403,
   "Success": false,
-  "HtmlSizeBytes": 2910,
-  "ScreenshotSizeBytes": 18604,
+  "HtmlSizeBytes": 2886,
+  "ScreenshotSizeBytes": 18066,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 18066
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-type": "application/xml",
-    "date": "Mon, 16 Feb 2026 19:51:13 GMT",
+    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
     "server": "AmazonS3",
-    "via": "1.1 db84db36e16ca0c80b0992006d731900.cloudfront.net (CloudFront)",
+    "via": "1.1 2d0eb1433209b25c3712ac0793d56bc0.cloudfront.net (CloudFront)",
     "x-amz-bucket-region": "us-west-2",
-    "x-amz-cf-id": "HdVsslewPhmiiB8kkid1YAbZU5RFf_qy08yVnbfewMlmhFE1usF45Q==",
+    "x-amz-cf-id": "c5YF-ohldTmU-EVo5gaA3dd3jk85PIH2neA8d_ilYtU6hXPR_yFuWw==",
     "x-amz-cf-pop": "SEA900-P1",
     "x-cache": "Error from cloudfront"
   },
-  "CapturedAt": "2026-02-16T19:51:11.3732078Z"
+  "CapturedAt": "2026-02-16T20:10:26.140801Z"
 }

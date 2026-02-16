@@ -6,20 +6,31 @@
 | Redirected To | https://staff.storefront.wsu.edu/home |
 | Title | Home - WSU Coug Prints Plus |
 | Status | ✅ 200 |
-| HTML Size | 25.5 KB |
-| Screenshot Size | 87.2 KB |
-| JS Errors | 0 |
+| HTML Size | 25.2 KB |
+| Screenshots | 1 (87.2 KB) |
+| JS Errors | 1 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T19:51:11.3769874Z |
+| Captured | 2026-02-16T20:10:26.1653891Z |
+
+## JavaScript Errors
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (87.2 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (87.2 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -1,0 +1,40 @@
+{
+  "PagePath": "/resources/",
+  "Url": "https://ascc.wsu.edu/resources/",
+  "FinalUrl": null,
+  "Title": "Resources \u2013 Academic Success \u0026 Career Center \u2013 Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 107725,
+  "ScreenshotSizeBytes": 340924,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 340924
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "br",
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.uconnectlabs.com https://*.gouconnect.com https://*.instructure.com https://wsu.edu https://*.wsu.edu;frame-src \u0027self\u0027 https://jobscan.co https://wsu.edu https://*.wsu.edu https://*.uconnectlabs.com https://*.candidcareer.com https://*.youtube.com/embed/ https://player.vimeo.com/video/ https://fast.wistia.net/embed/ https://cdnapisec.kaltura.com/p/ https://videopress.com https://www.tiktok.com https://www.loom.com https://embed.ted.com https://w.soundcloud.com https://open.spotify.com https://creators.spotify.com https://embed.podcasts.apple.com https://*.pinterest.com https://giphy.com https://www.canva.com/ https://*.google.com https://*.googletagmanager.com https://*.doubleclick.net https://*.qualtrics.com https://app.powerbi.com https://public.tableau.com https://www.instagram.com https://snapwidget.com https://www.facebook.com https://airtable.com https://*.typeform.com https://e.issuu.com https://forms.monday.com https://scribehow.com https://service.force.com https://forms.cloud.microsoft https://*.jobscan.co https://student.interstride.com https://www.careerspots.com https://mongoose.botpress.cloud;",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:12:28 GMT",
+    "link": "\u003Chttps://ascc.wsu.edu/api/\u003E; rel=\u0022https://api.w.org/\u0022",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "server": "Pagely-ARES/1.22.2",
+    "strict-transport-security": "max-age=31536000",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-gateway-cache-key": "1770920194.958|standard|https|ascc.wsu.edu|||/resources/|webp",
+    "x-gateway-cache-status": "MISS",
+    "x-gateway-request-id": "d4ee79a6c243dfc7ef5fb4bafb3e2174",
+    "x-gateway-skip-cache": "0"
+  },
+  "CapturedAt": "2026-02-16T20:12:26.1693625Z"
+}

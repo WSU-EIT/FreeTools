@@ -2,31 +2,74 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
+| Status | ⚠️ 5/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 5 |
+| Pages Failed | 1 |
 | Total JS Errors | 5 |
-| Total JS Warnings | 1 |
-| Total HTML | 66.6 KB |
-| Total Screenshots | 479.7 KB |
+| Total JS Warnings | 6 |
+| Total HTML | 378.4 KB |
+| Total Screenshots | 2.2 MB |
 | Folder | `transportation-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Transportation Services \| Washington... | 5 | 1 | 66.6 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Transportation Services \| Washington... | 4 | 1 | 1 |
+| ✅ | [/bike/](bike/report.md) | 200 | Bike_Ped_Plan \| Transportation Servi... | 0 | 1 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact \| Transportation Services \|... | 0 | 1 | 1 |
+| ✅ | [/parking/](parking/report.md) | 200 | Parking \| Transportation Services \|... | 0 | 1 | 1 |
+| ❌ | [/policies/](policies/report.md) | 404 | Page not found \| Transportation Serv... | 1 | 1 | 1 |
+| ✅ | [/transit/](transit/report.md) | 200 | Transit Options \| Transportation Ser... | 0 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/bike/](bike/report.md)
+
+![/bike/](bike/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/parking/](parking/report.md)
+
+![/parking/](parking/01-page-loaded.png)
+
+### [/policies/](policies/report.md)
+
+![/policies/](policies/01-page-loaded.png)
+
+### [/transit/](transit/report.md)
+
+![/transit/](transit/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /policies/
+
+- **URL:** https://transportation.wsu.edu/policies/
+- **Status:** 404
+
 
 ## Pages with JavaScript Errors
 
-### / (5 errors)
+### / (4 errors)
 
 - `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 - `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 - `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 - `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+
+### /policies/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

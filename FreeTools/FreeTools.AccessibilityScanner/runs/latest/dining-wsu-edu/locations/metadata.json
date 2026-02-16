@@ -1,0 +1,33 @@
+{
+  "PagePath": "/locations/",
+  "Url": "https://dining.wsu.edu/locations/",
+  "FinalUrl": null,
+  "Title": "Page Not Found",
+  "StatusCode": 404,
+  "Success": false,
+  "HtmlSizeBytes": 46518,
+  "ScreenshotSizeBytes": 77405,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 77405
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 16 Feb 2026 20:11:53 GMT",
+    "frame-ancestors": "self https://*.risevision.com",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=2592000",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1"
+  },
+  "CapturedAt": "2026-02-16T20:11:45.9174253Z"
+}

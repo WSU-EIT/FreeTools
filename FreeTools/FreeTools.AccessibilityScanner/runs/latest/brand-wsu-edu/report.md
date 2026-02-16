@@ -2,21 +2,86 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Status | ⚠️ 5/7 pages OK |
+| Pages Scanned | 7 |
+| Pages Passed | 5 |
+| Pages Failed | 2 |
+| Total JS Errors | 3 |
 | Total JS Warnings | 0 |
-| Total HTML | 61.0 KB |
-| Total Screenshots | 969.2 KB |
+| Total HTML | 503.5 KB |
+| Total Screenshots | 4.5 MB |
 | Folder | `brand-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Washington State University – WSU Bra... | 0 | 0 | 61.0 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Washington State University – WSU Bra... | 1 | 0 | 1 |
+| ✅ | [/colors/](colors/report.md) | 200 | Colors – Washington State University | 0 | 0 | 1 |
+| ✅ | [/downloads/](downloads/report.md) | 200 | Downloads – Washington State University | 0 | 0 | 1 |
+| ✅ | [/logos/](logos/report.md) | 200 | Logos – Washington State University | 0 | 0 | 1 |
+| ❌ | [/templates/](templates/report.md) | 404 | Page not found – Washington State Uni... | 1 | 0 | 1 |
+| ✅ | [/typography/](typography/report.md) | 200 | Typography – Washington State University | 0 | 0 | 1 |
+| ❌ | [/visual-identity/](visual-identity/report.md) | 404 | Page not found – Washington State Uni... | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/colors/](colors/report.md)
+
+![/colors/](colors/01-page-loaded.png)
+
+### [/downloads/](downloads/report.md)
+
+![/downloads/](downloads/01-page-loaded.png)
+
+### [/logos/](logos/report.md)
+
+![/logos/](logos/01-page-loaded.png)
+
+### [/templates/](templates/report.md)
+
+![/templates/](templates/01-page-loaded.png)
+
+### [/typography/](typography/report.md)
+
+![/typography/](typography/01-page-loaded.png)
+
+### [/visual-identity/](visual-identity/report.md)
+
+![/visual-identity/](visual-identity/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /visual-identity/
+
+- **URL:** https://brand.wsu.edu/visual-identity/
+- **Status:** 404
+
+### /templates/
+
+- **URL:** https://brand.wsu.edu/templates/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /visual-identity/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /templates/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

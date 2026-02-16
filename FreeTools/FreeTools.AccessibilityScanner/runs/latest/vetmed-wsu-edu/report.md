@@ -2,28 +2,90 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 1 |
-| Total HTML | 271.1 KB |
-| Total Screenshots | 934.2 KB |
+| Status | ⚠️ 4/7 pages OK |
+| Pages Scanned | 7 |
+| Pages Passed | 4 |
+| Pages Failed | 3 |
+| Total JS Errors | 3 |
+| Total JS Warnings | 4 |
+| Total HTML | 1.8 MB |
+| Total Screenshots | 6.2 MB |
 | Folder | `vetmed-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | College of Veterinary Medicine \| Was... | 0 | 1 | 271.1 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | College of Veterinary Medicine \| Was... | 0 | 1 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | About \| College of Veterinary Medici... | 0 | 0 | 1 |
+| ❌ | [/admissions/](admissions/report.md) | 404 | Page not found \| College of Veterina... | 1 | 1 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| College of Veterina... | 1 | 1 | 1 |
+| ✅ | [/education/](education/report.md) | 200 | Education \| College of Veterinary Me... | 0 | 0 | 1 |
+| ✅ | [/research/](research/report.md) | 200 | Research \| College of Veterinary Med... | 0 | 0 | 1 |
+| ❌ | [/services/](services/report.md) | 404 | Page not found \| College of Veterina... | 1 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/admissions/](admissions/report.md)
+
+![/admissions/](admissions/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/education/](education/report.md)
+
+![/education/](education/01-page-loaded.png)
+
+### [/research/](research/report.md)
+
+![/research/](research/01-page-loaded.png)
+
+### [/services/](services/report.md)
+
+![/services/](services/01-page-loaded.png)
+
 
 ## Failed Pages
 
-### /
+### /admissions/
 
-- **URL:** https://vetmed.wsu.edu/
-- **Status:** 0
+- **URL:** https://vetmed.wsu.edu/admissions/
+- **Status:** 404
+
+### /services/
+
+- **URL:** https://vetmed.wsu.edu/services/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://vetmed.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /admissions/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /services/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

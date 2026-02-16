@@ -2,10 +2,10 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
+| Status | ⚠️ 0/5 pages OK |
+| Pages Scanned | 5 |
 | Pages Passed | 0 |
-| Pages Failed | 1 |
+| Pages Failed | 5 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
 | Total HTML | 0 bytes |
@@ -14,9 +14,16 @@
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 bytes |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/help/](help/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/knowledge-base/](knowledge-base/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/services/](services/report.md) | 0 | (none) | 0 | 0 | 0 |
+
+## Page Screenshots
+
 
 ## Failed Pages
 
@@ -27,6 +34,38 @@
 - **Error:** `net::ERR_NAME_NOT_RESOLVED at https://support.wsu.edu/
 Call log:
   - navigating to "https://support.wsu.edu/", waiting until "networkidle"`
+
+### /help/
+
+- **URL:** https://support.wsu.edu/help/
+- **Status:** 0
+- **Error:** `net::ERR_NAME_NOT_RESOLVED at https://support.wsu.edu/help/
+Call log:
+  - navigating to "https://support.wsu.edu/help/", waiting until "networkidle"`
+
+### /services/
+
+- **URL:** https://support.wsu.edu/services/
+- **Status:** 0
+- **Error:** `net::ERR_NAME_NOT_RESOLVED at https://support.wsu.edu/services/
+Call log:
+  - navigating to "https://support.wsu.edu/services/", waiting until "networkidle"`
+
+### /contact/
+
+- **URL:** https://support.wsu.edu/contact/
+- **Status:** 0
+- **Error:** `net::ERR_NAME_NOT_RESOLVED at https://support.wsu.edu/contact/
+Call log:
+  - navigating to "https://support.wsu.edu/contact/", waiting until "networkidle"`
+
+### /knowledge-base/
+
+- **URL:** https://support.wsu.edu/knowledge-base/
+- **Status:** 0
+- **Error:** `net::ERR_NAME_NOT_RESOLVED at https://support.wsu.edu/knowledge-base/
+Call log:
+  - navigating to "https://support.wsu.edu/knowledge-base/", waiting until "networkidle"`
 
 
 ---

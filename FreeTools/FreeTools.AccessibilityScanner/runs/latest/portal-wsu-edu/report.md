@@ -2,25 +2,53 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
+| Status | ✅ 3/3 pages OK |
+| Pages Scanned | 3 |
+| Pages Passed | 3 |
 | Pages Failed | 0 |
-| Total JS Errors | 7 |
+| Total JS Errors | 15 |
 | Total JS Warnings | 0 |
-| Total HTML | 138.1 KB |
-| Total Screenshots | 60.4 KB |
+| Total HTML | 353.1 KB |
+| Total Screenshots | 145.9 KB |
 | Folder | `portal-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | WSU \| Sign In | 7 | 0 | 138.1 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | WSU Authentication \| Washington Stat... | 0 | 0 | 1 |
+| ✅ | [/help/](help/report.md) | 200 | WSU \| Bad request. | 8 | 0 | 1 |
+| ✅ | [/services/](services/report.md) | 200 | WSU \| Sign In | 7 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/help/](help/report.md)
+
+![/help/](help/01-page-loaded.png)
+
+### [/services/](services/report.md)
+
+![/services/](services/01-page-loaded.png)
+
 
 ## Pages with JavaScript Errors
 
-### / (7 errors)
+### /help/ (8 errors)
+
+- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
+- `No available ports. Loopback server failed and polling is cancelled.`
+- `Failed to load resource: the server responded with a status of 400 ()`
+
+### /services/ (7 errors)
 
 - `Something unexpected happened while we were checking url http://127.0.0.1:8769`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65111`

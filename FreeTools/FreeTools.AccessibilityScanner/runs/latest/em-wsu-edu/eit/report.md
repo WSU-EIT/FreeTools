@@ -6,11 +6,11 @@
 | Title | Enrollment IT |
 | Status | ❌ 0 |
 | HTML Size | 634.3 KB |
-| Screenshot Size | 170.8 KB |
+| Screenshots | 1 (170.0 KB) |
 | JS Errors | 2 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T19:52:19.2194533Z |
+| Captured | 2026-02-16T20:11:45.5121218Z |
 
 ## JavaScript Errors
 
@@ -19,11 +19,18 @@
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (170.0 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (170.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

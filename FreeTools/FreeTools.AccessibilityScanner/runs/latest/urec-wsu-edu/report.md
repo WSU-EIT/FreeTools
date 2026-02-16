@@ -2,21 +2,63 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 95.4 KB |
-| Total Screenshots | 687.0 KB |
+| Status | ⚠️ 6/8 pages OK |
+| Pages Scanned | 8 |
+| Pages Passed | 6 |
+| Pages Failed | 2 |
+| Total JS Errors | 1 |
+| Total JS Warnings | 1 |
+| Total HTML | 843.8 KB |
+| Total Screenshots | 7.3 MB |
 | Folder | `urec-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Home | 0 | 0 | 95.4 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Home | 0 | 0 | 1 |
+| ✅ | [/employment/](employment/report.md) | 200 | Employment | 0 | 0 | 1 |
+| ✅ | [/facilities/](facilities/report.md) | 200 | Locations & Facilities | 0 | 0 | 1 |
+| ✅ | [/imsports/](imsports/report.md) | 200 | Intramurals | 0 | 1 | 1 |
+| ✅ | [/membership/](membership/report.md) | 200 | Memberships & Lockers | 0 | 0 | 1 |
+| ✅ | [/orc/](orc/report.md) | 200 | Outdoor Adventures | 0 | 0 | 1 |
+| ❌ | [/programs/](programs/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ✅ | [/sportclubs/](sportclubs/report.md) | 200 | Sport Clubs | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/employment/](employment/report.md)
+
+![/employment/](employment/01-page-loaded.png)
+
+### [/facilities/](facilities/report.md)
+
+![/facilities/](facilities/01-page-loaded.png)
+
+### [/imsports/](imsports/report.md)
+
+![/imsports/](imsports/01-page-loaded.png)
+
+### [/membership/](membership/report.md)
+
+![/membership/](membership/01-page-loaded.png)
+
+### [/orc/](orc/report.md)
+
+![/orc/](orc/01-page-loaded.png)
+
+### [/programs/](programs/report.md)
+
+![/programs/](programs/01-page-loaded.png)
+
+### [/sportclubs/](sportclubs/report.md)
+
+![/sportclubs/](sportclubs/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -24,6 +66,18 @@
 
 - **URL:** https://urec.wsu.edu/
 - **Status:** 0
+
+### /programs/
+
+- **URL:** https://urec.wsu.edu/programs/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /programs/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

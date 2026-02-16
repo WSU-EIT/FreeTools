@@ -6,19 +6,30 @@
 | Title | Washington State University – WSU Brand Guidelines |
 | Status | ✅ 200 |
 | HTML Size | 61.0 KB |
-| Screenshot Size | 969.2 KB |
-| JS Errors | 0 |
+| Screenshots | 1 (969.2 KB) |
+| JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:51:11.3466590Z |
+| Captured | 2026-02-16T20:10:26.1126296Z |
+
+## JavaScript Errors
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (969.2 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (969.2 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

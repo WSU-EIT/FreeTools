@@ -5,24 +5,32 @@
 | URL | https://events.wsu.edu/ |
 | Title | Events | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 69.2 KB |
-| Screenshot Size | 722.9 KB |
-| JS Errors | 1 |
+| HTML Size | 69.1 KB |
+| Screenshots | 1 (722.8 KB) |
+| JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:51:11.3562485Z |
+| Captured | 2026-02-16T20:10:26.1234778Z |
 
 ## JavaScript Errors
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: the server responded with a status of 405 ()`
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (722.8 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (722.8 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

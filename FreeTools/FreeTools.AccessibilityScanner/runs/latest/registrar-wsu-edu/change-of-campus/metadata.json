@@ -1,0 +1,24 @@
+{
+  "PagePath": "/change-of-campus/",
+  "Url": "https://registrar.wsu.edu/change-of-campus/",
+  "FinalUrl": null,
+  "Title": "Undergraduate Change of Campus Form | Office of the Registrar",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 660762,
+  "ScreenshotSizeBytes": 423453,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 423453
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:24:30.3756372Z"
+}

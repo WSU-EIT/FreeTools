@@ -9,14 +9,21 @@
 | Total JS Errors | 1 |
 | Total JS Warnings | 0 |
 | Total HTML | 343 bytes |
-| Total Screenshots | 16.8 KB |
+| Total Screenshots | 16.6 KB |
 | Folder | `wpcdn-web-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 404 | 404 Not Found | 1 | 0 | 343 bytes |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
 
 ## Failed Pages
 

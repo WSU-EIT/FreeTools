@@ -6,19 +6,26 @@
 | Title | WSU Research | Washington State University | Washington State University |
 | Status | ✅ 200 |
 | HTML Size | 125.1 KB |
-| Screenshot Size | 4.4 MB |
+| Screenshots | 1 (4.5 MB) |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:53:54.5795761Z |
+| Captured | 2026-02-16T20:15:54.5071690Z |
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (4.5 MB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (4.5 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

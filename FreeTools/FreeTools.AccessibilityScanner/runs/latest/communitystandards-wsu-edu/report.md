@@ -2,21 +2,53 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
+| Status | ⚠️ 1/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 1 |
+| Pages Failed | 5 |
+| Total JS Errors | 4 |
 | Total JS Warnings | 0 |
-| Total HTML | 65.9 KB |
-| Total Screenshots | 1.2 MB |
+| Total HTML | 175.7 KB |
+| Total Screenshots | 3.0 MB |
 | Folder | `communitystandards-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 |  | 0 | 0 | 65.9 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 |  | 0 | 0 | 1 |
+| ❌ | [/conduct-process/](conduct-process/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/for-students/](for-students/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/policies/](policies/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ✅ | [/resources/](resources/report.md) | 200 | Student Resources | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/conduct-process/](conduct-process/report.md)
+
+![/conduct-process/](conduct-process/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/for-students/](for-students/report.md)
+
+![/for-students/](for-students/01-page-loaded.png)
+
+### [/policies/](policies/report.md)
+
+![/policies/](policies/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -24,6 +56,45 @@
 
 - **URL:** https://communitystandards.wsu.edu/
 - **Status:** 0
+
+### /conduct-process/
+
+- **URL:** https://communitystandards.wsu.edu/conduct-process/
+- **Status:** 404
+
+### /policies/
+
+- **URL:** https://communitystandards.wsu.edu/policies/
+- **Status:** 404
+
+### /for-students/
+
+- **URL:** https://communitystandards.wsu.edu/for-students/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://communitystandards.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /conduct-process/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /policies/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /for-students/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

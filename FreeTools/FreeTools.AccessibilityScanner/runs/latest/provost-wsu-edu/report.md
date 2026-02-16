@@ -2,21 +2,60 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
+| Status | ✅ 6/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 6 |
 | Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Total JS Errors | 1 |
 | Total JS Warnings | 0 |
-| Total HTML | 111.7 KB |
-| Total Screenshots | 1.1 MB |
+| Total HTML | 663.4 KB |
+| Total Screenshots | 3.6 MB |
 | Folder | `provost-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Office of the Provost \| Washington S... | 0 | 0 | 111.7 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Office of the Provost \| Washington S... | 1 | 0 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | About \| Office of the Provost \| Was... | 0 | 0 | 1 |
+| ✅ | [/academic-affairs/](academic-affairs/report.md) | 200 | Academic Affairs Program Optimization... | 0 | 0 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Office of the Provost \... | 0 | 0 | 1 |
+| ✅ | [/policies/](policies/report.md) | 200 | Policies and Reports \| Office of the... | 0 | 0 | 1 |
+| ✅ | [/resources/](resources/report.md) | 200 | Resources for our students \| Office ... | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/academic-affairs/](academic-affairs/report.md)
+
+![/academic-affairs/](academic-affairs/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/policies/](policies/report.md)
+
+![/policies/](policies/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
 
 ---
 

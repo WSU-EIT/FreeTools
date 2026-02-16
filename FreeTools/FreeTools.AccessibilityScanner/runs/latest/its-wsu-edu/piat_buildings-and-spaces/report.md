@@ -6,19 +6,26 @@
 | Title | Buildings and Spaces | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
 | HTML Size | 232.1 KB |
-| Screenshot Size | 566.6 KB |
+| Screenshots | 1 (566.6 KB) |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:54:05.5920438Z |
+| Captured | 2026-02-16T20:15:58.9908293Z |
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (566.6 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (566.6 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

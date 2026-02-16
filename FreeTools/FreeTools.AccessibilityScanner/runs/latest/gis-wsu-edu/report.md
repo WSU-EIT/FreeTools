@@ -2,21 +2,53 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
+| Status | ✅ 6/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 6 |
 | Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 408.2 KB |
-| Total Screenshots | 86.3 KB |
+| Total HTML | 2.2 MB |
+| Total Screenshots | 4.1 MB |
 | Folder | `gis-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | WSU Administration GIS Portal | 0 | 0 | 408.2 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | WSU Administration GIS Portal | 0 | 0 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | WSU Administration GIS Portal | 0 | 0 | 1 |
+| ✅ | [/data/](data/report.md) | 200 | WSU Administration GIS Portal | 0 | 0 | 1 |
+| ✅ | [/resources/](resources/report.md) | 200 |  | 0 | 0 | 1 |
+| ✅ | [/services/](services/report.md) | 200 |  | 0 | 0 | 1 |
+| ✅ | [/training/](training/report.md) | 200 | WSU Administration GIS Portal | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/data/](data/report.md)
+
+![/data/](data/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+### [/services/](services/report.md)
+
+![/services/](services/01-page-loaded.png)
+
+### [/training/](training/report.md)
+
+![/training/](training/01-page-loaded.png)
+
 
 ---
 

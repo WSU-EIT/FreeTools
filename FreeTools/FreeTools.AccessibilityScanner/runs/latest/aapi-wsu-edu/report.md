@@ -2,21 +2,95 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Status | ⚠️ 2/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 2 |
+| Pages Failed | 4 |
+| Total JS Errors | 4 |
 | Total JS Warnings | 0 |
-| Total HTML | 57.5 KB |
-| Total Screenshots | 380.7 KB |
+| Total HTML | 112.2 KB |
+| Total Screenshots | 1.2 MB |
 | Folder | `aapi-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | APIDA Student Center | 0 | 0 | 57.5 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | APIDA Student Center | 0 | 0 | 1 |
+| ❌ | [/about/](about/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/events/](events/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ❌ | [/programs/](programs/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| ✅ | [/resources/](resources/report.md) | 200 | Resources | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/events/](events/report.md)
+
+![/events/](events/01-page-loaded.png)
+
+### [/programs/](programs/report.md)
+
+![/programs/](programs/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /about/
+
+- **URL:** https://aapi.wsu.edu/about/
+- **Status:** 404
+
+### /programs/
+
+- **URL:** https://aapi.wsu.edu/programs/
+- **Status:** 404
+
+### /events/
+
+- **URL:** https://aapi.wsu.edu/events/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://aapi.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /about/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /programs/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /events/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

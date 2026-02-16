@@ -1,0 +1,17 @@
+{
+  "PagePath": "/animal-care/",
+  "Url": "https://campusvet.wsu.edu/animal-care/",
+  "FinalUrl": null,
+  "Title": null,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 0,
+  "ScreenshotSizeBytes": 0,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [],
+  "ErrorMessage": "Download is starting\nCall log:\n  - navigating to \u0022https://campusvet.wsu.edu/animal-care/\u0022, waiting until \u0022networkidle\u0022",
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:11:30.1744474Z"
+}

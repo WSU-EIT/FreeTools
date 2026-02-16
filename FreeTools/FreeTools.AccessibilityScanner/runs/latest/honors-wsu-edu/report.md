@@ -2,27 +2,125 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 1 |
-| Total JS Warnings | 0 |
-| Total HTML | 87.9 KB |
-| Total Screenshots | 1.7 MB |
+| Status | ⚠️ 2/7 pages OK |
+| Pages Scanned | 7 |
+| Pages Passed | 2 |
+| Pages Failed | 5 |
+| Total JS Errors | 16 |
+| Total JS Warnings | 1 |
+| Total HTML | 433.3 KB |
+| Total Screenshots | 2.8 MB |
 | Folder | `honors-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | The Honors College \| Washington Stat... | 1 | 0 | 87.9 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | The Honors College \| Washington Stat... | 1 | 0 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | Why Honors \| The Honors College \| W... | 2 | 0 | 1 |
+| ❌ | [/admissions/](admissions/report.md) | 404 | Page not found \| The Honors College ... | 3 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| The Honors College ... | 3 | 0 | 1 |
+| ❌ | [/current-students/](current-students/report.md) | 404 | Page not found \| The Honors College ... | 3 | 0 | 1 |
+| ❌ | [/faculty/](faculty/report.md) | 405 | Human Verification | 1 | 1 | 1 |
+| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| The Honors College ... | 3 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/admissions/](admissions/report.md)
+
+![/admissions/](admissions/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/current-students/](current-students/report.md)
+
+![/current-students/](current-students/01-page-loaded.png)
+
+### [/faculty/](faculty/report.md)
+
+![/faculty/](faculty/01-page-loaded.png)
+
+### [/programs/](programs/report.md)
+
+![/programs/](programs/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /admissions/
+
+- **URL:** https://honors.wsu.edu/admissions/
+- **Status:** 404
+
+### /programs/
+
+- **URL:** https://honors.wsu.edu/programs/
+- **Status:** 404
+
+### /current-students/
+
+- **URL:** https://honors.wsu.edu/current-students/
+- **Status:** 404
+
+### /faculty/
+
+- **URL:** https://honors.wsu.edu/faculty/
+- **Status:** 405
+
+### /contact/
+
+- **URL:** https://honors.wsu.edu/contact/
+- **Status:** 404
+
 
 ## Pages with JavaScript Errors
+
+### /admissions/ (3 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /programs/ (3 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /current-students/ (3 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (3 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /about/ (2 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 ### / (1 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
+
+### /faculty/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
 
 
 ---

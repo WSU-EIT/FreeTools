@@ -2,21 +2,104 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
+| Status | ⚠️ 1/6 pages OK |
+| Pages Scanned | 6 |
 | Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Pages Failed | 5 |
+| Total JS Errors | 5 |
 | Total JS Warnings | 0 |
-| Total HTML | 46.3 KB |
-| Total Screenshots | 1.5 MB |
+| Total HTML | 1.1 MB |
+| Total Screenshots | 10.0 MB |
 | Folder | `aswsu-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Home | 0 | 0 | 46.3 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Home | 0 | 0 | 1 |
+| ❌ | [/about/](about/report.md) | 404 | MARCOM - MARCOM | 1 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | MARCOM - MARCOM | 1 | 0 | 1 |
+| ❌ | [/get-involved/](get-involved/report.md) | 404 | MARCOM - MARCOM | 1 | 0 | 1 |
+| ❌ | [/senate/](senate/report.md) | 404 | MARCOM - MARCOM | 1 | 0 | 1 |
+| ❌ | [/services/](services/report.md) | 404 | MARCOM - MARCOM | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/get-involved/](get-involved/report.md)
+
+![/get-involved/](get-involved/01-page-loaded.png)
+
+### [/senate/](senate/report.md)
+
+![/senate/](senate/01-page-loaded.png)
+
+### [/services/](services/report.md)
+
+![/services/](services/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /about/
+
+- **URL:** https://aswsu.wsu.edu/about/
+- **Status:** 404
+
+### /senate/
+
+- **URL:** https://aswsu.wsu.edu/senate/
+- **Status:** 404
+
+### /services/
+
+- **URL:** https://aswsu.wsu.edu/services/
+- **Status:** 404
+
+### /get-involved/
+
+- **URL:** https://aswsu.wsu.edu/get-involved/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://aswsu.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /about/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /senate/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /services/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /get-involved/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

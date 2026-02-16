@@ -5,19 +5,27 @@
   "Title": "WSU Research | Washington State University | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 128109,
-  "ScreenshotSizeBytes": 4629775,
+  "HtmlSizeBytes": 128091,
+  "ScreenshotSizeBytes": 4672592,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 4672592
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
-    "cache-control": "max-age=600, must-revalidate",
+    "cache-control": "max-age=7, must-revalidate",
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 19:53:54 GMT",
-    "last-modified": "Mon, 16 Feb 2026 19:53:54 GMT",
+    "date": "Mon, 16 Feb 2026 20:15:54 GMT",
+    "last-modified": "Mon, 16 Feb 2026 20:06:01 GMT",
     "link": "\u003Chttps://wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://wsu.edu/wp-json/wp/v2/pages/15\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
     "server": "nginx",
     "transfer-encoding": "chunked",
@@ -26,5 +34,5 @@
     "x-frame-options": "DENY",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-16T19:53:54.5795761Z"
+  "CapturedAt": "2026-02-16T20:15:54.507169Z"
 }

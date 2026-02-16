@@ -5,12 +5,20 @@
   "Title": "Washington State University | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 215323,
-  "ScreenshotSizeBytes": 5972281,
+  "HtmlSizeBytes": 216111,
+  "ScreenshotSizeBytes": 5778985,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 5778985
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T19:51:11.3353437Z"
+  "CapturedAt": "2026-02-16T20:10:26.0929285Z"
 }

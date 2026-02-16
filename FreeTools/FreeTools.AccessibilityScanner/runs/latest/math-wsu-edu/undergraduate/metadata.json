@@ -1,0 +1,33 @@
+{
+  "PagePath": "/undergraduate/",
+  "Url": "https://math.wsu.edu/undergraduate/",
+  "FinalUrl": "https://math.wsu.edu/math-placement-overview/math-placement-faq/undergraduate-learning-assistance/",
+  "Title": "Undergraduate Learning Assistance | Department of Mathematics and Statistics | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 236647,
+  "ScreenshotSizeBytes": 337822,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 337822
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:12:41 GMT",
+    "etag": "\u00224d27ee4b9c56bd99ecc729e868d8992e\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:12:41 GMT",
+    "link": "\u003Chttps://math.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://math.wsu.edu/wp-json/wp/v2/pages/1484\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://math.wsu.edu/?p=1484\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T20:12:35.205266Z"
+}

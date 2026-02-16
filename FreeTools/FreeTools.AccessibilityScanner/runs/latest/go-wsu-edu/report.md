@@ -2,21 +2,43 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 251.9 KB |
-| Total Screenshots | 1.2 MB |
+| Status | ⚠️ 1/4 pages OK |
+| Pages Scanned | 4 |
+| Pages Passed | 1 |
+| Pages Failed | 3 |
+| Total JS Errors | 4 |
+| Total JS Warnings | 2 |
+| Total HTML | 817.4 KB |
+| Total Screenshots | 3.9 MB |
 | Folder | `go-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Here. We. Go \| Washington State Univ... | 0 | 0 | 251.9 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Here. We. Go \| Washington State Univ... | 1 | 0 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | About WSU \| Washington State Univers... | 1 | 0 | 1 |
+| ❌ | [/create/](create/report.md) | 404 | Page not found \| Here. We. Go \| Was... | 1 | 1 | 1 |
+| ❌ | [/manage/](manage/report.md) | 404 | Page not found \| Here. We. Go \| Was... | 1 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/create/](create/report.md)
+
+![/create/](create/01-page-loaded.png)
+
+### [/manage/](manage/report.md)
+
+![/manage/](manage/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -24,6 +46,35 @@
 
 - **URL:** https://go.wsu.edu/
 - **Status:** 0
+
+### /create/
+
+- **URL:** https://go.wsu.edu/create/
+- **Status:** 404
+
+### /manage/
+
+- **URL:** https://go.wsu.edu/manage/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /about/ (1 errors)
+
+- `Failed to load resource: net::ERR_TOO_MANY_REDIRECTS`
+
+### /create/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /manage/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

@@ -2,28 +2,90 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
+| Status | ⚠️ 4/7 pages OK |
+| Pages Scanned | 7 |
+| Pages Passed | 4 |
+| Pages Failed | 3 |
+| Total JS Errors | 3 |
 | Total JS Warnings | 0 |
-| Total HTML | 70.5 KB |
-| Total Screenshots | 1.3 MB |
+| Total HTML | 298.0 KB |
+| Total Screenshots | 4.5 MB |
 | Folder | `vancouver-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Washington State University Vancouver... | 0 | 0 | 70.5 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Washington State University Vancouver... | 0 | 0 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | About WSU Vancouver - About - WSU Van... | 0 | 0 | 1 |
+| ❌ | [/academics/](academics/report.md) | 404 | Page not found - About - WSU Vancouver | 1 | 0 | 1 |
+| ✅ | [/admissions/](admissions/report.md) | 200 | Office of Admissions - Home - WSU Van... | 0 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 403 | Access denied - About - WSU Vancouver | 1 | 0 | 1 |
+| ✅ | [/library/](library/report.md) | 200 | Library - Home - WSU Vancouver | 0 | 0 | 1 |
+| ❌ | [/student-services/](student-services/report.md) | 404 | Page not found - About - WSU Vancouver | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/academics/](academics/report.md)
+
+![/academics/](academics/01-page-loaded.png)
+
+### [/admissions/](admissions/report.md)
+
+![/admissions/](admissions/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/library/](library/report.md)
+
+![/library/](library/01-page-loaded.png)
+
+### [/student-services/](student-services/report.md)
+
+![/student-services/](student-services/01-page-loaded.png)
+
 
 ## Failed Pages
 
-### /
+### /academics/
 
-- **URL:** https://vancouver.wsu.edu/
-- **Status:** 0
+- **URL:** https://vancouver.wsu.edu/academics/
+- **Status:** 404
+
+### /student-services/
+
+- **URL:** https://vancouver.wsu.edu/student-services/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://vancouver.wsu.edu/contact/
+- **Status:** 403
+
+
+## Pages with JavaScript Errors
+
+### /academics/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /student-services/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 403 ()`
 
 
 ---

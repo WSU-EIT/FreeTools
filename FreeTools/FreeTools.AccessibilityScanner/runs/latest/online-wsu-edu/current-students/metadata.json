@@ -1,0 +1,32 @@
+{
+  "PagePath": "/current-students/",
+  "Url": "https://online.wsu.edu/current-students/",
+  "FinalUrl": null,
+  "Title": "Page not found | WSU Global Campus | Washington State University",
+  "StatusCode": 404,
+  "Success": false,
+  "HtmlSizeBytes": 68901,
+  "ScreenshotSizeBytes": 123440,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 123440
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "no-cache, must-revalidate, max-age=0",
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:12:50 GMT",
+    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "link": "\u003Chttps://online.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
+    "server": "nginx"
+  },
+  "CapturedAt": "2026-02-16T20:12:45.2318651Z"
+}

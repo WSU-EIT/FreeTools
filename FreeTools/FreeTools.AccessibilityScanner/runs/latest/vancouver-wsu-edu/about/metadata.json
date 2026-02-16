@@ -1,0 +1,41 @@
+{
+  "PagePath": "/about/",
+  "Url": "https://vancouver.wsu.edu/about/",
+  "FinalUrl": "https://www.vancouver.wsu.edu/about-wsu-vancouver",
+  "Title": "About WSU Vancouver - About - WSU Vancouver",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 39411,
+  "ScreenshotSizeBytes": 849861,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 849861
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "max-age=1800, public",
+    "content-encoding": "gzip",
+    "content-language": "en",
+    "content-length": "9011",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 05:51:09 GMT",
+    "etag": "\u00221771221069-gzip\u0022",
+    "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+    "last-modified": "Mon, 16 Feb 2026 05:51:09 GMT",
+    "server": "Apache/2.4.62 (Debian)",
+    "vary": "Cookie,Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-drupal-cache": "HIT",
+    "x-drupal-dynamic-cache": "MISS",
+    "x-frame-options": "SAMEORIGIN",
+    "x-generator": "Drupal 10 (https://www.drupal.org)"
+  },
+  "CapturedAt": "2026-02-16T20:11:17.746062Z"
+}

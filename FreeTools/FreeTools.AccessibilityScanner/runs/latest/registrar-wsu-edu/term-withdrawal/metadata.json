@@ -1,0 +1,24 @@
+{
+  "PagePath": "/term-withdrawal/",
+  "Url": "https://registrar.wsu.edu/term-withdrawal/",
+  "FinalUrl": null,
+  "Title": "Term Withdrawal | Office of the Registrar",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 664667,
+  "ScreenshotSizeBytes": 139166,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 139166
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:20:17.3101257Z"
+}

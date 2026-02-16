@@ -2,28 +2,70 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
+| Status | ✅ 7/7 pages OK |
+| Pages Scanned | 7 |
+| Pages Passed | 7 |
+| Pages Failed | 0 |
+| Total JS Errors | 4 |
 | Total JS Warnings | 1 |
-| Total HTML | 266.4 KB |
-| Total Screenshots | 1.7 MB |
+| Total HTML | 765.5 KB |
+| Total Screenshots | 3.2 MB |
 | Folder | `research-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Office of Research \| Washington Stat... | 0 | 1 | 266.4 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Office of Research \| Washington Stat... | 0 | 1 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | About Us \| Office of Research \| Was... | 3 | 0 | 1 |
+| ✅ | [/compliance/](compliance/report.md) | 200 | Log In ‹ Office of Research — WordPress | 0 | 0 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Office of Research \| W... | 1 | 0 | 1 |
+| ✅ | [/funding/](funding/report.md) | 200 | Log In ‹ Office of Research — WordPress | 0 | 0 | 1 |
+| ✅ | [/research-areas/](research-areas/report.md) | 200 | Log In ‹ Office of Research — WordPress | 0 | 0 | 1 |
+| ✅ | [/resources/](resources/report.md) | 200 | Log In ‹ Office of Research — WordPress | 0 | 0 | 1 |
 
-## Failed Pages
+## Page Screenshots
 
-### /
+### [/](_root/report.md)
 
-- **URL:** https://research.wsu.edu/
-- **Status:** 0
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/compliance/](compliance/report.md)
+
+![/compliance/](compliance/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/funding/](funding/report.md)
+
+![/funding/](funding/01-page-loaded.png)
+
+### [/research-areas/](research-areas/report.md)
+
+![/research-areas/](research-areas/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+
+## Pages with JavaScript Errors
+
+### /about/ (3 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
 
 
 ---

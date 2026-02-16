@@ -2,21 +2,101 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 311.9 KB |
-| Total Screenshots | 1.5 MB |
+| Status | ⚠️ 4/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 4 |
+| Pages Failed | 2 |
+| Total JS Errors | 30 |
+| Total JS Warnings | 2 |
+| Total HTML | 1.7 MB |
+| Total Screenshots | 4.3 MB |
 | Folder | `ip-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | WSU International \| Washington State... | 0 | 0 | 311.9 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | WSU International \| Washington State... | 0 | 0 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact GPRS \| WSU International \| ... | 1 | 0 | 1 |
+| ❌ | [/international-students/](international-students/report.md) | 404 | Page not found \| WSU International \... | 2 | 1 | 1 |
+| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| WSU International \... | 2 | 1 | 1 |
+| ✅ | [/resources/](resources/report.md) | 200 | Resources \| WSU International \| Was... | 1 | 0 | 1 |
+| ✅ | [/study-abroad/](study-abroad/report.md) | 200 | Education Abroad \| WSU International... | 24 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/international-students/](international-students/report.md)
+
+![/international-students/](international-students/01-page-loaded.png)
+
+### [/programs/](programs/report.md)
+
+![/programs/](programs/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+### [/study-abroad/](study-abroad/report.md)
+
+![/study-abroad/](study-abroad/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /international-students/
+
+- **URL:** https://ip.wsu.edu/international-students/
+- **Status:** 404
+
+### /programs/
+
+- **URL:** https://ip.wsu.edu/programs/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /study-abroad/ (24 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- ... and 14 more (see `study-abroad/errors.log`)
+
+### /international-students/ (2 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /programs/ (2 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /resources/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
 
 ---
 

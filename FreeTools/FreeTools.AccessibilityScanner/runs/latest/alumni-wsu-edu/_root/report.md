@@ -7,24 +7,30 @@
 | Title | Washington State University Alumni Association - Home |
 | Status | ✅ 200 |
 | HTML Size | 110.5 KB |
-| Screenshot Size | 1.1 MB |
-| JS Errors | 2 |
+| Screenshots | 1 (885.7 KB) |
+| JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:51:11.3384661Z |
+| Captured | 2026-02-16T20:10:26.1022541Z |
 
 ## JavaScript Errors
 
 - `The Content-Security-Policy directive 'frame-ancestors' contains 'default-src' as a source expression. Did you want to add it as a directive and forget a semicolon?`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (885.7 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (885.7 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

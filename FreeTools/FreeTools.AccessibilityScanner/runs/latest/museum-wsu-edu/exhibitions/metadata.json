@@ -1,0 +1,33 @@
+{
+  "PagePath": "/exhibitions/",
+  "Url": "https://museum.wsu.edu/exhibitions/",
+  "FinalUrl": "https://museum.wsu.edu/exhibitions-events/",
+  "Title": "Exhibitions \u0026 Programs | Jordan Schnitzer Museum of Art WSU | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 239848,
+  "ScreenshotSizeBytes": 3079475,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 3079475
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:12:04 GMT",
+    "etag": "\u002296b750d03c2016e5c8f9f3605273744e\u0022",
+    "last-modified": "Mon, 16 Feb 2026 19:39:30 GMT",
+    "link": "\u003Chttps://museum.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://museum.wsu.edu/wp-json/wp/v2/pages/11134\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://museum.wsu.edu/?p=11134\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T20:12:02.1988027Z"
+}

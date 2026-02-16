@@ -2,21 +2,99 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 1 |
-| Total HTML | 228.1 KB |
-| Total Screenshots | 1.1 MB |
+| Status | ⚠️ 2/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 2 |
+| Pages Failed | 4 |
+| Total JS Errors | 5 |
+| Total JS Warnings | 5 |
+| Total HTML | 1.3 MB |
+| Total Screenshots | 1.7 MB |
 | Folder | `li-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Academic Outreach and Innovation \| L... | 0 | 1 | 228.1 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Academic Outreach and Innovation \| L... | 1 | 1 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| Academic Outreach a... | 1 | 1 | 1 |
+| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| Academic Outreach a... | 1 | 1 | 1 |
+| ❌ | [/services/](services/report.md) | 404 | Page not found \| Academic Outreach a... | 1 | 1 | 1 |
+| ✅ | [/support/](support/report.md) | 200 | Supporting Students Who have Approved... | 0 | 0 | 1 |
+| ❌ | [/technology/](technology/report.md) | 404 | Page not found \| Academic Outreach a... | 1 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+### [/services/](services/report.md)
+
+![/services/](services/01-page-loaded.png)
+
+### [/support/](support/report.md)
+
+![/support/](support/01-page-loaded.png)
+
+### [/technology/](technology/report.md)
+
+![/technology/](technology/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /services/
+
+- **URL:** https://li.wsu.edu/services/
+- **Status:** 404
+
+### /technology/
+
+- **URL:** https://li.wsu.edu/technology/
+- **Status:** 404
+
+### /resources/
+
+- **URL:** https://li.wsu.edu/resources/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://li.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /services/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /technology/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /resources/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

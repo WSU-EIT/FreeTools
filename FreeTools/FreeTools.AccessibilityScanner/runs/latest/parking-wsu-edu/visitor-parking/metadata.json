@@ -1,0 +1,29 @@
+{
+  "PagePath": "/visitor-parking/",
+  "Url": "https://parking.wsu.edu/visitor-parking/",
+  "FinalUrl": null,
+  "Title": "404 Not Found",
+  "StatusCode": 404,
+  "Success": false,
+  "HtmlSizeBytes": 151,
+  "ScreenshotSizeBytes": 7657,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 7657
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-length": "555",
+    "content-type": "text/html",
+    "date": "Mon, 16 Feb 2026 20:12:04 GMT",
+    "server": "nginx/1.28.1"
+  },
+  "CapturedAt": "2026-02-16T20:12:02.2606848Z"
+}

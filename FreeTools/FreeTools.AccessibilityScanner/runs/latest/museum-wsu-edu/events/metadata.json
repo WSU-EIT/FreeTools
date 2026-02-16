@@ -1,0 +1,35 @@
+{
+  "PagePath": "/events/",
+  "Url": "https://museum.wsu.edu/events/",
+  "FinalUrl": null,
+  "Title": "Human Verification",
+  "StatusCode": 405,
+  "Success": false,
+  "HtmlSizeBytes": 9360,
+  "ScreenshotSizeBytes": 20993,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 20993
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "access-control-allow-methods": "OPTIONS,GET,POST",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "x-amzn-waf-action",
+    "access-control-max-age": "86400",
+    "cache-control": "no-store, max-age=0",
+    "content-length": "2103",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:14:06 GMT",
+    "server": "awselb/2.0",
+    "x-amzn-waf-action": "captcha"
+  },
+  "CapturedAt": "2026-02-16T20:14:04.3050532Z"
+}

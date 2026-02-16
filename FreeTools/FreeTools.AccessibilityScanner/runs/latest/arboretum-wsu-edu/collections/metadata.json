@@ -1,0 +1,27 @@
+{
+  "PagePath": "/collections/",
+  "Url": "https://arboretum.wsu.edu/collections/",
+  "FinalUrl": null,
+  "Title": "",
+  "StatusCode": 403,
+  "Success": false,
+  "HtmlSizeBytes": 107,
+  "ScreenshotSizeBytes": 9095,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 9095
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "no-cache",
+    "content-type": "text/html"
+  },
+  "CapturedAt": "2026-02-16T20:10:44.2381507Z"
+}

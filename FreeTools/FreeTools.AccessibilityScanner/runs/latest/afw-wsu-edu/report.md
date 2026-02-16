@@ -2,21 +2,95 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 61.6 KB |
-| Total Screenshots | 203.9 KB |
+| Status | ⚠️ 2/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 2 |
+| Pages Failed | 4 |
+| Total JS Errors | 4 |
+| Total JS Warnings | 2 |
+| Total HTML | 248.1 KB |
+| Total Screenshots | 401.0 KB |
 | Folder | `afw-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Association for Faculty Women \| Wash... | 0 | 0 | 61.6 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Association for Faculty Women \| Wash... | 0 | 0 | 1 |
+| ❌ | [/about/](about/report.md) | 404 | Page not found \| Association for Fac... | 1 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| Association for Fac... | 1 | 0 | 1 |
+| ❌ | [/events/](events/report.md) | 405 | Human Verification | 1 | 1 | 1 |
+| ❌ | [/membership/](membership/report.md) | 405 | Human Verification | 1 | 1 | 1 |
+| ✅ | [/resources/](resources/report.md) | 200 | Resources \| Association for Faculty ... | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/events/](events/report.md)
+
+![/events/](events/01-page-loaded.png)
+
+### [/membership/](membership/report.md)
+
+![/membership/](membership/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /about/
+
+- **URL:** https://afw.wsu.edu/about/
+- **Status:** 404
+
+### /membership/
+
+- **URL:** https://afw.wsu.edu/membership/
+- **Status:** 405
+
+### /events/
+
+- **URL:** https://afw.wsu.edu/events/
+- **Status:** 405
+
+### /contact/
+
+- **URL:** https://afw.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /about/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /membership/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /events/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

@@ -1,0 +1,17 @@
+{
+  "PagePath": "/policies/",
+  "Url": "https://gradschool.wsu.edu/policies/",
+  "FinalUrl": null,
+  "Title": null,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 0,
+  "ScreenshotSizeBytes": 0,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [],
+  "ErrorMessage": "Download is starting\nCall log:\n  - navigating to \u0022https://gradschool.wsu.edu/policies/\u0022, waiting until \u0022networkidle\u0022",
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:14:05.9884645Z"
+}

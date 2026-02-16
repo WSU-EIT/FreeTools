@@ -5,12 +5,20 @@
   "Title": "Pharmacy and Pharmaceutical Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 341110,
-  "ScreenshotSizeBytes": 3907549,
+  "HtmlSizeBytes": 341118,
+  "ScreenshotSizeBytes": 3988495,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 3988495
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T19:51:11.3696074Z"
+  "CapturedAt": "2026-02-16T20:10:26.1391337Z"
 }

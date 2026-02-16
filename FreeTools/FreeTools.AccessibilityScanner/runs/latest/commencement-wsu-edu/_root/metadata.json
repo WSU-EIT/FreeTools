@@ -5,12 +5,20 @@
   "Title": "WSU Commencement | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 58821,
+  "HtmlSizeBytes": 58840,
   "ScreenshotSizeBytes": 3969719,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 5,
   "ConsoleWarningCount": 2,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 3969719
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T19:51:11.353941Z"
+  "CapturedAt": "2026-02-16T20:10:26.1174831Z"
 }

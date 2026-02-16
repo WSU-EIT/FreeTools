@@ -2,21 +2,58 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 1 |
-| Total JS Warnings | 0 |
-| Total HTML | 297.0 KB |
-| Total Screenshots | 1.4 MB |
+| Status | ⚠️ 5/7 pages OK |
+| Pages Scanned | 7 |
+| Pages Passed | 5 |
+| Pages Failed | 2 |
+| Total JS Errors | 4 |
+| Total JS Warnings | 2 |
+| Total HTML | 1.8 MB |
+| Total Screenshots | 11.9 MB |
 | Folder | `murrow-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Edward R. Murrow College of Communica... | 1 | 0 | 297.0 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Edward R. Murrow College of Communica... | 3 | 0 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | About Edward R. Murrow \| Edward R. M... | 0 | 0 | 1 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty Directory Update Form \| Edwa... | 0 | 0 | 1 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Programs \| Edward R. Murrow... | 0 | 0 | 1 |
+| ✅ | [/news/](news/report.md) | 200 | News Articles \| Edward R. Murrow Col... | 0 | 0 | 1 |
+| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| Edward R. Murrow Co... | 1 | 1 | 1 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Programs \| Edward R. M... | 0 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/faculty/](faculty/report.md)
+
+![/faculty/](faculty/01-page-loaded.png)
+
+### [/graduate/](graduate/report.md)
+
+![/graduate/](graduate/01-page-loaded.png)
+
+### [/news/](news/report.md)
+
+![/news/](news/01-page-loaded.png)
+
+### [/programs/](programs/report.md)
+
+![/programs/](programs/01-page-loaded.png)
+
+### [/undergraduate/](undergraduate/report.md)
+
+![/undergraduate/](undergraduate/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -25,12 +62,23 @@
 - **URL:** https://murrow.wsu.edu/
 - **Status:** 0
 
+### /programs/
+
+- **URL:** https://murrow.wsu.edu/programs/
+- **Status:** 404
+
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### / (3 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /programs/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

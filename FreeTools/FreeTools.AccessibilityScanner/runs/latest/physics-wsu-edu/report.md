@@ -2,28 +2,81 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 1 |
-| Total HTML | 226.1 KB |
-| Total Screenshots | 1.6 MB |
+| Status | ⚠️ 5/7 pages OK |
+| Pages Scanned | 7 |
+| Pages Passed | 5 |
+| Pages Failed | 2 |
+| Total JS Errors | 2 |
+| Total JS Warnings | 3 |
+| Total HTML | 1.6 MB |
+| Total Screenshots | 5.4 MB |
 | Folder | `physics-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Department of Physics & Astronomy \| ... | 0 | 1 | 226.1 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Department of Physics & Astronomy \| ... | 0 | 1 | 1 |
+| ❌ | [/about/](about/report.md) | 404 | Page not found \| Department of Physi... | 1 | 1 | 1 |
+| ✅ | [/astronomy/](astronomy/report.md) | 200 | Astronomy and astrophysics \| Departm... | 0 | 0 | 1 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Department of Physics & As... | 0 | 0 | 1 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Application \| Department of Physics ... | 0 | 0 | 1 |
+| ❌ | [/research/](research/report.md) | 404 | Page not found \| Department of Physi... | 1 | 1 | 1 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate labs renovation \| Depa... | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/astronomy/](astronomy/report.md)
+
+![/astronomy/](astronomy/01-page-loaded.png)
+
+### [/faculty/](faculty/report.md)
+
+![/faculty/](faculty/01-page-loaded.png)
+
+### [/graduate/](graduate/report.md)
+
+![/graduate/](graduate/01-page-loaded.png)
+
+### [/research/](research/report.md)
+
+![/research/](research/01-page-loaded.png)
+
+### [/undergraduate/](undergraduate/report.md)
+
+![/undergraduate/](undergraduate/01-page-loaded.png)
+
 
 ## Failed Pages
 
-### /
+### /about/
 
-- **URL:** https://physics.wsu.edu/
-- **Status:** 0
+- **URL:** https://physics.wsu.edu/about/
+- **Status:** 404
+
+### /research/
+
+- **URL:** https://physics.wsu.edu/research/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /about/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /research/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

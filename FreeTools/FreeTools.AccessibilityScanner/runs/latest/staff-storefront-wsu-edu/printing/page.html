@@ -1,0 +1,310 @@
+<!DOCTYPE html><html><head>
+	<title>404 Page Error - WSU Coug Prints Plus</title>
+	<meta http-equiv="CONTENT-TYPE" content="text/html;charset=utf-8">
+
+	<!--CSS -->
+<link rel="stylesheet" type="text/css" href="/lib/fontawesome-pro-6.2.0-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/lib/jquery/plugins/jquery-ui-themes-1.13.2/themes/smoothness/jquery-ui.min.css">
+<!--<link rel="stylesheet" type="text/css" href="/css/shared/bootstrap-3.3.6/css/bootstrap.min.css">-->
+<link rel="stylesheet" type="text/css" href="/lib/jquery/plugins/toast/jquery.toast.min.css">
+<link rel="stylesheet" type="text/css" href="/lib/jquery/plugins/tooltipster/dist/css/tooltipster.bundle.min.css">
+<link rel="stylesheet" type="text/css" href="/lib/jquery/plugins/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css">
+<link rel="stylesheet" type="text/css" href="/css/shared/common.css?1768032302">
+<link rel="stylesheet" type="text/css" href="/css/site.css?1770105914">
+<link rel="stylesheet" type="text/css" href="/profile_css.php">
+
+<!--SCRIPTS-->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-0NBP8L6C55&amp;cx=c&amp;gtm=4e62b1"></script><script type="text/javascript" src="/lib/jquery/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="/lib/jquery/plugins/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/lib/jquery/plugins/toast/jquery.toast.min.js"></script>
+<script type="text/javascript" src="/lib/jquery/plugins/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+<script type="text/javascript" src="/lib/jquery/plugins/tooltipster/dist/js/plugins/tooltipster/scrollableTip/tooltipster-scrollableTip.min.js"></script>
+<script type="text/javascript" src="/lib/jquery/plugins/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="/js/shared/lib.ui.js?1644895015"></script>
+<script type="text/javascript" src="/js/shared/lib.form.tools.js?1770105914"></script>
+
+<script type="text/javascript">
+	$(function() {
+		$('.jqButton').button();
+		$('.tooltipster').tooltipster({
+			theme: 'tooltipster-borderless',
+			plugins: ['sideTip', 'scrollableTip'],
+			contentAsHTML: true,
+			interactive: true,
+			maxWidth: 600,
+			trigger: 'custom',
+			triggerOpen: {
+				mouseenter: true,
+				originClick: true,
+				tap: true
+			},
+			triggerClose: {
+				mouseleave: true,
+				tap: true
+			}
+		});
+	});
+</script>
+
+	<script type="text/javascript">
+		window.tokens = {"\/account\/status_ajax.php":{"index":"V9l7No2msPxD1ohfNlc5H5Ac","token":"aEmWUKkPB5rkRYDhsYKv2DX06kF-bujdAj-SVRHEeGQ1"},"\/cart\/21-process-upload.php":{"index":"3S9tHMDhIlQ2a4HcERl2X33I","token":"m-jlM9xLRPVDAYEDorfy7kNngnA6byv9bKYhSBF3RVlY"},"\/catalog\/21-process-upload.php":{"index":"PxXdqahl9BYN3GZcZS2gfNde","token":"2tQUVTF-oent7JY2pUruxht_IrY5M2gSaqkijShmQe59"},"\/catalog\/put_crop.php":{"index":"yfTb_Lfhy0DUnMqqzHMeq50e","token":"y6-cCDcuq2viIY_pa5uiUJ-b8dWHeJ2JfPTyiPP0Amrn"},"\/etc\/shared\/authorizenet\/ajaxCommunicator.php":{"index":"t2aOc8ZZOa3w-4iig6oBFWaf","token":"hH0gech1bjqrx7p33V8AYp6IM6_6HvZEgc00hhsIjq_p"},"\/etc\/shared\/list_mapping.php":{"index":"HlijdQYmOaYVcUOR3r1KkzxL","token":"e1wrMVMZCJq4SynMQbUCI1-v0E7tjUj7UgyC6ibcaD4w"},"\/etc\/shared\/ajax_page.php":{"index":"AGSSvGwTA6wZRI9aii3LCy1H","token":"OzKgR2g7cqGnFG3cs_-O2MOts-gRY5p7eqACoqq_WYZE"},"\/etc\/base.ajax2.php":{"index":"pHF_4j3r8ufQ5YoqDA0k7RVg","token":"KTPjM7XDj_QjbiVQ4WcIkQdQzg_uod2cJ8qDh2M11jvM"},"\/etc\/shared\/lib.ajax.php":{"index":"9JJcnGKXWbD-apqML-bTupVz","token":"OUPo_uxLYdYzVxmx1DhJ49YlrYnIPbC34QCq59r77ggA"},"\/etc\/shared\/ui\/CustomerDataListManager.php":{"index":"A1q85ISE7qp7_mL-_rnmJOw7","token":"JBzFhj2n6R-2VOPWwmIn_YaF8mtHXEFf4d3skGlvR6GO"},"\/r\/twofa-ajax.php":{"index":"kng5e0oOxDJqGwYJLFj06HOO","token":"yuW1bFDRwlfiAwqfiw_m5kOtVwIInsHgFc-OaOgCVU1R"}}
+			function is_csrf_safe_method(method) {
+				// these HTTP methods do not require CSRF protection
+				return (/^(GET|HEAD|OPTIONS)$/.test(method));
+			}
+
+		$.ajaxSetup({
+			beforeSend: function(xhr, settings) {
+				/*
+				 * Only send headers for requests with unsafe methods,
+				 * and only if we have created tokens for said endpoint.
+				 */
+				if (!is_csrf_safe_method(settings.type) && !this.crossDomain) {
+					var url = settings.url;
+					if (url.indexOf('?') > 0) {
+						url = url.substr(0, url.indexOf('?'))
+					}
+
+					if (window.tokens[url]) {
+						xhr.setRequestHeader("_CSRF_TOKEN", window.tokens[url]['token']);
+						xhr.setRequestHeader("_CSRF_INDEX", window.tokens[url]['index']);
+					} else {
+						console.warn('No CSRF token available for ' + url);
+					}
+				}
+			}
+		});
+	</script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://acme.presswise.com/lib/jquery/plugins/jquery-migrate-3.0.1.js"></script><!--Required for slideshow-->
+
+<link rel="stylesheet" type="text/css" href="../user/images/globals/default/js/shadowbox.css">
+<script type="text/javascript" src="../user/images/globals/default/js/shadowbox.js"></script>
+<script type="text/javascript">
+  Shadowbox.init();
+  $(function() {
+    $('#add_edit_table #loginID').attr('placeholder', 'WSU NID (required)');
+    $('#add_edit_table input[name=contactCompany]').attr('placeholder', 'College or Unit Name (required)');
+  })
+</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-17815664-54"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-17815664-54');
+</script></head>
+<body>
+<div id="mainHeader">
+  <div id="mainHeaderContent">
+  	<div id="mainLogo"></div>
+  </div>
+</div>
+<!-- Add Login HTML if user is logged out -->
+<script type="text/javascript">
+	$(function(){
+    	 if($('table.tableLogin td.login.loginWelcome').length) {
+        	$('table.tableLogin').addClass('clearLogin').wrap('<a href="../account/"></a>');
+         } else {
+         	$('table.tableLogin td:nth-child(1)').addClass('loginWelcome');
+           	$('table.tableLogin td.login.loginWelcome span').append('<a class="login" href="../account/edit_profile.php?token=dnc2WklNRSE">CREATE AN ACCOUNT</a>');
+           
+			$('table.tableLogin td:nth-child(2)').addClass('loginLogout').append('<a class="login" href="../login.php">LOGIN</a>');
+         }
+    });
+</script>		<div id="mainContainerSF">
+			<div id="mainContentSF" style="margin: 0 auto; text-align: left; padding: 0 6px;">
+		<!-- ALIGN CENTER CONTENT BEGIN--><div id="navWrapper">
+	<button class="navbar-toggler" type="button" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<i class="fa-solid fa-bars"></i>
+	</button>
+	<ul id="menu">
+		<div id="cartContainer" class="floatClass">
+		<div id="cartCount" onclick="location.href='../cart/';" style="cursor:pointer;">
+			<span id="cartIcon" class="fas fa-shopping-cart"></span>
+			<span id="cartDesc">items in cart</span>
+			<span id="cartCountBadge">&nbsp;0&nbsp;</span>
+		</div>
+	</div>							<li class="menuY linkH"><a href="https://staff.storefront.wsu.edu/home">Home</a></li>
+						<li class="menuY linkC"><a href="/catalog">Catalog</a></li>
+						<li class="menuY linkA"><a href="/account/index.php">My Account</a></li>
+			<li class="menuY linkS"><a href="/cart/index.php">Shopping Cart</a></li>
+						<li class="menuY linkF"><a href="/sendfiles">Send Files</a></li>																			<li class="menuO"><a href="https://cougprintsplus.wsu.edu/" target="_blank">CougPrints Plus</a></li>
+																								<li class="menuO"><a href="/contact/">Contact Us</a></li>
+													</ul>
+</div>
+<div id="loginWrapper">
+	<table class="tableLogin" width="100%" border="0" cellspacing="0" cellpadding="0" style="min-width: 380px;">
+		<tbody><tr>
+			<td class="login loginWelcome">
+				<span style="float: left;"><a class="login" href="../account/edit_profile.php?token=dnc2WklNRSE">CREATE AN ACCOUNT</a></span>			</td>
+			<td width="120" align="center" class="login loginLogout">
+							<a class="login" href="../login.php">LOGIN</a></td>
+		</tr>
+	</tbody></table>
+</div>
+
+<style>
+/**********************************
+* MOBILE MAIN NAVIGATION CSS
+***********************************/
+
+  @media only screen and (max-width : 768px) {
+    #menu {
+      display: none;
+    }
+
+    #menu li {
+      width: 100%;
+    }
+
+    .navbar-toggler {
+      display: block;
+      padding: 0.25rem 0.75rem;
+      line-height: 1;
+      border-radius: 4px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler.active {
+      background: #1d78bf !important;
+      color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+  }
+</style>
+
+<script type="text/javascript">
+	$(function () {
+		/* MOBILE MAIN NAVIGATION FUNCTIONALITY */
+		$(".navbar-toggler").click(function () {
+			let navbar = $("#menu");
+			let navbarVisibility = $("#menu").css('display');
+			if(navbarVisibility == 'none') {
+				$(this).addClass("active");
+				$(navbar).addClass("navbar-show"); //use a class instead of .show()/.hide(). Otherwise you will run into issues on window re-size
+			} else {
+				$(this).removeClass("active");
+				$(navbar).removeClass("navbar-show");
+			}
+		});
+	});
+</script><table class="tableMain" width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tbody><tr>
+		<td valign="top">
+			<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					<td>
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody><tr>
+								<td width="60%" valign="top">
+									<div class="ui-box" id="createCustomer" style="width:700px; margin: 0 auto; text-align: center;">
+										<header><span>Error 404</span></header>
+										<section>
+											<div><i class="fa-duotone fa-solid fa-triangle-exclamation fa-swap-opacity" style=" color: #1d78bf; font-size: 150px; position: relative; height: 150px; top: 70px;"></i></div>
+											<h1>Sorry, this file does not exist.</h1>
+											<p class="body">WSU Coug Prints Plus can not locate any file(s) at the location <strong>printing</strong>.</p><br>
+											<p class="body">This file may have been moved or deleted. Be sure to check your spelling.</p>
+											<p class="body">For customer service please call us at 509-335-7564, or email us at
+												<a href="mailto:Kevin.Henderson@wsu.edu">Kevin.Henderson@wsu.edu</a>.</p>
+										</section>
+									</div>
+									<br>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<div id="help-dialog" style="display:none;"></div>
+
+
+	<!-- ALIGN CENTER CONTENT END-->
+		</div>
+		</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.jquery-button').each(function(index, item){
+		hasOptions = false;
+		options = {};
+
+		icon = $(item).attr('icon');
+		icon = $.trim(icon);
+		if (icon) {
+			if (options.icons == undefined)
+				options.icons = {};
+			options.icons.primary = icon;
+			hasOptions = true;
+		}
+
+		icon = $(item).attr('icon-right');
+		icon = $.trim(icon);
+		if (icon) {
+			if (options.icons == undefined)
+				options.icons = {};
+			options.icons.secondary = icon;
+			hasOptions = true;
+		}
+
+		if (hasOptions) {
+			$(item).button(options);
+		} else {
+			$(item).button();
+		}
+	});
+});
+</script>
+<footer>
+  <div id="footerContent">
+    <strong>Cooper Publications Building</strong>, 2300 Grimes Way, Pullman
+    <img src="../user/images/globals/default/footer_logo_new_21.svg" border="0" alt="Washington State University logo.">
+  </div>
+</footer>
+
+<!-- updates title of CSR and sales rep on storefront -->
+<script>
+$("#contactCSRInfo header").text("Alternate contact");
+$("#contactSalesInfo header").text("Project Coordinator");
+</script>
+
+
+<script>
+  /* add request a quote button above side menu */
+  $("#TCtable").prepend('<a href="https://wsu.presswise.com/page.php?id=81"><span id="getStartedBtn">REQUEST A QUOTE</span></a>');
+  
+  /* pull side menu up on catalog page */
+ /* var urlLocation = window.location.href;
+  var findCatalog = urlLocation.search("/catalog/");
+  if(findCatalog != "-1") {
+    $("#TCtable").css("top","-38px"); 
+  }
+  
+  */
+  /* checkout page 4-checkout.php description text change  */
+  $("#checkoutLogin section table tr:first-child td.checkoutBody").text("Please log into your account, or create an account if you are a new customer.");
+  
+  /*$(function(){
+  	/*make blog link open in new window*/
+  	/*$("#menu li a").attr("target","_blank");
+  });*/
+  
+  /* Payment Page Changes (until payment in iframe) 
+  $("#custPOBox header").text("PHONE NUMBER");
+  $("#paymentMethod").before('<p><strong>If you wish to pay with a credit card, please enter your phone number<br>and a customer service representative will contact you for payment information.</strong></p><br>');
+  */
+</script>
+
+<div id="sb-container"><div id="sb-overlay"></div><div id="sb-wrapper"><div id="sb-title"><div id="sb-title-inner"></div></div><div id="sb-wrapper-inner"><div id="sb-body"><div id="sb-body-inner"></div><div id="sb-loading"><div id="sb-loading-inner"><span>loading</span></div></div></div></div><div id="sb-info"><div id="sb-info-inner"><div id="sb-counter"></div><div id="sb-nav"><a id="sb-nav-close" title="Close" onclick="Shadowbox.close()"></a><a id="sb-nav-next" title="Next" onclick="Shadowbox.next()"></a><a id="sb-nav-play" title="Play" onclick="Shadowbox.play()"></a><a id="sb-nav-pause" title="Pause" onclick="Shadowbox.pause()"></a><a id="sb-nav-previous" title="Previous" onclick="Shadowbox.previous()"></a></div></div></div></div></div></body></html>

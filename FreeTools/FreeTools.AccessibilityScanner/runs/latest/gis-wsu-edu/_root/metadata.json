@@ -5,11 +5,19 @@
   "Title": "WSU Administration GIS Portal",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 417992,
-  "ScreenshotSizeBytes": 88357,
+  "HtmlSizeBytes": 436294,
+  "ScreenshotSizeBytes": 1258148,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1258148
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "cache-control": "private, max-age=0",
@@ -17,7 +25,7 @@
     "content-length": "257",
     "content-security-policy": "upgrade-insecure-requests",
     "content-type": "text/html",
-    "date": "Mon, 16 Feb 2026 19:51:16 GMT",
+    "date": "Mon, 16 Feb 2026 20:10:32 GMT",
     "etag": "\u00224d8ff8b42c512f84405d3c19bc6e8bd6\u0022",
     "expires": "-1",
     "last-modified": "Sat, 08 Nov 2025 00:56:46 GMT",
@@ -25,11 +33,11 @@
     "referrer-policy": "no-referrer-when-downgrade",
     "server": "ArcGIS Online",
     "strict-transport-security": "max-age=63072000",
-    "via": "1.1 1c00a2c7e46d88f2cdcabc5a035f7b16.cloudfront.net (CloudFront)",
-    "x-amz-cf-id": "ZnYRnQtgPAAmCsRCMTxigTDTvbljwRDtpbsOJ3Pz1ahwB6kBLtbD-Q==",
+    "via": "1.1 6a546abea20b1f5ea8639740c681e782.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "CUCKzNznXnbG_9rRRR7impjP-EaXtJb7nKrp37NGtJ202iOwCuZM-Q==",
     "x-amz-cf-pop": "SEA900-P3",
     "x-cache": "Miss from cloudfront",
     "x-cached": "HIT"
   },
-  "CapturedAt": "2026-02-16T19:51:11.3635276Z"
+  "CapturedAt": "2026-02-16T20:10:26.1249463Z"
 }

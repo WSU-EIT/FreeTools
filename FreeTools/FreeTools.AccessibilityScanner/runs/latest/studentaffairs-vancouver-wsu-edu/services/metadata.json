@@ -1,0 +1,39 @@
+{
+  "PagePath": "/services/",
+  "Url": "https://studentaffairs.vancouver.wsu.edu/services/",
+  "FinalUrl": null,
+  "Title": "Page not found - Student Affairs - WSU Vancouver",
+  "StatusCode": 404,
+  "Success": false,
+  "HtmlSizeBytes": 32274,
+  "ScreenshotSizeBytes": 74059,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 74059
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "max-age=3600, public",
+    "content-language": "en",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:11:37 GMT",
+    "etag": "\u00221771272697\u0022",
+    "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+    "last-modified": "Mon, 16 Feb 2026 20:11:37 GMT",
+    "server": "Apache/2.4.62 (Debian)",
+    "vary": "Cookie",
+    "x-content-type-options": "nosniff",
+    "x-drupal-cache": "MISS",
+    "x-drupal-dynamic-cache": "UNCACHEABLE (poor cacheability)",
+    "x-frame-options": "SAMEORIGIN",
+    "x-generator": "Drupal 10 (https://www.drupal.org)"
+  },
+  "CapturedAt": "2026-02-16T20:11:30.008424Z"
+}

@@ -2,21 +2,81 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
+| Status | ✅ 6/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 6 |
 | Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Total JS Errors | 7 |
 | Total JS Warnings | 0 |
-| Total HTML | 71.2 KB |
-| Total Screenshots | 1.4 MB |
+| Total HTML | 417.9 KB |
+| Total Screenshots | 3.5 MB |
 | Folder | `english-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | WSU Department of English \| Washingt... | 0 | 0 | 71.2 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | WSU Department of English \| Washingt... | 2 | 0 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | Overview \| WSU Department of English... | 1 | 0 | 1 |
+| ✅ | [/creative-writing/](creative-writing/report.md) | 200 | Creative Writing Community \| WSU Dep... | 1 | 0 | 1 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty & Staff \| WSU Department of ... | 1 | 0 | 1 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Certificates \| WSU Departme... | 1 | 0 | 1 |
+| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Studies \| WSU Departme... | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/creative-writing/](creative-writing/report.md)
+
+![/creative-writing/](creative-writing/01-page-loaded.png)
+
+### [/faculty/](faculty/report.md)
+
+![/faculty/](faculty/01-page-loaded.png)
+
+### [/graduate/](graduate/report.md)
+
+![/graduate/](graduate/01-page-loaded.png)
+
+### [/undergraduate/](undergraduate/report.md)
+
+![/undergraduate/](undergraduate/01-page-loaded.png)
+
+
+## Pages with JavaScript Errors
+
+### / (2 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
+
+### /about/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /undergraduate/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /graduate/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /creative-writing/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /faculty/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
 
 ---
 

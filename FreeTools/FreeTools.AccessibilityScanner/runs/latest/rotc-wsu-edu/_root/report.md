@@ -5,24 +5,32 @@
 | URL | https://rotc.wsu.edu/ |
 | Title | WSU Army ROTC | Washington State University |
 | Status | ❌ 0 |
-| HTML Size | 70.4 KB |
-| Screenshot Size | 902.5 KB |
-| JS Errors | 1 |
-| JS Warnings | 5 |
+| HTML Size | 70.3 KB |
+| Screenshots | 1 (902.5 KB) |
+| JS Errors | 2 |
+| JS Warnings | 3 |
 | Auth | none |
-| Captured | 2026-02-16T19:51:11.3727611Z |
+| Captured | 2026-02-16T20:10:26.1409940Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (902.5 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (902.5 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

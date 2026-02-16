@@ -1,0 +1,33 @@
+{
+  "PagePath": "/students/",
+  "Url": "https://advising.wsu.edu/students/",
+  "FinalUrl": null,
+  "Title": "Students | Advising at WSU | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 119356,
+  "ScreenshotSizeBytes": 140713,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 140713
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:11:43 GMT",
+    "etag": "\u002279959e6cb37a82f4908b4811a77816f1\u0022",
+    "last-modified": "Mon, 16 Feb 2026 19:23:03 GMT",
+    "link": "\u003Chttps://advising.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://advising.wsu.edu/wp-json/wp/v2/pages/71\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://advising.wsu.edu/?p=71\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T20:11:30.0722808Z"
+}

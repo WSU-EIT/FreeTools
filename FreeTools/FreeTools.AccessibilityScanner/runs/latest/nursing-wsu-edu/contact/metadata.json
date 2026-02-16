@@ -1,0 +1,34 @@
+{
+  "PagePath": "/contact/",
+  "Url": "https://nursing.wsu.edu/contact/",
+  "FinalUrl": "https://nursing.wsu.edu/contact/#gsc.tab=0",
+  "Title": "Page not found | College of Nursing | Washington State University",
+  "StatusCode": 404,
+  "Success": false,
+  "HtmlSizeBytes": 258412,
+  "ScreenshotSizeBytes": 188371,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 4,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 188371
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "no-cache, must-revalidate, max-age=0",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:14:44 GMT",
+    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "link": "\u003Chttps://nursing.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
+    "server": "nginx",
+    "x-tec-api-origin": "https://nursing.wsu.edu",
+    "x-tec-api-root": "https://nursing.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-16T20:14:42.6238008Z"
+}

@@ -1,0 +1,33 @@
+{
+  "PagePath": "/faculty/",
+  "Url": "https://psychology.wsu.edu/faculty/",
+  "FinalUrl": null,
+  "Title": "Faculty | Department of Psychology | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 311433,
+  "ScreenshotSizeBytes": 1827133,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1827133
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:14:23 GMT",
+    "etag": "\u00225885c643128c0e5623682337bcf82ba8\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:14:23 GMT",
+    "link": "\u003Chttps://psychology.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://psychology.wsu.edu/wp-json/wp/v2/pages/906\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://psychology.wsu.edu/?p=906\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T20:14:20.2968027Z"
+}

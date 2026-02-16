@@ -2,21 +2,53 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 62.8 KB |
-| Total Screenshots | 473.3 KB |
+| Status | ⚠️ 1/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 1 |
+| Pages Failed | 5 |
+| Total JS Errors | 4 |
+| Total JS Warnings | 1 |
+| Total HTML | 299.8 KB |
+| Total Screenshots | 701.1 KB |
 | Folder | `asce-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | American Society of Civil Engineers \... | 0 | 0 | 62.8 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | American Society of Civil Engineers \... | 0 | 0 | 1 |
+| ❌ | [/about/](about/report.md) | 404 | Page not found \| American Society of... | 1 | 0 | 1 |
+| ❌ | [/competitions/](competitions/report.md) | 404 | Page not found \| American Society of... | 1 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| American Society of... | 1 | 0 | 1 |
+| ❌ | [/events/](events/report.md) | 405 | Human Verification | 1 | 1 | 1 |
+| ✅ | [/membership/](membership/report.md) | 200 | Membership \| American Society of Civ... | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/competitions/](competitions/report.md)
+
+![/competitions/](competitions/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/events/](events/report.md)
+
+![/events/](events/01-page-loaded.png)
+
+### [/membership/](membership/report.md)
+
+![/membership/](membership/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -24,6 +56,45 @@
 
 - **URL:** https://asce.wsu.edu/
 - **Status:** 0
+
+### /about/
+
+- **URL:** https://asce.wsu.edu/about/
+- **Status:** 404
+
+### /events/
+
+- **URL:** https://asce.wsu.edu/events/
+- **Status:** 405
+
+### /competitions/
+
+- **URL:** https://asce.wsu.edu/competitions/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://asce.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /about/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /events/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /competitions/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

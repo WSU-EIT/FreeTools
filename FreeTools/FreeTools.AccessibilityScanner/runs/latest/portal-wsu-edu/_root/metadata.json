@@ -1,15 +1,23 @@
 {
   "PagePath": "/",
   "Url": "https://portal.wsu.edu/",
-  "FinalUrl": "https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7\u0026redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse\u0026response_type=code\u0026scope=openid%20profile%20sis.prd.groups\u0026state=IPEf%2Fg2se4iU7VVv0PBje%2FzO2W%2BN7gYfxhI68kG2sw7lv2U9piOSjWsvFXLb7BU6clVKZRjMDAfe%2F%2F8sa7P8QzKCeS7jtckCQ5r%2FiXea9BHhZg7UUilnqF65teHNzDworAzwCI3mPowObTvU9OLOOp7sra72vVENRrzr2iDVh2eujkrSHcYLCHISdGpAJekgRiuuTiTtwyq6RdWPUyDHAKsjpFd3CLf6HZyMWCxbxruCCZjgMg%3D%3D",
-  "Title": "WSU | Sign In",
+  "FinalUrl": "https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7\u0026redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse\u0026response_type=code\u0026scope=openid%20profile%20sis.prd.groups\u0026state=joP2%2Fz0aU09m8w6KsaavMlMX%2BEkbTZj9TswvfHiXm1rYjioGJGgb2BezbH8kKdF8R1723gEAMKHi7im9Fff42IYLB5XdjvpHoAcccZHc3vCWtpC9%2FqOpBi%2FWBvAV2D%2BDnwaY7YlVk0CbjR9T96iEpGWCOOiU9F58Wu128njm0YBSNkq4dXp5yCTjG768y5h0IzHrhBtEBCwNnieKlOeNxK3JA9vcVU1FN4JgJi8635UT5O7Sow%3D%3D",
+  "Title": "WSU Authentication | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 141414,
-  "ScreenshotSizeBytes": 61875,
+  "HtmlSizeBytes": 74404,
+  "ScreenshotSizeBytes": 42349,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 7,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 42349
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "accept-ch": "Sec-CH-UA-Platform-Version",
@@ -18,7 +26,7 @@
     "content-language": "en",
     "content-security-policy-report-only": "default-src \u0027self\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com; connect-src \u0027self\u0027 wsu.okta.com wsu-admin.okta.com login.wsu.edu *.oktacdn.com *.mixpanel.com *.mapbox.com wsu.kerberos.okta.com wsu.mtls.okta.com *.authenticatorlocalprod.com:8769 http://localhost:8769 http://127.0.0.1:8769 *.authenticatorlocalprod.com:65111 http://localhost:65111 http://127.0.0.1:65111 *.authenticatorlocalprod.com:65121 http://localhost:65121 http://127.0.0.1:65121 *.authenticatorlocalprod.com:65131 http://localhost:65131 http://127.0.0.1:65131 *.authenticatorlocalprod.com:65141 http://localhost:65141 http://127.0.0.1:65141 *.authenticatorlocalprod.com:65151 http://localhost:65151 http://127.0.0.1:65151 https://oinmanager.okta.com data: *.ingest.sentry.io; script-src \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 \u0027self\u0027 \u0027report-sample\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com; style-src \u0027unsafe-inline\u0027 \u0027self\u0027 \u0027report-sample\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com; frame-src \u0027self\u0027 wsu.okta.com wsu-admin.okta.com login.wsu.edu login.okta.com *.vidyard.com com-okta-authenticator:; img-src \u0027self\u0027 wsu.okta.com login.wsu.edu *.oktacdn.com *.tiles.mapbox.com *.mapbox.com *.vidyard.com data: blob:; font-src \u0027self\u0027 wsu.okta.com login.wsu.edu data: *.oktacdn.com fonts.gstatic.com; frame-ancestors \u0027self\u0027 https://my.wsu.edu",
     "content-type": "text/html;charset=utf-8",
-    "date": "Mon, 16 Feb 2026 19:51:16 GMT",
+    "date": "Mon, 16 Feb 2026 20:10:32 GMT",
     "expires": "0",
     "p3p": "CP=\u0022HONK\u0022",
     "pragma": "no-cache",
@@ -27,13 +35,13 @@
     "strict-transport-security": "max-age=315360000; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
-    "x-okta-request-id": "aZN1NEksOkvJ0rCsq8EbFwAJRT0",
+    "x-okta-request-id": "aZN5t9yPohQT48MPSExm9wAAGS0",
     "x-rate-limit-limit": "60",
     "x-rate-limit-remaining": "58",
-    "x-rate-limit-reset": "1771271535",
+    "x-rate-limit-reset": "1771272690",
     "x-robots-tag": "noindex,nofollow",
     "x-ua-compatible": "IE=edge",
     "x-xss-protection": "0"
   },
-  "CapturedAt": "2026-02-16T19:51:11.371689Z"
+  "CapturedAt": "2026-02-16T20:10:26.1399567Z"
 }

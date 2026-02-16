@@ -1,0 +1,711 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class=" template es5date formattribute fetch localstorage sessionstorage"><head>
+                <title>Login | Washington State University Parking</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="version" content="AIMS Web 9.0.42.10h">
+<meta name="copyright" content="2017 EDC Corporation">
+
+<link rel="stylesheet" type="text/css" href="https://parking.wsu.edu/resources/index.php?cmd=get_css&amp;css=common.css&amp;version=7835f4eb3f05bc408c8b2828a1dcdc20">
+    <link rel="stylesheet" type="text/css" href="https://parking.wsu.edu/resources/index.php?cmd=get_css&amp;css=login.css&amp;version=7835f4eb3f05bc408c8b2828a1dcdc20">
+
+<style type="text/css">
+    </style>
+
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js" nonce=""></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-2LEH1404ZG&amp;cx=c&amp;gtm=4e62b1h1" nonce=""></script><script type="text/javascript" nonce="" crossorigin="anonymous">    var URL_ROOT = 'https://parking.wsu.edu/';
+    var SERVER_TIMEZONE = 'America/Los_Angeles';
+    </script>
+<link rel="shortcut icon" type="image/png" href="https://parking.wsu.edu/resources/index.php?cmd=get_favicon">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1982230-4" type="text/javascript" nonce="" crossorigin="anonymous"></script>
+    <script type="text/javascript" nonce="" crossorigin="anonymous">        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-1982230-4');
+            </script>
+    </head>
+    <body class="">
+        
+        <a class="skip_to_main_content btn btn-primary" href="#main_content">
+    Skip to main content</a>
+
+<header aria-label="Page Header">
+    <div id="header" class="">    <div id="upper_header">
+        <div class="container">
+            <div class="row">
+                <div id="upper_left_header" class="col-xs-6 col-sm-7">
+                    <a href="https://parking.wsu.edu/">
+                        <div class="logo_container single_image_header">
+    <img id="site_logo" src="https://parking.wsu.edu/resources/index.php?cmd=get_site_logo" alt="">
+</div>                    </a>
+                </div>
+                <div id="upper_right_header" class="col-xs-6 col-sm-5 text-right">
+                    <a id="shopping_cart_summary" href="https://parking.wsu.edu//cart/index.php" class="aria-tooltip " aria-label="Shopping Cart " data-original-title="" title="">
+                        
+                        <div class=" icon icon-black"><div class=" sprite-image icon-shopping_cart" aria-hidden="true"></div></div>
+                        
+                    </a>
+                                            
+                            
+                                <button type="button" id="login_logout_link" data-cmd="login">Login</button>
+                            
+                        
+                                        
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="lower_header">
+                <div class="container">
+            <div class="row">
+                
+            </div>
+        </div>
+    </div>
+</div>
+            <div id="countdown_container" data-show_button_at="90" role="status">    
+</div>
+
+<script type="text/template" nonce="" crossorigin="anonymous" id="countdown_template">    <% if (num_locks > 0) { %>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <% if (isoDateToMilliseconds(expire_time) > Date.now()) { %>
+                        <span id="countdown_time"></span>
+                        <span id="countdown_description">remaining to complete order</span>
+                    <% } else { %>
+                        Order Time Expired                    <% } %>
+                                            <button class="extend_btn btn btn-default btn-xs">I need more time</button>
+                                    </div>
+            </div>
+        </div>
+    <% } %>
+</script>
+
+<div id="items_removed_from_cart_by_lock_dialog" class="modal fade " role="alertdialog" tabindex="0">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                            <div class="modal-header">
+                                            <button type="button" class="close aria-tooltip" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                                        <div class="h4 modal-title" role="heading">Items removed from cart</div>
+                </div>
+                                        <div class="modal-body" role="main">
+                    Item(s) have become unavailable and have been removed from your cart
+                </div>
+                                        <div class="modal-footer" role="navigation">
+                                            <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
+                                        
+                </div>
+                    </div>
+    </div>
+</div>    </header>
+
+<script type="text/template" nonce="" crossorigin="anonymous" id="header_template">    <div id="upper_header">
+        <div class="container">
+            <div class="row">
+                <div id="upper_left_header" class="col-xs-6 col-sm-7">
+                    <a href="https://parking.wsu.edu/">
+                        <div class="logo_container single_image_header">
+    <img id="site_logo" src="https://parking.wsu.edu/resources/index.php?cmd=get_site_logo" alt=""/>
+</div>                    </a>
+                </div>
+                <div id="upper_right_header" class="col-xs-6 col-sm-5 text-right">
+                    <a id="shopping_cart_summary"
+                       href="https://parking.wsu.edu//cart/index.php"
+                       class="aria-tooltip <% if(cart.num_cart_items > 0) { %>text-primary<% } %>"
+                       aria-label="Shopping Cart <% if (cart.num_cart_items > 0) { %>contains <%= cart.num_cart_items %> item<% if (cart.num_cart_items > 1) { %>s<% } %> for <%= formatDecimal128Currency(cart.total) %> total<% } %>">
+                        <% if (cart.num_cart_items > 0) { %>
+                            <span id="num_cart_items" class="badge" aria-hidden="true"><%= cart.num_cart_items %></span>
+                        <% } %>
+                        <div class=" icon icon-black"><div class=" sprite-image icon-shopping_cart" aria-hidden="true"></div></div>
+                        <% if (cart.num_cart_items > 0) { %>
+                            <span id="cart_total" aria-hidden="true"><%= formatDecimal128Currency(cart.total) %></span>
+                        <% } %>
+                    </a>
+                                            <% if (user.logged_in) { %>
+                            <% if (user.can_logout) { %>
+                                <button type="button" id="login_logout_link" data-cmd="logout">Logout</button>
+                            <% } %>
+                        <% } else { %>
+                            <% if (!user.pvm_logged_in) { %>
+                                <button type="button" id="login_logout_link" data-cmd="login">Login</button>
+                            <% } %>
+                        <% } %>
+                                        <% if(user.pvm_logged_in) { %>
+                        <button type="button" id="login_logout_link" data-cmd="logout_pvm">Logout</button>
+                    <% } %>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="lower_header">
+                <div class="container">
+            <div class="row">
+                <% if (user.logged_in) { %>
+                    <div class="col-xs-1 mobile_menu_container">
+                        <button id="mobile_menu"
+                                class="aria-tooltip"
+                                aria-expanded="false"
+                                aria-label="Toggle Main Menu">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </button>
+                    </div>
+                    <div id="logged_in_as" class="col-xs-11 text-right">
+                        <% if (account.p_contact != null && ((account.p_contact.first_name != null) || (account.p_contact.last_name != null))) { %>
+                            Logged in as <%- account.p_contact.first_name %> <%- account.p_contact.last_name %>
+                        <% } else if(account.account_number != null) { %>
+                            Logged in as account # <%- account.account_number %>
+                        <% } %>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</script>
+        
+        <div id="main_content_container" class="container">
+            <div class="row">
+                <div id="menu_placeholder" class="col-lg-3">    
+</div>
+
+
+
+<script type="text/template" nonce="" crossorigin="anonymous" id="menu_template">    <%
+        if (user.logged_in && !$("#pvm_login_content").length) {
+            $("#main_content").removeClass('col-md-12').addClass("col-lg-9");
+    %>
+        <nav id="menu" class="navbar">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="<% if (url === URL_ROOT ) { %>active<% } %>" role="presentation">
+                    <a href="https://parking.wsu.edu/">
+                        <div class=" icon"><div class=" sprite-image icon-account" aria-hidden="true"></div></div>
+                        <span id="account_menu_label">Account</span>
+                    </a>
+                </li>
+                                    <li class="<% if (url === URL_ROOT + 'vehicles/index.php' ) { %>active<% } %>" role="presentation">
+                        <a href="https://parking.wsu.edu/vehicles/index.php">
+                            <div class=" icon"><div class=" sprite-image icon-account" aria-hidden="true"></div></div>
+                            <span id="vehicles_menu_label">Vehicles</span>
+                            <% if (account_vehicles.length > 0) { %>
+                                <span class="badge"><%= account_vehicles.length %></span>
+                            <% } %>
+                        </a>
+                    </li>
+                                                    <li class="<% if (url === URL_ROOT + 'tickets/index.php' ) { %>active<% } %>" role="presentation">
+                        <a href="https://parking.wsu.edu/tickets/index.php">
+                            <div class=" icon"><div class=" sprite-image icon-ticket" aria-hidden="true"></div></div>
+                            <span id="tickets_menu_label">Tickets</span>
+                            <% if (unpaid_account_tickets.tickets.length > 0) { %>
+                            <span class="badge"><%= unpaid_account_tickets.tickets.length %></span>
+                            <% } %>
+                        </a>
+                    </li>
+                                                    <li class="<% if (url === URL_ROOT + 'permits/index.php' ) { %>active<% } %>" role="presentation">
+                        <a href="https://parking.wsu.edu/permits/index.php">
+                            <div class=" icon"><div class=" sprite-image icon-permit" aria-hidden="true"></div></div>
+                            <span id="permits_menu_label">Permits</span>
+                            <% if (active_account_permits_count > 0) { %>
+                            <span class="badge"><%= active_account_permits_count %></span>
+                            <% } %>
+                        </a>
+                    </li>
+                                                                                
+                <% if(creditCardsEnabled) { %>
+                    <li class="<% if (url === URL_ROOT + 'creditcards/index.php' ) { %>active<% } %>" role="presentation">
+                        <a href="https://parking.wsu.edu/creditcards/index.php">
+                            <div class=" icon"><div class=" sprite-image icon-credit_card" aria-hidden="true"></div></div>
+                            <span id="wallet_menu_label">My Wallet</span>
+                            <% if (typeof(credit_cards) !== "undefined" && credit_cards.length > 0) { %>
+                            <span class="badge"><%= credit_cards.length %></span>
+                            <% } %>
+                        </a>
+                    </li>
+                <% } %>
+            </ul>
+        </nav>
+    <% } %>
+</script>                <main id="main_content" class="col-md-12" aria-label="Main Content">
+                    <div class="row">
+                        
+
+
+
+<div id="login_content" class="multiple">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12">
+            <div class="row vertical-align">
+                <div class="col-md-4 login_method">
+                    <div class="login_method_label">
+                        Select a login method:                    </div>
+                    <ul class="nav nav-pills nav-stacked" role="tablist" id="login_type_tabs">
+                                                                    <li role="presentation" class="login_method_option active " style="display: block;">
+                            <a href="#AIMS_AUTH" aria-controls="AIMS_AUTH" role="tab" data-toggle="tab">
+                                <div class="`login_type_tab_title`">WSU Login</div>
+                                <div class="login_type_tab_description">WSU Network Authentication</div>
+                            </a>
+                        </li>
+                                                                    <li role="presentation" class="login_method_option  no_tab_description" style="display: block;">
+                            <a href="#DEPARTMENT_LOGIN" aria-controls="DEPARTMENT_LOGIN" role="tab" data-toggle="tab">
+                                <div class="`login_type_tab_title`">Departmental Guest</div>
+                                <div class="login_type_tab_description"></div>
+                            </a>
+                        </li>
+                                                                    <li role="presentation" class="login_method_option  no_tab_description" style="display: block;">
+                            <a href="#EMAIL_LOGIN" aria-controls="EMAIL_LOGIN" role="tab" data-toggle="tab">
+                                <div class="`login_type_tab_title`">Email Authentication</div>
+                                <div class="login_type_tab_description"></div>
+                            </a>
+                        </li>
+                                        </ul>
+                </div>
+                <div class="col-md-8 login_form">
+                    <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active" id="AIMS_AUTH">
+                            <div class="login_type">
+                                <form id="login_AIMS_AUTH" class="ajax" method="post" action="https://parking.wsu.edu/api/login/index.php" novalidate="true">
+    <input type="hidden" name="cmd" value="login_submit" style="">
+    <input type="hidden" name="login_type" value="AIMS_AUTH" style="">
+    <h2>
+                    WSU Login
+            </h2>
+            <div class="header_graphic">
+            <img src="data:image/png;base64,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" alt="Header Graphic">
+        </div>
+        <div class="body">
+                <div class="form_description">Access to WSU information systems is restricted to faculty, staff, students, and other individuals explicitly authorized by WSU.</div>
+            </div>
+    <div class="footer">
+        <button class="btn btn-primary" type="submit">Login</button>
+    </div>
+</form>
+                            </div>
+                        </div>
+                                            <div role="tabpanel" class="tab-pane " id="DEPARTMENT_LOGIN">
+                            <div class="login_type">
+                                <form id="login_DEPARTMENT_LOGIN" class="ajax form-horizontal" method="post" action="https://parking.wsu.edu/api/login/index.php" novalidate="true">
+    <input type="hidden" name="cmd" value="login_submit" style="">
+    <input type="hidden" name="login_type" value="DEPARTMENT_LOGIN" style="">
+    <h2>
+                    Departmental Guest
+            </h2>
+        <fieldset>
+        <div class="form_description"></div>
+        <div id="field_DEPARTMENT_LOGIN_username" class=" field textbox_field form-group required"><label for="DEPARTMENT_LOGIN_username" class=" control-label">Account #</label><div class="control-container"><input id="DEPARTMENT_LOGIN_username" name="username" type="text" class=" required  form-control" required="required" style=""></div></div>
+                    <div id="field_DEPARTMENT_LOGIN_password" class=" field textbox_field form-group required"><label for="DEPARTMENT_LOGIN_password" class=" control-label">Password</label><div class="control-container"><input id="DEPARTMENT_LOGIN_password" name="password" type="password" class=" required  form-control" required="required" style=""></div></div>
+                    </fieldset>
+    <div class="footer">
+        <button class="btn btn-primary disabled" type="submit">Login</button>
+    </div>
+</form>
+
+
+<div id="invalid_username_or_password_DEPARTMENT_LOGIN" class="modal fade " role="alertdialog" tabindex="0">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                            <div class="modal-header">
+                                            <button type="button" class="close aria-tooltip" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                                        <div class="h4 modal-title" role="heading">Invalid login</div>
+                </div>
+                                        <div class="modal-body" role="main">
+                    Invalid username or password
+                </div>
+                                        <div class="modal-footer" role="navigation">
+                                            <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
+                                        
+                </div>
+                    </div>
+    </div>
+</div>
+
+<div id="locked_out_DEPARTMENT_LOGIN" class="modal fade " role="alertdialog" tabindex="0">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                            <div class="modal-header">
+                                            <button type="button" class="close aria-tooltip" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                                        <div class="h4 modal-title" role="heading">Account is locked</div>
+                </div>
+                                        <div class="modal-body" role="main">
+                    Account is locked out. Please try again in 5 minutes.
+                </div>
+                                        <div class="modal-footer" role="navigation">
+                                            <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
+                                        
+                </div>
+                    </div>
+    </div>
+</div>                            </div>
+                        </div>
+                                            <div role="tabpanel" class="tab-pane " id="EMAIL_LOGIN">
+                            <div class="login_type">
+                                
+<div id="bad_email_format" class="hidden_message">
+    <div class="text-danger">Email format isn't correct</div>
+</div>
+
+<form id="login_EMAIL_LOGIN" class="ajax form-horizontal" method="post" action="https://parking.wsu.edu/api/login/index.php" novalidate="true">
+    <input type="hidden" name="cmd" value="login_submit" style="">
+    <input type="hidden" name="login_type" value="EMAIL_LOGIN" style="">
+    <h2>
+                    Email Authentication
+            </h2>
+        <fieldset>
+        <div class="form_description"></div>
+        <div id="field_EMAIL_LOGIN_username" class=" field textbox_field form-group required"><label for="EMAIL_LOGIN_username" class=" control-label">Email Address</label><div class="control-container"><input id="EMAIL_LOGIN_username" name="username" type="email" class="validate_email_format required  form-control" required="required" style=""></div></div>
+        <div id="field_EMAIL_LOGIN_password" class=" field textbox_field form-group required"><label for="EMAIL_LOGIN_password" class=" control-label">Password</label><div class="control-container"><input id="EMAIL_LOGIN_password" name="password" type="password" class=" required  form-control" required="required" style=""></div></div>
+    </fieldset>
+    <div class="footer">
+
+        <div class="btn-group" role="group" aria-label="Login form buttons">
+            <button id="register_button" class="register_button btn btn-secondary" data-login_type="EMAIL_LOGIN" type="button">Register</button>
+            <button class="btn btn-primary disabled" type="submit">Login</button>
+        </div>
+
+        <div class="forgot_password">
+            <a href="#" id="forgot_password_a" class="forgot_password_a" data-login_type="EMAIL_LOGIN">Forgot password?</a>
+        </div>
+    </div>
+</form>
+
+
+<div id="invalid_username_or_password_EMAIL_LOGIN" class="modal fade " role="alertdialog" tabindex="0">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                            <div class="modal-header">
+                                            <button type="button" class="close aria-tooltip" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                                        <div class="h4 modal-title" role="heading">Invalid login</div>
+                </div>
+                                        <div class="modal-body" role="main">
+                    Invalid username or password
+                </div>
+                                        <div class="modal-footer" role="navigation">
+                                            <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
+                                        
+                </div>
+                    </div>
+    </div>
+</div>
+
+<div id="locked_out_EMAIL_LOGIN" class="modal fade " role="alertdialog" tabindex="0">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                            <div class="modal-header">
+                                            <button type="button" class="close aria-tooltip" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                                        <div class="h4 modal-title" role="heading">Account is locked</div>
+                </div>
+                                        <div class="modal-body" role="main">
+                    This Account is locked out. Please try again in 5 minutes.
+                </div>
+                                        <div class="modal-footer" role="navigation">
+                                            <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
+                                        
+                </div>
+                    </div>
+    </div>
+</div>
+
+<div id="invalid_username_or_password_EMAIL_LOGIN" class="modal fade " role="alertdialog" tabindex="0">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                            <div class="modal-header">
+                                            <button type="button" class="close aria-tooltip" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                                        <div class="h4 modal-title" role="heading">Invalid login</div>
+                </div>
+                                        <div class="modal-body" role="main">
+                    Invalid username or password
+                </div>
+                                        <div class="modal-footer" role="navigation">
+                                            <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
+                                        
+                </div>
+                    </div>
+    </div>
+</div>
+
+
+<div id="create_account_EMAIL_LOGIN" class="modal fade " role="alertdialog" tabindex="0">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                            <div class="modal-header">
+                                            <button type="button" class="close aria-tooltip" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                                        <div class="h4 modal-title" role="heading">Create a new account</div>
+                </div>
+                                        <div class="modal-body" role="main">
+                        <form id="create_account_EMAIL_LOGIN" class="form-horizontal">
+    <input type="hidden" name="cmd" value="create_account" style="">
+    <input type="hidden" name="login_type" value="EMAIL_LOGIN" style="">
+    <fieldset class="col-md-12">
+        <div id="field_create_account_EMAIL_LOGIN_username" class=" field textbox_field form-group required"><label for="create_account_EMAIL_LOGIN_username" class=" control-label">Email Address</label><div class="control-container"><input id="create_account_EMAIL_LOGIN_username" name="username" type="email" class="validate_email_format required  form-control" required="required" style=""></div></div>
+        <div id="field_create_account_EMAIL_LOGIN_password" class=" field textbox_field form-group required"><label for="create_account_EMAIL_LOGIN_password" class=" control-label">Password</label><div class="control-container"><input id="create_account_EMAIL_LOGIN_password" name="password" type="password" class=" required  form-control" required="required" style=""></div></div>
+        <div id="field_create_account_EMAIL_LOGIN_confirm_password" class=" field textbox_field form-group required"><label for="create_account_EMAIL_LOGIN_confirm_password" class=" control-label">Confirm Password</label><div class="control-container"><input id="create_account_EMAIL_LOGIN_confirm_password" name="confirm_password" type="password" class=" required  form-control" required="required" style=""></div></div>
+        <p id="error_text" class="text-danger hidden"></p>
+    </fieldset>
+    <div class="footer">
+        <button class="btn btn-primary" type="submit">Create a new account</button>
+    </div>
+</form>
+
+<div class="create_account_error_codes" style="display: none">
+    <div id="passwords_dont_match">Passwords do not match. Please check both values.</div>
+    <div id="password_strength_not_met">Password does not meet the required strength.</div>
+    <div id="account_already_exists">Account already exists</div>
+    <div id="error_creating_account">Error creating account.  Please contact your parking office.</div>
+    <div id="email_blacklist">Error creating account.  Email domain is blacklisted.</div>
+    <div id="email_whitelist">Error creating account.  Email domain is not on the whitelist.</div>
+    <div id="bad_email_format">Email format isn't correct.</div>
+</div>
+                </div>
+                                </div>
+    </div>
+</div>
+
+
+<div id="forgot_password_EMAIL_LOGIN" class="modal fade " role="alertdialog" tabindex="0">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                            <div class="modal-header">
+                                            <button type="button" class="close aria-tooltip" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                                        <div class="h4 modal-title" role="heading">Forgot password</div>
+                </div>
+                                        <div class="modal-body" role="main">
+                        <form id="forgot_password_EMAIL_LOGIN" class="form-horizontal">
+    <input type="hidden" name="cmd" value="forgot_password" style="">
+    <input type="hidden" name="login_type" value="EMAIL_LOGIN" style="">
+    <fieldset class="col-md-12">
+        <div id="field_forgot_password_EMAIL_LOGIN_username" class=" field textbox_field form-group required"><label for="forgot_password_EMAIL_LOGIN_username" class=" control-label">Email Address</label><div class="control-container"><input id="forgot_password_EMAIL_LOGIN_username" name="username" type="email" class=" required  form-control" required="required" style=""></div></div>
+        <p id="error_text" class="text-danger hidden"></p>
+    </fieldset>
+    <div class="footer">
+        <p><a href="https://parking.wsu.edu/login/index.php?cmd=reset_password">I have a password reset key</a></p>
+        <button class="btn btn-primary" type="submit">Reset password</button>
+    </div>
+</form>
+
+
+<div id="reset_EMAIL_LOGIN" class="modal fade " role="alertdialog" tabindex="0">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                                        <div class="modal-body" role="main">
+                    Thank you for your request. An email with reset instructions will be sent shortly.
+                </div>
+                                        <div class="modal-footer" role="navigation">
+                                            <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
+                                        
+                </div>
+                    </div>
+    </div>
+</div>
+<div class="forgot_password_error_codes" style="display: none">
+    <div id="error_multiple_accounts">Email is linked to multiple accounts. Please contact your parking office.</div>
+    <div id="error_email_doesnt_exist">Account with that email does not exist. Please create a new account.</div>
+    <div id="error_unfulfilled_request">Email has unfulfilled reset password request. Please check your email.</div>
+</div>
+                </div>
+                                </div>
+    </div>
+</div>
+
+<div id="mulit_account_EMAIL_LOGIN" class="modal fade " role="alertdialog" tabindex="0">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                            <div class="modal-header">
+                                            <button type="button" class="close aria-tooltip" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                                        <div class="h4 modal-title" role="heading">Unable to determine proper account</div>
+                </div>
+                                        <div class="modal-body" role="main">
+                    The given login information exists on mulitple accounts, so the system is unable to determine the proper account
+                </div>
+                                        <div class="modal-footer" role="navigation">
+                                            <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
+                                        
+                </div>
+                    </div>
+    </div>
+</div>                            </div>
+                        </div>
+                                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div id="error_no_login" class="modal fade " role="alertdialog" tabindex="0">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                            <div class="modal-header">
+                                            <button type="button" class="close aria-tooltip" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                                        <div class="h4 modal-title" role="heading">Invalid login</div>
+                </div>
+                                        <div class="modal-body" role="main">
+                    You don't currently have an account in the parking system. Please contact the parking office for more information
+                </div>
+                                        <div class="modal-footer" role="navigation">
+                                            <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
+                                        
+                </div>
+                    </div>
+    </div>
+</div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <div id="sub_content" class="container">
+            
+        </div>
+
+        <script src="https://parking.wsu.edu/resources/js/common.js?version=7835f4eb3f05bc408c8b2828a1dcdc20" type="text/javascript" nonce="" crossorigin="anonymous" integrity="sha256-rlUr187MIpsEQc34QcXCF9SXWNGDWGQFPIS2CEwIP6E="></script>                    <script src="https://parking.wsu.edu/resources/js/login.js?version=7835f4eb3f05bc408c8b2828a1dcdc20" type="text/javascript" nonce="" crossorigin="anonymous" integrity="sha256-NbGKE8nslBymYlgrZWeyzW48y9RVQLMN3CuBhHQZ2Vc="></script>                    <script src="https://parking.wsu.edu/resources/js/login.email.js?version=7835f4eb3f05bc408c8b2828a1dcdc20" type="text/javascript" nonce="" crossorigin="anonymous" integrity="sha256-ugzGOe07UG+Fbt6sUCcrphshuMQGzmhbCPt+CKEbCyc="></script>        
+        
+        <footer class="footer" aria-label="Page Footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-7">
+                                                                                        <a href="https://app.leg.wa.gov/WAC/default.aspx?dispo=true&amp;cite=504-15" target="_blank">Campus Parking and Traffic Regulations for WSU Pullman</a>
+                                                                                                                                    <a href="https://transportation.wsu.edu/lpr-privacy-policy/" target="_blank">License Plate Recognition (LPR) Privacy Policy</a>
+                                                                        </div>
+            <div class="col-xs-12 col-sm-5 text-right">
+                                        9.0.42.10h © <a id="copyright" href="http://www.wsu.edu">Washington State University</a>
+                            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="form_validation_error_container"></div>
+
+<script id="form_validation_error_template" type="text/template">
+
+    
+<div id="form_validation_error" class="modal fade "
+     data-keyboard="false" data-backdrop="static"     role="alertdialog" tabindex="0">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                            <div class="modal-header">
+                                        <div class="h4 modal-title" role="heading">Invalid data detected</div>
+                </div>
+                                        <div class="modal-body" role="main">
+                    An error was found in your form, please ensure all required fields are populated before continuing.
+                </div>
+                                </div>
+    </div>
+</div>
+</script><div id="please_wait_dialog_container">
+
+    
+    
+
+</div>
+<script id="please_wait_dialog_template" type="text/template">
+
+    
+    
+<div id="<%= uniqid() %>" class="modal fade "
+     data-keyboard="false" data-backdrop="static"     role="alertdialog" tabindex="0">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                            <div class="modal-header">
+                                        <div class="h4 modal-title" role="heading"><%if (isset(title)) { %><%- title %><% } else { %>Please Wait...<% } %></div>
+                </div>
+                                        <div class="modal-body" role="main">
+                            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-primary active" role="progressbar" style="width:100%"></div>
+        </div>
+    
+                </div>
+                                </div>
+    </div>
+</div>
+</script>
+        
+        <div id="common_cart_errors">
+    <input type="hidden" name="cart_error_present" value="false" style="">
+    <input type="hidden" name="cart_error_missing_afeeid" value="Missing required field: afeeid" style="">
+    <input type="hidden" name="cart_error_fee_not_found" value="Unable to add fee to the shopping cart, no matching fee found" style="">
+    <input type="hidden" name="cart_error_fee_zero_balance" value="Unable to add fee to the shopping cart, as the fee has a $0 balance" style="">
+    <input type="hidden" name="cart_error_fee_not_allowed" value="Unable to add fee to the shopping cart, fee payment not allowed" style="">
+    <input type="hidden" name="cart_error_fee_logged_off" value="Unable to add fee to the shopping cart, as you are not signed in" style="">
+    <input type="hidden" name="cart_error_fee_no_account" value="Unable to add fee to the shopping cart, as your account has not yet fully saved, try again later." style="">
+    <input type="hidden" name="cart_error_fee_wrong_account" value="Unable to add fee to the shopping cart, as it doesn't belong to your account" style="">
+
+    <input type="hidden" name="cart_error_missing_ticketid" value="Missing required field: ticketid" style="">
+    <input type="hidden" name="cart_error_ticket_pending_appeal" value="Your ticket is currently pending an appeal. Cannot pay off ticket at this time." style="">
+    <input type="hidden" name="cart_error_ticket_not_found" value="Unable to add ticket to shopping cart, as it was not found" style="">
+    <input type="hidden" name="cart_error_ticket_unauthorized_account" value="Unable to add ticket to shopping cart, as you are not authorized for this account" style="">
+    <input type="hidden" name="cart_error_ticket_zero_balance" value="Unable to add ticket to shopping cart, as it has a $0 balance" style="">
+    <input type="hidden" name="cart_error_cart_contains_pay_plan" value="Skipping adding new ticket to the shopping cart, as the cart contains a payment plan payment" style="">
+    <input type="hidden" name="cart_error_cart_contains_ticket" value="Skipping adding payment plan to the shopping cart, as the cart contains a ticket" style="">
+
+    <input type="hidden" name="cart_error_pay_plan_not_found" value="Unable to add payment plan to shopping cart, as it was not found" style="">
+    <input type="hidden" name="cart_error_pay_plan_unauthorized_account" value="Unable to add payment plan to shopping cart, as you are not authorized for this account" style="">
+    <input type="hidden" name="cart_error_no_payment_due" value="Unable to add payment plan to shopping cart, as it has no payments due" style="">
+
+    <input type="hidden" name="cart_error_permit_not_found" value="Unable to add permit to shopping cart, as it was not found" style="">
+    <input type="hidden" name="cart_error_permit_wrong_account" value="Unable to add permit to shopping cart, as it doesn't belong to your account" style="">
+    <input type="hidden" name="cart_error_permit_logged_off" value="Unable to add permit to shopping cart, as you are not signed in" style="">
+    <input type="hidden" name="cart_error_permit_zero_balance" value="Unable to add permit to shopping cart, as it has a $0 balance" style="">
+    <input type="hidden" name="cart_error_start_end_req" value="Unable to add permit to shopping cart. This permit type requires a start and end date." style="">
+    <input type="hidden" name="cart_error_res_street_cap" value="Unable to add permit to shopping cart, as doing so would exceed the residential street permit purchase capacity." style="">
+    <input type="hidden" name="cart_error_invalid_res_street" value="Unable to add permit to shopping cart, as this account does not belong to a valid resident street." style="">
+    <input type="hidden" name="cart_error_no_contact_address" value="Unable to add permit to shopping cart, as this account does not have a contact address." style="">
+    <input type="hidden" name="cart_error_permit_no_payment" value="Unable to add permit to shopping cart, as this type of permit is not allowed for payment online." style="">
+    <input type="hidden" name="cart_error_permit_no_account" value="Unable to add permit to shopping cart, as your account has not yet fully saved, try again later." style="">
+
+    <input type="hidden" name="cart_error_renewal_logged_off" value="Unable to add permit to shopping cart. This permit type is only available when logged in." style="">
+    <input type="hidden" name="cart_error_renewal_eligible" value="Unable to add permit to shopping cart. This permit is not eligible for renewal." style="">
+    <input type="hidden" name="cart_error_renewal_nonauth" value="Unable to add permit to shopping cart. This non-authenticated permit is not eligible for renewal." style="">
+    <input type="hidden" name="cart_error_user_select_dates" value="Unable to add permit to shopping cart. This permit type requires user-selected start and end dates. Deselect the 'Unique Purchases per' option in AIMS Admin --&gt; Permits --&gt; Res. St. Search Permit Types to remove date selection requirement." style="">
+    <input type="hidden" name="cart_error_insufficient_vehicle_selection" value="Error requesting permit. Insufficient vehicle selection" style="">
+
+    <input type="hidden" name="cart_error_invalid_vehicle_year" value="Error requesting permit. Invalid vehicle year, must be between 1900 and 2050" style="">
+
+    <input type="hidden" name="cart_error_event_not_found" value="Unable to add event payment to shopping cart, as it was not found" style="">
+    <input type="hidden" name="cart_error_event_unauthorized_account" value="Unable to add event payment to shopping cart, as it doesn't belong to your account" style="">
+    <input type="hidden" name="cart_error_event_zero_balance" value="Unable to add event payment to shopping cart, as it has a $0 balance" style="">
+    <input type="hidden" name="cart_error_event_pending" value="Unable to add event payment to shopping cart, as this event is in pending status" style="">
+
+    <input type="hidden" name="cart_error_different_agency" value="Unable to add item as the agency id differs from the agency id of items in the cart" style="">
+    <input type="hidden" name="cart_error_different_agency_group" value="Unable to add items as the agency id differs between individual items" style="">
+    <input type="hidden" name="cart_error_different_agency_group_payplan" value="Unable to add payplan to shopping cart as the tickets / fees on the payplan are not all issued from the same agency" style="">
+
+    
+<div id="common_cart_error_modal" class="modal fade " role="alertdialog" tabindex="0">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                            <div class="modal-header">
+                                            <button type="button" class="close aria-tooltip" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                                        <div class="h4 modal-title" role="heading">Error</div>
+                </div>
+                                        <div class="modal-body" role="main">
+                    
+                </div>
+                                        <div class="modal-footer" role="navigation">
+                                            <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
+                                        
+                </div>
+                    </div>
+    </div>
+</div></div>
+    
+</body></html>

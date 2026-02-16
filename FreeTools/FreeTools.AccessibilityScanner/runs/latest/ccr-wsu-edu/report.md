@@ -2,21 +2,72 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 237.0 KB |
-| Total Screenshots | 1.8 MB |
+| Status | ⚠️ 5/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 5 |
+| Pages Failed | 1 |
+| Total JS Errors | 2 |
+| Total JS Warnings | 2 |
+| Total HTML | 1.3 MB |
+| Total Screenshots | 2.8 MB |
 | Folder | `ccr-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Compliance and Civil Rights \| Washin... | 0 | 0 | 237.0 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Compliance and Civil Rights \| Washin... | 1 | 0 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Compliance and Civil Ri... | 0 | 0 | 1 |
+| ✅ | [/policies/](policies/report.md) | 200 | Policies & Procedures \| Compliance a... | 0 | 0 | 1 |
+| ✅ | [/reporting/](reporting/report.md) | 200 | File A Report or Complaint \| Complia... | 0 | 1 | 1 |
+| ✅ | [/resources/](resources/report.md) | 200 | Resources \| Compliance and Civil Rig... | 0 | 0 | 1 |
+| ❌ | [/training/](training/report.md) | 404 | Page not found \| Compliance and Civi... | 1 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/policies/](policies/report.md)
+
+![/policies/](policies/01-page-loaded.png)
+
+### [/reporting/](reporting/report.md)
+
+![/reporting/](reporting/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+### [/training/](training/report.md)
+
+![/training/](training/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /training/
+
+- **URL:** https://ccr.wsu.edu/training/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /training/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

@@ -5,12 +5,12 @@
 | URL | https://nursing.wsu.edu/ |
 | Title | College of Nursing | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 290.8 KB |
-| Screenshot Size | 2.0 MB |
+| HTML Size | 290.6 KB |
+| Screenshots | 1 (2.0 MB) |
 | JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:51:11.3696270Z |
+| Captured | 2026-02-16T20:10:26.1348561Z |
 
 ## JavaScript Errors
 
@@ -19,11 +19,18 @@
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (2.0 MB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (2.0 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

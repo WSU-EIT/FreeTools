@@ -5,12 +5,20 @@
   "Title": "WSU Tri-Cities - apply now to earn your degree",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 212927,
+  "HtmlSizeBytes": 212853,
   "ScreenshotSizeBytes": 908791,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 908791
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T19:51:11.3786974Z"
+  "CapturedAt": "2026-02-16T20:10:26.1678946Z"
 }

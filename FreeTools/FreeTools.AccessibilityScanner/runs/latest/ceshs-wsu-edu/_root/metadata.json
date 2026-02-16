@@ -5,12 +5,20 @@
   "Title": "College of Education, Sport, and Human Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 255086,
-  "ScreenshotSizeBytes": 2613271,
+  "HtmlSizeBytes": 255174,
+  "ScreenshotSizeBytes": 1694179,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 7,
   "ConsoleWarningCount": 2,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1694179
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T19:51:11.3531624Z"
+  "CapturedAt": "2026-02-16T20:10:26.1169889Z"
 }

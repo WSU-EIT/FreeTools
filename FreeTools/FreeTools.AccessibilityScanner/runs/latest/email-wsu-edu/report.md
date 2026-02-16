@@ -2,21 +2,71 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
+| Status | ✅ 5/5 pages OK |
+| Pages Scanned | 5 |
+| Pages Passed | 5 |
 | Pages Failed | 0 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 5 |
-| Total HTML | 60.0 KB |
-| Total Screenshots | 40.3 KB |
+| Total JS Errors | 14 |
+| Total JS Warnings | 18 |
+| Total HTML | 363.0 KB |
+| Total Screenshots | 190.2 KB |
 | Folder | `email-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | WSU Authentication \| Washington Stat... | 0 | 5 | 60.0 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | WSU \| Sign In | 7 | 4 | 1 |
+| ✅ | [/access/](access/report.md) | 200 | WSU \| Sign In | 7 | 5 | 1 |
+| ✅ | [/help/](help/report.md) | 200 | WSU Authentication \| Washington Stat... | 0 | 2 | 1 |
+| ✅ | [/policies/](policies/report.md) | 200 | WSU Authentication \| Washington Stat... | 0 | 5 | 1 |
+| ✅ | [/resources/](resources/report.md) | 200 | WSU Authentication \| Washington Stat... | 0 | 2 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/access/](access/report.md)
+
+![/access/](access/01-page-loaded.png)
+
+### [/help/](help/report.md)
+
+![/help/](help/01-page-loaded.png)
+
+### [/policies/](policies/report.md)
+
+![/policies/](policies/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+
+## Pages with JavaScript Errors
+
+### / (7 errors)
+
+- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
+- `No available ports. Loopback server failed and polling is cancelled.`
+
+### /access/ (7 errors)
+
+- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
+- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
+- `No available ports. Loopback server failed and polling is cancelled.`
+
 
 ---
 

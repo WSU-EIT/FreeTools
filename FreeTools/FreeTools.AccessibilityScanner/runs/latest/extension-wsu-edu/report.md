@@ -2,21 +2,105 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
+| Status | ⚠️ 1/6 pages OK |
+| Pages Scanned | 6 |
 | Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 0 |
-| Total HTML | 244.2 KB |
+| Pages Failed | 5 |
+| Total JS Errors | 6 |
+| Total JS Warnings | 4 |
+| Total HTML | 1.4 MB |
 | Total Screenshots | 3.0 MB |
 | Folder | `extension-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | WSU Extension \| Washington State Uni... | 0 | 0 | 244.2 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Extension \| Washington State Uni... | 2 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| WSU Extension \| Wa... | 1 | 1 | 1 |
+| ❌ | [/counties/](counties/report.md) | 404 | Page not found \| WSU Extension \| Wa... | 1 | 1 | 1 |
+| ✅ | [/programs/](programs/report.md) | 200 | WSU Extension Programs and Topics A-Z... | 0 | 0 | 1 |
+| ❌ | [/publications/](publications/report.md) | 404 | Page not found \| WSU Extension \| Wa... | 1 | 1 | 1 |
+| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| WSU Extension \| Wa... | 1 | 1 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/counties/](counties/report.md)
+
+![/counties/](counties/01-page-loaded.png)
+
+### [/programs/](programs/report.md)
+
+![/programs/](programs/01-page-loaded.png)
+
+### [/publications/](publications/report.md)
+
+![/publications/](publications/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /
+
+- **URL:** https://extension.wsu.edu/
+- **Status:** 0
+
+### /counties/
+
+- **URL:** https://extension.wsu.edu/counties/
+- **Status:** 404
+
+### /resources/
+
+- **URL:** https://extension.wsu.edu/resources/
+- **Status:** 404
+
+### /publications/
+
+- **URL:** https://extension.wsu.edu/publications/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://extension.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (2 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
+
+### /counties/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /resources/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /publications/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

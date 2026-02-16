@@ -2,21 +2,103 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Status | ⚠️ 2/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 2 |
+| Pages Failed | 4 |
+| Total JS Errors | 6 |
 | Total JS Warnings | 0 |
-| Total HTML | 41.8 KB |
-| Total Screenshots | 356.7 KB |
+| Total HTML | 223.8 KB |
+| Total Screenshots | 1.0 MB |
 | Folder | `maps-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | WSU Maps \| Washington State University | 0 | 0 | 41.8 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | WSU Maps \| Washington State University | 1 | 0 | 1 |
+| ❌ | [/everett/](everett/report.md) | 404 | Page not found \| WSU Maps \| Washing... | 1 | 0 | 1 |
+| ✅ | [/pullman/](pullman/report.md) | 200 | Pullman Campus \| WSU Maps \| Washing... | 1 | 0 | 1 |
+| ❌ | [/spokane/](spokane/report.md) | 404 | Page not found \| WSU Maps \| Washing... | 1 | 0 | 1 |
+| ❌ | [/tricities/](tricities/report.md) | 404 | Page not found \| WSU Maps \| Washing... | 1 | 0 | 1 |
+| ❌ | [/vancouver/](vancouver/report.md) | 404 | Page not found \| WSU Maps \| Washing... | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/everett/](everett/report.md)
+
+![/everett/](everett/01-page-loaded.png)
+
+### [/pullman/](pullman/report.md)
+
+![/pullman/](pullman/01-page-loaded.png)
+
+### [/spokane/](spokane/report.md)
+
+![/spokane/](spokane/01-page-loaded.png)
+
+### [/tricities/](tricities/report.md)
+
+![/tricities/](tricities/01-page-loaded.png)
+
+### [/vancouver/](vancouver/report.md)
+
+![/vancouver/](vancouver/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /spokane/
+
+- **URL:** https://maps.wsu.edu/spokane/
+- **Status:** 404
+
+### /tricities/
+
+- **URL:** https://maps.wsu.edu/tricities/
+- **Status:** 404
+
+### /vancouver/
+
+- **URL:** https://maps.wsu.edu/vancouver/
+- **Status:** 404
+
+### /everett/
+
+- **URL:** https://maps.wsu.edu/everett/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /pullman/ (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /spokane/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+
+### /tricities/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+
+### /vancouver/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+
+### /everett/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+
 
 ---
 

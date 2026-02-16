@@ -2,21 +2,58 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 1 |
-| Total JS Warnings | 0 |
-| Total HTML | 276.6 KB |
-| Total Screenshots | 2.6 MB |
+| Status | ⚠️ 5/7 pages OK |
+| Pages Scanned | 7 |
+| Pages Passed | 5 |
+| Pages Failed | 2 |
+| Total JS Errors | 8 |
+| Total JS Warnings | 2 |
+| Total HTML | 1.7 MB |
+| Total Screenshots | 10.3 MB |
 | Folder | `cahnrs-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | College of Agricultural, Human, and N... | 1 | 0 | 276.6 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | College of Agricultural, Human, and N... | 7 | 0 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | About CAHNRS \| College of Agricultur... | 0 | 0 | 1 |
+| ✅ | [/academics/](academics/report.md) | 200 | Academics \| Washington State University | 0 | 1 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| College of Agricult... | 1 | 1 | 1 |
+| ✅ | [/extension/](extension/report.md) | 200 | WSU Extension \| Washington State Uni... | 0 | 0 | 1 |
+| ✅ | [/news/](news/report.md) | 200 | CAHNRS News \| Washington State Unive... | 0 | 0 | 1 |
+| ✅ | [/research/](research/report.md) | 200 | Office of Research \| Washington Stat... | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/academics/](academics/report.md)
+
+![/academics/](academics/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/extension/](extension/report.md)
+
+![/extension/](extension/01-page-loaded.png)
+
+### [/news/](news/report.md)
+
+![/news/](news/01-page-loaded.png)
+
+### [/research/](research/report.md)
+
+![/research/](research/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -25,12 +62,27 @@
 - **URL:** https://cahnrs.wsu.edu/
 - **Status:** 0
 
+### /contact/
+
+- **URL:** https://cahnrs.wsu.edu/contact/
+- **Status:** 404
+
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### / (7 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

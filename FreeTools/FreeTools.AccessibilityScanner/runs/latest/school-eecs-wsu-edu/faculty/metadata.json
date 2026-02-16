@@ -1,0 +1,33 @@
+{
+  "PagePath": "/faculty/",
+  "Url": "https://school.eecs.wsu.edu/faculty/",
+  "FinalUrl": "https://school.eecs.wsu.edu/directory/",
+  "Title": "Directory | School of Electrical Engineering \u0026 Computer Science | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 361915,
+  "ScreenshotSizeBytes": 2073168,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 2073168
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:14:24 GMT",
+    "etag": "\u0022b871d0f6e0cc90143bf7a080fca8f9b1\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:14:24 GMT",
+    "link": "\u003Chttps://school.eecs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://school.eecs.wsu.edu/wp-json/wp/v2/pages/16557\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://school.eecs.wsu.edu/?p=16557\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T20:14:22.0081704Z"
+}

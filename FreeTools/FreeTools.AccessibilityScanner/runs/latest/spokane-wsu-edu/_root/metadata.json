@@ -5,12 +5,20 @@
   "Title": "WSU Spokane | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 330451,
-  "ScreenshotSizeBytes": 7733677,
+  "HtmlSizeBytes": 331121,
+  "ScreenshotSizeBytes": 8337731,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 8337731
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T19:51:11.3772759Z"
+  "CapturedAt": "2026-02-16T20:10:26.1645848Z"
 }

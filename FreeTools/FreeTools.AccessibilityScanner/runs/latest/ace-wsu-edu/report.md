@@ -2,21 +2,77 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Status | ⚠️ 4/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 4 |
+| Pages Failed | 2 |
+| Total JS Errors | 2 |
 | Total JS Warnings | 0 |
-| Total HTML | 79.3 KB |
-| Total Screenshots | 701.2 KB |
+| Total HTML | 486.2 KB |
+| Total Screenshots | 2.1 MB |
 | Folder | `ace-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Office of Assessment for Curricular E... | 0 | 0 | 79.3 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Office of Assessment for Curricular E... | 0 | 0 | 1 |
+| ✅ | [/accreditation/](accreditation/report.md) | 200 | Accreditation Reaffirmed by NWCCU, WS... | 0 | 0 | 1 |
+| ✅ | [/assessment/](assessment/report.md) | 200 | Assessment Archives \| Office of Asse... | 0 | 0 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| Office of Assessmen... | 1 | 0 | 1 |
+| ✅ | [/reporting/](reporting/report.md) | 200 | Reporting Program Assessment Activiti... | 0 | 0 | 1 |
+| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| Office of Assessmen... | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/accreditation/](accreditation/report.md)
+
+![/accreditation/](accreditation/01-page-loaded.png)
+
+### [/assessment/](assessment/report.md)
+
+![/assessment/](assessment/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/reporting/](reporting/report.md)
+
+![/reporting/](reporting/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /resources/
+
+- **URL:** https://ace.wsu.edu/resources/
+- **Status:** 404
+
+### /contact/
+
+- **URL:** https://ace.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /resources/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

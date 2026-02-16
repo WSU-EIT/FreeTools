@@ -1,0 +1,31 @@
+{
+  "PagePath": "/counties/",
+  "Url": "https://extension.wsu.edu/counties/",
+  "FinalUrl": "https://extension.wsu.edu/counties/#gsc.tab=0",
+  "Title": "Page not found | WSU Extension | Washington State University",
+  "StatusCode": 404,
+  "Success": false,
+  "HtmlSizeBytes": 235358,
+  "ScreenshotSizeBytes": 133106,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 133106
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "no-cache, must-revalidate, max-age=0",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:12:41 GMT",
+    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "link": "\u003Chttps://extension.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
+    "server": "nginx/1.24.0"
+  },
+  "CapturedAt": "2026-02-16T20:12:37.752837Z"
+}

@@ -1,0 +1,33 @@
+{
+  "PagePath": "/faculty/",
+  "Url": "https://education.wsu.edu/faculty/",
+  "FinalUrl": "https://ceshs.wsu.edu/department-of-kinesiology-and-educational-psychology/faculty/",
+  "Title": "Kinesiology Faculty | College of Education, Sport, and Human Sciences | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 258048,
+  "ScreenshotSizeBytes": 3685881,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 3685881
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:14:44 GMT",
+    "etag": "\u0022af66ee68e625443d0d68d782c18993bf\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:13:34 GMT",
+    "link": "\u003Chttps://ceshs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ceshs.wsu.edu/wp-json/wp/v2/pages/2946\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ceshs.wsu.edu/?p=2946\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T20:14:42.6190091Z"
+}

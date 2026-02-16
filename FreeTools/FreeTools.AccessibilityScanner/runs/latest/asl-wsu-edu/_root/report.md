@@ -5,24 +5,31 @@
 | URL | https://asl.wsu.edu/ |
 | Title | Applied Sciences Laboratory | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 68.3 KB |
-| Screenshot Size | 1.2 MB |
+| HTML Size | 68.2 KB |
+| Screenshots | 1 (1.2 MB) |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:51:11.3476032Z |
+| Captured | 2026-02-16T20:10:26.1109817Z |
 
 ## JavaScript Errors
 
-- `Failed to load resource: net::ERR_CONNECTION_TIMED_OUT`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (1.2 MB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (1.2 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

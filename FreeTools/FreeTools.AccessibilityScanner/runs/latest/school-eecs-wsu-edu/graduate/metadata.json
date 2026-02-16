@@ -1,0 +1,33 @@
+{
+  "PagePath": "/graduate/",
+  "Url": "https://school.eecs.wsu.edu/graduate/",
+  "FinalUrl": "https://school.eecs.wsu.edu/academics/graduate-program/graduate-course-transfer-requirements/",
+  "Title": "Graduate Course Transfer Requirements | School of Electrical Engineering \u0026 Computer Science | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 230218,
+  "ScreenshotSizeBytes": 313618,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 313618
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:13:23 GMT",
+    "etag": "\u002286e1f4a4bbc0e7d9fd5dd1fe05d66e08\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:13:23 GMT",
+    "link": "\u003Chttps://school.eecs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://school.eecs.wsu.edu/wp-json/wp/v2/pages/5019\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://school.eecs.wsu.edu/?p=5019\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T20:13:20.9478703Z"
+}

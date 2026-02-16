@@ -6,19 +6,26 @@
 | Title | Project Overview | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
 | HTML Size | 231.4 KB |
-| Screenshot Size | 347.3 KB |
+| Screenshots | 1 (350.2 KB) |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:53:00.9659228Z |
+| Captured | 2026-02-16T20:14:48.7739735Z |
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (350.2 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (350.2 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

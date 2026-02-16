@@ -5,24 +5,31 @@
 | URL | https://bursar.wsu.edu/ |
 | Title | Bursar | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 66.9 KB |
-| Screenshot Size | 917.3 KB |
+| HTML Size | 67.0 KB |
+| Screenshots | 1 (917.3 KB) |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:51:11.3500276Z |
+| Captured | 2026-02-16T20:10:26.1129444Z |
 
 ## JavaScript Errors
 
-- `Failed to load resource: net::ERR_CONNECTION_TIMED_OUT`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- No interactions performed — page was captured as-is
+- Screenshot #1: page-loaded (917.3 KB)
+
+## Screenshots
+
+### 1. page-loaded
+
+![page-loaded](01-page-loaded.png)
+
 
 ## Files
 
-- `screenshot.png` — full-page screenshot
+- `01-page-loaded.png` — page-loaded (917.3 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

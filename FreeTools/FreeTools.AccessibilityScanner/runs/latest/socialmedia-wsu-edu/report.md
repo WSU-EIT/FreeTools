@@ -2,21 +2,94 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
+| Status | ⚠️ 1/5 pages OK |
+| Pages Scanned | 5 |
 | Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Pages Failed | 4 |
+| Total JS Errors | 5 |
 | Total JS Warnings | 0 |
-| Total HTML | 53.1 KB |
-| Total Screenshots | 2.5 MB |
+| Total HTML | 207.8 KB |
+| Total Screenshots | 2.8 MB |
 | Folder | `socialmedia-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Social Media at WSU \| Washington Sta... | 0 | 0 | 53.1 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Social Media at WSU \| Washington Sta... | 1 | 0 | 1 |
+| ❌ | [/directory/](directory/report.md) | 404 | Page not found \| Social Media at WSU... | 1 | 0 | 1 |
+| ❌ | [/guidelines/](guidelines/report.md) | 404 | Page not found \| Social Media at WSU... | 1 | 0 | 1 |
+| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| Social Media at WSU... | 1 | 0 | 1 |
+| ❌ | [/training/](training/report.md) | 404 | Page not found \| Social Media at WSU... | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/directory/](directory/report.md)
+
+![/directory/](directory/01-page-loaded.png)
+
+### [/guidelines/](guidelines/report.md)
+
+![/guidelines/](guidelines/01-page-loaded.png)
+
+### [/resources/](resources/report.md)
+
+![/resources/](resources/01-page-loaded.png)
+
+### [/training/](training/report.md)
+
+![/training/](training/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /directory/
+
+- **URL:** https://socialmedia.wsu.edu/directory/
+- **Status:** 404
+
+### /guidelines/
+
+- **URL:** https://socialmedia.wsu.edu/guidelines/
+- **Status:** 404
+
+### /resources/
+
+- **URL:** https://socialmedia.wsu.edu/resources/
+- **Status:** 404
+
+### /training/
+
+- **URL:** https://socialmedia.wsu.edu/training/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /directory/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+
+### /guidelines/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+
+### /resources/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+
+### /training/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 (Not Found)`
+
 
 ---
 

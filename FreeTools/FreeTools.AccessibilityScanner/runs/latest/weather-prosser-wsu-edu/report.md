@@ -2,10 +2,10 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
+| Status | ⚠️ 0/5 pages OK |
+| Pages Scanned | 5 |
 | Pages Passed | 0 |
-| Pages Failed | 1 |
+| Pages Failed | 5 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
 | Total HTML | 0 bytes |
@@ -14,9 +14,16 @@
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 bytes |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/current/](current/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/data/](data/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/forecast/](forecast/report.md) | 0 | (none) | 0 | 0 | 0 |
+
+## Page Screenshots
+
 
 ## Failed Pages
 
@@ -27,6 +34,38 @@
 - **Error:** `net::ERR_CERT_COMMON_NAME_INVALID at https://weather.prosser.wsu.edu/
 Call log:
   - navigating to "https://weather.prosser.wsu.edu/", waiting until "networkidle"`
+
+### /current/
+
+- **URL:** https://weather.prosser.wsu.edu/current/
+- **Status:** 0
+- **Error:** `net::ERR_CERT_COMMON_NAME_INVALID at https://weather.prosser.wsu.edu/current/
+Call log:
+  - navigating to "https://weather.prosser.wsu.edu/current/", waiting until "networkidle"`
+
+### /forecast/
+
+- **URL:** https://weather.prosser.wsu.edu/forecast/
+- **Status:** 0
+- **Error:** `net::ERR_CERT_COMMON_NAME_INVALID at https://weather.prosser.wsu.edu/forecast/
+Call log:
+  - navigating to "https://weather.prosser.wsu.edu/forecast/", waiting until "networkidle"`
+
+### /data/
+
+- **URL:** https://weather.prosser.wsu.edu/data/
+- **Status:** 0
+- **Error:** `net::ERR_CERT_COMMON_NAME_INVALID at https://weather.prosser.wsu.edu/data/
+Call log:
+  - navigating to "https://weather.prosser.wsu.edu/data/", waiting until "networkidle"`
+
+### /about/
+
+- **URL:** https://weather.prosser.wsu.edu/about/
+- **Status:** 0
+- **Error:** `net::ERR_CERT_COMMON_NAME_INVALID at https://weather.prosser.wsu.edu/about/
+Call log:
+  - navigating to "https://weather.prosser.wsu.edu/about/", waiting until "networkidle"`
 
 
 ---

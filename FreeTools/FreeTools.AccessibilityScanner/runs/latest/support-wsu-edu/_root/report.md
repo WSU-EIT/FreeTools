@@ -6,11 +6,11 @@
 | Title | (none) |
 | Status | ❌ 0 |
 | HTML Size | 0 bytes |
-| Screenshot Size | 0 bytes |
+| Screenshots | 0 (0 bytes) |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:51:11.3774316Z |
+| Captured | 2026-02-16T20:10:26.1671540Z |
 
 ## Error
 
@@ -24,9 +24,12 @@ Call log:
 
 - Scan aborted due to error
 
+## Screenshots
+
+*No screenshots captured.*
+
 ## Files
 
-- `screenshot.png` — full-page screenshot
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -2,21 +2,48 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 2 |
-| Total HTML | 259.5 KB |
-| Total Screenshots | 1.2 MB |
+| Status | ⚠️ 3/5 pages OK |
+| Pages Scanned | 5 |
+| Pages Passed | 3 |
+| Pages Failed | 2 |
+| Total JS Errors | 2 |
+| Total JS Warnings | 4 |
+| Total HTML | 1.2 MB |
+| Total Screenshots | 5.3 MB |
 | Folder | `foundation-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | WSU Foundation \| Washington State Un... | 0 | 2 | 259.5 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Foundation \| Washington State Un... | 1 | 2 | 1 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| WSU Foundation \| W... | 1 | 1 | 1 |
+| ✅ | [/give/](give/report.md) | 200 | Make A Gift Today! \| WSU Foundation ... | 0 | 1 | 1 |
+| ✅ | [/impact/](impact/report.md) | 200 | Impact Report 2025 \| WSU Foundation ... | 0 | 0 | 1 |
+| ✅ | [/ways-to-give/](ways-to-give/report.md) | 200 | Ways to Give \| WSU Foundation \| Was... | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/give/](give/report.md)
+
+![/give/](give/01-page-loaded.png)
+
+### [/impact/](impact/report.md)
+
+![/impact/](impact/01-page-loaded.png)
+
+### [/ways-to-give/](ways-to-give/report.md)
+
+![/ways-to-give/](ways-to-give/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -24,6 +51,22 @@
 
 - **URL:** https://foundation.wsu.edu/
 - **Status:** 0
+
+### /contact/
+
+- **URL:** https://foundation.wsu.edu/contact/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---

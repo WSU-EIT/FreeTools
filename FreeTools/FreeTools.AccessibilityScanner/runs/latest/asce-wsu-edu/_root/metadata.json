@@ -5,12 +5,20 @@
   "Title": "American Society of Civil Engineers | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 64332,
-  "ScreenshotSizeBytes": 484663,
+  "HtmlSizeBytes": 70859,
+  "ScreenshotSizeBytes": 488815,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 488815
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T19:51:11.3470387Z"
+  "CapturedAt": "2026-02-16T20:10:26.1102457Z"
 }

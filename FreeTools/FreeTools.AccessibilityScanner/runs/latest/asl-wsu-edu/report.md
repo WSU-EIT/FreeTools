@@ -2,27 +2,59 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
+| Status | ✅ 6/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 6 |
 | Pages Failed | 0 |
 | Total JS Errors | 1 |
 | Total JS Warnings | 0 |
-| Total HTML | 68.3 KB |
-| Total Screenshots | 1.2 MB |
+| Total HTML | 398.2 KB |
+| Total Screenshots | 5.6 MB |
 | Folder | `asl-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Applied Sciences Laboratory \| Washin... | 1 | 0 | 68.3 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Applied Sciences Laboratory \| Washin... | 1 | 0 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | About \| Applied Sciences Laboratory ... | 0 | 0 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact \| Applied Sciences Laborator... | 0 | 0 | 1 |
+| ✅ | [/facilities/](facilities/report.md) | 200 | Facilities \| Applied Sciences Labora... | 0 | 0 | 1 |
+| ✅ | [/publications/](publications/report.md) | 200 | Publications \| Applied Sciences Labo... | 0 | 0 | 1 |
+| ✅ | [/research/](research/report.md) | 200 | Research Staff \| Applied Sciences La... | 0 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/facilities/](facilities/report.md)
+
+![/facilities/](facilities/01-page-loaded.png)
+
+### [/publications/](publications/report.md)
+
+![/publications/](publications/01-page-loaded.png)
+
+### [/research/](research/report.md)
+
+![/research/](research/01-page-loaded.png)
+
 
 ## Pages with JavaScript Errors
 
 ### / (1 errors)
 
-- `Failed to load resource: net::ERR_CONNECTION_TIMED_OUT`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

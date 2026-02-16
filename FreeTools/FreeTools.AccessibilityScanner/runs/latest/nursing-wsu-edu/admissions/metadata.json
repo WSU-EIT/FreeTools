@@ -1,0 +1,36 @@
+{
+  "PagePath": "/admissions/",
+  "Url": "https://nursing.wsu.edu/admissions/",
+  "FinalUrl": "https://nursing.wsu.edu/student-policies-procedures/admissions-appeal-policy/",
+  "Title": "Admissions Appeal Policy | College of Nursing | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 252013,
+  "ScreenshotSizeBytes": 395452,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 3,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 395452
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:13:01 GMT",
+    "etag": "\u002270fca13efa7fea9ddc8eb8c7b5d72d89\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:13:01 GMT",
+    "link": "\u003Chttps://nursing.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://nursing.wsu.edu/wp-json/wp/v2/pages/48507\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://nursing.wsu.edu/?p=48507\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://nursing.wsu.edu",
+    "x-tec-api-root": "https://nursing.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-16T20:12:57.9924852Z"
+}

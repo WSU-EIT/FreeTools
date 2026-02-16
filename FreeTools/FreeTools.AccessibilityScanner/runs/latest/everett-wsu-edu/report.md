@@ -2,28 +2,83 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 1 |
-| Total HTML | 250.7 KB |
-| Total Screenshots | 3.1 MB |
+| Status | ✅ 6/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 6 |
+| Pages Failed | 0 |
+| Total JS Errors | 10 |
+| Total JS Warnings | 2 |
+| Total HTML | 1.5 MB |
+| Total Screenshots | 9.6 MB |
 | Folder | `everett-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Washington State University Everett \... | 0 | 1 | 250.7 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Washington State University Everett \... | 5 | 1 | 1 |
+| ✅ | [/about/](about/report.md) | 200 | Washington State University Everett \... | 1 | 1 | 1 |
+| ✅ | [/academics/](academics/report.md) | 200 | Undergraduate \| Washington State Uni... | 1 | 0 | 1 |
+| ✅ | [/admissions/](admissions/report.md) | 200 | Apply to WSU Everett \| Washington St... | 1 | 0 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Washington State Univer... | 1 | 0 | 1 |
+| ✅ | [/student-services/](student-services/report.md) | 200 | Student Affairs Fall Preview \| Washi... | 1 | 0 | 1 |
 
-## Failed Pages
+## Page Screenshots
 
-### /
+### [/](_root/report.md)
 
-- **URL:** https://everett.wsu.edu/
-- **Status:** 0
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/academics/](academics/report.md)
+
+![/academics/](academics/01-page-loaded.png)
+
+### [/admissions/](admissions/report.md)
+
+![/admissions/](admissions/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/student-services/](student-services/report.md)
+
+![/student-services/](student-services/01-page-loaded.png)
+
+
+## Pages with JavaScript Errors
+
+### / (5 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /about/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /academics/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /admissions/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /student-services/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /contact/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
 
 
 ---

@@ -1,0 +1,36 @@
+{
+  "PagePath": "/documents/",
+  "Url": "https://facsen.wsu.edu/documents/",
+  "FinalUrl": null,
+  "Title": "Documents | Faculty Senate | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 332878,
+  "ScreenshotSizeBytes": 562573,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 562573
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:13:50 GMT",
+    "etag": "\u00228dbcb8827005d9ed5d0ae6d6609a540b\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:13:50 GMT",
+    "link": "\u003Chttps://facsen.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://facsen.wsu.edu",
+    "x-tec-api-root": "https://facsen.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-16T20:13:48.3183124Z"
+}

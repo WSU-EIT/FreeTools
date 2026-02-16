@@ -1,0 +1,38 @@
+{
+  "PagePath": "/undergraduate/",
+  "Url": "https://ansci.wsu.edu/undergraduate/",
+  "FinalUrl": null,
+  "Title": "Undergraduate Studies | Animal Sciences | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 229481,
+  "ScreenshotSizeBytes": 1894846,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 1894846
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:11:57 GMT",
+    "etag": "\u0022ef1fa460814898f55cc9a00039f2722d\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:11:57 GMT",
+    "link": "\u003Chttps://ansci.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ansci.wsu.edu/wp-json/wp/v2/pages/423\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ansci.wsu.edu/?p=423\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache": "EXPIRED",
+    "x-cache-status": "EXPIRED",
+    "x-tec-api-origin": "https://ansci.wsu.edu",
+    "x-tec-api-root": "https://ansci.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-16T20:11:55.6703142Z"
+}

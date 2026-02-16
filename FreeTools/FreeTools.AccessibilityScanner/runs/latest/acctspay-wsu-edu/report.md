@@ -2,21 +2,98 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 1/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Status | ⚠️ 3/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 3 |
+| Pages Failed | 3 |
+| Total JS Errors | 9 |
 | Total JS Warnings | 0 |
-| Total HTML | 61.6 KB |
-| Total Screenshots | 885.5 KB |
+| Total HTML | 364.8 KB |
+| Total Screenshots | 2.1 MB |
 | Folder | `acctspay-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ✅ | [/](_root/report.md) | 200 | Payment Services \| Washington State ... | 0 | 0 | 61.6 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ✅ | [/](_root/report.md) | 200 | Payment Services \| Washington State ... | 1 | 0 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Payment Services \| Was... | 0 | 0 | 1 |
+| ✅ | [/forms/](forms/report.md) | 200 | Forms \| Payment Services \| Washingt... | 5 | 0 | 1 |
+| ❌ | [/policies/](policies/report.md) | 404 | Page not found \| Payment Services \|... | 1 | 0 | 1 |
+| ❌ | [/purchasing/](purchasing/report.md) | 404 | Page not found \| Payment Services \|... | 1 | 0 | 1 |
+| ❌ | [/travel/](travel/report.md) | 404 | Page not found \| Payment Services \|... | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/forms/](forms/report.md)
+
+![/forms/](forms/01-page-loaded.png)
+
+### [/policies/](policies/report.md)
+
+![/policies/](policies/01-page-loaded.png)
+
+### [/purchasing/](purchasing/report.md)
+
+![/purchasing/](purchasing/01-page-loaded.png)
+
+### [/travel/](travel/report.md)
+
+![/travel/](travel/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /policies/
+
+- **URL:** https://acctspay.wsu.edu/policies/
+- **Status:** 404
+
+### /travel/
+
+- **URL:** https://acctspay.wsu.edu/travel/
+- **Status:** 404
+
+### /purchasing/
+
+- **URL:** https://acctspay.wsu.edu/purchasing/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### /forms/ (5 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /policies/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /travel/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /purchasing/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
 
 ---
 

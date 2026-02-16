@@ -1,0 +1,31 @@
+{
+  "PagePath": "/visit/",
+  "Url": "https://archaeology.wsu.edu/visit/",
+  "FinalUrl": "https://archaeology.wsu.edu/visit/#gsc.tab=0",
+  "Title": "Page not found | Museum of Anthropology | Washington State University",
+  "StatusCode": 404,
+  "Success": false,
+  "HtmlSizeBytes": 221061,
+  "ScreenshotSizeBytes": 89586,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 1,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 89586
+    }
+  ],
+  "ErrorMessage": null,
+  "Headers": {
+    "cache-control": "no-cache, must-revalidate, max-age=0",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 20:13:09 GMT",
+    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
+    "link": "\u003Chttps://archaeology.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
+    "server": "nginx"
+  },
+  "CapturedAt": "2026-02-16T20:13:07.9971673Z"
+}

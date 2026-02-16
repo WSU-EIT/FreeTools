@@ -2,21 +2,53 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 0/1 pages OK |
-| Pages Scanned | 1 |
-| Pages Passed | 0 |
-| Pages Failed | 1 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 2 |
-| Total HTML | 65.5 KB |
-| Total Screenshots | 964.2 KB |
+| Status | ⚠️ 1/6 pages OK |
+| Pages Scanned | 6 |
+| Pages Passed | 1 |
+| Pages Failed | 5 |
+| Total JS Errors | 5 |
+| Total JS Warnings | 3 |
+| Total HTML | 426.7 KB |
+| Total Screenshots | 2.1 MB |
 | Folder | `president-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
-|--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Office of the President \| Washington... | 0 | 2 | 65.5 KB |
+| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
+|--------|------|------|-------|-----------|-------------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Office of the President \| Washington... | 1 | 2 | 1 |
+| ❌ | [/about/](about/report.md) | 404 | Page not found \| Office of the Presi... | 1 | 0 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Office of the President... | 0 | 1 | 1 |
+| ❌ | [/news/](news/report.md) | 404 | Page not found \| Office of the Presi... | 1 | 0 | 1 |
+| ❌ | [/priorities/](priorities/report.md) | 404 | Page not found \| Office of the Presi... | 1 | 0 | 1 |
+| ❌ | [/speeches/](speeches/report.md) | 404 | Page not found \| Office of the Presi... | 1 | 0 | 1 |
+
+## Page Screenshots
+
+### [/](_root/report.md)
+
+![/](_root/01-page-loaded.png)
+
+### [/about/](about/report.md)
+
+![/about/](about/01-page-loaded.png)
+
+### [/contact/](contact/report.md)
+
+![/contact/](contact/01-page-loaded.png)
+
+### [/news/](news/report.md)
+
+![/news/](news/01-page-loaded.png)
+
+### [/priorities/](priorities/report.md)
+
+![/priorities/](priorities/01-page-loaded.png)
+
+### [/speeches/](speeches/report.md)
+
+![/speeches/](speeches/01-page-loaded.png)
+
 
 ## Failed Pages
 
@@ -24,6 +56,49 @@
 
 - **URL:** https://president.wsu.edu/
 - **Status:** 0
+
+### /about/
+
+- **URL:** https://president.wsu.edu/about/
+- **Status:** 404
+
+### /priorities/
+
+- **URL:** https://president.wsu.edu/priorities/
+- **Status:** 404
+
+### /speeches/
+
+- **URL:** https://president.wsu.edu/speeches/
+- **Status:** 404
+
+### /news/
+
+- **URL:** https://president.wsu.edu/news/
+- **Status:** 404
+
+
+## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /about/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /priorities/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /speeches/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+
+### /news/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 
 ---
