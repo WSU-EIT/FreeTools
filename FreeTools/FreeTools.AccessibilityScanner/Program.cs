@@ -120,9 +120,9 @@ internal class Program
                     if (page.Success) grandSuccessCount++;
 
                     Console.WriteLine($"     {status} {page.PagePath}");
-                    Console.WriteLine($"        Status:     {page.StatusCode}");
-                    Console.WriteLine($"        HTML:       {PathSanitizer.FormatBytes(page.HtmlSize)}");
-                    Console.WriteLine($"        Screenshot: {PathSanitizer.FormatBytes(page.ScreenshotSize)}");
+                    Console.WriteLine($"        Status:      {page.StatusCode}");
+                    Console.WriteLine($"        HTML:        {PathSanitizer.FormatBytes(page.HtmlSize)}");
+                    Console.WriteLine($"        Screenshots: {page.Screenshots.Count} ({PathSanitizer.FormatBytes(page.ScreenshotSize)})");
 
                     if (page.ConsoleErrors.Count > 0)
                     {
@@ -295,6 +295,9 @@ internal class Program
             await page.WaitForTimeoutAsync(scannerConfig.SettleDelayMs);
             infoLines.Add($"Settle delay: {scannerConfig.SettleDelayMs}ms");
 
+            // Screenshot: page after initial load + settle
+            await TakeScreenshotAsync(page, pageDir, result, actions, "page-loaded");
+
             // Auth flow if credentials configured
             if (siteConfig.Credentials.Count > 0)
             {
@@ -302,7 +305,7 @@ internal class Program
                 {
                     Console.WriteLine($"  [{siteUri.Host}] {pagePath} — Attempting auth as '{cred.Username}'...");
                     actions.Add($"Attempted login as '{cred.Username}'");
-                    var authSuccess = await TryAuthFlowAsync(page, cred, scannerConfig, actions);
+                    var authSuccess = await TryAuthFlowAsync(page, cred, scannerConfig, pageDir, result, actions);
                     if (authSuccess)
                     {
                         result.CredentialUsed = cred.Username;
@@ -322,17 +325,6 @@ internal class Program
                 actions.Add("No interactions performed — page was captured as-is");
             }
 
-            // Take screenshot
-            Console.WriteLine($"  [{siteUri.Host}] {pagePath} — Taking screenshot...");
-            var screenshotPath = Path.Combine(pageDir, "screenshot.png");
-            await page.ScreenshotAsync(new PageScreenshotOptions
-            {
-                Path = screenshotPath,
-                FullPage = true
-            });
-            result.ScreenshotSize = new FileInfo(screenshotPath).Length;
-            infoLines.Add($"Screenshot size: {PathSanitizer.FormatBytes(result.ScreenshotSize)}");
-
             // Save HTML content
             Console.WriteLine($"  [{siteUri.Host}] {pagePath} — Saving HTML...");
             var htmlContent = await page.ContentAsync();
@@ -348,6 +340,7 @@ internal class Program
 
             // Response headers
             var headers = response?.Headers;
+            infoLines.Add($"Screenshots: {result.Screenshots.Count} ({PathSanitizer.FormatBytes(result.ScreenshotSize)})");
             infoLines.Add($"Completed at: {DateTime.UtcNow:O}");
 
             // Populate result
@@ -492,7 +485,7 @@ internal class Program
         reportSb.AppendLine($"| Title | {result.Title ?? "(none)"} |");
         reportSb.AppendLine($"| Status | {statusEmoji} {result.StatusCode} |");
         reportSb.AppendLine($"| HTML Size | {PathSanitizer.FormatBytes(result.HtmlSize)} |");
-        reportSb.AppendLine($"| Screenshot Size | {PathSanitizer.FormatBytes(result.ScreenshotSize)} |");
+        reportSb.AppendLine($"| Screenshots | {result.Screenshots.Count} ({PathSanitizer.FormatBytes(result.ScreenshotSize)}) |");
         reportSb.AppendLine($"| JS Errors | {result.ConsoleErrors.Count} |");
         reportSb.AppendLine($"| JS Warnings | {result.ConsoleWarnings.Count} |");
         reportSb.AppendLine($"| Auth | {result.CredentialUsed ?? "none"} |");
@@ -528,9 +521,32 @@ internal class Program
         }
 
         reportSb.AppendLine();
+        reportSb.AppendLine($"## Screenshots");
+        reportSb.AppendLine();
+
+        if (result.Screenshots.Count > 0)
+        {
+            foreach (var shot in result.Screenshots)
+            {
+                reportSb.AppendLine($"### {shot.StepNumber}. {shot.Label}");
+                reportSb.AppendLine();
+                reportSb.AppendLine($"![{shot.Label}]({shot.FileName})");
+                reportSb.AppendLine();
+            }
+        }
+        else
+        {
+            reportSb.AppendLine("*No screenshots captured.*");
+        }
+
+        reportSb.AppendLine();
         reportSb.AppendLine($"## Files");
         reportSb.AppendLine();
-        reportSb.AppendLine($"- `screenshot.png` — full-page screenshot");
+        foreach (var shot in result.Screenshots)
+        {
+            reportSb.AppendLine($"- `{shot.FileName}` — {shot.Label} ({PathSanitizer.FormatBytes(shot.FileSize)})");
+        }
+
         reportSb.AppendLine($"- `page.html` — rendered HTML content");
         reportSb.AppendLine($"- `metadata.json` — machine-readable scan data");
         reportSb.AppendLine($"- `errors.log` — JavaScript console errors");
@@ -555,6 +571,7 @@ internal class Program
             result.CredentialUsed,
             ConsoleErrorCount = result.ConsoleErrors.Count,
             ConsoleWarningCount = result.ConsoleWarnings.Count,
+            Screenshots = result.Screenshots.Select(s => new { s.FileName, s.Label, s.StepNumber, s.FileSize }).ToArray(),
             result.ErrorMessage,
             Headers = headers,
             result.CapturedAt
@@ -599,14 +616,31 @@ internal class Program
         sb.AppendLine();
         sb.AppendLine($"## Pages");
         sb.AppendLine();
-        sb.AppendLine($"| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |");
-        sb.AppendLine($"|--------|------|------|-------|-----------|-------------|-----------|");
+        sb.AppendLine($"| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |");
+        sb.AppendLine($"|--------|------|------|-------|-----------|-------------|-------------|");
 
         foreach (var page in site.Pages.OrderBy(p => p.PagePath))
         {
             var s = page.Success ? "✅" : "❌";
             var title = Truncate(page.Title ?? "(none)", 40);
-            sb.AppendLine($"| {s} | [{page.PagePath}]({page.FolderName}/report.md) | {page.StatusCode} | {title} | {page.ConsoleErrors.Count} | {page.ConsoleWarnings.Count} | {PathSanitizer.FormatBytes(page.HtmlSize)} |");
+            sb.AppendLine($"| {s} | [{page.PagePath}]({page.FolderName}/report.md) | {page.StatusCode} | {title} | {page.ConsoleErrors.Count} | {page.ConsoleWarnings.Count} | {page.Screenshots.Count} |");
+        }
+
+        // Screenshot gallery — first screenshot from each page
+        sb.AppendLine();
+        sb.AppendLine($"## Page Screenshots");
+        sb.AppendLine();
+
+        foreach (var page in site.Pages.OrderBy(p => p.PagePath))
+        {
+            var firstShot = page.Screenshots.FirstOrDefault();
+            if (firstShot != null)
+            {
+                sb.AppendLine($"### [{page.PagePath}]({page.FolderName}/report.md)");
+                sb.AppendLine();
+                sb.AppendLine($"![{page.PagePath}]({page.FolderName}/{firstShot.FileName})");
+                sb.AppendLine();
+            }
         }
 
         // Failed pages detail
@@ -720,8 +754,8 @@ internal class Program
         sb.AppendLine();
         sb.AppendLine($"## All Pages");
         sb.AppendLine();
-        sb.AppendLine($"| Status | Site | Page | HTTP | Title | JS Errors |");
-        sb.AppendLine($"|--------|------|------|------|-------|-----------|");
+        sb.AppendLine($"| Status | Site | Page | HTTP | Title | JS Errors | Screenshots |");
+        sb.AppendLine($"|--------|------|------|------|-------|-----------|-------------|");
 
         foreach (var site in siteList)
         {
@@ -730,7 +764,31 @@ internal class Program
                 var s = page.Success ? "✅" : "❌";
                 var title = Truncate(page.Title ?? "(none)", 35);
                 var host = new Uri(site.Url).Host;
-                sb.AppendLine($"| {s} | {host} | [{page.PagePath}]({site.FolderName}/{page.FolderName}/report.md) | {page.StatusCode} | {title} | {page.ConsoleErrors.Count} |");
+                sb.AppendLine($"| {s} | {host} | [{page.PagePath}]({site.FolderName}/{page.FolderName}/report.md) | {page.StatusCode} | {title} | {page.ConsoleErrors.Count} | {page.Screenshots.Count} |");
+            }
+        }
+
+        // Screenshot gallery — every page grouped by site
+        sb.AppendLine();
+        sb.AppendLine($"## Screenshot Gallery");
+        sb.AppendLine();
+
+        foreach (var site in siteList)
+        {
+            var host = new Uri(site.Url).Host;
+            sb.AppendLine($"### {host}");
+            sb.AppendLine();
+
+            foreach (var page in site.Pages.OrderBy(p => p.PagePath))
+            {
+                var firstShot = page.Screenshots.FirstOrDefault();
+                if (firstShot != null)
+                {
+                    sb.AppendLine($"#### [{page.PagePath}]({site.FolderName}/{page.FolderName}/report.md)");
+                    sb.AppendLine();
+                    sb.AppendLine($"![{host}{page.PagePath}]({site.FolderName}/{page.FolderName}/{firstShot.FileName})");
+                    sb.AppendLine();
+                }
             }
         }
 
@@ -797,11 +855,64 @@ internal class Program
     // ========================================================================
 
     /// <summary>
+    /// Capture a named screenshot, track it in the result, and log the action.
+    /// Returns the step number assigned.
+    /// </summary>
+    private static async Task<int> TakeScreenshotAsync(
+        IPage page,
+        string pageDir,
+        PageResult result,
+        List<string> actions,
+        string label)
+    {
+        var stepNumber = result.Screenshots.Count + 1;
+        var fileName = $"{stepNumber:D2}-{SanitizeFileName(label)}.png";
+        var filePath = Path.Combine(pageDir, fileName);
+
+        await page.ScreenshotAsync(new PageScreenshotOptions
+        {
+            Path = filePath,
+            FullPage = true
+        });
+
+        var fileSize = new FileInfo(filePath).Length;
+
+        result.Screenshots.Add(new ScreenshotEntry
+        {
+            FileName = fileName,
+            Label = label,
+            FileSize = fileSize,
+            StepNumber = stepNumber
+        });
+
+        result.ScreenshotSize += fileSize;
+        actions.Add($"Screenshot #{stepNumber}: {label} ({PathSanitizer.FormatBytes(fileSize)})");
+
+        return stepNumber;
+    }
+
+    private static string SanitizeFileName(string label)
+    {
+        // Convert "Page loaded (after settle)" → "page-loaded-after-settle"
+        var sanitized = label.ToLowerInvariant();
+        sanitized = sanitized.Replace(' ', '-').Replace('(', '-').Replace(')', '-');
+        // Collapse multiple dashes and trim
+        while (sanitized.Contains("--"))
+        {
+            sanitized = sanitized.Replace("--", "-");
+        }
+
+        return sanitized.Trim('-');
+    }
+
+    /// <summary>
     /// Attempt to fill and submit a login form on the current page.
+    /// Takes before/after screenshots at each interaction step.
     /// Returns true if a form was found and submitted.
     /// </summary>
     private static async Task<bool> TryAuthFlowAsync(
-        IPage page, SiteCredential cred, ScannerConfig config, List<string> actions)
+        IPage page, SiteCredential cred, ScannerConfig config,
+        string pageDir, PageResult result, List<string> actions)
     {
         var usernameSelectors = new[]
         {
@@ -863,11 +974,17 @@ internal class Program
             return false;
         }
 
+        // Screenshot: before filling
+        await TakeScreenshotAsync(page, pageDir, result, actions, "auth-form-detected");
+
         await usernameField.FillAsync(cred.Username);
         actions.Add($"Filled username field with '{cred.Username}'");
 
         await passwordField.FillAsync(cred.Password);
         actions.Add("Filled password field with ****");
+
+        // Screenshot: after filling, before submit
+        await TakeScreenshotAsync(page, pageDir, result, actions, "auth-form-filled");
 
         var submitSelectors = new[]
         {
@@ -903,6 +1020,9 @@ internal class Program
 
         await page.WaitForTimeoutAsync(config.SettleDelayMs);
         actions.Add($"Waited {config.SettleDelayMs}ms for post-login settle");
+
+        // Screenshot: after login result
+        await TakeScreenshotAsync(page, pageDir, result, actions, "auth-result");
 
         return true;
     }
@@ -1068,5 +1188,17 @@ internal class PageResult
     public string? CredentialUsed { get; set; }
     public List<string> ConsoleErrors { get; set; } = [];
     public List<string> ConsoleWarnings { get; set; } = [];
+    public List<ScreenshotEntry> Screenshots { get; set; } = [];
     public DateTime CapturedAt { get; set; }
+}
+
+/// <summary>
+/// Tracks a single screenshot taken during page scanning.
+/// </summary>
+internal class ScreenshotEntry
+{
+    public string FileName { get; set; } = "";
+    public string Label { get; set; } = "";
+    public long FileSize { get; set; }
+    public int StepNumber { get; set; }
 }
