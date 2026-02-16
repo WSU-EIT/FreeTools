@@ -1,0 +1,20 @@
+{
+  "Route": "/Account/Register",
+  "Url": "https://localhost:7161/Account/Register",
+  "StatusCode": 200,
+  "FileSize": 68446,
+  "IsSuspiciouslySmall": false,
+  "RetryAttempted": false,
+  "ConsoleErrors": [],
+  "CapturedAt": "2026-02-13T18:51:48.2723854Z",
+  "IsSuccess": true,
+  "IsHttpError": false,
+  "IsError": false,
+  "ErrorMessage": null,
+  "RequiresAuth": false,
+  "AuthFlowCompleted": true,
+  "AuthStep1Path": "1-initial.png",
+  "AuthStep2Path": "2-filled.png",
+  "AuthStep3Path": "3-result.png",
+  "AuthFlowNote": "Redirected to login (unexpected)"
+}

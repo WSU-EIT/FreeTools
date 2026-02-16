@@ -1,0 +1,22 @@
+{
+  "Route": "/Account/LoginWith2fa",
+  "Url": "https://localhost:7161/Account/LoginWith2fa",
+  "StatusCode": 500,
+  "FileSize": 125052,
+  "IsSuspiciouslySmall": false,
+  "RetryAttempted": false,
+  "ConsoleErrors": [
+    "Failed to load resource: the server responded with a status of 500 ()"
+  ],
+  "CapturedAt": "2026-02-13T18:51:44.4571488Z",
+  "IsSuccess": false,
+  "IsHttpError": true,
+  "IsError": false,
+  "ErrorMessage": null,
+  "RequiresAuth": false,
+  "AuthFlowCompleted": false,
+  "AuthStep1Path": null,
+  "AuthStep2Path": null,
+  "AuthStep3Path": null,
+  "AuthFlowNote": null
+}

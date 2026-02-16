@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://em.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "Enrollment Management",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 649073,
+  "ScreenshotSizeBytes": 118306,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 2,
+  "ConsoleWarningCount": 1,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-13T20:06:57.5278276Z"
+}

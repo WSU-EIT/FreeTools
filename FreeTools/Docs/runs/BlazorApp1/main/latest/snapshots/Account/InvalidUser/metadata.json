@@ -1,0 +1,20 @@
+{
+  "Route": "/Account/InvalidUser",
+  "Url": "https://localhost:7161/Account/InvalidUser",
+  "StatusCode": 200,
+  "FileSize": 22774,
+  "IsSuspiciouslySmall": false,
+  "RetryAttempted": false,
+  "ConsoleErrors": [],
+  "CapturedAt": "2026-02-13T18:51:44.4534769Z",
+  "IsSuccess": true,
+  "IsHttpError": false,
+  "IsError": false,
+  "ErrorMessage": null,
+  "RequiresAuth": false,
+  "AuthFlowCompleted": false,
+  "AuthStep1Path": null,
+  "AuthStep2Path": null,
+  "AuthStep3Path": null,
+  "AuthFlowNote": null
+}
