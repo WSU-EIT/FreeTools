@@ -6,8 +6,8 @@
 > **Attendees:** [Architect], [Backend], [Quality], [Skeptic], [Sanity]  
 > **Date:** 2026-02-17  
 > **Predicted Outcome:** Approved architecture for 3+ ADA scanning tools, unified output schema, cross-tool comparison reports  
-> **Actual Outcome:** 🔄 In progress  
-> **Resolution:** *(update when implemented)*  
+> **Actual Outcome:** ✅ Architecture approved — consensus-ranked output added per doc 203  
+> **Resolution:** Implementation started — see docs 201 (sanity check), 202 (phases/tasks), 203 (consensus ranking)  
 
 ---
 

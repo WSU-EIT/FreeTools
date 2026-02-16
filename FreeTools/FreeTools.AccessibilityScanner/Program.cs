@@ -164,6 +164,11 @@ internal class Program
                         Console.WriteLine($"        Auth:       {page.CredentialUsed}");
                     }
 
+                    if (page.A11ySummary != null && page.A11ySummary.TotalViolations > 0)
+                    {
+                        Console.WriteLine($"        A11y:       {page.A11ySummary.TotalViolations} violations (🔴{page.A11ySummary.Critical} 🟠{page.A11ySummary.Serious} 🟡{page.A11ySummary.Moderate} 🔵{page.A11ySummary.Minor})");
+                    }
+
                     if (page.ErrorMessage != null)
                     {
                         Console.WriteLine($"        Error:      {page.ErrorMessage}");
@@ -378,6 +383,28 @@ internal class Program
             Console.WriteLine($"  [{siteUri.Host}] {pagePath} — Downloading images...");
             await DownloadPageImagesAsync(page, pageDir, result, actions, infoLines);
 
+            // Accessibility scanning
+            Console.WriteLine($"  [{siteUri.Host}] {pagePath} — Running accessibility checks...");
+            try
+            {
+                var axeScript = await EnsureAxeCoreAsync(FindProjectDir(AppContext.BaseDirectory));
+
+                var axeResult = await RunAxeCoreAsync(page, axeScript, scannerConfig.WcagLevel);
+                actions.Add($"axe-core: {axeResult.Issues.Count} violations ({axeResult.DurationMs}ms)");
+
+                var htmlCheckResult = RunHtmlCheck(htmlContent, fullUrl);
+                actions.Add($"htmlcheck: {htmlCheckResult.Issues.Count} violations ({htmlCheckResult.DurationMs}ms)");
+
+                result.A11ySummary = MergeA11yResults(axeResult, htmlCheckResult, pageDir);
+
+                Console.WriteLine($"  [{siteUri.Host}] {pagePath} — A11y: {result.A11ySummary.TotalViolations} total violations (axe:{axeResult.Issues.Count} htmlcheck:{htmlCheckResult.Issues.Count})");
+            }
+            catch (Exception a11yEx)
+            {
+                Console.Error.WriteLine($"  [{siteUri.Host}] {pagePath} — A11y scan error: {a11yEx.Message}");
+                actions.Add($"A11y scan failed: {a11yEx.Message}");
+            }
+
             // Page title
             var title = await page.TitleAsync();
             result.Title = title;
@@ -534,6 +561,7 @@ internal class Program
         reportSb.AppendLine("- [Screenshots](#-screenshots)");
         reportSb.AppendLine("- [Page Images](#-page-images)");
         if (result.ConsoleErrors.Count > 0) reportSb.AppendLine("- [JavaScript Errors](#-javascript-errors)");
+        if (result.A11ySummary != null) reportSb.AppendLine("- [Accessibility](#-accessibility)");
         reportSb.AppendLine("- [Actions](#-actions)");
         reportSb.AppendLine("- [Files](#-files)");
         reportSb.AppendLine();
@@ -559,6 +587,10 @@ internal class Program
         reportSb.AppendLine($"| Images Missing Alt | {(missingAltCount > 0 ? $"⚠️ {missingAltCount}" : "✅ 0")} |");
         reportSb.AppendLine($"| JS Errors | {(result.ConsoleErrors.Count > 0 ? $"🔴 {result.ConsoleErrors.Count}" : "✅ 0")} |");
         reportSb.AppendLine($"| JS Warnings | {result.ConsoleWarnings.Count} |");
+        if (result.A11ySummary != null)
+        {
+            reportSb.AppendLine($"| A11y Violations | {(result.A11ySummary.TotalViolations > 0 ? $"⚠️ {result.A11ySummary.TotalViolations}" : "✅ 0")} |");
+        }
         reportSb.AppendLine($"| Auth | {result.CredentialUsed ?? "none"} |");
         reportSb.AppendLine($"| Captured | {result.CapturedAt:O} |");
         reportSb.AppendLine();
@@ -729,6 +761,103 @@ internal class Program
             reportSb.AppendLine();
         }
 
+        // Accessibility section
+        if (result.A11ySummary != null && result.A11ySummary.TotalViolations > 0)
+        {
+            var a11y = result.A11ySummary;
+            reportSb.AppendLine($"## ♿ Accessibility");
+            reportSb.AppendLine();
+
+            // Cross-tool summary table
+            reportSb.AppendLine("### Summary");
+            reportSb.AppendLine();
+            var toolNames = a11y.ToolsRun;
+            var headerCols = string.Join(" | ", toolNames.Select(t => t));
+            var alignCols = string.Join("|", toolNames.Select(_ => ":---:"));
+            reportSb.AppendLine($"| Severity | {headerCols} |");
+            reportSb.AppendLine($"|----------|{alignCols}|");
+
+            foreach (var sev in new[] { "critical", "serious", "moderate", "minor" })
+            {
+                var emoji = SeverityEmoji(sev);
+                var cols = toolNames.Select(t =>
+                {
+                    if (!a11y.ByTool.TryGetValue(t, out var ts)) return "—";
+                    var count = sev switch
+                    {
+                        "critical" => ts.Critical,
+                        "serious" => ts.Serious,
+                        "moderate" => ts.Moderate,
+                        "minor" => ts.Minor,
+                        _ => 0
+                    };
+                    return count > 0 ? count.ToString() : "0";
+                });
+                reportSb.AppendLine($"| {emoji} {sev} | {string.Join(" | ", cols)} |");
+            }
+
+            var totalCols = toolNames.Select(t =>
+                a11y.ByTool.TryGetValue(t, out var ts) ? $"**{ts.Total}**" : "—");
+            reportSb.AppendLine($"| **Total** | {string.Join(" | ", totalCols)} |");
+            reportSb.AppendLine();
+
+            // Ranked violations table
+            if (a11y.RankedRules.Count > 0)
+            {
+                reportSb.AppendLine("### Violations by Confidence");
+                reportSb.AppendLine();
+                reportSb.AppendLine("<details open>");
+                reportSb.AppendLine($"<summary><strong>{a11y.RankedRules.Count} rule(s) violated</strong></summary>");
+                reportSb.AppendLine();
+                reportSb.AppendLine($"| # | Rule | Sev | Confidence | {headerCols} | Example |");
+                reportSb.AppendLine($"|--:|------|:---:|:----------:|{alignCols}|---------|");
+
+                foreach (var rule in a11y.RankedRules.Take(30))
+                {
+                    var emoji = SeverityEmoji(rule.Severity);
+                    var confEmoji = rule.Confidence switch
+                    {
+                        "high" => "🟢",
+                        "medium" => "🟡",
+                        _ => "🔵"
+                    };
+
+                    var toolCols = toolNames.Select(t =>
+                    {
+                        if (ToolCannotCheck.TryGetValue(t, out var cant) && cant.Contains(rule.CanonicalRuleId))
+                            return "—";
+                        return rule.ToolsFound.Contains(t) ? "⚠️" : "✅";
+                    });
+
+                    var snippet = rule.ExampleSnippet != null
+                        ? $"`{Truncate(rule.ExampleSnippet.Replace("|", "\\|").Replace("`", "'"), 60)}`"
+                        : "";
+
+                    reportSb.AppendLine($"| {rule.Rank} | {rule.CanonicalRuleId} | {emoji} | {confEmoji} {rule.Consensus} | {string.Join(" | ", toolCols)} | {snippet} |");
+                }
+
+                if (a11y.RankedRules.Count > 30)
+                {
+                    reportSb.AppendLine($"| | *...and {a11y.RankedRules.Count - 30} more* | | | | |");
+                }
+
+                reportSb.AppendLine();
+                reportSb.AppendLine("</details>");
+                reportSb.AppendLine();
+            }
+
+            // Disclaimer
+            reportSb.AppendLine("> **Note:** Automated scanning catches ~30-60% of WCAG issues. Manual keyboard and screen reader testing is still required for full compliance.");
+            reportSb.AppendLine();
+        }
+        else if (result.A11ySummary != null && result.A11ySummary.TotalViolations == 0)
+        {
+            reportSb.AppendLine($"## ♿ Accessibility");
+            reportSb.AppendLine();
+            reportSb.AppendLine($"✅ No violations detected by {result.A11ySummary.ToolsRun.Count} tool(s).");
+            reportSb.AppendLine();
+        }
+
         // Files section
         reportSb.AppendLine($"## 📁 Files");
         reportSb.AppendLine();
@@ -747,6 +876,14 @@ internal class Program
         if (result.Images.Count > 0)
         {
             reportSb.AppendLine($"| `images/` | {result.Images.Count} page images ({PathSanitizer.FormatBytes(result.ImagesTotalSize)}) |");
+        }
+        if (result.A11ySummary != null)
+        {
+            foreach (var tool in result.A11ySummary.ToolsRun)
+            {
+                reportSb.AppendLine($"| `a11y-{tool}.json` | {tool} accessibility results |");
+            }
+            reportSb.AppendLine($"| `a11y-summary.json` | Merged cross-tool accessibility summary |");
         }
         reportSb.AppendLine();
         reportSb.AppendLine("---");
@@ -775,6 +912,17 @@ internal class Program
             ImagesTotalSizeBytes = result.ImagesTotalSize,
             ImagesMissingAlt = result.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText)),
             Images = result.Images.Select(i => new { i.FileName, i.SourceUrl, i.AltText, i.FileSize }).ToArray(),
+            Accessibility = result.A11ySummary != null ? new
+            {
+                result.A11ySummary.ToolsRun,
+                result.A11ySummary.ToolsSkipped,
+                result.A11ySummary.TotalViolations,
+                result.A11ySummary.Critical,
+                result.A11ySummary.Serious,
+                result.A11ySummary.Moderate,
+                result.A11ySummary.Minor,
+                result.A11ySummary.ByTool
+            } : null,
             result.ErrorMessage,
             Headers = headers,
             result.CapturedAt
@@ -941,6 +1089,63 @@ internal class Program
             }
             sb.AppendLine("</details>");
             sb.AppendLine();
+        }
+
+        // Accessibility rollup
+        var pagesWithA11y = site.Pages.Where(p => p.A11ySummary != null && p.A11ySummary.TotalViolations > 0).ToList();
+        if (pagesWithA11y.Count > 0)
+        {
+            var totalA11y = pagesWithA11y.Sum(p => p.A11ySummary!.TotalViolations);
+            var totalCritical = pagesWithA11y.Sum(p => p.A11ySummary!.Critical);
+            var totalSerious = pagesWithA11y.Sum(p => p.A11ySummary!.Serious);
+            var totalModerate = pagesWithA11y.Sum(p => p.A11ySummary!.Moderate);
+            var totalMinor = pagesWithA11y.Sum(p => p.A11ySummary!.Minor);
+
+            sb.AppendLine($"## ♿ Accessibility Summary");
+            sb.AppendLine();
+            sb.AppendLine($"| Metric | Value |");
+            sb.AppendLine($"|--------|-------|");
+            sb.AppendLine($"| Pages with violations | {pagesWithA11y.Count}/{totalCount} |");
+            sb.AppendLine($"| Total violations | {totalA11y} |");
+            sb.AppendLine($"| 🔴 Critical | {totalCritical} |");
+            sb.AppendLine($"| 🟠 Serious | {totalSerious} |");
+            sb.AppendLine($"| 🟡 Moderate | {totalModerate} |");
+            sb.AppendLine($"| 🔵 Minor | {totalMinor} |");
+            sb.AppendLine();
+
+            // Top 10 rules across this site
+            var allRanked = pagesWithA11y
+                .SelectMany(p => p.A11ySummary!.RankedRules)
+                .GroupBy(r => r.CanonicalRuleId)
+                .Select(g => new
+                {
+                    Rule = g.Key,
+                    Severity = g.First().Severity,
+                    Pages = g.Count(),
+                    Instances = g.Sum(r => r.TotalInstances),
+                    AvgConfidence = g.Average(r => r.ConfidenceScore),
+                })
+                .OrderByDescending(r => r.AvgConfidence)
+                .ThenBy(r => SeverityRank(r.Severity))
+                .ThenByDescending(r => r.Instances)
+                .Take(10)
+                .ToList();
+
+            if (allRanked.Count > 0)
+            {
+                sb.AppendLine($"### Top {allRanked.Count} Issues");
+                sb.AppendLine();
+                sb.AppendLine($"| # | Rule | Sev | Pages | Instances |");
+                sb.AppendLine($"|--:|------|:---:|:-----:|:---------:|");
+
+                var rank = 0;
+                foreach (var r in allRanked)
+                {
+                    rank++;
+                    sb.AppendLine($"| {rank} | {r.Rule} | {SeverityEmoji(r.Severity)} | {r.Pages}/{totalCount} | {r.Instances} |");
+                }
+                sb.AppendLine();
+            }
         }
 
         sb.AppendLine("---");
@@ -1166,6 +1371,101 @@ internal class Program
             sb.AppendLine();
         }
 
+        // Accessibility dashboard
+        var allPagesWithA11y = siteList
+            .SelectMany(s => s.Pages.Where(p => p.A11ySummary != null && p.A11ySummary.TotalViolations > 0)
+                .Select(p => (Site: s, Page: p)))
+            .ToList();
+
+        if (allPagesWithA11y.Count > 0)
+        {
+            var grandA11yTotal = allPagesWithA11y.Sum(x => x.Page.A11ySummary!.TotalViolations);
+            var grandCritical = allPagesWithA11y.Sum(x => x.Page.A11ySummary!.Critical);
+            var grandSerious = allPagesWithA11y.Sum(x => x.Page.A11ySummary!.Serious);
+            var grandModerate = allPagesWithA11y.Sum(x => x.Page.A11ySummary!.Moderate);
+            var grandMinor = allPagesWithA11y.Sum(x => x.Page.A11ySummary!.Minor);
+
+            sb.AppendLine($"## ♿ Accessibility Dashboard");
+            sb.AppendLine();
+
+            // Progress bars
+            var critPct = grandA11yTotal > 0 ? grandCritical * 100.0 / grandA11yTotal : 0;
+            var seriPct = grandA11yTotal > 0 ? grandSerious * 100.0 / grandA11yTotal : 0;
+            var modPct = grandA11yTotal > 0 ? grandModerate * 100.0 / grandA11yTotal : 0;
+            var minPct = grandA11yTotal > 0 ? grandMinor * 100.0 / grandA11yTotal : 0;
+
+            sb.AppendLine("```");
+            sb.AppendLine($"Critical:     {GenerateProgressBar(critPct, 30)} {critPct:F0}%");
+            sb.AppendLine($"Serious:      {GenerateProgressBar(seriPct, 30)} {seriPct:F0}%");
+            sb.AppendLine($"Moderate:     {GenerateProgressBar(modPct, 30)} {modPct:F0}%");
+            sb.AppendLine($"Minor:        {GenerateProgressBar(minPct, 30)} {minPct:F0}%");
+            sb.AppendLine("```");
+            sb.AppendLine();
+
+            sb.AppendLine($"| 🔴 Critical | 🟠 Serious | 🟡 Moderate | 🔵 Minor | Total |");
+            sb.AppendLine($"|:-----------:|:----------:|:-----------:|:--------:|:-----:|");
+            sb.AppendLine($"| {grandCritical} | {grandSerious} | {grandModerate} | {grandMinor} | {grandA11yTotal} |");
+            sb.AppendLine();
+
+            sb.AppendLine($"| Metric | Value |");
+            sb.AppendLine($"|--------|-------|");
+            sb.AppendLine($"| Pages with violations | {allPagesWithA11y.Count}/{totalPages} |");
+            var sitesWithA11y = siteList.Count(s => s.Pages.Any(p => p.A11ySummary != null && p.A11ySummary.TotalViolations > 0));
+            sb.AppendLine($"| Sites with violations | {sitesWithA11y}/{totalSites} |");
+            sb.AppendLine();
+
+            // Top 20 violations across all sites
+            var allRunRanked = allPagesWithA11y
+                .SelectMany(x => x.Page.A11ySummary!.RankedRules
+                    .Select(r => (x.Site, x.Page, Rule: r)))
+                .GroupBy(x => x.Rule.CanonicalRuleId)
+                .Select(g => new
+                {
+                    Rule = g.Key,
+                    Severity = g.First().Rule.Severity,
+                    Sites = g.Select(x => x.Site.Url).Distinct().Count(),
+                    Pages = g.Count(),
+                    Instances = g.Sum(x => x.Rule.TotalInstances),
+                    AvgConfidence = g.Average(x => x.Rule.ConfidenceScore),
+                    WcagCriteria = g.First().Rule.WcagCriteria,
+                    Message = g.First().Rule.Message
+                })
+                .OrderByDescending(r => r.AvgConfidence)
+                .ThenBy(r => SeverityRank(r.Severity))
+                .ThenByDescending(r => r.Instances)
+                .Take(20)
+                .ToList();
+
+            if (allRunRanked.Count > 0)
+            {
+                sb.AppendLine($"### Top {allRunRanked.Count} Violations (all sites)");
+                sb.AppendLine();
+                sb.AppendLine($"| # | Rule | Sev | Sites | Pages | Instances | WCAG |");
+                sb.AppendLine($"|--:|------|:---:|:-----:|:-----:|:---------:|:----:|");
+
+                var rank = 0;
+                foreach (var r in allRunRanked)
+                {
+                    rank++;
+                    sb.AppendLine($"| {rank} | {r.Rule} | {SeverityEmoji(r.Severity)} | {r.Sites}/{totalSites} | {r.Pages}/{totalPages} | {r.Instances:N0} | {r.WcagCriteria ?? "—"} |");
+                }
+                sb.AppendLine();
+
+                // Write CSV
+                var csvSb = new StringBuilder();
+                csvSb.AppendLine("Rank,Rule,Severity,Confidence,Sites,Pages,Instances,WCAG,Message");
+                rank = 0;
+                foreach (var r in allRunRanked)
+                {
+                    rank++;
+                    var conf = r.AvgConfidence >= 0.8 ? "high" : r.AvgConfidence >= 0.5 ? "medium" : "low";
+                    var msg = r.Message.Replace("\"", "\"\"");
+                    csvSb.AppendLine($"{rank},\"{r.Rule}\",\"{r.Severity}\",\"{conf}\",{r.Sites},{r.Pages},{r.Instances},\"{r.WcagCriteria ?? ""}\",\"{msg}\"");
+                }
+                await File.WriteAllTextAsync(Path.Combine(runsDir, "a11y-ranked.csv"), csvSb.ToString());
+            }
+        }
+
         sb.AppendLine("---");
         sb.AppendLine();
         sb.AppendLine("*Generated by AccessibilityScanner (FreeTools) v1.0*");
@@ -1189,6 +1489,660 @@ internal class Program
         filled = Math.Clamp(filled, 0, width);
         var empty = width - filled;
         return $"[{new string('█', filled)}{new string('░', empty)}]";
+    }
+
+    // ========================================================================
+    // Accessibility scanning
+    // ========================================================================
+
+    private const string AxeCdnUrl = "https://cdn.jsdelivr.net/npm/axe-core@4.10.2/axe.min.js";
+    private static string? _axeScript;
+    private static readonly SemaphoreSlim _axeLock = new(1, 1);
+
+    /// <summary>
+    /// Download axe-core.min.js from CDN on first use, cache in project directory.
+    /// Thread-safe — only one download happens even with concurrent calls.
+    /// </summary>
+    private static async Task<string> EnsureAxeCoreAsync(string projectDir)
+    {
+        if (_axeScript != null) return _axeScript;
+
+        await _axeLock.WaitAsync();
+        try
+        {
+            if (_axeScript != null) return _axeScript;
+
+            var cachePath = Path.Combine(projectDir, "axe.min.js");
+
+            if (File.Exists(cachePath))
+            {
+                _axeScript = await File.ReadAllTextAsync(cachePath);
+                Console.WriteLine($"  [axe-core] Cached ({_axeScript.Length / 1024}KB)");
+                return _axeScript;
+            }
+
+            Console.WriteLine("  [axe-core] Downloading from CDN...");
+            using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(30) };
+            _axeScript = await http.GetStringAsync(AxeCdnUrl);
+            await File.WriteAllTextAsync(cachePath, _axeScript);
+            Console.WriteLine($"  [axe-core] Downloaded and cached ({_axeScript.Length / 1024}KB)");
+            return _axeScript;
+        }
+        finally
+        {
+            _axeLock.Release();
+        }
+    }
+
+    /// <summary>
+    /// Inject axe-core into a live Playwright page, run accessibility scan, 
+    /// and return normalized results.
+    /// </summary>
+    private static async Task<A11yToolResult> RunAxeCoreAsync(IPage page, string axeScript, string wcagLevel)
+    {
+        var sw = System.Diagnostics.Stopwatch.StartNew();
+        var result = new A11yToolResult { ToolName = "axe" };
+
+        try
+        {
+            // Inject axe-core into the page
+            await page.EvaluateAsync(axeScript);
+
+            // Build the WCAG tags array from the configured level
+            var wcagTags = wcagLevel switch
+            {
+                "wcag22aa" => "['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']",
+                "wcag21aa" => "['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']",
+                "wcag2aa" => "['wcag2a', 'wcag2aa']",
+                "wcag2a" => "['wcag2a']",
+                _ => "['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']"
+            };
+
+            // Run axe and get violations
+            var violationsJson = await page.EvaluateAsync<JsonElement>($@"
+                async () => {{
+                    const results = await axe.run({{
+                        runOnly: {{ type: 'tag', values: {wcagTags} }}
+                    }});
+                    return results.violations.map(v => ({{
+                        id: v.id,
+                        impact: v.impact,
+                        help: v.help,
+                        helpUrl: v.helpUrl,
+                        tags: v.tags,
+                        nodes: v.nodes.map(n => ({{
+                            html: n.html.substring(0, 200),
+                            target: n.target,
+                            failureSummary: n.failureSummary
+                        }}))
+                    }}));
+                }}
+            ");
+
+            // Parse violations into unified issues
+            var violations = JsonSerializer.Deserialize<List<AxeViolation>>(
+                violationsJson.GetRawText(), JsonOptions) ?? [];
+
+            foreach (var v in violations)
+            {
+                // Extract WCAG criteria from tags (e.g., "wcag111" → "1.1.1")
+                var wcagTag = v.Tags.FirstOrDefault(t =>
+                    t.StartsWith("wcag") && t.Length > 5 && char.IsDigit(t[4]));
+                var wcagCriteria = wcagTag != null ? FormatWcagTag(wcagTag) : null;
+
+                foreach (var node in v.Nodes)
+                {
+                    result.Issues.Add(new A11yIssue
+                    {
+                        Tool = "axe",
+                        RuleId = v.Id,
+                        CanonicalRuleId = v.Id, // axe IDs are canonical
+                        Severity = v.Impact ?? "moderate",
+                        Message = v.Help,
+                        Selector = node.Target.FirstOrDefault(),
+                        Snippet = node.Html.Length > 150 ? node.Html[..150] + "..." : node.Html,
+                        HelpUrl = v.HelpUrl,
+                        WcagCriteria = wcagCriteria
+                    });
+                }
+            }
+
+            result.Status = "completed";
+        }
+        catch (Exception ex)
+        {
+            result.Status = "error";
+            result.ErrorMessage = ex.Message;
+        }
+
+        sw.Stop();
+        result.DurationMs = sw.ElapsedMilliseconds;
+        return result;
+    }
+
+    /// <summary>
+    /// Convert axe WCAG tag like "wcag111" to "1.1.1" or "wcag143" to "1.4.3".
+    /// </summary>
+    private static string? FormatWcagTag(string tag)
+    {
+        // Tags are like "wcag111", "wcag143", "wcag2411"
+        var digits = tag.AsSpan(4); // skip "wcag"
+        if (digits.Length < 3) return null;
+        // Format: first digit . second digit . remaining digits
+        return $"{digits[0]}.{digits[1]}.{digits[2..]}";
+    }
+
+    /// <summary>
+    /// Run structural HTML checks against saved page.html content.
+    /// Pure C# string/regex parsing — zero external dependencies.
+    /// </summary>
+    private static A11yToolResult RunHtmlCheck(string html, string url)
+    {
+        var sw = System.Diagnostics.Stopwatch.StartNew();
+        var issues = new List<A11yIssue>();
+
+        issues.AddRange(CheckImgAlt(html));
+        issues.AddRange(CheckHeadingOrder(html));
+        issues.AddRange(CheckHtmlLang(html));
+        issues.AddRange(CheckFormLabels(html));
+        issues.AddRange(CheckEmptyLinks(html));
+        issues.AddRange(CheckEmptyButtons(html));
+        issues.AddRange(CheckSkipLink(html));
+        issues.AddRange(CheckLandmarkMain(html));
+        issues.AddRange(CheckLandmarkNav(html));
+        issues.AddRange(CheckDivButton(html));
+        issues.AddRange(CheckTabindexPositive(html));
+        issues.AddRange(CheckMetaRefresh(html));
+        issues.AddRange(CheckTableHeaders(html));
+
+        sw.Stop();
+        return new A11yToolResult
+        {
+            ToolName = "htmlcheck",
+            Status = "completed",
+            DurationMs = sw.ElapsedMilliseconds,
+            Issues = issues
+        };
+    }
+
+    // --- Individual htmlcheck rules ---
+
+    private static IEnumerable<A11yIssue> CheckImgAlt(string html)
+    {
+        // Match <img> tags — check for alt attribute
+        foreach (System.Text.RegularExpressions.Match m in
+            System.Text.RegularExpressions.Regex.Matches(html, @"<img\b([^>]*)>", System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+        {
+            var attrs = m.Groups[1].Value;
+            // Skip if inside <noscript> or template elements (simple heuristic)
+            if (attrs.Contains("aria-hidden=\"true\"", StringComparison.OrdinalIgnoreCase)) continue;
+
+            if (!attrs.Contains("alt=", StringComparison.OrdinalIgnoreCase) &&
+                !attrs.Contains("alt =", StringComparison.OrdinalIgnoreCase))
+            {
+                yield return new A11yIssue
+                {
+                    Tool = "htmlcheck", RuleId = "img-alt", CanonicalRuleId = "image-alt",
+                    Severity = "serious", Message = "Image missing alt attribute",
+                    Snippet = m.Value.Length > 150 ? m.Value[..150] + "..." : m.Value,
+                    WcagCriteria = "1.1.1"
+                };
+            }
+        }
+    }
+
+    private static IEnumerable<A11yIssue> CheckHeadingOrder(string html)
+    {
+        var headings = System.Text.RegularExpressions.Regex.Matches(
+            html, @"<h([1-6])\b[^>]*>", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+
+        int lastLevel = 0;
+        foreach (System.Text.RegularExpressions.Match m in headings)
+        {
+            var level = int.Parse(m.Groups[1].Value);
+            if (lastLevel > 0 && level > lastLevel + 1)
+            {
+                yield return new A11yIssue
+                {
+                    Tool = "htmlcheck", RuleId = "heading-order", CanonicalRuleId = "heading-order",
+                    Severity = "moderate", Message = $"Heading level skipped: <h{lastLevel}> to <h{level}>",
+                    Snippet = m.Value, WcagCriteria = "1.3.1"
+                };
+            }
+            lastLevel = level;
+        }
+
+        // Check for missing h1
+        if (headings.Count > 0 && !System.Text.RegularExpressions.Regex.IsMatch(
+            html, @"<h1\b", System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+        {
+            yield return new A11yIssue
+            {
+                Tool = "htmlcheck", RuleId = "heading-missing-h1", CanonicalRuleId = "page-has-heading-one",
+                Severity = "moderate", Message = "Page has headings but no <h1>",
+                WcagCriteria = "1.3.1"
+            };
+        }
+    }
+
+    private static IEnumerable<A11yIssue> CheckHtmlLang(string html)
+    {
+        var htmlTag = System.Text.RegularExpressions.Regex.Match(
+            html, @"<html\b([^>]*)>", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+
+        if (!htmlTag.Success) yield break;
+
+        var attrs = htmlTag.Groups[1].Value;
+
+        if (!attrs.Contains("lang=", StringComparison.OrdinalIgnoreCase))
+        {
+            yield return new A11yIssue
+            {
+                Tool = "htmlcheck", RuleId = "html-lang", CanonicalRuleId = "html-has-lang",
+                Severity = "serious", Message = "<html> element missing lang attribute",
+                Snippet = htmlTag.Value, WcagCriteria = "3.1.1"
+            };
+        }
+        else
+        {
+            // Check if lang value is valid (basic check)
+            var langMatch = System.Text.RegularExpressions.Regex.Match(
+                attrs, @"lang\s*=\s*[""']([^""']*)[""']", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+            if (langMatch.Success && string.IsNullOrWhiteSpace(langMatch.Groups[1].Value))
+            {
+                yield return new A11yIssue
+                {
+                    Tool = "htmlcheck", RuleId = "html-lang-valid", CanonicalRuleId = "html-lang-valid",
+                    Severity = "serious", Message = "lang attribute is empty",
+                    Snippet = htmlTag.Value, WcagCriteria = "3.1.1"
+                };
+            }
+        }
+    }
+
+    private static IEnumerable<A11yIssue> CheckFormLabels(string html)
+    {
+        foreach (System.Text.RegularExpressions.Match m in
+            System.Text.RegularExpressions.Regex.Matches(html, @"<input\b([^>]*)>", System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+        {
+            var attrs = m.Groups[1].Value;
+            var typeMatch = System.Text.RegularExpressions.Regex.Match(
+                attrs, @"type\s*=\s*[""']([^""']*)[""']", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+            var type = typeMatch.Success ? typeMatch.Groups[1].Value.ToLowerInvariant() : "text";
+
+            if (type is "hidden" or "submit" or "button" or "image" or "reset") continue;
+
+            // Has aria-label or aria-labelledby?
+            if (attrs.Contains("aria-label", StringComparison.OrdinalIgnoreCase)) continue;
+
+            // Has id with matching label?
+            var idMatch = System.Text.RegularExpressions.Regex.Match(
+                attrs, @"id\s*=\s*[""']([^""']*)[""']", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+            if (idMatch.Success && !string.IsNullOrWhiteSpace(idMatch.Groups[1].Value))
+            {
+                if (html.Contains($"for=\"{idMatch.Groups[1].Value}\"", StringComparison.OrdinalIgnoreCase) ||
+                    html.Contains($"for='{idMatch.Groups[1].Value}'", StringComparison.OrdinalIgnoreCase))
+                    continue;
+            }
+
+            yield return new A11yIssue
+            {
+                Tool = "htmlcheck", RuleId = "label-missing", CanonicalRuleId = "label",
+                Severity = "serious", Message = "Form input has no associated label or aria-label",
+                Snippet = m.Value.Length > 150 ? m.Value[..150] + "..." : m.Value,
+                WcagCriteria = "1.3.1"
+            };
+        }
+    }
+
+    private static IEnumerable<A11yIssue> CheckEmptyLinks(string html)
+    {
+        foreach (System.Text.RegularExpressions.Match m in
+            System.Text.RegularExpressions.Regex.Matches(html, @"<a\b([^>]*)>(.*?)</a>",
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase | System.Text.RegularExpressions.RegexOptions.Singleline))
+        {
+            var attrs = m.Groups[1].Value;
+            var content = m.Groups[2].Value;
+
+            if (attrs.Contains("aria-label", StringComparison.OrdinalIgnoreCase)) continue;
+            if (attrs.Contains("aria-labelledby", StringComparison.OrdinalIgnoreCase)) continue;
+
+            // Strip HTML tags from content and check if empty
+            var textContent = System.Text.RegularExpressions.Regex.Replace(content, @"<[^>]+>", "").Trim();
+            if (string.IsNullOrWhiteSpace(textContent))
+            {
+                // Could be an image link — check for img with alt inside
+                if (content.Contains("<img", StringComparison.OrdinalIgnoreCase) &&
+                    content.Contains("alt=", StringComparison.OrdinalIgnoreCase)) continue;
+
+                yield return new A11yIssue
+                {
+                    Tool = "htmlcheck", RuleId = "link-empty", CanonicalRuleId = "link-name",
+                    Severity = "serious", Message = "Link has no text content or accessible name",
+                    Snippet = m.Value.Length > 150 ? m.Value[..150] + "..." : m.Value,
+                    WcagCriteria = "4.1.2"
+                };
+            }
+        }
+    }
+
+    private static IEnumerable<A11yIssue> CheckEmptyButtons(string html)
+    {
+        foreach (System.Text.RegularExpressions.Match m in
+            System.Text.RegularExpressions.Regex.Matches(html, @"<button\b([^>]*)>(.*?)</button>",
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase | System.Text.RegularExpressions.RegexOptions.Singleline))
+        {
+            var attrs = m.Groups[1].Value;
+            var content = m.Groups[2].Value;
+
+            if (attrs.Contains("aria-label", StringComparison.OrdinalIgnoreCase)) continue;
+            if (attrs.Contains("aria-labelledby", StringComparison.OrdinalIgnoreCase)) continue;
+
+            var textContent = System.Text.RegularExpressions.Regex.Replace(content, @"<[^>]+>", "").Trim();
+            if (string.IsNullOrWhiteSpace(textContent))
+            {
+                yield return new A11yIssue
+                {
+                    Tool = "htmlcheck", RuleId = "button-empty", CanonicalRuleId = "button-name",
+                    Severity = "serious", Message = "Button has no text content or accessible name",
+                    Snippet = m.Value.Length > 150 ? m.Value[..150] + "..." : m.Value,
+                    WcagCriteria = "4.1.2"
+                };
+            }
+        }
+    }
+
+    private static IEnumerable<A11yIssue> CheckSkipLink(string html)
+    {
+        // Look for a skip link in the first 2000 chars of body
+        var bodyStart = html.IndexOf("<body", StringComparison.OrdinalIgnoreCase);
+        if (bodyStart < 0) yield break;
+
+        var topSection = html.Substring(bodyStart, Math.Min(2000, html.Length - bodyStart));
+
+        if (!topSection.Contains("#main", StringComparison.OrdinalIgnoreCase) &&
+            !topSection.Contains("#content", StringComparison.OrdinalIgnoreCase) &&
+            !topSection.Contains("skip", StringComparison.OrdinalIgnoreCase))
+        {
+            yield return new A11yIssue
+            {
+                Tool = "htmlcheck", RuleId = "skip-link-missing", CanonicalRuleId = "skip-link",
+                Severity = "moderate", Message = "No skip-to-content link found near top of page",
+                WcagCriteria = "2.4.1"
+            };
+        }
+    }
+
+    private static IEnumerable<A11yIssue> CheckLandmarkMain(string html)
+    {
+        if (!html.Contains("<main", StringComparison.OrdinalIgnoreCase) &&
+            !html.Contains("role=\"main\"", StringComparison.OrdinalIgnoreCase))
+        {
+            yield return new A11yIssue
+            {
+                Tool = "htmlcheck", RuleId = "landmark-main", CanonicalRuleId = "landmark-one-main",
+                Severity = "moderate", Message = "Page has no <main> landmark",
+                WcagCriteria = "1.3.1"
+            };
+        }
+    }
+
+    private static IEnumerable<A11yIssue> CheckLandmarkNav(string html)
+    {
+        if (!html.Contains("<nav", StringComparison.OrdinalIgnoreCase) &&
+            !html.Contains("role=\"navigation\"", StringComparison.OrdinalIgnoreCase))
+        {
+            yield return new A11yIssue
+            {
+                Tool = "htmlcheck", RuleId = "landmark-nav", CanonicalRuleId = "landmark-nav",
+                Severity = "minor", Message = "Page has no <nav> landmark",
+                WcagCriteria = "1.3.1"
+            };
+        }
+    }
+
+    private static IEnumerable<A11yIssue> CheckDivButton(string html)
+    {
+        foreach (System.Text.RegularExpressions.Match m in
+            System.Text.RegularExpressions.Regex.Matches(html, @"<div\b([^>]*onclick[^>]*)>",
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+        {
+            var attrs = m.Groups[1].Value;
+            if (attrs.Contains("role=", StringComparison.OrdinalIgnoreCase)) continue;
+
+            yield return new A11yIssue
+            {
+                Tool = "htmlcheck", RuleId = "div-button", CanonicalRuleId = "div-button",
+                Severity = "moderate", Message = "<div> with onclick but no role — use <button> instead",
+                Snippet = m.Value.Length > 150 ? m.Value[..150] + "..." : m.Value,
+                WcagCriteria = "4.1.2"
+            };
+        }
+    }
+
+    private static IEnumerable<A11yIssue> CheckTabindexPositive(string html)
+    {
+        foreach (System.Text.RegularExpressions.Match m in
+            System.Text.RegularExpressions.Regex.Matches(html, @"tabindex\s*=\s*[""'](\d+)[""']",
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+        {
+            if (int.TryParse(m.Groups[1].Value, out var val) && val > 0)
+            {
+                yield return new A11yIssue
+                {
+                    Tool = "htmlcheck", RuleId = "tabindex-positive", CanonicalRuleId = "tabindex",
+                    Severity = "moderate", Message = $"tabindex=\"{val}\" disrupts natural tab order",
+                    Snippet = m.Value, WcagCriteria = "2.4.3"
+                };
+            }
+        }
+    }
+
+    private static IEnumerable<A11yIssue> CheckMetaRefresh(string html)
+    {
+        if (System.Text.RegularExpressions.Regex.IsMatch(html,
+            @"<meta\b[^>]*http-equiv\s*=\s*[""']refresh[""'][^>]*>",
+            System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+        {
+            yield return new A11yIssue
+            {
+                Tool = "htmlcheck", RuleId = "meta-refresh", CanonicalRuleId = "meta-refresh",
+                Severity = "moderate", Message = "Page uses <meta http-equiv=\"refresh\"> which can be disorienting",
+                WcagCriteria = "2.2.1"
+            };
+        }
+    }
+
+    private static IEnumerable<A11yIssue> CheckTableHeaders(string html)
+    {
+        // Find <table> elements that contain <td> but no <th>
+        foreach (System.Text.RegularExpressions.Match m in
+            System.Text.RegularExpressions.Regex.Matches(html, @"<table\b[^>]*>(.*?)</table>",
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase | System.Text.RegularExpressions.RegexOptions.Singleline))
+        {
+            var tableContent = m.Groups[1].Value;
+            // Skip tables with role="presentation" or role="none" (layout tables)
+            var tableTag = System.Text.RegularExpressions.Regex.Match(m.Value, @"<table\b([^>]*)>");
+            if (tableTag.Success && (tableTag.Groups[1].Value.Contains("role=\"presentation\"", StringComparison.OrdinalIgnoreCase) ||
+                tableTag.Groups[1].Value.Contains("role=\"none\"", StringComparison.OrdinalIgnoreCase)))
+                continue;
+
+            if (tableContent.Contains("<td", StringComparison.OrdinalIgnoreCase) &&
+                !tableContent.Contains("<th", StringComparison.OrdinalIgnoreCase))
+            {
+                yield return new A11yIssue
+                {
+                    Tool = "htmlcheck", RuleId = "table-header-missing", CanonicalRuleId = "td-has-header",
+                    Severity = "moderate", Message = "Data table has no header cells (<th>)",
+                    Snippet = m.Value.Length > 150 ? m.Value[..150] + "..." : m.Value,
+                    WcagCriteria = "1.3.1"
+                };
+            }
+        }
+    }
+
+    // ========================================================================
+    // Accessibility: Consensus ranking + merge
+    // ========================================================================
+
+    /// <summary>
+    /// Maps tool-specific rule IDs to canonical (axe-core) IDs for cross-tool matching.
+    /// </summary>
+    private static readonly Dictionary<string, string> RuleNormalization = new(StringComparer.OrdinalIgnoreCase)
+    {
+        // htmlcheck → canonical
+        ["img-alt"] = "image-alt",
+        ["html-lang"] = "html-has-lang",
+        ["html-lang-valid"] = "html-lang-valid",
+        ["label-missing"] = "label",
+        ["link-empty"] = "link-name",
+        ["button-empty"] = "button-name",
+        ["skip-link-missing"] = "skip-link",
+        ["landmark-main"] = "landmark-one-main",
+        ["heading-missing-h1"] = "page-has-heading-one",
+        ["table-header-missing"] = "td-has-header",
+    };
+
+    /// <summary>
+    /// Rules that specific tools CANNOT check. Used to calculate "capable" denominator.
+    /// </summary>
+    private static readonly Dictionary<string, HashSet<string>> ToolCannotCheck = new()
+    {
+        ["htmlcheck"] = ["color-contrast", "color-contrast-enhanced", "aria-allowed-attr",
+            "aria-hidden-body", "aria-required-attr", "aria-roles", "aria-valid-attr",
+            "aria-valid-attr-value", "focus-order-semantics", "target-size"],
+        ["pa11y"] = ["skip-link", "landmark-one-main", "landmark-nav", "div-button",
+            "tabindex", "meta-refresh", "td-has-header"]
+    };
+
+    private static string NormalizeRuleId(string ruleId)
+        => RuleNormalization.TryGetValue(ruleId, out var canonical) ? canonical : ruleId;
+
+    private static int SeverityRank(string severity) => severity switch
+    {
+        "critical" => 0,
+        "serious" => 1,
+        "moderate" => 2,
+        "minor" => 3,
+        _ => 4
+    };
+
+    private static string SeverityEmoji(string severity) => severity switch
+    {
+        "critical" => "🔴",
+        "serious" => "🟠",
+        "moderate" => "🟡",
+        "minor" => "🔵",
+        _ => "⚪"
+    };
+
+    /// <summary>
+    /// Merge results from all tools, compute consensus ranking, and write output files.
+    /// </summary>
+    private static A11yPageSummary MergeA11yResults(
+        A11yToolResult axeResult,
+        A11yToolResult htmlResult,
+        string pageDir)
+    {
+        var summary = new A11yPageSummary();
+        var allIssues = new List<A11yIssue>();
+        var toolResults = new[] { axeResult, htmlResult };
+
+        foreach (var tool in toolResults)
+        {
+            if (tool.Status == "completed")
+            {
+                summary.ToolsRun.Add(tool.ToolName);
+                allIssues.AddRange(tool.Issues);
+
+                // Per-tool severity counts
+                summary.ByTool[tool.ToolName] = new A11yToolSummary
+                {
+                    Total = tool.Issues.Count,
+                    Critical = tool.Issues.Count(i => i.Severity == "critical"),
+                    Serious = tool.Issues.Count(i => i.Severity == "serious"),
+                    Moderate = tool.Issues.Count(i => i.Severity == "moderate"),
+                    Minor = tool.Issues.Count(i => i.Severity == "minor")
+                };
+            }
+            else if (tool.Status == "skipped")
+            {
+                summary.ToolsSkipped.Add(tool.ToolName);
+            }
+            else if (tool.Status == "error")
+            {
+                summary.ToolsSkipped.Add(tool.ToolName);
+            }
+
+            // Write individual tool file
+            var toolFile = Path.Combine(pageDir, $"a11y-{tool.ToolName}.json");
+            File.WriteAllText(toolFile, JsonSerializer.Serialize(tool, JsonOptions));
+        }
+
+        // Severity totals (across all tools, not deduplicated)
+        summary.TotalViolations = allIssues.Count;
+        summary.Critical = allIssues.Count(i => i.Severity == "critical");
+        summary.Serious = allIssues.Count(i => i.Severity == "serious");
+        summary.Moderate = allIssues.Count(i => i.Severity == "moderate");
+        summary.Minor = allIssues.Count(i => i.Severity == "minor");
+
+        // Normalize rule IDs for cross-tool matching
+        foreach (var issue in allIssues)
+        {
+            if (string.IsNullOrEmpty(issue.CanonicalRuleId))
+                issue.CanonicalRuleId = NormalizeRuleId(issue.RuleId);
+        }
+
+        // Build consensus ranking: group by canonical rule, score by how many tools found it
+        var completedTools = summary.ToolsRun;
+        var ruleGroups = allIssues
+            .GroupBy(i => i.CanonicalRuleId)
+            .ToList();
+
+        var ranked = new List<A11yRankedRule>();
+        foreach (var group in ruleGroups)
+        {
+            var ruleId = group.Key;
+            var toolsFound = group.Select(i => i.Tool).Distinct().ToList();
+
+            // Determine which completed tools are capable of checking this rule
+            var capableTools = completedTools
+                .Where(t => !(ToolCannotCheck.TryGetValue(t, out var cantCheck) && cantCheck.Contains(ruleId)))
+                .ToList();
+
+            var capableCount = Math.Max(1, capableTools.Count);
+            var score = (double)toolsFound.Count / capableCount;
+
+            var representative = group.First();
+            ranked.Add(new A11yRankedRule
+            {
+                CanonicalRuleId = ruleId,
+                Severity = representative.Severity,
+                ToolsFound = toolsFound,
+                Consensus = $"{toolsFound.Count}/{capableCount}",
+                ConfidenceScore = score,
+                Confidence = score >= 0.8 ? "high" : score >= 0.5 ? "medium" : "low",
+                TotalInstances = group.Count(),
+                Message = representative.Message,
+                HelpUrl = representative.HelpUrl,
+                WcagCriteria = representative.WcagCriteria,
+                ExampleSnippet = representative.Snippet
+            });
+        }
+
+        // Sort: confidence desc → severity rank → instance count desc
+        summary.RankedRules = ranked
+            .OrderByDescending(r => r.ConfidenceScore)
+            .ThenBy(r => SeverityRank(r.Severity))
+            .ThenByDescending(r => r.TotalInstances)
+            .Select((r, i) => { r.Rank = i + 1; return r; })
+            .ToList();
+
+        // Write summary and ranked files
+        File.WriteAllText(Path.Combine(pageDir, "a11y-summary.json"),
+            JsonSerializer.Serialize(summary, JsonOptions));
+
+        return summary;
     }
 
     // ========================================================================
@@ -1608,6 +2562,7 @@ internal class ScannerConfig
     public int TimeoutMs { get; set; } = 10000;
     public int MaxConcurrency { get; set; } = 5;
     public bool Headless { get; set; } = true;
+    public string WcagLevel { get; set; } = "wcag21aa";
     public string UserAgent { get; set; } = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
     public Dictionary<string, SiteConfig> Sites { get; set; } = new();
 }
@@ -1654,6 +2609,7 @@ internal class PageResult
     public List<ImageEntry> Images { get; set; } = [];
     public long ImagesTotalSize { get; set; }
     public DateTime CapturedAt { get; set; }
+    public A11yPageSummary? A11ySummary { get; set; }
 }
 
 /// <summary>
@@ -1694,4 +2650,122 @@ internal class ImageInfo
 
     [JsonPropertyName("height")]
     public int Height { get; set; }
+}
+
+// ============================================================================
+// Accessibility Models
+// ============================================================================
+
+/// <summary>
+/// A single accessibility issue normalized across all tools.
+/// </summary>
+internal class A11yIssue
+{
+    public string Tool { get; set; } = "";
+    public string RuleId { get; set; } = "";
+    public string CanonicalRuleId { get; set; } = "";
+    public string Severity { get; set; } = "moderate";
+    public string Message { get; set; } = "";
+    public string? Selector { get; set; }
+    public string? Snippet { get; set; }
+    public string? HelpUrl { get; set; }
+    public string? WcagCriteria { get; set; }
+}
+
+/// <summary>
+/// Result from a single a11y tool run on one page.
+/// </summary>
+internal class A11yToolResult
+{
+    public string ToolName { get; set; } = "";
+    public string Status { get; set; } = "completed";
+    public long DurationMs { get; set; }
+    public string? ErrorMessage { get; set; }
+    public List<A11yIssue> Issues { get; set; } = [];
+}
+
+/// <summary>
+/// Merged accessibility results across all tools for one page.
+/// </summary>
+internal class A11yPageSummary
+{
+    public List<string> ToolsRun { get; set; } = [];
+    public List<string> ToolsSkipped { get; set; } = [];
+    public int TotalViolations { get; set; }
+    public int Critical { get; set; }
+    public int Serious { get; set; }
+    public int Moderate { get; set; }
+    public int Minor { get; set; }
+    public Dictionary<string, A11yToolSummary> ByTool { get; set; } = new();
+    public List<A11yRankedRule> RankedRules { get; set; } = [];
+}
+
+/// <summary>
+/// Per-tool severity counts for metadata.json output.
+/// </summary>
+internal class A11yToolSummary
+{
+    public int Total { get; set; }
+    public int Critical { get; set; }
+    public int Serious { get; set; }
+    public int Moderate { get; set; }
+    public int Minor { get; set; }
+}
+
+/// <summary>
+/// A rule ranked by cross-tool consensus.
+/// </summary>
+internal class A11yRankedRule
+{
+    public int Rank { get; set; }
+    public string CanonicalRuleId { get; set; } = "";
+    public string Severity { get; set; } = "";
+    public string Consensus { get; set; } = "";
+    public double ConfidenceScore { get; set; }
+    public string Confidence { get; set; } = "";
+    public List<string> ToolsFound { get; set; } = [];
+    public int TotalInstances { get; set; }
+    public string Message { get; set; } = "";
+    public string? HelpUrl { get; set; }
+    public string? WcagCriteria { get; set; }
+    public string? ExampleSnippet { get; set; }
+}
+
+/// <summary>
+/// Deserialization model for axe-core violation JSON.
+/// </summary>
+internal class AxeViolation
+{
+    [JsonPropertyName("id")]
+    public string Id { get; set; } = "";
+
+    [JsonPropertyName("impact")]
+    public string? Impact { get; set; }
+
+    [JsonPropertyName("help")]
+    public string Help { get; set; } = "";
+
+    [JsonPropertyName("helpUrl")]
+    public string? HelpUrl { get; set; }
+
+    [JsonPropertyName("tags")]
+    public List<string> Tags { get; set; } = [];
+
+    [JsonPropertyName("nodes")]
+    public List<AxeNode> Nodes { get; set; } = [];
+}
+
+/// <summary>
+/// Deserialization model for an axe-core violation node.
+/// </summary>
+internal class AxeNode
+{
+    [JsonPropertyName("html")]
+    public string Html { get; set; } = "";
+
+    [JsonPropertyName("target")]
+    public List<string> Target { get; set; } = [];
+
+    [JsonPropertyName("failureSummary")]
+    public string? FailureSummary { get; set; }
 }
