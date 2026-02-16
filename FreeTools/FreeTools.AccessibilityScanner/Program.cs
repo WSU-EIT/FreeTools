@@ -99,6 +99,9 @@ internal class Program
 
             await Task.WhenAll(tasks);
 
+            // Write run-level summary report
+            await WriteRunReportAsync(runsDir, allResults);
+
             // Print summary
             Console.WriteLine();
             ConsoleOutput.PrintDivider("Summary");
@@ -190,6 +193,9 @@ internal class Program
                 browser, uri, pagePath, siteConfig, scannerConfig, siteDir);
             siteResult.Pages.Add(pageResult);
         }
+
+        // Write site-level summary report
+        await WriteSiteReportAsync(siteDir, siteResult);
 
         return siteResult;
     }
@@ -556,6 +562,234 @@ internal class Program
 
         var json = JsonSerializer.Serialize(metadata, JsonOptions);
         await File.WriteAllTextAsync(metadataPath, json);
+    }
+
+    // ========================================================================
+    // Site-level report (one per site folder)
+    // ========================================================================
+
+    private static async Task WriteSiteReportAsync(string siteDir, SiteResult site)
+    {
+        var sb = new StringBuilder();
+        var successCount = site.Pages.Count(p => p.Success);
+        var totalCount = site.Pages.Count;
+        var totalErrors = site.Pages.Sum(p => p.ConsoleErrors.Count);
+        var totalWarnings = site.Pages.Sum(p => p.ConsoleWarnings.Count);
+        var totalHtml = site.Pages.Sum(p => p.HtmlSize);
+        var totalScreenshots = site.Pages.Sum(p => p.ScreenshotSize);
+        var failedPages = site.Pages.Where(p => !p.Success).ToList();
+        var pagesWithErrors = site.Pages.Where(p => p.ConsoleErrors.Count > 0).ToList();
+        var statusEmoji = successCount == totalCount ? "✅" : "⚠️";
+
+        sb.AppendLine($"# Site Report: {site.Url}");
+        sb.AppendLine();
+        sb.AppendLine($"| Metric | Value |");
+        sb.AppendLine($"|--------|-------|");
+        sb.AppendLine($"| Status | {statusEmoji} {successCount}/{totalCount} pages OK |");
+        sb.AppendLine($"| Pages Scanned | {totalCount} |");
+        sb.AppendLine($"| Pages Passed | {successCount} |");
+        sb.AppendLine($"| Pages Failed | {failedPages.Count} |");
+        sb.AppendLine($"| Total JS Errors | {totalErrors} |");
+        sb.AppendLine($"| Total JS Warnings | {totalWarnings} |");
+        sb.AppendLine($"| Total HTML | {PathSanitizer.FormatBytes(totalHtml)} |");
+        sb.AppendLine($"| Total Screenshots | {PathSanitizer.FormatBytes(totalScreenshots)} |");
+        sb.AppendLine($"| Folder | `{site.FolderName}/` |");
+
+        // Page results table
+        sb.AppendLine();
+        sb.AppendLine($"## Pages");
+        sb.AppendLine();
+        sb.AppendLine($"| Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |");
+        sb.AppendLine($"|--------|------|------|-------|-----------|-------------|-----------|");
+
+        foreach (var page in site.Pages.OrderBy(p => p.PagePath))
+        {
+            var s = page.Success ? "✅" : "❌";
+            var title = Truncate(page.Title ?? "(none)", 40);
+            sb.AppendLine($"| {s} | [{page.PagePath}]({page.FolderName}/report.md) | {page.StatusCode} | {title} | {page.ConsoleErrors.Count} | {page.ConsoleWarnings.Count} | {PathSanitizer.FormatBytes(page.HtmlSize)} |");
+        }
+
+        // Failed pages detail
+        if (failedPages.Count > 0)
+        {
+            sb.AppendLine();
+            sb.AppendLine($"## Failed Pages");
+            sb.AppendLine();
+
+            foreach (var page in failedPages)
+            {
+                sb.AppendLine($"### {page.PagePath}");
+                sb.AppendLine();
+                sb.AppendLine($"- **URL:** {page.FullUrl}");
+                sb.AppendLine($"- **Status:** {page.StatusCode}");
+                if (page.ErrorMessage != null)
+                {
+                    sb.AppendLine($"- **Error:** `{page.ErrorMessage}`");
+                }
+
+                sb.AppendLine();
+            }
+        }
+
+        // Pages with JS errors
+        if (pagesWithErrors.Count > 0)
+        {
+            sb.AppendLine();
+            sb.AppendLine($"## Pages with JavaScript Errors");
+            sb.AppendLine();
+
+            foreach (var page in pagesWithErrors.OrderByDescending(p => p.ConsoleErrors.Count))
+            {
+                sb.AppendLine($"### {page.PagePath} ({page.ConsoleErrors.Count} errors)");
+                sb.AppendLine();
+                foreach (var error in page.ConsoleErrors.Take(10))
+                {
+                    sb.AppendLine($"- `{Truncate(error, 120)}`");
+                }
+
+                if (page.ConsoleErrors.Count > 10)
+                {
+                    sb.AppendLine($"- ... and {page.ConsoleErrors.Count - 10} more (see `{page.FolderName}/errors.log`)");
+                }
+
+                sb.AppendLine();
+            }
+        }
+
+        sb.AppendLine();
+        sb.AppendLine($"---");
+        sb.AppendLine();
+        sb.AppendLine($"*Generated by AccessibilityScanner (FreeTools) v1.0*");
+
+        await File.WriteAllTextAsync(Path.Combine(siteDir, "report.md"), sb.ToString());
+    }
+
+    // ========================================================================
+    // Run-level report (root of runs/latest/)
+    // ========================================================================
+
+    private static async Task WriteRunReportAsync(string runsDir, IEnumerable<SiteResult> sites)
+    {
+        var siteList = sites.OrderBy(s => s.Url).ToList();
+        var sb = new StringBuilder();
+
+        var totalSites = siteList.Count;
+        var totalPages = siteList.Sum(s => s.Pages.Count);
+        var totalSuccess = siteList.Sum(s => s.Pages.Count(p => p.Success));
+        var totalFailed = totalPages - totalSuccess;
+        var totalErrors = siteList.Sum(s => s.Pages.Sum(p => p.ConsoleErrors.Count));
+        var totalWarnings = siteList.Sum(s => s.Pages.Sum(p => p.ConsoleWarnings.Count));
+        var totalHtml = siteList.Sum(s => s.Pages.Sum(p => p.HtmlSize));
+        var totalScreenshots = siteList.Sum(s => s.Pages.Sum(p => p.ScreenshotSize));
+        var runStatus = totalFailed == 0 ? "✅ All pages passed" : $"⚠️ {totalFailed} page(s) failed";
+
+        sb.AppendLine($"# Accessibility Scanner — Run Report");
+        sb.AppendLine();
+        sb.AppendLine($"| Metric | Value |");
+        sb.AppendLine($"|--------|-------|");
+        sb.AppendLine($"| Run Status | {runStatus} |");
+        sb.AppendLine($"| Sites | {totalSites} |");
+        sb.AppendLine($"| Total Pages | {totalPages} |");
+        sb.AppendLine($"| Pages Passed | {totalSuccess} |");
+        sb.AppendLine($"| Pages Failed | {totalFailed} |");
+        sb.AppendLine($"| Total JS Errors | {totalErrors} |");
+        sb.AppendLine($"| Total JS Warnings | {totalWarnings} |");
+        sb.AppendLine($"| Total HTML | {PathSanitizer.FormatBytes(totalHtml)} |");
+        sb.AppendLine($"| Total Screenshots | {PathSanitizer.FormatBytes(totalScreenshots)} |");
+        sb.AppendLine($"| Generated | {DateTime.UtcNow:O} |");
+
+        // Site summary table
+        sb.AppendLine();
+        sb.AppendLine($"## Sites");
+        sb.AppendLine();
+        sb.AppendLine($"| Status | Site | Pages | Passed | Failed | JS Errors | JS Warnings |");
+        sb.AppendLine($"|--------|------|-------|--------|--------|-----------|-------------|");
+
+        foreach (var site in siteList)
+        {
+            var siteSuccess = site.Pages.Count(p => p.Success);
+            var siteFailed = site.Pages.Count - siteSuccess;
+            var siteErrors = site.Pages.Sum(p => p.ConsoleErrors.Count);
+            var siteWarnings = site.Pages.Sum(p => p.ConsoleWarnings.Count);
+            var s = siteFailed == 0 ? "✅" : "⚠️";
+
+            sb.AppendLine($"| {s} | [{site.Url}]({site.FolderName}/report.md) | {site.Pages.Count} | {siteSuccess} | {siteFailed} | {siteErrors} | {siteWarnings} |");
+        }
+
+        // All pages flat table
+        sb.AppendLine();
+        sb.AppendLine($"## All Pages");
+        sb.AppendLine();
+        sb.AppendLine($"| Status | Site | Page | HTTP | Title | JS Errors |");
+        sb.AppendLine($"|--------|------|------|------|-------|-----------|");
+
+        foreach (var site in siteList)
+        {
+            foreach (var page in site.Pages.OrderBy(p => p.PagePath))
+            {
+                var s = page.Success ? "✅" : "❌";
+                var title = Truncate(page.Title ?? "(none)", 35);
+                var host = new Uri(site.Url).Host;
+                sb.AppendLine($"| {s} | {host} | [{page.PagePath}]({site.FolderName}/{page.FolderName}/report.md) | {page.StatusCode} | {title} | {page.ConsoleErrors.Count} |");
+            }
+        }
+
+        // Failed pages across all sites
+        var allFailed = siteList.SelectMany(s => s.Pages.Where(p => !p.Success)
+            .Select(p => (Site: s, Page: p))).ToList();
+
+        if (allFailed.Count > 0)
+        {
+            sb.AppendLine();
+            sb.AppendLine($"## Failed Pages");
+            sb.AppendLine();
+
+            foreach (var (site, page) in allFailed)
+            {
+                sb.AppendLine($"- **{new Uri(site.Url).Host}{page.PagePath}** — HTTP {page.StatusCode}");
+                if (page.ErrorMessage != null)
+                {
+                    sb.AppendLine($"  - `{page.ErrorMessage}`");
+                }
+            }
+        }
+
+        // Top JS error pages
+        var errorPages = siteList.SelectMany(s => s.Pages.Where(p => p.ConsoleErrors.Count > 0)
+            .Select(p => (Site: s, Page: p)))
+            .OrderByDescending(x => x.Page.ConsoleErrors.Count)
+            .Take(10)
+            .ToList();
+
+        if (errorPages.Count > 0)
+        {
+            sb.AppendLine();
+            sb.AppendLine($"## Top Pages by JavaScript Errors");
+            sb.AppendLine();
+            sb.AppendLine($"| Errors | Site | Page |");
+            sb.AppendLine($"|--------|------|------|");
+
+            foreach (var (site, page) in errorPages)
+            {
+                var host = new Uri(site.Url).Host;
+                sb.AppendLine($"| {page.ConsoleErrors.Count} | {host} | {page.PagePath} |");
+            }
+        }
+
+        sb.AppendLine();
+        sb.AppendLine($"---");
+        sb.AppendLine();
+        sb.AppendLine($"*Generated by AccessibilityScanner (FreeTools) v1.0*");
+
+        await File.WriteAllTextAsync(Path.Combine(runsDir, "report.md"), sb.ToString());
+    }
+
+    private static string Truncate(string value, int maxLength)
+    {
+        if (string.IsNullOrEmpty(value)) return value;
+        // Escape pipe characters for markdown tables
+        value = value.Replace("|", "\\|");
+        return value.Length <= maxLength ? value : value[..(maxLength - 3)] + "...";
     }
 
     // ========================================================================

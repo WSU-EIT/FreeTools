@@ -1,0 +1,16 @@
+{
+  "PagePath": "/eit/",
+  "Url": "https://em.wsu.edu/eit/",
+  "FinalUrl": null,
+  "Title": "Enrollment IT",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 649526,
+  "ScreenshotSizeBytes": 174942,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 2,
+  "ConsoleWarningCount": 1,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T18:43:11.8854853Z"
+}

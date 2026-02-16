@@ -5,19 +5,19 @@
   "Title": "Washington State University | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 215319,
+  "HtmlSizeBytes": 215223,
   "ScreenshotSizeBytes": 6263665,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
   "ErrorMessage": null,
   "Headers": {
-    "cache-control": "max-age=345, must-revalidate",
+    "cache-control": "max-age=122, must-revalidate",
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 18:28:28 GMT",
-    "last-modified": "Mon, 16 Feb 2026 18:24:13 GMT",
+    "date": "Mon, 16 Feb 2026 18:42:11 GMT",
+    "last-modified": "Mon, 16 Feb 2026 18:34:13 GMT",
     "link": "\u003Chttps://wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://wsu.edu/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
     "server": "nginx",
     "transfer-encoding": "chunked",
@@ -27,5 +27,5 @@
     "x-pingback": "https://wsu.edu/xmlrpc.php",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-16T18:28:25.4006246Z"
+  "CapturedAt": "2026-02-16T18:42:08.4464536Z"
 }
