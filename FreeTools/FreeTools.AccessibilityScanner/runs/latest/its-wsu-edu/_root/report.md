@@ -5,12 +5,12 @@
 | URL | https://its.wsu.edu/ |
 | Title | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 248.1 KB |
-| Screenshot Size | 1.4 MB |
+| HTML Size | 247.9 KB |
+| Screenshot Size | 1.3 MB |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-13T20:06:57.5278276Z |
+| Captured | 2026-02-16T18:28:25.4006364Z |
 
 ## Actions
 

@@ -5,12 +5,12 @@
   "Title": "Enrollment Management",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 649073,
+  "HtmlSizeBytes": 649069,
   "ScreenshotSizeBytes": 118306,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 1,
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-13T20:06:57.5278276Z"
+  "CapturedAt": "2026-02-16T18:28:25.4006325Z"
 }

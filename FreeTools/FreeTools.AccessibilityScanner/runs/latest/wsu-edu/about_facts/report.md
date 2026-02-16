@@ -6,12 +6,12 @@
 | Redirected To | https://wsu.edu/about/ |
 | Title | About WSU | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 131.1 KB |
-| Screenshot Size | 3.0 MB |
+| HTML Size | 131.2 KB |
+| Screenshot Size | 2.6 MB |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-13T20:07:12.2604882Z |
+| Captured | 2026-02-16T18:28:41.7824383Z |
 
 ## JavaScript Errors
 
