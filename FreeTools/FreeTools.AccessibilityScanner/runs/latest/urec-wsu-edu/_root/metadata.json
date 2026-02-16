@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://urec.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "Home",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 97660,
+  "ScreenshotSizeBytes": 703513,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.3787275Z"
+}

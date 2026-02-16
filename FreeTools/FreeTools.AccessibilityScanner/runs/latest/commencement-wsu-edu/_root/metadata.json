@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://commencement.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "WSU Commencement | Washington State University",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 58821,
+  "ScreenshotSizeBytes": 3969719,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 2,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.353941Z"
+}

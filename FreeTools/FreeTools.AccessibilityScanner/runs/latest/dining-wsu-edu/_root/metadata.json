@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://dining.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "Home",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 80503,
+  "ScreenshotSizeBytes": 2252060,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.3549714Z"
+}

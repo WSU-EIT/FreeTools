@@ -5,12 +5,12 @@
 | URL | https://its.wsu.edu/piat/ |
 | Title | Piat | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 229.3 KB |
+| HTML Size | 229.4 KB |
 | Screenshot Size | 225.8 KB |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:21:48.2385890Z |
+| Captured | 2026-02-16T19:53:59.8423249Z |
 
 ## Actions
 

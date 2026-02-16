@@ -5,7 +5,7 @@
   "Title": "ITS Informational Series | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 239201,
+  "HtmlSizeBytes": 239157,
   "ScreenshotSizeBytes": 278625,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -14,12 +14,15 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 19:20:30 GMT",
-    "etag": "\u0022a1c648d94978ccfca2a6d488c00e1bb2\u0022",
-    "last-modified": "Mon, 16 Feb 2026 18:42:31 GMT",
+    "date": "Mon, 16 Feb 2026 19:52:37 GMT",
+    "etag": "\u002281cae0653e3302d31a17d4f02e308969\u0022",
+    "last-modified": "Mon, 16 Feb 2026 19:52:37 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/2183\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=2183\u003E; rel=shortlink",
     "server": "nginx",
-    "vary": "Accept-Encoding"
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://its.wsu.edu",
+    "x-tec-api-root": "https://its.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
   },
-  "CapturedAt": "2026-02-16T19:20:30.7468393Z"
+  "CapturedAt": "2026-02-16T19:52:36.8554404Z"
 }

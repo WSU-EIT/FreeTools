@@ -1,0 +1,25 @@
+{
+  "PagePath": "/",
+  "Url": "https://provost.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "Office of the Provost | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 114342,
+  "ScreenshotSizeBytes": 1111196,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 19:51:14 GMT",
+    "etag": "\u0022993480db94adcb4e671b7ccb575c7adf\u0022",
+    "last-modified": "Mon, 16 Feb 2026 19:26:49 GMT",
+    "link": "\u003Chttps://provost.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://provost.wsu.edu/wp-json/wp/v2/pages/9173\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://provost.wsu.edu/\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-16T19:51:11.3714358Z"
+}

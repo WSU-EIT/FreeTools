@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://alert.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "Alert | Washington State University",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 83252,
+  "ScreenshotSizeBytes": 426427,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.3354343Z"
+}

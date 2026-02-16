@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://research.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "Office of Research | Washington State University",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 272745,
+  "ScreenshotSizeBytes": 1814698,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.3723569Z"
+}

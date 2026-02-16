@@ -5,12 +5,12 @@
 | URL | https://wsu.edu/about/land-acknowledgement/ |
 | Title | Land Acknowledgement | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 98.0 KB |
+| HTML Size | 97.9 KB |
 | Screenshot Size | 275.0 KB |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:20:36.9924246Z |
+| Captured | 2026-02-16T19:52:48.4378552Z |
 
 ## JavaScript Errors
 

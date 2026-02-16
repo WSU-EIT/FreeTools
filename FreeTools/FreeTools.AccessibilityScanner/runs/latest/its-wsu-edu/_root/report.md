@@ -6,11 +6,11 @@
 | Title | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
 | HTML Size | 248.1 KB |
-| Screenshot Size | 1.5 MB |
+| Screenshot Size | 1.6 MB |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:20:08.3435320Z |
+| Captured | 2026-02-16T19:51:11.3353068Z |
 
 ## Actions
 

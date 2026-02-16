@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://weather.prosser.wsu.edu/",
+  "FinalUrl": null,
+  "Title": null,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 0,
+  "ScreenshotSizeBytes": 0,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "ErrorMessage": "net::ERR_CERT_COMMON_NAME_INVALID at https://weather.prosser.wsu.edu/\nCall log:\n  - navigating to \u0022https://weather.prosser.wsu.edu/\u0022, waiting until \u0022networkidle\u0022",
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.3747968Z"
+}

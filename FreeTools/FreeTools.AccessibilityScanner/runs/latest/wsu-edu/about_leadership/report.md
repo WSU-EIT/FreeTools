@@ -5,12 +5,12 @@
 | URL | https://wsu.edu/about/leadership/ |
 | Title | Leadership | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 112.0 KB |
+| HTML Size | 112.1 KB |
 | Screenshot Size | 2.1 MB |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:20:42.4289739Z |
+| Captured | 2026-02-16T19:52:53.6944733Z |
 
 ## JavaScript Errors
 

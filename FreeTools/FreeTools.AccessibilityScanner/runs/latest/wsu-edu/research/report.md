@@ -6,11 +6,11 @@
 | Title | WSU Research | Washington State University | Washington State University |
 | Status | ✅ 200 |
 | HTML Size | 125.1 KB |
-| Screenshot Size | 4.5 MB |
+| Screenshot Size | 4.4 MB |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:21:43.1100142Z |
+| Captured | 2026-02-16T19:53:54.5795761Z |
 
 ## Actions
 

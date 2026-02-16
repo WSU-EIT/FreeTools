@@ -5,12 +5,12 @@
 | URL | https://wsu.edu/admissions/affordability/ |
 | Title | Affordability | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 111.5 KB |
+| HTML Size | 111.6 KB |
 | Screenshot Size | 1.9 MB |
 | JS Errors | 1 |
 | JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T19:21:11.8311640Z |
+| Captured | 2026-02-16T19:53:23.9933899Z |
 
 ## JavaScript Errors
 

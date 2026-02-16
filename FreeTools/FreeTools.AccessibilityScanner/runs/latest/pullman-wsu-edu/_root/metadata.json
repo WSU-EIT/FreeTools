@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://pullman.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "Pullman Campus | Washington State University",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 139651,
+  "ScreenshotSizeBytes": 3827171,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.371954Z"
+}

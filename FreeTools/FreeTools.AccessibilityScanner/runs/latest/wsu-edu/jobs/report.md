@@ -7,11 +7,11 @@
 | Title | Careers – Human Resource Services, Washington State University |
 | Status | ✅ 200 |
 | HTML Size | 84.3 KB |
-| Screenshot Size | 719.8 KB |
+| Screenshot Size | 598.2 KB |
 | JS Errors | 0 |
 | JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T19:21:32.2773163Z |
+| Captured | 2026-02-16T19:53:43.8361845Z |
 
 ## Actions
 

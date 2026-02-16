@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://physics.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "Department of Physics \u0026 Astronomy | Washington State University",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 231546,
+  "ScreenshotSizeBytes": 1728927,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.3706865Z"
+}

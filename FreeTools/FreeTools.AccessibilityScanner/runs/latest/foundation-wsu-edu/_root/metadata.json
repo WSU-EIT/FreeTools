@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://foundation.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "WSU Foundation | Washington State University",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 265746,
+  "ScreenshotSizeBytes": 1260002,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 2,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.3579414Z"
+}

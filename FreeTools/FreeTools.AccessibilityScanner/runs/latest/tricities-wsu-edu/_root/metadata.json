@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://tricities.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "WSU Tri-Cities - apply now to earn your degree",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 212927,
+  "ScreenshotSizeBytes": 908791,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.3786974Z"
+}

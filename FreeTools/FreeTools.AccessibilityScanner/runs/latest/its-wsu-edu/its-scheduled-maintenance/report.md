@@ -5,12 +5,12 @@
 | URL | https://its.wsu.edu/its-scheduled-maintenance/ |
 | Title | ITS Scheduled Maintenance | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 237.1 KB |
+| HTML Size | 237.2 KB |
 | Screenshot Size | 260.2 KB |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:21:27.0275009Z |
+| Captured | 2026-02-16T19:53:35.8387130Z |
 
 ## Actions
 

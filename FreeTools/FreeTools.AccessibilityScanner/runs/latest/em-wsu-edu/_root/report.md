@@ -7,13 +7,14 @@
 | Status | ❌ 0 |
 | HTML Size | 633.9 KB |
 | Screenshot Size | 115.5 KB |
-| JS Errors | 2 |
+| JS Errors | 3 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T19:20:08.3435375Z |
+| Captured | 2026-02-16T19:51:11.3352265Z |
 
 ## JavaScript Errors
 
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 - `Access to XMLHttpRequest at 'https://api.oneorigin.us/p-cs/ref?required=y' from origin 'https://em.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
 - `Failed to load resource: net::ERR_FAILED`
 

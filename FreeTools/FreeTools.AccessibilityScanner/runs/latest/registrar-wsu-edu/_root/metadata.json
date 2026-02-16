@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://registrar.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "Office of the Registrar",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 665462,
+  "ScreenshotSizeBytes": 445097,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 2,
+  "ConsoleWarningCount": 1,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.3723256Z"
+}

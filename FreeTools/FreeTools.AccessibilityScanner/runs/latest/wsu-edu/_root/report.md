@@ -4,13 +4,13 @@
 |-------|-------|
 | URL | https://wsu.edu/ |
 | Title | Washington State University | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 210.1 KB |
-| Screenshot Size | 6.0 MB |
+| Status | ❌ 0 |
+| HTML Size | 210.3 KB |
+| Screenshot Size | 5.7 MB |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:20:08.3435226Z |
+| Captured | 2026-02-16T19:51:11.3353437Z |
 
 ## JavaScript Errors
 

@@ -5,12 +5,12 @@
 | URL | https://its.wsu.edu/about-its/its-leadership-team/ |
 | Title | ITS Leadership Team | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 254.9 KB |
-| Screenshot Size | 611.4 KB |
+| HTML Size | 255.1 KB |
+| Screenshot Size | 764.0 KB |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:20:24.9576013Z |
+| Captured | 2026-02-16T19:52:30.4885874Z |
 
 ## Actions
 

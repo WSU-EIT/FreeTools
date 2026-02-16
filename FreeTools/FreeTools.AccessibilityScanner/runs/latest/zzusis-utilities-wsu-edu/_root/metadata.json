@@ -1,0 +1,24 @@
+{
+  "PagePath": "/",
+  "Url": "https://zzusis-utilities.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "",
+  "StatusCode": 403,
+  "Success": false,
+  "HtmlSizeBytes": 2404,
+  "ScreenshotSizeBytes": 12257,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "ErrorMessage": null,
+  "Headers": {
+    "content-type": "application/xml",
+    "date": "Mon, 16 Feb 2026 19:51:13 GMT",
+    "server": "AmazonS3",
+    "via": "1.1 9c41acbf455afe486e686b86bbc3dbe6.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "2dEATeyLEV6kwJDIdPjxO1brijyWRUUOLPnWKlOqnxtiXC2yMlZkNw==",
+    "x-amz-cf-pop": "SEA900-P2",
+    "x-cache": "Error from cloudfront"
+  },
+  "CapturedAt": "2026-02-16T19:51:11.3353168Z"
+}

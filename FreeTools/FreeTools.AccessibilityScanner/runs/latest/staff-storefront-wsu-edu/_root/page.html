@@ -1,0 +1,534 @@
+<!DOCTYPE html><html><head>
+	<title>Home - WSU Coug Prints Plus</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<!--CSS -->
+<link rel="stylesheet" type="text/css" href="/lib/fontawesome-pro-6.2.0-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/lib/jquery/plugins/jquery-ui-themes-1.13.2/themes/smoothness/jquery-ui.min.css">
+<!--<link rel="stylesheet" type="text/css" href="/css/shared/bootstrap-3.3.6/css/bootstrap.min.css">-->
+<link rel="stylesheet" type="text/css" href="/lib/jquery/plugins/toast/jquery.toast.min.css">
+<link rel="stylesheet" type="text/css" href="/lib/jquery/plugins/tooltipster/dist/css/tooltipster.bundle.min.css">
+<link rel="stylesheet" type="text/css" href="/lib/jquery/plugins/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css">
+<link rel="stylesheet" type="text/css" href="/css/shared/common.css?1768032302">
+<link rel="stylesheet" type="text/css" href="/css/site.css?1770105914">
+<link rel="stylesheet" type="text/css" href="/profile_css.php">
+
+<!--SCRIPTS-->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-0NBP8L6C55&amp;cx=c&amp;gtm=4e62b1"></script><script type="text/javascript" src="/lib/jquery/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="/lib/jquery/plugins/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/lib/jquery/plugins/toast/jquery.toast.min.js"></script>
+<script type="text/javascript" src="/lib/jquery/plugins/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+<script type="text/javascript" src="/lib/jquery/plugins/tooltipster/dist/js/plugins/tooltipster/scrollableTip/tooltipster-scrollableTip.min.js"></script>
+<script type="text/javascript" src="/lib/jquery/plugins/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="/js/shared/lib.ui.js?1644895015"></script>
+<script type="text/javascript" src="/js/shared/lib.form.tools.js?1770105914"></script>
+
+<script type="text/javascript">
+	$(function() {
+		$('.jqButton').button();
+		$('.tooltipster').tooltipster({
+			theme: 'tooltipster-borderless',
+			plugins: ['sideTip', 'scrollableTip'],
+			contentAsHTML: true,
+			interactive: true,
+			maxWidth: 600,
+			trigger: 'custom',
+			triggerOpen: {
+				mouseenter: true,
+				originClick: true,
+				tap: true
+			},
+			triggerClose: {
+				mouseleave: true,
+				tap: true
+			}
+		});
+	});
+</script>
+
+	<script type="text/javascript">
+		window.tokens = {"\/account\/status_ajax.php":{"index":"wRG36rjQKR4HCJcj_igd814Y","token":"hTW8uRNOsIEiaCoaKuCWQGXBZdLh3aW_lbO16gch7njP"},"\/cart\/21-process-upload.php":{"index":"CnV4tEeXe-DNh7lxiGh6VBhp","token":"A2s7q5Xxd2_6qgOcdbm2dRX3lrEobIUQ1dlJaFD_PXfw"},"\/catalog\/21-process-upload.php":{"index":"-ntug04dbzOwcwE9IvlkLAHU","token":"pMcw_IhSglXDOD4Xzt5soiM513SGMHKkrqd6QHP6t-JW"},"\/catalog\/put_crop.php":{"index":"N5JzTwyiWZhyPdoKU5zOUsxG","token":"d4WfDkwibyrRdhDKRPaL_rbc5_czX2Q091AXmBmY2J6x"},"\/etc\/shared\/authorizenet\/ajaxCommunicator.php":{"index":"PzY_5Sq9O9Cdrn07yHuErhdG","token":"zvJBXyLxmEI6BgGCmhT39k6UHKzXigvYa1Os26GR2qCp"},"\/etc\/shared\/list_mapping.php":{"index":"NO96-SDZbUsrU4roK7SE-Ww9","token":"q_ZvmvH9BX4G1LA3dVDxX-B4uH6hR3GVtXos6fH5nlqZ"},"\/etc\/shared\/ajax_page.php":{"index":"7DQ-DStZARR1Qnn3HQ4YcWpX","token":"2sWwhCzwv0fzv04-5D2g_WhAqlVKdY3Mc5h5uMBalaQ1"},"\/etc\/base.ajax2.php":{"index":"peBBwOIoN8rIDHXbt4rHRLT2","token":"GZDhh0HjWaDvOVRgpAnza8riPikauk_k1DHjcQhSMwfh"},"\/etc\/shared\/lib.ajax.php":{"index":"cS6O1_XnrdG6sP-3ss1hAE22","token":"lCik4UxSb8iEriegdOdXuds1ahUvAg3NQ6hDDbKvpTNm"},"\/etc\/shared\/ui\/CustomerDataListManager.php":{"index":"gcByOQB8sqMWpBo9cDOpgE5f","token":"kk_hF9Oll3TxEJILqpVvM1NlAq8GWnJDnCp6e-Ld1z76"},"\/r\/twofa-ajax.php":{"index":"uncnAAfvPCC6qElsaD7l_iyr","token":"dSsVST-29i89drioR_chtTFt-Fk-LplUUkk87gbkVMjj"}}
+			function is_csrf_safe_method(method) {
+				// these HTTP methods do not require CSRF protection
+				return (/^(GET|HEAD|OPTIONS)$/.test(method));
+			}
+
+		$.ajaxSetup({
+			beforeSend: function(xhr, settings) {
+				/*
+				 * Only send headers for requests with unsafe methods,
+				 * and only if we have created tokens for said endpoint.
+				 */
+				if (!is_csrf_safe_method(settings.type) && !this.crossDomain) {
+					var url = settings.url;
+					if (url.indexOf('?') > 0) {
+						url = url.substr(0, url.indexOf('?'))
+					}
+
+					if (window.tokens[url]) {
+						xhr.setRequestHeader("_CSRF_TOKEN", window.tokens[url]['token']);
+						xhr.setRequestHeader("_CSRF_INDEX", window.tokens[url]['index']);
+					} else {
+						console.warn('No CSRF token available for ' + url);
+					}
+				}
+			}
+		});
+	</script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://acme.presswise.com/lib/jquery/plugins/jquery-migrate-3.0.1.js"></script><!--Required for slideshow-->
+
+<link rel="stylesheet" type="text/css" href="../user/images/globals/default/js/shadowbox.css">
+<script type="text/javascript" src="../user/images/globals/default/js/shadowbox.js"></script>
+<script type="text/javascript">
+  Shadowbox.init();
+  $(function() {
+    $('#add_edit_table #loginID').attr('placeholder', 'WSU NID (required)');
+    $('#add_edit_table input[name=contactCompany]').attr('placeholder', 'College or Unit Name (required)');
+  })
+</script>
+	<!-- Uploadifive -->
+	<script type="text/javascript" src="/lib/jquery/plugins/jquery.uploadifive.1.2.2-pw1.min.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-17815664-54"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-17815664-54');
+</script></head>
+<body>
+<div id="mainHeader">
+  <div id="mainHeaderContent">
+  	<div id="mainLogo"></div>
+  </div>
+</div>
+<!-- Add Login HTML if user is logged out -->
+<script type="text/javascript">
+	$(function(){
+    	 if($('table.tableLogin td.login.loginWelcome').length) {
+        	$('table.tableLogin').addClass('clearLogin').wrap('<a href="../account/"></a>');
+         } else {
+         	$('table.tableLogin td:nth-child(1)').addClass('loginWelcome');
+           	$('table.tableLogin td.login.loginWelcome span').append('<a class="login" href="../account/edit_profile.php?token=dnc2WklNRSE">CREATE AN ACCOUNT</a>');
+           
+			$('table.tableLogin td:nth-child(2)').addClass('loginLogout').append('<a class="login" href="../login.php">LOGIN</a>');
+         }
+    });
+</script>
+		<div id="mainContainerSF">
+			<div id="mainContentSF" style="margin: 0 auto; text-align: left; padding: 0 6px;">
+		<!-- ALIGN CENTER CONTENT BEGIN--><div id="navWrapper">
+	<button class="navbar-toggler" type="button" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<i class="fa-solid fa-bars"></i>
+	</button>
+	<ul id="menu">
+		<div id="cartContainer" class="floatClass">
+		<div id="cartCount" onclick="location.href='../cart/';" style="cursor:pointer;">
+			<span id="cartIcon" class="fas fa-shopping-cart"></span>
+			<span id="cartDesc">items in cart</span>
+			<span id="cartCountBadge">&nbsp;0&nbsp;</span>
+		</div>
+	</div>							<li class="menuY linkH"><a href="https://staff.storefront.wsu.edu/home">Home</a></li>
+						<li class="menuY linkC"><a href="/catalog">Catalog</a></li>
+						<li class="menuY linkA"><a href="/account/index.php">My Account</a></li>
+			<li class="menuY linkS"><a href="/cart/index.php">Shopping Cart</a></li>
+						<li class="menuY linkF"><a href="/sendfiles">Send Files</a></li>																			<li class="menuO"><a href="https://cougprintsplus.wsu.edu/" target="_blank">CougPrints Plus</a></li>
+																								<li class="menuO"><a href="/contact/">Contact Us</a></li>
+													</ul>
+</div>
+<div id="loginWrapper">
+	<table class="tableLogin" width="100%" border="0" cellspacing="0" cellpadding="0" style="min-width: 380px;">
+		<tbody><tr>
+			<td class="login loginWelcome">
+				<span style="float: left;"><a class="login" href="../account/edit_profile.php?token=dnc2WklNRSE">CREATE AN ACCOUNT</a></span>			</td>
+			<td width="120" align="center" class="login loginLogout">
+							<a class="login" href="../login.php">LOGIN</a></td>
+		</tr>
+	</tbody></table>
+</div>
+
+<style>
+/**********************************
+* MOBILE MAIN NAVIGATION CSS
+***********************************/
+
+  @media only screen and (max-width : 768px) {
+    #menu {
+      display: none;
+    }
+
+    #menu li {
+      width: 100%;
+    }
+
+    .navbar-toggler {
+      display: block;
+      padding: 0.25rem 0.75rem;
+      line-height: 1;
+      border-radius: 4px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler.active {
+      background: #1d78bf !important;
+      color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+  }
+</style>
+
+<script type="text/javascript">
+	$(function () {
+		/* MOBILE MAIN NAVIGATION FUNCTIONALITY */
+		$(".navbar-toggler").click(function () {
+			let navbar = $("#menu");
+			let navbarVisibility = $("#menu").css('display');
+			if(navbarVisibility == 'none') {
+				$(this).addClass("active");
+				$(navbar).addClass("navbar-show"); //use a class instead of .show()/.hide(). Otherwise you will run into issues on window re-size
+			} else {
+				$(this).removeClass("active");
+				$(navbar).removeClass("navbar-show");
+			}
+		});
+	});
+</script><script src="/js/shared/tree.js" type="text/javascript"></script>
+<table class="tableMain" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td valign="top">
+<table width="100%" align="center" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td>
+			<style type="text/css">
+  .tableMain {padding: 0 !important;}
+  * {
+  		box-sizing: border-box;
+	}
+</style>
+
+<!--
+<link href="/user/images/carousel/css/reset.css" rel="stylesheet" type="text/css">
+<link href="/user/images/carousel/css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic" rel="stylesheet" type="text/css"><noscript>
+	&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;lt;link rel="stylesheet" type="text/css" href="/user/images/carousel/css/noscript.css" /&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;gt;
+</noscript>
+<div class="container" style="margin-bottom: 40px;">
+    
+   
+<div class="wrapper">
+<div class="ei-slider" id="ei-slider"><div class="ei-slider-loading" style="z-index: 0;">Loading</div><div class="ei-slider-loading" style="z-index: 0;">Loading</div><div class="ei-slider-loading" style="z-index: 0; opacity:0;">Loading</div>
+    <!--<div class="ei-slider-loading">Loading</div><div class="ei-slider-loading" style="z-index: 1">Loading</div>-->
+<!--
+<ul class="ei-slider-large">
+  
+  
+  <li style="opacity: 0;"><a href="https://news.wsu.edu/news/2025/08/20/wsus-in%e2%80%91house-design-services-ceasing-operation-later-this-fall/"><img alt="Design and Printing Services is suspending services
+We will be accepting new orders through October 15, 2025 to be completed by October 31, 2025.
+View further information " src="/user/images/carousel/images/default/DPS-closed-80.jpg"></a>
+	<div class="ei-title">
+</div>
+	</li>
+</ul>
+<!-- ei-slider-large -->
+
+<!--
+<ul class="ei-slider-thumbs" style="display: none;">
+	<li class="ei-slider-element">Current</li>
+ 
+  <li><a href="https://news.wsu.edu/news/2025/08/20/wsus-in%e2%80%91house-design-services-ceasing-operation-later-this-fall/">Slide 1</a><img alt="" src="/user/images/carousel/images/default/DPS-closed-80.jpg"></li>
+
+</ul>
+<!-- ei-slider-thumbs -->
+<!--
+</div
+<!-- ei-slider -->
+
+<!--<div class="reference">&nbsp;</div>
+</div>
+<!-- wrapper -->
+<!--
+</div>
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>-->
+<!--<script type="text/javascript" src="/user/images/carousel/js/jquery.eislideshow.js"></script><script type="text/javascript" src="/user/images/carousel/js/jquery.easing.1.3.js"></script><script type="text/javascript">
+  $(function() {
+    $('#ei-slider').eislideshow({
+      animation			: 'center',
+      autoplay			: true,
+      slideshow_interval	: 7000,
+      titlesFactor		: 0
+    });
+  });
+</script>
+-->
+
+
+
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<table width="100%" cellspacing="0" cellpadding="0">
+			<tbody><tr valign="top">
+				<td width="240" id="sideBarNav">
+					<table id="TCtable" width="100%" cellspacing="0" cellpadding="0" align="center"><a href="https://wsu.presswise.com/page.php?id=81"><span id="getStartedBtn">REQUEST A QUOTE</span></a>
+						<tbody><tr>
+							<td width="100%">
+								<ul class="TreeControl"><li class="TCopen"><div class="anchorCatalog"><a name="G11">Products</a></div><ul><span class="TCCaption"></span><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1025" alt="Branded WSU Items">Branded WSU Items</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=13" alt="Business Cards">Business Cards</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1039" alt="Butch Cutouts">Butch Cutouts</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1056" alt="Calendars">Calendars</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1196" alt="Cards, Special Occasions ">Cards, Special Occasions </a></li><li data-subcategory="true" style="text-indent:10px;" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1206" alt="Birthday Cards">Birthday Cards</a></li><li data-subcategory="true" style="text-indent:10px;" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1143" alt="Commencement &amp; Graduation">Commencement &amp; Graduation</a></li><li data-subcategory="true" style="text-indent:10px;" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1207" alt="Congrats Cards">Congrats Cards</a></li><li data-subcategory="true" style="text-indent:10px;" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1208" alt="Thank You Cards">Thank You Cards</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=15" alt="Common Sizes">Common Sizes</a></li><li data-subcategory="true" style="text-indent:10px;" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=11" alt="Bookmarks">Bookmarks</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1047" alt="Envelopes">Envelopes</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1247" alt="Envelopes, Photo">Envelopes, Photo</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=20" alt="Letterhead">Letterhead</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1001" alt="Logo Request">Logo Request</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1086" alt="Name Tags">Name Tags</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=18" alt="Postcards">Postcards</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1173" alt="Pride Flag Stickers">Pride Flag Stickers</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1048" alt="Seasonal">Seasonal</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1144" alt="Table Drapes">Table Drapes</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1074" alt="CougPrints Plus Printing">CougPrints Plus Printing</a></li><li style="" class="TCbullet"><a class="anchorCategory " href="/catalog/?g=11&amp;y=1270" alt="WSU Statue Rental">WSU Statue Rental</a></li></ul></li></ul><ul class="TreeControl"><li class="TCopen"><div class="anchorCatalog"><a name="G40">HTML Emails</a></div><ul><em style="color: #666666;"></em><li class="TCbullet"><a class="anchorCategory" href="../html-emails" alt="Getting Started">Getting Started</a></li><li class="TCbullet"><a class="anchorCategory" href="../page.php?id=122" alt="choose a design">choose a design</a></li><li class="TCbullet"><a class="anchorCategory" href="../page.php?id=49" alt="Custom Design">Custom Design</a></li></ul></li></ul><ul class="TreeControl"><li class="TCopen"><div class="anchorCatalog"><a name="G40">Services</a></div><ul><em style="color: #666666;"></em><li class="TCbullet"><a class="anchorCategory" href="../page.php?id=79" alt="Large Format Printing">Large Format Printing</a></li></ul></li></ul>							</td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td>
+
+<!--
+	Form Submit Validate All Required
+  Customer added form requirements:
+  	userID: customer must add a id="userID" input/select indicating the backend userID to send the emails to.
+  	required: form elements that are required must have the class "required". onblur="formValidateRequired(this)" is also recommended.
+  	submit button: the submit button but have the class formValidationSubmit
+  	hidden elements:
+  		<input name="redirect" type="hidden" value="/thank_you.php">
+			<input name="redirect2" type="hidden" value="/contact"> //the value is the page the customer wants to send the user after form submission.
+			<input name="thank_you_msg" type="hidden" value="Thank you for submitting your information. We will get back to you shortly.">
+-->
+<form action="/form_submit.php" id="DTSSForm" method="post" name="DTSSForm">
+	<!--
+--><input type="hidden" name="_CSRF_INDEX" value="nwT6ZubC5i5eNu19y_niy77E" style=""><!--
+--><input type="hidden" name="_CSRF_TOKEN" value="xriyfMq55WCPHY1V_YfFx_j6QHU16OHbqTfVFLgbdkpb" style="">	<div class="pageRow">
+<div class="pageColumn"><a href="../catalog/?g=11&amp;y=1025"><img src="../user/images/globals/default/product-icons/promo_icon.svg" border="0"></a>
+<h2><a href="../catalog/?g=11&amp;y=1025">Branded<br>
+WSU Items</a></h2>
+</div>
+
+<div class="pageColumn"><a href="../catalog/?g=11&amp;y=13"><img src="../user/images/globals/default/product-icons/business_cards_icon.svg" border="0"></a>
+
+<h2><a href="../catalog/?g=11&amp;y=13">Business Cards</a></h2>
+</div>
+
+<div class="pageColumn"><a href="../catalog/?g=11&amp;y=20"><img src="../user/images/globals/default/product-icons/stationary_icon.svg" border="0"></a>
+
+<h2><a href="../catalog/?g=11&amp;y=20">Stationery</a></h2>
+</div>
+</div>
+
+<div class="pageRow">
+<div class="pageColumn"><a href="../catalog/?g=11&amp;y=1039"><img src="../user/images/globals/default/product-icons/banners_icon.svg" border="0"></a>
+
+<h2><a href="../catalog/?g=11&amp;y=1039">Banners<br>
+and Posters</a></h2>
+</div>
+
+<div class="pageColumn"><a href="../page.php?id=78"><img src="../user/images/globals/default/product-icons/html_emails_icon.svg" border="0"></a>
+
+<h2><a href="../page.php?id=78">HTML Emails</a></h2>
+</div>
+  <div class="pageColumn"><a href="../catalog/?g=11&amp;y=1056"><img src="../user/images/globals/default/product-icons/calendar_icon.svg" border="0"></a>
+
+<h2><a href="../catalog/?g=11&amp;y=1056">Calendars</a></h2>
+</div>
+
+
+</div>
+
+
+<!-- OLD HOME PAGE HTML --><!--<div id="homeFooter">
+<header>DESIGN AND PRINTING SERVICES</header>
+
+<div id="getStarted">Your system-wide, full service printing, mailing, and design partner at Washington State University.</div>
+
+<div id="what-we-do">
+<div id="title">What we do</div>
+
+<div id="leftSect">
+<div id="section">
+<ul>
+	<li><a href="#">Digital printing</a></li>
+	<li><a href="#">Bindery services</a></li>
+	<li><a href="#">Custom printing with variable data</a></li>
+	<li><a href="#">Addressing and direct mail</a></li>
+	<li><a href="#">Large format printing and installation</a></li>
+</ul>
+</div>
+</div>
+
+<div id="middleSect">
+<div id="section">
+<ul>
+	<li><a href="#">Consultation and project management</a></li>
+	<li><a href="#">Copyediting</a></li>
+	<li><a href="#">Graphic design&mdash;print and digital</a></li>
+	<li><a href="#">HTML email testing and sending</a></li>
+	<li><a href="#">Branded promotional merchandise</a></li>
+</ul>
+</div>
+</div>
+
+<div id="leftSect">
+<div id="section"><a href="../catalog"><span id="getStartedBtn">Get Started!</span></a>
+
+<p><b>Cooper Publications Building,</b><br />
+2300 Grimes Way, Pullman</p>
+</div>
+</div>
+</div>
+
+<div id="what-we-do">
+<div id="leftSect">
+<div id="section"><a href="#"><img src="https://s3.wp.wsu.edu/uploads/sites/2345/2018/12/Business-items-Order-Now.jpg" /></a>
+
+<div id="title">Business items</div>
+
+<p>Design and Printing Services supplies all WSU stationery and business cards. <a href="#">View examples</a> or contact Christy Nowak with questions at <a href="mailto:cknowak@wsu.edu">cknowak@wsu.edu</a>.</p>
+</div>
+</div>
+
+<div id="middleSect">
+<div id="section"><a href="#"><img src="https://s3.wp.wsu.edu/uploads/sites/2345/2019/10/161607-Web-Hdr-Order2b-DPS.jpg" /></a>
+
+<div id="title">Promotional items</div>
+
+<p>From folders and pens to pennants and conference totes, we offer professionally printed, branded items ready to deliver. Perfect for conferences, VIP visits, and more.</p>
+</div>
+</div>
+
+<div id="leftSect">
+<div id="section"><a href="#"><img src="https://s3.wp.wsu.edu/uploads/sites/2345/2018/12/Print-it-Big.jpg" /></a>
+
+<div id="title">Large format printing</div>
+
+<p>Print wall murals, posters, displays, decals, and more. Choose from a variety of materials for indoor use or outdoor durability.</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+$("#readMoreBtn").click(function () {
+  if ( $("#readMore").is(":hidden")) {
+    $("#readMore").slideDown( "slow" );
+  } else {
+    $("#readMore"). slideUp();
+  }
+});
+
+$(".homeSprite").click(function () {
+console.log('Sprite Click');
+   if($(this).siblings("div.BToolTip-tl").is(":hidden")) {
+console.log('Hide/Show');
+      $(this).siblings("div.BToolTip-tl").slideDown("slow");
+   } else {
+	console.log('Else');
+      $(this).siblings("div.BToolTip-tl"). slideUp();
+   }
+});
+</script>--></form>
+	
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+<script>
+	$(function() {
+		/* Customer Added Form Submit Validate All Required */
+		$('#DTSSForm').on('submit', function(e) {
+			if (!formValidateAllRequired(this)) {
+				// Cancel submit. Validation failed.
+				e.preventDefault();
+			}
+		});
+	});
+</script>
+<div id="help-dialog" style="display:none;"></div>
+
+
+	<!-- ALIGN CENTER CONTENT END-->
+		</div>
+		</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.jquery-button').each(function(index, item){
+		hasOptions = false;
+		options = {};
+
+		icon = $(item).attr('icon');
+		icon = $.trim(icon);
+		if (icon) {
+			if (options.icons == undefined)
+				options.icons = {};
+			options.icons.primary = icon;
+			hasOptions = true;
+		}
+
+		icon = $(item).attr('icon-right');
+		icon = $.trim(icon);
+		if (icon) {
+			if (options.icons == undefined)
+				options.icons = {};
+			options.icons.secondary = icon;
+			hasOptions = true;
+		}
+
+		if (hasOptions) {
+			$(item).button(options);
+		} else {
+			$(item).button();
+		}
+	});
+});
+</script>
+<footer>
+  <div id="footerContent">
+    <strong>Cooper Publications Building</strong>, 2300 Grimes Way, Pullman
+    <img src="../user/images/globals/default/footer_logo_new_21.svg" border="0" alt="Washington State University logo.">
+  </div>
+</footer>
+
+<!-- updates title of CSR and sales rep on storefront -->
+<script>
+$("#contactCSRInfo header").text("Alternate contact");
+$("#contactSalesInfo header").text("Project Coordinator");
+</script>
+
+
+<script>
+  /* add request a quote button above side menu */
+  $("#TCtable").prepend('<a href="https://wsu.presswise.com/page.php?id=81"><span id="getStartedBtn">REQUEST A QUOTE</span></a>');
+  
+  /* pull side menu up on catalog page */
+ /* var urlLocation = window.location.href;
+  var findCatalog = urlLocation.search("/catalog/");
+  if(findCatalog != "-1") {
+    $("#TCtable").css("top","-38px"); 
+  }
+  
+  */
+  /* checkout page 4-checkout.php description text change  */
+  $("#checkoutLogin section table tr:first-child td.checkoutBody").text("Please log into your account, or create an account if you are a new customer.");
+  
+  /*$(function(){
+  	/*make blog link open in new window*/
+  	/*$("#menu li a").attr("target","_blank");
+  });*/
+  
+  /* Payment Page Changes (until payment in iframe) 
+  $("#custPOBox header").text("PHONE NUMBER");
+  $("#paymentMethod").before('<p><strong>If you wish to pay with a credit card, please enter your phone number<br>and a customer service representative will contact you for payment information.</strong></p><br>');
+  */
+</script>
+
+<div id="sb-container"><div id="sb-overlay"></div><div id="sb-wrapper"><div id="sb-title"><div id="sb-title-inner"></div></div><div id="sb-wrapper-inner"><div id="sb-body"><div id="sb-body-inner"></div><div id="sb-loading"><div id="sb-loading-inner"><span>loading</span></div></div></div></div><div id="sb-info"><div id="sb-info-inner"><div id="sb-counter"></div><div id="sb-nav"><a id="sb-nav-close" title="Close" onclick="Shadowbox.close()"></a><a id="sb-nav-next" title="Next" onclick="Shadowbox.next()"></a><a id="sb-nav-play" title="Play" onclick="Shadowbox.play()"></a><a id="sb-nav-pause" title="Pause" onclick="Shadowbox.pause()"></a><a id="sb-nav-previous" title="Previous" onclick="Shadowbox.previous()"></a></div></div></div></div></div></body></html>

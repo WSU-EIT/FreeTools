@@ -6,11 +6,11 @@
 | Title | About WSU | Washington State University | Washington State University |
 | Status | ✅ 200 |
 | HTML Size | 131.1 KB |
-| Screenshot Size | 2.6 MB |
+| Screenshot Size | 3.0 MB |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:20:18.6616492Z |
+| Captured | 2026-02-16T19:52:19.2144768Z |
 
 ## JavaScript Errors
 

@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://everett.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "Washington State University Everett | Washington State University",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 256720,
+  "ScreenshotSizeBytes": 3241919,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.3566219Z"
+}

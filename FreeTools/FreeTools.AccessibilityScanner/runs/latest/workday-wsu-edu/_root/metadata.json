@@ -1,0 +1,33 @@
+{
+  "PagePath": "/",
+  "Url": "https://workday.wsu.edu/",
+  "FinalUrl": "https://login.wsu.edu/app/workday/exk8wk0d1s55s30dD2p7/sso/saml",
+  "Title": "WSU | Sign In",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 140539,
+  "ScreenshotSizeBytes": 61875,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 7,
+  "ConsoleWarningCount": 0,
+  "ErrorMessage": null,
+  "Headers": {
+    "alt-svc": "h3=\u0022:443\u0022; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "9cef942a5bd02ee0-SEA",
+    "content-encoding": "gzip",
+    "content-language": "en-US",
+    "content-security-policy-report-only": "script-src \u0027none\u0027; connect-src \u0027none\u0027; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=yVdeiG0LFmwvple4v7ZyjbRzGZ6sR_LzokyhzI7Gi50-1771271476-1.0.1.1-m4xbqeEUyHBn.owWZMy9J.N453gCxMVUxc96UIhvELKOP3FwUJSI9ecGvMl6Dw_Og4Mha0Kx8EifBr19Y66jukFY6dhxKaXmfhdP6m8.ozGTMQ0qFzLYXlGusEyxcBHJ6opEMyhk2R4crjjlaWNYg94q9Pab32Cz.2896CjmOugU979hVq.MOlGD9GyX7MvGQCZuXje5C8Kb3gFb8mrTvA; report-to cf-mucldqgnydqscskk",
+    "content-type": "text/html;charset=UTF-8",
+    "date": "Mon, 16 Feb 2026 19:51:16 GMT",
+    "nel": "{\u0022success_fraction\u0022:0.01,\u0022report_to\u0022:\u0022cf-nel\u0022,\u0022max_age\u0022:604800}",
+    "report-to": "{\u0022endpoints\u0022:[{\u0022url\u0022:\u0022https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=2Si16%2B48PBeq3vWrVfEHjaaU9s7F9hWESktevx0HJm%2FIH8s8zvu%2B%2BYq5eXR3mos%2BultWG5TkIfT6vCijuKqUqIvKD5eCNeI64sQ8WbEHJIZnqM6Et%2BP5GuHqx9o1hPbDkKpf\u0022}],\u0022group\u0022:\u0022cf-nel\u0022,\u0022max_age\u0022:604800}\n{\u0022endpoints\u0022:[{\u0022url\u0022:\u0022https:\\/\\/csp-reporting.cloudflare.com\\/cdn-cgi\\/script_monitor\\/report?m=yVdeiG0LFmwvple4v7ZyjbRzGZ6sR_LzokyhzI7Gi50-1771271476-1.0.1.1-m4xbqeEUyHBn.owWZMy9J.N453gCxMVUxc96UIhvELKOP3FwUJSI9ecGvMl6Dw_Og4Mha0Kx8EifBr19Y66jukFY6dhxKaXmfhdP6m8.ozGTMQ0qFzLYXlGusEyxcBHJ6opEMyhk2R4crjjlaWNYg94q9Pab32Cz.2896CjmOugU979hVq.MOlGD9GyX7MvGQCZuXje5C8Kb3gFb8mrTvA\u0022}],\u0022group\u0022:\u0022cf-mucldqgnydqscskk\u0022,\u0022max_age\u0022:86400}",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "vary": "accept-encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-robots-tag": "noindex, nofollow"
+  },
+  "CapturedAt": "2026-02-16T19:51:11.3632959Z"
+}

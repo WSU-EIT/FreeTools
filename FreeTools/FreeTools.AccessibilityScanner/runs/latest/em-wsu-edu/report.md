@@ -6,7 +6,7 @@
 | Pages Scanned | 2 |
 | Pages Passed | 0 |
 | Pages Failed | 2 |
-| Total JS Errors | 4 |
+| Total JS Errors | 5 |
 | Total JS Warnings | 2 |
 | Total HTML | 1.2 MB |
 | Total Screenshots | 286.4 KB |
@@ -16,7 +16,7 @@
 
 | Status | Page | HTTP | Title | JS Errors | JS Warnings | HTML Size |
 |--------|------|------|-------|-----------|-------------|-----------|
-| ❌ | [/](_root/report.md) | 0 | Enrollment Management | 2 | 1 | 633.9 KB |
+| ❌ | [/](_root/report.md) | 0 | Enrollment Management | 3 | 1 | 633.9 KB |
 | ❌ | [/eit/](eit/report.md) | 0 | Enrollment IT | 2 | 1 | 634.3 KB |
 
 ## Failed Pages
@@ -34,8 +34,9 @@
 
 ## Pages with JavaScript Errors
 
-### / (2 errors)
+### / (3 errors)
 
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 - `Access to XMLHttpRequest at 'https://api.oneorigin.us/p-cs/ref?required=y' from origin 'https://em.wsu.edu' has been ...`
 - `Failed to load resource: net::ERR_FAILED`
 

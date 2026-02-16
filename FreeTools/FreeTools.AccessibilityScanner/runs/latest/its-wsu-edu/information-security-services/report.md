@@ -5,12 +5,12 @@
 | URL | https://its.wsu.edu/information-security-services/ |
 | Title | Office of Information Security and Assurance | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 231.1 KB |
+| HTML Size | 231.2 KB |
 | Screenshot Size | 876.4 KB |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T19:21:05.3762671Z |
+| Captured | 2026-02-16T19:53:11.9703586Z |
 
 ## Actions
 

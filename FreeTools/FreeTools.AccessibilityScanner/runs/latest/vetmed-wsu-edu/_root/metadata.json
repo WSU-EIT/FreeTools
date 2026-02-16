@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://vetmed.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "College of Veterinary Medicine | Washington State University",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 277582,
+  "ScreenshotSizeBytes": 956582,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 1,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.3789607Z"
+}

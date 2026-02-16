@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://president.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "Office of the President | Washington State University",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 67094,
+  "ScreenshotSizeBytes": 987386,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 2,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.3707517Z"
+}

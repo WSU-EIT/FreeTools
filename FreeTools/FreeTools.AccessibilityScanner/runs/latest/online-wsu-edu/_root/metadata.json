@@ -1,0 +1,16 @@
+{
+  "PagePath": "/",
+  "Url": "https://online.wsu.edu/",
+  "FinalUrl": null,
+  "Title": "WSU Global Campus | Washington State University",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 84650,
+  "ScreenshotSizeBytes": 1781102,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 1,
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T19:51:11.3693663Z"
+}
