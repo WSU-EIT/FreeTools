@@ -5,7 +5,7 @@
   "Title": "Athletic Training Admissions | College of Education, Sport, and Human Sciences | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 234769,
+  "HtmlSizeBytes": 234811,
   "ScreenshotSizeBytes": 1528912,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -18,19 +18,69 @@
       "FileSize": 1528912
     }
   ],
+  "ImageCount": 8,
+  "ImagesTotalSizeBytes": 2263926,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "Screenshot-2025-02-04-094037.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/02/Screenshot-2025-02-04-094037.png",
+      "AltText": "gym",
+      "FileSize": 1437019
+    },
+    {
+      "FileName": "FillingOutForm_364x364.png",
+      "SourceUrl": "https://wsuwp-uploads.s3.amazonaws.com/uploads/sites/3332/2015/06/FillingOutForm_364x364.png",
+      "AltText": "FillingOutForm",
+      "FileSize": 127417
+    },
+    {
+      "FileName": "MagnifyingGlass_364x364.png",
+      "SourceUrl": "https://wsuwp-uploads.s3.amazonaws.com/uploads/sites/3332/2015/06/MagnifyingGlass_364x364.png",
+      "AltText": "Magnifying Glass",
+      "FileSize": 114550
+    },
+    {
+      "FileName": "ConfidentialyWaiver_346x346.png",
+      "SourceUrl": "https://wsuwp-uploads.s3.amazonaws.com/uploads/sites/3332/2015/06/ConfidentialyWaiver_346x346.png",
+      "AltText": "Confidentiality Waiver",
+      "FileSize": 114880
+    },
+    {
+      "FileName": "Evaluation_346x346.png",
+      "SourceUrl": "https://wsuwp-uploads.s3.amazonaws.com/uploads/sites/3332/2015/06/Evaluation_346x346.png",
+      "AltText": "Evaluation",
+      "FileSize": 94633
+    },
+    {
+      "FileName": "TechnicalStandards_346x346.png",
+      "SourceUrl": "https://wsuwp-uploads.s3.amazonaws.com/uploads/sites/3332/2015/06/TechnicalStandards_346x346.png",
+      "AltText": "Technical Standards",
+      "FileSize": 251549
+    },
+    {
+      "FileName": "checkmark.jpg",
+      "SourceUrl": "https://wsuwp-uploads.s3.amazonaws.com/uploads/sites/3332/2015/06/checkmark.jpg",
+      "AltText": "checkmark",
+      "FileSize": 50879
+    },
+    {
+      "FileName": "Dollar-Sign-346x346.jpg",
+      "SourceUrl": "https://wsuwp-uploads.s3.amazonaws.com/uploads/sites/3332/2015/06/Dollar-Sign-346x346.jpg",
+      "AltText": "dollar-sign-346x346",
+      "FileSize": 72999
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:15:02 GMT",
+    "date": "Mon, 16 Feb 2026 20:40:10 GMT",
     "etag": "\u0022a4ea2cb13077b84e32ca70abd259db58\u0022",
     "last-modified": "Mon, 16 Feb 2026 20:15:02 GMT",
     "link": "\u003Chttps://ceshs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ceshs.wsu.edu/wp-json/wp/v2/pages/1112\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ceshs.wsu.edu/?p=1112\u003E; rel=shortlink",
     "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://ceshs.wsu.edu",
-    "x-tec-api-root": "https://ceshs.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
+    "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-16T20:15:00.7497815Z"
+  "CapturedAt": "2026-02-16T20:40:09.7227376Z"
 }

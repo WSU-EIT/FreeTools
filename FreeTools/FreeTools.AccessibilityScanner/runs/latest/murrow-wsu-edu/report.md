@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/7 pages OK |
+| Status | ⚠️ 3/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 5 |
-| Pages Failed | 2 |
-| Total JS Errors | 4 |
+| Pages Passed | 3 |
+| Pages Failed | 4 |
+| Total JS Errors | 1 |
 | Total JS Warnings | 2 |
 | Total HTML | 1.8 MB |
-| Total Screenshots | 11.9 MB |
+| Total Screenshots | 8.8 MB |
+| Total Images | 86 (11.0 MB) |
+| Images Missing Alt | 10 |
 | Folder | `murrow-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Edward R. Murrow College of Communica... | 3 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About Edward R. Murrow \| Edward R. M... | 0 | 0 | 1 |
-| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty Directory Update Form \| Edwa... | 0 | 0 | 1 |
-| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Programs \| Edward R. Murrow... | 0 | 0 | 1 |
-| ✅ | [/news/](news/report.md) | 200 | News Articles \| Edward R. Murrow Col... | 0 | 0 | 1 |
-| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| Edward R. Murrow Co... | 1 | 1 | 1 |
-| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Programs \| Edward R. M... | 0 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Edward R. Murrow College of Communica... | 0 | 39 | 3 |
+| ❌ | [/about/](about/report.md) | 0 | About Edward R. Murrow \| Edward R. M... | 0 | 10 | 0 |
+| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty Directory Update Form \| Edwa... | 0 | 0 | 0 |
+| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Programs \| Edward R. Murrow... | 0 | 7 | 1 |
+| ✅ | [/news/](news/report.md) | 200 | News Articles \| Edward R. Murrow Col... | 0 | 7 | 2 |
+| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| Edward R. Murrow Co... | 1 | 0 | 0 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Programs \| Edward R. M... | 0 | 23 | 4 |
 
 ## Page Screenshots
 
@@ -62,6 +64,16 @@
 - **URL:** https://murrow.wsu.edu/
 - **Status:** 0
 
+### /about/
+
+- **URL:** https://murrow.wsu.edu/about/
+- **Status:** 0
+
+### /undergraduate/
+
+- **URL:** https://murrow.wsu.edu/undergraduate/
+- **Status:** 0
+
 ### /programs/
 
 - **URL:** https://murrow.wsu.edu/programs/
@@ -69,12 +81,6 @@
 
 
 ## Pages with JavaScript Errors
-
-### / (3 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /programs/ (1 errors)
 

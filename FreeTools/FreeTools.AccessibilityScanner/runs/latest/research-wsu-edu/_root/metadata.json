@@ -3,31 +3,135 @@
   "Url": "https://research.wsu.edu/",
   "FinalUrl": null,
   "Title": "Office of Research | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 272820,
-  "ScreenshotSizeBytes": 1602914,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 263526,
+  "ScreenshotSizeBytes": 255443,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1602914
+      "FileSize": 255443
+    }
+  ],
+  "ImageCount": 18,
+  "ImagesTotalSizeBytes": 1874747,
+  "ImagesMissingAlt": 17,
+  "Images": [
+    {
+      "FileName": "Stephanie-Seifert-in-PPE-with-microscope-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2026/02/Stephanie-Seifert-in-PPE-with-microscope-792x523.jpg",
+      "AltText": "",
+      "FileSize": 70645
+    },
+    {
+      "FileName": "Dr-Universe-and-ruler-floating-in-space-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2026/02/Dr-Universe-and-ruler-floating-in-space-792x523.jpg",
+      "AltText": "",
+      "FileSize": 115869
+    },
+    {
+      "FileName": "social-media-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2026/02/social-media-792x523.jpg",
+      "AltText": "",
+      "FileSize": 61969
+    },
+    {
+      "FileName": "kruger-and-girardi-792x480.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2025/12/kruger-and-girardi-792x480.jpg",
+      "AltText": "",
+      "FileSize": 73423
+    },
+    {
+      "FileName": "Ryan-McLaughlin-and-chamber-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2026/02/Ryan-McLaughlin-and-chamber-792x523.jpg",
+      "AltText": "",
+      "FileSize": 51574
+    },
+    {
+      "FileName": "Giuseppe-Giannotti-and-Allison-Jensen-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2026/02/Giuseppe-Giannotti-and-Allison-Jensen-792x523.jpg",
+      "AltText": "",
+      "FileSize": 89473
+    },
+    {
+      "FileName": "eye-and-brain-composite-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2026/01/eye-and-brain-composite-792x523.jpg",
+      "AltText": "",
+      "FileSize": 61531
+    },
+    {
+      "FileName": "Guatemala-water-3-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2026/01/Guatemala-water-3-792x523.jpg",
+      "AltText": "",
+      "FileSize": 135776
+    },
+    {
+      "FileName": "Peng-He-and-Tingting-Li-and-school-bus-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2025/11/Peng-He-and-Tingting-Li-and-school-bus-792x523.jpg",
+      "AltText": "",
+      "FileSize": 86353
+    },
+    {
+      "FileName": "Smoke-Exposure-Lauren-phone-1024x576-2-792x446.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2025/11/Smoke-Exposure-Lauren-phone-1024x576-2-792x446.jpg",
+      "AltText": "",
+      "FileSize": 55318
+    },
+    {
+      "FileName": "solar-panels-in-orchard-aerial-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2026/01/solar-panels-in-orchard-aerial-792x523.jpg",
+      "AltText": "",
+      "FileSize": 215477
+    },
+    {
+      "FileName": "One-Health-Clinic-outdoor-tent-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2025/11/One-Health-Clinic-outdoor-tent-792x523.jpg",
+      "AltText": "",
+      "FileSize": 118855
+    },
+    {
+      "FileName": "night-owl-vs-early-bird--792x520.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2025/11/night-owl-vs-early-bird--792x520.jpg",
+      "AltText": "",
+      "FileSize": 59618
+    },
+    {
+      "FileName": "BRAIN-FIT-Hannah-Tjelle-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2025/11/BRAIN-FIT-Hannah-Tjelle-792x523.jpg",
+      "AltText": "",
+      "FileSize": 93531
+    },
+    {
+      "FileName": "ev-shopping-consumer-market.jpg-copy-1024x676-1-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2025/10/ev-shopping-consumer-market.jpg-copy-1024x676-1-792x523.jpg",
+      "AltText": "",
+      "FileSize": 51632
+    },
+    {
+      "FileName": "jaguar-at-watering-hole-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2025/10/jaguar-at-watering-hole-792x523.jpg",
+      "AltText": "",
+      "FileSize": 61498
+    },
+    {
+      "FileName": "research-lifecycle-v2b2.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2024/08/research-lifecycle-v2b2.png",
+      "AltText": "Steps of the Research Lifecycle. The table below provides links to further information.",
+      "FileSize": 193584
+    },
+    {
+      "FileName": "presentation-out-of-focus-scaled.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-research/uploads/sites/3409/2024/07/presentation-out-of-focus-scaled.jpeg",
+      "AltText": "",
+      "FileSize": 278621
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "etag": "\u0022a5d9c59daa23a9de21594588dff4218d\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:32:38 GMT",
-    "link": "\u003Chttps://research.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://research.wsu.edu/wp-json/wp/v2/pages/41\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://research.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1412753Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.152456Z"
 }

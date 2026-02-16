@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://online.wsu.edu/current-students/ |
 | Title | Page not found | WSU Global Campus | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 67.3 KB |
-| Screenshots | 1 (120.5 KB) |
+| Status | ❌ 0 |
+| HTML Size | 55.5 KB |
+| Screenshots | 1 (127.7 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:45.2318651Z |
+| Captured | 2026-02-16T20:38:40.9345164Z |
 
 ## JavaScript Errors
 
@@ -18,7 +20,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (120.5 KB)
+- Screenshot #1: page-loaded (127.7 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,9 +30,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (120.5 KB)
+- `01-page-loaded.png` — page-loaded (127.7 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

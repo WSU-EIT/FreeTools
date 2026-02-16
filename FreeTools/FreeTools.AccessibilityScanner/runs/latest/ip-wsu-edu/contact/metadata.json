@@ -3,10 +3,10 @@
   "Url": "https://ip.wsu.edu/contact/",
   "FinalUrl": "https://ip.wsu.edu/gprs/contact/",
   "Title": "Contact GPRS | WSU International | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 277572,
-  "ScreenshotSizeBytes": 215946,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 277456,
+  "ScreenshotSizeBytes": 215878,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,22 +15,14 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 215946
+      "FileSize": 215878
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:24 GMT",
-    "etag": "\u002299868c50565b141f9042e66064475fc8\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:14:24 GMT",
-    "link": "\u003Chttps://ip.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ip.wsu.edu/wp-json/wp/v2/pages/145\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ip.wsu.edu/?p=145\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://ip.wsu.edu",
-    "x-tec-api-root": "https://ip.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:14:20.2848899Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:38.7180831Z"
 }

@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://events.wsu.edu/submit-event/ |
 | Title | Page not found | Events | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 56.4 KB |
+| Status | ❌ 0 |
+| HTML Size | 48.1 KB |
 | Screenshots | 1 (48.0 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 4 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:55.6636247Z |
+| Captured | 2026-02-16T20:38:18.6575788Z |
 
 ## JavaScript Errors
 
@@ -22,6 +24,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (48.0 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -29,6 +32,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

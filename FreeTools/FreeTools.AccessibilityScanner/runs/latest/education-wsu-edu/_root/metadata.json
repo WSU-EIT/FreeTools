@@ -1,24 +1,53 @@
 {
   "PagePath": "/",
   "Url": "https://education.wsu.edu/",
-  "FinalUrl": "https://ceshs.wsu.edu/",
+  "FinalUrl": "about:blank",
   "Title": "College of Education, Sport, and Human Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 253981,
-  "ScreenshotSizeBytes": 2523606,
+  "HtmlSizeBytes": 247698,
+  "ScreenshotSizeBytes": 1631372,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 5,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 2,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2523606
+      "FileSize": 1631372
+    }
+  ],
+  "ImageCount": 4,
+  "ImagesTotalSizeBytes": 1123915,
+  "ImagesMissingAlt": 2,
+  "Images": [
+    {
+      "FileName": "2024FirstDayFall_4184-1900x1267-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/2024FirstDayFall_4184-1900x1267-1.jpg",
+      "AltText": "",
+      "FileSize": 374814
+    },
+    {
+      "FileName": "FirstWeek_9678-1900x1267-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/FirstWeek_9678-1900x1267-1.jpg",
+      "AltText": "",
+      "FileSize": 250993
+    },
+    {
+      "FileName": "2024SpringGraduation_6810-1900x1267-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/2024SpringGraduation_6810-1900x1267-1.jpg",
+      "AltText": "I did it anyway",
+      "FileSize": 356725
+    },
+    {
+      "FileName": "Sue-Durrant-and-Jo-Washburn-in-1997-copy.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/Sue-Durrant-and-Jo-Washburn-in-1997-copy.jpg",
+      "AltText": "Monica McNamara smiling at camera.",
+      "FileSize": 141383
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.122045Z"
+  "CapturedAt": "2026-02-16T20:37:05.0572326Z"
 }

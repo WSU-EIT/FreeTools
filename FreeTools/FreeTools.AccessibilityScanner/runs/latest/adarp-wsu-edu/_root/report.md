@@ -4,21 +4,20 @@
 |-------|-------|
 | URL | https://adarp.wsu.edu/ |
 | Title | ADARP | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 61.0 KB |
+| Status | ❌ 0 |
+| HTML Size | 49.4 KB |
 | Screenshots | 1 (687.9 KB) |
-| JS Errors | 1 |
+| Images | 3 (283.2 KB) |
+| Images Missing Alt | 3 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:26.0929255Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:37:04.9609751Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (687.9 KB)
+- Downloaded 3 images to /images/
 
 ## Screenshots
 
@@ -26,6 +25,29 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (3)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [HomepageGraphic-753px.jpg](images/HomepageGraphic-753px.jpg) | *(none)* | 75.2 KB |
+| 2 | [Rita-Fuchs-cropped-2025-792x1085.jpg](images/Rita-Fuchs-cropped-2025-792x1085.jpg) | *(none)* | 101.9 KB |
+| 3 | [Amanda-Tanner-1-792x1025.jpg](images/Amanda-Tanner-1-792x1025.jpg) | *(none)* | 106.1 KB |
+
+### Gallery
+
+![HomepageGraphic-753px.jpg](images/HomepageGraphic-753px.jpg)
+
+![Rita-Fuchs-cropped-2025-792x1085.jpg](images/Rita-Fuchs-cropped-2025-792x1085.jpg)
+
+![Amanda-Tanner-1-792x1025.jpg](images/Amanda-Tanner-1-792x1025.jpg)
+
+
+### ⚠️ Images Missing Alt Text (3)
+
+- `HomepageGraphic-753px.jpg` — https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2942/2014/07/HomepageGraphic-753px.jpg
+- `Rita-Fuchs-cropped-2025-792x1085.jpg` — https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2942/2025/07/Rita-Fuchs-cropped-2025-792x1085.jpg
+- `Amanda-Tanner-1-792x1025.jpg` — https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2942/2023/09/Amanda-Tanner-1-792x1025.jpg
 
 ## Files
 
@@ -36,3 +58,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 3 page images (283.2 KB)

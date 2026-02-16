@@ -3,10 +3,10 @@
   "Url": "https://vetmed.wsu.edu/education/",
   "FinalUrl": null,
   "Title": "Education | College of Veterinary Medicine | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 259889,
-  "ScreenshotSizeBytes": 1101688,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 249018,
+  "ScreenshotSizeBytes": 776034,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,57 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1101688
+      "FileSize": 776034
+    }
+  ],
+  "ImageCount": 7,
+  "ImagesTotalSizeBytes": 938194,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "SMB-undergrads-Kohler-lab-06-DSC_5439-792x528.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2024/08/SMB-undergrads-Kohler-lab-06-DSC_5439-792x528.jpg",
+      "AltText": "Two students working in a lab. Both are wearing white coats and gloves.",
+      "FileSize": 92758
+    },
+    {
+      "FileName": "GraduateHero-1156x645-100121-792x442.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2021/10/GraduateHero-1156x645-100121-792x442.jpg",
+      "AltText": "Graduate student in lab",
+      "FileSize": 78199
+    },
+    {
+      "FileName": "Zaripova-Elvira-03-24.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2024/07/Zaripova-Elvira-03-24.jpg",
+      "AltText": "Vet student with dog",
+      "FileSize": 187088
+    },
+    {
+      "FileName": "ResidentsInterns-Residentw4thYears-720x480-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2022/05/ResidentsInterns-Residentw4thYears-720x480-1.jpg",
+      "AltText": "A Teaching Hospital resident with four 4th-year DVM students.",
+      "FileSize": 330339
+    },
+    {
+      "FileName": "catherine-hamisch-e1770310174765-792x528.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2026/02/catherine-hamisch-e1770310174765-792x528.jpg",
+      "AltText": "Catherine Hamisch poses for a photo.",
+      "FileSize": 71803
+    },
+    {
+      "FileName": "image-6.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2026/02/Anna-Decan-and-Nolan-Nansel-and-West-valentines-03-_0T83789-e1770914093292-792x528.jpg",
+      "AltText": "Anna Decan and Nolan Nansel, both fourth-year students in WSU\u0027s College of Veterinary Medicine, pose for a photo with their dog, West, near the entrance to the Veterinary Teaching Hospital.",
+      "FileSize": 104298
+    },
+    {
+      "FileName": "rossman-scaled-e1770328567477-792x528.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2026/02/rossman-scaled-e1770328567477-792x528.jpeg",
+      "AltText": "Genevea Rossman holds a small dog.",
+      "FileSize": 73709
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:33 GMT",
-    "etag": "\u00227f1223311fd59714d14d7fa112a8c941\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:31:58 GMT",
-    "link": "\u003Chttps://vetmed.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://vetmed.wsu.edu/wp-json/wp/v2/pages/1622\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://vetmed.wsu.edu/?p=1622\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:13:31.5894571Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:02.5595759Z"
 }

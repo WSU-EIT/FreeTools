@@ -2,25 +2,27 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/5 pages OK |
+| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 1 |
-| Pages Failed | 4 |
+| Pages Passed | 0 |
+| Pages Failed | 5 |
 | Total JS Errors | 5 |
 | Total JS Warnings | 0 |
-| Total HTML | 207.8 KB |
-| Total Screenshots | 2.8 MB |
+| Total HTML | 159.8 KB |
+| Total Screenshots | 1.8 MB |
+| Total Images | 2 (1.3 MB) |
+| Images Missing Alt | 0 |
 | Folder | `socialmedia-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Social Media at WSU \| Washington Sta... | 1 | 0 | 1 |
-| ❌ | [/directory/](directory/report.md) | 404 | Page not found \| Social Media at WSU... | 1 | 0 | 1 |
-| ❌ | [/guidelines/](guidelines/report.md) | 404 | Page not found \| Social Media at WSU... | 1 | 0 | 1 |
-| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| Social Media at WSU... | 1 | 0 | 1 |
-| ❌ | [/training/](training/report.md) | 404 | Page not found \| Social Media at WSU... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Social Media at WSU \| Washington Sta... | 1 | 2 | 0 |
+| ❌ | [/directory/](directory/report.md) | 0 | Page not found \| Social Media at WSU... | 1 | 0 | 0 |
+| ❌ | [/guidelines/](guidelines/report.md) | 0 | Page not found \| Social Media at WSU... | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| Social Media at WSU... | 1 | 0 | 0 |
+| ❌ | [/training/](training/report.md) | 0 | Page not found \| Social Media at WSU... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -47,25 +49,30 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://socialmedia.wsu.edu/
+- **Status:** 0
+
 ### /directory/
 
 - **URL:** https://socialmedia.wsu.edu/directory/
-- **Status:** 404
+- **Status:** 0
 
 ### /guidelines/
 
 - **URL:** https://socialmedia.wsu.edu/guidelines/
-- **Status:** 404
+- **Status:** 0
 
 ### /resources/
 
 - **URL:** https://socialmedia.wsu.edu/resources/
-- **Status:** 404
+- **Status:** 0
 
 ### /training/
 
 - **URL:** https://socialmedia.wsu.edu/training/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors

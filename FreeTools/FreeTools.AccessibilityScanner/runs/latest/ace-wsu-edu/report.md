@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 4/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 4 |
-| Pages Failed | 2 |
-| Total JS Errors | 2 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 10 |
 | Total JS Warnings | 0 |
-| Total HTML | 486.2 KB |
+| Total HTML | 418.4 KB |
 | Total Screenshots | 2.1 MB |
+| Total Images | 1 (23.8 KB) |
+| Images Missing Alt | 0 |
 | Folder | `ace-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Office of Assessment for Curricular E... | 0 | 0 | 1 |
-| ✅ | [/accreditation/](accreditation/report.md) | 200 | Accreditation Reaffirmed by NWCCU, WS... | 0 | 0 | 1 |
-| ✅ | [/assessment/](assessment/report.md) | 200 | Assessment Archives \| Office of Asse... | 0 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| Office of Assessmen... | 1 | 0 | 1 |
-| ✅ | [/reporting/](reporting/report.md) | 200 | Reporting Program Assessment Activiti... | 0 | 0 | 1 |
-| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| Office of Assessmen... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Office of Assessment for Curricular E... | 8 | 1 | 0 |
+| ❌ | [/accreditation/](accreditation/report.md) | 0 | Accreditation Reaffirmed by NWCCU, WS... | 0 | 0 | 0 |
+| ❌ | [/assessment/](assessment/report.md) | 0 | Assessment Archives \| Office of Asse... | 0 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| Office of Assessmen... | 1 | 0 | 0 |
+| ❌ | [/reporting/](reporting/report.md) | 0 | Reporting Program Assessment Activiti... | 0 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| Office of Assessmen... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,18 +54,49 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://ace.wsu.edu/
+- **Status:** 0
+
+### /assessment/
+
+- **URL:** https://ace.wsu.edu/assessment/
+- **Status:** 0
+
+### /accreditation/
+
+- **URL:** https://ace.wsu.edu/accreditation/
+- **Status:** 0
+
+### /reporting/
+
+- **URL:** https://ace.wsu.edu/reporting/
+- **Status:** 0
+
 ### /resources/
 
 - **URL:** https://ace.wsu.edu/resources/
-- **Status:** 404
+- **Status:** 0
 
 ### /contact/
 
 - **URL:** https://ace.wsu.edu/contact/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
+
+### / (8 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /resources/ (1 errors)
 

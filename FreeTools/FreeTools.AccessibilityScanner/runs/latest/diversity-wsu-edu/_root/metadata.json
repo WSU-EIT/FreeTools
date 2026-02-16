@@ -3,10 +3,10 @@
   "Url": "https://diversity.wsu.edu/",
   "FinalUrl": "https://hrs.wsu.edu/",
   "Title": "Human Resource Services, Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 94074,
-  "ScreenshotSizeBytes": 1309306,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 86635,
+  "ScreenshotSizeBytes": 1304508,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,33 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1309306
+      "FileSize": 1304508
+    }
+  ],
+  "ImageCount": 3,
+  "ImagesTotalSizeBytes": 228187,
+  "ImagesMissingAlt": 3,
+  "Images": [
+    {
+      "FileName": "all-campus-homepage-header_1386x260.jpg",
+      "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2021/02/all-campus-homepage-header_1386x260.jpg",
+      "AltText": "",
+      "FileSize": 137150
+    },
+    {
+      "FileName": "calculator-385506_1920-e1579117519523-792x594-1-720x540.jpg",
+      "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2023/02/calculator-385506_1920-e1579117519523-792x594-1-720x540.jpg",
+      "AltText": "",
+      "FileSize": 54470
+    },
+    {
+      "FileName": "retirement-dollars-720x540.png",
+      "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2026/01/retirement-dollars-720x540.png",
+      "AltText": "",
+      "FileSize": 36567
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "max-age=107, must-revalidate",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:30 GMT",
-    "last-modified": "Mon, 16 Feb 2026 20:07:17 GMT",
-    "link": "\u003Chttps://hrs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://hrs.wsu.edu/wp-json/wp/v2/pages/32849\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022, \u003Chttps://hrs.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx/1.14.1",
-    "vary": "Cookie",
-    "x-powered-by": "PHP/8.2.29"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1181016Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.0597818Z"
 }

@@ -5,20 +5,61 @@
   "Title": "College of Arts and Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 264740,
-  "ScreenshotSizeBytes": 1524216,
+  "HtmlSizeBytes": 258593,
+  "ScreenshotSizeBytes": 1452917,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1524216
+      "FileSize": 1452917
+    }
+  ],
+  "ImageCount": 6,
+  "ImagesTotalSizeBytes": 1446859,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "Rodriguez-2.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2023/05/Rodriguez-2.jpg",
+      "AltText": "A group meeting around a table. ",
+      "FileSize": 44557
+    },
+    {
+      "FileName": "Student-Advising-DSC_6833-hero.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2023/08/Student-Advising-DSC_6833-hero.jpg",
+      "AltText": "A student meeting with an advisor.",
+      "FileSize": 322003
+    },
+    {
+      "FileName": "digitalmediaclub.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2024/09/digitalmediaclub.jpg",
+      "AltText": "Member of the DTC media club gather in a computer lab.",
+      "FileSize": 171905
+    },
+    {
+      "FileName": "CAS-Ambassadors-Bryan-Hall-Bench-DSC_4837.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2023/12/CAS-Ambassadors-Bryan-Hall-Bench-DSC_4837.jpg",
+      "AltText": "A group of CAS students seated at a pair of outdoor benches.",
+      "FileSize": 499277
+    },
+    {
+      "FileName": "climatechange-1024x676-1_edited.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2024/08/climatechange-1024x676-1_edited.jpg",
+      "AltText": "Satellite image of a hurricane approaching North and South America.",
+      "FileSize": 291648
+    },
+    {
+      "FileName": "Anna-Bushy_Nazua-Idris_Awards-2023_DSC_2257-2-792x791.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2025/04/Anna-Bushy_Nazua-Idris_Awards-2023_DSC_2257-2-792x791.jpg",
+      "AltText": "Anna Bushy and Nazua Idris.",
+      "FileSize": 117469
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.1138834Z"
+  "CapturedAt": "2026-02-16T20:37:05.0324018Z"
 }

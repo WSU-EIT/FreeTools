@@ -3,10 +3,10 @@
   "Url": "https://access.wsu.edu/digital-accessibility/",
   "FinalUrl": null,
   "Title": "Page not found | Access at WSU | Washington State University",
-  "StatusCode": 404,
+  "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 60243,
-  "ScreenshotSizeBytes": 109805,
+  "HtmlSizeBytes": 53028,
+  "ScreenshotSizeBytes": 116084,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,17 +15,14 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 109805
+      "FileSize": 116084
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "no-cache, must-revalidate, max-age=0",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:16 GMT",
-    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
-    "link": "\u003Chttps://access.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
-    "server": "nginx"
-  },
-  "CapturedAt": "2026-02-16T20:12:14.5106797Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:01.1651802Z"
 }

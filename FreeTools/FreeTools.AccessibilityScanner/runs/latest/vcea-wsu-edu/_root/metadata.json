@@ -5,20 +5,67 @@
   "Title": "Voiland College of Engineering and Architecture | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 259661,
-  "ScreenshotSizeBytes": 2026387,
+  "HtmlSizeBytes": 250120,
+  "ScreenshotSizeBytes": 600918,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 4,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2026387
+      "FileSize": 600918
+    }
+  ],
+  "ImageCount": 7,
+  "ImagesTotalSizeBytes": 1419467,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "2025-faculty-collage.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3049/2025/07/2025-faculty-collage.jpg",
+      "AltText": "Collage of 15 faces.",
+      "FileSize": 403117
+    },
+    {
+      "FileName": "ancient-wooden-egyptian-falcon-and-blue-powder-1024x676-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3049/2025/07/ancient-wooden-egyptian-falcon-and-blue-powder-1024x676-1.jpg",
+      "AltText": "Closeup of hands and tweezers inspecting an ancient wooden Egyptian falcon, and an inset showing a blue powder.",
+      "FileSize": 128493
+    },
+    {
+      "FileName": "yan-yan-300x300-1.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3049/2025/07/yan-yan-300x300-1.jpeg",
+      "AltText": "Yan Yan.",
+      "FileSize": 28112
+    },
+    {
+      "FileName": "yong-wang-1.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3049/2024/12/yong-wang-1.jpeg",
+      "AltText": "Yong Wang.",
+      "FileSize": 57780
+    },
+    {
+      "FileName": "SEH-northwest-corner-cropped.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3049/2024/05/SEH-northwest-corner-cropped.png",
+      "AltText": "Exterior corner of a brick and glass building.",
+      "FileSize": 559952
+    },
+    {
+      "FileName": "GRID-PHOTO-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/GRID-PHOTO-1024x676.jpg",
+      "AltText": "Power lines spanning farm fields in Washington.",
+      "FileSize": 161384
+    },
+    {
+      "FileName": "gloves-holding-smartphone-and-glucose-monitor-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/gloves-holding-smartphone-and-glucose-monitor-1024x676.jpg",
+      "AltText": "Gloved hands holding a smartphone and a glucose monitor.",
+      "FileSize": 80629
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.1681195Z"
+  "CapturedAt": "2026-02-16T20:37:05.181759Z"
 }

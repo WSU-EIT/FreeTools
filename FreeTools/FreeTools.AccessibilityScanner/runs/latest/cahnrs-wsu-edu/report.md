@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/7 pages OK |
+| Status | ⚠️ 1/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 5 |
-| Pages Failed | 2 |
-| Total JS Errors | 8 |
+| Pages Passed | 1 |
+| Pages Failed | 6 |
+| Total JS Errors | 4 |
 | Total JS Warnings | 2 |
-| Total HTML | 1.7 MB |
-| Total Screenshots | 10.3 MB |
+| Total HTML | 1.5 MB |
+| Total Screenshots | 8.9 MB |
+| Total Images | 66 (17.0 MB) |
+| Images Missing Alt | 0 |
 | Folder | `cahnrs-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | College of Agricultural, Human, and N... | 7 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About CAHNRS \| College of Agricultur... | 0 | 0 | 1 |
-| ✅ | [/academics/](academics/report.md) | 200 | Academics \| Washington State University | 0 | 1 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| College of Agricult... | 1 | 1 | 1 |
-| ✅ | [/extension/](extension/report.md) | 200 | WSU Extension \| Washington State Uni... | 0 | 0 | 1 |
-| ✅ | [/news/](news/report.md) | 200 | CAHNRS News \| Washington State Unive... | 0 | 0 | 1 |
-| ✅ | [/research/](research/report.md) | 200 | Office of Research \| Washington Stat... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | College of Agricultural, Human, and N... | 3 | 22 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | About CAHNRS \| College of Agricultur... | 0 | 3 | 0 |
+| ❌ | [/academics/](academics/report.md) | 0 | Academics \| Washington State University | 0 | 9 | 0 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| College of Agricult... | 1 | 0 | 0 |
+| ❌ | [/extension/](extension/report.md) | 0 | WSU Extension \| Washington State Uni... | 0 | 12 | 0 |
+| ✅ | [/news/](news/report.md) | 200 | CAHNRS News \| Washington State Unive... | 0 | 12 | 0 |
+| ❌ | [/research/](research/report.md) | 0 | Office of Research \| Washington Stat... | 0 | 8 | 0 |
 
 ## Page Screenshots
 
@@ -62,6 +64,26 @@
 - **URL:** https://cahnrs.wsu.edu/
 - **Status:** 0
 
+### /about/
+
+- **URL:** https://cahnrs.wsu.edu/about/
+- **Status:** 0
+
+### /academics/
+
+- **URL:** https://cahnrs.wsu.edu/academics/
+- **Status:** 0
+
+### /research/
+
+- **URL:** https://cahnrs.wsu.edu/research/
+- **Status:** 0
+
+### /extension/
+
+- **URL:** https://cahnrs.wsu.edu/extension/
+- **Status:** 0
+
 ### /contact/
 
 - **URL:** https://cahnrs.wsu.edu/contact/
@@ -70,12 +92,8 @@
 
 ## Pages with JavaScript Errors
 
-### / (7 errors)
+### / (3 errors)
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`

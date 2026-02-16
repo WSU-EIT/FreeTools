@@ -5,13 +5,15 @@
 | URL | https://news.wsu.edu/stories/ |
 | Redirected To | https://news.wsu.edu/stories/#gsc.tab=0 |
 | Title | Page not found | WSU Insider | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 235.9 KB |
+| Status | ❌ 0 |
+| HTML Size | 224.4 KB |
 | Screenshots | 1 (140.4 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:49.2179402Z |
+| Captured | 2026-02-16T20:39:01.9163017Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (140.4 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

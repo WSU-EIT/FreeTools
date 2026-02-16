@@ -2,32 +2,30 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
 | Total JS Errors | 4 |
 | Total JS Warnings | 0 |
-| Total HTML | 112.2 KB |
-| Total Screenshots | 1.2 MB |
+| Total HTML | 54.7 KB |
+| Total Screenshots | 830.4 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `aapi-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | APIDA Student Center | 0 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/events/](events/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/programs/](programs/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ✅ | [/resources/](resources/report.md) | 200 | Resources | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/events/](events/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/programs/](programs/report.md) | 0 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Resources | 0 | 0 | 0 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
 
 ### [/about/](about/report.md)
 
@@ -52,6 +50,15 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://aapi.wsu.edu/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
+
 ### /about/
 
 - **URL:** https://aapi.wsu.edu/about/
@@ -60,12 +67,17 @@
 ### /programs/
 
 - **URL:** https://aapi.wsu.edu/programs/
-- **Status:** 404
+- **Status:** 0
 
 ### /events/
 
 - **URL:** https://aapi.wsu.edu/events/
 - **Status:** 404
+
+### /resources/
+
+- **URL:** https://aapi.wsu.edu/resources/
+- **Status:** 0
 
 ### /contact/
 

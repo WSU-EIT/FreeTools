@@ -3,31 +3,33 @@
   "Url": "https://payroll.wsu.edu/",
   "FinalUrl": null,
   "Title": "Payroll Services | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 76364,
-  "ScreenshotSizeBytes": 985688,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 69935,
+  "ScreenshotSizeBytes": 627010,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 985688
+      "FileSize": 627010
+    }
+  ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 304447,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "stadiumway-25.-bannerjpg.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3080/2018/02/stadiumway-25.-bannerjpg.jpg",
+      "AltText": "",
+      "FileSize": 304447
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "etag": "\u002248626ecb5ab76735590f3b9f60ce892a\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:22:41 GMT",
-    "link": "\u003Chttps://payroll.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://payroll.wsu.edu/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://payroll.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1389356Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.1363567Z"
 }

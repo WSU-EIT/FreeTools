@@ -4,22 +4,26 @@
 |-------|-------|
 | URL | https://hub.wsu.edu/ |
 | Title | WSU Hub | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 51.3 KB |
+| Status | ❌ 0 |
+| HTML Size | 44.2 KB |
 | Screenshots | 1 (53.2 KB) |
-| JS Errors | 2 |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 3 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:26.1303522Z |
+| Captured | 2026-02-16T20:37:05.1133131Z |
 
 ## JavaScript Errors
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
 - Screenshot #1: page-loaded (53.2 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +31,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

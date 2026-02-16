@@ -5,13 +5,15 @@
 | URL | https://ansci.wsu.edu/contact/ |
 | Redirected To | https://ansci.wsu.edu/contact/#gsc.tab=0 |
 | Title | Page not found | Animal Sciences | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 226.1 KB |
+| Status | ❌ 0 |
+| HTML Size | 226.2 KB |
 | Screenshots | 1 (88.0 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 2 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:22.0250984Z |
+| Captured | 2026-02-16T20:39:49.7175338Z |
 
 ## JavaScript Errors
 
@@ -21,6 +23,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (88.0 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -28,6 +31,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

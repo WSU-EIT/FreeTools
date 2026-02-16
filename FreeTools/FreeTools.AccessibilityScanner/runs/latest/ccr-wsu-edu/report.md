@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 5 |
-| Pages Failed | 1 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
 | Total JS Errors | 2 |
-| Total JS Warnings | 2 |
+| Total JS Warnings | 0 |
 | Total HTML | 1.3 MB |
-| Total Screenshots | 2.8 MB |
+| Total Screenshots | 2.4 MB |
+| Total Images | 10 (1.6 MB) |
+| Images Missing Alt | 0 |
 | Folder | `ccr-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Compliance and Civil Rights \| Washin... | 1 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Compliance and Civil Ri... | 0 | 0 | 1 |
-| ✅ | [/policies/](policies/report.md) | 200 | Policies & Procedures \| Compliance a... | 0 | 0 | 1 |
-| ✅ | [/reporting/](reporting/report.md) | 200 | File A Report or Complaint \| Complia... | 0 | 1 | 1 |
-| ✅ | [/resources/](resources/report.md) | 200 | Resources \| Compliance and Civil Rig... | 0 | 0 | 1 |
-| ❌ | [/training/](training/report.md) | 404 | Page not found \| Compliance and Civi... | 1 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Compliance and Civil Rights \| Washin... | 1 | 10 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Compliance and Civil Ri... | 0 | 0 | 0 |
+| ❌ | [/policies/](policies/report.md) | 0 | Policies & Procedures \| Compliance a... | 0 | 0 | 0 |
+| ❌ | [/reporting/](reporting/report.md) | 0 | File A Report or Complaint \| Complia... | 0 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Resources \| Compliance and Civil Rig... | 0 | 0 | 0 |
+| ❌ | [/training/](training/report.md) | 0 | Page not found \| Compliance and Civi... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,10 +54,35 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://ccr.wsu.edu/
+- **Status:** 0
+
+### /policies/
+
+- **URL:** https://ccr.wsu.edu/policies/
+- **Status:** 0
+
+### /reporting/
+
+- **URL:** https://ccr.wsu.edu/reporting/
+- **Status:** 0
+
+### /resources/
+
+- **URL:** https://ccr.wsu.edu/resources/
+- **Status:** 0
+
 ### /training/
 
 - **URL:** https://ccr.wsu.edu/training/
-- **Status:** 404
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://ccr.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors

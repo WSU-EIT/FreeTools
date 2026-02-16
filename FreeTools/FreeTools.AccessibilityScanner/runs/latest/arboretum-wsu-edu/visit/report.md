@@ -3,14 +3,17 @@
 | Field | Value |
 |-------|-------|
 | URL | https://arboretum.wsu.edu/visit/ |
+| Redirected To | about:blank |
 | Title |  |
-| Status | ❌ 403 |
+| Status | ❌ 0 |
 | HTML Size | 107 bytes |
 | Screenshots | 1 (8.9 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:38.8334838Z |
+| Captured | 2026-02-16T20:37:21.0069143Z |
 
 ## JavaScript Errors
 
@@ -19,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (8.9 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

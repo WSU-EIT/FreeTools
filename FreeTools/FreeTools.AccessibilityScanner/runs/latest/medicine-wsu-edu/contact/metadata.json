@@ -5,7 +5,7 @@
   "Title": "Page not found | Elson S. Floyd College of Medicine | Washington State University",
   "StatusCode": 404,
   "Success": false,
-  "HtmlSizeBytes": 234781,
+  "HtmlSizeBytes": 234683,
   "ScreenshotSizeBytes": 120051,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -18,14 +18,25 @@
       "FileSize": 120051
     }
   ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 29602,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "WSUMED-10-year-anniversary-wordmark_H-color-792x396.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-medicine/uploads/sites/3137/2025/02/WSUMED-10-year-anniversary-wordmark_H-color-792x396.png",
+      "AltText": "10 year anniversary logo",
+      "FileSize": 29602
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "cache-control": "no-cache, must-revalidate, max-age=0",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:27 GMT",
+    "date": "Mon, 16 Feb 2026 20:40:02 GMT",
     "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
     "link": "\u003Chttps://medicine.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
     "server": "nginx"
   },
-  "CapturedAt": "2026-02-16T20:14:26.251566Z"
+  "CapturedAt": "2026-02-16T20:40:02.1608138Z"
 }

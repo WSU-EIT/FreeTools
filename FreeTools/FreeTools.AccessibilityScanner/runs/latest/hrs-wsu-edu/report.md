@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/6 pages OK |
+| Status | ⚠️ 1/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 5 |
-| Pages Failed | 1 |
-| Total JS Errors | 2 |
+| Pages Passed | 1 |
+| Pages Failed | 5 |
+| Total JS Errors | 3 |
 | Total JS Warnings | 0 |
-| Total HTML | 550.5 KB |
-| Total Screenshots | 4.5 MB |
+| Total HTML | 531.2 KB |
+| Total Screenshots | 4.3 MB |
+| Total Images | 23 (2.2 MB) |
+| Images Missing Alt | 14 |
 | Folder | `hrs-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Human Resource Services, Washington S... | 1 | 0 | 1 |
-| ✅ | [/benefits/](benefits/report.md) | 200 | Benefits – Human Resource Services, W... | 0 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact HRS – Human Resource Services... | 0 | 0 | 1 |
-| ❌ | [/employment/](employment/report.md) | 404 | Page not found – Human Resource Servi... | 1 | 0 | 1 |
-| ✅ | [/policies/](policies/report.md) | 200 | Policies and Resources – Human Resour... | 0 | 0 | 1 |
-| ✅ | [/training/](training/report.md) | 200 | Learning & Organizational Development... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Human Resource Services, Washington S... | 2 | 4 | 3 |
+| ❌ | [/benefits/](benefits/report.md) | 0 | Benefits – Human Resource Services, W... | 0 | 10 | 3 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact HRS – Human Resource Services... | 0 | 2 | 2 |
+| ❌ | [/employment/](employment/report.md) | 0 | Page not found – Human Resource Servi... | 1 | 0 | 0 |
+| ❌ | [/policies/](policies/report.md) | 0 | Policies and Resources – Human Resour... | 0 | 0 | 0 |
+| ❌ | [/training/](training/report.md) | 0 | Learning & Organizational Development... | 0 | 7 | 6 |
 
 ## Page Screenshots
 
@@ -52,17 +54,38 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://hrs.wsu.edu/
+- **Status:** 0
+
 ### /employment/
 
 - **URL:** https://hrs.wsu.edu/employment/
-- **Status:** 404
+- **Status:** 0
+
+### /benefits/
+
+- **URL:** https://hrs.wsu.edu/benefits/
+- **Status:** 0
+
+### /policies/
+
+- **URL:** https://hrs.wsu.edu/policies/
+- **Status:** 0
+
+### /training/
+
+- **URL:** https://hrs.wsu.edu/training/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### / (2 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_CONNECTION_TIMED_OUT`
 
 ### /employment/ (1 errors)
 

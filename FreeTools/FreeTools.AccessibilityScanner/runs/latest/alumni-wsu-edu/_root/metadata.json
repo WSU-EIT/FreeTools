@@ -3,45 +3,87 @@
   "Url": "https://alumni.wsu.edu/",
   "FinalUrl": "https://alumni.wsu.edu/s/1613/18/home.aspx?gid=2\u0026pgid=61",
   "Title": "Washington State University Alumni Association - Home",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 113137,
-  "ScreenshotSizeBytes": 906991,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 112667,
+  "ScreenshotSizeBytes": 221877,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 906991
+      "FileSize": 221877
+    }
+  ],
+  "ImageCount": 10,
+  "ImagesTotalSizeBytes": 966116,
+  "ImagesMissingAlt": 6,
+  "Images": [
+    {
+      "FileName": "Horizontal_WSUAA-only_crimson.png",
+      "SourceUrl": "https://alumni.wsu.edu/s/1613/18/images/Horizontal_WSUAA-only_crimson.png",
+      "AltText": "Home",
+      "FileSize": 13293
+    },
+    {
+      "FileName": "logo-print.jpg",
+      "SourceUrl": "https://alumni.wsu.edu/s/1613/18/images/logo-print.jpg",
+      "AltText": "Print Logo",
+      "FileSize": 6141
+    },
+    {
+      "FileName": "flash-sale-2022-1080x1080_instagram.png",
+      "SourceUrl": "https://alumni.wsu.edu/s/1613/images/gid2/editor/mbr_membership/membersonly/november2022/flash-sale-2022-1080x1080_instagram.png",
+      "AltText": "",
+      "FileSize": 700658
+    },
+    {
+      "FileName": "calendar_ical_icon.png",
+      "SourceUrl": "https://alumni.wsu.edu/images/icons/v2/common/calendar_ical_icon.png",
+      "AltText": "Add Paint, Pinball, Pizza, and Pints to calendar",
+      "FileSize": 147
+    },
+    {
+      "FileName": "get_your_bottle_of_cxii_9.2025_400x215-01.png",
+      "SourceUrl": "https://alumni.wsu.edu/s/1613/images/gid2/editor/mkt_marketing/get_your_bottle_of_cxii_9.2025_400x215-01.png",
+      "AltText": "",
+      "FileSize": 165622
+    },
+    {
+      "FileName": "BECU_200x100_638717857911505211.png",
+      "SourceUrl": "https://alumni.wsu.edu/s/1613/images/content_images/BECU_200x100_638717857911505211.png",
+      "AltText": "",
+      "FileSize": 1624
+    },
+    {
+      "FileName": "Farmers_Insurance_200x95_638548474148661799.png",
+      "SourceUrl": "https://alumni.wsu.edu/s/1613/images/content_images/Farmers_Insurance_200x95_638548474148661799.png",
+      "AltText": "",
+      "FileSize": 17236
+    },
+    {
+      "FileName": "AIP_3_636669129348766890.png",
+      "SourceUrl": "https://alumni.wsu.edu/s/1613/images/content_images/AIP_3_636669129348766890.png",
+      "AltText": "",
+      "FileSize": 38642
+    },
+    {
+      "FileName": "Travel_636691669645664065.jpg",
+      "SourceUrl": "https://alumni.wsu.edu/s/1613/images/content_images/Travel_636691669645664065.jpg",
+      "AltText": "",
+      "FileSize": 9460
+    },
+    {
+      "FileName": "Horizontal_WSUAA-only_white.png",
+      "SourceUrl": "https://alumni.wsu.edu/s/1613/18/images/Horizontal_WSUAA-only_white.png",
+      "AltText": "Footer Logo",
+      "FileSize": 13293
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "access-control-expose-headers": "Request-Context",
-    "cache-control": "no-cache, no-store",
-    "cf-cache-status": "DYNAMIC",
-    "cf-ray": "9cefb0618a07c70a-SEA",
-    "content-encoding": "gzip",
-    "content-length": "26119",
-    "content-security-policy": "frame-ancestors \u0027self\u0027 imodules.com default-src \u0027self\u0027",
-    "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:10:42 GMT",
-    "expires": "-1",
-    "pragma": "no-cache",
-    "request-context": "appId=cid-v1:260dcd14-1564-44b4-b5c5-7abfe7739f73",
-    "server": "cloudflare",
-    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
-    "vary": "Accept-Encoding",
-    "x-aspnet-version": "4.0.30319",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "SAMEORIGIN",
-    "x-powered-by": "ASP.NET",
-    "x-server": "uswebgreen05",
-    "x-stackifyid": "V2|9e9f8327-4df3-4a58-a6e5-fb675ee130cf|C0|CD0",
-    "x-xss-protection": "1; mode=block"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1022541Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:04.9807837Z"
 }

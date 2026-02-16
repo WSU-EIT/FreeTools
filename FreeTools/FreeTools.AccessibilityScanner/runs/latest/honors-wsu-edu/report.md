@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/7 pages OK |
+| Status | ⚠️ 0/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 2 |
-| Pages Failed | 5 |
+| Pages Passed | 0 |
+| Pages Failed | 7 |
 | Total JS Errors | 16 |
 | Total JS Warnings | 1 |
-| Total HTML | 433.3 KB |
-| Total Screenshots | 2.8 MB |
+| Total HTML | 366.2 KB |
+| Total Screenshots | 1.8 MB |
+| Total Images | 13 (232.3 KB) |
+| Images Missing Alt | 13 |
 | Folder | `honors-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | The Honors College \| Washington Stat... | 1 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | Why Honors \| The Honors College \| W... | 2 | 0 | 1 |
-| ❌ | [/admissions/](admissions/report.md) | 404 | Page not found \| The Honors College ... | 3 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| The Honors College ... | 3 | 0 | 1 |
-| ❌ | [/current-students/](current-students/report.md) | 404 | Page not found \| The Honors College ... | 3 | 0 | 1 |
-| ❌ | [/faculty/](faculty/report.md) | 405 | Human Verification | 1 | 1 | 1 |
-| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| The Honors College ... | 3 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | The Honors College \| Washington Stat... | 1 | 12 | 12 |
+| ❌ | [/about/](about/report.md) | 0 | Why Honors \| The Honors College \| W... | 2 | 1 | 1 |
+| ❌ | [/admissions/](admissions/report.md) | 0 | Page not found \| The Honors College ... | 3 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| The Honors College ... | 3 | 0 | 0 |
+| ❌ | [/current-students/](current-students/report.md) | 0 | Page not found \| The Honors College ... | 3 | 0 | 0 |
+| ❌ | [/faculty/](faculty/report.md) | 0 | Human Verification | 1 | 0 | 0 |
+| ❌ | [/programs/](programs/report.md) | 0 | Page not found \| The Honors College ... | 3 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -57,30 +59,40 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://honors.wsu.edu/
+- **Status:** 0
+
+### /about/
+
+- **URL:** https://honors.wsu.edu/about/
+- **Status:** 0
+
 ### /admissions/
 
 - **URL:** https://honors.wsu.edu/admissions/
-- **Status:** 404
+- **Status:** 0
 
 ### /programs/
 
 - **URL:** https://honors.wsu.edu/programs/
-- **Status:** 404
+- **Status:** 0
 
 ### /current-students/
 
 - **URL:** https://honors.wsu.edu/current-students/
-- **Status:** 404
+- **Status:** 0
 
 ### /faculty/
 
 - **URL:** https://honors.wsu.edu/faculty/
-- **Status:** 405
+- **Status:** 0
 
 ### /contact/
 
 - **URL:** https://honors.wsu.edu/contact/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors

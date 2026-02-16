@@ -5,17 +5,20 @@
 | URL | https://ace.wsu.edu/assessment/ |
 | Redirected To | https://ace.wsu.edu/assessment-archives/ |
 | Title | Assessment Archives | Office of Assessment for Curricular Effectiveness | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 83.3 KB |
+| Status | ❌ 0 |
+| HTML Size | 75.7 KB |
 | Screenshots | 1 (401.1 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:30.0819822Z |
+| Captured | 2026-02-16T20:37:43.0507832Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (401.1 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -23,6 +26,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

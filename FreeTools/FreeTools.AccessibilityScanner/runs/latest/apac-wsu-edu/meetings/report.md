@@ -5,13 +5,15 @@
 | URL | https://apac.wsu.edu/meetings/ |
 | Redirected To | https://apac.wsu.edu/meetings-and-events/ |
 | Title | Meetings and Events | Administrative Professional Advisory Council | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 65.2 KB |
-| Screenshots | 1 (260.9 KB) |
+| Status | ❌ 0 |
+| HTML Size | 47.8 KB |
+| Screenshots | 1 (261.1 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 3 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:14.2310183Z |
+| Captured | 2026-02-16T20:38:24.0794354Z |
 
 ## JavaScript Errors
 
@@ -21,7 +23,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (260.9 KB)
+- Screenshot #1: page-loaded (261.1 KB)
+- Downloaded 0 images to /images/
 
 ## Screenshots
 
@@ -30,9 +33,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (260.9 KB)
+- `01-page-loaded.png` — page-loaded (261.1 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

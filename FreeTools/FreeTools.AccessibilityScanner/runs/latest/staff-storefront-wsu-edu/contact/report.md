@@ -7,14 +7,17 @@
 | Status | ✅ 200 |
 | HTML Size | 18.9 KB |
 | Screenshots | 1 (71.2 KB) |
+| Images | 2 (6.8 KB) |
+| Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:18.6645671Z |
+| Captured | 2026-02-16T20:39:33.4645892Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (71.2 KB)
+- Downloaded 2 images to /images/
 
 ## Screenshots
 
@@ -22,6 +25,24 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (2)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [_.gif](images/_.gif) | *(none)* | 43 bytes |
+| 2 | [footer_logo_new_21.svg](images/footer_logo_new_21.svg) | Washington State University logo. | 6.8 KB |
+
+### Gallery
+
+![_.gif](images/_.gif)
+
+![Washington State University logo.](images/footer_logo_new_21.svg)
+
+
+### ⚠️ Images Missing Alt Text (1)
+
+- `_.gif` — https://staff.storefront.wsu.edu/img/shared/_.gif
 
 ## Files
 
@@ -32,3 +53,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 2 page images (6.8 KB)

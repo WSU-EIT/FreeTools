@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://events.wsu.edu/categories/ |
 | Title | Page not found | Events | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 56.3 KB |
+| Status | ❌ 0 |
+| HTML Size | 45.7 KB |
 | Screenshots | 1 (48.0 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 4 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:38.2387018Z |
+| Captured | 2026-02-16T20:38:35.5648898Z |
 
 ## JavaScript Errors
 
@@ -22,6 +24,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (48.0 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -29,6 +32,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

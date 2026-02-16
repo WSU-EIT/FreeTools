@@ -5,13 +5,15 @@
 | URL | https://education.wsu.edu/graduate/ |
 | Redirected To | https://ceshs.wsu.edu/graduate/ |
 | Title | Office of Graduate Education | College of Education, Sport, and Human Sciences | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 230.1 KB |
-| Screenshots | 1 (1.9 MB) |
+| Status | ❌ 0 |
+| HTML Size | 223.7 KB |
+| Screenshots | 1 (1.2 MB) |
+| Images | 1 (44.5 KB) |
+| Images Missing Alt | 1 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:12.0732059Z |
+| Captured | 2026-02-16T20:39:26.3476883Z |
 
 ## JavaScript Errors
 
@@ -19,7 +21,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.9 MB)
+- Screenshot #1: page-loaded (1.2 MB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -28,12 +31,28 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [Kelly-McGovern-396x285.jpg](images/Kelly-McGovern-396x285.jpg) | *(none)* | 44.5 KB |
+
+### Gallery
+
+![Kelly-McGovern-396x285.jpg](images/Kelly-McGovern-396x285.jpg)
+
+
+### ⚠️ Images Missing Alt Text (1)
+
+- `Kelly-McGovern-396x285.jpg` — https://s3.wp.wsu.edu/uploads/sites/908/2018/06/Kelly-McGovern-396x285.jpg
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.9 MB)
+- `01-page-loaded.png` — page-loaded (1.2 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (44.5 KB)

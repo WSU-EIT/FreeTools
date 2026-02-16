@@ -4,17 +4,20 @@
 |-------|-------|
 | URL | https://aapi.wsu.edu/resources/ |
 | Title | Resources |
-| Status | ✅ 200 |
+| Status | ❌ 0 |
 | HTML Size | 51.4 KB |
 | Screenshots | 1 (214.6 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:05.8138432Z |
+| Captured | 2026-02-16T20:38:49.8364731Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (214.6 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -22,6 +25,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

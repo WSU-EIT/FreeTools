@@ -5,13 +5,15 @@
 | URL | https://nursing.wsu.edu/contact/ |
 | Redirected To | https://nursing.wsu.edu/contact/#gsc.tab=0 |
 | Title | Page not found | College of Nursing | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 252.4 KB |
+| Status | ❌ 0 |
+| HTML Size | 243.6 KB |
 | Screenshots | 1 (184.0 KB) |
+| Images | 1 (10.5 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 4 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:42.6238008Z |
+| Captured | 2026-02-16T20:39:32.8440740Z |
 
 ## JavaScript Errors
 
@@ -23,12 +25,24 @@
 ## Actions
 
 - Screenshot #1: page-loaded (184.0 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
 ### 1. page-loaded
 
 ![page-loaded](01-page-loaded.png)
+
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [SEA-to-GEG-e1697567786392.png](images/SEA-to-GEG-e1697567786392.png) | Seattle to Spokane skyline silhouette | 10.5 KB |
+
+### Gallery
+
+![Seattle to Spokane skyline silhouette](images/SEA-to-GEG-e1697567786392.png)
 
 
 ## Files
@@ -40,3 +54,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (10.5 KB)

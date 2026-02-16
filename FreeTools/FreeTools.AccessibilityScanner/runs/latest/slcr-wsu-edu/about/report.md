@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://slcr.wsu.edu/about/ |
 | Title | Page not found | School of Languages, Cultures, and Race | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 63.9 KB |
+| Status | ❌ 0 |
+| HTML Size | 46.7 KB |
 | Screenshots | 1 (60.2 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:54.2795355Z |
+| Captured | 2026-02-16T20:38:00.4707229Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (60.2 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

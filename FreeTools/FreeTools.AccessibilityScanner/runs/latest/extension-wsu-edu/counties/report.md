@@ -3,15 +3,16 @@
 | Field | Value |
 |-------|-------|
 | URL | https://extension.wsu.edu/counties/ |
-| Redirected To | https://extension.wsu.edu/counties/#gsc.tab=0 |
 | Title | Page not found | WSU Extension | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 229.8 KB |
-| Screenshots | 1 (130.0 KB) |
+| Status | ❌ 0 |
+| HTML Size | 217.5 KB |
+| Screenshots | 1 (124.9 KB) |
+| Images | 1 (165.0 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:37.7528370Z |
+| Captured | 2026-02-16T20:38:41.6437018Z |
 
 ## JavaScript Errors
 
@@ -19,7 +20,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (130.0 KB)
+- Screenshot #1: page-loaded (124.9 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -28,12 +30,24 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [researchers-flying-drone-over-orchard-1024x676.jpg](images/researchers-flying-drone-over-orchard-1024x676.jpg) | Drone users at orchard- WSU Photo | 165.0 KB |
+
+### Gallery
+
+![Drone users at orchard- WSU Photo](images/researchers-flying-drone-over-orchard-1024x676.jpg)
+
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (130.0 KB)
+- `01-page-loaded.png` — page-loaded (124.9 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (165.0 KB)

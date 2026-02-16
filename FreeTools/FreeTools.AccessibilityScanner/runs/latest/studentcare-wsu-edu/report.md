@@ -2,31 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/5 pages OK |
+| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 1 |
-| Pages Failed | 4 |
+| Pages Passed | 0 |
+| Pages Failed | 5 |
 | Total JS Errors | 4 |
 | Total JS Warnings | 0 |
-| Total HTML | 48.3 KB |
-| Total Screenshots | 859.0 KB |
+| Total HTML | 3.3 KB |
+| Total Screenshots | 615.8 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `studentcare-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 |  | 0 | 0 | 1 |
-| ❌ | [/for-faculty-staff/](for-faculty-staff/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/resources/](resources/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/services/](services/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/submit-concern/](submit-concern/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/for-faculty-staff/](for-faculty-staff/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/services/](services/report.md) | 0 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/submit-concern/](submit-concern/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
 
 ### [/for-faculty-staff/](for-faculty-staff/report.md)
 
@@ -47,10 +45,20 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://studentcare.wsu.edu/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded`
+
 ### /services/
 
 - **URL:** https://studentcare.wsu.edu/services/
-- **Status:** 404
+- **Status:** 0
 
 ### /resources/
 

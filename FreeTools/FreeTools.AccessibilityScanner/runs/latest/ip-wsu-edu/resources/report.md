@@ -5,13 +5,15 @@
 | URL | https://ip.wsu.edu/resources/ |
 | Redirected To | https://ip.wsu.edu/isss/studentservices/resources/ |
 | Title | Resources | WSU International | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 275.8 KB |
-| Screenshots | 1 (1.1 MB) |
+| Status | ❌ 0 |
+| HTML Size | 268.5 KB |
+| Screenshots | 1 (705.6 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:48.2787615Z |
+| Captured | 2026-02-16T20:39:19.5110508Z |
 
 ## JavaScript Errors
 
@@ -19,7 +21,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.1 MB)
+- Screenshot #1: page-loaded (705.6 KB)
+- Downloaded 0 images to /images/
 
 ## Screenshots
 
@@ -28,9 +31,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.1 MB)
+- `01-page-loaded.png` — page-loaded (705.6 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

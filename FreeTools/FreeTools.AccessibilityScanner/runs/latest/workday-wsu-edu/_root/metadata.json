@@ -3,39 +3,33 @@
   "Url": "https://workday.wsu.edu/",
   "FinalUrl": "https://login.wsu.edu/app/workday/exk8wk0d1s55s30dD2p7/sso/saml",
   "Title": "WSU | Bad request.",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 138148,
-  "ScreenshotSizeBytes": 45187,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 140578,
+  "ScreenshotSizeBytes": 38449,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 8,
+  "ConsoleErrorCount": 9,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 45187
+      "FileSize": 38449
+    }
+  ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 7853,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "fs015xh0tygNgGVxX2p8.img",
+      "SourceUrl": "https://ok6static2.oktacdn.com/fs/bco/1/fs015xh0tygNgGVxX2p8",
+      "AltText": "WSU logo",
+      "FileSize": 7853
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "alt-svc": "h3=\u0022:443\u0022; ma=86400",
-    "cf-cache-status": "DYNAMIC",
-    "cf-ray": "9cefb05bbaa6e574-SEA",
-    "content-encoding": "gzip",
-    "content-language": "en-US",
-    "content-security-policy-report-only": "script-src \u0027none\u0027; connect-src \u0027none\u0027; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=Ef0SBDEfPImeIAMIeT8OeWe6lBfKkoXZA1WD.8xgnW8-1771272631-1.0.1.1-D1FhBOyEIgYg7HyOky0a99gWT6NNZq1ZT_2IZe9l3ul2MRua.UJmEcMbCUkWCj00gNZmo7N__wbUe5pWfj6YrzhnJUKYjcjNDQ47g2ZXix6Be4HDINe9C599Gvd9y_VyCiASRQF88yiGEz_tApDc9kHahPrEGy8VhxdCNJ3sxUbYIZ5XA1RtdEdP_rhfUVaARlQNSrOOx3gTojlePszGMg; report-to cf-ynhhrpxaymsfgtvt",
-    "content-type": "text/html;charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:31 GMT",
-    "nel": "{\u0022success_fraction\u0022:0.01,\u0022report_to\u0022:\u0022cf-nel\u0022,\u0022max_age\u0022:604800}",
-    "report-to": "{\u0022endpoints\u0022:[{\u0022url\u0022:\u0022https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=25j8klfAngdws4Ds3pbAoijIcCo1QayP%2BGyVSoUpiYZ%2F%2FgTUqaUmgcXh4YvHLyShS1VP0xswmbNknuegG%2F90iaGOwEfh0hwy2pBqBiJsXlCCVyJloGuUx0sXsGW%2BG82EIa%2F2\u0022}],\u0022group\u0022:\u0022cf-nel\u0022,\u0022max_age\u0022:604800}\n{\u0022endpoints\u0022:[{\u0022url\u0022:\u0022https:\\/\\/csp-reporting.cloudflare.com\\/cdn-cgi\\/script_monitor\\/report?m=Ef0SBDEfPImeIAMIeT8OeWe6lBfKkoXZA1WD.8xgnW8-1771272631-1.0.1.1-D1FhBOyEIgYg7HyOky0a99gWT6NNZq1ZT_2IZe9l3ul2MRua.UJmEcMbCUkWCj00gNZmo7N__wbUe5pWfj6YrzhnJUKYjcjNDQ47g2ZXix6Be4HDINe9C599Gvd9y_VyCiASRQF88yiGEz_tApDc9kHahPrEGy8VhxdCNJ3sxUbYIZ5XA1RtdEdP_rhfUVaARlQNSrOOx3gTojlePszGMg\u0022}],\u0022group\u0022:\u0022cf-ynhhrpxaymsfgtvt\u0022,\u0022max_age\u0022:86400}",
-    "server": "cloudflare",
-    "strict-transport-security": "max-age=31536000; includeSubDomains",
-    "vary": "accept-encoding",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "SAMEORIGIN",
-    "x-robots-tag": "noindex, nofollow"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1299313Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.1340811Z"
 }

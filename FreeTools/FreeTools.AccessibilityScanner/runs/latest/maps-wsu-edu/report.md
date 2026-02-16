@@ -2,32 +2,30 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
-| Total JS Errors | 6 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 4 |
 | Total JS Warnings | 0 |
-| Total HTML | 223.8 KB |
-| Total Screenshots | 1.0 MB |
+| Total HTML | 142.8 KB |
+| Total Screenshots | 282.2 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `maps-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | WSU Maps \| Washington State University | 1 | 0 | 1 |
-| ❌ | [/everett/](everett/report.md) | 404 | Page not found \| WSU Maps \| Washing... | 1 | 0 | 1 |
-| ✅ | [/pullman/](pullman/report.md) | 200 | Pullman Campus \| WSU Maps \| Washing... | 1 | 0 | 1 |
-| ❌ | [/spokane/](spokane/report.md) | 404 | Page not found \| WSU Maps \| Washing... | 1 | 0 | 1 |
-| ❌ | [/tricities/](tricities/report.md) | 404 | Page not found \| WSU Maps \| Washing... | 1 | 0 | 1 |
-| ❌ | [/vancouver/](vancouver/report.md) | 404 | Page not found \| WSU Maps \| Washing... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/everett/](everett/report.md) | 0 | Page not found \| WSU Maps \| Washing... | 1 | 0 | 0 |
+| ❌ | [/pullman/](pullman/report.md) | 0 | Pullman Campus \| WSU Maps \| Washing... | 0 | 0 | 0 |
+| ❌ | [/spokane/](spokane/report.md) | 0 | Page not found \| WSU Maps \| Washing... | 1 | 0 | 0 |
+| ❌ | [/tricities/](tricities/report.md) | 0 | Page not found \| WSU Maps \| Washing... | 1 | 0 | 0 |
+| ❌ | [/vancouver/](vancouver/report.md) | 0 | Page not found \| WSU Maps \| Washing... | 1 | 0 | 0 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
 
 ### [/everett/](everett/report.md)
 
@@ -52,36 +50,43 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://maps.wsu.edu/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded`
+
+### /pullman/
+
+- **URL:** https://maps.wsu.edu/pullman/
+- **Status:** 0
+
 ### /spokane/
 
 - **URL:** https://maps.wsu.edu/spokane/
-- **Status:** 404
+- **Status:** 0
 
 ### /tricities/
 
 - **URL:** https://maps.wsu.edu/tricities/
-- **Status:** 404
+- **Status:** 0
 
 ### /vancouver/
 
 - **URL:** https://maps.wsu.edu/vancouver/
-- **Status:** 404
+- **Status:** 0
 
 ### /everett/
 
 - **URL:** https://maps.wsu.edu/everett/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### /pullman/ (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /spokane/ (1 errors)
 

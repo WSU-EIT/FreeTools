@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://atg.wsu.edu/ |
 | Title | Office of the Attorney General | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 54.3 KB |
+| Status | ❌ 0 |
+| HTML Size | 48.4 KB |
 | Screenshots | 1 (52.4 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:26.1117462Z |
+| Captured | 2026-02-16T20:37:05.0067798Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (52.4 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

@@ -18,10 +18,14 @@
       "FileSize": 9095
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
   "Headers": {
     "cache-control": "no-cache",
     "content-type": "text/html"
   },
-  "CapturedAt": "2026-02-16T20:10:44.2381507Z"
+  "CapturedAt": "2026-02-16T20:38:00.2628647Z"
 }

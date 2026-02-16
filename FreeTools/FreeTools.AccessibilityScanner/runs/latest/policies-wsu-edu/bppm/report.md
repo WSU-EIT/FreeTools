@@ -3,14 +3,17 @@
 | Field | Value |
 |-------|-------|
 | URL | https://policies.wsu.edu/bppm/ |
+| Redirected To | about:blank |
 | Title | Page not found | Washington State University Policies | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 55.8 KB |
-| Screenshots | 1 (92.0 KB) |
+| Status | ❌ 0 |
+| HTML Size | 45.9 KB |
+| Screenshots | 1 (94.0 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:16.9581043Z |
+| Captured | 2026-02-16T20:38:35.5523963Z |
 
 ## JavaScript Errors
 
@@ -18,7 +21,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (92.0 KB)
+- Screenshot #1: page-loaded (94.0 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,9 +31,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (92.0 KB)
+- `01-page-loaded.png` — page-loaded (94.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

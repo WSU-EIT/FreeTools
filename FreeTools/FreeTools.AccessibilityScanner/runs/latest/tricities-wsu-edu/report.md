@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 6/7 pages OK |
+| Status | ⚠️ 4/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 6 |
-| Pages Failed | 1 |
-| Total JS Errors | 1 |
-| Total JS Warnings | 12 |
-| Total HTML | 923.6 KB |
-| Total Screenshots | 8.1 MB |
+| Pages Passed | 4 |
+| Pages Failed | 3 |
+| Total JS Errors | 9 |
+| Total JS Warnings | 13 |
+| Total HTML | 895.3 KB |
+| Total Screenshots | 6.3 MB |
+| Total Images | 66 (3.4 MB) |
+| Images Missing Alt | 19 |
 | Folder | `tricities-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Tri-Cities - apply now to earn yo... | 0 | 1 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About WSU Tri-Cities - WSU Tri-Cities | 0 | 4 | 1 |
-| ✅ | [/academics/](academics/report.md) | 200 | Academics \| WSU Tri-Cities | 0 | 1 | 1 |
-| ✅ | [/admissions/](admissions/report.md) | 200 | Admissions \| WSU Tri-Cities | 0 | 3 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us - WSU Tri-Cities | 1 | 2 | 1 |
-| ✅ | [/library/](library/report.md) | 200 | WSU Tri-Cities Library | 0 | 1 | 1 |
-| ✅ | [/student-services/](student-services/report.md) | 200 | Student-Services.png (1680×700) | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Tri-Cities - apply now to earn yo... | 9 | 21 | 9 |
+| ❌ | [/about/](about/report.md) | 0 | About WSU Tri-Cities - WSU Tri-Cities | 0 | 16 | 9 |
+| ❌ | [/academics/](academics/report.md) | 0 | Academics \| WSU Tri-Cities | 0 | 6 | 0 |
+| ✅ | [/admissions/](admissions/report.md) | 200 | Admissions \| WSU Tri-Cities | 0 | 12 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us - WSU Tri-Cities | 0 | 5 | 0 |
+| ✅ | [/library/](library/report.md) | 200 | WSU Tri-Cities Library | 0 | 5 | 0 |
+| ✅ | [/student-services/](student-services/report.md) | 200 | Student-Services.png (1680×700) | 0 | 1 | 1 |
 
 ## Page Screenshots
 
@@ -62,12 +64,30 @@
 - **URL:** https://tricities.wsu.edu/
 - **Status:** 0
 
+### /about/
+
+- **URL:** https://tricities.wsu.edu/about/
+- **Status:** 0
+
+### /academics/
+
+- **URL:** https://tricities.wsu.edu/academics/
+- **Status:** 0
+
 
 ## Pages with JavaScript Errors
 
-### /contact/ (1 errors)
+### / (9 errors)
 
-- `Failed to load resource: net::ERR_CONNECTION_FAILED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 
 
 ---

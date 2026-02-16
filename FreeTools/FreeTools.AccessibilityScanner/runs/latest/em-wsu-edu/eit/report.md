@@ -5,21 +5,19 @@
 | URL | https://em.wsu.edu/eit/ |
 | Title | Enrollment IT |
 | Status | ❌ 0 |
-| HTML Size | 634.3 KB |
-| Screenshots | 1 (170.0 KB) |
-| JS Errors | 2 |
-| JS Warnings | 1 |
+| HTML Size | 625.4 KB |
+| Screenshots | 1 (170.8 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 0 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:45.5121218Z |
-
-## JavaScript Errors
-
-- `Access to XMLHttpRequest at 'https://api.oneorigin.us/p-cs/ref?required=y' from origin 'https://em.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
-- `Failed to load resource: net::ERR_FAILED`
+| Captured | 2026-02-16T20:38:00.2625579Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (170.0 KB)
+- Screenshot #1: page-loaded (170.8 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -28,9 +26,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (170.0 KB)
+- `01-page-loaded.png` — page-loaded (170.8 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

@@ -3,9 +3,9 @@
   "Url": "https://afw.wsu.edu/resources/",
   "FinalUrl": null,
   "Title": "Resources | Association for Faculty Women | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 58217,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 48702,
   "ScreenshotSizeBytes": 72060,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,19 +18,11 @@
       "FileSize": 72060
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:35 GMT",
-    "etag": "\u0022779c103cafac317ee009717dbc8a55b2\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:12:35 GMT",
-    "link": "\u003Chttps://afw.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://afw.wsu.edu/wp-json/wp/v2/pages/12\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://afw.wsu.edu/?p=12\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://afw.wsu.edu",
-    "x-tec-api-root": "https://afw.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:12:32.8333146Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:38.310048Z"
 }

@@ -5,7 +5,7 @@
   "Title": "How to change your password | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 240817,
+  "HtmlSizeBytes": 240369,
   "ScreenshotSizeBytes": 175824,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,16 +18,27 @@
       "FileSize": 175824
     }
   ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 18228,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "keyboard-396x110.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/1056/2015/10/keyboard-396x110.jpg",
+      "AltText": "keyboard",
+      "FileSize": 18228
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:15:15 GMT",
+    "date": "Mon, 16 Feb 2026 20:40:45 GMT",
     "etag": "\u002259e7d72900ad5e6eb9e162d920899493\u0022",
     "last-modified": "Mon, 16 Feb 2026 19:53:18 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/500\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=500\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-16T20:15:15.3705299Z"
+  "CapturedAt": "2026-02-16T20:40:45.0891119Z"
 }

@@ -5,13 +5,15 @@
 | URL | https://degrees.wsu.edu/graduate/ |
 | Redirected To | https://degrees.wsu.edu/graduate/#gsc.tab=0 |
 | Title | Page not found | Degree Finder | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 210.9 KB |
+| Status | ❌ 0 |
+| HTML Size | 202.1 KB |
 | Screenshots | 1 (51.2 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:00.8990384Z |
+| Captured | 2026-02-16T20:38:31.7986893Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (51.2 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

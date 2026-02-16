@@ -5,20 +5,103 @@
   "Title": "Elson S. Floyd College of Medicine | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 252506,
-  "ScreenshotSizeBytes": 3606605,
+  "HtmlSizeBytes": 233869,
+  "ScreenshotSizeBytes": 2239703,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 3,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 3606605
+      "FileSize": 2239703
+    }
+  ],
+  "ImageCount": 13,
+  "ImagesTotalSizeBytes": 1531574,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "WSUMED-10-year-anniversary-wordmark_H-color-792x396.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-medicine/uploads/sites/3137/2025/02/WSUMED-10-year-anniversary-wordmark_H-color-792x396.png",
+      "AltText": "10 year anniversary logo",
+      "FileSize": 29602
+    },
+    {
+      "FileName": "WSUMED-VCC-Surgery.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-medicine/uploads/sites/3137/2023/06/WSUMED-VCC-Surgery.jpg",
+      "AltText": "Surgery teaching in virtual clinic center",
+      "FileSize": 279593
+    },
+    {
+      "FileName": "Research.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-medicine/uploads/sites/3137/2026/02/Research.jpg",
+      "AltText": "Two researchers reviewing monitors.",
+      "FileSize": 250459
+    },
+    {
+      "FileName": "WSU-Health2.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-medicine/uploads/sites/3137/2026/02/WSU-Health2.jpg",
+      "AltText": "Doctor checking the heart rate of a patient.",
+      "FileSize": 189092
+    },
+    {
+      "FileName": "Cell-792x520.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-medicine/uploads/sites/3023/2026/02/Cell-792x520.jpg",
+      "AltText": "A microscopic image of tissue stained pink and purple, showing multiple circular and oval structures with dense cell patterns. One of the structures near the right side of the image is outlined with a light blue box, highlighting a specific tubule or cell cluster. The surrounding area contains tightly packed cells with visible internal textures and a lighter, irregularly shaped region at the lower center.",
+      "FileSize": 130870
+    },
+    {
+      "FileName": "Jeff-Haney--792x520.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-medicine/uploads/sites/3023/2026/01/Jeff-Haney--792x520.jpg",
+      "AltText": "A small group of people stand outdoors in a sunny, tree\u2011filled area, engaged in conversation. One person in the center wears a blue button\u2011down shirt with a name badge, while the others form a semicircle around him. Bright green foliage and a striped umbrella appear in the background, suggesting a casual or social event.",
+      "FileSize": 97628
+    },
+    {
+      "FileName": "Student-Hand--792x520.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-medicine/uploads/sites/3023/2026/01/Student-Hand--792x520.jpg",
+      "AltText": "",
+      "FileSize": 52658
+    },
+    {
+      "FileName": "Delisa-news--792x520.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-medicine/uploads/sites/3023/2026/01/Delisa-news--792x520.jpg",
+      "AltText": "Two people standing close together in a formal indoor setting. One person is wearing a dark suit jacket with a white shirt and a festive tie featuring green and red colors. The other person is dressed in a dark outfit accessorized with a patterned scarf in shades of yellow, white, and black. The background includes wooden paneling and floral-patterned curtains.",
+      "FileSize": 88602
+    },
+    {
+      "FileName": "WSUMED-10-year-news-event-1900x1080-1-792x450.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-medicine/uploads/sites/3023/2025/02/WSUMED-10-year-news-event-1900x1080-1-792x450.jpg",
+      "AltText": "10 year anniversary logo surrounded by collage of photos showcasing the past 10 years.",
+      "FileSize": 142377
+    },
+    {
+      "FileName": "White-Coat-2025-792x520.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-medicine/uploads/sites/3023/2025/08/White-Coat-2025-792x520.jpg",
+      "AltText": "Several students standing in a line with their arms up in their white coat, reciting their Doctor Oath.",
+      "FileSize": 86074
+    },
+    {
+      "FileName": "First-Full-Ride-Student-Scholarship-792x520.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-medicine/uploads/sites/3023/2025/12/First-Full-Ride-Student-Scholarship-792x520.jpg",
+      "AltText": "A healthcare professional wearing a white coat with a stethoscope around the neck is checking the blood pressure of a person seated on an examination table. The seated person is wearing a red WSU (Washington State University) T-shirt and jeans. The setting appears to be a medical examination room with equipment on the walls, a counter with medical supplies, and a blood pressure cuff on the patient\u2019s arm.",
+      "FileSize": 80882
+    },
+    {
+      "FileName": "TriState-New-WSU-Family-Medicine-Residency-792x520.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-medicine/uploads/sites/3023/2025/12/TriState-New-WSU-Family-Medicine-Residency-792x520.jpg",
+      "AltText": "Exterior view of the TriState Health building under a clear blue sky. The entrance features a covered drop-off area with a sign reading \u201CTriState Health P1FCU Inpatient Wing.\u201D An American flag is mounted on a tall pole near the entrance, and landscaped plants line the walkway in front of the building.",
+      "FileSize": 89690
+    },
+    {
+      "FileName": "WA-state-city-scape-LH.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-medicine/uploads/sites/3137/2023/06/WA-state-city-scape-LH.png",
+      "AltText": "Washington state skyline",
+      "FileSize": 14047
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.1345151Z"
+  "CapturedAt": "2026-02-16T20:37:05.1180819Z"
 }

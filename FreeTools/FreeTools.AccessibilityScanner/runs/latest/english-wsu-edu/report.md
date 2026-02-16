@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 6/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 6 |
-| Pages Failed | 0 |
-| Total JS Errors | 7 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 9 |
 | Total JS Warnings | 0 |
-| Total HTML | 417.9 KB |
-| Total Screenshots | 3.5 MB |
+| Total HTML | 359.6 KB |
+| Total Screenshots | 3.3 MB |
+| Total Images | 3 (371.9 KB) |
+| Images Missing Alt | 1 |
 | Folder | `english-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | WSU Department of English \| Washingt... | 2 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | Overview \| WSU Department of English... | 1 | 0 | 1 |
-| ✅ | [/creative-writing/](creative-writing/report.md) | 200 | Creative Writing Community \| WSU Dep... | 1 | 0 | 1 |
-| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty & Staff \| WSU Department of ... | 1 | 0 | 1 |
-| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Certificates \| WSU Departme... | 1 | 0 | 1 |
-| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Studies \| WSU Departme... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Department of English \| Washingt... | 4 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | Overview \| WSU Department of English... | 1 | 1 | 0 |
+| ❌ | [/creative-writing/](creative-writing/report.md) | 0 | Creative Writing Community \| WSU Dep... | 1 | 1 | 1 |
+| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty & Staff \| WSU Department of ... | 1 | 0 | 0 |
+| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Certificates \| WSU Departme... | 1 | 0 | 0 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Studies \| WSU Departme... | 1 | 1 | 0 |
 
 ## Page Screenshots
 
@@ -50,12 +52,47 @@
 ![/undergraduate/](undergraduate/01-page-loaded.png)
 
 
+## Failed Pages
+
+### /
+
+- **URL:** https://english.wsu.edu/
+- **Status:** 0
+
+### /about/
+
+- **URL:** https://english.wsu.edu/about/
+- **Status:** 0
+
+### /undergraduate/
+
+- **URL:** https://english.wsu.edu/undergraduate/
+- **Status:** 0
+
+### /graduate/
+
+- **URL:** https://english.wsu.edu/graduate/
+- **Status:** 0
+
+### /creative-writing/
+
+- **URL:** https://english.wsu.edu/creative-writing/
+- **Status:** 0
+
+### /faculty/
+
+- **URL:** https://english.wsu.edu/faculty/
+- **Status:** 0
+
+
 ## Pages with JavaScript Errors
 
-### / (2 errors)
+### / (4 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /about/ (1 errors)
 

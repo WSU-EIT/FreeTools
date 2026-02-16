@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://honors.wsu.edu/contact/ |
 | Title | Page not found | The Honors College | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 61.5 KB |
+| Status | ❌ 0 |
+| HTML Size | 54.3 KB |
 | Screenshots | 1 (48.2 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 3 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:23.2150458Z |
+| Captured | 2026-02-16T20:39:23.8347732Z |
 
 ## JavaScript Errors
 
@@ -21,6 +23,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (48.2 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -28,6 +31,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

@@ -3,10 +3,10 @@
   "Url": "https://visitor.wsu.edu/",
   "FinalUrl": null,
   "Title": "Brelsford WSU Visitor Center | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 236305,
-  "ScreenshotSizeBytes": 1962668,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 224669,
+  "ScreenshotSizeBytes": 1377043,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,45 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1962668
+      "FileSize": 1377043
+    }
+  ],
+  "ImageCount": 5,
+  "ImagesTotalSizeBytes": 2630830,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "7-3-4thJulyClosure-scaled-e1656453368336.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2888/2022/06/7-3-4thJulyClosure-scaled-e1656453368336.jpg",
+      "AltText": "An image of the exterior of the Brelsford Washington State University Visitor Center in Pullman, Washington.",
+      "FileSize": 605488
+    },
+    {
+      "FileName": "BVC-Game-Day-Hours-group-Kylie-Reeder-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2888/2025/07/BVC-Game-Day-Hours-group-Kylie-Reeder-scaled.jpg",
+      "AltText": "An image of a group of Brelsford Washington State University Visitor Center employees outside the facility in Pullman, Washington at dusk.",
+      "FileSize": 638677
+    },
+    {
+      "FileName": "BVC-Outside-Brochures-close-up-Rose-Pineda-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2888/2025/07/BVC-Outside-Brochures-close-up-Rose-Pineda-scaled.jpg",
+      "AltText": "An image of brochure racks outside the Brelsford Washington State University Visitor Center in Pullman, Washington.",
+      "FileSize": 429892
+    },
+    {
+      "FileName": "Visitors-Looking-at-Timeline-Rose-Pineda-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2888/2025/07/Visitors-Looking-at-Timeline-Rose-Pineda-scaled.jpg",
+      "AltText": "An image of a pair of visitors looking at a historical timeline inside the Brelsford WSU Visitor Center in Pullman, Washington.",
+      "FileSize": 491474
+    },
+    {
+      "FileName": "WSU-Hourly-Parking-Rose-Pineda-1-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2888/2025/07/WSU-Hourly-Parking-Rose-Pineda-1-scaled.jpg",
+      "AltText": "image of a parking station along a row of cars on a campus street.",
+      "FileSize": 465299
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "etag": "\u0022df6035f789b72367a3e42d8d347cc7e6\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:11:35 GMT",
-    "link": "\u003Chttps://visitor.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://visitor.wsu.edu/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://visitor.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1685062Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.1812534Z"
 }

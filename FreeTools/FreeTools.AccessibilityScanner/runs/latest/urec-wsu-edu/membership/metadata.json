@@ -18,16 +18,45 @@
       "FileSize": 773661
     }
   ],
+  "ImageCount": 4,
+  "ImagesTotalSizeBytes": 27703445,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "6q6a0314.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/glvnorcm/6q6a0314.jpg",
+      "AltText": "Annual \u0026 Semester Memberships",
+      "FileSize": 12101686
+    },
+    {
+      "FileName": "deb-pehrson_profileimage.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/rqxdidlc/deb-pehrson_profileimage.jpg",
+      "AltText": "Day \u0026 Guest Passes",
+      "FileSize": 854117
+    },
+    {
+      "FileName": "6q6a1206.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/zgrnvaem/6q6a1206.jpg",
+      "AltText": "Faculty Staff Noontime Fitness",
+      "FileSize": 9234307
+    },
+    {
+      "FileName": "6q6a0728.jpg",
+      "SourceUrl": "https://urec.wsu.edu/media/qvahlhxa/6q6a0728.jpg",
+      "AltText": "Lockers in the SRC and Chinook locker rooms are available for purchase by semester or by calendar year.",
+      "FileSize": 5513335
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:14:13 GMT",
+    "date": "Mon, 16 Feb 2026 20:40:33 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-16T20:14:12.9323875Z"
+  "CapturedAt": "2026-02-16T20:40:33.9229182Z"
 }

@@ -5,8 +5,8 @@
   "Title": "Health Sciences Library | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 242787,
-  "ScreenshotSizeBytes": 2379439,
+  "HtmlSizeBytes": 242598,
+  "ScreenshotSizeBytes": 1699577,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,14 +15,49 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2379439
+      "FileSize": 1699577
+    }
+  ],
+  "ImageCount": 5,
+  "ImagesTotalSizeBytes": 4093623,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "Studying-library-61.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3279/2023/07/Studying-library-61.jpg",
+      "AltText": "\u0022\u0022",
+      "FileSize": 1052115
+    },
+    {
+      "FileName": "Studying-library-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3279/2025/07/Studying-library-scaled.jpg",
+      "AltText": "students studying in the library",
+      "FileSize": 808743
+    },
+    {
+      "FileName": "Studying-library-17-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3279/2025/07/Studying-library-17-scaled.jpg",
+      "AltText": "students studying in the library",
+      "FileSize": 1284975
+    },
+    {
+      "FileName": "Studying-library-54-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3279/2025/07/Studying-library-54-scaled.jpg",
+      "AltText": "two students studying in the library sitting across from each other",
+      "FileSize": 806531
+    },
+    {
+      "FileName": "Spokane-Skyline-v3.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3282/2024/05/Spokane-Skyline-v3.png",
+      "AltText": "Spokane skyline silhouette",
+      "FileSize": 141259
     }
   ],
   "ErrorMessage": null,
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:48 GMT",
+    "date": "Mon, 16 Feb 2026 20:40:35 GMT",
     "etag": "\u00224160b82b293389ff337b98e3630f7952\u0022",
     "last-modified": "Mon, 16 Feb 2026 19:49:56 GMT",
     "link": "\u003Chttps://spokane.wsu.edu/library/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://spokane.wsu.edu/library/wp-json/wp/v2/pages/1982\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://spokane.wsu.edu/library/\u003E; rel=shortlink",
@@ -31,5 +66,5 @@
     "x-cache": "EXPIRED",
     "x-cache-status": "EXPIRED"
   },
-  "CapturedAt": "2026-02-16T20:14:48.088763Z"
+  "CapturedAt": "2026-02-16T20:40:35.7669792Z"
 }

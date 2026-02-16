@@ -3,9 +3,9 @@
   "Url": "https://anthro.wsu.edu/graduate/",
   "FinalUrl": "https://anthro.wsu.edu/graduate-studies/graduate-research-and-training-in-psychologicalmedical-anthropology/",
   "Title": "Graduate Research and Training in Psychological/Medical Anthropology | Department of Anthropology | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 225858,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 215841,
   "ScreenshotSizeBytes": 443865,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,16 +18,18 @@
       "FileSize": 443865
     }
   ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 35821,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "hb_1979.206.75-396x568.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/1028/2015/10/hb_1979.206.75-396x568.jpg",
+      "AltText": "statue of human",
+      "FileSize": 35821
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:21 GMT",
-    "etag": "\u0022e0d0fd604561180e3c3c5bede97aebad\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:13:21 GMT",
-    "link": "\u003Chttps://anthro.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://anthro.wsu.edu/wp-json/wp/v2/pages/809\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://anthro.wsu.edu/?p=809\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:13:19.2785306Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:51.3431276Z"
 }

@@ -3,10 +3,10 @@
   "Url": "https://visitor.wsu.edu/contact/",
   "FinalUrl": "https://visitor.wsu.edu/contact-us/",
   "Title": "Contact Us | Brelsford WSU Visitor Center | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 221370,
-  "ScreenshotSizeBytes": 1668347,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 221322,
+  "ScreenshotSizeBytes": 1868627,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,22 +15,27 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1668347
+      "FileSize": 1868627
+    }
+  ],
+  "ImageCount": 2,
+  "ImagesTotalSizeBytes": 573960,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "BVC-Front-Name-Plaque-Rose-Pineda-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2888/2025/07/BVC-Front-Name-Plaque-Rose-Pineda-scaled.jpg",
+      "AltText": "An image of the Brelsford Washington State University Visitor Center\u0027s exterior name plaque.",
+      "FileSize": 477411
+    },
+    {
+      "FileName": "BVC-Building-Front-Rose-Pineda-792x445.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2888/2025/07/BVC-Building-Front-Rose-Pineda-792x445.jpg",
+      "AltText": "An image of the front exterior of the Brelsford Washington State University Visitor Center in Pullman, Washington.",
+      "FileSize": 96549
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:24 GMT",
-    "etag": "\u0022ce3c7dfc530f57be35967ef76e0c4ca9\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:14:24 GMT",
-    "link": "\u003Chttps://visitor.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://visitor.wsu.edu/wp-json/wp/v2/pages/1589\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://visitor.wsu.edu/?p=1589\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://visitor.wsu.edu",
-    "x-tec-api-root": "https://visitor.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:14:22.7435298Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:38.7660803Z"
 }

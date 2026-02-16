@@ -3,9 +3,9 @@
   "Url": "https://adarp.wsu.edu/projects/",
   "FinalUrl": null,
   "Title": "Page not found | ADARP | Washington State University",
-  "StatusCode": 404,
+  "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 57704,
+  "HtmlSizeBytes": 49545,
   "ScreenshotSizeBytes": 100928,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -18,18 +18,11 @@
       "FileSize": 100928
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "no-cache, must-revalidate, max-age=0",
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:17 GMT",
-    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
-    "link": "\u003Chttps://adarp.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
-    "server": "nginx",
-    "x-tec-api-origin": "https://adarp.wsu.edu",
-    "x-tec-api-root": "https://adarp.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:12:15.6020793Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:02.8919172Z"
 }

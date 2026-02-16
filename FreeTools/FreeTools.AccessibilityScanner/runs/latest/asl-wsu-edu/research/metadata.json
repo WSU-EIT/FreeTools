@@ -3,10 +3,10 @@
   "Url": "https://asl.wsu.edu/research/",
   "FinalUrl": "https://asl.wsu.edu/research-staff/",
   "Title": "Research Staff | Applied Sciences Laboratory | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 79243,
-  "ScreenshotSizeBytes": 990472,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 68767,
+  "ScreenshotSizeBytes": 372181,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,63 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 990472
+      "FileSize": 372181
+    }
+  ],
+  "ImageCount": 8,
+  "ImagesTotalSizeBytes": 303503,
+  "ImagesMissingAlt": 8,
+  "Images": [
+    {
+      "FileName": "image-1.jpeg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2019/12/Research-Associate_Anderson_web-2019-1-scaled-e1667599848628-396x414.jpeg",
+      "AltText": "",
+      "FileSize": 41343
+    },
+    {
+      "FileName": "Engineer_Archer3-copy-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/09/Engineer_Archer3-copy-396x396.jpg",
+      "AltText": "",
+      "FileSize": 49946
+    },
+    {
+      "FileName": "Fisher3-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2024/09/Fisher3-396x396.jpg",
+      "AltText": "",
+      "FileSize": 22634
+    },
+    {
+      "FileName": "Elliott-Fretwell2-396x394.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2024/02/Elliott-Fretwell2-396x394.jpg",
+      "AltText": "",
+      "FileSize": 23201
+    },
+    {
+      "FileName": "Engineer_Gese_web-2019-1-scaled-e1667857533973-396x428.jpeg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2019/12/Engineer_Gese_web-2019-1-scaled-e1667857533973-396x428.jpeg",
+      "AltText": "",
+      "FileSize": 53808
+    },
+    {
+      "FileName": "Knack-Luke-396x376.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2023/09/Knack-Luke-396x376.jpg",
+      "AltText": "",
+      "FileSize": 49263
+    },
+    {
+      "FileName": "Margraf-Joshua-scaled-e1737505121188-396x448.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/01/Margraf-Joshua-scaled-e1737505121188-396x448.jpg",
+      "AltText": "",
+      "FileSize": 28448
+    },
+    {
+      "FileName": "Postdoc_Sibole-1-396x528.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2024/04/Postdoc_Sibole-1-396x528.jpg",
+      "AltText": "",
+      "FileSize": 34860
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:15 GMT",
-    "etag": "\u0022e556def1f3f7af5c64f4c7eabf634315\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:12:15 GMT",
-    "link": "\u003Chttps://asl.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://asl.wsu.edu/wp-json/wp/v2/pages/175\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://asl.wsu.edu/?p=175\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:12:11.755929Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:24.0208813Z"
 }

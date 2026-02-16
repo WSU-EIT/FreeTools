@@ -3,33 +3,87 @@
   "Url": "https://news.wsu.edu/press-releases/",
   "FinalUrl": null,
   "Title": "Press Releases | WSU Insider | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 255664,
-  "ScreenshotSizeBytes": 1494275,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 243799,
+  "ScreenshotSizeBytes": 1495228,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1494275
+      "FileSize": 1495228
+    }
+  ],
+  "ImageCount": 10,
+  "ImagesTotalSizeBytes": 1044077,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "press-releases-hero-img2.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2024/07/press-releases-hero-img2.jpg",
+      "AltText": "A reporter writing notes in a notepad while holding two microphones.",
+      "FileSize": 104492
+    },
+    {
+      "FileName": "basketball-hoop-ball-and-hands-in-huddle-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/basketball-hoop-ball-and-hands-in-huddle-1024x676.jpg",
+      "AltText": "Composite featuring a basketball going through the net of a hoop and a closeup of hands joining together to symbolize teamwork.",
+      "FileSize": 106630
+    },
+    {
+      "FileName": "gloves-holding-smartphone-and-glucose-monitor-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/gloves-holding-smartphone-and-glucose-monitor-1024x676.jpg",
+      "AltText": "Gloved hands holding a smartphone and a glucose monitor.",
+      "FileSize": 80629
+    },
+    {
+      "FileName": "Hadza-man-cooking-over-fire-in-Tanzania-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/Hadza-man-cooking-over-fire-in-Tanzania-1024x676.jpg",
+      "AltText": "A Hadza man in Tanzania cooks over an open fire.",
+      "FileSize": 181789
+    },
+    {
+      "FileName": "couple-in-warm-embrace-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/couple-in-warm-embrace-1024x676.jpg",
+      "AltText": "Silhouette of a couple in a romantic embrace at sunset.",
+      "FileSize": 55196
+    },
+    {
+      "FileName": "Ryan-Driskell-and-Sean-Thompson-with-pigs-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/Ryan-Driskell-and-Sean-Thompson-with-pigs-1024x676.jpg",
+      "AltText": "Two WSU researchers petting piglets in a pen.",
+      "FileSize": 163789
+    },
+    {
+      "FileName": "bull-elk-in-snow-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/bull-elk-in-snow-1024x676.jpg",
+      "AltText": "A pair of bull elk standing in the snow.",
+      "FileSize": 193487
+    },
+    {
+      "FileName": "Angelica-Bautista-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/Angelica-Bautista-1024x676.jpg",
+      "AltText": "Closeup of Anjelica Bautista holding a cat.",
+      "FileSize": 86324
+    },
+    {
+      "FileName": "generic-system-logo-crimson-bkgrd-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2024/09/generic-system-logo-crimson-bkgrd-1024x676.jpg",
+      "AltText": "Washington State University logo.",
+      "FileSize": 51699
+    },
+    {
+      "FileName": "podcast-icon.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2022/05/podcast-icon.png",
+      "AltText": "A microphone and a pair of headphones.",
+      "FileSize": 20042
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:11:44 GMT",
-    "etag": "\u0022d269a2ead3e094374303a3e759498301\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:55:29 GMT",
-    "link": "\u003Chttps://news.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://news.wsu.edu/wp-json/wp/v2/pages/236413\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://news.wsu.edu/?p=236413\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-cache": "HIT",
-    "x-cache-status": "HIT"
-  },
-  "CapturedAt": "2026-02-16T20:11:30.214961Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:59.9460265Z"
 }

@@ -4,17 +4,20 @@
 |-------|-------|
 | URL | https://libraries.wsu.edu/hours/ |
 | Title | Hours – WSU Libraries |
-| Status | ✅ 200 |
+| Status | ❌ 0 |
 | HTML Size | 81.9 KB |
 | Screenshots | 1 (227.7 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:04.2890236Z |
+| Captured | 2026-02-16T20:38:38.1543656Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (227.7 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -22,6 +25,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

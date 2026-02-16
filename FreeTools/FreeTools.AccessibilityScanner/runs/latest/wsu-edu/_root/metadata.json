@@ -5,20 +5,79 @@
   "Title": "Washington State University | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 216111,
-  "ScreenshotSizeBytes": 5778985,
+  "HtmlSizeBytes": 109584,
+  "ScreenshotSizeBytes": 945708,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 4,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 5778985
+      "FileSize": 945708
+    }
+  ],
+  "ImageCount": 9,
+  "ImagesTotalSizeBytes": 3565163,
+  "ImagesMissingAlt": 8,
+  "Images": [
+    {
+      "FileName": "Campus-photo-14.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-14.jpg",
+      "AltText": "",
+      "FileSize": 938665
+    },
+    {
+      "FileName": "Campus-photo-17-scaled-e1661442335869.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Campus-photo-17-scaled-e1661442335869.jpg",
+      "AltText": "",
+      "FileSize": 264265
+    },
+    {
+      "FileName": "Chris-Stokes-portrait-and-bobsled-training-run.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2026/02/Chris-Stokes-portrait-and-bobsled-training-run.jpg",
+      "AltText": "",
+      "FileSize": 455579
+    },
+    {
+      "FileName": "WSU-DAYn-11049_3x2-scaled.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2025/02/WSU-DAYn-11049_3x2-scaled.jpg",
+      "AltText": "College of Nursing students practicing checking a patient with a stethescope.",
+      "FileSize": 428774
+    },
+    {
+      "FileName": "Ana-Cabrera.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2025/12/Ana-Cabrera.jpg",
+      "AltText": "",
+      "FileSize": 361852
+    },
+    {
+      "FileName": "Mask-group-2.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-2.jpg",
+      "AltText": "",
+      "FileSize": 498957
+    },
+    {
+      "FileName": "Grizzly_Bears_7-17-2015___020-1-792x288.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Grizzly_Bears_7-17-2015___020-1-792x288.jpg",
+      "AltText": "",
+      "FileSize": 71337
+    },
+    {
+      "FileName": "FluShotFriday_4888-1.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/FluShotFriday_4888-1.jpg",
+      "AltText": "",
+      "FileSize": 404505
+    },
+    {
+      "FileName": "Mask-group-5-792x535.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-5-792x535.jpg",
+      "AltText": "",
+      "FileSize": 141229
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.0929285Z"
+  "CapturedAt": "2026-02-16T20:37:04.9082914Z"
 }

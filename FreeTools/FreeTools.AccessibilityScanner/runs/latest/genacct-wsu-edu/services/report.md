@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://genacct.wsu.edu/services/ |
 | Title | Page not found | University Accounting | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 57.6 KB |
+| Status | ❌ 0 |
+| HTML Size | 49.2 KB |
 | Screenshots | 1 (107.3 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:30.2156070Z |
+| Captured | 2026-02-16T20:37:55.7313438Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (107.3 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

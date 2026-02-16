@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 6/7 pages OK |
+| Status | ⚠️ 1/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 6 |
-| Pages Failed | 1 |
-| Total JS Errors | 3 |
-| Total JS Warnings | 1 |
+| Pages Passed | 1 |
+| Pages Failed | 6 |
+| Total JS Errors | 4 |
+| Total JS Warnings | 0 |
 | Total HTML | 1.7 MB |
-| Total Screenshots | 6.2 MB |
+| Total Screenshots | 5.8 MB |
+| Total Images | 85 (6.5 MB) |
+| Images Missing Alt | 70 |
 | Folder | `school-eecs-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | School of Electrical Engineering & Co... | 2 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page not found \| School of Electrica... | 1 | 1 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| School of Electrical En... | 0 | 0 | 1 |
-| ✅ | [/faculty/](faculty/report.md) | 200 | Directory \| School of Electrical Eng... | 0 | 0 | 1 |
-| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Course Transfer Requirements... | 0 | 0 | 1 |
-| ✅ | [/research/](research/report.md) | 200 | Research \| School of Electrical Engi... | 0 | 0 | 1 |
-| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Advising \| School of E... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | School of Electrical Engineering & Co... | 2 | 13 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | Page not found \| School of Electrica... | 2 | 0 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| School of Electrical En... | 0 | 0 | 0 |
+| ❌ | [/faculty/](faculty/report.md) | 0 | Directory \| School of Electrical Eng... | 0 | 70 | 70 |
+| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Course Transfer Requirements... | 0 | 0 | 0 |
+| ❌ | [/research/](research/report.md) | 0 | Research \| School of Electrical Engi... | 0 | 0 | 0 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Advising \| School of E... | 0 | 2 | 0 |
 
 ## Page Screenshots
 
@@ -57,10 +59,35 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://school.eecs.wsu.edu/
+- **Status:** 0
+
 ### /about/
 
 - **URL:** https://school.eecs.wsu.edu/about/
-- **Status:** 404
+- **Status:** 0
+
+### /undergraduate/
+
+- **URL:** https://school.eecs.wsu.edu/undergraduate/
+- **Status:** 0
+
+### /graduate/
+
+- **URL:** https://school.eecs.wsu.edu/graduate/
+- **Status:** 0
+
+### /research/
+
+- **URL:** https://school.eecs.wsu.edu/research/
+- **Status:** 0
+
+### /faculty/
+
+- **URL:** https://school.eecs.wsu.edu/faculty/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
@@ -70,9 +97,10 @@
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
-### /about/ (1 errors)
+### /about/ (2 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

@@ -3,10 +3,10 @@
   "Url": "https://cahnrs.wsu.edu/academics/",
   "FinalUrl": null,
   "Title": "Academics | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 263759,
-  "ScreenshotSizeBytes": 1665714,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 246045,
+  "ScreenshotSizeBytes": 702562,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
@@ -15,19 +15,69 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1665714
+      "FileSize": 702562
+    }
+  ],
+  "ImageCount": 9,
+  "ImagesTotalSizeBytes": 1597486,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "NancyDeringer_4710-2-copy-1024x683.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/NancyDeringer_4710-2-copy-1024x683.jpeg",
+      "AltText": "Headshot of Nancy Deringer.",
+      "FileSize": 59958
+    },
+    {
+      "FileName": "Elle-Jennings-with-grapes-featured-1024x824.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/Elle-Jennings-with-grapes-featured-1024x824.jpg",
+      "AltText": "A person in a warehouse holds a rake in a large bin full of purple grapes. The bin is positioned above her, and is attached to a small motorized vehicle. The bin is also positioned above a large metal container.",
+      "FileSize": 128300
+    },
+    {
+      "FileName": "54799163289_6a04c12550_o-683x1024.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/11/2025/10/54799163289_6a04c12550_o-683x1024.jpg",
+      "AltText": "Student in the field holding a salmon.",
+      "FileSize": 135638
+    },
+    {
+      "FileName": "cropped-APS-2022-61-1024x684.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/11/cropped-APS-2022-61-1024x684.jpg",
+      "AltText": "Female graduate student presenting research poster at conference.",
+      "FileSize": 164528
+    },
+    {
+      "FileName": "Brenda.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/11/Brenda.jpg",
+      "AltText": "Student weeding in the dirt.",
+      "FileSize": 75275
+    },
+    {
+      "FileName": "Letty.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/11/Letty.jpg",
+      "AltText": "Student standing in front of wooden crates.",
+      "FileSize": 63542
+    },
+    {
+      "FileName": "Ian-Nickels.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/11/Ian-Nickels.png",
+      "AltText": "Ian Nickels stands next to a cliff.",
+      "FileSize": 742614
+    },
+    {
+      "FileName": "Plant-Pathology-alums-group-photo-1024x645.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/Plant-Pathology-alums-group-photo-1024x645.jpg",
+      "AltText": "Plant Pathology alumni group photo",
+      "FileSize": 161263
+    },
+    {
+      "FileName": "JD-Baser-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/JD-Baser-1.jpg",
+      "AltText": "Formal portrait of J.D. Baser.",
+      "FileSize": 66368
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:42 GMT",
-    "etag": "\u00226de1093d6302ed783147da8b7edcca4d\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:12:42 GMT",
-    "link": "\u003Chttps://cahnrs.wsu.edu/academics/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://cahnrs.wsu.edu/academics/wp-json/wp/v2/pages/897\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://cahnrs.wsu.edu/academics/\u003E; rel=shortlink",
-    "server": "nginx/1.24.0",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:12:35.2254836Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:01.6828698Z"
 }

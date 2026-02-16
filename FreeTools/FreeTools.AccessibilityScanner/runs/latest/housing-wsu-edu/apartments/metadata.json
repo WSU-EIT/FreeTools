@@ -5,8 +5,8 @@
   "Title": "Apartments",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 65846,
-  "ScreenshotSizeBytes": 768500,
+  "HtmlSizeBytes": 65843,
+  "ScreenshotSizeBytes": 765865,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,78 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 768500
+      "FileSize": 765865
+    }
+  ],
+  "ImageCount": 9,
+  "ImagesTotalSizeBytes": 4587708,
+  "ImagesMissingAlt": 9,
+  "Images": [
+    {
+      "FileName": "chief-jo-renovated-furnished-2.png",
+      "SourceUrl": "https://housing.wsu.edu/media/o3ijkg4z/chief-jo-renovated-furnished-2.png",
+      "AltText": "",
+      "FileSize": 334838
+    },
+    {
+      "FileName": "chinook-exterior-3.png",
+      "SourceUrl": "https://housing.wsu.edu/media/ep0ipbd1/chinook-exterior-3.png",
+      "AltText": "",
+      "FileSize": 782575
+    },
+    {
+      "FileName": "columbia-exterior-3.png",
+      "SourceUrl": "https://housing.wsu.edu/media/pxmnc3qm/columbia-exterior-3.png",
+      "AltText": "",
+      "FileSize": 1022653
+    },
+    {
+      "FileName": "kamiak-exterior-2.png",
+      "SourceUrl": "https://housing.wsu.edu/media/hpcl5spy/kamiak-exterior-2.png",
+      "AltText": "",
+      "FileSize": 866885
+    },
+    {
+      "FileName": "nez-perce-6.png",
+      "SourceUrl": "https://housing.wsu.edu/media/pwnhpjqm/nez-perce-6.png",
+      "AltText": "",
+      "FileSize": 691869
+    },
+    {
+      "FileName": "stimson-courtyard-adjusted.png",
+      "SourceUrl": "https://housing.wsu.edu/media/u0ropgsu/stimson-courtyard-adjusted.png",
+      "AltText": "",
+      "FileSize": 526893
+    },
+    {
+      "FileName": "terrace-exterior.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/esplsalp/terrace-exterior.jpg",
+      "AltText": "",
+      "FileSize": 110607
+    },
+    {
+      "FileName": "valley-crest-exterior.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/hflg3a3c/valley-crest-exterior.jpg",
+      "AltText": "",
+      "FileSize": 104818
+    },
+    {
+      "FileName": "yakama-exterior.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/5v2d0lg2/yakama-exterior.jpg",
+      "AltText": "",
+      "FileSize": 146570
     }
   ],
   "ErrorMessage": null,
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:15:33 GMT",
+    "date": "Mon, 16 Feb 2026 20:41:40 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-16T20:15:34.7255875Z"
+  "CapturedAt": "2026-02-16T20:41:41.0092186Z"
 }

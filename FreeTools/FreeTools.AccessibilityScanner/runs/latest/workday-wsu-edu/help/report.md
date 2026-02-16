@@ -4,29 +4,21 @@
 |-------|-------|
 | URL | https://workday.wsu.edu/help/ |
 | Redirected To | https://login.wsu.edu/app/workday/exk8wk0d1s55s30dD2p7/sso/saml |
-| Title | WSU | Bad request. |
-| Status | ✅ 200 |
-| HTML Size | 136.1 KB |
-| Screenshots | 1 (44.1 KB) |
-| JS Errors | 8 |
+| Title | WSU Authentication | Washington State University |
+| Status | ❌ 0 |
+| HTML Size | 68.4 KB |
+| Screenshots | 1 (39.3 KB) |
+| Images | 1 (7.7 KB) |
+| Images Missing Alt | 0 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:15.0116461Z |
-
-## JavaScript Errors
-
-- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
-- `No available ports. Loopback server failed and polling is cancelled.`
-- `Failed to load resource: the server responded with a status of 400 ()`
+| Captured | 2026-02-16T20:38:01.0751053Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (44.1 KB)
+- Screenshot #1: page-loaded (39.3 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -35,12 +27,24 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [fs015xh0tygNgGVxX2p8.img](images/fs015xh0tygNgGVxX2p8.img) | WSU logo | 7.7 KB |
+
+### Gallery
+
+![WSU logo](images/fs015xh0tygNgGVxX2p8.img)
+
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (44.1 KB)
+- `01-page-loaded.png` — page-loaded (39.3 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (7.7 KB)

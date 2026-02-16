@@ -3,33 +3,40 @@
 | Field | Value |
 |-------|-------|
 | URL | https://aastudentcenter.wsu.edu/ |
-| Title | African American Student Center |
-| Status | ✅ 200 |
-| HTML Size | 58.8 KB |
-| Screenshots | 1 (322.1 KB) |
-| JS Errors | 1 |
+| Title | (none) |
+| Status | ❌ 0 |
+| HTML Size | 0 bytes |
+| Screenshots | 0 (0 bytes) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:26.0929029Z |
+| Captured | 2026-02-16T20:37:04.9602064Z |
 
-## JavaScript Errors
+## Error
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+```
+Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+```
 
 ## Actions
 
-- Screenshot #1: page-loaded (322.1 KB)
+- Scan aborted due to error
 
 ## Screenshots
 
-### 1. page-loaded
+*No screenshots captured.*
 
-![page-loaded](01-page-loaded.png)
+## Page Images (0)
 
+*No images found on page.*
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (322.1 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

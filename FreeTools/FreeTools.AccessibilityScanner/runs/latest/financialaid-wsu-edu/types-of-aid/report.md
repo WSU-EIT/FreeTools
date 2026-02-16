@@ -5,13 +5,15 @@
 | URL | https://financialaid.wsu.edu/types-of-aid/ |
 | Redirected To | https://financialaid.wsu.edu/types-of-aid/#gsc.tab=0 |
 | Title | Page not found | Student Financial Services | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 227.4 KB |
+| Status | ❌ 0 |
+| HTML Size | 219.2 KB |
 | Screenshots | 1 (108.0 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:16.8085739Z |
+| Captured | 2026-02-16T20:38:53.2128567Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (108.0 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

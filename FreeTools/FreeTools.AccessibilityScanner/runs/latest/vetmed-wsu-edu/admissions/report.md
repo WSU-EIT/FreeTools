@@ -5,13 +5,15 @@
 | URL | https://vetmed.wsu.edu/admissions/ |
 | Redirected To | https://vetmed.wsu.edu/admissions/#gsc.tab=0 |
 | Title | Page not found | College of Veterinary Medicine | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 249.0 KB |
+| Status | ❌ 0 |
+| HTML Size | 231.6 KB |
 | Screenshots | 1 (127.5 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:41.6191527Z |
+| Captured | 2026-02-16T20:38:48.4974901Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (127.5 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

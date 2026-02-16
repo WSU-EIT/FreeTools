@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://apac.wsu.edu/membership/ |
 | Title | Page not found | Administrative Professional Advisory Council | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 59.6 KB |
+| Status | ❌ 0 |
+| HTML Size | 42.5 KB |
 | Screenshots | 1 (42.5 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 3 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:35.1941878Z |
+| Captured | 2026-02-16T20:38:02.7366488Z |
 
 ## JavaScript Errors
 
@@ -21,6 +23,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (42.5 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -28,6 +31,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

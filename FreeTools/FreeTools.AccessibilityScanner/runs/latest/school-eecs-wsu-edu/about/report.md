@@ -5,21 +5,25 @@
 | URL | https://school.eecs.wsu.edu/about/ |
 | Redirected To | https://school.eecs.wsu.edu/about/#gsc.tab=0 |
 | Title | Page not found | School of Electrical Engineering & Computer Science | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 230.1 KB |
-| Screenshots | 1 (98.5 KB) |
-| JS Errors | 1 |
-| JS Warnings | 1 |
+| Status | ❌ 0 |
+| HTML Size | 223.2 KB |
+| Screenshots | 1 (98.2 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 2 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:45.1243747Z |
+| Captured | 2026-02-16T20:38:09.4870208Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- Screenshot #1: page-loaded (98.5 KB)
+- Screenshot #1: page-loaded (98.2 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -28,9 +32,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (98.5 KB)
+- `01-page-loaded.png` — page-loaded (98.2 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

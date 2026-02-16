@@ -5,16 +5,19 @@
 | URL | https://housing.wsu.edu/current-students/academic-breaks/ |
 | Title | Academic Breaks |
 | Status | ✅ 200 |
-| HTML Size | 51.6 KB |
+| HTML Size | 51.5 KB |
 | Screenshots | 1 (206.6 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:54.5868766Z |
+| Captured | 2026-02-16T20:41:04.7993927Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (206.6 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -22,6 +25,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

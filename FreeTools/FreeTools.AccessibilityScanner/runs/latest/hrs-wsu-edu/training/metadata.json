@@ -3,9 +3,9 @@
   "Url": "https://hrs.wsu.edu/training/",
   "FinalUrl": null,
   "Title": "Learning \u0026 Organizational Development \u2013 Human Resource Services, Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 92340,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 93099,
   "ScreenshotSizeBytes": 842870,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,14 +18,54 @@
       "FileSize": 842870
     }
   ],
+  "ImageCount": 7,
+  "ImagesTotalSizeBytes": 425184,
+  "ImagesMissingAlt": 6,
+  "Images": [
+    {
+      "FileName": "Breaking-Barriers-1180x664.png",
+      "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2026/02/Breaking-Barriers-1180x664.png",
+      "AltText": "",
+      "FileSize": 137685
+    },
+    {
+      "FileName": "ECC-2024-LOD-Landing-pg.png",
+      "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2024/04/ECC-2024-LOD-Landing-pg.png",
+      "AltText": "",
+      "FileSize": 117943
+    },
+    {
+      "FileName": "Impact-plans-resluts-2024-LOD-landing-pg.png",
+      "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2024/04/Impact-plans-resluts-2024-LOD-landing-pg.png",
+      "AltText": "",
+      "FileSize": 53480
+    },
+    {
+      "FileName": "image-4.png",
+      "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2023/06/Copy-of-Copy-of-Green-Elegant-Save-The-Date-Wedding-Facebook-Post.png",
+      "AltText": "WSU staff mentoring.",
+      "FileSize": 26392
+    },
+    {
+      "FileName": "EAP-Logo-e1599250958200-LOD-landing-pg.png",
+      "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2024/04/EAP-Logo-e1599250958200-LOD-landing-pg.png",
+      "AltText": "",
+      "FileSize": 16234
+    },
+    {
+      "FileName": "skills-benchmarks-LOD-landing-pg.png",
+      "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2024/04/skills-benchmarks-LOD-landing-pg.png",
+      "AltText": "",
+      "FileSize": 45578
+    },
+    {
+      "FileName": "NEO-on-demand-LOD-landing-pg.png",
+      "SourceUrl": "https://hrs.wsu.edu/wp-content/uploads/2024/04/NEO-on-demand-LOD-landing-pg.png",
+      "AltText": "",
+      "FileSize": 27872
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:31 GMT",
-    "link": "\u003Chttps://hrs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://hrs.wsu.edu/wp-json/wp/v2/pages/1522\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022, \u003Chttps://hrs.wsu.edu/?p=1522\u003E; rel=shortlink",
-    "server": "nginx/1.14.1",
-    "vary": "Cookie",
-    "x-powered-by": "PHP/8.2.29"
-  },
-  "CapturedAt": "2026-02-16T20:13:26.4894299Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:47.4363431Z"
 }

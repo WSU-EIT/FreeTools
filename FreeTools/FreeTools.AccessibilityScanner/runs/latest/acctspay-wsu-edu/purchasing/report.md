@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://acctspay.wsu.edu/purchasing/ |
 | Title | Page not found | Payment Services | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 57.3 KB |
+| Status | ❌ 0 |
+| HTML Size | 57.4 KB |
 | Screenshots | 1 (98.8 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:09.1121513Z |
+| Captured | 2026-02-16T20:39:27.2131282Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (98.8 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

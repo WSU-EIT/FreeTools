@@ -5,20 +5,133 @@
   "Title": "WSU Spokane | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 331121,
-  "ScreenshotSizeBytes": 8337731,
+  "HtmlSizeBytes": 317207,
+  "ScreenshotSizeBytes": 2388454,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 8337731
+      "FileSize": 2388454
+    }
+  ],
+  "ImageCount": 18,
+  "ImagesTotalSizeBytes": 2128718,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "Home-pharmacy-edit-792x528.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/06/Home-pharmacy-edit-792x528.jpg",
+      "AltText": "pharmacy students walking on campus",
+      "FileSize": 107962
+    },
+    {
+      "FileName": "Students-on-Campus-Oct-2022-10-792x528.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/06/Students-on-Campus-Oct-2022-10-792x528.jpg",
+      "AltText": "Nursing students walking on campus",
+      "FileSize": 134404
+    },
+    {
+      "FileName": "Community-Health-Fair-2019-622.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/06/Community-Health-Fair-2019-622.jpg",
+      "AltText": "Students practicing on volunteer patients during Nursing event ",
+      "FileSize": 346746
+    },
+    {
+      "FileName": "spokane2.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/05/spokane2.jpg",
+      "AltText": "student academic center overlooking WSU Spokane campus and downtown spokane. ",
+      "FileSize": 515135
+    },
+    {
+      "FileName": "Pharmacy-Compound-Lab-shoot-Sep-2022-26-792x528.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/03/Pharmacy-Compound-Lab-shoot-Sep-2022-26-792x528.jpg",
+      "AltText": "Faculty member assisting student during class",
+      "FileSize": 118412
+    },
+    {
+      "FileName": "Medical-school-link.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/06/Medical-school-link.jpg",
+      "AltText": "Medicine students practicing medical procedures",
+      "FileSize": 113554
+    },
+    {
+      "FileName": "gloves-holding-smartphone-and-glucose-monitor-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/gloves-holding-smartphone-and-glucose-monitor-1024x676.jpg",
+      "AltText": "Gloved hands holding a smartphone and a glucose monitor.",
+      "FileSize": 80629
+    },
+    {
+      "FileName": "nursing-students-walking-at-WSU-Spokane-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/nursing-students-walking-at-WSU-Spokane-1024x676.jpg",
+      "AltText": "Nursing students walking across the WSU Spokane campus.",
+      "FileSize": 177094
+    },
+    {
+      "FileName": "pharmacyclassof2025-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/pharmacyclassof2025-1024x676.jpg",
+      "AltText": "The WSU College of Pharmacy and Pharmaceutical Sciences Spokane Class of 2025 and a large Go Cougs sign.",
+      "FileSize": 272753
+    },
+    {
+      "FileName": "385094280.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/385094280.jpg?width=480",
+      "AltText": "Image posted by wsuspokane to instagram",
+      "FileSize": 51371
+    },
+    {
+      "FileName": "385094280_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/385094280_user_image.jpg?width=100",
+      "AltText": "Profile image for wsuspokane",
+      "FileSize": 2525
+    },
+    {
+      "FileName": "384665249_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384665249_user_image.jpg?width=100",
+      "AltText": "Profile image for wsuspokane",
+      "FileSize": 2525
+    },
+    {
+      "FileName": "384854805.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384854805.jpg?width=480",
+      "AltText": "Image posted by wsuspokane to instagram",
+      "FileSize": 54249
+    },
+    {
+      "FileName": "384854805_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384854805_user_image.jpg?width=100",
+      "AltText": "Profile image for wsuspokane",
+      "FileSize": 2525
+    },
+    {
+      "FileName": "384665250_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384665250_user_image.jpg?width=100",
+      "AltText": "Profile image for wsuspokane",
+      "FileSize": 2525
+    },
+    {
+      "FileName": "384728211_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384728211_user_image.jpg?width=100",
+      "AltText": "Profile image for wsuspokane",
+      "FileSize": 2525
+    },
+    {
+      "FileName": "384665240_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bde45a66-9c9a-4cd1-90e7-79089646aacd/384665240_user_image.jpg?width=100",
+      "AltText": "Profile image for wsuspokane",
+      "FileSize": 2525
+    },
+    {
+      "FileName": "Spokane-Skyline-v3.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/05/Spokane-Skyline-v3.png",
+      "AltText": "Spokane skyline silhouette",
+      "FileSize": 141259
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.1645848Z"
+  "CapturedAt": "2026-02-16T20:37:05.155613Z"
 }

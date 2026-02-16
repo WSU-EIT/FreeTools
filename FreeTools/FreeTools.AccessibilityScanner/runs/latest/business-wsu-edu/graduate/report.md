@@ -5,13 +5,15 @@
 | URL | https://business.wsu.edu/graduate/ |
 | Redirected To | https://business.wsu.edu/graduate-placements/ |
 | Title | Graduate Placements - Carson College of Business | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 181.3 KB |
+| Status | ❌ 0 |
+| HTML Size | 181.4 KB |
 | Screenshots | 1 (541.4 KB) |
+| Images | 4 (526.2 KB) |
+| Images Missing Alt | 1 |
 | JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:43.4916901Z |
+| Captured | 2026-02-16T20:39:52.7906609Z |
 
 ## JavaScript Errors
 
@@ -21,6 +23,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (541.4 KB)
+- Downloaded 4 images to /images/
 
 ## Screenshots
 
@@ -28,6 +31,30 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (4)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [wsu-logo.svg](images/wsu-logo.svg) | Carson College of Business \| Washing... | 33.8 KB |
+| 2 | [Placement-Map-v2-1024x677.png](images/Placement-Map-v2-1024x677.png) | Map of the United States with red mar... | 476.6 KB |
+| 3 | [wsu-mascot-logo.svg](images/wsu-mascot-logo.svg) | *(none)* | 5.3 KB |
+| 4 | [wsu-logo-1.svg](images/wsu-logo-1.svg) | drglow-footer-logo | 10.5 KB |
+
+### Gallery
+
+![Carson College of Business | Washington State University](images/wsu-logo.svg)
+
+![Map of the United States with red markers indicating PhD graduate placement locations across nearly every state.](images/Placement-Map-v2-1024x677.png)
+
+![wsu-mascot-logo.svg](images/wsu-mascot-logo.svg)
+
+![drglow-footer-logo](images/wsu-logo-1.svg)
+
+
+### ⚠️ Images Missing Alt Text (1)
+
+- `wsu-mascot-logo.svg` — https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/06/wsu-mascot-logo.svg
 
 ## Files
 
@@ -38,3 +65,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 4 page images (526.2 KB)

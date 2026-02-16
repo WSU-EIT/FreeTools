@@ -5,16 +5,19 @@
 | URL | https://urec.wsu.edu/sportclubs/ |
 | Title | Sport Clubs |
 | Status | ✅ 200 |
-| HTML Size | 94.2 KB |
+| HTML Size | 94.1 KB |
 | Screenshots | 1 (434.4 KB) |
+| Images | 1 (181.8 KB) |
+| Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:23.5511577Z |
+| Captured | 2026-02-16T20:40:11.7334533Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (434.4 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -22,6 +25,21 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [sportclublogo2c.jpg](images/sportclublogo2c.jpg) | *(none)* | 181.8 KB |
+
+### Gallery
+
+![sportclublogo2c.jpg](images/sportclublogo2c.jpg)
+
+
+### ⚠️ Images Missing Alt Text (1)
+
+- `sportclublogo2c.jpg` — https://urec.wsu.edu/media/tm5bby2x/sportclublogo2c.jpg
 
 ## Files
 
@@ -32,3 +50,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (181.8 KB)

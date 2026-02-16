@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 4/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 4 |
-| Pages Failed | 2 |
-| Total JS Errors | 12 |
-| Total JS Warnings | 3 |
-| Total HTML | 1.2 MB |
-| Total Screenshots | 8.8 MB |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 5 |
+| Total JS Warnings | 2 |
+| Total HTML | 1.1 MB |
+| Total Screenshots | 5.9 MB |
+| Total Images | 24 (3.9 MB) |
+| Images Missing Alt | 18 |
 | Folder | `ceshs-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | College of Education, Sport, and Huma... | 7 | 2 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About WSU ROAR \| College of Educatio... | 1 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us! \| College of Education, ... | 1 | 0 | 1 |
-| ✅ | [/faculty/](faculty/report.md) | 200 | Kinesiology Faculty \| College of Edu... | 1 | 0 | 1 |
-| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| College of Educatio... | 2 | 1 | 1 |
-| ✅ | [/research/](research/report.md) | 200 | Log In ‹ College of Education, Sport,... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | College of Education, Sport, and Huma... | 0 | 6 | 4 |
+| ❌ | [/about/](about/report.md) | 0 | About WSU ROAR \| College of Educatio... | 1 | 2 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Us! \| College of Education, ... | 1 | 2 | 0 |
+| ❌ | [/faculty/](faculty/report.md) | 0 | Kinesiology Faculty \| College of Edu... | 1 | 14 | 14 |
+| ❌ | [/programs/](programs/report.md) | 0 | Page not found \| College of Educatio... | 2 | 0 | 0 |
+| ❌ | [/research/](research/report.md) | 0 | Log In ‹ College of Education, Sport,... | 0 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -57,23 +59,33 @@
 - **URL:** https://ceshs.wsu.edu/
 - **Status:** 0
 
+### /about/
+
+- **URL:** https://ceshs.wsu.edu/about/
+- **Status:** 0
+
 ### /programs/
 
 - **URL:** https://ceshs.wsu.edu/programs/
-- **Status:** 404
+- **Status:** 0
+
+### /research/
+
+- **URL:** https://ceshs.wsu.edu/research/
+- **Status:** 0
+
+### /faculty/
+
+- **URL:** https://ceshs.wsu.edu/faculty/
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://ceshs.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
-
-### / (7 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /programs/ (2 errors)
 

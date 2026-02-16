@@ -5,20 +5,61 @@
   "Title": "WSU Commencement | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 58840,
-  "ScreenshotSizeBytes": 3969719,
+  "HtmlSizeBytes": 52440,
+  "ScreenshotSizeBytes": 596221,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 5,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 2,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 3969719
+      "FileSize": 596221
+    }
+  ],
+  "ImageCount": 6,
+  "ImagesTotalSizeBytes": 2381495,
+  "ImagesMissingAlt": 5,
+  "Images": [
+    {
+      "FileName": "DSC_7622-scaled.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/2627/2025/05/DSC_7622-scaled.jpg",
+      "AltText": "",
+      "FileSize": 340793
+    },
+    {
+      "FileName": "DSC_6469-scaled.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/2627/2025/05/DSC_6469-scaled.jpg",
+      "AltText": "",
+      "FileSize": 474464
+    },
+    {
+      "FileName": "DSC_8899-scaled.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/2627/2025/05/DSC_8899-scaled.jpg",
+      "AltText": "",
+      "FileSize": 462561
+    },
+    {
+      "FileName": "DSC_6471-scaled.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/2627/2025/05/DSC_6471-scaled.jpg",
+      "AltText": "",
+      "FileSize": 405475
+    },
+    {
+      "FileName": "2025-Spring-Commencement-First-Ceremony-_-0979-scaled.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/2627/2025/05/2025-Spring-Commencement-First-Ceremony-_-0979-scaled.jpg",
+      "AltText": "",
+      "FileSize": 633461
+    },
+    {
+      "FileName": "COMMENCEMENT-OFFICE-3.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/2627/2025/06/COMMENCEMENT-OFFICE-3.png",
+      "AltText": "data-object-fit=\u0022\u0022",
+      "FileSize": 64741
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.1174831Z"
+  "CapturedAt": "2026-02-16T20:37:05.0341505Z"
 }

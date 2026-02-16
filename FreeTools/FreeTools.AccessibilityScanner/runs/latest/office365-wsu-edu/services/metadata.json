@@ -1,12 +1,12 @@
 {
   "PagePath": "/services/",
   "Url": "https://office365.wsu.edu/services/",
-  "FinalUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca\u0026redirect_uri=https%3A%2F%2Fwww.microsoft365.com%2Flandingv2\u0026response_type=code%20id_token\u0026scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All\u0026response_mode=form_post\u0026nonce=639068694704205320.YjQxN2JjMjYtODE2YS00MDAwLWFjNWQtMGZhYzZlZmU4NTI4YWZhYzk0OWMtYTMwMy00N2Q2LTliN2UtNTNjMjUzMjMzYzYw\u0026ui_locales=en-US\u0026mkt=en-US\u0026client-request-id=807c5bfd-bbb2-4230-8134-815803fe5ce1\u0026state=a_JFyaK0JRRY6Eslp7G31ODPywwzrG5dzdXKvIv-CBeBs-31Z8A_hbIzQLXgSA02isXlvzSElJ4vRy82UUSFbJGjBg1Zein5b3HpxPvQYwiansObWErOZ0PM4rzOWbxk3hcYhRjJBOAJsm5vtiPBjOj_X-UXOdvyhq3r86N5f2IcCKIxkBGNjCbPq3PDBknhW29ctixW1hdV_3gVMtW362_vFrZv9q5edNjOEdxk-ia0usePXtONQcyTzAgrKWNkYl16Ie4jnUNNnGM82YLlvHVEBICV_gqJK6wBGIi6p8lhSVK7sZJnvQpmQvSpdNCmWAOfYssvb8LEai902dBMPw\u0026x-client-SKU=ID_NET8_0\u0026x-client-ver=8.5.0.0\u0026sso_reload=true",
+  "FinalUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca\u0026redirect_uri=https%3A%2F%2Fwww.microsoft365.com%2Flandingv2\u0026response_type=code%20id_token\u0026scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All\u0026response_mode=form_post\u0026nonce=639068710880479687.MGZjOWUwNzItMjI0MC00NGZmLThmNDQtNjFhODIyMjUzOWY2YTI2OTNhNDYtZWI0My00YzZlLTg5MTctNjYyMmJjOWMyY2M0\u0026ui_locales=en-US\u0026mkt=en-US\u0026client-request-id=f4389a96-cc0c-4884-b17e-dab15e1e77e8\u0026state=oKYyiPIh9vHORxUlJ9h8dino8sR3yvFrpND5RX-B-sxO7D9oAjPVTVOk5chy1JdT_cWCj74tmyaaDevTjLeNqysBSeG56mmzU4uGiGHUkNF2wBkMTj_xWLtGrejCqIZEIncKK-_rG2pk-5kEom8KlfYsSpbMaYqWcJwQtYHYDgwPhahCCvm6iJGj99Ti0ixwONwMnCZM5XXzIPKDqryGaLzaFAobv9jkAe3IVGOmzcxFDj4MzD8dQPxiJe5xnN6dhnsg0C8Fx3dbZ4MKYxzg6DXdZ2CH2YPR5RdE1Ht64ewxdGbPTzaP_FoSAy5zG4zhRDSquiIWhubX_Du-xti20Q\u0026x-client-SKU=ID_NET8_0\u0026x-client-ver=8.5.0.0",
   "Title": "Sign in to your account",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 88682,
-  "ScreenshotSizeBytes": 291047,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 77774,
+  "ScreenshotSizeBytes": 5880,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,31 +15,21 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 291047
+      "FileSize": 5880
+    }
+  ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 1435,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg",
+      "SourceUrl": "https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg",
+      "AltText": "Microsoft",
+      "FileSize": 1435
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "no-store, no-cache",
-    "content-encoding": "gzip",
-    "content-length": "9651",
-    "content-security-policy-report-only": "object-src \u0027none\u0027; base-uri \u0027self\u0027; script-src \u0027self\u0027 \u0027nonce-v5TT4XQJfNgivIAjEmyAyw\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 https://*.msauth.net https://*.msftauth.net https://*.msftauthimages.net https://*.msauthimages.net https://*.msidentity.com https://*.microsoftonline-p.com https://*.microsoftazuread-sso.com https://*.azureedge.net https://*.outlook.com https://*.office.com https://*.office365.com https://*.microsoft.com https://*.bing.com \u0027report-sample\u0027; report-uri https://csp.microsoft.com/report/ESTS-UX-All",
-    "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:11:12 GMT",
-    "expires": "-1",
-    "nel": "{\u0022report_to\u0022:\u0022network-errors\u0022,\u0022max_age\u0022:86400,\u0022success_fraction\u0022:0.001,\u0022failure_fraction\u0022:1.0}",
-    "p3p": "CP=\u0022DSP CUR OTPi IND OTRi ONL FIN\u0022",
-    "pragma": "no-cache",
-    "referrer-policy": "strict-origin-when-cross-origin",
-    "report-to": "{\u0022group\u0022:\u0022network-errors\u0022,\u0022max_age\u0022:86400,\u0022endpoints\u0022:[{\u0022url\u0022:\u0022https://identity.nel.measure.office.net/api/report?catId=GW\u002Bestsfd\u002Bwst\u0022}]}",
-    "strict-transport-security": "max-age=31536000; includeSubDomains",
-    "vary": "Accept-Encoding",
-    "x-content-type-options": "nosniff",
-    "x-ms-clitelem": "1,50168,0,,",
-    "x-ms-ests-server": "2.1.23403.4 - NCUS ProdSlices",
-    "x-ms-request-id": "c4c15b25-5745-4aff-b677-79330db18600",
-    "x-ms-srs": "1.P",
-    "x-xss-protection": "0"
-  },
-  "CapturedAt": "2026-02-16T20:11:02.7425272Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:02.394714Z"
 }

@@ -4,17 +4,20 @@
 |-------|-------|
 | URL | https://afw.wsu.edu/resources/ |
 | Title | Resources | Association for Faculty Women | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 56.9 KB |
+| Status | ❌ 0 |
+| HTML Size | 47.6 KB |
 | Screenshots | 1 (70.4 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:32.8333146Z |
+| Captured | 2026-02-16T20:38:38.3100480Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (70.4 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -22,6 +25,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

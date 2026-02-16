@@ -5,8 +5,8 @@
   "Title": "WSU Admissions | Washington State University | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 120422,
-  "ScreenshotSizeBytes": 1937085,
+  "HtmlSizeBytes": 120408,
+  "ScreenshotSizeBytes": 1937935,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 2,
@@ -15,17 +15,88 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1937085
+      "FileSize": 1937935
+    }
+  ],
+  "ImageCount": 11,
+  "ImagesTotalSizeBytes": 6042740,
+  "ImagesMissingAlt": 2,
+  "Images": [
+    {
+      "FileName": "Mask-group-8.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/06/Mask-group-8.png",
+      "AltText": "",
+      "FileSize": 2375142
+    },
+    {
+      "FileName": "Campus-photo-8.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-8.png",
+      "AltText": "",
+      "FileSize": 1014605
+    },
+    {
+      "FileName": "Mask-group-20.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-20.png",
+      "AltText": "Smiling person in a WSU cap holding up a gray t-shirt with the text Washington State Dad on it.",
+      "FileSize": 574549
+    },
+    {
+      "FileName": "Mask-group-1.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-1.jpg",
+      "AltText": "Smiling student wearing Washington State University medical scrubs.",
+      "FileSize": 228549
+    },
+    {
+      "FileName": "Mask-group-21.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-21.png",
+      "AltText": "Two students with big smiles holding up a sign that reads Go Cougs.",
+      "FileSize": 383655
+    },
+    {
+      "FileName": "Campus-photo-6.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-6.jpg",
+      "AltText": "The WSU Pullman clock tower.",
+      "FileSize": 284355
+    },
+    {
+      "FileName": "Campus-photo-7.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-7.jpg",
+      "AltText": "A tree-lined academic building.",
+      "FileSize": 288252
+    },
+    {
+      "FileName": "Campus-photo-8.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-8.jpg",
+      "AltText": "The sun shining through a WSU Tri-Cities campus building.",
+      "FileSize": 210158
+    },
+    {
+      "FileName": "Campus-photo-9.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-9.jpg",
+      "AltText": "The sun shining over the WSU Vancouver fountain.",
+      "FileSize": 319279
+    },
+    {
+      "FileName": "Campus-photo-10.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-10.jpg",
+      "AltText": "A glass-walled building at WSU Everett.",
+      "FileSize": 191786
+    },
+    {
+      "FileName": "Campus-photo-11.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-11.jpg",
+      "AltText": "A student working on a laptop.",
+      "FileSize": 172410
     }
   ],
   "ErrorMessage": null,
   "Headers": {
-    "cache-control": "max-age=106, must-revalidate",
+    "cache-control": "max-age=600, must-revalidate",
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:15:11 GMT",
-    "last-modified": "Mon, 16 Feb 2026 20:06:57 GMT",
+    "date": "Mon, 16 Feb 2026 20:40:59 GMT",
+    "last-modified": "Mon, 16 Feb 2026 20:40:59 GMT",
     "link": "\u003Chttps://wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://wsu.edu/wp-json/wp/v2/pages/13\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
     "server": "nginx",
     "transfer-encoding": "chunked",
@@ -34,5 +105,5 @@
     "x-frame-options": "DENY",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-16T20:15:10.8992381Z"
+  "CapturedAt": "2026-02-16T20:40:59.5454837Z"
 }

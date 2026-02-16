@@ -5,7 +5,7 @@
   "Title": "School of Languages, Cultures, and Race | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 69363,
+  "HtmlSizeBytes": 63263,
   "ScreenshotSizeBytes": 658504,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -18,7 +18,18 @@
       "FileSize": 658504
     }
   ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 272385,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "SLCR-Home-2022.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2022/08/SLCR-Home-2022.jpg",
+      "AltText": "Three photos: Karen Jennings with students of German in Austria during Study Abroad Summer 2022. Student receiving award from Professor Streamas during the Art for Social Change Competition Showcase in Spring 2022. SLCR faculty at French Film Festival in Fall 2021.",
+      "FileSize": 272385
+    }
+  ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.1532353Z"
+  "CapturedAt": "2026-02-16T20:37:05.1553631Z"
 }

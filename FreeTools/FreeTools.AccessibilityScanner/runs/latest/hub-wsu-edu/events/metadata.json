@@ -3,7 +3,7 @@
   "Url": "https://hub.wsu.edu/events/",
   "FinalUrl": null,
   "Title": "Human Verification",
-  "StatusCode": 405,
+  "StatusCode": 0,
   "Success": false,
   "HtmlSizeBytes": 9360,
   "ScreenshotSizeBytes": 20993,
@@ -18,18 +18,11 @@
       "FileSize": 20993
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "access-control-allow-methods": "OPTIONS,GET,POST",
-    "access-control-allow-origin": "*",
-    "access-control-expose-headers": "x-amzn-waf-action",
-    "access-control-max-age": "86400",
-    "cache-control": "no-store, max-age=0",
-    "content-length": "2103",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:21 GMT",
-    "server": "awselb/2.0",
-    "x-amzn-waf-action": "captcha"
-  },
-  "CapturedAt": "2026-02-16T20:12:20.282696Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:02.9277477Z"
 }

@@ -7,14 +7,17 @@
 | Status | ✅ 200 |
 | HTML Size | 62.0 KB |
 | Screenshots | 1 (955.5 KB) |
+| Images | 1 (394.3 KB) |
+| Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:16:01.6726970Z |
+| Captured | 2026-02-16T20:42:11.0538861Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (955.5 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -22,6 +25,21 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [streit-perham-lounge-study-banner.jpg](images/streit-perham-lounge-study-banner.jpg) | *(none)* | 394.3 KB |
+
+### Gallery
+
+![streit-perham-lounge-study-banner.jpg](images/streit-perham-lounge-study-banner.jpg)
+
+
+### ⚠️ Images Missing Alt Text (1)
+
+- `streit-perham-lounge-study-banner.jpg` — https://housing.wsu.edu/media/npqf0os4/streit-perham-lounge-study-banner.jpg
 
 ## Files
 
@@ -32,3 +50,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (394.3 KB)

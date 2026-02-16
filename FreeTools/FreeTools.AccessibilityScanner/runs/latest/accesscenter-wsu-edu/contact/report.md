@@ -8,14 +8,17 @@
 | Status | ✅ 200 |
 | HTML Size | 56.4 KB |
 | Screenshots | 1 (1.3 MB) |
+| Images | 1 (258.3 KB) |
+| Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:57.7807404Z |
+| Captured | 2026-02-16T20:40:06.8587117Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (1.3 MB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -23,6 +26,21 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [img_0164.jpg](images/img_0164.jpg) | *(none)* | 258.3 KB |
+
+### Gallery
+
+![img_0164.jpg](images/img_0164.jpg)
+
+
+### ⚠️ Images Missing Alt Text (1)
+
+- `img_0164.jpg` — https://accommodations.wsu.edu/media/55elmcmo/img_0164.jpg
 
 ## Files
 
@@ -33,3 +51,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (258.3 KB)

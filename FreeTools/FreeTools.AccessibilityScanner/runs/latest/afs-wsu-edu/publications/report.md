@@ -5,13 +5,15 @@
 | URL | https://afs.wsu.edu/publications/ |
 | Redirected To | https://afs.wsu.edu/publications/#gsc.tab=0 |
 | Title | Page not found | Agricultural and Food Systems | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 217.4 KB |
+| Status | ❌ 0 |
+| HTML Size | 211.1 KB |
 | Screenshots | 1 (85.1 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:12.1058624Z |
+| Captured | 2026-02-16T20:39:11.1120656Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (85.1 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 6/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 6 |
-| Pages Failed | 0 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
 | Total JS Errors | 1 |
 | Total JS Warnings | 0 |
-| Total HTML | 398.2 KB |
-| Total Screenshots | 5.6 MB |
+| Total HTML | 345.4 KB |
+| Total Screenshots | 4.5 MB |
+| Total Images | 14 (1.7 MB) |
+| Images Missing Alt | 12 |
 | Folder | `asl-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Applied Sciences Laboratory \| Washin... | 1 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About \| Applied Sciences Laboratory ... | 0 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact \| Applied Sciences Laborator... | 0 | 0 | 1 |
-| ✅ | [/facilities/](facilities/report.md) | 200 | Facilities \| Applied Sciences Labora... | 0 | 0 | 1 |
-| ✅ | [/publications/](publications/report.md) | 200 | Publications \| Applied Sciences Labo... | 0 | 0 | 1 |
-| ✅ | [/research/](research/report.md) | 200 | Research Staff \| Applied Sciences La... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Applied Sciences Laboratory \| Washin... | 1 | 4 | 4 |
+| ❌ | [/about/](about/report.md) | 0 | About \| Applied Sciences Laboratory ... | 0 | 1 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact \| Applied Sciences Laborator... | 0 | 0 | 0 |
+| ❌ | [/facilities/](facilities/report.md) | 0 | Facilities \| Applied Sciences Labora... | 0 | 0 | 0 |
+| ❌ | [/publications/](publications/report.md) | 0 | Publications \| Applied Sciences Labo... | 0 | 1 | 0 |
+| ❌ | [/research/](research/report.md) | 0 | Research Staff \| Applied Sciences La... | 0 | 8 | 8 |
 
 ## Page Screenshots
 
@@ -48,6 +50,39 @@
 ### [/research/](research/report.md)
 
 ![/research/](research/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /
+
+- **URL:** https://asl.wsu.edu/
+- **Status:** 0
+
+### /about/
+
+- **URL:** https://asl.wsu.edu/about/
+- **Status:** 0
+
+### /research/
+
+- **URL:** https://asl.wsu.edu/research/
+- **Status:** 0
+
+### /facilities/
+
+- **URL:** https://asl.wsu.edu/facilities/
+- **Status:** 0
+
+### /publications/
+
+- **URL:** https://asl.wsu.edu/publications/
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://asl.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors

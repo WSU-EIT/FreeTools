@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 7/7 pages OK |
+| Status | ⚠️ 0/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 7 |
-| Pages Failed | 0 |
+| Pages Passed | 0 |
+| Pages Failed | 7 |
 | Total JS Errors | 4 |
 | Total JS Warnings | 1 |
-| Total HTML | 765.5 KB |
-| Total Screenshots | 3.2 MB |
+| Total HTML | 748.9 KB |
+| Total Screenshots | 1.9 MB |
+| Total Images | 18 (1.8 MB) |
+| Images Missing Alt | 17 |
 | Folder | `research-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Office of Research \| Washington Stat... | 0 | 1 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About Us \| Office of Research \| Was... | 3 | 0 | 1 |
-| ✅ | [/compliance/](compliance/report.md) | 200 | Log In ‹ Office of Research — WordPress | 0 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Office of Research \| W... | 1 | 0 | 1 |
-| ✅ | [/funding/](funding/report.md) | 200 | Log In ‹ Office of Research — WordPress | 0 | 0 | 1 |
-| ✅ | [/research-areas/](research-areas/report.md) | 200 | Log In ‹ Office of Research — WordPress | 0 | 0 | 1 |
-| ✅ | [/resources/](resources/report.md) | 200 | Log In ‹ Office of Research — WordPress | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Office of Research \| Washington Stat... | 2 | 18 | 17 |
+| ❌ | [/about/](about/report.md) | 0 | About Us \| Office of Research \| Was... | 1 | 0 | 0 |
+| ❌ | [/compliance/](compliance/report.md) | 0 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Office of Research \| W... | 1 | 0 | 0 |
+| ❌ | [/funding/](funding/report.md) | 0 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
+| ❌ | [/research-areas/](research-areas/report.md) | 0 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Log In ‹ Office of Research — WordPress | 0 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -55,13 +57,54 @@
 ![/resources/](resources/01-page-loaded.png)
 
 
+## Failed Pages
+
+### /
+
+- **URL:** https://research.wsu.edu/
+- **Status:** 0
+
+### /about/
+
+- **URL:** https://research.wsu.edu/about/
+- **Status:** 0
+
+### /research-areas/
+
+- **URL:** https://research.wsu.edu/research-areas/
+- **Status:** 0
+
+### /funding/
+
+- **URL:** https://research.wsu.edu/funding/
+- **Status:** 0
+
+### /compliance/
+
+- **URL:** https://research.wsu.edu/compliance/
+- **Status:** 0
+
+### /resources/
+
+- **URL:** https://research.wsu.edu/resources/
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://research.wsu.edu/contact/
+- **Status:** 0
+
+
 ## Pages with JavaScript Errors
 
-### /about/ (3 errors)
+### / (2 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /about/ (1 errors)
 
 - `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /contact/ (1 errors)
 

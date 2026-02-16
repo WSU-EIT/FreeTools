@@ -7,20 +7,34 @@
 | Status | ✅ 200 |
 | HTML Size | 42.4 KB |
 | Screenshots | 1 (287.5 KB) |
+| Images | 1 (32.9 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T20:15:45.2681681Z |
+| Captured | 2026-02-16T20:41:29.2514292Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (287.5 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
 ### 1. page-loaded
 
 ![page-loaded](01-page-loaded.png)
+
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [image-1.png](images/image-1.png) | Research Roadblock? Gain access with ... | 32.9 KB |
+
+### Gallery
+
+![Research Roadblock? Gain access with a click](images/image-1.png)
 
 
 ## Files
@@ -32,3 +46,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (32.9 KB)

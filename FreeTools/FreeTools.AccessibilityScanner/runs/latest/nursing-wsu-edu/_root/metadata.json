@@ -3,31 +3,87 @@
   "Url": "https://nursing.wsu.edu/",
   "FinalUrl": null,
   "Title": "College of Nursing | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 297556,
-  "ScreenshotSizeBytes": 2065025,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 287184,
+  "ScreenshotSizeBytes": 1300683,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2065025
+      "FileSize": 1300683
+    }
+  ],
+  "ImageCount": 10,
+  "ImagesTotalSizeBytes": 632588,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "image-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-nursing/uploads/sites/3014/2025/09/Relief-Pain-Hub-logo-and-person-with-sore-neck-1024x676-1-792x523.jpg",
+      "AltText": "Relief Pain Hub logo, overlayed on an image of a woman applying pressure to her shoulder and neck to alleviate pain.",
+      "FileSize": 65779
+    },
+    {
+      "FileName": "nursing1-1024x685-1-792x530.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-nursing/uploads/sites/3014/2026/02/nursing1-1024x685-1-792x530.jpg",
+      "AltText": "WSU College of Nursing will transition 27 of its Yakima-based BSN students to other campus locations in the WSU system at the end of spring 2026.",
+      "FileSize": 85821
+    },
+    {
+      "FileName": "J1-Orientation-010826A6708263-16x9-1-792x445.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-nursing/uploads/sites/3014/2026/01/J1-Orientation-010826A6708263-16x9-1-792x445.jpg",
+      "AltText": "New BSN students during the Spring 2026 J1 Orientation at WSU College of Nursing, Spokane, WA.",
+      "FileSize": 84975
+    },
+    {
+      "FileName": "Adam-and-Meredith-Richards-image002-16x9-1-792x446.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-nursing/uploads/sites/3014/2025/12/Adam-and-Meredith-Richards-image002-16x9-1-792x446.jpg",
+      "AltText": "Meredith and Adam Richards smiling together in a close-up outdoor photo, with a scenic landscape of hills in the background.",
+      "FileSize": 51663
+    },
+    {
+      "FileName": "2025-In-Review-IMG_7040-bw-16x9-1-792x446.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-nursing/uploads/sites/3014/2025/12/2025-In-Review-IMG_7040-bw-16x9-1-792x446.jpg",
+      "AltText": "Large \u00222025\u0022 numerals in the foreground with a black and white backdrop of the WSU College of Nursing building in Spokane, WA.",
+      "FileSize": 67131
+    },
+    {
+      "FileName": "Anne-Mason_final_3-composite-100-bkgd-16x9-v2-792x446.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-nursing/uploads/sites/3014/2025/12/Anne-Mason_final_3-composite-100-bkgd-16x9-v2-792x446.jpg",
+      "AltText": "Portrait of Anne Mason.",
+      "FileSize": 49620
+    },
+    {
+      "FileName": "Welcome-sign-with-headshot-792x444.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-nursing/uploads/sites/3014/2025/12/Welcome-sign-with-headshot-792x444.jpg",
+      "AltText": "A \u0022Dr. Hernandez-Silva\u0022 welcome sign at the WSU College of Nursing, showing her photo and the WSU logo against a blue sky with clouds.",
+      "FileSize": 59094
+    },
+    {
+      "FileName": "Clarks-Recurring-Gifts-Pg-9-792x594.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-nursing/uploads/sites/3014/2025/12/Clarks-Recurring-Gifts-Pg-9-792x594.jpg",
+      "AltText": "Bob and Charlene Clark",
+      "FileSize": 105568
+    },
+    {
+      "FileName": "Huebner-photo-for-annual-report-16x9-1-792x445.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-nursing/uploads/sites/3014/2025/12/Huebner-photo-for-annual-report-16x9-1-792x445.jpg",
+      "AltText": "Carol Huebner, Professor Emerita of Nursing and Fellow of the American Academy of Nursing with her husband, Michael Huebner.",
+      "FileSize": 52236
+    },
+    {
+      "FileName": "SEA-to-GEG-e1697567786392.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3285/2023/08/SEA-to-GEG-e1697567786392.png",
+      "AltText": "Seattle to Spokane skyline silhouette",
+      "FileSize": 10701
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "etag": "\u00222beeb1b9941de497be6e7fd6d2772d50\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:09:52 GMT",
-    "link": "\u003Chttps://nursing.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://nursing.wsu.edu/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://nursing.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1348561Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.1350775Z"
 }

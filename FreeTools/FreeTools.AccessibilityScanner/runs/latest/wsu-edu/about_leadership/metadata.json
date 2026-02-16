@@ -5,7 +5,7 @@
   "Title": "Leadership | Washington State University | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 114592,
+  "HtmlSizeBytes": 114766,
   "ScreenshotSizeBytes": 2246103,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -18,14 +18,109 @@
       "FileSize": 2246103
     }
   ],
+  "ImageCount": 15,
+  "ImagesTotalSizeBytes": 1752155,
+  "ImagesMissingAlt": 13,
+  "Images": [
+    {
+      "FileName": "Elizabeth-Cantwell_1057-792x567.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2025/04/Elizabeth-Cantwell_1057-792x567.jpg",
+      "AltText": "",
+      "FileSize": 63268
+    },
+    {
+      "FileName": "LBrunelli-Headshot.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2025/12/LBrunelli-Headshot.jpg",
+      "AltText": "",
+      "FileSize": 36418
+    },
+    {
+      "FileName": "chris-riley-tillman-square.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2025/12/chris-riley-tillman-square.jpg",
+      "AltText": "",
+      "FileSize": 80585
+    },
+    {
+      "FileName": "Glynda_Pref_Pic-1.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2025/05/Glynda_Pref_Pic-1.jpg",
+      "AltText": "",
+      "FileSize": 30388
+    },
+    {
+      "FileName": "Kim-Headshot002-2.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2025/05/Kim-Headshot002-2.jpg",
+      "AltText": "",
+      "FileSize": 37160
+    },
+    {
+      "FileName": "Mike-Connell-Foundation_4958-scaled-e1636146510583-396x223-1.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/10/Mike-Connell-Foundation_4958-scaled-e1636146510583-396x223-1.jpg",
+      "AltText": "",
+      "FileSize": 36662
+    },
+    {
+      "FileName": "kerri-leadership-photo.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2025/12/kerri-leadership-photo.jpg",
+      "AltText": "",
+      "FileSize": 91488
+    },
+    {
+      "FileName": "r-1.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2024/09/r-1.jpg",
+      "AltText": "",
+      "FileSize": 86447
+    },
+    {
+      "FileName": "Tony_Opheim_2022-e1682967523441.jpeg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2023/03/Tony_Opheim_2022-e1682967523441.jpeg",
+      "AltText": "",
+      "FileSize": 32924
+    },
+    {
+      "FileName": "pam-scott-portrait.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2025/07/pam-scott-portrait.jpg",
+      "AltText": "",
+      "FileSize": 123355
+    },
+    {
+      "FileName": "MattSkinner-leadership-photo.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2025/12/MattSkinner-leadership-photo.jpg",
+      "AltText": "",
+      "FileSize": 37425
+    },
+    {
+      "FileName": "image-12.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2024/09/Whitney2c-Paul_Sept2016_image2992-1-e1500487376951-crop-1_Fotor-1.jpg",
+      "AltText": "",
+      "FileSize": 53990
+    },
+    {
+      "FileName": "Campus-photo-24.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/09/Campus-photo-24.jpg",
+      "AltText": "",
+      "FileSize": 321276
+    },
+    {
+      "FileName": "Campus-photo-21.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/09/Campus-photo-21.jpg",
+      "AltText": "Sandra Haynes",
+      "FileSize": 369866
+    },
+    {
+      "FileName": "Campus-photo-23.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/09/Campus-photo-23.jpg",
+      "AltText": "Paul Pitre",
+      "FileSize": 350903
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
-    "cache-control": "max-age=291, must-revalidate",
+    "cache-control": "max-age=8, must-revalidate",
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:40 GMT",
-    "last-modified": "Mon, 16 Feb 2026 20:09:31 GMT",
+    "date": "Mon, 16 Feb 2026 20:40:32 GMT",
+    "last-modified": "Mon, 16 Feb 2026 20:30:40 GMT",
     "link": "\u003Chttps://wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://wsu.edu/wp-json/wp/v2/pages/3383\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
     "server": "nginx",
     "transfer-encoding": "chunked",
@@ -34,5 +129,5 @@
     "x-frame-options": "DENY",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-16T20:14:39.1085828Z"
+  "CapturedAt": "2026-02-16T20:40:31.4855423Z"
 }

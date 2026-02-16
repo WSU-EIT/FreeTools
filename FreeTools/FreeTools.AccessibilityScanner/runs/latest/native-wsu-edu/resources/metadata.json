@@ -3,9 +3,9 @@
   "Url": "https://native.wsu.edu/resources/",
   "FinalUrl": "https://native.wsu.edu/cnrc/resources/",
   "Title": "Resources for Collaborative Research with Native American and Alaska Native Communities | Office of Native American Programs | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 227891,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 219019,
   "ScreenshotSizeBytes": 549729,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,19 +18,11 @@
       "FileSize": 549729
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:33 GMT",
-    "etag": "\u00223c3c3e49981d7cab7889d03ff0b67112\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:13:33 GMT",
-    "link": "\u003Chttps://native.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://native.wsu.edu/wp-json/wp/v2/pages/2295\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://native.wsu.edu/?p=2295\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://native.wsu.edu",
-    "x-tec-api-root": "https://native.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:13:31.4097725Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:48.6322337Z"
 }

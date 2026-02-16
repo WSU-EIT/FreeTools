@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 6/7 pages OK |
+| Status | ⚠️ 2/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 6 |
-| Pages Failed | 1 |
-| Total JS Errors | 11 |
+| Pages Passed | 2 |
+| Pages Failed | 5 |
+| Total JS Errors | 6 |
 | Total JS Warnings | 1 |
 | Total HTML | 1.4 MB |
-| Total Screenshots | 15.2 MB |
+| Total Screenshots | 11.7 MB |
+| Total Images | 48 (14.0 MB) |
+| Images Missing Alt | 5 |
 | Folder | `museum-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Jordan Schnitzer Museum of Art WSU \|... | 0 | 0 | 1 |
-| ✅ | [/collections/](collections/report.md) | 200 | Museum Collections \| Jordan Schnitze... | 1 | 0 | 1 |
-| ✅ | [/education/](education/report.md) | 200 | Education Highlights \| Jordan Schnit... | 1 | 0 | 1 |
-| ❌ | [/events/](events/report.md) | 405 | Human Verification | 1 | 1 | 1 |
-| ✅ | [/exhibitions/](exhibitions/report.md) | 200 | Exhibitions & Programs \| Jordan Schn... | 1 | 0 | 1 |
-| ✅ | [/support/](support/report.md) | 200 | Support the Museum \| Jordan Schnitze... | 1 | 0 | 1 |
-| ✅ | [/visit/](visit/report.md) | 200 | Visit \| Jordan Schnitzer Museum of A... | 6 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Jordan Schnitzer Museum of Art WSU \|... | 0 | 10 | 0 |
+| ❌ | [/collections/](collections/report.md) | 0 | Museum Collections \| Jordan Schnitze... | 1 | 12 | 4 |
+| ✅ | [/education/](education/report.md) | 200 | Education Highlights \| Jordan Schnit... | 1 | 6 | 0 |
+| ❌ | [/events/](events/report.md) | 405 | Human Verification | 1 | 0 | 0 |
+| ❌ | [/exhibitions/](exhibitions/report.md) | 0 | Exhibitions & Programs \| Jordan Schn... | 1 | 3 | 1 |
+| ✅ | [/support/](support/report.md) | 200 | Support the Museum \| Jordan Schnitze... | 1 | 5 | 0 |
+| ❌ | [/visit/](visit/report.md) | 0 | Visit \| Jordan Schnitzer Museum of A... | 1 | 12 | 0 |
 
 ## Page Screenshots
 
@@ -57,6 +59,26 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://museum.wsu.edu/
+- **Status:** 0
+
+### /visit/
+
+- **URL:** https://museum.wsu.edu/visit/
+- **Status:** 0
+
+### /exhibitions/
+
+- **URL:** https://museum.wsu.edu/exhibitions/
+- **Status:** 0
+
+### /collections/
+
+- **URL:** https://museum.wsu.edu/collections/
+- **Status:** 0
+
 ### /events/
 
 - **URL:** https://museum.wsu.edu/events/
@@ -65,14 +87,9 @@
 
 ## Pages with JavaScript Errors
 
-### /visit/ (6 errors)
+### /visit/ (1 errors)
 
 - `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /exhibitions/ (1 errors)
 

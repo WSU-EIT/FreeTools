@@ -5,17 +5,20 @@
 | URL | https://accesscenter.wsu.edu/students/ |
 | Redirected To | https://accommodations.wsu.edu/ |
 | Title |  |
-| Status | ✅ 200 |
-| HTML Size | 56.4 KB |
-| Screenshots | 1 (1.3 MB) |
+| Status | ❌ 0 |
+| HTML Size | 56.3 KB |
+| Screenshots | 1 (744.0 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:45.1155138Z |
+| Captured | 2026-02-16T20:38:39.1165523Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.3 MB)
+- Screenshot #1: page-loaded (744.0 KB)
+- Downloaded 0 images to /images/
 
 ## Screenshots
 
@@ -24,9 +27,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.3 MB)
+- `01-page-loaded.png` — page-loaded (744.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

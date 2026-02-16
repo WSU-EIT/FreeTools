@@ -11,7 +11,11 @@
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": "Download is starting\nCall log:\n  - navigating to \u0022https://sdc.wsu.edu/graduate/\u0022, waiting until \u0022networkidle\u0022",
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:14:12.1076572Z"
+  "CapturedAt": "2026-02-16T20:39:07.4590552Z"
 }

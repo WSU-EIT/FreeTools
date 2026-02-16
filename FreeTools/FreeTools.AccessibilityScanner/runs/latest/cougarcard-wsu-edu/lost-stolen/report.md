@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://cougarcard.wsu.edu/lost-stolen/ |
 | Title | Page Not Found |
-| Status | ❌ 404 |
+| Status | ❌ 0 |
 | HTML Size | 29.2 KB |
-| Screenshots | 1 (75.5 KB) |
+| Screenshots | 1 (71.0 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:26.1861605Z |
+| Captured | 2026-02-16T20:39:44.8308188Z |
 
 ## JavaScript Errors
 
@@ -18,7 +20,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (75.5 KB)
+- Screenshot #1: page-loaded (71.0 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,9 +30,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (75.5 KB)
+- `01-page-loaded.png` — page-loaded (71.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

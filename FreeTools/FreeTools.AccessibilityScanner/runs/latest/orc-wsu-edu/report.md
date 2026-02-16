@@ -2,36 +2,30 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 6/6 pages OK |
+| Status | ⚠️ 1/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 6 |
-| Pages Failed | 0 |
-| Total JS Errors | 1 |
+| Pages Passed | 1 |
+| Pages Failed | 5 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 461.6 KB |
-| Total Screenshots | 8.2 MB |
+| Total HTML | 230.8 KB |
+| Total Screenshots | 4.1 MB |
+| Total Images | 9 (1.3 MB) |
+| Images Missing Alt | 0 |
 | Folder | `orc-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Outdoor Recreation Center | 1 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | Outdoor Recreation Center | 0 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Outdoor Recreation Center | 0 | 0 | 1 |
-| ✅ | [/programs/](programs/report.md) | 200 | Outdoor Recreation Center | 0 | 0 | 1 |
-| ✅ | [/rentals/](rentals/report.md) | 200 | Outdoor Recreation Center | 0 | 0 | 1 |
-| ✅ | [/trips/](trips/report.md) | 200 | Outdoor Recreation Center | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Outdoor Recreation Center | 0 | 3 | 0 |
+| ❌ | [/programs/](programs/report.md) | 0 | Outdoor Recreation Center | 0 | 3 | 0 |
+| ❌ | [/rentals/](rentals/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/trips/](trips/report.md) | 0 | Outdoor Recreation Center | 0 | 3 | 0 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
 
 ### [/contact/](contact/report.md)
 
@@ -41,20 +35,50 @@
 
 ![/programs/](programs/01-page-loaded.png)
 
-### [/rentals/](rentals/report.md)
-
-![/rentals/](rentals/01-page-loaded.png)
-
 ### [/trips/](trips/report.md)
 
 ![/trips/](trips/01-page-loaded.png)
 
 
-## Pages with JavaScript Errors
+## Failed Pages
 
-### / (1 errors)
+### /
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- **URL:** https://orc.wsu.edu/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded`
+
+### /about/
+
+- **URL:** https://orc.wsu.edu/about/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
+
+### /rentals/
+
+- **URL:** https://orc.wsu.edu/rentals/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
+
+### /trips/
+
+- **URL:** https://orc.wsu.edu/trips/
+- **Status:** 0
+
+### /programs/
+
+- **URL:** https://orc.wsu.edu/programs/
+- **Status:** 0
 
 
 ---

@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 4/7 pages OK |
+| Status | ⚠️ 1/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 4 |
-| Pages Failed | 3 |
-| Total JS Errors | 13 |
-| Total JS Warnings | 4 |
-| Total HTML | 1.6 MB |
-| Total Screenshots | 11.1 MB |
+| Pages Passed | 1 |
+| Pages Failed | 6 |
+| Total JS Errors | 9 |
+| Total JS Warnings | 2 |
+| Total HTML | 1.4 MB |
+| Total Screenshots | 9.6 MB |
+| Total Images | 30 (5.3 MB) |
+| Images Missing Alt | 17 |
 | Folder | `education-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | College of Education, Sport, and Huma... | 5 | 2 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About WSU ROAR \| College of Educatio... | 1 | 0 | 1 |
-| ✅ | [/admissions/](admissions/report.md) | 200 | Athletic Training Admissions \| Colle... | 1 | 0 | 1 |
-| ✅ | [/faculty/](faculty/report.md) | 200 | Kinesiology Faculty \| College of Edu... | 1 | 0 | 1 |
-| ✅ | [/graduate/](graduate/report.md) | 200 | Office of Graduate Education \| Colle... | 1 | 0 | 1 |
-| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| College of Educatio... | 2 | 1 | 1 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 404 | Page not found \| College of Educatio... | 2 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | College of Education, Sport, and Huma... | 1 | 4 | 2 |
+| ❌ | [/about/](about/report.md) | 0 | About WSU ROAR \| College of Educatio... | 1 | 3 | 0 |
+| ✅ | [/admissions/](admissions/report.md) | 200 | Athletic Training Admissions \| Colle... | 1 | 8 | 0 |
+| ❌ | [/faculty/](faculty/report.md) | 0 | Kinesiology Faculty \| College of Edu... | 1 | 14 | 14 |
+| ❌ | [/graduate/](graduate/report.md) | 0 | Office of Graduate Education \| Colle... | 1 | 1 | 1 |
+| ❌ | [/programs/](programs/report.md) | 0 | Page not found \| College of Educatio... | 2 | 0 | 0 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Page not found \| College of Educatio... | 2 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -62,26 +64,33 @@
 - **URL:** https://education.wsu.edu/
 - **Status:** 0
 
+### /about/
+
+- **URL:** https://education.wsu.edu/about/
+- **Status:** 0
+
 ### /programs/
 
 - **URL:** https://education.wsu.edu/programs/
-- **Status:** 404
+- **Status:** 0
 
 ### /undergraduate/
 
 - **URL:** https://education.wsu.edu/undergraduate/
-- **Status:** 404
+- **Status:** 0
+
+### /graduate/
+
+- **URL:** https://education.wsu.edu/graduate/
+- **Status:** 0
+
+### /faculty/
+
+- **URL:** https://education.wsu.edu/faculty/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
-
-### / (5 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /programs/ (2 errors)
 
@@ -91,6 +100,10 @@
 ### /undergraduate/ (2 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### / (1 errors)
+
 - `Failed to load resource: the server responded with a status of 405 ()`
 
 ### /about/ (1 errors)

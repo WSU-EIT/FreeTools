@@ -5,20 +5,151 @@
   "Title": "WSU Tri-Cities - apply now to earn your degree",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 212853,
-  "ScreenshotSizeBytes": 908791,
+  "HtmlSizeBytes": 209714,
+  "ScreenshotSizeBytes": 164945,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 9,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 908791
+      "FileSize": 164945
+    }
+  ],
+  "ImageCount": 21,
+  "ImagesTotalSizeBytes": 828865,
+  "ImagesMissingAlt": 9,
+  "Images": [
+    {
+      "FileName": "WSU-TC-lockup-horz-4c_WEB-01.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-4c_WEB-01.png",
+      "AltText": "Logo",
+      "FileSize": 12895
+    },
+    {
+      "FileName": "WSU-TC-lockup-horz-rev_WEB_Spaced_larger-1.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-rev_WEB_Spaced_larger-1.png",
+      "AltText": "Logo",
+      "FileSize": 7440
+    },
+    {
+      "FileName": "WSU-TC-lockup-horz-4c_WEB_Spaced-01.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-4c_WEB_Spaced-01.png",
+      "AltText": "Logo",
+      "FileSize": 13125
+    },
+    {
+      "FileName": "WSU-TC-lockup-horz-rev_WEB_Spaced_Sticky.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-rev_WEB_Spaced_Sticky.png",
+      "AltText": "Logo",
+      "FileSize": 2139
+    },
+    {
+      "FileName": "WSU-TC-lockup-vert-rev_WEB-01.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-vert-rev_WEB-01.png",
+      "AltText": "Logo",
+      "FileSize": 16253
+    },
+    {
+      "FileName": "Cascadia-Web-Story.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/Cascadia-Web-Story.jpg",
+      "AltText": "WSU President Cantwell and BSEL Director Josh Heyne watching WSU researcher do an experiment.",
+      "FileSize": 76143
+    },
+    {
+      "FileName": "Manager-Coaching-Series-Web-Story.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/Manager-Coaching-Series-Web-Story.png",
+      "AltText": "Finger pointing to a word cloud with the following words: coaching, guidance, success, knowledge, learn, development, skills, experience, share, support, mentor, teach.",
+      "FileSize": 148447
+    },
+    {
+      "FileName": "Fall-2025-Enrollment-Web-Story.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/Fall-2025-Enrollment-Web-Story.png",
+      "AltText": "WSU Tri-Cities students and staff waving WSU flags as cars drive by.",
+      "FileSize": 178144
+    },
+    {
+      "FileName": "image-9.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/Insight_Into_Diversity_2024_Inspiring_Programs_in_STEM_Award_Logo-150x114.jpg",
+      "AltText": "Logo including a circle segmented into multi-colored fourths and icons of an atom, globe, pi, and gears. The text on the logo reads \u00222024 Inspiring Programs in STEM Award from Insight Into Diversity.\u0022",
+      "FileSize": 5619
+    },
+    {
+      "FileName": "cougar-bank.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/cougar-bank.png",
+      "AltText": "",
+      "FileSize": 2950
+    },
+    {
+      "FileName": "minority-150x114.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/2016/02/minority-150x114.png",
+      "AltText": "",
+      "FileSize": 11152
+    },
+    {
+      "FileName": "CAS.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/CAS.jpg",
+      "AltText": "",
+      "FileSize": 35963
+    },
+    {
+      "FileName": "CAS-2home-page-400x700-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/CAS-2home-page-400x700-1.jpg",
+      "AltText": "",
+      "FileSize": 36886
+    },
+    {
+      "FileName": "business-home-page-400x700-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/business-home-page-400x700-1.jpg",
+      "AltText": "",
+      "FileSize": 47741
+    },
+    {
+      "FileName": "computer-science-manny.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/computer-science-manny.jpg",
+      "AltText": "",
+      "FileSize": 58593
+    },
+    {
+      "FileName": "1nursing-home-page-400x700-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/1nursing-home-page-400x700-1.jpg",
+      "AltText": "",
+      "FileSize": 58905
+    },
+    {
+      "FileName": "wine-2home-page-400x700-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/wine-2home-page-400x700-1.jpg",
+      "AltText": "",
+      "FileSize": 76419
+    },
+    {
+      "FileName": "home-pagge_0000_Lian-Jacquez-edited-for-web.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/home-pagge_0000_Lian-Jacquez-edited-for-web.jpg",
+      "AltText": "Lian Jacquez",
+      "FileSize": 9976
+    },
+    {
+      "FileName": "home-pagge_0003_46351106344_0e0cb966d8_z.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/home-pagge_0003_46351106344_0e0cb966d8_z.jpg",
+      "AltText": "Vanessa Moore",
+      "FileSize": 10139
+    },
+    {
+      "FileName": "home-pagge_0002_Catalina-Yepez.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/home-pagge_0002_Catalina-Yepez.jpg",
+      "AltText": "",
+      "FileSize": 9638
+    },
+    {
+      "FileName": "home-pagge_0001_Geoff-Schramm-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/home-pagge_0001_Geoff-Schramm-1.jpg",
+      "AltText": "Geoff Schramm",
+      "FileSize": 10298
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.1678946Z"
+  "CapturedAt": "2026-02-16T20:37:05.181172Z"
 }

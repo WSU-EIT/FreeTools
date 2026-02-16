@@ -3,15 +3,16 @@
 | Field | Value |
 |-------|-------|
 | URL | https://li.wsu.edu/technology/ |
-| Redirected To | https://li.wsu.edu/technology/#gsc.tab=0 |
 | Title | Page not found | Academic Outreach and Innovation | Learning Innovations | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 232.4 KB |
+| Status | ❌ 0 |
+| HTML Size | 223.9 KB |
 | Screenshots | 1 (102.1 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:35.1860613Z |
+| Captured | 2026-02-16T20:38:16.0311674Z |
 
 ## JavaScript Errors
 
@@ -20,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (102.1 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

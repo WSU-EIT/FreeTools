@@ -5,13 +5,15 @@
 | URL | https://honors.wsu.edu/about/ |
 | Redirected To | https://honors.wsu.edu/about-honors/ |
 | Title | Why Honors | The Honors College | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 90.5 KB |
-| Screenshots | 1 (832.3 KB) |
+| Status | ❌ 0 |
+| HTML Size | 72.1 KB |
+| Screenshots | 1 (552.6 KB) |
+| Images | 1 (31.9 KB) |
+| Images Missing Alt | 1 |
 | JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:45.0090778Z |
+| Captured | 2026-02-16T20:37:59.3303549Z |
 
 ## JavaScript Errors
 
@@ -20,7 +22,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (832.3 KB)
+- Screenshot #1: page-loaded (552.6 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -29,12 +32,28 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [stats-black-bg.png](images/stats-black-bg.png) | *(none)* | 31.9 KB |
+
+### Gallery
+
+![stats-black-bg.png](images/stats-black-bg.png)
+
+
+### ⚠️ Images Missing Alt Text (1)
+
+- `stats-black-bg.png` — https://s3.wp.wsu.edu/uploads/sites/60/2021/01/stats-black-bg.png
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (832.3 KB)
+- `01-page-loaded.png` — page-loaded (552.6 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (31.9 KB)

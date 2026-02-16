@@ -5,13 +5,15 @@
 | URL | https://amdt.wsu.edu/admissions/ |
 | Redirected To | https://amdt.wsu.edu/admissions/#gsc.tab=0 |
 | Title | Page not found | Department of Apparel, Merchandising, Design and Textiles | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 220.0 KB |
+| Status | ❌ 0 |
+| HTML Size | 212.4 KB |
 | Screenshots | 1 (79.0 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:09.1418864Z |
+| Captured | 2026-02-16T20:39:27.6830973Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (79.0 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

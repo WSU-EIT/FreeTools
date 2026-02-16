@@ -3,9 +3,9 @@
   "Url": "https://cahnrs.wsu.edu/research/",
   "FinalUrl": null,
   "Title": "Office of Research | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 212614,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 212372,
   "ScreenshotSizeBytes": 1695954,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,23 +18,60 @@
       "FileSize": 1695954
     }
   ],
+  "ImageCount": 8,
+  "ImagesTotalSizeBytes": 2825726,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "handful-of-potatoes.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3174/2023/01/handful-of-potatoes.jpg",
+      "AltText": "hands holding potatoes",
+      "FileSize": 565338
+    },
+    {
+      "FileName": "researchers-flying-drone-over-orchard-400x264.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/researchers-flying-drone-over-orchard-400x264.jpg",
+      "AltText": "Drone users at orchard- WSU Photo",
+      "FileSize": 28632
+    },
+    {
+      "FileName": "AdobeStock_159177904-400x267.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/AdobeStock_159177904-400x267.jpeg",
+      "AltText": "Young couple is holding hands backlit by a sunset.",
+      "FileSize": 38873
+    },
+    {
+      "FileName": "Jeff-Wall-Crabapple-tree-400x300.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/Jeff-Wall-Crabapple-tree-400x300.jpeg",
+      "AltText": "Jeff Wall, Department of Horticulture",
+      "FileSize": 48134
+    },
+    {
+      "FileName": "McIntyre_stream1.jpeg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3174/2023/01/McIntyre_stream1.jpeg",
+      "AltText": "Female standing in stream",
+      "FileSize": 954590
+    },
+    {
+      "FileName": "40276680343_51afef0fa5_c.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3174/2023/01/40276680343_51afef0fa5_c.jpg",
+      "AltText": "Woman standing next to an apple tree in an orchard.",
+      "FileSize": 190472
+    },
+    {
+      "FileName": "49346900622_cf9ef9687a_c.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3174/2023/01/49346900622_cf9ef9687a_c.jpg",
+      "AltText": "Man kneeling in a field holding a plant",
+      "FileSize": 203294
+    },
+    {
+      "FileName": "52611930258_234f64c076_k.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3174/2023/03/52611930258_234f64c076_k.jpg",
+      "AltText": "mt. vernon field day",
+      "FileSize": 796393
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "max-age=600, must-revalidate",
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:34 GMT",
-    "last-modified": "Mon, 16 Feb 2026 20:13:34 GMT",
-    "link": "\u003Chttps://cahnrs.wsu.edu/research/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://cahnrs.wsu.edu/research/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
-    "server": "nginx/1.24.0",
-    "vary": "Accept-Encoding\nCookie, Accept-Encoding",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "SAMEORIGIN",
-    "x-pingback": "https://cahnrs.wsu.edu/research/xmlrpc.php",
-    "x-tec-api-origin": "https://cahnrs.wsu.edu/research",
-    "x-tec-api-root": "https://cahnrs.wsu.edu/research/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1",
-    "x-xss-protection": "1; mode=block"
-  },
-  "CapturedAt": "2026-02-16T20:13:32.8487372Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:44.8255356Z"
 }

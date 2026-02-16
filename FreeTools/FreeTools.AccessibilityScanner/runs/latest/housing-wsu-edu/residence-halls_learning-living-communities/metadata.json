@@ -18,16 +18,51 @@
       "FileSize": 158678
     }
   ],
+  "ImageCount": 5,
+  "ImagesTotalSizeBytes": 1467587,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "streit-perham-exterior-banner.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/sjte5pat/streit-perham-exterior-banner.jpg",
+      "AltText": "exterior of Streit Perham residence hall",
+      "FileSize": 411955
+    },
+    {
+      "FileName": "olympia-exterior-banner.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/w0db4iqy/olympia-exterior-banner.jpg",
+      "AltText": "Olympia residence hall front exterior",
+      "FileSize": 329152
+    },
+    {
+      "FileName": "mccroskey-exterior-side.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/4vbb1phv/mccroskey-exterior-side.jpg",
+      "AltText": "McCroskey Residence Hall",
+      "FileSize": 291959
+    },
+    {
+      "FileName": "scott-coman-exterior.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/mo5nab5z/scott-coman-exterior.jpg",
+      "AltText": "Scott Coman Residence Hall",
+      "FileSize": 186654
+    },
+    {
+      "FileName": "gg-exterior-banner.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/alyaa5k5/gg-exterior-banner.jpg",
+      "AltText": "exterior of Gannon Goldsworthy residence hall",
+      "FileSize": 247867
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:15:21 GMT",
+    "date": "Mon, 16 Feb 2026 20:41:27 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-16T20:15:21.4186471Z"
+  "CapturedAt": "2026-02-16T20:41:27.5217535Z"
 }

@@ -1,15 +1,15 @@
 {
   "PagePath": "/programs/",
   "Url": "https://nursing.wsu.edu/programs/",
-  "FinalUrl": "https://nursing.wsu.edu/programs/#gsc.tab=0",
+  "FinalUrl": null,
   "Title": "Page not found | College of Nursing | Washington State University",
-  "StatusCode": 404,
+  "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 258062,
+  "HtmlSizeBytes": 246090,
   "ScreenshotSizeBytes": 188371,
   "CredentialUsed": null,
   "ConsoleErrorCount": 4,
-  "ConsoleWarningCount": 1,
+  "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
@@ -18,17 +18,18 @@
       "FileSize": 188371
     }
   ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 10701,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "SEA-to-GEG-e1697567786392.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3285/2023/08/SEA-to-GEG-e1697567786392.png",
+      "AltText": "Seattle to Spokane skyline silhouette",
+      "FileSize": 10701
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "no-cache, must-revalidate, max-age=0",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:23 GMT",
-    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
-    "link": "\u003Chttps://nursing.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
-    "server": "nginx",
-    "x-tec-api-origin": "https://nursing.wsu.edu",
-    "x-tec-api-root": "https://nursing.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:12:21.8082076Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:20.7691095Z"
 }

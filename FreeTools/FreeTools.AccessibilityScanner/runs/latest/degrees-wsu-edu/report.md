@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 1 |
-| Pages Failed | 5 |
-| Total JS Errors | 7 |
-| Total JS Warnings | 5 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 12 |
+| Total JS Warnings | 0 |
 | Total HTML | 1.4 MB |
-| Total Screenshots | 1.3 MB |
+| Total Screenshots | 990.7 KB |
+| Total Images | 7 (579.6 KB) |
+| Images Missing Alt | 7 |
 | Folder | `degrees-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Degree Finder \| Washington State Uni... | 2 | 0 | 1 |
-| ❌ | [/graduate/](graduate/report.md) | 404 | Page not found \| Degree Finder \| Wa... | 1 | 1 | 1 |
-| ❌ | [/online/](online/report.md) | 404 | Page not found \| Degree Finder \| Wa... | 1 | 1 | 1 |
-| ❌ | [/professional/](professional/report.md) | 404 | Page not found \| Degree Finder \| Wa... | 1 | 1 | 1 |
-| ❌ | [/search/](search/report.md) | 404 | Page not found \| Degree Finder \| Wa... | 1 | 1 | 1 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 404 | Page not found \| Degree Finder \| Wa... | 1 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Degree Finder \| Washington State Uni... | 7 | 7 | 7 |
+| ❌ | [/graduate/](graduate/report.md) | 0 | Page not found \| Degree Finder \| Wa... | 1 | 0 | 0 |
+| ❌ | [/online/](online/report.md) | 0 | Page not found \| Degree Finder \| Wa... | 1 | 0 | 0 |
+| ❌ | [/professional/](professional/report.md) | 0 | Page not found \| Degree Finder \| Wa... | 1 | 0 | 0 |
+| ❌ | [/search/](search/report.md) | 0 | Page not found \| Degree Finder \| Wa... | 1 | 0 | 0 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Page not found \| Degree Finder \| Wa... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,36 +54,46 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://degrees.wsu.edu/
+- **Status:** 0
+
 ### /search/
 
 - **URL:** https://degrees.wsu.edu/search/
-- **Status:** 404
+- **Status:** 0
 
 ### /undergraduate/
 
 - **URL:** https://degrees.wsu.edu/undergraduate/
-- **Status:** 404
+- **Status:** 0
 
 ### /graduate/
 
 - **URL:** https://degrees.wsu.edu/graduate/
-- **Status:** 404
+- **Status:** 0
 
 ### /online/
 
 - **URL:** https://degrees.wsu.edu/online/
-- **Status:** 404
+- **Status:** 0
 
 ### /professional/
 
 - **URL:** https://degrees.wsu.edu/professional/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (2 errors)
+### / (7 errors)
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 

@@ -3,10 +3,10 @@
   "Url": "https://afw.wsu.edu/membership/",
   "FinalUrl": "https://afw.wsu.edu/event/membership-meeting-with-provost-chilton/",
   "Title": "Human Verification",
-  "StatusCode": 405,
+  "StatusCode": 0,
   "Success": false,
   "HtmlSizeBytes": 9360,
-  "ScreenshotSizeBytes": 18423,
+  "ScreenshotSizeBytes": 20993,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 1,
@@ -15,21 +15,14 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 18423
+      "FileSize": 20993
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "access-control-allow-methods": "OPTIONS,GET,POST",
-    "access-control-allow-origin": "*",
-    "access-control-expose-headers": "x-amzn-waf-action",
-    "access-control-max-age": "86400",
-    "cache-control": "no-store, max-age=0",
-    "content-length": "2103",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:13 GMT",
-    "server": "awselb/2.0",
-    "x-amzn-waf-action": "captcha"
-  },
-  "CapturedAt": "2026-02-16T20:12:10.0948108Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:04.1877294Z"
 }

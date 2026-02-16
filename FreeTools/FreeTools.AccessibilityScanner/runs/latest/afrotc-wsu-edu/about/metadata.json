@@ -5,20 +5,37 @@
   "Title": "About AFROTC | Air Force ROTC | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 71920,
-  "ScreenshotSizeBytes": 1408180,
+  "HtmlSizeBytes": 63417,
+  "ScreenshotSizeBytes": 1229777,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
-  "ConsoleWarningCount": 1,
+  "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1408180
+      "FileSize": 1229777
+    }
+  ],
+  "ImageCount": 2,
+  "ImagesTotalSizeBytes": 47181,
+  "ImagesMissingAlt": 2,
+  "Images": [
+    {
+      "FileName": "llab4-edit-1-396x272.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/1823/2025/03/llab4-edit-1-396x272.jpg",
+      "AltText": "",
+      "FileSize": 26714
+    },
+    {
+      "FileName": "PT-1-396x264.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/1823/2025/03/PT-1-396x264.jpeg",
+      "AltText": "",
+      "FileSize": 20467
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:11:30.0775572Z"
+  "CapturedAt": "2026-02-16T20:37:42.7047586Z"
 }

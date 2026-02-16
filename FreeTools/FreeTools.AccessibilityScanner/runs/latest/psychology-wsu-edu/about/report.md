@@ -4,23 +4,37 @@
 |-------|-------|
 | URL | https://psychology.wsu.edu/about/ |
 | Title | About | Department of Psychology | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 220.5 KB |
+| Status | ❌ 0 |
+| HTML Size | 206.2 KB |
 | Screenshots | 1 (588.2 KB) |
+| Images | 1 (274.0 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:45.0308629Z |
+| Captured | 2026-02-16T20:37:49.5268866Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (588.2 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
 ### 1. page-loaded
 
 ![page-loaded](01-page-loaded.png)
+
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [Johnson-DSC_0012-792x1191-1.jpg](images/Johnson-DSC_0012-792x1191-1.jpg) | Johnson Tower. | 274.0 KB |
+
+### Gallery
+
+![Johnson Tower.](images/Johnson-DSC_0012-792x1191-1.jpg)
 
 
 ## Files
@@ -32,3 +46,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (274.0 KB)

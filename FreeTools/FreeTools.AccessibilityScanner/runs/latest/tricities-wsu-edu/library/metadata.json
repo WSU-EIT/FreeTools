@@ -5,7 +5,7 @@
   "Title": "WSU Tri-Cities Library",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 131013,
+  "HtmlSizeBytes": 131012,
   "ScreenshotSizeBytes": 215376,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,15 +18,50 @@
       "FileSize": 215376
     }
   ],
+  "ImageCount": 5,
+  "ImagesTotalSizeBytes": 51852,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "WSU-TC-lockup-horz-4c_WEB-01.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-4c_WEB-01.png",
+      "AltText": "Logo",
+      "FileSize": 12895
+    },
+    {
+      "FileName": "WSU-TC-lockup-horz-rev_WEB_Spaced_larger-1.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-rev_WEB_Spaced_larger-1.png",
+      "AltText": "Logo",
+      "FileSize": 7440
+    },
+    {
+      "FileName": "WSU-TC-lockup-horz-4c_WEB_Spaced-01.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-4c_WEB_Spaced-01.png",
+      "AltText": "Logo",
+      "FileSize": 13125
+    },
+    {
+      "FileName": "WSU-TC-lockup-horz-rev_WEB_Spaced_Sticky.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-rev_WEB_Spaced_Sticky.png",
+      "AltText": "Logo",
+      "FileSize": 2139
+    },
+    {
+      "FileName": "WSU-TC-lockup-vert-rev_WEB-01.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-vert-rev_WEB-01.png",
+      "AltText": "Logo",
+      "FileSize": 16253
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:13 GMT",
+    "date": "Mon, 16 Feb 2026 20:40:39 GMT",
     "link": "\u003Chttps://tricities.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://tricities.wsu.edu/wp-json/wp/v2/pages/16814\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022\n\u003Chttps://tricities.wsu.edu/?p=16814\u003E; rel=shortlink",
     "server": "nginx/1.14.2",
     "vary": "Accept-Encoding",
     "x-args": "https://tricities.wsu.edu/wsu-tri-cities-library",
-    "x-cache-status": "STALE",
+    "x-cache-status": "HIT",
     "x-et-api-origin": "https://tricities.wsu.edu",
     "x-et-api-root": "https://tricities.wsu.edu/wp-json/tribe/tickets/v1/",
     "x-et-api-version": "v1",
@@ -35,5 +70,5 @@
     "x-tec-api-root": "https://tricities.wsu.edu/wp-json/tribe/events/v1/",
     "x-tec-api-version": "v1"
   },
-  "CapturedAt": "2026-02-16T20:14:12.0069412Z"
+  "CapturedAt": "2026-02-16T20:40:39.3037242Z"
 }

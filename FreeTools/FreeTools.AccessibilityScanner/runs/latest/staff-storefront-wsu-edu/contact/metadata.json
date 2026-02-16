@@ -18,15 +18,32 @@
       "FileSize": 72957
     }
   ],
+  "ImageCount": 2,
+  "ImagesTotalSizeBytes": 6963,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "_.gif",
+      "SourceUrl": "https://staff.storefront.wsu.edu/img/shared/_.gif",
+      "AltText": "",
+      "FileSize": 43
+    },
+    {
+      "FileName": "footer_logo_new_21.svg",
+      "SourceUrl": "https://staff.storefront.wsu.edu/user/images/globals/default/footer_logo_new_21.svg",
+      "AltText": "Washington State University logo.",
+      "FileSize": 6920
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "cache-control": "no-store, no-cache, must-revalidate",
     "connection": "close",
     "content-encoding": "gzip",
-    "content-length": "6251",
+    "content-length": "6250",
     "content-security-policy": "default-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 https://*; img-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 https://* data:; frame-src \u0027self\u0027 https://* mailto: data:; frame-ancestors \u0027self\u0027 https://*.authorize.net",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:20 GMT",
+    "date": "Mon, 16 Feb 2026 20:39:33 GMT",
     "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
     "p3p": "CP=CAO PSA OUR",
     "pragma": "no-cache",
@@ -38,5 +55,5 @@
     "x-frame-options": "sameorigin",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-16T20:12:18.6645671Z"
+  "CapturedAt": "2026-02-16T20:39:33.4645892Z"
 }

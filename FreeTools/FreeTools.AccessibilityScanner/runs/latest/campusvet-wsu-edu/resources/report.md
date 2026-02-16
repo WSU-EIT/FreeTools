@@ -5,17 +5,20 @@
 | URL | https://campusvet.wsu.edu/resources/ |
 | Redirected To | https://campusvet.wsu.edu/veterinary-care/resources/ |
 | Title | Resources | Campus Veterinarian | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 215.1 KB |
+| Status | ❌ 0 |
+| HTML Size | 204.1 KB |
 | Screenshots | 1 (255.8 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:17.2138068Z |
+| Captured | 2026-02-16T20:38:35.7179154Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (255.8 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -23,6 +26,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

@@ -18,15 +18,26 @@
       "FileSize": 103793
     }
   ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 24424,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "housing-and-res-life-horizontal_201-431-k_newlogo.png",
+      "SourceUrl": "https://housing.wsu.edu/media/2659/housing-and-res-life-horizontal_201-431-k_newlogo.png",
+      "AltText": "header image",
+      "FileSize": 24424
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "cache-control": "private",
     "content-length": "13823",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:12:51 GMT",
+    "date": "Mon, 16 Feb 2026 20:38:52 GMT",
     "server": "Microsoft-IIS/10.0",
     "x-aspnet-version": "4.0.30319",
     "x-powered-by": "ASP.NET"
   },
-  "CapturedAt": "2026-02-16T20:12:50.0932746Z"
+  "CapturedAt": "2026-02-16T20:38:52.1055796Z"
 }

@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 6/7 pages OK |
+| Status | ⚠️ 0/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 6 |
-| Pages Failed | 1 |
-| Total JS Errors | 8 |
+| Pages Passed | 0 |
+| Pages Failed | 7 |
+| Total JS Errors | 9 |
 | Total JS Warnings | 1 |
-| Total HTML | 1.6 MB |
-| Total Screenshots | 7.5 MB |
+| Total HTML | 1.5 MB |
+| Total Screenshots | 6.5 MB |
+| Total Images | 44 (3.1 MB) |
+| Images Missing Alt | 32 |
 | Folder | `ansci-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Animal Sciences \| Washington State U... | 1 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About \| Animal Sciences \| Washingto... | 1 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| Animal Sciences \| ... | 2 | 1 | 1 |
-| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Animal Sciences \| Washing... | 1 | 0 | 1 |
-| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Studies \| Animal Sciences \... | 1 | 0 | 1 |
-| ✅ | [/research/](research/report.md) | 200 | Research \| Animal Sciences \| Washin... | 1 | 0 | 1 |
-| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Studies \| Animal Scien... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Animal Sciences \| Washington State U... | 0 | 2 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | About \| Animal Sciences \| Washingto... | 1 | 1 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| Animal Sciences \| ... | 2 | 0 | 0 |
+| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| Animal Sciences \| Washing... | 1 | 28 | 28 |
+| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Studies \| Animal Sciences \... | 3 | 1 | 1 |
+| ❌ | [/research/](research/report.md) | 0 | Research \| Animal Sciences \| Washin... | 1 | 7 | 1 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Studies \| Animal Scien... | 1 | 5 | 2 |
 
 ## Page Screenshots
 
@@ -57,32 +59,60 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://ansci.wsu.edu/
+- **Status:** 0
+
+### /about/
+
+- **URL:** https://ansci.wsu.edu/about/
+- **Status:** 0
+
+### /undergraduate/
+
+- **URL:** https://ansci.wsu.edu/undergraduate/
+- **Status:** 0
+
+### /graduate/
+
+- **URL:** https://ansci.wsu.edu/graduate/
+- **Status:** 0
+
+### /research/
+
+- **URL:** https://ansci.wsu.edu/research/
+- **Status:** 0
+
+### /faculty/
+
+- **URL:** https://ansci.wsu.edu/faculty/
+- **Status:** 0
+
 ### /contact/
 
 - **URL:** https://ansci.wsu.edu/contact/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
+
+### /graduate/ (3 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_CONNECTION_RESET`
 
 ### /contact/ (2 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
 - `Failed to load resource: the server responded with a status of 405 ()`
 
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
 ### /about/ (1 errors)
 
 - `Failed to load resource: the server responded with a status of 405 ()`
 
 ### /undergraduate/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### /graduate/ (1 errors)
 
 - `Failed to load resource: the server responded with a status of 405 ()`
 

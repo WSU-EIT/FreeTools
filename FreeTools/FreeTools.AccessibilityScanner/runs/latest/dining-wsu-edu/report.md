@@ -2,32 +2,30 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
 | Total JS Errors | 3 |
 | Total JS Warnings | 0 |
-| Total HTML | 350.6 KB |
-| Total Screenshots | 4.1 MB |
+| Total HTML | 221.2 KB |
+| Total Screenshots | 1.1 MB |
+| Total Images | 11 (5.8 MB) |
+| Images Missing Alt | 1 |
 | Folder | `dining-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Home | 0 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/locations/](locations/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ✅ | [/meal-plans/](meal-plans/report.md) | 200 | Meal Plans | 0 | 0 | 1 |
-| ❌ | [/menus/](menus/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ✅ | [/nutrition/](nutrition/report.md) | 200 | Nutrition | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/locations/](locations/report.md) | 0 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/meal-plans/](meal-plans/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/menus/](menus/report.md) | 0 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/nutrition/](nutrition/report.md) | 0 | Nutrition | 0 | 11 | 1 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
 
 ### [/contact/](contact/report.md)
 
@@ -36,10 +34,6 @@
 ### [/locations/](locations/report.md)
 
 ![/locations/](locations/01-page-loaded.png)
-
-### [/meal-plans/](meal-plans/report.md)
-
-![/meal-plans/](meal-plans/01-page-loaded.png)
 
 ### [/menus/](menus/report.md)
 
@@ -56,16 +50,34 @@
 
 - **URL:** https://dining.wsu.edu/
 - **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
 
 ### /locations/
 
 - **URL:** https://dining.wsu.edu/locations/
-- **Status:** 404
+- **Status:** 0
+
+### /meal-plans/
+
+- **URL:** https://dining.wsu.edu/meal-plans/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
 
 ### /menus/
 
 - **URL:** https://dining.wsu.edu/menus/
-- **Status:** 404
+- **Status:** 0
+
+### /nutrition/
+
+- **URL:** https://dining.wsu.edu/nutrition/
+- **Status:** 0
 
 ### /contact/
 

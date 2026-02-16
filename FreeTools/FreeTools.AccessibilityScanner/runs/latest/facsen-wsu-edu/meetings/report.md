@@ -5,13 +5,15 @@
 | URL | https://facsen.wsu.edu/meetings/ |
 | Redirected To | https://facsen.wsu.edu/meetings-agendas/ |
 | Title | 2023-2024 Faculty Senate Agendas | Faculty Senate | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 233.9 KB |
+| Status | ❌ 0 |
+| HTML Size | 227.0 KB |
 | Screenshots | 1 (462.0 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:35.1976189Z |
+| Captured | 2026-02-16T20:38:58.2885260Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (462.0 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

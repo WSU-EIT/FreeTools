@@ -2,41 +2,43 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 21/21 pages OK |
+| Status | ⚠️ 15/21 pages OK |
 | Pages Scanned | 21 |
-| Pages Passed | 21 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 6 |
-| Total HTML | 6.1 MB |
-| Total Screenshots | 13.1 MB |
+| Pages Passed | 15 |
+| Pages Failed | 6 |
+| Total JS Errors | 2 |
+| Total JS Warnings | 1 |
+| Total HTML | 6.0 MB |
+| Total Screenshots | 12.8 MB |
+| Total Images | 34 (8.0 MB) |
+| Images Missing Alt | 2 |
 | Folder | `its-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Information Technology Services \| Wa... | 0 | 0 | 1 |
-| ✅ | [/about-its/](about-its/report.md) | 200 | About ITS \| Information Technology S... | 0 | 0 | 1 |
-| ✅ | [/about-its/accreditation-submission-introduction-2025/](about-its_accreditation-submission-introduction-2025/report.md) | 200 | Accreditation Submission Introduction... | 0 | 0 | 1 |
-| ✅ | [/about-its/its-informational-series/](about-its_its-informational-series/report.md) | 200 | ITS Informational Series \| Informati... | 0 | 5 | 1 |
-| ✅ | [/about-its/its-leadership-team/](about-its_its-leadership-team/report.md) | 200 | ITS Leadership Team \| Information Te... | 0 | 0 | 1 |
-| ✅ | [/crimson-service-desk/](crimson-service-desk/report.md) | 200 | Crimson Service Desk \| Information T... | 0 | 0 | 1 |
-| ✅ | [/enterprise-systems/](enterprise-systems/report.md) | 200 | Enterprise Systems \| Information Tec... | 0 | 0 | 1 |
-| ✅ | [/enterprise-systems/enterprise-systems-project-overview/](enterprise-systems_enterprise-systems-project-overview/report.md) | 200 | Project Overview \| Information Techn... | 0 | 0 | 1 |
-| ✅ | [/how-can-we-help-contact-its/](how-can-we-help-contact-its/report.md) | 200 | How Can We Help? \| Information Techn... | 0 | 0 | 1 |
-| ✅ | [/information-security-services/](information-security-services/report.md) | 200 | Office of Information Security and As... | 0 | 0 | 1 |
-| ✅ | [/information-security-services/password-assistance/](information-security-services_password-assistance/report.md) | 200 | How to change your password \| Inform... | 0 | 0 | 1 |
-| ✅ | [/information-security-services/security-spam-phishing-and-malware/](information-security-services_security-spam-phishing-and-malware/report.md) | 200 | Spam, Phishing, and Malware \| Inform... | 0 | 1 | 1 |
-| ✅ | [/its-careers/](its-careers/report.md) | 200 | ITS Careers \| Information Technology... | 0 | 0 | 1 |
-| ✅ | [/its-scheduled-maintenance/](its-scheduled-maintenance/report.md) | 200 | ITS Scheduled Maintenance \| Informat... | 0 | 0 | 1 |
-| ✅ | [/msdata-storage/](msdata-storage/report.md) | 200 | How to Manage and Reduce Microsoft Cl... | 0 | 0 | 1 |
-| ✅ | [/news/](news/report.md) | 200 | News \| Information Technology Servic... | 0 | 0 | 1 |
-| ✅ | [/news/newsletters/](news_newsletters/report.md) | 200 | Newsletters \| Information Technology... | 0 | 0 | 1 |
-| ✅ | [/piat/](piat/report.md) | 200 | Piat \| Information Technology Servic... | 0 | 0 | 1 |
-| ✅ | [/piat/buildings-and-spaces/](piat_buildings-and-spaces/report.md) | 200 | Buildings and Spaces \| Information T... | 0 | 0 | 1 |
-| ✅ | [/piat/instructor-support/](piat_instructor-support/report.md) | 200 | Instructor Support \| Information Tec... | 0 | 0 | 1 |
-| ✅ | [/services-a-z/](services-a-z/report.md) | 200 | Services A-Z \| Information Technolog... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Information Technology Services \| Wa... | 2 | 7 | 0 |
+| ❌ | [/about-its/](about-its/report.md) | 0 | About ITS \| Information Technology S... | 0 | 0 | 0 |
+| ❌ | [/about-its/accreditation-submission-introduction-2025/](about-its_accreditation-submission-introduction-2025/report.md) | 0 | Accreditation Submission Introduction... | 0 | 0 | 0 |
+| ❌ | [/about-its/its-informational-series/](about-its_its-informational-series/report.md) | 0 | ITS Informational Series \| Informati... | 0 | 0 | 0 |
+| ❌ | [/about-its/its-leadership-team/](about-its_its-leadership-team/report.md) | 0 | ITS Leadership Team \| Information Te... | 0 | 11 | 1 |
+| ❌ | [/crimson-service-desk/](crimson-service-desk/report.md) | 0 | Crimson Service Desk \| Information T... | 0 | 4 | 0 |
+| ✅ | [/enterprise-systems/](enterprise-systems/report.md) | 200 | Enterprise Systems \| Information Tec... | 0 | 1 | 0 |
+| ✅ | [/enterprise-systems/enterprise-systems-project-overview/](enterprise-systems_enterprise-systems-project-overview/report.md) | 200 | Project Overview \| Information Techn... | 0 | 1 | 0 |
+| ✅ | [/how-can-we-help-contact-its/](how-can-we-help-contact-its/report.md) | 200 | How Can We Help? \| Information Techn... | 0 | 0 | 0 |
+| ✅ | [/information-security-services/](information-security-services/report.md) | 200 | Office of Information Security and As... | 0 | 1 | 1 |
+| ✅ | [/information-security-services/password-assistance/](information-security-services_password-assistance/report.md) | 200 | How to change your password \| Inform... | 0 | 1 | 0 |
+| ✅ | [/information-security-services/security-spam-phishing-and-malware/](information-security-services_security-spam-phishing-and-malware/report.md) | 200 | Spam, Phishing, and Malware \| Inform... | 0 | 1 | 0 |
+| ✅ | [/its-careers/](its-careers/report.md) | 200 | ITS Careers \| Information Technology... | 0 | 4 | 0 |
+| ✅ | [/its-scheduled-maintenance/](its-scheduled-maintenance/report.md) | 200 | ITS Scheduled Maintenance \| Informat... | 0 | 0 | 0 |
+| ✅ | [/msdata-storage/](msdata-storage/report.md) | 200 | How to Manage and Reduce Microsoft Cl... | 0 | 0 | 0 |
+| ✅ | [/news/](news/report.md) | 200 | News \| Information Technology Servic... | 0 | 0 | 0 |
+| ✅ | [/news/newsletters/](news_newsletters/report.md) | 200 | Newsletters \| Information Technology... | 0 | 0 | 0 |
+| ✅ | [/piat/](piat/report.md) | 200 | Piat \| Information Technology Servic... | 0 | 1 | 0 |
+| ✅ | [/piat/buildings-and-spaces/](piat_buildings-and-spaces/report.md) | 200 | Buildings and Spaces \| Information T... | 0 | 1 | 0 |
+| ✅ | [/piat/instructor-support/](piat_instructor-support/report.md) | 200 | Instructor Support \| Information Tec... | 0 | 0 | 0 |
+| ✅ | [/services-a-z/](services-a-z/report.md) | 200 | Services A-Z \| Information Technolog... | 0 | 1 | 0 |
 
 ## Page Screenshots
 
@@ -123,6 +125,47 @@
 ### [/services-a-z/](services-a-z/report.md)
 
 ![/services-a-z/](services-a-z/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /
+
+- **URL:** https://its.wsu.edu/
+- **Status:** 0
+
+### /about-its/
+
+- **URL:** https://its.wsu.edu/about-its/
+- **Status:** 0
+
+### /about-its/its-leadership-team/
+
+- **URL:** https://its.wsu.edu/about-its/its-leadership-team/
+- **Status:** 0
+
+### /about-its/its-informational-series/
+
+- **URL:** https://its.wsu.edu/about-its/its-informational-series/
+- **Status:** 0
+
+### /about-its/accreditation-submission-introduction-2025/
+
+- **URL:** https://its.wsu.edu/about-its/accreditation-submission-introduction-2025/
+- **Status:** 0
+
+### /crimson-service-desk/
+
+- **URL:** https://its.wsu.edu/crimson-service-desk/
+- **Status:** 0
+
+
+## Pages with JavaScript Errors
+
+### / (2 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

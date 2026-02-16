@@ -3,9 +3,9 @@
   "Url": "https://vcea.wsu.edu/undergraduate/",
   "FinalUrl": "https://vcea.wsu.edu/2020/03/30/undergraduate-pass-fail-option-spring-2020/",
   "Title": "Undergraduate Pass/Fail Option, Spring 2020 | Voiland College of Engineering and Architecture | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 241588,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 233983,
   "ScreenshotSizeBytes": 165932,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,16 +18,11 @@
       "FileSize": 165932
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:22 GMT",
-    "etag": "\u0022ca0c73accdf5a9768e7cff0f872b1d76\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:13:22 GMT",
-    "link": "\u003Chttps://vcea.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://vcea.wsu.edu/wp-json/wp/v2/posts/29415\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://vcea.wsu.edu/?p=29415\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:13:20.3083272Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:44.9128189Z"
 }

@@ -1,12 +1,12 @@
 {
   "PagePath": "/training/",
   "Url": "https://office365.wsu.edu/training/",
-  "FinalUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca\u0026redirect_uri=https%3A%2F%2Fwww.microsoft365.com%2Flandingv2\u0026response_type=code%20id_token\u0026scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All\u0026response_mode=form_post\u0026nonce=639068695422500136.YTJhYWFmMWUtYTE3Yy00YjgwLWI3MzktODhlMDViZGEwMjk5NDY4NGI2NGUtZTJiMC00NjRiLTkzOGYtYTA1Y2ExMGQwZDAy\u0026ui_locales=en-US\u0026mkt=en-US\u0026client-request-id=07def97e-4ce8-4f48-875e-2cb3e401ad19\u0026state=tfqZNw1TM2M6svxtEz_8fFDBldO-hBwPOM_yleJqW9s0vuGKHjG3Exwe5Jf-y7C_tLA-oIpTbzHuZZQze2cYWAwsuLPw4BUqSmZdO2elpKoN6MLx8XTrNvO3ufBu2ftbmmicuE4MixXB1EC7i8XPmu8KHfKqhDOQtwdGItVtVeoWAqrbjEw2mDS602-Q0TdoAPTwgzp3fQ53vkGojDqS2_R-Uxex6zRDn8giEplr0kuCTbZKm_c5E98tGpnUVZZmB2snT6XzDzBiCDJbz3jfPGAu_lFOrDBi0yLpEulehvidt9HZWdbxkPdGPZ1uMmfRRNHfcc81Ph5xdk0VW1l6Fw\u0026x-client-SKU=ID_NET8_0\u0026x-client-ver=8.5.0.0\u0026sso_reload=true",
+  "FinalUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca\u0026redirect_uri=https%3A%2F%2Fwww.microsoft365.com%2Flandingv2\u0026response_type=code%20id_token\u0026scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All\u0026response_mode=form_post\u0026nonce=639068711238690327.ZmQ3NzBmNzctODUwNi00MzI4LTg4NDctMTI5MDI2ZjI2ODdmODA1MjYwMTQtZTc2ZS00NWM5LTk1MTctN2RhYjMyZmYwZDhk\u0026ui_locales=en-US\u0026mkt=en-US\u0026client-request-id=84d2ab01-be83-4e18-84b8-2ca97da8fed6\u0026state=t-vUEqzPegWQQGGjhKQeOiYR1PZaHGRXdVM0_JCbbMOIf1C-ubo-aMKgEAvGxUzhZ6fA7rEdA_t85HOM-2lBa0JnzyuCM4zXwxhx87yWE8RNo58BDe5yqgVvlFqjPIt3jykPvXCsi3JKq6DgJnQEqtYRZ7zvNMgm_fPR7CH2oXiw2gPzDQzzzqa-jbfgQK_ARCLsLXyF66tBcNgv9b__1xzJqwfkHXHvS07H7BlG2jIiznfxlnAnYE4x_4jVXbs7cDzsHrHvy1UB-sjh4sesV9yvWDyH9alR2kTns8yvtcbGyv1nWW07jXWTJNPoaHHsn5jkuQ-9xEzNxzCVFQnkTQ\u0026x-client-SKU=ID_NET8_0\u0026x-client-ver=8.5.0.0",
   "Title": "Sign in to your account",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 88746,
-  "ScreenshotSizeBytes": 291047,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 61092,
+  "ScreenshotSizeBytes": 4701,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,31 +15,14 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 291047
+      "FileSize": 4701
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "no-store, no-cache",
-    "content-encoding": "gzip",
-    "content-length": "9654",
-    "content-security-policy-report-only": "object-src \u0027none\u0027; base-uri \u0027self\u0027; script-src \u0027self\u0027 \u0027nonce-AvQUPJ6rLvMyroeyIzLMtA\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 https://*.msauth.net https://*.msftauth.net https://*.msftauthimages.net https://*.msauthimages.net https://*.msidentity.com https://*.microsoftonline-p.com https://*.microsoftazuread-sso.com https://*.azureedge.net https://*.outlook.com https://*.office.com https://*.office365.com https://*.microsoft.com https://*.bing.com \u0027report-sample\u0027; report-uri https://csp.microsoft.com/report/ESTS-UX-All",
-    "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:12:23 GMT",
-    "expires": "-1",
-    "nel": "{\u0022report_to\u0022:\u0022network-errors\u0022,\u0022max_age\u0022:86400,\u0022success_fraction\u0022:0.001,\u0022failure_fraction\u0022:1.0}",
-    "p3p": "CP=\u0022DSP CUR OTPi IND OTRi ONL FIN\u0022",
-    "pragma": "no-cache",
-    "referrer-policy": "strict-origin-when-cross-origin",
-    "report-to": "{\u0022group\u0022:\u0022network-errors\u0022,\u0022max_age\u0022:86400,\u0022endpoints\u0022:[{\u0022url\u0022:\u0022https://identity.nel.measure.office.net/api/report?catId=GW\u002Bestsfd\u002Bwst\u0022}]}",
-    "strict-transport-security": "max-age=31536000; includeSubDomains",
-    "vary": "Accept-Encoding",
-    "x-content-type-options": "nosniff",
-    "x-ms-clitelem": "1,50168,0,,",
-    "x-ms-ests-server": "2.1.23488.1 - WUS3 ProdSlices",
-    "x-ms-request-id": "fd2df29e-611c-4600-ba12-0efb28030a00",
-    "x-ms-srs": "1.P",
-    "x-xss-protection": "0"
-  },
-  "CapturedAt": "2026-02-16T20:12:14.9159003Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:38.4205662Z"
 }

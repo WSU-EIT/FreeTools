@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://research.wsu.edu/contact/ |
 | Title | Contact Us | Office of Research | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 239.4 KB |
+| Status | ❌ 0 |
+| HTML Size | 237.8 KB |
 | Screenshots | 1 (152.7 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:57.3492576Z |
+| Captured | 2026-02-16T20:39:34.4302950Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (152.7 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

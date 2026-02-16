@@ -3,10 +3,10 @@
   "Url": "https://museum.wsu.edu/collections/",
   "FinalUrl": "https://museum.wsu.edu/museum-collections/",
   "Title": "Museum Collections | Jordan Schnitzer Museum of Art WSU | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 248949,
-  "ScreenshotSizeBytes": 3311179,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 242384,
+  "ScreenshotSizeBytes": 2826208,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,22 +15,87 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 3311179
+      "FileSize": 2826208
+    }
+  ],
+  "ImageCount": 12,
+  "ImagesTotalSizeBytes": 3763996,
+  "ImagesMissingAlt": 4,
+  "Images": [
+    {
+      "FileName": "JSMOAWSU-LOGO-DOUBLE-LINE-396x99-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2023/04/JSMOAWSU-LOGO-DOUBLE-LINE-396x99-1.jpg",
+      "AltText": "Jordan Schnitzer Museum of Art WSU",
+      "FileSize": 10462
+    },
+    {
+      "FileName": "Collection-Open-House-13-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2025/08/Collection-Open-House-13-scaled.jpg",
+      "AltText": "Visitors mingle and look at artwork in a Collections storage space.",
+      "FileSize": 947988
+    },
+    {
+      "FileName": "DSC_1182-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2023/03/DSC_1182-scaled.jpg",
+      "AltText": "A student stands in front of a storage rack storing framed artwork",
+      "FileSize": 708243
+    },
+    {
+      "FileName": "041723_Trimpin_006-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2023/04/041723_Trimpin_006-scaled.jpg",
+      "AltText": "Two people work on an orange cylinder",
+      "FileSize": 549383
+    },
+    {
+      "FileName": "Online-Database-Jim-Dine.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2023/04/Online-Database-Jim-Dine.png",
+      "AltText": "A screengrab of the online database file on Jim Dine\u0027s Two Old Bathers",
+      "FileSize": 202277
+    },
+    {
+      "FileName": "Hodges-Jim_On-the-Edge-II-1-792x650.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2025/08/Hodges-Jim_On-the-Edge-II-1-792x650.jpg",
+      "AltText": "",
+      "FileSize": 199821
+    },
+    {
+      "FileName": "Shimomura_KABUKI-REHEARSAL-2_2012-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2025/08/Shimomura_KABUKI-REHEARSAL-2_2012-scaled.jpg",
+      "AltText": "",
+      "FileSize": 644222
+    },
+    {
+      "FileName": "gomez_gardener-strada-corta-road-792x792.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2025/08/gomez_gardener-strada-corta-road-792x792.jpg",
+      "AltText": "",
+      "FileSize": 241554
+    },
+    {
+      "FileName": "owens_for-sale-792x905.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2025/08/owens_for-sale-792x905.jpg",
+      "AltText": "",
+      "FileSize": 86490
+    },
+    {
+      "FileName": "David-Hockney_Henry-Geldzhaler-w-Hat-792x566.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2024/07/David-Hockney_Henry-Geldzhaler-w-Hat-792x566.jpg",
+      "AltText": "A drawing of a man in a hat.",
+      "FileSize": 43831
+    },
+    {
+      "FileName": "butterfield_Red-Forest_4-1.jpg@0.75x-1-792x566.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3189/2023/11/butterfield_Red-Forest_4-1.jpg@0.75x-1-792x566.jpg",
+      "AltText": "Sculpture of a horse made out of branches.",
+      "FileSize": 80618
+    },
+    {
+      "FileName": "Ann.Hamilton.Cordova-1-792x566.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3189/2023/11/Ann.Hamilton.Cordova-1-792x566.jpg",
+      "AltText": "A framed surrealist print. ",
+      "FileSize": 49107
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:52 GMT",
-    "etag": "\u0022b9276ced682f246b98c7981c11bc33c8\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:12:52 GMT",
-    "link": "\u003Chttps://museum.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://museum.wsu.edu/wp-json/wp/v2/pages/15794\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://museum.wsu.edu/?p=15794\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://museum.wsu.edu",
-    "x-tec-api-root": "https://museum.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:12:45.2274215Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:45.7467591Z"
 }

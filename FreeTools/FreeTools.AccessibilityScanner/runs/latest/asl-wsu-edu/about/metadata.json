@@ -3,10 +3,10 @@
   "Url": "https://asl.wsu.edu/about/",
   "FinalUrl": null,
   "Title": "About | Applied Sciences Laboratory | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 64427,
-  "ScreenshotSizeBytes": 1031861,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 56256,
+  "ScreenshotSizeBytes": 940774,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,21 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1031861
+      "FileSize": 940774
+    }
+  ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 530683,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "6_DSC3488_web.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2016/12/6_DSC3488_web.jpg",
+      "AltText": "Scientists working with equipment",
+      "FileSize": 530683
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:11:44 GMT",
-    "etag": "\u0022d088203d40925cb3fdad6a776ba061e6\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:11:44 GMT",
-    "link": "\u003Chttps://asl.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://asl.wsu.edu/wp-json/wp/v2/pages/12\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://asl.wsu.edu/?p=12\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:11:30.1649626Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:02.4089753Z"
 }

@@ -3,10 +3,10 @@
   "Url": "https://nursing.wsu.edu/students/",
   "FinalUrl": "https://nursing.wsu.edu/2022/01/12/students-can-get-covid-vax-or-boosters-at-upcoming-clinics/",
   "Title": "Students can get COVID vax or boosters at upcoming clinics | College of Nursing | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 291152,
-  "ScreenshotSizeBytes": 901176,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 256301,
+  "ScreenshotSizeBytes": 885759,
   "CredentialUsed": null,
   "ConsoleErrorCount": 3,
   "ConsoleWarningCount": 0,
@@ -15,22 +15,27 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 901176
+      "FileSize": 885759
+    }
+  ],
+  "ImageCount": 2,
+  "ImagesTotalSizeBytes": 125620,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "Vaccination-Clinic-nursing-MLK-Jr.-Center-28-792x527.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-nursing/uploads/sites/3014/2021/04/Vaccination-Clinic-nursing-MLK-Jr.-Center-28-792x527.jpg",
+      "AltText": "Student giving a vaccination.",
+      "FileSize": 114919
+    },
+    {
+      "FileName": "SEA-to-GEG-e1697567786392.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3285/2023/08/SEA-to-GEG-e1697567786392.png",
+      "AltText": "Seattle to Spokane skyline silhouette",
+      "FileSize": 10701
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:38 GMT",
-    "etag": "\u0022b2179ea6c64e73bad48e472b7972a24e\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:13:38 GMT",
-    "link": "\u003Chttps://nursing.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://nursing.wsu.edu/wp-json/wp/v2/posts/34756\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://nursing.wsu.edu/?p=34756\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://nursing.wsu.edu",
-    "x-tec-api-root": "https://nursing.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:13:35.8523357Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:57.377412Z"
 }

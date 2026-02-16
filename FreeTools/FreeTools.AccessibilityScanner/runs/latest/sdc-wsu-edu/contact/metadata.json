@@ -3,9 +3,9 @@
   "Url": "https://sdc.wsu.edu/contact/",
   "FinalUrl": "https://sdc.wsu.edu/contact-us/",
   "Title": "Contact Us | School of Design and Construction | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 232624,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 232630,
   "ScreenshotSizeBytes": 903206,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,16 +18,18 @@
       "FileSize": 903206
     }
   ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 110045,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "Chicago-2019-792x594-2.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3048/2022/07/Chicago-2019-792x594-2.jpg",
+      "AltText": "SDC Students gathered holding a wsu flag.",
+      "FileSize": 110045
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:44 GMT",
-    "etag": "\u0022b2d280bad6036a050bfc6d9e35fc5677\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:14:44 GMT",
-    "link": "\u003Chttps://sdc.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://sdc.wsu.edu/wp-json/wp/v2/pages/6045\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://sdc.wsu.edu/?p=6045\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:14:42.6476898Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:55.0442519Z"
 }

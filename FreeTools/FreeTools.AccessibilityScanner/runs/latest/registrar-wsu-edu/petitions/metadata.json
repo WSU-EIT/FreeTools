@@ -5,7 +5,7 @@
   "Title": "Academic Calendar Petitions | Office of the Registrar",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 668476,
+  "HtmlSizeBytes": 668472,
   "ScreenshotSizeBytes": 323712,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,7 +18,11 @@
       "FileSize": 323712
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:19:14.0246631Z"
+  "CapturedAt": "2026-02-16T20:40:41.2834201Z"
 }

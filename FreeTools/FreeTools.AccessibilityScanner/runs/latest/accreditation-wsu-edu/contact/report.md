@@ -5,13 +5,15 @@
 | URL | https://accreditation.wsu.edu/contact/ |
 | Redirected To | https://accreditation.wsu.edu/accreditation-home/contact/ |
 | Title | Contact | Accreditation Site | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 56.3 KB |
+| Status | ❌ 0 |
+| HTML Size | 46.4 KB |
 | Screenshots | 1 (59.3 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:56.1218514Z |
+| Captured | 2026-02-16T20:38:58.2555247Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (59.3 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

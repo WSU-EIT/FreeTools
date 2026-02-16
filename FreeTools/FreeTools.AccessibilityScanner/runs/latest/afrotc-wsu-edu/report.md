@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
-| Total JS Errors | 8 |
-| Total JS Warnings | 2 |
-| Total HTML | 336.3 KB |
-| Total Screenshots | 2.6 MB |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 3 |
+| Total JS Warnings | 1 |
+| Total HTML | 293.6 KB |
+| Total Screenshots | 1.9 MB |
+| Total Images | 2 (46.1 KB) |
+| Images Missing Alt | 2 |
 | Folder | `afrotc-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Air Force ROTC \| Washington State Un... | 5 | 1 | 1 |
-| ❌ | [/about/](about/report.md) | 0 | About AFROTC \| Air Force ROTC \| Was... | 0 | 1 | 1 |
-| ❌ | [/academics/](academics/report.md) | 404 | Page not found \| Air Force ROTC \| W... | 1 | 0 | 1 |
-| ❌ | [/admissions/](admissions/report.md) | 404 | Page not found \| Air Force ROTC \| W... | 1 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| Air Force ROTC \| W... | 1 | 0 | 1 |
-| ✅ | [/scholarships/](scholarships/report.md) | 200 | Scholarships \| Air Force ROTC \| Was... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Air Force ROTC \| Washington State Un... | 0 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | About AFROTC \| Air Force ROTC \| Was... | 0 | 2 | 2 |
+| ❌ | [/academics/](academics/report.md) | 0 | Page not found \| Air Force ROTC \| W... | 1 | 0 | 0 |
+| ❌ | [/admissions/](admissions/report.md) | 0 | Page not found \| Air Force ROTC \| W... | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| Air Force ROTC \| W... | 1 | 0 | 0 |
+| ❌ | [/scholarships/](scholarships/report.md) | 0 | Scholarships \| Air Force ROTC \| Was... | 0 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,6 +54,11 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://afrotc.wsu.edu/
+- **Status:** 0
+
 ### /about/
 
 - **URL:** https://afrotc.wsu.edu/about/
@@ -60,28 +67,25 @@
 ### /admissions/
 
 - **URL:** https://afrotc.wsu.edu/admissions/
-- **Status:** 404
+- **Status:** 0
 
 ### /academics/
 
 - **URL:** https://afrotc.wsu.edu/academics/
-- **Status:** 404
+- **Status:** 0
+
+### /scholarships/
+
+- **URL:** https://afrotc.wsu.edu/scholarships/
+- **Status:** 0
 
 ### /contact/
 
 - **URL:** https://afrotc.wsu.edu/contact/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
-
-### / (5 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /admissions/ (1 errors)
 

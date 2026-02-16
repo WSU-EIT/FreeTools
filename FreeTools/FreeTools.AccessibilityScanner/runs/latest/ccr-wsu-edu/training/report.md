@@ -5,13 +5,15 @@
 | URL | https://ccr.wsu.edu/training/ |
 | Redirected To | https://ccr.wsu.edu/training/#gsc.tab=0 |
 | Title | Page not found | Compliance and Civil Rights | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 231.8 KB |
+| Status | ❌ 0 |
+| HTML Size | 217.8 KB |
 | Screenshots | 1 (141.7 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:26.4841943Z |
+| Captured | 2026-02-16T20:38:54.5360262Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (141.7 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

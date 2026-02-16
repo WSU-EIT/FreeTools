@@ -3,15 +3,17 @@
 | Field | Value |
 |-------|-------|
 | URL | https://education.wsu.edu/undergraduate/ |
-| Redirected To | https://ceshs.wsu.edu/undergraduate#gsc.tab=0 |
+| Redirected To | https://ceshs.wsu.edu/undergraduate |
 | Title | Page not found | College of Education, Sport, and Human Sciences | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 231.0 KB |
+| Status | ❌ 0 |
+| HTML Size | 218.4 KB |
 | Screenshots | 1 (129.3 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 2 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:32.8110302Z |
+| Captured | 2026-02-16T20:39:12.0319931Z |
 
 ## JavaScript Errors
 
@@ -21,6 +23,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (129.3 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -28,6 +31,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

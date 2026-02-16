@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 5 |
-| Pages Failed | 1 |
-| Total JS Errors | 1 |
-| Total JS Warnings | 1 |
-| Total HTML | 1.5 MB |
-| Total Screenshots | 4.7 MB |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 6 |
+| Total JS Warnings | 0 |
+| Total HTML | 1.4 MB |
+| Total Screenshots | 4.5 MB |
+| Total Images | 49 (2.0 MB) |
+| Images Missing Alt | 41 |
 | Folder | `math-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Department of Mathematics and Statist... | 0 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page not found \| Department of Mathe... | 1 | 1 | 1 |
-| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Department of Mathematics ... | 0 | 0 | 1 |
-| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Course Rotation \| Departmen... | 0 | 0 | 1 |
-| ✅ | [/research/](research/report.md) | 200 | Research Strengths \| Department of M... | 0 | 0 | 1 |
-| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Learning Assistance \| ... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Department of Mathematics and Statist... | 5 | 8 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | Page not found \| Department of Mathe... | 1 | 0 | 0 |
+| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| Department of Mathematics ... | 0 | 41 | 41 |
+| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Course Rotation \| Departmen... | 0 | 0 | 0 |
+| ❌ | [/research/](research/report.md) | 0 | Research Strengths \| Department of M... | 0 | 0 | 0 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Learning Assistance \| ... | 0 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,13 +54,46 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://math.wsu.edu/
+- **Status:** 0
+
 ### /about/
 
 - **URL:** https://math.wsu.edu/about/
-- **Status:** 404
+- **Status:** 0
+
+### /undergraduate/
+
+- **URL:** https://math.wsu.edu/undergraduate/
+- **Status:** 0
+
+### /graduate/
+
+- **URL:** https://math.wsu.edu/graduate/
+- **Status:** 0
+
+### /faculty/
+
+- **URL:** https://math.wsu.edu/faculty/
+- **Status:** 0
+
+### /research/
+
+- **URL:** https://math.wsu.edu/research/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
+
+### / (5 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /about/ (1 errors)
 

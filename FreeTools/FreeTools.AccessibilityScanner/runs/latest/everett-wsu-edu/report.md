@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 6/6 pages OK |
+| Status | ⚠️ 3/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 6 |
-| Pages Failed | 0 |
-| Total JS Errors | 10 |
+| Pages Passed | 3 |
+| Pages Failed | 3 |
+| Total JS Errors | 15 |
 | Total JS Warnings | 2 |
-| Total HTML | 1.5 MB |
-| Total Screenshots | 9.6 MB |
+| Total HTML | 1.4 MB |
+| Total Screenshots | 9.2 MB |
+| Total Images | 112 (3.9 MB) |
+| Images Missing Alt | 92 |
 | Folder | `everett-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Washington State University Everett \... | 5 | 1 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | Washington State University Everett \... | 1 | 1 | 1 |
-| ✅ | [/academics/](academics/report.md) | 200 | Undergraduate \| Washington State Uni... | 1 | 0 | 1 |
-| ✅ | [/admissions/](admissions/report.md) | 200 | Apply to WSU Everett \| Washington St... | 1 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Washington State Univer... | 1 | 0 | 1 |
-| ✅ | [/student-services/](student-services/report.md) | 200 | Student Affairs Fall Preview \| Washi... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Washington State University Everett \... | 10 | 24 | 15 |
+| ❌ | [/about/](about/report.md) | 0 | Washington State University Everett \... | 1 | 22 | 14 |
+| ❌ | [/academics/](academics/report.md) | 0 | Undergraduate \| Washington State Uni... | 1 | 17 | 16 |
+| ✅ | [/admissions/](admissions/report.md) | 200 | Apply to WSU Everett \| Washington St... | 1 | 19 | 18 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Washington State Univer... | 1 | 16 | 15 |
+| ✅ | [/student-services/](student-services/report.md) | 200 | Student Affairs Fall Preview \| Washi... | 1 | 14 | 14 |
 
 ## Page Screenshots
 
@@ -50,10 +52,33 @@
 ![/student-services/](student-services/01-page-loaded.png)
 
 
+## Failed Pages
+
+### /
+
+- **URL:** https://everett.wsu.edu/
+- **Status:** 0
+
+### /about/
+
+- **URL:** https://everett.wsu.edu/about/
+- **Status:** 0
+
+### /academics/
+
+- **URL:** https://everett.wsu.edu/academics/
+- **Status:** 0
+
+
 ## Pages with JavaScript Errors
 
-### / (5 errors)
+### / (10 errors)
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_CONNECTION_ABORTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`

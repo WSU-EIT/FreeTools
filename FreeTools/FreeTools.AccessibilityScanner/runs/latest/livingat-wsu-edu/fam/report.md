@@ -7,16 +7,18 @@
 | Status | ✅ 200 |
 | HTML Size | 15.9 KB |
 | Screenshots | 1 (101.4 KB) |
+| Images | 1 (23.9 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 12 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:50.0932746Z |
+| Captured | 2026-02-16T20:38:52.1055796Z |
 
 ## JavaScript Errors
 
 - `Refused to apply style from 'https://housing.wsu.edu/css/normalize.css' because its MIME type ('') is not a supported stylesheet MIME type, and strict MIME checking is enabled.`
-- `Refused to apply style from 'https://housing.wsu.edu/css/contracts/contracts.css' because its MIME type ('') is not a supported stylesheet MIME type, and strict MIME checking is enabled.`
 - `Failed to load resource: the server responded with a status of 404 ()`
+- `Refused to apply style from 'https://housing.wsu.edu/css/contracts/contracts.css' because its MIME type ('') is not a supported stylesheet MIME type, and strict MIME checking is enabled.`
 - `Failed to load resource: the server responded with a status of 404 ()`
 - `Failed to load resource: the server responded with a status of 404 ()`
 - `Failed to load resource: the server responded with a status of 404 ()`
@@ -30,12 +32,24 @@
 ## Actions
 
 - Screenshot #1: page-loaded (101.4 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
 ### 1. page-loaded
 
 ![page-loaded](01-page-loaded.png)
+
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [housing-and-res-life-horizontal_201-431-k_newlogo.png](images/housing-and-res-life-horizontal_201-431-k_newlogo.png) | header image | 23.9 KB |
+
+### Gallery
+
+![header image](images/housing-and-res-life-horizontal_201-431-k_newlogo.png)
 
 
 ## Files
@@ -47,3 +61,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (23.9 KB)

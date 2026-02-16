@@ -3,31 +3,26 @@
   "Url": "https://threatassessment.wsu.edu/",
   "FinalUrl": null,
   "Title": "Threat Assessment | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 209167,
-  "ScreenshotSizeBytes": 122028,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 199453,
+  "ScreenshotSizeBytes": 121050,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 5,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 122028
+      "FileSize": 121050
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "etag": "\u00228221f4faa07f894d77259e0b0860ea40\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:51:14 GMT",
-    "link": "\u003Chttps://threatassessment.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://threatassessment.wsu.edu/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://threatassessment.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.167889Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.1803656Z"
 }

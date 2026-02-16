@@ -5,20 +5,79 @@
   "Title": "Here. We. Go | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 251297,
-  "ScreenshotSizeBytes": 1324803,
+  "HtmlSizeBytes": 248924,
+  "ScreenshotSizeBytes": 1216624,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1324803
+      "FileSize": 1216624
+    }
+  ],
+  "ImageCount": 9,
+  "ImagesTotalSizeBytes": 2982687,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "Go-go-go-copy.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/3024/2024/08/Go-go-go-copy.png",
+      "AltText": "",
+      "FileSize": 15167
+    },
+    {
+      "FileName": "HWG_Discover-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/3024/2025/03/HWG_Discover-scaled.jpg",
+      "AltText": "Large text reading Go overlaying a smiling researcher in safety glasses and a white lab coat using a tool to fill small bottles with a wine bottle in the foreground.",
+      "FileSize": 431207
+    },
+    {
+      "FileName": "Catalina-Yepez_9768-1024x683.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/3024/2025/04/Catalina-Yepez_9768-1024x683.jpg",
+      "AltText": "A pharmacy student wearing a white coat at a pharmacy desk holding a prescription bottle while explaining to a customer.",
+      "FileSize": 122984
+    },
+    {
+      "FileName": "Catalina-Yepez_8213-1024x683.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/3024/2025/04/Catalina-Yepez_8213-1024x683.jpg",
+      "AltText": "A pharmacy student wearing a white coat talking with another pharmacist, there is a tall water tower in the background with the word Toppenish.",
+      "FileSize": 125756
+    },
+    {
+      "FileName": "HWG_Impact-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/3024/2025/03/HWG_Impact-scaled.jpg",
+      "AltText": "Large text reading Go overlaying a person in safety glasses, a white work coat, and brown work boots kneeling to look inside a large open mechanical device.",
+      "FileSize": 575486
+    },
+    {
+      "FileName": "AF07-TW7_6520-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/3024/2025/03/AF07-TW7_6520-scaled.jpg",
+      "AltText": "A microbiologist in blue protective equipment works at a biosafety cabinet.",
+      "FileSize": 436888
+    },
+    {
+      "FileName": "Bear-video-screenshot-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/3024/2024/09/Bear-video-screenshot-1.jpg",
+      "AltText": "A grizzly bear rolling a cooler while another sniffs the ground nearby.",
+      "FileSize": 573328
+    },
+    {
+      "FileName": "worker-with-child-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/3024/2024/08/worker-with-child-scaled.jpg",
+      "AltText": "Medical person giving a shot to a child.",
+      "FileSize": 680150
+    },
+    {
+      "FileName": "wordmark.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/3024/2024/08/wordmark.jpg",
+      "AltText": "Coug Head Washington State University",
+      "FileSize": 21721
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.124688Z"
+  "CapturedAt": "2026-02-16T20:37:05.0826857Z"
 }

@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
-| Total JS Errors | 7 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 9 |
 | Total JS Warnings | 0 |
-| Total HTML | 369.2 KB |
-| Total Screenshots | 1.7 MB |
+| Total HTML | 317.5 KB |
+| Total Screenshots | 1.3 MB |
+| Total Images | 2 (439.3 KB) |
+| Images Missing Alt | 2 |
 | Folder | `sustainability-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | WSU Sustainability \| Washington Stat... | 3 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page not found \| WSU Sustainability ... | 1 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| WSU Sustainability \| W... | 0 | 0 | 1 |
-| ❌ | [/get-involved/](get-involved/report.md) | 404 | Page not found \| WSU Sustainability ... | 1 | 0 | 1 |
-| ❌ | [/initiatives/](initiatives/report.md) | 404 | Page not found \| WSU Sustainability ... | 1 | 0 | 1 |
-| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| WSU Sustainability ... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Sustainability \| Washington Stat... | 5 | 2 | 2 |
+| ❌ | [/about/](about/report.md) | 0 | Page not found \| WSU Sustainability ... | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| WSU Sustainability \| W... | 0 | 0 | 0 |
+| ❌ | [/get-involved/](get-involved/report.md) | 0 | Page not found \| WSU Sustainability ... | 1 | 0 | 0 |
+| ❌ | [/initiatives/](initiatives/report.md) | 0 | Page not found \| WSU Sustainability ... | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| WSU Sustainability ... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,31 +54,43 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://sustainability.wsu.edu/
+- **Status:** 0
+
 ### /about/
 
 - **URL:** https://sustainability.wsu.edu/about/
-- **Status:** 404
+- **Status:** 0
 
 ### /initiatives/
 
 - **URL:** https://sustainability.wsu.edu/initiatives/
-- **Status:** 404
+- **Status:** 0
 
 ### /get-involved/
 
 - **URL:** https://sustainability.wsu.edu/get-involved/
-- **Status:** 404
+- **Status:** 0
 
 ### /resources/
 
 - **URL:** https://sustainability.wsu.edu/resources/
-- **Status:** 404
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://sustainability.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (3 errors)
+### / (5 errors)
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`

@@ -5,7 +5,7 @@
   "Title": "Washington State University Alumni Association - Alumni Travel Offerings 2025 - 2026",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 78804,
+  "HtmlSizeBytes": 78770,
   "ScreenshotSizeBytes": 244797,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -18,17 +18,34 @@
       "FileSize": 244797
     }
   ],
+  "ImageCount": 2,
+  "ImagesTotalSizeBytes": 19434,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "logo-print.jpg",
+      "SourceUrl": "https://alumni.wsu.edu/s/1613/18/images/logo-print.jpg",
+      "AltText": "Print Logo",
+      "FileSize": 6141
+    },
+    {
+      "FileName": "Horizontal_WSUAA-only_white.png",
+      "SourceUrl": "https://alumni.wsu.edu/s/1613/18/images/Horizontal_WSUAA-only_white.png",
+      "AltText": "Footer Logo",
+      "FileSize": 13293
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "access-control-expose-headers": "Request-Context",
     "cache-control": "no-cache, no-store",
     "cf-cache-status": "DYNAMIC",
-    "cf-ray": "9cefb16c7fc876fa-SEA",
+    "cf-ray": "9cefd8b11b205b4d-SEA",
     "content-encoding": "gzip",
-    "content-length": "17791",
+    "content-length": "17776",
     "content-security-policy": "frame-ancestors \u0027self\u0027 imodules.com default-src \u0027self\u0027",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:11:15 GMT",
+    "date": "Mon, 16 Feb 2026 20:38:03 GMT",
     "expires": "-1",
     "pragma": "no-cache",
     "request-context": "appId=cid-v1:260dcd14-1564-44b4-b5c5-7abfe7739f73",
@@ -40,8 +57,8 @@
     "x-frame-options": "SAMEORIGIN",
     "x-powered-by": "ASP.NET",
     "x-server": "uswebgreen05",
-    "x-stackifyid": "V2|5cf03d7a-6f19-441a-b818-b8a0f9a2addd|C0|CD0",
+    "x-stackifyid": "V2|6e4199d3-13d4-43be-9731-5bf69ac29aa8|C0|CD0",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-16T20:11:08.1186601Z"
+  "CapturedAt": "2026-02-16T20:37:55.7157912Z"
 }

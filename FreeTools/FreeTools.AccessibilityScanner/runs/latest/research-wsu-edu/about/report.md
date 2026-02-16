@@ -4,23 +4,24 @@
 |-------|-------|
 | URL | https://research.wsu.edu/about/ |
 | Title | About Us | Office of Research | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 234.1 KB |
+| Status | ❌ 0 |
+| HTML Size | 228.3 KB |
 | Screenshots | 1 (1.4 MB) |
-| JS Errors | 3 |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:16.4597300Z |
+| Captured | 2026-02-16T20:38:12.3808381Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
 - Screenshot #1: page-loaded (1.4 MB)
+- Downloaded 0 images to /images/
 
 ## Screenshots
 
@@ -28,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

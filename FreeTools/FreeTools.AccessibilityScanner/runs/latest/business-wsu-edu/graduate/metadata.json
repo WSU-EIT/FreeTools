@@ -3,9 +3,9 @@
   "Url": "https://business.wsu.edu/graduate/",
   "FinalUrl": "https://business.wsu.edu/graduate-placements/",
   "Title": "Graduate Placements - Carson College of Business | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 185671,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 185726,
   "ScreenshotSizeBytes": 554415,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
@@ -18,19 +18,36 @@
       "FileSize": 554415
     }
   ],
+  "ImageCount": 4,
+  "ImagesTotalSizeBytes": 538800,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "wsu-logo.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/05/wsu-logo.svg",
+      "AltText": "Carson College of Business | Washington State University",
+      "FileSize": 34636
+    },
+    {
+      "FileName": "Placement-Map-v2-1024x677.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2025/10/Placement-Map-v2-1024x677.png",
+      "AltText": "Map of the United States with red markers indicating PhD graduate placement locations across nearly every state.",
+      "FileSize": 487993
+    },
+    {
+      "FileName": "wsu-mascot-logo.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/06/wsu-mascot-logo.svg",
+      "AltText": "",
+      "FileSize": 5462
+    },
+    {
+      "FileName": "wsu-logo-1.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/06/wsu-logo.svg",
+      "AltText": "drglow-footer-logo",
+      "FileSize": 10709
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:46 GMT",
-    "etag": "\u002291ac38757979f921ed957c8c85cda445\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:13:46 GMT",
-    "link": "\u003Chttps://business.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://business.wsu.edu/wp-json/wp/v2/pages/59011\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://business.wsu.edu/?p=59011\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://business.wsu.edu",
-    "x-tec-api-root": "https://business.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:13:43.4916901Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:52.7906609Z"
 }

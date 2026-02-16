@@ -3,9 +3,9 @@
   "Url": "https://gis.wsu.edu/services/",
   "FinalUrl": "https://wsuadmin.maps.arcgis.com/home/index.html",
   "Title": "",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 162718,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 401801,
   "ScreenshotSizeBytes": 4253,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,26 +18,11 @@
       "FileSize": 4253
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "private, max-age=0",
-    "content-encoding": "br",
-    "content-length": "257",
-    "content-security-policy": "upgrade-insecure-requests",
-    "content-type": "text/html",
-    "date": "Mon, 16 Feb 2026 20:11:56 GMT",
-    "etag": "\u00224d8ff8b42c512f84405d3c19bc6e8bd6\u0022",
-    "expires": "-1",
-    "last-modified": "Sat, 08 Nov 2025 00:56:46 GMT",
-    "link": "\u003Chttps://www.arcgis.com/home/index.html\u003E; rel=\u0022canonical\u0022",
-    "referrer-policy": "no-referrer-when-downgrade",
-    "server": "ArcGIS Online",
-    "strict-transport-security": "max-age=63072000",
-    "via": "1.1 264cb7af72b5640529967523a2e1b25e.cloudfront.net (CloudFront)",
-    "x-amz-cf-id": "Z6a_jCyQuQO3_rka0ELupKZcf_LKxVwoAlqrfk5GDmUOtVy7EASKdg==",
-    "x-amz-cf-pop": "SEA900-P3",
-    "x-cache": "Miss from cloudfront",
-    "x-cached": "HIT"
-  },
-  "CapturedAt": "2026-02-16T20:11:45.5102402Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:59.9469803Z"
 }

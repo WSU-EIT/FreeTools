@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://alert.wsu.edu/emergency-info/ |
 | Title | Page not found | Alert | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 59.0 KB |
+| Status | ❌ 0 |
+| HTML Size | 49.3 KB |
 | Screenshots | 1 (147.1 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:45.0432618Z |
+| Captured | 2026-02-16T20:37:41.3440287Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (147.1 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

@@ -3,15 +3,16 @@
 | Field | Value |
 |-------|-------|
 | URL | https://gradschool.wsu.edu/programs/ |
-| Redirected To | https://gradschool.wsu.edu/programs/#gsc.tab=0 |
 | Title | Page not found | The Graduate School | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 386.0 KB |
-| Screenshots | 1 (79.3 KB) |
+| Status | ❌ 0 |
+| HTML Size | 368.8 KB |
+| Screenshots | 1 (79.1 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 2 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:55.6753925Z |
+| Captured | 2026-02-16T20:38:25.5574167Z |
 
 ## JavaScript Errors
 
@@ -20,7 +21,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (79.3 KB)
+- Screenshot #1: page-loaded (79.1 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -29,9 +31,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (79.3 KB)
+- `01-page-loaded.png` — page-loaded (79.1 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

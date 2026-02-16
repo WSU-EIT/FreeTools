@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/7 pages OK |
+| Status | ⚠️ 0/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 5 |
-| Pages Failed | 2 |
-| Total JS Errors | 5 |
-| Total JS Warnings | 2 |
+| Pages Passed | 0 |
+| Pages Failed | 7 |
+| Total JS Errors | 1 |
+| Total JS Warnings | 1 |
 | Total HTML | 1.6 MB |
-| Total Screenshots | 5.7 MB |
+| Total Screenshots | 4.0 MB |
+| Total Images | 19 (2.6 MB) |
+| Images Missing Alt | 4 |
 | Folder | `vcea-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Voiland College of Engineering and Ar... | 4 | 1 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page not found \| Voiland College of ... | 1 | 1 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contacts \| Voiland College of Engine... | 0 | 0 | 1 |
-| ✅ | [/departments/](departments/report.md) | 200 | Schools and Departments \| Voiland Co... | 0 | 0 | 1 |
-| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Students Present Research \|... | 0 | 0 | 1 |
-| ✅ | [/research/](research/report.md) | 200 | Research \| Voiland College of Engine... | 0 | 0 | 1 |
-| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Pass/Fail Option, Sprin... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Voiland College of Engineering and Ar... | 0 | 7 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | Page not found \| Voiland College of ... | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contacts \| Voiland College of Engine... | 0 | 4 | 4 |
+| ❌ | [/departments/](departments/report.md) | 0 | Schools and Departments \| Voiland Co... | 0 | 1 | 0 |
+| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Students Present Research \|... | 0 | 0 | 0 |
+| ❌ | [/research/](research/report.md) | 0 | Research \| Voiland College of Engine... | 0 | 7 | 0 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Pass/Fail Option, Sprin... | 0 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -65,17 +67,35 @@
 ### /about/
 
 - **URL:** https://vcea.wsu.edu/about/
-- **Status:** 404
+- **Status:** 0
+
+### /departments/
+
+- **URL:** https://vcea.wsu.edu/departments/
+- **Status:** 0
+
+### /undergraduate/
+
+- **URL:** https://vcea.wsu.edu/undergraduate/
+- **Status:** 0
+
+### /graduate/
+
+- **URL:** https://vcea.wsu.edu/graduate/
+- **Status:** 0
+
+### /research/
+
+- **URL:** https://vcea.wsu.edu/research/
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://vcea.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
-
-### / (4 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /about/ (1 errors)
 

@@ -3,36 +3,93 @@
   "Url": "https://wsu.edu/about/",
   "FinalUrl": null,
   "Title": "About WSU | Washington State University | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 134158,
-  "ScreenshotSizeBytes": 2633408,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 116559,
+  "ScreenshotSizeBytes": 1178489,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2633408
+      "FileSize": 1178489
+    }
+  ],
+  "ImageCount": 11,
+  "ImagesTotalSizeBytes": 2523387,
+  "ImagesMissingAlt": 10,
+  "Images": [
+    {
+      "FileName": "Campus-photo.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo.jpg",
+      "AltText": "",
+      "FileSize": 285679
+    },
+    {
+      "FileName": "Campus-photo-1.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-1.jpg",
+      "AltText": "",
+      "FileSize": 288252
+    },
+    {
+      "FileName": "Campus-photo-2.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-2.jpg",
+      "AltText": "",
+      "FileSize": 210158
+    },
+    {
+      "FileName": "Campus-photo-3.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-3.jpg",
+      "AltText": "",
+      "FileSize": 319279
+    },
+    {
+      "FileName": "Campus-photo-4.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-4.jpg",
+      "AltText": "",
+      "FileSize": 191786
+    },
+    {
+      "FileName": "Campus-photo-5.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-5.jpg",
+      "AltText": "",
+      "FileSize": 172410
+    },
+    {
+      "FileName": "Community-Pic.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Community-Pic.jpg",
+      "AltText": "",
+      "FileSize": 408632
+    },
+    {
+      "FileName": "Community-Pic-1.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Community-Pic-1.jpg",
+      "AltText": "",
+      "FileSize": 280171
+    },
+    {
+      "FileName": "Alumni-Center-Pic-792x553.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Alumni-Center-Pic-792x553.jpg",
+      "AltText": "",
+      "FileSize": 150057
+    },
+    {
+      "FileName": "Band-Pic.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Band-Pic.jpg",
+      "AltText": "",
+      "FileSize": 110734
+    },
+    {
+      "FileName": "ButchCheer_0851-3-792x792.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2023/01/ButchCheer_0851-3-792x792.jpg",
+      "AltText": "Student dressed in Butch T. Cougar costume leading a cheer at a football game",
+      "FileSize": 106229
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "max-age=328, must-revalidate",
-    "connection": "keep-alive",
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:11:53 GMT",
-    "last-modified": "Mon, 16 Feb 2026 20:07:21 GMT",
-    "link": "\u003Chttps://wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://wsu.edu/wp-json/wp/v2/pages/9\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
-    "server": "nginx",
-    "transfer-encoding": "chunked",
-    "vary": "Accept-Encoding\nCookie, Accept-Encoding",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "DENY",
-    "x-xss-protection": "1; mode=block"
-  },
-  "CapturedAt": "2026-02-16T20:11:45.9156519Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:14.9193645Z"
 }

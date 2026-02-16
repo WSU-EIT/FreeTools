@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 5 |
-| Pages Failed | 1 |
-| Total JS Errors | 2 |
-| Total JS Warnings | 1 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 6 |
+| Total JS Warnings | 0 |
 | Total HTML | 1.3 MB |
-| Total Screenshots | 4.4 MB |
+| Total Screenshots | 3.4 MB |
+| Total Images | 24 (1.3 MB) |
+| Images Missing Alt | 18 |
 | Folder | `anthro-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Department of Anthropology \| Washing... | 1 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page not found \| Department of Anthr... | 1 | 1 | 1 |
-| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Department of Anthropology... | 0 | 0 | 1 |
-| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Research and Training in Psy... | 0 | 0 | 1 |
-| ✅ | [/research/](research/report.md) | 200 | Research \| Department of Anthropolog... | 0 | 0 | 1 |
-| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate Resources \| Department... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Department of Anthropology \| Washing... | 5 | 3 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | Page not found \| Department of Anthr... | 1 | 0 | 0 |
+| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| Department of Anthropology... | 0 | 18 | 18 |
+| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Research and Training in Psy... | 0 | 1 | 0 |
+| ❌ | [/research/](research/report.md) | 0 | Research \| Department of Anthropolog... | 0 | 1 | 0 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate Resources \| Department... | 0 | 1 | 0 |
 
 ## Page Screenshots
 
@@ -52,16 +54,45 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://anthro.wsu.edu/
+- **Status:** 0
+
 ### /about/
 
 - **URL:** https://anthro.wsu.edu/about/
-- **Status:** 404
+- **Status:** 0
+
+### /undergraduate/
+
+- **URL:** https://anthro.wsu.edu/undergraduate/
+- **Status:** 0
+
+### /graduate/
+
+- **URL:** https://anthro.wsu.edu/graduate/
+- **Status:** 0
+
+### /faculty/
+
+- **URL:** https://anthro.wsu.edu/faculty/
+- **Status:** 0
+
+### /research/
+
+- **URL:** https://anthro.wsu.edu/research/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### / (5 errors)
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /about/ (1 errors)

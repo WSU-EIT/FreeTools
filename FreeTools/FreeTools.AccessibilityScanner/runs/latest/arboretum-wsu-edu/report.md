@@ -10,18 +10,20 @@
 | Total JS Warnings | 0 |
 | Total HTML | 642 bytes |
 | Total Screenshots | 53.3 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `arboretum-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 403 |  | 1 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 403 |  | 1 | 0 | 1 |
-| ❌ | [/collections/](collections/report.md) | 403 |  | 1 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 403 |  | 1 | 0 | 1 |
-| ❌ | [/events/](events/report.md) | 403 |  | 1 | 0 | 1 |
-| ❌ | [/visit/](visit/report.md) | 403 |  | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 403 |  | 1 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 403 |  | 1 | 0 | 0 |
+| ❌ | [/collections/](collections/report.md) | 403 |  | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 403 |  | 1 | 0 | 0 |
+| ❌ | [/events/](events/report.md) | 403 |  | 1 | 0 | 0 |
+| ❌ | [/visit/](visit/report.md) | 0 |  | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -65,7 +67,7 @@
 ### /visit/
 
 - **URL:** https://arboretum.wsu.edu/visit/
-- **Status:** 403
+- **Status:** 0
 
 ### /collections/
 

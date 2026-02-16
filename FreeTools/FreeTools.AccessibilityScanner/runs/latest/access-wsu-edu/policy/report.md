@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://access.wsu.edu/policy/ |
 | Title | Page not found | Access at WSU | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 58.7 KB |
-| Screenshots | 1 (107.2 KB) |
+| Status | ❌ 0 |
+| HTML Size | 41.5 KB |
+| Screenshots | 1 (113.9 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:30.0793408Z |
+| Captured | 2026-02-16T20:37:25.0757099Z |
 
 ## JavaScript Errors
 
@@ -18,7 +20,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (107.2 KB)
+- Screenshot #1: page-loaded (113.9 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,9 +30,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (107.2 KB)
+- `01-page-loaded.png` — page-loaded (113.9 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

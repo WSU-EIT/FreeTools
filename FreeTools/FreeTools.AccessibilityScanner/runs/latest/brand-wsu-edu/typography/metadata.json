@@ -3,9 +3,9 @@
   "Url": "https://brand.wsu.edu/typography/",
   "FinalUrl": null,
   "Title": "Typography \u2013 Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 84798,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 67193,
   "ScreenshotSizeBytes": 639321,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,17 +18,84 @@
       "FileSize": 639321
     }
   ],
+  "ImageCount": 12,
+  "ImagesTotalSizeBytes": 544929,
+  "ImagesMissingAlt": 12,
+  "Images": [
+    {
+      "FileName": "Proxima-Nova.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/Proxima-Nova.svg",
+      "AltText": "",
+      "FileSize": 29336
+    },
+    {
+      "FileName": "Proxima-Nova-Options.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/Proxima-Nova-Options.svg",
+      "AltText": "",
+      "FileSize": 48819
+    },
+    {
+      "FileName": "FreightBig-Pro.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/FreightBig-Pro.svg",
+      "AltText": "",
+      "FileSize": 51580
+    },
+    {
+      "FileName": "FreightBig-Pro-Options.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/FreightBig-Pro-Options.svg",
+      "AltText": "",
+      "FileSize": 53574
+    },
+    {
+      "FileName": "Montserrat.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/Montserrat.svg",
+      "AltText": "",
+      "FileSize": 37101
+    },
+    {
+      "FileName": "Montserrat-Options.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/Montserrat-Options.svg",
+      "AltText": "",
+      "FileSize": 68200
+    },
+    {
+      "FileName": "Corbel-Arial.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/Corbel-Arial.svg",
+      "AltText": "",
+      "FileSize": 6634
+    },
+    {
+      "FileName": "Baskerville-Old-Face.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/Baskerville-Old-Face.svg",
+      "AltText": "",
+      "FileSize": 17459
+    },
+    {
+      "FileName": "typography-table.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/09/typography-table.svg",
+      "AltText": "",
+      "FileSize": 77194
+    },
+    {
+      "FileName": "Do-Use-appropriate-typefaces.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/Do-Use-appropriate-typefaces.png",
+      "AltText": "",
+      "FileSize": 21457
+    },
+    {
+      "FileName": "Do-Use-approved-typeface-versions.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/Do-Use-approved-typeface-versions.png",
+      "AltText": "",
+      "FileSize": 104160
+    },
+    {
+      "FileName": "Dont-Change-the-type.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/Dont-Change-the-type.png",
+      "AltText": "",
+      "FileSize": 29415
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "access-control-allow-origin": "*",
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:31 GMT",
-    "etag": "\u002203537b2045d55be798afd4eb027b8bfa\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:43:11 GMT",
-    "link": "\u003Chttps://brand.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://brand.wsu.edu/wp-json/wp/v2/pages/159\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://brand.wsu.edu/?p=159\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:13:26.5015305Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:58.4390267Z"
 }

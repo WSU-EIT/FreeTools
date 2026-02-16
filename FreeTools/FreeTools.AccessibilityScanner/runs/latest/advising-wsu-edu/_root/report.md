@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://advising.wsu.edu/ |
 | Title | Advising at WSU | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 114.5 KB |
+| Status | ❌ 0 |
+| HTML Size | 104.0 KB |
 | Screenshots | 1 (772.4 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:26.0929097Z |
+| Captured | 2026-02-16T20:37:04.9083155Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (772.4 KB)
+- Downloaded 0 images to /images/
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

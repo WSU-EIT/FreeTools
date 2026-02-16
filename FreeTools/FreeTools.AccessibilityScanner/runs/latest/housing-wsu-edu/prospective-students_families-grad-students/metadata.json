@@ -5,8 +5,8 @@
   "Title": "Families \u0026 Grad Students",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 63826,
-  "ScreenshotSizeBytes": 1034928,
+  "HtmlSizeBytes": 63832,
+  "ScreenshotSizeBytes": 1039534,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,54 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1034928
+      "FileSize": 1039534
+    }
+  ],
+  "ImageCount": 5,
+  "ImagesTotalSizeBytes": 1649646,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "kamiak-exterior-2.png",
+      "SourceUrl": "https://housing.wsu.edu/media/hpcl5spy/kamiak-exterior-2.png",
+      "AltText": "Kamiak",
+      "FileSize": 866885
+    },
+    {
+      "FileName": "steptoe-exterior.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/0h5dding/steptoe-exterior.jpg",
+      "AltText": "Steptoe",
+      "FileSize": 342928
+    },
+    {
+      "FileName": "terrace-exterior.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/esplsalp/terrace-exterior.jpg",
+      "AltText": "Terrace",
+      "FileSize": 110607
+    },
+    {
+      "FileName": "valley-crest-exterior.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/knflk43o/valley-crest-exterior.jpg",
+      "AltText": "Valley Crest",
+      "FileSize": 182656
+    },
+    {
+      "FileName": "yakama-exterior.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/5v2d0lg2/yakama-exterior.jpg",
+      "AltText": "Yakama",
+      "FileSize": 146570
     }
   ],
   "ErrorMessage": null,
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:12:55 GMT",
+    "date": "Mon, 16 Feb 2026 20:40:25 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-16T20:12:54.8893985Z"
+  "CapturedAt": "2026-02-16T20:40:25.7357184Z"
 }

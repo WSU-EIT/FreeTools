@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://commencement.wsu.edu/ceremony-info/ |
 | Title | Page not found | WSU Commencement | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 42.3 KB |
-| Screenshots | 1 (104.6 KB) |
+| Status | ❌ 0 |
+| HTML Size | 42.6 KB |
+| Screenshots | 1 (76.2 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:45.5132222Z |
+| Captured | 2026-02-16T20:38:08.9128561Z |
 
 ## JavaScript Errors
 
@@ -18,7 +20,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (104.6 KB)
+- Screenshot #1: page-loaded (76.2 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,9 +30,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (104.6 KB)
+- `01-page-loaded.png` — page-loaded (76.2 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

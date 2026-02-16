@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 3/7 pages OK |
+| Status | ⚠️ 0/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 3 |
-| Pages Failed | 4 |
-| Total JS Errors | 12 |
-| Total JS Warnings | 3 |
+| Pages Passed | 0 |
+| Pages Failed | 7 |
+| Total JS Errors | 13 |
+| Total JS Warnings | 0 |
 | Total HTML | 2.2 MB |
-| Total Screenshots | 2.2 MB |
+| Total Screenshots | 1.7 MB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `gradschool-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | The Graduate School \| Washington Sta... | 2 | 0 | 1 |
-| ✅ | [/admissions/](admissions/report.md) | 200 | Admissions Offer Letter \| The Gradua... | 3 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| The Graduate School... | 2 | 1 | 1 |
-| ❌ | [/current-students/](current-students/report.md) | 404 | Page not found \| The Graduate School... | 2 | 1 | 1 |
-| ✅ | [/funding/](funding/report.md) | 200 | Graduate Student Funding Opportunitie... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | The Graduate School \| Washington Sta... | 5 | 0 | 0 |
+| ❌ | [/admissions/](admissions/report.md) | 0 | Admissions Offer Letter \| The Gradua... | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| The Graduate School... | 2 | 0 | 0 |
+| ❌ | [/current-students/](current-students/report.md) | 0 | Page not found \| The Graduate School... | 2 | 0 | 0 |
+| ❌ | [/funding/](funding/report.md) | 0 | Graduate Student Funding Opportunitie... | 1 | 0 | 0 |
 | ❌ | [/policies/](policies/report.md) | 0 | (none) | 0 | 0 | 0 |
-| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| The Graduate School... | 2 | 1 | 1 |
+| ❌ | [/programs/](programs/report.md) | 0 | Page not found \| The Graduate School... | 2 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -53,15 +55,30 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://gradschool.wsu.edu/
+- **Status:** 0
+
+### /admissions/
+
+- **URL:** https://gradschool.wsu.edu/admissions/
+- **Status:** 0
+
 ### /programs/
 
 - **URL:** https://gradschool.wsu.edu/programs/
-- **Status:** 404
+- **Status:** 0
 
 ### /current-students/
 
 - **URL:** https://gradschool.wsu.edu/current-students/
-- **Status:** 404
+- **Status:** 0
+
+### /funding/
+
+- **URL:** https://gradschool.wsu.edu/funding/
+- **Status:** 0
 
 ### /policies/
 
@@ -74,19 +91,16 @@ Call log:
 ### /contact/
 
 - **URL:** https://gradschool.wsu.edu/contact/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### /admissions/ (3 errors)
+### / (5 errors)
 
-- `Failed to load resource: the server responded with a status of 405 ()`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### / (2 errors)
-
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
@@ -103,6 +117,10 @@ Call log:
 ### /contact/ (2 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+
+### /admissions/ (1 errors)
+
 - `Failed to load resource: the server responded with a status of 405 ()`
 
 ### /funding/ (1 errors)

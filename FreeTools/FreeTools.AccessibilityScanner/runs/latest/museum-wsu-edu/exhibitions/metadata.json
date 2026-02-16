@@ -3,10 +3,10 @@
   "Url": "https://museum.wsu.edu/exhibitions/",
   "FinalUrl": "https://museum.wsu.edu/exhibitions-events/",
   "Title": "Exhibitions \u0026 Programs | Jordan Schnitzer Museum of Art WSU | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 239848,
-  "ScreenshotSizeBytes": 3079475,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 227678,
+  "ScreenshotSizeBytes": 1140627,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,33 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 3079475
+      "FileSize": 1140627
+    }
+  ],
+  "ImageCount": 3,
+  "ImagesTotalSizeBytes": 1191048,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "JSMOAWSU-LOGO-DOUBLE-LINE-396x99-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2023/04/JSMOAWSU-LOGO-DOUBLE-LINE-396x99-1.jpg",
+      "AltText": "Jordan Schnitzer Museum of Art WSU",
+      "FileSize": 10462
+    },
+    {
+      "FileName": "First-Year-Programs24-9_HeroBanner-_Exhib-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2025/08/First-Year-Programs24-9_HeroBanner-_Exhib-scaled.jpg",
+      "AltText": "A student observes two watercolor paintings hanging on a wall.",
+      "FileSize": 583308
+    },
+    {
+      "FileName": "Schnitzer-Museum-of-Art-Clouds_3446-cropped-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-museum/uploads/sites/3189/2023/06/Schnitzer-Museum-of-Art-Clouds_3446-cropped-scaled.jpg",
+      "AltText": "",
+      "FileSize": 597278
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:04 GMT",
-    "etag": "\u002296b750d03c2016e5c8f9f3605273744e\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:39:30 GMT",
-    "link": "\u003Chttps://museum.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://museum.wsu.edu/wp-json/wp/v2/pages/11134\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://museum.wsu.edu/?p=11134\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:12:02.1988027Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:59.9439759Z"
 }

@@ -5,20 +5,31 @@
   "Title": "Office of the President | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 67025,
-  "ScreenshotSizeBytes": 994139,
+  "HtmlSizeBytes": 56805,
+  "ScreenshotSizeBytes": 433856,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 2,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 994139
+      "FileSize": 433856
+    }
+  ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 63268,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "Elizabeth-Cantwell_1057-792x567.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-president/uploads/sites/3090/2025/04/Elizabeth-Cantwell_1057-792x567.jpg",
+      "AltText": "",
+      "FileSize": 63268
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.1400548Z"
+  "CapturedAt": "2026-02-16T20:37:05.1507485Z"
 }

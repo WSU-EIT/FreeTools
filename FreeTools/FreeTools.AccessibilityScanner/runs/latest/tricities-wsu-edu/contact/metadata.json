@@ -5,10 +5,10 @@
   "Title": "Contact Us - WSU Tri-Cities",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 120141,
+  "HtmlSizeBytes": 123537,
   "ScreenshotSizeBytes": 125986,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 2,
   "Screenshots": [
     {
@@ -18,10 +18,45 @@
       "FileSize": 125986
     }
   ],
+  "ImageCount": 5,
+  "ImagesTotalSizeBytes": 51852,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "WSU-TC-lockup-horz-4c_WEB-01.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-4c_WEB-01.png",
+      "AltText": "Logo",
+      "FileSize": 12895
+    },
+    {
+      "FileName": "WSU-TC-lockup-horz-rev_WEB_Spaced_larger-1.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-rev_WEB_Spaced_larger-1.png",
+      "AltText": "Logo",
+      "FileSize": 7440
+    },
+    {
+      "FileName": "WSU-TC-lockup-horz-4c_WEB_Spaced-01.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-4c_WEB_Spaced-01.png",
+      "AltText": "Logo",
+      "FileSize": 13125
+    },
+    {
+      "FileName": "WSU-TC-lockup-horz-rev_WEB_Spaced_Sticky.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-rev_WEB_Spaced_Sticky.png",
+      "AltText": "Logo",
+      "FileSize": 2139
+    },
+    {
+      "FileName": "WSU-TC-lockup-vert-rev_WEB-01.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-vert-rev_WEB-01.png",
+      "AltText": "Logo",
+      "FileSize": 16253
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:38 GMT",
+    "date": "Mon, 16 Feb 2026 20:40:45 GMT",
     "link": "\u003Chttps://tricities.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://tricities.wsu.edu/wp-json/wp/v2/pages/1452\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022\n\u003Chttps://tricities.wsu.edu/?p=1452\u003E; rel=shortlink",
     "server": "nginx/1.14.2",
     "vary": "Accept-Encoding",
@@ -35,5 +70,5 @@
     "x-tec-api-root": "https://tricities.wsu.edu/wp-json/tribe/events/v1/",
     "x-tec-api-version": "v1"
   },
-  "CapturedAt": "2026-02-16T20:14:37.3237402Z"
+  "CapturedAt": "2026-02-16T20:40:45.1724426Z"
 }

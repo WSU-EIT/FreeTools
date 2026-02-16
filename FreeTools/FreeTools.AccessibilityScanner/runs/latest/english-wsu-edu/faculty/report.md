@@ -5,13 +5,15 @@
 | URL | https://english.wsu.edu/faculty/ |
 | Redirected To | https://english.wsu.edu/faculty-3/ |
 | Title | Faculty & Staff | WSU Department of English | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 65.8 KB |
+| Status | ❌ 0 |
+| HTML Size | 59.6 KB |
 | Screenshots | 1 (128.8 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:09.1335503Z |
+| Captured | 2026-02-16T20:39:08.8828834Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (128.8 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

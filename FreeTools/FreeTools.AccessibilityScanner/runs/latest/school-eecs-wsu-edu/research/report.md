@@ -4,17 +4,20 @@
 |-------|-------|
 | URL | https://school.eecs.wsu.edu/research/ |
 | Title | Research | School of Electrical Engineering & Computer Science | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 226.8 KB |
+| Status | ❌ 0 |
+| HTML Size | 219.6 KB |
 | Screenshots | 1 (1.0 MB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:51.9295470Z |
+| Captured | 2026-02-16T20:39:04.1326630Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (1.0 MB)
+- Downloaded 0 images to /images/
 
 ## Screenshots
 
@@ -22,6 +25,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

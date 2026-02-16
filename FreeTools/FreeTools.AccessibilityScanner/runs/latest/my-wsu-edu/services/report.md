@@ -3,15 +3,17 @@
 | Field | Value |
 |-------|-------|
 | URL | https://my.wsu.edu/services/ |
-| Redirected To | https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7&redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse&response_type=code&scope=openid%20profile%20sis.prd.groups&state=5PaDhTOHja0FgGGhXyHGSaryF9CcHphp3Ah%2Fs%2Bcz6u2RI%2FUwYG7ZQfeWOgOH%2BxF4NyzTQdsiNhqv2Qw3e1yAin%2FWvpnubAr5fPhHuR%2FC9CGFEakyb2nt1V4QVqdazlWYTJh0m3%2BVnzUj13FdNJFGkPgZwi4GScFqkxe9H4m7bqAmsSQ4mDIFA54JggR3etnb6JmVqw2DLBxlTPxwA6uyODwCeiqR7yjpgMFQK0kPajC58JD6Ie94hMLMJPTfKA%3D%3D |
+| Redirected To | https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7&redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse&response_type=code&scope=openid%20profile%20sis.prd.groups&state=GVJDAheU%2BDPjHzIF4IHL9iAxtS2k%2BIfmVBO2hi2mhl%2F%2BH1fvq%2FKvIrJX8BjhdUGKVhRoVjtUIew2BJp73zXi%2FlIe5YKVEyde3%2FxFGTuS3AsYdBKeA7M%2BWERBDAXOWw4gibv9jrjFZWhsRmxGw9JanShRo28s0fkyB0TB0g7xPi%2BABIiup%2FO4fYRjNmyz6lYs3Xghkxs1q55ivCfyns2UeAix7TscHZm4k6y8FJAHffPp6kzE1MHMHJX4hsI73A%3D%3D |
 | Title | WSU | Sign In |
-| Status | ✅ 200 |
-| HTML Size | 141.8 KB |
-| Screenshots | 1 (60.4 KB) |
+| Status | ❌ 0 |
+| HTML Size | 139.5 KB |
+| Screenshots | 1 (46.6 KB) |
+| Images | 1 (7.7 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 7 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:54.3124230Z |
+| Captured | 2026-02-16T20:38:24.7917235Z |
 
 ## JavaScript Errors
 
@@ -25,7 +27,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (60.4 KB)
+- Screenshot #1: page-loaded (46.6 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -34,12 +37,24 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [fs015xh0tygNgGVxX2p8.img](images/fs015xh0tygNgGVxX2p8.img) | WSU logo | 7.7 KB |
+
+### Gallery
+
+![WSU logo](images/fs015xh0tygNgGVxX2p8.img)
+
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (60.4 KB)
+- `01-page-loaded.png` — page-loaded (46.6 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (7.7 KB)

@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://accreditation.wsu.edu/timeline/ |
 | Title | Page not found | Accreditation Site | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 54.0 KB |
+| Status | ❌ 0 |
+| HTML Size | 44.3 KB |
 | Screenshots | 1 (33.7 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:26.4270199Z |
+| Captured | 2026-02-16T20:38:42.5431656Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (33.7 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

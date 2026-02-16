@@ -4,17 +4,20 @@
 |-------|-------|
 | URL | https://native.wsu.edu/students/ |
 | Title | students | Office of Native American Programs | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 214.4 KB |
+| Status | ❌ 0 |
+| HTML Size | 203.5 KB |
 | Screenshots | 1 (286.1 KB) |
+| Images | 1 (71.1 KB) |
+| Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:02.1786011Z |
+| Captured | 2026-02-16T20:38:15.2465550Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (286.1 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -22,6 +25,21 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [students-396x262.jpg](images/students-396x262.jpg) | *(none)* | 71.1 KB |
+
+### Gallery
+
+![students-396x262.jpg](images/students-396x262.jpg)
+
+
+### ⚠️ Images Missing Alt Text (1)
+
+- `students-396x262.jpg` — https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/3277/2016/02/students-396x262.jpg
 
 ## Files
 
@@ -32,3 +50,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (71.1 KB)

@@ -5,7 +5,7 @@
   "Title": "Technology Services",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 65824,
+  "HtmlSizeBytes": 65700,
   "ScreenshotSizeBytes": 1076763,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,16 +18,27 @@
       "FileSize": 1076763
     }
   ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 340048,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "northside-students-banner.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/qladcqrl/northside-students-banner.jpg",
+      "AltText": "Students look at laptop screen",
+      "FileSize": 340048
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:14:35 GMT",
+    "date": "Mon, 16 Feb 2026 20:40:55 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-16T20:14:34.7319916Z"
+  "CapturedAt": "2026-02-16T20:40:54.9898336Z"
 }

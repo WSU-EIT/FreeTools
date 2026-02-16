@@ -3,9 +3,9 @@
   "Url": "https://english.wsu.edu/creative-writing/",
   "FinalUrl": null,
   "Title": "Creative Writing Community | WSU Department of English | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 72121,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 60130,
   "ScreenshotSizeBytes": 432321,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -18,19 +18,18 @@
       "FileSize": 432321
     }
   ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 44340,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "DJ-image-792x528.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3130/2023/10/DJ-image-792x528.jpeg",
+      "AltText": "",
+      "FileSize": 44340
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:37 GMT",
-    "etag": "\u00228a7b51654fcf258db6d865b7aad72469\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:13:37 GMT",
-    "link": "\u003Chttps://english.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://english.wsu.edu/wp-json/wp/v2/pages/33\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://english.wsu.edu/?p=33\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://english.wsu.edu",
-    "x-tec-api-root": "https://english.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:13:35.8403436Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:53.2392065Z"
 }

@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 1 |
-| Pages Failed | 5 |
-| Total JS Errors | 6 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 10 |
 | Total JS Warnings | 3 |
-| Total HTML | 461.8 KB |
-| Total Screenshots | 1.3 MB |
+| Total HTML | 412.7 KB |
+| Total Screenshots | 613.9 KB |
+| Total Images | 19 (519.5 KB) |
+| Images Missing Alt | 19 |
 | Folder | `rotc-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Army ROTC \| Washington State Uni... | 2 | 3 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page not found \| WSU Army ROTC \| Wa... | 1 | 0 | 1 |
-| ❌ | [/admissions/](admissions/report.md) | 404 | Page not found \| WSU Army ROTC \| Wa... | 1 | 0 | 1 |
-| ❌ | [/cadets/](cadets/report.md) | 404 | Page not found \| WSU Army ROTC \| Wa... | 1 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| WSU Army ROTC \| Washin... | 0 | 0 | 1 |
-| ❌ | [/scholarships/](scholarships/report.md) | 404 | Page not found \| WSU Army ROTC \| Wa... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Army ROTC \| Washington State Uni... | 4 | 4 | 4 |
+| ❌ | [/about/](about/report.md) | 0 | Page not found \| WSU Army ROTC \| Wa... | 1 | 3 | 3 |
+| ❌ | [/admissions/](admissions/report.md) | 0 | Page not found \| WSU Army ROTC \| Wa... | 1 | 3 | 3 |
+| ❌ | [/cadets/](cadets/report.md) | 0 | Page not found \| WSU Army ROTC \| Wa... | 3 | 3 | 3 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| WSU Army ROTC \| Washin... | 0 | 3 | 3 |
+| ❌ | [/scholarships/](scholarships/report.md) | 0 | Page not found \| WSU Army ROTC \| Wa... | 1 | 3 | 3 |
 
 ## Page Screenshots
 
@@ -60,28 +62,41 @@
 ### /about/
 
 - **URL:** https://rotc.wsu.edu/about/
-- **Status:** 404
+- **Status:** 0
 
 ### /admissions/
 
 - **URL:** https://rotc.wsu.edu/admissions/
-- **Status:** 404
+- **Status:** 0
 
 ### /cadets/
 
 - **URL:** https://rotc.wsu.edu/cadets/
-- **Status:** 404
+- **Status:** 0
 
 ### /scholarships/
 
 - **URL:** https://rotc.wsu.edu/scholarships/
-- **Status:** 404
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://rotc.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (2 errors)
+### / (4 errors)
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /cadets/ (3 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
@@ -90,10 +105,6 @@
 - `Failed to load resource: the server responded with a status of 404 ()`
 
 ### /admissions/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /cadets/ (1 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
 

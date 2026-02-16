@@ -2,32 +2,20 @@
   "PagePath": "/rentals/",
   "Url": "https://orc.wsu.edu/rentals/",
   "FinalUrl": "https://urec.wsu.edu/locations-facilities/outdoor-recreation-center",
-  "Title": "Outdoor Recreation Center",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 78785,
-  "ScreenshotSizeBytes": 1447503,
+  "Title": null,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 0,
+  "ScreenshotSizeBytes": 0,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
-  "Screenshots": [
-    {
-      "FileName": "01-page-loaded.png",
-      "Label": "page-loaded",
-      "StepNumber": 1,
-      "FileSize": 1447503
-    }
-  ],
-  "ErrorMessage": null,
-  "Headers": {
-    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
-    "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:11:56 GMT",
-    "frame-ancestors": "self https://*.risevision.com",
-    "referrer-policy": "strict-origin-when-cross-origin",
-    "strict-transport-security": "max-age=2592000",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "SameOrigin"
-  },
-  "CapturedAt": "2026-02-16T20:11:54.280139Z"
+  "Screenshots": [],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
+  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...",
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:45.9724559Z"
 }

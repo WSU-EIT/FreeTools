@@ -4,21 +4,20 @@
 |-------|-------|
 | URL | https://alert.wsu.edu/ |
 | Title | Alert | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 81.3 KB |
+| Status | ❌ 0 |
+| HTML Size | 69.0 KB |
 | Screenshots | 1 (416.4 KB) |
-| JS Errors | 1 |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:26.0983907Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:37:04.9971736Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (416.4 KB)
+- Downloaded 0 images to /images/
 
 ## Screenshots
 
@@ -26,6 +25,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

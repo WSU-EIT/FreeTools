@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 3/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 3 |
-| Pages Failed | 3 |
-| Total JS Errors | 5 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 4 |
 | Total JS Warnings | 1 |
-| Total HTML | 435.2 KB |
-| Total Screenshots | 3.4 MB |
+| Total HTML | 359.0 KB |
+| Total Screenshots | 2.9 MB |
+| Total Images | 9 (900.1 KB) |
+| Images Missing Alt | 0 |
 | Folder | `online-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | WSU Global Campus \| Washington State... | 1 | 1 | 1 |
-| ✅ | [/admissions/](admissions/report.md) | 200 | Apply to WSU Global Campus \| WSU Glo... | 0 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| WSU Global Campus \| Wa... | 0 | 0 | 1 |
-| ❌ | [/current-students/](current-students/report.md) | 404 | Page not found \| WSU Global Campus \... | 1 | 0 | 1 |
-| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| WSU Global Campus \... | 2 | 0 | 1 |
-| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| WSU Global Campus \... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Global Campus \| Washington State... | 1 | 3 | 0 |
+| ❌ | [/admissions/](admissions/report.md) | 0 | Apply to WSU Global Campus \| WSU Glo... | 0 | 6 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| WSU Global Campus \| Wa... | 0 | 0 | 0 |
+| ❌ | [/current-students/](current-students/report.md) | 0 | Page not found \| WSU Global Campus \... | 1 | 0 | 0 |
+| ❌ | [/programs/](programs/report.md) | 0 | Page not found \| WSU Global Campus \... | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| WSU Global Campus \... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,32 +54,46 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://online.wsu.edu/
+- **Status:** 0
+
 ### /programs/
 
 - **URL:** https://online.wsu.edu/programs/
-- **Status:** 404
+- **Status:** 0
+
+### /admissions/
+
+- **URL:** https://online.wsu.edu/admissions/
+- **Status:** 0
 
 ### /current-students/
 
 - **URL:** https://online.wsu.edu/current-students/
-- **Status:** 404
+- **Status:** 0
 
 ### /resources/
 
 - **URL:** https://online.wsu.edu/resources/
-- **Status:** 404
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://online.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### /programs/ (2 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
 ### / (1 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /programs/ (1 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 ### /current-students/ (1 errors)
 

@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://aoi.wsu.edu/programs/ |
 | Title | Page not found | Academic Outreach and Innovation | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 56.3 KB |
-| Screenshots | 1 (110.2 KB) |
+| Status | ❌ 0 |
+| HTML Size | 48.8 KB |
+| Screenshots | 1 (113.3 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:11.4268805Z |
+| Captured | 2026-02-16T20:38:09.5652626Z |
 
 ## JavaScript Errors
 
@@ -18,7 +20,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (110.2 KB)
+- Screenshot #1: page-loaded (113.3 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,9 +30,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (110.2 KB)
+- `01-page-loaded.png` — page-loaded (113.3 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

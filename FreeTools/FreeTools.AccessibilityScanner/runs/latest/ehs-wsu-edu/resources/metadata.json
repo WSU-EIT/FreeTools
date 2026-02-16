@@ -3,9 +3,9 @@
   "Url": "https://ehs.wsu.edu/resources/",
   "FinalUrl": "https://ehs.wsu.edu/workplace-safety/ergonomics/resources-contacts/",
   "Title": "Resources \u0026 Contacts | Environmental Health \u0026 Safety | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 249556,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 238302,
   "ScreenshotSizeBytes": 147413,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,19 +18,11 @@
       "FileSize": 147413
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:32 GMT",
-    "etag": "\u00223e4f3aa6f2c56e0760f2641a001c5405\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:13:32 GMT",
-    "link": "\u003Chttps://ehs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ehs.wsu.edu/wp-json/wp/v2/pages/174\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ehs.wsu.edu/?p=174\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://ehs.wsu.edu",
-    "x-tec-api-root": "https://ehs.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:13:26.4809425Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:40.6195798Z"
 }

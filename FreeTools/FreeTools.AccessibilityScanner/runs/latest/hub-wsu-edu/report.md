@@ -2,25 +2,27 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/5 pages OK |
+| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 1 |
-| Pages Failed | 4 |
-| Total JS Errors | 6 |
+| Pages Passed | 0 |
+| Pages Failed | 5 |
+| Total JS Errors | 7 |
 | Total JS Warnings | 1 |
-| Total HTML | 215.2 KB |
+| Total HTML | 174.3 KB |
 | Total Screenshots | 325.3 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `hub-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | WSU Hub \| Washington State University | 2 | 0 | 1 |
-| ❌ | [/events/](events/report.md) | 405 | Human Verification | 1 | 1 | 1 |
-| ❌ | [/leadership/](leadership/report.md) | 404 | Page not found \| WSU Hub \| Washingt... | 1 | 0 | 1 |
-| ❌ | [/organizations/](organizations/report.md) | 404 | Page not found \| WSU Hub \| Washingt... | 1 | 0 | 1 |
-| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| WSU Hub \| Washingt... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Hub \| Washington State University | 3 | 0 | 0 |
+| ❌ | [/events/](events/report.md) | 0 | Human Verification | 1 | 0 | 0 |
+| ❌ | [/leadership/](leadership/report.md) | 0 | Page not found \| WSU Hub \| Washingt... | 1 | 0 | 0 |
+| ❌ | [/organizations/](organizations/report.md) | 0 | Page not found \| WSU Hub \| Washingt... | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| WSU Hub \| Washingt... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -47,31 +49,37 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://hub.wsu.edu/
+- **Status:** 0
+
 ### /organizations/
 
 - **URL:** https://hub.wsu.edu/organizations/
-- **Status:** 404
+- **Status:** 0
 
 ### /events/
 
 - **URL:** https://hub.wsu.edu/events/
-- **Status:** 405
+- **Status:** 0
 
 ### /resources/
 
 - **URL:** https://hub.wsu.edu/resources/
-- **Status:** 404
+- **Status:** 0
 
 ### /leadership/
 
 - **URL:** https://hub.wsu.edu/leadership/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (2 errors)
+### / (3 errors)
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 

@@ -6,16 +6,19 @@
 | Redirected To | https://admission.wsu.edu/connect/ |
 | Title | Connect | Admissions | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 83.5 KB |
+| HTML Size | 83.6 KB |
 | Screenshots | 1 (247.3 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:15:02.2663022Z |
+| Captured | 2026-02-16T20:40:29.9075305Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (247.3 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -23,6 +26,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

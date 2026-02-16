@@ -1,0 +1,28 @@
+{
+  "PagePath": "/?c=A",
+  "Url": "https://index.wsu.edu/?c=A",
+  "FinalUrl": null,
+  "Title": "WSU A-Z Index | Washington State University",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 210753,
+  "ScreenshotSizeBytes": 312725,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.png",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 312725
+    }
+  ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
+  "ErrorMessage": null,
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:45.4206403Z"
+}

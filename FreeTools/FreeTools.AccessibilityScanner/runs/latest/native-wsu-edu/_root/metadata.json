@@ -3,12 +3,12 @@
   "Url": "https://native.wsu.edu/",
   "FinalUrl": null,
   "Title": "Office of Native American Programs | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 226264,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 217371,
   "ScreenshotSizeBytes": 1509260,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 4,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -18,16 +18,18 @@
       "FileSize": 1509260
     }
   ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 505161,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "cultural-center-exterior-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/3277/2023/01/cultural-center-exterior-scaled.jpg",
+      "AltText": "Photo of ESFCC",
+      "FileSize": 505161
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "etag": "\u002258449d16405e7cb2e5d9f47cdad3caa4\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:31:23 GMT",
-    "link": "\u003Chttps://native.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://native.wsu.edu/wp-json/wp/v2/pages/6\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://native.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1326699Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.1343661Z"
 }

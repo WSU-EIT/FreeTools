@@ -3,10 +3,10 @@
   "Url": "https://ascc.wsu.edu/career-services/",
   "FinalUrl": "https://ascc.wsu.edu/",
   "Title": "Academic Success \u0026 Career Center \u2013 Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 2021825,
-  "ScreenshotSizeBytes": 1013575,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 622384,
+  "ScreenshotSizeBytes": 813579,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,26 +15,243 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1013575
+      "FileSize": 813579
+    }
+  ],
+  "ImageCount": 38,
+  "ImagesTotalSizeBytes": 638178,
+  "ImagesMissingAlt": 26,
+  "Images": [
+    {
+      "FileName": "wsu_logo.svg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/themes/uConnect_WSU/images/wsu_logo.svg",
+      "AltText": "Academic Success \u0026 Career Center | Washington State University",
+      "FileSize": 19541
+    },
+    {
+      "FileName": "16bedfdbefab31acd4d41bb641c4458e-hs-emp-logo-data.-100x100.png",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2023/03/16bedfdbefab31acd4d41bb641c4458e-hs-emp-logo-data.-100x100.png?v=98914",
+      "AltText": "Cintas Corporation",
+      "FileSize": 6172
+    },
+    {
+      "FileName": "62c4159e252817d821278c9f68cc7bb6-hs-emp-logo-data.-100x100.png",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2022/03/62c4159e252817d821278c9f68cc7bb6-hs-emp-logo-data.-100x100.png?v=8948",
+      "AltText": "Fisher Investments",
+      "FileSize": 5157
+    },
+    {
+      "FileName": "092f1a88737fe489d2e88f1f8542a83b-hs-emp-logo-data.-100x100.png",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2022/03/092f1a88737fe489d2e88f1f8542a83b-hs-emp-logo-data.-100x100.png?v=3713",
+      "AltText": "Goodfellow Bros. LLC",
+      "FileSize": 5750
+    },
+    {
+      "FileName": "FBH-CCS-Logo-005-195x55.png",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2023/08/FBH-CCS-Logo-005-195x55.png?v=153254",
+      "AltText": "Catholic Community and Housing Services of Western Washington",
+      "FileSize": 10002
+    },
+    {
+      "FileName": "25bac097997b4740d818232be45df8be-hs-emp-logo-data.-100x100.png",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2022/03/25bac097997b4740d818232be45df8be-hs-emp-logo-data.-100x100.png?v=1135",
+      "AltText": "Techtronic Industries, NA (TTI)",
+      "FileSize": 5979
+    },
+    {
+      "FileName": "PNGPrimary_green-blue_TM_RGB-195x24.png",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2023/11/PNGPrimary_green-blue_TM_RGB-195x24.png?v=177018",
+      "AltText": "Enterprise Mobility",
+      "FileSize": 4421
+    },
+    {
+      "FileName": "Inbox-Blog-Icon-1.png",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2025/12/Inbox-Blog-Icon-1.png?v=442094",
+      "AltText": "Red graphic with the text \u2018From Our Inbox to Yours\u2019 and an envelope icon.",
+      "FileSize": 27518
+    },
+    {
+      "FileName": "profile-picture-1739910194-50x50-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/2329142/profile-picture-1739910194-50x50-center-top.jpg?v=1739910194",
+      "AltText": "",
+      "FileSize": 2207
+    },
+    {
+      "FileName": "Designer-2-480x320-center-middle.png",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2026/02/Designer-2-480x320-center-middle.png?v=462371",
+      "AltText": "",
+      "FileSize": 183759
+    },
+    {
+      "FileName": "profile-picture-1726763043-50x50-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/117143/profile-picture-1726763043-50x50-center-top.jpg?v=1726763043",
+      "AltText": "",
+      "FileSize": 1940
+    },
+    {
+      "FileName": "SEOTY-Logo-1-480x320-center-middle.png",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2026/01/SEOTY-Logo-1-480x320-center-middle.png?v=454453",
+      "AltText": "WSU student employee of the year logo with cougar head",
+      "FileSize": 72361
+    },
+    {
+      "FileName": "profile-picture-1761350108-50x50-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/6136152/profile-picture-1761350108-50x50-center-top.jpg?v=1761350108",
+      "AltText": "",
+      "FileSize": 2094
+    },
+    {
+      "FileName": "image-14.jpeg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2026/01/f4ffece598c47584d685e8b656a5d0d0-selective_focus_photography_of_person_s_hand_on_device-clicking-keyboard-scopio-4b028b40-7bbd-41c3-a7fa-cdf49fe8fd15-960x640-1-480x320-center-middle.jpeg?v=450068",
+      "AltText": "",
+      "FileSize": 18773
+    },
+    {
+      "FileName": "college-recruiter-logo.svg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/themes/uConnect/images/vendors/college-recruiter-logo.svg",
+      "AltText": "College Recruiter",
+      "FileSize": 6262
+    },
+    {
+      "FileName": "Image-2-1-480x320-center-middle.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2025/12/Image-2-1-480x320-center-middle.jpg?v=437567",
+      "AltText": "",
+      "FileSize": 56125
+    },
+    {
+      "FileName": "e0ecf5db952e50fc46f5362db816f7ee-hs-emp-logo-data.-45x45.png",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2022/06/e0ecf5db952e50fc46f5362db816f7ee-hs-emp-logo-data.-45x45.png?v=57641",
+      "AltText": "",
+      "FileSize": 1856
+    },
+    {
+      "FileName": "0777e8dc3392fbae4afc40b84c829c60-hs-emp-logo-data.-45x45.png",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/sites/157/2022/03/0777e8dc3392fbae4afc40b84c829c60-hs-emp-logo-data.-45x45.png?v=267",
+      "AltText": "",
+      "FileSize": 5073
+    },
+    {
+      "FileName": "lightcast-logo.svg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/themes/uConnect/images/vendors/lightcast-logo.svg",
+      "AltText": "Lightcast logo",
+      "FileSize": 2332
+    },
+    {
+      "FileName": "avatar-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1711796/avatar-200x200-center-top.jpg?v=1645815229",
+      "AltText": "",
+      "FileSize": 9810
+    },
+    {
+      "FileName": "profile-picture-1648239456-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1711797/profile-picture-1648239456-200x200-center-top.jpg?v=1648239456",
+      "AltText": "",
+      "FileSize": 8866
+    },
+    {
+      "FileName": "profile-picture-1726763043-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/117143/profile-picture-1726763043-200x200-center-top.jpg?v=1726763043",
+      "AltText": "",
+      "FileSize": 8664
+    },
+    {
+      "FileName": "profile-picture-1761350108-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/6136152/profile-picture-1761350108-200x200-center-top.jpg?v=1761350108",
+      "AltText": "",
+      "FileSize": 10521
+    },
+    {
+      "FileName": "profile-picture-1680191168-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/2874995/profile-picture-1680191168-200x200-center-top.jpg?v=1680191168",
+      "AltText": "",
+      "FileSize": 15114
+    },
+    {
+      "FileName": "profile-picture-1709587484-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/4255848/profile-picture-1709587484-200x200-center-top.jpg?v=1709587484",
+      "AltText": "",
+      "FileSize": 9079
+    },
+    {
+      "FileName": "profile-picture-1648246964-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1810502/profile-picture-1648246964-200x200-center-top.jpg?v=1648246964",
+      "AltText": "",
+      "FileSize": 9521
+    },
+    {
+      "FileName": "avatar-200x200-center-top-1.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1795330/avatar-200x200-center-top.jpg?v=1646427416",
+      "AltText": "",
+      "FileSize": 6392
+    },
+    {
+      "FileName": "profile-picture-1647383470-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1711799/profile-picture-1647383470-200x200-center-top.jpg?v=1647383470",
+      "AltText": "",
+      "FileSize": 12500
+    },
+    {
+      "FileName": "profile-picture-1648069477-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1810501/profile-picture-1648069477-200x200-center-top.jpg?v=1648069477",
+      "AltText": "",
+      "FileSize": 14849
+    },
+    {
+      "FileName": "profile-picture-1696452744-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/3648581/profile-picture-1696452744-200x200-center-top.jpg?v=1696452744",
+      "AltText": "",
+      "FileSize": 12672
+    },
+    {
+      "FileName": "profile-picture-1648072321-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1810504/profile-picture-1648072321-200x200-center-top.jpg?v=1648072321",
+      "AltText": "",
+      "FileSize": 8744
+    },
+    {
+      "FileName": "profile-picture-1737668039-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/5367433/profile-picture-1737668039-200x200-center-top.jpg?v=1737668039",
+      "AltText": "",
+      "FileSize": 9458
+    },
+    {
+      "FileName": "profile-picture-1648835344-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1794520/profile-picture-1648835344-200x200-center-top.jpg?v=1648835344",
+      "AltText": "",
+      "FileSize": 16932
+    },
+    {
+      "FileName": "profile-picture-1677012702-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1810505/profile-picture-1677012702-200x200-center-top.jpg?v=1677012702",
+      "AltText": "",
+      "FileSize": 10255
+    },
+    {
+      "FileName": "profile-picture-1739910194-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/2329142/profile-picture-1739910194-200x200-center-top.jpg?v=1739910194",
+      "AltText": "",
+      "FileSize": 10605
+    },
+    {
+      "FileName": "profile-picture-1648841492-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1794284/profile-picture-1648841492-200x200-center-top.jpg?v=1648841492",
+      "AltText": "",
+      "FileSize": 12386
+    },
+    {
+      "FileName": "profile-picture-1675465285-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1794283/profile-picture-1675465285-200x200-center-top.jpg?v=1675465285",
+      "AltText": "",
+      "FileSize": 9263
+    },
+    {
+      "FileName": "powered-by-uconnect-badge.svg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/themes/uConnect/images/powered-by-uconnect-badge.svg",
+      "AltText": "Powered by uConnect",
+      "FileSize": 5225
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "br",
-    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.uconnectlabs.com https://*.gouconnect.com https://*.instructure.com https://wsu.edu https://*.wsu.edu;frame-src \u0027self\u0027 https://jobscan.co https://wsu.edu https://*.wsu.edu https://*.uconnectlabs.com https://*.candidcareer.com https://*.youtube.com/embed/ https://player.vimeo.com/video/ https://fast.wistia.net/embed/ https://cdnapisec.kaltura.com/p/ https://videopress.com https://www.tiktok.com https://www.loom.com https://embed.ted.com https://w.soundcloud.com https://open.spotify.com https://creators.spotify.com https://embed.podcasts.apple.com https://*.pinterest.com https://giphy.com https://www.canva.com/ https://*.google.com https://*.googletagmanager.com https://*.doubleclick.net https://*.qualtrics.com https://app.powerbi.com https://public.tableau.com https://www.instagram.com https://snapwidget.com https://www.facebook.com https://airtable.com https://*.typeform.com https://e.issuu.com https://forms.monday.com https://scribehow.com https://service.force.com https://forms.cloud.microsoft https://*.jobscan.co https://student.interstride.com https://www.careerspots.com https://mongoose.botpress.cloud;",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:11:45 GMT",
-    "link": "\u003Chttps://ascc.wsu.edu/api/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://ascc.wsu.edu/api/wp/v2/pages/6\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022\n\u003Chttps://ascc.wsu.edu/\u003E; rel=shortlink",
-    "referrer-policy": "strict-origin-when-cross-origin",
-    "server": "Pagely-ARES/1.22.2",
-    "strict-transport-security": "max-age=31536000",
-    "vary": "Accept-Encoding",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "SAMEORIGIN",
-    "x-gateway-cache-key": "1771103709.151|standard|https|ascc.wsu.edu|||/|webp",
-    "x-gateway-cache-status": "HIT",
-    "x-gateway-request-id": "aea0ec1dacc2eb5497a608dc9e0bf4ba",
-    "x-gateway-skip-cache": "0"
-  },
-  "CapturedAt": "2026-02-16T20:11:30.0743669Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:27.6613102Z"
 }

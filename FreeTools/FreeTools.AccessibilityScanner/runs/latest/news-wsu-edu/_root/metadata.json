@@ -3,33 +3,93 @@
   "Url": "https://news.wsu.edu/",
   "FinalUrl": null,
   "Title": "WSU Insider | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 282880,
-  "ScreenshotSizeBytes": 2182547,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 272137,
+  "ScreenshotSizeBytes": 1913473,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 3,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2182547
+      "FileSize": 1913473
+    }
+  ],
+  "ImageCount": 11,
+  "ImagesTotalSizeBytes": 1443477,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "basketball-hoop-ball-and-hands-in-huddle-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/basketball-hoop-ball-and-hands-in-huddle-1024x676.jpg",
+      "AltText": "Composite featuring a basketball going through the net of a hoop and a closeup of hands joining together to symbolize teamwork.",
+      "FileSize": 106630
+    },
+    {
+      "FileName": "Angelica-Bautista-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/Angelica-Bautista-1024x676.jpg",
+      "AltText": "Closeup of Anjelica Bautista holding a cat.",
+      "FileSize": 86324
+    },
+    {
+      "FileName": "Constitution-of-the-United-States-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/Constitution-of-the-United-States-1024x676.jpg",
+      "AltText": "Closeup of the Constitution of the United States.",
+      "FileSize": 269430
+    },
+    {
+      "FileName": "image-4.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/09/2025-aerial-view-of-wsu-cougar-football-at-Gesa-Field-1024x676.jpg",
+      "AltText": "An aerial view of football fans watching the WSU Cougars football team run onto Gesa Field.",
+      "FileSize": 247877
+    },
+    {
+      "FileName": "generic-system-logo-crimson-bkgrd-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2024/09/generic-system-logo-crimson-bkgrd-1024x676.jpg",
+      "AltText": "Washington State University logo.",
+      "FileSize": 51699
+    },
+    {
+      "FileName": "podcast-icon.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/2797/2022/05/podcast-icon.png",
+      "AltText": "",
+      "FileSize": 20042
+    },
+    {
+      "FileName": "Roger-Nyhus-and-American-flag-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/Roger-Nyhus-and-American-flag-1024x676.jpg",
+      "AltText": "Closeup of Roger Nyhus and an American flag.",
+      "FileSize": 81481
+    },
+    {
+      "FileName": "GRID-PHOTO-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/GRID-PHOTO-1024x676.jpg",
+      "AltText": "Power lines spanning farm fields in Washington.",
+      "FileSize": 161384
+    },
+    {
+      "FileName": "Jeff-Wall-and-crabapple-tree-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/Jeff-Wall-and-crabapple-tree-1024x676.jpg",
+      "AltText": "Jeff Wall holding the fruit from a crabapple tree.",
+      "FileSize": 172743
+    },
+    {
+      "FileName": "gloves-holding-smartphone-and-glucose-monitor-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/gloves-holding-smartphone-and-glucose-monitor-1024x676.jpg",
+      "AltText": "Gloved hands holding a smartphone and a glucose monitor.",
+      "FileSize": 80629
+    },
+    {
+      "FileName": "Ella-Roney-and-Dan-Cronan-with-posters-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/12/Ella-Roney-and-Dan-Cronan-with-posters-1024x676.jpg",
+      "AltText": "Dan Cronan and Ella Roney standing in front of three posters detailing Roney\u0027s landscape designs.",
+      "FileSize": 165238
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "etag": "\u0022dfa2c666327b00e621ac16f0b0a258c0\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:52:30 GMT",
-    "link": "\u003Chttps://news.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://news.wsu.edu/wp-json/wp/v2/pages/235556\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://news.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-cache": "HIT",
-    "x-cache-status": "HIT"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1348523Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.1331713Z"
 }

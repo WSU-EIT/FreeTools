@@ -2,32 +2,30 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
-| Total JS Errors | 5 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 3 |
 | Total JS Warnings | 0 |
-| Total HTML | 114.0 KB |
-| Total Screenshots | 1.1 MB |
+| Total HTML | 2.4 KB |
+| Total Screenshots | 461.8 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `aastudentcenter-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | African American Student Center | 1 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/events/](events/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/get-involved/](get-involved/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/programs/](programs/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ✅ | [/resources/](resources/report.md) | 200 | Resources | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/events/](events/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/get-involved/](get-involved/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/programs/](programs/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | (none) | 0 | 0 | 0 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
 
 ### [/about/](about/report.md)
 
@@ -37,20 +35,21 @@
 
 ![/events/](events/01-page-loaded.png)
 
-### [/get-involved/](get-involved/report.md)
-
-![/get-involved/](get-involved/01-page-loaded.png)
-
 ### [/programs/](programs/report.md)
 
 ![/programs/](programs/01-page-loaded.png)
 
-### [/resources/](resources/report.md)
-
-![/resources/](resources/01-page-loaded.png)
-
 
 ## Failed Pages
+
+### /
+
+- **URL:** https://aastudentcenter.wsu.edu/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
 
 ### /about/
 
@@ -67,17 +66,26 @@
 - **URL:** https://aastudentcenter.wsu.edu/events/
 - **Status:** 404
 
+### /resources/
+
+- **URL:** https://aastudentcenter.wsu.edu/resources/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
+
 ### /get-involved/
 
 - **URL:** https://aastudentcenter.wsu.edu/get-involved/
-- **Status:** 404
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
 
 
 ## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /about/ (1 errors)
 
@@ -88,10 +96,6 @@
 - `Failed to load resource: the server responded with a status of 404 ()`
 
 ### /events/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /get-involved/ (1 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
 

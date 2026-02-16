@@ -5,21 +5,20 @@
 | URL | https://account.wsu.edu/password-reset/ |
 | Redirected To | https://login.wsu.edu/account-settings/home |
 | Title | My Settings | WSU |
-| Status | ✅ 200 |
+| Status | ❌ 0 |
 | HTML Size | 3.9 KB |
-| Screenshots | 1 (10.9 KB) |
-| JS Errors | 1 |
+| Screenshots | 1 (7.6 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:55.6590894Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: the server responded with a status of 404 ()`
+| Captured | 2026-02-16T20:38:24.0231864Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (10.9 KB)
+- Screenshot #1: page-loaded (7.6 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -28,9 +27,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (10.9 KB)
+- `01-page-loaded.png` — page-loaded (7.6 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

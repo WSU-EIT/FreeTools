@@ -2,24 +2,26 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 4/4 pages OK |
+| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 4 |
-| Pages Failed | 0 |
-| Total JS Errors | 0 |
+| Pages Passed | 0 |
+| Pages Failed | 4 |
+| Total JS Errors | 3 |
 | Total JS Warnings | 0 |
-| Total HTML | 346.6 KB |
-| Total Screenshots | 1.1 MB |
+| Total HTML | 283.1 KB |
+| Total Screenshots | 19.5 KB |
+| Total Images | 3 (3.4 KB) |
+| Images Missing Alt | 1 |
 | Folder | `office365-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Sign in to your account | 0 | 0 | 1 |
-| ✅ | [/help/](help/report.md) | 200 | Sign in to your account | 0 | 0 | 1 |
-| ✅ | [/services/](services/report.md) | 200 | Sign in to your account | 0 | 0 | 1 |
-| ✅ | [/training/](training/report.md) | 200 | Sign in to your account | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Sign in to your account | 3 | 2 | 1 |
+| ❌ | [/help/](help/report.md) | 0 | Sign in to your account | 0 | 0 | 0 |
+| ❌ | [/services/](services/report.md) | 0 | Sign in to your account | 0 | 1 | 0 |
+| ❌ | [/training/](training/report.md) | 0 | Sign in to your account | 0 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -38,6 +40,38 @@
 ### [/training/](training/report.md)
 
 ![/training/](training/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /
+
+- **URL:** https://office365.wsu.edu/
+- **Status:** 0
+
+### /services/
+
+- **URL:** https://office365.wsu.edu/services/
+- **Status:** 0
+
+### /help/
+
+- **URL:** https://office365.wsu.edu/help/
+- **Status:** 0
+
+### /training/
+
+- **URL:** https://office365.wsu.edu/training/
+- **Status:** 0
+
+
+## Pages with JavaScript Errors
+
+### / (3 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

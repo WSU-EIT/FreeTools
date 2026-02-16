@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://afw.wsu.edu/contact/ |
 | Title | Page not found | Association for Faculty Women | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 55.7 KB |
+| Status | ❌ 0 |
+| HTML Size | 47.5 KB |
 | Screenshots | 1 (44.1 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:12.7700540Z |
+| Captured | 2026-02-16T20:38:55.1121843Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (44.1 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

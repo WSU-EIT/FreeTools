@@ -3,9 +3,9 @@
   "Url": "https://ace.wsu.edu/resources/",
   "FinalUrl": null,
   "Title": "Page not found | Office of Assessment for Curricular Effectiveness | Washington State University",
-  "StatusCode": 404,
+  "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 76704,
+  "HtmlSizeBytes": 66132,
   "ScreenshotSizeBytes": 133117,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -18,14 +18,11 @@
       "FileSize": 133117
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "no-cache, must-revalidate, max-age=0",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:33 GMT",
-    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
-    "link": "\u003Chttps://ace.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
-    "server": "nginx"
-  },
-  "CapturedAt": "2026-02-16T20:13:31.5567446Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:38.2395146Z"
 }

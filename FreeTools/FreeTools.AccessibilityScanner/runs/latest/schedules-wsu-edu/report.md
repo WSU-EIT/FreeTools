@@ -2,33 +2,31 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 7/7 pages OK |
+| Status | ⚠️ 3/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 7 |
-| Pages Failed | 0 |
+| Pages Passed | 3 |
+| Pages Failed | 4 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 4.8 MB |
-| Total Screenshots | 462.6 KB |
+| Total HTML | 2.7 MB |
+| Total Screenshots | 230.6 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `schedules-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Schedule of Classes | 0 | 0 | 1 |
-| ✅ | [/Coop/](Coop/report.md) | 200 | Schedule of Classes | 0 | 0 | 1 |
-| ✅ | [/List/Everett/](List_Everett/report.md) | 200 | Schedule of Classes | 0 | 0 | 1 |
-| ✅ | [/List/Pullman/](List_Pullman/report.md) | 200 | Schedule of Classes | 0 | 0 | 1 |
-| ✅ | [/List/Spokane/](List_Spokane/report.md) | 200 | Schedule of Classes | 0 | 0 | 1 |
-| ✅ | [/List/TriCities/](List_TriCities/report.md) | 200 | Schedule of Classes | 0 | 0 | 1 |
-| ✅ | [/List/Vancouver/](List_Vancouver/report.md) | 200 | Schedule of Classes | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ✅ | [/Coop/](Coop/report.md) | 200 | Schedule of Classes | 0 | 0 | 0 |
+| ✅ | [/List/Everett/](List_Everett/report.md) | 200 | Schedule of Classes | 0 | 0 | 0 |
+| ❌ | [/List/Pullman/](List_Pullman/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/List/Spokane/](List_Spokane/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/List/TriCities/](List_TriCities/report.md) | 0 | Schedule of Classes | 0 | 0 | 0 |
+| ✅ | [/List/Vancouver/](List_Vancouver/report.md) | 200 | Schedule of Classes | 0 | 0 | 0 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
 
 ### [/Coop/](Coop/report.md)
 
@@ -38,14 +36,6 @@
 
 ![/List/Everett/](List_Everett/01-page-loaded.png)
 
-### [/List/Pullman/](List_Pullman/report.md)
-
-![/List/Pullman/](List_Pullman/01-page-loaded.png)
-
-### [/List/Spokane/](List_Spokane/report.md)
-
-![/List/Spokane/](List_Spokane/01-page-loaded.png)
-
 ### [/List/TriCities/](List_TriCities/report.md)
 
 ![/List/TriCities/](List_TriCities/01-page-loaded.png)
@@ -53,6 +43,42 @@
 ### [/List/Vancouver/](List_Vancouver/report.md)
 
 ![/List/Vancouver/](List_Vancouver/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /
+
+- **URL:** https://schedules.wsu.edu/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded`
+
+### /List/Pullman/
+
+- **URL:** https://schedules.wsu.edu/List/Pullman/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
+
+### /List/Spokane/
+
+- **URL:** https://schedules.wsu.edu/List/Spokane/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
+
+### /List/TriCities/
+
+- **URL:** https://schedules.wsu.edu/List/TriCities/
+- **Status:** 0
 
 
 ---

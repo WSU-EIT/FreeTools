@@ -5,13 +5,15 @@
 | URL | https://pharmacy.wsu.edu/programs/ |
 | Redirected To | https://pharmacy.wsu.edu/programs/#gsc.tab=0 |
 | Title | Page not found | Pharmacy and Pharmaceutical Sciences | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 272.4 KB |
+| Status | ❌ 0 |
+| HTML Size | 263.6 KB |
 | Screenshots | 1 (125.8 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 5 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:41.6581710Z |
+| Captured | 2026-02-16T20:39:25.9761846Z |
 
 ## JavaScript Errors
 
@@ -24,6 +26,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (125.8 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -31,6 +34,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

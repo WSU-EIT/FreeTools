@@ -5,17 +5,20 @@
 | URL | https://transportation.wsu.edu/bike/ |
 | Redirected To | https://transportation.wsu.edu/bike_ped_plan/ |
 | Title | Bike_Ped_Plan | Transportation Services | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 53.4 KB |
+| Status | ❌ 0 |
+| HTML Size | 50.5 KB |
 | Screenshots | 1 (67.2 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:01.9775643Z |
+| Captured | 2026-02-16T20:39:29.5292271Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (67.2 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -23,6 +26,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

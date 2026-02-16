@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://maps.wsu.edu/everett/ |
 | Title | Page not found | WSU Maps | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 36.2 KB |
+| Status | ❌ 0 |
+| HTML Size | 25.1 KB |
 | Screenshots | 1 (64.4 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:43.4750458Z |
+| Captured | 2026-02-16T20:39:04.9185654Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (64.4 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

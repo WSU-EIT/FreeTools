@@ -3,10 +3,10 @@
   "Url": "https://ceshs.wsu.edu/faculty/",
   "FinalUrl": "https://ceshs.wsu.edu/department-of-kinesiology-and-educational-psychology/faculty/",
   "Title": "Kinesiology Faculty | College of Education, Sport, and Human Sciences | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 258111,
-  "ScreenshotSizeBytes": 3727300,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 245917,
+  "ScreenshotSizeBytes": 1010931,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,22 +15,99 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 3727300
+      "FileSize": 1010931
+    }
+  ],
+  "ImageCount": 14,
+  "ImagesTotalSizeBytes": 1060911,
+  "ImagesMissingAlt": 14,
+  "Images": [
+    {
+      "FileName": "Amber-Brown-396x374.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2023/08/Amber-Brown-396x374.png",
+      "AltText": "",
+      "FileSize": 172890
+    },
+    {
+      "FileName": "robertpeoplethumbnail-396x285.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2018/03/robertpeoplethumbnail-396x285.jpg",
+      "AltText": "",
+      "FileSize": 31211
+    },
+    {
+      "FileName": "SeokJae-Choe-Fall-2025-08-396x264.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/08/SeokJae-Choe-Fall-2025-08-396x264.jpg",
+      "AltText": "",
+      "FileSize": 47472
+    },
+    {
+      "FileName": "Christopher-Connolly-1-396x285.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2018/03/Christopher-Connolly-1-396x285.jpg",
+      "AltText": "",
+      "FileSize": 41561
+    },
+    {
+      "FileName": "Anne-Cox-pd-396x285.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2018/03/Anne-Cox-pd-396x285.jpg",
+      "AltText": "",
+      "FileSize": 31135
+    },
+    {
+      "FileName": "Darryl-Craig-396x285.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2018/06/Darryl-Craig-396x285.jpg",
+      "AltText": "",
+      "FileSize": 40802
+    },
+    {
+      "FileName": "Kim-Holmstrom-500x360-396x285.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2018/03/Kim-Holmstrom-500x360-396x285.jpg",
+      "AltText": "",
+      "FileSize": 41285
+    },
+    {
+      "FileName": "headshot-photo-396x264.jpeg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2023/07/headshot-photo-396x264.jpeg",
+      "AltText": "",
+      "FileSize": 13169
+    },
+    {
+      "FileName": "Tristan-Loria-Fall-2023-03-pd-396x285.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2023/08/Tristan-Loria-Fall-2023-03-pd-396x285.jpg",
+      "AltText": "",
+      "FileSize": 33232
+    },
+    {
+      "FileName": "Screenshot-2025-10-29-104556-396x497.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2020/09/Screenshot-2025-10-29-104556-396x497.png",
+      "AltText": "",
+      "FileSize": 244214
+    },
+    {
+      "FileName": "Phillip-Morgan-500x360-396x285.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2018/03/Phillip-Morgan-500x360-396x285.jpg",
+      "AltText": "",
+      "FileSize": 34694
+    },
+    {
+      "FileName": "Screenshot-2025-10-29-105524-396x472.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2018/03/Screenshot-2025-10-29-105524-396x472.png",
+      "AltText": "",
+      "FileSize": 245268
+    },
+    {
+      "FileName": "Zhong-Wang-Fall-2025-07-396x264.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/08/Zhong-Wang-Fall-2025-07-396x264.jpg",
+      "AltText": "",
+      "FileSize": 45714
+    },
+    {
+      "FileName": "Jeanne-Therrien-01-pd-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2018/06/Jeanne-Therrien-01-pd-396x396.jpg",
+      "AltText": "",
+      "FileSize": 38264
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:34 GMT",
-    "etag": "\u0022af66ee68e625443d0d68d782c18993bf\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:13:34 GMT",
-    "link": "\u003Chttps://ceshs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ceshs.wsu.edu/wp-json/wp/v2/pages/2946\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ceshs.wsu.edu/?p=2946\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://ceshs.wsu.edu",
-    "x-tec-api-root": "https://ceshs.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:13:32.6937438Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:12.2367708Z"
 }

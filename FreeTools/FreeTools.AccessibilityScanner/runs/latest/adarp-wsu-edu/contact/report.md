@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://adarp.wsu.edu/contact/ |
 | Title | Page not found | ADARP | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 56.3 KB |
+| Status | ❌ 0 |
+| HTML Size | 50.4 KB |
 | Screenshots | 1 (98.6 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:12.0721359Z |
+| Captured | 2026-02-16T20:38:53.3085503Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (98.6 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

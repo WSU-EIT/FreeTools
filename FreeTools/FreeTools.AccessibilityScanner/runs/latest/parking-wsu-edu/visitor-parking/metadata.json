@@ -18,12 +18,16 @@
       "FileSize": 7657
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
   "Headers": {
     "content-length": "555",
     "content-type": "text/html",
-    "date": "Mon, 16 Feb 2026 20:12:04 GMT",
+    "date": "Mon, 16 Feb 2026 20:38:57 GMT",
     "server": "nginx/1.28.1"
   },
-  "CapturedAt": "2026-02-16T20:12:02.2606848Z"
+  "CapturedAt": "2026-02-16T20:38:56.0884749Z"
 }

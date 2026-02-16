@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 4/7 pages OK |
+| Status | ⚠️ 1/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 4 |
-| Pages Failed | 3 |
-| Total JS Errors | 5 |
-| Total JS Warnings | 2 |
+| Pages Passed | 1 |
+| Pages Failed | 6 |
+| Total JS Errors | 4 |
+| Total JS Warnings | 0 |
 | Total HTML | 1.7 MB |
-| Total Screenshots | 3.4 MB |
+| Total Screenshots | 3.1 MB |
+| Total Images | 16 (2.2 MB) |
+| Images Missing Alt | 0 |
 | Folder | `cas-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | College of Arts and Sciences \| Washi... | 3 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About 16% of couples are divided on C... | 0 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| College of Arts and Sci... | 0 | 0 | 1 |
-| ❌ | [/departments/](departments/report.md) | 404 | Page not found \| College of Arts and... | 1 | 1 | 1 |
-| ✅ | [/news/](news/report.md) | 200 | News \| College of Arts and Sciences ... | 0 | 0 | 1 |
-| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| College of Arts and... | 1 | 1 | 1 |
-| ✅ | [/research/](research/report.md) | 200 | Research and Creativity \| College of... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | College of Arts and Sciences \| Washi... | 2 | 6 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | About 16% of couples are divided on C... | 0 | 1 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| College of Arts and Sci... | 0 | 0 | 0 |
+| ❌ | [/departments/](departments/report.md) | 0 | Page not found \| College of Arts and... | 1 | 0 | 0 |
+| ❌ | [/news/](news/report.md) | 0 | News \| College of Arts and Sciences ... | 0 | 9 | 0 |
+| ❌ | [/programs/](programs/report.md) | 0 | Page not found \| College of Arts and... | 1 | 0 | 0 |
+| ❌ | [/research/](research/report.md) | 0 | Research and Creativity \| College of... | 0 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -62,22 +64,36 @@
 - **URL:** https://cas.wsu.edu/
 - **Status:** 0
 
+### /about/
+
+- **URL:** https://cas.wsu.edu/about/
+- **Status:** 0
+
 ### /departments/
 
 - **URL:** https://cas.wsu.edu/departments/
-- **Status:** 404
+- **Status:** 0
 
 ### /programs/
 
 - **URL:** https://cas.wsu.edu/programs/
-- **Status:** 404
+- **Status:** 0
+
+### /research/
+
+- **URL:** https://cas.wsu.edu/research/
+- **Status:** 0
+
+### /news/
+
+- **URL:** https://cas.wsu.edu/news/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (3 errors)
+### / (2 errors)
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 

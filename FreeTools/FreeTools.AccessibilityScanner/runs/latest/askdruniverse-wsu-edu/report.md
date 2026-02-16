@@ -2,25 +2,27 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/5 pages OK |
+| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 2 |
-| Pages Failed | 3 |
-| Total JS Errors | 3 |
+| Pages Passed | 0 |
+| Pages Failed | 5 |
+| Total JS Errors | 6 |
 | Total JS Warnings | 0 |
-| Total HTML | 262.7 KB |
-| Total Screenshots | 5.1 MB |
+| Total HTML | 209.1 KB |
+| Total Screenshots | 1.6 MB |
+| Total Images | 24 (416.9 KB) |
+| Images Missing Alt | 17 |
 | Folder | `askdruniverse-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Ask Dr. Universe \| Washington State ... | 0 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About \| Ask Dr. Universe \| Washingt... | 0 | 0 | 1 |
-| ❌ | [/ask-question/](ask-question/report.md) | 404 | Page not found \| Ask Dr. Universe \|... | 1 | 0 | 1 |
-| ❌ | [/questions/](questions/report.md) | 404 | Page not found \| Ask Dr. Universe \|... | 1 | 0 | 1 |
-| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| Ask Dr. Universe \|... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Ask Dr. Universe \| Washington State ... | 2 | 10 | 5 |
+| ❌ | [/about/](about/report.md) | 0 | About \| Ask Dr. Universe \| Washingt... | 0 | 6 | 4 |
+| ❌ | [/ask-question/](ask-question/report.md) | 0 | Page not found \| Ask Dr. Universe \|... | 1 | 2 | 2 |
+| ❌ | [/questions/](questions/report.md) | 0 | Page not found \| Ask Dr. Universe \|... | 2 | 3 | 3 |
+| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| Ask Dr. Universe \|... | 1 | 3 | 3 |
 
 ## Page Screenshots
 
@@ -47,29 +49,45 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://askdruniverse.wsu.edu/
+- **Status:** 0
+
+### /about/
+
+- **URL:** https://askdruniverse.wsu.edu/about/
+- **Status:** 0
+
 ### /ask-question/
 
 - **URL:** https://askdruniverse.wsu.edu/ask-question/
-- **Status:** 404
+- **Status:** 0
 
 ### /questions/
 
 - **URL:** https://askdruniverse.wsu.edu/questions/
-- **Status:** 404
+- **Status:** 0
 
 ### /resources/
 
 - **URL:** https://askdruniverse.wsu.edu/resources/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### /ask-question/ (1 errors)
+### / (2 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /questions/ (2 errors)
 
 - `Failed to load resource: the server responded with a status of 404 (Not Found)`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
-### /questions/ (1 errors)
+### /ask-question/ (1 errors)
 
 - `Failed to load resource: the server responded with a status of 404 (Not Found)`
 

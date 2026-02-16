@@ -3,9 +3,9 @@
   "Url": "https://murrow.wsu.edu/about/",
   "FinalUrl": "https://murrow.wsu.edu/about-edward-r-murrow/",
   "Title": "About Edward R. Murrow | Edward R. Murrow College of Communication | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 282960,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 282976,
   "ScreenshotSizeBytes": 2419082,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,16 +18,72 @@
       "FileSize": 2419082
     }
   ],
+  "ImageCount": 10,
+  "ImagesTotalSizeBytes": 1051881,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "Ed-Murrow.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2022/05/Ed-Murrow.jpg",
+      "AltText": "Ed Murrow Photo",
+      "FileSize": 68232
+    },
+    {
+      "FileName": "ida-lou-anderson1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2023/05/ida-lou-anderson1.jpg",
+      "AltText": "Ida Lou Anderson",
+      "FileSize": 15145
+    },
+    {
+      "FileName": "young-edward-r-murrow.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/young-edward-r-murrow.jpg",
+      "AltText": "Young Edward R. Murrow",
+      "FileSize": 30469
+    },
+    {
+      "FileName": "murrow-frat-1930.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/murrow-frat-1930.jpg",
+      "AltText": "Murrow Fraternity 1930",
+      "FileSize": 69411
+    },
+    {
+      "FileName": "murrow-oxford-circus.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/murrow-oxford-circus.jpg",
+      "AltText": "Edward R. Murrow walking down the street",
+      "FileSize": 48090
+    },
+    {
+      "FileName": "murrow-in-uniform.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/murrow-in-uniform.jpg",
+      "AltText": "Edward R. Murrow sites next to a man on rocks in army uniform",
+      "FileSize": 51714
+    },
+    {
+      "FileName": "murrow-and-kennedy.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/murrow-and-kennedy.jpg",
+      "AltText": "Edward R. Murrow and President Kennedy",
+      "FileSize": 27720
+    },
+    {
+      "FileName": "murrow-on-a-farm.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/murrow-on-a-farm.jpg",
+      "AltText": "Edward R. Murrow leaning on a fence with a farm house in the background",
+      "FileSize": 43189
+    },
+    {
+      "FileName": "murrow-reading-newspaper-792x443.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/murrow-reading-newspaper-792x443.jpg",
+      "AltText": "Two images of Edward R. Murrow reading a magazine and a newspaper",
+      "FileSize": 57928
+    },
+    {
+      "FileName": "Edward-R-Murrow-Inspiring-Courage.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/Edward-R-Murrow-Inspiring-Courage.png",
+      "AltText": "Inspiring Courage - On the 50th anniversary of his death, we remember the remarkable courage of broadcasting icon and alumnus Edward R. Murrow.",
+      "FileSize": 639983
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:11:57 GMT",
-    "etag": "\u0022468bf640a641d0c5e26434f34cf74d93\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:20:26 GMT",
-    "link": "\u003Chttps://murrow.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://murrow.wsu.edu/wp-json/wp/v2/pages/14595\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://murrow.wsu.edu/?p=14595\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:11:54.2205591Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:54.8574543Z"
 }

@@ -2,25 +2,27 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/5 pages OK |
+| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 2 |
-| Pages Failed | 3 |
-| Total JS Errors | 4 |
+| Pages Passed | 0 |
+| Pages Failed | 5 |
+| Total JS Errors | 3 |
 | Total JS Warnings | 0 |
-| Total HTML | 300.7 KB |
-| Total Screenshots | 685.2 KB |
+| Total HTML | 245.3 KB |
+| Total Screenshots | 698.0 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `access-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Access at WSU \| Washington State Uni... | 1 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| Access at WSU \| Wa... | 1 | 0 | 1 |
-| ❌ | [/digital-accessibility/](digital-accessibility/report.md) | 404 | Page not found \| Access at WSU \| Wa... | 1 | 0 | 1 |
-| ❌ | [/policy/](policy/report.md) | 404 | Page not found \| Access at WSU \| Wa... | 1 | 0 | 1 |
-| ✅ | [/resources/](resources/report.md) | 200 | Resources for Employees \| Access at ... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Access at WSU \| Washington State Uni... | 0 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| Access at WSU \| Wa... | 1 | 0 | 0 |
+| ❌ | [/digital-accessibility/](digital-accessibility/report.md) | 0 | Page not found \| Access at WSU \| Wa... | 1 | 0 | 0 |
+| ❌ | [/policy/](policy/report.md) | 0 | Page not found \| Access at WSU \| Wa... | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Resources for Employees \| Access at ... | 0 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -47,27 +49,33 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://access.wsu.edu/
+- **Status:** 0
+
 ### /policy/
 
 - **URL:** https://access.wsu.edu/policy/
-- **Status:** 404
+- **Status:** 0
 
 ### /digital-accessibility/
 
 - **URL:** https://access.wsu.edu/digital-accessibility/
-- **Status:** 404
+- **Status:** 0
+
+### /resources/
+
+- **URL:** https://access.wsu.edu/resources/
+- **Status:** 0
 
 ### /contact/
 
 - **URL:** https://access.wsu.edu/contact/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /policy/ (1 errors)
 

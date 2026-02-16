@@ -5,8 +5,8 @@
   "Title": "WSU Campuses | Washington State University | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 143851,
-  "ScreenshotSizeBytes": 8047381,
+  "HtmlSizeBytes": 143828,
+  "ScreenshotSizeBytes": 8021111,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,17 +15,94 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 8047381
+      "FileSize": 8021111
+    }
+  ],
+  "ImageCount": 12,
+  "ImagesTotalSizeBytes": 9037162,
+  "ImagesMissingAlt": 6,
+  "Images": [
+    {
+      "FileName": "Happy-Cougar-Crowd_3423.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Happy-Cougar-Crowd_3423.jpg",
+      "AltText": "WSU Cougar fans cheer at the WSU vs Oregon football game on the campus of Washington State University, Saturday, October, 20  2018.",
+      "FileSize": 758730
+    },
+    {
+      "FileName": "Spokane_1336.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Spokane_1336.jpg",
+      "AltText": "Students enjoy time outside to collaborate on projects on the Spokane campus of Washington State University, Wednesday, May 29, 2019.",
+      "FileSize": 462058
+    },
+    {
+      "FileName": "WSU-Everett-spring-2022_8014.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/WSU-Everett-spring-2022_8014.jpg",
+      "AltText": "Two people walking down a flight of stairs in a WSU Everett academic building.",
+      "FileSize": 574246
+    },
+    {
+      "FileName": "WSU-TriCities-spring-2022_0066.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/WSU-TriCities-spring-2022_0066.jpg",
+      "AltText": "Two students talk as they walk around WSU Tri-Cities.",
+      "FileSize": 359449
+    },
+    {
+      "FileName": "WSU-Vancouver-spring-2022_8518.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/WSU-Vancouver-spring-2022_8518.jpg",
+      "AltText": "Two smiling students talk while sitting on a fountain at WSU Vancouver.",
+      "FileSize": 511852
+    },
+    {
+      "FileName": "WA_Topographic-ISO-01-1-2-792x338.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/06/WA_Topographic-ISO-01-1-2-792x338.png",
+      "AltText": "A physical map of Washington state with a pin for each campus location, Pullman, Spokane, Tri-Cities, Vancouver, Everett, and Global.",
+      "FileSize": 460055
+    },
+    {
+      "FileName": "Campus-photo-4.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/06/Campus-photo-4.png",
+      "AltText": "",
+      "FileSize": 980012
+    },
+    {
+      "FileName": "Campus-photo-5.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-5.png",
+      "AltText": "",
+      "FileSize": 1043930
+    },
+    {
+      "FileName": "Campus-photo-6.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-6.png",
+      "AltText": "",
+      "FileSize": 973183
+    },
+    {
+      "FileName": "Campus-photo-7.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-7.png",
+      "AltText": "",
+      "FileSize": 1144195
+    },
+    {
+      "FileName": "Campus-photo-8.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-8.png",
+      "AltText": "",
+      "FileSize": 1014605
+    },
+    {
+      "FileName": "Campus-photo-9.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-9.png",
+      "AltText": "",
+      "FileSize": 754847
     }
   ],
   "ErrorMessage": null,
   "Headers": {
-    "cache-control": "max-age=182, must-revalidate",
+    "cache-control": "max-age=27, must-revalidate",
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:15:36 GMT",
-    "last-modified": "Mon, 16 Feb 2026 20:08:38 GMT",
+    "date": "Mon, 16 Feb 2026 20:41:34 GMT",
+    "last-modified": "Mon, 16 Feb 2026 20:32:01 GMT",
     "link": "\u003Chttps://wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://wsu.edu/wp-json/wp/v2/pages/17\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
     "server": "nginx",
     "transfer-encoding": "chunked",
@@ -34,5 +111,5 @@
     "x-frame-options": "DENY",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-16T20:15:36.2267218Z"
+  "CapturedAt": "2026-02-16T20:41:34.0264513Z"
 }

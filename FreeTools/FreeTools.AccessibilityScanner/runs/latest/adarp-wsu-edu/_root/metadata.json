@@ -3,12 +3,12 @@
   "Url": "https://adarp.wsu.edu/",
   "FinalUrl": null,
   "Title": "ADARP | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 62447,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 50616,
   "ScreenshotSizeBytes": 704360,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -18,21 +18,30 @@
       "FileSize": 704360
     }
   ],
+  "ImageCount": 3,
+  "ImagesTotalSizeBytes": 289958,
+  "ImagesMissingAlt": 3,
+  "Images": [
+    {
+      "FileName": "HomepageGraphic-753px.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2942/2014/07/HomepageGraphic-753px.jpg",
+      "AltText": "",
+      "FileSize": 76968
+    },
+    {
+      "FileName": "Rita-Fuchs-cropped-2025-792x1085.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2942/2025/07/Rita-Fuchs-cropped-2025-792x1085.jpg",
+      "AltText": "",
+      "FileSize": 104386
+    },
+    {
+      "FileName": "Amanda-Tanner-1-792x1025.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2942/2023/09/Amanda-Tanner-1-792x1025.jpg",
+      "AltText": "",
+      "FileSize": 108604
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "etag": "\u0022f6f2d57aa0f8ff09589bec09cf053929\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "link": "\u003Chttps://adarp.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://adarp.wsu.edu/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://adarp.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-cache": "EXPIRED",
-    "x-cache-status": "EXPIRED",
-    "x-tec-api-origin": "https://adarp.wsu.edu",
-    "x-tec-api-root": "https://adarp.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.0929255Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:04.9609751Z"
 }

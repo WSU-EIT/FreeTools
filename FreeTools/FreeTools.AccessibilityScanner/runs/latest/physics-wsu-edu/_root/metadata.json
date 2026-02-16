@@ -3,31 +3,63 @@
   "Url": "https://physics.wsu.edu/",
   "FinalUrl": null,
   "Title": "Department of Physics \u0026 Astronomy | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 231525,
-  "ScreenshotSizeBytes": 1728927,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 220054,
+  "ScreenshotSizeBytes": 1340274,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 4,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1728927
+      "FileSize": 1340274
+    }
+  ],
+  "ImageCount": 6,
+  "ImagesTotalSizeBytes": 937238,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "Matt-McCluskey-and-Julie-Miller-03-1024x676-1-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2025/10/Matt-McCluskey-and-Julie-Miller-03-1024x676-1-792x523.jpg",
+      "AltText": "Julie Miller and Matt McCluskey conversing in a research laboratory.",
+      "FileSize": 92219
+    },
+    {
+      "FileName": "Michael-Allen-and-Yang-Wendy-Liu-Award-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2025/06/Michael-Allen-and-Yang-Wendy-Liu-Award-792x523.jpg",
+      "AltText": "Two men stand side by side with smiles, as one holds an award.",
+      "FileSize": 143617
+    },
+    {
+      "FileName": "Jensen-ImpactLab-792x528.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2025/06/Jensen-ImpactLab-792x528.jpg",
+      "AltText": "Three individuals standing in a lab with large metal equipment in conversation.",
+      "FileSize": 76141
+    },
+    {
+      "FileName": "up25.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/1968/2026/01/up25.jpg",
+      "AltText": "A faculty mentor and student pose beside a research poster",
+      "FileSize": 208926
+    },
+    {
+      "FileName": "jacklambert1.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/1968/2025/12/jacklambert1.png",
+      "AltText": "Portrait of Jack Lambert.",
+      "FileSize": 396841
+    },
+    {
+      "FileName": "PNNL_CENTER_FullColorSMALL.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/1968/2025/10/PNNL_CENTER_FullColorSMALL.jpg",
+      "AltText": "The logo of the Pacific Northwest National Laboratory",
+      "FileSize": 19494
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "etag": "\u00224d4b06498c61172ff880f223492e72eb\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:28:49 GMT",
-    "link": "\u003Chttps://physics.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://physics.wsu.edu/wp-json/wp/v2/pages/7391\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://physics.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1394498Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.1368841Z"
 }

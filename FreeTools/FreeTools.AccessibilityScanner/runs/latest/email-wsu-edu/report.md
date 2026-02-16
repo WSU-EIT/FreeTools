@@ -2,25 +2,27 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 5/5 pages OK |
+| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 5 |
-| Pages Failed | 0 |
-| Total JS Errors | 14 |
-| Total JS Warnings | 18 |
-| Total HTML | 363.0 KB |
-| Total Screenshots | 190.2 KB |
+| Pages Passed | 0 |
+| Pages Failed | 5 |
+| Total JS Errors | 0 |
+| Total JS Warnings | 4 |
+| Total HTML | 57.2 KB |
+| Total Screenshots | 125.7 KB |
+| Total Images | 4 (12.5 KB) |
+| Images Missing Alt | 0 |
 | Folder | `email-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | WSU \| Sign In | 7 | 4 | 1 |
-| ✅ | [/access/](access/report.md) | 200 | WSU \| Sign In | 7 | 5 | 1 |
-| ✅ | [/help/](help/report.md) | 200 | WSU Authentication \| Washington Stat... | 0 | 2 | 1 |
-| ✅ | [/policies/](policies/report.md) | 200 | WSU Authentication \| Washington Stat... | 0 | 5 | 1 |
-| ✅ | [/resources/](resources/report.md) | 200 | WSU Authentication \| Washington Stat... | 0 | 2 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/access/](access/report.md) | 0 | Outlook | 0 | 1 | 0 |
+| ❌ | [/help/](help/report.md) | 0 | Outlook | 0 | 1 | 0 |
+| ❌ | [/policies/](policies/report.md) | 0 | (none) | 0 | 1 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Outlook | 0 | 1 | 0 |
 
 ## Page Screenshots
 
@@ -45,27 +47,34 @@
 ![/resources/](resources/01-page-loaded.png)
 
 
-## Pages with JavaScript Errors
+## Failed Pages
 
-### / (7 errors)
+### /
 
-- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
-- `No available ports. Loopback server failed and polling is cancelled.`
+- **URL:** https://email.wsu.edu/
+- **Status:** 0
+- **Error:** `Unable to retrieve content because the page is navigating and changing the content.`
 
-### /access/ (7 errors)
+### /access/
 
-- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
-- `No available ports. Loopback server failed and polling is cancelled.`
+- **URL:** https://email.wsu.edu/access/
+- **Status:** 0
+
+### /help/
+
+- **URL:** https://email.wsu.edu/help/
+- **Status:** 0
+
+### /policies/
+
+- **URL:** https://email.wsu.edu/policies/
+- **Status:** 0
+- **Error:** `Execution context was destroyed, most likely because of a navigation`
+
+### /resources/
+
+- **URL:** https://email.wsu.edu/resources/
+- **Status:** 0
 
 
 ---

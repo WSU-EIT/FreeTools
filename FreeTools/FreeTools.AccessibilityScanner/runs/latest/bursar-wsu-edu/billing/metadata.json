@@ -3,9 +3,9 @@
   "Url": "https://bursar.wsu.edu/billing/",
   "FinalUrl": null,
   "Title": "Billing | Bursar | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 79293,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 72170,
   "ScreenshotSizeBytes": 680349,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,19 +18,18 @@
       "FileSize": 680349
     }
   ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 60884,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "rawpixel-com-586687-unsplash-banner.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2869/2018/04/rawpixel-com-586687-unsplash-banner.jpg",
+      "AltText": "Photo by rawpixel.com on Unsplash",
+      "FileSize": 60884
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:11:28 GMT",
-    "etag": "\u0022f55ea6cd641dd0be7ae1c1d814d30c25\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:11:28 GMT",
-    "link": "\u003Chttps://bursar.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://bursar.wsu.edu/wp-json/wp/v2/pages/127\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://bursar.wsu.edu/?p=127\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://bursar.wsu.edu",
-    "x-tec-api-root": "https://bursar.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:11:21.1292617Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:55.7300517Z"
 }

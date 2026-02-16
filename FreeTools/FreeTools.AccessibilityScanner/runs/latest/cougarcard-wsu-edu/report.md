@@ -2,32 +2,30 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 1 |
-| Pages Failed | 5 |
-| Total JS Errors | 5 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 4 |
 | Total JS Warnings | 0 |
-| Total HTML | 180.9 KB |
-| Total Screenshots | 930.4 KB |
+| Total HTML | 116.9 KB |
+| Total Screenshots | 297.6 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `cougarcard-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Home | 0 | 0 | 1 |
-| ❌ | [/add-funds/](add-funds/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/get-card/](get-card/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/lost-stolen/](lost-stolen/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/services/](services/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/add-funds/](add-funds/report.md) | 0 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/get-card/](get-card/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/lost-stolen/](lost-stolen/report.md) | 0 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/services/](services/report.md) | 0 | Page Not Found | 1 | 0 | 0 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
 
 ### [/add-funds/](add-funds/report.md)
 
@@ -36,10 +34,6 @@
 ### [/contact/](contact/report.md)
 
 ![/contact/](contact/01-page-loaded.png)
-
-### [/get-card/](get-card/report.md)
-
-![/get-card/](get-card/01-page-loaded.png)
 
 ### [/lost-stolen/](lost-stolen/report.md)
 
@@ -52,25 +46,39 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://cougarcard.wsu.edu/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded`
+
 ### /services/
 
 - **URL:** https://cougarcard.wsu.edu/services/
-- **Status:** 404
+- **Status:** 0
 
 ### /get-card/
 
 - **URL:** https://cougarcard.wsu.edu/get-card/
-- **Status:** 404
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
 
 ### /add-funds/
 
 - **URL:** https://cougarcard.wsu.edu/add-funds/
-- **Status:** 404
+- **Status:** 0
 
 ### /lost-stolen/
 
 - **URL:** https://cougarcard.wsu.edu/lost-stolen/
-- **Status:** 404
+- **Status:** 0
 
 ### /contact/
 
@@ -81,10 +89,6 @@
 ## Pages with JavaScript Errors
 
 ### /services/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /get-card/ (1 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
 

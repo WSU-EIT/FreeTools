@@ -3,10 +3,10 @@
   "Url": "https://ansci.wsu.edu/faculty/",
   "FinalUrl": "https://ansci.wsu.edu/people/faculty/",
   "Title": "Faculty | Animal Sciences | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 281842,
-  "ScreenshotSizeBytes": 2174989,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 274390,
+  "ScreenshotSizeBytes": 1213570,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,24 +15,183 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2174989
+      "FileSize": 1213570
+    }
+  ],
+  "ImageCount": 28,
+  "ImagesTotalSizeBytes": 1148532,
+  "ImagesMissingAlt": 28,
+  "Images": [
+    {
+      "FileName": "Addison_Carroll_1to1-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/07/Addison_Carroll_1to1-396x396.jpg",
+      "AltText": "",
+      "FileSize": 34709
+    },
+    {
+      "FileName": "Kimberly_Davenport-1-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2023/07/Kimberly_Davenport-1-396x396.jpg",
+      "AltText": "",
+      "FileSize": 37677
+    },
+    {
+      "FileName": "20251128-Min-Du-396x544.jpeg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2016/11/20251128-Min-Du-396x544.jpeg",
+      "AltText": "",
+      "FileSize": 35396
+    },
+    {
+      "FileName": "jiang_471x471-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2016/11/jiang_471x471-396x396.jpg",
+      "AltText": "",
+      "FileSize": 41247
+    },
+    {
+      "FileName": "Martin_Maquivar_600x600-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2016/11/Martin_Maquivar_600x600-396x396.jpg",
+      "AltText": "",
+      "FileSize": 47520
+    },
+    {
+      "FileName": "Gordon_Murdoch_600x600-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2022/05/Gordon_Murdoch_600x600-396x396.jpg",
+      "AltText": "",
+      "FileSize": 48638
+    },
+    {
+      "FileName": "neibergs-e1699471987464.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2016/11/neibergs-e1699471987464.jpg",
+      "AltText": "",
+      "FileSize": 8444
+    },
+    {
+      "FileName": "Michael_Phelps_600x600-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2022/05/Michael_Phelps_600x600-396x396.jpg",
+      "AltText": "",
+      "FileSize": 35413
+    },
+    {
+      "FileName": "Angela_Reitmeier_600x600-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2016/11/Angela_Reitmeier_600x600-396x396.jpg",
+      "AltText": "",
+      "FileSize": 44128
+    },
+    {
+      "FileName": "Seekford1-396x397.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/11/Seekford1-396x397.jpg",
+      "AltText": "",
+      "FileSize": 28411
+    },
+    {
+      "FileName": "Katie_Shira-396x387.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/11/Katie_Shira-396x387.jpg",
+      "AltText": "",
+      "FileSize": 71389
+    },
+    {
+      "FileName": "hudson-Tip-e1744317724336-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2015/04/hudson-Tip-e1744317724336-396x396.jpg",
+      "AltText": "",
+      "FileSize": 16665
+    },
+    {
+      "FileName": "Kuber-Paul.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2015/04/Kuber-Paul.png",
+      "AltText": "",
+      "FileSize": 125158
+    },
+    {
+      "FileName": "Don_Llewellyn_600x800-396x406.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2015/04/Don_Llewellyn_600x800-396x406.jpg",
+      "AltText": "",
+      "FileSize": 37083
+    },
+    {
+      "FileName": "Marcos_Marcondes_600x600-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2022/05/Marcos_Marcondes_600x600-396x396.jpg",
+      "AltText": "",
+      "FileSize": 41650
+    },
+    {
+      "FileName": "Shubhankar-Pic1-396x372.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2022/09/Shubhankar-Pic1-396x372.jpg",
+      "AltText": "",
+      "FileSize": 23172
+    },
+    {
+      "FileName": "Sarah_Smith_600x600-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2015/04/Sarah_Smith_600x600-396x396.jpg",
+      "AltText": "",
+      "FileSize": 54611
+    },
+    {
+      "FileName": "ZhuPhoto-729x1024-1-396x556.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2023/01/ZhuPhoto-729x1024-1-396x556.jpg",
+      "AltText": "",
+      "FileSize": 68752
+    },
+    {
+      "FileName": "Mosope_Abanikannda-396x420.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2026/01/Mosope_Abanikannda-396x420.jpg",
+      "AltText": "",
+      "FileSize": 20717
+    },
+    {
+      "FileName": "Deavila_Jeanene.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2022/05/Deavila_Jeanene.jpg",
+      "AltText": "",
+      "FileSize": 44341
+    },
+    {
+      "FileName": "MBenson_600x600-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2016/11/MBenson_600x600-396x396.jpg",
+      "AltText": "",
+      "FileSize": 29016
+    },
+    {
+      "FileName": "busboom.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2016/11/busboom.jpg",
+      "AltText": "",
+      "FileSize": 14760
+    },
+    {
+      "FileName": "Larry_Fox_360x360.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2016/11/Larry_Fox_360x360.jpg",
+      "AltText": "",
+      "FileSize": 35706
+    },
+    {
+      "FileName": "Charlie_Gaskins_360x360.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2016/11/Charlie_Gaskins_360x360.jpg",
+      "AltText": "",
+      "FileSize": 48208
+    },
+    {
+      "FileName": "harrison.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2016/11/harrison.jpg",
+      "AltText": "",
+      "FileSize": 11781
+    },
+    {
+      "FileName": "Nancy_Irlbeck_600x600-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2016/11/Nancy_Irlbeck_600x600-396x396.jpg",
+      "AltText": "",
+      "FileSize": 50272
+    },
+    {
+      "FileName": "Kris_Johnson_600x600-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2016/11/Kris_Johnson_600x600-396x396.jpg",
+      "AltText": "",
+      "FileSize": 39899
+    },
+    {
+      "FileName": "John_McNamara_360x360.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2016/11/John_McNamara_360x360.jpg",
+      "AltText": "",
+      "FileSize": 53769
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:52 GMT",
-    "etag": "\u00221ece83726b3f3a00a081a004f3a8f5f6\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:13:52 GMT",
-    "link": "\u003Chttps://ansci.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ansci.wsu.edu/wp-json/wp/v2/pages/128\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ansci.wsu.edu/?p=128\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-cache": "EXPIRED",
-    "x-cache-status": "EXPIRED",
-    "x-tec-api-origin": "https://ansci.wsu.edu",
-    "x-tec-api-root": "https://ansci.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:13:50.1770416Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:22.2310897Z"
 }

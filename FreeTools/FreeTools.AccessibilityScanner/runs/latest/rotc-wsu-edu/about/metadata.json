@@ -3,9 +3,9 @@
   "Url": "https://rotc.wsu.edu/about/",
   "FinalUrl": null,
   "Title": "Page not found | WSU Army ROTC | Washington State University",
-  "StatusCode": 404,
+  "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 64008,
+  "HtmlSizeBytes": 53826,
   "ScreenshotSizeBytes": 76635,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -18,15 +18,30 @@
       "FileSize": 76635
     }
   ],
+  "ImageCount": 3,
+  "ImagesTotalSizeBytes": 28837,
+  "ImagesMissingAlt": 3,
+  "Images": [
+    {
+      "FileName": "instagram.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/instagram.jpg",
+      "AltText": "",
+      "FileSize": 7937
+    },
+    {
+      "FileName": "f_logo_RGB-Hex-Blue_512-396x396.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/f_logo_RGB-Hex-Blue_512-396x396.png",
+      "AltText": "",
+      "FileSize": 11524
+    },
+    {
+      "FileName": "googlemaps-1-396x396.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/googlemaps-1-396x396.jpg",
+      "AltText": "",
+      "FileSize": 9376
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "no-cache, must-revalidate, max-age=0",
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:11:56 GMT",
-    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
-    "link": "\u003Chttps://rotc.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
-    "server": "nginx"
-  },
-  "CapturedAt": "2026-02-16T20:11:54.2216278Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:55.7292052Z"
 }

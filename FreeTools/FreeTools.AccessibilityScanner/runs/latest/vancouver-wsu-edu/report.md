@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 4/7 pages OK |
+| Status | ⚠️ 1/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 4 |
-| Pages Failed | 3 |
-| Total JS Errors | 3 |
+| Pages Passed | 1 |
+| Pages Failed | 6 |
+| Total JS Errors | 4 |
 | Total JS Warnings | 0 |
-| Total HTML | 298.0 KB |
-| Total Screenshots | 4.5 MB |
+| Total HTML | 277.6 KB |
+| Total Screenshots | 2.8 MB |
+| Total Images | 38 (828.3 KB) |
+| Images Missing Alt | 5 |
 | Folder | `vancouver-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Washington State University Vancouver... | 0 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About WSU Vancouver - About - WSU Van... | 0 | 0 | 1 |
-| ❌ | [/academics/](academics/report.md) | 404 | Page not found - About - WSU Vancouver | 1 | 0 | 1 |
-| ✅ | [/admissions/](admissions/report.md) | 200 | Office of Admissions - Home - WSU Van... | 0 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 403 | Access denied - About - WSU Vancouver | 1 | 0 | 1 |
-| ✅ | [/library/](library/report.md) | 200 | Library - Home - WSU Vancouver | 0 | 0 | 1 |
-| ❌ | [/student-services/](student-services/report.md) | 404 | Page not found - About - WSU Vancouver | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Washington State University Vancouver... | 1 | 12 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | About WSU Vancouver - About - WSU Van... | 0 | 2 | 0 |
+| ❌ | [/academics/](academics/report.md) | 0 | Page not found - About - WSU Vancouver | 1 | 2 | 0 |
+| ❌ | [/admissions/](admissions/report.md) | 0 | Office of Admissions - Home - WSU Van... | 0 | 12 | 5 |
+| ❌ | [/contact/](contact/report.md) | 403 | Access denied - About - WSU Vancouver | 1 | 2 | 0 |
+| ✅ | [/library/](library/report.md) | 200 | Library - Home - WSU Vancouver | 0 | 6 | 0 |
+| ❌ | [/student-services/](student-services/report.md) | 404 | Page not found - About - WSU Vancouver | 1 | 2 | 0 |
 
 ## Page Screenshots
 
@@ -57,10 +59,25 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://vancouver.wsu.edu/
+- **Status:** 0
+
+### /about/
+
+- **URL:** https://vancouver.wsu.edu/about/
+- **Status:** 0
+
 ### /academics/
 
 - **URL:** https://vancouver.wsu.edu/academics/
-- **Status:** 404
+- **Status:** 0
+
+### /admissions/
+
+- **URL:** https://vancouver.wsu.edu/admissions/
+- **Status:** 0
 
 ### /student-services/
 
@@ -74,6 +91,10 @@
 
 
 ## Pages with JavaScript Errors
+
+### / (1 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /academics/ (1 errors)
 

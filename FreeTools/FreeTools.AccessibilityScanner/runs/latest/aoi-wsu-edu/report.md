@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 1 |
-| Pages Failed | 5 |
-| Total JS Errors | 6 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 10 |
 | Total JS Warnings | 0 |
-| Total HTML | 339.6 KB |
+| Total HTML | 282.1 KB |
 | Total Screenshots | 1.1 MB |
+| Total Images | 1 (200.2 KB) |
+| Images Missing Alt | 0 |
 | Folder | `aoi-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Academic Outreach and Innovation \| W... | 1 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page not found \| Academic Outreach a... | 1 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| Academic Outreach a... | 1 | 0 | 1 |
-| ❌ | [/partnerships/](partnerships/report.md) | 404 | Page not found \| Academic Outreach a... | 1 | 0 | 1 |
-| ❌ | [/programs/](programs/report.md) | 404 | Page not found \| Academic Outreach a... | 1 | 0 | 1 |
-| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| Academic Outreach a... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Academic Outreach and Innovation \| W... | 5 | 1 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | Page not found \| Academic Outreach a... | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| Academic Outreach a... | 1 | 0 | 0 |
+| ❌ | [/partnerships/](partnerships/report.md) | 0 | Page not found \| Academic Outreach a... | 1 | 0 | 0 |
+| ❌ | [/programs/](programs/report.md) | 0 | Page not found \| Academic Outreach a... | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| Academic Outreach a... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,36 +54,45 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://aoi.wsu.edu/
+- **Status:** 0
+
 ### /about/
 
 - **URL:** https://aoi.wsu.edu/about/
-- **Status:** 404
+- **Status:** 0
 
 ### /programs/
 
 - **URL:** https://aoi.wsu.edu/programs/
-- **Status:** 404
+- **Status:** 0
 
 ### /partnerships/
 
 - **URL:** https://aoi.wsu.edu/partnerships/
-- **Status:** 404
+- **Status:** 0
 
 ### /resources/
 
 - **URL:** https://aoi.wsu.edu/resources/
-- **Status:** 404
+- **Status:** 0
 
 ### /contact/
 
 - **URL:** https://aoi.wsu.edu/contact/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### / (5 errors)
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /about/ (1 errors)

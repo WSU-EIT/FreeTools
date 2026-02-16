@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 4/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 4 |
-| Pages Failed | 2 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
 | Total JS Errors | 2 |
 | Total JS Warnings | 0 |
-| Total HTML | 6.1 MB |
-| Total Screenshots | 3.5 MB |
+| Total HTML | 3.5 MB |
+| Total Screenshots | 3.4 MB |
+| Total Images | 175 (2.5 MB) |
+| Images Missing Alt | 132 |
 | Folder | `ascc-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Academic Success & Career Center – Wa... | 0 | 0 | 1 |
-| ❌ | [/academic-success/](academic-success/report.md) | 404 | Page not found – Academic Success & C... | 1 | 0 | 1 |
-| ✅ | [/appointments/](appointments/report.md) | 200 | Academic Success & Career Center – Wa... | 0 | 0 | 1 |
-| ✅ | [/career-services/](career-services/report.md) | 200 | Academic Success & Career Center – Wa... | 0 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found – Academic Success & C... | 1 | 0 | 1 |
-| ✅ | [/resources/](resources/report.md) | 200 | Resources – Academic Success & Career... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Academic Success & Career Center – Wa... | 0 | 38 | 26 |
+| ❌ | [/academic-success/](academic-success/report.md) | 0 | Page not found – Academic Success & C... | 1 | 20 | 18 |
+| ❌ | [/appointments/](appointments/report.md) | 0 | Academic Success & Career Center – Wa... | 0 | 38 | 26 |
+| ❌ | [/career-services/](career-services/report.md) | 0 | Academic Success & Career Center – Wa... | 0 | 38 | 26 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page not found – Academic Success & C... | 1 | 20 | 18 |
+| ❌ | [/resources/](resources/report.md) | 0 | Resources – Academic Success & Career... | 0 | 21 | 18 |
 
 ## Page Screenshots
 
@@ -52,10 +54,30 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://ascc.wsu.edu/
+- **Status:** 0
+
 ### /academic-success/
 
 - **URL:** https://ascc.wsu.edu/academic-success/
-- **Status:** 404
+- **Status:** 0
+
+### /career-services/
+
+- **URL:** https://ascc.wsu.edu/career-services/
+- **Status:** 0
+
+### /appointments/
+
+- **URL:** https://ascc.wsu.edu/appointments/
+- **Status:** 0
+
+### /resources/
+
+- **URL:** https://ascc.wsu.edu/resources/
+- **Status:** 0
 
 ### /contact/
 

@@ -8,14 +8,17 @@
 | Status | ✅ 200 |
 | HTML Size | 499 bytes |
 | Screenshots | 1 (1.2 MB) |
+| Images | 1 (645.5 KB) |
+| Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:59.9142108Z |
+| Captured | 2026-02-16T20:40:33.8060495Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (1.2 MB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -23,6 +26,21 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [Student-Services.png](images/Student-Services.png) | *(none)* | 645.5 KB |
+
+### Gallery
+
+![Student-Services.png](images/Student-Services.png)
+
+
+### ⚠️ Images Missing Alt Text (1)
+
+- `Student-Services.png` — https://tricities.wsu.edu/wp-content/uploads/Student-Services.png
 
 ## Files
 
@@ -33,3 +51,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (645.5 KB)

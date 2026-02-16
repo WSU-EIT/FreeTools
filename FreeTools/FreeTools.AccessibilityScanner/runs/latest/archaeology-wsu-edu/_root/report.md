@@ -4,22 +4,30 @@
 |-------|-------|
 | URL | https://archaeology.wsu.edu/ |
 | Title | Museum of Anthropology | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 208.1 KB |
+| Status | ❌ 0 |
+| HTML Size | 202.0 KB |
 | Screenshots | 1 (1.3 MB) |
-| JS Errors | 2 |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 7 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:26.1097346Z |
+| Captured | 2026-02-16T20:37:05.0024609Z |
 
 ## JavaScript Errors
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
 - Screenshot #1: page-loaded (1.3 MB)
+- Downloaded 0 images to /images/
 
 ## Screenshots
 
@@ -27,6 +35,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

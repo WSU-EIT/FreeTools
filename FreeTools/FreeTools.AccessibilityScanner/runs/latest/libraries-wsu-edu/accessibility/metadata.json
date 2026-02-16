@@ -6,7 +6,7 @@
   "StatusCode": 200,
   "Success": true,
   "HtmlSizeBytes": 53783,
-  "ScreenshotSizeBytes": 550703,
+  "ScreenshotSizeBytes": 276741,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,13 +15,30 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 550703
+      "FileSize": 276741
+    }
+  ],
+  "ImageCount": 2,
+  "ImagesTotalSizeBytes": 101370,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "Terrell_01-update.jpg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/Terrell_01-update.jpg",
+      "AltText": "Map of Holland and Terrell first floor with screen magnifier by reference desk and accessible media station through doors entering Holland",
+      "FileSize": 63326
+    },
+    {
+      "FileName": "Owen_01.jpg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/Owen_01.jpg",
+      "AltText": "Map of Owen first floor with accessible workstation and screen magnifier straight through the front door",
+      "FileSize": 38044
     }
   ],
   "ErrorMessage": null,
   "Headers": {
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:15:41 GMT",
+    "date": "Mon, 16 Feb 2026 20:41:24 GMT",
     "link": "\u003Chttps://libraries.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://libraries.wsu.edu/wp-json/wp/v2/pages/3210\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022\n\u003Chttps://libraries.wsu.edu/?p=3210\u003E; rel=shortlink",
     "server": "nginx",
     "x-content-type-options": "nosniff",
@@ -29,5 +46,5 @@
     "x-powered-by": "PHP/8.3.30",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-16T20:15:40.8959996Z"
+  "CapturedAt": "2026-02-16T20:41:24.5648739Z"
 }

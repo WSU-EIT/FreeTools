@@ -3,9 +3,9 @@
   "Url": "https://ansci.wsu.edu/contact/",
   "FinalUrl": "https://ansci.wsu.edu/contact/#gsc.tab=0",
   "Title": "Page not found | Animal Sciences | Washington State University",
-  "StatusCode": 404,
+  "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 231491,
+  "HtmlSizeBytes": 231599,
   "ScreenshotSizeBytes": 90115,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
@@ -18,18 +18,11 @@
       "FileSize": 90115
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "no-cache, must-revalidate, max-age=0",
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:23 GMT",
-    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
-    "link": "\u003Chttps://ansci.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
-    "server": "nginx",
-    "x-tec-api-origin": "https://ansci.wsu.edu",
-    "x-tec-api-root": "https://ansci.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:14:22.0250984Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:49.7175338Z"
 }

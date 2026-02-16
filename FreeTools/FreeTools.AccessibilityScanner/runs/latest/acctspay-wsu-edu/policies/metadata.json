@@ -3,10 +3,10 @@
   "Url": "https://acctspay.wsu.edu/policies/",
   "FinalUrl": null,
   "Title": "Page not found | Payment Services | Washington State University",
-  "StatusCode": 404,
+  "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 58770,
-  "ScreenshotSizeBytes": 104992,
+  "HtmlSizeBytes": 51587,
+  "ScreenshotSizeBytes": 101139,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,20 +15,14 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 104992
+      "FileSize": 101139
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "no-cache, must-revalidate, max-age=0",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:04 GMT",
-    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
-    "link": "\u003Chttps://acctspay.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
-    "server": "nginx",
-    "x-tec-api-origin": "https://acctspay.wsu.edu",
-    "x-tec-api-root": "https://acctspay.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:12:02.1641969Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:02.7310931Z"
 }

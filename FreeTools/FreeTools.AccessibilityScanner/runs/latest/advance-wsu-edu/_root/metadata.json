@@ -3,12 +3,12 @@
   "Url": "https://advance.wsu.edu/",
   "FinalUrl": null,
   "Title": "ADVANCE at WSU | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 69372,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 62182,
   "ScreenshotSizeBytes": 244549,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -18,16 +18,18 @@
       "FileSize": 244549
     }
   ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 8671,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "wsu-advance-logo-2026-v2.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/103/2026/02/wsu-advance-logo-2026-v2.svg",
+      "AltText": "WSU Cougars spirit mark. ADVANCE, Washington State University.",
+      "FileSize": 8671
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "etag": "\u0022d96fe0528245b54e5667faecce31bbed\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:51:15 GMT",
-    "link": "\u003Chttps://advance.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://advance.wsu.edu/wp-json/wp/v2/pages/2399\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://advance.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.0928947Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:04.9083199Z"
 }

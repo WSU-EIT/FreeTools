@@ -4,17 +4,20 @@
 |-------|-------|
 | URL | https://asl.wsu.edu/contact/ |
 | Title | Contact | Applied Sciences Laboratory | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 64.4 KB |
+| Status | ❌ 0 |
+| HTML Size | 53.2 KB |
 | Screenshots | 1 (988.3 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:09.1372117Z |
+| Captured | 2026-02-16T20:39:25.9657700Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (988.3 KB)
+- Downloaded 0 images to /images/
 
 ## Screenshots
 
@@ -22,6 +25,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

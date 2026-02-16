@@ -3,8 +3,8 @@
   "Url": "https://housing.wsu.edu/prospective-students/transfer-students/",
   "FinalUrl": null,
   "Title": "Transfer Students",
-  "StatusCode": 200,
-  "Success": true,
+  "StatusCode": 0,
+  "Success": false,
   "HtmlSizeBytes": 67702,
   "ScreenshotSizeBytes": 1172215,
   "CredentialUsed": null,
@@ -18,16 +18,48 @@
       "FileSize": 1172215
     }
   ],
+  "ImageCount": 6,
+  "ImagesTotalSizeBytes": 3061674,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "mceachern-south.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/4gnecmhx/mceachern-south.jpg",
+      "AltText": "McEachern",
+      "FileSize": 187422
+    },
+    {
+      "FileName": "orton-exterior.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/besfhfhk/orton-exterior.jpg",
+      "AltText": "Orton",
+      "FileSize": 260315
+    },
+    {
+      "FileName": "chief-joseph-exterior.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/ro2pnjw0/chief-joseph-exterior.jpg",
+      "AltText": "Chief Joseph",
+      "FileSize": 116840
+    },
+    {
+      "FileName": "chinook-exterior-3.png",
+      "SourceUrl": "https://housing.wsu.edu/media/ep0ipbd1/chinook-exterior-3.png",
+      "AltText": "Chinook Village",
+      "FileSize": 782575
+    },
+    {
+      "FileName": "columbia-exterior-3.png",
+      "SourceUrl": "https://housing.wsu.edu/media/pxmnc3qm/columbia-exterior-3.png",
+      "AltText": "Columbia Village",
+      "FileSize": 1022653
+    },
+    {
+      "FileName": "nez-perce-6.png",
+      "SourceUrl": "https://housing.wsu.edu/media/pwnhpjqm/nez-perce-6.png",
+      "AltText": "Nez Perce Village",
+      "FileSize": 691869
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
-    "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:12:40 GMT",
-    "frame-ancestors": "self https://*.risevision.com",
-    "referrer-policy": "strict-origin-when-cross-origin",
-    "strict-transport-security": "max-age=2592000",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "SameOrigin"
-  },
-  "CapturedAt": "2026-02-16T20:12:35.2268879Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:40:08.1963867Z"
 }

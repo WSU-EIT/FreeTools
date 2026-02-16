@@ -6,20 +6,22 @@
 | Pages Scanned | 4 |
 | Pages Passed | 0 |
 | Pages Failed | 4 |
-| Total JS Errors | 7 |
-| Total JS Warnings | 4 |
-| Total HTML | 2.5 MB |
-| Total Screenshots | 671.6 KB |
+| Total JS Errors | 6 |
+| Total JS Warnings | 1 |
+| Total HTML | 1.9 MB |
+| Total Screenshots | 649.6 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `em-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Enrollment Management | 5 | 1 | 1 |
-| ❌ | [/eit/](eit/report.md) | 0 | Enrollment IT | 2 | 1 | 1 |
-| ❌ | [/re411/](re411/report.md) | 0 | Registration & Enrollment 411 | 0 | 1 | 1 |
-| ❌ | [/rr411/](rr411/report.md) | 0 | Registration & Enrollment 411 | 0 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Enrollment Management | 4 | 0 | 0 |
+| ❌ | [/eit/](eit/report.md) | 0 | Enrollment IT | 0 | 0 | 0 |
+| ❌ | [/re411/](re411/report.md) | 0 | Registration & Enrollment 411 | 1 | 0 | 0 |
+| ❌ | [/rr411/](rr411/report.md) | 0 | Registration & Enrollment 411 | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -65,18 +67,20 @@
 
 ## Pages with JavaScript Errors
 
-### / (5 errors)
+### / (4 errors)
 
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Access to XMLHttpRequest at 'https://api.oneorigin.us/p-cs/ref?required=y' from origin 'https://em.wsu.edu' has been ...`
 - `Failed to load resource: net::ERR_FAILED`
 
-### /eit/ (2 errors)
+### /re411/ (1 errors)
 
-- `Access to XMLHttpRequest at 'https://api.oneorigin.us/p-cs/ref?required=y' from origin 'https://em.wsu.edu' has been ...`
-- `Failed to load resource: net::ERR_FAILED`
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+
+### /rr411/ (1 errors)
+
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 
 
 ---

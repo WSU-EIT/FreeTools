@@ -2,25 +2,27 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/5 pages OK |
+| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 1 |
-| Pages Failed | 4 |
-| Total JS Errors | 15 |
-| Total JS Warnings | 2 |
-| Total HTML | 341.7 KB |
-| Total Screenshots | 81.9 KB |
+| Pages Passed | 0 |
+| Pages Failed | 5 |
+| Total JS Errors | 3 |
+| Total JS Warnings | 0 |
+| Total HTML | 321.4 KB |
+| Total Screenshots | 20.8 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `catalog-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 |  | 0 | 0 | 1 |
-| ❌ | [/academic-regulations/](academic-regulations/report.md) | 404 |  | 1 | 0 | 1 |
-| ✅ | [/courses/](courses/report.md) | 200 |  | 12 | 2 | 1 |
-| ❌ | [/general-requirements/](general-requirements/report.md) | 404 |  | 1 | 0 | 1 |
-| ❌ | [/programs/](programs/report.md) | 404 |  | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 |  | 0 | 0 | 0 |
+| ❌ | [/academic-regulations/](academic-regulations/report.md) | 404 |  | 1 | 0 | 0 |
+| ❌ | [/courses/](courses/report.md) | 0 |  | 0 | 0 | 0 |
+| ❌ | [/general-requirements/](general-requirements/report.md) | 404 |  | 1 | 0 | 0 |
+| ❌ | [/programs/](programs/report.md) | 404 |  | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -57,6 +59,11 @@
 - **URL:** https://catalog.wsu.edu/programs/
 - **Status:** 404
 
+### /courses/
+
+- **URL:** https://catalog.wsu.edu/courses/
+- **Status:** 0
+
 ### /academic-regulations/
 
 - **URL:** https://catalog.wsu.edu/academic-regulations/
@@ -69,21 +76,6 @@
 
 
 ## Pages with JavaScript Errors
-
-### /courses/ (12 errors)
-
-- `crit: Microsoft.AspNetCore.Components.WebAssembly.Rendering.WebAssemblyRenderer[100]
-      Unhandled exception render...`
-- `(null)`
-- `Unhandled Exception:`
-- `System.ArgumentNullException: Value cannot be null. (Parameter 'source')`
-- `   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)`
-- `   at System.Linq.Enumerable.TryGetFirst[CourseListData](IEnumerable`1 source, Boolean& found)`
-- `   at System.Linq.Enumerable.FirstOrDefault[CourseListData](IEnumerable`1 source)`
-- `   at CatalogRewrite.Client.Pages.Catalog.Courses.OnInitialized()`
-- `   at System.Threading.Tasks.Task.<>c.<ThrowAsync>b__128_1(Object state)`
-- `   at System.Threading.QueueUserWorkItemCallbackDefaultContext.Execute()`
-- ... and 2 more (see `courses/errors.log`)
 
 ### /programs/ (1 errors)
 

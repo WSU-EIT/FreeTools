@@ -3,25 +3,25 @@
 | Field | Value |
 |-------|-------|
 | URL | https://threatassessment.wsu.edu/about/ |
-| Redirected To | https://threatassessment.wsu.edu/about/#gsc.tab=0 |
 | Title | Page not found | Threat Assessment | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 213.6 KB |
+| Status | ❌ 0 |
+| HTML Size | 205.3 KB |
 | Screenshots | 1 (59.8 KB) |
-| JS Errors | 3 |
-| JS Warnings | 1 |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:17.7266097Z |
+| Captured | 2026-02-16T20:37:45.2889184Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
 - Screenshot #1: page-loaded (59.8 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -29,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

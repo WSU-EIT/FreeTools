@@ -3,10 +3,10 @@
   "Url": "https://psychology.wsu.edu/research/",
   "FinalUrl": "https://psychology.wsu.edu/research-labs/",
   "Title": "Research | Department of Psychology | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 317146,
-  "ScreenshotSizeBytes": 2233272,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 310200,
+  "ScreenshotSizeBytes": 1565360,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,135 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2233272
+      "FileSize": 1565360
+    }
+  ],
+  "ImageCount": 20,
+  "ImagesTotalSizeBytes": 947489,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "tammy_barry_thumb_2.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2015/10/tammy_barry_thumb_2.jpg",
+      "AltText": "Tammy Barry.",
+      "FileSize": 9764
+    },
+    {
+      "FileName": "francis_benjamin-Thumb.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2015/02/francis_benjamin-Thumb.jpg",
+      "AltText": "Francis Benjamin.",
+      "FileSize": 16904
+    },
+    {
+      "FileName": "leonard_burns-Thumb.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2015/02/leonard_burns-Thumb.jpg",
+      "AltText": "Leonard Burns.",
+      "FileSize": 18515
+    },
+    {
+      "FileName": "Elizabeth-Canning-website-e1569958670129.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2019/07/Elizabeth-Canning-website-e1569958670129.jpg",
+      "AltText": "Elizabeth Canning.",
+      "FileSize": 14974
+    },
+    {
+      "FileName": "carrie.cuttler.new_.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2022/06/carrie.cuttler.new_.jpg",
+      "AltText": "Carrie Cutler.",
+      "FileSize": 130451
+    },
+    {
+      "FileName": "Fales.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2022/02/Fales.jpg",
+      "AltText": "Jessica Fales.",
+      "FileSize": 9962
+    },
+    {
+      "FileName": "lisa_fournier.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2015/02/lisa_fournier.jpg",
+      "AltText": "Lisa R. Fournier.",
+      "FileSize": 14141
+    },
+    {
+      "FileName": "masha_gartstein-Thumb.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2015/02/masha_gartstein-Thumb.jpg",
+      "AltText": "Maria (Masha) Gartstein..",
+      "FileSize": 17572
+    },
+    {
+      "FileName": "Henricks-e1621958642905.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2020/09/Henricks-e1621958642905.jpg",
+      "AltText": "Angela Henricks.",
+      "FileSize": 3833
+    },
+    {
+      "FileName": "Liao_Web-792x1066.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2022/08/Liao_Web-792x1066.jpg",
+      "AltText": "Hsin-Ya Liao.",
+      "FileSize": 128239
+    },
+    {
+      "FileName": "david_marcus-Thumb.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2015/02/david_marcus-Thumb.jpg",
+      "AltText": "David Marcus",
+      "FileSize": 20630
+    },
+    {
+      "FileName": "WSU_web_profile_Meidenbauer-792x1188.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2022/06/WSU_web_profile_Meidenbauer-792x1188.jpg",
+      "AltText": "Kim Meidenbauer.",
+      "FileSize": 139852
+    },
+    {
+      "FileName": "Morgan-Mike-2019-e1569964249458-190x198.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2019/10/Morgan-Mike-2019-e1569964249458-190x198.jpg",
+      "AltText": "Michael Morgan.",
+      "FileSize": 7423
+    },
+    {
+      "FileName": "Posey.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2022/06/Posey.jpg",
+      "AltText": "Dee Posey.",
+      "FileSize": 107743
+    },
+    {
+      "FileName": "tahira_probst-Thumb1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2015/02/tahira_probst-Thumb1.jpg",
+      "AltText": "Tahira M. Probst.",
+      "FileSize": 19510
+    },
+    {
+      "FileName": "Maureen-Schmitter-Edgecombe_0609-792x1109.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2022/06/Maureen-Schmitter-Edgecombe_0609-792x1109.jpg",
+      "AltText": "Maureen Schmitter-Edgecombe.",
+      "FileSize": 136409
+    },
+    {
+      "FileName": "walt-scott-thumb.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2016/09/walt-scott-thumb.jpg",
+      "AltText": "Walt Scott.",
+      "FileSize": 13217
+    },
+    {
+      "FileName": "christine_so-792x905.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2024/06/christine_so-792x905.jpg",
+      "AltText": "Christine So.",
+      "FileSize": 99551
+    },
+    {
+      "FileName": "Alexander_Spradlin-198x198-1-edited.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2025/10/Alexander_Spradlin-198x198-1-edited.jpg",
+      "AltText": "",
+      "FileSize": 19803
+    },
+    {
+      "FileName": "Strand_Paul-Thumb.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3474/2015/02/Strand_Paul-Thumb.jpg",
+      "AltText": "Paul Strand\u0027s.",
+      "FileSize": 18996
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:50 GMT",
-    "etag": "\u00223cc5a16a838c193254dbadee28a294aa\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:40:30 GMT",
-    "link": "\u003Chttps://psychology.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://psychology.wsu.edu/wp-json/wp/v2/pages/325\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://psychology.wsu.edu/?p=325\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:13:47.6502468Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:06.4293387Z"
 }

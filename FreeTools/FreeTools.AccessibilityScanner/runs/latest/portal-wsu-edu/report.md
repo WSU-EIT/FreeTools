@@ -2,23 +2,25 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 3/3 pages OK |
+| Status | ⚠️ 0/3 pages OK |
 | Pages Scanned | 3 |
-| Pages Passed | 3 |
-| Pages Failed | 0 |
-| Total JS Errors | 15 |
+| Pages Passed | 0 |
+| Pages Failed | 3 |
+| Total JS Errors | 13 |
 | Total JS Warnings | 0 |
-| Total HTML | 353.1 KB |
-| Total Screenshots | 145.9 KB |
+| Total HTML | 283.2 KB |
+| Total Screenshots | 116.1 KB |
+| Total Images | 3 (23.0 KB) |
+| Images Missing Alt | 0 |
 | Folder | `portal-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | WSU Authentication \| Washington Stat... | 0 | 0 | 1 |
-| ✅ | [/help/](help/report.md) | 200 | WSU \| Bad request. | 8 | 0 | 1 |
-| ✅ | [/services/](services/report.md) | 200 | WSU \| Sign In | 7 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU \| Sign In | 8 | 1 | 0 |
+| ❌ | [/help/](help/report.md) | 0 | WSU Authentication \| Washington Stat... | 1 | 1 | 0 |
+| ❌ | [/services/](services/report.md) | 0 | WSU Authentication \| Washington Stat... | 4 | 1 | 0 |
 
 ## Page Screenshots
 
@@ -35,10 +37,29 @@
 ![/services/](services/01-page-loaded.png)
 
 
+## Failed Pages
+
+### /
+
+- **URL:** https://portal.wsu.edu/
+- **Status:** 0
+
+### /help/
+
+- **URL:** https://portal.wsu.edu/help/
+- **Status:** 0
+
+### /services/
+
+- **URL:** https://portal.wsu.edu/services/
+- **Status:** 0
+
+
 ## Pages with JavaScript Errors
 
-### /help/ (8 errors)
+### / (8 errors)
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Something unexpected happened while we were checking url http://127.0.0.1:8769`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65111`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65121`
@@ -46,17 +67,17 @@
 - `Something unexpected happened while we were checking url http://127.0.0.1:65141`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65151`
 - `No available ports. Loopback server failed and polling is cancelled.`
-- `Failed to load resource: the server responded with a status of 400 ()`
 
-### /services/ (7 errors)
+### /services/ (4 errors)
 
 - `Something unexpected happened while we were checking url http://127.0.0.1:8769`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65111`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65121`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65131`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
-- `No available ports. Loopback server failed and polling is cancelled.`
+
+### /help/ (1 errors)
+
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 
 
 ---

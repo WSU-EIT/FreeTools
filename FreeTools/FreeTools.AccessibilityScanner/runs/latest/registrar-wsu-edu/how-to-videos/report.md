@@ -7,14 +7,17 @@
 | Status | ❌ 0 |
 | HTML Size | 641.5 KB |
 | Screenshots | 1 (121.5 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:18:10.7845256Z |
+| Captured | 2026-02-16T20:40:28.0465333Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (121.5 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -22,6 +25,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

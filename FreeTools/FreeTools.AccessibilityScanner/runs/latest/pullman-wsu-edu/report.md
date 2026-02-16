@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 3/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 3 |
-| Pages Failed | 3 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
 | Total JS Errors | 4 |
 | Total JS Warnings | 1 |
-| Total HTML | 427.6 KB |
-| Total Screenshots | 10.7 MB |
+| Total HTML | 376.8 KB |
+| Total Screenshots | 7.5 MB |
+| Total Images | 27 (2.8 MB) |
+| Images Missing Alt | 3 |
 | Folder | `pullman-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Pullman Campus \| Washington State Un... | 2 | 1 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About WSU Pullman \| Pullman Campus \... | 0 | 0 | 1 |
-| ✅ | [/academics/](academics/report.md) | 200 | Academics \| Pullman Campus \| Washin... | 0 | 0 | 1 |
-| ✅ | [/admissions/](admissions/report.md) | 200 | WSU Pullman Admissions \| Pullman Cam... | 0 | 0 | 1 |
-| ❌ | [/campus-life/](campus-life/report.md) | 404 | Page not found \| Pullman Campus \| W... | 1 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| Pullman Campus \| W... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Pullman Campus \| Washington State Un... | 2 | 15 | 3 |
+| ❌ | [/about/](about/report.md) | 0 | About WSU Pullman \| Pullman Campus \... | 0 | 5 | 0 |
+| ❌ | [/academics/](academics/report.md) | 0 | Academics \| Pullman Campus \| Washin... | 0 | 4 | 0 |
+| ❌ | [/admissions/](admissions/report.md) | 0 | WSU Pullman Admissions \| Pullman Cam... | 0 | 3 | 0 |
+| ❌ | [/campus-life/](campus-life/report.md) | 0 | Page not found \| Pullman Campus \| W... | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| Pullman Campus \| W... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -57,23 +59,38 @@
 - **URL:** https://pullman.wsu.edu/
 - **Status:** 0
 
+### /about/
+
+- **URL:** https://pullman.wsu.edu/about/
+- **Status:** 0
+
+### /academics/
+
+- **URL:** https://pullman.wsu.edu/academics/
+- **Status:** 0
+
+### /admissions/
+
+- **URL:** https://pullman.wsu.edu/admissions/
+- **Status:** 0
+
 ### /campus-life/
 
 - **URL:** https://pullman.wsu.edu/campus-life/
-- **Status:** 404
+- **Status:** 0
 
 ### /contact/
 
 - **URL:** https://pullman.wsu.edu/contact/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
 ### / (2 errors)
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
+- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
 
 ### /campus-life/ (1 errors)
 

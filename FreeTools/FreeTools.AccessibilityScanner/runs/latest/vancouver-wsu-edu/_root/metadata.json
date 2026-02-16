@@ -3,39 +3,99 @@
   "Url": "https://vancouver.wsu.edu/",
   "FinalUrl": "https://www.vancouver.wsu.edu//",
   "Title": "Washington State University Vancouver - Vancouver, WA, USA",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 72172,
-  "ScreenshotSizeBytes": 1275784,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 65764,
+  "ScreenshotSizeBytes": 1260219,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1275784
+      "FileSize": 1260219
+    }
+  ],
+  "ImageCount": 12,
+  "ImagesTotalSizeBytes": 323765,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "wsu-vancouver-horizontal-logo-rgb.svg",
+      "SourceUrl": "https://www.vancouver.wsu.edu/themes/bootstrap_sass_wsuv/images/wsu-vancouver-horizontal-logo-rgb.svg",
+      "AltText": "WSU Vancouver home page",
+      "FileSize": 7013
+    },
+    {
+      "FileName": "wsu-vancouver-primary-logo-rgb.svg",
+      "SourceUrl": "https://www.vancouver.wsu.edu/themes/bootstrap_sass_wsuv/images/wsu-vancouver-primary-logo-rgb.svg",
+      "AltText": "WSU Vancouver home page",
+      "FileSize": 7922
+    },
+    {
+      "FileName": "coug-head-white-900x900.png",
+      "SourceUrl": "https://www.vancouver.wsu.edu/files/inserted-images/coug-head-white-900x900.png",
+      "AltText": "WSU Cougar Head",
+      "FileSize": 41693
+    },
+    {
+      "FileName": "Student%20AmbassadorWSU-VancouverWSU-Vancouver.jpg",
+      "SourceUrl": "https://www.vancouver.wsu.edu/files/2024-07/Student%20AmbassadorWSU-VancouverWSU-Vancouver.jpg",
+      "AltText": "Ambassadors sitting on library steps",
+      "FileSize": 157943
+    },
+    {
+      "FileName": "Notable%20Alumni%20Award_01-WSU-Vancouver_0.jpg",
+      "SourceUrl": "https://www.vancouver.wsu.edu/files/2025-10/Notable%20Alumni%20Award_01-WSU-Vancouver_0.jpg",
+      "AltText": "2025 Notable Alumni Award Recipient: Bryan Stebbins",
+      "FileSize": 101235
+    },
+    {
+      "FileName": "Facebook-white.svg",
+      "SourceUrl": "https://www.vancouver.wsu.edu/themes/bootstrap_sass_wsuv/images/Facebook-white.svg",
+      "AltText": "WSU Vancouver Facebook profile",
+      "FileSize": 1077
+    },
+    {
+      "FileName": "instagram-white.svg",
+      "SourceUrl": "https://www.vancouver.wsu.edu/themes/bootstrap_sass_wsuv/images/instagram-white.svg",
+      "AltText": "WSU Vancouver Instagram profile",
+      "FileSize": 2131
+    },
+    {
+      "FileName": "Youtube-white.svg",
+      "SourceUrl": "https://www.vancouver.wsu.edu/themes/bootstrap_sass_wsuv/images/Youtube-white.svg",
+      "AltText": "WSU Vancouver YouTube profile",
+      "FileSize": 1044
+    },
+    {
+      "FileName": "Tiktok-white.svg",
+      "SourceUrl": "https://www.vancouver.wsu.edu/themes/bootstrap_sass_wsuv/images/Tiktok-white.svg",
+      "AltText": "WSU Vancouver TikToc",
+      "FileSize": 941
+    },
+    {
+      "FileName": "Flickr-white.svg",
+      "SourceUrl": "https://www.vancouver.wsu.edu/themes/bootstrap_sass_wsuv/images/Flickr-white.svg",
+      "AltText": "WSU Vancouver Flickr profile",
+      "FileSize": 905
+    },
+    {
+      "FileName": "Linkedin-white.svg",
+      "SourceUrl": "https://www.vancouver.wsu.edu/themes/bootstrap_sass_wsuv/images/Linkedin-white.svg",
+      "AltText": "WSU Vancouver linkedin profile",
+      "FileSize": 1296
+    },
+    {
+      "FileName": "x-white-logo.svg",
+      "SourceUrl": "https://www.vancouver.wsu.edu/themes/bootstrap_sass_wsuv/images/x-white-logo.svg",
+      "AltText": "WSU Vancouver Twitter profile",
+      "FileSize": 565
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "max-age=1800, public",
-    "content-encoding": "gzip",
-    "content-language": "en",
-    "content-length": "14221",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:28 GMT",
-    "etag": "\u00221771272628-gzip\u0022",
-    "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
-    "last-modified": "Mon, 16 Feb 2026 20:10:28 GMT",
-    "server": "Apache/2.4.62 (Debian)",
-    "vary": "Cookie,Accept-Encoding",
-    "x-content-type-options": "nosniff",
-    "x-drupal-cache": "HIT",
-    "x-drupal-dynamic-cache": "MISS",
-    "x-frame-options": "SAMEORIGIN",
-    "x-generator": "Drupal 10 (https://www.drupal.org)"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1680937Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.181558Z"
 }

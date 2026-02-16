@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 5 |
-| Pages Failed | 1 |
-| Total JS Errors | 7 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 10 |
 | Total JS Warnings | 0 |
-| Total HTML | 353.3 KB |
+| Total HTML | 291.3 KB |
 | Total Screenshots | 1.3 MB |
+| Total Images | 5 (187.3 KB) |
+| Images Missing Alt | 3 |
 | Folder | `accreditation-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Accreditation Site \| Washington Stat... | 1 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | Accreditation Site \| Washington Stat... | 1 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact \| Accreditation Site \| Wash... | 1 | 0 | 1 |
-| ✅ | [/documents/](documents/report.md) | 200 | Documents \| Accreditation Site \| Wa... | 1 | 0 | 1 |
-| ✅ | [/standards/](standards/report.md) | 200 | Standards \| Accreditation Site \| Wa... | 1 | 0 | 1 |
-| ❌ | [/timeline/](timeline/report.md) | 404 | Page not found \| Accreditation Site ... | 2 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Accreditation Site \| Washington Stat... | 4 | 2 | 1 |
+| ❌ | [/about/](about/report.md) | 0 | Accreditation Site \| Washington Stat... | 1 | 2 | 1 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact \| Accreditation Site \| Wash... | 1 | 0 | 0 |
+| ❌ | [/documents/](documents/report.md) | 0 | Documents \| Accreditation Site \| Wa... | 1 | 0 | 0 |
+| ❌ | [/standards/](standards/report.md) | 0 | Standards \| Accreditation Site \| Wa... | 1 | 1 | 1 |
+| ❌ | [/timeline/](timeline/report.md) | 0 | Page not found \| Accreditation Site ... | 2 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,21 +54,49 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://accreditation.wsu.edu/
+- **Status:** 0
+
+### /about/
+
+- **URL:** https://accreditation.wsu.edu/about/
+- **Status:** 0
+
+### /standards/
+
+- **URL:** https://accreditation.wsu.edu/standards/
+- **Status:** 0
+
+### /documents/
+
+- **URL:** https://accreditation.wsu.edu/documents/
+- **Status:** 0
+
 ### /timeline/
 
 - **URL:** https://accreditation.wsu.edu/timeline/
-- **Status:** 404
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://accreditation.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
+### / (4 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
 ### /timeline/ (2 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### / (1 errors)
-
 - `Failed to load resource: the server responded with a status of 404 ()`
 
 ### /about/ (1 errors)

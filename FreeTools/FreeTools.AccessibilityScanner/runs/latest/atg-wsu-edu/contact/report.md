@@ -5,17 +5,20 @@
 | URL | https://atg.wsu.edu/contact/ |
 | Redirected To | https://atg.wsu.edu/contact-us/ |
 | Title | Contact Us | Office of the Attorney General | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 54.1 KB |
+| Status | ❌ 0 |
+| HTML Size | 45.9 KB |
 | Screenshots | 1 (47.4 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:21.0088215Z |
+| Captured | 2026-02-16T20:38:39.7085649Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (47.4 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -23,6 +26,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

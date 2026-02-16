@@ -3,10 +3,10 @@
   "Url": "https://brand.wsu.edu/downloads/",
   "FinalUrl": null,
   "Title": "Downloads \u2013 Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 72921,
-  "ScreenshotSizeBytes": 1064140,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 66533,
+  "ScreenshotSizeBytes": 627350,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,20 +15,69 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1064140
+      "FileSize": 627350
+    }
+  ],
+  "ImageCount": 9,
+  "ImagesTotalSizeBytes": 2430275,
+  "ImagesMissingAlt": 9,
+  "Images": [
+    {
+      "FileName": "social-media-banners.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/09/social-media-banners.png",
+      "AltText": "",
+      "FileSize": 300738
+    },
+    {
+      "FileName": "pattern-download-straight.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/09/pattern-download-straight.png",
+      "AltText": "",
+      "FileSize": 74930
+    },
+    {
+      "FileName": "Download-Icons.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/Download-Icons.jpg",
+      "AltText": "",
+      "FileSize": 97636
+    },
+    {
+      "FileName": "Download-Presentation-Templates.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/Download-Presentation-Templates.jpg",
+      "AltText": "",
+      "FileSize": 311216
+    },
+    {
+      "FileName": "Download-eStationary.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/Download-eStationary.jpg",
+      "AltText": "",
+      "FileSize": 233330
+    },
+    {
+      "FileName": "Download-Email-Signatures.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/Download-Email-Signatures.jpg",
+      "AltText": "",
+      "FileSize": 205225
+    },
+    {
+      "FileName": "colors-download.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/09/colors-download.png",
+      "AltText": "",
+      "FileSize": 176348
+    },
+    {
+      "FileName": "WSU-lockup-horz-4c-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/09/WSU-lockup-horz-4c-1.jpg",
+      "AltText": "",
+      "FileSize": 591905
+    },
+    {
+      "FileName": "Download-Photo-Library.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ucomm/uploads/sites/2793/2021/08/Download-Photo-Library.jpg",
+      "AltText": "",
+      "FileSize": 438947
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "access-control-allow-origin": "*",
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:27 GMT",
-    "etag": "\u002248533ebccddfae5749d8354b709983b2\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:14:27 GMT",
-    "link": "\u003Chttps://brand.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://brand.wsu.edu/wp-json/wp/v2/pages/133\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://brand.wsu.edu/?p=133\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:14:26.4397091Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:33.8035249Z"
 }

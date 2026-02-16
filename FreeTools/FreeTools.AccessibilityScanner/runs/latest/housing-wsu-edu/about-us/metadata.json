@@ -18,16 +18,57 @@
       "FileSize": 1055528
     }
   ],
+  "ImageCount": 6,
+  "ImagesTotalSizeBytes": 1477068,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "ra-group-photos.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/13bnr3rf/ra-group-photos.jpg",
+      "AltText": "Meet Our Team",
+      "FileSize": 105773
+    },
+    {
+      "FileName": "hillside-students-eating-3.png",
+      "SourceUrl": "https://housing.wsu.edu/media/i3ql0tdp/hillside-students-eating-3.png",
+      "AltText": "Important Dates",
+      "FileSize": 382221
+    },
+    {
+      "FileName": "northside-students-outside.png",
+      "SourceUrl": "https://housing.wsu.edu/media/isildobq/northside-students-outside.png",
+      "AltText": "On Campus Support",
+      "FileSize": 418750
+    },
+    {
+      "FileName": "hillside-students-eating.png",
+      "SourceUrl": "https://housing.wsu.edu/media/dtsc4xhl/hillside-students-eating.png",
+      "AltText": "Join Our Team",
+      "FileSize": 369021
+    },
+    {
+      "FileName": "office-assitant.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/rcfmm013/office-assitant.jpg",
+      "AltText": "Contact us",
+      "FileSize": 102299
+    },
+    {
+      "FileName": "6q6a8331.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/dkyl42rf/6q6a8331.jpg",
+      "AltText": "Payments \u0026 Billing",
+      "FileSize": 99004
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:15:47 GMT",
+    "date": "Mon, 16 Feb 2026 20:41:55 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-16T20:15:48.3423591Z"
+  "CapturedAt": "2026-02-16T20:41:55.5220803Z"
 }

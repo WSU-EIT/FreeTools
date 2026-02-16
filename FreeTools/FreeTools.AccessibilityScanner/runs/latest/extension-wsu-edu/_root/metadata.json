@@ -5,20 +5,85 @@
   "Title": "WSU Extension | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 250181,
-  "ScreenshotSizeBytes": 2482694,
+  "HtmlSizeBytes": 241023,
+  "ScreenshotSizeBytes": 653330,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 2482694
+      "FileSize": 653330
+    }
+  ],
+  "ImageCount": 10,
+  "ImagesTotalSizeBytes": 2338952,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "researchers-flying-drone-over-orchard-1024x676.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/researchers-flying-drone-over-orchard-1024x676.jpg",
+      "AltText": "Drone users at orchard- WSU Photo",
+      "FileSize": 168910
+    },
+    {
+      "FileName": "potato-field.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/extension/uploads/sites/4/potato-field.jpg",
+      "AltText": "Potato field.",
+      "FileSize": 412250
+    },
+    {
+      "FileName": "Two-cows-in-a-field.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/extension/uploads/sites/4/Two-cows-in-a-field.jpg",
+      "AltText": "Two cows in a field at sunset.",
+      "FileSize": 142211
+    },
+    {
+      "FileName": "Agriculture-Economics.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/extension/uploads/sites/4/Agriculture-Economics.jpg",
+      "AltText": "Up close wheat with number overlay.",
+      "FileSize": 193287
+    },
+    {
+      "FileName": "Group-of-4h-teens-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/extension/uploads/sites/4/Group-of-4h-teens-1.jpg",
+      "AltText": "Group of 4-h teens.",
+      "FileSize": 346501
+    },
+    {
+      "FileName": "Douglas-fir.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/extension/uploads/sites/4/Douglas-fir.jpg",
+      "AltText": "Douglas Fir tree.",
+      "FileSize": 275943
+    },
+    {
+      "FileName": "Man-and-woman-gardening.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/extension/uploads/sites/4/Man-and-woman-gardening.jpg",
+      "AltText": "Man and woman harvesting vegetables from their garden.",
+      "FileSize": 242686
+    },
+    {
+      "FileName": "image-8.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/Resized_NEAA-Marketing_Residential-Neighborhood-Vancouver-WA-1024x768.jpg",
+      "AltText": "Aerial view of new Vancouver, Washington, residential development.",
+      "FileSize": 145439
+    },
+    {
+      "FileName": "Featured-Image-Margaret-1024x609.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/2020/08/Featured-Image-Margaret-1024x609.jpg",
+      "AltText": "Margaret Viebrock sitting at a desk during tabling event.",
+      "FileSize": 156587
+    },
+    {
+      "FileName": "AdobeStock_1820532380-1024x683.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/4/AdobeStock_1820532380-1024x683.jpeg",
+      "AltText": "Forest professional- stock photo",
+      "FileSize": 255138
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.1238098Z"
+  "CapturedAt": "2026-02-16T20:37:05.0594222Z"
 }

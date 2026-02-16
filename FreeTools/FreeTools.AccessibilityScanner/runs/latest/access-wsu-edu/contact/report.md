@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://access.wsu.edu/contact/ |
 | Title | Page not found | Access at WSU | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 58.9 KB |
+| Status | ❌ 0 |
+| HTML Size | 47.6 KB |
 | Screenshots | 1 (107.2 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:31.5271764Z |
+| Captured | 2026-02-16T20:38:35.7746203Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (107.2 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

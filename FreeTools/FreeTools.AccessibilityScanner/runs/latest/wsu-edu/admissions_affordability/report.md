@@ -5,12 +5,14 @@
 | URL | https://wsu.edu/admissions/affordability/ |
 | Title | Affordability | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 111.6 KB |
+| HTML Size | 111.5 KB |
 | Screenshots | 1 (1.9 MB) |
+| Images | 3 (1.4 MB) |
+| Images Missing Alt | 3 |
 | JS Errors | 1 |
 | JS Warnings | 2 |
 | Auth | none |
-| Captured | 2026-02-16T20:15:23.6119569Z |
+| Captured | 2026-02-16T20:41:16.2097986Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (1.9 MB)
+- Downloaded 3 images to /images/
 
 ## Screenshots
 
@@ -26,6 +29,29 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (3)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [Everett_1683-1.jpg](images/Everett_1683-1.jpg) | *(none)* | 306.0 KB |
+| 2 | [Vancouver-Fall-Core_0427-1.jpg](images/Vancouver-Fall-Core_0427-1.jpg) | *(none)* | 290.3 KB |
+| 3 | [Spokane_0599-1.jpg](images/Spokane_0599-1.jpg) | *(none)* | 835.0 KB |
+
+### Gallery
+
+![Everett_1683-1.jpg](images/Everett_1683-1.jpg)
+
+![Vancouver-Fall-Core_0427-1.jpg](images/Vancouver-Fall-Core_0427-1.jpg)
+
+![Spokane_0599-1.jpg](images/Spokane_0599-1.jpg)
+
+
+### ⚠️ Images Missing Alt Text (3)
+
+- `Everett_1683-1.jpg` — https://s3.wp.wsu.edu/uploads/sites/625/2022/12/Everett_1683-1.jpg
+- `Vancouver-Fall-Core_0427-1.jpg` — https://s3.wp.wsu.edu/uploads/sites/625/2023/01/Vancouver-Fall-Core_0427-1.jpg
+- `Spokane_0599-1.jpg` — https://s3.wp.wsu.edu/uploads/sites/625/2023/01/Spokane_0599-1.jpg
 
 ## Files
 
@@ -36,3 +62,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 3 page images (1.4 MB)

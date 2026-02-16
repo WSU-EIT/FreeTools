@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
-| Total JS Errors | 9 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 11 |
 | Total JS Warnings | 1 |
-| Total HTML | 279.8 KB |
-| Total Screenshots | 375.5 KB |
+| Total HTML | 233.5 KB |
+| Total Screenshots | 367.0 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `wsuacada-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | WSU Academic Advising Association \| ... | 1 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page not found \| WSU Academic Advisi... | 2 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| WSU Academic Advisi... | 2 | 0 | 1 |
-| ❌ | [/events/](events/report.md) | 405 | Human Verification | 1 | 1 | 1 |
-| ✅ | [/membership/](membership/report.md) | 200 | WSU Academic Advising Association \| ... | 1 | 0 | 1 |
-| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| WSU Academic Advisi... | 2 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Academic Advising Association \| ... | 3 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | Page not found \| WSU Academic Advisi... | 2 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| WSU Academic Advisi... | 2 | 0 | 0 |
+| ❌ | [/events/](events/report.md) | 0 | Human Verification | 1 | 0 | 0 |
+| ❌ | [/membership/](membership/report.md) | 0 | WSU Academic Advising Association \| ... | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| WSU Academic Advisi... | 2 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,28 +54,44 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://wsuacada.wsu.edu/
+- **Status:** 0
+
 ### /about/
 
 - **URL:** https://wsuacada.wsu.edu/about/
-- **Status:** 404
+- **Status:** 0
+
+### /membership/
+
+- **URL:** https://wsuacada.wsu.edu/membership/
+- **Status:** 0
 
 ### /events/
 
 - **URL:** https://wsuacada.wsu.edu/events/
-- **Status:** 405
+- **Status:** 0
 
 ### /resources/
 
 - **URL:** https://wsuacada.wsu.edu/resources/
-- **Status:** 404
+- **Status:** 0
 
 ### /contact/
 
 - **URL:** https://wsuacada.wsu.edu/contact/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
+
+### / (3 errors)
+
+- `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /about/ (2 errors)
 
@@ -88,10 +106,6 @@
 ### /contact/ (2 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### / (1 errors)
-
 - `Failed to load resource: the server responded with a status of 404 ()`
 
 ### /membership/ (1 errors)

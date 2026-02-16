@@ -3,9 +3,9 @@
   "Url": "https://anthro.wsu.edu/research/",
   "FinalUrl": null,
   "Title": "Research | Department of Anthropology | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 222467,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 216005,
   "ScreenshotSizeBytes": 374835,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,16 +18,18 @@
       "FileSize": 374835
     }
   ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 137064,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "college-hall_360x265.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/1028/2015/10/college-hall_360x265.jpg",
+      "AltText": "College Hall, Washington State University",
+      "FileSize": 137064
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:22 GMT",
-    "etag": "\u0022d7149d726f076f875c7f8713bdb2e156\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:14:22 GMT",
-    "link": "\u003Chttps://anthro.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://anthro.wsu.edu/wp-json/wp/v2/pages/126\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://anthro.wsu.edu/?p=126\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:14:20.2662884Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:31.3964046Z"
 }

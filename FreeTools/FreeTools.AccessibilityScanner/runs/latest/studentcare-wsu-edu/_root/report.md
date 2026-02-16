@@ -3,29 +3,41 @@
 | Field | Value |
 |-------|-------|
 | URL | https://studentcare.wsu.edu/ |
-| Title |  |
-| Status | ✅ 200 |
-| HTML Size | 45.1 KB |
-| Screenshots | 1 (243.2 KB) |
+| Title | (none) |
+| Status | ❌ 0 |
+| HTML Size | 0 bytes |
+| Screenshots | 0 (0 bytes) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:26.1673175Z |
+| Captured | 2026-02-16T20:37:05.1650906Z |
+
+## Error
+
+```
+Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+```
 
 ## Actions
 
-- Screenshot #1: page-loaded (243.2 KB)
+- Scan aborted due to error
 
 ## Screenshots
 
-### 1. page-loaded
+*No screenshots captured.*
 
-![page-loaded](01-page-loaded.png)
+## Page Images (0)
 
+*No images found on page.*
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (243.2 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

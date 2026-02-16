@@ -1,33 +1,21 @@
 {
   "PagePath": "/about/",
   "Url": "https://aswsu.wsu.edu/about/",
-  "FinalUrl": "https://trafficcop.asis.wsu.edu/?https://aswsu.wsu.edu/about/",
-  "Title": "MARCOM - MARCOM",
-  "StatusCode": 404,
+  "FinalUrl": null,
+  "Title": null,
+  "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 227380,
-  "ScreenshotSizeBytes": 2203497,
+  "HtmlSizeBytes": 0,
+  "ScreenshotSizeBytes": 0,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
-  "Screenshots": [
-    {
-      "FileName": "01-page-loaded.png",
-      "Label": "page-loaded",
-      "StepNumber": 1,
-      "FileSize": 2203497
-    }
-  ],
-  "ErrorMessage": null,
-  "Headers": {
-    "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
-    "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:11:12 GMT",
-    "frame-ancestors": "self https://*.risevision.com",
-    "referrer-policy": "strict-origin-when-cross-origin",
-    "strict-transport-security": "max-age=2592000",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "SameOrigin"
-  },
-  "CapturedAt": "2026-02-16T20:11:10.3813217Z"
+  "Screenshots": [],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
+  "ErrorMessage": "Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded",
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:59.3377444Z"
 }

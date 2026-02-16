@@ -4,23 +4,37 @@
 |-------|-------|
 | URL | https://anthro.wsu.edu/research/ |
 | Title | Research | Department of Anthropology | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 217.3 KB |
+| Status | ❌ 0 |
+| HTML Size | 210.9 KB |
 | Screenshots | 1 (366.0 KB) |
+| Images | 1 (133.9 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:20.2662884Z |
+| Captured | 2026-02-16T20:39:31.3964046Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (366.0 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
 ### 1. page-loaded
 
 ![page-loaded](01-page-loaded.png)
+
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [college-hall_360x265.jpg](images/college-hall_360x265.jpg) | College Hall, Washington State Univer... | 133.9 KB |
+
+### Gallery
+
+![College Hall, Washington State University](images/college-hall_360x265.jpg)
 
 
 ## Files
@@ -32,3 +46,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (133.9 KB)

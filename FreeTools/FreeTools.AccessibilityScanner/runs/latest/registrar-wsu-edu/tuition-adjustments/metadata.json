@@ -18,7 +18,11 @@
       "FileSize": 63756
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:21:20.5220569Z"
+  "CapturedAt": "2026-02-16T20:41:08.0187225Z"
 }

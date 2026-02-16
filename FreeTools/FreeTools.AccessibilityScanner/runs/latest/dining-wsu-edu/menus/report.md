@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://dining.wsu.edu/menus/ |
 | Title | Page Not Found |
-| Status | ❌ 404 |
-| HTML Size | 45.5 KB |
+| Status | ❌ 0 |
+| HTML Size | 45.4 KB |
 | Screenshots | 1 (75.6 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:41.5919810Z |
+| Captured | 2026-02-16T20:39:11.0602396Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (75.6 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

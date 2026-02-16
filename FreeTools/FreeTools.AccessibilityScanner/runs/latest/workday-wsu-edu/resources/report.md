@@ -5,13 +5,15 @@
 | URL | https://workday.wsu.edu/resources/ |
 | Redirected To | https://login.wsu.edu/app/workday/exk8wk0d1s55s30dD2p7/sso/saml |
 | Title | WSU | Sign In |
-| Status | ✅ 200 |
-| HTML Size | 137.0 KB |
+| Status | ❌ 0 |
+| HTML Size | 138.3 KB |
 | Screenshots | 1 (60.4 KB) |
+| Images | 1 (7.7 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 7 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:26.2010258Z |
+| Captured | 2026-02-16T20:38:57.3821711Z |
 
 ## JavaScript Errors
 
@@ -26,12 +28,24 @@
 ## Actions
 
 - Screenshot #1: page-loaded (60.4 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
 ### 1. page-loaded
 
 ![page-loaded](01-page-loaded.png)
+
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [fs015xh0tygNgGVxX2p8.img](images/fs015xh0tygNgGVxX2p8.img) | WSU logo | 7.7 KB |
+
+### Gallery
+
+![WSU logo](images/fs015xh0tygNgGVxX2p8.img)
 
 
 ## Files
@@ -43,3 +57,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (7.7 KB)

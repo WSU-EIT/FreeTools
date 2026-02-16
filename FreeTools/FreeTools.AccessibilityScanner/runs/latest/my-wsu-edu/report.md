@@ -2,23 +2,25 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 3/3 pages OK |
+| Status | ⚠️ 0/3 pages OK |
 | Pages Scanned | 3 |
-| Pages Passed | 3 |
-| Pages Failed | 0 |
-| Total JS Errors | 23 |
+| Pages Passed | 0 |
+| Pages Failed | 3 |
+| Total JS Errors | 17 |
 | Total JS Warnings | 0 |
-| Total HTML | 421.1 KB |
-| Total Screenshots | 158.1 KB |
+| Total HTML | 348.6 KB |
+| Total Screenshots | 125.7 KB |
+| Total Images | 3 (23.0 KB) |
+| Images Missing Alt | 0 |
 | Folder | `my-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | WSU \| Bad request. | 9 | 0 | 1 |
-| ✅ | [/help/](help/report.md) | 200 | WSU \| Sign In | 7 | 0 | 1 |
-| ✅ | [/services/](services/report.md) | 200 | WSU \| Sign In | 7 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU \| Bad request. | 9 | 1 | 0 |
+| ❌ | [/help/](help/report.md) | 0 | WSU Authentication \| Washington Stat... | 1 | 1 | 0 |
+| ❌ | [/services/](services/report.md) | 0 | WSU \| Sign In | 7 | 1 | 0 |
 
 ## Page Screenshots
 
@@ -35,6 +37,24 @@
 ![/services/](services/01-page-loaded.png)
 
 
+## Failed Pages
+
+### /
+
+- **URL:** https://my.wsu.edu/
+- **Status:** 0
+
+### /help/
+
+- **URL:** https://my.wsu.edu/help/
+- **Status:** 0
+
+### /services/
+
+- **URL:** https://my.wsu.edu/services/
+- **Status:** 0
+
+
 ## Pages with JavaScript Errors
 
 ### / (9 errors)
@@ -49,16 +69,6 @@
 - `No available ports. Loopback server failed and polling is cancelled.`
 - `Failed to load resource: the server responded with a status of 400 ()`
 
-### /help/ (7 errors)
-
-- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
-- `No available ports. Loopback server failed and polling is cancelled.`
-
 ### /services/ (7 errors)
 
 - `Something unexpected happened while we were checking url http://127.0.0.1:8769`
@@ -68,6 +78,10 @@
 - `Something unexpected happened while we were checking url http://127.0.0.1:65141`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65151`
 - `No available ports. Loopback server failed and polling is cancelled.`
+
+### /help/ (1 errors)
+
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 
 
 ---

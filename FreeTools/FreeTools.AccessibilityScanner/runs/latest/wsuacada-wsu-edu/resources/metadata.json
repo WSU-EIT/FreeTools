@@ -3,10 +3,10 @@
   "Url": "https://wsuacada.wsu.edu/resources/",
   "FinalUrl": null,
   "Title": "Page not found | WSU Academic Advising Association | Washington State University",
-  "StatusCode": 404,
+  "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 54134,
-  "ScreenshotSizeBytes": 33029,
+  "HtmlSizeBytes": 42374,
+  "ScreenshotSizeBytes": 24315,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
@@ -15,17 +15,14 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 33029
+      "FileSize": 24315
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "no-cache, must-revalidate, max-age=0",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:03 GMT",
-    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
-    "link": "\u003Chttps://wsuacada.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
-    "server": "nginx"
-  },
-  "CapturedAt": "2026-02-16T20:13:01.4539412Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:42.4327459Z"
 }

@@ -3,12 +3,12 @@
   "Url": "https://business.wsu.edu/undergraduate/",
   "FinalUrl": "https://business.wsu.edu/advising/",
   "Title": "Academic Advising - Carson College of Business | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 190894,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 182404,
   "ScreenshotSizeBytes": 1681145,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 1,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -18,19 +18,54 @@
       "FileSize": 1681145
     }
   ],
+  "ImageCount": 7,
+  "ImagesTotalSizeBytes": 462545,
+  "ImagesMissingAlt": 4,
+  "Images": [
+    {
+      "FileName": "wsu-logo.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/05/wsu-logo.svg",
+      "AltText": "Carson College of Business | Washington State University",
+      "FileSize": 34636
+    },
+    {
+      "FileName": "AcademicAdvising_banner.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2024/08/AcademicAdvising_banner.jpg",
+      "AltText": "Partner with your Academic Advisor",
+      "FileSize": 249482
+    },
+    {
+      "FileName": "DawnForester_3x4.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2024/08/DawnForester_3x4.jpg",
+      "AltText": "",
+      "FileSize": 45619
+    },
+    {
+      "FileName": "MinjaeKim_3x4.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2024/08/MinjaeKim_3x4.jpg",
+      "AltText": "",
+      "FileSize": 59492
+    },
+    {
+      "FileName": "JuliaGrimaldo_3x4.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2024/08/JuliaGrimaldo_3x4.jpg",
+      "AltText": "",
+      "FileSize": 57145
+    },
+    {
+      "FileName": "wsu-mascot-logo.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/06/wsu-mascot-logo.svg",
+      "AltText": "",
+      "FileSize": 5462
+    },
+    {
+      "FileName": "wsu-logo-1.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/06/wsu-logo.svg",
+      "AltText": "drglow-footer-logo",
+      "FileSize": 10709
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:18 GMT",
-    "etag": "\u0022d6b27f3b1bea92a868ecf85738ec78c0\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:13:18 GMT",
-    "link": "\u003Chttps://business.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://business.wsu.edu/wp-json/wp/v2/pages/46624\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://business.wsu.edu/?p=46624\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://business.wsu.edu",
-    "x-tec-api-root": "https://business.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:13:15.1043161Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:34.7890797Z"
 }

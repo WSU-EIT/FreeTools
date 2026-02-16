@@ -2,24 +2,26 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 4/4 pages OK |
+| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 4 |
-| Pages Failed | 0 |
-| Total JS Errors | 30 |
+| Pages Passed | 0 |
+| Pages Failed | 4 |
+| Total JS Errors | 16 |
 | Total JS Warnings | 0 |
-| Total HTML | 545.2 KB |
-| Total Screenshots | 209.1 KB |
+| Total HTML | 414.0 KB |
+| Total Screenshots | 178.6 KB |
+| Total Images | 4 (30.7 KB) |
+| Images Missing Alt | 0 |
 | Folder | `workday-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | WSU \| Bad request. | 8 | 0 | 1 |
-| ✅ | [/help/](help/report.md) | 200 | WSU \| Bad request. | 8 | 0 | 1 |
-| ✅ | [/resources/](resources/report.md) | 200 | WSU \| Sign In | 7 | 0 | 1 |
-| ✅ | [/training/](training/report.md) | 200 | WSU \| Sign In | 7 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU \| Bad request. | 9 | 1 | 0 |
+| ❌ | [/help/](help/report.md) | 0 | WSU Authentication \| Washington Stat... | 0 | 1 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | WSU \| Sign In | 7 | 1 | 0 |
+| ❌ | [/training/](training/report.md) | 0 | WSU Authentication \| Washington Stat... | 0 | 1 | 0 |
 
 ## Page Screenshots
 
@@ -40,10 +42,34 @@
 ![/training/](training/01-page-loaded.png)
 
 
+## Failed Pages
+
+### /
+
+- **URL:** https://workday.wsu.edu/
+- **Status:** 0
+
+### /help/
+
+- **URL:** https://workday.wsu.edu/help/
+- **Status:** 0
+
+### /training/
+
+- **URL:** https://workday.wsu.edu/training/
+- **Status:** 0
+
+### /resources/
+
+- **URL:** https://workday.wsu.edu/resources/
+- **Status:** 0
+
+
 ## Pages with JavaScript Errors
 
-### / (8 errors)
+### / (9 errors)
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Something unexpected happened while we were checking url http://127.0.0.1:8769`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65111`
 - `Something unexpected happened while we were checking url http://127.0.0.1:65121`
@@ -52,27 +78,6 @@
 - `Something unexpected happened while we were checking url http://127.0.0.1:65151`
 - `No available ports. Loopback server failed and polling is cancelled.`
 - `Failed to load resource: the server responded with a status of 400 ()`
-
-### /help/ (8 errors)
-
-- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
-- `No available ports. Loopback server failed and polling is cancelled.`
-- `Failed to load resource: the server responded with a status of 400 ()`
-
-### /training/ (7 errors)
-
-- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
-- `No available ports. Loopback server failed and polling is cancelled.`
 
 ### /resources/ (7 errors)
 

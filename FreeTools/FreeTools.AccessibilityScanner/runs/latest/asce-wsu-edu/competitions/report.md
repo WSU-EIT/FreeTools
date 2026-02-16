@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://asce.wsu.edu/competitions/ |
 | Title | Page not found | American Society of Civil Engineers | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 55.0 KB |
+| Status | ❌ 0 |
+| HTML Size | 37.7 KB |
 | Screenshots | 1 (40.1 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:38.0010527Z |
+| Captured | 2026-02-16T20:38:18.8707562Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (40.1 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

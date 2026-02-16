@@ -3,9 +3,9 @@
   "Url": "https://spokane.wsu.edu/academics/",
   "FinalUrl": "https://spokane.wsu.edu/academic-programs/",
   "Title": "Academic Programs | WSU Spokane | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 255527,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 255366,
   "ScreenshotSizeBytes": 2676845,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,18 +18,36 @@
       "FileSize": 2676845
     }
   ],
+  "ImageCount": 4,
+  "ImagesTotalSizeBytes": 1930601,
+  "ImagesMissingAlt": 3,
+  "Images": [
+    {
+      "FileName": "Communications-Lab-Multicultural-communication-39-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/07/Communications-Lab-Multicultural-communication-39-scaled.jpg",
+      "AltText": "",
+      "FileSize": 479394
+    },
+    {
+      "FileName": "nursing-photo-shoot-149-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/07/nursing-photo-shoot-149-scaled.jpg",
+      "AltText": "",
+      "FileSize": 810452
+    },
+    {
+      "FileName": "Communications-Lab-Multicultural-communication-29-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/07/Communications-Lab-Multicultural-communication-29-scaled.jpg",
+      "AltText": "",
+      "FileSize": 499496
+    },
+    {
+      "FileName": "Spokane-Skyline-v3.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-spokane/uploads/sites/3282/2024/05/Spokane-Skyline-v3.png",
+      "AltText": "Spokane skyline silhouette",
+      "FileSize": 141259
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:52 GMT",
-    "etag": "\u002281ad19a9aa8bf97af1b0a17a977ecbce\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:01:34 GMT",
-    "link": "\u003Chttps://spokane.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://spokane.wsu.edu/wp-json/wp/v2/pages/1526\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://spokane.wsu.edu/?p=1526\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-cache": "EXPIRED",
-    "x-cache-status": "EXPIRED"
-  },
-  "CapturedAt": "2026-02-16T20:12:49.273954Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:56.9501666Z"
 }

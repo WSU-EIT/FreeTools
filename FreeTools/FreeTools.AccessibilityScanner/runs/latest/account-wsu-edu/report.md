@@ -2,31 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 4/5 pages OK |
+| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 4 |
-| Pages Failed | 1 |
-| Total JS Errors | 12 |
+| Pages Passed | 0 |
+| Pages Failed | 5 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 220.1 KB |
-| Total Screenshots | 114.4 KB |
+| Total HTML | 15.7 KB |
+| Total Screenshots | 35.8 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `account-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | My Settings \| WSU | 1 | 0 | 1 |
-| ❌ | [/help/](help/report.md) | 200 | (none) | 0 | 0 | 1 |
-| ✅ | [/password-reset/](password-reset/report.md) | 200 | My Settings \| WSU | 1 | 0 | 1 |
-| ✅ | [/security/](security/report.md) | 200 | WSU Authentication \| Washington Stat... | 1 | 0 | 1 |
-| ✅ | [/services/](services/report.md) | 200 | WSU \| Bad request. | 9 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/help/](help/report.md) | 0 | My Settings \| WSU | 0 | 0 | 0 |
+| ❌ | [/password-reset/](password-reset/report.md) | 0 | My Settings \| WSU | 0 | 0 | 0 |
+| ❌ | [/security/](security/report.md) | 0 | My Settings \| WSU | 0 | 0 | 0 |
+| ❌ | [/services/](services/report.md) | 0 | (none) | 0 | 0 | 0 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
 
 ### [/help/](help/report.md)
 
@@ -47,38 +45,36 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://account.wsu.edu/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded`
+
+### /services/
+
+- **URL:** https://account.wsu.edu/services/
+- **Status:** 0
+- **Error:** `Execution context was destroyed, most likely because of a navigation`
+
+### /password-reset/
+
+- **URL:** https://account.wsu.edu/password-reset/
+- **Status:** 0
+
+### /security/
+
+- **URL:** https://account.wsu.edu/security/
+- **Status:** 0
+
 ### /help/
 
 - **URL:** https://account.wsu.edu/help/
-- **Status:** 200
-- **Error:** `Unable to retrieve content because the page is navigating and changing the content.`
-
-
-## Pages with JavaScript Errors
-
-### /services/ (9 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
-- `No available ports. Loopback server failed and polling is cancelled.`
-- `Failed to load resource: the server responded with a status of 400 ()`
-
-### / (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /password-reset/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /security/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
+- **Status:** 0
 
 
 ---

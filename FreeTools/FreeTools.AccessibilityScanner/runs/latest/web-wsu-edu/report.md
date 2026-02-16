@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 5 |
-| Pages Failed | 1 |
-| Total JS Errors | 9 |
-| Total JS Warnings | 1 |
-| Total HTML | 1.3 MB |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 8 |
+| Total JS Warnings | 0 |
+| Total HTML | 1.1 MB |
 | Total Screenshots | 1.4 MB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `web-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Web Communication \| Washington State... | 1 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Web Communication \| Web Comm... | 1 | 0 | 1 |
-| ✅ | [/request/](request/report.md) | 200 | Request a Website \| Web Communicatio... | 1 | 0 | 1 |
-| ✅ | [/resources/](resources/report.md) | 200 | Resources \| Web Communication \| Was... | 1 | 0 | 1 |
-| ✅ | [/services/](services/report.md) | 200 | Procedures & Web Services \| Web Comm... | 3 | 0 | 1 |
-| ❌ | [/training/](training/report.md) | 404 | Page not found \| Web Communication \... | 2 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Web Communication \| Washington State... | 2 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Web Communication \| Web Comm... | 1 | 0 | 0 |
+| ❌ | [/request/](request/report.md) | 0 | Request a Website \| Web Communicatio... | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Resources \| Web Communication \| Was... | 1 | 0 | 0 |
+| ❌ | [/services/](services/report.md) | 0 | Procedures & Web Services \| Web Comm... | 1 | 0 | 0 |
+| ❌ | [/training/](training/report.md) | 0 | Page not found \| Web Communication \... | 2 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,17 +54,41 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://web.wsu.edu/
+- **Status:** 0
+
+### /services/
+
+- **URL:** https://web.wsu.edu/services/
+- **Status:** 0
+
+### /resources/
+
+- **URL:** https://web.wsu.edu/resources/
+- **Status:** 0
+
 ### /training/
 
 - **URL:** https://web.wsu.edu/training/
-- **Status:** 404
+- **Status:** 0
+
+### /request/
+
+- **URL:** https://web.wsu.edu/request/
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://web.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### /services/ (3 errors)
+### / (2 errors)
 
-- `Failed to load resource: the server responded with a status of 405 ()`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
@@ -71,9 +97,9 @@
 - `Failed to load resource: the server responded with a status of 404 ()`
 - `Failed to load resource: the server responded with a status of 405 ()`
 
-### / (1 errors)
+### /services/ (1 errors)
 
-- `Failed to load resource: net::ERR_CONNECTION_ABORTED`
+- `Failed to load resource: the server responded with a status of 405 ()`
 
 ### /resources/ (1 errors)
 

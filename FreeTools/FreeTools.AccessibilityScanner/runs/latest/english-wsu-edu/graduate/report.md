@@ -5,13 +5,15 @@
 | URL | https://english.wsu.edu/graduate/ |
 | Redirected To | https://english.wsu.edu/graduate-certificates/ |
 | Title | Graduate Certificates | WSU Department of English | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 72.8 KB |
+| Status | ❌ 0 |
+| HTML Size | 64.2 KB |
 | Screenshots | 1 (562.4 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:56.6835984Z |
+| Captured | 2026-02-16T20:38:37.7642359Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (562.4 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

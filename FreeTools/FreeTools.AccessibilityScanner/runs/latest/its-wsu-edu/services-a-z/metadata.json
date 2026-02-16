@@ -5,7 +5,7 @@
   "Title": "Services A-Z | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 294229,
+  "HtmlSizeBytes": 293741,
   "ScreenshotSizeBytes": 1821481,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,16 +18,27 @@
       "FileSize": 1821481
     }
   ],
+  "ImageCount": 1,
+  "ImagesTotalSizeBytes": 528127,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "ESF-Cultural-Center-sh_5628-1900x1337-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-its/uploads/sites/2898/2023/10/ESF-Cultural-Center-sh_5628-1900x1337-1.jpg",
+      "AltText": "Images of Elson S. Floyd Cultural Center at sunset on the campus of Washington State University",
+      "FileSize": 528127
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:16:09 GMT",
+    "date": "Mon, 16 Feb 2026 20:41:41 GMT",
     "etag": "\u002222c38c300950e5ecb809a36fb81465a1\u0022",
     "last-modified": "Mon, 16 Feb 2026 19:54:16 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/3961\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=3961\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-16T20:16:09.8088793Z"
+  "CapturedAt": "2026-02-16T20:41:41.309673Z"
 }

@@ -2,24 +2,26 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/4 pages OK |
+| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 1 |
-| Pages Failed | 3 |
+| Pages Passed | 0 |
+| Pages Failed | 4 |
 | Total JS Errors | 3 |
 | Total JS Warnings | 0 |
 | Total HTML | 13.2 KB |
 | Total Screenshots | 151.9 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `lists-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Home \| Information Technology Services | 0 | 0 | 1 |
-| ❌ | [/help/](help/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
-| ❌ | [/manage/](manage/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
-| ❌ | [/subscribe/](subscribe/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Home \| Information Technology Services | 0 | 0 | 0 |
+| ❌ | [/help/](help/report.md) | 404 | 404 Not Found | 1 | 0 | 0 |
+| ❌ | [/manage/](manage/report.md) | 404 | 404 Not Found | 1 | 0 | 0 |
+| ❌ | [/subscribe/](subscribe/report.md) | 404 | 404 Not Found | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -41,6 +43,11 @@
 
 
 ## Failed Pages
+
+### /
+
+- **URL:** https://lists.wsu.edu/
+- **Status:** 0
 
 ### /help/
 

@@ -4,33 +4,41 @@
 |-------|-------|
 | URL | https://account.wsu.edu/ |
 | Redirected To | https://login.wsu.edu/account-settings/home |
-| Title | My Settings | WSU |
-| Status | ✅ 200 |
-| HTML Size | 3.9 KB |
-| Screenshots | 1 (9.6 KB) |
-| JS Errors | 1 |
+| Title | (none) |
+| Status | ❌ 0 |
+| HTML Size | 0 bytes |
+| Screenshots | 0 (0 bytes) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:26.0929494Z |
+| Captured | 2026-02-16T20:37:04.9082980Z |
 
-## JavaScript Errors
+## Error
 
-- `Failed to load resource: the server responded with a status of 404 ()`
+```
+Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+```
 
 ## Actions
 
-- Screenshot #1: page-loaded (9.6 KB)
+- Scan aborted due to error
 
 ## Screenshots
 
-### 1. page-loaded
+*No screenshots captured.*
 
-![page-loaded](01-page-loaded.png)
+## Page Images (0)
 
+*No images found on page.*
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (9.6 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

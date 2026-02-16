@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 1 |
-| Pages Failed | 5 |
-| Total JS Errors | 6 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 5 |
 | Total JS Warnings | 0 |
-| Total HTML | 342.7 KB |
+| Total HTML | 287.9 KB |
 | Total Screenshots | 1.2 MB |
+| Total Images | 3 (283.2 KB) |
+| Images Missing Alt | 3 |
 | Folder | `adarp-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | ADARP \| Washington State University | 1 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page not found \| ADARP \| Washington... | 1 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| ADARP \| Washington... | 1 | 0 | 1 |
-| ❌ | [/projects/](projects/report.md) | 404 | Page not found \| ADARP \| Washington... | 1 | 0 | 1 |
-| ❌ | [/publications/](publications/report.md) | 404 | Page not found \| ADARP \| Washington... | 1 | 0 | 1 |
-| ❌ | [/research/](research/report.md) | 404 | Page not found \| ADARP \| Washington... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | ADARP \| Washington State University | 0 | 3 | 3 |
+| ❌ | [/about/](about/report.md) | 0 | Page not found \| ADARP \| Washington... | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| ADARP \| Washington... | 1 | 0 | 0 |
+| ❌ | [/projects/](projects/report.md) | 0 | Page not found \| ADARP \| Washington... | 1 | 0 | 0 |
+| ❌ | [/publications/](publications/report.md) | 0 | Page not found \| ADARP \| Washington... | 1 | 0 | 0 |
+| ❌ | [/research/](research/report.md) | 0 | Page not found \| ADARP \| Washington... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,37 +54,38 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://adarp.wsu.edu/
+- **Status:** 0
+
 ### /research/
 
 - **URL:** https://adarp.wsu.edu/research/
-- **Status:** 404
+- **Status:** 0
 
 ### /projects/
 
 - **URL:** https://adarp.wsu.edu/projects/
-- **Status:** 404
+- **Status:** 0
 
 ### /publications/
 
 - **URL:** https://adarp.wsu.edu/publications/
-- **Status:** 404
+- **Status:** 0
 
 ### /about/
 
 - **URL:** https://adarp.wsu.edu/about/
-- **Status:** 404
+- **Status:** 0
 
 ### /contact/
 
 - **URL:** https://adarp.wsu.edu/contact/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /research/ (1 errors)
 

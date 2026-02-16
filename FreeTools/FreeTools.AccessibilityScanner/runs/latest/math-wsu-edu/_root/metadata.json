@@ -3,31 +3,75 @@
   "Url": "https://math.wsu.edu/",
   "FinalUrl": null,
   "Title": "Department of Mathematics and Statistics | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 245807,
-  "ScreenshotSizeBytes": 1752101,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 236809,
+  "ScreenshotSizeBytes": 1686909,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 5,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1752101
+      "FileSize": 1686909
+    }
+  ],
+  "ImageCount": 8,
+  "ImagesTotalSizeBytes": 491299,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "research900x200-792x176.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3414/2024/10/research900x200-792x176.jpg",
+      "AltText": "Student and faculty work through a problem on a chalkboard.",
+      "FileSize": 35546
+    },
+    {
+      "FileName": "elizabeth-woolner-rT4Xgus3QdA-unsplash-1-792x528.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3414/2024/10/elizabeth-woolner-rT4Xgus3QdA-unsplash-1-792x528.jpg",
+      "AltText": "Over the shoulder view of a student\u0027s laptop.",
+      "FileSize": 71171
+    },
+    {
+      "FileName": "stephen-dawson-qwtCeJ5cLYs-unsplash-792x570.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3414/2024/10/stephen-dawson-qwtCeJ5cLYs-unsplash-792x570.jpg",
+      "AltText": "A dynamic view of a computer monitor showing various statistical values.",
+      "FileSize": 51773
+    },
+    {
+      "FileName": "thisisengineering-fgdmH3iqvMw-unsplash-crop-792x566.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3414/2024/10/thisisengineering-fgdmH3iqvMw-unsplash-crop-792x566.jpg",
+      "AltText": "Up close shot of a person\u0027s hand making marks on a white board.",
+      "FileSize": 52064
+    },
+    {
+      "FileName": "Sergey_-Lapin_IMG_1135-792x528.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2025/08/Sergey_-Lapin_IMG_1135-792x528.jpg",
+      "AltText": "Sergey Lapin",
+      "FileSize": 97069
+    },
+    {
+      "FileName": "In-the-media-header-792x445.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2024/12/In-the-media-header-792x445.png",
+      "AltText": "In the media.",
+      "FileSize": 18906
+    },
+    {
+      "FileName": "cybersecurity-1024x676-1-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2025/08/cybersecurity-1024x676-1-792x523.jpg",
+      "AltText": "A composite featuring a darkly lit pair of hands typing on a keyboard and several lines of computer code.",
+      "FileSize": 91005
+    },
+    {
+      "FileName": "2025-TopTenSeniors-mortarboards-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3186/2025/06/2025-TopTenSeniors-mortarboards-792x523.jpg",
+      "AltText": "A top view of the heads of graduating students with black graduation caps with a focus on one hat with a WSU red cougar logo.",
+      "FileSize": 73765
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "etag": "\u002270708e6b630618c6b17aa4e744dceca7\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:01:42 GMT",
-    "link": "\u003Chttps://math.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://math.wsu.edu/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://math.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1317979Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.1174071Z"
 }

@@ -3,10 +3,10 @@
   "Url": "https://asl.wsu.edu/",
   "FinalUrl": null,
   "Title": "Applied Sciences Laboratory | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 69791,
-  "ScreenshotSizeBytes": 1307964,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 59681,
+  "ScreenshotSizeBytes": 869289,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,39 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1307964
+      "FileSize": 869289
+    }
+  ],
+  "ImageCount": 4,
+  "ImagesTotalSizeBytes": 768675,
+  "ImagesMissingAlt": 4,
+  "Images": [
+    {
+      "FileName": "ISP-Building-at-Night-1-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2026/01/ISP-Building-at-Night-1-scaled.jpg",
+      "AltText": "",
+      "FileSize": 467089
+    },
+    {
+      "FileName": "RIVER2-e1666038606692.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2016/12/RIVER2-e1666038606692.jpg",
+      "AltText": "",
+      "FileSize": 60230
+    },
+    {
+      "FileName": "us_gov_in_nut_shell.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2016/12/us_gov_in_nut_shell.jpg",
+      "AltText": "",
+      "FileSize": 123127
+    },
+    {
+      "FileName": "contact_bubble.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/3002/2016/12/contact_bubble.jpg",
+      "AltText": "",
+      "FileSize": 118229
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "etag": "\u00226e14fc6bc00c62d90ec96794991b8fa0\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:10:11 GMT",
-    "link": "\u003Chttps://asl.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://asl.wsu.edu/wp-json/wp/v2/pages/2\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://asl.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1109817Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.0332968Z"
 }

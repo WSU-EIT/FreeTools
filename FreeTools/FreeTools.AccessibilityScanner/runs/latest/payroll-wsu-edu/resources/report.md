@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://payroll.wsu.edu/resources/ |
 | Title | Page not found | Payroll Services | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 59.0 KB |
+| Status | ❌ 0 |
+| HTML Size | 49.4 KB |
 | Screenshots | 1 (104.1 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:24.3835928Z |
+| Captured | 2026-02-16T20:38:42.5369403Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (104.1 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

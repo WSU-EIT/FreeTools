@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 5 |
-| Pages Failed | 1 |
-| Total JS Errors | 2 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 5 |
 | Total JS Warnings | 0 |
-| Total HTML | 431.3 KB |
-| Total Screenshots | 2.8 MB |
+| Total HTML | 372.9 KB |
+| Total Screenshots | 2.4 MB |
+| Total Images | 16 (3.5 MB) |
+| Images Missing Alt | 15 |
 | Folder | `bursar-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Bursar \| Washington State University | 1 | 0 | 1 |
-| ✅ | [/billing/](billing/report.md) | 200 | Billing \| Bursar \| Washington State... | 0 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Information \| Bursar \| Wash... | 0 | 0 | 1 |
-| ✅ | [/payment/](payment/report.md) | 200 | Payment Plans \| Bursar \| Washington... | 0 | 0 | 1 |
-| ✅ | [/policies/](policies/report.md) | 200 | Policies & Procedures for Reporting t... | 0 | 0 | 1 |
-| ❌ | [/refunds/](refunds/report.md) | 404 | Page not found \| Bursar \| Washingto... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Bursar \| Washington State University | 4 | 0 | 0 |
+| ❌ | [/billing/](billing/report.md) | 0 | Billing \| Bursar \| Washington State... | 0 | 1 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Information \| Bursar \| Wash... | 0 | 6 | 6 |
+| ❌ | [/payment/](payment/report.md) | 0 | Payment Plans \| Bursar \| Washington... | 0 | 9 | 9 |
+| ❌ | [/policies/](policies/report.md) | 0 | Policies & Procedures for Reporting t... | 0 | 0 | 0 |
+| ❌ | [/refunds/](refunds/report.md) | 0 | Page not found \| Bursar \| Washingto... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,16 +54,44 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://bursar.wsu.edu/
+- **Status:** 0
+
+### /billing/
+
+- **URL:** https://bursar.wsu.edu/billing/
+- **Status:** 0
+
+### /payment/
+
+- **URL:** https://bursar.wsu.edu/payment/
+- **Status:** 0
+
 ### /refunds/
 
 - **URL:** https://bursar.wsu.edu/refunds/
-- **Status:** 404
+- **Status:** 0
+
+### /policies/
+
+- **URL:** https://bursar.wsu.edu/policies/
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://bursar.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### / (4 errors)
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /refunds/ (1 errors)

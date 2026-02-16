@@ -2,32 +2,30 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
 | Total JS Errors | 4 |
 | Total JS Warnings | 0 |
-| Total HTML | 116.2 KB |
-| Total Screenshots | 132.3 KB |
+| Total HTML | 64.8 KB |
+| Total Screenshots | 67.5 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `parking-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Home Page \| Washington State Univers... | 0 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
-| ❌ | [/maps/](maps/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
-| ✅ | [/permits/](permits/report.md) | 200 | Login \| Washington State University ... | 0 | 0 | 1 |
-| ❌ | [/policies/](policies/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
-| ❌ | [/visitor-parking/](visitor-parking/report.md) | 404 | 404 Not Found | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 404 | 404 Not Found | 1 | 0 | 0 |
+| ❌ | [/maps/](maps/report.md) | 404 | 404 Not Found | 1 | 0 | 0 |
+| ❌ | [/permits/](permits/report.md) | 0 | Login \| Washington State University ... | 0 | 0 | 0 |
+| ❌ | [/policies/](policies/report.md) | 404 | 404 Not Found | 1 | 0 | 0 |
+| ❌ | [/visitor-parking/](visitor-parking/report.md) | 404 | 404 Not Found | 1 | 0 | 0 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
 
 ### [/contact/](contact/report.md)
 
@@ -51,6 +49,20 @@
 
 
 ## Failed Pages
+
+### /
+
+- **URL:** https://parking.wsu.edu/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
+
+### /permits/
+
+- **URL:** https://parking.wsu.edu/permits/
+- **Status:** 0
 
 ### /maps/
 

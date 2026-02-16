@@ -7,20 +7,34 @@
 | Status | ✅ 200 |
 | HTML Size | 50.0 KB |
 | Screenshots | 1 (772.4 KB) |
+| Images | 1 (288.0 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:15:57.4256376Z |
+| Captured | 2026-02-16T20:42:06.7940225Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (772.4 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
 ### 1. page-loaded
 
 ![page-loaded](01-page-loaded.png)
+
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [olympia-student-room-banner.jpg](images/olympia-student-room-banner.jpg) | Student studying in Olympia room | 288.0 KB |
+
+### Gallery
+
+![Student studying in Olympia room](images/olympia-student-room-banner.jpg)
 
 
 ## Files
@@ -32,3 +46,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (288.0 KB)

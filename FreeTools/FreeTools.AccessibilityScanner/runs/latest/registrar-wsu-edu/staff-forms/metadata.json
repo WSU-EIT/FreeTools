@@ -5,7 +5,7 @@
   "Title": "Staff Forms | Office of the Registrar",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 657027,
+  "HtmlSizeBytes": 657023,
   "ScreenshotSizeBytes": 155403,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,7 +18,11 @@
       "FileSize": 155403
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:16:04.2351989Z"
+  "CapturedAt": "2026-02-16T20:40:00.7797497Z"
 }

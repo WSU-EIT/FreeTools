@@ -3,10 +3,10 @@
   "Url": "https://its.wsu.edu/about-its/",
   "FinalUrl": null,
   "Title": "About ITS | Information Technology Services | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 237961,
-  "ScreenshotSizeBytes": 341139,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 226691,
+  "ScreenshotSizeBytes": 1025634,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,14 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 341139
+      "FileSize": 1025634
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:11:44 GMT",
-    "etag": "\u0022c5d1ddac6df9a700727eeb7adf02c03d\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:52:02 GMT",
-    "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/204\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=204\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:11:30.1741403Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:55.7279411Z"
 }

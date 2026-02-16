@@ -5,20 +5,61 @@
   "Title": "College of Education, Sport, and Human Sciences | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 255174,
-  "ScreenshotSizeBytes": 1694179,
+  "HtmlSizeBytes": 246190,
+  "ScreenshotSizeBytes": 1623044,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 7,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 2,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1694179
+      "FileSize": 1623044
+    }
+  ],
+  "ImageCount": 6,
+  "ImagesTotalSizeBytes": 2028694,
+  "ImagesMissingAlt": 4,
+  "Images": [
+    {
+      "FileName": "Parents-Weekend-2023-dh-Smiley-Faces-_-07-1900x1325-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/Parents-Weekend-2023-dh-Smiley-Faces-_-07-1900x1325-1.jpg",
+      "AltText": "",
+      "FileSize": 407398
+    },
+    {
+      "FileName": "2024FirstDayFall_4184-1900x1267-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/2024FirstDayFall_4184-1900x1267-1.jpg",
+      "AltText": "",
+      "FileSize": 374814
+    },
+    {
+      "FileName": "FirstWeek_9678-1900x1267-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/FirstWeek_9678-1900x1267-1.jpg",
+      "AltText": "",
+      "FileSize": 250993
+    },
+    {
+      "FileName": "Spring2023_8468-1900x1267-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/Spring2023_8468-1900x1267-1.jpg",
+      "AltText": "",
+      "FileSize": 497381
+    },
+    {
+      "FileName": "2024SpringGraduation_6810-1900x1267-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/2024SpringGraduation_6810-1900x1267-1.jpg",
+      "AltText": "I did it anyway",
+      "FileSize": 356725
+    },
+    {
+      "FileName": "Sue-Durrant-and-Jo-Washburn-in-1997-copy.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-education/uploads/sites/3332/2025/08/Sue-Durrant-and-Jo-Washburn-in-1997-copy.jpg",
+      "AltText": "Monica McNamara smiling at camera.",
+      "FileSize": 141383
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.1169889Z"
+  "CapturedAt": "2026-02-16T20:37:05.0339589Z"
 }

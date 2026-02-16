@@ -3,33 +3,41 @@
 | Field | Value |
 |-------|-------|
 | URL | https://maps.wsu.edu/ |
-| Title | WSU Maps | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 41.8 KB |
-| Screenshots | 1 (356.7 KB) |
-| JS Errors | 1 |
+| Title | (none) |
+| Status | ❌ 0 |
+| HTML Size | 0 bytes |
+| Screenshots | 0 (0 bytes) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:26.1304969Z |
+| Captured | 2026-02-16T20:37:05.1171752Z |
 
-## JavaScript Errors
+## Error
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+```
+Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+```
 
 ## Actions
 
-- Screenshot #1: page-loaded (356.7 KB)
+- Scan aborted due to error
 
 ## Screenshots
 
-### 1. page-loaded
+*No screenshots captured.*
 
-![page-loaded](01-page-loaded.png)
+## Page Images (0)
 
+*No images found on page.*
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (356.7 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

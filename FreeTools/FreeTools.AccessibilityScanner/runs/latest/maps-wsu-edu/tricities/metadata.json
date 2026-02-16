@@ -3,9 +3,9 @@
   "Url": "https://maps.wsu.edu/tricities/",
   "FinalUrl": null,
   "Title": "Page not found | WSU Maps | Washington State University",
-  "StatusCode": 404,
+  "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 36955,
+  "HtmlSizeBytes": 29766,
   "ScreenshotSizeBytes": 65931,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -18,21 +18,11 @@
       "FileSize": 65931
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "no-cache, must-revalidate, max-age=0",
-    "connection": "keep-alive",
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:37 GMT",
-    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
-    "link": "\u003Chttps://maps.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
-    "server": "nginx",
-    "transfer-encoding": "chunked",
-    "vary": "Accept-Encoding\nCookie, Accept-Encoding",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "SAMEORIGIN",
-    "x-xss-protection": "1; mode=block"
-  },
-  "CapturedAt": "2026-02-16T20:12:35.034294Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:35.5508683Z"
 }

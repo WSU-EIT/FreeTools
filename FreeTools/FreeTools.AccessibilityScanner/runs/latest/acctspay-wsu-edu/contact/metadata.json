@@ -3,10 +3,10 @@
   "Url": "https://acctspay.wsu.edu/contact/",
   "FinalUrl": "https://acctspay.wsu.edu/contact-us/",
   "Title": "Contact Us | Payment Services | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 74603,
-  "ScreenshotSizeBytes": 854493,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 57581,
+  "ScreenshotSizeBytes": 472091,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,22 +15,63 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 854493
+      "FileSize": 472091
+    }
+  ],
+  "ImageCount": 8,
+  "ImagesTotalSizeBytes": 2289309,
+  "ImagesMissingAlt": 8,
+  "Images": [
+    {
+      "FileName": "charee-morris.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3031/2024/06/charee-morris.jpg",
+      "AltText": "",
+      "FileSize": 60637
+    },
+    {
+      "FileName": "Jackie-Gregg-scaled-e1671232300634.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3031/2022/12/Jackie-Gregg-scaled-e1671232300634.jpg",
+      "AltText": "",
+      "FileSize": 413095
+    },
+    {
+      "FileName": "Diane-Humphreys-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3031/2022/12/Diane-Humphreys-scaled.jpg",
+      "AltText": "",
+      "FileSize": 422682
+    },
+    {
+      "FileName": "Troy-Jackson-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3031/2022/12/Troy-Jackson-scaled.jpg",
+      "AltText": "",
+      "FileSize": 506989
+    },
+    {
+      "FileName": "blank-profile-picture.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3031/2024/03/blank-profile-picture.jpg",
+      "AltText": "",
+      "FileSize": 6031
+    },
+    {
+      "FileName": "Deanna-Sullivan-scaled-e1671232485545.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3031/2022/12/Deanna-Sullivan-scaled-e1671232485545.jpg",
+      "AltText": "",
+      "FileSize": 445918
+    },
+    {
+      "FileName": "Headshot_L.Walker_WSU.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3031/2023/06/Headshot_L.Walker_WSU.jpg",
+      "AltText": "",
+      "FileSize": 34534
+    },
+    {
+      "FileName": "Karin-Wedell-scaled-e1671232907938.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3031/2022/12/Karin-Wedell-scaled-e1671232907938.jpg",
+      "AltText": "",
+      "FileSize": 399423
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:50 GMT",
-    "etag": "\u002266b9b178041eff9dd8721ab2b61edf43\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:12:50 GMT",
-    "link": "\u003Chttps://acctspay.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://acctspay.wsu.edu/wp-json/wp/v2/pages/281\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://acctspay.wsu.edu/?p=281\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://acctspay.wsu.edu",
-    "x-tec-api-root": "https://acctspay.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:12:45.1957412Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:22.032521Z"
 }

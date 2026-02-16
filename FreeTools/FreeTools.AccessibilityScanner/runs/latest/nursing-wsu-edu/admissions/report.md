@@ -5,13 +5,15 @@
 | URL | https://nursing.wsu.edu/admissions/ |
 | Redirected To | https://nursing.wsu.edu/student-policies-procedures/admissions-appeal-policy/ |
 | Title | Admissions Appeal Policy | College of Nursing | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 246.1 KB |
+| Status | ❌ 0 |
+| HTML Size | 233.7 KB |
 | Screenshots | 1 (386.2 KB) |
+| Images | 1 (10.5 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 3 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:57.9924852Z |
+| Captured | 2026-02-16T20:38:41.4407790Z |
 
 ## JavaScript Errors
 
@@ -22,12 +24,24 @@
 ## Actions
 
 - Screenshot #1: page-loaded (386.2 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
 ### 1. page-loaded
 
 ![page-loaded](01-page-loaded.png)
+
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [SEA-to-GEG-e1697567786392.png](images/SEA-to-GEG-e1697567786392.png) | Seattle to Spokane skyline silhouette | 10.5 KB |
+
+### Gallery
+
+![Seattle to Spokane skyline silhouette](images/SEA-to-GEG-e1697567786392.png)
 
 
 ## Files
@@ -39,3 +53,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (10.5 KB)

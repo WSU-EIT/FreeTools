@@ -3,31 +3,93 @@
   "Url": "https://vetmed.wsu.edu/",
   "FinalUrl": null,
   "Title": "College of Veterinary Medicine | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 277567,
-  "ScreenshotSizeBytes": 846868,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 269680,
+  "ScreenshotSizeBytes": 883483,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 3,
   "ConsoleWarningCount": 1,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 846868
+      "FileSize": 883483
+    }
+  ],
+  "ImageCount": 11,
+  "ImagesTotalSizeBytes": 2131470,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "HealthyPeoplePets-DogLickingDr-News720x480.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2022/04/HealthyPeoplePets-DogLickingDr-News720x480.jpg",
+      "AltText": "Young black lab licking the masked face of a veterinarian.",
+      "FileSize": 250726
+    },
+    {
+      "FileName": "OpenHouse22ButchwDog-720x480-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2022/05/OpenHouse22ButchwDog-720x480-1.jpg",
+      "AltText": "WSU mascot, Butch, at the College Open House. He\u0027s down on one knee with his arm around a Golden Retriever.",
+      "FileSize": 352593
+    },
+    {
+      "FileName": "RaptorClub072622-720x480-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2022/07/RaptorClub072622-720x480-1.jpg",
+      "AltText": "Student in front of the Stauber Raptor Facility with a hawk.",
+      "FileSize": 276730
+    },
+    {
+      "FileName": "CowsinField-720x480-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2022/05/CowsinField-720x480-1.jpg",
+      "AltText": "Curious young holsteins in a field looking right at the photographer and the camera.",
+      "FileSize": 380391
+    },
+    {
+      "FileName": "hospital-lobby-578x480-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2023/07/hospital-lobby-578x480-1.jpg",
+      "AltText": "Hustle and bustle in the Veterinary Teaching Hospital lobby.",
+      "FileSize": 150351
+    },
+    {
+      "FileName": "waddl-lobby.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2023/07/waddl-lobby.jpg",
+      "AltText": "Photo of staircase in WADDL lobby.",
+      "FileSize": 254260
+    },
+    {
+      "FileName": "2025-Spring-Conference-09_0T89581-792x528.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2025/03/2025-Spring-Conference-09_0T89581-792x528.jpg",
+      "AltText": "Veterinary dental CE session",
+      "FileSize": 112936
+    },
+    {
+      "FileName": "Taima-Seattle-Seahawks-mascot-02-26-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2026/02/Taima-Seattle-Seahawks-mascot-02-26-792x523.jpg",
+      "AltText": "Taima, an augur hawk, poses for a photo in front of the College of Veterinary Medicine backdrop.",
+      "FileSize": 84716
+    },
+    {
+      "FileName": "Driskell-and-Thompson-with-pigs-02-26-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2026/02/Driskell-and-Thompson-with-pigs-02-26-792x523.jpg",
+      "AltText": "Ryan Driskell, left, an associate professor, and Sean Thompson, right, a PhD graduate student, are greeted by pigs at a farm.",
+      "FileSize": 106790
+    },
+    {
+      "FileName": "Bulls-in-snow-02-26-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2026/02/Bulls-in-snow-02-26-792x523.jpg",
+      "AltText": "Two bull elk on a snowy hillside.",
+      "FileSize": 102831
+    },
+    {
+      "FileName": "June-Morning-at-Kamiak-Butte-Ken-Carper2-792x267.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-vetmed/uploads/sites/2673/2021/10/June-Morning-at-Kamiak-Butte-Ken-Carper2-792x267.jpg",
+      "AltText": "June morning Kamiak butte",
+      "FileSize": 59146
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "etag": "\u0022fba383808b5167e414efc3958d3d87aa\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:01:52 GMT",
-    "link": "\u003Chttps://vetmed.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://vetmed.wsu.edu/wp-json/wp/v2/pages/1634\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://vetmed.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1684652Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.1819823Z"
 }

@@ -3,15 +3,16 @@
 | Field | Value |
 |-------|-------|
 | URL | https://archaeology.wsu.edu/collections/ |
-| Redirected To | https://archaeology.wsu.edu/collections/#gsc.tab=0 |
 | Title | Page not found | Museum of Anthropology | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 216.0 KB |
+| Status | ❌ 0 |
+| HTML Size | 209.8 KB |
 | Screenshots | 1 (87.5 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:45.0019499Z |
+| Captured | 2026-02-16T20:37:59.3371797Z |
 
 ## JavaScript Errors
 
@@ -20,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (87.5 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

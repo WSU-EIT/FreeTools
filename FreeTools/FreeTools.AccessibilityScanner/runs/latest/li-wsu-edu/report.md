@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
 | Total JS Errors | 5 |
-| Total JS Warnings | 5 |
+| Total JS Warnings | 1 |
 | Total HTML | 1.3 MB |
 | Total Screenshots | 1.7 MB |
+| Total Images | 1 (133.3 KB) |
+| Images Missing Alt | 0 |
 | Folder | `li-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Academic Outreach and Innovation \| L... | 1 | 1 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| Academic Outreach a... | 1 | 1 | 1 |
-| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| Academic Outreach a... | 1 | 1 | 1 |
-| ❌ | [/services/](services/report.md) | 404 | Page not found \| Academic Outreach a... | 1 | 1 | 1 |
-| ✅ | [/support/](support/report.md) | 200 | Supporting Students Who have Approved... | 0 | 0 | 1 |
-| ❌ | [/technology/](technology/report.md) | 404 | Page not found \| Academic Outreach a... | 1 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Academic Outreach and Innovation \| L... | 1 | 1 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| Academic Outreach a... | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| Academic Outreach a... | 1 | 0 | 0 |
+| ❌ | [/services/](services/report.md) | 0 | Page not found \| Academic Outreach a... | 1 | 0 | 0 |
+| ❌ | [/support/](support/report.md) | 0 | Supporting Students Who have Approved... | 0 | 0 | 0 |
+| ❌ | [/technology/](technology/report.md) | 0 | Page not found \| Academic Outreach a... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,25 +54,35 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://li.wsu.edu/
+- **Status:** 0
+
 ### /services/
 
 - **URL:** https://li.wsu.edu/services/
-- **Status:** 404
+- **Status:** 0
 
 ### /technology/
 
 - **URL:** https://li.wsu.edu/technology/
-- **Status:** 404
+- **Status:** 0
 
 ### /resources/
 
 - **URL:** https://li.wsu.edu/resources/
-- **Status:** 404
+- **Status:** 0
+
+### /support/
+
+- **URL:** https://li.wsu.edu/support/
+- **Status:** 0
 
 ### /contact/
 
 - **URL:** https://li.wsu.edu/contact/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors

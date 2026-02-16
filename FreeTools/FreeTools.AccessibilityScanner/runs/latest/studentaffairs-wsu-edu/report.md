@@ -2,32 +2,30 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 1 |
-| Pages Failed | 5 |
-| Total JS Errors | 6 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 5 |
 | Total JS Warnings | 0 |
-| Total HTML | 181.0 KB |
-| Total Screenshots | 6.0 MB |
+| Total HTML | 4.1 KB |
+| Total Screenshots | 769.7 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `studentaffairs-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 |  | 1 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/departments/](departments/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/policies/](policies/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ❌ | [/resources/](resources/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/departments/](departments/report.md) | 404 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/policies/](policies/report.md) | 0 | Page Not Found | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Page Not Found | 1 | 0 | 0 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
 
 ### [/about/](about/report.md)
 
@@ -52,6 +50,16 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://studentaffairs.wsu.edu/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded`
+
 ### /about/
 
 - **URL:** https://studentaffairs.wsu.edu/about/
@@ -65,12 +73,12 @@
 ### /resources/
 
 - **URL:** https://studentaffairs.wsu.edu/resources/
-- **Status:** 404
+- **Status:** 0
 
 ### /policies/
 
 - **URL:** https://studentaffairs.wsu.edu/policies/
-- **Status:** 404
+- **Status:** 0
 
 ### /contact/
 
@@ -79,10 +87,6 @@
 
 
 ## Pages with JavaScript Errors
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /about/ (1 errors)
 

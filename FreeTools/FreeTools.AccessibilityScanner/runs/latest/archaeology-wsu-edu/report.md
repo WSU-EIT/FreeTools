@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 1 |
-| Pages Failed | 5 |
-| Total JS Errors | 7 |
-| Total JS Warnings | 5 |
-| Total HTML | 1.3 MB |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 13 |
+| Total JS Warnings | 0 |
+| Total HTML | 1.2 MB |
 | Total Screenshots | 1.7 MB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `archaeology-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Museum of Anthropology \| Washington ... | 2 | 0 | 1 |
-| ❌ | [/collections/](collections/report.md) | 404 | Page not found \| Museum of Anthropol... | 1 | 1 | 1 |
-| ❌ | [/education/](education/report.md) | 404 | Page not found \| Museum of Anthropol... | 1 | 1 | 1 |
-| ❌ | [/exhibits/](exhibits/report.md) | 404 | Page not found \| Museum of Anthropol... | 1 | 1 | 1 |
-| ❌ | [/research/](research/report.md) | 404 | Page not found \| Museum of Anthropol... | 1 | 1 | 1 |
-| ❌ | [/visit/](visit/report.md) | 404 | Page not found \| Museum of Anthropol... | 1 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Museum of Anthropology \| Washington ... | 8 | 0 | 0 |
+| ❌ | [/collections/](collections/report.md) | 0 | Page not found \| Museum of Anthropol... | 1 | 0 | 0 |
+| ❌ | [/education/](education/report.md) | 0 | Page not found \| Museum of Anthropol... | 1 | 0 | 0 |
+| ❌ | [/exhibits/](exhibits/report.md) | 0 | Page not found \| Museum of Anthropol... | 1 | 0 | 0 |
+| ❌ | [/research/](research/report.md) | 0 | Page not found \| Museum of Anthropol... | 1 | 0 | 0 |
+| ❌ | [/visit/](visit/report.md) | 0 | Page not found \| Museum of Anthropol... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,36 +54,47 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://archaeology.wsu.edu/
+- **Status:** 0
+
 ### /collections/
 
 - **URL:** https://archaeology.wsu.edu/collections/
-- **Status:** 404
+- **Status:** 0
 
 ### /exhibits/
 
 - **URL:** https://archaeology.wsu.edu/exhibits/
-- **Status:** 404
+- **Status:** 0
 
 ### /visit/
 
 - **URL:** https://archaeology.wsu.edu/visit/
-- **Status:** 404
+- **Status:** 0
 
 ### /education/
 
 - **URL:** https://archaeology.wsu.edu/education/
-- **Status:** 404
+- **Status:** 0
 
 ### /research/
 
 - **URL:** https://archaeology.wsu.edu/research/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (2 errors)
+### / (8 errors)
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 

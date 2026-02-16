@@ -7,20 +7,34 @@
 | Status | ✅ 200 |
 | HTML Size | 45.1 KB |
 | Screenshots | 1 (164.3 KB) |
+| Images | 1 (7.4 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:15:12.2505929Z |
+| Captured | 2026-02-16T20:40:57.2347371Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (164.3 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
 ### 1. page-loaded
 
 ![page-loaded](01-page-loaded.png)
+
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [Ask_Us_button.jpg](images/Ask_Us_button.jpg) | Ask Us button. Gain access with a click. | 7.4 KB |
+
+### Gallery
+
+![Ask Us button. Gain access with a click.](images/Ask_Us_button.jpg)
 
 
 ## Files
@@ -32,3 +46,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (7.4 KB)

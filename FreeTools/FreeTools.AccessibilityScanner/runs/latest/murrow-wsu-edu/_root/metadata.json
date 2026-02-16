@@ -5,20 +5,259 @@
   "Title": "Edward R. Murrow College of Communication | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 304722,
-  "ScreenshotSizeBytes": 1862720,
+  "HtmlSizeBytes": 297705,
+  "ScreenshotSizeBytes": 521635,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 3,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1862720
+      "FileSize": 521635
+    }
+  ],
+  "ImageCount": 39,
+  "ImagesTotalSizeBytes": 5307321,
+  "ImagesMissingAlt": 3,
+  "Images": [
+    {
+      "FileName": "Experiential-Learning-Card-2.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/Experiential-Learning-Card-2.jpg",
+      "AltText": "Murrow student looking through video camera with children.",
+      "FileSize": 236906
+    },
+    {
+      "FileName": "MCSS-Card.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/MCSS-Card.jpg",
+      "AltText": "Student taking a picture with the WSU macot, Butch.",
+      "FileSize": 201360
+    },
+    {
+      "FileName": "Internationally-Ranked-Scholars.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/Internationally-Ranked-Scholars.jpg",
+      "AltText": "Hall of Achievement recipient giving speech at Symposium 2024.",
+      "FileSize": 185828
+    },
+    {
+      "FileName": "life-impacting-research-card-2.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/life-impacting-research-card-2.jpg",
+      "AltText": "Media Lab Group 2-19-25",
+      "FileSize": 127193
+    },
+    {
+      "FileName": "Tony-Thompson-Fall-2024_310_800x533.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/Tony-Thompson-Fall-2024_310_800x533.jpg",
+      "AltText": "Navigate to the Advertising Major web page.",
+      "FileSize": 153276
+    },
+    {
+      "FileName": "broadcasting-news-group-card.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/broadcasting-news-group-card.jpg",
+      "AltText": "Navigate to the Broadcast News Major web page.",
+      "FileSize": 219825
+    },
+    {
+      "FileName": "broadcast-production-card.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/broadcast-production-card.jpg",
+      "AltText": "Navigate to the Broadcast Production Major web page.",
+      "FileSize": 203461
+    },
+    {
+      "FileName": "integrated-strategic-communication-card.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/integrated-strategic-communication-card.jpg",
+      "AltText": "Navigate to the Integrated Strategic Communication Major web page.",
+      "FileSize": 102677
+    },
+    {
+      "FileName": "Bimbisar-Irom-Fall-2024_800x533.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/Bimbisar-Irom-Fall-2024_800x533.jpg",
+      "AltText": "Navigate to the Media Innovation Major web page.",
+      "FileSize": 141271
+    },
+    {
+      "FileName": "Malu-Santos-of-Claire-MT-sunset-800x533-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/Malu-Santos-of-Claire-MT-sunset-800x533-1.jpg",
+      "AltText": "Navigate to the Multimedia Journalism Major web page.",
+      "FileSize": 78714
+    },
+    {
+      "FileName": "Chelsea-w-Student-camera_800x533.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/Chelsea-w-Student-camera_800x533.jpg",
+      "AltText": "Navigate to the Public Relations Major web page.",
+      "FileSize": 132001
+    },
+    {
+      "FileName": "Student-Showcase_800x533.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/Student-Showcase_800x533.jpg",
+      "AltText": "Navigate to the Risk and Crisis Communication Major web page.",
+      "FileSize": 193280
+    },
+    {
+      "FileName": "Butch-and-students_800x533-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/Butch-and-students_800x533-1.jpg",
+      "AltText": "Navigate to the Communication Minor web page.",
+      "FileSize": 177567
+    },
+    {
+      "FileName": "COM-552_2-19-25_800x533.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/COM-552_2-19-25_800x533.jpg",
+      "AltText": "Navigate to the Health Communication \u0026 Promotion Minor web page.",
+      "FileSize": 108403
+    },
+    {
+      "FileName": "383-Grassroots-on-Greek-Row-1_800x533.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/383-Grassroots-on-Greek-Row-1_800x533.jpg",
+      "AltText": "Navigate to the Public Relations Minor web page.",
+      "FileSize": 261646
+    },
+    {
+      "FileName": "sports-communication-card.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/sports-communication-card.jpg",
+      "AltText": "Navigate to the Sports Communication Minor web page.",
+      "FileSize": 190790
+    },
+    {
+      "FileName": "students-on-a-laptop.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/students-on-a-laptop.jpg",
+      "AltText": "Navigate to the Master of Arts in Communication web page.",
+      "FileSize": 152281
+    },
+    {
+      "FileName": "two-students-on-a-laptop.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/two-students-on-a-laptop.jpg",
+      "AltText": "Navigate to the Doctor of Philosophy in Communication web page.",
+      "FileSize": 220841
+    },
+    {
+      "FileName": "graduate-certificate-strategic-communication-card.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/graduate-certificate-strategic-communication-card.jpg",
+      "AltText": "Navigate to the Strategic Communication Graduate Certificate web page.",
+      "FileSize": 124057
+    },
+    {
+      "FileName": "graduate-certificate-health-communication-and-promotion-card.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/graduate-certificate-health-communication-and-promotion-card.jpeg",
+      "AltText": "Navigate to the Health Communication \u0026 Promotion Graduate Certificate web page.",
+      "FileSize": 136858
+    },
+    {
+      "FileName": "ba-strategic-communication-card.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/ba-strategic-communication-card.jpg",
+      "AltText": "Navigate to the Strategic Communication Bachelor of Arts web page.",
+      "FileSize": 268447
+    },
+    {
+      "FileName": "ba-journalism-and-media-production-card.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/ba-journalism-and-media-production-card.jpg",
+      "AltText": "Navigate to the Journalism \u0026 Media Production Bachelor of Arts web page.",
+      "FileSize": 243571
+    },
+    {
+      "FileName": "ma-strategic-communication-card.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/ma-strategic-communication-card.jpg",
+      "AltText": "Navigate to the Strategic Communication Master of Arts web page.",
+      "FileSize": 177796
+    },
+    {
+      "FileName": "ma-health-communication-and-promotion-card.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/ma-health-communication-and-promotion-card.jpeg",
+      "AltText": "Navigate to the Health Communication \u0026 Promotion Master of Arts web page.",
+      "FileSize": 142882
+    },
+    {
+      "FileName": "image-25.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/05/girl-using-laptop-computer-from-home-while-studyin-2025-02-21-15-25-57-utc-scaled.jpg",
+      "AltText": "",
+      "FileSize": 395026
+    },
+    {
+      "FileName": "Group-Fall-2023_1200x800-792x528.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/Group-Fall-2023_1200x800-792x528.jpg",
+      "AltText": "Murrow students being silly",
+      "FileSize": 117463
+    },
+    {
+      "FileName": "murrow-badge-2.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/murrow-badge-2.jpg",
+      "AltText": "Edward R. Murrow College of Communication badge",
+      "FileSize": 76253
+    },
+    {
+      "FileName": "Roger-Nyhus-and-American-flag-1024x676-1-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2026/02/Roger-Nyhus-and-American-flag-1024x676-1-792x523.jpg",
+      "AltText": "Ambassador Roger Nyhus in front of American flag.",
+      "FileSize": 53518
+    },
+    {
+      "FileName": "IMG_4126-792x528.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2026/01/IMG_4126-792x528.jpeg",
+      "AltText": "Molly Schotzko",
+      "FileSize": 41588
+    },
+    {
+      "FileName": "Ana-Cabrera-1024x676-1-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/12/Ana-Cabrera-1024x676-1-792x523.jpg",
+      "AltText": "",
+      "FileSize": 39836
+    },
+    {
+      "FileName": "GetAttachmentThumbnail.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/12/GetAttachmentThumbnail.jpg",
+      "AltText": "Gary R. and Margaret E. Petersen",
+      "FileSize": 34079
+    },
+    {
+      "FileName": "IMG_5895-scaled-e1763417352988-792x539.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/11/IMG_5895-scaled-e1763417352988-792x539.jpeg",
+      "AltText": "Bruce Pinkleton, Jeremy Watson, Chris Riley-Tillman, Ryan Thomas",
+      "FileSize": 87923
+    },
+    {
+      "FileName": "Tricia-Raikes-1024x676-1-792x523.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/11/Tricia-Raikes-1024x676-1-792x523.jpg",
+      "AltText": "",
+      "FileSize": 57597
+    },
+    {
+      "FileName": "X-icon-black.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/X-icon-black.png",
+      "AltText": "Navigate to Murrow on X",
+      "FileSize": 13594
+    },
+    {
+      "FileName": "Facebook-icon-black.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/Facebook-icon-black.png",
+      "AltText": "Navigate to Murrow on Facebook",
+      "FileSize": 3775
+    },
+    {
+      "FileName": "YouTube-icon-black.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/YouTube-icon-black.png",
+      "AltText": "Navigate to Murrow on YouTube",
+      "FileSize": 4491
+    },
+    {
+      "FileName": "LinkedIn-icon-black.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/LinkedIn-icon-black.png",
+      "AltText": "Navigate to Murrow on LinkedIn",
+      "FileSize": 4118
+    },
+    {
+      "FileName": "TikTok-icon-black.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/TikTok-icon-black.png",
+      "AltText": "Navigate to Murrow on TikTok",
+      "FileSize": 5445
+    },
+    {
+      "FileName": "smartphone-instagram-profile-follow-murrow-social-media.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-murrow/uploads/sites/3320/2025/03/smartphone-instagram-profile-follow-murrow-social-media.png",
+      "AltText": "smartphone with Murrow college of education social media account and icons",
+      "FileSize": 191684
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.131813Z"
+  "CapturedAt": "2026-02-16T20:37:05.1339345Z"
 }

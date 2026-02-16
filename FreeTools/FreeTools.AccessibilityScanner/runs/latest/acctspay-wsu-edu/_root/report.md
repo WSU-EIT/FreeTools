@@ -4,21 +4,20 @@
 |-------|-------|
 | URL | https://acctspay.wsu.edu/ |
 | Title | Payment Services | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 61.6 KB |
+| Status | ❌ 0 |
+| HTML Size | 47.1 KB |
 | Screenshots | 1 (889.1 KB) |
-| JS Errors | 1 |
+| Images | 1 (84.3 KB) |
+| Images Missing Alt | 1 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:26.0928953Z |
-
-## JavaScript Errors
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+| Captured | 2026-02-16T20:37:04.9082807Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (889.1 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -26,6 +25,21 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [Pullman-1.jpg](images/Pullman-1.jpg) | *(none)* | 84.3 KB |
+
+### Gallery
+
+![Pullman-1.jpg](images/Pullman-1.jpg)
+
+
+### ⚠️ Images Missing Alt Text (1)
+
+- `Pullman-1.jpg` — https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3031/2022/07/Pullman-1.jpg
 
 ## Files
 
@@ -36,3 +50,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (84.3 KB)

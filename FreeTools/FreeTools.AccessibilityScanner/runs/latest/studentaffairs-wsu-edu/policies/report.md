@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://studentaffairs.wsu.edu/policies/ |
 | Title | Page Not Found |
-| Status | ❌ 404 |
+| Status | ❌ 0 |
 | HTML Size | 833 bytes |
 | Screenshots | 1 (153.9 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:16.9404075Z |
+| Captured | 2026-02-16T20:38:39.7796378Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (153.9 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

@@ -2,24 +2,26 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/4 pages OK |
+| Status | ⚠️ 0/4 pages OK |
 | Pages Scanned | 4 |
-| Pages Passed | 2 |
-| Pages Failed | 2 |
-| Total JS Errors | 13 |
+| Pages Passed | 0 |
+| Pages Failed | 4 |
+| Total JS Errors | 30 |
 | Total JS Warnings | 0 |
-| Total HTML | 238.8 KB |
-| Total Screenshots | 861.7 KB |
+| Total HTML | 204.1 KB |
+| Total Screenshots | 336.6 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `events-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Events \| Washington State University | 2 | 0 | 1 |
-| ✅ | [/calendar/](calendar/report.md) | 200 | Calendar Redirect \| Events \| Washin... | 3 | 0 | 1 |
-| ❌ | [/categories/](categories/report.md) | 404 | Page not found \| Events \| Washingto... | 4 | 0 | 1 |
-| ❌ | [/submit-event/](submit-event/report.md) | 404 | Page not found \| Events \| Washingto... | 4 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Events \| Washington State University | 19 | 0 | 0 |
+| ❌ | [/calendar/](calendar/report.md) | 0 | Calendar Redirect \| Events \| Washin... | 3 | 0 | 0 |
+| ❌ | [/categories/](categories/report.md) | 0 | Page not found \| Events \| Washingto... | 4 | 0 | 0 |
+| ❌ | [/submit-event/](submit-event/report.md) | 0 | Page not found \| Events \| Washingto... | 4 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -42,18 +44,42 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://events.wsu.edu/
+- **Status:** 0
+
+### /calendar/
+
+- **URL:** https://events.wsu.edu/calendar/
+- **Status:** 0
+
 ### /submit-event/
 
 - **URL:** https://events.wsu.edu/submit-event/
-- **Status:** 404
+- **Status:** 0
 
 ### /categories/
 
 - **URL:** https://events.wsu.edu/categories/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
+
+### / (19 errors)
+
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- ... and 9 more (see `_root/errors.log`)
 
 ### /submit-event/ (4 errors)
 
@@ -73,11 +99,6 @@
 
 - `Failed to load resource: the server responded with a status of 405 ()`
 - `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-
-### / (2 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: the server responded with a status of 405 ()`
 
 

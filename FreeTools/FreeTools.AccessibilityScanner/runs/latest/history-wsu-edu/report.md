@@ -2,32 +2,30 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 5 |
-| Pages Failed | 1 |
-| Total JS Errors | 5 |
-| Total JS Warnings | 1 |
-| Total HTML | 1.4 MB |
-| Total Screenshots | 5.8 MB |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 1 |
+| Total JS Warnings | 0 |
+| Total HTML | 1.2 MB |
+| Total Screenshots | 1.7 MB |
+| Total Images | 43 (2.6 MB) |
+| Images Missing Alt | 42 |
 | Folder | `history-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Department of History \| Washington S... | 4 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page not found \| Department of Histo... | 1 | 1 | 1 |
-| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Department of History \| W... | 0 | 0 | 1 |
-| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Assistant Positions 2016-201... | 0 | 0 | 1 |
-| ✅ | [/research/](research/report.md) | 200 | Research \| Department of History \| ... | 0 | 0 | 1 |
-| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Undergraduate, Dean Reuterdahl, prese... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | Page not found \| Department of Histo... | 1 | 0 | 0 |
+| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| Department of History \| W... | 0 | 42 | 42 |
+| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Assistant Positions 2016-201... | 0 | 0 | 0 |
+| ❌ | [/research/](research/report.md) | 0 | Research \| Department of History \| ... | 0 | 1 | 0 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Undergraduate, Dean Reuterdahl, prese... | 0 | 0 | 0 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
 
 ### [/about/](about/report.md)
 
@@ -52,20 +50,43 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://history.wsu.edu/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded`
+
 ### /about/
 
 - **URL:** https://history.wsu.edu/about/
-- **Status:** 404
+- **Status:** 0
+
+### /undergraduate/
+
+- **URL:** https://history.wsu.edu/undergraduate/
+- **Status:** 0
+
+### /graduate/
+
+- **URL:** https://history.wsu.edu/graduate/
+- **Status:** 0
+
+### /faculty/
+
+- **URL:** https://history.wsu.edu/faculty/
+- **Status:** 0
+
+### /research/
+
+- **URL:** https://history.wsu.edu/research/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
-
-### / (4 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /about/ (1 errors)
 

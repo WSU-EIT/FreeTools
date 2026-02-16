@@ -5,13 +5,15 @@
 | URL | https://visitor.wsu.edu/accommodations/ |
 | Redirected To | https://visitor.wsu.edu/accommodations/#gsc.tab=0 |
 | Title | Page not found | Brelsford WSU Visitor Center | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 221.4 KB |
+| Status | ❌ 0 |
+| HTML Size | 213.6 KB |
 | Screenshots | 1 (83.9 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:23.5693734Z |
+| Captured | 2026-02-16T20:39:10.6428268Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (83.9 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

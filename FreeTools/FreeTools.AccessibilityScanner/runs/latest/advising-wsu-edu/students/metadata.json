@@ -3,9 +3,9 @@
   "Url": "https://advising.wsu.edu/students/",
   "FinalUrl": null,
   "Title": "Students | Advising at WSU | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 119356,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 106491,
   "ScreenshotSizeBytes": 140713,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,16 +18,48 @@
       "FileSize": 140713
     }
   ],
+  "ImageCount": 6,
+  "ImagesTotalSizeBytes": 61492,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "studentforms-396x37.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-daesa/uploads/sites/634/2015/03/studentforms-396x37.png",
+      "AltText": "studentforms",
+      "FileSize": 3989
+    },
+    {
+      "FileName": "hold-list1.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-daesa/uploads/sites/634/2015/03/hold-list1.png",
+      "AltText": "hold-list",
+      "FileSize": 7022
+    },
+    {
+      "FileName": "internationalprograms.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-daesa/uploads/sites/634/2015/03/internationalprograms.png",
+      "AltText": "internationalprograms",
+      "FileSize": 14715
+    },
+    {
+      "FileName": "studentfaq.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-daesa/uploads/sites/634/2015/03/studentfaq.png",
+      "AltText": "studentfaq",
+      "FileSize": 10580
+    },
+    {
+      "FileName": "advisingpages.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-daesa/uploads/sites/634/2015/03/advisingpages.png",
+      "AltText": "advisingpages",
+      "FileSize": 15252
+    },
+    {
+      "FileName": "cancelenrollment.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-daesa/uploads/sites/634/2015/03/cancelenrollment.png",
+      "AltText": "cancelenrollment",
+      "FileSize": 9934
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:11:43 GMT",
-    "etag": "\u002279959e6cb37a82f4908b4811a77816f1\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:23:03 GMT",
-    "link": "\u003Chttps://advising.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://advising.wsu.edu/wp-json/wp/v2/pages/71\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://advising.wsu.edu/?p=71\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:11:30.0722808Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:42.7062683Z"
 }

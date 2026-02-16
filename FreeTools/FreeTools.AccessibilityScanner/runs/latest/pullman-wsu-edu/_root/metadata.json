@@ -5,8 +5,8 @@
   "Title": "Pullman Campus | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 139583,
-  "ScreenshotSizeBytes": 3831557,
+  "HtmlSizeBytes": 123121,
+  "ScreenshotSizeBytes": 2101721,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 1,
@@ -15,10 +15,105 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 3831557
+      "FileSize": 2101721
+    }
+  ],
+  "ImageCount": 15,
+  "ImagesTotalSizeBytes": 644809,
+  "ImagesMissingAlt": 3,
+  "Images": [
+    {
+      "FileName": "bull-elk-in-snow-1024x676-2.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3165/2026/02/bull-elk-in-snow-1024x676-2.jpg",
+      "AltText": "",
+      "FileSize": 193487
+    },
+    {
+      "FileName": "arthritis-photo-1024x676-1.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3165/2026/02/arthritis-photo-1024x676-1.jpg",
+      "AltText": "",
+      "FileSize": 97543
+    },
+    {
+      "FileName": "x-ray-showing-hip-pain-1024x676-1.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3165/2026/02/x-ray-showing-hip-pain-1024x676-1.jpg",
+      "AltText": "",
+      "FileSize": 104434
+    },
+    {
+      "FileName": "Chipman-Trail-BH_1626-sized-scaled-1-e1668099231760-792x866.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/3165/2022/11/Chipman-Trail-BH_1626-sized-scaled-1-e1668099231760-792x866.jpg",
+      "AltText": "Students riding bicycles down a Pullman trail.",
+      "FileSize": 132063
+    },
+    {
+      "FileName": "385273602.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385273602.jpg?width=480",
+      "AltText": "Image posted by WSUPullman to facebook",
+      "FileSize": 46057
+    },
+    {
+      "FileName": "385273602_user_image.img",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385273602_user_image",
+      "AltText": "Profile image for WSU Pullman",
+      "FileSize": 1285
+    },
+    {
+      "FileName": "385244271_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385244271_user_image.jpg?width=100",
+      "AltText": "Profile image for wsupullman",
+      "FileSize": 2523
+    },
+    {
+      "FileName": "385211718_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385211718_user_image.jpg?width=100",
+      "AltText": "Profile image for wsupullman",
+      "FileSize": 2523
+    },
+    {
+      "FileName": "385272197.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385272197.jpg?width=480",
+      "AltText": "Image posted by wsupullman to instagram",
+      "FileSize": 54019
+    },
+    {
+      "FileName": "385272197_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385272197_user_image.jpg?width=100",
+      "AltText": "Profile image for wsupullman",
+      "FileSize": 2523
+    },
+    {
+      "FileName": "picture.img",
+      "SourceUrl": "https://graph.facebook.com/133018306730783/picture",
+      "AltText": "Profile image for WSU Pullman",
+      "FileSize": 1285
+    },
+    {
+      "FileName": "385190975_user_image.jpg",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385190975_user_image.jpg?width=100",
+      "AltText": "Profile image for wsupullman",
+      "FileSize": 2523
+    },
+    {
+      "FileName": "cxupnNSr_normal.jpg",
+      "SourceUrl": "https://pbs.twimg.com/profile_images/1438135903071858694/cxupnNSr_normal.jpg",
+      "AltText": "Profile image for WSU Pullman",
+      "FileSize": 1959
+    },
+    {
+      "FileName": "182239.webp",
+      "SourceUrl": "https://curator-assets.b-cdn.net/source_default_image/182239.webp",
+      "AltText": "Profile image for ",
+      "FileSize": 1300
+    },
+    {
+      "FileName": "385262531_user_image.img",
+      "SourceUrl": "https://curator-assets.b-cdn.net/bb776265-563a-4123-a3a3-801c974cd238/385262531_user_image",
+      "AltText": "Profile image for WSU Pullman",
+      "FileSize": 1285
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.1525262Z"
+  "CapturedAt": "2026-02-16T20:37:05.1514166Z"
 }

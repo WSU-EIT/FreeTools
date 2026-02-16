@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 6/7 pages OK |
+| Status | ⚠️ 1/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 6 |
-| Pages Failed | 1 |
-| Total JS Errors | 3 |
-| Total JS Warnings | 1 |
+| Pages Passed | 1 |
+| Pages Failed | 6 |
+| Total JS Errors | 6 |
+| Total JS Warnings | 0 |
 | Total HTML | 1.7 MB |
-| Total Screenshots | 6.3 MB |
+| Total Screenshots | 5.6 MB |
+| Total Images | 63 (3.4 MB) |
+| Images Missing Alt | 38 |
 | Folder | `psychology-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Department of Psychology \| Washingto... | 2 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About \| Department of Psychology \| ... | 0 | 0 | 1 |
-| ✅ | [/clinic/](clinic/report.md) | 200 | PhD in Clinical Psychology \| Departm... | 0 | 0 | 1 |
-| ✅ | [/faculty/](faculty/report.md) | 200 | Faculty \| Department of Psychology \... | 0 | 0 | 1 |
-| ✅ | [/graduate/](graduate/report.md) | 200 | Apply for Admissions \| Department of... | 0 | 0 | 1 |
-| ✅ | [/research/](research/report.md) | 200 | Research \| Department of Psychology ... | 0 | 0 | 1 |
-| ❌ | [/undergraduate/](undergraduate/report.md) | 404 | Page not found \| Department of Psych... | 1 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Department of Psychology \| Washingto... | 3 | 5 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | About \| Department of Psychology \| ... | 0 | 1 | 0 |
+| ✅ | [/clinic/](clinic/report.md) | 200 | PhD in Clinical Psychology \| Departm... | 0 | 0 | 0 |
+| ❌ | [/faculty/](faculty/report.md) | 0 | Faculty \| Department of Psychology \... | 0 | 37 | 37 |
+| ❌ | [/graduate/](graduate/report.md) | 0 | Apply for Admissions \| Department of... | 0 | 0 | 0 |
+| ❌ | [/research/](research/report.md) | 0 | Research \| Department of Psychology ... | 0 | 20 | 1 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Page not found \| Department of Psych... | 3 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -57,22 +59,50 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://psychology.wsu.edu/
+- **Status:** 0
+
+### /about/
+
+- **URL:** https://psychology.wsu.edu/about/
+- **Status:** 0
+
 ### /undergraduate/
 
 - **URL:** https://psychology.wsu.edu/undergraduate/
-- **Status:** 404
+- **Status:** 0
+
+### /graduate/
+
+- **URL:** https://psychology.wsu.edu/graduate/
+- **Status:** 0
+
+### /research/
+
+- **URL:** https://psychology.wsu.edu/research/
+- **Status:** 0
+
+### /faculty/
+
+- **URL:** https://psychology.wsu.edu/faculty/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (2 errors)
+### / (3 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
-### /undergraduate/ (1 errors)
+### /undergraduate/ (3 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 
 ---

@@ -5,16 +5,19 @@
 | URL | https://its.wsu.edu/information-security-services/ |
 | Title | Office of Information Security and Assurance | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 231.1 KB |
+| HTML Size | 231.2 KB |
 | Screenshots | 1 (876.4 KB) |
+| Images | 1 (400.7 KB) |
+| Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:15:08.6871810Z |
+| Captured | 2026-02-16T20:40:38.9211925Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (876.4 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -22,6 +25,21 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [image-1.jpg](images/image-1.jpg) | *(none)* | 400.7 KB |
+
+### Gallery
+
+![image-1.jpg](images/image-1.jpg)
+
+
+### ⚠️ Images Missing Alt Text (1)
+
+- `image-1.jpg` — https://wpcdn.web.wsu.edu/wp-its/uploads/sites/2898/2026/01/Classroom-Photography-March-2024-Phillip-Morgan-_-042-1900x1267-1.jpg
 
 ## Files
 
@@ -32,3 +50,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (400.7 KB)

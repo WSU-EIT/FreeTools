@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://hrs.wsu.edu/employment/ |
 | Title | Page not found – Human Resource Services, Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 68.0 KB |
+| Status | ❌ 0 |
+| HTML Size | 66.5 KB |
 | Screenshots | 1 (62.7 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:30.1544786Z |
+| Captured | 2026-02-16T20:38:19.3910332Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (62.7 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

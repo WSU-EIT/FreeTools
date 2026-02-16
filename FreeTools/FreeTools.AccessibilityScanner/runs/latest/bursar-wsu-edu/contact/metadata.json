@@ -3,10 +3,10 @@
   "Url": "https://bursar.wsu.edu/contact/",
   "FinalUrl": "https://bursar.wsu.edu/contact-information/",
   "Title": "Contact Information | Bursar | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 80747,
-  "ScreenshotSizeBytes": 361359,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 71225,
+  "ScreenshotSizeBytes": 323648,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,22 +15,51 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 361359
+      "FileSize": 323648
+    }
+  ],
+  "ImageCount": 6,
+  "ImagesTotalSizeBytes": 2858329,
+  "ImagesMissingAlt": 6,
+  "Images": [
+    {
+      "FileName": "blank-profile-picture.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2869/2023/01/blank-profile-picture.jpg",
+      "AltText": "",
+      "FileSize": 6031
+    },
+    {
+      "FileName": "Denise-Mahnkey-scaled-e1673045596931.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2869/2023/01/Denise-Mahnkey-scaled-e1673045596931.jpg",
+      "AltText": "",
+      "FileSize": 440404
+    },
+    {
+      "FileName": "Kathy-King-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2869/2023/05/Kathy-King-scaled.jpg",
+      "AltText": "",
+      "FileSize": 655283
+    },
+    {
+      "FileName": "Shawn-Druffel-scaled-e1673045653169.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2869/2023/01/Shawn-Druffel-scaled-e1673045653169.jpg",
+      "AltText": "",
+      "FileSize": 424793
+    },
+    {
+      "FileName": "Zee-Zepeda-scaled-e1683672082786.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2869/2023/05/Zee-Zepeda-scaled-e1683672082786.jpg",
+      "AltText": "",
+      "FileSize": 864945
+    },
+    {
+      "FileName": "Shane-Taylor-scaled-e1673045784831.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2869/2023/01/Shane-Taylor-scaled-e1673045784831.jpg",
+      "AltText": "",
+      "FileSize": 466873
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:06 GMT",
-    "etag": "\u0022b75a0bbbb49f5f222f39b0e57983a187\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:14:06 GMT",
-    "link": "\u003Chttps://bursar.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://bursar.wsu.edu/wp-json/wp/v2/pages/1842\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://bursar.wsu.edu/?p=1842\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://bursar.wsu.edu",
-    "x-tec-api-root": "https://bursar.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:14:04.2861367Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:11.1008823Z"
 }

@@ -8,20 +8,46 @@
 | Status | ✅ 200 |
 | HTML Size | 127.9 KB |
 | Screenshots | 1 (210.3 KB) |
+| Images | 5 (50.6 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:12.0069412Z |
+| Captured | 2026-02-16T20:40:39.3037242Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (210.3 KB)
+- Downloaded 5 images to /images/
 
 ## Screenshots
 
 ### 1. page-loaded
 
 ![page-loaded](01-page-loaded.png)
+
+
+## Page Images (5)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [WSU-TC-lockup-horz-4c_WEB-01.png](images/WSU-TC-lockup-horz-4c_WEB-01.png) | Logo | 12.6 KB |
+| 2 | [WSU-TC-lockup-horz-rev_WEB_Spaced_larger-1.png](images/WSU-TC-lockup-horz-rev_WEB_Spaced_larger-1.png) | Logo | 7.3 KB |
+| 3 | [WSU-TC-lockup-horz-4c_WEB_Spaced-01.png](images/WSU-TC-lockup-horz-4c_WEB_Spaced-01.png) | Logo | 12.8 KB |
+| 4 | [WSU-TC-lockup-horz-rev_WEB_Spaced_Sticky.png](images/WSU-TC-lockup-horz-rev_WEB_Spaced_Sticky.png) | Logo | 2.1 KB |
+| 5 | [WSU-TC-lockup-vert-rev_WEB-01.png](images/WSU-TC-lockup-vert-rev_WEB-01.png) | Logo | 15.9 KB |
+
+### Gallery
+
+![Logo](images/WSU-TC-lockup-horz-4c_WEB-01.png)
+
+![Logo](images/WSU-TC-lockup-horz-rev_WEB_Spaced_larger-1.png)
+
+![Logo](images/WSU-TC-lockup-horz-4c_WEB_Spaced-01.png)
+
+![Logo](images/WSU-TC-lockup-horz-rev_WEB_Spaced_Sticky.png)
+
+![Logo](images/WSU-TC-lockup-vert-rev_WEB-01.png)
 
 
 ## Files
@@ -33,3 +59,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 5 page images (50.6 KB)

@@ -3,29 +3,40 @@
 | Field | Value |
 |-------|-------|
 | URL | https://aapi.wsu.edu/ |
-| Title | APIDA Student Center |
-| Status | ✅ 200 |
-| HTML Size | 57.5 KB |
-| Screenshots | 1 (380.7 KB) |
+| Title | (none) |
+| Status | ❌ 0 |
+| HTML Size | 0 bytes |
+| Screenshots | 0 (0 bytes) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:26.0929972Z |
+| Captured | 2026-02-16T20:37:04.9610385Z |
+
+## Error
+
+```
+Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+```
 
 ## Actions
 
-- Screenshot #1: page-loaded (380.7 KB)
+- Scan aborted due to error
 
 ## Screenshots
 
-### 1. page-loaded
+*No screenshots captured.*
 
-![page-loaded](01-page-loaded.png)
+## Page Images (0)
 
+*No images found on page.*
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (380.7 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

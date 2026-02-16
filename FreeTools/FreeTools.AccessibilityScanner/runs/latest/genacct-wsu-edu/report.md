@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
 | Total JS Errors | 7 |
 | Total JS Warnings | 0 |
-| Total HTML | 361.6 KB |
-| Total Screenshots | 1.7 MB |
+| Total HTML | 306.9 KB |
+| Total Screenshots | 1.3 MB |
+| Total Images | 6 (1.5 MB) |
+| Images Missing Alt | 0 |
 | Folder | `genacct-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | University Accounting \| Washington S... | 3 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| University Accounting \... | 0 | 0 | 1 |
-| ❌ | [/forms/](forms/report.md) | 404 | Page not found \| University Accounti... | 1 | 0 | 1 |
-| ❌ | [/policies/](policies/report.md) | 404 | Page not found \| University Accounti... | 1 | 0 | 1 |
-| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| University Accounti... | 1 | 0 | 1 |
-| ❌ | [/services/](services/report.md) | 404 | Page not found \| University Accounti... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | University Accounting \| Washington S... | 3 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| University Accounting \... | 0 | 6 | 0 |
+| ❌ | [/forms/](forms/report.md) | 0 | Page not found \| University Accounti... | 1 | 0 | 0 |
+| ❌ | [/policies/](policies/report.md) | 0 | Page not found \| University Accounti... | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| University Accounti... | 1 | 0 | 0 |
+| ❌ | [/services/](services/report.md) | 0 | Page not found \| University Accounti... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,25 +54,35 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://genacct.wsu.edu/
+- **Status:** 0
+
 ### /services/
 
 - **URL:** https://genacct.wsu.edu/services/
-- **Status:** 404
+- **Status:** 0
 
 ### /forms/
 
 - **URL:** https://genacct.wsu.edu/forms/
-- **Status:** 404
+- **Status:** 0
 
 ### /policies/
 
 - **URL:** https://genacct.wsu.edu/policies/
-- **Status:** 404
+- **Status:** 0
 
 ### /resources/
 
 - **URL:** https://genacct.wsu.edu/resources/
-- **Status:** 404
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://genacct.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
@@ -79,7 +91,7 @@
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_CONNECTION_TIMED_OUT`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /services/ (1 errors)
 

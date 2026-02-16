@@ -3,10 +3,10 @@
   "Url": "https://ehs.wsu.edu/contact/",
   "FinalUrl": "https://ehs.wsu.edu/contact-information/",
   "Title": "Contact Us | Environmental Health \u0026 Safety | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 260841,
-  "ScreenshotSizeBytes": 1199728,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 252713,
+  "ScreenshotSizeBytes": 754030,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,22 +15,75 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1199728
+      "FileSize": 754030
+    }
+  ],
+  "ImageCount": 10,
+  "ImagesTotalSizeBytes": 2807224,
+  "ImagesMissingAlt": 9,
+  "Images": [
+    {
+      "FileName": "image-1.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/10/image-1.png",
+      "AltText": "",
+      "FileSize": 227595
+    },
+    {
+      "FileName": "image.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/10/image.png",
+      "AltText": "",
+      "FileSize": 229925
+    },
+    {
+      "FileName": "image-7.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/10/image-7.png",
+      "AltText": "",
+      "FileSize": 242883
+    },
+    {
+      "FileName": "image-5.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/10/image-5.png",
+      "AltText": "",
+      "FileSize": 347749
+    },
+    {
+      "FileName": "image-6.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/10/image-6.png",
+      "AltText": "",
+      "FileSize": 275256
+    },
+    {
+      "FileName": "image-8.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/10/image-8.png",
+      "AltText": "",
+      "FileSize": 317463
+    },
+    {
+      "FileName": "Matt-McKibbin-photo.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2016/07/Matt-McKibbin-photo.png",
+      "AltText": "matt-mckibbin-photo",
+      "FileSize": 51230
+    },
+    {
+      "FileName": "image-3.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/10/image-3.png",
+      "AltText": "",
+      "FileSize": 229361
+    },
+    {
+      "FileName": "image-9-792x792.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/10/image-9-792x792.png",
+      "AltText": "",
+      "FileSize": 809499
+    },
+    {
+      "FileName": "Jessica-Profile-792x799.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/2959/2025/06/Jessica-Profile-792x799.jpg",
+      "AltText": "",
+      "FileSize": 76263
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:11 GMT",
-    "etag": "\u0022077a5d87701cbd1ffd457a86074a6092\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:14:11 GMT",
-    "link": "\u003Chttps://ehs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ehs.wsu.edu/wp-json/wp/v2/pages/500\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ehs.wsu.edu/?p=500\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://ehs.wsu.edu",
-    "x-tec-api-root": "https://ehs.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:14:05.960681Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:55.2002633Z"
 }

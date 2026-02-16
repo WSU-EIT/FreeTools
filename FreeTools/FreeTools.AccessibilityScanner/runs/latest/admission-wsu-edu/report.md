@@ -2,28 +2,30 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/8 pages OK |
+| Status | ⚠️ 2/8 pages OK |
 | Pages Scanned | 8 |
-| Pages Passed | 5 |
-| Pages Failed | 3 |
-| Total JS Errors | 6 |
+| Pages Passed | 2 |
+| Pages Failed | 6 |
+| Total JS Errors | 4 |
 | Total JS Warnings | 3 |
-| Total HTML | 801.8 KB |
-| Total Screenshots | 7.8 MB |
+| Total HTML | 693.9 KB |
+| Total Screenshots | 5.5 MB |
+| Total Images | 16 (4.3 MB) |
+| Images Missing Alt | 3 |
 | Folder | `admission-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Admissions \| Washington State Univer... | 4 | 1 | 1 |
-| ✅ | [/apply/](apply/report.md) | 200 | Apply \| Admissions \| Washington Sta... | 0 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Connect \| Admissions \| Washington S... | 0 | 0 | 1 |
-| ❌ | [/costs-aid/](costs-aid/report.md) | 404 | Page not found \| Admissions \| Washi... | 1 | 0 | 1 |
-| ❌ | [/freshman/](freshman/report.md) | 404 | Page not found \| Admissions \| Washi... | 1 | 0 | 1 |
-| ✅ | [/international/](international/report.md) | 200 | International Students \| Admissions ... | 0 | 0 | 1 |
-| ✅ | [/transfer/](transfer/report.md) | 200 | Transfer Students \| Admissions \| Wa... | 0 | 0 | 1 |
-| ✅ | [/visit/](visit/report.md) | 200 | Visit & Explore \| Admissions \| Wash... | 0 | 2 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Admissions \| Washington State Univer... | 2 | 5 | 0 |
+| ❌ | [/apply/](apply/report.md) | 0 | Apply \| Admissions \| Washington Sta... | 0 | 1 | 0 |
+| ✅ | [/contact/](contact/report.md) | 200 | Connect \| Admissions \| Washington S... | 0 | 0 | 0 |
+| ❌ | [/costs-aid/](costs-aid/report.md) | 404 | Page not found \| Admissions \| Washi... | 1 | 0 | 0 |
+| ❌ | [/freshman/](freshman/report.md) | 0 | Page not found \| Admissions \| Washi... | 1 | 0 | 0 |
+| ✅ | [/international/](international/report.md) | 200 | International Students \| Admissions ... | 0 | 0 | 0 |
+| ❌ | [/transfer/](transfer/report.md) | 0 | Transfer Students \| Admissions \| Wa... | 0 | 1 | 1 |
+| ❌ | [/visit/](visit/report.md) | 0 | Visit & Explore \| Admissions \| Wash... | 0 | 9 | 2 |
 
 ## Page Screenshots
 
@@ -67,10 +69,25 @@
 - **URL:** https://admission.wsu.edu/
 - **Status:** 0
 
+### /apply/
+
+- **URL:** https://admission.wsu.edu/apply/
+- **Status:** 0
+
+### /visit/
+
+- **URL:** https://admission.wsu.edu/visit/
+- **Status:** 0
+
 ### /freshman/
 
 - **URL:** https://admission.wsu.edu/freshman/
-- **Status:** 404
+- **Status:** 0
+
+### /transfer/
+
+- **URL:** https://admission.wsu.edu/transfer/
+- **Status:** 0
 
 ### /costs-aid/
 
@@ -80,12 +97,10 @@
 
 ## Pages with JavaScript Errors
 
-### / (4 errors)
+### / (2 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_TIMED_OUT`
 
 ### /freshman/ (1 errors)
 

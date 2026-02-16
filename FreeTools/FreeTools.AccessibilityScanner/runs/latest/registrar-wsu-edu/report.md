@@ -2,34 +2,36 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/14 pages OK |
+| Status | ⚠️ 0/14 pages OK |
 | Pages Scanned | 14 |
-| Pages Passed | 1 |
-| Pages Failed | 13 |
+| Pages Passed | 0 |
+| Pages Failed | 14 |
 | Total JS Errors | 2 |
-| Total JS Warnings | 13 |
-| Total HTML | 8.7 MB |
-| Total Screenshots | 12.1 MB |
+| Total JS Warnings | 10 |
+| Total HTML | 7.9 MB |
+| Total Screenshots | 3.4 MB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `registrar-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Office of the Registrar | 2 | 1 | 1 |
-| ✅ | [/academic-calendar/](academic-calendar/report.md) | 200 |  | 0 | 0 | 1 |
-| ❌ | [/academic-regulations/](academic-regulations/report.md) | 0 | Academic Regulations \| Office of the... | 0 | 1 | 1 |
-| ❌ | [/change-of-campus/](change-of-campus/report.md) | 0 | Undergraduate Change of Campus Form \... | 0 | 1 | 1 |
-| ❌ | [/contact-us/](contact-us/report.md) | 0 | Contact Us \| Office of the Registrar | 0 | 1 | 1 |
-| ❌ | [/grades-and-gpa/](grades-and-gpa/report.md) | 0 | Grades and GPA \| Office of the Regis... | 0 | 1 | 1 |
-| ❌ | [/how-to-videos/](how-to-videos/report.md) | 0 | How-To Videos \| Office of the Registrar | 0 | 1 | 1 |
-| ❌ | [/petitions/](petitions/report.md) | 0 | Academic Calendar Petitions \| Office... | 0 | 1 | 1 |
-| ❌ | [/sessions/](sessions/report.md) | 0 | Sessions \| Office of the Registrar | 0 | 1 | 1 |
-| ❌ | [/special-enrollment/](special-enrollment/report.md) | 0 | Special Enrollment \| Office of the R... | 0 | 1 | 1 |
-| ❌ | [/staff-forms/](staff-forms/report.md) | 0 | Staff Forms \| Office of the Registrar | 0 | 1 | 1 |
-| ❌ | [/student-forms/](student-forms/report.md) | 0 | Student Forms \| Office of the Registrar | 0 | 1 | 1 |
-| ❌ | [/term-withdrawal/](term-withdrawal/report.md) | 0 | Term Withdrawal \| Office of the Regi... | 0 | 1 | 1 |
-| ❌ | [/tuition-adjustments/](tuition-adjustments/report.md) | 0 | Tuition Adjustments \| Office of the ... | 0 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Office of the Registrar | 1 | 0 | 0 |
+| ❌ | [/academic-calendar/](academic-calendar/report.md) | 0 |  | 0 | 0 | 0 |
+| ❌ | [/academic-regulations/](academic-regulations/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/change-of-campus/](change-of-campus/report.md) | 0 | Undergraduate Change of Campus Form \... | 0 | 0 | 0 |
+| ❌ | [/contact-us/](contact-us/report.md) | 0 | Contact Us \| Office of the Registrar | 0 | 0 | 0 |
+| ❌ | [/grades-and-gpa/](grades-and-gpa/report.md) | 0 | Grades and GPA \| Office of the Regis... | 0 | 0 | 0 |
+| ❌ | [/how-to-videos/](how-to-videos/report.md) | 0 | How-To Videos \| Office of the Registrar | 0 | 0 | 0 |
+| ❌ | [/petitions/](petitions/report.md) | 0 | Academic Calendar Petitions \| Office... | 0 | 0 | 0 |
+| ❌ | [/sessions/](sessions/report.md) | 0 | Sessions \| Office of the Registrar | 1 | 0 | 0 |
+| ❌ | [/special-enrollment/](special-enrollment/report.md) | 0 | Special Enrollment \| Office of the R... | 0 | 0 | 0 |
+| ❌ | [/staff-forms/](staff-forms/report.md) | 0 | Staff Forms \| Office of the Registrar | 0 | 0 | 0 |
+| ❌ | [/student-forms/](student-forms/report.md) | 0 | Student Forms \| Office of the Registrar | 0 | 0 | 0 |
+| ❌ | [/term-withdrawal/](term-withdrawal/report.md) | 0 | Term Withdrawal \| Office of the Regi... | 0 | 0 | 0 |
+| ❌ | [/tuition-adjustments/](tuition-adjustments/report.md) | 0 | Tuition Adjustments \| Office of the ... | 0 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -40,10 +42,6 @@
 ### [/academic-calendar/](academic-calendar/report.md)
 
 ![/academic-calendar/](academic-calendar/01-page-loaded.png)
-
-### [/academic-regulations/](academic-regulations/report.md)
-
-![/academic-regulations/](academic-regulations/01-page-loaded.png)
 
 ### [/change-of-campus/](change-of-campus/report.md)
 
@@ -97,6 +95,11 @@
 - **URL:** https://registrar.wsu.edu/
 - **Status:** 0
 
+### /academic-calendar/
+
+- **URL:** https://registrar.wsu.edu/academic-calendar/
+- **Status:** 0
+
 ### /sessions/
 
 - **URL:** https://registrar.wsu.edu/sessions/
@@ -106,6 +109,10 @@
 
 - **URL:** https://registrar.wsu.edu/academic-regulations/
 - **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
 
 ### /contact-us/
 
@@ -160,9 +167,12 @@
 
 ## Pages with JavaScript Errors
 
-### / (2 errors)
+### / (1 errors)
 
 - `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+
+### /sessions/ (1 errors)
+
 - `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 
 

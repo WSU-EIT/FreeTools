@@ -2,25 +2,27 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 3/5 pages OK |
+| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 3 |
-| Pages Failed | 2 |
+| Pages Passed | 0 |
+| Pages Failed | 5 |
 | Total JS Errors | 2 |
 | Total JS Warnings | 4 |
 | Total HTML | 1.2 MB |
-| Total Screenshots | 5.3 MB |
+| Total Screenshots | 4.0 MB |
+| Total Images | 55 (8.6 MB) |
+| Images Missing Alt | 28 |
 | Folder | `foundation-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | WSU Foundation \| Washington State Un... | 1 | 2 | 1 |
-| ❌ | [/contact/](contact/report.md) | 404 | Page not found \| WSU Foundation \| W... | 1 | 1 | 1 |
-| ✅ | [/give/](give/report.md) | 200 | Make A Gift Today! \| WSU Foundation ... | 0 | 1 | 1 |
-| ✅ | [/impact/](impact/report.md) | 200 | Impact Report 2025 \| WSU Foundation ... | 0 | 0 | 1 |
-| ✅ | [/ways-to-give/](ways-to-give/report.md) | 200 | Ways to Give \| WSU Foundation \| Was... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Foundation \| Washington State Un... | 1 | 12 | 5 |
+| ❌ | [/contact/](contact/report.md) | 0 | Page not found \| WSU Foundation \| W... | 1 | 0 | 0 |
+| ❌ | [/give/](give/report.md) | 0 | Make A Gift Today! \| WSU Foundation ... | 0 | 9 | 3 |
+| ❌ | [/impact/](impact/report.md) | 0 | Impact Report 2025 \| WSU Foundation ... | 0 | 20 | 14 |
+| ❌ | [/ways-to-give/](ways-to-give/report.md) | 0 | Ways to Give \| WSU Foundation \| Was... | 0 | 14 | 6 |
 
 ## Page Screenshots
 
@@ -52,10 +54,25 @@
 - **URL:** https://foundation.wsu.edu/
 - **Status:** 0
 
+### /give/
+
+- **URL:** https://foundation.wsu.edu/give/
+- **Status:** 0
+
+### /ways-to-give/
+
+- **URL:** https://foundation.wsu.edu/ways-to-give/
+- **Status:** 0
+
+### /impact/
+
+- **URL:** https://foundation.wsu.edu/impact/
+- **Status:** 0
+
 ### /contact/
 
 - **URL:** https://foundation.wsu.edu/contact/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors

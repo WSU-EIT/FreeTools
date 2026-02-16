@@ -5,20 +5,49 @@
   "Title": "WSU Army ROTC | Washington State University",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 71938,
-  "ScreenshotSizeBytes": 924182,
+  "HtmlSizeBytes": 65513,
+  "ScreenshotSizeBytes": 215320,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 2,
+  "ConsoleErrorCount": 4,
   "ConsoleWarningCount": 3,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 924182
+      "FileSize": 215320
+    }
+  ],
+  "ImageCount": 4,
+  "ImagesTotalSizeBytes": 387753,
+  "ImagesMissingAlt": 4,
+  "Images": [
+    {
+      "FileName": "Cougar_BN_front-1-792x601.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/Cougar_BN_front-1-792x601.png",
+      "AltText": "",
+      "FileSize": 358916
+    },
+    {
+      "FileName": "instagram.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/instagram.jpg",
+      "AltText": "",
+      "FileSize": 7937
+    },
+    {
+      "FileName": "f_logo_RGB-Hex-Blue_512-396x396.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/f_logo_RGB-Hex-Blue_512-396x396.png",
+      "AltText": "",
+      "FileSize": 11524
+    },
+    {
+      "FileName": "googlemaps-1-396x396.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-wpsites/uploads/sites/2710/2021/08/googlemaps-1-396x396.jpg",
+      "AltText": "",
+      "FileSize": 9376
     }
   ],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.140994Z"
+  "CapturedAt": "2026-02-16T20:37:05.1526146Z"
 }

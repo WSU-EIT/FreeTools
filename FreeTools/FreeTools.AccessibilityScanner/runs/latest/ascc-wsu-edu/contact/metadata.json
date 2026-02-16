@@ -5,8 +5,8 @@
   "Title": "Page not found \u2013 Academic Success \u0026 Career Center \u2013 Washington State University",
   "StatusCode": 404,
   "Success": false,
-  "HtmlSizeBytes": 134661,
-  "ScreenshotSizeBytes": 144780,
+  "HtmlSizeBytes": 134659,
+  "ScreenshotSizeBytes": 144149,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,132 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 144780
+      "FileSize": 144149
+    }
+  ],
+  "ImageCount": 20,
+  "ImagesTotalSizeBytes": 220397,
+  "ImagesMissingAlt": 18,
+  "Images": [
+    {
+      "FileName": "wsu_logo.svg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/themes/uConnect_WSU/images/wsu_logo.svg",
+      "AltText": "Academic Success \u0026 Career Center | Washington State University",
+      "FileSize": 19541
+    },
+    {
+      "FileName": "avatar-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1711796/avatar-200x200-center-top.jpg?v=1645815229",
+      "AltText": "",
+      "FileSize": 9810
+    },
+    {
+      "FileName": "profile-picture-1648239456-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1711797/profile-picture-1648239456-200x200-center-top.jpg?v=1648239456",
+      "AltText": "",
+      "FileSize": 8866
+    },
+    {
+      "FileName": "profile-picture-1726763043-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/117143/profile-picture-1726763043-200x200-center-top.jpg?v=1726763043",
+      "AltText": "",
+      "FileSize": 8664
+    },
+    {
+      "FileName": "profile-picture-1761350108-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/6136152/profile-picture-1761350108-200x200-center-top.jpg?v=1761350108",
+      "AltText": "",
+      "FileSize": 10521
+    },
+    {
+      "FileName": "profile-picture-1680191168-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/2874995/profile-picture-1680191168-200x200-center-top.jpg?v=1680191168",
+      "AltText": "",
+      "FileSize": 15114
+    },
+    {
+      "FileName": "profile-picture-1709587484-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/4255848/profile-picture-1709587484-200x200-center-top.jpg?v=1709587484",
+      "AltText": "",
+      "FileSize": 9079
+    },
+    {
+      "FileName": "profile-picture-1648246964-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1810502/profile-picture-1648246964-200x200-center-top.jpg?v=1648246964",
+      "AltText": "",
+      "FileSize": 9521
+    },
+    {
+      "FileName": "avatar-200x200-center-top-1.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1795330/avatar-200x200-center-top.jpg?v=1646427416",
+      "AltText": "",
+      "FileSize": 6392
+    },
+    {
+      "FileName": "profile-picture-1647383470-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1711799/profile-picture-1647383470-200x200-center-top.jpg?v=1647383470",
+      "AltText": "",
+      "FileSize": 12500
+    },
+    {
+      "FileName": "profile-picture-1648069477-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1810501/profile-picture-1648069477-200x200-center-top.jpg?v=1648069477",
+      "AltText": "",
+      "FileSize": 14849
+    },
+    {
+      "FileName": "profile-picture-1696452744-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/3648581/profile-picture-1696452744-200x200-center-top.jpg?v=1696452744",
+      "AltText": "",
+      "FileSize": 12672
+    },
+    {
+      "FileName": "profile-picture-1648072321-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1810504/profile-picture-1648072321-200x200-center-top.jpg?v=1648072321",
+      "AltText": "",
+      "FileSize": 8744
+    },
+    {
+      "FileName": "profile-picture-1737668039-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/5367433/profile-picture-1737668039-200x200-center-top.jpg?v=1737668039",
+      "AltText": "",
+      "FileSize": 9458
+    },
+    {
+      "FileName": "profile-picture-1648835344-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1794520/profile-picture-1648835344-200x200-center-top.jpg?v=1648835344",
+      "AltText": "",
+      "FileSize": 16932
+    },
+    {
+      "FileName": "profile-picture-1677012702-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1810505/profile-picture-1677012702-200x200-center-top.jpg?v=1677012702",
+      "AltText": "",
+      "FileSize": 10255
+    },
+    {
+      "FileName": "profile-picture-1739910194-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/2329142/profile-picture-1739910194-200x200-center-top.jpg?v=1739910194",
+      "AltText": "",
+      "FileSize": 10605
+    },
+    {
+      "FileName": "profile-picture-1648841492-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1794284/profile-picture-1648841492-200x200-center-top.jpg?v=1648841492",
+      "AltText": "",
+      "FileSize": 12386
+    },
+    {
+      "FileName": "profile-picture-1675465285-200x200-center-top.jpg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/uploads/users/1794283/profile-picture-1675465285-200x200-center-top.jpg?v=1675465285",
+      "AltText": "",
+      "FileSize": 9263
+    },
+    {
+      "FileName": "powered-by-uconnect-badge.svg",
+      "SourceUrl": "https://cdn-ascc.wsu.edu/wp-content/themes/uConnect/images/powered-by-uconnect-badge.svg",
+      "AltText": "Powered by uConnect",
+      "FileSize": 5225
     }
   ],
   "ErrorMessage": null,
@@ -24,7 +149,7 @@
     "content-encoding": "br",
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.uconnectlabs.com https://*.gouconnect.com https://*.instructure.com https://wsu.edu https://*.wsu.edu;frame-src \u0027self\u0027 https://jobscan.co https://wsu.edu https://*.wsu.edu https://*.uconnectlabs.com https://*.candidcareer.com https://*.youtube.com/embed/ https://player.vimeo.com/video/ https://fast.wistia.net/embed/ https://cdnapisec.kaltura.com/p/ https://videopress.com https://www.tiktok.com https://www.loom.com https://embed.ted.com https://w.soundcloud.com https://open.spotify.com https://creators.spotify.com https://embed.podcasts.apple.com https://*.pinterest.com https://giphy.com https://www.canva.com/ https://*.google.com https://*.googletagmanager.com https://*.doubleclick.net https://*.qualtrics.com https://app.powerbi.com https://public.tableau.com https://www.instagram.com https://snapwidget.com https://www.facebook.com https://airtable.com https://*.typeform.com https://e.issuu.com https://forms.monday.com https://scribehow.com https://service.force.com https://forms.cloud.microsoft https://*.jobscan.co https://student.interstride.com https://www.careerspots.com https://mongoose.botpress.cloud;",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:12:49 GMT",
+    "date": "Mon, 16 Feb 2026 20:39:49 GMT",
     "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
     "link": "\u003Chttps://ascc.wsu.edu/api/\u003E; rel=\u0022https://api.w.org/\u0022",
     "referrer-policy": "strict-origin-when-cross-origin",
@@ -33,7 +158,7 @@
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SAMEORIGIN",
-    "x-gateway-request-id": "9cb48b905629395adaf4770e3e7079da"
+    "x-gateway-request-id": "0c19653fe1572dcb2919331b9043ac65"
   },
-  "CapturedAt": "2026-02-16T20:12:45.2095064Z"
+  "CapturedAt": "2026-02-16T20:39:48.7460356Z"
 }

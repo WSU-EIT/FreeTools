@@ -4,29 +4,40 @@
 |-------|-------|
 | URL | https://transportation.wsu.edu/transit/ |
 | Redirected To | https://transportation.wsu.edu/transportation-options/transit-options/ |
-| Title | Transit Options | Transportation Services | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 66.2 KB |
-| Screenshots | 1 (647.0 KB) |
+| Title | (none) |
+| Status | ❌ 0 |
+| HTML Size | 0 bytes |
+| Screenshots | 0 (0 bytes) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:28.7071999Z |
+| Captured | 2026-02-16T20:38:46.0514823Z |
+
+## Error
+
+```
+Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+```
 
 ## Actions
 
-- Screenshot #1: page-loaded (647.0 KB)
+- Scan aborted due to error
 
 ## Screenshots
 
-### 1. page-loaded
+*No screenshots captured.*
 
-![page-loaded](01-page-loaded.png)
+## Page Images (0)
 
+*No images found on page.*
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (647.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

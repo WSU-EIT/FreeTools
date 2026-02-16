@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://hub.wsu.edu/leadership/ |
 | Title | Page not found | WSU Hub | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 51.4 KB |
+| Status | ❌ 0 |
+| HTML Size | 43.5 KB |
 | Screenshots | 1 (83.9 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:14.3681083Z |
+| Captured | 2026-02-16T20:38:38.0660942Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (83.9 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

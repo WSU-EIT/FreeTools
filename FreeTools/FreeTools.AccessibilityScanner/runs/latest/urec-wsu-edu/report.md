@@ -2,46 +2,36 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 6/8 pages OK |
+| Status | ⚠️ 4/8 pages OK |
 | Pages Scanned | 8 |
-| Pages Passed | 6 |
-| Pages Failed | 2 |
-| Total JS Errors | 1 |
-| Total JS Warnings | 1 |
-| Total HTML | 843.8 KB |
-| Total Screenshots | 7.3 MB |
+| Pages Passed | 4 |
+| Pages Failed | 4 |
+| Total JS Errors | 0 |
+| Total JS Warnings | 0 |
+| Total HTML | 498.3 KB |
+| Total Screenshots | 3.5 MB |
+| Total Images | 20 (34.6 MB) |
+| Images Missing Alt | 1 |
 | Folder | `urec-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ❌ | [/](_root/report.md) | 0 | Home | 0 | 0 | 1 |
-| ✅ | [/employment/](employment/report.md) | 200 | Employment | 0 | 0 | 1 |
-| ✅ | [/facilities/](facilities/report.md) | 200 | Locations & Facilities | 0 | 0 | 1 |
-| ✅ | [/imsports/](imsports/report.md) | 200 | Intramurals | 0 | 1 | 1 |
-| ✅ | [/membership/](membership/report.md) | 200 | Memberships & Lockers | 0 | 0 | 1 |
-| ✅ | [/orc/](orc/report.md) | 200 | Outdoor Adventures | 0 | 0 | 1 |
-| ❌ | [/programs/](programs/report.md) | 404 | Page Not Found | 1 | 0 | 1 |
-| ✅ | [/sportclubs/](sportclubs/report.md) | 200 | Sport Clubs | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ✅ | [/employment/](employment/report.md) | 200 | Employment | 0 | 0 | 0 |
+| ❌ | [/facilities/](facilities/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/imsports/](imsports/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ✅ | [/membership/](membership/report.md) | 200 | Memberships & Lockers | 0 | 4 | 0 |
+| ✅ | [/orc/](orc/report.md) | 200 | Outdoor Adventures | 0 | 15 | 0 |
+| ❌ | [/programs/](programs/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ✅ | [/sportclubs/](sportclubs/report.md) | 200 | Sport Clubs | 0 | 1 | 1 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
 
 ### [/employment/](employment/report.md)
 
 ![/employment/](employment/01-page-loaded.png)
-
-### [/facilities/](facilities/report.md)
-
-![/facilities/](facilities/01-page-loaded.png)
-
-### [/imsports/](imsports/report.md)
-
-![/imsports/](imsports/01-page-loaded.png)
 
 ### [/membership/](membership/report.md)
 
@@ -50,10 +40,6 @@
 ### [/orc/](orc/report.md)
 
 ![/orc/](orc/01-page-loaded.png)
-
-### [/programs/](programs/report.md)
-
-![/programs/](programs/01-page-loaded.png)
 
 ### [/sportclubs/](sportclubs/report.md)
 
@@ -66,18 +52,37 @@
 
 - **URL:** https://urec.wsu.edu/
 - **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
+
+### /facilities/
+
+- **URL:** https://urec.wsu.edu/facilities/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
 
 ### /programs/
 
 - **URL:** https://urec.wsu.edu/programs/
-- **Status:** 404
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
 
+### /imsports/
 
-## Pages with JavaScript Errors
-
-### /programs/ (1 errors)
-
-- `Failed to load resource: the server responded with a status of 404 ()`
+- **URL:** https://urec.wsu.edu/imsports/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
 
 
 ---

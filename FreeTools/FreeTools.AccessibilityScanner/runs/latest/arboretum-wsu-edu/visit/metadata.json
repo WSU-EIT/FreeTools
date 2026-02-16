@@ -1,9 +1,9 @@
 {
   "PagePath": "/visit/",
   "Url": "https://arboretum.wsu.edu/visit/",
-  "FinalUrl": null,
+  "FinalUrl": "about:blank",
   "Title": "",
-  "StatusCode": 403,
+  "StatusCode": 0,
   "Success": false,
   "HtmlSizeBytes": 107,
   "ScreenshotSizeBytes": 9095,
@@ -18,10 +18,11 @@
       "FileSize": 9095
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "no-cache",
-    "content-type": "text/html"
-  },
-  "CapturedAt": "2026-02-16T20:10:38.8334838Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:21.0069143Z"
 }

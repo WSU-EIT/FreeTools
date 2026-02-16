@@ -2,38 +2,36 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 4/8 pages OK |
+| Status | ⚠️ 1/8 pages OK |
 | Pages Scanned | 8 |
-| Pages Passed | 4 |
-| Pages Failed | 4 |
-| Total JS Errors | 21 |
+| Pages Passed | 1 |
+| Pages Failed | 7 |
+| Total JS Errors | 14 |
 | Total JS Warnings | 1 |
-| Total HTML | 1.3 MB |
-| Total Screenshots | 6.0 MB |
+| Total HTML | 1.1 MB |
+| Total Screenshots | 5.7 MB |
+| Total Images | 57 (2.9 MB) |
+| Images Missing Alt | 19 |
 | Folder | `business-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Home - Carson College of Business \| ... | 7 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page not found - Carson College of Bu... | 3 | 0 | 1 |
-| ❌ | [/admissions/](admissions/report.md) | 404 | Page not found - Carson College of Bu... | 3 | 0 | 1 |
-| ❌ | [/faculty/](faculty/report.md) | 405 | Human Verification | 1 | 1 | 1 |
-| ✅ | [/graduate/](graduate/report.md) | 200 | Graduate Placements - Carson College ... | 2 | 0 | 1 |
-| ✅ | [/news/](news/report.md) | 200 | Carson College News & Research - Cars... | 2 | 0 | 1 |
-| ❌ | [/programs/](programs/report.md) | 404 | Page not found - Carson College of Bu... | 2 | 0 | 1 |
-| ✅ | [/undergraduate/](undergraduate/report.md) | 200 | Academic Advising - Carson College of... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Home - Carson College of Business \| ... | 1 | 14 | 9 |
+| ❌ | [/about/](about/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/admissions/](admissions/report.md) | 404 | Page not found - Carson College of Bu... | 3 | 3 | 1 |
+| ❌ | [/faculty/](faculty/report.md) | 405 | Human Verification | 1 | 0 | 0 |
+| ❌ | [/graduate/](graduate/report.md) | 0 | Graduate Placements - Carson College ... | 2 | 4 | 1 |
+| ✅ | [/news/](news/report.md) | 200 | Carson College News & Research - Cars... | 2 | 26 | 3 |
+| ❌ | [/programs/](programs/report.md) | 0 | Page not found - Carson College of Bu... | 3 | 3 | 1 |
+| ❌ | [/undergraduate/](undergraduate/report.md) | 0 | Academic Advising - Carson College of... | 2 | 7 | 4 |
 
 ## Page Screenshots
 
 ### [/](_root/report.md)
 
 ![/](_root/01-page-loaded.png)
-
-### [/about/](about/report.md)
-
-![/about/](about/01-page-loaded.png)
 
 ### [/admissions/](admissions/report.md)
 
@@ -62,15 +60,34 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://business.wsu.edu/
+- **Status:** 0
+
 ### /about/
 
 - **URL:** https://business.wsu.edu/about/
-- **Status:** 404
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
 
 ### /programs/
 
 - **URL:** https://business.wsu.edu/programs/
-- **Status:** 404
+- **Status:** 0
+
+### /undergraduate/
+
+- **URL:** https://business.wsu.edu/undergraduate/
+- **Status:** 0
+
+### /graduate/
+
+- **URL:** https://business.wsu.edu/graduate/
+- **Status:** 0
 
 ### /faculty/
 
@@ -85,17 +102,7 @@
 
 ## Pages with JavaScript Errors
 
-### / (7 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: the server responded with a status of 404 ()`
-
-### /about/ (3 errors)
+### /programs/ (3 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
 - `Failed to load resource: the server responded with a status of 405 ()`
@@ -107,10 +114,10 @@
 - `Failed to load resource: the server responded with a status of 405 ()`
 - `Failed to load resource: the server responded with a status of 404 ()`
 
-### /programs/ (2 errors)
+### /undergraduate/ (2 errors)
 
-- `Failed to load resource: the server responded with a status of 404 ()`
 - `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 ### /graduate/ (2 errors)
 
@@ -122,9 +129,9 @@
 - `Failed to load resource: the server responded with a status of 405 ()`
 - `Failed to load resource: the server responded with a status of 404 ()`
 
-### /undergraduate/ (1 errors)
+### / (1 errors)
 
-- `Failed to load resource: the server responded with a status of 405 ()`
+- `Failed to load resource: the server responded with a status of 404 ()`
 
 ### /faculty/ (1 errors)
 

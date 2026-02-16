@@ -3,15 +3,16 @@
 | Field | Value |
 |-------|-------|
 | URL | https://vcea.wsu.edu/about/ |
-| Redirected To | https://vcea.wsu.edu/about/#gsc.tab=0 |
 | Title | Page not found | Voiland College of Engineering and Architecture | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 233.2 KB |
+| Status | ❌ 0 |
+| HTML Size | 221.8 KB |
 | Screenshots | 1 (107.1 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:54.3550904Z |
+| Captured | 2026-02-16T20:38:13.2780277Z |
 
 ## JavaScript Errors
 
@@ -20,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (107.1 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

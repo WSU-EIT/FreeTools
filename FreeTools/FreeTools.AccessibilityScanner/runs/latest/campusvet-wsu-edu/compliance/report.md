@@ -5,13 +5,15 @@
 | URL | https://campusvet.wsu.edu/compliance/ |
 | Redirected To | https://campusvet.wsu.edu/compliance/#gsc.tab=0 |
 | Title | Page not found | Campus Veterinarian | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 222.3 KB |
+| Status | ❌ 0 |
+| HTML Size | 210.0 KB |
 | Screenshots | 1 (90.9 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:47.6031028Z |
+| Captured | 2026-02-16T20:38:00.2629574Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (90.9 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

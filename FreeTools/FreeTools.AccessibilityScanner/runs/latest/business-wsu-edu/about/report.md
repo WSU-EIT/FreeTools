@@ -3,35 +3,40 @@
 | Field | Value |
 |-------|-------|
 | URL | https://business.wsu.edu/about/ |
-| Title | Page not found - Carson College of Business | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 176.2 KB |
-| Screenshots | 1 (188.2 KB) |
-| JS Errors | 3 |
+| Title | (none) |
+| Status | ❌ 0 |
+| HTML Size | 0 bytes |
+| Screenshots | 0 (0 bytes) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:45.0472075Z |
+| Captured | 2026-02-16T20:38:21.7491758Z |
 
-## JavaScript Errors
+## Error
 
-- `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: the server responded with a status of 405 ()`
-- `Failed to load resource: the server responded with a status of 404 ()`
+```
+Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+```
 
 ## Actions
 
-- Screenshot #1: page-loaded (188.2 KB)
+- Scan aborted due to error
 
 ## Screenshots
 
-### 1. page-loaded
+*No screenshots captured.*
 
-![page-loaded](01-page-loaded.png)
+## Page Images (0)
 
+*No images found on page.*
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (188.2 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

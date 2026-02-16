@@ -3,10 +3,10 @@
   "Url": "https://wsu.edu/about/facts/",
   "FinalUrl": "https://wsu.edu/about/",
   "Title": "About WSU | Washington State University | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 134148,
-  "ScreenshotSizeBytes": 3145485,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 127799,
+  "ScreenshotSizeBytes": 2138212,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,24 +15,111 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 3145485
+      "FileSize": 2138212
+    }
+  ],
+  "ImageCount": 16,
+  "ImagesTotalSizeBytes": 10295948,
+  "ImagesMissingAlt": 10,
+  "Images": [
+    {
+      "FileName": "2019-Move-in-Saturday-_-179.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/2019-Move-in-Saturday-_-179.jpg",
+      "AltText": "Washington State University students move into their residence halls with the assistance of family members and volunteers during Move-in Saturday as part of the Week of Welcome festivities, Saturday, August 10, 2019 in Pullman.",
+      "FileSize": 1350692
+    },
+    {
+      "FileName": "Commencement_1948.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Commencement_1948.jpg",
+      "AltText": "WSU students partake and celebrate during commencement on the campus of Washington State University, Saturday, May 5, 2018.",
+      "FileSize": 2427026
+    },
+    {
+      "FileName": "Oct-7-Mural-Painting-_-65.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Oct-7-Mural-Painting-_-65.jpg",
+      "AltText": "Washington State University Intermediate Painting (Fine_Art 321) students paint in the final areas of murals on wallball walls at Kamiak Elementary School, Monday, Oct. 7, 2019 in Pullman, Wash. KES is a new school in the Pullman School District No. 267. The paint used on these two murals will change colors as temperatures change, and was formulated by the WSU chemistry department.",
+      "FileSize": 1186860
+    },
+    {
+      "FileName": "PhD-Student-Kaitlin-Witherell_5035.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/PhD-Student-Kaitlin-Witherell_5035.jpg",
+      "AltText": "PhD student on the campus of Washington State University, Monday, June 17, 2019.",
+      "FileSize": 1002321
+    },
+    {
+      "FileName": "Students-Football-Atmosphere_5321.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Students-Football-Atmosphere_5321.jpg",
+      "AltText": "Happy fans in the crowd cheering the football team on Game Day, Washington State University, Saturday, September, 11, 2021",
+      "FileSize": 1805662
+    },
+    {
+      "FileName": "Campus-photo.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo.jpg",
+      "AltText": "",
+      "FileSize": 285679
+    },
+    {
+      "FileName": "Campus-photo-1.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-1.jpg",
+      "AltText": "",
+      "FileSize": 288252
+    },
+    {
+      "FileName": "Campus-photo-2.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-2.jpg",
+      "AltText": "",
+      "FileSize": 210158
+    },
+    {
+      "FileName": "Campus-photo-3.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-3.jpg",
+      "AltText": "",
+      "FileSize": 319279
+    },
+    {
+      "FileName": "Campus-photo-4.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-4.jpg",
+      "AltText": "",
+      "FileSize": 191786
+    },
+    {
+      "FileName": "Campus-photo-5.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-5.jpg",
+      "AltText": "",
+      "FileSize": 172410
+    },
+    {
+      "FileName": "Community-Pic.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Community-Pic.jpg",
+      "AltText": "",
+      "FileSize": 408632
+    },
+    {
+      "FileName": "Community-Pic-1.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Community-Pic-1.jpg",
+      "AltText": "",
+      "FileSize": 280171
+    },
+    {
+      "FileName": "Alumni-Center-Pic-792x553.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Alumni-Center-Pic-792x553.jpg",
+      "AltText": "",
+      "FileSize": 150057
+    },
+    {
+      "FileName": "Band-Pic.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Band-Pic.jpg",
+      "AltText": "",
+      "FileSize": 110734
+    },
+    {
+      "FileName": "ButchCheer_0851-3-792x792.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/625/2023/01/ButchCheer_0851-3-792x792.jpg",
+      "AltText": "Student dressed in Butch T. Cougar costume leading a cheer at a football game",
+      "FileSize": 106229
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "max-age=229, must-revalidate",
-    "connection": "keep-alive",
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:32 GMT",
-    "last-modified": "Mon, 16 Feb 2026 20:07:21 GMT",
-    "link": "\u003Chttps://wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://wsu.edu/wp-json/wp/v2/pages/9\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
-    "server": "nginx",
-    "transfer-encoding": "chunked",
-    "vary": "Accept-Encoding\nCookie, Accept-Encoding",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "DENY",
-    "x-xss-protection": "1; mode=block"
-  },
-  "CapturedAt": "2026-02-16T20:13:26.5059376Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:52.7258742Z"
 }

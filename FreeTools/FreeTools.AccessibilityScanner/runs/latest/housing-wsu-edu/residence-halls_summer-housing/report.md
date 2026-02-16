@@ -7,14 +7,17 @@
 | Status | ✅ 200 |
 | HTML Size | 52.3 KB |
 | Screenshots | 1 (962.1 KB) |
+| Images | 1 (362.0 KB) |
+| Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:15:16.6323833Z |
+| Captured | 2026-02-16T20:41:23.1562123Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (962.1 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -22,6 +25,21 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [northside-exterior-summer.jpg](images/northside-exterior-summer.jpg) | *(none)* | 362.0 KB |
+
+### Gallery
+
+![northside-exterior-summer.jpg](images/northside-exterior-summer.jpg)
+
+
+### ⚠️ Images Missing Alt Text (1)
+
+- `northside-exterior-summer.jpg` — https://housing.wsu.edu/media/cnlnqv01/northside-exterior-summer.jpg
 
 ## Files
 
@@ -32,3 +50,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (362.0 KB)

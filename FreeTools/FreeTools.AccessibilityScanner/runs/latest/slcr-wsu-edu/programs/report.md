@@ -4,17 +4,20 @@
 |-------|-------|
 | URL | https://slcr.wsu.edu/programs/ |
 | Title | Programs | School of Languages, Cultures, and Race | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 67.8 KB |
+| Status | ❌ 0 |
+| HTML Size | 53.3 KB |
 | Screenshots | 1 (233.5 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:32.6327929Z |
+| Captured | 2026-02-16T20:38:20.8034156Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (233.5 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -22,6 +25,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

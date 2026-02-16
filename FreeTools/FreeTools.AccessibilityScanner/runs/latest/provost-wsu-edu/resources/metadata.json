@@ -3,12 +3,12 @@
   "Url": "https://provost.wsu.edu/resources/",
   "FinalUrl": "https://provost.wsu.edu/2017/11/28/resources-for-our-students/",
   "Title": "Resources for our students | Office of the Provost | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 121316,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 112153,
   "ScreenshotSizeBytes": 202330,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -18,16 +18,11 @@
       "FileSize": 202330
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:48 GMT",
-    "etag": "\u00227f23c0084a14f8f6c2725e9f3d41fd27\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:13:48 GMT",
-    "link": "\u003Chttps://provost.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://provost.wsu.edu/wp-json/wp/v2/posts/9987\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://provost.wsu.edu/?p=9987\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:13:45.2960309Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:42.4732325Z"
 }

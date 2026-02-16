@@ -3,15 +3,16 @@
 | Field | Value |
 |-------|-------|
 | URL | https://ip.wsu.edu/programs/ |
-| Redirected To | https://ip.wsu.edu/programs/#gsc.tab=0 |
 | Title | Page not found | WSU International | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 278.5 KB |
+| Status | ❌ 0 |
+| HTML Size | 268.0 KB |
 | Screenshots | 1 (123.5 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 2 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:19.2880860Z |
+| Captured | 2026-02-16T20:39:04.9650564Z |
 
 ## JavaScript Errors
 
@@ -21,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (123.5 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -28,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

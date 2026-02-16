@@ -2,25 +2,27 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/5 pages OK |
+| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 2 |
-| Pages Failed | 3 |
-| Total JS Errors | 6 |
-| Total JS Warnings | 3 |
-| Total HTML | 1.0 MB |
-| Total Screenshots | 472.5 KB |
+| Pages Passed | 0 |
+| Pages Failed | 5 |
+| Total JS Errors | 8 |
+| Total JS Warnings | 0 |
+| Total HTML | 1003.0 KB |
+| Total Screenshots | 471.6 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `threatassessment-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Threat Assessment \| Washington State... | 1 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page not found \| Threat Assessment \... | 3 | 1 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Threat Assessment Team \| Thr... | 0 | 0 | 1 |
-| ❌ | [/report-concern/](report-concern/report.md) | 404 | Page not found \| Threat Assessment \... | 1 | 1 | 1 |
-| ❌ | [/resources/](resources/report.md) | 404 | Page not found \| Threat Assessment \... | 1 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Threat Assessment \| Washington State... | 5 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | Page not found \| Threat Assessment \... | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Threat Assessment Team \| Thr... | 0 | 0 | 0 |
+| ❌ | [/report-concern/](report-concern/report.md) | 0 | Page not found \| Threat Assessment \... | 1 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Page not found \| Threat Assessment \... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -47,33 +49,45 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://threatassessment.wsu.edu/
+- **Status:** 0
+
 ### /about/
 
 - **URL:** https://threatassessment.wsu.edu/about/
-- **Status:** 404
+- **Status:** 0
 
 ### /report-concern/
 
 - **URL:** https://threatassessment.wsu.edu/report-concern/
-- **Status:** 404
+- **Status:** 0
 
 ### /resources/
 
 - **URL:** https://threatassessment.wsu.edu/resources/
-- **Status:** 404
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://threatassessment.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### /about/ (3 errors)
+### / (5 errors)
+
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /about/ (1 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-
-### / (1 errors)
-
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /report-concern/ (1 errors)
 

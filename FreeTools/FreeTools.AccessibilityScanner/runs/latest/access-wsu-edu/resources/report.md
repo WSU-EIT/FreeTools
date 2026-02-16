@@ -5,17 +5,20 @@
 | URL | https://access.wsu.edu/resources/ |
 | Redirected To | https://access.wsu.edu/pregnant-and-parenting-students-and-employees/resources-for-employees/ |
 | Title | Resources for Employees | Access at WSU | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 63.2 KB |
+| Status | ❌ 0 |
+| HTML Size | 50.7 KB |
 | Screenshots | 1 (164.9 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:50.1063801Z |
+| Captured | 2026-02-16T20:38:18.6705058Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (164.9 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -23,6 +26,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

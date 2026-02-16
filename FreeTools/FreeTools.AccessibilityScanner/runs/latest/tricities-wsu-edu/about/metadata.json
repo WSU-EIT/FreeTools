@@ -3,37 +3,123 @@
   "Url": "https://tricities.wsu.edu/about/",
   "FinalUrl": null,
   "Title": "About WSU Tri-Cities - WSU Tri-Cities",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 155535,
-  "ScreenshotSizeBytes": 1578627,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 126348,
+  "ScreenshotSizeBytes": 741690,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
-  "ConsoleWarningCount": 4,
+  "ConsoleWarningCount": 5,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1578627
+      "FileSize": 741690
+    }
+  ],
+  "ImageCount": 16,
+  "ImagesTotalSizeBytes": 1118698,
+  "ImagesMissingAlt": 9,
+  "Images": [
+    {
+      "FileName": "WSU-TC-lockup-horz-4c_WEB-01.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-4c_WEB-01.png",
+      "AltText": "Logo",
+      "FileSize": 12895
+    },
+    {
+      "FileName": "WSU-TC-lockup-horz-rev_WEB_Spaced_larger-1.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-rev_WEB_Spaced_larger-1.png",
+      "AltText": "Logo",
+      "FileSize": 7440
+    },
+    {
+      "FileName": "WSU-TC-lockup-horz-4c_WEB_Spaced-01.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-4c_WEB_Spaced-01.png",
+      "AltText": "Logo",
+      "FileSize": 13125
+    },
+    {
+      "FileName": "WSU-TC-lockup-horz-rev_WEB_Spaced_Sticky.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-horz-rev_WEB_Spaced_Sticky.png",
+      "AltText": "Logo",
+      "FileSize": 2139
+    },
+    {
+      "FileName": "WSU-TC-lockup-vert-rev_WEB-01.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/WSU-TC-lockup-vert-rev_WEB-01.png",
+      "AltText": "Logo",
+      "FileSize": 16253
+    },
+    {
+      "FileName": "gradient-button-rectangle.png",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/gradient-button-rectangle.png",
+      "AltText": "",
+      "FileSize": 150809
+    },
+    {
+      "FileName": "Need-Help-800x532-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/Need-Help-800x532-1.jpg",
+      "AltText": "",
+      "FileSize": 123425
+    },
+    {
+      "FileName": "small-class-800x532-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/small-class-800x532-1.jpg",
+      "AltText": "",
+      "FileSize": 94464
+    },
+    {
+      "FileName": "affordable-800x532-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/affordable-800x532-1.jpg",
+      "AltText": "",
+      "FileSize": 147035
+    },
+    {
+      "FileName": "location2-800x532-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/location2-800x532-1.jpg",
+      "AltText": "",
+      "FileSize": 72842
+    },
+    {
+      "FileName": "industry-800x532-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/industry-800x532-1.jpg",
+      "AltText": "",
+      "FileSize": 67234
+    },
+    {
+      "FileName": "diverse-first-gen-800x532-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/diverse-first-gen-800x532-1.jpg",
+      "AltText": "Proud to be a First Generation Student",
+      "FileSize": 50699
+    },
+    {
+      "FileName": "veteran-800x532-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/veteran-800x532-1.jpg",
+      "AltText": "",
+      "FileSize": 59376
+    },
+    {
+      "FileName": "research-800x532-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/research-800x532-1.jpg",
+      "AltText": "",
+      "FileSize": 110053
+    },
+    {
+      "FileName": "running-start-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/running-start-1.jpg",
+      "AltText": "Running Start",
+      "FileSize": 103418
+    },
+    {
+      "FileName": "grad-800x532-1.jpg",
+      "SourceUrl": "https://tricities.wsu.edu/wp-content/uploads/grad-800x532-1.jpg",
+      "AltText": "",
+      "FileSize": 87491
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:11:56 GMT",
-    "link": "\u003Chttps://tricities.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://tricities.wsu.edu/wp-json/wp/v2/pages/15259\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022\n\u003Chttps://tricities.wsu.edu/?p=15259\u003E; rel=shortlink",
-    "server": "nginx/1.14.2",
-    "vary": "Accept-Encoding",
-    "x-args": "https://tricities.wsu.edu/about/",
-    "x-cache-status": "HIT",
-    "x-et-api-origin": "https://tricities.wsu.edu",
-    "x-et-api-root": "https://tricities.wsu.edu/wp-json/tribe/tickets/v1/",
-    "x-et-api-version": "v1",
-    "x-frame-options": "ALLOWFROM https://apis.google.com/",
-    "x-tec-api-origin": "https://tricities.wsu.edu",
-    "x-tec-api-root": "https://tricities.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
-  },
-  "CapturedAt": "2026-02-16T20:11:54.2753686Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:30.1078043Z"
 }

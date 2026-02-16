@@ -3,13 +3,13 @@
   "Url": "https://physics.wsu.edu/about/",
   "FinalUrl": "https://physics.wsu.edu/about/#gsc.tab=0",
   "Title": "Page not found | Department of Physics \u0026 Astronomy | Washington State University",
-  "StatusCode": 404,
+  "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 230423,
+  "HtmlSizeBytes": 223901,
   "ScreenshotSizeBytes": 108892,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
-  "ConsoleWarningCount": 1,
+  "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
@@ -18,14 +18,11 @@
       "FileSize": 108892
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "no-cache, must-revalidate, max-age=0",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:11:28 GMT",
-    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
-    "link": "\u003Chttps://physics.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
-    "server": "nginx"
-  },
-  "CapturedAt": "2026-02-16T20:11:21.1020367Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:59.9458724Z"
 }

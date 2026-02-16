@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 6/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 6 |
-| Pages Failed | 0 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 2.2 MB |
-| Total Screenshots | 4.1 MB |
+| Total HTML | 1.6 MB |
+| Total Screenshots | 88.3 KB |
+| Total Images | 2 (258.5 KB) |
+| Images Missing Alt | 0 |
 | Folder | `gis-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | WSU Administration GIS Portal | 0 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | WSU Administration GIS Portal | 0 | 0 | 1 |
-| ✅ | [/data/](data/report.md) | 200 | WSU Administration GIS Portal | 0 | 0 | 1 |
-| ✅ | [/resources/](resources/report.md) | 200 |  | 0 | 0 | 1 |
-| ✅ | [/services/](services/report.md) | 200 |  | 0 | 0 | 1 |
-| ✅ | [/training/](training/report.md) | 200 | WSU Administration GIS Portal | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Administration GIS Portal | 0 | 1 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | WSU Administration GIS Portal | 0 | 1 | 0 |
+| ❌ | [/data/](data/report.md) | 0 |  | 0 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 |  | 0 | 0 | 0 |
+| ❌ | [/services/](services/report.md) | 0 |  | 0 | 0 | 0 |
+| ❌ | [/training/](training/report.md) | 0 |  | 0 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -48,6 +50,39 @@
 ### [/training/](training/report.md)
 
 ![/training/](training/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /
+
+- **URL:** https://gis.wsu.edu/
+- **Status:** 0
+
+### /services/
+
+- **URL:** https://gis.wsu.edu/services/
+- **Status:** 0
+
+### /data/
+
+- **URL:** https://gis.wsu.edu/data/
+- **Status:** 0
+
+### /resources/
+
+- **URL:** https://gis.wsu.edu/resources/
+- **Status:** 0
+
+### /training/
+
+- **URL:** https://gis.wsu.edu/training/
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://gis.wsu.edu/contact/
+- **Status:** 0
 
 
 ---

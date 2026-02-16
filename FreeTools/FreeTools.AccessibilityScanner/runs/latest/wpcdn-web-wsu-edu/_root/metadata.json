@@ -6,7 +6,7 @@
   "StatusCode": 404,
   "Success": false,
   "HtmlSizeBytes": 343,
-  "ScreenshotSizeBytes": 17030,
+  "ScreenshotSizeBytes": 17044,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,23 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 17030
+      "FileSize": 17044
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
   "Headers": {
     "content-length": "345",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
+    "date": "Mon, 16 Feb 2026 20:37:07 GMT",
     "server": "AmazonS3",
-    "via": "1.1 b7d7903ada432685f0e90f0ca261d864.cloudfront.net (CloudFront)",
-    "x-amz-cf-id": "RVa5kW9Tyi0Mkln8Qa23qfdLkTZARq89-nRbrzE6S3YxyOPlPDmqDQ==",
+    "via": "1.1 ec62626c4e205f1980b4ed65142b10d8.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "z-80VCKi8Za6ihZgiMttko5-e-lfwIX99kNqY-hxJuDEDdA5_g07cQ==",
     "x-amz-cf-pop": "SEA900-P1",
     "x-cache": "Error from cloudfront"
   },
-  "CapturedAt": "2026-02-16T20:10:26.1220429Z"
+  "CapturedAt": "2026-02-16T20:37:05.0814399Z"
 }

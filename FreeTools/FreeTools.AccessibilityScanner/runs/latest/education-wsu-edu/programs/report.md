@@ -3,15 +3,17 @@
 | Field | Value |
 |-------|-------|
 | URL | https://education.wsu.edu/programs/ |
-| Redirected To | https://ceshs.wsu.edu/programs#gsc.tab=0 |
+| Redirected To | https://ceshs.wsu.edu/programs |
 | Title | Page not found | College of Education, Sport, and Human Sciences | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 231.0 KB |
-| Screenshots | 1 (129.3 KB) |
+| Status | ❌ 0 |
+| HTML Size | 67.8 KB |
+| Screenshots | 1 (127.8 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 2 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:45.3016336Z |
+| Captured | 2026-02-16T20:38:57.4003704Z |
 
 ## JavaScript Errors
 
@@ -20,7 +22,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (129.3 KB)
+- Screenshot #1: page-loaded (127.8 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -29,9 +32,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (129.3 KB)
+- `01-page-loaded.png` — page-loaded (127.8 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

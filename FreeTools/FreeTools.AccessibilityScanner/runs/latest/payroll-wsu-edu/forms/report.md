@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://payroll.wsu.edu/forms/ |
 | Title | Page not found | Payroll Services | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 59.0 KB |
-| Screenshots | 1 (110.0 KB) |
+| Status | ❌ 0 |
+| HTML Size | 49.2 KB |
+| Screenshots | 1 (104.1 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:02.6266861Z |
+| Captured | 2026-02-16T20:38:13.3299061Z |
 
 ## JavaScript Errors
 
@@ -18,7 +20,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (110.0 KB)
+- Screenshot #1: page-loaded (104.1 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,9 +30,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (110.0 KB)
+- `01-page-loaded.png` — page-loaded (104.1 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

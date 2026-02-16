@@ -5,17 +5,20 @@
 | URL | https://admission.wsu.edu/transfer/ |
 | Redirected To | https://admission.wsu.edu/apply/transfer-students/ |
 | Title | Transfer Students | Admissions | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 90.0 KB |
+| Status | ❌ 0 |
+| HTML Size | 90.1 KB |
 | Screenshots | 1 (788.4 KB) |
+| Images | 1 (1.2 MB) |
+| Images Missing Alt | 1 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:43.6691233Z |
+| Captured | 2026-02-16T20:39:53.9386552Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (788.4 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -23,6 +26,21 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [Transfer-Walking-scaled.jpg](images/Transfer-Walking-scaled.jpg) | *(none)* | 1.2 MB |
+
+### Gallery
+
+![Transfer-Walking-scaled.jpg](images/Transfer-Walking-scaled.jpg)
+
+
+### ⚠️ Images Missing Alt Text (1)
+
+- `Transfer-Walking-scaled.jpg` — https://wpcdn.web.wsu.edu/wp-admission/uploads/sites/3144/2024/04/Transfer-Walking-scaled.jpg
 
 ## Files
 
@@ -33,3 +51,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (1.2 MB)

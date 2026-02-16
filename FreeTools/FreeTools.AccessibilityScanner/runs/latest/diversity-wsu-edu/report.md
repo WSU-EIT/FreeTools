@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 6/6 pages OK |
+| Status | ⚠️ 2/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 6 |
-| Pages Failed | 0 |
+| Pages Passed | 2 |
+| Pages Failed | 4 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 551.2 KB |
-| Total Screenshots | 7.5 MB |
+| Total HTML | 516.0 KB |
+| Total Screenshots | 6.2 MB |
+| Total Images | 30 (3.0 MB) |
+| Images Missing Alt | 25 |
 | Folder | `diversity-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Human Resource Services, Washington S... | 0 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | Human Resource Services, Washington S... | 0 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Human Resource Services, Washington S... | 0 | 0 | 1 |
-| ✅ | [/events/](events/report.md) | 200 | Human Resource Services, Washington S... | 0 | 0 | 1 |
-| ✅ | [/programs/](programs/report.md) | 200 | Human Resource Services, Washington S... | 0 | 0 | 1 |
-| ✅ | [/resources/](resources/report.md) | 200 | Human Resource Services, Washington S... | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Human Resource Services, Washington S... | 0 | 3 | 3 |
+| ❌ | [/about/](about/report.md) | 0 | Human Resource Services, Washington S... | 0 | 4 | 3 |
+| ✅ | [/contact/](contact/report.md) | 200 | Human Resource Services, Washington S... | 0 | 6 | 5 |
+| ✅ | [/events/](events/report.md) | 200 | Human Resource Services, Washington S... | 0 | 6 | 5 |
+| ❌ | [/programs/](programs/report.md) | 0 | Human Resource Services, Washington S... | 0 | 5 | 4 |
+| ❌ | [/resources/](resources/report.md) | 0 | Human Resource Services, Washington S... | 0 | 6 | 5 |
 
 ## Page Screenshots
 
@@ -48,6 +50,29 @@
 ### [/resources/](resources/report.md)
 
 ![/resources/](resources/01-page-loaded.png)
+
+
+## Failed Pages
+
+### /
+
+- **URL:** https://diversity.wsu.edu/
+- **Status:** 0
+
+### /about/
+
+- **URL:** https://diversity.wsu.edu/about/
+- **Status:** 0
+
+### /programs/
+
+- **URL:** https://diversity.wsu.edu/programs/
+- **Status:** 0
+
+### /resources/
+
+- **URL:** https://diversity.wsu.edu/resources/
+- **Status:** 0
 
 
 ---

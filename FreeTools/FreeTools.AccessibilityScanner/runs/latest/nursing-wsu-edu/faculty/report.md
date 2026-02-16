@@ -5,13 +5,15 @@
 | URL | https://nursing.wsu.edu/faculty/ |
 | Redirected To | https://nursing.wsu.edu/faculty-biosketch-form/ |
 | Title | Faculty Biosketch Form | College of Nursing | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 265.2 KB |
+| Status | ❌ 0 |
+| HTML Size | 256.4 KB |
 | Screenshots | 1 (345.3 KB) |
+| Images | 1 (10.5 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 3 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:12.1343151Z |
+| Captured | 2026-02-16T20:39:15.6828245Z |
 
 ## JavaScript Errors
 
@@ -22,12 +24,24 @@
 ## Actions
 
 - Screenshot #1: page-loaded (345.3 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
 ### 1. page-loaded
 
 ![page-loaded](01-page-loaded.png)
+
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [SEA-to-GEG-e1697567786392.png](images/SEA-to-GEG-e1697567786392.png) | Seattle to Spokane skyline silhouette | 10.5 KB |
+
+### Gallery
+
+![Seattle to Spokane skyline silhouette](images/SEA-to-GEG-e1697567786392.png)
 
 
 ## Files
@@ -39,3 +53,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (10.5 KB)

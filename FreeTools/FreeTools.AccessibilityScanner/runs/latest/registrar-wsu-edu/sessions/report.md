@@ -5,16 +5,23 @@
 | URL | https://registrar.wsu.edu/sessions/ |
 | Title | Sessions | Office of the Registrar |
 | Status | ❌ 0 |
-| HTML Size | 662.4 KB |
-| Screenshots | 1 (256.4 KB) |
-| JS Errors | 0 |
-| JS Warnings | 1 |
+| HTML Size | 653.8 KB |
+| Screenshots | 1 (261.0 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:50.0811923Z |
+| Captured | 2026-02-16T20:38:35.4201704Z |
+
+## JavaScript Errors
+
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 
 ## Actions
 
-- Screenshot #1: page-loaded (256.4 KB)
+- Screenshot #1: page-loaded (261.0 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -23,9 +30,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (256.4 KB)
+- `01-page-loaded.png` — page-loaded (261.0 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

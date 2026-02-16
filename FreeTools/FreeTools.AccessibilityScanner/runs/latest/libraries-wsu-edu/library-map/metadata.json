@@ -3,10 +3,10 @@
   "Url": "https://libraries.wsu.edu/library-map/",
   "FinalUrl": null,
   "Title": "Library Map \u2013 WSU Libraries",
-  "StatusCode": 200,
-  "Success": true,
+  "StatusCode": 0,
+  "Success": false,
   "HtmlSizeBytes": 49028,
-  "ScreenshotSizeBytes": 497303,
+  "ScreenshotSizeBytes": 435211,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 20,
@@ -15,19 +15,93 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 497303
+      "FileSize": 435211
+    }
+  ],
+  "ImageCount": 13,
+  "ImagesTotalSizeBytes": 734132,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "callnumbers.svg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/callnumbers.svg",
+      "AltText": "Call Numbers and orientation of floors: Holland 3rd Floor: PS 530 A1-Z (and Jackson and US Gov Docs), Holland 2nd Floor: L - PS 529 Z9, Holland 1st Floor: HV 6000 - KZ, Terrell 1st Floor: A - DC, Terrell Ground Floor: DD - HB 149 Z9, Terrell Basement: HB 150 - HV 5999",
+      "FileSize": 33324
+    },
+    {
+      "FileName": "HOLLANDTERRELL12026.svg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/HOLLANDTERRELL12026.svg",
+      "AltText": "Resources microforms new Books access Services dimensions Lab photo Services Reference | Information Desk student Veterans Center writing Center classrooms | 103, 105, Ams 106 group Study Rooms | 110b, 111, 113 quiet Study Lounge Huddlestation 110 accessibility Workstation group Study Area",
+      "FileSize": 105467
+    },
+    {
+      "FileName": "TERRELLG2026.svg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/TERRELLG2026.svg",
+      "AltText": "Palouse Study Lounge, Graduate and Professional Student Study Center, Manuscripts, Archives, and Special Collections, Atrium, AMS 24, Current Journals and Newspapers, Classroom 20E, Digital Media Collections",
+      "FileSize": 129549
+    },
+    {
+      "FileName": "TERRELLB2026.svg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/TERRELLB2026.svg",
+      "AltText": "Deweys, Compact Storage, Locked Compact Storage",
+      "FileSize": 149153
+    },
+    {
+      "FileName": "HOLLAND22026.svg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/HOLLAND22026.svg",
+      "AltText": "Library Administration Offices",
+      "FileSize": 86938
+    },
+    {
+      "FileName": "HOLLAND32026.svg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/HOLLAND32026.svg",
+      "AltText": "Oversized books, Jackson Documents, U.S. Government Documents",
+      "FileSize": 55273
+    },
+    {
+      "FileName": "HOLLAND42024_MO.svg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/HOLLAND42024_MO.svg",
+      "AltText": "Center for Digital Scholarship and Curation and Kamiak Room",
+      "FileSize": 22617
+    },
+    {
+      "FileName": "OWEN12024_MO.svg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/OWEN12024_MO.svg",
+      "AltText": "Access Services, Current Print Journals, Public printers, Reference books",
+      "FileSize": 15353
+    },
+    {
+      "FileName": "OWEN22024_MO.svg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/OWEN22024_MO.svg",
+      "AltText": "Owen Library Second Floor, Stacks #201-214",
+      "FileSize": 28326
+    },
+    {
+      "FileName": "OWEN32024_MO.svg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/OWEN32024_MO.svg",
+      "AltText": "Emeritus Society, Classroom 319D, Stacks #301-328",
+      "FileSize": 28095
+    },
+    {
+      "FileName": "OWEN42024_MO.svg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/OWEN42024_MO.svg",
+      "AltText": "Stacks #401-424",
+      "FileSize": 19900
+    },
+    {
+      "FileName": "OWEN52024_MO.svg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/OWEN52024_MO.svg",
+      "AltText": "Study rooms 543, 539, 535, Stacks #501-543",
+      "FileSize": 30459
+    },
+    {
+      "FileName": "OWEN62024_MO.svg",
+      "SourceUrl": "http://libraries.wsu.edu/wp-content/uploads/OWEN62024_MO.svg",
+      "AltText": "Study rooms 643, 639, 635, Stacks #601-641",
+      "FileSize": 29678
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:31 GMT",
-    "link": "\u003Chttps://libraries.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://libraries.wsu.edu/wp-json/wp/v2/pages/4649\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022\n\u003Chttps://libraries.wsu.edu/?p=4649\u003E; rel=shortlink",
-    "server": "nginx",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "SAMEORIGIN",
-    "x-powered-by": "PHP/8.3.30",
-    "x-xss-protection": "1; mode=block"
-  },
-  "CapturedAt": "2026-02-16T20:13:26.4768013Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:41.9154795Z"
 }

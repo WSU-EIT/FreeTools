@@ -6,16 +6,19 @@
 | Redirected To | https://cas.wsu.edu/about-the-college/contact-us/ |
 | Title | Contact Us | College of Arts and Sciences | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 239.4 KB |
-| Screenshots | 1 (149.0 KB) |
+| HTML Size | 239.0 KB |
+| Screenshots | 1 (147.3 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:45.5778714Z |
+| Captured | 2026-02-16T20:40:00.7018346Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (149.0 KB)
+- Screenshot #1: page-loaded (147.3 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -24,9 +27,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (149.0 KB)
+- `01-page-loaded.png` — page-loaded (147.3 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

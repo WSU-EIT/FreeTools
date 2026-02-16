@@ -3,29 +3,40 @@
 | Field | Value |
 |-------|-------|
 | URL | https://registrar.wsu.edu/academic-regulations/ |
-| Title | Academic Regulations | Office of the Registrar |
+| Title | (none) |
 | Status | ❌ 0 |
-| HTML Size | 815.9 KB |
-| Screenshots | 1 (8.6 MB) |
+| HTML Size | 0 bytes |
+| Screenshots | 0 (0 bytes) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:53.5475223Z |
+| Captured | 2026-02-16T20:39:02.3801190Z |
+
+## Error
+
+```
+Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+```
 
 ## Actions
 
-- Screenshot #1: page-loaded (8.6 MB)
+- Scan aborted due to error
 
 ## Screenshots
 
-### 1. page-loaded
+*No screenshots captured.*
 
-![page-loaded](01-page-loaded.png)
+## Page Images (0)
 
+*No images found on page.*
 
 ## Files
 
-- `01-page-loaded.png` — page-loaded (8.6 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

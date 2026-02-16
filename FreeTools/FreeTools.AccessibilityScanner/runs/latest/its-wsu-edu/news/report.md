@@ -5,16 +5,19 @@
 | URL | https://its.wsu.edu/news/ |
 | Title | News | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 234.7 KB |
+| HTML Size | 234.6 KB |
 | Screenshots | 1 (390.6 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:15:43.2883949Z |
+| Captured | 2026-02-16T20:41:15.0977464Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (390.6 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -22,6 +25,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

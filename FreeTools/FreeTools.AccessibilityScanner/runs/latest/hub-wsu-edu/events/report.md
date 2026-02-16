@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://hub.wsu.edu/events/ |
 | Title | Human Verification |
-| Status | ❌ 405 |
+| Status | ❌ 0 |
 | HTML Size | 9.1 KB |
 | Screenshots | 1 (20.5 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:20.2826960Z |
+| Captured | 2026-02-16T20:38:02.9277477Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (20.5 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

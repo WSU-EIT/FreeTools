@@ -3,23 +3,26 @@
 | Field | Value |
 |-------|-------|
 | URL | https://afs.wsu.edu/programs/ |
-| Redirected To | https://afs.wsu.edu/programs/#gsc.tab=0 |
 | Title | Page not found | Agricultural and Food Systems | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 217.4 KB |
+| Status | ❌ 0 |
+| HTML Size | 208.7 KB |
 | Screenshots | 1 (85.1 KB) |
-| JS Errors | 1 |
-| JS Warnings | 1 |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 2 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:41.5961648Z |
+| Captured | 2026-02-16T20:38:41.0304659Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: the server responded with a status of 404 ()`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
 - Screenshot #1: page-loaded (85.1 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

@@ -18,16 +18,189 @@
       "FileSize": 2281309
     }
   ],
+  "ImageCount": 28,
+  "ImagesTotalSizeBytes": 4935568,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "meg-autrey-square.png",
+      "SourceUrl": "https://housing.wsu.edu/media/i5hlpmpv/meg-autrey-square.png",
+      "AltText": "Meg Autrey",
+      "FileSize": 287604
+    },
+    {
+      "FileName": "nichole-goodwin.png",
+      "SourceUrl": "https://housing.wsu.edu/media/kskhy51b/nichole-goodwin.png",
+      "AltText": "Nichole Goodwin",
+      "FileSize": 258514
+    },
+    {
+      "FileName": "erik-sorensen-1.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/pfwelffj/erik-sorensen-1.jpg",
+      "AltText": "Erik Sorensen",
+      "FileSize": 116210
+    },
+    {
+      "FileName": "cougarheadlogo.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/rrbl10xu/cougarheadlogo.jpg",
+      "AltText": "Manny Gomez",
+      "FileSize": 10205
+    },
+    {
+      "FileName": "6q6a5297.png",
+      "SourceUrl": "https://housing.wsu.edu/media/z24fh00u/6q6a5297.png",
+      "AltText": "Griffin Hogan",
+      "FileSize": 465231
+    },
+    {
+      "FileName": "daniel-schenk.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/bmhf3422/daniel-schenk.jpg",
+      "AltText": "Daniel Schenk (2)",
+      "FileSize": 134775
+    },
+    {
+      "FileName": "desiree.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/yiqhtxnl/desiree.jpg",
+      "AltText": "Desiree  Valdez Chavez",
+      "FileSize": 134099
+    },
+    {
+      "FileName": "jack-van-dam-square.png",
+      "SourceUrl": "https://housing.wsu.edu/media/0bkbgjbb/jack-van-dam-square.png",
+      "AltText": "Jack Van Dam",
+      "FileSize": 251214
+    },
+    {
+      "FileName": "belindarose-ane.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/im3isloc/belindarose-ane.jpg",
+      "AltText": "Belindarose Ane",
+      "FileSize": 127615
+    },
+    {
+      "FileName": "tyler-bacon.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/1mweluq2/tyler-bacon.jpg",
+      "AltText": "Tyler Bacon",
+      "FileSize": 137016
+    },
+    {
+      "FileName": "seattle-2.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/urhf4oeb/seattle-2.jpg",
+      "AltText": "Seattle Bentley",
+      "FileSize": 130038
+    },
+    {
+      "FileName": "dept-social-badge-800x800.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/qhpl2r1z/dept-social-badge-800x800.jpg",
+      "AltText": "Mason Burns",
+      "FileSize": 114604
+    },
+    {
+      "FileName": "kelly-chege-2.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/zzelvta2/kelly-chege-2.jpg",
+      "AltText": "Kelly Chege",
+      "FileSize": 124052
+    },
+    {
+      "FileName": "emily-davis-1.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/ltchnt2h/emily-davis-1.jpg",
+      "AltText": "Emily Davis",
+      "FileSize": 148326
+    },
+    {
+      "FileName": "sarah-hadaway.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/htfb32ta/sarah-hadaway.jpg",
+      "AltText": "Sarah Hadaway",
+      "FileSize": 135342
+    },
+    {
+      "FileName": "samuel-houle.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/u5sh1pww/samuel-houle.jpg",
+      "AltText": "Sam Houle",
+      "FileSize": 147407
+    },
+    {
+      "FileName": "_q6a2649.png",
+      "SourceUrl": "https://housing.wsu.edu/media/shrju5q4/_q6a2649.png",
+      "AltText": "Megan Marshall",
+      "FileSize": 630897
+    },
+    {
+      "FileName": "toni-martin.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/5wriim04/toni-martin.jpg",
+      "AltText": "Toni Martin",
+      "FileSize": 145103
+    },
+    {
+      "FileName": "kyle.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/mi1nse52/kyle.jpg",
+      "AltText": "Kyle Morgan",
+      "FileSize": 106017
+    },
+    {
+      "FileName": "jillian-paxton.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/4ohi4vxe/jillian-paxton.jpg",
+      "AltText": "Jillian Paxton",
+      "FileSize": 154861
+    },
+    {
+      "FileName": "valeria-perez.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/eitb35aq/valeria-perez.jpg",
+      "AltText": "Valeria Perez",
+      "FileSize": 179044
+    },
+    {
+      "FileName": "lindseyweaver.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/qgedotf2/lindseyweaver.jpg",
+      "AltText": "Lindsey Weaver",
+      "FileSize": 160060
+    },
+    {
+      "FileName": "brandon-trueswell.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/hselcibf/brandon-trueswell.jpg",
+      "AltText": "Brandon Trueswell",
+      "FileSize": 131923
+    },
+    {
+      "FileName": "mattie-updyke.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/5xbhwgfw/mattie-updyke.jpg",
+      "AltText": "Mattie Updyke",
+      "FileSize": 143275
+    },
+    {
+      "FileName": "lisl-wiedemann.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/ioumuv54/lisl-wiedemann.jpg",
+      "AltText": "Lisl Wiedemann",
+      "FileSize": 160021
+    },
+    {
+      "FileName": "trey-collins.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/nkynzfqw/trey-collins.jpg",
+      "AltText": "Trey Collins",
+      "FileSize": 124934
+    },
+    {
+      "FileName": "georgina-ramos-avalos-1.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/3jsljguz/georgina-ramos-avalos-1.jpg",
+      "AltText": "Georgina Ramos Avalos",
+      "FileSize": 136479
+    },
+    {
+      "FileName": "sara-refsland.jpg",
+      "SourceUrl": "https://housing.wsu.edu/media/3poocflf/sara-refsland.jpg",
+      "AltText": "Sara Refsland",
+      "FileSize": 140702
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:15:52 GMT",
+    "date": "Mon, 16 Feb 2026 20:42:00 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-16T20:15:52.7078052Z"
+  "CapturedAt": "2026-02-16T20:42:00.890582Z"
 }

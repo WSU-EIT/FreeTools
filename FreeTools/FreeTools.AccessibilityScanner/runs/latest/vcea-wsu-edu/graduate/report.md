@@ -5,17 +5,20 @@
 | URL | https://vcea.wsu.edu/graduate/ |
 | Redirected To | https://vcea.wsu.edu/graduate-students-present-research/ |
 | Title | Graduate Students Present Research | Voiland College of Engineering and Architecture | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 224.8 KB |
+| Status | ❌ 0 |
+| HTML Size | 217.6 KB |
 | Screenshots | 1 (181.2 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:49.2286650Z |
+| Captured | 2026-02-16T20:38:58.4934574Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (181.2 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -23,6 +26,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

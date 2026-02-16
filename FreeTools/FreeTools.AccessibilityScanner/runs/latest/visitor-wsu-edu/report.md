@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 2 |
-| Pages Failed | 4 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
 | Total JS Errors | 4 |
-| Total JS Warnings | 4 |
+| Total JS Warnings | 0 |
 | Total HTML | 1.3 MB |
-| Total Screenshots | 3.8 MB |
+| Total Screenshots | 3.4 MB |
+| Total Images | 7 (3.1 MB) |
+| Images Missing Alt | 0 |
 | Folder | `visitor-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Brelsford WSU Visitor Center \| Washi... | 0 | 0 | 1 |
-| ❌ | [/accommodations/](accommodations/report.md) | 404 | Page not found \| Brelsford WSU Visit... | 1 | 1 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us \| Brelsford WSU Visitor C... | 0 | 0 | 1 |
-| ❌ | [/dining/](dining/report.md) | 404 | Page not found \| Brelsford WSU Visit... | 1 | 1 | 1 |
-| ❌ | [/plan-visit/](plan-visit/report.md) | 404 | Page not found \| Brelsford WSU Visit... | 1 | 1 | 1 |
-| ❌ | [/tours/](tours/report.md) | 404 | Page not found \| Brelsford WSU Visit... | 1 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Brelsford WSU Visitor Center \| Washi... | 0 | 5 | 0 |
+| ❌ | [/accommodations/](accommodations/report.md) | 0 | Page not found \| Brelsford WSU Visit... | 1 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Us \| Brelsford WSU Visitor C... | 0 | 2 | 0 |
+| ❌ | [/dining/](dining/report.md) | 0 | Page not found \| Brelsford WSU Visit... | 1 | 0 | 0 |
+| ❌ | [/plan-visit/](plan-visit/report.md) | 0 | Page not found \| Brelsford WSU Visit... | 1 | 0 | 0 |
+| ❌ | [/tours/](tours/report.md) | 0 | Page not found \| Brelsford WSU Visit... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,25 +54,35 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://visitor.wsu.edu/
+- **Status:** 0
+
 ### /plan-visit/
 
 - **URL:** https://visitor.wsu.edu/plan-visit/
-- **Status:** 404
+- **Status:** 0
 
 ### /tours/
 
 - **URL:** https://visitor.wsu.edu/tours/
-- **Status:** 404
+- **Status:** 0
 
 ### /accommodations/
 
 - **URL:** https://visitor.wsu.edu/accommodations/
-- **Status:** 404
+- **Status:** 0
 
 ### /dining/
 
 - **URL:** https://visitor.wsu.edu/dining/
-- **Status:** 404
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://visitor.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors

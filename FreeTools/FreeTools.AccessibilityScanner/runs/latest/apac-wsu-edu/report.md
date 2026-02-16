@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 5 |
-| Pages Failed | 1 |
-| Total JS Errors | 18 |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 15 |
 | Total JS Warnings | 0 |
-| Total HTML | 410.9 KB |
-| Total Screenshots | 2.4 MB |
+| Total HTML | 330.9 KB |
+| Total Screenshots | 1.1 MB |
+| Total Images | 6 (805.8 KB) |
+| Images Missing Alt | 3 |
 | Folder | `apac-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Administrative Professional Advisory ... | 6 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About APAC \| Administrative Professi... | 2 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact \| Administrative Professiona... | 2 | 0 | 1 |
-| ✅ | [/meetings/](meetings/report.md) | 200 | Meetings and Events \| Administrative... | 3 | 0 | 1 |
-| ❌ | [/membership/](membership/report.md) | 404 | Page not found \| Administrative Prof... | 3 | 0 | 1 |
-| ✅ | [/resources/](resources/report.md) | 200 | Resources for APs \| Administrative P... | 2 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Administrative Professional Advisory ... | 3 | 6 | 3 |
+| ❌ | [/about/](about/report.md) | 0 | About APAC \| Administrative Professi... | 2 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact \| Administrative Professiona... | 2 | 0 | 0 |
+| ❌ | [/meetings/](meetings/report.md) | 0 | Meetings and Events \| Administrative... | 3 | 0 | 0 |
+| ❌ | [/membership/](membership/report.md) | 0 | Page not found \| Administrative Prof... | 3 | 0 | 0 |
+| ❌ | [/resources/](resources/report.md) | 0 | Resources for APs \| Administrative P... | 2 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,21 +54,43 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://apac.wsu.edu/
+- **Status:** 0
+
+### /about/
+
+- **URL:** https://apac.wsu.edu/about/
+- **Status:** 0
+
 ### /membership/
 
 - **URL:** https://apac.wsu.edu/membership/
-- **Status:** 404
+- **Status:** 0
+
+### /meetings/
+
+- **URL:** https://apac.wsu.edu/meetings/
+- **Status:** 0
+
+### /resources/
+
+- **URL:** https://apac.wsu.edu/resources/
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://apac.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (6 errors)
+### / (3 errors)
 
 - `Failed to load resource: the server responded with a status of 404 ()`
 - `Failed to load resource: the server responded with a status of 404 ()`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /membership/ (3 errors)

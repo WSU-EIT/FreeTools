@@ -3,31 +3,51 @@
   "Url": "https://ip.wsu.edu/",
   "FinalUrl": null,
   "Title": "WSU International | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 319416,
-  "ScreenshotSizeBytes": 1587073,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 307820,
+  "ScreenshotSizeBytes": 1455754,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1587073
+      "FileSize": 1455754
+    }
+  ],
+  "ImageCount": 4,
+  "ImagesTotalSizeBytes": 677997,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "Butch-w-FB-Crowdcr.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ip/uploads/sites/2794/2022/12/Butch-w-FB-Crowdcr.jpeg",
+      "AltText": "alt=\u0022\u0022",
+      "FileSize": 212351
+    },
+    {
+      "FileName": "Spark-classroom.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ip/uploads/sites/2794/2022/12/Spark-classroom.jpg",
+      "AltText": "alt=\u0022\u0022",
+      "FileSize": 278779
+    },
+    {
+      "FileName": "sunglasses.jpeg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ip/uploads/sites/2794/2021/07/sunglasses.jpeg",
+      "AltText": "alt=\u0022\u0022",
+      "FileSize": 96242
+    },
+    {
+      "FileName": "Cougs-Give-IP-Icon-BW-2025.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-ip/uploads/sites/2794/2025/03/Cougs-Give-IP-Icon-BW-2025.png",
+      "AltText": "\u0022\u0022",
+      "FileSize": 90625
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:10:29 GMT",
-    "etag": "\u0022a77620816817b3154097795120eaf7d5\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:59:40 GMT",
-    "link": "\u003Chttps://ip.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ip.wsu.edu/wp-json/wp/v2/pages/8447\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ip.wsu.edu/\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1302691Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.1119428Z"
 }

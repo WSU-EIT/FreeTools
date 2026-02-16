@@ -5,17 +5,20 @@
 | URL | https://research.wsu.edu/research-areas/ |
 | Redirected To | https://research.wsu.edu/login?redirect_to=/research-areas/ |
 | Title | Log In ‹ Office of Research — WordPress |
-| Status | ✅ 200 |
+| Status | ❌ 0 |
 | HTML Size | 6.4 KB |
 | Screenshots | 1 (24.2 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:55.7071862Z |
+| Captured | 2026-02-16T20:38:32.7103966Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (24.2 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -23,6 +26,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

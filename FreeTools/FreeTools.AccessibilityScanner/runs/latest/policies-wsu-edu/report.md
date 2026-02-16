@@ -2,25 +2,27 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 1/5 pages OK |
+| Status | ⚠️ 0/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 1 |
-| Pages Failed | 4 |
-| Total JS Errors | 8 |
+| Pages Passed | 0 |
+| Pages Failed | 5 |
+| Total JS Errors | 5 |
 | Total JS Warnings | 0 |
-| Total HTML | 283.0 KB |
-| Total Screenshots | 661.6 KB |
+| Total HTML | 240.9 KB |
+| Total Screenshots | 667.6 KB |
+| Total Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | Folder | `policies-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Washington State University Policies ... | 4 | 0 | 1 |
-| ❌ | [/about/](about/report.md) | 404 | Page not found \| Washington State Un... | 1 | 0 | 1 |
-| ❌ | [/bppm/](bppm/report.md) | 404 | Page not found \| Washington State Un... | 1 | 0 | 1 |
-| ❌ | [/manuals/](manuals/report.md) | 404 | Page not found \| Washington State Un... | 1 | 0 | 1 |
-| ❌ | [/search/](search/report.md) | 404 | Page not found \| Washington State Un... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Washington State University Policies ... | 1 | 0 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | Page not found \| Washington State Un... | 1 | 0 | 0 |
+| ❌ | [/bppm/](bppm/report.md) | 0 | Page not found \| Washington State Un... | 1 | 0 | 0 |
+| ❌ | [/manuals/](manuals/report.md) | 0 | Page not found \| Washington State Un... | 1 | 0 | 0 |
+| ❌ | [/search/](search/report.md) | 0 | Page not found \| Washington State Un... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -47,34 +49,36 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://policies.wsu.edu/
+- **Status:** 0
+
 ### /manuals/
 
 - **URL:** https://policies.wsu.edu/manuals/
-- **Status:** 404
+- **Status:** 0
 
 ### /search/
 
 - **URL:** https://policies.wsu.edu/search/
-- **Status:** 404
+- **Status:** 0
 
 ### /bppm/
 
 - **URL:** https://policies.wsu.edu/bppm/
-- **Status:** 404
+- **Status:** 0
 
 ### /about/
 
 - **URL:** https://policies.wsu.edu/about/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (4 errors)
+### / (1 errors)
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /manuals/ (1 errors)

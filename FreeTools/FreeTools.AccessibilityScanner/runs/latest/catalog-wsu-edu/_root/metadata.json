@@ -5,7 +5,7 @@
   "Title": "",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 175803,
+  "HtmlSizeBytes": 164476,
   "ScreenshotSizeBytes": 4253,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,7 +18,11 @@
       "FileSize": 4253
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-16T20:10:26.1136944Z"
+  "CapturedAt": "2026-02-16T20:37:05.0070606Z"
 }

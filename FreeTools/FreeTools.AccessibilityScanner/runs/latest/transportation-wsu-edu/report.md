@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 5 |
-| Pages Failed | 1 |
-| Total JS Errors | 5 |
-| Total JS Warnings | 6 |
-| Total HTML | 378.4 KB |
-| Total Screenshots | 2.2 MB |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 4 |
+| Total JS Warnings | 4 |
+| Total HTML | 236.0 KB |
+| Total Screenshots | 640.9 KB |
+| Total Images | 5 (1.7 MB) |
+| Images Missing Alt | 0 |
 | Folder | `transportation-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Transportation Services \| Washington... | 4 | 1 | 1 |
-| ✅ | [/bike/](bike/report.md) | 200 | Bike_Ped_Plan \| Transportation Servi... | 0 | 1 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact \| Transportation Services \|... | 0 | 1 | 1 |
-| ✅ | [/parking/](parking/report.md) | 200 | Parking \| Transportation Services \|... | 0 | 1 | 1 |
-| ❌ | [/policies/](policies/report.md) | 404 | Page not found \| Transportation Serv... | 1 | 1 | 1 |
-| ✅ | [/transit/](transit/report.md) | 200 | Transit Options \| Transportation Ser... | 0 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Transportation Services \| Washington... | 3 | 0 | 0 |
+| ❌ | [/bike/](bike/report.md) | 0 | Bike_Ped_Plan \| Transportation Servi... | 0 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact \| Transportation Services \|... | 0 | 5 | 0 |
+| ❌ | [/parking/](parking/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ❌ | [/policies/](policies/report.md) | 0 | Page not found \| Transportation Serv... | 1 | 0 | 0 |
+| ❌ | [/transit/](transit/report.md) | 0 | (none) | 0 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -37,32 +39,56 @@
 
 ![/contact/](contact/01-page-loaded.png)
 
-### [/parking/](parking/report.md)
-
-![/parking/](parking/01-page-loaded.png)
-
 ### [/policies/](policies/report.md)
 
 ![/policies/](policies/01-page-loaded.png)
 
-### [/transit/](transit/report.md)
-
-![/transit/](transit/01-page-loaded.png)
-
 
 ## Failed Pages
+
+### /
+
+- **URL:** https://transportation.wsu.edu/
+- **Status:** 0
+
+### /parking/
+
+- **URL:** https://transportation.wsu.edu/parking/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
+
+### /transit/
+
+- **URL:** https://transportation.wsu.edu/transit/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
+
+### /bike/
+
+- **URL:** https://transportation.wsu.edu/bike/
+- **Status:** 0
 
 ### /policies/
 
 - **URL:** https://transportation.wsu.edu/policies/
-- **Status:** 404
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://transportation.wsu.edu/contact/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (4 errors)
+### / (3 errors)
 
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 - `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 - `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 - `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`

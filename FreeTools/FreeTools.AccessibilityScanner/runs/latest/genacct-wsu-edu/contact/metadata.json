@@ -3,10 +3,10 @@
   "Url": "https://genacct.wsu.edu/contact/",
   "FinalUrl": "https://genacct.wsu.edu/contact-information/",
   "Title": "Contact Us | University Accounting | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 72952,
-  "ScreenshotSizeBytes": 600521,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 63694,
+  "ScreenshotSizeBytes": 545026,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,51 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 600521
+      "FileSize": 545026
+    }
+  ],
+  "ImageCount": 6,
+  "ImagesTotalSizeBytes": 1590260,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "FileName": "Jennifer-Druffel-scaled-e1671488768239.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3077/2022/12/Jennifer-Druffel-scaled-e1671488768239.jpg",
+      "AltText": "photo of employee",
+      "FileSize": 404943
+    },
+    {
+      "FileName": "blank-profile-picture.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3077/2022/12/blank-profile-picture.jpg",
+      "AltText": "photo of employee placeholder",
+      "FileSize": 6031
+    },
+    {
+      "FileName": "John-Keatts-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3077/2022/12/John-Keatts-scaled.jpg",
+      "AltText": "photo of employee",
+      "FileSize": 538912
+    },
+    {
+      "FileName": "Amberly-Marino-e1671752321999.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3077/2022/12/Amberly-Marino-e1671752321999.jpg",
+      "AltText": "photo of employee",
+      "FileSize": 91703
+    },
+    {
+      "FileName": "Craig-Stephens-e1683226588901.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3077/2023/05/Craig-Stephens-e1683226588901.jpg",
+      "AltText": "photo of employee",
+      "FileSize": 157996
+    },
+    {
+      "FileName": "Tarryn-Anderson-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-fais/uploads/sites/3077/2022/12/Tarryn-Anderson-scaled.jpg",
+      "AltText": "photo of employee",
+      "FileSize": 390675
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:09 GMT",
-    "etag": "\u00224f52508cdbb43ec02209ef1d60f1f1ff\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:25:17 GMT",
-    "link": "\u003Chttps://genacct.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://genacct.wsu.edu/wp-json/wp/v2/pages/57\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://genacct.wsu.edu/?p=57\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:14:05.9277126Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:57.4123402Z"
 }

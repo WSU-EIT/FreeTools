@@ -5,17 +5,20 @@
 | URL | https://financialaid.wsu.edu/apply/ |
 | Redirected To | https://financialaid.wsu.edu/apply-for-aid/ |
 | Title | Apply for Aid | Student Financial Services | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 234.6 KB |
-| Screenshots | 1 (1.5 MB) |
+| Status | ❌ 0 |
+| HTML Size | 222.2 KB |
+| Screenshots | 1 (1022.7 KB) |
+| Images | 6 (820.6 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:30.2257798Z |
+| Captured | 2026-02-16T20:38:12.3539506Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.5 MB)
+- Screenshot #1: page-loaded (1022.7 KB)
+- Downloaded 6 images to /images/
 
 ## Screenshots
 
@@ -24,12 +27,39 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (6)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [boy-reading.jpg](images/boy-reading.jpg) | A student reads a book outside the li... | 53.6 KB |
+| 2 | [SpeedDating.jpg](images/SpeedDating.jpg) | Students sit at a table getting to kn... | 389.4 KB |
+| 3 | [lounging-student.jpg](images/lounging-student.jpg) | A student lounges on the campus lawn ... | 52.9 KB |
+| 4 | [DRAFT-SITE-stock-photo.jpg](images/DRAFT-SITE-stock-photo.jpg) | Five WSU students outdoors on campus ... | 154.1 KB |
+| 5 | [StudentEmployee.jpg](images/StudentEmployee.jpg) | Student employee serving food at a WS... | 87.3 KB |
+| 6 | [hands-in-1024x682.jpg](images/hands-in-1024x682.jpg) | A group of students all put their han... | 83.4 KB |
+
+### Gallery
+
+![A student reads a book outside the library.](images/boy-reading.jpg)
+
+![Students sit at a table getting to know each other during orientation week.](images/SpeedDating.jpg)
+
+![A student lounges on the campus lawn and reads a book.](images/lounging-student.jpg)
+
+![Five WSU students outdoors on campus holding up a cougar head flag.](images/DRAFT-SITE-stock-photo.jpg)
+
+![Student employee serving food at a WSU dining center.](images/StudentEmployee.jpg)
+
+![A group of students all put their hands in together.](images/hands-in-1024x682.jpg)
+
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.5 MB)
+- `01-page-loaded.png` — page-loaded (1022.7 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 6 page images (820.6 KB)

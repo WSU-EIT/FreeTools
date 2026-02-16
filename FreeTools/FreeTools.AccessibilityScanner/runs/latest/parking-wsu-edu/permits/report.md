@@ -5,17 +5,20 @@
 | URL | https://parking.wsu.edu/permits/ |
 | Redirected To | https://parking.wsu.edu/login/index.php |
 | Title | Login | Washington State University Parking |
-| Status | ✅ 200 |
-| HTML Size | 64.8 KB |
-| Screenshots | 1 (46.0 KB) |
+| Status | ❌ 0 |
+| HTML Size | 64.2 KB |
+| Screenshots | 1 (37.5 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:30.0490577Z |
+| Captured | 2026-02-16T20:37:59.3356055Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (46.0 KB)
+- Screenshot #1: page-loaded (37.5 KB)
+- Downloaded 0 images to /images/
 
 ## Screenshots
 
@@ -24,9 +27,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (46.0 KB)
+- `01-page-loaded.png` — page-loaded (37.5 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

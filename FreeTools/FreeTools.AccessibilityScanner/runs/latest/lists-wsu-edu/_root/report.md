@@ -4,17 +4,20 @@
 |-------|-------|
 | URL | https://lists.wsu.edu/ |
 | Title | Home | Information Technology Services |
-| Status | ✅ 200 |
+| Status | ❌ 0 |
 | HTML Size | 12.6 KB |
 | Screenshots | 1 (128.3 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:26.1309609Z |
+| Captured | 2026-02-16T20:37:05.1134027Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (128.3 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -22,6 +25,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

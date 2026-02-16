@@ -2,25 +2,27 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 2/5 pages OK |
+| Status | ⚠️ 1/5 pages OK |
 | Pages Scanned | 5 |
-| Pages Passed | 2 |
-| Pages Failed | 3 |
-| Total JS Errors | 4 |
+| Pages Passed | 1 |
+| Pages Failed | 4 |
+| Total JS Errors | 6 |
 | Total JS Warnings | 5 |
-| Total HTML | 85.1 KB |
-| Total Screenshots | 313.3 KB |
+| Total HTML | 85.4 KB |
+| Total Screenshots | 308.8 KB |
+| Total Images | 12 (48.9 KB) |
+| Images Missing Alt | 7 |
 | Folder | `staff-storefront-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Home - WSU Coug Prints Plus | 1 | 1 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us - WSU Coug Prints Plus | 0 | 1 | 1 |
-| ❌ | [/design/](design/report.md) | 404 | 404 Page Error - WSU Coug Prints Plus | 1 | 1 | 1 |
-| ❌ | [/printing/](printing/report.md) | 404 | 404 Page Error - WSU Coug Prints Plus | 1 | 1 | 1 |
-| ❌ | [/services/](services/report.md) | 404 | 404 Page Error - WSU Coug Prints Plus | 1 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Home - WSU Coug Prints Plus | 3 | 7 | 6 |
+| ✅ | [/contact/](contact/report.md) | 200 | Contact Us - WSU Coug Prints Plus | 0 | 2 | 1 |
+| ❌ | [/design/](design/report.md) | 0 | 404 Page Error - WSU Coug Prints Plus | 1 | 1 | 0 |
+| ❌ | [/printing/](printing/report.md) | 0 | 404 Page Error - WSU Coug Prints Plus | 1 | 1 | 0 |
+| ❌ | [/services/](services/report.md) | 0 | 404 Page Error - WSU Coug Prints Plus | 1 | 1 | 0 |
 
 ## Page Screenshots
 
@@ -47,26 +49,33 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://staff.storefront.wsu.edu/
+- **Status:** 0
+
 ### /services/
 
 - **URL:** https://staff.storefront.wsu.edu/services/
-- **Status:** 404
+- **Status:** 0
 
 ### /printing/
 
 - **URL:** https://staff.storefront.wsu.edu/printing/
-- **Status:** 404
+- **Status:** 0
 
 ### /design/
 
 - **URL:** https://staff.storefront.wsu.edu/design/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### / (3 errors)
 
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ### /services/ (1 errors)

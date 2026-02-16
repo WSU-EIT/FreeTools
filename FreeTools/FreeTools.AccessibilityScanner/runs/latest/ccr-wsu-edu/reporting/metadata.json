@@ -3,13 +3,13 @@
   "Url": "https://ccr.wsu.edu/reporting/",
   "FinalUrl": "https://ccr.wsu.edu/file-a-report/",
   "Title": "File A Report or Complaint | Compliance and Civil Rights | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 238195,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 225190,
   "ScreenshotSizeBytes": 217098,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
-  "ConsoleWarningCount": 1,
+  "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
@@ -18,16 +18,11 @@
       "FileSize": 217098
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:11:57 GMT",
-    "etag": "\u002256e1dfa12696d964b486fc81f3c3a5eb\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:11:57 GMT",
-    "link": "\u003Chttps://ccr.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://ccr.wsu.edu/wp-json/wp/v2/pages/767\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://ccr.wsu.edu/?p=767\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:11:54.2811067Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:24.0466226Z"
 }

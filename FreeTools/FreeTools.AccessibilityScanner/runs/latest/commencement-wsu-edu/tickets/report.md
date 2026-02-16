@@ -4,22 +4,24 @@
 |-------|-------|
 | URL | https://commencement.wsu.edu/tickets/ |
 | Title | Page not found | WSU Commencement | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 48.5 KB |
-| Screenshots | 1 (112.5 KB) |
-| JS Errors | 2 |
-| JS Warnings | 2 |
+| Status | ❌ 0 |
+| HTML Size | 36.7 KB |
+| Screenshots | 1 (76.2 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:26.1897947Z |
+| Captured | 2026-02-16T20:38:25.6746631Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: the server responded with a status of 404 (Not Found)`
-- `Failed to load resource: the server responded with a status of 403 ()`
 
 ## Actions
 
-- Screenshot #1: page-loaded (112.5 KB)
+- Screenshot #1: page-loaded (76.2 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -28,9 +30,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (112.5 KB)
+- `01-page-loaded.png` — page-loaded (76.2 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

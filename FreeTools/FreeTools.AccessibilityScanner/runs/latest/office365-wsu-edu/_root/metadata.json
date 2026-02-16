@@ -1,45 +1,41 @@
 {
   "PagePath": "/",
   "Url": "https://office365.wsu.edu/",
-  "FinalUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca\u0026redirect_uri=https%3A%2F%2Fwww.microsoft365.com%2Flandingv2\u0026response_type=code%20id_token\u0026scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All\u0026response_mode=form_post\u0026nonce=639068694350430782.MzBjM2VmMzQtYjEyMy00ODE3LTljMGEtOGE5NGViM2ZiYmEzNzM5ZDY4ZGItMWE3NS00NDNkLWFhMmQtY2FjYTZkODMyMmMy\u0026ui_locales=en-US\u0026mkt=en-US\u0026client-request-id=729a9d43-344d-44dd-96f5-19d5e639f2a3\u0026state=U4KinXvif8IU6X7p-lI5SvcRE3j83U3i5IgVlSYQz2Ozmx6Z3aXld-V8Ll84-3_ECUR_nGhuEJ27hIBzd90L_m4ePEX345AJYid6eXGAPNE4QmGZntspZN6uYRj2nDRE3fAZ_10WyYGhgGAAzFRmd42V1R3r8RTZMBr_NDto2WuHWBqXl2Bu4V0aqiWlKHf5GUIC6fdwoe17Wj4XR4dK4sD4tQVrE-cjXfReuXo5aDOKke6QhpRMlIwSo269HK_VDnOeu2powhROBlV4Stdfc2QKX6MtE-UEBOh4yYq7arNPGJZIlhqvDnqykz61aC7YuUp48Vc50b4rCnOBHa21QA\u0026x-client-SKU=ID_NET8_0\u0026x-client-ver=8.5.0.0\u0026sso_reload=true",
+  "FinalUrl": "about:blank",
   "Title": "Sign in to your account",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 88760,
-  "ScreenshotSizeBytes": 291047,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 89832,
+  "ScreenshotSizeBytes": 4701,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 0,
+  "ConsoleErrorCount": 3,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 291047
+      "FileSize": 4701
+    }
+  ],
+  "ImageCount": 2,
+  "ImagesTotalSizeBytes": 2056,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg",
+      "SourceUrl": "https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg",
+      "AltText": "Microsoft",
+      "FileSize": 1435
+    },
+    {
+      "FileName": "signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg",
+      "SourceUrl": "https://aadcdn.msauth.net/shared/1.0/content/images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg",
+      "AltText": "",
+      "FileSize": 621
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "no-store, no-cache",
-    "content-encoding": "gzip",
-    "content-length": "9635",
-    "content-security-policy-report-only": "object-src \u0027none\u0027; base-uri \u0027self\u0027; script-src \u0027self\u0027 \u0027nonce-Mx3t1Ye5-nRm3TNRaXRo4Q\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 https://*.msauth.net https://*.msftauth.net https://*.msftauthimages.net https://*.msauthimages.net https://*.msidentity.com https://*.microsoftonline-p.com https://*.microsoftazuread-sso.com https://*.azureedge.net https://*.outlook.com https://*.office.com https://*.office365.com https://*.microsoft.com https://*.bing.com \u0027report-sample\u0027; report-uri https://csp.microsoft.com/report/ESTS-UX-All",
-    "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 16 Feb 2026 20:10:36 GMT",
-    "expires": "-1",
-    "nel": "{\u0022report_to\u0022:\u0022network-errors\u0022,\u0022max_age\u0022:86400,\u0022success_fraction\u0022:0.001,\u0022failure_fraction\u0022:1.0}",
-    "p3p": "CP=\u0022DSP CUR OTPi IND OTRi ONL FIN\u0022",
-    "pragma": "no-cache",
-    "referrer-policy": "strict-origin-when-cross-origin",
-    "report-to": "{\u0022group\u0022:\u0022network-errors\u0022,\u0022max_age\u0022:86400,\u0022endpoints\u0022:[{\u0022url\u0022:\u0022https://identity.nel.measure.office.net/api/report?catId=GW\u002Bestsfd\u002Bwst\u0022}]}",
-    "strict-transport-security": "max-age=31536000; includeSubDomains",
-    "vary": "Accept-Encoding",
-    "x-content-type-options": "nosniff",
-    "x-ms-clitelem": "1,50168,0,,",
-    "x-ms-ests-server": "2.1.23403.4 - NCUS ProdSlices",
-    "x-ms-request-id": "a34f2bc2-6784-4395-9ecc-3c78d6720700",
-    "x-ms-srs": "1.P",
-    "x-xss-protection": "0"
-  },
-  "CapturedAt": "2026-02-16T20:10:26.1349872Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:05.1352587Z"
 }

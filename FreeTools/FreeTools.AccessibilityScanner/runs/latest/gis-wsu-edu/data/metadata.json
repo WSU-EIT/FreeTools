@@ -2,11 +2,11 @@
   "PagePath": "/data/",
   "Url": "https://gis.wsu.edu/data/",
   "FinalUrl": "https://wsuadmin.maps.arcgis.com/home/index.html",
-  "Title": "WSU Administration GIS Portal",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 436294,
-  "ScreenshotSizeBytes": 1258148,
+  "Title": "",
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 162764,
+  "ScreenshotSizeBytes": 4253,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,29 +15,14 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1258148
+      "FileSize": 4253
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "cache-control": "private, max-age=0",
-    "content-encoding": "br",
-    "content-length": "257",
-    "content-security-policy": "upgrade-insecure-requests",
-    "content-type": "text/html",
-    "date": "Mon, 16 Feb 2026 20:12:20 GMT",
-    "etag": "\u00224d8ff8b42c512f84405d3c19bc6e8bd6\u0022",
-    "expires": "-1",
-    "last-modified": "Sat, 08 Nov 2025 00:56:46 GMT",
-    "link": "\u003Chttps://www.arcgis.com/home/index.html\u003E; rel=\u0022canonical\u0022",
-    "referrer-policy": "no-referrer-when-downgrade",
-    "server": "ArcGIS Online",
-    "strict-transport-security": "max-age=63072000",
-    "via": "1.1 0361f428634a3c0bc42e9b0f23e19ffe.cloudfront.net (CloudFront)",
-    "x-amz-cf-id": "2gL5pq6f7kkfeOMq1UOSiqr7S6xQeUxnlRbZsdfVef5xFiLF7TANsA==",
-    "x-amz-cf-pop": "SEA900-P3",
-    "x-cache": "Miss from cloudfront",
-    "x-cached": "HIT"
-  },
-  "CapturedAt": "2026-02-16T20:12:15.6401423Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:25.472112Z"
 }

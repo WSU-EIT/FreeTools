@@ -3,10 +3,10 @@
   "Url": "https://slcr.wsu.edu/faculty/",
   "FinalUrl": null,
   "Title": "Faculty | School of Languages, Cultures, and Race | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 86063,
-  "ScreenshotSizeBytes": 1428438,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 68362,
+  "ScreenshotSizeBytes": 658374,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,19 +15,213 @@
       "FileName": "01-page-loaded.png",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 1428438
+      "FileSize": 658374
+    }
+  ],
+  "ImageCount": 33,
+  "ImagesTotalSizeBytes": 8452210,
+  "ImagesMissingAlt": 12,
+  "Images": [
+    {
+      "FileName": "Reho-Abo-e1595968250937.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2020/07/Reho-Abo-e1595968250937.jpg",
+      "AltText": "Reho Abo",
+      "FileSize": 63743
+    },
+    {
+      "FileName": "arellanos-scaled-e1726071896479-396x548.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2024/09/arellanos-scaled-e1726071896479-396x548.jpg",
+      "AltText": "",
+      "FileSize": 18693
+    },
+    {
+      "FileName": "Etna-Avalos-WSU-e1725554665121-396x487.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2024/09/Etna-Avalos-WSU-e1725554665121-396x487.jpg",
+      "AltText": "",
+      "FileSize": 28158
+    },
+    {
+      "FileName": "Mary-non-head.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2020/09/Mary-non-head.jpg",
+      "AltText": "Mary K. Bloodsworth-Lugo",
+      "FileSize": 200501
+    },
+    {
+      "FileName": "IMG_0624-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2020/07/IMG_0624-scaled.jpg",
+      "AltText": "Weiguo Cao",
+      "FileSize": 567291
+    },
+    {
+      "FileName": "SabineDavis-88x106.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2018/09/SabineDavis-88x106.jpg",
+      "AltText": "Sabine Davis",
+      "FileSize": 26992
+    },
+    {
+      "FileName": "bio-photo.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2020/05/bio-photo.jpg",
+      "AltText": "Samuel Ginsburg",
+      "FileSize": 14765
+    },
+    {
+      "FileName": "Lisa-Guerrero.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2020/08/Lisa-Guerrero.jpg",
+      "AltText": "Lisa Guerrero",
+      "FileSize": 115509
+    },
+    {
+      "FileName": "20230519_1451272-scaled-e1725555299646-396x503.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2024/09/20230519_1451272-scaled-e1725555299646-396x503.jpg",
+      "AltText": "",
+      "FileSize": 34445
+    },
+    {
+      "FileName": "IMG_0046-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2020/07/IMG_0046-scaled.jpg",
+      "AltText": "Xinmin Liu",
+      "FileSize": 864191
+    },
+    {
+      "FileName": "IMG_4231-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2025/02/IMG_4231-scaled.jpg",
+      "AltText": " Carmen R. Lugo-Lugo ",
+      "FileSize": 500740
+    },
+    {
+      "FileName": "Amy.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2024/08/Amy.jpg",
+      "AltText": "Amy Matsumoto",
+      "FileSize": 106111
+    },
+    {
+      "FileName": "vilma-noche-vieja-2021-en-chile.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2022/06/vilma-noche-vieja-2021-en-chile.jpg",
+      "AltText": "Vilma Navarro-Daniels",
+      "FileSize": 83237
+    },
+    {
+      "FileName": "IMG_0618-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2020/07/IMG_0618-scaled.jpg",
+      "AltText": "Kayo Niimi",
+      "FileSize": 557174
+    },
+    {
+      "FileName": "Joseba_Guerrero.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2018/10/Joseba_Guerrero.jpg",
+      "AltText": "Joseba Perez",
+      "FileSize": 39595
+    },
+    {
+      "FileName": "Sere-Previto-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2020/07/Sere-Previto-scaled.jpg",
+      "AltText": "Maria Serenella Previto",
+      "FileSize": 576805
+    },
+    {
+      "FileName": "20250121_154350-396x528.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2025/01/20250121_154350-396x528.jpg",
+      "AltText": "Bego\u00F1a de Quintana Lasa",
+      "FileSize": 71266
+    },
+    {
+      "FileName": "image-91-396x495.png",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2024/09/image-91-396x495.png",
+      "AltText": "",
+      "FileSize": 253556
+    },
+    {
+      "FileName": "jeannie-396x527.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2023/08/jeannie-396x527.jpg",
+      "AltText": "",
+      "FileSize": 52009
+    },
+    {
+      "FileName": "JohnStreamas-88x106.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2018/07/JohnStreamas-88x106.jpg",
+      "AltText": "John Streamas.",
+      "FileSize": 24571
+    },
+    {
+      "FileName": "Montmartre2-396x528.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2024/09/Montmartre2-396x528.jpg",
+      "AltText": "",
+      "FileSize": 56194
+    },
+    {
+      "FileName": "Prof-X_Go-Cougs_tall_.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2023/11/Prof-X_Go-Cougs_tall_.jpg",
+      "AltText": "R. Xach Williams",
+      "FileSize": 735924
+    },
+    {
+      "FileName": "Bio-Photo-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2021/08/Bio-Photo.jpg",
+      "AltText": "Raelene Wyse",
+      "FileSize": 717222
+    },
+    {
+      "FileName": "black-mark.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2020/07/black-mark.jpg",
+      "AltText": "Mark Black",
+      "FileSize": 443717
+    },
+    {
+      "FileName": "PuckBrecher-e1535573960127-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2022/05/PuckBrecher-e1535573960127-scaled.jpg",
+      "AltText": "Puck Brecher",
+      "FileSize": 633903
+    },
+    {
+      "FileName": "Amir-Gilmore-Fall-2021-COE_3270-1188x792-1.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2023/02/Amir-Gilmore-Fall-2021-COE_3270-1188x792-1.jpg",
+      "AltText": "Amir Gilmore",
+      "FileSize": 153217
+    },
+    {
+      "FileName": "Sutton-2.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2023/01/Sutton-2.jpg",
+      "AltText": "Matthew A. Sutton",
+      "FileSize": 113573
+    },
+    {
+      "FileName": "IMG_1654.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2021/08/IMG_1654.jpg",
+      "AltText": "",
+      "FileSize": 240875
+    },
+    {
+      "FileName": "ingemanson_birgitta.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2019/03/ingemanson_birgitta.jpg",
+      "AltText": "",
+      "FileSize": 46303
+    },
+    {
+      "FileName": "IMG_0617-scaled.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2020/07/IMG_0617-scaled.jpg",
+      "AltText": "",
+      "FileSize": 1003334
+    },
+    {
+      "FileName": "RoryOng-88x106.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2018/10/RoryOng-88x106.jpg",
+      "AltText": "",
+      "FileSize": 18996
+    },
+    {
+      "FileName": "AnaMariaVivaldi-88x106.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2018/06/AnaMariaVivaldi-88x106.jpg",
+      "AltText": "",
+      "FileSize": 32009
+    },
+    {
+      "FileName": "IMG_0609-396x264.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-cas/uploads/sites/2035/2020/07/IMG_0609-396x264.jpg",
+      "AltText": "",
+      "FileSize": 57591
     }
   ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:13:42 GMT",
-    "etag": "\u00229f9352d7af863706b6b92adf9def960f\u0022",
-    "last-modified": "Mon, 16 Feb 2026 19:33:44 GMT",
-    "link": "\u003Chttps://slcr.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://slcr.wsu.edu/wp-json/wp/v2/pages/38\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://slcr.wsu.edu/?p=38\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:13:42.0075449Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:38:52.1917857Z"
 }

@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://atg.wsu.edu/compliance/ |
 | Title | Page not found | Office of the Attorney General | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 53.2 KB |
+| Status | ❌ 0 |
+| HTML Size | 40.2 KB |
 | Screenshots | 1 (35.5 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:45.1791063Z |
+| Captured | 2026-02-16T20:38:25.5157601Z |
 
 ## JavaScript Errors
 
@@ -19,6 +21,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (35.5 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -26,6 +29,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

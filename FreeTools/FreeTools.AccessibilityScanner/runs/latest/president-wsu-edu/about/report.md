@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://president.wsu.edu/about/ |
 | Title | Page not found | Office of the President | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 57.0 KB |
-| Screenshots | 1 (115.1 KB) |
+| Status | ❌ 0 |
+| HTML Size | 46.2 KB |
+| Screenshots | 1 (110.1 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:54.3089356Z |
+| Captured | 2026-02-16T20:38:18.5475943Z |
 
 ## JavaScript Errors
 
@@ -18,7 +20,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (115.1 KB)
+- Screenshot #1: page-loaded (110.1 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,9 +30,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (115.1 KB)
+- `01-page-loaded.png` — page-loaded (110.1 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

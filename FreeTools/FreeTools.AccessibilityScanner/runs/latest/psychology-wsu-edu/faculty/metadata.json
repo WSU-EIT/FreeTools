@@ -3,9 +3,9 @@
   "Url": "https://psychology.wsu.edu/faculty/",
   "FinalUrl": null,
   "Title": "Faculty | Department of Psychology | Washington State University",
-  "StatusCode": 200,
-  "Success": true,
-  "HtmlSizeBytes": 311433,
+  "StatusCode": 0,
+  "Success": false,
+  "HtmlSizeBytes": 311417,
   "ScreenshotSizeBytes": 1827133,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -18,16 +18,234 @@
       "FileSize": 1827133
     }
   ],
+  "ImageCount": 37,
+  "ImagesTotalSizeBytes": 2088262,
+  "ImagesMissingAlt": 37,
+  "Images": [
+    {
+      "FileName": "C.-Barry-Head-shot-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/03/C.-Barry-Head-shot-396x396.jpg",
+      "AltText": "",
+      "FileSize": 19191
+    },
+    {
+      "FileName": "Tammy-Barry-sq-1.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2023/01/Tammy-Barry-sq-1.png",
+      "AltText": "",
+      "FileSize": 1141231
+    },
+    {
+      "FileName": "s-bauman-481x720-1-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/03/s-bauman-481x720-1-396x396.jpg",
+      "AltText": "",
+      "FileSize": 27275
+    },
+    {
+      "FileName": "art-blume-thumb.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/03/art-blume-thumb.jpg",
+      "AltText": "",
+      "FileSize": 4888
+    },
+    {
+      "FileName": "leonard_burns-Thumb.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/03/leonard_burns-Thumb.jpg",
+      "AltText": "",
+      "FileSize": 5241
+    },
+    {
+      "FileName": "Elizabeth-Canning-e1563901138186.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/03/Elizabeth-Canning-e1563901138186.jpg",
+      "AltText": "",
+      "FileSize": 8728
+    },
+    {
+      "FileName": "Cuttler-Carrie-02-26-396x223.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2024/02/Cuttler-Carrie-02-26-396x223.jpg",
+      "AltText": "",
+      "FileSize": 19609
+    },
+    {
+      "FileName": "Lee-Daffin-Thumb.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/Lee-Daffin-Thumb.jpg",
+      "AltText": "",
+      "FileSize": 6500
+    },
+    {
+      "FileName": "Duell.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/02/Duell.jpg",
+      "AltText": "",
+      "FileSize": 24007
+    },
+    {
+      "FileName": "jessica_fales-Thumb-11.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/jessica_fales-Thumb-11.jpg",
+      "AltText": "",
+      "FileSize": 41979
+    },
+    {
+      "FileName": "lisa_fournier-Thumb.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/lisa_fournier-Thumb.jpg",
+      "AltText": "",
+      "FileSize": 5921
+    },
+    {
+      "FileName": "Gartstein-Masha-2017.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2023/09/Gartstein-Masha-2017.jpg",
+      "AltText": "",
+      "FileSize": 67411
+    },
+    {
+      "FileName": "Henricks-Angela-Fall-2021-396x223.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2022/05/Henricks-Angela-Fall-2021-396x223.jpg",
+      "AltText": "",
+      "FileSize": 18541
+    },
+    {
+      "FileName": "Lucas-Huckaby.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/Lucas-Huckaby.jpg",
+      "AltText": "",
+      "FileSize": 17453
+    },
+    {
+      "FileName": "conny_kirchhoff.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/conny_kirchhoff.jpg",
+      "AltText": "",
+      "FileSize": 53654
+    },
+    {
+      "FileName": "Dr.-Ladd-photo.new_-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/Dr.-Ladd-photo.new_-396x396.jpg",
+      "AltText": "",
+      "FileSize": 25625
+    },
+    {
+      "FileName": "Hsin-ya-Liao-second-792x528-1.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2018/03/Hsin-ya-Liao-second-792x528-1.jpg",
+      "AltText": "",
+      "FileSize": 13600
+    },
+    {
+      "FileName": "CL_profile-e1654625508144-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/CL_profile-e1654625508144-396x396.jpg",
+      "AltText": "",
+      "FileSize": 25109
+    },
+    {
+      "FileName": "Magnan-e1569952264572.png",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/Magnan-e1569952264572.png",
+      "AltText": "",
+      "FileSize": 79166
+    },
+    {
+      "FileName": "david_marcus-Thumb.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/david_marcus-Thumb.jpg",
+      "AltText": "",
+      "FileSize": 6415
+    },
+    {
+      "FileName": "Matthews_2019-e1571090913497-396x415-1.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/Matthews_2019-e1571090913497-396x415-1.jpg",
+      "AltText": "",
+      "FileSize": 23009
+    },
+    {
+      "FileName": "WSU_web_profile_Meidenbauer-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/WSU_web_profile_Meidenbauer-396x396.jpg",
+      "AltText": "",
+      "FileSize": 22731
+    },
+    {
+      "FileName": "Morgan-Michael-600x338-1-396x223.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2022/06/Morgan-Michael-600x338-1-396x223.jpg",
+      "AltText": "",
+      "FileSize": 17498
+    },
+    {
+      "FileName": "patel_herry_headshot1-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/09/patel_herry_headshot1-396x396.jpg",
+      "AltText": "",
+      "FileSize": 26405
+    },
+    {
+      "FileName": "janet-peters.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2023/12/janet-peters.jpg",
+      "AltText": "",
+      "FileSize": 39757
+    },
+    {
+      "FileName": "Posey-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/Posey-396x396.jpg",
+      "AltText": "",
+      "FileSize": 28127
+    },
+    {
+      "FileName": "tahira_probst-Thumb1.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/tahira_probst-Thumb1.jpg",
+      "AltText": "",
+      "FileSize": 5535
+    },
+    {
+      "FileName": "karen-schmaling-thumb.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/karen-schmaling-thumb.jpg",
+      "AltText": "",
+      "FileSize": 7017
+    },
+    {
+      "FileName": "Schmitter-Edgecombe-Maureen-396x223.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2022/06/Schmitter-Edgecombe-Maureen-396x223.jpg",
+      "AltText": "",
+      "FileSize": 15654
+    },
+    {
+      "FileName": "walt-scott-thumb.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/walt-scott-thumb.jpg",
+      "AltText": "",
+      "FileSize": 7878
+    },
+    {
+      "FileName": "christine_so-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/christine_so-396x396.jpg",
+      "AltText": "",
+      "FileSize": 29727
+    },
+    {
+      "FileName": "Alexander_Spradlin.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/02/Alexander_Spradlin.jpg",
+      "AltText": "",
+      "FileSize": 100656
+    },
+    {
+      "FileName": "Strand-Paul-2011-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2023/09/Strand-Paul-2011-396x396.jpg",
+      "AltText": "",
+      "FileSize": 46051
+    },
+    {
+      "FileName": "Amanda-Stueber.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/Amanda-Stueber.jpg",
+      "AltText": "",
+      "FileSize": 21745
+    },
+    {
+      "FileName": "Swensson_Headshot-scaled-1-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2025/04/Swensson_Headshot-scaled-1-396x396.jpg",
+      "AltText": "",
+      "FileSize": 36110
+    },
+    {
+      "FileName": "Samantha-Swindell-3-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2023/09/Samantha-Swindell-3-396x396.jpg",
+      "AltText": "",
+      "FileSize": 28517
+    },
+    {
+      "FileName": "Paul-Whitney_400-1-396x396.jpg",
+      "SourceUrl": "https://s3.wp.wsu.edu/uploads/sites/908/2018/11/Paul-Whitney_400-1-396x396.jpg",
+      "AltText": "",
+      "FileSize": 20301
+    }
+  ],
   "ErrorMessage": null,
-  "Headers": {
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:23 GMT",
-    "etag": "\u00225885c643128c0e5623682337bcf82ba8\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:14:23 GMT",
-    "link": "\u003Chttps://psychology.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://psychology.wsu.edu/wp-json/wp/v2/pages/906\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://psychology.wsu.edu/?p=906\u003E; rel=shortlink",
-    "server": "nginx",
-    "vary": "Accept-Encoding"
-  },
-  "CapturedAt": "2026-02-16T20:14:20.2968027Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:39:41.4059167Z"
 }

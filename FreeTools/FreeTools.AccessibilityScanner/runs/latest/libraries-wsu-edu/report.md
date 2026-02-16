@@ -2,45 +2,47 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 25/25 pages OK |
+| Status | ⚠️ 17/25 pages OK |
 | Pages Scanned | 25 |
-| Pages Passed | 25 |
-| Pages Failed | 0 |
-| Total JS Errors | 1 |
+| Pages Passed | 17 |
+| Pages Failed | 8 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 24 |
 | Total HTML | 1.1 MB |
-| Total Screenshots | 6.6 MB |
+| Total Screenshots | 5.9 MB |
+| Total Images | 39 (1.8 MB) |
+| Images Missing Alt | 17 |
 | Folder | `libraries-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | WSU Libraries | 1 | 0 | 1 |
-| ✅ | [/about/](about/report.md) | 200 | About the WSU Libraries – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/about/departments/](about_departments/report.md) | 200 | Departments – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/accessibility/](accessibility/report.md) | 200 | Accessibility – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/ask/](ask/report.md) | 200 | Ask Us – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 | Contact Us – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/course-reserves/](course-reserves/report.md) | 200 | Course Reserves – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/directory/](directory/report.md) | 200 | Library Directory – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/help/](help/report.md) | 200 | Help – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/help/off-campus-access](help_off-campus-access/report.md) | 200 | Access Online Resources from Off-Camp... | 0 | 2 | 1 |
-| ✅ | [/hours/](hours/report.md) | 200 | Hours – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/info-for/community/](info-for_community/report.md) | 200 | Community Members – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/info-for/faculty-staff/](info-for_faculty-staff/report.md) | 200 | Faculty & Staff – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/info-for/global-campus/](info-for_global-campus/report.md) | 200 | Information for Global Campus Student... | 0 | 0 | 1 |
-| ✅ | [/info-for/instructors/](info-for_instructors/report.md) | 200 | Instructors – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/info-for/new-users/](info-for_new-users/report.md) | 200 | New Users – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/info-for/students/](info-for_students/report.md) | 200 | Students – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/information-for/](information-for/report.md) | 200 | Info For – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/interlibrary-loan/](interlibrary-loan/report.md) | 200 | Interlibrary Loan – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/jobs/](jobs/report.md) | 200 | Jobs in the WSU Pullman Libraries – W... | 0 | 0 | 1 |
-| ✅ | [/library-map/](library-map/report.md) | 200 | Library Map – WSU Libraries | 0 | 20 | 1 |
-| ✅ | [/my-accounts/](my-accounts/report.md) | 200 | My Accounts – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/policies/](policies/report.md) | 200 | Policies – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/services/](services/report.md) | 200 | Services – WSU Libraries | 0 | 0 | 1 |
-| ✅ | [/spaces/](spaces/report.md) | 200 | Library Locations and Spaces – WSU Li... | 0 | 2 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Libraries | 0 | 2 | 0 |
+| ❌ | [/about/](about/report.md) | 0 | About the WSU Libraries – WSU Libraries | 0 | 0 | 0 |
+| ❌ | [/about/departments/](about_departments/report.md) | 0 | Departments – WSU Libraries | 0 | 0 | 0 |
+| ✅ | [/accessibility/](accessibility/report.md) | 200 | Accessibility – WSU Libraries | 0 | 2 | 0 |
+| ✅ | [/ask/](ask/report.md) | 200 | Ask Us – WSU Libraries | 0 | 0 | 0 |
+| ❌ | [/contact/](contact/report.md) | 0 | Contact Us – WSU Libraries | 0 | 0 | 0 |
+| ✅ | [/course-reserves/](course-reserves/report.md) | 200 | Course Reserves – WSU Libraries | 0 | 0 | 0 |
+| ❌ | [/directory/](directory/report.md) | 0 | Library Directory – WSU Libraries | 0 | 0 | 0 |
+| ✅ | [/help/](help/report.md) | 200 | Help – WSU Libraries | 0 | 0 | 0 |
+| ✅ | [/help/off-campus-access](help_off-campus-access/report.md) | 200 | Access Online Resources from Off-Camp... | 0 | 1 | 0 |
+| ❌ | [/hours/](hours/report.md) | 0 | Hours – WSU Libraries | 0 | 0 | 0 |
+| ✅ | [/info-for/community/](info-for_community/report.md) | 200 | Community Members – WSU Libraries | 0 | 0 | 0 |
+| ✅ | [/info-for/faculty-staff/](info-for_faculty-staff/report.md) | 200 | Faculty & Staff – WSU Libraries | 0 | 1 | 0 |
+| ✅ | [/info-for/global-campus/](info-for_global-campus/report.md) | 200 | Information for Global Campus Student... | 0 | 1 | 0 |
+| ✅ | [/info-for/instructors/](info-for_instructors/report.md) | 200 | Instructors – WSU Libraries | 0 | 0 | 0 |
+| ✅ | [/info-for/new-users/](info-for_new-users/report.md) | 200 | New Users – WSU Libraries | 0 | 1 | 0 |
+| ✅ | [/info-for/students/](info-for_students/report.md) | 200 | Students – WSU Libraries | 0 | 1 | 0 |
+| ✅ | [/information-for/](information-for/report.md) | 200 | Info For – WSU Libraries | 0 | 0 | 0 |
+| ✅ | [/interlibrary-loan/](interlibrary-loan/report.md) | 200 | Interlibrary Loan – WSU Libraries | 0 | 17 | 17 |
+| ✅ | [/jobs/](jobs/report.md) | 200 | Jobs in the WSU Pullman Libraries – W... | 0 | 0 | 0 |
+| ❌ | [/library-map/](library-map/report.md) | 0 | Library Map – WSU Libraries | 0 | 13 | 0 |
+| ✅ | [/my-accounts/](my-accounts/report.md) | 200 | My Accounts – WSU Libraries | 0 | 0 | 0 |
+| ✅ | [/policies/](policies/report.md) | 200 | Policies – WSU Libraries | 0 | 0 | 0 |
+| ✅ | [/services/](services/report.md) | 200 | Services – WSU Libraries | 0 | 0 | 0 |
+| ❌ | [/spaces/](spaces/report.md) | 0 | Library Locations and Spaces – WSU Li... | 0 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -145,11 +147,47 @@
 ![/spaces/](spaces/01-page-loaded.png)
 
 
-## Pages with JavaScript Errors
+## Failed Pages
 
-### / (1 errors)
+### /
 
-- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- **URL:** https://libraries.wsu.edu/
+- **Status:** 0
+
+### /about/
+
+- **URL:** https://libraries.wsu.edu/about/
+- **Status:** 0
+
+### /contact/
+
+- **URL:** https://libraries.wsu.edu/contact/
+- **Status:** 0
+
+### /hours/
+
+- **URL:** https://libraries.wsu.edu/hours/
+- **Status:** 0
+
+### /spaces/
+
+- **URL:** https://libraries.wsu.edu/spaces/
+- **Status:** 0
+
+### /about/departments/
+
+- **URL:** https://libraries.wsu.edu/about/departments/
+- **Status:** 0
+
+### /directory/
+
+- **URL:** https://libraries.wsu.edu/directory/
+- **Status:** 0
+
+### /library-map/
+
+- **URL:** https://libraries.wsu.edu/library-map/
+- **Status:** 0
 
 
 ---

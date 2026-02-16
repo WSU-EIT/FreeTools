@@ -5,17 +5,20 @@
 | URL | https://physics.wsu.edu/faculty/ |
 | Redirected To | https://physics.wsu.edu/faculty-staff/ |
 | Title | Faculty | Department of Physics & Astronomy | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 279.7 KB |
-| Screenshots | 1 (1.7 MB) |
+| Status | ❌ 0 |
+| HTML Size | 208.3 KB |
+| Screenshots | 1 (93.5 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:14:12.8989042Z |
+| Captured | 2026-02-16T20:39:07.0024881Z |
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.7 MB)
+- Screenshot #1: page-loaded (93.5 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -24,9 +27,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.7 MB)
+- `01-page-loaded.png` — page-loaded (93.5 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

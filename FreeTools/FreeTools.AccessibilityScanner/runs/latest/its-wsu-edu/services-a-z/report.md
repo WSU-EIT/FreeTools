@@ -5,22 +5,36 @@
 | URL | https://its.wsu.edu/services-a-z/ |
 | Title | Services A-Z | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 287.3 KB |
+| HTML Size | 286.9 KB |
 | Screenshots | 1 (1.7 MB) |
+| Images | 1 (515.7 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:16:09.8088793Z |
+| Captured | 2026-02-16T20:41:41.3096730Z |
 
 ## Actions
 
 - Screenshot #1: page-loaded (1.7 MB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
 ### 1. page-loaded
 
 ![page-loaded](01-page-loaded.png)
+
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [ESF-Cultural-Center-sh_5628-1900x1337-1.jpg](images/ESF-Cultural-Center-sh_5628-1900x1337-1.jpg) | Images of Elson S. Floyd Cultural Cen... | 515.7 KB |
+
+### Gallery
+
+![Images of Elson S. Floyd Cultural Center at sunset on the campus of Washington State University](images/ESF-Cultural-Center-sh_5628-1900x1337-1.jpg)
 
 
 ## Files
@@ -32,3 +46,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (515.7 KB)

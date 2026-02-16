@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://staff.storefront.wsu.edu/design/ |
 | Title | 404 Page Error - WSU Coug Prints Plus |
-| Status | ❌ 404 |
+| Status | ❌ 0 |
 | HTML Size | 13.7 KB |
 | Screenshots | 1 (51.6 KB) |
+| Images | 1 (6.8 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 1 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:55.6651612Z |
+| Captured | 2026-02-16T20:39:06.9891758Z |
 
 ## JavaScript Errors
 
@@ -19,12 +21,24 @@
 ## Actions
 
 - Screenshot #1: page-loaded (51.6 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
 ### 1. page-loaded
 
 ![page-loaded](01-page-loaded.png)
+
+
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [footer_logo_new_21.svg](images/footer_logo_new_21.svg) | Washington State University logo. | 6.8 KB |
+
+### Gallery
+
+![Washington State University logo.](images/footer_logo_new_21.svg)
 
 
 ## Files
@@ -36,3 +50,4 @@
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (6.8 KB)

@@ -135,6 +135,7 @@ internal class Program
                     Console.WriteLine($"        Status:      {page.StatusCode}");
                     Console.WriteLine($"        HTML:        {PathSanitizer.FormatBytes(page.HtmlSize)}");
                     Console.WriteLine($"        Screenshots: {page.Screenshots.Count} ({PathSanitizer.FormatBytes(page.ScreenshotSize)})");
+                    Console.WriteLine($"        Images:      {page.Images.Count} ({PathSanitizer.FormatBytes(page.ImagesTotalSize)})");
 
                     if (page.ConsoleErrors.Count > 0)
                     {
@@ -361,6 +362,10 @@ internal class Program
             result.HtmlSize = new FileInfo(htmlPath).Length;
             infoLines.Add($"HTML size: {PathSanitizer.FormatBytes(result.HtmlSize)}");
 
+            // Download page images
+            Console.WriteLine($"  [{siteUri.Host}] {pagePath} — Downloading images...");
+            await DownloadPageImagesAsync(page, pageDir, result, actions, infoLines);
+
             // Page title
             var title = await page.TitleAsync();
             result.Title = title;
@@ -514,6 +519,8 @@ internal class Program
         reportSb.AppendLine($"| Status | {statusEmoji} {result.StatusCode} |");
         reportSb.AppendLine($"| HTML Size | {PathSanitizer.FormatBytes(result.HtmlSize)} |");
         reportSb.AppendLine($"| Screenshots | {result.Screenshots.Count} ({PathSanitizer.FormatBytes(result.ScreenshotSize)}) |");
+        reportSb.AppendLine($"| Images | {result.Images.Count} ({PathSanitizer.FormatBytes(result.ImagesTotalSize)}) |");
+        reportSb.AppendLine($"| Images Missing Alt | {result.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText))} |");
         reportSb.AppendLine($"| JS Errors | {result.ConsoleErrors.Count} |");
         reportSb.AppendLine($"| JS Warnings | {result.ConsoleWarnings.Count} |");
         reportSb.AppendLine($"| Auth | {result.CredentialUsed ?? "none"} |");
@@ -567,6 +574,56 @@ internal class Program
             reportSb.AppendLine("*No screenshots captured.*");
         }
 
+        // Image gallery
+        reportSb.AppendLine();
+        reportSb.AppendLine($"## Page Images ({result.Images.Count})");
+        reportSb.AppendLine();
+
+        if (result.Images.Count > 0)
+        {
+            // Summary table
+            reportSb.AppendLine($"| # | Image | Alt Text | Size |");
+            reportSb.AppendLine($"|---|-------|----------|------|");
+
+            var imgNum = 0;
+            foreach (var img in result.Images)
+            {
+                imgNum++;
+                var alt = Truncate(img.AltText, 40);
+                if (string.IsNullOrWhiteSpace(alt)) alt = "*(none)*";
+                reportSb.AppendLine($"| {imgNum} | [{img.FileName}](images/{img.FileName}) | {alt} | {PathSanitizer.FormatBytes(img.FileSize)} |");
+            }
+
+            // Thumbnails
+            reportSb.AppendLine();
+            reportSb.AppendLine($"### Gallery");
+            reportSb.AppendLine();
+
+            foreach (var img in result.Images)
+            {
+                var alt = string.IsNullOrWhiteSpace(img.AltText) ? img.FileName : img.AltText;
+                reportSb.AppendLine($"![{alt}](images/{img.FileName})");
+                reportSb.AppendLine();
+            }
+
+            // Images without alt text (accessibility concern)
+            var noAlt = result.Images.Where(i => string.IsNullOrWhiteSpace(i.AltText)).ToList();
+            if (noAlt.Count > 0)
+            {
+                reportSb.AppendLine();
+                reportSb.AppendLine($"### ⚠️ Images Missing Alt Text ({noAlt.Count})");
+                reportSb.AppendLine();
+                foreach (var img in noAlt)
+                {
+                    reportSb.AppendLine($"- `{img.FileName}` — {img.SourceUrl}");
+                }
+            }
+        }
+        else
+        {
+            reportSb.AppendLine("*No images found on page.*");
+        }
+
         reportSb.AppendLine();
         reportSb.AppendLine($"## Files");
         reportSb.AppendLine();
@@ -581,6 +638,10 @@ internal class Program
         reportSb.AppendLine($"- `warnings.log` — JavaScript console warnings");
         reportSb.AppendLine($"- `info.log` — navigation and timing details");
         reportSb.AppendLine($"- `actions.log` — interactions performed on the page");
+        if (result.Images.Count > 0)
+        {
+            reportSb.AppendLine($"- `images/` — {result.Images.Count} page images ({PathSanitizer.FormatBytes(result.ImagesTotalSize)})");
+        }
 
         await File.WriteAllTextAsync(reportPath, reportSb.ToString());
 
@@ -600,6 +661,10 @@ internal class Program
             ConsoleErrorCount = result.ConsoleErrors.Count,
             ConsoleWarningCount = result.ConsoleWarnings.Count,
             Screenshots = result.Screenshots.Select(s => new { s.FileName, s.Label, s.StepNumber, s.FileSize }).ToArray(),
+            ImageCount = result.Images.Count,
+            ImagesTotalSizeBytes = result.ImagesTotalSize,
+            ImagesMissingAlt = result.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText)),
+            Images = result.Images.Select(i => new { i.FileName, i.SourceUrl, i.AltText, i.FileSize }).ToArray(),
             result.ErrorMessage,
             Headers = headers,
             result.CapturedAt
@@ -622,6 +687,9 @@ internal class Program
         var totalWarnings = site.Pages.Sum(p => p.ConsoleWarnings.Count);
         var totalHtml = site.Pages.Sum(p => p.HtmlSize);
         var totalScreenshots = site.Pages.Sum(p => p.ScreenshotSize);
+        var totalImages = site.Pages.Sum(p => p.Images.Count);
+        var totalImagesSize = site.Pages.Sum(p => p.ImagesTotalSize);
+        var totalMissingAlt = site.Pages.Sum(p => p.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText)));
         var failedPages = site.Pages.Where(p => !p.Success).ToList();
         var pagesWithErrors = site.Pages.Where(p => p.ConsoleErrors.Count > 0).ToList();
         var statusEmoji = successCount == totalCount ? "✅" : "⚠️";
@@ -638,20 +706,23 @@ internal class Program
         sb.AppendLine($"| Total JS Warnings | {totalWarnings} |");
         sb.AppendLine($"| Total HTML | {PathSanitizer.FormatBytes(totalHtml)} |");
         sb.AppendLine($"| Total Screenshots | {PathSanitizer.FormatBytes(totalScreenshots)} |");
+        sb.AppendLine($"| Total Images | {totalImages} ({PathSanitizer.FormatBytes(totalImagesSize)}) |");
+        sb.AppendLine($"| Images Missing Alt | {totalMissingAlt} |");
         sb.AppendLine($"| Folder | `{site.FolderName}/` |");
 
         // Page results table
         sb.AppendLine();
         sb.AppendLine($"## Pages");
         sb.AppendLine();
-        sb.AppendLine($"| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |");
-        sb.AppendLine($"|--------|------|------|-------|-----------|-------------|-------------|");
+        sb.AppendLine($"| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |");
+        sb.AppendLine($"|--------|------|------|-------|-----------|--------|-------------|");
 
         foreach (var page in site.Pages.OrderBy(p => p.PagePath))
         {
             var s = page.Success ? "✅" : "❌";
             var title = Truncate(page.Title ?? "(none)", 40);
-            sb.AppendLine($"| {s} | [{page.PagePath}]({page.FolderName}/report.md) | {page.StatusCode} | {title} | {page.ConsoleErrors.Count} | {page.ConsoleWarnings.Count} | {page.Screenshots.Count} |");
+            var missingAlt = page.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText));
+            sb.AppendLine($"| {s} | [{page.PagePath}]({page.FolderName}/report.md) | {page.StatusCode} | {title} | {page.ConsoleErrors.Count} | {page.Images.Count} | {missingAlt} |");
         }
 
         // Screenshot gallery — first screenshot from each page
@@ -743,6 +814,9 @@ internal class Program
         var totalWarnings = siteList.Sum(s => s.Pages.Sum(p => p.ConsoleWarnings.Count));
         var totalHtml = siteList.Sum(s => s.Pages.Sum(p => p.HtmlSize));
         var totalScreenshots = siteList.Sum(s => s.Pages.Sum(p => p.ScreenshotSize));
+        var totalImages = siteList.Sum(s => s.Pages.Sum(p => p.Images.Count));
+        var totalImagesSize = siteList.Sum(s => s.Pages.Sum(p => p.ImagesTotalSize));
+        var totalMissingAlt = siteList.Sum(s => s.Pages.Sum(p => p.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText))));
         var runStatus = totalFailed == 0 ? "✅ All pages passed" : $"⚠️ {totalFailed} page(s) failed";
 
         sb.AppendLine($"# Accessibility Scanner — Run Report");
@@ -756,6 +830,8 @@ internal class Program
         sb.AppendLine($"| Pages Failed | {totalFailed} |");
         sb.AppendLine($"| Total JS Errors | {totalErrors} |");
         sb.AppendLine($"| Total JS Warnings | {totalWarnings} |");
+        sb.AppendLine($"| Total Images | {totalImages} ({PathSanitizer.FormatBytes(totalImagesSize)}) |");
+        sb.AppendLine($"| Images Missing Alt | {totalMissingAlt} |");
         sb.AppendLine($"| Total HTML | {PathSanitizer.FormatBytes(totalHtml)} |");
         sb.AppendLine($"| Total Screenshots | {PathSanitizer.FormatBytes(totalScreenshots)} |");
         sb.AppendLine($"| Generated | {DateTime.UtcNow:O} |");
@@ -764,26 +840,26 @@ internal class Program
         sb.AppendLine();
         sb.AppendLine($"## Sites");
         sb.AppendLine();
-        sb.AppendLine($"| Status | Site | Pages | Passed | Failed | JS Errors | JS Warnings |");
-        sb.AppendLine($"|--------|------|-------|--------|--------|-----------|-------------|");
+        sb.AppendLine($"| Status | Site | Pages | Passed | Failed | Images | Missing Alt |");
+        sb.AppendLine($"|--------|------|-------|--------|--------|--------|-------------|");
 
         foreach (var site in siteList)
         {
             var siteSuccess = site.Pages.Count(p => p.Success);
             var siteFailed = site.Pages.Count - siteSuccess;
-            var siteErrors = site.Pages.Sum(p => p.ConsoleErrors.Count);
-            var siteWarnings = site.Pages.Sum(p => p.ConsoleWarnings.Count);
+            var siteImages = site.Pages.Sum(p => p.Images.Count);
+            var siteMissingAlt = site.Pages.Sum(p => p.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText)));
             var s = siteFailed == 0 ? "✅" : "⚠️";
 
-            sb.AppendLine($"| {s} | [{site.Url}]({site.FolderName}/report.md) | {site.Pages.Count} | {siteSuccess} | {siteFailed} | {siteErrors} | {siteWarnings} |");
+            sb.AppendLine($"| {s} | [{site.Url}]({site.FolderName}/report.md) | {site.Pages.Count} | {siteSuccess} | {siteFailed} | {siteImages} | {siteMissingAlt} |");
         }
 
         // All pages flat table
         sb.AppendLine();
         sb.AppendLine($"## All Pages");
         sb.AppendLine();
-        sb.AppendLine($"| Status | Site | Page | HTTP | Title | JS Errors | Screenshots |");
-        sb.AppendLine($"|--------|------|------|------|-------|-----------|-------------|");
+        sb.AppendLine($"| Status | Site | Page | HTTP | Title | Images | Missing Alt |");
+        sb.AppendLine($"|--------|------|------|------|-------|--------|-------------|");
 
         foreach (var site in siteList)
         {
@@ -792,7 +868,8 @@ internal class Program
                 var s = page.Success ? "✅" : "❌";
                 var title = Truncate(page.Title ?? "(none)", 35);
                 var host = new Uri(site.Url).Host;
-                sb.AppendLine($"| {s} | {host} | [{page.PagePath}]({site.FolderName}/{page.FolderName}/report.md) | {page.StatusCode} | {title} | {page.ConsoleErrors.Count} | {page.Screenshots.Count} |");
+                var missingAlt = page.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText));
+                sb.AppendLine($"| {s} | {host} | [{page.PagePath}]({site.FolderName}/{page.FolderName}/report.md) | {page.StatusCode} | {title} | {page.Images.Count} | {missingAlt} |");
             }
         }
 
@@ -876,6 +953,113 @@ internal class Program
         // Escape pipe characters for markdown tables
         value = value.Replace("|", "\\|");
         return value.Length <= maxLength ? value : value[..(maxLength - 3)] + "...";
+    }
+
+    // ========================================================================
+    // Image extraction
+    // ========================================================================
+
+    /// <summary>
+    /// Find all images on the page, download them to an /images subfolder,
+    /// and track them in the result.
+    /// </summary>
+    private static async Task DownloadPageImagesAsync(
+        IPage page,
+        string pageDir,
+        PageResult result,
+        List<string> actions,
+        List<string> infoLines)
+    {
+        var imagesDir = Path.Combine(pageDir, "images");
+
+        // Get all img elements with src attributes
+        var imgElements = await page.EvaluateAsync<ImageInfo[]>(@"
+            () => Array.from(document.querySelectorAll('img[src]')).map(img => ({
+                src: img.src,
+                alt: img.alt || '',
+                width: img.naturalWidth,
+                height: img.naturalHeight
+            })).filter(img => img.src && !img.src.startsWith('data:'))
+        ");
+
+        if (imgElements == null || imgElements.Length == 0)
+        {
+            infoLines.Add("Images: 0 found");
+            actions.Add("No images found on page");
+            return;
+        }
+
+        // Deduplicate by URL
+        var uniqueImages = imgElements
+            .GroupBy(i => i.Src)
+            .Select(g => g.First())
+            .ToList();
+
+        Directory.CreateDirectory(imagesDir);
+
+        var downloaded = 0;
+        using var httpClient = new HttpClient();
+        httpClient.Timeout = TimeSpan.FromSeconds(5);
+
+        foreach (var img in uniqueImages)
+        {
+            try
+            {
+                var uri = new Uri(img.Src);
+                var ext = Path.GetExtension(uri.AbsolutePath).ToLowerInvariant();
+                if (string.IsNullOrEmpty(ext) || ext.Length > 5)
+                {
+                    ext = ".img";
+                }
+
+                // Sanitize filename from the URL path
+                var urlFileName = Path.GetFileNameWithoutExtension(uri.AbsolutePath);
+                if (string.IsNullOrWhiteSpace(urlFileName) || urlFileName.Length > 60)
+                {
+                    urlFileName = $"image-{downloaded + 1}";
+                }
+
+                // Strip invalid chars
+                foreach (var c in Path.GetInvalidFileNameChars())
+                {
+                    urlFileName = urlFileName.Replace(c, '-');
+                }
+
+                var fileName = $"{urlFileName}{ext}";
+
+                // Avoid collisions
+                var filePath = Path.Combine(imagesDir, fileName);
+                var counter = 1;
+                while (File.Exists(filePath))
+                {
+                    fileName = $"{urlFileName}-{counter}{ext}";
+                    filePath = Path.Combine(imagesDir, fileName);
+                    counter++;
+                }
+
+                var bytes = await httpClient.GetByteArrayAsync(img.Src);
+                await File.WriteAllBytesAsync(filePath, bytes);
+
+                var fileSize = bytes.Length;
+                result.Images.Add(new ImageEntry
+                {
+                    FileName = fileName,
+                    SourceUrl = img.Src,
+                    AltText = img.Alt,
+                    FileSize = fileSize
+                });
+
+                result.ImagesTotalSize += fileSize;
+                downloaded++;
+            }
+            catch
+            {
+                // Skip images that fail to download
+            }
+        }
+
+        infoLines.Add($"Images: {downloaded} downloaded of {uniqueImages.Count} found ({PathSanitizer.FormatBytes(result.ImagesTotalSize)})");
+        actions.Add($"Downloaded {downloaded} images to /images/");
     }
 
     // ========================================================================
@@ -1230,6 +1414,8 @@ internal class PageResult
     public List<string> ConsoleErrors { get; set; } = [];
     public List<string> ConsoleWarnings { get; set; } = [];
     public List<ScreenshotEntry> Screenshots { get; set; } = [];
+    public List<ImageEntry> Images { get; set; } = [];
+    public long ImagesTotalSize { get; set; }
     public DateTime CapturedAt { get; set; }
 }
 
@@ -1242,4 +1428,33 @@ internal class ScreenshotEntry
     public string Label { get; set; } = "";
     public long FileSize { get; set; }
     public int StepNumber { get; set; }
+}
+
+/// <summary>
+/// Tracks a single image downloaded from a scanned page.
+/// </summary>
+internal class ImageEntry
+{
+    public string FileName { get; set; } = "";
+    public string SourceUrl { get; set; } = "";
+    public string AltText { get; set; } = "";
+    public long FileSize { get; set; }
+}
+
+/// <summary>
+/// Used for deserializing image info from Playwright's EvaluateAsync.
+/// </summary>
+internal class ImageInfo
+{
+    [JsonPropertyName("src")]
+    public string Src { get; set; } = "";
+
+    [JsonPropertyName("alt")]
+    public string Alt { get; set; } = "";
+
+    [JsonPropertyName("width")]
+    public int Width { get; set; }
+
+    [JsonPropertyName("height")]
+    public int Height { get; set; }
 }

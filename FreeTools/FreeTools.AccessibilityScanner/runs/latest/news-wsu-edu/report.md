@@ -2,26 +2,28 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 3/6 pages OK |
+| Status | ⚠️ 0/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 3 |
-| Pages Failed | 3 |
-| Total JS Errors | 4 |
-| Total JS Warnings | 3 |
-| Total HTML | 1.5 MB |
-| Total Screenshots | 5.0 MB |
+| Pages Passed | 0 |
+| Pages Failed | 6 |
+| Total JS Errors | 7 |
+| Total JS Warnings | 0 |
+| Total HTML | 1.4 MB |
+| Total Screenshots | 4.5 MB |
+| Total Images | 32 (3.8 MB) |
+| Images Missing Alt | 1 |
 | Folder | `news-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | WSU Insider \| Washington State Unive... | 1 | 0 | 1 |
-| ❌ | [/media-contacts/](media-contacts/report.md) | 404 | Page not found \| WSU Insider \| Wash... | 1 | 1 | 1 |
-| ✅ | [/news/](news/report.md) | 200 | News Articles \| WSU Insider \| Washi... | 0 | 0 | 1 |
-| ✅ | [/press-releases/](press-releases/report.md) | 200 | Press Releases \| WSU Insider \| Wash... | 0 | 0 | 1 |
-| ❌ | [/stories/](stories/report.md) | 404 | Page not found \| WSU Insider \| Wash... | 1 | 1 | 1 |
-| ❌ | [/submit-news/](submit-news/report.md) | 404 | Page not found \| WSU Insider \| Wash... | 1 | 1 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | WSU Insider \| Washington State Unive... | 3 | 11 | 1 |
+| ❌ | [/media-contacts/](media-contacts/report.md) | 0 | Page not found \| WSU Insider \| Wash... | 1 | 0 | 0 |
+| ❌ | [/news/](news/report.md) | 0 | News Articles \| WSU Insider \| Washi... | 0 | 11 | 0 |
+| ❌ | [/press-releases/](press-releases/report.md) | 0 | Press Releases \| WSU Insider \| Wash... | 1 | 10 | 0 |
+| ❌ | [/stories/](stories/report.md) | 0 | Page not found \| WSU Insider \| Wash... | 1 | 0 | 0 |
+| ❌ | [/submit-news/](submit-news/report.md) | 0 | Page not found \| WSU Insider \| Wash... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -52,25 +54,46 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://news.wsu.edu/
+- **Status:** 0
+
+### /press-releases/
+
+- **URL:** https://news.wsu.edu/press-releases/
+- **Status:** 0
+
+### /news/
+
+- **URL:** https://news.wsu.edu/news/
+- **Status:** 0
+
 ### /stories/
 
 - **URL:** https://news.wsu.edu/stories/
-- **Status:** 404
+- **Status:** 0
 
 ### /media-contacts/
 
 - **URL:** https://news.wsu.edu/media-contacts/
-- **Status:** 404
+- **Status:** 0
 
 ### /submit-news/
 
 - **URL:** https://news.wsu.edu/submit-news/
-- **Status:** 404
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors
 
-### / (1 errors)
+### / (3 errors)
+
+- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
+- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+
+### /press-releases/ (1 errors)
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 

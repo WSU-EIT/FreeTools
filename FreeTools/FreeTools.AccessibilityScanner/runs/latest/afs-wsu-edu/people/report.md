@@ -5,13 +5,15 @@
 | URL | https://afs.wsu.edu/people/ |
 | Redirected To | https://afs.wsu.edu/people/#gsc.tab=0 |
 | Title | Page not found | Agricultural and Food Systems | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 217.4 KB |
-| Screenshots | 1 (85.1 KB) |
+| Status | ❌ 0 |
+| HTML Size | 210.1 KB |
+| Screenshots | 1 (84.7 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:31.4905639Z |
+| Captured | 2026-02-16T20:38:56.5321847Z |
 
 ## JavaScript Errors
 
@@ -19,7 +21,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (85.1 KB)
+- Screenshot #1: page-loaded (84.7 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -28,9 +31,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (85.1 KB)
+- `01-page-loaded.png` — page-loaded (84.7 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

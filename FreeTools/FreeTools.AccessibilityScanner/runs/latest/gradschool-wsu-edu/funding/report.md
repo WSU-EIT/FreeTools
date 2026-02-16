@@ -5,13 +5,15 @@
 | URL | https://gradschool.wsu.edu/funding/ |
 | Redirected To | https://gradschool.wsu.edu/grad-funding-opportunities/ |
 | Title | Graduate Student Funding Opportunities | The Graduate School | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 380.7 KB |
-| Screenshots | 1 (768.2 KB) |
+| Status | ❌ 0 |
+| HTML Size | 363.6 KB |
+| Screenshots | 1 (664.9 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:31.5189295Z |
+| Captured | 2026-02-16T20:39:07.9994629Z |
 
 ## JavaScript Errors
 
@@ -19,7 +21,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (768.2 KB)
+- Screenshot #1: page-loaded (664.9 KB)
+- Downloaded 0 images to /images/
 
 ## Screenshots
 
@@ -28,9 +31,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (768.2 KB)
+- `01-page-loaded.png` — page-loaded (664.9 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

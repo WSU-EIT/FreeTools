@@ -4,13 +4,15 @@
 |-------|-------|
 | URL | https://wsuacada.wsu.edu/contact/ |
 | Title | Page not found | WSU Academic Advising Association | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 52.8 KB |
+| Status | ❌ 0 |
+| HTML Size | 45.1 KB |
 | Screenshots | 1 (32.3 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 2 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:13:34.8722838Z |
+| Captured | 2026-02-16T20:39:13.1658187Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (32.3 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

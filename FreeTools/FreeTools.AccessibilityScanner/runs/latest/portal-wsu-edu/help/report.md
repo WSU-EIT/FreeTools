@@ -3,30 +3,26 @@
 | Field | Value |
 |-------|-------|
 | URL | https://portal.wsu.edu/help/ |
-| Redirected To | https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7&redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse&response_type=code&scope=openid%20profile%20sis.prd.groups&state=XAa2Wz8pVlLEWBgYIZoDNJjrLkjgRHu%2Fz0VhNYwMa%2FftbLkIa1LNZ33o%2Bav3FJdNwi7pYQSlhAogZS69jUMu6FGI8H%2F9PsW0wBRQnu7akSAjCkTxXbVfcQpIlU7LpICgsMZaRlmNjcXqVZFBFjmwJEvmJGlDz9d1OzkKYrLvqw1paz3K1iZxfAQDBpQW88TBQgYwxGquweGuIEzdKgsTaUdDmNBVSfHj3vzPJ0xbhFIJDiaKd0qd87Pc |
-| Title | WSU | Bad request. |
-| Status | ✅ 200 |
-| HTML Size | 138.3 KB |
-| Screenshots | 1 (44.1 KB) |
-| JS Errors | 8 |
+| Redirected To | https://login.wsu.edu/oauth2/default/v1/authorize?client_id=0oah5m896h6SKyqkP2p7&redirect_uri=https%3A%2F%2Fmy.wsu.edu%2Foauth2%2Fidpresponse&response_type=code&scope=openid%20profile%20sis.prd.groups&state=tRYvAOto3LBxINtiSJbm0YPrjn6s8VqG7YGVkMCULg3VDwZysCYTN9m1hg%2BVR70hDENvnTHu4hx1ii3uR6ygU1EQMZOtc7xLBQIrPnwDJeDKjiC6enHaZzGc4PlnnAxFduelQgPzYNxVGkA6HFrlWrw4LLm7tQlygiVsZW3rFgqRhupEzUHUN3AisieipTQbsCsMlTw%2FtM43Vtu%2F%2Bxwwl%2Fqrhti8NCPfi%2Bn79xlAMK3Tpv2Qny99%2FxgZ |
+| Title | WSU Authentication | Washington State University |
+| Status | ❌ 0 |
+| HTML Size | 72.2 KB |
+| Screenshots | 1 (40.9 KB) |
+| Images | 1 (7.7 KB) |
+| Images Missing Alt | 0 |
+| JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:07.6856314Z |
+| Captured | 2026-02-16T20:38:01.1622093Z |
 
 ## JavaScript Errors
 
-- `Something unexpected happened while we were checking url http://127.0.0.1:8769`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65111`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65121`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65131`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65141`
-- `Something unexpected happened while we were checking url http://127.0.0.1:65151`
-- `No available ports. Loopback server failed and polling is cancelled.`
-- `Failed to load resource: the server responded with a status of 400 ()`
+- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
 
 ## Actions
 
-- Screenshot #1: page-loaded (44.1 KB)
+- Screenshot #1: page-loaded (40.9 KB)
+- Downloaded 1 images to /images/
 
 ## Screenshots
 
@@ -35,12 +31,24 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (1)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [fs015xh0tygNgGVxX2p8.img](images/fs015xh0tygNgGVxX2p8.img) | WSU logo | 7.7 KB |
+
+### Gallery
+
+![WSU logo](images/fs015xh0tygNgGVxX2p8.img)
+
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (44.1 KB)
+- `01-page-loaded.png` — page-loaded (40.9 KB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 1 page images (7.7 KB)

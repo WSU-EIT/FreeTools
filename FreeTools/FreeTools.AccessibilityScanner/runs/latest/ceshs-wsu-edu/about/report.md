@@ -5,13 +5,15 @@
 | URL | https://ceshs.wsu.edu/about/ |
 | Redirected To | https://ceshs.wsu.edu/undergradprograms/wsuroar/about/ |
 | Title | About WSU ROAR | College of Education, Sport, and Human Sciences | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 241.0 KB |
-| Screenshots | 1 (1.6 MB) |
+| Status | ❌ 0 |
+| HTML Size | 223.7 KB |
+| Screenshots | 1 (1.4 MB) |
+| Images | 2 (353.2 KB) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:45.5111350Z |
+| Captured | 2026-02-16T20:38:18.3708767Z |
 
 ## JavaScript Errors
 
@@ -19,7 +21,8 @@
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.6 MB)
+- Screenshot #1: page-loaded (1.4 MB)
+- Downloaded 2 images to /images/
 
 ## Screenshots
 
@@ -28,12 +31,27 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (2)
+
+| # | Image | Alt Text | Size |
+|---|-------|----------|------|
+| 1 | [roar_student_and_coach-792x1056.jpeg](images/roar_student_and_coach-792x1056.jpeg) | ROAR student with an academic coach | 170.0 KB |
+| 2 | [roar_student_presentation-792x1056.jpeg](images/roar_student_presentation-792x1056.jpeg) | roar student presentation | 183.2 KB |
+
+### Gallery
+
+![ROAR student with an academic coach](images/roar_student_and_coach-792x1056.jpeg)
+
+![roar student presentation](images/roar_student_presentation-792x1056.jpeg)
+
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.6 MB)
+- `01-page-loaded.png` — page-loaded (1.4 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors
 - `warnings.log` — JavaScript console warnings
 - `info.log` — navigation and timing details
 - `actions.log` — interactions performed on the page
+- `images/` — 2 page images (353.2 KB)

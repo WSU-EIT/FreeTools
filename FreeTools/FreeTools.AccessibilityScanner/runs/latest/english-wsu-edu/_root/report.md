@@ -4,22 +4,27 @@
 |-------|-------|
 | URL | https://english.wsu.edu/ |
 | Title | WSU Department of English | Washington State University |
-| Status | ✅ 200 |
-| HTML Size | 71.1 KB |
-| Screenshots | 1 (1.4 MB) |
-| JS Errors | 2 |
+| Status | ❌ 0 |
+| HTML Size | 65.1 KB |
+| Screenshots | 1 (1.2 MB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
+| JS Errors | 4 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:10:26.1235332Z |
+| Captured | 2026-02-16T20:37:05.0583675Z |
 
 ## JavaScript Errors
 
 - `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
-- `Failed to load resource: net::ERR_CONNECTION_CLOSED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
+- `Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED`
 
 ## Actions
 
-- Screenshot #1: page-loaded (1.4 MB)
+- Screenshot #1: page-loaded (1.2 MB)
+- Downloaded 0 images to /images/
 
 ## Screenshots
 
@@ -28,9 +33,13 @@
 ![page-loaded](01-page-loaded.png)
 
 
+## Page Images (0)
+
+*No images found on page.*
+
 ## Files
 
-- `01-page-loaded.png` — page-loaded (1.4 MB)
+- `01-page-loaded.png` — page-loaded (1.2 MB)
 - `page.html` — rendered HTML content
 - `metadata.json` — machine-readable scan data
 - `errors.log` — JavaScript console errors

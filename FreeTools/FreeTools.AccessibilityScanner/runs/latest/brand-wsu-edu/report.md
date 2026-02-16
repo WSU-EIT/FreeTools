@@ -2,27 +2,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ⚠️ 5/7 pages OK |
+| Status | ⚠️ 0/7 pages OK |
 | Pages Scanned | 7 |
-| Pages Passed | 5 |
-| Pages Failed | 2 |
+| Pages Passed | 0 |
+| Pages Failed | 7 |
 | Total JS Errors | 3 |
 | Total JS Warnings | 0 |
-| Total HTML | 503.5 KB |
-| Total Screenshots | 4.5 MB |
+| Total HTML | 434.0 KB |
+| Total Screenshots | 4.1 MB |
+| Total Images | 44 (4.0 MB) |
+| Images Missing Alt | 44 |
 | Folder | `brand-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 | Washington State University – WSU Bra... | 1 | 0 | 1 |
-| ✅ | [/colors/](colors/report.md) | 200 | Colors – Washington State University | 0 | 0 | 1 |
-| ✅ | [/downloads/](downloads/report.md) | 200 | Downloads – Washington State University | 0 | 0 | 1 |
-| ✅ | [/logos/](logos/report.md) | 200 | Logos – Washington State University | 0 | 0 | 1 |
-| ❌ | [/templates/](templates/report.md) | 404 | Page not found – Washington State Uni... | 1 | 0 | 1 |
-| ✅ | [/typography/](typography/report.md) | 200 | Typography – Washington State University | 0 | 0 | 1 |
-| ❌ | [/visual-identity/](visual-identity/report.md) | 404 | Page not found – Washington State Uni... | 1 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | Washington State University – WSU Bra... | 1 | 0 | 0 |
+| ❌ | [/colors/](colors/report.md) | 0 | Colors – Washington State University | 0 | 6 | 6 |
+| ❌ | [/downloads/](downloads/report.md) | 0 | Downloads – Washington State University | 0 | 9 | 9 |
+| ❌ | [/logos/](logos/report.md) | 0 | Logos – Washington State University | 0 | 17 | 17 |
+| ❌ | [/templates/](templates/report.md) | 0 | Page not found – Washington State Uni... | 1 | 0 | 0 |
+| ❌ | [/typography/](typography/report.md) | 0 | Typography – Washington State University | 0 | 12 | 12 |
+| ❌ | [/visual-identity/](visual-identity/report.md) | 0 | Page not found – Washington State Uni... | 1 | 0 | 0 |
 
 ## Page Screenshots
 
@@ -57,15 +59,40 @@
 
 ## Failed Pages
 
+### /
+
+- **URL:** https://brand.wsu.edu/
+- **Status:** 0
+
 ### /visual-identity/
 
 - **URL:** https://brand.wsu.edu/visual-identity/
-- **Status:** 404
+- **Status:** 0
+
+### /logos/
+
+- **URL:** https://brand.wsu.edu/logos/
+- **Status:** 0
+
+### /colors/
+
+- **URL:** https://brand.wsu.edu/colors/
+- **Status:** 0
+
+### /typography/
+
+- **URL:** https://brand.wsu.edu/typography/
+- **Status:** 0
 
 ### /templates/
 
 - **URL:** https://brand.wsu.edu/templates/
-- **Status:** 404
+- **Status:** 0
+
+### /downloads/
+
+- **URL:** https://brand.wsu.edu/downloads/
+- **Status:** 0
 
 
 ## Pages with JavaScript Errors

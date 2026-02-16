@@ -7,10 +7,12 @@
 | Status | ❌ 0 |
 | HTML Size | 0 bytes |
 | Screenshots | 0 (0 bytes) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:12:35.1659082Z |
+| Captured | 2026-02-16T20:38:15.2470911Z |
 
 ## Error
 
@@ -27,6 +29,10 @@ Call log:
 ## Screenshots
 
 *No screenshots captured.*
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 

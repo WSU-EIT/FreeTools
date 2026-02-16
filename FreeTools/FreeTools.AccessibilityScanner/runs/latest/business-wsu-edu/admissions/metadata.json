@@ -5,7 +5,7 @@
   "Title": "Page not found - Carson College of Business | Washington State University",
   "StatusCode": 404,
   "Success": false,
-  "HtmlSizeBytes": 180294,
+  "HtmlSizeBytes": 180384,
   "ScreenshotSizeBytes": 192762,
   "CredentialUsed": null,
   "ConsoleErrorCount": 3,
@@ -18,11 +18,34 @@
       "FileSize": 192762
     }
   ],
+  "ImageCount": 3,
+  "ImagesTotalSizeBytes": 50807,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "FileName": "wsu-logo.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/05/wsu-logo.svg",
+      "AltText": "Carson College of Business | Washington State University",
+      "FileSize": 34636
+    },
+    {
+      "FileName": "wsu-mascot-logo.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/06/wsu-mascot-logo.svg",
+      "AltText": "",
+      "FileSize": 5462
+    },
+    {
+      "FileName": "wsu-logo-1.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/06/wsu-logo.svg",
+      "AltText": "drglow-footer-logo",
+      "FileSize": 10709
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "cache-control": "no-cache, must-revalidate, max-age=0",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:34 GMT",
+    "date": "Mon, 16 Feb 2026 20:40:16 GMT",
     "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
     "link": "\u003Chttps://business.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
     "server": "nginx",
@@ -30,5 +53,5 @@
     "x-tec-api-root": "https://business.wsu.edu/wp-json/tribe/events/v1/",
     "x-tec-api-version": "v1"
   },
-  "CapturedAt": "2026-02-16T20:14:33.0007244Z"
+  "CapturedAt": "2026-02-16T20:40:16.150243Z"
 }

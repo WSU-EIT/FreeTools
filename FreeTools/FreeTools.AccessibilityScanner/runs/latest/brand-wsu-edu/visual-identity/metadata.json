@@ -3,9 +3,9 @@
   "Url": "https://brand.wsu.edu/visual-identity/",
   "FinalUrl": null,
   "Title": "Page not found \u2013 Washington State University",
-  "StatusCode": 404,
+  "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 59278,
+  "HtmlSizeBytes": 46534,
   "ScreenshotSizeBytes": 50498,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -18,15 +18,11 @@
       "FileSize": 50498
     }
   ],
+  "ImageCount": 0,
+  "ImagesTotalSizeBytes": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
   "ErrorMessage": null,
-  "Headers": {
-    "access-control-allow-origin": "*",
-    "cache-control": "no-cache, must-revalidate, max-age=0",
-    "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:11:43 GMT",
-    "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
-    "link": "\u003Chttps://brand.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
-    "server": "nginx"
-  },
-  "CapturedAt": "2026-02-16T20:11:30.0693818Z"
+  "Headers": null,
+  "CapturedAt": "2026-02-16T20:37:47.5563937Z"
 }

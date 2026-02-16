@@ -2,32 +2,30 @@
 
 | Metric | Value |
 |--------|-------|
-| Status | ✅ 6/6 pages OK |
+| Status | ⚠️ 2/6 pages OK |
 | Pages Scanned | 6 |
-| Pages Passed | 6 |
-| Pages Failed | 0 |
-| Total JS Errors | 1 |
+| Pages Passed | 2 |
+| Pages Failed | 4 |
+| Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total HTML | 338.3 KB |
-| Total Screenshots | 7.3 MB |
+| Total HTML | 281.6 KB |
+| Total Screenshots | 4.8 MB |
+| Total Images | 3 (774.8 KB) |
+| Images Missing Alt | 3 |
 | Folder | `accesscenter-wsu-edu/` |
 
 ## Pages
 
-| Status | Page | HTTP | Title | JS Errors | JS Warnings | Screenshots |
-|--------|------|------|-------|-----------|-------------|-------------|
-| ✅ | [/](_root/report.md) | 200 |  | 1 | 0 | 1 |
-| ✅ | [/accommodations/](accommodations/report.md) | 200 |  | 0 | 0 | 1 |
-| ✅ | [/contact/](contact/report.md) | 200 |  | 0 | 0 | 1 |
-| ✅ | [/faculty/](faculty/report.md) | 200 |  | 0 | 0 | 1 |
-| ✅ | [/services/](services/report.md) | 200 |  | 0 | 0 | 1 |
-| ✅ | [/students/](students/report.md) | 200 |  | 0 | 0 | 1 |
+| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |
+|--------|------|------|-------|-----------|--------|-------------|
+| ❌ | [/](_root/report.md) | 0 | (none) | 0 | 0 | 0 |
+| ✅ | [/accommodations/](accommodations/report.md) | 200 |  | 0 | 1 | 1 |
+| ✅ | [/contact/](contact/report.md) | 200 |  | 0 | 1 | 1 |
+| ❌ | [/faculty/](faculty/report.md) | 0 |  | 0 | 1 | 1 |
+| ❌ | [/services/](services/report.md) | 0 |  | 0 | 0 | 0 |
+| ❌ | [/students/](students/report.md) | 0 |  | 0 | 0 | 0 |
 
 ## Page Screenshots
-
-### [/](_root/report.md)
-
-![/](_root/01-page-loaded.png)
 
 ### [/accommodations/](accommodations/report.md)
 
@@ -50,11 +48,31 @@
 ![/students/](students/01-page-loaded.png)
 
 
-## Pages with JavaScript Errors
+## Failed Pages
 
-### / (1 errors)
+### /
 
-- `Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR`
+- **URL:** https://accesscenter.wsu.edu/
+- **Status:** 0
+- **Error:** `Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...`
+
+### /services/
+
+- **URL:** https://accesscenter.wsu.edu/services/
+- **Status:** 0
+
+### /students/
+
+- **URL:** https://accesscenter.wsu.edu/students/
+- **Status:** 0
+
+### /faculty/
+
+- **URL:** https://accesscenter.wsu.edu/faculty/
+- **Status:** 0
 
 
 ---

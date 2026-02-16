@@ -5,7 +5,7 @@
   "Title": "Carson College News \u0026 Research - Carson College of Business | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 206375,
+  "HtmlSizeBytes": 206305,
   "ScreenshotSizeBytes": 1833552,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
@@ -18,16 +18,180 @@
       "FileSize": 1833552
     }
   ],
+  "ImageCount": 26,
+  "ImagesTotalSizeBytes": 367351,
+  "ImagesMissingAlt": 3,
+  "Images": [
+    {
+      "FileName": "wsu-logo.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/05/wsu-logo.svg",
+      "AltText": "Carson College of Business | Washington State University",
+      "FileSize": 34636
+    },
+    {
+      "FileName": "Chris-Stokes-portrait-and-bobsled-training-run-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/02/Chris-Stokes-portrait-and-bobsled-training-run-150x150.jpg",
+      "AltText": "Composite featuring a closeup of Chris Stokes and Jamaica\u2019s 1988 Olympic four-man bobsled team during a training run.",
+      "FileSize": 7546
+    },
+    {
+      "FileName": "generic-system-logo-gray-angled-lines-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2024/09/generic-system-logo-gray-angled-lines-150x150.jpg",
+      "AltText": "Washington State University logo.",
+      "FileSize": 5125
+    },
+    {
+      "FileName": "generic-system-logo-gray-bkgrd-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2024/09/generic-system-logo-gray-bkgrd-150x150.jpg",
+      "AltText": "Washington State University logo.",
+      "FileSize": 5091
+    },
+    {
+      "FileName": "businessofaging-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/01/businessofaging-150x150.jpg",
+      "AltText": "Closeup of two women, one older and one younger, talking over coffee.",
+      "FileSize": 22135
+    },
+    {
+      "FileName": "Leah-Sheppard-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/01/Leah-Sheppard-150x150.jpg",
+      "AltText": "Closeup of Leah Sheppard.",
+      "FileSize": 7306
+    },
+    {
+      "FileName": "dogan-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/01/dogan-150x150.jpg",
+      "AltText": "Closeup of WSU Regents Professor Dogan Gursoy",
+      "FileSize": 22120
+    },
+    {
+      "FileName": "generic-system-logo-crimson-song-lyrics-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2024/09/generic-system-logo-crimson-song-lyrics-150x150.jpg",
+      "AltText": "Washington State University logo.",
+      "FileSize": 8306
+    },
+    {
+      "FileName": "Businesspeoplecarsonpro-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2026/01/Businesspeoplecarsonpro-150x150.jpg",
+      "AltText": "Two people can be seen working collaboratives at a table.",
+      "FileSize": 18765
+    },
+    {
+      "FileName": "social-media-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/12/social-media-150x150.jpg",
+      "AltText": "Photo illustration depicting a social media user surrounded by posts.",
+      "FileSize": 18305
+    },
+    {
+      "FileName": "student-pouring-wine-in-beverage-lab-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/12/student-pouring-wine-in-beverage-lab-150x150.jpg",
+      "AltText": "A WSU student pours red wine into glasses while another student looks on in the Beverage Lab.",
+      "FileSize": 10548
+    },
+    {
+      "FileName": "AIworkshop-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/12/AIworkshop-150x150.jpg",
+      "AltText": "Professor Robert Crossler can be seen working with WSU student Eden Brooks and her teammates during the AI @ Carson Workshop.",
+      "FileSize": 24755
+    },
+    {
+      "FileName": "iStock-2163573192-copy-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/12/iStock-2163573192-copy-150x150.jpg",
+      "AltText": "A stock market board is displayed.",
+      "FileSize": 8060
+    },
+    {
+      "FileName": "hospitality-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/11/hospitality-150x150.jpg",
+      "AltText": "Neon tube sign that reads \u0022Hospitality\u0022 against a brick wall.",
+      "FileSize": 24366
+    },
+    {
+      "FileName": "Shay-Boyd-in-uniform-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/10/Shay-Boyd-in-uniform-150x150.jpg",
+      "AltText": "Closeup of Shay Boyd in her U.S. Air Force uniform.",
+      "FileSize": 12175
+    },
+    {
+      "FileName": "ev-shopping-consumer-market.jpg-copy-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/09/ev-shopping-consumer-market.jpg-copy-150x150.jpg",
+      "AltText": "A composite featuring a hand placing a car in a shopping cart and an EV charging cable in the background.",
+      "FileSize": 17434
+    },
+    {
+      "FileName": "generic-system-logo-crimson-angled-lines-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2024/09/generic-system-logo-crimson-angled-lines-150x150.jpg",
+      "AltText": "Washington State University logo.",
+      "FileSize": 7278
+    },
+    {
+      "FileName": "Indian-customer-paying-with-credit-card-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/09/Indian-customer-paying-with-credit-card-150x150.jpg",
+      "AltText": "A merchant in India accepts a credit card payment from a customer.",
+      "FileSize": 11488
+    },
+    {
+      "FileName": "Dan-Castles-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/09/Dan-Castles-150x150.jpg",
+      "AltText": "Closeup of Dan Castles.",
+      "FileSize": 6282
+    },
+    {
+      "FileName": "Seattle-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/08/Seattle-150x150.jpg",
+      "AltText": "A view of the Seattle skyline.",
+      "FileSize": 29473
+    },
+    {
+      "FileName": "internationalbusiness-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/07/internationalbusiness-150x150.jpg",
+      "AltText": "Closeup of Carson College of Business student Nanako Irisumi in Colombia.",
+      "FileSize": 26835
+    },
+    {
+      "FileName": "Dipra-Jha-portrait-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/news/uploads/sites/2797/2025/06/Dipra-Jha-portrait-150x150.jpg",
+      "AltText": "Closeup of Dipra Jha.",
+      "FileSize": 8339
+    },
+    {
+      "FileName": "41055-AlumDouglasPoole-A-BraveNewApproach_Social-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2025/07/41055-AlumDouglasPoole-A-BraveNewApproach_Social-150x150.jpg",
+      "AltText": "",
+      "FileSize": 5558
+    },
+    {
+      "FileName": "41055-AlumMarqEvans-DiamondKings_Social-150x150.jpg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2025/07/41055-AlumMarqEvans-DiamondKings_Social-150x150.jpg",
+      "AltText": "",
+      "FileSize": 9254
+    },
+    {
+      "FileName": "wsu-mascot-logo.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/06/wsu-mascot-logo.svg",
+      "AltText": "",
+      "FileSize": 5462
+    },
+    {
+      "FileName": "wsu-logo-1.svg",
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-business/uploads/sites/3076/2023/06/wsu-logo.svg",
+      "AltText": "drglow-footer-logo",
+      "FileSize": 10709
+    }
+  ],
   "ErrorMessage": null,
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Mon, 16 Feb 2026 20:14:49 GMT",
-    "etag": "\u002218af2d9ae9923de9a6f866e01497c7bf\u0022",
-    "last-modified": "Mon, 16 Feb 2026 20:10:23 GMT",
+    "date": "Mon, 16 Feb 2026 20:40:28 GMT",
+    "etag": "\u0022a25a775e4a22d97d0c471952c23a50ec\u0022",
+    "last-modified": "Mon, 16 Feb 2026 20:40:28 GMT",
     "link": "\u003Chttps://business.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://business.wsu.edu/wp-json/wp/v2/pages/49909\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://business.wsu.edu/?p=49909\u003E; rel=shortlink",
     "server": "nginx",
-    "vary": "Accept-Encoding"
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://business.wsu.edu",
+    "x-tec-api-root": "https://business.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
   },
-  "CapturedAt": "2026-02-16T20:14:48.7544273Z"
+  "CapturedAt": "2026-02-16T20:40:25.7123085Z"
 }

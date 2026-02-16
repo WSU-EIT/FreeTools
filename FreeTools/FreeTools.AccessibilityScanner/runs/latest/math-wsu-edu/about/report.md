@@ -3,15 +3,17 @@
 | Field | Value |
 |-------|-------|
 | URL | https://math.wsu.edu/about/ |
-| Redirected To | https://math.wsu.edu/about/welcome/#gsc.tab=0 |
+| Redirected To | https://math.wsu.edu/about/welcome/ |
 | Title | Page not found | Department of Mathematics and Statistics | Washington State University |
-| Status | ❌ 404 |
-| HTML Size | 232.5 KB |
+| Status | ❌ 0 |
+| HTML Size | 225.5 KB |
 | Screenshots | 1 (125.9 KB) |
+| Images | 0 (0 bytes) |
+| Images Missing Alt | 0 |
 | JS Errors | 1 |
-| JS Warnings | 1 |
+| JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-16T20:11:45.0531605Z |
+| Captured | 2026-02-16T20:37:59.5788506Z |
 
 ## JavaScript Errors
 
@@ -20,6 +22,7 @@
 ## Actions
 
 - Screenshot #1: page-loaded (125.9 KB)
+- No images found on page
 
 ## Screenshots
 
@@ -27,6 +30,10 @@
 
 ![page-loaded](01-page-loaded.png)
 
+
+## Page Images (0)
+
+*No images found on page.*
 
 ## Files
 
