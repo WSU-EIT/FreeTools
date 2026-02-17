@@ -1,4 +1,6 @@
 ﻿using System.Collections.Concurrent;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -212,6 +214,32 @@ internal class Program
             Url = siteUrl,
             FolderName = siteFolderName
         };
+
+        // Download SSL certificate
+        Console.WriteLine($"  [{uri.Host}] Downloading certificate...");
+        try
+        {
+            siteResult.Certificate = await DownloadCertificateAsync(siteUrl);
+            if (siteResult.Certificate.ErrorMessage == null)
+            {
+                var sanCount = siteResult.Certificate.SubjectAlternativeNames.Count;
+                var expiry = siteResult.Certificate.DaysUntilExpiry;
+                var expiryLabel = expiry < 30 ? $"⚠️ {expiry}d" : $"{expiry}d";
+                Console.WriteLine($"  [{uri.Host}] Cert: {sanCount} SANs, expires in {expiryLabel}");
+
+                // Save cert.json
+                var certPath = Path.Combine(siteDir, "cert.json");
+                await File.WriteAllTextAsync(certPath, JsonSerializer.Serialize(siteResult.Certificate, JsonOptions));
+            }
+            else
+            {
+                Console.WriteLine($"  [{uri.Host}] Cert: {siteResult.Certificate.ErrorMessage}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"  [{uri.Host}] Cert download failed: {ex.Message}");
+        }
 
         // Build the list of pages to scan: root ("/") + configured pages
         var pagePaths = new List<string> { "/" };
@@ -590,6 +618,14 @@ internal class Program
         if (result.A11ySummary != null)
         {
             reportSb.AppendLine($"| A11y Violations | {(result.A11ySummary.TotalViolations > 0 ? $"⚠️ {result.A11ySummary.TotalViolations}" : "✅ 0")} |");
+            if (result.A11ySummary.TotalViolations > 0)
+            {
+                reportSb.AppendLine($"| 🔴 Critical | {result.A11ySummary.Critical} |");
+                reportSb.AppendLine($"| 🟠 Serious | {result.A11ySummary.Serious} |");
+                reportSb.AppendLine($"| 🟡 Moderate | {result.A11ySummary.Moderate} |");
+                reportSb.AppendLine($"| 🔵 Minor | {result.A11ySummary.Minor} |");
+                reportSb.AppendLine($"| Tools Run | {string.Join(", ", result.A11ySummary.ToolsRun)} |");
+            }
         }
         reportSb.AppendLine($"| Auth | {result.CredentialUsed ?? "none"} |");
         reportSb.AppendLine($"| Captured | {result.CapturedAt:O} |");
@@ -977,24 +1013,81 @@ internal class Program
         sb.AppendLine($"| Total JS Warnings | {totalWarnings} |");
         sb.AppendLine($"| Total Images | {totalImages} ({PathSanitizer.FormatBytes(totalImagesSize)}) |");
         sb.AppendLine($"| Images Missing Alt | {(totalMissingAlt > 0 ? $"⚠️ {totalMissingAlt}" : "✅ 0")} |");
+        var siteA11yTotal = site.Pages.Where(p => p.A11ySummary != null).Sum(p => p.A11ySummary!.TotalViolations);
+        var siteA11yCrit = site.Pages.Where(p => p.A11ySummary != null).Sum(p => p.A11ySummary!.Critical);
+        var siteA11ySeri = site.Pages.Where(p => p.A11ySummary != null).Sum(p => p.A11ySummary!.Serious);
+        var siteA11yMod = site.Pages.Where(p => p.A11ySummary != null).Sum(p => p.A11ySummary!.Moderate);
+        var siteA11yMin = site.Pages.Where(p => p.A11ySummary != null).Sum(p => p.A11ySummary!.Minor);
+        sb.AppendLine($"| A11y Violations | {(siteA11yTotal > 0 ? $"⚠️ {siteA11yTotal}" : "✅ 0")} |");
+        if (siteA11yTotal > 0)
+        {
+            sb.AppendLine($"| 🔴 Critical | {siteA11yCrit} |");
+            sb.AppendLine($"| 🟠 Serious | {siteA11ySeri} |");
+            sb.AppendLine($"| 🟡 Moderate | {siteA11yMod} |");
+            sb.AppendLine($"| 🔵 Minor | {siteA11yMin} |");
+        }
         sb.AppendLine($"| Total HTML | {PathSanitizer.FormatBytes(totalHtml)} |");
         sb.AppendLine($"| Total Screenshots | {PathSanitizer.FormatBytes(totalScreenshots)} |");
         sb.AppendLine();
 
+        // Certificate section
+        if (site.Certificate != null && site.Certificate.ErrorMessage == null)
+        {
+            var cert = site.Certificate;
+            var expiryEmoji = cert.DaysUntilExpiry < 30 ? "🔴" : cert.DaysUntilExpiry < 90 ? "🟡" : "🟢";
+
+            sb.AppendLine($"## 🔒 SSL Certificate");
+            sb.AppendLine();
+            sb.AppendLine($"| Field | Value |");
+            sb.AppendLine($"|-------|-------|");
+            sb.AppendLine($"| Subject | `{cert.Subject}` |");
+            sb.AppendLine($"| Issuer | `{Truncate(cert.Issuer, 80)}` |");
+            sb.AppendLine($"| Valid From | {cert.NotBefore:yyyy-MM-dd} |");
+            sb.AppendLine($"| Expires | {expiryEmoji} {cert.NotAfter:yyyy-MM-dd} ({cert.DaysUntilExpiry} days) |");
+            sb.AppendLine($"| Algorithm | {cert.SignatureAlgorithm} |");
+            sb.AppendLine($"| Key Size | {cert.KeySizeBits} bits |");
+            sb.AppendLine($"| Thumbprint | `{cert.Thumbprint}` |");
+            sb.AppendLine($"| SANs | {cert.SubjectAlternativeNames.Count} domain(s) |");
+            sb.AppendLine();
+
+            if (cert.SubjectAlternativeNames.Count > 0)
+            {
+                sb.AppendLine("<details>");
+                sb.AppendLine($"<summary><strong>Subject Alternative Names ({cert.SubjectAlternativeNames.Count})</strong></summary>");
+                sb.AppendLine();
+                sb.AppendLine("| Domain | Type |");
+                sb.AppendLine("|--------|------|");
+                foreach (var san in cert.SubjectAlternativeNames)
+                {
+                    var type = san.StartsWith("*.") ? "🌐 Wildcard" :
+                               san.EndsWith(".wsu.edu", StringComparison.OrdinalIgnoreCase) ? "🏫 WSU" :
+                               san.Equals("wsu.edu", StringComparison.OrdinalIgnoreCase) ? "🏫 WSU Root" :
+                               "🔗 External";
+                    sb.AppendLine($"| `{san}` | {type} |");
+                }
+                sb.AppendLine();
+                sb.AppendLine("</details>");
+                sb.AppendLine();
+            }
+        }
+
         // Page results table
         sb.AppendLine($"## 📑 Pages");
         sb.AppendLine();
-        sb.AppendLine($"| Status | Page | HTTP | Title | JS Errors | Images | Missing Alt |");
-        sb.AppendLine($"|:------:|------|:----:|-------|:---------:|:------:|:-----------:|");
+        sb.AppendLine($"| Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |");
+        sb.AppendLine($"|:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|");
 
         foreach (var page in site.Pages.OrderBy(p => p.PagePath))
         {
             var s = page.Success ? "✅" : "❌";
             var title = Truncate(page.Title ?? "*(none)*", 40);
-            var missingAlt = page.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText));
-            var errBadge = page.ConsoleErrors.Count > 0 ? $"🔴 {page.ConsoleErrors.Count}" : "0";
-            var altBadge = missingAlt > 0 ? $"⚠️ {missingAlt}" : "0";
-            sb.AppendLine($"| {s} | [{page.PagePath}]({page.FolderName}/report.md) | {page.StatusCode} | {title} | {errBadge} | {page.Images.Count} | {altBadge} |");
+            var a = page.A11ySummary;
+            var crit = a != null && a.Critical > 0 ? a.Critical.ToString() : "";
+            var seri = a != null && a.Serious > 0 ? a.Serious.ToString() : "";
+            var mod = a != null && a.Moderate > 0 ? a.Moderate.ToString() : "";
+            var min = a != null && a.Minor > 0 ? a.Minor.ToString() : "";
+            var total = a != null && a.TotalViolations > 0 ? $"⚠️ {a.TotalViolations}" : "✅";
+            sb.AppendLine($"| {s} | [{page.PagePath}]({page.FolderName}/report.md) | {page.StatusCode} | {title} | {crit} | {seri} | {mod} | {min} | {total} |");
         }
         sb.AppendLine();
 
@@ -1175,6 +1268,11 @@ internal class Program
         var totalImages = siteList.Sum(s => s.Pages.Sum(p => p.Images.Count));
         var totalImagesSize = siteList.Sum(s => s.Pages.Sum(p => p.ImagesTotalSize));
         var totalMissingAlt = siteList.Sum(s => s.Pages.Sum(p => p.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText))));
+        var runA11yTotal = siteList.Sum(s => s.Pages.Where(p => p.A11ySummary != null).Sum(p => p.A11ySummary!.TotalViolations));
+        var runA11yCrit = siteList.Sum(s => s.Pages.Where(p => p.A11ySummary != null).Sum(p => p.A11ySummary!.Critical));
+        var runA11ySeri = siteList.Sum(s => s.Pages.Where(p => p.A11ySummary != null).Sum(p => p.A11ySummary!.Serious));
+        var runA11yMod = siteList.Sum(s => s.Pages.Where(p => p.A11ySummary != null).Sum(p => p.A11ySummary!.Moderate));
+        var runA11yMin = siteList.Sum(s => s.Pages.Where(p => p.A11ySummary != null).Sum(p => p.A11ySummary!.Minor));
         var successPct = totalPages > 0 ? (totalSuccess * 100.0 / totalPages) : 0;
         var runStatus = totalFailed == 0 ? "✅ All pages passed" : $"⚠️ {totalFailed} page(s) failed";
 
@@ -1196,6 +1294,8 @@ internal class Program
         sb.AppendLine("- [All Pages](#-all-pages)");
         if (totalFailed > 0) sb.AppendLine("- [Failed Pages](#-failed-pages)");
         if (totalErrors > 0) sb.AppendLine("- [JavaScript Errors](#-javascript-errors)");
+        sb.AppendLine("- [Accessibility Dashboard](#-accessibility-dashboard)");
+        sb.AppendLine("- [SSL Certificates](#-ssl-certificates)");
         sb.AppendLine();
         sb.AppendLine("---");
         sb.AppendLine();
@@ -1207,12 +1307,16 @@ internal class Program
         sb.AppendLine($"Page Success:     {GenerateProgressBar(successPct, 30)} {successPct:F0}%");
         var altPct = totalImages > 0 ? ((totalImages - totalMissingAlt) * 100.0 / totalImages) : 100;
         sb.AppendLine($"Alt Text Cover:   {GenerateProgressBar(altPct, 30)} {altPct:F0}%");
+        var a11yCleanPct = totalPages > 0
+            ? (siteList.Sum(s => s.Pages.Count(p => p.A11ySummary == null || p.A11ySummary.TotalViolations == 0)) * 100.0 / totalPages)
+            : 100;
+        sb.AppendLine($"A11y Clean Pages: {GenerateProgressBar(a11yCleanPct, 30)} {a11yCleanPct:F0}%");
         sb.AppendLine("```");
         sb.AppendLine();
 
-        sb.AppendLine("| ✅ Passed | ❌ Failed | 🖼️ Images | ⚠️ Missing Alt | 🔴 JS Errors |");
-        sb.AppendLine("|:---------:|:---------:|:----------:|:--------------:|:------------:|");
-        sb.AppendLine($"| {totalSuccess} | {totalFailed} | {totalImages} | {totalMissingAlt} | {totalErrors} |");
+        sb.AppendLine("| ✅ Passed | ❌ Failed | ⚠️ A11y Issues | 🔴 Critical | 🟠 Serious | 🟡 Moderate | 🔵 Minor |");
+        sb.AppendLine("|:---------:|:---------:|:-----------:|:----------:|:--------:|:----------:|:------:|");
+        sb.AppendLine($"| {totalSuccess} | {totalFailed} | {runA11yTotal} | {runA11yCrit} | {runA11ySeri} | {runA11yMod} | {runA11yMin} |");
         sb.AppendLine();
 
         sb.AppendLine($"| Metric | Value |");
@@ -1222,23 +1326,30 @@ internal class Program
         sb.AppendLine($"| Total Images | {totalImages} ({PathSanitizer.FormatBytes(totalImagesSize)}) |");
         sb.AppendLine($"| Total HTML | {PathSanitizer.FormatBytes(totalHtml)} |");
         sb.AppendLine($"| Total Screenshots | {PathSanitizer.FormatBytes(totalScreenshots)} |");
+        sb.AppendLine($"| Total A11y Violations | {(runA11yTotal > 0 ? $"⚠️ {runA11yTotal:N0}" : "✅ 0")} |");
+        sb.AppendLine($"| JS Errors | {(totalErrors > 0 ? $"🔴 {totalErrors}" : "0")} |");
         sb.AppendLine();
 
         // Sites table
         sb.AppendLine($"## 🌐 Sites");
         sb.AppendLine();
-        sb.AppendLine($"| Status | Site | Pages | Passed | Failed | Images | Missing Alt |");
-        sb.AppendLine($"|:------:|------|:-----:|:------:|:------:|:------:|:-----------:|");
+        sb.AppendLine($"| Status | Site | Pages | 🔴 | 🟠 | 🟡 | 🔵 | A11y Total |");
+        sb.AppendLine($"|:------:|------|:-----:|:--:|:--:|:--:|:--:|:---------:|");
 
         foreach (var site in siteList)
         {
             var siteSuccess = site.Pages.Count(p => p.Success);
             var siteFailed = site.Pages.Count - siteSuccess;
-            var siteImages = site.Pages.Sum(p => p.Images.Count);
-            var siteMissingAlt = site.Pages.Sum(p => p.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText)));
+            var sa = site.Pages.Where(p => p.A11ySummary != null);
+            var saCrit = sa.Sum(p => p.A11ySummary!.Critical);
+            var saSeri = sa.Sum(p => p.A11ySummary!.Serious);
+            var saMod = sa.Sum(p => p.A11ySummary!.Moderate);
+            var saMin = sa.Sum(p => p.A11ySummary!.Minor);
+            var saTotal = sa.Sum(p => p.A11ySummary!.TotalViolations);
             var s = siteFailed == 0 ? "✅" : "⚠️";
+            var totalBadge = saTotal > 0 ? $"⚠️ {saTotal}" : "✅";
 
-            sb.AppendLine($"| {s} | [{site.Url}]({site.FolderName}/report.md) | {site.Pages.Count} | {siteSuccess} | {siteFailed} | {siteImages} | {siteMissingAlt} |");
+            sb.AppendLine($"| {s} | [{site.Url}]({site.FolderName}/report.md) | {site.Pages.Count} | {(saCrit > 0 ? saCrit.ToString() : "")} | {(saSeri > 0 ? saSeri.ToString() : "")} | {(saMod > 0 ? saMod.ToString() : "")} | {(saMin > 0 ? saMin.ToString() : "")} | {totalBadge} |");
         }
         sb.AppendLine();
 
@@ -1301,18 +1412,22 @@ internal class Program
         sb.AppendLine("<details>");
         sb.AppendLine($"<summary><strong>{totalPages} pages scanned</strong></summary>");
         sb.AppendLine();
-        sb.AppendLine($"| Status | Site | Page | HTTP | Title | Images | Missing Alt |");
-        sb.AppendLine($"|:------:|------|------|:----:|-------|:------:|:-----------:|");
+        sb.AppendLine($"| Status | Site | Page | HTTP | 🔴 | 🟠 | 🟡 | 🔵 | A11y |");
+        sb.AppendLine($"|:------:|------|------|:----:|:--:|:--:|:--:|:--:|:----:|");
 
         foreach (var site in siteList)
         {
             foreach (var page in site.Pages.OrderBy(p => p.PagePath))
             {
                 var s = page.Success ? "✅" : "❌";
-                var title = Truncate(page.Title ?? "*(none)*", 35);
                 var host = new Uri(site.Url).Host;
-                var missingAlt = page.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText));
-                sb.AppendLine($"| {s} | {host} | [{page.PagePath}]({site.FolderName}/{page.FolderName}/report.md) | {page.StatusCode} | {title} | {page.Images.Count} | {missingAlt} |");
+                var a = page.A11ySummary;
+                var crit = a != null && a.Critical > 0 ? a.Critical.ToString() : "";
+                var seri = a != null && a.Serious > 0 ? a.Serious.ToString() : "";
+                var mod = a != null && a.Moderate > 0 ? a.Moderate.ToString() : "";
+                var min = a != null && a.Minor > 0 ? a.Minor.ToString() : "";
+                var total = a != null && a.TotalViolations > 0 ? $"⚠️ {a.TotalViolations}" : "✅";
+                sb.AppendLine($"| {s} | {host} | [{page.PagePath}]({site.FolderName}/{page.FolderName}/report.md) | {page.StatusCode} | {crit} | {seri} | {mod} | {min} | {total} |");
             }
         }
         sb.AppendLine();
@@ -1463,6 +1578,109 @@ internal class Program
                     csvSb.AppendLine($"{rank},\"{r.Rule}\",\"{r.Severity}\",\"{conf}\",{r.Sites},{r.Pages},{r.Instances},\"{r.WcagCriteria ?? ""}\",\"{msg}\"");
                 }
                 await File.WriteAllTextAsync(Path.Combine(runsDir, "a11y-ranked.csv"), csvSb.ToString());
+            }
+        }
+
+        // Certificate summary
+        var sitesWithCerts = siteList.Where(s => s.Certificate != null && s.Certificate.ErrorMessage == null).ToList();
+        if (sitesWithCerts.Count > 0)
+        {
+            sb.AppendLine($"## 🔒 SSL Certificates");
+            sb.AppendLine();
+
+            // Expiry warnings
+            var expiringSoon = sitesWithCerts.Where(s => s.Certificate!.DaysUntilExpiry < 90)
+                .OrderBy(s => s.Certificate!.DaysUntilExpiry).ToList();
+
+            if (expiringSoon.Count > 0)
+            {
+                sb.AppendLine($"### ⚠️ Certificates Expiring Soon");
+                sb.AppendLine();
+                sb.AppendLine($"| Site | Expires | Days Left | Thumbprint |");
+                sb.AppendLine($"|------|---------|:---------:|------------|");
+                foreach (var s in expiringSoon)
+                {
+                    var c = s.Certificate!;
+                    var emoji = c.DaysUntilExpiry < 30 ? "🔴" : "🟡";
+                    var host = new Uri(s.Url).Host;
+                    sb.AppendLine($"| {host} | {c.NotAfter:yyyy-MM-dd} | {emoji} {c.DaysUntilExpiry} | `{c.Thumbprint[..8]}...` |");
+                }
+                sb.AppendLine();
+            }
+
+            // Unique certs by thumbprint
+            var uniqueCerts = sitesWithCerts
+                .GroupBy(s => s.Certificate!.Thumbprint)
+                .Select(g => new
+                {
+                    Thumbprint = g.Key,
+                    Cert = g.First().Certificate!,
+                    Sites = g.Select(s => new Uri(s.Url).Host).OrderBy(h => h).ToList()
+                })
+                .OrderByDescending(c => c.Sites.Count)
+                .ToList();
+
+            sb.AppendLine($"### Unique Certificates ({uniqueCerts.Count})");
+            sb.AppendLine();
+            sb.AppendLine("<details>");
+            sb.AppendLine($"<summary><strong>{uniqueCerts.Count} unique cert(s) across {sitesWithCerts.Count} sites</strong></summary>");
+            sb.AppendLine();
+            sb.AppendLine($"| Thumbprint | Subject | Sites Using | SANs | Expires |");
+            sb.AppendLine($"|------------|---------|:-----------:|:----:|---------|");
+            foreach (var uc in uniqueCerts)
+            {
+                var subj = Truncate(uc.Cert.Subject, 40);
+                sb.AppendLine($"| `{uc.Thumbprint[..8]}...` | {subj} | {uc.Sites.Count} | {uc.Cert.SubjectAlternativeNames.Count} | {uc.Cert.NotAfter:yyyy-MM-dd} |");
+            }
+            sb.AppendLine();
+            sb.AppendLine("</details>");
+            sb.AppendLine();
+
+            // SAN-discovered domains not in our config
+            var configuredHosts = new HashSet<string>(
+                siteList.Select(s => new Uri(s.Url).Host), StringComparer.OrdinalIgnoreCase);
+
+            var discoveredFromSans = sitesWithCerts
+                .SelectMany(s => s.Certificate!.SubjectAlternativeNames)
+                .Where(san => !san.StartsWith("*.")) // Skip wildcards
+                .Select(san => san.ToLowerInvariant())
+                .Distinct(StringComparer.OrdinalIgnoreCase)
+                .Where(san => !configuredHosts.Contains(san))
+                .OrderBy(s => s)
+                .ToList();
+
+            if (discoveredFromSans.Count > 0)
+            {
+                sb.AppendLine($"### 🔍 Domains Discovered via SANs (not in config)");
+                sb.AppendLine();
+                sb.AppendLine($"These {discoveredFromSans.Count} domain(s) appear in SSL certificates but are not in the scan config:");
+                sb.AppendLine();
+                sb.AppendLine("<details>");
+                sb.AppendLine($"<summary><strong>{discoveredFromSans.Count} discoverable domain(s)</strong></summary>");
+                sb.AppendLine();
+                foreach (var domain in discoveredFromSans)
+                {
+                    sb.AppendLine($"- `{domain}`");
+                }
+                sb.AppendLine();
+                sb.AppendLine("</details>");
+                sb.AppendLine();
+
+                // Write a CSV of discovered domains
+                var sanCsvSb = new StringBuilder();
+                sanCsvSb.AppendLine("Domain,FoundInCertFor,CertSubject");
+                foreach (var domain in discoveredFromSans)
+                {
+                    var source = sitesWithCerts.FirstOrDefault(s =>
+                        s.Certificate!.SubjectAlternativeNames.Contains(domain, StringComparer.OrdinalIgnoreCase));
+                    if (source != null)
+                    {
+                        var host = new Uri(source.Url).Host;
+                        var subj = source.Certificate!.Subject.Replace("\"", "\"\"");
+                        sanCsvSb.AppendLine($"\"{domain}\",\"{host}\",\"{subj}\"");
+                    }
+                }
+                await File.WriteAllTextAsync(Path.Combine(runsDir, "cert-discovered-domains.csv"), sanCsvSb.ToString());
             }
         }
 
@@ -2146,6 +2364,107 @@ internal class Program
     }
 
     // ========================================================================
+    // SSL certificate capture
+    // ========================================================================
+
+    /// <summary>
+    /// Connect to a site's HTTPS endpoint, capture the SSL/TLS certificate,
+    /// extract Subject Alternative Names (SANs), and return structured cert info.
+    /// </summary>
+    private static async Task<CertInfo> DownloadCertificateAsync(string siteUrl)
+    {
+        var certInfo = new CertInfo();
+        var uri = new Uri(siteUrl);
+
+        if (uri.Scheme != "https")
+        {
+            certInfo.ErrorMessage = "Not HTTPS";
+            return certInfo;
+        }
+
+        try
+        {
+            X509Certificate2? captured = null;
+
+            using var handler = new HttpClientHandler
+            {
+                ServerCertificateCustomValidationCallback = (message, cert, chain, errors) =>
+                {
+                    if (cert != null)
+                        captured = new X509Certificate2(cert);
+                    return true; // Accept all — we just want the cert
+                }
+            };
+
+            using var http = new HttpClient(handler) { Timeout = TimeSpan.FromSeconds(15) };
+            // Just do a HEAD request — we only need the TLS handshake
+            var request = new HttpRequestMessage(HttpMethod.Head, uri);
+            await http.SendAsync(request);
+
+            if (captured == null)
+            {
+                certInfo.ErrorMessage = "No certificate returned";
+                return certInfo;
+            }
+
+            certInfo.Subject = captured.Subject;
+            certInfo.Issuer = captured.Issuer;
+            certInfo.Thumbprint = captured.Thumbprint;
+            certInfo.SerialNumber = captured.SerialNumber;
+            certInfo.NotBefore = captured.NotBefore;
+            certInfo.NotAfter = captured.NotAfter;
+            certInfo.DaysUntilExpiry = (int)(captured.NotAfter - DateTime.UtcNow).TotalDays;
+            certInfo.SignatureAlgorithm = captured.SignatureAlgorithm.FriendlyName ?? "";
+            certInfo.KeySizeBits = captured.PublicKey.Key.KeySize;
+
+            // Extract SANs from the certificate
+            var sanExtension = captured.Extensions["2.5.29.17"]; // Subject Alternative Name OID
+            if (sanExtension != null)
+            {
+                var sanData = new System.Security.Cryptography.AsnEncodedData("2.5.29.17", sanExtension.RawData);
+                var sanString = sanData.Format(multiLine: true);
+
+                // Parse lines like "DNS Name=*.wsu.edu" or "DNS Name=wsu.edu"
+                foreach (var line in sanString.Split('\n', '\r'))
+                {
+                    var trimmed = line.Trim();
+                    if (trimmed.StartsWith("DNS Name=", StringComparison.OrdinalIgnoreCase))
+                    {
+                        var dns = trimmed["DNS Name=".Length..].Trim();
+                        if (!string.IsNullOrWhiteSpace(dns))
+                        {
+                            certInfo.SubjectAlternativeNames.Add(dns);
+
+                            // Categorize: WSU vs other
+                            if (dns.EndsWith(".wsu.edu", StringComparison.OrdinalIgnoreCase) ||
+                                dns.Equals("wsu.edu", StringComparison.OrdinalIgnoreCase))
+                            {
+                                certInfo.SanWsuDomains.Add(dns);
+                            }
+                            else
+                            {
+                                certInfo.SanOtherDomains.Add(dns);
+                            }
+                        }
+                    }
+                }
+            }
+
+            certInfo.SubjectAlternativeNames.Sort(StringComparer.OrdinalIgnoreCase);
+            certInfo.SanWsuDomains.Sort(StringComparer.OrdinalIgnoreCase);
+            certInfo.SanOtherDomains.Sort(StringComparer.OrdinalIgnoreCase);
+
+            captured.Dispose();
+        }
+        catch (Exception ex)
+        {
+            certInfo.ErrorMessage = ex.Message;
+        }
+
+        return certInfo;
+    }
+
+    // ========================================================================
     // Image extraction
     // ========================================================================
 
@@ -2588,6 +2907,27 @@ internal class SiteResult
     public string Url { get; set; } = "";
     public string FolderName { get; set; } = "";
     public List<PageResult> Pages { get; set; } = [];
+    public CertInfo? Certificate { get; set; }
+}
+
+/// <summary>
+/// SSL/TLS certificate information captured from a site.
+/// </summary>
+internal class CertInfo
+{
+    public string Subject { get; set; } = "";
+    public string Issuer { get; set; } = "";
+    public string Thumbprint { get; set; } = "";
+    public string SerialNumber { get; set; } = "";
+    public DateTime NotBefore { get; set; }
+    public DateTime NotAfter { get; set; }
+    public int DaysUntilExpiry { get; set; }
+    public string SignatureAlgorithm { get; set; } = "";
+    public int KeySizeBits { get; set; }
+    public List<string> SubjectAlternativeNames { get; set; } = [];
+    public List<string> SanWsuDomains { get; set; } = [];
+    public List<string> SanOtherDomains { get; set; } = [];
+    public string? ErrorMessage { get; set; }
 }
 
 internal class PageResult
