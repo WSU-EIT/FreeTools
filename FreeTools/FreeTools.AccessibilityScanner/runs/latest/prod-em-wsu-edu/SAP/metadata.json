@@ -1,0 +1,60 @@
+{
+  "PagePath": "/SAP",
+  "Url": "https://prod.em.wsu.edu/SAP",
+  "FinalUrl": null,
+  "Title": "SAP",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 7654167,
+  "ScreenshotSizeBytes": 17591,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.jpg",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 17591
+    }
+  ],
+  "ImageCount": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
+  "Accessibility": {
+    "ToolsRun": [
+      "axe",
+      "htmlcheck"
+    ],
+    "ToolsSkipped": [],
+    "TotalViolations": 5,
+    "Critical": 0,
+    "Serious": 4,
+    "Moderate": 1,
+    "Minor": 0,
+    "ByTool": {
+      "axe": {
+        "Total": 2,
+        "Critical": 0,
+        "Serious": 2,
+        "Moderate": 0,
+        "Minor": 0
+      },
+      "htmlcheck": {
+        "Total": 3,
+        "Critical": 0,
+        "Serious": 2,
+        "Moderate": 1,
+        "Minor": 0
+      }
+    }
+  },
+  "ErrorMessage": null,
+  "Headers": {
+    "content-type": "text/html; charset=utf-8",
+    "date": "Wed, 18 Feb 2026 18:45:25 GMT",
+    "server": "Microsoft-IIS/10.0",
+    "x-powered-by": "ASP.NET"
+  },
+  "CapturedAt": "2026-02-18T18:45:24.9490847Z"
+}

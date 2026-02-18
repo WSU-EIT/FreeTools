@@ -1,0 +1,64 @@
+{
+  "PagePath": "/its-scheduled-maintenance/",
+  "Url": "https://its.wsu.edu/its-scheduled-maintenance/",
+  "FinalUrl": null,
+  "Title": "ITS Scheduled Maintenance | Information Technology Services | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 242784,
+  "ScreenshotSizeBytes": 220130,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.jpg",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 220130
+    }
+  ],
+  "ImageCount": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
+  "Accessibility": {
+    "ToolsRun": [
+      "axe",
+      "htmlcheck"
+    ],
+    "ToolsSkipped": [],
+    "TotalViolations": 9,
+    "Critical": 0,
+    "Serious": 9,
+    "Moderate": 0,
+    "Minor": 0,
+    "ByTool": {
+      "axe": {
+        "Total": 2,
+        "Critical": 0,
+        "Serious": 2,
+        "Moderate": 0,
+        "Minor": 0
+      },
+      "htmlcheck": {
+        "Total": 7,
+        "Critical": 0,
+        "Serious": 7,
+        "Moderate": 0,
+        "Minor": 0
+      }
+    }
+  },
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Wed, 18 Feb 2026 18:35:58 GMT",
+    "etag": "\u002298ea83abb009efc5207e87d9c3f4ec72\u0022",
+    "last-modified": "Wed, 18 Feb 2026 18:24:36 GMT",
+    "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/114\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=114\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-18T18:35:57.9813261Z"
+}

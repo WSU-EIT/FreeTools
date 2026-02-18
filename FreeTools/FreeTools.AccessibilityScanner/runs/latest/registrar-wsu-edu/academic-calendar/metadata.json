@@ -1,0 +1,63 @@
+{
+  "PagePath": "/academic-calendar/",
+  "Url": "https://registrar.wsu.edu/academic-calendar/",
+  "FinalUrl": "https://catalog.wsu.edu/AcademicCalendar",
+  "Title": "",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 186864,
+  "ScreenshotSizeBytes": 101052,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.jpg",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 101052
+    }
+  ],
+  "ImageCount": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
+  "Accessibility": {
+    "ToolsRun": [
+      "axe",
+      "htmlcheck"
+    ],
+    "ToolsSkipped": [],
+    "TotalViolations": 6,
+    "Critical": 2,
+    "Serious": 2,
+    "Moderate": 2,
+    "Minor": 0,
+    "ByTool": {
+      "axe": {
+        "Total": 3,
+        "Critical": 2,
+        "Serious": 1,
+        "Moderate": 0,
+        "Minor": 0
+      },
+      "htmlcheck": {
+        "Total": 3,
+        "Critical": 0,
+        "Serious": 1,
+        "Moderate": 2,
+        "Minor": 0
+      }
+    }
+  },
+  "ErrorMessage": null,
+  "Headers": {
+    "blazor-enhanced-nav": "allow",
+    "cache-control": "no-cache, no-store",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Wed, 18 Feb 2026 18:37:47 GMT",
+    "pragma": "no-cache",
+    "server": "Microsoft-IIS/10.0",
+    "x-powered-by": "ASP.NET"
+  },
+  "CapturedAt": "2026-02-18T18:37:47.2574419Z"
+}

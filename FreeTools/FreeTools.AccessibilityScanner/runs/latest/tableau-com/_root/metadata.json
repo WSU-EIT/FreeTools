@@ -1,0 +1,65 @@
+{
+  "PagePath": "/",
+  "Url": "https://tableau.com/",
+  "FinalUrl": null,
+  "Title": "Access Denied",
+  "StatusCode": 403,
+  "Success": false,
+  "HtmlSizeBytes": 289,
+  "ScreenshotSizeBytes": 17632,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.jpg",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 17632
+    }
+  ],
+  "ImageCount": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
+  "Accessibility": {
+    "ToolsRun": [
+      "axe",
+      "htmlcheck"
+    ],
+    "ToolsSkipped": [],
+    "TotalViolations": 5,
+    "Critical": 0,
+    "Serious": 2,
+    "Moderate": 2,
+    "Minor": 1,
+    "ByTool": {
+      "axe": {
+        "Total": 1,
+        "Critical": 0,
+        "Serious": 1,
+        "Moderate": 0,
+        "Minor": 0
+      },
+      "htmlcheck": {
+        "Total": 4,
+        "Critical": 0,
+        "Serious": 1,
+        "Moderate": 2,
+        "Minor": 1
+      }
+    }
+  },
+  "ErrorMessage": null,
+  "Headers": {
+    "ak-uuid": "0.4ec90b17.1771440491.4f4b05e7",
+    "connection": "close",
+    "content-length": "361",
+    "content-type": "text/html",
+    "date": "Wed, 18 Feb 2026 18:48:11 GMT",
+    "expires": "Wed, 18 Feb 2026 18:48:11 GMT",
+    "mime-version": "1.0",
+    "server": "AkamaiGHost",
+    "server-timing": "cdn-cache; desc=HIT\nedge; dur=1\nak_p; desc=\u00221771440491001_386648398_1330316775_11_7454_28_35_-\u0022;dur=1"
+  },
+  "CapturedAt": "2026-02-18T18:48:10.9077533Z"
+}

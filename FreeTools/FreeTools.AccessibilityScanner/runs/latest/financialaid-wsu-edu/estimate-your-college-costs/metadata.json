@@ -1,0 +1,75 @@
+{
+  "PagePath": "/estimate-your-college-costs/",
+  "Url": "https://financialaid.wsu.edu/estimate-your-college-costs/",
+  "FinalUrl": null,
+  "Title": "Estimate Your College Costs | Student Financial Services | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 228910,
+  "ScreenshotSizeBytes": 210708,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 5,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.jpg",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 210708
+    }
+  ],
+  "ImageCount": 2,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-financialaid/uploads/sites/2322/2024/08/Net-Price-Infographic-1024x512.png",
+      "AltText": "\u0022Net Price\u0022 Infographic explaining that net price is your net cost after subtracting grants and scholarships from the overall cost of attendance at WSU."
+    },
+    {
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-financialaid/uploads/sites/2322/2024/12/calculator-1024x683.jpg",
+      "AltText": "A woman calculates expenses at her desk."
+    }
+  ],
+  "Accessibility": {
+    "ToolsRun": [
+      "axe",
+      "htmlcheck"
+    ],
+    "ToolsSkipped": [],
+    "TotalViolations": 5,
+    "Critical": 0,
+    "Serious": 5,
+    "Moderate": 0,
+    "Minor": 0,
+    "ByTool": {
+      "axe": {
+        "Total": 0,
+        "Critical": 0,
+        "Serious": 0,
+        "Moderate": 0,
+        "Minor": 0
+      },
+      "htmlcheck": {
+        "Total": 5,
+        "Critical": 0,
+        "Serious": 5,
+        "Moderate": 0,
+        "Minor": 0
+      }
+    }
+  },
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Wed, 18 Feb 2026 18:33:15 GMT",
+    "etag": "\u0022ffbea40c14ddf5f2493e3e938f0e7f63\u0022",
+    "last-modified": "Wed, 18 Feb 2026 18:30:55 GMT",
+    "link": "\u003Chttps://financialaid.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://financialaid.wsu.edu/wp-json/wp/v2/pages/1658\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://financialaid.wsu.edu/?p=1658\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-cache": "HIT",
+    "x-cache-status": "HIT"
+  },
+  "CapturedAt": "2026-02-18T18:33:15.3864692Z"
+}

@@ -1,0 +1,67 @@
+{
+  "PagePath": "/scholarship-submission-designation-award/",
+  "Url": "https://bursar.wsu.edu/scholarship-submission-designation-award/",
+  "FinalUrl": null,
+  "Title": "Scholarship Submission Designation Award | Bursar | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 66162,
+  "ScreenshotSizeBytes": 83833,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.jpg",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 83833
+    }
+  ],
+  "ImageCount": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
+  "Accessibility": {
+    "ToolsRun": [
+      "axe",
+      "htmlcheck"
+    ],
+    "ToolsSkipped": [],
+    "TotalViolations": 5,
+    "Critical": 0,
+    "Serious": 4,
+    "Moderate": 1,
+    "Minor": 0,
+    "ByTool": {
+      "axe": {
+        "Total": 0,
+        "Critical": 0,
+        "Serious": 0,
+        "Moderate": 0,
+        "Minor": 0
+      },
+      "htmlcheck": {
+        "Total": 5,
+        "Critical": 0,
+        "Serious": 4,
+        "Moderate": 1,
+        "Minor": 0
+      }
+    }
+  },
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Wed, 18 Feb 2026 18:40:37 GMT",
+    "etag": "\u002271722f785fa85bd5883774442020b27e\u0022",
+    "last-modified": "Wed, 18 Feb 2026 18:40:37 GMT",
+    "link": "\u003Chttps://bursar.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://bursar.wsu.edu/wp-json/wp/v2/pages/44\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://bursar.wsu.edu/?p=44\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://bursar.wsu.edu",
+    "x-tec-api-root": "https://bursar.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-18T18:40:37.3772289Z"
+}

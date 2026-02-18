@@ -149,7 +149,7 @@ internal class Program
                     Console.WriteLine($"        Status:      {page.StatusCode}");
                     Console.WriteLine($"        HTML:        {PathSanitizer.FormatBytes(page.HtmlSize)}");
                     Console.WriteLine($"        Screenshots: {page.Screenshots.Count} ({PathSanitizer.FormatBytes(page.ScreenshotSize)})");
-                    Console.WriteLine($"        Images:      {page.Images.Count} ({PathSanitizer.FormatBytes(page.ImagesTotalSize)})");
+                    Console.WriteLine($"        Images:      {page.Images.Count} (by URL)");
 
                     if (page.ConsoleErrors.Count > 0)
                     {
@@ -407,8 +407,8 @@ internal class Program
             result.HtmlSize = new FileInfo(htmlPath).Length;
             infoLines.Add($"HTML size: {PathSanitizer.FormatBytes(result.HtmlSize)}");
 
-            // Download page images
-            Console.WriteLine($"  [{siteUri.Host}] {pagePath} — Downloading images...");
+            // Catalog page images
+            Console.WriteLine($"  [{siteUri.Host}] {pagePath} — Cataloging images...");
             await DownloadPageImagesAsync(page, pageDir, result, actions, infoLines);
 
             // Accessibility scanning
@@ -611,7 +611,7 @@ internal class Program
         reportSb.AppendLine($"| Status | {statusEmoji} {result.StatusCode} |");
         reportSb.AppendLine($"| HTML Size | {PathSanitizer.FormatBytes(result.HtmlSize)} |");
         reportSb.AppendLine($"| Screenshots | {result.Screenshots.Count} ({PathSanitizer.FormatBytes(result.ScreenshotSize)}) |");
-        reportSb.AppendLine($"| Images | {result.Images.Count} ({PathSanitizer.FormatBytes(result.ImagesTotalSize)}) |");
+        reportSb.AppendLine($"| Images | {result.Images.Count} (referenced by URL) |");
         reportSb.AppendLine($"| Images Missing Alt | {(missingAltCount > 0 ? $"⚠️ {missingAltCount}" : "✅ 0")} |");
         reportSb.AppendLine($"| JS Errors | {(result.ConsoleErrors.Count > 0 ? $"🔴 {result.ConsoleErrors.Count}" : "✅ 0")} |");
         reportSb.AppendLine($"| JS Warnings | {result.ConsoleWarnings.Count} |");
@@ -721,10 +721,10 @@ internal class Program
         {
             // Summary table in accordion
             reportSb.AppendLine("<details open>");
-            reportSb.AppendLine($"<summary><strong>📋 Image Index</strong> — {result.Images.Count} images, {PathSanitizer.FormatBytes(result.ImagesTotalSize)}</summary>");
+            reportSb.AppendLine($"<summary><strong>📋 Image Index</strong> — {result.Images.Count} images (referenced by URL)</summary>");
             reportSb.AppendLine();
-            reportSb.AppendLine($"| # | Image | Alt Text | Size |");
-            reportSb.AppendLine($"|--:|-------|----------|-----:|");
+            reportSb.AppendLine($"| # | Source URL | Alt Text |");
+            reportSb.AppendLine($"|--:|-----------|----------|");
 
             var imgNum = 0;
             foreach (var img in result.Images)
@@ -732,13 +732,13 @@ internal class Program
                 imgNum++;
                 var alt = Truncate(img.AltText, 40);
                 if (string.IsNullOrWhiteSpace(alt)) alt = "⚠️ *(missing)*";
-                reportSb.AppendLine($"| {imgNum} | [{img.FileName}](images/{img.FileName}) | {alt} | {PathSanitizer.FormatBytes(img.FileSize)} |");
+                reportSb.AppendLine($"| {imgNum} | {Truncate(img.SourceUrl, 80)} | {alt} |");
             }
             reportSb.AppendLine();
             reportSb.AppendLine("</details>");
             reportSb.AppendLine();
 
-            // Thumbnail gallery — 3-column HTML grid
+            // Thumbnail gallery — 3-column HTML grid using source URLs
             reportSb.AppendLine("<details open>");
             reportSb.AppendLine($"<summary><strong>🖼️ Gallery</strong></summary>");
             reportSb.AppendLine();
@@ -752,13 +752,13 @@ internal class Program
                     if (idx < result.Images.Count)
                     {
                         var img = result.Images[idx];
-                        var alt = string.IsNullOrWhiteSpace(img.AltText) ? img.FileName : img.AltText;
+                        var alt = string.IsNullOrWhiteSpace(img.AltText) ? img.SourceUrl : img.AltText;
                         var altBadge = string.IsNullOrWhiteSpace(img.AltText) ? " ⚠️" : "";
                         reportSb.AppendLine("<td align=\"center\" width=\"33%\">");
-                        reportSb.AppendLine($"<a href=\"images/{img.FileName}\">");
-                        reportSb.AppendLine($"<img src=\"images/{img.FileName}\" width=\"200\" alt=\"{alt}\" />");
+                        reportSb.AppendLine($"<a href=\"{img.SourceUrl}\">");
+                        reportSb.AppendLine($"<img src=\"{img.SourceUrl}\" width=\"200\" alt=\"{alt}\" />");
                         reportSb.AppendLine("</a>");
-                        reportSb.AppendLine($"<br /><sub>{img.FileName}{altBadge}</sub>");
+                        reportSb.AppendLine($"<br /><sub>{Truncate(img.SourceUrl, 50)}{altBadge}</sub>");
                         reportSb.AppendLine("</td>");
                     }
                     else
@@ -780,11 +780,13 @@ internal class Program
                 reportSb.AppendLine("<details>");
                 reportSb.AppendLine($"<summary>⚠️ <strong>Images Missing Alt Text</strong> ({noAlt.Count})</summary>");
                 reportSb.AppendLine();
-                reportSb.AppendLine("| Image | Source URL |");
-                reportSb.AppendLine("|-------|-----------|");
+                reportSb.AppendLine("| # | Source URL |");
+                reportSb.AppendLine("|--:|-----------|" );
+                var noAltNum = 0;
                 foreach (var img in noAlt)
                 {
-                    reportSb.AppendLine($"| `{img.FileName}` | {Truncate(img.SourceUrl, 80)} |");
+                    noAltNum++;
+                    reportSb.AppendLine($"| {noAltNum} | {Truncate(img.SourceUrl, 80)} |");
                 }
                 reportSb.AppendLine();
                 reportSb.AppendLine("</details>");
@@ -909,10 +911,6 @@ internal class Program
         reportSb.AppendLine($"| `warnings.log` | JavaScript console warnings |");
         reportSb.AppendLine($"| `info.log` | Navigation and timing details |");
         reportSb.AppendLine($"| `actions.log` | Interactions performed |");
-        if (result.Images.Count > 0)
-        {
-            reportSb.AppendLine($"| `images/` | {result.Images.Count} page images ({PathSanitizer.FormatBytes(result.ImagesTotalSize)}) |");
-        }
         if (result.A11ySummary != null)
         {
             foreach (var tool in result.A11ySummary.ToolsRun)
@@ -945,9 +943,8 @@ internal class Program
             ConsoleWarningCount = result.ConsoleWarnings.Count,
             Screenshots = result.Screenshots.Select(s => new { s.FileName, s.Label, s.StepNumber, s.FileSize }).ToArray(),
             ImageCount = result.Images.Count,
-            ImagesTotalSizeBytes = result.ImagesTotalSize,
             ImagesMissingAlt = result.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText)),
-            Images = result.Images.Select(i => new { i.FileName, i.SourceUrl, i.AltText, i.FileSize }).ToArray(),
+            Images = result.Images.Select(i => new { i.SourceUrl, i.AltText }).ToArray(),
             Accessibility = result.A11ySummary != null ? new
             {
                 result.A11ySummary.ToolsRun,
@@ -982,7 +979,6 @@ internal class Program
         var totalHtml = site.Pages.Sum(p => p.HtmlSize);
         var totalScreenshots = site.Pages.Sum(p => p.ScreenshotSize);
         var totalImages = site.Pages.Sum(p => p.Images.Count);
-        var totalImagesSize = site.Pages.Sum(p => p.ImagesTotalSize);
         var totalMissingAlt = site.Pages.Sum(p => p.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText)));
         var failedPages = site.Pages.Where(p => !p.Success).ToList();
         var pagesWithErrors = site.Pages.Where(p => p.ConsoleErrors.Count > 0).ToList();
@@ -1011,7 +1007,7 @@ internal class Program
         sb.AppendLine($"| Pages Failed | {(failedPages.Count > 0 ? $"❌ {failedPages.Count}" : "0")} |");
         sb.AppendLine($"| Total JS Errors | {(totalErrors > 0 ? $"🔴 {totalErrors}" : "0")} |");
         sb.AppendLine($"| Total JS Warnings | {totalWarnings} |");
-        sb.AppendLine($"| Total Images | {totalImages} ({PathSanitizer.FormatBytes(totalImagesSize)}) |");
+        sb.AppendLine($"| Total Images | {totalImages} (by URL) |");
         sb.AppendLine($"| Images Missing Alt | {(totalMissingAlt > 0 ? $"⚠️ {totalMissingAlt}" : "✅ 0")} |");
         var siteA11yTotal = site.Pages.Where(p => p.A11ySummary != null).Sum(p => p.A11ySummary!.TotalViolations);
         var siteA11yCrit = site.Pages.Where(p => p.A11ySummary != null).Sum(p => p.A11ySummary!.Critical);
@@ -1266,7 +1262,6 @@ internal class Program
         var totalHtml = siteList.Sum(s => s.Pages.Sum(p => p.HtmlSize));
         var totalScreenshots = siteList.Sum(s => s.Pages.Sum(p => p.ScreenshotSize));
         var totalImages = siteList.Sum(s => s.Pages.Sum(p => p.Images.Count));
-        var totalImagesSize = siteList.Sum(s => s.Pages.Sum(p => p.ImagesTotalSize));
         var totalMissingAlt = siteList.Sum(s => s.Pages.Sum(p => p.Images.Count(i => string.IsNullOrWhiteSpace(i.AltText))));
         var runA11yTotal = siteList.Sum(s => s.Pages.Where(p => p.A11ySummary != null).Sum(p => p.A11ySummary!.TotalViolations));
         var runA11yCrit = siteList.Sum(s => s.Pages.Where(p => p.A11ySummary != null).Sum(p => p.A11ySummary!.Critical));
@@ -1323,7 +1318,7 @@ internal class Program
         sb.AppendLine($"|--------|-------|");
         sb.AppendLine($"| Sites | {totalSites} |");
         sb.AppendLine($"| Total Pages | {totalPages} |");
-        sb.AppendLine($"| Total Images | {totalImages} ({PathSanitizer.FormatBytes(totalImagesSize)}) |");
+        sb.AppendLine($"| Total Images | {totalImages} (by URL) |");
         sb.AppendLine($"| Total HTML | {PathSanitizer.FormatBytes(totalHtml)} |");
         sb.AppendLine($"| Total Screenshots | {PathSanitizer.FormatBytes(totalScreenshots)} |");
         sb.AppendLine($"| Total A11y Violations | {(runA11yTotal > 0 ? $"⚠️ {runA11yTotal:N0}" : "✅ 0")} |");
@@ -2479,8 +2474,6 @@ internal class Program
         List<string> actions,
         List<string> infoLines)
     {
-        var imagesDir = Path.Combine(pageDir, "images");
-
         // Get all img elements with src attributes
         var imgElements = await page.EvaluateAsync<ImageInfo[]>(@"
             () => Array.from(document.querySelectorAll('img[src]')).map(img => ({
@@ -2504,71 +2497,20 @@ internal class Program
             .Select(g => g.First())
             .ToList();
 
-        Directory.CreateDirectory(imagesDir);
-
-        var downloaded = 0;
-        using var httpClient = new HttpClient();
-        httpClient.Timeout = TimeSpan.FromSeconds(5);
-
+        // Catalog images by URL only — no files are downloaded
         foreach (var img in uniqueImages)
         {
-            try
+            result.Images.Add(new ImageEntry
             {
-                var uri = new Uri(img.Src);
-                var ext = Path.GetExtension(uri.AbsolutePath).ToLowerInvariant();
-                if (string.IsNullOrEmpty(ext) || ext.Length > 5)
-                {
-                    ext = ".img";
-                }
-
-                // Sanitize filename from the URL path
-                var urlFileName = Path.GetFileNameWithoutExtension(uri.AbsolutePath);
-                if (string.IsNullOrWhiteSpace(urlFileName) || urlFileName.Length > 60)
-                {
-                    urlFileName = $"image-{downloaded + 1}";
-                }
-
-                // Strip invalid chars
-                foreach (var c in Path.GetInvalidFileNameChars())
-                {
-                    urlFileName = urlFileName.Replace(c, '-');
-                }
-
-                var fileName = $"{urlFileName}{ext}";
-
-                // Avoid collisions
-                var filePath = Path.Combine(imagesDir, fileName);
-                var counter = 1;
-                while (File.Exists(filePath))
-                {
-                    fileName = $"{urlFileName}-{counter}{ext}";
-                    filePath = Path.Combine(imagesDir, fileName);
-                    counter++;
-                }
-
-                var bytes = await httpClient.GetByteArrayAsync(img.Src);
-                await File.WriteAllBytesAsync(filePath, bytes);
-
-                var fileSize = bytes.Length;
-                result.Images.Add(new ImageEntry
-                {
-                    FileName = fileName,
-                    SourceUrl = img.Src,
-                    AltText = img.Alt,
-                    FileSize = fileSize
-                });
-
-                result.ImagesTotalSize += fileSize;
-                downloaded++;
-            }
-            catch
-            {
-                // Skip images that fail to download
-            }
+                FileName = "",
+                SourceUrl = img.Src,
+                AltText = img.Alt,
+                FileSize = 0
+            });
         }
 
-        infoLines.Add($"Images: {downloaded} downloaded of {uniqueImages.Count} found ({PathSanitizer.FormatBytes(result.ImagesTotalSize)})");
-        actions.Add($"Downloaded {downloaded} images to /images/");
+        infoLines.Add($"Images: {uniqueImages.Count} cataloged (referenced by URL, not downloaded)");
+        actions.Add($"Cataloged {uniqueImages.Count} images by URL (no download)");
     }
 
     // ========================================================================
@@ -2587,13 +2529,15 @@ internal class Program
         string label)
     {
         var stepNumber = result.Screenshots.Count + 1;
-        var fileName = $"{stepNumber:D2}-{SanitizeFileName(label)}.png";
+        var fileName = $"{stepNumber:D2}-{SanitizeFileName(label)}.jpg";
         var filePath = Path.Combine(pageDir, fileName);
 
         await page.ScreenshotAsync(new PageScreenshotOptions
         {
             Path = filePath,
-            FullPage = true
+            FullPage = true,
+            Type = ScreenshotType.Jpeg,
+            Quality = 60
         });
 
         var fileSize = new FileInfo(filePath).Length;

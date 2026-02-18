@@ -1,0 +1,72 @@
+{
+  "PagePath": "/",
+  "Url": "https://nasc.wsu.edu/",
+  "FinalUrl": "https://native.wsu.edu/nasc/",
+  "Title": "NASC | Office of Native American Programs | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 219608,
+  "ScreenshotSizeBytes": 93225,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.jpg",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 93225
+    }
+  ],
+  "ImageCount": 1,
+  "ImagesMissingAlt": 1,
+  "Images": [
+    {
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/3277/2016/02/NASC-396x263.jpg",
+      "AltText": ""
+    }
+  ],
+  "Accessibility": {
+    "ToolsRun": [
+      "axe",
+      "htmlcheck"
+    ],
+    "ToolsSkipped": [],
+    "TotalViolations": 6,
+    "Critical": 0,
+    "Serious": 6,
+    "Moderate": 0,
+    "Minor": 0,
+    "ByTool": {
+      "axe": {
+        "Total": 1,
+        "Critical": 0,
+        "Serious": 1,
+        "Moderate": 0,
+        "Minor": 0
+      },
+      "htmlcheck": {
+        "Total": 5,
+        "Critical": 0,
+        "Serious": 5,
+        "Moderate": 0,
+        "Minor": 0
+      }
+    }
+  },
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Wed, 18 Feb 2026 18:43:49 GMT",
+    "etag": "\u0022d1e70b4d885a17b4d536a37a1f513776\u0022",
+    "last-modified": "Wed, 18 Feb 2026 18:43:49 GMT",
+    "link": "\u003Chttps://native.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://native.wsu.edu/wp-json/wp/v2/media/92\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://native.wsu.edu/?p=92\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://native.wsu.edu",
+    "x-tec-api-root": "https://native.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
+  },
+  "CapturedAt": "2026-02-18T18:43:49.3564256Z"
+}

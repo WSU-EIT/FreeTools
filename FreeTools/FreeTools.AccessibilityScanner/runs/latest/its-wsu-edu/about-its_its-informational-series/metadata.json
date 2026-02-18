@@ -1,0 +1,64 @@
+{
+  "PagePath": "/about-its/its-informational-series/",
+  "Url": "https://its.wsu.edu/about-its/its-informational-series/",
+  "FinalUrl": null,
+  "Title": "ITS Informational Series | Information Technology Services | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 239262,
+  "ScreenshotSizeBytes": 200450,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 10,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.jpg",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 200450
+    }
+  ],
+  "ImageCount": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
+  "Accessibility": {
+    "ToolsRun": [
+      "axe",
+      "htmlcheck"
+    ],
+    "ToolsSkipped": [],
+    "TotalViolations": 12,
+    "Critical": 0,
+    "Serious": 12,
+    "Moderate": 0,
+    "Minor": 0,
+    "ByTool": {
+      "axe": {
+        "Total": 6,
+        "Critical": 0,
+        "Serious": 6,
+        "Moderate": 0,
+        "Minor": 0
+      },
+      "htmlcheck": {
+        "Total": 6,
+        "Critical": 0,
+        "Serious": 6,
+        "Moderate": 0,
+        "Minor": 0
+      }
+    }
+  },
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Wed, 18 Feb 2026 18:34:31 GMT",
+    "etag": "\u00227caef7c8466f70c8f0a12cdbede98bad\u0022",
+    "last-modified": "Wed, 18 Feb 2026 18:23:06 GMT",
+    "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/2183\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=2183\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-18T18:34:31.8620023Z"
+}

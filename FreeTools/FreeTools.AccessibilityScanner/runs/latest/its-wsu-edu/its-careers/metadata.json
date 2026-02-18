@@ -1,0 +1,81 @@
+{
+  "PagePath": "/its-careers/",
+  "Url": "https://its.wsu.edu/its-careers/",
+  "FinalUrl": null,
+  "Title": "ITS Careers | Information Technology Services | Washington State University",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 240554,
+  "ScreenshotSizeBytes": 598783,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 0,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.jpg",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 598783
+    }
+  ],
+  "ImageCount": 4,
+  "ImagesMissingAlt": 0,
+  "Images": [
+    {
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-its/uploads/sites/2898/2023/08/IT-Group_2023.jpg",
+      "AltText": "IT Group photo 2023"
+    },
+    {
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-its/uploads/sites/2898/2023/05/Steve-Rathbun-768x521-1.jpg",
+      "AltText": "Photo of Steve Rathbun Lead Senior Network Engineer"
+    },
+    {
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-its/uploads/sites/2898/2023/05/Keela-Ruppenthall-768x521-1.jpg",
+      "AltText": "Keela Ruppenthall: IT Security Consultant"
+    },
+    {
+      "SourceUrl": "https://wpcdn.web.wsu.edu/wp-its/uploads/sites/2898/2023/05/Jonathan-Lee-768x521-1.jpg",
+      "AltText": "Jonathan Lee: IT Project Management"
+    }
+  ],
+  "Accessibility": {
+    "ToolsRun": [
+      "axe",
+      "htmlcheck"
+    ],
+    "ToolsSkipped": [],
+    "TotalViolations": 7,
+    "Critical": 0,
+    "Serious": 7,
+    "Moderate": 0,
+    "Minor": 0,
+    "ByTool": {
+      "axe": {
+        "Total": 1,
+        "Critical": 0,
+        "Serious": 1,
+        "Moderate": 0,
+        "Minor": 0
+      },
+      "htmlcheck": {
+        "Total": 6,
+        "Critical": 0,
+        "Serious": 6,
+        "Moderate": 0,
+        "Minor": 0
+      }
+    }
+  },
+  "ErrorMessage": null,
+  "Headers": {
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Wed, 18 Feb 2026 18:35:50 GMT",
+    "etag": "\u00220d5f5c0eb8616721ab3d1c140ac70172\u0022",
+    "last-modified": "Wed, 18 Feb 2026 18:24:27 GMT",
+    "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/177\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=177\u003E; rel=shortlink",
+    "server": "nginx",
+    "vary": "Accept-Encoding"
+  },
+  "CapturedAt": "2026-02-18T18:35:50.3973794Z"
+}
