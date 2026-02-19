@@ -16,7 +16,7 @@ Success Rate:  [█████████████████████�
 | Pages Scanned | 2 |
 | Pages Passed | ✅ 2 |
 | Pages Failed | 0 |
-| Total JS Errors | 🔴 86 |
+| Total JS Errors | 🔴 100 |
 | Total JS Warnings | 3 |
 | Total Images | 0 (by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -82,9 +82,9 @@ Click any thumbnail to view the full page report.
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>86 error(s) across 1 page(s)</strong></summary>
+<summary><strong>100 error(s) across 1 page(s)</strong></summary>
 
-**/** (86 errors)
+**/** (100 errors)
 
 ```
 Failed to load resource: net::ERR_CONNECTION_RESET
@@ -93,7 +93,7 @@ MONO_WASM: Failed to fetch
 TypeError: Failed to fetch
 Error in mono_download_assets: TypeError: Failed to fetch
 Failed to load resource: net::ERR_CONNECTION_RESET
-... and 81 more (see _root/errors.log)
+... and 95 more (see _root/errors.log)
 ```
 
 </details>
@@ -113,11 +113,11 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | aria-allowed-attr | 🔴 | 1/2 | 1 |
-| 2 | document-title | 🟠 | 1/2 | 1 |
-| 3 | skip-link | 🟡 | 1/2 | 1 |
-| 4 | landmark-one-main | 🟡 | 1/2 | 1 |
-| 5 | landmark-nav | 🔵 | 1/2 | 1 |
+| 1 | [aria-allowed-attr](../a11y-rules.md#aria-allowed-attr) | 🔴 | 1/2 | 1 |
+| 2 | [document-title](../a11y-rules.md#document-title) | 🟠 | 1/2 | 1 |
+| 3 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/2 | 1 |
+| 4 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 1/2 | 1 |
+| 5 | [landmark-nav](../a11y-rules.md#landmark-nav) | 🔵 | 1/2 | 1 |
 
 ---
 

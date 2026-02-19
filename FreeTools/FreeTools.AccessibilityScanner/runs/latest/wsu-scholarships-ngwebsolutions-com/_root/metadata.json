@@ -39,7 +39,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 7,
     "Critical": 2,
     "Serious": 4,
@@ -72,7 +74,7 @@
     "content-length": "9072",
     "content-security-policy": "default-src https: data: \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027; img-src https: data: blob:; connect-src https: wss://directline.botframework.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:45:59 GMT",
+    "date": "Thu, 19 Feb 2026 02:13:26 GMT",
     "expires": "-1",
     "permissions-policy": "accelerometer=(); camera=(); geolocation=(); gyroscope=(); magnetometer=(); microphone=(); payment=(); usb=()",
     "pragma": "no-cache",
@@ -87,5 +89,5 @@
     "x-xss-protection": "1; mode=block",
     "p3p": "CP=\u0022IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\u0022"
   },
-  "CapturedAt": "2026-02-18T18:45:59.8621912Z"
+  "CapturedAt": "2026-02-19T02:13:27.2875274Z"
 }

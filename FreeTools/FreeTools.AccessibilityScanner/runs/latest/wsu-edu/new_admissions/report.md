@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://wsu.edu/new/admissions/  
-> **Captured:** 2026-02-18 18:36:47 UTC  
+> **Captured:** 2026-02-19 02:19:26 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -23,31 +23,35 @@
 | Field | Value |
 |-------|-------|
 | URL | https://wsu.edu/new/admissions/ |
-| Redirected To | https://wsu.edu/admissions/ |
-| Title | WSU Admissions | Washington State University | Washington State University |
+| Redirected To | https://wsu.edu/ |
+| Title | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 117.6 KB |
-| Screenshots | 1 (499.1 KB) |
-| Images | 11 (referenced by URL) |
-| Images Missing Alt | ⚠️ 2 |
-| JS Errors | 🔴 1 |
-| JS Warnings | 3 |
-| A11y Violations | ⚠️ 5 |
+| HTML Size | 210.8 KB |
+| Screenshots | 1 (908.8 KB) |
+| Images | 38 (referenced by URL) |
+| Images Missing Alt | ⚠️ 13 |
+| JS Errors | 🔴 5 |
+| JS Warnings | 1 |
+| A11y Violations | ⚠️ 8 |
 | 🔴 Critical | 0 |
-| 🟠 Serious | 5 |
+| 🟠 Serious | 8 |
 | 🟡 Moderate | 0 |
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:36:47.1330202Z |
+| Captured | 2026-02-19T02:19:26.4245167Z |
 
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>1 error(s) detected</strong></summary>
+<summary><strong>5 error(s) detected</strong></summary>
 
 ```
 Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
+Access to XMLHttpRequest at 'https://cdn.curator.io/5.0/curator.embed.css' from origin 'https://wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requ...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'https://cdn.curator.io/published-css/655259a3-1b3e-4d24-9fcf-940885db13b3.css' from origin 'https://wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Orig...
+Failed to load resource: net::ERR_FAILED
 ```
 
 </details>
@@ -57,10 +61,10 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (499.1 KB)
-- Cataloged 11 images by URL (no download)
-- axe-core: 0 violations (601ms)
-- htmlcheck: 5 violations (0ms)
+- Screenshot #1: page-loaded (908.8 KB)
+- Cataloged 38 images by URL (no download)
+- axe-core: 0 violations (275ms)
+- htmlcheck: 8 violations (1ms)
 
 </details>
 
@@ -73,30 +77,57 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>499.1 KB</sub>
+<br /><sub>908.8 KB</sub>
 </td>
 <td></td>
 </tr>
 </table>
 
-## 🖼️ Page Images (11)
+## 🖼️ Page Images (38)
 
 <details open>
-<summary><strong>📋 Image Index</strong> — 11 images (referenced by URL)</summary>
+<summary><strong>📋 Image Index</strong> — 38 images (referenced by URL)</summary>
 
 | # | Source URL | Alt Text |
 |--:|-----------|----------|
-| 1 | https://s3.wp.wsu.edu/uploads/sites/625/2022/06/Mask-group-8.png | ⚠️ *(missing)* |
-| 2 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-8.png | ⚠️ *(missing)* |
-| 3 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-20.png | Smiling person in a WSU cap holding u... |
-| 4 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-1.jpg | Smiling student wearing Washington St... |
-| 5 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-21.png | Two students with big smiles holding ... |
-| 6 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-6.jpg | The WSU Pullman clock tower. |
-| 7 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-7.jpg | A tree-lined academic building. |
-| 8 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-8.jpg | The sun shining through a WSU Tri-Cit... |
-| 9 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-9.jpg | The sun shining over the WSU Vancouve... |
-| 10 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-10.jpg | A glass-walled building at WSU Everett. |
-| 11 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-11.jpg | A student working on a laptop. |
+| 1 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-12.jpg | ⚠️ *(missing)* |
+| 2 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-13.jpg | ⚠️ *(missing)* |
+| 3 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-14.jpg | ⚠️ *(missing)* |
+| 4 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-16.jpg | ⚠️ *(missing)* |
+| 5 | https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Campus-photo-17-scaled-e16614... | ⚠️ *(missing)* |
+| 6 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-15.jpg | ⚠️ *(missing)* |
+| 7 | https://s3.wp.wsu.edu/uploads/sites/625/2026/02/USA-map-with-Coug-logo-and-WA... | ⚠️ *(missing)* |
+| 8 | https://s3.wp.wsu.edu/uploads/sites/625/2025/02/WSU-DAYn-11049_3x2-scaled.jpg | College of Nursing students practicin... |
+| 9 | https://s3.wp.wsu.edu/uploads/sites/625/2025/12/Ana-Cabrera.jpg | ⚠️ *(missing)* |
+| 10 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-2.jpg | ⚠️ *(missing)* |
+| 11 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Grizzly_Bears_7-17-2015___020... | ⚠️ *(missing)* |
+| 12 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/FluShotFriday_4888-1.jpg | ⚠️ *(missing)* |
+| 13 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-5-792x535.jpg | ⚠️ *(missing)* |
+| 14 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-6.jpg | ⚠️ *(missing)* |
+| 15 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38536... | Image posted by wsuglobal to instagram |
+| 16 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38536... | Profile image for wsuglobal |
+| 17 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38528... | Image posted by wsuglobal to instagram |
+| 18 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38528... | Profile image for wsuglobal |
+| 19 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Image posted by wsu to instagram |
+| 20 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Profile image for wsu |
+| 21 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38535... | Image posted by wsuspokane to instagram |
+| 22 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38535... | Profile image for wsuspokane |
+| 23 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Image posted by wsuglobal to instagram |
+| 24 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Profile image for wsuglobal |
+| 25 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Image posted by wsuglobal to instagram |
+| 26 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Profile image for wsuglobal |
+| 27 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38535... | Image posted by wsupullman to instagram |
+| 28 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38535... | Profile image for wsupullman |
+| 29 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38527... | Image posted by wsupullman to instagram |
+| 30 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38527... | Profile image for wsupullman |
+| 31 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Image posted by wsupullman to instagram |
+| 32 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Profile image for wsupullman |
+| 33 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Image posted by wsu to instagram |
+| 34 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Profile image for wsu |
+| 35 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Image posted by wsupullman to instagram |
+| 36 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Profile image for wsupullman |
+| 37 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38526... | Image posted by wsuglobal to instagram |
+| 38 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38526... | Profile image for wsuglobal |
 
 </details>
 
@@ -106,76 +137,256 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 <table>
 <tr>
 <td align="center" width="33%">
-<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/06/Mask-group-8.png">
-<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/06/Mask-group-8.png" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2022/06/Mask-group-8.png" />
-</a>
-<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/06... ⚠️</sub>
-</td>
-<td align="center" width="33%">
-<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-8.png">
-<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-8.png" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-8.png" />
+<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-12.jpg">
+<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-12.jpg" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-12.jpg" />
 </a>
 <br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07... ⚠️</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-20.png">
-<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-20.png" width="200" alt="Smiling person in a WSU cap holding up a gray t-shirt with the text Washington State Dad on it." />
+<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-13.jpg">
+<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-13.jpg" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-13.jpg" />
 </a>
-<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07...</sub>
+<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07... ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-14.jpg">
+<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-14.jpg" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-14.jpg" />
+</a>
+<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07... ⚠️</sub>
 </td>
 </tr>
 <tr>
 <td align="center" width="33%">
-<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-1.jpg">
-<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-1.jpg" width="200" alt="Smiling student wearing Washington State University medical scrubs." />
+<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-16.jpg">
+<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-16.jpg" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-16.jpg" />
 </a>
-<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07...</sub>
+<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07... ⚠️</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-21.png">
-<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-21.png" width="200" alt="Two students with big smiles holding up a sign that reads Go Cougs." />
+<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Campus-photo-17-scaled-e1661442335869.jpg">
+<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Campus-photo-17-scaled-e1661442335869.jpg" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Campus-photo-17-scaled-e1661442335869.jpg" />
 </a>
-<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07...</sub>
+<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/08... ⚠️</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-6.jpg">
-<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-6.jpg" width="200" alt="The WSU Pullman clock tower." />
+<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-15.jpg">
+<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-15.jpg" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-15.jpg" />
 </a>
-<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07...</sub>
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-7.jpg">
-<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-7.jpg" width="200" alt="A tree-lined academic building." />
-</a>
-<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07...</sub>
-</td>
-<td align="center" width="33%">
-<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-8.jpg">
-<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-8.jpg" width="200" alt="The sun shining through a WSU Tri-Cities campus building." />
-</a>
-<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07...</sub>
-</td>
-<td align="center" width="33%">
-<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-9.jpg">
-<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-9.jpg" width="200" alt="The sun shining over the WSU Vancouver fountain." />
-</a>
-<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07...</sub>
+<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07... ⚠️</sub>
 </td>
 </tr>
 <tr>
 <td align="center" width="33%">
-<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-10.jpg">
-<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-10.jpg" width="200" alt="A glass-walled building at WSU Everett." />
+<a href="https://s3.wp.wsu.edu/uploads/sites/625/2026/02/USA-map-with-Coug-logo-and-WA-state.jpg">
+<img src="https://s3.wp.wsu.edu/uploads/sites/625/2026/02/USA-map-with-Coug-logo-and-WA-state.jpg" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2026/02/USA-map-with-Coug-logo-and-WA-state.jpg" />
 </a>
-<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07...</sub>
+<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2026/02... ⚠️</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-11.jpg">
-<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-11.jpg" width="200" alt="A student working on a laptop." />
+<a href="https://s3.wp.wsu.edu/uploads/sites/625/2025/02/WSU-DAYn-11049_3x2-scaled.jpg">
+<img src="https://s3.wp.wsu.edu/uploads/sites/625/2025/02/WSU-DAYn-11049_3x2-scaled.jpg" width="200" alt="College of Nursing students practicing checking a patient with a stethescope." />
 </a>
-<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07...</sub>
+<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2025/02...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://s3.wp.wsu.edu/uploads/sites/625/2025/12/Ana-Cabrera.jpg">
+<img src="https://s3.wp.wsu.edu/uploads/sites/625/2025/12/Ana-Cabrera.jpg" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2025/12/Ana-Cabrera.jpg" />
+</a>
+<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2025/12... ⚠️</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-2.jpg">
+<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-2.jpg" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-2.jpg" />
+</a>
+<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07... ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Grizzly_Bears_7-17-2015___020-1-792x288.jpg">
+<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Grizzly_Bears_7-17-2015___020-1-792x288.jpg" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Grizzly_Bears_7-17-2015___020-1-792x288.jpg" />
+</a>
+<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07... ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/FluShotFriday_4888-1.jpg">
+<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/FluShotFriday_4888-1.jpg" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/FluShotFriday_4888-1.jpg" />
+</a>
+<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07... ⚠️</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-5-792x535.jpg">
+<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-5-792x535.jpg" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-5-792x535.jpg" />
+</a>
+<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07... ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-6.jpg">
+<img src="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-6.jpg" width="200" alt="https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-6.jpg" />
+</a>
+<br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07... ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385361759.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385361759.jpg" width="200" alt="Image posted by wsuglobal to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385361759_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385361759_user_image.jpg" width="200" alt="Profile image for wsuglobal" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385282960.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385282960.jpg" width="200" alt="Image posted by wsuglobal to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385282960_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385282960_user_image.jpg" width="200" alt="Profile image for wsuglobal" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385241110.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385241110.jpg" width="200" alt="Image posted by wsu to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385241110_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385241110_user_image.jpg" width="200" alt="Profile image for wsu" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385356147.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385356147.jpg" width="200" alt="Image posted by wsuspokane to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385356147_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385356147_user_image.jpg" width="200" alt="Profile image for wsuspokane" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385322145.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385322145.jpg" width="200" alt="Image posted by wsuglobal to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385322145_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385322145_user_image.jpg" width="200" alt="Profile image for wsuglobal" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385246168.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385246168.jpg" width="200" alt="Image posted by wsuglobal to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385246168_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385246168_user_image.jpg" width="200" alt="Profile image for wsuglobal" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385354564.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385354564.jpg" width="200" alt="Image posted by wsupullman to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385354564_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385354564_user_image.jpg" width="200" alt="Profile image for wsupullman" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385272025.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385272025.jpg" width="200" alt="Image posted by wsupullman to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385272025_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385272025_user_image.jpg" width="200" alt="Profile image for wsupullman" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385244080.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385244080.jpg" width="200" alt="Image posted by wsupullman to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385244080_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385244080_user_image.jpg" width="200" alt="Profile image for wsupullman" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385324845.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385324845.jpg" width="200" alt="Image posted by wsu to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385324845_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385324845_user_image.jpg" width="200" alt="Profile image for wsu" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385320226.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385320226.jpg" width="200" alt="Image posted by wsupullman to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385320226_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385320226_user_image.jpg" width="200" alt="Profile image for wsupullman" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385262532.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385262532.jpg" width="200" alt="Image posted by wsuglobal to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385262532_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385262532_user_image.jpg" width="200" alt="Profile image for wsuglobal" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
 </td>
 <td></td>
 </tr>
@@ -184,12 +395,23 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 </details>
 
 <details>
-<summary>⚠️ <strong>Images Missing Alt Text</strong> (2)</summary>
+<summary>⚠️ <strong>Images Missing Alt Text</strong> (13)</summary>
 
 | # | Source URL |
 |--:|-----------|
-| 1 | https://s3.wp.wsu.edu/uploads/sites/625/2022/06/Mask-group-8.png |
-| 2 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-8.png |
+| 1 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-12.jpg |
+| 2 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-13.jpg |
+| 3 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-14.jpg |
+| 4 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-16.jpg |
+| 5 | https://s3.wp.wsu.edu/uploads/sites/625/2022/08/Campus-photo-17-scaled-e16614... |
+| 6 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Campus-photo-15.jpg |
+| 7 | https://s3.wp.wsu.edu/uploads/sites/625/2026/02/USA-map-with-Coug-logo-and-WA... |
+| 8 | https://s3.wp.wsu.edu/uploads/sites/625/2025/12/Ana-Cabrera.jpg |
+| 9 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-2.jpg |
+| 10 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Grizzly_Bears_7-17-2015___020... |
+| 11 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/FluShotFriday_4888-1.jpg |
+| 12 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-5-792x535.jpg |
+| 13 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-6.jpg |
 
 </details>
 
@@ -200,21 +422,22 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 | Severity | axe | htmlcheck |
 |----------|:---:|:---:|
 | 🔴 critical | 0 | 0 |
-| 🟠 serious | 0 | 5 |
+| 🟠 serious | 0 | 8 |
 | 🟡 moderate | 0 | 0 |
 | 🔵 minor | 0 | 0 |
-| **Total** | **0** | **5** |
+| **Total** | **0** | **8** |
 
 ### Violations by Confidence
 
 <details open>
-<summary><strong>3 rule(s) violated</strong></summary>
+<summary><strong>4 rule(s) violated</strong></summary>
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
-| 3 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a class="wsu-card__link" href="https://news.wsu.edu/news...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
+| 4 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
 
 </details>
 
@@ -224,7 +447,7 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (499.1 KB) |
+| `01-page-loaded.jpg` | page-loaded (908.8 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

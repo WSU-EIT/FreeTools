@@ -6,7 +6,7 @@
   "StatusCode": 0,
   "Success": false,
   "HtmlSizeBytes": 704199,
-  "ScreenshotSizeBytes": 208802,
+  "ScreenshotSizeBytes": 209169,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 208802
+      "FileSize": 209169
     }
   ],
   "ImageCount": 0,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 1,
     "Critical": 1,
     "Serious": 0,
@@ -51,5 +53,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:39:08.5466871Z"
+  "CapturedAt": "2026-02-19T02:10:34.3682793Z"
 }

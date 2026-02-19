@@ -5,8 +5,8 @@
   "Title": "Cyber Security Awareness Events | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 281138,
-  "ScreenshotSizeBytes": 216379,
+  "HtmlSizeBytes": 281278,
+  "ScreenshotSizeBytes": 158725,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 216379
+      "FileSize": 158725
     }
   ],
   "ImageCount": 50,
@@ -227,7 +227,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 7,
     "Critical": 0,
     "Serious": 7,
@@ -254,12 +256,12 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:33:31 GMT",
-    "etag": "\u0022655ca5510f8e5f248e784729238e573d\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:22:05 GMT",
+    "date": "Thu, 19 Feb 2026 02:14:28 GMT",
+    "etag": "\u0022025a167b5d11ec5e862174961c5dc04f\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:11:13 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/1439\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=1439\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-18T18:33:31.5330364Z"
+  "CapturedAt": "2026-02-19T02:14:28.4324238Z"
 }

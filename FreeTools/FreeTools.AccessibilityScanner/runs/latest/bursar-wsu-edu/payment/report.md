@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://bursar.wsu.edu/payment/  
-> **Captured:** 2026-02-18 18:40:07 UTC  
+> **Captured:** 2026-02-19 02:10:57 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,8 +25,8 @@
 | Redirected To | https://bursar.wsu.edu/payment-plans/ |
 | Title | Payment Plans | Bursar | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 76.5 KB |
-| Screenshots | 1 (280.9 KB) |
+| HTML Size | 76.7 KB |
+| Screenshots | 1 (252.7 KB) |
 | Images | 9 (referenced by URL) |
 | Images Missing Alt | ⚠️ 9 |
 | JS Errors | ✅ 0 |
@@ -38,16 +38,16 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:40:07.3906524Z |
+| Captured | 2026-02-19T02:10:57.0721125Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (280.9 KB)
+- Screenshot #1: page-loaded (252.7 KB)
 - Cataloged 9 images by URL (no download)
-- axe-core: 0 violations (291ms)
+- axe-core: 0 violations (279ms)
 - htmlcheck: 4 violations (0ms)
 
 </details>
@@ -61,7 +61,7 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>280.9 KB</sub>
+<br /><sub>252.7 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -190,8 +190,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://bursar.wsu.edu?s=" class="wsu-button-ui-...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://bursar.wsu.edu?s=" class="wsu-button-ui-...` |
 
 </details>
 
@@ -201,7 +201,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (280.9 KB) |
+| `01-page-loaded.jpg` | page-loaded (252.7 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

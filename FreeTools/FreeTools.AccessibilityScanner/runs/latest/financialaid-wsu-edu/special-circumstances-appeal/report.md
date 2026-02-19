@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://financialaid.wsu.edu/special-circumstances-appeal/  
-> **Captured:** 2026-02-18 18:34:21 UTC  
+> **Captured:** 2026-02-19 02:13:54 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://financialaid.wsu.edu/special-circumstances-appeal/ |
 | Title | Special Circumstances & Revision Requests | Student Financial Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 238.1 KB |
+| HTML Size | 238.8 KB |
 | Screenshots | 1 (397.7 KB) |
 | Images | 1 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:34:21.0603142Z |
+| Captured | 2026-02-19T02:13:54.5988500Z |
 
 ## 🔧 Actions
 
@@ -46,8 +46,8 @@
 
 - Screenshot #1: page-loaded (397.7 KB)
 - Cataloged 1 images by URL (no download)
-- axe-core: 0 violations (251ms)
-- htmlcheck: 5 violations (0ms)
+- axe-core: 0 violations (311ms)
+- htmlcheck: 5 violations (1ms)
 
 </details>
 
@@ -114,8 +114,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
 
 </details>
 

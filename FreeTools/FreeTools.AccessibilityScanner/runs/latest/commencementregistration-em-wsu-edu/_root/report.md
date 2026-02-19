@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://commencementregistration.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:40:21 UTC  
+> **Captured:** 2026-02-19 02:07:22 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:40:21.9189724Z |
+| Captured | 2026-02-19T02:07:22.1696517Z |
 
 ## 🔧 Actions
 
@@ -47,7 +47,7 @@
 
 - Screenshot #1: page-loaded (38.3 KB)
 - No images found on page
-- axe-core: 1 violations (249ms)
+- axe-core: 1 violations (645ms)
 - htmlcheck: 1 violations (0ms)
 
 </details>
@@ -90,8 +90,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | list | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<ul class="navbar-nav me-auto">` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [list](../../a11y-rules.md#list) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<ul class="navbar-nav me-auto">` |
+| 2 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

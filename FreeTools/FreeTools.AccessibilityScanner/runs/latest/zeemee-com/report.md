@@ -91,11 +91,11 @@ Click any thumbnail to view the full page report.
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | color-contrast | 🟠 | 1/1 | 2 |
-| 2 | meta-viewport | 🔴 | 1/1 | 1 |
-| 3 | link-in-text-block | 🟠 | 1/1 | 2 |
-| 4 | aria-hidden-focus | 🟠 | 1/1 | 1 |
-| 5 | landmark-one-main | 🟡 | 1/1 | 1 |
+| 1 | [color-contrast](../a11y-rules.md#color-contrast) | 🟠 | 1/1 | 2 |
+| 2 | [meta-viewport](../a11y-rules.md#meta-viewport) | 🔴 | 1/1 | 1 |
+| 3 | [link-in-text-block](../a11y-rules.md#link-in-text-block) | 🟠 | 1/1 | 2 |
+| 4 | [aria-hidden-focus](../a11y-rules.md#aria-hidden-focus) | 🟠 | 1/1 | 1 |
+| 5 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 1/1 | 1 |
 
 ---
 

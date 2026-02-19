@@ -5,7 +5,7 @@
   "Title": "Network Operation Center Ribbon Cutting Ceremony | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 254062,
+  "HtmlSizeBytes": 254192,
   "ScreenshotSizeBytes": 129666,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -123,7 +123,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 7,
     "Critical": 0,
     "Serious": 7,
@@ -150,12 +152,12 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:34:23 GMT",
-    "etag": "\u00222c2275d5bba0ffb0c85ac29a2559b0b2\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:22:57 GMT",
+    "date": "Thu, 19 Feb 2026 02:15:45 GMT",
+    "etag": "\u0022f14d0df6215d1af688864291cfecc4ad\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:13:06 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/1635\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=1635\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-18T18:34:22.9035321Z"
+  "CapturedAt": "2026-02-19T02:15:45.7692263Z"
 }

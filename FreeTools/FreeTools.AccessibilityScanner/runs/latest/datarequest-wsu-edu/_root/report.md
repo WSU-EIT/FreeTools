@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://datarequest.wsu.edu/  
-> **Captured:** 2026-02-18 18:41:32 UTC  
+> **Captured:** 2026-02-19 02:07:35 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -30,7 +30,7 @@
 | JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-18T18:41:32.1813986Z |
+| Captured | 2026-02-19T02:07:35.6156395Z |
 
 > ❌ **Error:** `net::ERR_NAME_NOT_RESOLVED at https://datarequest.wsu.edu/
 Call log:

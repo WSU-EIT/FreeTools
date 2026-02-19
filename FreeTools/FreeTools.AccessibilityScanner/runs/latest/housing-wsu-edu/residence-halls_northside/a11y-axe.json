@@ -1,7 +1,7 @@
 {
   "ToolName": "axe",
   "Status": "completed",
-  "DurationMs": 615,
+  "DurationMs": 602,
   "ErrorMessage": null,
   "Issues": [
     {
@@ -11,7 +11,7 @@
       "Severity": "critical",
       "Message": "Certain ARIA roles must contain particular children",
       "Selector": "#mainNav",
-      "Snippet": "\u003Cul id=\u0022mainNav\u0022 class=\u0022dropdown menu\u0022 aria-label=\u0022Main Navigation\u0022 data-dropdown-menu=\u0022tghf5d-dropdown-menu\u0022 role=\u0022menubar\u0022\u003E",
+      "Snippet": "\u003Cul id=\u0022mainNav\u0022 class=\u0022dropdown menu\u0022 aria-label=\u0022Main Navigation\u0022 data-dropdown-menu=\u00225h80ox-dropdown-menu\u0022 role=\u0022menubar\u0022\u003E",
       "HelpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-children?application=axeAPI",
       "WcagCriteria": null
     },

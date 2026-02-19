@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://sfspartners.em.wsu.edu/WSAF  
-> **Captured:** 2026-02-18 18:46:32 UTC  
+> **Captured:** 2026-02-19 02:11:19 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -39,7 +39,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:46:32.7136761Z |
+| Captured | 2026-02-19T02:11:19.4339612Z |
 
 ## 🔴 JavaScript Errors
 
@@ -60,7 +60,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (54.9 KB)
 - No images found on page
-- axe-core: 0 violations (94ms)
+- axe-core: 0 violations (113ms)
 - htmlcheck: 3 violations (0ms)
 
 </details>
@@ -103,9 +103,9 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input name="term" type="text" value="" placeholder="sear...` |
-| 2 | page-has-heading-one | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input name="term" type="text" value="" placeholder="sear...` |
+| 2 | [page-has-heading-one](../../a11y-rules.md#page-has-heading-one) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

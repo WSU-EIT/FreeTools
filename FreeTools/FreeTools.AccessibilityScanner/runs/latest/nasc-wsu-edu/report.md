@@ -25,7 +25,7 @@ Success Rate:  [█████████████████████�
 | 🟠 Serious | 6 |
 | 🟡 Moderate | 0 |
 | 🔵 Minor | 0 |
-| Total HTML | 214.5 KB |
+| Total HTML | 214.6 KB |
 | Total Screenshots | 91.0 KB |
 
 ## 🔒 SSL Certificate
@@ -176,9 +176,9 @@ Click any thumbnail to view the full page report.
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | image-alt | 🟠 | 1/1 | 3 |
-| 2 | label | 🟠 | 1/1 | 2 |
-| 3 | link-name | 🟠 | 1/1 | 1 |
+| 1 | [image-alt](../a11y-rules.md#image-alt) | 🟠 | 1/1 | 3 |
+| 2 | [label](../a11y-rules.md#label) | 🟠 | 1/1 | 2 |
+| 3 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/1 | 1 |
 
 ---
 

@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://financialaid.wsu.edu/financial-aid-frequently-asked-questions/  
-> **Captured:** 2026-02-18 18:33:46 UTC  
+> **Captured:** 2026-02-19 02:10:37 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://financialaid.wsu.edu/financial-aid-frequently-asked-questions/ |
 | Title | Financial Aid Frequently Asked Questions | Student Financial Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 360.0 KB |
+| HTML Size | 360.1 KB |
 | Screenshots | 1 (853.1 KB) |
 | Images | 1 (referenced by URL) |
 | Images Missing Alt | ⚠️ 1 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:33:46.8801062Z |
+| Captured | 2026-02-19T02:10:37.8512957Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (853.1 KB)
 - Cataloged 1 images by URL (no download)
-- axe-core: 0 violations (401ms)
+- axe-core: 0 violations (540ms)
 - htmlcheck: 7 violations (1ms)
 
 </details>
@@ -123,10 +123,10 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
-| 3 | heading-order | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3 class="wp-block-heading  wsu-heading--style-marked">` |
-| 4 | td-has-header | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table><tbody><tr><td>First week of January</td><td>Finan...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 3 | [heading-order](../../a11y-rules.md#heading-order) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3 class="wp-block-heading  wsu-heading--style-marked">` |
+| 4 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table><tbody><tr><td>First week of January</td><td>Finan...` |
 
 </details>
 

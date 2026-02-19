@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://curriculumchange.registrar.wsu.edu/  
-> **Captured:** 2026-02-18 18:41:12 UTC  
+> **Captured:** 2026-02-19 02:07:22 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:41:12.8242076Z |
+| Captured | 2026-02-19T02:07:22.9746674Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (108.6 KB)
 - Cataloged 1 images by URL (no download)
-- axe-core: 1 violations (262ms)
+- axe-core: 1 violations (581ms)
 - htmlcheck: 0 violations (0ms)
 
 </details>
@@ -114,7 +114,7 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
 
 </details>
 

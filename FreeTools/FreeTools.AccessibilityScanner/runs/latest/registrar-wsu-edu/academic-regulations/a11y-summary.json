@@ -3,7 +3,9 @@
     "axe",
     "htmlcheck"
   ],
-  "ToolsSkipped": [],
+  "ToolsSkipped": [
+    "wave"
+  ],
   "TotalViolations": 99,
   "Critical": 2,
   "Serious": 94,

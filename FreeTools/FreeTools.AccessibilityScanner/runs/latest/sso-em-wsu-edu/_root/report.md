@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://sso.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:46:50 UTC  
+> **Captured:** 2026-02-19 02:11:21 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -11,7 +11,6 @@
 - [Summary](#-summary)
 - [Screenshots](#-screenshots)
 - [Page Images](#-page-images)
-- [JavaScript Errors](#-javascript-errors)
 - [Accessibility](#-accessibility)
 - [Actions](#-actions)
 - [Files](#-files)
@@ -23,63 +22,32 @@
 | Field | Value |
 |-------|-------|
 | URL | https://sso.em.wsu.edu/ |
-| Title |  |
+| Title | SSO |
 | Status | ✅ 200 |
-| HTML Size | 90.5 KB |
-| Screenshots | 1 (6.0 KB) |
+| HTML Size | 94.9 KB |
+| Screenshots | 1 (26.7 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
-| JS Errors | 🔴 208 |
-| JS Warnings | 0 |
-| A11y Violations | ⚠️ 4 |
+| JS Errors | ✅ 0 |
+| JS Warnings | 2 |
+| A11y Violations | ⚠️ 6 |
 | 🔴 Critical | 0 |
-| 🟠 Serious | 1 |
+| 🟠 Serious | 4 |
 | 🟡 Moderate | 2 |
-| 🔵 Minor | 1 |
+| 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:46:50.3758522Z |
-
-## 🔴 JavaScript Errors
-
-<details>
-<summary><strong>208 error(s) detected</strong></summary>
-
-```
-Fetch API cannot load https://sso.em.wsu.edu/_framework/MudBlazor.845kbj1w9a.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Error in mono_download_assets: Error: download 'https://sso.em.wsu.edu/_framework/MudBlazor.845kbj1w9a.wasm' for MudBlazor.845kbj1w9a.wasm failed 0 TypeError: Failed to fetch
-Error in mono_download_assets: Error: download 'https://sso.em.wsu.edu/_framework/MudBlazor.845kbj1w9a.wasm' for MudBlazor.845kbj1w9a.wasm failed 0 TypeError: Failed to fetch
-Fetch API cannot load https://sso.em.wsu.edu/_framework/System.Data.Common.lrnu2igcph.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://sso.em.wsu.edu/_framework/System.Data.n559eomu5m.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://sso.em.wsu.edu/_framework/System.Data.DataSetExtensions.nsw82s8i30.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://sso.em.wsu.edu/_framework/System.Diagnostics.Contracts.i9y4kg0l9q.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://sso.em.wsu.edu/_framework/System.Diagnostics.Debug.jcthdeoxhj.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://sso.em.wsu.edu/_framework/System.Diagnostics.EventLog.t8zowqowy4.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://sso.em.wsu.edu/_framework/System.Diagnostics.DiagnosticSource.gvnph2n9e4.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://sso.em.wsu.edu/_framework/System.Diagnostics.FileVersionInfo.snu7zofqzb.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-... and 188 more (see errors.log)
-```
-
-</details>
+| Captured | 2026-02-19T02:11:21.1466200Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (6.0 KB)
+- Screenshot #1: page-loaded (26.7 KB)
 - No images found on page
-- axe-core: 1 violations (124ms)
-- htmlcheck: 3 violations (0ms)
+- axe-core: 2 violations (151ms)
+- htmlcheck: 4 violations (0ms)
 
 </details>
 
@@ -92,7 +60,7 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>6.0 KB</sub>
+<br /><sub>26.7 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -109,22 +77,21 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 | Severity | axe | htmlcheck |
 |----------|:---:|:---:|
 | 🔴 critical | 0 | 0 |
-| 🟠 serious | 1 | 0 |
+| 🟠 serious | 2 | 2 |
 | 🟡 moderate | 0 | 2 |
-| 🔵 minor | 0 | 1 |
-| **Total** | **1** | **3** |
+| 🔵 minor | 0 | 0 |
+| **Total** | **2** | **4** |
 
 ### Violations by Confidence
 
 <details open>
-<summary><strong>4 rule(s) violated</strong></summary>
+<summary><strong>3 rule(s) violated</strong></summary>
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | document-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" style="--blazor-load-percentage: 56.35593...` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
+| 2 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 
@@ -134,7 +101,7 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (6.0 KB) |
+| `01-page-loaded.jpg` | page-loaded (26.7 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

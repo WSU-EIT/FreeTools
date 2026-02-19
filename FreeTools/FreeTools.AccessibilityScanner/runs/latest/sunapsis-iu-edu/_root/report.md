@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://sunapsis.iu.edu/  
-> **Captured:** 2026-02-18 18:47:33 UTC  
+> **Captured:** 2026-02-19 02:11:52 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -33,7 +33,7 @@
 | JS Warnings | 2 |
 | A11y Violations | ✅ 0 |
 | Auth | none |
-| Captured | 2026-02-18T18:47:33.3773135Z |
+| Captured | 2026-02-19T02:11:52.6759105Z |
 
 ## 🔴 JavaScript Errors
 
@@ -56,7 +56,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (177.5 KB)
 - Cataloged 5 images by URL (no download)
-- axe-core: 0 violations (135ms)
+- axe-core: 0 violations (156ms)
 - htmlcheck: 0 violations (0ms)
 
 </details>

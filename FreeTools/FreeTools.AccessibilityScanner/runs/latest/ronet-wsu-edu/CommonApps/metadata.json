@@ -17,5 +17,5 @@
   "Accessibility": null,
   "ErrorMessage": "net::ERR_CERT_COMMON_NAME_INVALID at https://ronet.wsu.edu/CommonApps\nCall log:\n  - navigating to \u0022https://ronet.wsu.edu/CommonApps\u0022, waiting until \u0022networkidle\u0022",
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:44:23.3259629Z"
+  "CapturedAt": "2026-02-19T02:08:21.2498365Z"
 }

@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://bursar.wsu.edu/student-accounts-accounts-receivable/  
-> **Captured:** 2026-02-18 18:40:52 UTC  
+> **Captured:** 2026-02-19 02:12:30 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://bursar.wsu.edu/student-accounts-accounts-receivable/ |
 | Title | STUDENT ACCOUNTS / ACCOUNTS RECEIVABLE | Bursar | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 66.6 KB |
+| HTML Size | 66.8 KB |
 | Screenshots | 1 (165.0 KB) |
 | Images | 1 (referenced by URL) |
 | Images Missing Alt | ⚠️ 1 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:40:52.3001482Z |
+| Captured | 2026-02-19T02:12:30.5285318Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (165.0 KB)
 - Cataloged 1 images by URL (no download)
-- axe-core: 0 violations (244ms)
+- axe-core: 0 violations (249ms)
 - htmlcheck: 4 violations (0ms)
 
 </details>
@@ -123,8 +123,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://bursar.wsu.edu?s=" class="wsu-button-ui-...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://bursar.wsu.edu?s=" class="wsu-button-ui-...` |
 
 </details>
 

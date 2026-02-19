@@ -1,6 +1,6 @@
 # 🌐 Site Report: https://cougnet.wsu.edu/
 
-> **Status:** ⚠️ 0/1 pages OK  
+> **Status:** ⚠️ 0/6 pages OK  
 > **Folder:** `cougnet-wsu-edu/`  
 
 ---
@@ -13,20 +13,20 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 
 | Metric | Value |
 |--------|-------|
-| Pages Scanned | 1 |
+| Pages Scanned | 6 |
 | Pages Passed | ✅ 0 |
-| Pages Failed | ❌ 1 |
+| Pages Failed | ❌ 6 |
 | Total JS Errors | 0 |
-| Total JS Warnings | 1 |
-| Total Images | 2 (by URL) |
+| Total JS Warnings | 7 |
+| Total Images | 7 (by URL) |
 | Images Missing Alt | ✅ 0 |
-| A11y Violations | ⚠️ 5 |
-| 🔴 Critical | 1 |
-| 🟠 Serious | 3 |
-| 🟡 Moderate | 1 |
+| A11y Violations | ⚠️ 22 |
+| 🔴 Critical | 6 |
+| 🟠 Serious | 13 |
+| 🟡 Moderate | 3 |
 | 🔵 Minor | 0 |
-| Total HTML | 632.1 KB |
-| Total Screenshots | 121.1 KB |
+| Total HTML | 3.7 MB |
+| Total Screenshots | 682.7 KB |
 
 ## 🔒 SSL Certificate
 
@@ -143,6 +143,11 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 | Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |
 |:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|
 | ❌ | [/](_root/report.md) | 0 | CougNet | 1 | 3 | 1 |  | ⚠️ 5 |
+| ❌ | [/admissions-info/](admissions-info/report.md) | 0 | Admissions Info \| CougNet | 1 | 7 | 1 |  | ⚠️ 9 |
+| ❌ | [/how-to-join/](how-to-join/report.md) | 0 | How to Join \| CougNet | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/how-you-can-help/](how-you-can-help/report.md) | 0 | How You Can Help \| CougNet | 1 | 3 |  |  | ⚠️ 4 |
+| ❌ | [/tips-links/](tips-links/report.md) | 0 | Tips & Links \| CougNet | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/upcoming-events/](upcoming-events/report.md) | 0 | Upcoming Events \| CougNet | 1 |  | 1 |  | ⚠️ 2 |
 
 ## 📸 Page Screenshots
 
@@ -156,19 +161,54 @@ Click any thumbnail to view the full page report.
 </a>
 <br />❌ <code>/</code>
 </td>
-<td></td>
-<td></td>
+<td align="center" width="33%">
+<a href="admissions-info/report.md">
+<img src="admissions-info/01-page-loaded.jpg" width="250" alt="/admissions-info/" />
+</a>
+<br />❌ <code>/admissions-info/</code>
+</td>
+<td align="center" width="33%">
+<a href="how-to-join/report.md">
+<img src="how-to-join/01-page-loaded.jpg" width="250" alt="/how-to-join/" />
+</a>
+<br />❌ <code>/how-to-join/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="how-you-can-help/report.md">
+<img src="how-you-can-help/01-page-loaded.jpg" width="250" alt="/how-you-can-help/" />
+</a>
+<br />❌ <code>/how-you-can-help/</code>
+</td>
+<td align="center" width="33%">
+<a href="tips-links/report.md">
+<img src="tips-links/01-page-loaded.jpg" width="250" alt="/tips-links/" />
+</a>
+<br />❌ <code>/tips-links/</code>
+</td>
+<td align="center" width="33%">
+<a href="upcoming-events/report.md">
+<img src="upcoming-events/01-page-loaded.jpg" width="250" alt="/upcoming-events/" />
+</a>
+<br />❌ <code>/upcoming-events/</code>
+</td>
 </tr>
 </table>
 
 ## ❌ Failed Pages
 
 <details open>
-<summary><strong>1 page(s) failed</strong></summary>
+<summary><strong>6 page(s) failed</strong></summary>
 
 | Page | HTTP | Error |
 |------|:----:|-------|
 | [/](_root/report.md) | 0 | — |
+| [/admissions-info/](admissions-info/report.md) | 0 | — |
+| [/how-to-join/](how-to-join/report.md) | 0 | — |
+| [/how-you-can-help/](how-you-can-help/report.md) | 0 | — |
+| [/tips-links/](tips-links/report.md) | 0 | — |
+| [/upcoming-events/](upcoming-events/report.md) | 0 | — |
 
 </details>
 
@@ -176,20 +216,21 @@ Click any thumbnail to view the full page report.
 
 | Metric | Value |
 |--------|-------|
-| Pages with violations | 1/1 |
-| Total violations | 5 |
-| 🔴 Critical | 1 |
-| 🟠 Serious | 3 |
-| 🟡 Moderate | 1 |
+| Pages with violations | 6/6 |
+| Total violations | 22 |
+| 🔴 Critical | 6 |
+| 🟠 Serious | 13 |
+| 🟡 Moderate | 3 |
 | 🔵 Minor | 0 |
 
-### Top 3 Issues
+### Top 4 Issues
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | aria-allowed-attr | 🔴 | 1/1 | 1 |
-| 2 | color-contrast | 🟠 | 1/1 | 3 |
-| 3 | page-has-heading-one | 🟡 | 1/1 | 1 |
+| 1 | [aria-allowed-attr](../a11y-rules.md#aria-allowed-attr) | 🔴 | 6/6 | 6 |
+| 2 | [color-contrast](../a11y-rules.md#color-contrast) | 🟠 | 3/6 | 13 |
+| 3 | [page-has-heading-one](../a11y-rules.md#page-has-heading-one) | 🟡 | 2/6 | 2 |
+| 4 | [heading-order](../a11y-rules.md#heading-order) | 🟡 | 1/6 | 1 |
 
 ---
 

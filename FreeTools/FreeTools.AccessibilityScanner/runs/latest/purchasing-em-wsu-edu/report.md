@@ -16,7 +16,7 @@ Success Rate:  [█████████████████████�
 | Pages Scanned | 1 |
 | Pages Passed | ✅ 1 |
 | Pages Failed | 0 |
-| Total JS Errors | 🔴 67 |
+| Total JS Errors | 🔴 199 |
 | Total JS Warnings | 0 |
 | Total Images | 0 (by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -76,17 +76,17 @@ Click any thumbnail to view the full page report.
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>67 error(s) across 1 page(s)</strong></summary>
+<summary><strong>199 error(s) across 1 page(s)</strong></summary>
 
-**/** (67 errors)
+**/** (199 errors)
 
 ```
 Fetch API cannot load https://purchasing.em.wsu.edu/_framework/dotnet.native.wasm. 
 Failed to load resource: net::ERR_CONNECTION_RESET
 Error in mono_download_assets: Error: download 'https://purchasing.em.wsu.edu/_framework/dotnet.native.wasm' for dotnet.native.wasm failed 0 TypeError: Failed to fetch
-Fetch API cannot load https://purchasing.em.wsu.edu/_framework/Microsoft.Extensions.Configuration.wasm. 
+Fetch API cannot load https://purchasing.em.wsu.edu/_framework/MudBlazor.wasm. 
 Failed to load resource: net::ERR_CONNECTION_RESET
-... and 62 more (see _root/errors.log)
+... and 194 more (see _root/errors.log)
 ```
 
 </details>
@@ -106,10 +106,10 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | document-title | 🟠 | 1/1 | 1 |
-| 2 | skip-link | 🟡 | 1/1 | 1 |
-| 3 | landmark-one-main | 🟡 | 1/1 | 1 |
-| 4 | landmark-nav | 🔵 | 1/1 | 1 |
+| 1 | [document-title](../a11y-rules.md#document-title) | 🟠 | 1/1 | 1 |
+| 2 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
+| 3 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 1/1 | 1 |
+| 4 | [landmark-nav](../a11y-rules.md#landmark-nav) | 🔵 | 1/1 | 1 |
 
 ---
 

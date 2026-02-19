@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://nasc.wsu.edu/  
-> **Captured:** 2026-02-18 18:43:49 UTC  
+> **Captured:** 2026-02-19 02:08:30 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,7 +25,7 @@
 | Redirected To | https://native.wsu.edu/nasc/ |
 | Title | NASC | Office of Native American Programs | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 214.5 KB |
+| HTML Size | 214.6 KB |
 | Screenshots | 1 (91.0 KB) |
 | Images | 1 (referenced by URL) |
 | Images Missing Alt | ⚠️ 1 |
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:43:49.3564256Z |
+| Captured | 2026-02-19T02:08:30.2234490Z |
 
 ## 🔧 Actions
 
@@ -47,7 +47,7 @@
 
 - Screenshot #1: page-loaded (91.0 KB)
 - Cataloged 1 images by URL (no download)
-- axe-core: 1 violations (306ms)
+- axe-core: 1 violations (224ms)
 - htmlcheck: 5 violations (1ms)
 
 </details>
@@ -124,9 +124,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
-| 3 | link-name | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<a href="https://wpcdn.web.wsu.edu/wp-provost/uploads/sit...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 3 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<a href="https://wpcdn.web.wsu.edu/wp-provost/uploads/sit...` |
 
 </details>
 

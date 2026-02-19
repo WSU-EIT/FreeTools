@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://registrar.wsu.edu/contact-us/  
-> **Captured:** 2026-02-18 18:39:08 UTC  
+> **Captured:** 2026-02-19 02:10:34 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -25,7 +25,7 @@
 | Title | Contact Us | Office of the Registrar |
 | Status | ❌ 0 |
 | HTML Size | 687.7 KB |
-| Screenshots | 1 (203.9 KB) |
+| Screenshots | 1 (204.3 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
 | JS Errors | ✅ 0 |
@@ -37,16 +37,16 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:39:08.5466871Z |
+| Captured | 2026-02-19T02:10:34.3682793Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (203.9 KB)
+- Screenshot #1: page-loaded (204.3 KB)
 - No images found on page
-- axe-core: 1 violations (289ms)
+- axe-core: 1 violations (315ms)
 - htmlcheck: 0 violations (0ms)
 
 </details>
@@ -60,7 +60,7 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>203.9 KB</sub>
+<br /><sub>204.3 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -89,7 +89,7 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
 
 </details>
 
@@ -99,7 +99,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (203.9 KB) |
+| `01-page-loaded.jpg` | page-loaded (204.3 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

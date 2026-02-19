@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://prod.em.wsu.edu/Workday  
-> **Captured:** 2026-02-18 18:46:21 UTC  
+> **Captured:** 2026-02-19 02:10:38 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -25,7 +25,7 @@
 | Title | Workday |
 | Status | ❌ 0 |
 | HTML Size | 162.3 KB |
-| Screenshots | 1 (72.6 KB) |
+| Screenshots | 1 (73.3 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
 | JS Errors | ✅ 0 |
@@ -37,16 +37,16 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:46:21.2280377Z |
+| Captured | 2026-02-19T02:10:38.8900713Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (72.6 KB)
+- Screenshot #1: page-loaded (73.3 KB)
 - No images found on page
-- axe-core: 2 violations (233ms)
+- axe-core: 2 violations (377ms)
 - htmlcheck: 5 violations (0ms)
 
 </details>
@@ -60,7 +60,7 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>72.6 KB</sub>
+<br /><sub>73.3 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -89,10 +89,10 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | td-has-header | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table class="padded first-column-bold first-column-nowra...` |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
+| 2 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table class="padded first-column-bold first-column-nowra...` |
 
 </details>
 
@@ -102,7 +102,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (72.6 KB) |
+| `01-page-loaded.jpg` | page-loaded (73.3 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

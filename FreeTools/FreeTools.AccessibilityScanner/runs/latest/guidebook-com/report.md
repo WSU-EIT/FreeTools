@@ -18,15 +18,15 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 | Pages Failed | ❌ 1 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
-| Total Images | 100 (by URL) |
-| Images Missing Alt | ⚠️ 82 |
+| Total Images | 101 (by URL) |
+| Images Missing Alt | ⚠️ 83 |
 | A11y Violations | ⚠️ 22 |
 | 🔴 Critical | 0 |
 | 🟠 Serious | 19 |
 | 🟡 Moderate | 3 |
 | 🔵 Minor | 0 |
-| Total HTML | 283.5 KB |
-| Total Screenshots | 619.2 KB |
+| Total HTML | 283.4 KB |
+| Total Screenshots | 618.5 KB |
 
 ## 📑 Pages
 
@@ -77,12 +77,12 @@ Click any thumbnail to view the full page report.
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | link-name | 🟠 | 1/1 | 14 |
-| 2 | color-contrast | 🟠 | 1/1 | 3 |
-| 3 | label | 🟠 | 1/1 | 2 |
-| 4 | heading-order | 🟡 | 1/1 | 1 |
-| 5 | skip-link | 🟡 | 1/1 | 1 |
-| 6 | landmark-one-main | 🟡 | 1/1 | 1 |
+| 1 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/1 | 14 |
+| 2 | [color-contrast](../a11y-rules.md#color-contrast) | 🟠 | 1/1 | 3 |
+| 3 | [label](../a11y-rules.md#label) | 🟠 | 1/1 | 2 |
+| 4 | [heading-order](../a11y-rules.md#heading-order) | 🟡 | 1/1 | 1 |
+| 5 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
+| 6 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 1/1 | 1 |
 
 ---
 

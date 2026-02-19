@@ -5,7 +5,7 @@
   "Title": "WSU Campuses | Washington State University | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 143884,
+  "HtmlSizeBytes": 143984,
   "ScreenshotSizeBytes": 1325429,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -75,7 +75,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 10,
     "Critical": 0,
     "Serious": 5,
@@ -100,12 +102,12 @@
   },
   "ErrorMessage": null,
   "Headers": {
-    "cache-control": "max-age=172, must-revalidate",
+    "cache-control": "max-age=24, must-revalidate",
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:35:24 GMT",
-    "last-modified": "Wed, 18 Feb 2026 18:28:16 GMT",
+    "date": "Thu, 19 Feb 2026 02:10:22 GMT",
+    "last-modified": "Thu, 19 Feb 2026 02:00:46 GMT",
     "link": "\u003Chttps://wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://wsu.edu/wp-json/wp/v2/pages/17\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
     "server": "nginx",
     "transfer-encoding": "chunked",
@@ -114,5 +116,5 @@
     "x-frame-options": "DENY",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-18T18:35:24.8231475Z"
+  "CapturedAt": "2026-02-19T02:10:22.2603793Z"
 }

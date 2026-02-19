@@ -5,7 +5,7 @@
   "Title": "Grades and GPA | Office of the Registrar",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 741799,
+  "HtmlSizeBytes": 741803,
   "ScreenshotSizeBytes": 353965,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 3,
     "Critical": 1,
     "Serious": 2,
@@ -51,5 +53,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:40:19.5715979Z"
+  "CapturedAt": "2026-02-19T02:11:45.4727308Z"
 }

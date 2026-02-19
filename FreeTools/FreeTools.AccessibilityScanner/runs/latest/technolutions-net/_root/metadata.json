@@ -5,7 +5,7 @@
   "Title": "Technolutions",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 274418,
+  "HtmlSizeBytes": 273620,
   "ScreenshotSizeBytes": 423047,
   "CredentialUsed": null,
   "ConsoleErrorCount": 7,
@@ -47,7 +47,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 10,
     "Critical": 0,
     "Serious": 8,
@@ -73,24 +75,24 @@
   "ErrorMessage": null,
   "Headers": {
     "accept-ranges": "bytes",
-    "age": "8990",
+    "age": "20086",
     "alt-svc": "h3=\u0022:443\u0022; ma=86400",
     "content-encoding": "gzip",
-    "content-length": "42083",
+    "content-length": "42061",
     "content-type": "text/html;charset=utf-8",
-    "date": "Wed, 18 Feb 2026 16:17:36 GMT",
-    "etag": "W/\u002261e59a0be58ae590f04d7b85566c1881--gzip\u0022",
+    "date": "Wed, 18 Feb 2026 20:34:03 GMT",
+    "etag": "W/\u0022e5e4f1f7d8c624a1686dc7f7a77d6b8a--gzip\u0022",
     "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
     "server": "Squarespace",
     "strict-transport-security": "max-age=15552000",
     "vary": "Accept-Encoding",
-    "via": "1.1 06d511b404512bd8902e825e14a8e892.cloudfront.net (CloudFront)",
-    "x-amz-cf-id": "ecpEK_2gVPwXLs3Bg5_6YGTsfClPvV11IHpO6l_Op0OHeYSu3dHmbg==",
+    "via": "1.1 089b3269dce4de39b2453c90ce8c9410.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "6l2PTxrmcRiGYMO1kjwYj_uU21-vc6UkzXAjqqLT2FpsA5gltfJ_ng==",
     "x-amz-cf-pop": "SEA900-P5",
     "x-cache": "RefreshHit from cloudfront",
     "x-content-type-options": "nosniff",
-    "x-contextid": "Y736KSSU/3rHpmQbf",
+    "x-contextid": "ov9rxXUI/xDgrpe7u",
     "x-frame-options": "SAMEORIGIN"
   },
-  "CapturedAt": "2026-02-18T18:47:46.7908857Z"
+  "CapturedAt": "2026-02-19T02:12:06.7564619Z"
 }

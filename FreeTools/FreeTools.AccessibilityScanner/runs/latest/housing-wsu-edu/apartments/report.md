@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://housing.wsu.edu/apartments/  
-> **Captured:** 2026-02-18 18:35:56 UTC  
+> **Captured:** 2026-02-19 02:09:12 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:35:56.7878814Z |
+| Captured | 2026-02-19T02:09:12.5465775Z |
 
 ## 🔴 JavaScript Errors
 
@@ -59,7 +59,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (197.4 KB)
 - Cataloged 9 images by URL (no download)
-- axe-core: 6 violations (316ms)
+- axe-core: 6 violations (302ms)
 - htmlcheck: 13 violations (0ms)
 
 </details>
@@ -202,9 +202,9 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-required-parent | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<a class="foundationMenuLink" href="/prospective-students...` |
-| 2 | aria-required-children | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<ul id="mainNav" class="dropdown menu" aria-label="Main N...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="checkbox" value="hillside" style="">` |
+| 1 | [aria-required-parent](../../a11y-rules.md#aria-required-parent) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<a class="foundationMenuLink" href="/prospective-students...` |
+| 2 | [aria-required-children](../../a11y-rules.md#aria-required-children) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<ul id="mainNav" class="dropdown menu" aria-label="Main N...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="checkbox" value="hillside" style="">` |
 
 </details>
 

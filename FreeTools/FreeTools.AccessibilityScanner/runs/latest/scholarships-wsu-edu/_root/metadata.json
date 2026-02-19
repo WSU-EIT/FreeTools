@@ -5,7 +5,7 @@
   "Title": "Scholarships | Student Financial Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 267390,
+  "HtmlSizeBytes": 267502,
   "ScreenshotSizeBytes": 522260,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -43,7 +43,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 9,
     "Critical": 3,
     "Serious": 6,
@@ -70,14 +72,14 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:45:07 GMT",
-    "etag": "\u00226f9564fdfb11fc015d03b44daac3e924\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:30:11 GMT",
+    "date": "Thu, 19 Feb 2026 02:09:42 GMT",
+    "etag": "\u0022e837c7c9313250ec6076651be42a568d\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:09:42 GMT",
     "link": "\u003Chttps://financialaid.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://financialaid.wsu.edu/wp-json/wp/v2/pages/28\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://financialaid.wsu.edu/?p=28\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding",
-    "x-cache": "HIT",
-    "x-cache-status": "HIT"
+    "x-cache": "EXPIRED",
+    "x-cache-status": "EXPIRED"
   },
-  "CapturedAt": "2026-02-18T18:45:06.8836535Z"
+  "CapturedAt": "2026-02-19T02:09:41.5401104Z"
 }

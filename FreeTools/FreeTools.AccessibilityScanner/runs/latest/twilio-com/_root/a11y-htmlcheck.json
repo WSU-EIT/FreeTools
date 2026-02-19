@@ -1,9 +1,31 @@
 {
   "ToolName": "htmlcheck",
   "Status": "completed",
-  "DurationMs": 15,
+  "DurationMs": 17,
   "ErrorMessage": null,
   "Issues": [
+    {
+      "Tool": "htmlcheck",
+      "RuleId": "img-alt",
+      "CanonicalRuleId": "image-alt",
+      "Severity": "serious",
+      "Message": "Image missing alt attribute",
+      "Selector": null,
+      "Snippet": "\u003Cimg src=\\\u0022/content/dam/twilio-com/global/en/homepage/one-twilio-temp/home_messaging_twilio.png/_jcr_content/renditions/compressed-1600.webp\\\u0022 loading...",
+      "HelpUrl": null,
+      "WcagCriteria": "1.1.1"
+    },
+    {
+      "Tool": "htmlcheck",
+      "RuleId": "img-alt",
+      "CanonicalRuleId": "image-alt",
+      "Severity": "serious",
+      "Message": "Image missing alt attribute",
+      "Selector": null,
+      "Snippet": "\u003Cimg src=\\\u0022https://www.twilio.com/content/dam/twilio-com/global/en/homepage/one-twilio-temp/home_messaging_twilio.png/_jcr_content/renditions/compress...",
+      "HelpUrl": null,
+      "WcagCriteria": "1.1.1"
+    },
     {
       "Tool": "htmlcheck",
       "RuleId": "img-alt",
@@ -66,39 +88,6 @@
       "Severity": "serious",
       "Message": "Image missing alt attribute",
       "Selector": null,
-      "Snippet": "\u003Cimg src=\\\u0022https://www.twilio.com/content/dam/twilio-com/global/en/homepage/one-twilio-temp/home_messaging_twilio.png/_jcr_content/renditions/compress...",
-      "HelpUrl": null,
-      "WcagCriteria": "1.1.1"
-    },
-    {
-      "Tool": "htmlcheck",
-      "RuleId": "img-alt",
-      "CanonicalRuleId": "image-alt",
-      "Severity": "serious",
-      "Message": "Image missing alt attribute",
-      "Selector": null,
-      "Snippet": "\u003Cimg src=\\\u0022/content/dam/twilio-com/global/en/homepage/one-twilio-temp/home_messaging_twilio.png/_jcr_content/renditions/compressed-1600.webp\\\u0022 loading...",
-      "HelpUrl": null,
-      "WcagCriteria": "1.1.1"
-    },
-    {
-      "Tool": "htmlcheck",
-      "RuleId": "img-alt",
-      "CanonicalRuleId": "image-alt",
-      "Severity": "serious",
-      "Message": "Image missing alt attribute",
-      "Selector": null,
-      "Snippet": "\u003Cimg src=\\\u0022https://www.twilio.com/content/dam/twilio-com/global/en/homepage/one-twilio-temp/home_messaging_twilio.png/_jcr_content/renditions/compress...",
-      "HelpUrl": null,
-      "WcagCriteria": "1.1.1"
-    },
-    {
-      "Tool": "htmlcheck",
-      "RuleId": "img-alt",
-      "CanonicalRuleId": "image-alt",
-      "Severity": "serious",
-      "Message": "Image missing alt attribute",
-      "Selector": null,
       "Snippet": "\u003Cimg src=\\\u0022https://www.twilio.com/content/dam/twilio-com/global/en/homepage/one-twilio-temp/home_authentication-and-identity_twilio.png/_jcr_content/r...",
       "HelpUrl": null,
       "WcagCriteria": "1.1.1"
@@ -111,6 +100,17 @@
       "Message": "Image missing alt attribute",
       "Selector": null,
       "Snippet": "\u003Cimg src=\\\u0022https://www.twilio.com/content/dam/twilio-com/global/en/homepage/one-twilio-temp/home_email_twilio.png/_jcr_content/renditions/compressed-1...",
+      "HelpUrl": null,
+      "WcagCriteria": "1.1.1"
+    },
+    {
+      "Tool": "htmlcheck",
+      "RuleId": "img-alt",
+      "CanonicalRuleId": "image-alt",
+      "Severity": "serious",
+      "Message": "Image missing alt attribute",
+      "Selector": null,
+      "Snippet": "\u003Cimg src=\\\u0022https://www.twilio.com/content/dam/twilio-com/global/en/homepage/one-twilio-temp/home_messaging_twilio.png/_jcr_content/renditions/compress...",
       "HelpUrl": null,
       "WcagCriteria": "1.1.1"
     },

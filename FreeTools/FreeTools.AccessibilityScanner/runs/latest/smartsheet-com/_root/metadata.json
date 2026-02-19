@@ -5,8 +5,8 @@
   "Title": "Intelligent Work Management Platform | Smartsheet",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 457647,
-  "ScreenshotSizeBytes": 339085,
+  "HtmlSizeBytes": 457832,
+  "ScreenshotSizeBytes": 339495,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 4,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 339085
+      "FileSize": 339495
     }
   ],
   "ImageCount": 88,
@@ -30,7 +30,7 @@
       "AltText": ""
     },
     {
-      "SourceUrl": "https://aorta.clickagy.com/pixel.gif?ch=319\u0026cm=ee2978ecb9bb28ffbefb1771440381",
+      "SourceUrl": "https://aorta.clickagy.com/pixel.gif?ch=319\u0026cm=f7ed2989b9ba67a695061771467068",
       "AltText": ""
     },
     {
@@ -342,19 +342,27 @@
       "AltText": "Get it on Google Play"
     },
     {
-      "SourceUrl": "https://cdn.bizible.com/ipv?_biz_r=\u0026_biz_h=-1719904874\u0026_biz_u=9cd37f92b2ba4445e79bd37445f1a685\u0026_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F\u0026_biz_t=1771440380376\u0026_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet\u0026_biz_n=0\u0026rnd=495772\u0026cdn_o=a\u0026_biz_z=1771440380377",
+      "SourceUrl": "https://cdn.bizible.com/ipv?_biz_r=\u0026_biz_h=-1719904874\u0026_biz_u=65286a1c86aa4b36c1e8f6f7d348e130\u0026_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F\u0026_biz_t=1771467067185\u0026_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet\u0026_biz_n=0\u0026rnd=66528\u0026cdn_o=a\u0026_biz_z=1771467067186",
       "AltText": ""
     },
     {
-      "SourceUrl": "https://cdn.bizibly.com/u?_biz_u=9cd37f92b2ba4445e79bd37445f1a685\u0026_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F\u0026_biz_t=1771440380379\u0026_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet\u0026rnd=362145\u0026cdn_o=a\u0026_biz_z=1771440380379",
+      "SourceUrl": "https://cdn.bizibly.com/u?_biz_u=65286a1c86aa4b36c1e8f6f7d348e130\u0026_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F\u0026_biz_t=1771467067188\u0026_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet\u0026rnd=135003\u0026cdn_o=a\u0026_biz_z=1771467067188",
       "AltText": ""
-    },
-    {
-      "SourceUrl": "https://sp.analytics.yahoo.com/sp.pl?a=10000\u0026d=Wed%2C%2018%20Feb%202026%2018%3A46%3A20%20GMT\u0026n=8\u0026b=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet\u0026.yp=10204283\u0026f=https%3A%2F%2Fwww.smartsheet.com%2F\u0026enc=UTF-8\u0026yv=1.16.6\u0026tagmgr=gtm",
-      "AltText": "dot image pixel"
     },
     {
       "SourceUrl": "https://pt.ispot.tv/v2/TC-4130-1.gif?app=web\u0026type=visit",
+      "AltText": ""
+    },
+    {
+      "SourceUrl": "https://sp.analytics.yahoo.com/sp.pl?a=10000\u0026d=Thu%2C%2019%20Feb%202026%2002%3A11%3A07%20GMT\u0026n=8\u0026b=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet\u0026.yp=10204283\u0026f=https%3A%2F%2Fwww.smartsheet.com%2F\u0026enc=UTF-8\u0026yv=1.16.6\u0026tagmgr=gtm",
+      "AltText": "dot image pixel"
+    },
+    {
+      "SourceUrl": "https://t.co/i/adsct?bci=3\u0026dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na\u0026eci=2\u0026event_id=97e3da26-644b-4ae1-addc-c4c0efe3c89a\u0026events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D\u0026integration=advertiser\u0026p_id=Twitter\u0026p_user_id=0\u0026pl_id=65bf2342-7440-49a3-8317-a848a494419a\u0026pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet\u0026tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F\u0026tw_iframe_status=0\u0026tw_order_quantity=0\u0026tw_sale_amount=0\u0026txn_id=o1jw4\u0026type=javascript\u0026version=2.3.35",
+      "AltText": ""
+    },
+    {
+      "SourceUrl": "https://analytics.twitter.com/i/adsct?bci=3\u0026dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na\u0026eci=2\u0026event_id=97e3da26-644b-4ae1-addc-c4c0efe3c89a\u0026events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D\u0026integration=advertiser\u0026p_id=Twitter\u0026p_user_id=0\u0026pl_id=65bf2342-7440-49a3-8317-a848a494419a\u0026pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet\u0026tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F\u0026tw_iframe_status=0\u0026tw_order_quantity=0\u0026tw_sale_amount=0\u0026txn_id=o1jw4\u0026type=javascript\u0026version=2.3.35",
       "AltText": ""
     },
     {
@@ -362,15 +370,7 @@
       "AltText": ""
     },
     {
-      "SourceUrl": "https://t.co/i/adsct?bci=3\u0026dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na\u0026eci=2\u0026event_id=13ea8be8-8397-4028-a196-1fc34e085a0a\u0026events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D\u0026integration=advertiser\u0026p_id=Twitter\u0026p_user_id=0\u0026pl_id=09d4798c-2071-44cb-bcf1-55100851b38d\u0026pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet\u0026tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F\u0026tw_iframe_status=0\u0026tw_order_quantity=0\u0026tw_sale_amount=0\u0026txn_id=o1jw4\u0026type=javascript\u0026version=2.3.35",
-      "AltText": ""
-    },
-    {
-      "SourceUrl": "https://analytics.twitter.com/i/adsct?bci=3\u0026dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na\u0026eci=2\u0026event_id=13ea8be8-8397-4028-a196-1fc34e085a0a\u0026events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D\u0026integration=advertiser\u0026p_id=Twitter\u0026p_user_id=0\u0026pl_id=09d4798c-2071-44cb-bcf1-55100851b38d\u0026pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet\u0026tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F\u0026tw_iframe_status=0\u0026tw_order_quantity=0\u0026tw_sale_amount=0\u0026txn_id=o1jw4\u0026type=javascript\u0026version=2.3.35",
-      "AltText": ""
-    },
-    {
-      "SourceUrl": "https://cdn.bizible.com/u?mapType=mkto\u0026mapValue=id%3A464-ONM-149%26token%3A_mch-smartsheet.com-eaa60438df2e79f7027f52213e55ba2\u0026_biz_u=9cd37f92b2ba4445e79bd37445f1a685\u0026_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F\u0026_biz_t=1771440382382\u0026_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet\u0026_biz_n=1\u0026rnd=95175\u0026cdn_o=a\u0026_biz_z=1771440382382",
+      "SourceUrl": "https://cdn.bizible.com/u?mapType=mkto\u0026mapValue=id%3A464-ONM-149%26token%3A_mch-smartsheet.com-7ffca815f81d01c9945f8c661c781361\u0026_biz_u=65286a1c86aa4b36c1e8f6f7d348e130\u0026_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F\u0026_biz_t=1771467069212\u0026_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet\u0026_biz_n=1\u0026rnd=137494\u0026cdn_o=a\u0026_biz_z=1771467069212",
       "AltText": ""
     }
   ],
@@ -379,7 +379,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 24,
     "Critical": 7,
     "Serious": 16,
@@ -404,5 +406,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:46:19.4599641Z"
+  "CapturedAt": "2026-02-19T02:11:06.0481924Z"
 }

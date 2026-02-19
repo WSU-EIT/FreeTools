@@ -1,6 +1,6 @@
 # 🌐 Site Report: https://beanoc.wsu.edu/
 
-> **Status:** ⚠️ 0/1 pages OK  
+> **Status:** ⚠️ 0/4 pages OK  
 > **Folder:** `beanoc-wsu-edu/`  
 
 ---
@@ -13,20 +13,20 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 
 | Metric | Value |
 |--------|-------|
-| Pages Scanned | 1 |
+| Pages Scanned | 4 |
 | Pages Passed | ✅ 0 |
-| Pages Failed | ❌ 1 |
+| Pages Failed | ❌ 4 |
 | Total JS Errors | 0 |
-| Total JS Warnings | 1 |
-| Total Images | 4 (by URL) |
-| Images Missing Alt | ⚠️ 4 |
-| A11y Violations | ⚠️ 2 |
-| 🔴 Critical | 1 |
+| Total JS Warnings | 4 |
+| Total Images | 12 (by URL) |
+| Images Missing Alt | ⚠️ 12 |
+| A11y Violations | ⚠️ 6 |
+| 🔴 Critical | 4 |
 | 🟠 Serious | 0 |
-| 🟡 Moderate | 1 |
+| 🟡 Moderate | 2 |
 | 🔵 Minor | 0 |
-| Total HTML | 633.5 KB |
-| Total Screenshots | 161.9 KB |
+| Total HTML | 2.5 MB |
+| Total Screenshots | 652.6 KB |
 
 ## 🔒 SSL Certificate
 
@@ -143,6 +143,9 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 | Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |
 |:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|
 | ❌ | [/](_root/report.md) | 0 | Be An Orientation Leader | 1 |  | 1 |  | ⚠️ 2 |
+| ❌ | [/compensation/](compensation/report.md) | 0 | Compensation \| Be An Orientation Leader | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/job-requirements/](job-requirements/report.md) | 0 | Job Requirements \| Be An Orientation... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/what-do-ols-do/](what-do-ols-do/report.md) | 0 | What Do OL's Do? \| Be An Orientation... | 1 |  | 1 |  | ⚠️ 2 |
 
 ## 📸 Page Screenshots
 
@@ -156,6 +159,26 @@ Click any thumbnail to view the full page report.
 </a>
 <br />❌ <code>/</code>
 </td>
+<td align="center" width="33%">
+<a href="compensation/report.md">
+<img src="compensation/01-page-loaded.jpg" width="250" alt="/compensation/" />
+</a>
+<br />❌ <code>/compensation/</code>
+</td>
+<td align="center" width="33%">
+<a href="job-requirements/report.md">
+<img src="job-requirements/01-page-loaded.jpg" width="250" alt="/job-requirements/" />
+</a>
+<br />❌ <code>/job-requirements/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="what-do-ols-do/report.md">
+<img src="what-do-ols-do/01-page-loaded.jpg" width="250" alt="/what-do-ols-do/" />
+</a>
+<br />❌ <code>/what-do-ols-do/</code>
+</td>
 <td></td>
 <td></td>
 </tr>
@@ -164,11 +187,14 @@ Click any thumbnail to view the full page report.
 ## ❌ Failed Pages
 
 <details open>
-<summary><strong>1 page(s) failed</strong></summary>
+<summary><strong>4 page(s) failed</strong></summary>
 
 | Page | HTTP | Error |
 |------|:----:|-------|
 | [/](_root/report.md) | 0 | — |
+| [/compensation/](compensation/report.md) | 0 | — |
+| [/job-requirements/](job-requirements/report.md) | 0 | — |
+| [/what-do-ols-do/](what-do-ols-do/report.md) | 0 | — |
 
 </details>
 
@@ -176,19 +202,19 @@ Click any thumbnail to view the full page report.
 
 | Metric | Value |
 |--------|-------|
-| Pages with violations | 1/1 |
-| Total violations | 2 |
-| 🔴 Critical | 1 |
+| Pages with violations | 4/4 |
+| Total violations | 6 |
+| 🔴 Critical | 4 |
 | 🟠 Serious | 0 |
-| 🟡 Moderate | 1 |
+| 🟡 Moderate | 2 |
 | 🔵 Minor | 0 |
 
 ### Top 2 Issues
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | aria-allowed-attr | 🔴 | 1/1 | 1 |
-| 2 | heading-order | 🟡 | 1/1 | 1 |
+| 1 | [aria-allowed-attr](../a11y-rules.md#aria-allowed-attr) | 🔴 | 4/4 | 4 |
+| 2 | [heading-order](../a11y-rules.md#heading-order) | 🟡 | 2/4 | 2 |
 
 ---
 

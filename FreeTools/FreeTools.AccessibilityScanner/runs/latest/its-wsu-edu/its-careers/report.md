@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://its.wsu.edu/its-careers/  
-> **Captured:** 2026-02-18 18:35:50 UTC  
+> **Captured:** 2026-02-19 02:19:08 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://its.wsu.edu/its-careers/ |
 | Title | ITS Careers | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 234.9 KB |
+| HTML Size | 235.0 KB |
 | Screenshots | 1 (584.7 KB) |
 | Images | 4 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:35:50.3973794Z |
+| Captured | 2026-02-19T02:19:08.6281498Z |
 
 ## 🔧 Actions
 
@@ -46,8 +46,8 @@
 
 - Screenshot #1: page-loaded (584.7 KB)
 - Cataloged 4 images by URL (no download)
-- axe-core: 1 violations (294ms)
-- htmlcheck: 6 violations (1ms)
+- axe-core: 1 violations (260ms)
+- htmlcheck: 6 violations (0ms)
 
 </details>
 
@@ -137,9 +137,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="" class="wsu-header-utility-bar__cta"></a>` |
-| 2 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="" class="wsu-header-utility-bar__cta"></a>` |
+| 2 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
 
 </details>
 

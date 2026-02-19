@@ -5,8 +5,8 @@
   "Title": "Apply for Aid | Student Financial Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 240298,
-  "ScreenshotSizeBytes": 380893,
+  "HtmlSizeBytes": 240406,
+  "ScreenshotSizeBytes": 381608,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 380893
+      "FileSize": 381608
     }
   ],
   "ImageCount": 9,
@@ -63,7 +63,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 5,
     "Critical": 0,
     "Serious": 5,
@@ -90,14 +92,14 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:32:45 GMT",
-    "etag": "\u00221d4a5f7b9ff13a7e390fd8732b0d79d7\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:20:26 GMT",
+    "date": "Thu, 19 Feb 2026 02:08:16 GMT",
+    "etag": "\u002282b1efabf82a23c195ad86ef67e1f989\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:08:07 GMT",
     "link": "\u003Chttps://financialaid.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://financialaid.wsu.edu/wp-json/wp/v2/pages/236\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://financialaid.wsu.edu/?p=236\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding",
     "x-cache": "HIT",
     "x-cache-status": "HIT"
   },
-  "CapturedAt": "2026-02-18T18:32:45.1145553Z"
+  "CapturedAt": "2026-02-19T02:08:15.9740234Z"
 }

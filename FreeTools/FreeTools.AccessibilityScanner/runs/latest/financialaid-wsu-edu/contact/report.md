@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://financialaid.wsu.edu/contact/  
-> **Captured:** 2026-02-18 18:33:07 UTC  
+> **Captured:** 2026-02-19 02:09:01 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,7 +25,7 @@
 | Redirected To | https://financialaid.wsu.edu/contact-page/ |
 | Title | Contact Page | Student Financial Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 242.6 KB |
+| HTML Size | 242.8 KB |
 | Screenshots | 1 (681.8 KB) |
 | Images | 7 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:33:07.4280692Z |
+| Captured | 2026-02-19T02:09:01.1083816Z |
 
 ## 🔧 Actions
 
@@ -47,7 +47,7 @@
 
 - Screenshot #1: page-loaded (681.8 KB)
 - Cataloged 7 images by URL (no download)
-- axe-core: 1 violations (580ms)
+- axe-core: 1 violations (603ms)
 - htmlcheck: 5 violations (1ms)
 
 </details>
@@ -161,9 +161,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
-| 3 | frame-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 3 | [frame-title](../../a11y-rules.md#frame-title) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1...` |
 
 </details>
 

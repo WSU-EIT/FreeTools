@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://admission.wsu.edu/transfer/  
-> **Captured:** 2026-02-18 18:37:33 UTC  
+> **Captured:** 2026-02-19 02:13:31 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -11,7 +11,6 @@
 - [Summary](#-summary)
 - [Screenshots](#-screenshots)
 - [Page Images](#-page-images)
-- [JavaScript Errors](#-javascript-errors)
 - [Accessibility](#-accessibility)
 - [Actions](#-actions)
 - [Files](#-files)
@@ -26,11 +25,11 @@
 | Redirected To | https://admission.wsu.edu/apply/transfer-students/ |
 | Title | Transfer Students | Admissions | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 89.9 KB |
+| HTML Size | 90.1 KB |
 | Screenshots | 1 (394.9 KB) |
 | Images | 1 (referenced by URL) |
 | Images Missing Alt | ⚠️ 1 |
-| JS Errors | 🔴 1 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 1 |
 | A11y Violations | ⚠️ 10 |
 | 🔴 Critical | 1 |
@@ -39,18 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:37:33.2070238Z |
-
-## 🔴 JavaScript Errors
-
-<details>
-<summary><strong>1 error(s) detected</strong></summary>
-
-```
-Failed to load resource: net::ERR_CONNECTION_FAILED
-```
-
-</details>
+| Captured | 2026-02-19T02:13:31.0860874Z |
 
 ## 🔧 Actions
 
@@ -59,7 +47,7 @@ Failed to load resource: net::ERR_CONNECTION_FAILED
 
 - Screenshot #1: page-loaded (394.9 KB)
 - Cataloged 1 images by URL (no download)
-- axe-core: 3 violations (10178ms)
+- axe-core: 3 violations (10225ms)
 - htmlcheck: 7 violations (0ms)
 
 </details>
@@ -136,13 +124,13 @@ Failed to load resource: net::ERR_CONNECTION_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | color-contrast | 🟠 | 🟢 1/1 | ⚠️ | — | `<a href="tel:5095535450">509-553-5450</a>` |
-| 3 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 4 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
-| 5 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://admission.wsu.edu?s=" class="wsu-button-...` |
-| 6 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
-| 7 | heading-order | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h4 class="wp-block-heading">` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [color-contrast](../../a11y-rules.md#color-contrast) | 🟠 | 🟢 1/1 | ⚠️ | — | `<a href="tel:5095535450">509-553-5450</a>` |
+| 3 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 4 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
+| 5 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://admission.wsu.edu?s=" class="wsu-button-...` |
+| 6 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
+| 7 | [heading-order](../../a11y-rules.md#heading-order) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h4 class="wp-block-heading">` |
 
 </details>
 

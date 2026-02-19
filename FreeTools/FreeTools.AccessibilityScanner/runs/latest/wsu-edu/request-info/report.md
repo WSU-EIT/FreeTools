@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://wsu.edu/request-info/  
-> **Captured:** 2026-02-18 18:36:55 UTC  
+> **Captured:** 2026-02-19 02:19:36 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:36:55.7244937Z |
+| Captured | 2026-02-19T02:19:36.3887077Z |
 
 ## 🔴 JavaScript Errors
 
@@ -61,7 +61,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (145.3 KB)
 - No images found on page
-- axe-core: 0 violations (323ms)
+- axe-core: 0 violations (291ms)
 - htmlcheck: 5 violations (1ms)
 
 </details>
@@ -104,9 +104,9 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
-| 3 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
+| 3 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
 
 </details>
 

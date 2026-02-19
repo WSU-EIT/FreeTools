@@ -5,7 +5,7 @@
   "Title": "Financial Aid | Admissions | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 91282,
+  "HtmlSizeBytes": 91372,
   "ScreenshotSizeBytes": 425527,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 11,
     "Critical": 1,
     "Serious": 10,
@@ -53,14 +55,14 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:36:55 GMT",
-    "etag": "\u00224991311a30ecd4dc20faac7c12417922\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:25:45 GMT",
+    "date": "Thu, 19 Feb 2026 02:11:59 GMT",
+    "etag": "\u00224ed77b9968f7bd122ad1b120e0cf5e1f\u0022",
+    "last-modified": "Thu, 19 Feb 2026 01:37:35 GMT",
     "link": "\u003Chttps://admission.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://admission.wsu.edu/wp-json/wp/v2/pages/27\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://admission.wsu.edu/?p=27\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding",
     "x-cache": "EXPIRED",
     "x-cache-status": "EXPIRED"
   },
-  "CapturedAt": "2026-02-18T18:36:55.2971818Z"
+  "CapturedAt": "2026-02-19T02:11:58.9113387Z"
 }

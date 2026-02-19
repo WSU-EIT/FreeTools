@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://wsu.edu/digital-accessibility/assessment/  
-> **Captured:** 2026-02-18 18:35:48 UTC  
+> **Captured:** 2026-02-19 02:11:40 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://wsu.edu/digital-accessibility/assessment/ |
 | Title | Assessment | Digital Accessibility | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 317.4 KB |
+| HTML Size | 317.6 KB |
 | Screenshots | 1 (125.6 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:35:48.4561159Z |
+| Captured | 2026-02-19T02:11:40.7011846Z |
 
 ## 🔧 Actions
 
@@ -46,8 +46,8 @@
 
 - Screenshot #1: page-loaded (125.6 KB)
 - No images found on page
-- axe-core: 1 violations (304ms)
-- htmlcheck: 3 violations (2ms)
+- axe-core: 1 violations (371ms)
+- htmlcheck: 3 violations (4ms)
 
 </details>
 
@@ -89,8 +89,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-navigation-v...` |
-| 2 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-navigation-v...` |
+| 2 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
 
 </details>
 

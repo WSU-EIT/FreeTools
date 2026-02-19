@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 10,
     "Critical": 0,
     "Serious": 7,
@@ -54,11 +56,11 @@
     "cache-control": "private",
     "content-length": "15201",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:47:46 GMT",
+    "date": "Thu, 19 Feb 2026 02:14:26 GMT",
     "server": "Microsoft-IIS/10.0",
     "x-aspnet-version": "4.0.30319",
     "x-aspnetmvc-version": "5.2",
     "x-powered-by": "ASP.NET"
   },
-  "CapturedAt": "2026-02-18T18:47:17.419294Z"
+  "CapturedAt": "2026-02-19T02:14:00.4924414Z"
 }

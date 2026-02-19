@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://sfsapps.em.wsu.edu/RSP  
-> **Captured:** 2026-02-18 18:46:12 UTC  
+> **Captured:** 2026-02-19 02:10:58 UTC  
 > **Status:** ❌ 503  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 1 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:46:12.3954927Z |
+| Captured | 2026-02-19T02:10:58.8010386Z |
 
 ## 🔴 JavaScript Errors
 
@@ -58,7 +58,7 @@ Failed to load resource: the server responded with a status of 503 ()
 
 - Screenshot #1: page-loaded (14.0 KB)
 - No images found on page
-- axe-core: 0 violations (71ms)
+- axe-core: 0 violations (88ms)
 - htmlcheck: 3 violations (0ms)
 
 </details>
@@ -101,9 +101,9 @@ Failed to load resource: the server responded with a status of 503 ()
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 2 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 2 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [landmark-nav](../../a11y-rules.md#landmark-nav) | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

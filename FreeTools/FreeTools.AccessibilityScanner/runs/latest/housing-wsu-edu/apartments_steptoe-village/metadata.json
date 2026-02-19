@@ -5,8 +5,8 @@
   "Title": "Steptoe Village",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 127371,
-  "ScreenshotSizeBytes": 256307,
+  "HtmlSizeBytes": 127362,
+  "ScreenshotSizeBytes": 259035,
   "CredentialUsed": null,
   "ConsoleErrorCount": 4,
   "ConsoleWarningCount": 9,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 256307
+      "FileSize": 259035
     }
   ],
   "ImageCount": 16,
@@ -91,16 +91,18 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
-    "TotalViolations": 0,
-    "Critical": 0,
+    "ToolsSkipped": [
+      "wave"
+    ],
+    "TotalViolations": 6,
+    "Critical": 6,
     "Serious": 0,
     "Moderate": 0,
     "Minor": 0,
     "ByTool": {
       "axe": {
-        "Total": 0,
-        "Critical": 0,
+        "Total": 6,
+        "Critical": 6,
         "Serious": 0,
         "Moderate": 0,
         "Minor": 0
@@ -118,12 +120,12 @@
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:36:24 GMT",
+    "date": "Thu, 19 Feb 2026 02:10:22 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-18T18:36:24.7945393Z"
+  "CapturedAt": "2026-02-19T02:10:22.6052375Z"
 }

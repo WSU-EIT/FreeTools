@@ -25,7 +25,7 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 | 🟠 Serious | 8 |
 | 🟡 Moderate | 0 |
 | 🔵 Minor | 0 |
-| Total HTML | 78.7 KB |
+| Total HTML | 78.8 KB |
 | Total Screenshots | 116.8 KB |
 
 ## 🔒 SSL Certificate
@@ -200,12 +200,12 @@ Failed to load resource: the server responded with a status of 404 ()
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | aria-allowed-attr | 🔴 | 1/1 | 1 |
-| 2 | color-contrast | 🟠 | 1/1 | 2 |
-| 3 | image-alt | 🟠 | 1/1 | 3 |
-| 4 | label | 🟠 | 1/1 | 1 |
-| 5 | link-name | 🟠 | 1/1 | 1 |
-| 6 | button-name | 🟠 | 1/1 | 1 |
+| 1 | [aria-allowed-attr](../a11y-rules.md#aria-allowed-attr) | 🔴 | 1/1 | 1 |
+| 2 | [color-contrast](../a11y-rules.md#color-contrast) | 🟠 | 1/1 | 2 |
+| 3 | [image-alt](../a11y-rules.md#image-alt) | 🟠 | 1/1 | 3 |
+| 4 | [label](../a11y-rules.md#label) | 🟠 | 1/1 | 1 |
+| 5 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/1 | 1 |
+| 6 | [button-name](../a11y-rules.md#button-name) | 🟠 | 1/1 | 1 |
 
 ---
 

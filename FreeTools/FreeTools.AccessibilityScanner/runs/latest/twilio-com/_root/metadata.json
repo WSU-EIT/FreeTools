@@ -5,8 +5,8 @@
   "Title": "Communications APIs with AI and data for SMS, Voice, Email | Twilio",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 1647509,
-  "ScreenshotSizeBytes": 683132,
+  "HtmlSizeBytes": 1649986,
+  "ScreenshotSizeBytes": 683037,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 4,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 683132
+      "FileSize": 683037
     }
   ],
   "ImageCount": 17,
@@ -86,7 +86,7 @@
       "AltText": ""
     },
     {
-      "SourceUrl": "https://bat.bing.com/action/0?ti=30006288\u0026tm=gtm002\u0026Ver=2\u0026mid=82206332-5727-4949-b291-bb6cfff2153b\u0026bo=3\u0026sid=569157600cfa11f1abbdb15f48046ba8\u0026vid=569177c00cfa11f1aea33b68525a1cf4\u0026vids=0\u0026msclkid=N\u0026uach=pv%3D10.0\u0026pi=0\u0026lg=en-US\u0026sw=1280\u0026sh=720\u0026sc=24\u0026nwd=1\u0026tl=Communications%20APIs%20with%20AI%20and%20data%20for%20SMS,%20Voice,%20Email%20%7C%20Twilio\u0026p=https%3A%2F%2Fwww.twilio.com%2Fen-us\u0026r=\u0026lt=550\u0026evt=pageLoad\u0026sv=2\u0026asc=G\u0026cdb=ARoT\u0026rn=373200",
+      "SourceUrl": "https://bat.bing.com/action/0?ti=30006288\u0026tm=gtm002\u0026Ver=2\u0026mid=e7e301d8-8983-4ab9-884f-b1f8cbeb5ba7\u0026bo=3\u0026sid=7ec8a4a00d3811f18976d76a76e4e21d\u0026vid=7ec8ced00d3811f1bf487f5d2686e80a\u0026vids=0\u0026msclkid=N\u0026uach=pv%3D10.0\u0026pi=0\u0026lg=en-US\u0026sw=1280\u0026sh=720\u0026sc=24\u0026nwd=1\u0026tl=Communications%20APIs%20with%20AI%20and%20data%20for%20SMS,%20Voice,%20Email%20%7C%20Twilio\u0026p=https%3A%2F%2Fwww.twilio.com%2Fen-us\u0026r=\u0026lt=582\u0026evt=pageLoad\u0026sv=2\u0026asc=G\u0026cdb=ARoT\u0026rn=780219",
       "AltText": ""
     }
   ],
@@ -95,7 +95,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 42,
     "Critical": 8,
     "Serious": 29,
@@ -120,5 +122,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:47:53.8495135Z"
+  "CapturedAt": "2026-02-19T02:12:50.2238391Z"
 }

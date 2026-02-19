@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://prod.em.wsu.edu/screenshotexe  
-> **Captured:** 2026-02-18 18:47:02 UTC  
+> **Captured:** 2026-02-19 02:10:15 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -23,45 +23,30 @@
 | Field | Value |
 |-------|-------|
 | URL | https://prod.em.wsu.edu/screenshotexe |
-| Title |  |
+| Title | ScreenshotEXEBlazor |
 | Status | ✅ 200 |
-| HTML Size | 150.2 KB |
-| Screenshots | 1 (6.0 KB) |
+| HTML Size | 154.4 KB |
+| Screenshots | 1 (11.0 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
-| JS Errors | 🔴 15 |
-| JS Warnings | 0 |
-| A11y Violations | ⚠️ 4 |
+| JS Errors | 🔴 1 |
+| JS Warnings | 2 |
+| A11y Violations | ⚠️ 7 |
 | 🔴 Critical | 0 |
-| 🟠 Serious | 1 |
-| 🟡 Moderate | 2 |
-| 🔵 Minor | 1 |
+| 🟠 Serious | 4 |
+| 🟡 Moderate | 3 |
+| 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:47:02.6337822Z |
+| Captured | 2026-02-19T02:10:15.0816925Z |
 
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>15 error(s) detected</strong></summary>
+<summary><strong>1 error(s) detected</strong></summary>
 
 ```
-Failed to load resource: net::ERR_CONNECTION_RESET
-Error in mono_download_assets: TypeError: Failed to fetch
-MONO_WASM: Failed to fetch
-TypeError: Failed to fetch
-Error in mono_download_assets: TypeError: Failed to fetch
-Failed to load resource: net::ERR_CONNECTION_RESET
-Error in mono_download_assets: TypeError: Failed to fetch
-Failed to load resource: net::ERR_CONNECTION_RESET
-Failed to load resource: net::ERR_CONNECTION_RESET
-Failed to load resource: net::ERR_CONNECTION_RESET
-Failed to load resource: net::ERR_CONNECTION_RESET
-Failed to load resource: net::ERR_CONNECTION_RESET
-Failed to load resource: net::ERR_CONNECTION_RESET
-Failed to load resource: net::ERR_CONNECTION_RESET
-Failed to load resource: net::ERR_CONNECTION_RESET
-Failed to load resource: net::ERR_CONNECTION_RESET
+Failed to load resource: the server responded with a status of 401 ()
 ```
 
 </details>
@@ -71,10 +56,10 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (6.0 KB)
+- Screenshot #1: page-loaded (11.0 KB)
 - No images found on page
-- axe-core: 1 violations (130ms)
-- htmlcheck: 3 violations (0ms)
+- axe-core: 2 violations (144ms)
+- htmlcheck: 5 violations (0ms)
 
 </details>
 
@@ -87,7 +72,7 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>6.0 KB</sub>
+<br /><sub>11.0 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -104,10 +89,10 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 | Severity | axe | htmlcheck |
 |----------|:---:|:---:|
 | 🔴 critical | 0 | 0 |
-| 🟠 serious | 1 | 0 |
-| 🟡 moderate | 0 | 2 |
-| 🔵 minor | 0 | 1 |
-| **Total** | **1** | **3** |
+| 🟠 serious | 2 | 2 |
+| 🟡 moderate | 0 | 3 |
+| 🔵 minor | 0 | 0 |
+| **Total** | **2** | **5** |
 
 ### Violations by Confidence
 
@@ -116,10 +101,10 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | document-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" style="--blazor-load-percentage: 100%; --...` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
+| 2 | [page-has-heading-one](../../a11y-rules.md#page-has-heading-one) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 
@@ -129,7 +114,7 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (6.0 KB) |
+| `01-page-loaded.jpg` | page-loaded (11.0 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

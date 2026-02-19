@@ -5,7 +5,7 @@
   "Title": "Tuition \u0026 Costs | Admissions | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 89554,
+  "HtmlSizeBytes": 89719,
   "ScreenshotSizeBytes": 274014,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -31,7 +31,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 9,
     "Critical": 1,
     "Serious": 8,
@@ -58,14 +60,14 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:37:11 GMT",
-    "etag": "\u00223eae04a11661b21d66ecb0fd0392c802\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:22:20 GMT",
+    "date": "Thu, 19 Feb 2026 02:12:15 GMT",
+    "etag": "\u0022531ffb4b69da58fbffb8af1d1fdcd3db\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:10:59 GMT",
     "link": "\u003Chttps://admission.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://admission.wsu.edu/wp-json/wp/v2/pages/23\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://admission.wsu.edu/?p=23\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding",
     "x-cache": "EXPIRED",
     "x-cache-status": "EXPIRED"
   },
-  "CapturedAt": "2026-02-18T18:37:10.92364Z"
+  "CapturedAt": "2026-02-19T02:12:15.8541354Z"
 }

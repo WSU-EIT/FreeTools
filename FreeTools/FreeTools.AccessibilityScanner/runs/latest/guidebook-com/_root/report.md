@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://guidebook.com/  
-> **Captured:** 2026-02-18 18:44:59 UTC  
+> **Captured:** 2026-02-19 02:09:02 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -25,10 +25,10 @@
 | Redirected To | https://www.guidebook.com/ |
 | Title | Event Management Platform | Build An App, Manage Registration, Print Badges |
 | Status | ❌ 0 |
-| HTML Size | 283.5 KB |
-| Screenshots | 1 (619.2 KB) |
-| Images | 100 (referenced by URL) |
-| Images Missing Alt | ⚠️ 82 |
+| HTML Size | 283.4 KB |
+| Screenshots | 1 (618.5 KB) |
+| Images | 101 (referenced by URL) |
+| Images Missing Alt | ⚠️ 83 |
 | JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | A11y Violations | ⚠️ 22 |
@@ -38,17 +38,17 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:44:59.6163792Z |
+| Captured | 2026-02-19T02:09:02.3295692Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (619.2 KB)
-- Cataloged 100 images by URL (no download)
-- axe-core: 10 violations (331ms)
-- htmlcheck: 12 violations (3ms)
+- Screenshot #1: page-loaded (618.5 KB)
+- Cataloged 101 images by URL (no download)
+- axe-core: 10 violations (480ms)
+- htmlcheck: 12 violations (2ms)
 
 </details>
 
@@ -61,16 +61,16 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>619.2 KB</sub>
+<br /><sub>618.5 KB</sub>
 </td>
 <td></td>
 </tr>
 </table>
 
-## 🖼️ Page Images (100)
+## 🖼️ Page Images (101)
 
 <details open>
-<summary><strong>📋 Image Index</strong> — 100 images (referenced by URL)</summary>
+<summary><strong>📋 Image Index</strong> — 101 images (referenced by URL)</summary>
 
 | # | Source URL | Alt Text |
 |--:|-----------|----------|
@@ -156,24 +156,25 @@
 | 80 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/6913502b0cfdc527d... | Smiling woman at a check-in counter w... |
 | 81 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b15506116945ee... | Collage of three circular images show... |
 | 82 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de9627554b3e8f8... | Young woman with glasses and a gray s... |
-| 83 | https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fe24b20ef67e054... | ⚠️ *(missing)* |
+| 83 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68b01d3952e6264d9... | ⚠️ *(missing)* |
 | 84 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de9628113a56229... | Group of five young people smiling an... |
 | 85 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de96270a419431e... | Smiling business people holding wine ... |
-| 86 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68b01d3952e6264d9... | ⚠️ *(missing)* |
+| 86 | https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/69145ca1984b7e277... | ⚠️ *(missing)* |
 | 87 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de964aa8d98d913... | Smiling businessman in suit and tie e... |
-| 88 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a8535ccce4b5... | ⚠️ *(missing)* |
-| 89 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a8576bd664cb... | ⚠️ *(missing)* |
-| 90 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023af9efb966060... | Two women smiling and looking at a sm... |
-| 91 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a9eeca5d6306... | ⚠️ *(missing)* |
-| 92 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a78fccb8ed0a... | ⚠️ *(missing)* |
-| 93 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b0fa5a256c8bd9... | ⚠️ *(missing)* |
-| 94 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de63ebb1239146e... | G2 badge for Easiest Admin Mid-Market... |
-| 95 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de63eb8f82448c3... | G2 Leader Winter 2025 badge with a wh... |
-| 96 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de63ebe727c4698... | G2 badge stating Easiest To Use Mid-M... |
-| 97 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b0fd91a54419a3... | ⚠️ *(missing)* |
-| 98 | https://bat.bing.com/action/0?ti=5751707&tm=gtm002&Ver=2&mid=ff3f4e3d-c00b-4f... | ⚠️ *(missing)* |
-| 99 | https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=79832863ad7a44d... | ⚠️ *(missing)* |
-| 100 | https://cdn.bizibly.com/u?_biz_u=79832863ad7a44d1f177c347c2bffbbd&_biz_l=http... | ⚠️ *(missing)* |
+| 88 | https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fb9932894d85985... | ⚠️ *(missing)* |
+| 89 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a8535ccce4b5... | ⚠️ *(missing)* |
+| 90 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a8576bd664cb... | ⚠️ *(missing)* |
+| 91 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023af9efb966060... | Two women smiling and looking at a sm... |
+| 92 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a9eeca5d6306... | ⚠️ *(missing)* |
+| 93 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a78fccb8ed0a... | ⚠️ *(missing)* |
+| 94 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b0fa5a256c8bd9... | ⚠️ *(missing)* |
+| 95 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de63ebb1239146e... | G2 badge for Easiest Admin Mid-Market... |
+| 96 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de63eb8f82448c3... | G2 Leader Winter 2025 badge with a wh... |
+| 97 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de63ebe727c4698... | G2 badge stating Easiest To Use Mid-M... |
+| 98 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b0fd91a54419a3... | ⚠️ *(missing)* |
+| 99 | https://bat.bing.com/action/0?ti=5751707&tm=gtm002&Ver=2&mid=f55540ca-b84d-41... | ⚠️ *(missing)* |
+| 100 | https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=41d7571cb666419... | ⚠️ *(missing)* |
+| 101 | https://cdn.bizibly.com/u?_biz_u=41d7571cb6664191ce773d61639fd46d&_biz_l=http... | ⚠️ *(missing)* |
 
 </details>
 
@@ -729,10 +730,10 @@
 <br /><sub>https://cdn.prod.website-files.com/68b01d3752e6...</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fe24b20ef67e0549e8886e_6647ac978f69bd05b2dd3a6e_kristin-sargent-image--(1).avif">
-<img src="https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fe24b20ef67e0549e8886e_6647ac978f69bd05b2dd3a6e_kristin-sargent-image--(1).avif" width="200" alt="https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fe24b20ef67e0549e8886e_6647ac978f69bd05b2dd3a6e_kristin-sargent-image--(1).avif" />
+<a href="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68b01d3952e6264d97325a48_placeholder-image.svg">
+<img src="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68b01d3952e6264d97325a48_placeholder-image.svg" width="200" alt="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68b01d3952e6264d97325a48_placeholder-image.svg" />
 </a>
-<br /><sub>https://cdn.prod.website-files.com/68dea673505c... ⚠️</sub>
+<br /><sub>https://cdn.prod.website-files.com/68b01d3752e6... ⚠️</sub>
 </td>
 <td align="center" width="33%">
 <a href="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de9628113a562290a2421a_u4866798417_Students_at_events_--v_7_4b789074-c2c8-4da2-91a4-403203e71eee_2.avif">
@@ -749,10 +750,10 @@
 <br /><sub>https://cdn.prod.website-files.com/68b01d3752e6...</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68b01d3952e6264d97325a48_placeholder-image.svg">
-<img src="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68b01d3952e6264d97325a48_placeholder-image.svg" width="200" alt="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68b01d3952e6264d97325a48_placeholder-image.svg" />
+<a href="https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/69145ca1984b7e277c126b82_Jose-Daniel-Mancera-Carrillo.avif">
+<img src="https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/69145ca1984b7e277c126b82_Jose-Daniel-Mancera-Carrillo.avif" width="200" alt="https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/69145ca1984b7e277c126b82_Jose-Daniel-Mancera-Carrillo.avif" />
 </a>
-<br /><sub>https://cdn.prod.website-files.com/68b01d3752e6... ⚠️</sub>
+<br /><sub>https://cdn.prod.website-files.com/68dea673505c... ⚠️</sub>
 </td>
 <td align="center" width="33%">
 <a href="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de964aa8d98d913a04bf62_u4866798417_Lively_event_with_business_people_--v_7_3013958a-56f2-4603-a664-a103f7100517_2.avif">
@@ -762,6 +763,12 @@
 </td>
 </tr>
 <tr>
+<td align="center" width="33%">
+<a href="https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fb9932894d85985e13452e_indiana-tech.avif">
+<img src="https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fb9932894d85985e13452e_indiana-tech.avif" width="200" alt="https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fb9932894d85985e13452e_indiana-tech.avif" />
+</a>
+<br /><sub>https://cdn.prod.website-files.com/68dea673505c... ⚠️</sub>
+</td>
 <td align="center" width="33%">
 <a href="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a8535ccce4b53f0c646_Frame.svg">
 <img src="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a8535ccce4b53f0c646_Frame.svg" width="200" alt="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a8535ccce4b53f0c646_Frame.svg" />
@@ -774,14 +781,14 @@
 </a>
 <br /><sub>https://cdn.prod.website-files.com/68b01d3752e6... ⚠️</sub>
 </td>
+</tr>
+<tr>
 <td align="center" width="33%">
 <a href="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023af9efb966060be992e1_Group%202147202808.avif">
 <img src="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023af9efb966060be992e1_Group%202147202808.avif" width="200" alt="Two women smiling and looking at a smartphone together at a social event with blurred people in the background." />
 </a>
 <br /><sub>https://cdn.prod.website-files.com/68b01d3752e6...</sub>
 </td>
-</tr>
-<tr>
 <td align="center" width="33%">
 <a href="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a9eeca5d63060a271c8_hl2.svg">
 <img src="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a9eeca5d63060a271c8_hl2.svg" width="200" alt="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a9eeca5d63060a271c8_hl2.svg" />
@@ -794,14 +801,14 @@
 </a>
 <br /><sub>https://cdn.prod.website-files.com/68b01d3752e6... ⚠️</sub>
 </td>
+</tr>
+<tr>
 <td align="center" width="33%">
 <a href="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b0fa5a256c8bd9ed9f3ad_users-love-us.svg">
 <img src="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b0fa5a256c8bd9ed9f3ad_users-love-us.svg" width="200" alt="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b0fa5a256c8bd9ed9f3ad_users-love-us.svg" />
 </a>
 <br /><sub>https://cdn.prod.website-files.com/68b01d3752e6... ⚠️</sub>
 </td>
-</tr>
-<tr>
 <td align="center" width="33%">
 <a href="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de63ebb1239146ed75d9d8_EventNetworkingandMatchmaking_EasiestAdmin_Mid-Market_EaseOfAdmin.avif">
 <img src="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de63ebb1239146ed75d9d8_EventNetworkingandMatchmaking_EasiestAdmin_Mid-Market_EaseOfAdmin.avif" width="200" alt="G2 badge for Easiest Admin Mid-Market Winter 2025 award." />
@@ -814,14 +821,14 @@
 </a>
 <br /><sub>https://cdn.prod.website-files.com/68b01d3752e6...</sub>
 </td>
+</tr>
+<tr>
 <td align="center" width="33%">
 <a href="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de63ebe727c4698f5984ad_EventNetworkingandMatchmaking_EasiestToUse_Mid-Market_EaseOfUse.avif">
 <img src="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de63ebe727c4698f5984ad_EventNetworkingandMatchmaking_EasiestToUse_Mid-Market_EaseOfUse.avif" width="200" alt="G2 badge stating Easiest To Use Mid-Market Winter 2025." />
 </a>
 <br /><sub>https://cdn.prod.website-files.com/68b01d3752e6...</sub>
 </td>
-</tr>
-<tr>
 <td align="center" width="33%">
 <a href="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b0fd91a54419a33e62478_medal.svg">
 <img src="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b0fd91a54419a33e62478_medal.svg" width="200" alt="https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b0fd91a54419a33e62478_medal.svg" />
@@ -829,26 +836,25 @@
 <br /><sub>https://cdn.prod.website-files.com/68b01d3752e6... ⚠️</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://bat.bing.com/action/0?ti=5751707&tm=gtm002&Ver=2&mid=ff3f4e3d-c00b-4f77-9914-7d64ad90784d&bo=1&sid=ee3b8b900cf911f1b1be55024b26c2bd&vid=ee3bc0700cf911f1b80663f0ea0c1d58&vids=1&msclkid=N&uach=pv%3D10.0&pi=0&lg=en-US&sw=1280&sh=720&sc=24&nwd=1&tl=Event%20Management%20Platform%20%7C%20Build%20An%20App,%20Manage%20Registration,%20Print%20Badges&p=https%3A%2F%2Fwww.guidebook.com%2F&r=&evt=pageLoad&sv=2&cdb=AQcT&rn=968690">
-<img src="https://bat.bing.com/action/0?ti=5751707&tm=gtm002&Ver=2&mid=ff3f4e3d-c00b-4f77-9914-7d64ad90784d&bo=1&sid=ee3b8b900cf911f1b1be55024b26c2bd&vid=ee3bc0700cf911f1b80663f0ea0c1d58&vids=1&msclkid=N&uach=pv%3D10.0&pi=0&lg=en-US&sw=1280&sh=720&sc=24&nwd=1&tl=Event%20Management%20Platform%20%7C%20Build%20An%20App,%20Manage%20Registration,%20Print%20Badges&p=https%3A%2F%2Fwww.guidebook.com%2F&r=&evt=pageLoad&sv=2&cdb=AQcT&rn=968690" width="200" alt="https://bat.bing.com/action/0?ti=5751707&tm=gtm002&Ver=2&mid=ff3f4e3d-c00b-4f77-9914-7d64ad90784d&bo=1&sid=ee3b8b900cf911f1b1be55024b26c2bd&vid=ee3bc0700cf911f1b80663f0ea0c1d58&vids=1&msclkid=N&uach=pv%3D10.0&pi=0&lg=en-US&sw=1280&sh=720&sc=24&nwd=1&tl=Event%20Management%20Platform%20%7C%20Build%20An%20App,%20Manage%20Registration,%20Print%20Badges&p=https%3A%2F%2Fwww.guidebook.com%2F&r=&evt=pageLoad&sv=2&cdb=AQcT&rn=968690" />
+<a href="https://bat.bing.com/action/0?ti=5751707&tm=gtm002&Ver=2&mid=f55540ca-b84d-41c2-bb73-4fad2f8edb5d&bo=2&sid=f7a348d00d3711f19da5557321814c42&vid=f7a35b000d3711f1bc2ddbc6906c4d90&vids=1&msclkid=N&uach=pv%3D10.0&pi=0&lg=en-US&sw=1280&sh=720&sc=24&nwd=1&tl=Event%20Management%20Platform%20%7C%20Build%20An%20App,%20Manage%20Registration,%20Print%20Badges&p=https%3A%2F%2Fwww.guidebook.com%2F&r=&lt=1738&evt=pageLoad&sv=2&asc=G&cdb=AQcD&rn=858781">
+<img src="https://bat.bing.com/action/0?ti=5751707&tm=gtm002&Ver=2&mid=f55540ca-b84d-41c2-bb73-4fad2f8edb5d&bo=2&sid=f7a348d00d3711f19da5557321814c42&vid=f7a35b000d3711f1bc2ddbc6906c4d90&vids=1&msclkid=N&uach=pv%3D10.0&pi=0&lg=en-US&sw=1280&sh=720&sc=24&nwd=1&tl=Event%20Management%20Platform%20%7C%20Build%20An%20App,%20Manage%20Registration,%20Print%20Badges&p=https%3A%2F%2Fwww.guidebook.com%2F&r=&lt=1738&evt=pageLoad&sv=2&asc=G&cdb=AQcD&rn=858781" width="200" alt="https://bat.bing.com/action/0?ti=5751707&tm=gtm002&Ver=2&mid=f55540ca-b84d-41c2-bb73-4fad2f8edb5d&bo=2&sid=f7a348d00d3711f19da5557321814c42&vid=f7a35b000d3711f1bc2ddbc6906c4d90&vids=1&msclkid=N&uach=pv%3D10.0&pi=0&lg=en-US&sw=1280&sh=720&sc=24&nwd=1&tl=Event%20Management%20Platform%20%7C%20Build%20An%20App,%20Manage%20Registration,%20Print%20Badges&p=https%3A%2F%2Fwww.guidebook.com%2F&r=&lt=1738&evt=pageLoad&sv=2&asc=G&cdb=AQcD&rn=858781" />
 </a>
 <br /><sub>https://bat.bing.com/action/0?ti=5751707&tm=gtm... ⚠️</sub>
-</td>
-<td align="center" width="33%">
-<a href="https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=79832863ad7a44d1f177c347c2bffbbd&_biz_l=https%3A%2F%2Fwww.guidebook.com%2F&_biz_t=1771440301238&_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges&_biz_n=0&rnd=761681&cdn_o=a&_biz_z=1771440301238">
-<img src="https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=79832863ad7a44d1f177c347c2bffbbd&_biz_l=https%3A%2F%2Fwww.guidebook.com%2F&_biz_t=1771440301238&_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges&_biz_n=0&rnd=761681&cdn_o=a&_biz_z=1771440301238" width="200" alt="https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=79832863ad7a44d1f177c347c2bffbbd&_biz_l=https%3A%2F%2Fwww.guidebook.com%2F&_biz_t=1771440301238&_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges&_biz_n=0&rnd=761681&cdn_o=a&_biz_z=1771440301238" />
-</a>
-<br /><sub>https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-171... ⚠️</sub>
 </td>
 </tr>
 <tr>
 <td align="center" width="33%">
-<a href="https://cdn.bizibly.com/u?_biz_u=79832863ad7a44d1f177c347c2bffbbd&_biz_l=https%3A%2F%2Fwww.guidebook.com%2F&_biz_t=1771440301239&_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges&rnd=695746&cdn_o=a&_biz_z=1771440301239">
-<img src="https://cdn.bizibly.com/u?_biz_u=79832863ad7a44d1f177c347c2bffbbd&_biz_l=https%3A%2F%2Fwww.guidebook.com%2F&_biz_t=1771440301239&_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges&rnd=695746&cdn_o=a&_biz_z=1771440301239" width="200" alt="https://cdn.bizibly.com/u?_biz_u=79832863ad7a44d1f177c347c2bffbbd&_biz_l=https%3A%2F%2Fwww.guidebook.com%2F&_biz_t=1771440301239&_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges&rnd=695746&cdn_o=a&_biz_z=1771440301239" />
+<a href="https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=41d7571cb6664191ce773d61639fd46d&_biz_l=https%3A%2F%2Fwww.guidebook.com%2F&_biz_t=1771466944593&_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges&_biz_n=0&rnd=90540&cdn_o=a&_biz_z=1771466944593">
+<img src="https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=41d7571cb6664191ce773d61639fd46d&_biz_l=https%3A%2F%2Fwww.guidebook.com%2F&_biz_t=1771466944593&_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges&_biz_n=0&rnd=90540&cdn_o=a&_biz_z=1771466944593" width="200" alt="https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=41d7571cb6664191ce773d61639fd46d&_biz_l=https%3A%2F%2Fwww.guidebook.com%2F&_biz_t=1771466944593&_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges&_biz_n=0&rnd=90540&cdn_o=a&_biz_z=1771466944593" />
 </a>
-<br /><sub>https://cdn.bizibly.com/u?_biz_u=79832863ad7a44... ⚠️</sub>
+<br /><sub>https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-171... ⚠️</sub>
 </td>
-<td></td>
+<td align="center" width="33%">
+<a href="https://cdn.bizibly.com/u?_biz_u=41d7571cb6664191ce773d61639fd46d&_biz_l=https%3A%2F%2Fwww.guidebook.com%2F&_biz_t=1771466944594&_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges&rnd=146341&cdn_o=a&_biz_z=1771466944594">
+<img src="https://cdn.bizibly.com/u?_biz_u=41d7571cb6664191ce773d61639fd46d&_biz_l=https%3A%2F%2Fwww.guidebook.com%2F&_biz_t=1771466944594&_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges&rnd=146341&cdn_o=a&_biz_z=1771466944594" width="200" alt="https://cdn.bizibly.com/u?_biz_u=41d7571cb6664191ce773d61639fd46d&_biz_l=https%3A%2F%2Fwww.guidebook.com%2F&_biz_t=1771466944594&_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges&rnd=146341&cdn_o=a&_biz_z=1771466944594" />
+</a>
+<br /><sub>https://cdn.bizibly.com/u?_biz_u=41d7571cb66641... ⚠️</sub>
+</td>
 <td></td>
 </tr>
 </table>
@@ -856,7 +862,7 @@
 </details>
 
 <details>
-<summary>⚠️ <strong>Images Missing Alt Text</strong> (82)</summary>
+<summary>⚠️ <strong>Images Missing Alt Text</strong> (83)</summary>
 
 | # | Source URL |
 |--:|-----------|
@@ -931,17 +937,18 @@
 | 69 | https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fb9939137c06d9c... |
 | 70 | https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fb9912aafada04b... |
 | 71 | https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fb9932894d85985... |
-| 72 | https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fe24b20ef67e054... |
-| 73 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68b01d3952e6264d9... |
-| 74 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a8535ccce4b5... |
-| 75 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a8576bd664cb... |
-| 76 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a9eeca5d6306... |
-| 77 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a78fccb8ed0a... |
-| 78 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b0fa5a256c8bd9... |
-| 79 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b0fd91a54419a3... |
-| 80 | https://bat.bing.com/action/0?ti=5751707&tm=gtm002&Ver=2&mid=ff3f4e3d-c00b-4f... |
-| 81 | https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=79832863ad7a44d... |
-| 82 | https://cdn.bizibly.com/u?_biz_u=79832863ad7a44d1f177c347c2bffbbd&_biz_l=http... |
+| 72 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68b01d3952e6264d9... |
+| 73 | https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/69145ca1984b7e277... |
+| 74 | https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fb9932894d85985... |
+| 75 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a8535ccce4b5... |
+| 76 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a8576bd664cb... |
+| 77 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a9eeca5d6306... |
+| 78 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a78fccb8ed0a... |
+| 79 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b0fa5a256c8bd9... |
+| 80 | https://cdn.prod.website-files.com/68b01d3752e6264d97325944/691b0fd91a54419a3... |
+| 81 | https://bat.bing.com/action/0?ti=5751707&tm=gtm002&Ver=2&mid=f55540ca-b84d-41... |
+| 82 | https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=41d7571cb666419... |
+| 83 | https://cdn.bizibly.com/u?_biz_u=41d7571cb6664191ce773d61639fd46d&_biz_l=http... |
 
 </details>
 
@@ -964,12 +971,12 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a id="search-button" data-w-id="3a806d1b-98d9-9b44-7d2e-...` |
-| 2 | color-contrast | 🟠 | 🟢 1/1 | ⚠️ | — | `<a data-wf-native-id-path="d6e6fa36-4fd6-7310-2767-820318...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="search-input w-input" maxlength="256" name=...` |
-| 4 | heading-order | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h4 blocks-name="heading-3" class="text-size-small text-w...` |
-| 5 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 6 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a id="search-button" data-w-id="3a806d1b-98d9-9b44-7d2e-...` |
+| 2 | [color-contrast](../../a11y-rules.md#color-contrast) | 🟠 | 🟢 1/1 | ⚠️ | — | `<a data-wf-native-id-path="d6e6fa36-4fd6-7310-2767-820318...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="search-input w-input" maxlength="256" name=...` |
+| 4 | [heading-order](../../a11y-rules.md#heading-order) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h4 blocks-name="heading-3" class="text-size-small text-w...` |
+| 5 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 6 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 
@@ -979,7 +986,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (619.2 KB) |
+| `01-page-loaded.jpg` | page-loaded (618.5 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

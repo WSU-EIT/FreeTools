@@ -43,7 +43,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 2,
     "Critical": 1,
     "Serious": 0,
@@ -68,5 +70,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:39:03.0137898Z"
+  "CapturedAt": "2026-02-19T02:07:18.4867242Z"
 }

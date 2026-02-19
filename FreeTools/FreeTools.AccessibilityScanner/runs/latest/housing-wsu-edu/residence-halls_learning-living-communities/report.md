@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://housing.wsu.edu/residence-halls/learning-living-communities/  
-> **Captured:** 2026-02-18 18:39:02 UTC  
+> **Captured:** 2026-02-19 02:14:53 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:39:02.4181876Z |
+| Captured | 2026-02-19T02:14:53.5250205Z |
 
 ## 🔴 JavaScript Errors
 
@@ -61,7 +61,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (115.1 KB)
 - Cataloged 5 images by URL (no download)
-- axe-core: 6 violations (227ms)
+- axe-core: 6 violations (214ms)
 - htmlcheck: 1 violations (0ms)
 
 </details>
@@ -158,9 +158,9 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-required-parent | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<a class="foundationMenuLink" href="/prospective-students...` |
-| 2 | aria-required-children | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<ul id="mainNav" class="dropdown menu" aria-label="Main N...` |
-| 3 | heading-order | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h4>` |
+| 1 | [aria-required-parent](../../a11y-rules.md#aria-required-parent) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<a class="foundationMenuLink" href="/prospective-students...` |
+| 2 | [aria-required-children](../../a11y-rules.md#aria-required-children) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<ul id="mainNav" class="dropdown menu" aria-label="Main N...` |
+| 3 | [heading-order](../../a11y-rules.md#heading-order) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h4>` |
 
 </details>
 

@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://smartsheet.com/  
-> **Captured:** 2026-02-18 18:46:19 UTC  
+> **Captured:** 2026-02-19 02:11:06 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -25,8 +25,8 @@
 | Redirected To | https://www.smartsheet.com/ |
 | Title | Intelligent Work Management Platform | Smartsheet |
 | Status | ❌ 0 |
-| HTML Size | 446.9 KB |
-| Screenshots | 1 (331.1 KB) |
+| HTML Size | 447.1 KB |
+| Screenshots | 1 (331.5 KB) |
 | Images | 88 (referenced by URL) |
 | Images Missing Alt | ⚠️ 53 |
 | JS Errors | ✅ 0 |
@@ -38,17 +38,17 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:46:19.4599641Z |
+| Captured | 2026-02-19T02:11:06.0481924Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (331.1 KB)
+- Screenshot #1: page-loaded (331.5 KB)
 - Cataloged 88 images by URL (no download)
-- axe-core: 12 violations (10487ms)
-- htmlcheck: 12 violations (5ms)
+- axe-core: 12 violations (10568ms)
+- htmlcheck: 12 violations (4ms)
 
 </details>
 
@@ -61,7 +61,7 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>331.1 KB</sub>
+<br /><sub>331.5 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -76,7 +76,7 @@
 |--:|-----------|----------|
 | 1 | https://aorta.clickagy.com/pixel.gif?clkgypv=jstag&ws=1 | ⚠️ *(missing)* |
 | 2 | https://aorta.clickagy.com/channel-sync/4?clkgypv=jstag&ws=1 | ⚠️ *(missing)* |
-| 3 | https://aorta.clickagy.com/pixel.gif?ch=319&cm=ee2978ecb9bb28ffbefb1771440381 | ⚠️ *(missing)* |
+| 3 | https://aorta.clickagy.com/pixel.gif?ch=319&cm=f7ed2989b9ba67a695061771467068 | ⚠️ *(missing)* |
 | 4 | https://www.smartsheet.com/sites/default/files/smartsheet-logo-blue-new.svg | ⚠️ *(missing)* |
 | 5 | https://www.smartsheet.com/sites/default/files/2025-09/icon-blue-500-smartshe... | ⚠️ *(missing)* |
 | 6 | https://www.smartsheet.com/sites/default/files/2025-08/icon-blue-500-ai-nav-o... | ⚠️ *(missing)* |
@@ -154,13 +154,13 @@
 | 78 | https://www.smartsheet.com/sites/default/files/2024-06/ENGAGE_Seattle_2024_Fo... | Engage Footer Nav Graphic |
 | 79 | https://www.smartsheet.com/sites/default/files/Download_on_the_App_Store_Badg... | Download on the Apple App Store |
 | 80 | https://www.smartsheet.com/sites/default/files/google-play-badge-English.svg | Get it on Google Play |
-| 81 | https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=9cd37f92b2ba444... | ⚠️ *(missing)* |
-| 82 | https://cdn.bizibly.com/u?_biz_u=9cd37f92b2ba4445e79bd37445f1a685&_biz_l=http... | ⚠️ *(missing)* |
-| 83 | https://sp.analytics.yahoo.com/sp.pl?a=10000&d=Wed%2C%2018%20Feb%202026%2018%... | dot image pixel |
-| 84 | https://pt.ispot.tv/v2/TC-4130-1.gif?app=web&type=visit | ⚠️ *(missing)* |
-| 85 | https://www.googleadservices.com/pagead/conversion/744256365/?label=HmeoCJyY9... | ⚠️ *(missing)* |
-| 86 | https://t.co/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%2... | ⚠️ *(missing)* |
-| 87 | https://analytics.twitter.com/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%... | ⚠️ *(missing)* |
+| 81 | https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=65286a1c86aa4b3... | ⚠️ *(missing)* |
+| 82 | https://cdn.bizibly.com/u?_biz_u=65286a1c86aa4b36c1e8f6f7d348e130&_biz_l=http... | ⚠️ *(missing)* |
+| 83 | https://pt.ispot.tv/v2/TC-4130-1.gif?app=web&type=visit | ⚠️ *(missing)* |
+| 84 | https://sp.analytics.yahoo.com/sp.pl?a=10000&d=Thu%2C%2019%20Feb%202026%2002%... | dot image pixel |
+| 85 | https://t.co/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%2... | ⚠️ *(missing)* |
+| 86 | https://analytics.twitter.com/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%... | ⚠️ *(missing)* |
+| 87 | https://www.googleadservices.com/pagead/conversion/744256365/?label=HmeoCJyY9... | ⚠️ *(missing)* |
 | 88 | https://cdn.bizible.com/u?mapType=mkto&mapValue=id%3A464-ONM-149%26token%3A_m... | ⚠️ *(missing)* |
 
 </details>
@@ -183,8 +183,8 @@
 <br /><sub>https://aorta.clickagy.com/channel-sync/4?clkgy... ⚠️</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://aorta.clickagy.com/pixel.gif?ch=319&cm=ee2978ecb9bb28ffbefb1771440381">
-<img src="https://aorta.clickagy.com/pixel.gif?ch=319&cm=ee2978ecb9bb28ffbefb1771440381" width="200" alt="https://aorta.clickagy.com/pixel.gif?ch=319&cm=ee2978ecb9bb28ffbefb1771440381" />
+<a href="https://aorta.clickagy.com/pixel.gif?ch=319&cm=f7ed2989b9ba67a695061771467068">
+<img src="https://aorta.clickagy.com/pixel.gif?ch=319&cm=f7ed2989b9ba67a695061771467068" width="200" alt="https://aorta.clickagy.com/pixel.gif?ch=319&cm=f7ed2989b9ba67a695061771467068" />
 </a>
 <br /><sub>https://aorta.clickagy.com/pixel.gif?ch=319&cm=... ⚠️</sub>
 </td>
@@ -703,24 +703,18 @@
 <br /><sub>https://www.smartsheet.com/sites/default/files/...</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=9cd37f92b2ba4445e79bd37445f1a685&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771440380376&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&_biz_n=0&rnd=495772&cdn_o=a&_biz_z=1771440380377">
-<img src="https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=9cd37f92b2ba4445e79bd37445f1a685&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771440380376&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&_biz_n=0&rnd=495772&cdn_o=a&_biz_z=1771440380377" width="200" alt="https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=9cd37f92b2ba4445e79bd37445f1a685&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771440380376&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&_biz_n=0&rnd=495772&cdn_o=a&_biz_z=1771440380377" />
+<a href="https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=65286a1c86aa4b36c1e8f6f7d348e130&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771467067185&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&_biz_n=0&rnd=66528&cdn_o=a&_biz_z=1771467067186">
+<img src="https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=65286a1c86aa4b36c1e8f6f7d348e130&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771467067185&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&_biz_n=0&rnd=66528&cdn_o=a&_biz_z=1771467067186" width="200" alt="https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=65286a1c86aa4b36c1e8f6f7d348e130&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771467067185&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&_biz_n=0&rnd=66528&cdn_o=a&_biz_z=1771467067186" />
 </a>
 <br /><sub>https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-171... ⚠️</sub>
 </td>
 </tr>
 <tr>
 <td align="center" width="33%">
-<a href="https://cdn.bizibly.com/u?_biz_u=9cd37f92b2ba4445e79bd37445f1a685&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771440380379&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&rnd=362145&cdn_o=a&_biz_z=1771440380379">
-<img src="https://cdn.bizibly.com/u?_biz_u=9cd37f92b2ba4445e79bd37445f1a685&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771440380379&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&rnd=362145&cdn_o=a&_biz_z=1771440380379" width="200" alt="https://cdn.bizibly.com/u?_biz_u=9cd37f92b2ba4445e79bd37445f1a685&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771440380379&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&rnd=362145&cdn_o=a&_biz_z=1771440380379" />
+<a href="https://cdn.bizibly.com/u?_biz_u=65286a1c86aa4b36c1e8f6f7d348e130&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771467067188&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&rnd=135003&cdn_o=a&_biz_z=1771467067188">
+<img src="https://cdn.bizibly.com/u?_biz_u=65286a1c86aa4b36c1e8f6f7d348e130&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771467067188&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&rnd=135003&cdn_o=a&_biz_z=1771467067188" width="200" alt="https://cdn.bizibly.com/u?_biz_u=65286a1c86aa4b36c1e8f6f7d348e130&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771467067188&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&rnd=135003&cdn_o=a&_biz_z=1771467067188" />
 </a>
-<br /><sub>https://cdn.bizibly.com/u?_biz_u=9cd37f92b2ba44... ⚠️</sub>
-</td>
-<td align="center" width="33%">
-<a href="https://sp.analytics.yahoo.com/sp.pl?a=10000&d=Wed%2C%2018%20Feb%202026%2018%3A46%3A20%20GMT&n=8&b=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&.yp=10204283&f=https%3A%2F%2Fwww.smartsheet.com%2F&enc=UTF-8&yv=1.16.6&tagmgr=gtm">
-<img src="https://sp.analytics.yahoo.com/sp.pl?a=10000&d=Wed%2C%2018%20Feb%202026%2018%3A46%3A20%20GMT&n=8&b=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&.yp=10204283&f=https%3A%2F%2Fwww.smartsheet.com%2F&enc=UTF-8&yv=1.16.6&tagmgr=gtm" width="200" alt="dot image pixel" />
-</a>
-<br /><sub>https://sp.analytics.yahoo.com/sp.pl?a=10000&d=...</sub>
+<br /><sub>https://cdn.bizibly.com/u?_biz_u=65286a1c86aa4b... ⚠️</sub>
 </td>
 <td align="center" width="33%">
 <a href="https://pt.ispot.tv/v2/TC-4130-1.gif?app=web&type=visit">
@@ -728,31 +722,37 @@
 </a>
 <br /><sub>https://pt.ispot.tv/v2/TC-4130-1.gif?app=web&ty... ⚠️</sub>
 </td>
+<td align="center" width="33%">
+<a href="https://sp.analytics.yahoo.com/sp.pl?a=10000&d=Thu%2C%2019%20Feb%202026%2002%3A11%3A07%20GMT&n=8&b=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&.yp=10204283&f=https%3A%2F%2Fwww.smartsheet.com%2F&enc=UTF-8&yv=1.16.6&tagmgr=gtm">
+<img src="https://sp.analytics.yahoo.com/sp.pl?a=10000&d=Thu%2C%2019%20Feb%202026%2002%3A11%3A07%20GMT&n=8&b=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&.yp=10204283&f=https%3A%2F%2Fwww.smartsheet.com%2F&enc=UTF-8&yv=1.16.6&tagmgr=gtm" width="200" alt="dot image pixel" />
+</a>
+<br /><sub>https://sp.analytics.yahoo.com/sp.pl?a=10000&d=...</sub>
+</td>
 </tr>
 <tr>
+<td align="center" width="33%">
+<a href="https://t.co/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na&eci=2&event_id=97e3da26-644b-4ae1-addc-c4c0efe3c89a&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=65bf2342-7440-49a3-8317-a848a494419a&pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o1jw4&type=javascript&version=2.3.35">
+<img src="https://t.co/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na&eci=2&event_id=97e3da26-644b-4ae1-addc-c4c0efe3c89a&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=65bf2342-7440-49a3-8317-a848a494419a&pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o1jw4&type=javascript&version=2.3.35" width="200" alt="https://t.co/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na&eci=2&event_id=97e3da26-644b-4ae1-addc-c4c0efe3c89a&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=65bf2342-7440-49a3-8317-a848a494419a&pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o1jw4&type=javascript&version=2.3.35" />
+</a>
+<br /><sub>https://t.co/i/adsct?bci=3&dv=America%2FLos_Ang... ⚠️</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://analytics.twitter.com/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na&eci=2&event_id=97e3da26-644b-4ae1-addc-c4c0efe3c89a&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=65bf2342-7440-49a3-8317-a848a494419a&pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o1jw4&type=javascript&version=2.3.35">
+<img src="https://analytics.twitter.com/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na&eci=2&event_id=97e3da26-644b-4ae1-addc-c4c0efe3c89a&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=65bf2342-7440-49a3-8317-a848a494419a&pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o1jw4&type=javascript&version=2.3.35" width="200" alt="https://analytics.twitter.com/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na&eci=2&event_id=97e3da26-644b-4ae1-addc-c4c0efe3c89a&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=65bf2342-7440-49a3-8317-a848a494419a&pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o1jw4&type=javascript&version=2.3.35" />
+</a>
+<br /><sub>https://analytics.twitter.com/i/adsct?bci=3&dv=... ⚠️</sub>
+</td>
 <td align="center" width="33%">
 <a href="https://www.googleadservices.com/pagead/conversion/744256365/?label=HmeoCJyY9OUDEO3m8eIC&guid=ON&script=0">
 <img src="https://www.googleadservices.com/pagead/conversion/744256365/?label=HmeoCJyY9OUDEO3m8eIC&guid=ON&script=0" width="200" alt="https://www.googleadservices.com/pagead/conversion/744256365/?label=HmeoCJyY9OUDEO3m8eIC&guid=ON&script=0" />
 </a>
 <br /><sub>https://www.googleadservices.com/pagead/convers... ⚠️</sub>
 </td>
-<td align="center" width="33%">
-<a href="https://t.co/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na&eci=2&event_id=13ea8be8-8397-4028-a196-1fc34e085a0a&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=09d4798c-2071-44cb-bcf1-55100851b38d&pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o1jw4&type=javascript&version=2.3.35">
-<img src="https://t.co/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na&eci=2&event_id=13ea8be8-8397-4028-a196-1fc34e085a0a&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=09d4798c-2071-44cb-bcf1-55100851b38d&pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o1jw4&type=javascript&version=2.3.35" width="200" alt="https://t.co/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na&eci=2&event_id=13ea8be8-8397-4028-a196-1fc34e085a0a&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=09d4798c-2071-44cb-bcf1-55100851b38d&pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o1jw4&type=javascript&version=2.3.35" />
-</a>
-<br /><sub>https://t.co/i/adsct?bci=3&dv=America%2FLos_Ang... ⚠️</sub>
-</td>
-<td align="center" width="33%">
-<a href="https://analytics.twitter.com/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na&eci=2&event_id=13ea8be8-8397-4028-a196-1fc34e085a0a&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=09d4798c-2071-44cb-bcf1-55100851b38d&pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o1jw4&type=javascript&version=2.3.35">
-<img src="https://analytics.twitter.com/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na&eci=2&event_id=13ea8be8-8397-4028-a196-1fc34e085a0a&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=09d4798c-2071-44cb-bcf1-55100851b38d&pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o1jw4&type=javascript&version=2.3.35" width="200" alt="https://analytics.twitter.com/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%26Win32%26255%261280%26720%2624%2624%261280%26720%260%26na&eci=2&event_id=13ea8be8-8397-4028-a196-1fc34e085a0a&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=09d4798c-2071-44cb-bcf1-55100851b38d&pt=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&tw_document_href=https%3A%2F%2Fwww.smartsheet.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o1jw4&type=javascript&version=2.3.35" />
-</a>
-<br /><sub>https://analytics.twitter.com/i/adsct?bci=3&dv=... ⚠️</sub>
-</td>
 </tr>
 <tr>
 <td align="center" width="33%">
-<a href="https://cdn.bizible.com/u?mapType=mkto&mapValue=id%3A464-ONM-149%26token%3A_mch-smartsheet.com-eaa60438df2e79f7027f52213e55ba2&_biz_u=9cd37f92b2ba4445e79bd37445f1a685&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771440382382&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&_biz_n=1&rnd=95175&cdn_o=a&_biz_z=1771440382382">
-<img src="https://cdn.bizible.com/u?mapType=mkto&mapValue=id%3A464-ONM-149%26token%3A_mch-smartsheet.com-eaa60438df2e79f7027f52213e55ba2&_biz_u=9cd37f92b2ba4445e79bd37445f1a685&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771440382382&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&_biz_n=1&rnd=95175&cdn_o=a&_biz_z=1771440382382" width="200" alt="https://cdn.bizible.com/u?mapType=mkto&mapValue=id%3A464-ONM-149%26token%3A_mch-smartsheet.com-eaa60438df2e79f7027f52213e55ba2&_biz_u=9cd37f92b2ba4445e79bd37445f1a685&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771440382382&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&_biz_n=1&rnd=95175&cdn_o=a&_biz_z=1771440382382" />
+<a href="https://cdn.bizible.com/u?mapType=mkto&mapValue=id%3A464-ONM-149%26token%3A_mch-smartsheet.com-7ffca815f81d01c9945f8c661c781361&_biz_u=65286a1c86aa4b36c1e8f6f7d348e130&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771467069212&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&_biz_n=1&rnd=137494&cdn_o=a&_biz_z=1771467069212">
+<img src="https://cdn.bizible.com/u?mapType=mkto&mapValue=id%3A464-ONM-149%26token%3A_mch-smartsheet.com-7ffca815f81d01c9945f8c661c781361&_biz_u=65286a1c86aa4b36c1e8f6f7d348e130&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771467069212&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&_biz_n=1&rnd=137494&cdn_o=a&_biz_z=1771467069212" width="200" alt="https://cdn.bizible.com/u?mapType=mkto&mapValue=id%3A464-ONM-149%26token%3A_mch-smartsheet.com-7ffca815f81d01c9945f8c661c781361&_biz_u=65286a1c86aa4b36c1e8f6f7d348e130&_biz_l=https%3A%2F%2Fwww.smartsheet.com%2F&_biz_t=1771467069212&_biz_i=Intelligent%20Work%20Management%20Platform%20%7C%20Smartsheet&_biz_n=1&rnd=137494&cdn_o=a&_biz_z=1771467069212" />
 </a>
 <br /><sub>https://cdn.bizible.com/u?mapType=mkto&mapValue... ⚠️</sub>
 </td>
@@ -770,7 +770,7 @@
 |--:|-----------|
 | 1 | https://aorta.clickagy.com/pixel.gif?clkgypv=jstag&ws=1 |
 | 2 | https://aorta.clickagy.com/channel-sync/4?clkgypv=jstag&ws=1 |
-| 3 | https://aorta.clickagy.com/pixel.gif?ch=319&cm=ee2978ecb9bb28ffbefb1771440381 |
+| 3 | https://aorta.clickagy.com/pixel.gif?ch=319&cm=f7ed2989b9ba67a695061771467068 |
 | 4 | https://www.smartsheet.com/sites/default/files/smartsheet-logo-blue-new.svg |
 | 5 | https://www.smartsheet.com/sites/default/files/2025-09/icon-blue-500-smartshe... |
 | 6 | https://www.smartsheet.com/sites/default/files/2025-08/icon-blue-500-ai-nav-o... |
@@ -814,12 +814,12 @@
 | 44 | https://www.smartsheet.com/sites/default/files/2025-11/25_smar_gartner_report... |
 | 45 | https://www.smartsheet.com/sites/default/files/2025-04/ai-blog-5-signs-team-i... |
 | 46 | https://www.smartsheet.com/sites/default/files/2025-11/25_smar_ppm_first_part... |
-| 47 | https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=9cd37f92b2ba444... |
-| 48 | https://cdn.bizibly.com/u?_biz_u=9cd37f92b2ba4445e79bd37445f1a685&_biz_l=http... |
+| 47 | https://cdn.bizible.com/ipv?_biz_r=&_biz_h=-1719904874&_biz_u=65286a1c86aa4b3... |
+| 48 | https://cdn.bizibly.com/u?_biz_u=65286a1c86aa4b36c1e8f6f7d348e130&_biz_l=http... |
 | 49 | https://pt.ispot.tv/v2/TC-4130-1.gif?app=web&type=visit |
-| 50 | https://www.googleadservices.com/pagead/conversion/744256365/?label=HmeoCJyY9... |
-| 51 | https://t.co/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%2... |
-| 52 | https://analytics.twitter.com/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%... |
+| 50 | https://t.co/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%26Google%20Inc.%2... |
+| 51 | https://analytics.twitter.com/i/adsct?bci=3&dv=America%2FLos_Angeles%26en-US%... |
+| 52 | https://www.googleadservices.com/pagead/conversion/744256365/?label=HmeoCJyY9... |
 | 53 | https://cdn.bizible.com/u?mapType=mkto&mapValue=id%3A464-ONM-149%26token%3A_m... |
 
 </details>
@@ -843,14 +843,14 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | color-contrast | 🟠 | 🟢 1/1 | ⚠️ | — | `<p class="teaser-eyebrow fine-print teaser-eyebrow fine-p...` |
-| 2 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="privacy-choices" href="#" onclick="semaphore.pu...` |
-| 3 | aria-required-parent | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<button class="logo-slide active-tab" aria-label="McLaren...` |
-| 4 | aria-required-children | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<div class="slides js-grid container wilma active" role="...` |
-| 5 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button title="Scroll left" class="arrow "></button>` |
-| 6 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 7 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="search" id="search-query-1577869465" name="s...` |
-| 8 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [color-contrast](../../a11y-rules.md#color-contrast) | 🟠 | 🟢 1/1 | ⚠️ | — | `<p class="teaser-eyebrow fine-print teaser-eyebrow fine-p...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="privacy-choices" href="#" onclick="semaphore.pu...` |
+| 3 | [aria-required-parent](../../a11y-rules.md#aria-required-parent) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<button class="logo-slide active-tab" aria-label="McLaren...` |
+| 4 | [aria-required-children](../../a11y-rules.md#aria-required-children) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<div class="slides js-grid container wilma active" role="...` |
+| 5 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button title="Scroll left" class="arrow "></button>` |
+| 6 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 7 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="search" id="search-query-1577869465" name="s...` |
+| 8 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 
@@ -860,7 +860,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (331.1 KB) |
+| `01-page-loaded.jpg` | page-loaded (331.5 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

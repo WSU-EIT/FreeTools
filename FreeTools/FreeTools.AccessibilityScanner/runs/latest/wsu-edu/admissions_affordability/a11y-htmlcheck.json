@@ -61,6 +61,17 @@
     },
     {
       "Tool": "htmlcheck",
+      "RuleId": "skip-link-missing",
+      "CanonicalRuleId": "skip-link",
+      "Severity": "moderate",
+      "Message": "No skip-to-content link found near top of page",
+      "Selector": null,
+      "Snippet": null,
+      "HelpUrl": null,
+      "WcagCriteria": "2.4.1"
+    },
+    {
+      "Tool": "htmlcheck",
       "RuleId": "table-header-missing",
       "CanonicalRuleId": "td-has-header",
       "Severity": "moderate",

@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://registrar.wsu.edu/special-enrollment/  
-> **Captured:** 2026-02-18 18:42:41 UTC  
+> **Captured:** 2026-02-19 02:15:19 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:42:41.6177992Z |
+| Captured | 2026-02-19T02:15:19.4408090Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (373.9 KB)
 - No images found on page
-- axe-core: 1 violations (290ms)
+- axe-core: 1 violations (282ms)
 - htmlcheck: 1 violations (0ms)
 
 </details>
@@ -89,8 +89,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | td-has-header | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table border="0">
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table border="0">
 <tbody>
 <tr>
 <td class="term">Fall 202...` |

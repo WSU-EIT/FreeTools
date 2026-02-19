@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://admission.wsu.edu/visit/  
-> **Captured:** 2026-02-18 18:37:50 UTC  
+> **Captured:** 2026-02-19 02:13:48 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://admission.wsu.edu/visit/ |
 | Title | Visit & Explore | Admissions | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 109.4 KB |
+| HTML Size | 109.5 KB |
 | Screenshots | 1 (492.7 KB) |
 | Images | 12 (referenced by URL) |
 | Images Missing Alt | ⚠️ 3 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:37:50.6832127Z |
+| Captured | 2026-02-19T02:13:48.6214483Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (492.7 KB)
 - Cataloged 12 images by URL (no download)
-- axe-core: 5 violations (584ms)
+- axe-core: 5 violations (598ms)
 - htmlcheck: 6 violations (0ms)
 
 </details>
@@ -206,13 +206,13 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | color-contrast | 🟠 | 🟢 1/1 | ⚠️ | — | `<a href="tel:5095535450">509-553-5450</a>` |
-| 3 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 4 | frame-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<iframe class="youtube-player" type="text/html" width="64...` |
-| 5 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
-| 6 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://admission.wsu.edu?s=" class="wsu-button-...` |
-| 7 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [color-contrast](../../a11y-rules.md#color-contrast) | 🟠 | 🟢 1/1 | ⚠️ | — | `<a href="tel:5095535450">509-553-5450</a>` |
+| 3 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 4 | [frame-title](../../a11y-rules.md#frame-title) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<iframe class="youtube-player" type="text/html" width="64...` |
+| 5 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
+| 6 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://admission.wsu.edu?s=" class="wsu-button-...` |
+| 7 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
 
 </details>
 

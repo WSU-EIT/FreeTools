@@ -55,7 +55,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 0,
     "Critical": 0,
     "Serious": 0,
@@ -82,12 +84,12 @@
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:36:41 GMT",
+    "date": "Thu, 19 Feb 2026 02:10:49 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-18T18:36:41.1669378Z"
+  "CapturedAt": "2026-02-19T02:10:48.9193909Z"
 }

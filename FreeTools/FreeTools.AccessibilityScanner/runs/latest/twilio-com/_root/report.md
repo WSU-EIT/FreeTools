@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://twilio.com/  
-> **Captured:** 2026-02-18 18:47:53 UTC  
+> **Captured:** 2026-02-19 02:12:50 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -27,7 +27,7 @@
 | Title | Communications APIs with AI and data for SMS, Voice, Email | Twilio |
 | Status | ❌ 0 |
 | HTML Size | 1.6 MB |
-| Screenshots | 1 (667.1 KB) |
+| Screenshots | 1 (667.0 KB) |
 | Images | 17 (referenced by URL) |
 | Images Missing Alt | ⚠️ 2 |
 | JS Errors | 🔴 1 |
@@ -39,7 +39,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:47:53.8495135Z |
+| Captured | 2026-02-19T02:12:50.2238391Z |
 
 ## 🔴 JavaScript Errors
 
@@ -57,10 +57,10 @@ Failed to load resource: net::ERR_NAME_NOT_RESOLVED
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (667.1 KB)
+- Screenshot #1: page-loaded (667.0 KB)
 - Cataloged 17 images by URL (no download)
-- axe-core: 8 violations (673ms)
-- htmlcheck: 34 violations (15ms)
+- axe-core: 8 violations (728ms)
+- htmlcheck: 34 violations (17ms)
 
 </details>
 
@@ -73,7 +73,7 @@ Failed to load resource: net::ERR_NAME_NOT_RESOLVED
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>667.1 KB</sub>
+<br /><sub>667.0 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -102,7 +102,7 @@ Failed to load resource: net::ERR_NAME_NOT_RESOLVED
 | 14 | https://www.twilio.com/content/dam/twilio-com/global/en/homepage/one-twilio-t... | Smiling woman with a message about ho... |
 | 15 | https://www.twilio.com/content/dam/twilio-com/global/en/homepage/one-twilio-t... | Woman with curly hair and glasses wea... |
 | 16 | https://www.googleadservices.com/pagead/conversion/923239173/?label=2ud3CKnBg... | ⚠️ *(missing)* |
-| 17 | https://bat.bing.com/action/0?ti=30006288&tm=gtm002&Ver=2&mid=82206332-5727-4... | ⚠️ *(missing)* |
+| 17 | https://bat.bing.com/action/0?ti=30006288&tm=gtm002&Ver=2&mid=e7e301d8-8983-4... | ⚠️ *(missing)* |
 
 </details>
 
@@ -218,8 +218,8 @@ Failed to load resource: net::ERR_NAME_NOT_RESOLVED
 <br /><sub>https://www.googleadservices.com/pagead/convers... ⚠️</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://bat.bing.com/action/0?ti=30006288&tm=gtm002&Ver=2&mid=82206332-5727-4949-b291-bb6cfff2153b&bo=3&sid=569157600cfa11f1abbdb15f48046ba8&vid=569177c00cfa11f1aea33b68525a1cf4&vids=0&msclkid=N&uach=pv%3D10.0&pi=0&lg=en-US&sw=1280&sh=720&sc=24&nwd=1&tl=Communications%20APIs%20with%20AI%20and%20data%20for%20SMS,%20Voice,%20Email%20%7C%20Twilio&p=https%3A%2F%2Fwww.twilio.com%2Fen-us&r=&lt=550&evt=pageLoad&sv=2&asc=G&cdb=ARoT&rn=373200">
-<img src="https://bat.bing.com/action/0?ti=30006288&tm=gtm002&Ver=2&mid=82206332-5727-4949-b291-bb6cfff2153b&bo=3&sid=569157600cfa11f1abbdb15f48046ba8&vid=569177c00cfa11f1aea33b68525a1cf4&vids=0&msclkid=N&uach=pv%3D10.0&pi=0&lg=en-US&sw=1280&sh=720&sc=24&nwd=1&tl=Communications%20APIs%20with%20AI%20and%20data%20for%20SMS,%20Voice,%20Email%20%7C%20Twilio&p=https%3A%2F%2Fwww.twilio.com%2Fen-us&r=&lt=550&evt=pageLoad&sv=2&asc=G&cdb=ARoT&rn=373200" width="200" alt="https://bat.bing.com/action/0?ti=30006288&tm=gtm002&Ver=2&mid=82206332-5727-4949-b291-bb6cfff2153b&bo=3&sid=569157600cfa11f1abbdb15f48046ba8&vid=569177c00cfa11f1aea33b68525a1cf4&vids=0&msclkid=N&uach=pv%3D10.0&pi=0&lg=en-US&sw=1280&sh=720&sc=24&nwd=1&tl=Communications%20APIs%20with%20AI%20and%20data%20for%20SMS,%20Voice,%20Email%20%7C%20Twilio&p=https%3A%2F%2Fwww.twilio.com%2Fen-us&r=&lt=550&evt=pageLoad&sv=2&asc=G&cdb=ARoT&rn=373200" />
+<a href="https://bat.bing.com/action/0?ti=30006288&tm=gtm002&Ver=2&mid=e7e301d8-8983-4ab9-884f-b1f8cbeb5ba7&bo=3&sid=7ec8a4a00d3811f18976d76a76e4e21d&vid=7ec8ced00d3811f1bf487f5d2686e80a&vids=0&msclkid=N&uach=pv%3D10.0&pi=0&lg=en-US&sw=1280&sh=720&sc=24&nwd=1&tl=Communications%20APIs%20with%20AI%20and%20data%20for%20SMS,%20Voice,%20Email%20%7C%20Twilio&p=https%3A%2F%2Fwww.twilio.com%2Fen-us&r=&lt=582&evt=pageLoad&sv=2&asc=G&cdb=ARoT&rn=780219">
+<img src="https://bat.bing.com/action/0?ti=30006288&tm=gtm002&Ver=2&mid=e7e301d8-8983-4ab9-884f-b1f8cbeb5ba7&bo=3&sid=7ec8a4a00d3811f18976d76a76e4e21d&vid=7ec8ced00d3811f1bf487f5d2686e80a&vids=0&msclkid=N&uach=pv%3D10.0&pi=0&lg=en-US&sw=1280&sh=720&sc=24&nwd=1&tl=Communications%20APIs%20with%20AI%20and%20data%20for%20SMS,%20Voice,%20Email%20%7C%20Twilio&p=https%3A%2F%2Fwww.twilio.com%2Fen-us&r=&lt=582&evt=pageLoad&sv=2&asc=G&cdb=ARoT&rn=780219" width="200" alt="https://bat.bing.com/action/0?ti=30006288&tm=gtm002&Ver=2&mid=e7e301d8-8983-4ab9-884f-b1f8cbeb5ba7&bo=3&sid=7ec8a4a00d3811f18976d76a76e4e21d&vid=7ec8ced00d3811f1bf487f5d2686e80a&vids=0&msclkid=N&uach=pv%3D10.0&pi=0&lg=en-US&sw=1280&sh=720&sc=24&nwd=1&tl=Communications%20APIs%20with%20AI%20and%20data%20for%20SMS,%20Voice,%20Email%20%7C%20Twilio&p=https%3A%2F%2Fwww.twilio.com%2Fen-us&r=&lt=582&evt=pageLoad&sv=2&asc=G&cdb=ARoT&rn=780219" />
 </a>
 <br /><sub>https://bat.bing.com/action/0?ti=30006288&tm=gt... ⚠️</sub>
 </td>
@@ -235,7 +235,7 @@ Failed to load resource: net::ERR_NAME_NOT_RESOLVED
 | # | Source URL |
 |--:|-----------|
 | 1 | https://www.googleadservices.com/pagead/conversion/923239173/?label=2ud3CKnBg... |
-| 2 | https://bat.bing.com/action/0?ti=30006288&tm=gtm002&Ver=2&mid=82206332-5727-4... |
+| 2 | https://bat.bing.com/action/0?ti=30006288&tm=gtm002&Ver=2&mid=e7e301d8-8983-4... |
 
 </details>
 
@@ -258,13 +258,13 @@ Failed to load resource: net::ERR_NAME_NOT_RESOLVED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | button-name | 🔴 | 🟢 2/2 | ⚠️ | ⚠️ | `<button type="button" role="tab" id="code-tab--934511699"...` |
-| 2 | aria-valid-attr-value | 🔴 | 🟢 1/1 | ⚠️ | — | `<button class="slider-button slider-active" type="button"...` |
-| 3 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img src=\"https://www.twilio.com/content/dam/twilio-com/...` |
-| 4 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type='checkbox'/>` |
-| 5 | heading-order | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h4>` |
-| 6 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 7 | td-has-header | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table>"!==c[1]\\|\\|l?[]:d.childNodes:d.firstChild&&d.fi...` |
+| 1 | [button-name](../../a11y-rules.md#button-name) | 🔴 | 🟢 2/2 | ⚠️ | ⚠️ | `<button type="button" role="tab" id="code-tab--934511699"...` |
+| 2 | [aria-valid-attr-value](../../a11y-rules.md#aria-valid-attr-value) | 🔴 | 🟢 1/1 | ⚠️ | — | `<button class="slider-button slider-active" type="button"...` |
+| 3 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img src=\"/content/dam/twilio-com/global/en/homepage/one...` |
+| 4 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type='checkbox'/>` |
+| 5 | [heading-order](../../a11y-rules.md#heading-order) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h4>` |
+| 6 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 7 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table>"!==c[1]\\|\\|l?[]:d.childNodes:d.firstChild&&d.fi...` |
 
 </details>
 
@@ -274,7 +274,7 @@ Failed to load resource: net::ERR_NAME_NOT_RESOLVED
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (667.1 KB) |
+| `01-page-loaded.jpg` | page-loaded (667.0 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

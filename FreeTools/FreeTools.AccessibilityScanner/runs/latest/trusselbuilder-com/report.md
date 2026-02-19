@@ -16,7 +16,7 @@ Success Rate:  [█████████████████████�
 | Pages Scanned | 1 |
 | Pages Passed | ✅ 1 |
 | Pages Failed | 0 |
-| Total JS Errors | 🔴 193 |
+| Total JS Errors | 🔴 191 |
 | Total JS Warnings | 0 |
 | Total Images | 0 (by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -76,9 +76,9 @@ Click any thumbnail to view the full page report.
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>193 error(s) across 1 page(s)</strong></summary>
+<summary><strong>191 error(s) across 1 page(s)</strong></summary>
 
-**/** (193 errors)
+**/** (191 errors)
 
 ```
 Fetch API cannot load https://trusselbuilder.com/_framework/System.Private.CoreLib.f5mfssf3vz.wasm. 
@@ -86,7 +86,7 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 Error in mono_download_assets: Error: download 'https://trusselbuilder.com/_framework/System.Private.CoreLib.f5mfssf3vz.wasm' for System.Private.CoreLib.f5mfssf3vz.wasm failed 0 TypeError: Failed to f...
 Error in mono_download_assets: Error: download 'https://trusselbuilder.com/_framework/System.Private.CoreLib.f5mfssf3vz.wasm' for System.Private.CoreLib.f5mfssf3vz.wasm failed 0 TypeError: Failed to f...
 Fetch API cannot load https://trusselbuilder.com/_framework/Basic.Reference.Assemblies.Net90.ax3achsd86.wasm. 
-... and 188 more (see _root/errors.log)
+... and 186 more (see _root/errors.log)
 ```
 
 </details>
@@ -106,11 +106,11 @@ Fetch API cannot load https://trusselbuilder.com/_framework/Basic.Reference.Asse
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | button-name | 🟠 | 1/1 | 3 |
-| 2 | document-title | 🟠 | 1/1 | 1 |
-| 3 | skip-link | 🟡 | 1/1 | 1 |
-| 4 | landmark-one-main | 🟡 | 1/1 | 1 |
-| 5 | landmark-nav | 🔵 | 1/1 | 1 |
+| 1 | [button-name](../a11y-rules.md#button-name) | 🟠 | 1/1 | 3 |
+| 2 | [document-title](../a11y-rules.md#document-title) | 🟠 | 1/1 | 1 |
+| 3 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
+| 4 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 1/1 | 1 |
+| 5 | [landmark-nav](../a11y-rules.md#landmark-nav) | 🔵 | 1/1 | 1 |
 
 ---
 

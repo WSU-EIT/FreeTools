@@ -5,7 +5,7 @@
   "Title": "Completed ITS Projects 2025 | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 234337,
+  "HtmlSizeBytes": 234530,
   "ScreenshotSizeBytes": 155349,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 15,
     "Critical": 0,
     "Serious": 15,
@@ -53,12 +55,15 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:33:00 GMT",
-    "etag": "\u00229451971f446cee8f27cf7a46022cd570\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:21:34 GMT",
+    "date": "Thu, 19 Feb 2026 02:13:39 GMT",
+    "etag": "\u00229f0a36dad8ea7f1492bc55e74c52db34\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:13:39 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/9366\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=9366\u003E; rel=shortlink",
     "server": "nginx",
-    "vary": "Accept-Encoding"
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://its.wsu.edu",
+    "x-tec-api-root": "https://its.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
   },
-  "CapturedAt": "2026-02-18T18:33:00.5405595Z"
+  "CapturedAt": "2026-02-19T02:13:39.4673507Z"
 }

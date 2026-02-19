@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://goto.wsu.edu/  
-> **Captured:** 2026-02-18 18:43:09 UTC  
+> **Captured:** 2026-02-19 02:08:03 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -29,7 +29,7 @@
 | Screenshots | 1 (6.0 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
-| JS Errors | 🔴 86 |
+| JS Errors | 🔴 100 |
 | JS Warnings | 0 |
 | A11y Violations | ⚠️ 4 |
 | 🔴 Critical | 0 |
@@ -38,12 +38,12 @@
 | 🔵 Minor | 1 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:43:09.4847334Z |
+| Captured | 2026-02-19T02:08:03.5576096Z |
 
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>86 error(s) detected</strong></summary>
+<summary><strong>100 error(s) detected</strong></summary>
 
 ```
 Failed to load resource: net::ERR_CONNECTION_RESET
@@ -52,7 +52,6 @@ MONO_WASM: Failed to fetch
 TypeError: Failed to fetch
 Error in mono_download_assets: TypeError: Failed to fetch
 Failed to load resource: net::ERR_CONNECTION_RESET
-Error in mono_download_assets: TypeError: Failed to fetch
 Failed to load resource: net::ERR_CONNECTION_RESET
 Failed to load resource: net::ERR_CONNECTION_RESET
 Failed to load resource: net::ERR_CONNECTION_RESET
@@ -67,7 +66,8 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 Failed to load resource: net::ERR_CONNECTION_RESET
 Failed to load resource: net::ERR_CONNECTION_RESET
 Failed to load resource: net::ERR_CONNECTION_RESET
-... and 66 more (see errors.log)
+Failed to load resource: net::ERR_CONNECTION_RESET
+... and 80 more (see errors.log)
 ```
 
 </details>
@@ -79,7 +79,7 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 
 - Screenshot #1: page-loaded (6.0 KB)
 - No images found on page
-- axe-core: 1 violations (174ms)
+- axe-core: 1 violations (151ms)
 - htmlcheck: 3 violations (0ms)
 
 </details>
@@ -122,10 +122,10 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | document-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en-US" class="wsu-has-js wsu-reduce-motion" s...` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [document-title](../../a11y-rules.md#document-title) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en-US" class="wsu-has-js wsu-reduce-motion" s...` |
+| 2 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [landmark-nav](../../a11y-rules.md#landmark-nav) | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

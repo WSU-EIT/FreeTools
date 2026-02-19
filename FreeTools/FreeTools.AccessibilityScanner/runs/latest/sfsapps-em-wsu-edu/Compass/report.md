@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://sfsapps.em.wsu.edu/Compass  
-> **Captured:** 2026-02-18 18:45:36 UTC  
+> **Captured:** 2026-02-19 02:10:27 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:45:36.4208092Z |
+| Captured | 2026-02-19T02:10:27.6224036Z |
 
 ## 🔴 JavaScript Errors
 
@@ -74,7 +74,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (187.1 KB)
 - Cataloged 1 images by URL (no download)
-- axe-core: 2 violations (149ms)
+- axe-core: 2 violations (193ms)
 - htmlcheck: 4 violations (0ms)
 
 </details>
@@ -151,9 +151,9 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🔴 | 🟢 2/2 | ⚠️ | ⚠️ | `<img src="/Compass/Content/images/EstimateGraphic2.jpg" s...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<a href="#spine-sitenav" role="navigation" class="screen-...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input name="term" type="text" value="" placeholder="sear...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🔴 | 🟢 2/2 | ⚠️ | ⚠️ | `<img src="/Compass/Content/images/EstimateGraphic2.jpg" s...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<a href="#spine-sitenav" role="navigation" class="screen-...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input name="term" type="text" value="" placeholder="sear...` |
 
 </details>
 

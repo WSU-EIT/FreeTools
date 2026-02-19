@@ -5,8 +5,8 @@
   "Title": "Payment Plans | Bursar | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 78338,
-  "ScreenshotSizeBytes": 287658,
+  "HtmlSizeBytes": 78502,
+  "ScreenshotSizeBytes": 258738,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 287658
+      "FileSize": 258738
     }
   ],
   "ImageCount": 9,
@@ -63,7 +63,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 4,
     "Critical": 0,
     "Serious": 4,
@@ -90,12 +92,12 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:40:07 GMT",
-    "etag": "\u0022462d1e161436998053828ae117571948\u0022",
-    "last-modified": "Wed, 18 Feb 2026 17:55:38 GMT",
+    "date": "Thu, 19 Feb 2026 02:10:57 GMT",
+    "etag": "\u002287131dfc6d1429fc809b80988adcaed8\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:01:18 GMT",
     "link": "\u003Chttps://bursar.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://bursar.wsu.edu/wp-json/wp/v2/pages/1744\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://bursar.wsu.edu/?p=1744\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-18T18:40:07.3906524Z"
+  "CapturedAt": "2026-02-19T02:10:57.0721125Z"
 }

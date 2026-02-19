@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://wsu.edu/covid-19/  
-> **Captured:** 2026-02-18 18:35:33 UTC  
+> **Captured:** 2026-02-19 02:10:40 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://wsu.edu/covid-19/ |
 | Title | COVID-19 Recovery Guidance | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 38.9 KB |
+| HTML Size | 39.0 KB |
 | Screenshots | 1 (114.1 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:35:33.5925849Z |
+| Captured | 2026-02-19T02:10:40.1358061Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (114.1 KB)
 - No images found on page
-- axe-core: 0 violations (232ms)
+- axe-core: 0 violations (286ms)
 - htmlcheck: 4 violations (0ms)
 
 </details>
@@ -89,8 +89,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://wsu.edu/covid-19?s=" class="wsu-button-u...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://wsu.edu/covid-19?s=" class="wsu-button-u...` |
 
 </details>
 

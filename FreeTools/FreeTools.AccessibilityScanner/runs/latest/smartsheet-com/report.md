@@ -25,8 +25,8 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 | 🟠 Serious | 16 |
 | 🟡 Moderate | 1 |
 | 🔵 Minor | 0 |
-| Total HTML | 446.9 KB |
-| Total Screenshots | 331.1 KB |
+| Total HTML | 447.1 KB |
+| Total Screenshots | 331.5 KB |
 
 ## 🔒 SSL Certificate
 
@@ -99,14 +99,14 @@ Click any thumbnail to view the full page report.
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | color-contrast | 🟠 | 1/1 | 4 |
-| 2 | link-name | 🟠 | 1/1 | 2 |
-| 3 | aria-required-parent | 🔴 | 1/1 | 6 |
-| 4 | aria-required-children | 🔴 | 1/1 | 1 |
-| 5 | button-name | 🟠 | 1/1 | 5 |
-| 6 | image-alt | 🟠 | 1/1 | 4 |
-| 7 | label | 🟠 | 1/1 | 1 |
-| 8 | skip-link | 🟡 | 1/1 | 1 |
+| 1 | [color-contrast](../a11y-rules.md#color-contrast) | 🟠 | 1/1 | 4 |
+| 2 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/1 | 2 |
+| 3 | [aria-required-parent](../a11y-rules.md#aria-required-parent) | 🔴 | 1/1 | 6 |
+| 4 | [aria-required-children](../a11y-rules.md#aria-required-children) | 🔴 | 1/1 | 1 |
+| 5 | [button-name](../a11y-rules.md#button-name) | 🟠 | 1/1 | 5 |
+| 6 | [image-alt](../a11y-rules.md#image-alt) | 🟠 | 1/1 | 4 |
+| 7 | [label](../a11y-rules.md#label) | 🟠 | 1/1 | 1 |
+| 8 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
 
 ---
 

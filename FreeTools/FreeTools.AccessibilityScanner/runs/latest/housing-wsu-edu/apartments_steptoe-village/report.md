@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://housing.wsu.edu/apartments/steptoe-village/  
-> **Captured:** 2026-02-18 18:36:24 UTC  
+> **Captured:** 2026-02-19 02:10:22 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -26,14 +26,19 @@
 | Title | Steptoe Village |
 | Status | ✅ 200 |
 | HTML Size | 124.4 KB |
-| Screenshots | 1 (250.3 KB) |
+| Screenshots | 1 (253.0 KB) |
 | Images | 16 (referenced by URL) |
 | Images Missing Alt | ⚠️ 1 |
 | JS Errors | 🔴 4 |
 | JS Warnings | 9 |
-| A11y Violations | ✅ 0 |
+| A11y Violations | ⚠️ 6 |
+| 🔴 Critical | 6 |
+| 🟠 Serious | 0 |
+| 🟡 Moderate | 0 |
+| 🔵 Minor | 0 |
+| Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:36:24.7945393Z |
+| Captured | 2026-02-19T02:10:22.6052375Z |
 
 ## 🔴 JavaScript Errors
 
@@ -54,10 +59,10 @@ Failed to load resource: net::ERR_FAILED
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (250.3 KB)
+- Screenshot #1: page-loaded (253.0 KB)
 - Cataloged 16 images by URL (no download)
-- axe-core: 0 violations (242ms)
-- htmlcheck: 0 violations (1ms)
+- axe-core: 6 violations (353ms)
+- htmlcheck: 0 violations (0ms)
 
 </details>
 
@@ -70,7 +75,7 @@ Failed to load resource: net::ERR_FAILED
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>250.3 KB</sub>
+<br /><sub>253.0 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -231,13 +236,35 @@ Failed to load resource: net::ERR_FAILED
 
 ## ♿ Accessibility
 
-✅ No violations detected by 2 tool(s).
+### Summary
+
+| Severity | axe | htmlcheck |
+|----------|:---:|:---:|
+| 🔴 critical | 6 | 0 |
+| 🟠 serious | 0 | 0 |
+| 🟡 moderate | 0 | 0 |
+| 🔵 minor | 0 | 0 |
+| **Total** | **6** | **0** |
+
+### Violations by Confidence
+
+<details open>
+<summary><strong>2 rule(s) violated</strong></summary>
+
+| # | Rule | Sev | Confidence | axe | htmlcheck | Example |
+|--:|------|:---:|:----------:|:---:|:---:|---------|
+| 1 | [aria-required-parent](../../a11y-rules.md#aria-required-parent) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<a class="foundationMenuLink" href="/prospective-students...` |
+| 2 | [aria-required-children](../../a11y-rules.md#aria-required-children) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<ul id="mainNav" class="dropdown menu" aria-label="Main N...` |
+
+</details>
+
+> **Note:** Automated scanning catches ~30-60% of WCAG issues. Manual keyboard and screen reader testing is still required for full compliance.
 
 ## 📁 Files
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (250.3 KB) |
+| `01-page-loaded.jpg` | page-loaded (253.0 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

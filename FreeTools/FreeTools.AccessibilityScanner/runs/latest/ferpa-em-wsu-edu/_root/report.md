@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://ferpa.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:42:15 UTC  
+> **Captured:** 2026-02-19 02:07:49 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -25,7 +25,7 @@
 | Title | FERPA - Rights and Privacy |
 | Status | ❌ 0 |
 | HTML Size | 645.8 KB |
-| Screenshots | 1 (316.6 KB) |
+| Screenshots | 1 (316.7 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
 | JS Errors | ✅ 0 |
@@ -37,16 +37,16 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:42:15.4466679Z |
+| Captured | 2026-02-19T02:07:49.0854957Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (316.6 KB)
+- Screenshot #1: page-loaded (316.7 KB)
 - No images found on page
-- axe-core: 1 violations (269ms)
+- axe-core: 1 violations (273ms)
 - htmlcheck: 0 violations (0ms)
 
 </details>
@@ -60,7 +60,7 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>316.6 KB</sub>
+<br /><sub>316.7 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -89,7 +89,7 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
 
 </details>
 
@@ -99,7 +99,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (316.6 KB) |
+| `01-page-loaded.jpg` | page-loaded (316.7 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

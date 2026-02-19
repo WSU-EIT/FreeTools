@@ -88,8 +88,8 @@ Click any thumbnail to view the full page report.
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | list | 🟠 | 1/1 | 1 |
-| 2 | skip-link | 🟡 | 1/1 | 1 |
+| 1 | [list](../a11y-rules.md#list) | 🟠 | 1/1 | 1 |
+| 2 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
 
 ---
 

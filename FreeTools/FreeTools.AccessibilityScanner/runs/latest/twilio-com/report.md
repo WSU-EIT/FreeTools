@@ -26,7 +26,7 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 | 🟡 Moderate | 5 |
 | 🔵 Minor | 0 |
 | Total HTML | 1.6 MB |
-| Total Screenshots | 667.1 KB |
+| Total Screenshots | 667.0 KB |
 
 ## 🔒 SSL Certificate
 
@@ -115,13 +115,13 @@ Failed to load resource: net::ERR_NAME_NOT_RESOLVED
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | button-name | 🔴 | 1/1 | 11 |
-| 2 | aria-valid-attr-value | 🔴 | 1/1 | 1 |
-| 3 | image-alt | 🟠 | 1/1 | 23 |
-| 4 | label | 🟠 | 1/1 | 2 |
-| 5 | heading-order | 🟡 | 1/1 | 3 |
-| 6 | skip-link | 🟡 | 1/1 | 1 |
-| 7 | td-has-header | 🟡 | 1/1 | 1 |
+| 1 | [button-name](../a11y-rules.md#button-name) | 🔴 | 1/1 | 11 |
+| 2 | [aria-valid-attr-value](../a11y-rules.md#aria-valid-attr-value) | 🔴 | 1/1 | 1 |
+| 3 | [image-alt](../a11y-rules.md#image-alt) | 🟠 | 1/1 | 23 |
+| 4 | [label](../a11y-rules.md#label) | 🟠 | 1/1 | 2 |
+| 5 | [heading-order](../a11y-rules.md#heading-order) | 🟡 | 1/1 | 3 |
+| 6 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
+| 7 | [td-has-header](../a11y-rules.md#td-has-header) | 🟡 | 1/1 | 1 |
 
 ---
 

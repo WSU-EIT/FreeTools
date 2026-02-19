@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://registrar.wsu.edu/academic-regulations/  
-> **Captured:** 2026-02-18 18:37:56 UTC  
+> **Captured:** 2026-02-19 02:08:09 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:37:56.1857613Z |
+| Captured | 2026-02-19T02:08:09.9530726Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (0 bytes)
 - No images found on page
-- axe-core: 11 violations (863ms)
+- axe-core: 11 violations (1110ms)
 - htmlcheck: 88 violations (1ms)
 
 </details>
@@ -89,12 +89,12 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | label | 🔴 | 🟢 2/2 | ⚠️ | ⚠️ | `<input type="text" name="ROARSearch" id="ROARSearch" valu...` |
-| 2 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 3 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a id="1"></a>` |
-| 4 | listitem | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<li>` |
-| 5 | list | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<ol>` |
-| 6 | td-has-header | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table class="MsoNormalTable" border="1" cellspacing="0" ...` |
+| 1 | [label](../../a11y-rules.md#label) | 🔴 | 🟢 2/2 | ⚠️ | ⚠️ | `<input type="text" name="ROARSearch" id="ROARSearch" valu...` |
+| 2 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 3 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a id="1"></a>` |
+| 4 | [listitem](../../a11y-rules.md#listitem) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<li>` |
+| 5 | [list](../../a11y-rules.md#list) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<ol>` |
+| 6 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table class="MsoNormalTable" border="1" cellspacing="0" ...` |
 
 </details>
 

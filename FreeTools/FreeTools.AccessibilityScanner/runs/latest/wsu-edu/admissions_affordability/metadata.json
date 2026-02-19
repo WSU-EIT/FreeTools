@@ -5,8 +5,8 @@
   "Title": "Affordability | Washington State University | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 114184,
-  "ScreenshotSizeBytes": 765346,
+  "HtmlSizeBytes": 114186,
+  "ScreenshotSizeBytes": 765229,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 3,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 765346
+      "FileSize": 765229
     }
   ],
   "ImageCount": 3,
@@ -39,11 +39,13 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
-    "TotalViolations": 12,
+    "ToolsSkipped": [
+      "wave"
+    ],
+    "TotalViolations": 13,
     "Critical": 0,
     "Serious": 11,
-    "Moderate": 1,
+    "Moderate": 2,
     "Minor": 0,
     "ByTool": {
       "axe": {
@@ -54,20 +56,22 @@
         "Minor": 0
       },
       "htmlcheck": {
-        "Total": 6,
+        "Total": 7,
         "Critical": 0,
         "Serious": 5,
-        "Moderate": 1,
+        "Moderate": 2,
         "Minor": 0
       }
     }
   },
   "ErrorMessage": null,
   "Headers": {
+    "cache-control": "max-age=427, must-revalidate",
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:35:08 GMT",
+    "date": "Thu, 19 Feb 2026 02:10:04 GMT",
+    "last-modified": "Thu, 19 Feb 2026 02:07:11 GMT",
     "link": "\u003Chttps://wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://wsu.edu/wp-json/wp/v2/pages/4442\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
     "server": "nginx",
     "transfer-encoding": "chunked",
@@ -76,5 +80,5 @@
     "x-frame-options": "DENY",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-18T18:35:08.1993684Z"
+  "CapturedAt": "2026-02-19T02:10:04.5342642Z"
 }

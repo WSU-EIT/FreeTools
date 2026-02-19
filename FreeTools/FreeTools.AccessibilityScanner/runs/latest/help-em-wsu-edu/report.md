@@ -88,10 +88,10 @@ Click any thumbnail to view the full page report.
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | image-alt | 🔴 | 1/1 | 2 |
-| 2 | link-name | 🟠 | 1/1 | 5 |
-| 3 | skip-link | 🟡 | 1/1 | 1 |
-| 4 | landmark-one-main | 🟡 | 1/1 | 1 |
+| 1 | [image-alt](../a11y-rules.md#image-alt) | 🔴 | 1/1 | 2 |
+| 2 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/1 | 5 |
+| 3 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
+| 4 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 1/1 | 1 |
 
 ---
 

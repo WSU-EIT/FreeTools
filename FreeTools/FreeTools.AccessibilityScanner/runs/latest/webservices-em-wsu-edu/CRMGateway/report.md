@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://webservices.em.wsu.edu/CRMGateway  
-> **Captured:** 2026-02-18 18:47:17 UTC  
+> **Captured:** 2026-02-19 02:14:00 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 1 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:47:17.4192940Z |
+| Captured | 2026-02-19T02:14:00.4924414Z |
 
 ## 🔧 Actions
 
@@ -47,7 +47,7 @@
 
 - Screenshot #1: page-loaded (95.1 KB)
 - No images found on page
-- axe-core: 1 violations (81ms)
+- axe-core: 1 violations (94ms)
 - htmlcheck: 9 violations (0ms)
 
 </details>
@@ -90,12 +90,12 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | html-has-lang | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<html>` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="form-control padbottom" id="login-username"...` |
-| 3 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button type="button" class="btn btn-xs btn-primary" data...` |
-| 4 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 5 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 6 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [html-has-lang](../../a11y-rules.md#html-has-lang) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<html>` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="form-control padbottom" id="login-username"...` |
+| 3 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button type="button" class="btn btn-xs btn-primary" data...` |
+| 4 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 5 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 6 | [landmark-nav](../../a11y-rules.md#landmark-nav) | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

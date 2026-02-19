@@ -5,8 +5,8 @@
   "Title": "Careers \u2013 Human Resource Services, Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 86358,
-  "ScreenshotSizeBytes": 273506,
+  "HtmlSizeBytes": 86378,
+  "ScreenshotSizeBytes": 253864,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
   "ConsoleWarningCount": 4,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 273506
+      "FileSize": 253864
     }
   ],
   "ImageCount": 2,
@@ -35,7 +35,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 5,
     "Critical": 0,
     "Serious": 4,
@@ -60,14 +62,14 @@
   },
   "ErrorMessage": null,
   "Headers": {
-    "cache-control": "max-age=246, must-revalidate",
+    "cache-control": "max-age=300, must-revalidate",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:36:23 GMT",
-    "last-modified": "Wed, 18 Feb 2026 18:35:29 GMT",
+    "date": "Thu, 19 Feb 2026 02:18:55 GMT",
+    "last-modified": "Thu, 19 Feb 2026 02:18:55 GMT",
     "link": "\u003Chttps://hrs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://hrs.wsu.edu/wp-json/wp/v2/pages/50556\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022, \u003Chttps://hrs.wsu.edu/?p=50556\u003E; rel=shortlink",
     "server": "nginx/1.14.1",
     "vary": "Cookie",
     "x-powered-by": "PHP/8.2.29"
   },
-  "CapturedAt": "2026-02-18T18:36:23.245513Z"
+  "CapturedAt": "2026-02-19T02:18:55.3943675Z"
 }

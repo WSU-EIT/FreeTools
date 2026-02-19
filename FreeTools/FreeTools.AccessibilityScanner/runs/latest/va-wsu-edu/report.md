@@ -1,6 +1,6 @@
 # 🌐 Site Report: https://va.wsu.edu/
 
-> **Status:** ⚠️ 0/1 pages OK  
+> **Status:** ⚠️ 0/17 pages OK  
 > **Folder:** `va-wsu-edu/`  
 
 ---
@@ -13,20 +13,20 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 
 | Metric | Value |
 |--------|-------|
-| Pages Scanned | 1 |
+| Pages Scanned | 17 |
 | Pages Passed | ✅ 0 |
-| Pages Failed | ❌ 1 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 1 |
-| Total Images | 14 (by URL) |
-| Images Missing Alt | ⚠️ 2 |
-| A11y Violations | ⚠️ 2 |
-| 🔴 Critical | 1 |
-| 🟠 Serious | 1 |
-| 🟡 Moderate | 0 |
+| Pages Failed | ❌ 17 |
+| Total JS Errors | 🔴 6 |
+| Total JS Warnings | 18 |
+| Total Images | 30 (by URL) |
+| Images Missing Alt | ⚠️ 4 |
+| A11y Violations | ⚠️ 31 |
+| 🔴 Critical | 17 |
+| 🟠 Serious | 11 |
+| 🟡 Moderate | 3 |
 | 🔵 Minor | 0 |
-| Total HTML | 653.2 KB |
-| Total Screenshots | 419.2 KB |
+| Total HTML | 10.8 MB |
+| Total Screenshots | 3.5 MB |
 
 ## 🔒 SSL Certificate
 
@@ -143,6 +143,22 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 | Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |
 |:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|
 | ❌ | [/](_root/report.md) | 0 | WSU Veterans & Military Affiliated St... | 1 | 1 |  |  | ⚠️ 2 |
+| ❌ | [/about/](about/report.md) | 0 | About \| WSU Veterans & Military Affi... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/announcements/](announcements/report.md) | 0 | Announcements \| WSU Veterans & Milit... | 1 |  | 1 |  | ⚠️ 2 |
+| ❌ | [/apply/](apply/report.md) | 0 | Apply for VA Educational Benefits \| ... | 1 |  | 1 |  | ⚠️ 2 |
+| ❌ | [/been-recalled/](been-recalled/report.md) | 0 | Been Recalled \| WSU Veterans & Milit... | 1 | 2 |  |  | ⚠️ 3 |
+| ❌ | [/contacts/](contacts/report.md) | 0 | Contacts \| WSU Veterans & Military A... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/links/](links/report.md) | 0 | Links \| WSU Veterans & Military Affi... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/military-affiliated-student-benefits/](military-affiliated-student-benefits/report.md) | 0 | Military Affiliated Student Benefits ... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/pullman](pullman/report.md) | 0 | Pullman Veterans & Military Affiliate... | 1 | 5 |  |  | ⚠️ 6 |
+| ❌ | [/pullman/announcements-current/](pullman_announcements-current/report.md) | 0 | Page Not Found \| Enrollment Management | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/residency/](residency/report.md) | 0 | Residency for Tuition Purposes \| WSU... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/resources/](resources/report.md) | 0 | Resources \| WSU Veterans & Military ... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/timeline/](timeline/report.md) | 0 | Timeline \| WSU Veterans & Military A... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/tuition-assistance/](tuition-assistance/report.md) | 0 | Federal Tuition Assistance \| WSU Vet... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/tuition-waivers/](tuition-waivers/report.md) | 0 | Tuition Waivers \| WSU Veterans & Mil... | 1 | 3 |  |  | ⚠️ 4 |
+| ❌ | [/va-benefits/](va-benefits/report.md) | 0 | VA Benefits \| WSU Veterans & Militar... | 1 |  | 1 |  | ⚠️ 2 |
+| ❌ | [/wsu-rotc/](wsu-rotc/report.md) | 0 | WSU ROTC \| WSU Veterans & Military A... | 1 |  |  |  | ⚠️ 1 |
 
 ## 📸 Page Screenshots
 
@@ -156,7 +172,112 @@ Click any thumbnail to view the full page report.
 </a>
 <br />❌ <code>/</code>
 </td>
-<td></td>
+<td align="center" width="33%">
+<a href="about/report.md">
+<img src="about/01-page-loaded.jpg" width="250" alt="/about/" />
+</a>
+<br />❌ <code>/about/</code>
+</td>
+<td align="center" width="33%">
+<a href="announcements/report.md">
+<img src="announcements/01-page-loaded.jpg" width="250" alt="/announcements/" />
+</a>
+<br />❌ <code>/announcements/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="apply/report.md">
+<img src="apply/01-page-loaded.jpg" width="250" alt="/apply/" />
+</a>
+<br />❌ <code>/apply/</code>
+</td>
+<td align="center" width="33%">
+<a href="been-recalled/report.md">
+<img src="been-recalled/01-page-loaded.jpg" width="250" alt="/been-recalled/" />
+</a>
+<br />❌ <code>/been-recalled/</code>
+</td>
+<td align="center" width="33%">
+<a href="contacts/report.md">
+<img src="contacts/01-page-loaded.jpg" width="250" alt="/contacts/" />
+</a>
+<br />❌ <code>/contacts/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="links/report.md">
+<img src="links/01-page-loaded.jpg" width="250" alt="/links/" />
+</a>
+<br />❌ <code>/links/</code>
+</td>
+<td align="center" width="33%">
+<a href="military-affiliated-student-benefits/report.md">
+<img src="military-affiliated-student-benefits/01-page-loaded.jpg" width="250" alt="/military-affiliated-student-benefits/" />
+</a>
+<br />❌ <code>/military-affiliated-student-benefits/</code>
+</td>
+<td align="center" width="33%">
+<a href="pullman/report.md">
+<img src="pullman/01-page-loaded.jpg" width="250" alt="/pullman" />
+</a>
+<br />❌ <code>/pullman</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="pullman_announcements-current/report.md">
+<img src="pullman_announcements-current/01-page-loaded.jpg" width="250" alt="/pullman/announcements-current/" />
+</a>
+<br />❌ <code>/pullman/announcements-current/</code>
+</td>
+<td align="center" width="33%">
+<a href="residency/report.md">
+<img src="residency/01-page-loaded.jpg" width="250" alt="/residency/" />
+</a>
+<br />❌ <code>/residency/</code>
+</td>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.jpg" width="250" alt="/resources/" />
+</a>
+<br />❌ <code>/resources/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="timeline/report.md">
+<img src="timeline/01-page-loaded.jpg" width="250" alt="/timeline/" />
+</a>
+<br />❌ <code>/timeline/</code>
+</td>
+<td align="center" width="33%">
+<a href="tuition-assistance/report.md">
+<img src="tuition-assistance/01-page-loaded.jpg" width="250" alt="/tuition-assistance/" />
+</a>
+<br />❌ <code>/tuition-assistance/</code>
+</td>
+<td align="center" width="33%">
+<a href="tuition-waivers/report.md">
+<img src="tuition-waivers/01-page-loaded.jpg" width="250" alt="/tuition-waivers/" />
+</a>
+<br />❌ <code>/tuition-waivers/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="va-benefits/report.md">
+<img src="va-benefits/01-page-loaded.jpg" width="250" alt="/va-benefits/" />
+</a>
+<br />❌ <code>/va-benefits/</code>
+</td>
+<td align="center" width="33%">
+<a href="wsu-rotc/report.md">
+<img src="wsu-rotc/01-page-loaded.jpg" width="250" alt="/wsu-rotc/" />
+</a>
+<br />❌ <code>/wsu-rotc/</code>
+</td>
 <td></td>
 </tr>
 </table>
@@ -164,11 +285,50 @@ Click any thumbnail to view the full page report.
 ## ❌ Failed Pages
 
 <details open>
-<summary><strong>1 page(s) failed</strong></summary>
+<summary><strong>17 page(s) failed</strong></summary>
 
 | Page | HTTP | Error |
 |------|:----:|-------|
 | [/](_root/report.md) | 0 | — |
+| [/about/](about/report.md) | 0 | — |
+| [/announcements/](announcements/report.md) | 0 | — |
+| [/apply/](apply/report.md) | 0 | — |
+| [/been-recalled/](been-recalled/report.md) | 0 | — |
+| [/contacts/](contacts/report.md) | 0 | — |
+| [/links/](links/report.md) | 0 | — |
+| [/military-affiliated-student-benefits/](military-affiliated-student-benefits/report.md) | 0 | — |
+| [/pullman](pullman/report.md) | 0 | — |
+| [/pullman/announcements-current/](pullman_announcements-current/report.md) | 0 | — |
+| [/residency/](residency/report.md) | 0 | — |
+| [/resources/](resources/report.md) | 0 | — |
+| [/timeline/](timeline/report.md) | 0 | — |
+| [/tuition-assistance/](tuition-assistance/report.md) | 0 | — |
+| [/tuition-waivers/](tuition-waivers/report.md) | 0 | — |
+| [/va-benefits/](va-benefits/report.md) | 0 | — |
+| [/wsu-rotc/](wsu-rotc/report.md) | 0 | — |
+
+</details>
+
+## 🔴 JavaScript Errors
+
+<details>
+<summary><strong>6 error(s) across 2 page(s)</strong></summary>
+
+**/pullman/announcements-current/** (5 errors)
+
+```
+Failed to load resource: the server responded with a status of 404 ()
+Access to XMLHttpRequest at 'https://api.oneorigin.us/p-cs/ref?required=y' from origin 'https://va.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the r...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'https://searchassets.oneorigin.us/p-ss/2.6.0/search-bundle.min.css' from origin 'https://va.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' head...
+Failed to load resource: net::ERR_FAILED
+```
+
+**/pullman** (1 errors)
+
+```
+Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+```
 
 </details>
 
@@ -176,19 +336,20 @@ Click any thumbnail to view the full page report.
 
 | Metric | Value |
 |--------|-------|
-| Pages with violations | 1/1 |
-| Total violations | 2 |
-| 🔴 Critical | 1 |
-| 🟠 Serious | 1 |
-| 🟡 Moderate | 0 |
+| Pages with violations | 17/17 |
+| Total violations | 31 |
+| 🔴 Critical | 17 |
+| 🟠 Serious | 11 |
+| 🟡 Moderate | 3 |
 | 🔵 Minor | 0 |
 
-### Top 2 Issues
+### Top 3 Issues
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | aria-allowed-attr | 🔴 | 1/1 | 1 |
-| 2 | link-name | 🟠 | 1/1 | 1 |
+| 1 | [aria-allowed-attr](../a11y-rules.md#aria-allowed-attr) | 🔴 | 17/17 | 17 |
+| 2 | [link-name](../a11y-rules.md#link-name) | 🟠 | 4/17 | 11 |
+| 3 | [heading-order](../a11y-rules.md#heading-order) | 🟡 | 3/17 | 3 |
 
 ---
 

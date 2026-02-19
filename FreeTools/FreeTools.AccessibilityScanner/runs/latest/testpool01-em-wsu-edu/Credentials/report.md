@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://testpool01.em.wsu.edu/Credentials  
-> **Captured:** 2026-02-18 18:47:55 UTC  
+> **Captured:** 2026-02-19 02:12:22 UTC  
 > **Status:** ❌ 500  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 1 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:47:55.9572534Z |
+| Captured | 2026-02-19T02:12:22.5315952Z |
 
 ## 🔴 JavaScript Errors
 
@@ -101,10 +101,10 @@ Failed to load resource: the server responded with a status of 500 ()
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | html-has-lang | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<html xmlns="http://www.w3.org/1999/xhtml">` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [html-has-lang](../../a11y-rules.md#html-has-lang) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<html xmlns="http://www.w3.org/1999/xhtml">` |
+| 2 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [landmark-nav](../../a11y-rules.md#landmark-nav) | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

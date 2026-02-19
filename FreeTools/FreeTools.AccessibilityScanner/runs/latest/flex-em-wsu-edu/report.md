@@ -17,7 +17,7 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 | Pages Passed | ✅ 0 |
 | Pages Failed | ❌ 1 |
 | Total JS Errors | 0 |
-| Total JS Warnings | 3 |
+| Total JS Warnings | 2 |
 | Total Images | 0 (by URL) |
 | Images Missing Alt | ✅ 0 |
 | A11y Violations | ⚠️ 8 |
@@ -99,10 +99,10 @@ Click any thumbnail to view the full page report.
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | link-name | 🟠 | 1/1 | 5 |
-| 2 | skip-link | 🟡 | 1/1 | 1 |
-| 3 | landmark-one-main | 🟡 | 1/1 | 1 |
-| 4 | td-has-header | 🟡 | 1/1 | 1 |
+| 1 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/1 | 5 |
+| 2 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
+| 3 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 1/1 | 1 |
+| 4 | [td-has-header](../a11y-rules.md#td-has-header) | 🟡 | 1/1 | 1 |
 
 ---
 

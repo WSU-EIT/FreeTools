@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://wsu.edu/about/leadership/  
-> **Captured:** 2026-02-18 18:33:10 UTC  
+> **Captured:** 2026-02-19 02:08:25 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:33:10.8785328Z |
+| Captured | 2026-02-19T02:08:25.1217781Z |
 
 ## 🔴 JavaScript Errors
 
@@ -58,7 +58,7 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 
 - Screenshot #1: page-loaded (450.3 KB)
 - Cataloged 15 images by URL (no download)
-- axe-core: 0 violations (216ms)
+- axe-core: 0 violations (316ms)
 - htmlcheck: 5 violations (0ms)
 
 </details>
@@ -251,9 +251,9 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
-| 3 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
+| 3 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
 
 </details>
 

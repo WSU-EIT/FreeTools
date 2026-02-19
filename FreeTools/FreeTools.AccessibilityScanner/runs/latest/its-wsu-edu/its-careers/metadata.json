@@ -5,7 +5,7 @@
   "Title": "ITS Careers | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 240554,
+  "HtmlSizeBytes": 240662,
   "ScreenshotSizeBytes": 598783,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -43,7 +43,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 7,
     "Critical": 0,
     "Serious": 7,
@@ -70,12 +72,15 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:35:50 GMT",
-    "etag": "\u00220d5f5c0eb8616721ab3d1c140ac70172\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:24:27 GMT",
+    "date": "Thu, 19 Feb 2026 02:19:08 GMT",
+    "etag": "\u00229a1f6030d098a0d8307a0cf7ed5553b2\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:19:08 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/177\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=177\u003E; rel=shortlink",
     "server": "nginx",
-    "vary": "Accept-Encoding"
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://its.wsu.edu",
+    "x-tec-api-root": "https://its.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
   },
-  "CapturedAt": "2026-02-18T18:35:50.3973794Z"
+  "CapturedAt": "2026-02-19T02:19:08.6281498Z"
 }

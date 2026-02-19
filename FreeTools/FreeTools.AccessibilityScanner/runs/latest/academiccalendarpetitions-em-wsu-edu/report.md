@@ -1,6 +1,6 @@
 # 🌐 Site Report: https://academiccalendarpetitions.em.wsu.edu/
 
-> **Status:** ✅ 1/1 pages OK  
+> **Status:** ✅ 3/3 pages OK  
 > **Folder:** `academiccalendarpetitions-em-wsu-edu/`  
 
 ---
@@ -13,26 +13,50 @@ Success Rate:  [█████████████████████�
 
 | Metric | Value |
 |--------|-------|
-| Pages Scanned | 1 |
-| Pages Passed | ✅ 1 |
+| Pages Scanned | 3 |
+| Pages Passed | ✅ 3 |
 | Pages Failed | 0 |
 | Total JS Errors | 0 |
 | Total JS Warnings | 0 |
 | Total Images | 0 (by URL) |
 | Images Missing Alt | ✅ 0 |
-| A11y Violations | ⚠️ 2 |
+| A11y Violations | ⚠️ 6 |
 | 🔴 Critical | 0 |
 | 🟠 Serious | 0 |
-| 🟡 Moderate | 1 |
-| 🔵 Minor | 1 |
-| Total HTML | 3.3 KB |
-| Total Screenshots | 21.3 KB |
+| 🟡 Moderate | 3 |
+| 🔵 Minor | 3 |
+| Total HTML | 10.0 KB |
+| Total Screenshots | 64.0 KB |
+
+## 🔒 SSL Certificate
+
+| Field | Value |
+|-------|-------|
+| Subject | `CN=academiccalendarpetitions.em.wsu.edu, O=Washington State University, S=Washington, C=US` |
+| Issuer | `CN=InCommon RSA Server CA 2, O=Internet2, C=US` |
+| Valid From | 2026-01-11 |
+| Expires | 🟢 2027-01-12 (327 days) |
+| Algorithm | sha256RSA |
+| Key Size | 2048 bits |
+| Thumbprint | `113BBF34BBDD469C5226DDD11C63546A53415DD7` |
+| SANs | 1 domain(s) |
+
+<details>
+<summary><strong>Subject Alternative Names (1)</strong></summary>
+
+| Domain | Type |
+|--------|------|
+| `academiccalendarpetitions.em.wsu.edu` | 🏫 WSU |
+
+</details>
 
 ## 📑 Pages
 
 | Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |
 |:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|
 | ✅ | [/](_root/report.md) | 200 | Home Page - Calendar Petition Data Ma... |  |  | 1 | 1 | ⚠️ 2 |
+| ✅ | [/Home/DataManager](Home_DataManager/report.md) | 200 | Home Page - Calendar Petition Data Ma... |  |  | 1 | 1 | ⚠️ 2 |
+| ✅ | [/Home/RecordList](Home_RecordList/report.md) | 200 | Home Page - Calendar Petition Data Ma... |  |  | 1 | 1 | ⚠️ 2 |
 
 ## 📸 Page Screenshots
 
@@ -46,8 +70,18 @@ Click any thumbnail to view the full page report.
 </a>
 <br />✅ <code>/</code>
 </td>
-<td></td>
-<td></td>
+<td align="center" width="33%">
+<a href="Home_DataManager/report.md">
+<img src="Home_DataManager/01-page-loaded.jpg" width="250" alt="/Home/DataManager" />
+</a>
+<br />✅ <code>/Home/DataManager</code>
+</td>
+<td align="center" width="33%">
+<a href="Home_RecordList/report.md">
+<img src="Home_RecordList/01-page-loaded.jpg" width="250" alt="/Home/RecordList" />
+</a>
+<br />✅ <code>/Home/RecordList</code>
+</td>
 </tr>
 </table>
 
@@ -55,19 +89,19 @@ Click any thumbnail to view the full page report.
 
 | Metric | Value |
 |--------|-------|
-| Pages with violations | 1/1 |
-| Total violations | 2 |
+| Pages with violations | 3/3 |
+| Total violations | 6 |
 | 🔴 Critical | 0 |
 | 🟠 Serious | 0 |
-| 🟡 Moderate | 1 |
-| 🔵 Minor | 1 |
+| 🟡 Moderate | 3 |
+| 🔵 Minor | 3 |
 
 ### Top 2 Issues
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | skip-link | 🟡 | 1/1 | 1 |
-| 2 | landmark-nav | 🔵 | 1/1 | 1 |
+| 1 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 3/3 | 3 |
+| 2 | [landmark-nav](../a11y-rules.md#landmark-nav) | 🔵 | 3/3 | 3 |
 
 ---
 

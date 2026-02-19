@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://wsu.edu/about/services/  
-> **Captured:** 2026-02-18 18:33:32 UTC  
+> **Captured:** 2026-02-19 02:08:51 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -26,8 +26,8 @@
 | Redirected To | https://wsu.edu/ |
 | Title | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 210.5 KB |
-| Screenshots | 1 (915.5 KB) |
+| HTML Size | 210.9 KB |
+| Screenshots | 1 (908.8 KB) |
 | Images | 38 (referenced by URL) |
 | Images Missing Alt | ⚠️ 13 |
 | JS Errors | 🔴 5 |
@@ -39,7 +39,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:33:32.8134812Z |
+| Captured | 2026-02-19T02:08:51.3271746Z |
 
 ## 🔴 JavaScript Errors
 
@@ -61,9 +61,9 @@ Failed to load resource: net::ERR_FAILED
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (915.5 KB)
+- Screenshot #1: page-loaded (908.8 KB)
 - Cataloged 38 images by URL (no download)
-- axe-core: 0 violations (228ms)
+- axe-core: 0 violations (363ms)
 - htmlcheck: 8 violations (1ms)
 
 </details>
@@ -77,7 +77,7 @@ Failed to load resource: net::ERR_FAILED
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>915.5 KB</sub>
+<br /><sub>908.8 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -104,30 +104,30 @@ Failed to load resource: net::ERR_FAILED
 | 12 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/FluShotFriday_4888-1.jpg | ⚠️ *(missing)* |
 | 13 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-5-792x535.jpg | ⚠️ *(missing)* |
 | 14 | https://s3.wp.wsu.edu/uploads/sites/625/2022/07/Mask-group-6.jpg | ⚠️ *(missing)* |
-| 15 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38535... | Image posted by wsuspokane to instagram |
-| 16 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38535... | Profile image for wsuspokane |
-| 17 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Image posted by wsupullman to instagram |
-| 18 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Profile image for wsupullman |
-| 19 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Image posted by wsuglobal to instagram |
-| 20 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Profile image for wsuglobal |
-| 21 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38535... | Image posted by wsupullman to instagram |
-| 22 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38535... | Profile image for wsupullman |
-| 23 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38527... | Image posted by wsupullman to instagram |
-| 24 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38527... | Profile image for wsupullman |
-| 25 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Image posted by wsu to instagram |
-| 26 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Profile image for wsu |
-| 27 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Image posted by wsu to instagram |
-| 28 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Profile image for wsu |
-| 29 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38528... | Image posted by wsuglobal to instagram |
-| 30 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38528... | Profile image for wsuglobal |
+| 15 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38536... | Image posted by wsuglobal to instagram |
+| 16 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38536... | Profile image for wsuglobal |
+| 17 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38528... | Image posted by wsuglobal to instagram |
+| 18 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38528... | Profile image for wsuglobal |
+| 19 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Image posted by wsu to instagram |
+| 20 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Profile image for wsu |
+| 21 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38535... | Image posted by wsuspokane to instagram |
+| 22 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38535... | Profile image for wsuspokane |
+| 23 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Image posted by wsuglobal to instagram |
+| 24 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Profile image for wsuglobal |
+| 25 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Image posted by wsuglobal to instagram |
+| 26 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Profile image for wsuglobal |
+| 27 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38535... | Image posted by wsupullman to instagram |
+| 28 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38535... | Profile image for wsupullman |
+| 29 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38527... | Image posted by wsupullman to instagram |
+| 30 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38527... | Profile image for wsupullman |
 | 31 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Image posted by wsupullman to instagram |
 | 32 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38524... | Profile image for wsupullman |
-| 33 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Image posted by wsuglobal to instagram |
-| 34 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Profile image for wsuglobal |
-| 35 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38526... | Image posted by wsuglobal to instagram |
-| 36 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38526... | Profile image for wsuglobal |
-| 37 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38521... | Image posted by wsupullman to instagram |
-| 38 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38521... | Profile image for wsupullman |
+| 33 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Image posted by wsu to instagram |
+| 34 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Profile image for wsu |
+| 35 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Image posted by wsupullman to instagram |
+| 36 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38532... | Profile image for wsupullman |
+| 37 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38526... | Image posted by wsuglobal to instagram |
+| 38 | https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/38526... | Profile image for wsuglobal |
 
 </details>
 
@@ -229,6 +229,46 @@ Failed to load resource: net::ERR_FAILED
 <br /><sub>https://s3.wp.wsu.edu/uploads/sites/625/2022/07... ⚠️</sub>
 </td>
 <td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385361759.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385361759.jpg" width="200" alt="Image posted by wsuglobal to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385361759_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385361759_user_image.jpg" width="200" alt="Profile image for wsuglobal" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385282960.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385282960.jpg" width="200" alt="Image posted by wsuglobal to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385282960_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385282960_user_image.jpg" width="200" alt="Profile image for wsuglobal" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385241110.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385241110.jpg" width="200" alt="Image posted by wsu to instagram" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385241110_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385241110_user_image.jpg" width="200" alt="Profile image for wsu" />
+</a>
+<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
+</td>
+<td align="center" width="33%">
 <a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385356147.jpg">
 <img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385356147.jpg" width="200" alt="Image posted by wsuspokane to instagram" />
 </a>
@@ -243,14 +283,14 @@ Failed to load resource: net::ERR_FAILED
 <br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385320226.jpg">
-<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385320226.jpg" width="200" alt="Image posted by wsupullman to instagram" />
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385322145.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385322145.jpg" width="200" alt="Image posted by wsuglobal to instagram" />
 </a>
 <br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385320226_user_image.jpg">
-<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385320226_user_image.jpg" width="200" alt="Profile image for wsupullman" />
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385322145_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385322145_user_image.jpg" width="200" alt="Profile image for wsuglobal" />
 </a>
 <br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
 </td>
@@ -297,14 +337,14 @@ Failed to load resource: net::ERR_FAILED
 </tr>
 <tr>
 <td align="center" width="33%">
-<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385241110.jpg">
-<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385241110.jpg" width="200" alt="Image posted by wsu to instagram" />
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385244080.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385244080.jpg" width="200" alt="Image posted by wsupullman to instagram" />
 </a>
 <br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385241110_user_image.jpg">
-<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385241110_user_image.jpg" width="200" alt="Profile image for wsu" />
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385244080_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385244080_user_image.jpg" width="200" alt="Profile image for wsupullman" />
 </a>
 <br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
 </td>
@@ -323,45 +363,19 @@ Failed to load resource: net::ERR_FAILED
 <br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385282960.jpg">
-<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385282960.jpg" width="200" alt="Image posted by wsuglobal to instagram" />
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385320226.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385320226.jpg" width="200" alt="Image posted by wsupullman to instagram" />
 </a>
 <br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385282960_user_image.jpg">
-<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385282960_user_image.jpg" width="200" alt="Profile image for wsuglobal" />
+<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385320226_user_image.jpg">
+<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385320226_user_image.jpg" width="200" alt="Profile image for wsupullman" />
 </a>
 <br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
 </td>
 </tr>
 <tr>
-<td align="center" width="33%">
-<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385244080.jpg">
-<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385244080.jpg" width="200" alt="Image posted by wsupullman to instagram" />
-</a>
-<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
-</td>
-<td align="center" width="33%">
-<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385244080_user_image.jpg">
-<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385244080_user_image.jpg" width="200" alt="Profile image for wsupullman" />
-</a>
-<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
-</td>
-<td align="center" width="33%">
-<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385322145.jpg">
-<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385322145.jpg" width="200" alt="Image posted by wsuglobal to instagram" />
-</a>
-<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385322145_user_image.jpg">
-<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385322145_user_image.jpg" width="200" alt="Profile image for wsuglobal" />
-</a>
-<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
-</td>
 <td align="center" width="33%">
 <a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385262532.jpg">
 <img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385262532.jpg" width="200" alt="Image posted by wsuglobal to instagram" />
@@ -371,20 +385,6 @@ Failed to load resource: net::ERR_FAILED
 <td align="center" width="33%">
 <a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385262532_user_image.jpg">
 <img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385262532_user_image.jpg" width="200" alt="Profile image for wsuglobal" />
-</a>
-<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385211494.jpg">
-<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385211494.jpg" width="200" alt="Image posted by wsupullman to instagram" />
-</a>
-<br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
-</td>
-<td align="center" width="33%">
-<a href="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385211494_user_image.jpg">
-<img src="https://curatorio.s3.amazonaws.com/655259a3-1b3e-4d24-9fcf-940885db13b3/385211494_user_image.jpg" width="200" alt="Profile image for wsupullman" />
 </a>
 <br /><sub>https://curatorio.s3.amazonaws.com/655259a3-1b3...</sub>
 </td>
@@ -434,10 +434,10 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a class="wsu-card__link" href="https://news.wsu.edu/news...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
-| 4 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a class="wsu-card__link" href="https://news.wsu.edu/news...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
+| 4 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
 
 </details>
 
@@ -447,7 +447,7 @@ Failed to load resource: net::ERR_FAILED
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (915.5 KB) |
+| `01-page-loaded.jpg` | page-loaded (908.8 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

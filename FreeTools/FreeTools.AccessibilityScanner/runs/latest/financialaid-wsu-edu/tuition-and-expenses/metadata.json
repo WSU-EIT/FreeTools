@@ -5,8 +5,8 @@
   "Title": "Tuition \u0026 Expenses | Student Financial Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 274699,
-  "ScreenshotSizeBytes": 829904,
+  "HtmlSizeBytes": 274947,
+  "ScreenshotSizeBytes": 823009,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 1,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 829904
+      "FileSize": 823009
     }
   ],
   "ImageCount": 7,
@@ -55,7 +55,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 6,
     "Critical": 0,
     "Serious": 5,
@@ -82,14 +84,14 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:34:28 GMT",
-    "etag": "\u0022d17de3ebe8e0696309f0ae8580b4e553\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:30:07 GMT",
+    "date": "Thu, 19 Feb 2026 02:14:10 GMT",
+    "etag": "\u0022bc377ccd90e531259d223c9c7a451b25\u0022",
+    "last-modified": "Thu, 19 Feb 2026 01:54:45 GMT",
     "link": "\u003Chttps://financialaid.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://financialaid.wsu.edu/wp-json/wp/v2/pages/142\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://financialaid.wsu.edu/?p=142\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding",
     "x-cache": "HIT",
     "x-cache-status": "HIT"
   },
-  "CapturedAt": "2026-02-18T18:34:28.5700654Z"
+  "CapturedAt": "2026-02-19T02:14:10.2206517Z"
 }

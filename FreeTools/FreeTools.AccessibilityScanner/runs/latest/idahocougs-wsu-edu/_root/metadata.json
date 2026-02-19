@@ -17,5 +17,5 @@
   "Accessibility": null,
   "ErrorMessage": "net::ERR_NAME_NOT_RESOLVED at https://idahocougs.wsu.edu/\nCall log:\n  - navigating to \u0022https://idahocougs.wsu.edu/\u0022, waiting until \u0022networkidle\u0022",
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:43:42.9080724Z"
+  "CapturedAt": "2026-02-19T02:08:20.9624983Z"
 }

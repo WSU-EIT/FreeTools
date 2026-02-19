@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://bursar.wsu.edu/billing/  
-> **Captured:** 2026-02-18 18:38:51 UTC  
+> **Captured:** 2026-02-19 02:07:55 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://bursar.wsu.edu/billing/ |
 | Title | Billing | Bursar | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 77.5 KB |
+| HTML Size | 77.6 KB |
 | Screenshots | 1 (143.3 KB) |
 | Images | 1 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:38:51.9076079Z |
+| Captured | 2026-02-19T02:07:55.8884582Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (143.3 KB)
 - Cataloged 1 images by URL (no download)
-- axe-core: 0 violations (239ms)
+- axe-core: 0 violations (268ms)
 - htmlcheck: 4 violations (0ms)
 
 </details>
@@ -114,8 +114,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://bursar.wsu.edu?s=" class="wsu-button-ui-...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://bursar.wsu.edu?s=" class="wsu-button-ui-...` |
 
 </details>
 

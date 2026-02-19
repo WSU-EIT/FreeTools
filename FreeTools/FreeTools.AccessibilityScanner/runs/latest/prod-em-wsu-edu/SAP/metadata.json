@@ -5,7 +5,7 @@
   "Title": "SAP",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 7654167,
+  "HtmlSizeBytes": 7657983,
   "ScreenshotSizeBytes": 17591,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 5,
     "Critical": 0,
     "Serious": 4,
@@ -52,9 +54,9 @@
   "ErrorMessage": null,
   "Headers": {
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:45:25 GMT",
+    "date": "Thu, 19 Feb 2026 02:10:07 GMT",
     "server": "Microsoft-IIS/10.0",
     "x-powered-by": "ASP.NET"
   },
-  "CapturedAt": "2026-02-18T18:45:24.9490847Z"
+  "CapturedAt": "2026-02-19T02:10:06.0345316Z"
 }

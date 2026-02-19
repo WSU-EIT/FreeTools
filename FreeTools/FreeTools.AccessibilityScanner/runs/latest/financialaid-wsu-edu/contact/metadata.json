@@ -5,7 +5,7 @@
   "Title": "Contact Page | Student Financial Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 248460,
+  "HtmlSizeBytes": 248624,
   "ScreenshotSizeBytes": 698144,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -55,7 +55,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 6,
     "Critical": 0,
     "Serious": 6,
@@ -82,14 +84,14 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:33:07 GMT",
-    "etag": "\u00229c3d677b9de31f71b654c383c66290f8\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:29:46 GMT",
+    "date": "Thu, 19 Feb 2026 02:09:01 GMT",
+    "etag": "\u0022a3985a1f67fcf7dbd578841924009572\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:09:01 GMT",
     "link": "\u003Chttps://financialaid.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://financialaid.wsu.edu/wp-json/wp/v2/pages/285\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://financialaid.wsu.edu/?p=285\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding",
-    "x-cache": "HIT",
-    "x-cache-status": "HIT"
+    "x-cache": "EXPIRED",
+    "x-cache-status": "EXPIRED"
   },
-  "CapturedAt": "2026-02-18T18:33:07.4280692Z"
+  "CapturedAt": "2026-02-19T02:09:01.1083816Z"
 }

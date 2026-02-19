@@ -1,6 +1,6 @@
 # 🌐 Site Report: https://umbracodev.em.wsu.edu/
 
-> **Status:** ⚠️ 0/1 pages OK  
+> **Status:** ⚠️ 0/3 pages OK  
 > **Folder:** `umbracodev-em-wsu-edu/`  
 
 ---
@@ -13,20 +13,20 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 
 | Metric | Value |
 |--------|-------|
-| Pages Scanned | 1 |
+| Pages Scanned | 3 |
 | Pages Passed | ✅ 0 |
-| Pages Failed | ❌ 1 |
+| Pages Failed | ❌ 3 |
 | Total JS Errors | 0 |
-| Total JS Warnings | 1 |
+| Total JS Warnings | 3 |
 | Total Images | 0 (by URL) |
 | Images Missing Alt | ✅ 0 |
-| A11y Violations | ⚠️ 2 |
-| 🔴 Critical | 1 |
-| 🟠 Serious | 1 |
-| 🟡 Moderate | 0 |
-| 🔵 Minor | 0 |
-| Total HTML | 634.5 KB |
-| Total Screenshots | 54.0 KB |
+| A11y Violations | ⚠️ 8 |
+| 🔴 Critical | 2 |
+| 🟠 Serious | 3 |
+| 🟡 Moderate | 2 |
+| 🔵 Minor | 1 |
+| Total HTML | 1.3 MB |
+| Total Screenshots | 211.0 KB |
 
 ## 🔒 SSL Certificate
 
@@ -55,6 +55,8 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 | Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |
 |:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|
 | ❌ | [/](_root/report.md) | 0 | Enrollment Management | 1 | 1 |  |  | ⚠️ 2 |
+| ❌ | [/search/](search/report.md) | 0 | Search \| Enrollment Management | 1 | 2 |  |  | ⚠️ 3 |
+| ❌ | [/umbraco](umbraco/report.md) | 0 | Umbraco |  |  | 2 | 1 | ⚠️ 3 |
 
 ## 📸 Page Screenshots
 
@@ -68,19 +70,31 @@ Click any thumbnail to view the full page report.
 </a>
 <br />❌ <code>/</code>
 </td>
-<td></td>
-<td></td>
+<td align="center" width="33%">
+<a href="search/report.md">
+<img src="search/01-page-loaded.jpg" width="250" alt="/search/" />
+</a>
+<br />❌ <code>/search/</code>
+</td>
+<td align="center" width="33%">
+<a href="umbraco/report.md">
+<img src="umbraco/01-page-loaded.jpg" width="250" alt="/umbraco" />
+</a>
+<br />❌ <code>/umbraco</code>
+</td>
 </tr>
 </table>
 
 ## ❌ Failed Pages
 
 <details open>
-<summary><strong>1 page(s) failed</strong></summary>
+<summary><strong>3 page(s) failed</strong></summary>
 
 | Page | HTTP | Error |
 |------|:----:|-------|
 | [/](_root/report.md) | 0 | — |
+| [/search/](search/report.md) | 0 | — |
+| [/umbraco](umbraco/report.md) | 0 | — |
 
 </details>
 
@@ -88,19 +102,23 @@ Click any thumbnail to view the full page report.
 
 | Metric | Value |
 |--------|-------|
-| Pages with violations | 1/1 |
-| Total violations | 2 |
-| 🔴 Critical | 1 |
-| 🟠 Serious | 1 |
-| 🟡 Moderate | 0 |
-| 🔵 Minor | 0 |
+| Pages with violations | 3/3 |
+| Total violations | 8 |
+| 🔴 Critical | 2 |
+| 🟠 Serious | 3 |
+| 🟡 Moderate | 2 |
+| 🔵 Minor | 1 |
 
-### Top 2 Issues
+### Top 6 Issues
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | aria-allowed-attr | 🔴 | 1/1 | 1 |
-| 2 | link-name | 🟠 | 1/1 | 1 |
+| 1 | [aria-allowed-attr](../a11y-rules.md#aria-allowed-attr) | 🔴 | 2/3 | 2 |
+| 2 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/3 | 1 |
+| 3 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 1/3 | 1 |
+| 4 | [landmark-nav](../a11y-rules.md#landmark-nav) | 🔵 | 1/3 | 1 |
+| 5 | [link-name](../a11y-rules.md#link-name) | 🟠 | 2/3 | 2 |
+| 6 | [label](../a11y-rules.md#label) | 🟠 | 1/3 | 1 |
 
 ---
 

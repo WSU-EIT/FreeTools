@@ -5,8 +5,8 @@
   "Title": "Financial Aid Awards Processing | Student Financial Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 234389,
-  "ScreenshotSizeBytes": 410318,
+  "HtmlSizeBytes": 234503,
+  "ScreenshotSizeBytes": 378447,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 410318
+      "FileSize": 378447
     }
   ],
   "ImageCount": 5,
@@ -47,7 +47,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 5,
     "Critical": 0,
     "Serious": 5,
@@ -74,14 +76,14 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:33:31 GMT",
-    "etag": "\u0022821510707f35cc96aaf81320f4ae0864\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:22:08 GMT",
+    "date": "Thu, 19 Feb 2026 02:10:12 GMT",
+    "etag": "\u0022a631417da9c71b70db0030fed671f456\u0022",
+    "last-modified": "Thu, 19 Feb 2026 01:43:19 GMT",
     "link": "\u003Chttps://financialaid.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://financialaid.wsu.edu/wp-json/wp/v2/pages/180\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://financialaid.wsu.edu/?p=180\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding",
-    "x-cache": "HIT",
-    "x-cache-status": "HIT"
+    "x-cache": "EXPIRED",
+    "x-cache-status": "EXPIRED"
   },
-  "CapturedAt": "2026-02-18T18:33:31.3417561Z"
+  "CapturedAt": "2026-02-19T02:10:12.1778206Z"
 }

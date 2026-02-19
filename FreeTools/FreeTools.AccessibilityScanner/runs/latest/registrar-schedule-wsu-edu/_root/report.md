@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://registrar.schedule.wsu.edu/  
-> **Captured:** 2026-02-18 18:44:23 UTC  
+> **Captured:** 2026-02-19 02:09:01 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://registrar.schedule.wsu.edu/ |
 | Title | Academic Room Scheduling |
 | Status | ❌ 0 |
-| HTML Size | 673.0 KB |
+| HTML Size | 674.7 KB |
 | Screenshots | 1 (174.8 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:44:23.5795967Z |
+| Captured | 2026-02-19T02:09:01.0316811Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (174.8 KB)
 - No images found on page
-- axe-core: 1 violations (331ms)
+- axe-core: 1 violations (512ms)
 - htmlcheck: 1 violations (0ms)
 
 </details>
@@ -89,8 +89,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a id="pro"></a>` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a id="pro"></a>` |
 
 </details>
 

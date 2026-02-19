@@ -3,7 +3,9 @@
     "axe",
     "htmlcheck"
   ],
-  "ToolsSkipped": [],
+  "ToolsSkipped": [
+    "wave"
+  ],
   "TotalViolations": 6,
   "Critical": 6,
   "Serious": 0,
@@ -56,7 +58,7 @@
       "Message": "Certain ARIA roles must contain particular children",
       "HelpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-children?application=axeAPI",
       "WcagCriteria": null,
-      "ExampleSnippet": "\u003Cul id=\u0022mainNav\u0022 class=\u0022dropdown menu\u0022 aria-label=\u0022Main Navigation\u0022 data-dropdown-menu=\u0022whnrh1-dropdown-menu\u0022 role=\u0022menubar\u0022\u003E"
+      "ExampleSnippet": "\u003Cul id=\u0022mainNav\u0022 class=\u0022dropdown menu\u0022 aria-label=\u0022Main Navigation\u0022 data-dropdown-menu=\u0022v0tnp1-dropdown-menu\u0022 role=\u0022menubar\u0022\u003E"
     }
   ]
 }

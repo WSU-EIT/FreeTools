@@ -5,7 +5,7 @@
   "Title": "Direct Deposit | Bursar | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 70392,
+  "HtmlSizeBytes": 70466,
   "ScreenshotSizeBytes": 212797,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -47,7 +47,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 4,
     "Critical": 0,
     "Serious": 4,
@@ -74,12 +76,15 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:40:59 GMT",
-    "etag": "\u0022ca88b635d9cb99583f6ddedc0176ee1c\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:10:29 GMT",
+    "date": "Thu, 19 Feb 2026 02:12:54 GMT",
+    "etag": "\u002260639d045f2aad82b7ab3fc20b9faa24\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:12:54 GMT",
     "link": "\u003Chttps://bursar.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://bursar.wsu.edu/wp-json/wp/v2/pages/2151\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://bursar.wsu.edu/?p=2151\u003E; rel=shortlink",
     "server": "nginx",
-    "vary": "Accept-Encoding"
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://bursar.wsu.edu",
+    "x-tec-api-root": "https://bursar.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
   },
-  "CapturedAt": "2026-02-18T18:40:59.6585961Z"
+  "CapturedAt": "2026-02-19T02:12:54.3102672Z"
 }

@@ -3,11 +3,13 @@
     "axe",
     "htmlcheck"
   ],
-  "ToolsSkipped": [],
-  "TotalViolations": 12,
+  "ToolsSkipped": [
+    "wave"
+  ],
+  "TotalViolations": 13,
   "Critical": 0,
   "Serious": 11,
-  "Moderate": 1,
+  "Moderate": 2,
   "Minor": 0,
   "ByTool": {
     "axe": {
@@ -18,10 +20,10 @@
       "Minor": 0
     },
     "htmlcheck": {
-      "Total": 6,
+      "Total": 7,
       "Critical": 0,
       "Serious": 5,
-      "Moderate": 1,
+      "Moderate": 2,
       "Minor": 0
     }
   },
@@ -92,6 +94,22 @@
     },
     {
       "Rank": 5,
+      "CanonicalRuleId": "skip-link",
+      "Severity": "moderate",
+      "Consensus": "1/2",
+      "ConfidenceScore": 0.5,
+      "Confidence": "medium",
+      "ToolsFound": [
+        "htmlcheck"
+      ],
+      "TotalInstances": 1,
+      "Message": "No skip-to-content link found near top of page",
+      "HelpUrl": null,
+      "WcagCriteria": "2.4.1",
+      "ExampleSnippet": null
+    },
+    {
+      "Rank": 6,
       "CanonicalRuleId": "td-has-header",
       "Severity": "moderate",
       "Consensus": "1/2",

@@ -114,10 +114,10 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | link-name | 🟠 | 1/1 | 2 |
-| 2 | button-name | 🟠 | 1/1 | 2 |
-| 3 | skip-link | 🟡 | 1/1 | 1 |
-| 4 | landmark-one-main | 🟡 | 1/1 | 1 |
+| 1 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/1 | 2 |
+| 2 | [button-name](../a11y-rules.md#button-name) | 🟠 | 1/1 | 2 |
+| 3 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
+| 4 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 1/1 | 1 |
 
 ---
 

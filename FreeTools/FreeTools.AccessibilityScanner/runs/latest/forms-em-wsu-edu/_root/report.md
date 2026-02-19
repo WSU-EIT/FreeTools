@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://forms.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:42:59 UTC  
+> **Captured:** 2026-02-19 02:08:01 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:42:59.3414853Z |
+| Captured | 2026-02-19T02:08:01.5321226Z |
 
 ## 🔧 Actions
 
@@ -47,7 +47,7 @@
 
 - Screenshot #1: page-loaded (17.7 KB)
 - No images found on page
-- axe-core: 2 violations (159ms)
+- axe-core: 2 violations (264ms)
 - htmlcheck: 28 violations (0ms)
 
 </details>
@@ -90,10 +90,10 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="text" class="form-control" id="local-usernam...` |
-| 3 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button type="button" id="cboxPrevious"></button>` |
-| 4 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="text" class="form-control" id="local-usernam...` |
+| 3 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button type="button" id="cboxPrevious"></button>` |
+| 4 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

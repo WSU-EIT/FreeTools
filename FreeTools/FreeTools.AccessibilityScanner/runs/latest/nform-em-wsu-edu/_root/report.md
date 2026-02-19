@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://nform.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:43:59 UTC  
+> **Captured:** 2026-02-19 02:08:35 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -11,7 +11,6 @@
 - [Summary](#-summary)
 - [Screenshots](#-screenshots)
 - [Page Images](#-page-images)
-- [JavaScript Errors](#-javascript-errors)
 - [Accessibility](#-accessibility)
 - [Actions](#-actions)
 - [Files](#-files)
@@ -23,63 +22,32 @@
 | Field | Value |
 |-------|-------|
 | URL | https://nform.em.wsu.edu/ |
-| Title |  |
+| Title | nForm |
 | Status | ✅ 200 |
-| HTML Size | 201.8 KB |
-| Screenshots | 1 (6.0 KB) |
-| Images | 0 (referenced by URL) |
-| Images Missing Alt | ✅ 0 |
-| JS Errors | 🔴 28 |
-| JS Warnings | 0 |
-| A11y Violations | ⚠️ 4 |
-| 🔴 Critical | 0 |
-| 🟠 Serious | 1 |
+| HTML Size | 206.9 KB |
+| Screenshots | 1 (18.7 KB) |
+| Images | 1 (referenced by URL) |
+| Images Missing Alt | ⚠️ 1 |
+| JS Errors | ✅ 0 |
+| JS Warnings | 5 |
+| A11y Violations | ⚠️ 6 |
+| 🔴 Critical | 1 |
+| 🟠 Serious | 3 |
 | 🟡 Moderate | 2 |
-| 🔵 Minor | 1 |
+| 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:43:59.4718860Z |
-
-## 🔴 JavaScript Errors
-
-<details>
-<summary><strong>28 error(s) detected</strong></summary>
-
-```
-Fetch API cannot load https://nform.em.wsu.edu/_framework/dotnet.native.d2w7colv7e.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-MONO_WASM: instantiate_wasm_module() failed Error: download 'https://nform.em.wsu.edu/_framework/dotnet.native.d2w7colv7e.wasm' for dotnet.native.d2w7colv7e.wasm failed 0 TypeError: Failed to fetch
-Error in mono_download_assets: Error: download 'https://nform.em.wsu.edu/_framework/dotnet.native.d2w7colv7e.wasm' for dotnet.native.d2w7colv7e.wasm failed 0 TypeError: Failed to fetch
-Error in mono_download_assets: Error: download 'https://nform.em.wsu.edu/_framework/dotnet.native.d2w7colv7e.wasm' for dotnet.native.d2w7colv7e.wasm failed 0 TypeError: Failed to fetch
-Fetch API cannot load https://nform.em.wsu.edu/_framework/System.Private.CoreLib.tn7ijpxcub.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Error in mono_download_assets: Error: download 'https://nform.em.wsu.edu/_framework/System.Private.CoreLib.tn7ijpxcub.wasm' for System.Private.CoreLib.tn7ijpxcub.wasm failed 0 TypeError: Failed to fet...
-Fetch API cannot load https://nform.em.wsu.edu/_framework/AngleSharp.kuoqn6mq72.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://nform.em.wsu.edu/_framework/Basic.Reference.Assemblies.Net90.ax3achsd86.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://nform.em.wsu.edu/_framework/Microsoft.CodeAnalysis.CSharp.spyk6zagzf.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://nform.em.wsu.edu/_framework/Microsoft.VisualBasic.Core.996jw09otz.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://nform.em.wsu.edu/_framework/MudBlazor.845kbj1w9a.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://nform.em.wsu.edu/_framework/PuppeteerSharp.se4d76nnaf.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-... and 8 more (see errors.log)
-```
-
-</details>
+| Captured | 2026-02-19T02:08:35.1033411Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (6.0 KB)
-- No images found on page
-- axe-core: 1 violations (137ms)
-- htmlcheck: 3 violations (0ms)
+- Screenshot #1: page-loaded (18.7 KB)
+- Cataloged 1 images by URL (no download)
+- axe-core: 2 violations (166ms)
+- htmlcheck: 4 violations (0ms)
 
 </details>
 
@@ -92,15 +60,49 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>6.0 KB</sub>
+<br /><sub>18.7 KB</sub>
 </td>
 <td></td>
 </tr>
 </table>
 
-## 🖼️ Page Images (0)
+## 🖼️ Page Images (1)
 
-*No images found on page.*
+<details open>
+<summary><strong>📋 Image Index</strong> — 1 images (referenced by URL)</summary>
+
+| # | Source URL | Alt Text |
+|--:|-----------|----------|
+| 1 | https://nform.em.wsu.edu/images/okta_256.png | ⚠️ *(missing)* |
+
+</details>
+
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="https://nform.em.wsu.edu/images/okta_256.png">
+<img src="https://nform.em.wsu.edu/images/okta_256.png" width="200" alt="https://nform.em.wsu.edu/images/okta_256.png" />
+</a>
+<br /><sub>https://nform.em.wsu.edu/images/okta_256.png ⚠️</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary>⚠️ <strong>Images Missing Alt Text</strong> (1)</summary>
+
+| # | Source URL |
+|--:|-----------|
+| 1 | https://nform.em.wsu.edu/images/okta_256.png |
+
+</details>
 
 ## ♿ Accessibility
 
@@ -108,11 +110,11 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 
 | Severity | axe | htmlcheck |
 |----------|:---:|:---:|
-| 🔴 critical | 0 | 0 |
-| 🟠 serious | 1 | 0 |
+| 🔴 critical | 1 | 0 |
+| 🟠 serious | 1 | 2 |
 | 🟡 moderate | 0 | 2 |
-| 🔵 minor | 0 | 1 |
-| **Total** | **1** | **3** |
+| 🔵 minor | 0 | 0 |
+| **Total** | **2** | **4** |
 
 ### Violations by Confidence
 
@@ -121,10 +123,10 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | document-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" style="--blazor-load-percentage: 94.80519...` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🔴 | 🟢 2/2 | ⚠️ | ⚠️ | `<img src="./images/okta_256.png">` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
+| 3 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 
@@ -134,7 +136,7 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (6.0 KB) |
+| `01-page-loaded.jpg` | page-loaded (18.7 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

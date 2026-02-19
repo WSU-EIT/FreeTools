@@ -5,7 +5,7 @@
   "Title": "Meet Our Staff | Enrollment IT",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 662336,
+  "HtmlSizeBytes": 662340,
   "ScreenshotSizeBytes": 188864,
   "CredentialUsed": null,
   "ConsoleErrorCount": 4,
@@ -71,7 +71,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 2,
     "Critical": 1,
     "Serious": 0,
@@ -96,5 +98,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:35:24.8941057Z"
+  "CapturedAt": "2026-02-19T02:11:27.4807929Z"
 }

@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://spring-orientation.wsu.edu/  
-> **Captured:** 2026-02-18 18:44:21 UTC  
+> **Captured:** 2026-02-19 02:07:54 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,7 +25,7 @@
 | Redirected To | https://orientation.wsu.edu/ |
 | Title | New Coug Orientation | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 71.3 KB |
+| HTML Size | 71.4 KB |
 | Screenshots | 1 (493.5 KB) |
 | Images | 5 (referenced by URL) |
 | Images Missing Alt | ⚠️ 1 |
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:44:21.4452009Z |
+| Captured | 2026-02-19T02:07:54.2721957Z |
 
 ## 🔧 Actions
 
@@ -47,7 +47,7 @@
 
 - Screenshot #1: page-loaded (493.5 KB)
 - Cataloged 5 images by URL (no download)
-- axe-core: 1 violations (247ms)
+- axe-core: 1 violations (249ms)
 - htmlcheck: 4 violations (0ms)
 
 </details>
@@ -153,9 +153,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | color-contrast | 🟠 | 🟢 1/1 | ⚠️ | — | `<strong>Coug</strong>` |
-| 2 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 3 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://orientation.wsu.edu?s=" class="wsu-butto...` |
+| 1 | [color-contrast](../../a11y-rules.md#color-contrast) | 🟠 | 🟢 1/1 | ⚠️ | — | `<strong>Coug</strong>` |
+| 2 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 3 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://orientation.wsu.edu?s=" class="wsu-butto...` |
 
 </details>
 

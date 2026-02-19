@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://prod.em.wsu.edu/Touchpoints  
-> **Captured:** 2026-02-18 18:45:32 UTC  
+> **Captured:** 2026-02-19 02:10:25 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,11 +25,11 @@
 | URL | https://prod.em.wsu.edu/Touchpoints |
 | Title |  |
 | Status | ✅ 200 |
-| HTML Size | 150.2 KB |
+| HTML Size | 149.6 KB |
 | Screenshots | 1 (6.0 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
-| JS Errors | 🔴 84 |
+| JS Errors | 🔴 81 |
 | JS Warnings | 0 |
 | A11y Violations | ⚠️ 4 |
 | 🔴 Critical | 0 |
@@ -38,12 +38,12 @@
 | 🔵 Minor | 1 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:45:32.6955606Z |
+| Captured | 2026-02-19T02:10:25.6102501Z |
 
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>84 error(s) detected</strong></summary>
+<summary><strong>81 error(s) detected</strong></summary>
 
 ```
 Failed to load resource: net::ERR_CONNECTION_RESET
@@ -52,6 +52,7 @@ MONO_WASM: Failed to fetch
 TypeError: Failed to fetch
 Error in mono_download_assets: TypeError: Failed to fetch
 Failed to load resource: net::ERR_CONNECTION_RESET
+Error in mono_download_assets: TypeError: Failed to fetch
 Failed to load resource: net::ERR_CONNECTION_RESET
 Failed to load resource: net::ERR_CONNECTION_RESET
 Failed to load resource: net::ERR_CONNECTION_RESET
@@ -66,8 +67,7 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 Failed to load resource: net::ERR_CONNECTION_RESET
 Failed to load resource: net::ERR_CONNECTION_RESET
 Failed to load resource: net::ERR_CONNECTION_RESET
-Failed to load resource: net::ERR_CONNECTION_RESET
-... and 64 more (see errors.log)
+... and 61 more (see errors.log)
 ```
 
 </details>
@@ -79,7 +79,7 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 
 - Screenshot #1: page-loaded (6.0 KB)
 - No images found on page
-- axe-core: 1 violations (131ms)
+- axe-core: 1 violations (247ms)
 - htmlcheck: 3 violations (0ms)
 
 </details>
@@ -122,10 +122,10 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | document-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" style="--blazor-load-percentage: 100%; --...` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [document-title](../../a11y-rules.md#document-title) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" style="--blazor-load-percentage: 100%; --...` |
+| 2 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [landmark-nav](../../a11y-rules.md#landmark-nav) | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

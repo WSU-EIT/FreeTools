@@ -5,7 +5,7 @@
   "Title": "Campus Link | Registration \u0026 Enrollment 411",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 666591,
+  "HtmlSizeBytes": 666587,
   "ScreenshotSizeBytes": 44347,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 2,
     "Critical": 1,
     "Serious": 0,
@@ -51,5 +53,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:38:57.4242919Z"
+  "CapturedAt": "2026-02-19T02:15:00.4534903Z"
 }

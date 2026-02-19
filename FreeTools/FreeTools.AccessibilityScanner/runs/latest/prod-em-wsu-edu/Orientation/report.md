@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://prod.em.wsu.edu/Orientation  
-> **Captured:** 2026-02-18 18:45:11 UTC  
+> **Captured:** 2026-02-19 02:09:52 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:45:11.2193294Z |
+| Captured | 2026-02-19T02:09:52.9873342Z |
 
 ## 🔧 Actions
 
@@ -47,7 +47,7 @@
 
 - Screenshot #1: page-loaded (19.2 KB)
 - No images found on page
-- axe-core: 3 violations (90ms)
+- axe-core: 3 violations (122ms)
 - htmlcheck: 6 violations (0ms)
 
 </details>
@@ -90,11 +90,11 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | color-contrast | 🟠 | 🟢 1/1 | ⚠️ | — | `<span class="icon-text" data-bind="html:Language('AppTitl...` |
-| 2 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button type="button" id="cboxPrevious"></button>` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="text" class="form-control" id="local-usernam...` |
-| 4 | list | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<ul class="navbar-nav me-auto">` |
-| 5 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [color-contrast](../../a11y-rules.md#color-contrast) | 🟠 | 🟢 1/1 | ⚠️ | — | `<span class="icon-text" data-bind="html:Language('AppTitl...` |
+| 2 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button type="button" id="cboxPrevious"></button>` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="text" class="form-control" id="local-usernam...` |
+| 4 | [list](../../a11y-rules.md#list) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<ul class="navbar-nav me-auto">` |
+| 5 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

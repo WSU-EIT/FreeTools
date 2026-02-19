@@ -5,7 +5,7 @@
   "Title": "Enrollment Information Technology (EIT) | Enrollment IT",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 649993,
+  "HtmlSizeBytes": 649997,
   "ScreenshotSizeBytes": 195223,
   "CredentialUsed": null,
   "ConsoleErrorCount": 4,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 1,
     "Critical": 1,
     "Serious": 0,
@@ -51,5 +53,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:33:38.8010427Z"
+  "CapturedAt": "2026-02-19T02:08:29.9352859Z"
 }

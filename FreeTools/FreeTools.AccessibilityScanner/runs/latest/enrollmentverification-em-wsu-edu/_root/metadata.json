@@ -5,7 +5,7 @@
   "Title": "Enrollment Verification",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 659412,
+  "HtmlSizeBytes": 659416,
   "ScreenshotSizeBytes": 232384,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 3,
     "Critical": 1,
     "Serious": 2,
@@ -51,5 +53,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:41:49.2132548Z"
+  "CapturedAt": "2026-02-19T02:07:47.7848101Z"
 }

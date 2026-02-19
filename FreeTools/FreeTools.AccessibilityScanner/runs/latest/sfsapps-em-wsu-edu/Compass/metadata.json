@@ -5,7 +5,7 @@
   "Title": "Login | Student Financial Aid | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 48000,
+  "HtmlSizeBytes": 48018,
   "ScreenshotSizeBytes": 191611,
   "CredentialUsed": null,
   "ConsoleErrorCount": 17,
@@ -31,7 +31,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 6,
     "Critical": 1,
     "Serious": 5,
@@ -59,7 +61,7 @@
     "cache-control": "no-cache, no-store, must-revalidate",
     "content-length": "38680",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:45:43 GMT",
+    "date": "Thu, 19 Feb 2026 02:10:31 GMT",
     "expires": "-1",
     "pragma": "no-cache",
     "server": "Microsoft-IIS/10.0",
@@ -68,5 +70,5 @@
     "x-powered-by": "ASP.NET",
     "x-ua-compatible": "IE=edge,chrome=1"
   },
-  "CapturedAt": "2026-02-18T18:45:36.4208092Z"
+  "CapturedAt": "2026-02-19T02:10:27.6224036Z"
 }

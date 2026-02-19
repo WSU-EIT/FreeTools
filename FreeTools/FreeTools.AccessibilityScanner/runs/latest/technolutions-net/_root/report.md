@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://technolutions.net/  
-> **Captured:** 2026-02-18 18:47:46 UTC  
+> **Captured:** 2026-02-19 02:12:06 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -26,7 +26,7 @@
 | Redirected To | https://technolutions.com/ |
 | Title | Technolutions |
 | Status | ✅ 200 |
-| HTML Size | 268.0 KB |
+| HTML Size | 267.2 KB |
 | Screenshots | 1 (413.1 KB) |
 | Images | 5 (referenced by URL) |
 | Images Missing Alt | ⚠️ 2 |
@@ -39,7 +39,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:47:46.7908857Z |
+| Captured | 2026-02-19T02:12:06.7564619Z |
 
 ## 🔴 JavaScript Errors
 
@@ -52,7 +52,7 @@ Failed to load resource: the server responded with a status of 403 ()
 Failed to load resource: the server responded with a status of 403 ()
 Failed to load resource: the server responded with a status of 403 ()
 Failed to load resource: the server responded with a status of 403 ()
-Access to XMLHttpRequest at 'https://static1.squarespace.com/static/versioned-site-css/641f3e24b36a211ec50bf362/65/5c5a519771c10ba3470d8101/641f3e24b36a211ec50bf37c/1740/site.css' from origin 'https:/...
+Access to XMLHttpRequest at 'https://static1.squarespace.com/static/versioned-site-css/641f3e24b36a211ec50bf362/65/5c5a519771c10ba3470d8101/641f3e24b36a211ec50bf37c/1741/site.css' from origin 'https:/...
 Failed to load resource: net::ERR_FAILED
 ```
 
@@ -65,7 +65,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (413.1 KB)
 - Cataloged 5 images by URL (no download)
-- axe-core: 7 violations (253ms)
+- axe-core: 7 violations (263ms)
 - htmlcheck: 3 violations (1ms)
 
 </details>
@@ -172,9 +172,9 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="/slatest-news/from-public-scrutiny-to-purposeful...` |
-| 2 | page-has-heading-one | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="/slatest-news/from-public-scrutiny-to-purposeful...` |
+| 2 | [page-has-heading-one](../../a11y-rules.md#page-has-heading-one) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

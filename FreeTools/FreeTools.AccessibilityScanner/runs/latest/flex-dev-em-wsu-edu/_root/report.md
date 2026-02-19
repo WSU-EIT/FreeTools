@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://flex-dev.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:42:51 UTC  
+> **Captured:** 2026-02-19 02:07:54 UTC  
 > **Status:** ❌ 500  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 1 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:42:51.0254457Z |
+| Captured | 2026-02-19T02:07:54.1092141Z |
 
 ## 🔴 JavaScript Errors
 
@@ -58,7 +58,7 @@ Failed to load resource: the server responded with a status of 500 ()
 
 - Screenshot #1: page-loaded (6.0 KB)
 - No images found on page
-- axe-core: 2 violations (59ms)
+- axe-core: 2 violations (74ms)
 - htmlcheck: 4 violations (0ms)
 
 </details>
@@ -101,11 +101,11 @@ Failed to load resource: the server responded with a status of 500 ()
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | html-has-lang | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<html><head></head><body></body></html>` |
-| 2 | document-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html><head></head><body></body></html>` |
-| 3 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 5 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [html-has-lang](../../a11y-rules.md#html-has-lang) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<html><head></head><body></body></html>` |
+| 2 | [document-title](../../a11y-rules.md#document-title) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html><head></head><body></body></html>` |
+| 3 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 5 | [landmark-nav](../../a11y-rules.md#landmark-nav) | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

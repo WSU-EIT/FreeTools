@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://its.wsu.edu/how-can-we-help-contact-its/  
-> **Captured:** 2026-02-18 18:35:12 UTC  
+> **Captured:** 2026-02-19 02:18:29 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://its.wsu.edu/how-can-we-help-contact-its/ |
 | Title | How Can We Help? | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 231.6 KB |
+| HTML Size | 231.7 KB |
 | Screenshots | 1 (152.1 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:35:12.8121947Z |
+| Captured | 2026-02-19T02:18:29.6538351Z |
 
 ## 🔧 Actions
 
@@ -46,8 +46,8 @@
 
 - Screenshot #1: page-loaded (152.1 KB)
 - No images found on page
-- axe-core: 1 violations (257ms)
-- htmlcheck: 6 violations (0ms)
+- axe-core: 1 violations (274ms)
+- htmlcheck: 6 violations (1ms)
 
 </details>
 
@@ -89,9 +89,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="" class="wsu-header-utility-bar__cta"></a>` |
-| 2 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="" class="wsu-header-utility-bar__cta"></a>` |
+| 2 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
 
 </details>
 

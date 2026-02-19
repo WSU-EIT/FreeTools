@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://catalog.wsu.edu/  
-> **Captured:** 2026-02-18 18:40:14 UTC  
+> **Captured:** 2026-02-19 02:07:18 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -11,7 +11,6 @@
 - [Summary](#-summary)
 - [Screenshots](#-screenshots)
 - [Page Images](#-page-images)
-- [JavaScript Errors](#-javascript-errors)
 - [Accessibility](#-accessibility)
 - [Actions](#-actions)
 - [Files](#-files)
@@ -25,61 +24,30 @@
 | URL | https://catalog.wsu.edu/ |
 | Title |  |
 | Status | ✅ 200 |
-| HTML Size | 160.7 KB |
-| Screenshots | 1 (6.0 KB) |
+| HTML Size | 171.8 KB |
+| Screenshots | 1 (127.6 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
-| JS Errors | 🔴 196 |
+| JS Errors | ✅ 0 |
 | JS Warnings | 0 |
-| A11y Violations | ⚠️ 4 |
+| A11y Violations | ⚠️ 5 |
 | 🔴 Critical | 0 |
-| 🟠 Serious | 1 |
-| 🟡 Moderate | 2 |
-| 🔵 Minor | 1 |
+| 🟠 Serious | 2 |
+| 🟡 Moderate | 3 |
+| 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:40:14.4291186Z |
-
-## 🔴 JavaScript Errors
-
-<details>
-<summary><strong>196 error(s) detected</strong></summary>
-
-```
-Fetch API cannot load https://catalog.wsu.edu/_framework/MySql.Data.p9rvesrvl7.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Error in mono_download_assets: Error: download 'https://catalog.wsu.edu/_framework/MySql.Data.p9rvesrvl7.wasm' for MySql.Data.p9rvesrvl7.wasm failed 0 TypeError: Failed to fetch
-Error in mono_download_assets: Error: download 'https://catalog.wsu.edu/_framework/MySql.Data.p9rvesrvl7.wasm' for MySql.Data.p9rvesrvl7.wasm failed 0 TypeError: Failed to fetch
-Fetch API cannot load https://catalog.wsu.edu/_framework/BouncyCastle.Cryptography.lawgjmc8sm.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://catalog.wsu.edu/_framework/Microsoft.CodeAnalysis.CSharp.p31rc0goqn.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://catalog.wsu.edu/_framework/MudBlazor.ej126ppkzs.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://catalog.wsu.edu/_framework/Radzen.Blazor.0dc2g5xz7q.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://catalog.wsu.edu/_framework/MySql.EntityFrameworkCore.wk59jf30ap.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://catalog.wsu.edu/_framework/SQLitePCLRaw.batteries_v2.3v5whd3evz.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://catalog.wsu.edu/_framework/SQLitePCLRaw.core.1iu403apcu.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://catalog.wsu.edu/_framework/SQLitePCLRaw.provider.e_sqlite3.uxqvbkxd4r.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-... and 176 more (see errors.log)
-```
-
-</details>
+| Captured | 2026-02-19T02:07:18.4864105Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (6.0 KB)
+- Screenshot #1: page-loaded (127.6 KB)
 - No images found on page
-- axe-core: 1 violations (153ms)
-- htmlcheck: 3 violations (0ms)
+- axe-core: 1 violations (363ms)
+- htmlcheck: 4 violations (0ms)
 
 </details>
 
@@ -92,7 +60,7 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>6.0 KB</sub>
+<br /><sub>127.6 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -109,22 +77,23 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 | Severity | axe | htmlcheck |
 |----------|:---:|:---:|
 | 🔴 critical | 0 | 0 |
-| 🟠 serious | 1 | 0 |
-| 🟡 moderate | 0 | 2 |
-| 🔵 minor | 0 | 1 |
-| **Total** | **1** | **3** |
+| 🟠 serious | 1 | 1 |
+| 🟡 moderate | 0 | 3 |
+| 🔵 minor | 0 | 0 |
+| **Total** | **1** | **4** |
 
 ### Violations by Confidence
 
 <details open>
-<summary><strong>4 rule(s) violated</strong></summary>
+<summary><strong>5 rule(s) violated</strong></summary>
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | document-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" class="wsu-has-js wsu-reduce-motion" styl...` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [document-title](../../a11y-rules.md#document-title) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" class="wsu-has-js wsu-reduce-motion" styl...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a class="wsu-button-ui-search" href="https://search.wsu....` |
+| 3 | [page-has-heading-one](../../a11y-rules.md#page-has-heading-one) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 5 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table><tbody><tr valign="bottom"><td><a href="http://www...` |
 
 </details>
 
@@ -134,7 +103,7 @@ Failed to load resource: net::ERR_CONNECTION_RESET
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (6.0 KB) |
+| `01-page-loaded.jpg` | page-loaded (127.6 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

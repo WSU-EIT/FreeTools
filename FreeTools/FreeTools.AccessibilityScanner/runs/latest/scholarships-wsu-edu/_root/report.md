@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://scholarships.wsu.edu/  
-> **Captured:** 2026-02-18 18:45:06 UTC  
+> **Captured:** 2026-02-19 02:09:41 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,7 +25,7 @@
 | Redirected To | https://financialaid.wsu.edu/scholarships/ |
 | Title | Scholarships | Student Financial Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 261.1 KB |
+| HTML Size | 261.2 KB |
 | Screenshots | 1 (510.0 KB) |
 | Images | 4 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:45:06.8836535Z |
+| Captured | 2026-02-19T02:09:41.5401104Z |
 
 ## 🔧 Actions
 
@@ -47,8 +47,8 @@
 
 - Screenshot #1: page-loaded (510.0 KB)
 - Cataloged 4 images by URL (no download)
-- axe-core: 3 violations (592ms)
-- htmlcheck: 6 violations (0ms)
+- axe-core: 3 violations (606ms)
+- htmlcheck: 6 violations (1ms)
 
 </details>
 
@@ -138,9 +138,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | select-name | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<select id="wsuwp-scholarship-grade-level" class="wsu-sch...` |
-| 2 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 1 | [select-name](../../a11y-rules.md#select-name) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<select id="wsuwp-scholarship-grade-level" class="wsu-sch...` |
+| 2 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
 
 </details>
 

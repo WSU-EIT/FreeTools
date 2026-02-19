@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://its.wsu.edu/news/newsletters/  
-> **Captured:** 2026-02-18 18:36:20 UTC  
+> **Captured:** 2026-02-19 02:20:27 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://its.wsu.edu/news/newsletters/ |
 | Title | Newsletters | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 230.5 KB |
+| HTML Size | 230.6 KB |
 | Screenshots | 1 (133.8 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:36:20.6098228Z |
+| Captured | 2026-02-19T02:20:27.6226185Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (133.8 KB)
 - No images found on page
-- axe-core: 1 violations (247ms)
+- axe-core: 1 violations (250ms)
 - htmlcheck: 12 violations (1ms)
 
 </details>
@@ -89,9 +89,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="" class="wsu-header-utility-bar__cta"></a>` |
-| 2 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="" class="wsu-header-utility-bar__cta"></a>` |
+| 2 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
 
 </details>
 

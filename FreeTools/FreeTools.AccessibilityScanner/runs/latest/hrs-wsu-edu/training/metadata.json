@@ -5,7 +5,7 @@
   "Title": "Learning \u0026 Organizational Development \u2013 Human Resource Services, Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 92047,
+  "HtmlSizeBytes": 92230,
   "ScreenshotSizeBytes": 402635,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
@@ -55,7 +55,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 9,
     "Critical": 0,
     "Serious": 9,
@@ -81,11 +83,11 @@
   "ErrorMessage": null,
   "Headers": {
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:34:40 GMT",
+    "date": "Thu, 19 Feb 2026 02:30:17 GMT",
     "link": "\u003Chttps://hrs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://hrs.wsu.edu/wp-json/wp/v2/pages/1522\u003E; rel=\u0022alternate\u0022; title=\u0022JSON\u0022; type=\u0022application/json\u0022, \u003Chttps://hrs.wsu.edu/?p=1522\u003E; rel=shortlink",
     "server": "nginx/1.14.1",
     "vary": "Cookie",
     "x-powered-by": "PHP/8.2.29"
   },
-  "CapturedAt": "2026-02-18T18:34:40.0783362Z"
+  "CapturedAt": "2026-02-19T02:30:17.1501825Z"
 }

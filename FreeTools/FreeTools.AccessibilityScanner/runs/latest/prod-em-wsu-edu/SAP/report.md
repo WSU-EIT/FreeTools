@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://prod.em.wsu.edu/SAP  
-> **Captured:** 2026-02-18 18:45:24 UTC  
+> **Captured:** 2026-02-19 02:10:06 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:45:24.9490847Z |
+| Captured | 2026-02-19T02:10:06.0345316Z |
 
 ## 🔧 Actions
 
@@ -46,8 +46,8 @@
 
 - Screenshot #1: page-loaded (17.2 KB)
 - No images found on page
-- axe-core: 2 violations (138ms)
-- htmlcheck: 3 violations (3ms)
+- axe-core: 2 violations (147ms)
+- htmlcheck: 3 violations (4ms)
 
 </details>
 
@@ -89,10 +89,10 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | color-contrast | 🟠 | 🟢 1/1 | ⚠️ | — | `<span class="icon-text" data-bind="html:Language('AppTitl...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="text" class="form-control" id="local-usernam...` |
-| 3 | list | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<ul class="navbar-nav me-auto">` |
-| 4 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [color-contrast](../../a11y-rules.md#color-contrast) | 🟠 | 🟢 1/1 | ⚠️ | — | `<span class="icon-text" data-bind="html:Language('AppTitl...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="text" class="form-control" id="local-usernam...` |
+| 3 | [list](../../a11y-rules.md#list) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<ul class="navbar-nav me-auto">` |
+| 4 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

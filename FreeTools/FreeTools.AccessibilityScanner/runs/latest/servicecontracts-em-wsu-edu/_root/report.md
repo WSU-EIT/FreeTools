@@ -1,8 +1,8 @@
 # 📄 Page Scan Report
 
 > **URL:** https://servicecontracts.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:45:14 UTC  
-> **Status:** ✅ 200  
+> **Captured:** 2026-02-19 02:09:50 UTC  
+> **Status:** ❌ 0  
 
 ---
 
@@ -11,7 +11,6 @@
 - [Summary](#-summary)
 - [Screenshots](#-screenshots)
 - [Page Images](#-page-images)
-- [JavaScript Errors](#-javascript-errors)
 - [Accessibility](#-accessibility)
 - [Actions](#-actions)
 - [Files](#-files)
@@ -23,63 +22,33 @@
 | Field | Value |
 |-------|-------|
 | URL | https://servicecontracts.em.wsu.edu/ |
-| Title |  |
-| Status | ✅ 200 |
-| HTML Size | 190.7 KB |
-| Screenshots | 1 (6.0 KB) |
-| Images | 0 (referenced by URL) |
-| Images Missing Alt | ✅ 0 |
-| JS Errors | 🔴 26 |
-| JS Warnings | 0 |
-| A11y Violations | ⚠️ 4 |
-| 🔴 Critical | 0 |
-| 🟠 Serious | 1 |
+| Redirected To | https://servicecontracts.em.wsu.edu/Login |
+| Title | ServiceContracts |
+| Status | ❌ 0 |
+| HTML Size | 195.9 KB |
+| Screenshots | 1 (20.1 KB) |
+| Images | 1 (referenced by URL) |
+| Images Missing Alt | ⚠️ 1 |
+| JS Errors | ✅ 0 |
+| JS Warnings | 2 |
+| A11y Violations | ⚠️ 8 |
+| 🔴 Critical | 1 |
+| 🟠 Serious | 5 |
 | 🟡 Moderate | 2 |
-| 🔵 Minor | 1 |
+| 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:45:14.5763283Z |
-
-## 🔴 JavaScript Errors
-
-<details>
-<summary><strong>26 error(s) detected</strong></summary>
-
-```
-Fetch API cannot load https://servicecontracts.em.wsu.edu/_framework/dotnet.native.pk43x8e436.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-MONO_WASM: instantiate_wasm_module() failed Error: download 'https://servicecontracts.em.wsu.edu/_framework/dotnet.native.pk43x8e436.wasm' for dotnet.native.pk43x8e436.wasm failed 0 TypeError: Failed ...
-Error in mono_download_assets: Error: download 'https://servicecontracts.em.wsu.edu/_framework/dotnet.native.pk43x8e436.wasm' for dotnet.native.pk43x8e436.wasm failed 0 TypeError: Failed to fetch
-Error in mono_download_assets: Error: download 'https://servicecontracts.em.wsu.edu/_framework/dotnet.native.pk43x8e436.wasm' for dotnet.native.pk43x8e436.wasm failed 0 TypeError: Failed to fetch
-Fetch API cannot load https://servicecontracts.em.wsu.edu/_framework/System.Private.CoreLib.9ecf2cskpd.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-Error in mono_download_assets: Error: download 'https://servicecontracts.em.wsu.edu/_framework/System.Private.CoreLib.9ecf2cskpd.wasm' for System.Private.CoreLib.9ecf2cskpd.wasm failed 0 TypeError: Fa...
-Fetch API cannot load https://servicecontracts.em.wsu.edu/_framework/Basic.Reference.Assemblies.Net90.5fgwropdeb.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-Fetch API cannot load https://servicecontracts.em.wsu.edu/_framework/Microsoft.CodeAnalysis.CSharp.spyk6zagzf.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-Fetch API cannot load https://servicecontracts.em.wsu.edu/_framework/Microsoft.CodeAnalysis.kpjgxy86t6.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-Fetch API cannot load https://servicecontracts.em.wsu.edu/_framework/MudBlazor.xvq74qoukm.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-Fetch API cannot load https://servicecontracts.em.wsu.edu/_framework/Radzen.Blazor.8bsdxflj1e.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-Fetch API cannot load https://servicecontracts.em.wsu.edu/_framework/System.Configuration.ConfigurationManager.uu2d5ytync.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-... and 6 more (see errors.log)
-```
-
-</details>
+| Captured | 2026-02-19T02:09:50.9816646Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (6.0 KB)
-- No images found on page
-- axe-core: 1 violations (129ms)
-- htmlcheck: 3 violations (0ms)
+- Screenshot #1: page-loaded (20.1 KB)
+- Cataloged 1 images by URL (no download)
+- axe-core: 3 violations (238ms)
+- htmlcheck: 5 violations (0ms)
 
 </details>
 
@@ -92,15 +61,49 @@ Failed to load resource: net::ERR_CONNECTION_CLOSED
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>6.0 KB</sub>
+<br /><sub>20.1 KB</sub>
 </td>
 <td></td>
 </tr>
 </table>
 
-## 🖼️ Page Images (0)
+## 🖼️ Page Images (1)
 
-*No images found on page.*
+<details open>
+<summary><strong>📋 Image Index</strong> — 1 images (referenced by URL)</summary>
+
+| # | Source URL | Alt Text |
+|--:|-----------|----------|
+| 1 | https://servicecontracts.em.wsu.edu/images/okta_256.png | ⚠️ *(missing)* |
+
+</details>
+
+<details open>
+<summary><strong>🖼️ Gallery</strong></summary>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="https://servicecontracts.em.wsu.edu/images/okta_256.png">
+<img src="https://servicecontracts.em.wsu.edu/images/okta_256.png" width="200" alt="https://servicecontracts.em.wsu.edu/images/okta_256.png" />
+</a>
+<br /><sub>https://servicecontracts.em.wsu.edu/images/okta... ⚠️</sub>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary>⚠️ <strong>Images Missing Alt Text</strong> (1)</summary>
+
+| # | Source URL |
+|--:|-----------|
+| 1 | https://servicecontracts.em.wsu.edu/images/okta_256.png |
+
+</details>
 
 ## ♿ Accessibility
 
@@ -108,11 +111,11 @@ Failed to load resource: net::ERR_CONNECTION_CLOSED
 
 | Severity | axe | htmlcheck |
 |----------|:---:|:---:|
-| 🔴 critical | 0 | 0 |
-| 🟠 serious | 1 | 0 |
+| 🔴 critical | 1 | 0 |
+| 🟠 serious | 2 | 3 |
 | 🟡 moderate | 0 | 2 |
-| 🔵 minor | 0 | 1 |
-| **Total** | **1** | **3** |
+| 🔵 minor | 0 | 0 |
+| **Total** | **3** | **5** |
 
 ### Violations by Confidence
 
@@ -121,10 +124,10 @@ Failed to load resource: net::ERR_CONNECTION_CLOSED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | document-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" style="--blazor-load-percentage: 95.11111...` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🔴 | 🟢 2/2 | ⚠️ | ⚠️ | `<img src="./images/okta_256.png">` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
+| 3 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 
@@ -134,7 +137,7 @@ Failed to load resource: net::ERR_CONNECTION_CLOSED
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (6.0 KB) |
+| `01-page-loaded.jpg` | page-loaded (20.1 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

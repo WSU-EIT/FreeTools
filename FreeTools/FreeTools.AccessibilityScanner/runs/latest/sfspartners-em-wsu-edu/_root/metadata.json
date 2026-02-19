@@ -5,7 +5,7 @@
   "Title": "SFS Partner Portal",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 667373,
+  "HtmlSizeBytes": 667377,
   "ScreenshotSizeBytes": 216898,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 1,
     "Critical": 1,
     "Serious": 0,
@@ -51,5 +53,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:45:36.9948868Z"
+  "CapturedAt": "2026-02-19T02:10:28.1803979Z"
 }

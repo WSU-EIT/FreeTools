@@ -31,7 +31,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 8,
     "Critical": 1,
     "Serious": 5,
@@ -60,11 +62,11 @@
     "cache-control": "no-cache, no-store",
     "content-security-policy": "frame-ancestors \u0027self\u0027 login.wsu.edu cms.em.wsu.edu futurecoug.wsu.edu",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:38:36 GMT",
+    "date": "Thu, 19 Feb 2026 02:07:21 GMT",
     "pragma": "no-cache",
     "server": "Microsoft-IIS/10.0",
     "strict-transport-security": "max-age=2592000",
     "x-powered-by": "ASP.NET"
   },
-  "CapturedAt": "2026-02-18T18:38:35.9994377Z"
+  "CapturedAt": "2026-02-19T02:07:18.4867582Z"
 }

@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://prod.em.wsu.edu/FreeCICD  
-> **Captured:** 2026-02-18 18:44:55 UTC  
+> **Captured:** 2026-02-19 02:09:36 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -30,7 +30,7 @@
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
 | JS Errors | ✅ 0 |
-| JS Warnings | 3 |
+| JS Warnings | 2 |
 | A11y Violations | ⚠️ 6 |
 | 🔴 Critical | 0 |
 | 🟠 Serious | 4 |
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:44:55.9088260Z |
+| Captured | 2026-02-19T02:09:36.5666314Z |
 
 ## 🔧 Actions
 
@@ -47,7 +47,7 @@
 
 - Screenshot #1: page-loaded (19.2 KB)
 - No images found on page
-- axe-core: 2 violations (155ms)
+- axe-core: 2 violations (220ms)
 - htmlcheck: 4 violations (0ms)
 
 </details>
@@ -90,9 +90,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
+| 2 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

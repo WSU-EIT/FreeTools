@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://beanoc.wsu.edu/  
-> **Captured:** 2026-02-18 18:39:03 UTC  
+> **Captured:** 2026-02-19 02:07:18 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:39:03.0137898Z |
+| Captured | 2026-02-19T02:07:18.4867242Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (161.9 KB)
 - Cataloged 4 images by URL (no download)
-- axe-core: 1 violations (281ms)
+- axe-core: 1 violations (268ms)
 - htmlcheck: 1 violations (0ms)
 
 </details>
@@ -149,8 +149,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | heading-order | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h6 style="text-align: left;">` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [heading-order](../../a11y-rules.md#heading-order) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h6 style="text-align: left;">` |
 
 </details>
 

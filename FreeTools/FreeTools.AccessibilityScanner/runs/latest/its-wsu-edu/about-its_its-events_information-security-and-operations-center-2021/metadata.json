@@ -5,7 +5,7 @@
   "Title": "Information Security and Operations Center 2021 | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 249214,
+  "HtmlSizeBytes": 249240,
   "ScreenshotSizeBytes": 118843,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -95,7 +95,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 7,
     "Critical": 0,
     "Serious": 7,
@@ -122,12 +124,12 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:33:58 GMT",
-    "etag": "\u0022f58eb37af383a9861aa93e29c7768c82\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:22:32 GMT",
+    "date": "Thu, 19 Feb 2026 02:15:22 GMT",
+    "etag": "\u00229ae512fb6c91e9db528a524d8d83ba0c\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:12:11 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/418\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=418\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-18T18:33:58.3630837Z"
+  "CapturedAt": "2026-02-19T02:15:22.4759649Z"
 }

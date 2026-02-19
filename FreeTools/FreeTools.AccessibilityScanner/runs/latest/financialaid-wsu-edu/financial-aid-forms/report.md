@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://financialaid.wsu.edu/financial-aid-forms/  
-> **Captured:** 2026-02-18 18:33:39 UTC  
+> **Captured:** 2026-02-19 02:10:29 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:33:39.6922095Z |
+| Captured | 2026-02-19T02:10:29.8994421Z |
 
 ## 🔧 Actions
 
@@ -46,8 +46,8 @@
 
 - Screenshot #1: page-loaded (430.5 KB)
 - No images found on page
-- axe-core: 0 violations (251ms)
-- htmlcheck: 6 violations (1ms)
+- axe-core: 0 violations (331ms)
+- htmlcheck: 6 violations (0ms)
 
 </details>
 
@@ -89,9 +89,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
-| 3 | td-has-header | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table><tbody><tr><td><strong><a href="https://forms.fina...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 3 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table><tbody><tr><td><strong><a href="https://forms.fina...` |
 
 </details>
 

@@ -1,6 +1,6 @@
 # 🌐 Site Report: https://family.wsu.edu/
 
-> **Status:** ✅ 1/1 pages OK  
+> **Status:** ✅ 8/8 pages OK  
 > **Folder:** `family-wsu-edu/`  
 
 ---
@@ -13,20 +13,20 @@ Success Rate:  [█████████████████████�
 
 | Metric | Value |
 |--------|-------|
-| Pages Scanned | 1 |
-| Pages Passed | ✅ 1 |
+| Pages Scanned | 8 |
+| Pages Passed | ✅ 8 |
 | Pages Failed | 0 |
-| Total JS Errors | 🔴 2 |
-| Total JS Warnings | 1 |
-| Total Images | 1 (by URL) |
-| Images Missing Alt | ✅ 0 |
-| A11y Violations | ⚠️ 3 |
-| 🔴 Critical | 2 |
-| 🟠 Serious | 1 |
-| 🟡 Moderate | 0 |
+| Total JS Errors | 🔴 18 |
+| Total JS Warnings | 8 |
+| Total Images | 19 (by URL) |
+| Images Missing Alt | ⚠️ 7 |
+| A11y Violations | ⚠️ 22 |
+| 🔴 Critical | 16 |
+| 🟠 Serious | 4 |
+| 🟡 Moderate | 2 |
 | 🔵 Minor | 0 |
-| Total HTML | 33.3 KB |
-| Total Screenshots | 140.9 KB |
+| Total HTML | 304.7 KB |
+| Total Screenshots | 1.8 MB |
 
 ## 🔒 SSL Certificate
 
@@ -265,6 +265,13 @@ Success Rate:  [█████████████████████�
 | Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |
 |:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|
 | ✅ | [/](_root/report.md) | 200 |  | 2 | 1 |  |  | ⚠️ 3 |
+| ✅ | [/cougparents-program/](cougparents-program/report.md) | 200 | CougParents Program | 2 |  |  |  | ⚠️ 2 |
+| ✅ | [/family-weekends/](family-weekends/report.md) | 200 | Family Weekends | 2 |  | 1 |  | ⚠️ 3 |
+| ✅ | [/family-weekends/chosen-coug-awards/](family-weekends_chosen-coug-awards/report.md) | 200 | Chosen Coug Awards | 2 |  |  |  | ⚠️ 2 |
+| ✅ | [/helping-my-coug/](helping-my-coug/report.md) | 200 | Helping my Coug | 2 | 2 |  |  | ⚠️ 4 |
+| ✅ | [/home/](home/report.md) | 200 |  | 2 | 1 |  |  | ⚠️ 3 |
+| ✅ | [/resources/](resources/report.md) | 200 | Resources | 2 |  | 1 |  | ⚠️ 3 |
+| ✅ | [/resources/privacy-and-third-party-access/](resources_privacy-and-third-party-access/report.md) | 200 | Privacy and Third-party Access | 2 |  |  |  | ⚠️ 2 |
 
 ## 📸 Page Screenshots
 
@@ -278,7 +285,52 @@ Click any thumbnail to view the full page report.
 </a>
 <br />✅ <code>/</code>
 </td>
-<td></td>
+<td align="center" width="33%">
+<a href="cougparents-program/report.md">
+<img src="cougparents-program/01-page-loaded.jpg" width="250" alt="/cougparents-program/" />
+</a>
+<br />✅ <code>/cougparents-program/</code>
+</td>
+<td align="center" width="33%">
+<a href="family-weekends/report.md">
+<img src="family-weekends/01-page-loaded.jpg" width="250" alt="/family-weekends/" />
+</a>
+<br />✅ <code>/family-weekends/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="family-weekends_chosen-coug-awards/report.md">
+<img src="family-weekends_chosen-coug-awards/01-page-loaded.jpg" width="250" alt="/family-weekends/chosen-coug-awards/" />
+</a>
+<br />✅ <code>/family-weekends/chosen-coug-awards/</code>
+</td>
+<td align="center" width="33%">
+<a href="helping-my-coug/report.md">
+<img src="helping-my-coug/01-page-loaded.jpg" width="250" alt="/helping-my-coug/" />
+</a>
+<br />✅ <code>/helping-my-coug/</code>
+</td>
+<td align="center" width="33%">
+<a href="home/report.md">
+<img src="home/01-page-loaded.jpg" width="250" alt="/home/" />
+</a>
+<br />✅ <code>/home/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="resources/report.md">
+<img src="resources/01-page-loaded.jpg" width="250" alt="/resources/" />
+</a>
+<br />✅ <code>/resources/</code>
+</td>
+<td align="center" width="33%">
+<a href="resources_privacy-and-third-party-access/report.md">
+<img src="resources_privacy-and-third-party-access/01-page-loaded.jpg" width="250" alt="/resources/privacy-and-third-party-access/" />
+</a>
+<br />✅ <code>/resources/privacy-and-third-party-access/</code>
+</td>
 <td></td>
 </tr>
 </table>
@@ -286,9 +338,60 @@ Click any thumbnail to view the full page report.
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>2 error(s) across 1 page(s)</strong></summary>
+<summary><strong>18 error(s) across 8 page(s)</strong></summary>
+
+**/resources/privacy-and-third-party-access/** (4 errors)
+
+```
+Access to XMLHttpRequest at 'https://cdn-web-wsu.s3-us-west-2.amazonaws.com/designsystem/1.x/build/dist/wsu-design-system.bundle.dist.css' from origin 'https://family.wsu.edu' has been blocked by CORS...
+Failed to load resource: net::ERR_FAILED
+Access to XMLHttpRequest at 'https://asis.wsu.edu/Styles/asis-wdsv2.css' from origin 'https://family.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the...
+Failed to load resource: net::ERR_FAILED
+```
 
 **/** (2 errors)
+
+```
+Access to XMLHttpRequest at 'https://cdn-web-wsu.s3-us-west-2.amazonaws.com/designsystem/1.x/build/dist/wsu-design-system.bundle.dist.css' from origin 'https://family.wsu.edu' has been blocked by CORS...
+Failed to load resource: net::ERR_FAILED
+```
+
+**/cougparents-program/** (2 errors)
+
+```
+Access to XMLHttpRequest at 'https://cdn-web-wsu.s3-us-west-2.amazonaws.com/designsystem/1.x/build/dist/wsu-design-system.bundle.dist.css' from origin 'https://family.wsu.edu' has been blocked by CORS...
+Failed to load resource: net::ERR_FAILED
+```
+
+**/family-weekends/** (2 errors)
+
+```
+Access to XMLHttpRequest at 'https://cdn-web-wsu.s3-us-west-2.amazonaws.com/designsystem/1.x/build/dist/wsu-design-system.bundle.dist.css' from origin 'https://family.wsu.edu' has been blocked by CORS...
+Failed to load resource: net::ERR_FAILED
+```
+
+**/family-weekends/chosen-coug-awards/** (2 errors)
+
+```
+Access to XMLHttpRequest at 'https://cdn-web-wsu.s3-us-west-2.amazonaws.com/designsystem/1.x/build/dist/wsu-design-system.bundle.dist.css' from origin 'https://family.wsu.edu' has been blocked by CORS...
+Failed to load resource: net::ERR_FAILED
+```
+
+**/helping-my-coug/** (2 errors)
+
+```
+Access to XMLHttpRequest at 'https://cdn-web-wsu.s3-us-west-2.amazonaws.com/designsystem/1.x/build/dist/wsu-design-system.bundle.dist.css' from origin 'https://family.wsu.edu' has been blocked by CORS...
+Failed to load resource: net::ERR_FAILED
+```
+
+**/home/** (2 errors)
+
+```
+Access to XMLHttpRequest at 'https://cdn-web-wsu.s3-us-west-2.amazonaws.com/designsystem/1.x/build/dist/wsu-design-system.bundle.dist.css' from origin 'https://family.wsu.edu' has been blocked by CORS...
+Failed to load resource: net::ERR_FAILED
+```
+
+**/resources/** (2 errors)
 
 ```
 Access to XMLHttpRequest at 'https://cdn-web-wsu.s3-us-west-2.amazonaws.com/designsystem/1.x/build/dist/wsu-design-system.bundle.dist.css' from origin 'https://family.wsu.edu' has been blocked by CORS...
@@ -301,20 +404,22 @@ Failed to load resource: net::ERR_FAILED
 
 | Metric | Value |
 |--------|-------|
-| Pages with violations | 1/1 |
-| Total violations | 3 |
-| 🔴 Critical | 2 |
-| 🟠 Serious | 1 |
-| 🟡 Moderate | 0 |
+| Pages with violations | 8/8 |
+| Total violations | 22 |
+| 🔴 Critical | 16 |
+| 🟠 Serious | 4 |
+| 🟡 Moderate | 2 |
 | 🔵 Minor | 0 |
 
-### Top 3 Issues
+### Top 5 Issues
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | aria-required-children | 🔴 | 1/1 | 1 |
-| 2 | aria-required-parent | 🔴 | 1/1 | 1 |
-| 3 | document-title | 🟠 | 1/1 | 1 |
+| 1 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/8 | 2 |
+| 2 | [aria-required-children](../a11y-rules.md#aria-required-children) | 🔴 | 8/8 | 8 |
+| 3 | [aria-required-parent](../a11y-rules.md#aria-required-parent) | 🔴 | 8/8 | 8 |
+| 4 | [document-title](../a11y-rules.md#document-title) | 🟠 | 2/8 | 2 |
+| 5 | [heading-order](../a11y-rules.md#heading-order) | 🟡 | 2/8 | 2 |
 
 ---
 

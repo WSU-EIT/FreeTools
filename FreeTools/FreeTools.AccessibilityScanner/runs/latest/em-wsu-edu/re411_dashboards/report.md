@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://em.wsu.edu/re411/dashboards/  
-> **Captured:** 2026-02-18 18:37:11 UTC  
+> **Captured:** 2026-02-19 02:13:13 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:37:11.1028325Z |
+| Captured | 2026-02-19T02:13:13.9308272Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (247.7 KB)
 - No images found on page
-- axe-core: 1 violations (243ms)
+- axe-core: 1 violations (283ms)
 - htmlcheck: 1 violations (0ms)
 
 </details>
@@ -89,8 +89,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://app.smartsheet.com/reports/rW5GmJvhc6HwG...` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://app.smartsheet.com/reports/rW5GmJvhc6HwG...` |
 
 </details>
 

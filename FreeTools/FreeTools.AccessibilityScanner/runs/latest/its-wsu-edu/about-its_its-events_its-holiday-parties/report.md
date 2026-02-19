@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://its.wsu.edu/about-its/its-events/its-holiday-parties/  
-> **Captured:** 2026-02-18 18:34:06 UTC  
+> **Captured:** 2026-02-19 02:15:29 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:34:06.4665133Z |
+| Captured | 2026-02-19T02:15:29.9838946Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (197.0 KB)
 - Cataloged 23 images by URL (no download)
-- axe-core: 2 violations (570ms)
+- axe-core: 2 violations (578ms)
 - htmlcheck: 6 violations (0ms)
 
 </details>
@@ -281,10 +281,10 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="" class="wsu-header-utility-bar__cta"></a>` |
-| 2 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
-| 4 | frame-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<iframe class="youtube-player" type="text/html" width="64...` |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="" class="wsu-header-utility-bar__cta"></a>` |
+| 2 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 4 | [frame-title](../../a11y-rules.md#frame-title) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<iframe class="youtube-player" type="text/html" width="64...` |
 
 </details>
 

@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://touchpoints.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:48:04 UTC  
+> **Captured:** 2026-02-19 02:12:31 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -39,7 +39,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:48:04.9557224Z |
+| Captured | 2026-02-19T02:12:31.2206277Z |
 
 ## 🔴 JavaScript Errors
 
@@ -59,7 +59,7 @@ Failed to load resource: the server responded with a status of 401 ()
 
 - Screenshot #1: page-loaded (19.7 KB)
 - No images found on page
-- axe-core: 2 violations (118ms)
+- axe-core: 2 violations (135ms)
 - htmlcheck: 8 violations (1ms)
 
 </details>
@@ -102,10 +102,10 @@ Failed to load resource: the server responded with a status of 401 ()
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
-| 2 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button type="button" id="cboxPrevious"></button>` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="text" class="form-control" id="local-usernam...` |
-| 4 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
+| 2 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button type="button" id="cboxPrevious"></button>` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="text" class="form-control" id="local-usernam...` |
+| 4 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

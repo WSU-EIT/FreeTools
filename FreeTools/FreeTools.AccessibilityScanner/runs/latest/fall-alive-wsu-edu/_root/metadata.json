@@ -17,5 +17,5 @@
   "Accessibility": null,
   "ErrorMessage": "net::ERR_ABORTED at https://fall-alive.wsu.edu/\nCall log:\n  - navigating to \u0022https://fall-alive.wsu.edu/\u0022, waiting until \u0022networkidle\u0022",
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:45:10.81613Z"
+  "CapturedAt": "2026-02-19T02:12:34.9070026Z"
 }

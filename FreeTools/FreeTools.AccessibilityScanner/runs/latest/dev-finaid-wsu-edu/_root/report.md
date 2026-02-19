@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://dev.finaid.wsu.edu/  
-> **Captured:** 2026-02-18 18:41:32 UTC  
+> **Captured:** 2026-02-19 02:07:38 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:41:32.5407416Z |
+| Captured | 2026-02-19T02:07:38.6899651Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (109.8 KB)
 - Cataloged 7 images by URL (no download)
-- axe-core: 6 violations (285ms)
+- axe-core: 6 violations (249ms)
 - htmlcheck: 1 violations (0ms)
 
 </details>
@@ -172,10 +172,10 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<a href="http://www.surveygizmo.com/s3/1477036/FinAid-Gen...` |
-| 3 | list | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<ul>` |
-| 4 | page-has-heading-one | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<a href="http://www.surveygizmo.com/s3/1477036/FinAid-Gen...` |
+| 3 | [list](../../a11y-rules.md#list) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<ul>` |
+| 4 | [page-has-heading-one](../../a11y-rules.md#page-has-heading-one) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://wsu.edu/economicimpact/  
-> **Captured:** 2026-02-18 18:35:56 UTC  
+> **Captured:** 2026-02-19 02:17:27 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://wsu.edu/economicimpact/ |
 | Title | Economic Impact | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 215.4 KB |
+| HTML Size | 215.5 KB |
 | Screenshots | 1 (723.3 KB) |
 | Images | 15 (referenced by URL) |
 | Images Missing Alt | ⚠️ 11 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:35:56.1632907Z |
+| Captured | 2026-02-19T02:17:27.9487152Z |
 
 ## 🔧 Actions
 
@@ -46,8 +46,8 @@
 
 - Screenshot #1: page-loaded (723.3 KB)
 - Cataloged 15 images by URL (no download)
-- axe-core: 0 violations (260ms)
-- htmlcheck: 6 violations (0ms)
+- axe-core: 0 violations (269ms)
+- htmlcheck: 6 violations (1ms)
 
 </details>
 
@@ -237,9 +237,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
-| 3 | heading-order | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3 id="unique-id-1__title" class="wsu-accordion__title">` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 3 | [heading-order](../../a11y-rules.md#heading-order) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3 id="unique-id-1__title" class="wsu-accordion__title">` |
 
 </details>
 

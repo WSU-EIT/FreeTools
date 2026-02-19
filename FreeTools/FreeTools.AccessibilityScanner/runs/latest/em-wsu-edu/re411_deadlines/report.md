@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://em.wsu.edu/re411/deadlines/  
-> **Captured:** 2026-02-18 18:37:46 UTC  
+> **Captured:** 2026-02-19 02:13:49 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:37:46.5576957Z |
+| Captured | 2026-02-19T02:13:49.4691866Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (78.0 KB)
 - No images found on page
-- axe-core: 1 violations (226ms)
+- axe-core: 1 violations (246ms)
 - htmlcheck: 1 violations (0ms)
 
 </details>
@@ -89,8 +89,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | heading-order | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3 class="wsu-accordion__title" id="accordion_82428-9116...` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [heading-order](../../a11y-rules.md#heading-order) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3 class="wsu-accordion__title" id="accordion_82428-9116...` |
 
 </details>
 

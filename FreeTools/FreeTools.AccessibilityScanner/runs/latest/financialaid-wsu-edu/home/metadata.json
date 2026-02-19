@@ -5,8 +5,8 @@
   "Title": "Student Financial Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 260443,
-  "ScreenshotSizeBytes": 447092,
+  "HtmlSizeBytes": 260448,
+  "ScreenshotSizeBytes": 445613,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 2,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 447092
+      "FileSize": 445613
     }
   ],
   "ImageCount": 10,
@@ -67,7 +67,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 5,
     "Critical": 0,
     "Serious": 5,
@@ -94,14 +96,14 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:34:13 GMT",
-    "etag": "\u0022402013b3b8ea8206de8d92b3e4d60719\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:19:22 GMT",
+    "date": "Thu, 19 Feb 2026 02:11:48 GMT",
+    "etag": "\u002262ff7c95ed290d7941df08a279277d07\u0022",
+    "last-modified": "Thu, 19 Feb 2026 01:50:30 GMT",
     "link": "\u003Chttps://financialaid.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://financialaid.wsu.edu/wp-json/wp/v2/pages/10\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://financialaid.wsu.edu/\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding",
-    "x-cache": "HIT",
-    "x-cache-status": "HIT"
+    "x-cache": "EXPIRED",
+    "x-cache-status": "EXPIRED"
   },
-  "CapturedAt": "2026-02-18T18:34:12.9111709Z"
+  "CapturedAt": "2026-02-19T02:11:47.9654158Z"
 }

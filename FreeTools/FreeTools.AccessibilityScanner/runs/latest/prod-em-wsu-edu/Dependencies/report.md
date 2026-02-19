@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://prod.em.wsu.edu/Dependencies  
-> **Captured:** 2026-02-18 18:44:31 UTC  
+> **Captured:** 2026-02-19 02:09:14 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -11,6 +11,7 @@
 - [Summary](#-summary)
 - [Screenshots](#-screenshots)
 - [Page Images](#-page-images)
+- [JavaScript Errors](#-javascript-errors)
 - [Accessibility](#-accessibility)
 - [Actions](#-actions)
 - [Files](#-files)
@@ -22,33 +23,63 @@
 | Field | Value |
 |-------|-------|
 | URL | https://prod.em.wsu.edu/Dependencies |
-| Redirected To | https://prod.em.wsu.edu/Dependencies/Login |
-| Title | Dependency Manager |
+| Title |  |
 | Status | ✅ 200 |
-| HTML Size | 228.8 KB |
-| Screenshots | 1 (17.3 KB) |
-| Images | 1 (referenced by URL) |
-| Images Missing Alt | ⚠️ 1 |
-| JS Errors | ✅ 0 |
+| HTML Size | 224.0 KB |
+| Screenshots | 1 (6.0 KB) |
+| Images | 0 (referenced by URL) |
+| Images Missing Alt | ✅ 0 |
+| JS Errors | 🔴 181 |
 | JS Warnings | 0 |
-| A11y Violations | ⚠️ 8 |
-| 🔴 Critical | 1 |
-| 🟠 Serious | 5 |
+| A11y Violations | ⚠️ 4 |
+| 🔴 Critical | 0 |
+| 🟠 Serious | 1 |
 | 🟡 Moderate | 2 |
-| 🔵 Minor | 0 |
+| 🔵 Minor | 1 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:44:31.7067661Z |
+| Captured | 2026-02-19T02:09:14.6762762Z |
+
+## 🔴 JavaScript Errors
+
+<details>
+<summary><strong>181 error(s) detected</strong></summary>
+
+```
+Fetch API cannot load https://prod.em.wsu.edu/Dependencies/_framework/dotnet.native.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Error in mono_download_assets: Error: download 'https://prod.em.wsu.edu/Dependencies/_framework/dotnet.native.wasm' for dotnet.native.wasm failed 0 TypeError: Failed to fetch
+Fetch API cannot load https://prod.em.wsu.edu/Dependencies/_framework/MudBlazor.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/Dependencies/_framework/Radzen.Blazor.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/Dependencies/_framework/System.Configuration.ConfigurationManager.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/Dependencies/_framework/System.Configuration.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/Dependencies/_framework/System.Console.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/Dependencies/_framework/System.Core.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/Dependencies/_framework/System.Data.Common.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/Dependencies/_framework/System.Data.DataSetExtensions.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/Dependencies/_framework/System.Diagnostics.Contracts.wasm. 
+... and 161 more (see errors.log)
+```
+
+</details>
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (17.3 KB)
-- Cataloged 1 images by URL (no download)
-- axe-core: 3 violations (146ms)
-- htmlcheck: 5 violations (0ms)
+- Screenshot #1: page-loaded (6.0 KB)
+- No images found on page
+- axe-core: 1 violations (124ms)
+- htmlcheck: 3 violations (0ms)
 
 </details>
 
@@ -61,49 +92,15 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>17.3 KB</sub>
+<br /><sub>6.0 KB</sub>
 </td>
 <td></td>
 </tr>
 </table>
 
-## 🖼️ Page Images (1)
+## 🖼️ Page Images (0)
 
-<details open>
-<summary><strong>📋 Image Index</strong> — 1 images (referenced by URL)</summary>
-
-| # | Source URL | Alt Text |
-|--:|-----------|----------|
-| 1 | https://prod.em.wsu.edu/Dependencies/images/okta_256.png | ⚠️ *(missing)* |
-
-</details>
-
-<details open>
-<summary><strong>🖼️ Gallery</strong></summary>
-
-<table>
-<tr>
-<td align="center" width="33%">
-<a href="https://prod.em.wsu.edu/Dependencies/images/okta_256.png">
-<img src="https://prod.em.wsu.edu/Dependencies/images/okta_256.png" width="200" alt="https://prod.em.wsu.edu/Dependencies/images/okta_256.png" />
-</a>
-<br /><sub>https://prod.em.wsu.edu/Dependencies/images/okt... ⚠️</sub>
-</td>
-<td></td>
-<td></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary>⚠️ <strong>Images Missing Alt Text</strong> (1)</summary>
-
-| # | Source URL |
-|--:|-----------|
-| 1 | https://prod.em.wsu.edu/Dependencies/images/okta_256.png |
-
-</details>
+*No images found on page.*
 
 ## ♿ Accessibility
 
@@ -111,11 +108,11 @@
 
 | Severity | axe | htmlcheck |
 |----------|:---:|:---:|
-| 🔴 critical | 1 | 0 |
-| 🟠 serious | 2 | 3 |
+| 🔴 critical | 0 | 0 |
+| 🟠 serious | 1 | 0 |
 | 🟡 moderate | 0 | 2 |
-| 🔵 minor | 0 | 0 |
-| **Total** | **3** | **5** |
+| 🔵 minor | 0 | 1 |
+| **Total** | **1** | **3** |
 
 ### Violations by Confidence
 
@@ -124,10 +121,10 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🔴 | 🟢 2/2 | ⚠️ | ⚠️ | `<img src="./images/okta_256.png">` |
-| 2 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
-| 3 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [document-title](../../a11y-rules.md#document-title) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" style="--blazor-load-percentage: 58.33333...` |
+| 2 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [landmark-nav](../../a11y-rules.md#landmark-nav) | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 
@@ -137,7 +134,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (17.3 KB) |
+| `01-page-loaded.jpg` | page-loaded (6.0 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

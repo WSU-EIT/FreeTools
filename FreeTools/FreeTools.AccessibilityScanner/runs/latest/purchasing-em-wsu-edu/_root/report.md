@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://purchasing.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:44:16 UTC  
+> **Captured:** 2026-02-19 02:08:55 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -29,7 +29,7 @@
 | Screenshots | 1 (6.0 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
-| JS Errors | 🔴 67 |
+| JS Errors | 🔴 199 |
 | JS Warnings | 0 |
 | A11y Violations | ⚠️ 4 |
 | 🔴 Critical | 0 |
@@ -38,35 +38,35 @@
 | 🔵 Minor | 1 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:44:16.6453507Z |
+| Captured | 2026-02-19T02:08:55.5392177Z |
 
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>67 error(s) detected</strong></summary>
+<summary><strong>199 error(s) detected</strong></summary>
 
 ```
 Fetch API cannot load https://purchasing.em.wsu.edu/_framework/dotnet.native.wasm. 
 Failed to load resource: net::ERR_CONNECTION_RESET
 Error in mono_download_assets: Error: download 'https://purchasing.em.wsu.edu/_framework/dotnet.native.wasm' for dotnet.native.wasm failed 0 TypeError: Failed to fetch
-Fetch API cannot load https://purchasing.em.wsu.edu/_framework/Microsoft.Extensions.Configuration.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://purchasing.em.wsu.edu/_framework/Microsoft.Extensions.DependencyInjection.Abstractions.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://purchasing.em.wsu.edu/_framework/Microsoft.Extensions.DependencyInjection.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://purchasing.em.wsu.edu/_framework/Microsoft.VisualBasic.Core.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
 Fetch API cannot load https://purchasing.em.wsu.edu/_framework/MudBlazor.wasm. 
 Failed to load resource: net::ERR_CONNECTION_RESET
 Fetch API cannot load https://purchasing.em.wsu.edu/_framework/PurchaseTracker.Client.wasm. 
 Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://purchasing.em.wsu.edu/_framework/PurchaseTracker.DataObjects.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
 Fetch API cannot load https://purchasing.em.wsu.edu/_framework/Radzen.Blazor.wasm. 
 Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://purchasing.em.wsu.edu/_framework/System.Collections.wasm. 
-... and 47 more (see errors.log)
+Fetch API cannot load https://purchasing.em.wsu.edu/_framework/System.Data.Common.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://purchasing.em.wsu.edu/_framework/System.Data.DataSetExtensions.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://purchasing.em.wsu.edu/_framework/System.Data.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://purchasing.em.wsu.edu/_framework/System.Diagnostics.Contracts.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://purchasing.em.wsu.edu/_framework/System.Diagnostics.Debug.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://purchasing.em.wsu.edu/_framework/System.Diagnostics.DiagnosticSource.wasm. 
+... and 179 more (see errors.log)
 ```
 
 </details>
@@ -78,7 +78,7 @@ Fetch API cannot load https://purchasing.em.wsu.edu/_framework/System.Collection
 
 - Screenshot #1: page-loaded (6.0 KB)
 - No images found on page
-- axe-core: 1 violations (189ms)
+- axe-core: 1 violations (130ms)
 - htmlcheck: 3 violations (0ms)
 
 </details>
@@ -121,10 +121,10 @@ Fetch API cannot load https://purchasing.em.wsu.edu/_framework/System.Collection
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | document-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" style="--blazor-load-percentage: 84.79262...` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [document-title](../../a11y-rules.md#document-title) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" style="--blazor-load-percentage: 54.37788...` |
+| 2 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [landmark-nav](../../a11y-rules.md#landmark-nav) | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

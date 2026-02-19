@@ -5,8 +5,8 @@
   "Title": "Kamiak",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 115169,
-  "ScreenshotSizeBytes": 223015,
+  "HtmlSizeBytes": 115160,
+  "ScreenshotSizeBytes": 226229,
   "CredentialUsed": null,
   "ConsoleErrorCount": 4,
   "ConsoleWarningCount": 7,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 223015
+      "FileSize": 226229
     }
   ],
   "ImageCount": 14,
@@ -83,16 +83,18 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
-    "TotalViolations": 0,
-    "Critical": 0,
+    "ToolsSkipped": [
+      "wave"
+    ],
+    "TotalViolations": 6,
+    "Critical": 6,
     "Serious": 0,
     "Moderate": 0,
     "Minor": 0,
     "ByTool": {
       "axe": {
-        "Total": 0,
-        "Critical": 0,
+        "Total": 6,
+        "Critical": 6,
         "Serious": 0,
         "Moderate": 0,
         "Minor": 0
@@ -110,12 +112,12 @@
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:36:09 GMT",
+    "date": "Thu, 19 Feb 2026 02:09:55 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-18T18:36:09.9937393Z"
+  "CapturedAt": "2026-02-19T02:09:55.1656902Z"
 }

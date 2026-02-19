@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://wsu.scholarships.ngwebsolutions.com/  
-> **Captured:** 2026-02-18 18:45:59 UTC  
+> **Captured:** 2026-02-19 02:13:27 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -39,7 +39,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:45:59.8621912Z |
+| Captured | 2026-02-19T02:13:27.2875274Z |
 
 ## 🔴 JavaScript Errors
 
@@ -59,7 +59,7 @@ Error with Permissions-Policy header: Parse of permissions policy failed because
 
 - Screenshot #1: page-loaded (81.8 KB)
 - Cataloged 3 images by URL (no download)
-- axe-core: 4 violations (125ms)
+- axe-core: 4 violations (118ms)
 - htmlcheck: 3 violations (0ms)
 
 </details>
@@ -149,9 +149,9 @@ Error with Permissions-Policy header: Parse of permissions policy failed because
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🔴 | 🟢 2/2 | ⚠️ | ⚠️ | `<img class="img-responsive" border="0" src="https://wsu.s...` |
-| 2 | link-in-text-block | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<a href="http://ferpa.em.wsu.edu/" target="_blank">(FERPA...` |
-| 3 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🔴 | 🟢 2/2 | ⚠️ | ⚠️ | `<img class="img-responsive" border="0" src="https://wsu.s...` |
+| 2 | [link-in-text-block](../../a11y-rules.md#link-in-text-block) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<a href="http://ferpa.em.wsu.edu/" target="_blank">(FERPA...` |
+| 3 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

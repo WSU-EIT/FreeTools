@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 9,
     "Critical": 7,
     "Serious": 1,
@@ -52,9 +54,9 @@
   "ErrorMessage": null,
   "Headers": {
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:45:00 GMT",
+    "date": "Thu, 19 Feb 2026 02:09:41 GMT",
     "server": "Microsoft-IIS/10.0",
     "x-powered-by": "ASP.NET"
   },
-  "CapturedAt": "2026-02-18T18:44:59.8944346Z"
+  "CapturedAt": "2026-02-19T02:09:41.0109213Z"
 }

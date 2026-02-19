@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://em.wsu.edu/eit/eit/  
-> **Captured:** 2026-02-18 18:33:38 UTC  
+> **Captured:** 2026-02-19 02:08:29 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:33:38.8010427Z |
+| Captured | 2026-02-19T02:08:29.9352859Z |
 
 ## 🔴 JavaScript Errors
 
@@ -61,7 +61,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (190.6 KB)
 - No images found on page
-- axe-core: 1 violations (186ms)
+- axe-core: 1 violations (181ms)
 - htmlcheck: 0 violations (0ms)
 
 </details>
@@ -104,7 +104,7 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
 
 </details>
 

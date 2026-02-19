@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://wsu.edu/athletics/  
-> **Captured:** 2026-02-18 18:35:16 UTC  
+> **Captured:** 2026-02-19 02:10:12 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://wsu.edu/athletics/ |
 | Title | WSU Athletics | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 118.2 KB |
+| HTML Size | 118.3 KB |
 | Screenshots | 1 (668.2 KB) |
 | Images | 14 (referenced by URL) |
 | Images Missing Alt | ⚠️ 8 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:35:16.1431191Z |
+| Captured | 2026-02-19T02:10:12.8217744Z |
 
 ## 🔧 Actions
 
@@ -46,8 +46,8 @@
 
 - Screenshot #1: page-loaded (668.2 KB)
 - Cataloged 14 images by URL (no download)
-- axe-core: 0 violations (299ms)
-- htmlcheck: 5 violations (0ms)
+- axe-core: 0 violations (352ms)
+- htmlcheck: 5 violations (1ms)
 
 </details>
 
@@ -228,9 +228,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
-| 3 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
+| 3 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
 
 </details>
 

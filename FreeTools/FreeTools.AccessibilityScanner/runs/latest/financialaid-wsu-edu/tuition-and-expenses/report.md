@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://financialaid.wsu.edu/tuition-and-expenses/  
-> **Captured:** 2026-02-18 18:34:28 UTC  
+> **Captured:** 2026-02-19 02:14:10 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,8 +24,8 @@
 | URL | https://financialaid.wsu.edu/tuition-and-expenses/ |
 | Title | Tuition & Expenses | Student Financial Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 268.3 KB |
-| Screenshots | 1 (810.5 KB) |
+| HTML Size | 268.5 KB |
+| Screenshots | 1 (803.7 KB) |
 | Images | 7 (referenced by URL) |
 | Images Missing Alt | ⚠️ 1 |
 | JS Errors | ✅ 0 |
@@ -37,16 +37,16 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:34:28.5700654Z |
+| Captured | 2026-02-19T02:14:10.2206517Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (810.5 KB)
+- Screenshot #1: page-loaded (803.7 KB)
 - Cataloged 7 images by URL (no download)
-- axe-core: 0 violations (308ms)
+- axe-core: 0 violations (377ms)
 - htmlcheck: 6 violations (1ms)
 
 </details>
@@ -60,7 +60,7 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>810.5 KB</sub>
+<br /><sub>803.7 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -169,9 +169,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
-| 3 | td-has-header | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table class="has-fixed-layout"><tbody><tr><td></td><td><...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 3 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table class="has-fixed-layout"><tbody><tr><td></td><td><...` |
 
 </details>
 
@@ -181,7 +181,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (810.5 KB) |
+| `01-page-loaded.jpg` | page-loaded (803.7 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

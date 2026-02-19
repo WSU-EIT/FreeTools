@@ -5,10 +5,10 @@
   "Title": "",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 8849,
+  "HtmlSizeBytes": 8851,
   "ScreenshotSizeBytes": 6157,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 67,
+  "ConsoleErrorCount": 199,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 4,
     "Critical": 0,
     "Serious": 1,
@@ -54,10 +56,10 @@
     "blazor-enhanced-nav": "allow",
     "cache-control": "no-cache, no-store",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:44:16 GMT",
+    "date": "Thu, 19 Feb 2026 02:08:57 GMT",
     "pragma": "no-cache",
     "server": "Microsoft-IIS/10.0",
     "x-powered-by": "ASP.NET"
   },
-  "CapturedAt": "2026-02-18T18:44:16.6453507Z"
+  "CapturedAt": "2026-02-19T02:08:55.5392177Z"
 }

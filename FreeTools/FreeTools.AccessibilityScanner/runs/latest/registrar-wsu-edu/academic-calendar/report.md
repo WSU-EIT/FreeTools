@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://registrar.wsu.edu/academic-calendar/  
-> **Captured:** 2026-02-18 18:37:47 UTC  
+> **Captured:** 2026-02-19 02:07:54 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -26,7 +26,7 @@
 | Title |  |
 | Status | ✅ 200 |
 | HTML Size | 182.5 KB |
-| Screenshots | 1 (98.7 KB) |
+| Screenshots | 1 (97.9 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
 | JS Errors | ✅ 0 |
@@ -38,16 +38,16 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:37:47.2574419Z |
+| Captured | 2026-02-19T02:07:54.2992245Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (98.7 KB)
+- Screenshot #1: page-loaded (97.9 KB)
 - No images found on page
-- axe-core: 3 violations (207ms)
+- axe-core: 3 violations (329ms)
 - htmlcheck: 3 violations (0ms)
 
 </details>
@@ -61,7 +61,7 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>98.7 KB</sub>
+<br /><sub>97.9 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -90,11 +90,11 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | select-name | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<select class="form-select" id="year">` |
-| 2 | document-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" class="wsu-has-js wsu-reduce-motion" styl...` |
-| 3 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a class="wsu-button-ui-search" href="https://search.wsu....` |
-| 4 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 5 | td-has-header | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table><tbody><tr valign="bottom"><td><a href="http://www...` |
+| 1 | [select-name](../../a11y-rules.md#select-name) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<select class="form-select" id="year">` |
+| 2 | [document-title](../../a11y-rules.md#document-title) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" class="wsu-has-js wsu-reduce-motion" styl...` |
+| 3 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a class="wsu-button-ui-search" href="https://search.wsu....` |
+| 4 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 5 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table><tbody><tr valign="bottom"><td><a href="http://www...` |
 
 </details>
 
@@ -104,7 +104,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (98.7 KB) |
+| `01-page-loaded.jpg` | page-loaded (97.9 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

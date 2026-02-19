@@ -1,6 +1,6 @@
 # 🌐 Site Report: https://curriculum.registrar.wsu.edu/
 
-> **Status:** ⚠️ 0/1 pages OK  
+> **Status:** ⚠️ 0/5 pages OK  
 > **Folder:** `curriculum-registrar-wsu-edu/`  
 
 ---
@@ -13,20 +13,20 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 
 | Metric | Value |
 |--------|-------|
-| Pages Scanned | 1 |
+| Pages Scanned | 5 |
 | Pages Passed | ✅ 0 |
-| Pages Failed | ❌ 1 |
+| Pages Failed | ❌ 5 |
 | Total JS Errors | 0 |
-| Total JS Warnings | 1 |
-| Total Images | 1 (by URL) |
+| Total JS Warnings | 5 |
+| Total Images | 2 (by URL) |
 | Images Missing Alt | ✅ 0 |
-| A11y Violations | ⚠️ 1 |
-| 🔴 Critical | 1 |
+| A11y Violations | ⚠️ 5 |
+| 🔴 Critical | 5 |
 | 🟠 Serious | 0 |
 | 🟡 Moderate | 0 |
 | 🔵 Minor | 0 |
-| Total HTML | 635.5 KB |
-| Total Screenshots | 108.6 KB |
+| Total HTML | 3.1 MB |
+| Total Screenshots | 544.1 KB |
 
 ## 🔒 SSL Certificate
 
@@ -143,6 +143,10 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 | Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |
 |:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|
 | ❌ | [/](_root/report.md) | 0 | Registrar Curriculum | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/contacts/](contacts/report.md) | 0 | Contacts \| Registrar Curriculum | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/forms/](forms/report.md) | 0 | Forms \| Registrar Curriculum | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/process/](process/report.md) | 0 | Process \| Registrar Curriculum | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/status/](status/report.md) | 0 | Status \| Registrar Curriculum | 1 |  |  |  | ⚠️ 1 |
 
 ## 📸 Page Screenshots
 
@@ -156,7 +160,32 @@ Click any thumbnail to view the full page report.
 </a>
 <br />❌ <code>/</code>
 </td>
-<td></td>
+<td align="center" width="33%">
+<a href="contacts/report.md">
+<img src="contacts/01-page-loaded.jpg" width="250" alt="/contacts/" />
+</a>
+<br />❌ <code>/contacts/</code>
+</td>
+<td align="center" width="33%">
+<a href="forms/report.md">
+<img src="forms/01-page-loaded.jpg" width="250" alt="/forms/" />
+</a>
+<br />❌ <code>/forms/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="process/report.md">
+<img src="process/01-page-loaded.jpg" width="250" alt="/process/" />
+</a>
+<br />❌ <code>/process/</code>
+</td>
+<td align="center" width="33%">
+<a href="status/report.md">
+<img src="status/01-page-loaded.jpg" width="250" alt="/status/" />
+</a>
+<br />❌ <code>/status/</code>
+</td>
 <td></td>
 </tr>
 </table>
@@ -164,11 +193,15 @@ Click any thumbnail to view the full page report.
 ## ❌ Failed Pages
 
 <details open>
-<summary><strong>1 page(s) failed</strong></summary>
+<summary><strong>5 page(s) failed</strong></summary>
 
 | Page | HTTP | Error |
 |------|:----:|-------|
 | [/](_root/report.md) | 0 | — |
+| [/contacts/](contacts/report.md) | 0 | — |
+| [/forms/](forms/report.md) | 0 | — |
+| [/process/](process/report.md) | 0 | — |
+| [/status/](status/report.md) | 0 | — |
 
 </details>
 
@@ -176,9 +209,9 @@ Click any thumbnail to view the full page report.
 
 | Metric | Value |
 |--------|-------|
-| Pages with violations | 1/1 |
-| Total violations | 1 |
-| 🔴 Critical | 1 |
+| Pages with violations | 5/5 |
+| Total violations | 5 |
+| 🔴 Critical | 5 |
 | 🟠 Serious | 0 |
 | 🟡 Moderate | 0 |
 | 🔵 Minor | 0 |
@@ -187,7 +220,7 @@ Click any thumbnail to view the full page report.
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | aria-allowed-attr | 🔴 | 1/1 | 1 |
+| 1 | [aria-allowed-attr](../a11y-rules.md#aria-allowed-attr) | 🔴 | 5/5 | 5 |
 
 ---
 

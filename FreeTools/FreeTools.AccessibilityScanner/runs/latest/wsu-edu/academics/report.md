@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://wsu.edu/academics/  
-> **Captured:** 2026-02-18 18:34:06 UTC  
+> **Captured:** 2026-02-19 02:09:27 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,7 +25,7 @@
 | URL | https://wsu.edu/academics/ |
 | Title | WSU Academics | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 125.9 KB |
+| HTML Size | 126.1 KB |
 | Screenshots | 1 (813.3 KB) |
 | Images | 14 (referenced by URL) |
 | Images Missing Alt | ⚠️ 10 |
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:34:06.2131813Z |
+| Captured | 2026-02-19T02:09:27.7882641Z |
 
 ## 🔴 JavaScript Errors
 
@@ -58,8 +58,8 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 
 - Screenshot #1: page-loaded (813.3 KB)
 - Cataloged 14 images by URL (no download)
-- axe-core: 0 violations (294ms)
-- htmlcheck: 5 violations (0ms)
+- axe-core: 0 violations (454ms)
+- htmlcheck: 5 violations (1ms)
 
 </details>
 
@@ -242,9 +242,9 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
-| 3 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
+| 3 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
 
 </details>
 

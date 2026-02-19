@@ -16,17 +16,17 @@ Success Rate:  [█████████████████████�
 | Pages Scanned | 1 |
 | Pages Passed | ✅ 1 |
 | Pages Failed | 0 |
-| Total JS Errors | 🔴 28 |
-| Total JS Warnings | 0 |
-| Total Images | 0 (by URL) |
-| Images Missing Alt | ✅ 0 |
-| A11y Violations | ⚠️ 4 |
-| 🔴 Critical | 0 |
-| 🟠 Serious | 1 |
+| Total JS Errors | 0 |
+| Total JS Warnings | 5 |
+| Total Images | 1 (by URL) |
+| Images Missing Alt | ⚠️ 1 |
+| A11y Violations | ⚠️ 6 |
+| 🔴 Critical | 1 |
+| 🟠 Serious | 3 |
 | 🟡 Moderate | 2 |
-| 🔵 Minor | 1 |
-| Total HTML | 201.8 KB |
-| Total Screenshots | 6.0 KB |
+| 🔵 Minor | 0 |
+| Total HTML | 206.9 KB |
+| Total Screenshots | 18.7 KB |
 
 ## 🔒 SSL Certificate
 
@@ -54,7 +54,7 @@ Success Rate:  [█████████████████████�
 
 | Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |
 |:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|
-| ✅ | [/](_root/report.md) | 200 |  |  | 1 | 2 | 1 | ⚠️ 4 |
+| ✅ | [/](_root/report.md) | 200 | nForm | 1 | 3 | 2 |  | ⚠️ 6 |
 
 ## 📸 Page Screenshots
 
@@ -73,43 +73,25 @@ Click any thumbnail to view the full page report.
 </tr>
 </table>
 
-## 🔴 JavaScript Errors
-
-<details>
-<summary><strong>28 error(s) across 1 page(s)</strong></summary>
-
-**/** (28 errors)
-
-```
-Fetch API cannot load https://nform.em.wsu.edu/_framework/dotnet.native.d2w7colv7e.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-MONO_WASM: instantiate_wasm_module() failed Error: download 'https://nform.em.wsu.edu/_framework/dotnet.native.d2w7colv7e.wasm' for dotnet.native.d2w7colv7e.wasm failed 0 TypeError: Failed to fetch
-Error in mono_download_assets: Error: download 'https://nform.em.wsu.edu/_framework/dotnet.native.d2w7colv7e.wasm' for dotnet.native.d2w7colv7e.wasm failed 0 TypeError: Failed to fetch
-Error in mono_download_assets: Error: download 'https://nform.em.wsu.edu/_framework/dotnet.native.d2w7colv7e.wasm' for dotnet.native.d2w7colv7e.wasm failed 0 TypeError: Failed to fetch
-... and 23 more (see _root/errors.log)
-```
-
-</details>
-
 ## ♿ Accessibility Summary
 
 | Metric | Value |
 |--------|-------|
 | Pages with violations | 1/1 |
-| Total violations | 4 |
-| 🔴 Critical | 0 |
-| 🟠 Serious | 1 |
+| Total violations | 6 |
+| 🔴 Critical | 1 |
+| 🟠 Serious | 3 |
 | 🟡 Moderate | 2 |
-| 🔵 Minor | 1 |
+| 🔵 Minor | 0 |
 
 ### Top 4 Issues
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | document-title | 🟠 | 1/1 | 1 |
-| 2 | skip-link | 🟡 | 1/1 | 1 |
-| 3 | landmark-one-main | 🟡 | 1/1 | 1 |
-| 4 | landmark-nav | 🔵 | 1/1 | 1 |
+| 1 | [image-alt](../a11y-rules.md#image-alt) | 🔴 | 1/1 | 2 |
+| 2 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/1 | 2 |
+| 3 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
+| 4 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 1/1 | 1 |
 
 ---
 

@@ -1,6 +1,6 @@
 # 🌐 Site Report: https://servicecontracts.em.wsu.edu/
 
-> **Status:** ✅ 1/1 pages OK  
+> **Status:** ⚠️ 0/1 pages OK  
 > **Folder:** `servicecontracts-em-wsu-edu/`  
 
 ---
@@ -8,25 +8,25 @@
 ## 📋 Summary
 
 ```
-Success Rate:  [██████████████████████████████] 100%
+Success Rate:  [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0%
 ```
 
 | Metric | Value |
 |--------|-------|
 | Pages Scanned | 1 |
-| Pages Passed | ✅ 1 |
-| Pages Failed | 0 |
-| Total JS Errors | 🔴 26 |
-| Total JS Warnings | 0 |
-| Total Images | 0 (by URL) |
-| Images Missing Alt | ✅ 0 |
-| A11y Violations | ⚠️ 4 |
-| 🔴 Critical | 0 |
-| 🟠 Serious | 1 |
+| Pages Passed | ✅ 0 |
+| Pages Failed | ❌ 1 |
+| Total JS Errors | 0 |
+| Total JS Warnings | 2 |
+| Total Images | 1 (by URL) |
+| Images Missing Alt | ⚠️ 1 |
+| A11y Violations | ⚠️ 8 |
+| 🔴 Critical | 1 |
+| 🟠 Serious | 5 |
 | 🟡 Moderate | 2 |
-| 🔵 Minor | 1 |
-| Total HTML | 190.7 KB |
-| Total Screenshots | 6.0 KB |
+| 🔵 Minor | 0 |
+| Total HTML | 195.9 KB |
+| Total Screenshots | 20.1 KB |
 
 ## 🔒 SSL Certificate
 
@@ -54,7 +54,7 @@ Success Rate:  [█████████████████████�
 
 | Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |
 |:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|
-| ✅ | [/](_root/report.md) | 200 |  |  | 1 | 2 | 1 | ⚠️ 4 |
+| ❌ | [/](_root/report.md) | 0 | ServiceContracts | 1 | 5 | 2 |  | ⚠️ 8 |
 
 ## 📸 Page Screenshots
 
@@ -66,28 +66,21 @@ Click any thumbnail to view the full page report.
 <a href="_root/report.md">
 <img src="_root/01-page-loaded.jpg" width="250" alt="/" />
 </a>
-<br />✅ <code>/</code>
+<br />❌ <code>/</code>
 </td>
 <td></td>
 <td></td>
 </tr>
 </table>
 
-## 🔴 JavaScript Errors
+## ❌ Failed Pages
 
-<details>
-<summary><strong>26 error(s) across 1 page(s)</strong></summary>
+<details open>
+<summary><strong>1 page(s) failed</strong></summary>
 
-**/** (26 errors)
-
-```
-Fetch API cannot load https://servicecontracts.em.wsu.edu/_framework/dotnet.native.pk43x8e436.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-MONO_WASM: instantiate_wasm_module() failed Error: download 'https://servicecontracts.em.wsu.edu/_framework/dotnet.native.pk43x8e436.wasm' for dotnet.native.pk43x8e436.wasm failed 0 TypeError: Failed ...
-Error in mono_download_assets: Error: download 'https://servicecontracts.em.wsu.edu/_framework/dotnet.native.pk43x8e436.wasm' for dotnet.native.pk43x8e436.wasm failed 0 TypeError: Failed to fetch
-Error in mono_download_assets: Error: download 'https://servicecontracts.em.wsu.edu/_framework/dotnet.native.pk43x8e436.wasm' for dotnet.native.pk43x8e436.wasm failed 0 TypeError: Failed to fetch
-... and 21 more (see _root/errors.log)
-```
+| Page | HTTP | Error |
+|------|:----:|-------|
+| [/](_root/report.md) | 0 | — |
 
 </details>
 
@@ -96,20 +89,20 @@ Error in mono_download_assets: Error: download 'https://servicecontracts.em.wsu.
 | Metric | Value |
 |--------|-------|
 | Pages with violations | 1/1 |
-| Total violations | 4 |
-| 🔴 Critical | 0 |
-| 🟠 Serious | 1 |
+| Total violations | 8 |
+| 🔴 Critical | 1 |
+| 🟠 Serious | 5 |
 | 🟡 Moderate | 2 |
-| 🔵 Minor | 1 |
+| 🔵 Minor | 0 |
 
 ### Top 4 Issues
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | document-title | 🟠 | 1/1 | 1 |
-| 2 | skip-link | 🟡 | 1/1 | 1 |
-| 3 | landmark-one-main | 🟡 | 1/1 | 1 |
-| 4 | landmark-nav | 🔵 | 1/1 | 1 |
+| 1 | [image-alt](../a11y-rules.md#image-alt) | 🔴 | 1/1 | 2 |
+| 2 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/1 | 4 |
+| 3 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
+| 4 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 1/1 | 1 |
 
 ---
 

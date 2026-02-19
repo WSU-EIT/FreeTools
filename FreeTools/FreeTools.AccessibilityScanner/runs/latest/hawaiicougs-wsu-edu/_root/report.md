@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://hawaiicougs.wsu.edu/  
-> **Captured:** 2026-02-18 18:43:41 UTC  
+> **Captured:** 2026-02-19 02:08:15 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -30,7 +30,7 @@
 | JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-18T18:43:41.0480853Z |
+| Captured | 2026-02-19T02:08:15.1722315Z |
 
 > ❌ **Error:** `net::ERR_NAME_NOT_RESOLVED at https://hawaiicougs.wsu.edu/
 Call log:

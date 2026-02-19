@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://em.wsu.edu/eit/eit-help-desk/  
-> **Captured:** 2026-02-18 18:34:14 UTC  
+> **Captured:** 2026-02-19 02:09:05 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:34:14.1965578Z |
+| Captured | 2026-02-19T02:09:05.4170744Z |
 
 ## 🔴 JavaScript Errors
 
@@ -61,7 +61,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (76.3 KB)
 - Cataloged 2 images by URL (no download)
-- axe-core: 1 violations (117ms)
+- axe-core: 1 violations (171ms)
 - htmlcheck: 1 violations (0ms)
 
 </details>
@@ -135,8 +135,8 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | heading-order | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3>` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [heading-order](../../a11y-rules.md#heading-order) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3>` |
 
 </details>
 

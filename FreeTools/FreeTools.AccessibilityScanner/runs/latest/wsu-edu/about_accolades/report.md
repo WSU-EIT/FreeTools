@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://wsu.edu/about/accolades/  
-> **Captured:** 2026-02-18 18:32:47 UTC  
+> **Captured:** 2026-02-19 02:07:58 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,7 +25,7 @@
 | URL | https://wsu.edu/about/accolades/ |
 | Title | Accolades | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 115.7 KB |
+| HTML Size | 115.8 KB |
 | Screenshots | 1 (720.9 KB) |
 | Images | 11 (referenced by URL) |
 | Images Missing Alt | ⚠️ 11 |
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:32:47.8287337Z |
+| Captured | 2026-02-19T02:07:58.0486577Z |
 
 ## 🔴 JavaScript Errors
 
@@ -58,7 +58,7 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 
 - Screenshot #1: page-loaded (720.9 KB)
 - Cataloged 11 images by URL (no download)
-- axe-core: 8 violations (229ms)
+- axe-core: 8 violations (449ms)
 - htmlcheck: 6 violations (1ms)
 
 </details>
@@ -220,11 +220,11 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | color-contrast | 🟠 | 🟢 1/1 | ⚠️ | — | `<strong>REsearch</strong>` |
-| 2 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
-| 4 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
-| 5 | td-has-header | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table><tbody><tr><td>Undergraduate programs for veterans...` |
+| 1 | [color-contrast](../../a11y-rules.md#color-contrast) | 🟠 | 🟢 1/1 | ⚠️ | — | `<strong>REsearch</strong>` |
+| 2 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
+| 4 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
+| 5 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table><tbody><tr><td>Undergraduate programs for veterans...` |
 
 </details>
 

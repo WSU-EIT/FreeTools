@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://cougnet.wsu.edu/  
-> **Captured:** 2026-02-18 18:40:56 UTC  
+> **Captured:** 2026-02-19 02:07:35 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:40:56.5966498Z |
+| Captured | 2026-02-19T02:07:35.2527176Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (121.1 KB)
 - Cataloged 2 images by URL (no download)
-- axe-core: 4 violations (257ms)
+- axe-core: 4 violations (228ms)
 - htmlcheck: 1 violations (0ms)
 
 </details>
@@ -120,9 +120,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | color-contrast | 🟠 | 🟢 1/1 | ⚠️ | — | `<p class="gray">` |
-| 3 | page-has-heading-one | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [color-contrast](../../a11y-rules.md#color-contrast) | 🟠 | 🟢 1/1 | ⚠️ | — | `<p class="gray">` |
+| 3 | [page-has-heading-one](../../a11y-rules.md#page-has-heading-one) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

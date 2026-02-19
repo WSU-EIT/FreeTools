@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://hrs.wsu.edu/employees/employee-handbooks/  
-> **Captured:** 2026-02-18 18:33:56 UTC  
+> **Captured:** 2026-02-19 02:13:37 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -26,7 +26,7 @@
 | Redirected To | https://hrs.wsu.edu/resources/employee-handbooks/ |
 | Title | Employee Handbooks – Human Resource Services, Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 75.1 KB |
+| HTML Size | 75.2 KB |
 | Screenshots | 1 (159.4 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -39,7 +39,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:33:56.7374219Z |
+| Captured | 2026-02-19T02:13:37.3624999Z |
 
 ## 🔴 JavaScript Errors
 
@@ -60,7 +60,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (159.4 KB)
 - No images found on page
-- axe-core: 0 violations (117ms)
+- axe-core: 0 violations (167ms)
 - htmlcheck: 4 violations (0ms)
 
 </details>
@@ -103,8 +103,8 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="search" class="search-field" placeholder="Se...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="search" class="search-field" placeholder="Se...` |
 
 </details>
 

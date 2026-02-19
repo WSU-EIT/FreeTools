@@ -5,7 +5,7 @@
   "Title": "WSU Graduations",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 661886,
+  "HtmlSizeBytes": 661888,
   "ScreenshotSizeBytes": 317389,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -35,7 +35,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 4,
     "Critical": 1,
     "Serious": 3,
@@ -60,5 +62,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:43:11.9877523Z"
+  "CapturedAt": "2026-02-19T02:08:06.9459774Z"
 }

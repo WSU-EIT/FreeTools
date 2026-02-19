@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://bursar.wsu.edu/excess-financial-aid-and-scholarships/  
-> **Captured:** 2026-02-18 18:39:22 UTC  
+> **Captured:** 2026-02-19 02:08:38 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://bursar.wsu.edu/excess-financial-aid-and-scholarships/ |
 | Title | Excess Financial Aid and Scholarships | Bursar | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 65.3 KB |
+| HTML Size | 65.5 KB |
 | Screenshots | 1 (118.1 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:39:22.2984125Z |
+| Captured | 2026-02-19T02:08:38.4706327Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (118.1 KB)
 - No images found on page
-- axe-core: 0 violations (256ms)
+- axe-core: 0 violations (294ms)
 - htmlcheck: 5 violations (0ms)
 
 </details>
@@ -89,9 +89,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://bursar.wsu.edu?s=" class="wsu-button-ui-...` |
-| 3 | heading-order | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3 class="wp-block-heading">` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://bursar.wsu.edu?s=" class="wsu-button-ui-...` |
+| 3 | [heading-order](../../a11y-rules.md#heading-order) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3 class="wp-block-heading">` |
 
 </details>
 

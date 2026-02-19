@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://sfspartners.em.wsu.edu/SARAS  
-> **Captured:** 2026-02-18 18:46:12 UTC  
+> **Captured:** 2026-02-19 02:11:03 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:46:12.5264122Z |
+| Captured | 2026-02-19T02:11:03.6490788Z |
 
 ## 🔴 JavaScript Errors
 
@@ -61,7 +61,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (49.2 KB)
 - No images found on page
-- axe-core: 6 violations (101ms)
+- axe-core: 6 violations (126ms)
 - htmlcheck: 3 violations (0ms)
 
 </details>
@@ -104,12 +104,12 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | color-contrast | 🟠 | 🟢 1/1 | ⚠️ | — | `<p class="text-muted">
+| 1 | [color-contrast](../../a11y-rules.md#color-contrast) | 🟠 | 🟢 1/1 | ⚠️ | — | `<p class="text-muted">
             If you have not been g...` |
-| 2 | link-in-text-block | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<a href="http://ferpa.em.wsu.edu/" target="_blank">(FERPA...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input name="term" type="text" value="" placeholder="sear...` |
-| 4 | page-has-heading-one | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 5 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 2 | [link-in-text-block](../../a11y-rules.md#link-in-text-block) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<a href="http://ferpa.em.wsu.edu/" target="_blank">(FERPA...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input name="term" type="text" value="" placeholder="sear...` |
+| 4 | [page-has-heading-one](../../a11y-rules.md#page-has-heading-one) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 5 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

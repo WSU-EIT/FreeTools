@@ -3,7 +3,9 @@
     "axe",
     "htmlcheck"
   ],
-  "ToolsSkipped": [],
+  "ToolsSkipped": [
+    "wave"
+  ],
   "TotalViolations": 4,
   "Critical": 0,
   "Serious": 1,
@@ -40,7 +42,7 @@
       "Message": "Documents must have \u003Ctitle\u003E element to aid in navigation",
       "HelpUrl": "https://dequeuniversity.com/rules/axe/4.10/document-title?application=axeAPI",
       "WcagCriteria": null,
-      "ExampleSnippet": "\u003Chtml lang=\u0022en\u0022 style=\u0022--blazor-load-percentage: 94.22222222222221%; --blazor-load-percentage-text: \u0026quot;94%\u0026quot;;\u0022\u003E"
+      "ExampleSnippet": "\u003Chtml lang=\u0022en\u0022 style=\u0022--blazor-load-percentage: 71.55555555555554%; --blazor-load-percentage-text: \u0026quot;71%\u0026quot;;\u0022\u003E"
     },
     {
       "Rank": 2,

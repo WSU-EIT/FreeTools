@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://em.wsu.edu/re411/future-terms/troubleshooting-registration/  
-> **Captured:** 2026-02-18 18:41:19 UTC  
+> **Captured:** 2026-02-19 02:17:22 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:41:19.1741524Z |
+| Captured | 2026-02-19T02:17:22.2867729Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (99.8 KB)
 - No images found on page
-- axe-core: 1 violations (239ms)
+- axe-core: 1 violations (241ms)
 - htmlcheck: 1 violations (0ms)
 
 </details>
@@ -89,8 +89,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | page-has-heading-one | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [page-has-heading-one](../../a11y-rules.md#page-has-heading-one) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

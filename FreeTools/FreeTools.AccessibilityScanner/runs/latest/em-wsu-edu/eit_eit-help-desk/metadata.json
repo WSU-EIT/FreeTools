@@ -5,7 +5,7 @@
   "Title": "EIT Help Desk | Enrollment IT",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 650717,
+  "HtmlSizeBytes": 650721,
   "ScreenshotSizeBytes": 78098,
   "CredentialUsed": null,
   "ConsoleErrorCount": 4,
@@ -35,7 +35,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 2,
     "Critical": 1,
     "Serious": 0,
@@ -60,5 +62,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:34:14.1965578Z"
+  "CapturedAt": "2026-02-19T02:09:05.4170744Z"
 }

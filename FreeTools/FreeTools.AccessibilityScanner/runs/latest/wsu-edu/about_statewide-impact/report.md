@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://wsu.edu/about/statewide-impact/  
-> **Captured:** 2026-02-18 18:33:51 UTC  
+> **Captured:** 2026-02-19 02:09:11 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,7 +25,7 @@
 | URL | https://wsu.edu/about/statewide-impact/ |
 | Title | Statewide Impact | Washington State University | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 103.5 KB |
+| HTML Size | 103.9 KB |
 | Screenshots | 1 (434.5 KB) |
 | Images | 2 (referenced by URL) |
 | Images Missing Alt | ⚠️ 2 |
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:33:51.7025389Z |
+| Captured | 2026-02-19T02:09:11.9284947Z |
 
 ## 🔴 JavaScript Errors
 
@@ -58,8 +58,8 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 
 - Screenshot #1: page-loaded (434.5 KB)
 - Cataloged 2 images by URL (no download)
-- axe-core: 2 violations (301ms)
-- htmlcheck: 5 violations (0ms)
+- axe-core: 2 violations (331ms)
+- htmlcheck: 5 violations (17ms)
 
 </details>
 
@@ -142,10 +142,10 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | color-contrast | 🟠 | 🟢 1/1 | ⚠️ | — | `<strong>Serving</strong>` |
-| 2 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
-| 4 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
+| 1 | [color-contrast](../../a11y-rules.md#color-contrast) | 🟠 | 🟢 1/1 | ⚠️ | — | `<strong>Serving</strong>` |
+| 2 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
+| 4 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
 
 </details>
 

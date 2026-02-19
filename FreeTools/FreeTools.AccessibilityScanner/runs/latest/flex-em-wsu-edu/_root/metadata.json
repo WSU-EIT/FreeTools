@@ -9,7 +9,7 @@
   "ScreenshotSizeBytes": 96598,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
-  "ConsoleWarningCount": 3,
+  "ConsoleWarningCount": 2,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.jpg",
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 8,
     "Critical": 0,
     "Serious": 5,
@@ -51,5 +53,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:42:24.8545173Z"
+  "CapturedAt": "2026-02-19T02:07:54.4490291Z"
 }

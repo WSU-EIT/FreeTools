@@ -2,20 +2,20 @@
   "PagePath": "/screenshotexe",
   "Url": "https://prod.em.wsu.edu/screenshotexe",
   "FinalUrl": null,
-  "Title": "",
+  "Title": "ScreenshotEXEBlazor",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 153809,
-  "ScreenshotSizeBytes": 6157,
+  "HtmlSizeBytes": 158143,
+  "ScreenshotSizeBytes": 11257,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 15,
-  "ConsoleWarningCount": 0,
+  "ConsoleErrorCount": 1,
+  "ConsoleWarningCount": 2,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 6157
+      "FileSize": 11257
     }
   ],
   "ImageCount": 0,
@@ -26,26 +26,28 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
-    "TotalViolations": 4,
+    "ToolsSkipped": [
+      "wave"
+    ],
+    "TotalViolations": 7,
     "Critical": 0,
-    "Serious": 1,
-    "Moderate": 2,
-    "Minor": 1,
+    "Serious": 4,
+    "Moderate": 3,
+    "Minor": 0,
     "ByTool": {
       "axe": {
-        "Total": 1,
+        "Total": 2,
         "Critical": 0,
-        "Serious": 1,
+        "Serious": 2,
         "Moderate": 0,
         "Minor": 0
       },
       "htmlcheck": {
-        "Total": 3,
+        "Total": 5,
         "Critical": 0,
-        "Serious": 0,
-        "Moderate": 2,
-        "Minor": 1
+        "Serious": 2,
+        "Moderate": 3,
+        "Minor": 0
       }
     }
   },
@@ -55,11 +57,11 @@
     "cache-control": "no-cache, no-store",
     "content-security-policy": "frame-ancestors \u0027self\u0027 login.wsu.edu cms.em.wsu.edu futurecoug.wsu.edu",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:47:02 GMT",
+    "date": "Thu, 19 Feb 2026 02:10:15 GMT",
     "pragma": "no-cache",
     "server": "Microsoft-IIS/10.0",
     "strict-transport-security": "max-age=2592000",
     "x-powered-by": "ASP.NET"
   },
-  "CapturedAt": "2026-02-18T18:47:02.6337822Z"
+  "CapturedAt": "2026-02-19T02:10:15.0816925Z"
 }

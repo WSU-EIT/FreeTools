@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://financialaid.wsu.edu/  
-> **Captured:** 2026-02-18 18:32:28 UTC  
+> **Captured:** 2026-02-19 02:07:18 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,7 +25,7 @@
 | Title | Student Financial Services | Washington State University |
 | Status | ✅ 200 |
 | HTML Size | 254.4 KB |
-| Screenshots | 1 (436.7 KB) |
+| Screenshots | 1 (462.3 KB) |
 | Images | 10 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
 | JS Errors | ✅ 0 |
@@ -37,17 +37,17 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:32:28.0513536Z |
+| Captured | 2026-02-19T02:07:18.4864473Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (436.7 KB)
+- Screenshot #1: page-loaded (462.3 KB)
 - Cataloged 10 images by URL (no download)
-- axe-core: 0 violations (570ms)
-- htmlcheck: 5 violations (1ms)
+- axe-core: 0 violations (635ms)
+- htmlcheck: 5 violations (2ms)
 
 </details>
 
@@ -60,7 +60,7 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>436.7 KB</sub>
+<br /><sub>462.3 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -183,8 +183,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
 
 </details>
 
@@ -194,7 +194,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (436.7 KB) |
+| `01-page-loaded.jpg` | page-loaded (462.3 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

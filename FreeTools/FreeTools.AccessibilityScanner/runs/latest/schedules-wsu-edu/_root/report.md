@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://schedules.wsu.edu/  
-> **Captured:** 2026-02-18 18:44:59 UTC  
+> **Captured:** 2026-02-19 02:09:41 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:44:59.8944346Z |
+| Captured | 2026-02-19T02:09:41.0109213Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (112.8 KB)
 - No images found on page
-- axe-core: 7 violations (333ms)
+- axe-core: 7 violations (284ms)
 - htmlcheck: 2 violations (0ms)
 
 </details>
@@ -89,10 +89,10 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-valid-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<a class="nav-main" aria-lable="Everett textbooks" target...` |
-| 2 | select-name | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<select id="OffCampusOrSiteBasedCourses" data-bind="optio...` |
-| 3 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a class="wsu-button-ui-search" href="https://search.wsu....` |
-| 4 | page-has-heading-one | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [aria-valid-attr](../../a11y-rules.md#aria-valid-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<a class="nav-main" aria-lable="Everett textbooks" target...` |
+| 2 | [select-name](../../a11y-rules.md#select-name) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<select id="OffCampusOrSiteBasedCourses" data-bind="optio...` |
+| 3 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a class="wsu-button-ui-search" href="https://search.wsu....` |
+| 4 | [page-has-heading-one](../../a11y-rules.md#page-has-heading-one) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://bursar.wsu.edu/policies-procedures-for-reporting-to-credit-bureau/  
-> **Captured:** 2026-02-18 18:40:22 UTC  
+> **Captured:** 2026-02-19 02:11:31 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://bursar.wsu.edu/policies-procedures-for-reporting-to-credit-bureau/ |
 | Title | Policies & Procedures for Reporting to Credit Bureau | Bursar | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 68.1 KB |
+| HTML Size | 68.2 KB |
 | Screenshots | 1 (292.1 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:40:22.7447450Z |
+| Captured | 2026-02-19T02:11:31.7214791Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (292.1 KB)
 - No images found on page
-- axe-core: 0 violations (230ms)
+- axe-core: 0 violations (258ms)
 - htmlcheck: 5 violations (0ms)
 
 </details>
@@ -89,9 +89,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://bursar.wsu.edu?s=" class="wsu-button-ui-...` |
-| 3 | heading-order | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3>` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://bursar.wsu.edu?s=" class="wsu-button-ui-...` |
+| 3 | [heading-order](../../a11y-rules.md#heading-order) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3>` |
 
 </details>
 

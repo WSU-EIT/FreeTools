@@ -25,7 +25,7 @@ Success Rate:  [█████████████████████�
 | 🟠 Serious | 8 |
 | 🟡 Moderate | 2 |
 | 🔵 Minor | 0 |
-| Total HTML | 268.0 KB |
+| Total HTML | 267.2 KB |
 | Total Screenshots | 413.1 KB |
 
 ## 🔒 SSL Certificate
@@ -107,9 +107,9 @@ Failed to load resource: the server responded with a status of 403 ()
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | link-name | 🟠 | 1/1 | 8 |
-| 2 | page-has-heading-one | 🟡 | 1/1 | 1 |
-| 3 | skip-link | 🟡 | 1/1 | 1 |
+| 1 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/1 | 8 |
+| 2 | [page-has-heading-one](../a11y-rules.md#page-has-heading-one) | 🟡 | 1/1 | 1 |
+| 3 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
 
 ---
 

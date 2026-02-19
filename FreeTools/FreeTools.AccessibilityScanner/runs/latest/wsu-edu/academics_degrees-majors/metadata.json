@@ -5,7 +5,7 @@
   "Title": "Degrees \u0026 Majors | Washington State University | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 94121,
+  "HtmlSizeBytes": 94168,
   "ScreenshotSizeBytes": 82046,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 6,
     "Critical": 0,
     "Serious": 6,
@@ -55,8 +57,8 @@
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:34:14 GMT",
-    "last-modified": "Wed, 18 Feb 2026 18:34:14 GMT",
+    "date": "Thu, 19 Feb 2026 02:09:36 GMT",
+    "last-modified": "Thu, 19 Feb 2026 02:09:36 GMT",
     "link": "\u003Chttps://wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://wsu.edu/wp-json/wp/v2/pages/3351\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
     "server": "nginx",
     "transfer-encoding": "chunked",
@@ -65,5 +67,5 @@
     "x-frame-options": "DENY",
     "x-xss-protection": "1; mode=block"
   },
-  "CapturedAt": "2026-02-18T18:34:14.4694524Z"
+  "CapturedAt": "2026-02-19T02:09:36.3072344Z"
 }

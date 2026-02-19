@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 3,
     "Critical": 0,
     "Serious": 0,
@@ -53,12 +55,12 @@
   "Headers": {
     "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:41:43 GMT",
+    "date": "Thu, 19 Feb 2026 02:07:47 GMT",
     "expires": "Mon, 01 Jan 1990 00:00:00 GMT",
-    "last-modified": "Wed, 18 Feb 2026 10:41:43 GMT",
+    "last-modified": "Wed, 18 Feb 2026 18:07:47 GMT",
     "pragma": "no-cache",
     "strict-transport-security": "max-age=31536000",
     "x-content-type-options": "nosniff"
   },
-  "CapturedAt": "2026-02-18T18:41:42.9202609Z"
+  "CapturedAt": "2026-02-19T02:07:47.468422Z"
 }

@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://housing.wsu.edu/current-students/academic-breaks/  
-> **Captured:** 2026-02-18 18:37:03 UTC  
+> **Captured:** 2026-02-19 02:11:13 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:37:03.8732405Z |
+| Captured | 2026-02-19T02:11:13.7063253Z |
 
 ## 🔴 JavaScript Errors
 
@@ -59,7 +59,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (164.1 KB)
 - No images found on page
-- axe-core: 6 violations (171ms)
+- axe-core: 6 violations (226ms)
 - htmlcheck: 0 violations (0ms)
 
 </details>
@@ -102,8 +102,8 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-required-parent | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<a class="foundationMenuLink" href="/prospective-students...` |
-| 2 | aria-required-children | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<ul id="mainNav" class="dropdown menu" aria-label="Main N...` |
+| 1 | [aria-required-parent](../../a11y-rules.md#aria-required-parent) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<a class="foundationMenuLink" href="/prospective-students...` |
+| 2 | [aria-required-children](../../a11y-rules.md#aria-required-children) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<ul id="mainNav" class="dropdown menu" aria-label="Main N...` |
 
 </details>
 

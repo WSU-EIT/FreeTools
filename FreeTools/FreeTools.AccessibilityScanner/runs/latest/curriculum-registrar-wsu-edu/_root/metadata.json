@@ -5,7 +5,7 @@
   "Title": "Registrar Curriculum",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 650725,
+  "HtmlSizeBytes": 650719,
   "ScreenshotSizeBytes": 111209,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -31,7 +31,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 1,
     "Critical": 1,
     "Serious": 0,
@@ -56,5 +58,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:41:07.0359824Z"
+  "CapturedAt": "2026-02-19T02:07:33.0839167Z"
 }

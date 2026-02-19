@@ -1,6 +1,6 @@
 # 🌐 Site Report: https://prod.em.wsu.edu/
 
-> **Status:** ⚠️ 8/15 pages OK  
+> **Status:** ⚠️ 8/16 pages OK  
 > **Folder:** `prod-em-wsu-edu/`  
 
 ---
@@ -8,25 +8,25 @@
 ## 📋 Summary
 
 ```
-Success Rate:  [████████████████░░░░░░░░░░░░░░] 53%
+Success Rate:  [███████████████░░░░░░░░░░░░░░░] 50%
 ```
 
 | Metric | Value |
 |--------|-------|
-| Pages Scanned | 15 |
+| Pages Scanned | 16 |
 | Pages Passed | ✅ 8 |
-| Pages Failed | ❌ 7 |
-| Total JS Errors | 🔴 136 |
-| Total JS Warnings | 8 |
-| Total Images | 3 (by URL) |
-| Images Missing Alt | ⚠️ 3 |
-| A11y Violations | ⚠️ 89 |
-| 🔴 Critical | 3 |
-| 🟠 Serious | 50 |
-| 🟡 Moderate | 29 |
-| 🔵 Minor | 7 |
-| Total HTML | 9.3 MB |
-| Total Screenshots | 316.3 KB |
+| Pages Failed | ❌ 8 |
+| Total JS Errors | 🔴 413 |
+| Total JS Warnings | 11 |
+| Total Images | 1 (by URL) |
+| Images Missing Alt | ⚠️ 1 |
+| A11y Violations | ⚠️ 91 |
+| 🔴 Critical | 1 |
+| 🟠 Serious | 49 |
+| 🟡 Moderate | 33 |
+| 🔵 Minor | 8 |
+| Total HTML | 9.4 MB |
+| Total Screenshots | 343.4 KB |
 
 ## 🔒 SSL Certificate
 
@@ -55,8 +55,8 @@ Success Rate:  [████████████████░░░░░�
 | Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |
 |:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|
 | ❌ | [/](_root/report.md) | 503 | Maintenance |  | 4 | 2 |  | ⚠️ 6 |
-| ✅ | [/Credentials](Credentials/report.md) | 200 | Credentials | 1 | 5 | 2 |  | ⚠️ 8 |
-| ✅ | [/Dependencies](Dependencies/report.md) | 200 | Dependency Manager | 1 | 5 | 2 |  | ⚠️ 8 |
+| ✅ | [/Credentials](Credentials/report.md) | 200 |  |  | 1 | 2 | 1 | ⚠️ 4 |
+| ✅ | [/Dependencies](Dependencies/report.md) | 200 |  |  | 1 | 2 | 1 | ⚠️ 4 |
 | ❌ | [/Flex](Flex/report.md) | 500 | 500 - Internal server error. |  | 2 | 2 | 1 | ⚠️ 5 |
 | ✅ | [/FormsToImaging](FormsToImaging/report.md) | 200 |  |  | 1 | 2 | 1 | ⚠️ 4 |
 | ✅ | [/FreeCICD](FreeCICD/report.md) | 200 | FreeCICD |  | 4 | 2 |  | ⚠️ 6 |
@@ -64,11 +64,12 @@ Success Rate:  [████████████████░░░░░�
 | ✅ | [/Orientation](Orientation/report.md) | 200 | Orientation |  | 8 | 1 |  | ⚠️ 9 |
 | ❌ | [/prod](prod/report.md) | 500 | 500 - Internal server error. |  | 2 | 2 | 1 | ⚠️ 5 |
 | ✅ | [/SAP](SAP/report.md) | 200 | SAP |  | 4 | 1 |  | ⚠️ 5 |
-| ✅ | [/screenshotexe](screenshotexe/report.md) | 200 |  |  | 1 | 2 | 1 | ⚠️ 4 |
+| ✅ | [/screenshotexe](screenshotexe/report.md) | 200 | ScreenshotEXEBlazor |  | 4 | 3 |  | ⚠️ 7 |
 | ✅ | [/Touchpoints](Touchpoints/report.md) | 200 |  |  | 1 | 2 | 1 | ⚠️ 4 |
 | ❌ | [/TouchPointsData](TouchPointsData/report.md) | 500 | 500 - Internal server error. |  | 2 | 2 | 1 | ⚠️ 5 |
 | ❌ | [/Workday](Workday/report.md) | 0 | Workday |  | 4 | 3 |  | ⚠️ 7 |
 | ❌ | [/WSAF](WSAF/report.md) | 0 | WorkStudy | 1 | 5 | 2 |  | ⚠️ 8 |
+| ❌ | [/WSAF/Authorization/RequestAccess](WSAF_Authorization_RequestAccess/report.md) | 0 | WorkStudy |  | 4 | 3 |  | ⚠️ 7 |
 
 ## 📸 Page Screenshots
 
@@ -175,31 +176,64 @@ Click any thumbnail to view the full page report.
 <br />❌ <code>/WSAF</code>
 </td>
 </tr>
+<tr>
+<td align="center" width="33%">
+<a href="WSAF_Authorization_RequestAccess/report.md">
+<img src="WSAF_Authorization_RequestAccess/01-page-loaded.jpg" width="250" alt="/WSAF/Authorization/RequestAccess" />
+</a>
+<br />❌ <code>/WSAF/Authorization/RequestAccess</code>
+</td>
+<td></td>
+<td></td>
+</tr>
 </table>
 
 ## ❌ Failed Pages
 
 <details open>
-<summary><strong>7 page(s) failed</strong></summary>
+<summary><strong>8 page(s) failed</strong></summary>
 
 | Page | HTTP | Error |
 |------|:----:|-------|
 | [/](_root/report.md) | 503 | — |
 | [/Flex](Flex/report.md) | 500 | — |
 | [/Hello](Hello/report.md) | 500 | — |
-| [/TouchPointsData](TouchPointsData/report.md) | 500 | — |
-| [/WSAF](WSAF/report.md) | 0 | — |
-| [/Workday](Workday/report.md) | 0 | — |
 | [/prod](prod/report.md) | 500 | — |
+| [/TouchPointsData](TouchPointsData/report.md) | 500 | — |
+| [/Workday](Workday/report.md) | 0 | — |
+| [/WSAF](WSAF/report.md) | 0 | — |
+| [/WSAF/Authorization/RequestAccess](WSAF_Authorization_RequestAccess/report.md) | 0 | — |
 
 </details>
 
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>136 error(s) across 8 page(s)</strong></summary>
+<summary><strong>413 error(s) across 10 page(s)</strong></summary>
 
-**/Touchpoints** (84 errors)
+**/Dependencies** (181 errors)
+
+```
+Fetch API cannot load https://prod.em.wsu.edu/Dependencies/_framework/dotnet.native.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Error in mono_download_assets: Error: download 'https://prod.em.wsu.edu/Dependencies/_framework/dotnet.native.wasm' for dotnet.native.wasm failed 0 TypeError: Failed to fetch
+Fetch API cannot load https://prod.em.wsu.edu/Dependencies/_framework/MudBlazor.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+... and 176 more (see Dependencies/errors.log)
+```
+
+**/FormsToImaging** (130 errors)
+
+```
+Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/Microsoft.CodeAnalysis.CSharp.spyk6zagzf.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Error in mono_download_assets: Error: download 'https://prod.em.wsu.edu/FormsToImaging/_framework/Microsoft.CodeAnalysis.CSharp.spyk6zagzf.wasm' for Microsoft.CodeAnalysis.CSharp.spyk6zagzf.wasm faile...
+Error in mono_download_assets: Error: download 'https://prod.em.wsu.edu/FormsToImaging/_framework/Microsoft.CodeAnalysis.CSharp.spyk6zagzf.wasm' for Microsoft.CodeAnalysis.CSharp.spyk6zagzf.wasm faile...
+Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/MudBlazor.845kbj1w9a.wasm. 
+... and 125 more (see FormsToImaging/errors.log)
+```
+
+**/Touchpoints** (81 errors)
 
 ```
 Failed to load resource: net::ERR_CONNECTION_RESET
@@ -208,30 +242,18 @@ MONO_WASM: Failed to fetch
 TypeError: Failed to fetch
 Error in mono_download_assets: TypeError: Failed to fetch
 Failed to load resource: net::ERR_CONNECTION_RESET
-... and 79 more (see Touchpoints/errors.log)
+... and 76 more (see Touchpoints/errors.log)
 ```
 
-**/FormsToImaging** (30 errors)
+**/Credentials** (13 errors)
 
 ```
-Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/dotnet.native.y68cfu4kuf.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-MONO_WASM: instantiate_wasm_module() failed Error: download 'https://prod.em.wsu.edu/FormsToImaging/_framework/dotnet.native.y68cfu4kuf.wasm' for dotnet.native.y68cfu4kuf.wasm failed 0 TypeError: Fail...
-Error in mono_download_assets: Error: download 'https://prod.em.wsu.edu/FormsToImaging/_framework/dotnet.native.y68cfu4kuf.wasm' for dotnet.native.y68cfu4kuf.wasm failed 0 TypeError: Failed to fetch
-Error in mono_download_assets: Error: download 'https://prod.em.wsu.edu/FormsToImaging/_framework/dotnet.native.y68cfu4kuf.wasm' for dotnet.native.y68cfu4kuf.wasm failed 0 TypeError: Failed to fetch
-... and 25 more (see FormsToImaging/errors.log)
-```
-
-**/screenshotexe** (15 errors)
-
-```
+Fetch API cannot load https://prod.em.wsu.edu/Credentials/_framework/Microsoft.VisualBasic.Core.wasm. 
 Failed to load resource: net::ERR_CONNECTION_RESET
-Error in mono_download_assets: TypeError: Failed to fetch
-MONO_WASM: Failed to fetch
-TypeError: Failed to fetch
-Error in mono_download_assets: TypeError: Failed to fetch
+Error in mono_download_assets: Error: download 'https://prod.em.wsu.edu/Credentials/_framework/Microsoft.VisualBasic.Core.wasm' for Microsoft.VisualBasic.Core.wasm failed 0 TypeError: Failed to fetch
+Fetch API cannot load https://prod.em.wsu.edu/Credentials/_framework/MudBlazor.wasm. 
 Failed to load resource: net::ERR_CONNECTION_RESET
-... and 10 more (see screenshotexe/errors.log)
+... and 8 more (see Credentials/errors.log)
 ```
 
 **/** (3 errors)
@@ -254,13 +276,19 @@ Failed to load resource: the server responded with a status of 500 ()
 Failed to load resource: the server responded with a status of 500 ()
 ```
 
-**/TouchPointsData** (1 errors)
+**/prod** (1 errors)
 
 ```
 Failed to load resource: the server responded with a status of 500 ()
 ```
 
-**/prod** (1 errors)
+**/screenshotexe** (1 errors)
+
+```
+Failed to load resource: the server responded with a status of 401 ()
+```
+
+**/TouchPointsData** (1 errors)
 
 ```
 Failed to load resource: the server responded with a status of 500 ()
@@ -272,27 +300,27 @@ Failed to load resource: the server responded with a status of 500 ()
 
 | Metric | Value |
 |--------|-------|
-| Pages with violations | 15/15 |
-| Total violations | 89 |
-| 🔴 Critical | 3 |
-| 🟠 Serious | 50 |
-| 🟡 Moderate | 29 |
-| 🔵 Minor | 7 |
+| Pages with violations | 16/16 |
+| Total violations | 91 |
+| 🔴 Critical | 1 |
+| 🟠 Serious | 49 |
+| 🟡 Moderate | 33 |
+| 🔵 Minor | 8 |
 
 ### Top 10 Issues
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | image-alt | 🔴 | 3/15 | 6 |
-| 2 | link-name | 🟠 | 6/15 | 22 |
-| 3 | html-has-lang | 🟠 | 4/15 | 8 |
-| 4 | color-contrast | 🟠 | 2/15 | 3 |
-| 5 | button-name | 🟠 | 2/15 | 5 |
-| 6 | label | 🟠 | 2/15 | 4 |
-| 7 | document-title | 🟠 | 3/15 | 3 |
-| 8 | list | 🟠 | 2/15 | 2 |
-| 9 | skip-link | 🟡 | 15/15 | 15 |
-| 10 | landmark-one-main | 🟡 | 13/15 | 13 |
+| 1 | [image-alt](../a11y-rules.md#image-alt) | 🔴 | 1/16 | 2 |
+| 2 | [link-name](../a11y-rules.md#link-name) | 🟠 | 6/16 | 22 |
+| 3 | [html-has-lang](../a11y-rules.md#html-has-lang) | 🟠 | 4/16 | 8 |
+| 4 | [color-contrast](../a11y-rules.md#color-contrast) | 🟠 | 2/16 | 3 |
+| 5 | [button-name](../a11y-rules.md#button-name) | 🟠 | 2/16 | 5 |
+| 6 | [document-title](../a11y-rules.md#document-title) | 🟠 | 4/16 | 4 |
+| 7 | [label](../a11y-rules.md#label) | 🟠 | 2/16 | 4 |
+| 8 | [list](../a11y-rules.md#list) | 🟠 | 2/16 | 2 |
+| 9 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 16/16 | 16 |
+| 10 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 14/16 | 14 |
 
 ---
 

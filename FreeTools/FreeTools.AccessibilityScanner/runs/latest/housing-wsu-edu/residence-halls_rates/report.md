@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://housing.wsu.edu/residence-halls/rates/  
-> **Captured:** 2026-02-18 18:39:42 UTC  
+> **Captured:** 2026-02-19 02:15:43 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:39:42.8664744Z |
+| Captured | 2026-02-19T02:15:43.4731177Z |
 
 ## 🔴 JavaScript Errors
 
@@ -59,8 +59,8 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (443.7 KB)
 - No images found on page
-- axe-core: 6 violations (783ms)
-- htmlcheck: 0 violations (2ms)
+- axe-core: 6 violations (828ms)
+- htmlcheck: 0 violations (1ms)
 
 </details>
 
@@ -102,8 +102,8 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-required-parent | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<a class="foundationMenuLink" href="/prospective-students...` |
-| 2 | aria-required-children | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<ul id="mainNav" class="dropdown menu" aria-label="Main N...` |
+| 1 | [aria-required-parent](../../a11y-rules.md#aria-required-parent) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<a class="foundationMenuLink" href="/prospective-students...` |
+| 2 | [aria-required-children](../../a11y-rules.md#aria-required-children) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<ul id="mainNav" class="dropdown menu" aria-label="Main N...` |
 
 </details>
 

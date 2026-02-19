@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://testpool01.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:47:48 UTC  
+> **Captured:** 2026-02-19 02:12:15 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:47:48.5147633Z |
+| Captured | 2026-02-19T02:12:15.1900185Z |
 
 ## 🔴 JavaScript Errors
 
@@ -59,7 +59,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (20.5 KB)
 - No images found on page
-- axe-core: 1 violations (88ms)
+- axe-core: 1 violations (112ms)
 - htmlcheck: 5 violations (0ms)
 
 </details>
@@ -102,10 +102,10 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a b-xdsraqo0e2="" class="wsu-g-header__search-icon-link"...` |
-| 2 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button b-xdsraqo0e2="" class="wsu-g-header__more-icon-li...` |
-| 3 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a b-xdsraqo0e2="" class="wsu-g-header__search-icon-link"...` |
+| 2 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button b-xdsraqo0e2="" class="wsu-g-header__more-icon-li...` |
+| 3 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

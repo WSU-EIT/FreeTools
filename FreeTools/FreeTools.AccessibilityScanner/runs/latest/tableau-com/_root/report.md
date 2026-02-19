@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://tableau.com/  
-> **Captured:** 2026-02-18 18:48:10 UTC  
+> **Captured:** 2026-02-19 02:12:26 UTC  
 > **Status:** ❌ 403  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 1 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:48:10.9077533Z |
+| Captured | 2026-02-19T02:12:26.4104825Z |
 
 ## 🔴 JavaScript Errors
 
@@ -58,7 +58,7 @@ Failed to load resource: the server responded with a status of 403 (Forbidden)
 
 - Screenshot #1: page-loaded (17.2 KB)
 - No images found on page
-- axe-core: 1 violations (74ms)
+- axe-core: 1 violations (92ms)
 - htmlcheck: 4 violations (0ms)
 
 </details>
@@ -101,13 +101,13 @@ Failed to load resource: the server responded with a status of 403 (Forbidden)
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | html-has-lang | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<html><head>
+| 1 | [html-has-lang](../../a11y-rules.md#html-has-lang) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<html><head>
 <title>Access Denied</title>
 </head><body>
 <...` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 2 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [landmark-nav](../../a11y-rules.md#landmark-nav) | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

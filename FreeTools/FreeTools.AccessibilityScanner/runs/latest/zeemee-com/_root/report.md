@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://zeemee.com/  
-> **Captured:** 2026-02-18 18:43:57 UTC  
+> **Captured:** 2026-02-19 02:07:18 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:43:57.9537484Z |
+| Captured | 2026-02-19T02:07:18.5449083Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (69.8 KB)
 - Cataloged 9 images by URL (no download)
-- axe-core: 6 violations (194ms)
+- axe-core: 6 violations (281ms)
 - htmlcheck: 1 violations (0ms)
 
 </details>
@@ -183,11 +183,11 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | color-contrast | 🟠 | 🟢 1/1 | ⚠️ | — | `<a href="https://policies.google.com/privacy"> Privacy Po...` |
-| 2 | meta-viewport | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<meta name="viewport" content="width=device-width, initia...` |
-| 3 | link-in-text-block | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<a href="https://policies.google.com/privacy"> Privacy Po...` |
-| 4 | aria-hidden-focus | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<button aria-hidden="true" id="hidden_skip_to_content" ty...` |
-| 5 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [color-contrast](../../a11y-rules.md#color-contrast) | 🟠 | 🟢 1/1 | ⚠️ | — | `<a href="https://policies.google.com/privacy"> Privacy Po...` |
+| 2 | [meta-viewport](../../a11y-rules.md#meta-viewport) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<meta name="viewport" content="width=device-width, initia...` |
+| 3 | [link-in-text-block](../../a11y-rules.md#link-in-text-block) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<a href="https://policies.google.com/privacy"> Privacy Po...` |
+| 4 | [aria-hidden-focus](../../a11y-rules.md#aria-hidden-focus) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<button aria-hidden="true" id="hidden_skip_to_content" ty...` |
+| 5 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

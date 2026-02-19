@@ -1,6 +1,6 @@
 # 🌐 Site Report: https://enrollmentverification.em.wsu.edu/
 
-> **Status:** ⚠️ 0/1 pages OK  
+> **Status:** ⚠️ 0/6 pages OK  
 > **Folder:** `enrollmentverification-em-wsu-edu/`  
 
 ---
@@ -13,20 +13,20 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 
 | Metric | Value |
 |--------|-------|
-| Pages Scanned | 1 |
+| Pages Scanned | 6 |
 | Pages Passed | ✅ 0 |
-| Pages Failed | ❌ 1 |
+| Pages Failed | ❌ 6 |
 | Total JS Errors | 0 |
-| Total JS Warnings | 1 |
-| Total Images | 0 (by URL) |
+| Total JS Warnings | 7 |
+| Total Images | 1 (by URL) |
 | Images Missing Alt | ✅ 0 |
-| A11y Violations | ⚠️ 3 |
-| 🔴 Critical | 1 |
+| A11y Violations | ⚠️ 9 |
+| 🔴 Critical | 6 |
 | 🟠 Serious | 2 |
-| 🟡 Moderate | 0 |
+| 🟡 Moderate | 1 |
 | 🔵 Minor | 0 |
-| Total HTML | 644.0 KB |
-| Total Screenshots | 226.9 KB |
+| Total HTML | 3.7 MB |
+| Total Screenshots | 793.6 KB |
 
 ## 🔒 SSL Certificate
 
@@ -143,6 +143,11 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 | Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |
 |:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|
 | ❌ | [/](_root/report.md) | 0 | Enrollment Verification | 1 | 2 |  |  | ⚠️ 3 |
+| ❌ | [/faqs/](faqs/report.md) | 0 | FAQs \| Enrollment Verification | 1 |  | 1 |  | ⚠️ 2 |
+| ❌ | [/loan-deferment/](loan-deferment/report.md) | 0 | Loan Deferment \| Enrollment Verifica... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/nsc-instructions/](nsc-instructions/report.md) | 0 | Instructions: NSC \| Enrollment Verif... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/ofsr-form-do-not-delete/](ofsr-form-do-not-delete/report.md) | 0 | Enrollment Verifications \| Enrollmen... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/third-party-inquiries/](third-party-inquiries/report.md) | 0 | Third Party Inquiries \| Enrollment V... | 1 |  |  |  | ⚠️ 1 |
 
 ## 📸 Page Screenshots
 
@@ -156,19 +161,54 @@ Click any thumbnail to view the full page report.
 </a>
 <br />❌ <code>/</code>
 </td>
-<td></td>
-<td></td>
+<td align="center" width="33%">
+<a href="faqs/report.md">
+<img src="faqs/01-page-loaded.jpg" width="250" alt="/faqs/" />
+</a>
+<br />❌ <code>/faqs/</code>
+</td>
+<td align="center" width="33%">
+<a href="loan-deferment/report.md">
+<img src="loan-deferment/01-page-loaded.jpg" width="250" alt="/loan-deferment/" />
+</a>
+<br />❌ <code>/loan-deferment/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="nsc-instructions/report.md">
+<img src="nsc-instructions/01-page-loaded.jpg" width="250" alt="/nsc-instructions/" />
+</a>
+<br />❌ <code>/nsc-instructions/</code>
+</td>
+<td align="center" width="33%">
+<a href="ofsr-form-do-not-delete/report.md">
+<img src="ofsr-form-do-not-delete/01-page-loaded.jpg" width="250" alt="/ofsr-form-do-not-delete/" />
+</a>
+<br />❌ <code>/ofsr-form-do-not-delete/</code>
+</td>
+<td align="center" width="33%">
+<a href="third-party-inquiries/report.md">
+<img src="third-party-inquiries/01-page-loaded.jpg" width="250" alt="/third-party-inquiries/" />
+</a>
+<br />❌ <code>/third-party-inquiries/</code>
+</td>
 </tr>
 </table>
 
 ## ❌ Failed Pages
 
 <details open>
-<summary><strong>1 page(s) failed</strong></summary>
+<summary><strong>6 page(s) failed</strong></summary>
 
 | Page | HTTP | Error |
 |------|:----:|-------|
 | [/](_root/report.md) | 0 | — |
+| [/faqs/](faqs/report.md) | 0 | — |
+| [/loan-deferment/](loan-deferment/report.md) | 0 | — |
+| [/nsc-instructions/](nsc-instructions/report.md) | 0 | — |
+| [/ofsr-form-do-not-delete/](ofsr-form-do-not-delete/report.md) | 0 | — |
+| [/third-party-inquiries/](third-party-inquiries/report.md) | 0 | — |
 
 </details>
 
@@ -176,19 +216,20 @@ Click any thumbnail to view the full page report.
 
 | Metric | Value |
 |--------|-------|
-| Pages with violations | 1/1 |
-| Total violations | 3 |
-| 🔴 Critical | 1 |
+| Pages with violations | 6/6 |
+| Total violations | 9 |
+| 🔴 Critical | 6 |
 | 🟠 Serious | 2 |
-| 🟡 Moderate | 0 |
+| 🟡 Moderate | 1 |
 | 🔵 Minor | 0 |
 
-### Top 2 Issues
+### Top 3 Issues
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | aria-allowed-attr | 🔴 | 1/1 | 1 |
-| 2 | link-name | 🟠 | 1/1 | 2 |
+| 1 | [aria-allowed-attr](../a11y-rules.md#aria-allowed-attr) | 🔴 | 6/6 | 6 |
+| 2 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/6 | 2 |
+| 3 | [heading-order](../a11y-rules.md#heading-order) | 🟡 | 1/6 | 1 |
 
 ---
 

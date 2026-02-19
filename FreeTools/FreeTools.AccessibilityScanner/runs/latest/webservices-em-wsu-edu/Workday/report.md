@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://webservices.em.wsu.edu/Workday  
-> **Captured:** 2026-02-18 18:47:52 UTC  
+> **Captured:** 2026-02-19 02:14:32 UTC  
 > **Status:** ❌ 503  
 
 ---
@@ -33,7 +33,7 @@
 | JS Warnings | 0 |
 | A11y Violations | ✅ 0 |
 | Auth | none |
-| Captured | 2026-02-18T18:47:52.5063863Z |
+| Captured | 2026-02-19T02:14:32.5025678Z |
 
 ## 🔴 JavaScript Errors
 
@@ -53,7 +53,7 @@ Failed to load resource: the server responded with a status of 503 ()
 
 - Screenshot #1: page-loaded (30.0 KB)
 - No images found on page
-- axe-core: 0 violations (239ms)
+- axe-core: 0 violations (252ms)
 - htmlcheck: 0 violations (0ms)
 
 </details>

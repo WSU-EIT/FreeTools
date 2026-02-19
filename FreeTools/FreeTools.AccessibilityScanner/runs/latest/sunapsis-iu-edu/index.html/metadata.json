@@ -5,7 +5,7 @@
   "Title": "sunapsis: Indiana University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 31365,
+  "HtmlSizeBytes": 31373,
   "ScreenshotSizeBytes": 181710,
   "CredentialUsed": null,
   "ConsoleErrorCount": 4,
@@ -47,7 +47,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 0,
     "Critical": 0,
     "Serious": 0,
@@ -76,9 +78,9 @@
     "content-encoding": "gzip",
     "content-length": "4805",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:47:40 GMT",
+    "date": "Thu, 19 Feb 2026 02:12:59 GMT",
     "vary": "Accept-Encoding",
     "x-frame-options": "DENY"
   },
-  "CapturedAt": "2026-02-18T18:47:40.5027901Z"
+  "CapturedAt": "2026-02-19T02:12:59.3534773Z"
 }

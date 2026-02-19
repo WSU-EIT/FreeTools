@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://counselorbreakfast.wsu.edu/  
-> **Captured:** 2026-02-18 18:41:04 UTC  
+> **Captured:** 2026-02-19 02:07:21 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -30,7 +30,7 @@
 | JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-18T18:41:04.3387306Z |
+| Captured | 2026-02-19T02:07:21.8229114Z |
 
 > ❌ **Error:** `net::ERR_NAME_NOT_RESOLVED at https://counselorbreakfast.wsu.edu/
 Call log:

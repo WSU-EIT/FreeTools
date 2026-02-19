@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://financialaid.wsu.edu/financial-aid-awards-processing/  
-> **Captured:** 2026-02-18 18:33:31 UTC  
+> **Captured:** 2026-02-19 02:10:12 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,8 +24,8 @@
 | URL | https://financialaid.wsu.edu/financial-aid-awards-processing/ |
 | Title | Financial Aid Awards Processing | Student Financial Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 228.9 KB |
-| Screenshots | 1 (400.7 KB) |
+| HTML Size | 229.0 KB |
+| Screenshots | 1 (369.6 KB) |
 | Images | 5 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
 | JS Errors | ✅ 0 |
@@ -37,17 +37,17 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:33:31.3417561Z |
+| Captured | 2026-02-19T02:10:12.1778206Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (400.7 KB)
+- Screenshot #1: page-loaded (369.6 KB)
 - Cataloged 5 images by URL (no download)
-- axe-core: 0 violations (226ms)
-- htmlcheck: 5 violations (0ms)
+- axe-core: 0 violations (283ms)
+- htmlcheck: 5 violations (1ms)
 
 </details>
 
@@ -60,7 +60,7 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>400.7 KB</sub>
+<br /><sub>369.6 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -143,8 +143,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
 
 </details>
 
@@ -154,7 +154,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (400.7 KB) |
+| `01-page-loaded.jpg` | page-loaded (369.6 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

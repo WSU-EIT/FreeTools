@@ -47,7 +47,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 0,
     "Critical": 0,
     "Serious": 0,
@@ -76,9 +78,9 @@
     "content-encoding": "gzip",
     "content-length": "4805",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:47:33 GMT",
+    "date": "Thu, 19 Feb 2026 02:11:52 GMT",
     "vary": "Accept-Encoding",
     "x-frame-options": "DENY"
   },
-  "CapturedAt": "2026-02-18T18:47:33.3773135Z"
+  "CapturedAt": "2026-02-19T02:11:52.6759105Z"
 }

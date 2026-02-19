@@ -5,8 +5,8 @@
   "Title": "Workday",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 166202,
-  "ScreenshotSizeBytes": 74354,
+  "HtmlSizeBytes": 166203,
+  "ScreenshotSizeBytes": 75064,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 2,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 74354
+      "FileSize": 75064
     }
   ],
   "ImageCount": 0,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 7,
     "Critical": 0,
     "Serious": 4,
@@ -51,5 +53,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:46:21.2280377Z"
+  "CapturedAt": "2026-02-19T02:10:38.8900713Z"
 }

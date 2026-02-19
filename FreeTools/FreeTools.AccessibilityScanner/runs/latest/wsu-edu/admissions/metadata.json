@@ -3,10 +3,10 @@
   "Url": "https://wsu.edu/admissions/",
   "FinalUrl": null,
   "Title": "WSU Admissions | Washington State University | Washington State University",
-  "StatusCode": 0,
-  "Success": false,
-  "HtmlSizeBytes": 120517,
-  "ScreenshotSizeBytes": 504311,
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 120481,
+  "ScreenshotSizeBytes": 511104,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 3,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 504311
+      "FileSize": 511104
     }
   ],
   "ImageCount": 11,
@@ -71,7 +71,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 5,
     "Critical": 0,
     "Serious": 5,
@@ -95,6 +97,20 @@
     }
   },
   "ErrorMessage": null,
-  "Headers": null,
-  "CapturedAt": "2026-02-18T18:34:32.3356083Z"
+  "Headers": {
+    "cache-control": "max-age=120, must-revalidate",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Thu, 19 Feb 2026 02:09:54 GMT",
+    "last-modified": "Thu, 19 Feb 2026 02:01:54 GMT",
+    "link": "\u003Chttps://wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022\n\u003Chttps://wsu.edu/wp-json/wp/v2/pages/13\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022",
+    "server": "nginx",
+    "transfer-encoding": "chunked",
+    "vary": "Accept-Encoding\nCookie, Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block"
+  },
+  "CapturedAt": "2026-02-19T02:09:54.8785603Z"
 }

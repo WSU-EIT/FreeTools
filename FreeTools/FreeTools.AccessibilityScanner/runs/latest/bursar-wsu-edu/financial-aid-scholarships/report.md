@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://bursar.wsu.edu/financial-aid-scholarships/  
-> **Captured:** 2026-02-18 18:39:51 UTC  
+> **Captured:** 2026-02-19 02:09:10 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://bursar.wsu.edu/financial-aid-scholarships/ |
 | Title | Financial Aid / Scholarships | Bursar | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 65.6 KB |
+| HTML Size | 65.8 KB |
 | Screenshots | 1 (97.5 KB) |
 | Images | 1 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:39:51.7763531Z |
+| Captured | 2026-02-19T02:09:10.5359727Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (97.5 KB)
 - Cataloged 1 images by URL (no download)
-- axe-core: 0 violations (231ms)
+- axe-core: 0 violations (290ms)
 - htmlcheck: 5 violations (0ms)
 
 </details>
@@ -114,9 +114,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://bursar.wsu.edu?s=" class="wsu-button-ui-...` |
-| 3 | heading-order | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3>` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://bursar.wsu.edu?s=" class="wsu-button-ui-...` |
+| 3 | [heading-order](../../a11y-rules.md#heading-order) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3>` |
 
 </details>
 

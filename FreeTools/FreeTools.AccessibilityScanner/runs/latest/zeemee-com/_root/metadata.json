@@ -5,7 +5,7 @@
   "Title": "Home | ZeeMee",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 50899,
+  "HtmlSizeBytes": 50891,
   "ScreenshotSizeBytes": 71511,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -63,7 +63,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 7,
     "Critical": 1,
     "Serious": 5,
@@ -92,7 +94,7 @@
     "connection": "keep-alive",
     "content-length": "13598",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:43:58 GMT",
+    "date": "Thu, 19 Feb 2026 02:07:21 GMT",
     "etag": "W/\u00226c40c25e7a6ab3a0eae6f55419f43a47\u0022",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=31536000; includeSubDomains;",
@@ -100,10 +102,10 @@
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
     "x-permitted-cross-domain-policies": "none",
-    "x-request-id": "5f635ab02a151d083dfbf08626e2cd35",
-    "x-runtime": "0.010980",
+    "x-request-id": "c9af752b03151b097a651db3a98517a5",
+    "x-runtime": "0.008765",
     "x-xss-protection": "1; mode=block",
     "vary": "Origin"
   },
-  "CapturedAt": "2026-02-18T18:43:57.9537484Z"
+  "CapturedAt": "2026-02-19T02:07:18.5449083Z"
 }

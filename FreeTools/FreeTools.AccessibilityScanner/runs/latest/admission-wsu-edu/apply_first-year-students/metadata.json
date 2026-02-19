@@ -5,7 +5,7 @@
   "Title": "First-Year Students | Admissions | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 97560,
+  "HtmlSizeBytes": 97690,
   "ScreenshotSizeBytes": 615619,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -35,7 +35,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 9,
     "Critical": 1,
     "Serious": 8,
@@ -62,14 +64,14 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:36:05 GMT",
-    "etag": "\u0022dcf020ad8264e33f58b14034d26f4cd6\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:24:57 GMT",
+    "date": "Thu, 19 Feb 2026 02:10:28 GMT",
+    "etag": "\u00223592e55d361fa8654a6bb8f6b4cb377d\u0022",
+    "last-modified": "Thu, 19 Feb 2026 01:26:16 GMT",
     "link": "\u003Chttps://admission.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://admission.wsu.edu/wp-json/wp/v2/pages/65\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://admission.wsu.edu/?p=65\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding",
     "x-cache": "EXPIRED",
     "x-cache-status": "EXPIRED"
   },
-  "CapturedAt": "2026-02-18T18:36:05.5547787Z"
+  "CapturedAt": "2026-02-19T02:10:28.1104324Z"
 }

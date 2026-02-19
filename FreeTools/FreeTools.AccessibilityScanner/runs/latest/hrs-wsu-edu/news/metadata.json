@@ -5,7 +5,7 @@
   "Title": "News \u2013 Human Resource Services, Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 97762,
+  "HtmlSizeBytes": 97907,
   "ScreenshotSizeBytes": 318364,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
@@ -67,7 +67,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 4,
     "Critical": 0,
     "Serious": 4,
@@ -93,11 +95,11 @@
   "ErrorMessage": null,
   "Headers": {
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:34:18 GMT",
+    "date": "Thu, 19 Feb 2026 02:24:39 GMT",
     "link": "\u003Chttps://hrs.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
     "server": "nginx/1.14.1",
     "vary": "Cookie",
     "x-powered-by": "PHP/8.2.29"
   },
-  "CapturedAt": "2026-02-18T18:34:18.6336767Z"
+  "CapturedAt": "2026-02-19T02:24:39.4346396Z"
 }

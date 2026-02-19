@@ -5,7 +5,7 @@
   "Title": "Services A-Z | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 293766,
+  "HtmlSizeBytes": 293804,
   "ScreenshotSizeBytes": 779513,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -31,7 +31,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 8,
     "Critical": 0,
     "Serious": 8,
@@ -58,12 +60,15 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:37:04 GMT",
-    "etag": "\u0022a0901a1301bce9584d21cf76cfde1b65\u0022",
-    "last-modified": "Wed, 18 Feb 2026 17:47:17 GMT",
+    "date": "Thu, 19 Feb 2026 02:22:28 GMT",
+    "etag": "\u002243d36bdb628405372bb29fc8671d7438\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:22:28 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/3961\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=3961\u003E; rel=shortlink",
     "server": "nginx",
-    "vary": "Accept-Encoding"
+    "vary": "Accept-Encoding",
+    "x-tec-api-origin": "https://its.wsu.edu",
+    "x-tec-api-root": "https://its.wsu.edu/wp-json/tribe/events/v1/",
+    "x-tec-api-version": "v1"
   },
-  "CapturedAt": "2026-02-18T18:37:04.8699953Z"
+  "CapturedAt": "2026-02-19T02:22:27.9637437Z"
 }

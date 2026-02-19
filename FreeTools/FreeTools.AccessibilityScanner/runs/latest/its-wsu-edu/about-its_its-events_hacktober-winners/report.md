@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://its.wsu.edu/about-its/its-events/hacktober-winners/  
-> **Captured:** 2026-02-18 18:33:50 UTC  
+> **Captured:** 2026-02-19 02:15:14 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,8 +24,8 @@
 | URL | https://its.wsu.edu/about-its/its-events/hacktober-winners/ |
 | Title | Hacktober Winners | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 258.1 KB |
-| Screenshots | 1 (257.3 KB) |
+| HTML Size | 258.9 KB |
+| Screenshots | 1 (207.1 KB) |
 | Images | 33 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
 | JS Errors | ✅ 0 |
@@ -37,17 +37,17 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:33:50.1836973Z |
+| Captured | 2026-02-19T02:15:14.0980197Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (257.3 KB)
+- Screenshot #1: page-loaded (207.1 KB)
 - Cataloged 33 images by URL (no download)
-- axe-core: 1 violations (223ms)
-- htmlcheck: 6 violations (0ms)
+- axe-core: 1 violations (245ms)
+- htmlcheck: 6 violations (1ms)
 
 </details>
 
@@ -60,7 +60,7 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>257.3 KB</sub>
+<br /><sub>207.1 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -356,9 +356,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="" class="wsu-header-utility-bar__cta"></a>` |
-| 2 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="" class="wsu-header-utility-bar__cta"></a>` |
+| 2 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
 
 </details>
 
@@ -368,7 +368,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (257.3 KB) |
+| `01-page-loaded.jpg` | page-loaded (207.1 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

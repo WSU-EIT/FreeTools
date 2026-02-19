@@ -17,5 +17,5 @@
   "Accessibility": null,
   "ErrorMessage": "net::ERR_NAME_NOT_RESOLVED at https://divisioninfo.wsu.edu/\nCall log:\n  - navigating to \u0022https://divisioninfo.wsu.edu/\u0022, waiting until \u0022networkidle\u0022",
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:41:42.5730341Z"
+  "CapturedAt": "2026-02-19T02:07:46.9743444Z"
 }

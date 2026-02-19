@@ -5,7 +5,7 @@
   "Title": "How Can We Help? | Enrollment IT",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 648599,
+  "HtmlSizeBytes": 648595,
   "ScreenshotSizeBytes": 67376,
   "CredentialUsed": null,
   "ConsoleErrorCount": 4,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 1,
     "Critical": 1,
     "Serious": 0,
@@ -51,5 +53,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:34:49.5464962Z"
+  "CapturedAt": "2026-02-19T02:09:40.8948962Z"
 }

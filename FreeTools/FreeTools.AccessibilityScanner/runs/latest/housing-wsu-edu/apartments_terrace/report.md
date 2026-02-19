@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://housing.wsu.edu/apartments/terrace/  
-> **Captured:** 2026-02-18 18:36:32 UTC  
+> **Captured:** 2026-02-19 02:10:39 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -29,18 +29,19 @@
 | Screenshots | 1 (236.7 KB) |
 | Images | 17 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
-| JS Errors | 🔴 4 |
+| JS Errors | 🔴 5 |
 | JS Warnings | 9 |
 | A11y Violations | ✅ 0 |
 | Auth | none |
-| Captured | 2026-02-18T18:36:32.8990953Z |
+| Captured | 2026-02-19T02:10:39.1935772Z |
 
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>4 error(s) detected</strong></summary>
+<summary><strong>5 error(s) detected</strong></summary>
 
 ```
+Permissions policy violation: compute-pressure is not allowed in this document.
 Access to XMLHttpRequest at 'https://cdn-web-wsu.s3-us-west-2.amazonaws.com/designsystem/1.x/build/dist/wsu-design-system.bundle.dist.css' from origin 'https://housing.wsu.edu' has been blocked by COR...
 Failed to load resource: net::ERR_FAILED
 Access to XMLHttpRequest at 'https://asis.wsu.edu/Styles/asis-wdsv2.css' from origin 'https://housing.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on th...
@@ -56,8 +57,8 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (236.7 KB)
 - Cataloged 17 images by URL (no download)
-- axe-core: 0 violations (231ms)
-- htmlcheck: 0 violations (1ms)
+- axe-core: 0 violations (296ms)
+- htmlcheck: 0 violations (0ms)
 
 </details>
 

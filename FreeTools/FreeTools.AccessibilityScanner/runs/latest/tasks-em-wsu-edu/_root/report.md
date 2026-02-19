@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://tasks.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:47:37 UTC  
+> **Captured:** 2026-02-19 02:12:03 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:47:37.3890881Z |
+| Captured | 2026-02-19T02:12:03.9598506Z |
 
 ## 🔧 Actions
 
@@ -47,7 +47,7 @@
 
 - Screenshot #1: page-loaded (18.8 KB)
 - Cataloged 1 images by URL (no download)
-- axe-core: 3 violations (146ms)
+- axe-core: 3 violations (189ms)
 - htmlcheck: 5 violations (0ms)
 
 </details>
@@ -124,10 +124,10 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🔴 | 🟢 2/2 | ⚠️ | ⚠️ | `<img src="./images/Okta_256.png">` |
-| 2 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
-| 3 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🔴 | 🟢 2/2 | ⚠️ | ⚠️ | `<img src="./images/Okta_256.png">` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
+| 3 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

@@ -123,10 +123,10 @@ Failed to load resource: the server responded with a status of 403 (Forbidden)
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | html-has-lang | 🟠 | 1/1 | 2 |
-| 2 | skip-link | 🟡 | 1/1 | 1 |
-| 3 | landmark-one-main | 🟡 | 1/1 | 1 |
-| 4 | landmark-nav | 🔵 | 1/1 | 1 |
+| 1 | [html-has-lang](../a11y-rules.md#html-has-lang) | 🟠 | 1/1 | 2 |
+| 2 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
+| 3 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 1/1 | 1 |
+| 4 | [landmark-nav](../a11y-rules.md#landmark-nav) | 🔵 | 1/1 | 1 |
 
 ---
 

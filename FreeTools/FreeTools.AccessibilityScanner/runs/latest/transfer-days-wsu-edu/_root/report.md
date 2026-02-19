@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://transfer-days.wsu.edu/  
-> **Captured:** 2026-02-18 18:44:05 UTC  
+> **Captured:** 2026-02-19 02:07:36 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,8 +25,8 @@
 | Redirected To | https://orientation.wsu.edu/ |
 | Title | New Coug Orientation | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 71.2 KB |
-| Screenshots | 1 (493.5 KB) |
+| HTML Size | 71.4 KB |
+| Screenshots | 1 (459.3 KB) |
 | Images | 5 (referenced by URL) |
 | Images Missing Alt | ⚠️ 1 |
 | JS Errors | ✅ 0 |
@@ -38,16 +38,16 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:44:05.8721716Z |
+| Captured | 2026-02-19T02:07:36.5924846Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (493.5 KB)
+- Screenshot #1: page-loaded (459.3 KB)
 - Cataloged 5 images by URL (no download)
-- axe-core: 1 violations (407ms)
+- axe-core: 1 violations (297ms)
 - htmlcheck: 4 violations (0ms)
 
 </details>
@@ -61,7 +61,7 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>493.5 KB</sub>
+<br /><sub>459.3 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -153,9 +153,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | color-contrast | 🟠 | 🟢 1/1 | ⚠️ | — | `<strong>Coug</strong>` |
-| 2 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 3 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://orientation.wsu.edu?s=" class="wsu-butto...` |
+| 1 | [color-contrast](../../a11y-rules.md#color-contrast) | 🟠 | 🟢 1/1 | ⚠️ | — | `<strong>Coug</strong>` |
+| 2 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 3 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://orientation.wsu.edu?s=" class="wsu-butto...` |
 
 </details>
 
@@ -165,7 +165,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (493.5 KB) |
+| `01-page-loaded.jpg` | page-loaded (459.3 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

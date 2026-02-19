@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://housing.wsu.edu/residence-halls/northside/  
-> **Captured:** 2026-02-18 18:39:25 UTC  
+> **Captured:** 2026-02-19 02:15:17 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -26,7 +26,7 @@
 | Title | Northside |
 | Status | ✅ 200 |
 | HTML Size | 131.4 KB |
-| Screenshots | 1 (310.6 KB) |
+| Screenshots | 1 (310.5 KB) |
 | Images | 21 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
 | JS Errors | 🔴 4 |
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:39:25.5327700Z |
+| Captured | 2026-02-19T02:15:17.2437119Z |
 
 ## 🔴 JavaScript Errors
 
@@ -59,10 +59,10 @@ Failed to load resource: net::ERR_FAILED
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (310.6 KB)
+- Screenshot #1: page-loaded (310.5 KB)
 - Cataloged 21 images by URL (no download)
-- axe-core: 6 violations (615ms)
-- htmlcheck: 2 violations (0ms)
+- axe-core: 6 violations (602ms)
+- htmlcheck: 2 violations (1ms)
 
 </details>
 
@@ -75,7 +75,7 @@ Failed to load resource: net::ERR_FAILED
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>310.6 KB</sub>
+<br /><sub>310.5 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -279,10 +279,10 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-required-parent | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<a class="foundationMenuLink" href="/prospective-students...` |
-| 2 | aria-required-children | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<ul id="mainNav" class="dropdown menu" aria-label="Main N...` |
-| 3 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="#" title="Rates &amp; Payment"></a>` |
-| 4 | td-has-header | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table border="0" cellspacing="0" cellpadding="0" class="...` |
+| 1 | [aria-required-parent](../../a11y-rules.md#aria-required-parent) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<a class="foundationMenuLink" href="/prospective-students...` |
+| 2 | [aria-required-children](../../a11y-rules.md#aria-required-children) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<ul id="mainNav" class="dropdown menu" aria-label="Main N...` |
+| 3 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="#" title="Rates &amp; Payment"></a>` |
+| 4 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table border="0" cellspacing="0" cellpadding="0" class="...` |
 
 </details>
 
@@ -292,7 +292,7 @@ Failed to load resource: net::ERR_FAILED
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (310.6 KB) |
+| `01-page-loaded.jpg` | page-loaded (310.5 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

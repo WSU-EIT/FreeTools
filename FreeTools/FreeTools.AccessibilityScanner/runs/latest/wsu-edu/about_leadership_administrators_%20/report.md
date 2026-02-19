@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://wsu.edu/about/leadership/administrators/ /  
-> **Captured:** 2026-02-18 18:33:25 UTC  
+> **Captured:** 2026-02-19 02:08:42 UTC  
 > **Status:** ❌ 404  
 
 ---
@@ -26,7 +26,7 @@
 | Redirected To | https://wsu.edu/about/leadership/administrators/%20/ |
 | Title | Page not found | Washington State University | Washington State University |
 | Status | ❌ 404 |
-| HTML Size | 91.1 KB |
+| HTML Size | 91.2 KB |
 | Screenshots | 1 (104.0 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -39,7 +39,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:33:25.5254605Z |
+| Captured | 2026-02-19T02:08:42.0287694Z |
 
 ## 🔴 JavaScript Errors
 
@@ -60,7 +60,7 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 
 - Screenshot #1: page-loaded (104.0 KB)
 - No images found on page
-- axe-core: 0 violations (325ms)
+- axe-core: 0 violations (319ms)
 - htmlcheck: 5 violations (0ms)
 
 </details>
@@ -103,9 +103,9 @@ Failed to load resource: net::ERR_TOO_MANY_REDIRECTS
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
-| 3 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
+| 3 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
 
 </details>
 

@@ -1,6 +1,6 @@
 # 🌐 Site Report: https://sfs411.wsu.edu/
 
-> **Status:** ⚠️ 0/1 pages OK  
+> **Status:** ⚠️ 0/19 pages OK  
 > **Folder:** `sfs411-wsu-edu/`  
 
 ---
@@ -13,20 +13,20 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 
 | Metric | Value |
 |--------|-------|
-| Pages Scanned | 1 |
+| Pages Scanned | 19 |
 | Pages Passed | ✅ 0 |
-| Pages Failed | ❌ 1 |
-| Total JS Errors | 0 |
-| Total JS Warnings | 1 |
+| Pages Failed | ❌ 19 |
+| Total JS Errors | 🔴 2 |
+| Total JS Warnings | 19 |
 | Total Images | 0 (by URL) |
 | Images Missing Alt | ✅ 0 |
-| A11y Violations | ⚠️ 1 |
-| 🔴 Critical | 1 |
+| A11y Violations | ⚠️ 19 |
+| 🔴 Critical | 19 |
 | 🟠 Serious | 0 |
 | 🟡 Moderate | 0 |
 | 🔵 Minor | 0 |
-| Total HTML | 643.9 KB |
-| Total Screenshots | 34.2 KB |
+| Total HTML | 11.9 MB |
+| Total Screenshots | 790.6 KB |
 
 ## 🔒 SSL Certificate
 
@@ -143,6 +143,24 @@ Success Rate:  [░░░░░░░░░░░░░░░░░░░░░�
 | Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |
 |:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|
 | ❌ | [/](_root/report.md) | 0 | Student Financial Services 411 | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/comm-dashboard/](comm-dashboard/report.md) | 0 | Comm Calendar \| Student Financial Se... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/internal-administration/](internal-administration/report.md) | 0 | Search \| Student Financial Services 411 | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/internal-administration/data-and-reports/](internal-administration_data-and-reports/report.md) | 0 | Data and Reports \| Student Financial... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/internal-administration/data-and-reports/processing-counts/](internal-administration_data-and-reports_processing-counts/report.md) | 0 | PROCESSING COUNTS \| Student Financia... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/internal-administration/federal-resources/](internal-administration_federal-resources/report.md) | 0 | Federal Resources \| Student Financia... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/internal-administration/meetings/](internal-administration_meetings/report.md) | 0 | Meetings \| Student Financial Service... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/internal-administration/operations/](internal-administration_operations/report.md) | 0 | Operations \| Student Financial Servi... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/internal-administration/overview/](internal-administration_overview/report.md) | 0 | Overview \| Student Financial Service... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/internal-administration/sfs-purchasing-request/](internal-administration_sfs-purchasing-request/report.md) | 0 | SFS Purchasing Request \| Student Fin... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/internal-administration/sfs-suggestion-and-feedback-survey/](internal-administration_sfs-suggestion-and-feedback-survey/report.md) | 0 | SFS Suggestion and Feedback Survey \|... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/internal-administration/staff-resources/](internal-administration_staff-resources/report.md) | 0 | Staff Resources \| Student Financial ... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/internal-administration/systems-development-and-support/](internal-administration_systems-development-and-support/report.md) | 0 | Systems Development and Support \| St... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/knowledge-base/](knowledge-base/report.md) | 0 | Search \| Student Financial Services 411 | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/links/](links/report.md) | 0 | Links \| Student Financial Services 411 | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/outreach/](outreach/report.md) | 0 | Outreach \| Student Financial Service... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/policies-and-procedures/](policies-and-procedures/report.md) | 0 | Policies and Procedures \| Student Fi... | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/search/](search/report.md) | 0 | Search \| Student Financial Services 411 | 1 |  |  |  | ⚠️ 1 |
+| ❌ | [/sfs-partners/](sfs-partners/report.md) | 0 | SFS Partners \| Student Financial Ser... | 1 |  |  |  | ⚠️ 1 |
 
 ## 📸 Page Screenshots
 
@@ -156,6 +174,126 @@ Click any thumbnail to view the full page report.
 </a>
 <br />❌ <code>/</code>
 </td>
+<td align="center" width="33%">
+<a href="comm-dashboard/report.md">
+<img src="comm-dashboard/01-page-loaded.jpg" width="250" alt="/comm-dashboard/" />
+</a>
+<br />❌ <code>/comm-dashboard/</code>
+</td>
+<td align="center" width="33%">
+<a href="internal-administration/report.md">
+<img src="internal-administration/01-page-loaded.jpg" width="250" alt="/internal-administration/" />
+</a>
+<br />❌ <code>/internal-administration/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="internal-administration_data-and-reports/report.md">
+<img src="internal-administration_data-and-reports/01-page-loaded.jpg" width="250" alt="/internal-administration/data-and-reports/" />
+</a>
+<br />❌ <code>/internal-administration/data-and-reports/</code>
+</td>
+<td align="center" width="33%">
+<a href="internal-administration_data-and-reports_processing-counts/report.md">
+<img src="internal-administration_data-and-reports_processing-counts/01-page-loaded.jpg" width="250" alt="/internal-administration/data-and-reports/processing-counts/" />
+</a>
+<br />❌ <code>/internal-administration/data-and-reports/processing-counts/</code>
+</td>
+<td align="center" width="33%">
+<a href="internal-administration_federal-resources/report.md">
+<img src="internal-administration_federal-resources/01-page-loaded.jpg" width="250" alt="/internal-administration/federal-resources/" />
+</a>
+<br />❌ <code>/internal-administration/federal-resources/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="internal-administration_meetings/report.md">
+<img src="internal-administration_meetings/01-page-loaded.jpg" width="250" alt="/internal-administration/meetings/" />
+</a>
+<br />❌ <code>/internal-administration/meetings/</code>
+</td>
+<td align="center" width="33%">
+<a href="internal-administration_operations/report.md">
+<img src="internal-administration_operations/01-page-loaded.jpg" width="250" alt="/internal-administration/operations/" />
+</a>
+<br />❌ <code>/internal-administration/operations/</code>
+</td>
+<td align="center" width="33%">
+<a href="internal-administration_overview/report.md">
+<img src="internal-administration_overview/01-page-loaded.jpg" width="250" alt="/internal-administration/overview/" />
+</a>
+<br />❌ <code>/internal-administration/overview/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="internal-administration_sfs-purchasing-request/report.md">
+<img src="internal-administration_sfs-purchasing-request/01-page-loaded.jpg" width="250" alt="/internal-administration/sfs-purchasing-request/" />
+</a>
+<br />❌ <code>/internal-administration/sfs-purchasing-request/</code>
+</td>
+<td align="center" width="33%">
+<a href="internal-administration_sfs-suggestion-and-feedback-survey/report.md">
+<img src="internal-administration_sfs-suggestion-and-feedback-survey/01-page-loaded.jpg" width="250" alt="/internal-administration/sfs-suggestion-and-feedback-survey/" />
+</a>
+<br />❌ <code>/internal-administration/sfs-suggestion-and-feedback-survey/</code>
+</td>
+<td align="center" width="33%">
+<a href="internal-administration_staff-resources/report.md">
+<img src="internal-administration_staff-resources/01-page-loaded.jpg" width="250" alt="/internal-administration/staff-resources/" />
+</a>
+<br />❌ <code>/internal-administration/staff-resources/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="internal-administration_systems-development-and-support/report.md">
+<img src="internal-administration_systems-development-and-support/01-page-loaded.jpg" width="250" alt="/internal-administration/systems-development-and-support/" />
+</a>
+<br />❌ <code>/internal-administration/systems-development-and-support/</code>
+</td>
+<td align="center" width="33%">
+<a href="knowledge-base/report.md">
+<img src="knowledge-base/01-page-loaded.jpg" width="250" alt="/knowledge-base/" />
+</a>
+<br />❌ <code>/knowledge-base/</code>
+</td>
+<td align="center" width="33%">
+<a href="links/report.md">
+<img src="links/01-page-loaded.jpg" width="250" alt="/links/" />
+</a>
+<br />❌ <code>/links/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="outreach/report.md">
+<img src="outreach/01-page-loaded.jpg" width="250" alt="/outreach/" />
+</a>
+<br />❌ <code>/outreach/</code>
+</td>
+<td align="center" width="33%">
+<a href="policies-and-procedures/report.md">
+<img src="policies-and-procedures/01-page-loaded.jpg" width="250" alt="/policies-and-procedures/" />
+</a>
+<br />❌ <code>/policies-and-procedures/</code>
+</td>
+<td align="center" width="33%">
+<a href="search/report.md">
+<img src="search/01-page-loaded.jpg" width="250" alt="/search/" />
+</a>
+<br />❌ <code>/search/</code>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="sfs-partners/report.md">
+<img src="sfs-partners/01-page-loaded.jpg" width="250" alt="/sfs-partners/" />
+</a>
+<br />❌ <code>/sfs-partners/</code>
+</td>
 <td></td>
 <td></td>
 </tr>
@@ -164,11 +302,48 @@ Click any thumbnail to view the full page report.
 ## ❌ Failed Pages
 
 <details open>
-<summary><strong>1 page(s) failed</strong></summary>
+<summary><strong>19 page(s) failed</strong></summary>
 
 | Page | HTTP | Error |
 |------|:----:|-------|
 | [/](_root/report.md) | 0 | — |
+| [/comm-dashboard/](comm-dashboard/report.md) | 0 | — |
+| [/internal-administration/](internal-administration/report.md) | 0 | — |
+| [/internal-administration/data-and-reports/](internal-administration_data-and-reports/report.md) | 0 | — |
+| [/internal-administration/data-and-reports/processing-counts/](internal-administration_data-and-reports_processing-counts/report.md) | 0 | — |
+| [/internal-administration/federal-resources/](internal-administration_federal-resources/report.md) | 0 | — |
+| [/internal-administration/meetings/](internal-administration_meetings/report.md) | 0 | — |
+| [/internal-administration/operations/](internal-administration_operations/report.md) | 0 | — |
+| [/internal-administration/overview/](internal-administration_overview/report.md) | 0 | — |
+| [/internal-administration/sfs-purchasing-request/](internal-administration_sfs-purchasing-request/report.md) | 0 | — |
+| [/internal-administration/sfs-suggestion-and-feedback-survey/](internal-administration_sfs-suggestion-and-feedback-survey/report.md) | 0 | — |
+| [/internal-administration/staff-resources/](internal-administration_staff-resources/report.md) | 0 | — |
+| [/internal-administration/systems-development-and-support/](internal-administration_systems-development-and-support/report.md) | 0 | — |
+| [/knowledge-base/](knowledge-base/report.md) | 0 | — |
+| [/links/](links/report.md) | 0 | — |
+| [/outreach/](outreach/report.md) | 0 | — |
+| [/policies-and-procedures/](policies-and-procedures/report.md) | 0 | — |
+| [/search/](search/report.md) | 0 | — |
+| [/sfs-partners/](sfs-partners/report.md) | 0 | — |
+
+</details>
+
+## 🔴 JavaScript Errors
+
+<details>
+<summary><strong>2 error(s) across 2 page(s)</strong></summary>
+
+**/internal-administration/** (1 errors)
+
+```
+Font Awesome Kit: TypeError: Failed to fetch
+```
+
+**/knowledge-base/** (1 errors)
+
+```
+Font Awesome Kit: TypeError: Failed to fetch
+```
 
 </details>
 
@@ -176,9 +351,9 @@ Click any thumbnail to view the full page report.
 
 | Metric | Value |
 |--------|-------|
-| Pages with violations | 1/1 |
-| Total violations | 1 |
-| 🔴 Critical | 1 |
+| Pages with violations | 19/19 |
+| Total violations | 19 |
+| 🔴 Critical | 19 |
 | 🟠 Serious | 0 |
 | 🟡 Moderate | 0 |
 | 🔵 Minor | 0 |
@@ -187,7 +362,7 @@ Click any thumbnail to view the full page report.
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | aria-allowed-attr | 🔴 | 1/1 | 1 |
+| 1 | [aria-allowed-attr](../a11y-rules.md#aria-allowed-attr) | 🔴 | 19/19 | 19 |
 
 ---
 

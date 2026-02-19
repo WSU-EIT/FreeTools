@@ -5,17 +5,17 @@
   "Title": "",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 164577,
-  "ScreenshotSizeBytes": 6157,
+  "HtmlSizeBytes": 175879,
+  "ScreenshotSizeBytes": 130696,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 196,
+  "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 6157
+      "FileSize": 130696
     }
   ],
   "ImageCount": 0,
@@ -26,12 +26,14 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
-    "TotalViolations": 4,
+    "ToolsSkipped": [
+      "wave"
+    ],
+    "TotalViolations": 5,
     "Critical": 0,
-    "Serious": 1,
-    "Moderate": 2,
-    "Minor": 1,
+    "Serious": 2,
+    "Moderate": 3,
+    "Minor": 0,
     "ByTool": {
       "axe": {
         "Total": 1,
@@ -41,11 +43,11 @@
         "Minor": 0
       },
       "htmlcheck": {
-        "Total": 3,
+        "Total": 4,
         "Critical": 0,
-        "Serious": 0,
-        "Moderate": 2,
-        "Minor": 1
+        "Serious": 1,
+        "Moderate": 3,
+        "Minor": 0
       }
     }
   },
@@ -54,10 +56,10 @@
     "blazor-enhanced-nav": "allow",
     "cache-control": "no-cache, no-store",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:40:14 GMT",
+    "date": "Thu, 19 Feb 2026 02:07:21 GMT",
     "pragma": "no-cache",
     "server": "Microsoft-IIS/10.0",
     "x-powered-by": "ASP.NET"
   },
-  "CapturedAt": "2026-02-18T18:40:14.4291186Z"
+  "CapturedAt": "2026-02-19T02:07:18.4864105Z"
 }

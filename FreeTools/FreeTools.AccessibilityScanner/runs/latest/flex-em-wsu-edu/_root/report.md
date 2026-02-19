@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://flex.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:42:24 UTC  
+> **Captured:** 2026-02-19 02:07:54 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -30,7 +30,7 @@
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
 | JS Errors | ✅ 0 |
-| JS Warnings | 3 |
+| JS Warnings | 2 |
 | A11y Violations | ⚠️ 8 |
 | 🔴 Critical | 0 |
 | 🟠 Serious | 5 |
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:42:24.8545173Z |
+| Captured | 2026-02-19T02:07:54.4490291Z |
 
 ## 🔧 Actions
 
@@ -47,7 +47,7 @@
 
 - Screenshot #1: page-loaded (94.3 KB)
 - No images found on page
-- axe-core: 2 violations (221ms)
+- axe-core: 2 violations (235ms)
 - htmlcheck: 6 violations (0ms)
 
 </details>
@@ -90,10 +90,10 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | td-has-header | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table><tbody><tr><td style="width:1%;"><button type="but...` |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a class="nav-link dropdown-toggle" href="#" id="themeDro...` |
+| 2 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table><tbody><tr><td style="width:1%;"><button type="but...` |
 
 </details>
 

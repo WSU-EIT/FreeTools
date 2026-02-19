@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://hrs.wsu.edu/training/  
-> **Captured:** 2026-02-18 18:34:40 UTC  
+> **Captured:** 2026-02-19 02:30:17 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,7 +25,7 @@
 | URL | https://hrs.wsu.edu/training/ |
 | Title | Learning & Organizational Development – Human Resource Services, Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 89.9 KB |
+| HTML Size | 90.1 KB |
 | Screenshots | 1 (393.2 KB) |
 | Images | 7 (referenced by URL) |
 | Images Missing Alt | ⚠️ 5 |
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:34:40.0783362Z |
+| Captured | 2026-02-19T02:30:17.1501825Z |
 
 ## 🔴 JavaScript Errors
 
@@ -59,7 +59,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (393.2 KB)
 - Cataloged 7 images by URL (no download)
-- axe-core: 5 violations (162ms)
+- axe-core: 5 violations (200ms)
 - htmlcheck: 4 violations (0ms)
 
 </details>
@@ -187,9 +187,9 @@ Thursday, March 5, 2026, 10:00 a.m. to 11:00 a.m. Register in Percipio." />
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<a href="https://elevatingcougs.events.wsu.edu/" target="...` |
-| 2 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="search" class="search-field" placeholder="Se...` |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<a href="https://elevatingcougs.events.wsu.edu/" target="...` |
+| 2 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="search" class="search-field" placeholder="Se...` |
 
 </details>
 

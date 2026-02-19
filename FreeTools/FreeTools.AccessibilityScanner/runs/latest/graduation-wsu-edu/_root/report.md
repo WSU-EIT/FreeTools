@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://graduation.wsu.edu/  
-> **Captured:** 2026-02-18 18:43:11 UTC  
+> **Captured:** 2026-02-19 02:08:06 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:43:11.9877523Z |
+| Captured | 2026-02-19T02:08:06.9459774Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (310.0 KB)
 - Cataloged 2 images by URL (no download)
-- axe-core: 1 violations (334ms)
+- axe-core: 1 violations (392ms)
 - htmlcheck: 3 violations (0ms)
 
 </details>
@@ -120,8 +120,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://residency.wsu.edu/options/" title="Types...` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://residency.wsu.edu/options/" title="Types...` |
 
 </details>
 

@@ -1,6 +1,6 @@
 # 🌐 Site Report: https://wsu.scholarships.ngwebsolutions.com/
 
-> **Status:** ✅ 2/2 pages OK  
+> **Status:** ✅ 1/1 pages OK  
 > **Folder:** `wsu-scholarships-ngwebsolutions-com/`  
 
 ---
@@ -13,20 +13,20 @@ Success Rate:  [█████████████████████�
 
 | Metric | Value |
 |--------|-------|
-| Pages Scanned | 2 |
-| Pages Passed | ✅ 2 |
+| Pages Scanned | 1 |
+| Pages Passed | ✅ 1 |
 | Pages Failed | 0 |
-| Total JS Errors | 🔴 2 |
+| Total JS Errors | 🔴 1 |
 | Total JS Warnings | 0 |
-| Total Images | 6 (by URL) |
-| Images Missing Alt | ⚠️ 4 |
-| A11y Violations | ⚠️ 14 |
-| 🔴 Critical | 4 |
-| 🟠 Serious | 8 |
-| 🟡 Moderate | 2 |
+| Total Images | 3 (by URL) |
+| Images Missing Alt | ⚠️ 2 |
+| A11y Violations | ⚠️ 7 |
+| 🔴 Critical | 2 |
+| 🟠 Serious | 4 |
+| 🟡 Moderate | 1 |
 | 🔵 Minor | 0 |
-| Total HTML | 48.5 KB |
-| Total Screenshots | 163.5 KB |
+| Total HTML | 24.2 KB |
+| Total Screenshots | 81.8 KB |
 
 ## 🔒 SSL Certificate
 
@@ -56,7 +56,6 @@ Success Rate:  [█████████████████████�
 | Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |
 |:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|
 | ✅ | [/](_root/report.md) | 200 | Scholarship Manager | 2 | 4 | 1 |  | ⚠️ 7 |
-| ✅ | [/CMXAdmin/Cmx_Content.aspx?cpId=302](CMXAdmin_Cmx_Content.aspx_qcpId-302/report.md) | 200 | Scholarship Manager | 2 | 4 | 1 |  | ⚠️ 7 |
 
 ## 📸 Page Screenshots
 
@@ -70,12 +69,7 @@ Click any thumbnail to view the full page report.
 </a>
 <br />✅ <code>/</code>
 </td>
-<td align="center" width="33%">
-<a href="CMXAdmin_Cmx_Content.aspx_qcpId-302/report.md">
-<img src="CMXAdmin_Cmx_Content.aspx_qcpId-302/01-page-loaded.jpg" width="250" alt="/CMXAdmin/Cmx_Content.aspx?cpId=302" />
-</a>
-<br />✅ <code>/CMXAdmin/Cmx_Content.aspx?cpId=302</code>
-</td>
+<td></td>
 <td></td>
 </tr>
 </table>
@@ -83,15 +77,9 @@ Click any thumbnail to view the full page report.
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>2 error(s) across 2 page(s)</strong></summary>
+<summary><strong>1 error(s) across 1 page(s)</strong></summary>
 
 **/** (1 errors)
-
-```
-Error with Permissions-Policy header: Parse of permissions policy failed because of errors reported by structured header parser.
-```
-
-**/CMXAdmin/Cmx_Content.aspx?cpId=302** (1 errors)
 
 ```
 Error with Permissions-Policy header: Parse of permissions policy failed because of errors reported by structured header parser.
@@ -103,20 +91,20 @@ Error with Permissions-Policy header: Parse of permissions policy failed because
 
 | Metric | Value |
 |--------|-------|
-| Pages with violations | 2/2 |
-| Total violations | 14 |
-| 🔴 Critical | 4 |
-| 🟠 Serious | 8 |
-| 🟡 Moderate | 2 |
+| Pages with violations | 1/1 |
+| Total violations | 7 |
+| 🔴 Critical | 2 |
+| 🟠 Serious | 4 |
+| 🟡 Moderate | 1 |
 | 🔵 Minor | 0 |
 
 ### Top 3 Issues
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | image-alt | 🔴 | 2/2 | 8 |
-| 2 | link-in-text-block | 🟠 | 2/2 | 4 |
-| 3 | skip-link | 🟡 | 2/2 | 2 |
+| 1 | [image-alt](../a11y-rules.md#image-alt) | 🔴 | 1/1 | 4 |
+| 2 | [link-in-text-block](../a11y-rules.md#link-in-text-block) | 🟠 | 1/1 | 2 |
+| 3 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
 
 ---
 

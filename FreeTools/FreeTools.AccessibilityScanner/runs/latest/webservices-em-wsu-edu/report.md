@@ -125,13 +125,13 @@ Failed to load resource: the server responded with a status of 503 ()
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | link-name | 🟠 | 1/3 | 4 |
-| 2 | html-has-lang | 🟠 | 1/3 | 2 |
-| 3 | label | 🟠 | 1/3 | 4 |
-| 4 | button-name | 🟠 | 1/3 | 1 |
-| 5 | skip-link | 🟡 | 2/3 | 2 |
-| 6 | landmark-one-main | 🟡 | 2/3 | 2 |
-| 7 | landmark-nav | 🔵 | 1/3 | 1 |
+| 1 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/3 | 4 |
+| 2 | [html-has-lang](../a11y-rules.md#html-has-lang) | 🟠 | 1/3 | 2 |
+| 3 | [label](../a11y-rules.md#label) | 🟠 | 1/3 | 4 |
+| 4 | [button-name](../a11y-rules.md#button-name) | 🟠 | 1/3 | 1 |
+| 5 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 2/3 | 2 |
+| 6 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 2/3 | 2 |
+| 7 | [landmark-nav](../a11y-rules.md#landmark-nav) | 🔵 | 1/3 | 1 |
 
 ---
 

@@ -3,7 +3,9 @@
     "axe",
     "htmlcheck"
   ],
-  "ToolsSkipped": [],
+  "ToolsSkipped": [
+    "wave"
+  ],
   "TotalViolations": 42,
   "Critical": 8,
   "Serious": 29,
@@ -73,7 +75,7 @@
       "Message": "Image missing alt attribute",
       "HelpUrl": null,
       "WcagCriteria": "1.1.1",
-      "ExampleSnippet": "\u003Cimg src=\\\u0022https://www.twilio.com/content/dam/twilio-com/global/en/homepage/one-twilio-temp/home_authentication-and-identity_twilio.png/_jcr_content/r..."
+      "ExampleSnippet": "\u003Cimg src=\\\u0022/content/dam/twilio-com/global/en/homepage/one-twilio-temp/home_messaging_twilio.png/_jcr_content/renditions/compressed-1600.webp\\\u0022 loading..."
     },
     {
       "Rank": 4,

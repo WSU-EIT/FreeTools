@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://emsummit.wsu.edu/  
-> **Captured:** 2026-02-18 18:41:49 UTC  
+> **Captured:** 2026-02-19 02:07:47 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -30,7 +30,7 @@
 | JS Errors | ✅ 0 |
 | JS Warnings | 0 |
 | Auth | none |
-| Captured | 2026-02-18T18:41:49.0575906Z |
+| Captured | 2026-02-19T02:07:47.4809529Z |
 
 > ❌ **Error:** `net::ERR_NAME_NOT_RESOLVED at https://emsummit.wsu.edu/
 Call log:

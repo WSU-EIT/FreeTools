@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://sfspartners.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:45:36 UTC  
+> **Captured:** 2026-02-19 02:10:28 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:45:36.9948868Z |
+| Captured | 2026-02-19T02:10:28.1803979Z |
 
 ## 🔧 Actions
 
@@ -47,7 +47,7 @@
 
 - Screenshot #1: page-loaded (211.8 KB)
 - No images found on page
-- axe-core: 1 violations (273ms)
+- axe-core: 1 violations (215ms)
 - htmlcheck: 0 violations (0ms)
 
 </details>
@@ -90,7 +90,7 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
 
 </details>
 

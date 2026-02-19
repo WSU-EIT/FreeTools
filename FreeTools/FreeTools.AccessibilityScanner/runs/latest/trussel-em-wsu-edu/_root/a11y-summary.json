@@ -3,65 +3,33 @@
     "axe",
     "htmlcheck"
   ],
-  "ToolsSkipped": [],
-  "TotalViolations": 11,
-  "Critical": 1,
-  "Serious": 8,
+  "ToolsSkipped": [
+    "wave"
+  ],
+  "TotalViolations": 7,
+  "Critical": 0,
+  "Serious": 4,
   "Moderate": 2,
-  "Minor": 0,
+  "Minor": 1,
   "ByTool": {
     "axe": {
-      "Total": 3,
-      "Critical": 1,
-      "Serious": 2,
+      "Total": 1,
+      "Critical": 0,
+      "Serious": 1,
       "Moderate": 0,
       "Minor": 0
     },
     "htmlcheck": {
-      "Total": 8,
+      "Total": 6,
       "Critical": 0,
-      "Serious": 6,
+      "Serious": 3,
       "Moderate": 2,
-      "Minor": 0
+      "Minor": 1
     }
   },
   "RankedRules": [
     {
       "Rank": 1,
-      "CanonicalRuleId": "image-alt",
-      "Severity": "critical",
-      "Consensus": "2/2",
-      "ConfidenceScore": 1,
-      "Confidence": "high",
-      "ToolsFound": [
-        "axe",
-        "htmlcheck"
-      ],
-      "TotalInstances": 2,
-      "Message": "Images must have alternative text",
-      "HelpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=axeAPI",
-      "WcagCriteria": null,
-      "ExampleSnippet": "\u003Cimg src=\u0022./images/Okta_256.png\u0022\u003E"
-    },
-    {
-      "Rank": 2,
-      "CanonicalRuleId": "link-name",
-      "Severity": "serious",
-      "Consensus": "2/2",
-      "ConfidenceScore": 1,
-      "Confidence": "high",
-      "ToolsFound": [
-        "axe",
-        "htmlcheck"
-      ],
-      "TotalInstances": 4,
-      "Message": "Links must have discernible text",
-      "HelpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI",
-      "WcagCriteria": null,
-      "ExampleSnippet": "\u003Ca class=\u0022nav-link dropdown-toggle\u0022 href=\u0022#\u0022 id=\u0022themeDropdown\u0022 role=\u0022button\u0022 data-bs-toggle=\u0022dropdown\u0022 aria-expanded=\u0022false\u0022\u003E\u003C!--!--\u003E\u003Ci class=\u0022icon i..."
-    },
-    {
-      "Rank": 3,
       "CanonicalRuleId": "button-name",
       "Severity": "serious",
       "Consensus": "1/2",
@@ -77,7 +45,23 @@
       "ExampleSnippet": "\u003Cbutton type=\u0022button\u0022 id=\u0022cboxPrevious\u0022\u003E\u003C/button\u003E"
     },
     {
-      "Rank": 4,
+      "Rank": 2,
+      "CanonicalRuleId": "document-title",
+      "Severity": "serious",
+      "Consensus": "1/2",
+      "ConfidenceScore": 0.5,
+      "Confidence": "medium",
+      "ToolsFound": [
+        "axe"
+      ],
+      "TotalInstances": 1,
+      "Message": "Documents must have \u003Ctitle\u003E element to aid in navigation",
+      "HelpUrl": "https://dequeuniversity.com/rules/axe/4.10/document-title?application=axeAPI",
+      "WcagCriteria": null,
+      "ExampleSnippet": "\u003Chtml lang=\u0022en\u0022 style=\u0022--blazor-load-percentage: 58.97435897435898%; --blazor-load-percentage-text: \u0026quot;58%\u0026quot;;\u0022\u003E"
+    },
+    {
+      "Rank": 3,
       "CanonicalRuleId": "skip-link",
       "Severity": "moderate",
       "Consensus": "1/2",
@@ -93,7 +77,7 @@
       "ExampleSnippet": null
     },
     {
-      "Rank": 5,
+      "Rank": 4,
       "CanonicalRuleId": "landmark-one-main",
       "Severity": "moderate",
       "Consensus": "1/2",
@@ -104,6 +88,22 @@
       ],
       "TotalInstances": 1,
       "Message": "Page has no \u003Cmain\u003E landmark",
+      "HelpUrl": null,
+      "WcagCriteria": "1.3.1",
+      "ExampleSnippet": null
+    },
+    {
+      "Rank": 5,
+      "CanonicalRuleId": "landmark-nav",
+      "Severity": "minor",
+      "Consensus": "1/2",
+      "ConfidenceScore": 0.5,
+      "Confidence": "medium",
+      "ToolsFound": [
+        "htmlcheck"
+      ],
+      "TotalInstances": 1,
+      "Message": "Page has no \u003Cnav\u003E landmark",
       "HelpUrl": null,
       "WcagCriteria": "1.3.1",
       "ExampleSnippet": null

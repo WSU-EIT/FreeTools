@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://registrar.wsu.edu/deadlines-drop-withdrawal/  
-> **Captured:** 2026-02-18 18:39:44 UTC  
+> **Captured:** 2026-02-19 02:11:09 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:39:44.0801363Z |
+| Captured | 2026-02-19T02:11:09.9680050Z |
 
 ## 🔧 Actions
 
@@ -47,7 +47,7 @@
 
 - Screenshot #1: page-loaded (257.7 KB)
 - No images found on page
-- axe-core: 3 violations (263ms)
+- axe-core: 3 violations (256ms)
 - htmlcheck: 2 violations (0ms)
 
 </details>
@@ -90,10 +90,10 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | select-name | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<select class="form-select" name="S.termDD" id="S.termDD">` |
-| 3 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a id="dynamic"></a>` |
-| 4 | td-has-header | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table class="padded">
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [select-name](../../a11y-rules.md#select-name) | 🔴 | 🟡 1/2 | ⚠️ | ✅ | `<select class="form-select" name="S.termDD" id="S.termDD">` |
+| 3 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a id="dynamic"></a>` |
+| 4 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table class="padded">
   <tbody><tr>
     <td>
       <sele...` |

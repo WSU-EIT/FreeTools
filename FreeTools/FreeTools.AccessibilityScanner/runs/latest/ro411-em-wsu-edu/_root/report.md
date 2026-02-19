@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://ro411.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:44:28 UTC  
+> **Captured:** 2026-02-19 02:09:05 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:44:28.9994778Z |
+| Captured | 2026-02-19T02:09:05.5052807Z |
 
 ## 🔴 JavaScript Errors
 
@@ -60,7 +60,7 @@ Failed to load resource: the server responded with a status of 404 ()
 
 - Screenshot #1: page-loaded (28.2 KB)
 - No images found on page
-- axe-core: 1 violations (128ms)
+- axe-core: 1 violations (157ms)
 - htmlcheck: 1 violations (0ms)
 
 </details>
@@ -103,8 +103,8 @@ Failed to load resource: the server responded with a status of 404 ()
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | page-has-heading-one | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [page-has-heading-one](../../a11y-rules.md#page-has-heading-one) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://cmsdev.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:40:21 UTC  
+> **Captured:** 2026-02-19 02:07:18 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:40:21.1272700Z |
+| Captured | 2026-02-19T02:07:18.4862558Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (36.1 KB)
 - No images found on page
-- axe-core: 1 violations (256ms)
+- axe-core: 1 violations (244ms)
 - htmlcheck: 0 violations (0ms)
 
 </details>
@@ -89,7 +89,7 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
 
 </details>
 

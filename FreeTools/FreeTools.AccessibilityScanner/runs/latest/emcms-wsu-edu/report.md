@@ -202,8 +202,8 @@ Failed to load resource: the server responded with a status of 404 ()
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | aria-allowed-attr | 🔴 | 1/1 | 1 |
-| 2 | page-has-heading-one | 🟡 | 1/1 | 1 |
+| 1 | [aria-allowed-attr](../a11y-rules.md#aria-allowed-attr) | 🔴 | 1/1 | 1 |
+| 2 | [page-has-heading-one](../a11y-rules.md#page-has-heading-one) | 🟡 | 1/1 | 1 |
 
 ---
 

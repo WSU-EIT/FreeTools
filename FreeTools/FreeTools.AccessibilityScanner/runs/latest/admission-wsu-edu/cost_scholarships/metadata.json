@@ -5,7 +5,7 @@
   "Title": "Scholarships | Admissions | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 85121,
+  "HtmlSizeBytes": 85270,
   "ScreenshotSizeBytes": 162850,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 9,
     "Critical": 1,
     "Serious": 8,
@@ -53,14 +55,14 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:37:03 GMT",
-    "etag": "\u0022b459fb4635d9dc27f7e982a0427a79b1\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:25:54 GMT",
+    "date": "Thu, 19 Feb 2026 02:12:07 GMT",
+    "etag": "\u002297a3d49b0e2170fd9c02cee4d579a24e\u0022",
+    "last-modified": "Thu, 19 Feb 2026 01:37:35 GMT",
     "link": "\u003Chttps://admission.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://admission.wsu.edu/wp-json/wp/v2/pages/25\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://admission.wsu.edu/?p=25\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding",
-    "x-cache": "EXPIRED",
-    "x-cache-status": "EXPIRED"
+    "x-cache": "HIT",
+    "x-cache-status": "HIT"
   },
-  "CapturedAt": "2026-02-18T18:37:03.380175Z"
+  "CapturedAt": "2026-02-19T02:12:07.6861777Z"
 }

@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://registrar.wsu.edu/term-withdrawal/child/withdraw-from-current-term/  
-> **Captured:** 2026-02-18 18:45:03 UTC  
+> **Captured:** 2026-02-19 02:20:39 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:45:03.6406090Z |
+| Captured | 2026-02-19T02:20:39.9376579Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (196.9 KB)
 - Cataloged 2 images by URL (no download)
-- axe-core: 1 violations (246ms)
+- axe-core: 1 violations (230ms)
 - htmlcheck: 3 violations (0ms)
 
 </details>
@@ -120,10 +120,10 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a id="current"></a>` |
-| 3 | page-has-heading-one | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | td-has-header | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table border="1" style="margin-bottom: 30px; border-coll...` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a id="current"></a>` |
+| 3 | [page-has-heading-one](../../a11y-rules.md#page-has-heading-one) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table border="1" style="margin-bottom: 30px; border-coll...` |
 
 </details>
 

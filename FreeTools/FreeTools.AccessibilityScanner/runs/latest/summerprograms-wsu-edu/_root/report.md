@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://summerprograms.wsu.edu/  
-> **Captured:** 2026-02-18 18:47:09 UTC  
+> **Captured:** 2026-02-19 02:11:57 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,7 +25,7 @@
 | Redirected To | https://learn365.wsu.edu/summer-session/ |
 | Title | Summer Session | Learn365 | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 72.0 KB |
+| HTML Size | 72.1 KB |
 | Screenshots | 1 (265.0 KB) |
 | Images | 3 (referenced by URL) |
 | Images Missing Alt | ⚠️ 1 |
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:47:09.8299963Z |
+| Captured | 2026-02-19T02:11:57.1926497Z |
 
 ## 🔧 Actions
 
@@ -47,7 +47,7 @@
 
 - Screenshot #1: page-loaded (265.0 KB)
 - Cataloged 3 images by URL (no download)
-- axe-core: 0 violations (314ms)
+- axe-core: 0 violations (317ms)
 - htmlcheck: 5 violations (0ms)
 
 </details>
@@ -136,9 +136,9 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" 
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" 
 src="https://www.facebook.com/...` |
-| 2 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://learn365.wsu.edu?s=" class="wsu-button-u...` |
+| 2 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://learn365.wsu.edu?s=" class="wsu-button-u...` |
 
 </details>
 

@@ -1,6 +1,6 @@
 # 🌐 Site Report: https://diversityeducation.wsu.edu/
 
-> **Status:** ✅ 1/1 pages OK  
+> **Status:** ✅ 3/3 pages OK  
 > **Folder:** `diversityeducation-wsu-edu/`  
 
 ---
@@ -13,20 +13,20 @@ Success Rate:  [█████████████████████�
 
 | Metric | Value |
 |--------|-------|
-| Pages Scanned | 1 |
-| Pages Passed | ✅ 1 |
+| Pages Scanned | 3 |
+| Pages Passed | ✅ 3 |
 | Pages Failed | 0 |
-| Total JS Errors | 🔴 2 |
-| Total JS Warnings | 1 |
-| Total Images | 6 (by URL) |
-| Images Missing Alt | ⚠️ 5 |
-| A11y Violations | ⚠️ 5 |
+| Total JS Errors | 🔴 6 |
+| Total JS Warnings | 3 |
+| Total Images | 18 (by URL) |
+| Images Missing Alt | ⚠️ 15 |
+| A11y Violations | ⚠️ 15 |
 | 🔴 Critical | 0 |
-| 🟠 Serious | 4 |
-| 🟡 Moderate | 1 |
+| 🟠 Serious | 12 |
+| 🟡 Moderate | 3 |
 | 🔵 Minor | 0 |
-| Total HTML | 91.8 KB |
-| Total Screenshots | 302.9 KB |
+| Total HTML | 276.0 KB |
+| Total Screenshots | 867.0 KB |
 
 ## 🔒 SSL Certificate
 
@@ -69,6 +69,8 @@ Success Rate:  [█████████████████████�
 | Status | Page | HTTP | Title | 🔴 | 🟠 | 🟡 | 🔵 | A11y |
 |:------:|------|:----:|-------|:--:|:--:|:--:|:--:|:----:|
 | ✅ | [/](_root/report.md) | 200 | Human Resource Services, Washington S... |  | 4 | 1 |  | ⚠️ 5 |
+| ✅ | [/resources/employee-assistance-program/](resources_employee-assistance-program/report.md) | 200 | Human Resource Services, Washington S... |  | 4 | 1 |  | ⚠️ 5 |
+| ✅ | [/resources/employee-handbooks/](resources_employee-handbooks/report.md) | 200 | Human Resource Services, Washington S... |  | 4 | 1 |  | ⚠️ 5 |
 
 ## 📸 Page Screenshots
 
@@ -82,17 +84,41 @@ Click any thumbnail to view the full page report.
 </a>
 <br />✅ <code>/</code>
 </td>
-<td></td>
-<td></td>
+<td align="center" width="33%">
+<a href="resources_employee-assistance-program/report.md">
+<img src="resources_employee-assistance-program/01-page-loaded.jpg" width="250" alt="/resources/employee-assistance-program/" />
+</a>
+<br />✅ <code>/resources/employee-assistance-program/</code>
+</td>
+<td align="center" width="33%">
+<a href="resources_employee-handbooks/report.md">
+<img src="resources_employee-handbooks/01-page-loaded.jpg" width="250" alt="/resources/employee-handbooks/" />
+</a>
+<br />✅ <code>/resources/employee-handbooks/</code>
+</td>
 </tr>
 </table>
 
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>2 error(s) across 1 page(s)</strong></summary>
+<summary><strong>6 error(s) across 3 page(s)</strong></summary>
 
 **/** (2 errors)
+
+```
+Access to XMLHttpRequest at 'https://repo.wsu.edu/spine/2/spine.min.css?ver=2.0.3' from origin 'https://hrs.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present...
+Failed to load resource: net::ERR_FAILED
+```
+
+**/resources/employee-assistance-program/** (2 errors)
+
+```
+Access to XMLHttpRequest at 'https://repo.wsu.edu/spine/2/spine.min.css?ver=2.0.3' from origin 'https://hrs.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present...
+Failed to load resource: net::ERR_FAILED
+```
+
+**/resources/employee-handbooks/** (2 errors)
 
 ```
 Access to XMLHttpRequest at 'https://repo.wsu.edu/spine/2/spine.min.css?ver=2.0.3' from origin 'https://hrs.wsu.edu' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present...
@@ -105,20 +131,20 @@ Failed to load resource: net::ERR_FAILED
 
 | Metric | Value |
 |--------|-------|
-| Pages with violations | 1/1 |
-| Total violations | 5 |
+| Pages with violations | 3/3 |
+| Total violations | 15 |
 | 🔴 Critical | 0 |
-| 🟠 Serious | 4 |
-| 🟡 Moderate | 1 |
+| 🟠 Serious | 12 |
+| 🟡 Moderate | 3 |
 | 🔵 Minor | 0 |
 
 ### Top 3 Issues
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | image-alt | 🟠 | 1/1 | 3 |
-| 2 | label | 🟠 | 1/1 | 1 |
-| 3 | heading-order | 🟡 | 1/1 | 1 |
+| 1 | [image-alt](../a11y-rules.md#image-alt) | 🟠 | 3/3 | 9 |
+| 2 | [label](../a11y-rules.md#label) | 🟠 | 3/3 | 3 |
+| 3 | [heading-order](../a11y-rules.md#heading-order) | 🟡 | 3/3 | 3 |
 
 ---
 

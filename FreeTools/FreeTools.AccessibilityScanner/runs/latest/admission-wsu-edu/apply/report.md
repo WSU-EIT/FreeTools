@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://admission.wsu.edu/apply/  
-> **Captured:** 2026-02-18 18:35:03 UTC  
+> **Captured:** 2026-02-19 02:08:07 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,8 +24,8 @@
 | URL | https://admission.wsu.edu/apply/ |
 | Title | Apply | Admissions | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 95.9 KB |
-| Screenshots | 1 (400.6 KB) |
+| HTML Size | 96.1 KB |
+| Screenshots | 1 (381.5 KB) |
 | Images | 5 (referenced by URL) |
 | Images Missing Alt | ⚠️ 3 |
 | JS Errors | ✅ 0 |
@@ -37,16 +37,16 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:35:03.2970480Z |
+| Captured | 2026-02-19T02:08:07.0846705Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (400.6 KB)
+- Screenshot #1: page-loaded (381.5 KB)
 - Cataloged 5 images by URL (no download)
-- axe-core: 3 violations (271ms)
+- axe-core: 3 violations (517ms)
 - htmlcheck: 7 violations (0ms)
 
 </details>
@@ -60,7 +60,7 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>400.6 KB</sub>
+<br /><sub>381.5 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -154,13 +154,13 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | color-contrast | 🟠 | 🟢 1/1 | ⚠️ | — | `<a href="tel:5095535450">509-553-5450</a>` |
-| 3 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 4 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
-| 5 | link-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://admission.wsu.edu?s=" class="wsu-button-...` |
-| 6 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
-| 7 | heading-order | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3 class="wsu-title ">` |
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [color-contrast](../../a11y-rules.md#color-contrast) | 🟠 | 🟢 1/1 | ⚠️ | — | `<a href="tel:5095535450">509-553-5450</a>` |
+| 3 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 4 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search__input" type="text" aria-lable="...` |
+| 5 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<a href="https://admission.wsu.edu?s=" class="wsu-button-...` |
+| 6 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button class="wsu-search__submit" aria-lable="Submit Sea...` |
+| 7 | [heading-order](../../a11y-rules.md#heading-order) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<h3 class="wsu-title ">` |
 
 </details>
 
@@ -170,7 +170,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (400.6 KB) |
+| `01-page-loaded.jpg` | page-loaded (381.5 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

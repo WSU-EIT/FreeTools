@@ -5,7 +5,7 @@
   "Title": "Join Our Team",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 57709,
+  "HtmlSizeBytes": 57791,
   "ScreenshotSizeBytes": 292700,
   "CredentialUsed": null,
   "ConsoleErrorCount": 2,
@@ -47,7 +47,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 6,
     "Critical": 6,
     "Serious": 0,
@@ -74,12 +76,12 @@
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:35:23 GMT",
+    "date": "Thu, 19 Feb 2026 02:07:59 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-18T18:35:24.5902554Z"
+  "CapturedAt": "2026-02-19T02:07:58.8726793Z"
 }

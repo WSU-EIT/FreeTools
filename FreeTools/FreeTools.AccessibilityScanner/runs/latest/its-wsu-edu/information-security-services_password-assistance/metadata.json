@@ -5,7 +5,7 @@
   "Title": "How to change your password | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 240425,
+  "HtmlSizeBytes": 240448,
   "ScreenshotSizeBytes": 127445,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -31,7 +31,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 7,
     "Critical": 0,
     "Serious": 7,
@@ -58,15 +60,12 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:35:35 GMT",
-    "etag": "\u00229a8047c8c81e0bbc5e6ecfb315802f6f\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:35:35 GMT",
+    "date": "Thu, 19 Feb 2026 02:18:52 GMT",
+    "etag": "\u00223f2d5283d7ce82abd6252a0793bf635d\u0022",
+    "last-modified": "Thu, 19 Feb 2026 01:32:48 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/500\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=500\u003E; rel=shortlink",
     "server": "nginx",
-    "vary": "Accept-Encoding",
-    "x-tec-api-origin": "https://its.wsu.edu",
-    "x-tec-api-root": "https://its.wsu.edu/wp-json/tribe/events/v1/",
-    "x-tec-api-version": "v1"
+    "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-18T18:35:34.9667587Z"
+  "CapturedAt": "2026-02-19T02:18:52.3255916Z"
 }

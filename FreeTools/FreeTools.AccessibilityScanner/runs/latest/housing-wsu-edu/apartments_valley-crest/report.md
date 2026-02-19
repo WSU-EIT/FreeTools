@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://housing.wsu.edu/apartments/valley-crest/  
-> **Captured:** 2026-02-18 18:36:41 UTC  
+> **Captured:** 2026-02-19 02:10:48 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -33,7 +33,7 @@
 | JS Warnings | 5 |
 | A11y Violations | ✅ 0 |
 | Auth | none |
-| Captured | 2026-02-18T18:36:41.1669378Z |
+| Captured | 2026-02-19T02:10:48.9193909Z |
 
 ## 🔴 JavaScript Errors
 
@@ -56,7 +56,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (236.1 KB)
 - Cataloged 7 images by URL (no download)
-- axe-core: 0 violations (261ms)
+- axe-core: 0 violations (274ms)
 - htmlcheck: 0 violations (0ms)
 
 </details>

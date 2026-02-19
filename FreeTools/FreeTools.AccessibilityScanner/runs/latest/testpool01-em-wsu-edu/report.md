@@ -138,12 +138,12 @@ Failed to load resource: the server responded with a status of 500 ()
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | html-has-lang | 🟠 | 2/3 | 4 |
-| 2 | link-name | 🟠 | 1/3 | 2 |
-| 3 | button-name | 🟠 | 1/3 | 2 |
-| 4 | skip-link | 🟡 | 3/3 | 3 |
-| 5 | landmark-one-main | 🟡 | 3/3 | 3 |
-| 6 | landmark-nav | 🔵 | 2/3 | 2 |
+| 1 | [html-has-lang](../a11y-rules.md#html-has-lang) | 🟠 | 2/3 | 4 |
+| 2 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/3 | 2 |
+| 3 | [button-name](../a11y-rules.md#button-name) | 🟠 | 1/3 | 2 |
+| 4 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 3/3 | 3 |
+| 5 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 3/3 | 3 |
+| 6 | [landmark-nav](../a11y-rules.md#landmark-nav) | 🔵 | 2/3 | 2 |
 
 ---
 

@@ -5,7 +5,7 @@
   "Title": "Page not found | Admissions | Washington State University",
   "StatusCode": 404,
   "Success": false,
-  "HtmlSizeBytes": 80598,
+  "HtmlSizeBytes": 80712,
   "ScreenshotSizeBytes": 119578,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 9,
     "Critical": 1,
     "Serious": 8,
@@ -54,10 +56,10 @@
     "cache-control": "no-cache, must-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:41:04 GMT",
+    "date": "Thu, 19 Feb 2026 02:07:24 GMT",
     "expires": "Wed, 11 Jan 1984 05:00:00 GMT",
     "link": "\u003Chttps://admission.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022",
     "server": "nginx"
   },
-  "CapturedAt": "2026-02-18T18:41:04.5034684Z"
+  "CapturedAt": "2026-02-19T02:07:22.0416385Z"
 }

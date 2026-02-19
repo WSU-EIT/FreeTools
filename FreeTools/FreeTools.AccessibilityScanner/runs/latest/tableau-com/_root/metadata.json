@@ -6,7 +6,7 @@
   "StatusCode": 403,
   "Success": false,
   "HtmlSizeBytes": 289,
-  "ScreenshotSizeBytes": 17632,
+  "ScreenshotSizeBytes": 17652,
   "CredentialUsed": null,
   "ConsoleErrorCount": 1,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 17632
+      "FileSize": 17652
     }
   ],
   "ImageCount": 0,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 5,
     "Critical": 0,
     "Serious": 2,
@@ -51,15 +53,15 @@
   },
   "ErrorMessage": null,
   "Headers": {
-    "ak-uuid": "0.4ec90b17.1771440491.4f4b05e7",
+    "ak-uuid": "0.4ec90b17.1771467146.515aaa22",
     "connection": "close",
     "content-length": "361",
     "content-type": "text/html",
-    "date": "Wed, 18 Feb 2026 18:48:11 GMT",
-    "expires": "Wed, 18 Feb 2026 18:48:11 GMT",
+    "date": "Thu, 19 Feb 2026 02:12:26 GMT",
+    "expires": "Thu, 19 Feb 2026 02:12:26 GMT",
     "mime-version": "1.0",
     "server": "AkamaiGHost",
-    "server-timing": "cdn-cache; desc=HIT\nedge; dur=1\nak_p; desc=\u00221771440491001_386648398_1330316775_11_7454_28_35_-\u0022;dur=1"
+    "server-timing": "cdn-cache; desc=HIT\nedge; dur=1\nak_p; desc=\u00221771467146504_386648398_1364896290_10_9861_28_31_-\u0022;dur=1"
   },
-  "CapturedAt": "2026-02-18T18:48:10.9077533Z"
+  "CapturedAt": "2026-02-19T02:12:26.4104825Z"
 }

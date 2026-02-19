@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://hrs.wsu.edu/employees/benefits/retirement-information/  
-> **Captured:** 2026-02-18 18:33:34 UTC  
+> **Captured:** 2026-02-19 02:11:41 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,7 +25,7 @@
 | URL | https://hrs.wsu.edu/employees/benefits/retirement-information/ |
 | Title | Retirement Information – Human Resource Services, Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 83.3 KB |
+| HTML Size | 83.4 KB |
 | Screenshots | 1 (304.0 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:33:34.2120110Z |
+| Captured | 2026-02-19T02:11:41.4922983Z |
 
 ## 🔴 JavaScript Errors
 
@@ -59,7 +59,7 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (304.0 KB)
 - No images found on page
-- axe-core: 0 violations (164ms)
+- axe-core: 0 violations (254ms)
 - htmlcheck: 4 violations (0ms)
 
 </details>
@@ -102,8 +102,8 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="search" class="search-field" placeholder="Se...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="search" class="search-field" placeholder="Se...` |
 
 </details>
 

@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://prod.em.wsu.edu/FormsToImaging  
-> **Captured:** 2026-02-18 18:44:48 UTC  
+> **Captured:** 2026-02-19 02:09:28 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -29,7 +29,7 @@
 | Screenshots | 1 (6.0 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
-| JS Errors | 🔴 30 |
+| JS Errors | 🔴 130 |
 | JS Warnings | 0 |
 | A11y Violations | ⚠️ 4 |
 | 🔴 Critical | 0 |
@@ -38,35 +38,35 @@
 | 🔵 Minor | 1 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:44:48.6724919Z |
+| Captured | 2026-02-19T02:09:28.3145755Z |
 
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>30 error(s) detected</strong></summary>
+<summary><strong>130 error(s) detected</strong></summary>
 
 ```
-Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/dotnet.native.y68cfu4kuf.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-MONO_WASM: instantiate_wasm_module() failed Error: download 'https://prod.em.wsu.edu/FormsToImaging/_framework/dotnet.native.y68cfu4kuf.wasm' for dotnet.native.y68cfu4kuf.wasm failed 0 TypeError: Fail...
-Error in mono_download_assets: Error: download 'https://prod.em.wsu.edu/FormsToImaging/_framework/dotnet.native.y68cfu4kuf.wasm' for dotnet.native.y68cfu4kuf.wasm failed 0 TypeError: Failed to fetch
-Error in mono_download_assets: Error: download 'https://prod.em.wsu.edu/FormsToImaging/_framework/dotnet.native.y68cfu4kuf.wasm' for dotnet.native.y68cfu4kuf.wasm failed 0 TypeError: Failed to fetch
-Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/System.Private.CoreLib.m8l0lrv2y9.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-Error in mono_download_assets: Error: download 'https://prod.em.wsu.edu/FormsToImaging/_framework/System.Private.CoreLib.m8l0lrv2y9.wasm' for System.Private.CoreLib.m8l0lrv2y9.wasm failed 0 TypeError:...
-Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/Basic.Reference.Assemblies.Net90.ax3achsd86.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/Microsoft.CSharp.aiisld9zgk.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
 Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/Microsoft.CodeAnalysis.CSharp.spyk6zagzf.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/Microsoft.CodeAnalysis.kpjgxy86t6.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/Microsoft.VisualBasic.Core.pnarh8esv1.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
+Failed to load resource: net::ERR_CONNECTION_RESET
+Error in mono_download_assets: Error: download 'https://prod.em.wsu.edu/FormsToImaging/_framework/Microsoft.CodeAnalysis.CSharp.spyk6zagzf.wasm' for Microsoft.CodeAnalysis.CSharp.spyk6zagzf.wasm faile...
+Error in mono_download_assets: Error: download 'https://prod.em.wsu.edu/FormsToImaging/_framework/Microsoft.CodeAnalysis.CSharp.spyk6zagzf.wasm' for Microsoft.CodeAnalysis.CSharp.spyk6zagzf.wasm faile...
 Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/MudBlazor.845kbj1w9a.wasm. 
-Failed to load resource: net::ERR_CONNECTION_CLOSED
-... and 10 more (see errors.log)
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/System.Net.Http.dbj3sqfsj2.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/System.Net.NameResolution.fps7k2zdg8.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/System.Net.Mail.yskh0ggf9n.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/System.Net.HttpListener.y8b80mdihw.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/System.Net.NetworkInformation.5e5zt3e762.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/System.Net.Ping.rui35iunfo.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+Fetch API cannot load https://prod.em.wsu.edu/FormsToImaging/_framework/System.Net.Primitives.k3wdvqqvj1.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
+... and 110 more (see errors.log)
 ```
 
 </details>
@@ -78,7 +78,7 @@ Failed to load resource: net::ERR_CONNECTION_CLOSED
 
 - Screenshot #1: page-loaded (6.0 KB)
 - No images found on page
-- axe-core: 1 violations (133ms)
+- axe-core: 1 violations (163ms)
 - htmlcheck: 3 violations (0ms)
 
 </details>
@@ -121,10 +121,10 @@ Failed to load resource: net::ERR_CONNECTION_CLOSED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | document-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" style="--blazor-load-percentage: 94.22222...` |
-| 2 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 3 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [document-title](../../a11y-rules.md#document-title) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" style="--blazor-load-percentage: 71.55555...` |
+| 2 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 3 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [landmark-nav](../../a11y-rules.md#landmark-nav) | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

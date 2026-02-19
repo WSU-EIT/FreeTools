@@ -8,7 +8,7 @@
   "HtmlSizeBytes": 198135,
   "ScreenshotSizeBytes": 6157,
   "CredentialUsed": null,
-  "ConsoleErrorCount": 30,
+  "ConsoleErrorCount": 130,
   "ConsoleWarningCount": 0,
   "Screenshots": [
     {
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 4,
     "Critical": 0,
     "Serious": 1,
@@ -55,11 +57,11 @@
     "cache-control": "no-cache, no-store",
     "content-security-policy": "frame-ancestors \u0027self\u0027 login.wsu.edu cms.em.wsu.edu futurecoug.wsu.edu",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:44:48 GMT",
+    "date": "Thu, 19 Feb 2026 02:09:28 GMT",
     "pragma": "no-cache",
     "server": "Microsoft-IIS/10.0",
     "strict-transport-security": "max-age=2592000",
     "x-powered-by": "ASP.NET"
   },
-  "CapturedAt": "2026-02-18T18:44:48.6724919Z"
+  "CapturedAt": "2026-02-19T02:09:28.3145755Z"
 }

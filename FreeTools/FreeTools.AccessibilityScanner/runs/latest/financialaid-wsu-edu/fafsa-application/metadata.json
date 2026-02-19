@@ -5,8 +5,8 @@
   "Title": "FAFSA Application | Student Financial Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 243183,
-  "ScreenshotSizeBytes": 351543,
+  "HtmlSizeBytes": 243302,
+  "ScreenshotSizeBytes": 351344,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 4,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 351543
+      "FileSize": 351344
     }
   ],
   "ImageCount": 1,
@@ -31,7 +31,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 5,
     "Critical": 0,
     "Serious": 5,
@@ -58,14 +60,14 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:33:23 GMT",
-    "etag": "\u0022ce64179b705901f36c14072f6fc0ac7d\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:21:59 GMT",
+    "date": "Thu, 19 Feb 2026 02:10:03 GMT",
+    "etag": "\u00222a3c551d9f7d3230c1ee39b7fdc462f1\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:10:03 GMT",
     "link": "\u003Chttps://financialaid.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://financialaid.wsu.edu/wp-json/wp/v2/pages/1293\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://financialaid.wsu.edu/?p=1293\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding",
-    "x-cache": "HIT",
-    "x-cache-status": "HIT"
+    "x-cache": "EXPIRED",
+    "x-cache-status": "EXPIRED"
   },
-  "CapturedAt": "2026-02-18T18:33:23.1845794Z"
+  "CapturedAt": "2026-02-19T02:10:03.5125098Z"
 }

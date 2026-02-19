@@ -6,7 +6,7 @@
   "StatusCode": 200,
   "Success": true,
   "HtmlSizeBytes": 102358,
-  "ScreenshotSizeBytes": 321463,
+  "ScreenshotSizeBytes": 321526,
   "CredentialUsed": null,
   "ConsoleErrorCount": 4,
   "ConsoleWarningCount": 5,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 321463
+      "FileSize": 321526
     }
   ],
   "ImageCount": 19,
@@ -103,7 +103,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 6,
     "Critical": 6,
     "Serious": 0,
@@ -130,12 +132,12 @@
   "Headers": {
     "content-security-policy": "frame-ancestors \u0027self\u0027 https://*.risevision.com;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 18 Feb 2026 18:39:49 GMT",
+    "date": "Thu, 19 Feb 2026 02:15:50 GMT",
     "frame-ancestors": "self https://*.risevision.com",
     "referrer-policy": "strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=2592000",
     "x-content-type-options": "nosniff",
     "x-frame-options": "SameOrigin"
   },
-  "CapturedAt": "2026-02-18T18:39:49.91449Z"
+  "CapturedAt": "2026-02-19T02:15:50.6622992Z"
 }

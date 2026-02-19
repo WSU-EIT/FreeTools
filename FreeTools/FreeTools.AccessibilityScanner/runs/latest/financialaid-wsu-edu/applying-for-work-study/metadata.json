@@ -5,8 +5,8 @@
   "Title": "Applying for Work Study | Student Financial Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 242821,
-  "ScreenshotSizeBytes": 392732,
+  "HtmlSizeBytes": 242831,
+  "ScreenshotSizeBytes": 383719,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 392732
+      "FileSize": 383719
     }
   ],
   "ImageCount": 5,
@@ -47,7 +47,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 5,
     "Critical": 0,
     "Serious": 5,
@@ -74,14 +76,14 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:32:52 GMT",
-    "etag": "\u00222fab8035a65773b272a951ce93cd30ac\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:21:27 GMT",
+    "date": "Thu, 19 Feb 2026 02:08:25 GMT",
+    "etag": "\u00220b3a8c372d4028771f36d22e4bcc8e49\u0022",
+    "last-modified": "Thu, 19 Feb 2026 01:57:38 GMT",
     "link": "\u003Chttps://financialaid.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://financialaid.wsu.edu/wp-json/wp/v2/pages/699\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://financialaid.wsu.edu/?p=699\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding",
-    "x-cache": "HIT",
-    "x-cache-status": "HIT"
+    "x-cache": "EXPIRED",
+    "x-cache-status": "EXPIRED"
   },
-  "CapturedAt": "2026-02-18T18:32:52.7825274Z"
+  "CapturedAt": "2026-02-19T02:08:24.9809712Z"
 }

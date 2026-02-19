@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://residency.wsu.edu/  
-> **Captured:** 2026-02-18 18:44:24 UTC  
+> **Captured:** 2026-02-19 02:09:38 UTC  
 > **Status:** ❌ 0  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:44:24.1417262Z |
+| Captured | 2026-02-19T02:09:38.8511252Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (170.1 KB)
 - No images found on page
-- axe-core: 1 violations (311ms)
+- axe-core: 1 violations (335ms)
 - htmlcheck: 1 violations (0ms)
 
 </details>
@@ -89,8 +89,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | aria-allowed-attr | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
-| 2 | td-has-header | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table border="0" id="res-cal">
+| 1 | [aria-allowed-attr](../../a11y-rules.md#aria-allowed-attr) | 🔴 | 🟢 1/1 | ⚠️ | — | `<div id="wsu-navigation-vertical" class="wsu-slide-in-pan...` |
+| 2 | [td-has-header](../../a11y-rules.md#td-has-header) | 🟡 | 🟡 1/2 | ✅ | ⚠️ | `<table border="0" id="res-cal">
 <tbody>
 <tr>
 <td class="t...` |

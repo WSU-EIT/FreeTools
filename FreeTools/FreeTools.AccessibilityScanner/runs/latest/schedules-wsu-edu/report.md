@@ -88,10 +88,10 @@ Click any thumbnail to view the full page report.
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | aria-valid-attr | 🔴 | 1/1 | 6 |
-| 2 | select-name | 🔴 | 1/1 | 1 |
-| 3 | link-name | 🟠 | 1/1 | 1 |
-| 4 | page-has-heading-one | 🟡 | 1/1 | 1 |
+| 1 | [aria-valid-attr](../a11y-rules.md#aria-valid-attr) | 🔴 | 1/1 | 6 |
+| 2 | [select-name](../a11y-rules.md#select-name) | 🔴 | 1/1 | 1 |
+| 3 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/1 | 1 |
+| 4 | [page-has-heading-one](../a11y-rules.md#page-has-heading-one) | 🟡 | 1/1 | 1 |
 
 ---
 

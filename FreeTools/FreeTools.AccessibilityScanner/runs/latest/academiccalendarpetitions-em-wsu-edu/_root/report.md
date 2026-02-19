@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://academiccalendarpetitions.em.wsu.edu/  
-> **Captured:** 2026-02-18 18:37:27 UTC  
+> **Captured:** 2026-02-19 02:07:18 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -37,7 +37,7 @@
 | 🔵 Minor | 1 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:37:27.8691473Z |
+| Captured | 2026-02-19T02:07:18.4865323Z |
 
 ## 🔧 Actions
 
@@ -46,8 +46,8 @@
 
 - Screenshot #1: page-loaded (21.3 KB)
 - No images found on page
-- axe-core: 0 violations (89ms)
-- htmlcheck: 2 violations (0ms)
+- axe-core: 0 violations (98ms)
+- htmlcheck: 2 violations (15ms)
 
 </details>
 
@@ -89,8 +89,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 2 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 2 | [landmark-nav](../../a11y-rules.md#landmark-nav) | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

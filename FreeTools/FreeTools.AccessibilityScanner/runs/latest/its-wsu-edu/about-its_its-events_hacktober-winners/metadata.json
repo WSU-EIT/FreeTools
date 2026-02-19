@@ -5,8 +5,8 @@
   "Title": "Hacktober Winners | Information Technology Services | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 264340,
-  "ScreenshotSizeBytes": 263519,
+  "HtmlSizeBytes": 265126,
+  "ScreenshotSizeBytes": 212083,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,7 +15,7 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 263519
+      "FileSize": 212083
     }
   ],
   "ImageCount": 33,
@@ -159,7 +159,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 7,
     "Critical": 0,
     "Serious": 7,
@@ -186,12 +188,12 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:33:50 GMT",
-    "etag": "\u0022e5babd85d9e701018e07447708404432\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:22:23 GMT",
+    "date": "Thu, 19 Feb 2026 02:15:14 GMT",
+    "etag": "\u0022553060170d63befb8f611264346d237a\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:12:00 GMT",
     "link": "\u003Chttps://its.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://its.wsu.edu/wp-json/wp/v2/pages/1514\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://its.wsu.edu/?p=1514\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-18T18:33:50.1836973Z"
+  "CapturedAt": "2026-02-19T02:15:14.0980197Z"
 }

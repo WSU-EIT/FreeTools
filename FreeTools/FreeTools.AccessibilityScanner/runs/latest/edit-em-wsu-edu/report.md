@@ -176,9 +176,9 @@ Click any thumbnail to view the full page report.
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | skip-link | 🟡 | 1/1 | 1 |
-| 2 | landmark-one-main | 🟡 | 1/1 | 1 |
-| 3 | landmark-nav | 🔵 | 1/1 | 1 |
+| 1 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
+| 2 | [landmark-one-main](../a11y-rules.md#landmark-one-main) | 🟡 | 1/1 | 1 |
+| 3 | [landmark-nav](../a11y-rules.md#landmark-nav) | 🔵 | 1/1 | 1 |
 
 ---
 

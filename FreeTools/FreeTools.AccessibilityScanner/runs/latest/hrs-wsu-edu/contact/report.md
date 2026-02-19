@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://hrs.wsu.edu/contact/  
-> **Captured:** 2026-02-18 18:32:51 UTC  
+> **Captured:** 2026-02-19 02:09:02 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,7 +25,7 @@
 | URL | https://hrs.wsu.edu/contact/ |
 | Title | Contact HRS – Human Resource Services, Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 132.0 KB |
+| HTML Size | 132.2 KB |
 | Screenshots | 1 (600.9 KB) |
 | Images | 2 (referenced by URL) |
 | Images Missing Alt | ⚠️ 2 |
@@ -38,7 +38,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:32:51.8423070Z |
+| Captured | 2026-02-19T02:09:02.2529891Z |
 
 ## 🔴 JavaScript Errors
 
@@ -59,8 +59,8 @@ Failed to load resource: net::ERR_FAILED
 
 - Screenshot #1: page-loaded (600.9 KB)
 - Cataloged 2 images by URL (no download)
-- axe-core: 1 violations (180ms)
-- htmlcheck: 5 violations (1ms)
+- axe-core: 1 violations (384ms)
+- htmlcheck: 5 violations (0ms)
 
 </details>
 
@@ -143,9 +143,9 @@ Failed to load resource: net::ERR_FAILED
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="mailto:hrs.records@wsu.edu"></a>` |
-| 2 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 3 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="search" class="search-field" placeholder="Se...` |
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="mailto:hrs.records@wsu.edu"></a>` |
+| 2 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 3 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input type="search" class="search-field" placeholder="Se...` |
 
 </details>
 

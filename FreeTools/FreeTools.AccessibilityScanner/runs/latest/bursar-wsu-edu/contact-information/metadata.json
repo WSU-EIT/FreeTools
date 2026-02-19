@@ -5,7 +5,7 @@
   "Title": "Contact Information | Bursar | Washington State University",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 80568,
+  "HtmlSizeBytes": 80772,
   "ScreenshotSizeBytes": 225600,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -55,7 +55,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 7,
     "Critical": 0,
     "Serious": 4,
@@ -82,12 +84,12 @@
   "Headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Wed, 18 Feb 2026 18:39:14 GMT",
-    "etag": "\u0022e992523b0c3fdfa773e125d69a311201\u0022",
-    "last-modified": "Wed, 18 Feb 2026 18:39:06 GMT",
+    "date": "Thu, 19 Feb 2026 02:08:23 GMT",
+    "etag": "\u0022923130ea8fc3f1afdd2034f7e896a0a3\u0022",
+    "last-modified": "Thu, 19 Feb 2026 02:08:14 GMT",
     "link": "\u003Chttps://bursar.wsu.edu/wp-json/\u003E; rel=\u0022https://api.w.org/\u0022, \u003Chttps://bursar.wsu.edu/wp-json/wp/v2/pages/1842\u003E; rel=\u0022alternate\u0022; type=\u0022application/json\u0022, \u003Chttps://bursar.wsu.edu/?p=1842\u003E; rel=shortlink",
     "server": "nginx",
     "vary": "Accept-Encoding"
   },
-  "CapturedAt": "2026-02-18T18:39:14.1151512Z"
+  "CapturedAt": "2026-02-19T02:08:23.1242958Z"
 }

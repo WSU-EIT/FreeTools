@@ -3,47 +3,67 @@
     "axe",
     "htmlcheck"
   ],
-  "ToolsSkipped": [],
-  "TotalViolations": 4,
-  "Critical": 0,
-  "Serious": 1,
+  "ToolsSkipped": [
+    "wave"
+  ],
+  "TotalViolations": 6,
+  "Critical": 1,
+  "Serious": 3,
   "Moderate": 2,
-  "Minor": 1,
+  "Minor": 0,
   "ByTool": {
     "axe": {
-      "Total": 1,
-      "Critical": 0,
+      "Total": 2,
+      "Critical": 1,
       "Serious": 1,
       "Moderate": 0,
       "Minor": 0
     },
     "htmlcheck": {
-      "Total": 3,
+      "Total": 4,
       "Critical": 0,
-      "Serious": 0,
+      "Serious": 2,
       "Moderate": 2,
-      "Minor": 1
+      "Minor": 0
     }
   },
   "RankedRules": [
     {
       "Rank": 1,
-      "CanonicalRuleId": "document-title",
-      "Severity": "serious",
-      "Consensus": "1/2",
-      "ConfidenceScore": 0.5,
-      "Confidence": "medium",
+      "CanonicalRuleId": "image-alt",
+      "Severity": "critical",
+      "Consensus": "2/2",
+      "ConfidenceScore": 1,
+      "Confidence": "high",
       "ToolsFound": [
-        "axe"
+        "axe",
+        "htmlcheck"
       ],
-      "TotalInstances": 1,
-      "Message": "Documents must have \u003Ctitle\u003E element to aid in navigation",
-      "HelpUrl": "https://dequeuniversity.com/rules/axe/4.10/document-title?application=axeAPI",
+      "TotalInstances": 2,
+      "Message": "Images must have alternative text",
+      "HelpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=axeAPI",
       "WcagCriteria": null,
-      "ExampleSnippet": "\u003Chtml lang=\u0022en\u0022 style=\u0022--blazor-load-percentage: 94.8051948051948%; --blazor-load-percentage-text: \u0026quot;94%\u0026quot;;\u0022\u003E"
+      "ExampleSnippet": "\u003Cimg src=\u0022./images/okta_256.png\u0022\u003E"
     },
     {
       "Rank": 2,
+      "CanonicalRuleId": "link-name",
+      "Severity": "serious",
+      "Consensus": "2/2",
+      "ConfidenceScore": 1,
+      "Confidence": "high",
+      "ToolsFound": [
+        "axe",
+        "htmlcheck"
+      ],
+      "TotalInstances": 2,
+      "Message": "Links must have discernible text",
+      "HelpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI",
+      "WcagCriteria": null,
+      "ExampleSnippet": "\u003Ca class=\u0022nav-link dropdown-toggle\u0022 href=\u0022#\u0022 id=\u0022themeDropdown\u0022 role=\u0022button\u0022 data-bs-toggle=\u0022dropdown\u0022 aria-expanded=\u0022false\u0022\u003E\u003C!--!--\u003E\u003Ci class=\u0022icon i..."
+    },
+    {
+      "Rank": 3,
       "CanonicalRuleId": "skip-link",
       "Severity": "moderate",
       "Consensus": "1/2",
@@ -59,7 +79,7 @@
       "ExampleSnippet": null
     },
     {
-      "Rank": 3,
+      "Rank": 4,
       "CanonicalRuleId": "landmark-one-main",
       "Severity": "moderate",
       "Consensus": "1/2",
@@ -70,22 +90,6 @@
       ],
       "TotalInstances": 1,
       "Message": "Page has no \u003Cmain\u003E landmark",
-      "HelpUrl": null,
-      "WcagCriteria": "1.3.1",
-      "ExampleSnippet": null
-    },
-    {
-      "Rank": 4,
-      "CanonicalRuleId": "landmark-nav",
-      "Severity": "minor",
-      "Consensus": "1/2",
-      "ConfidenceScore": 0.5,
-      "Confidence": "medium",
-      "ToolsFound": [
-        "htmlcheck"
-      ],
-      "TotalInstances": 1,
-      "Message": "Page has no \u003Cnav\u003E landmark",
       "HelpUrl": null,
       "WcagCriteria": "1.3.1",
       "ExampleSnippet": null

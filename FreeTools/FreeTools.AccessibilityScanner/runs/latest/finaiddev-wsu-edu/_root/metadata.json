@@ -5,7 +5,7 @@
   "Title": "Student Financial Services Test Site",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 664831,
+  "HtmlSizeBytes": 664829,
   "ScreenshotSizeBytes": 112465,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -55,7 +55,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 7,
     "Critical": 1,
     "Serious": 5,
@@ -80,5 +82,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:42:23.7246798Z"
+  "CapturedAt": "2026-02-19T02:07:49.1153437Z"
 }

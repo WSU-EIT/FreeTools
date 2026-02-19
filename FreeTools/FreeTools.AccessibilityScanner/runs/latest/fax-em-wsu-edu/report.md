@@ -88,10 +88,10 @@ Click any thumbnail to view the full page report.
 
 | # | Rule | Sev | Pages | Instances |
 |--:|------|:---:|:-----:|:---------:|
-| 1 | link-name | 🟠 | 1/1 | 4 |
-| 2 | button-name | 🟠 | 1/1 | 3 |
-| 3 | label | 🟠 | 1/1 | 2 |
-| 4 | skip-link | 🟡 | 1/1 | 1 |
+| 1 | [link-name](../a11y-rules.md#link-name) | 🟠 | 1/1 | 4 |
+| 2 | [button-name](../a11y-rules.md#button-name) | 🟠 | 1/1 | 3 |
+| 3 | [label](../a11y-rules.md#label) | 🟠 | 1/1 | 2 |
+| 4 | [skip-link](../a11y-rules.md#skip-link) | 🟡 | 1/1 | 1 |
 
 ---
 

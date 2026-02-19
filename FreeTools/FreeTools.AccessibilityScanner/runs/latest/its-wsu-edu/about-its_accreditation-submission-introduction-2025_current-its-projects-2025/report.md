@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://its.wsu.edu/about-its/accreditation-submission-introduction-2025/current-its-projects-2025/  
-> **Captured:** 2026-02-18 18:33:07 UTC  
+> **Captured:** 2026-02-19 02:13:47 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,7 +24,7 @@
 | URL | https://its.wsu.edu/about-its/accreditation-submission-introduction-2025/current-its-projects-2025/ |
 | Title | Current ITS Projects 2025 | Information Technology Services | Washington State University |
 | Status | ✅ 200 |
-| HTML Size | 233.5 KB |
+| HTML Size | 233.7 KB |
 | Screenshots | 1 (328.5 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
@@ -37,7 +37,7 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:33:07.8005489Z |
+| Captured | 2026-02-19T02:13:47.6526884Z |
 
 ## 🔧 Actions
 
@@ -46,7 +46,7 @@
 
 - Screenshot #1: page-loaded (328.5 KB)
 - No images found on page
-- axe-core: 25 violations (262ms)
+- axe-core: 25 violations (331ms)
 - htmlcheck: 6 violations (1ms)
 
 </details>
@@ -89,11 +89,11 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | link-name | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="" class="wsu-header-utility-bar__cta"></a>` |
-| 2 | scrollable-region-focusable | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<tr class="row-1 odd">
+| 1 | [link-name](../../a11y-rules.md#link-name) | 🟠 | 🟢 2/2 | ⚠️ | ⚠️ | `<a href="" class="wsu-header-utility-bar__cta"></a>` |
+| 2 | [scrollable-region-focusable](../../a11y-rules.md#scrollable-region-focusable) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<tr class="row-1 odd">
 	<th class="column-1">Current</th>...` |
-| 3 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 4 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 3 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 4 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
 
 </details>
 

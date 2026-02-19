@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://trusselbuilder.com/  
-> **Captured:** 2026-02-18 18:48:08 UTC  
+> **Captured:** 2026-02-19 02:12:45 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -29,7 +29,7 @@
 | Screenshots | 1 (6.0 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
-| JS Errors | 🔴 193 |
+| JS Errors | 🔴 191 |
 | JS Warnings | 0 |
 | A11y Violations | ⚠️ 7 |
 | 🔴 Critical | 0 |
@@ -38,12 +38,12 @@
 | 🔵 Minor | 1 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:48:08.7926873Z |
+| Captured | 2026-02-19T02:12:45.5488007Z |
 
 ## 🔴 JavaScript Errors
 
 <details>
-<summary><strong>193 error(s) detected</strong></summary>
+<summary><strong>191 error(s) detected</strong></summary>
 
 ```
 Fetch API cannot load https://trusselbuilder.com/_framework/System.Private.CoreLib.f5mfssf3vz.wasm. 
@@ -53,20 +53,20 @@ Error in mono_download_assets: Error: download 'https://trusselbuilder.com/_fram
 Fetch API cannot load https://trusselbuilder.com/_framework/Basic.Reference.Assemblies.Net90.ax3achsd86.wasm. 
 Failed to load resource: net::ERR_CONNECTION_RESET
 Error in mono_download_assets: Error: download 'https://trusselbuilder.com/_framework/Basic.Reference.Assemblies.Net90.ax3achsd86.wasm' for Basic.Reference.Assemblies.Net90.ax3achsd86.wasm failed 0 Ty...
+Fetch API cannot load https://trusselbuilder.com/_framework/Microsoft.AspNetCore.SignalR.Protocols.Json.wvlaexkgxi.wasm. 
+Failed to load resource: net::ERR_CONNECTION_RESET
 Fetch API cannot load https://trusselbuilder.com/_framework/Microsoft.CodeAnalysis.CSharp.spyk6zagzf.wasm. 
 Failed to load resource: net::ERR_CONNECTION_RESET
 Fetch API cannot load https://trusselbuilder.com/_framework/Microsoft.CodeAnalysis.kpjgxy86t6.wasm. 
 Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://trusselbuilder.com/_framework/MudBlazor.te4jn8hazv.wasm. 
+Fetch API cannot load https://trusselbuilder.com/_framework/Microsoft.Extensions.Features.1l3si35wc4.wasm. 
 Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://trusselbuilder.com/_framework/Openize.Animated.GIF.26bax8d5w3.wasm. 
+Fetch API cannot load https://trusselbuilder.com/_framework/Microsoft.Extensions.FileSystemGlobbing.9qyocthipm.wasm. 
 Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://trusselbuilder.com/_framework/Radzen.Blazor.hduvmniwdv.wasm. 
+Fetch API cannot load https://trusselbuilder.com/_framework/Microsoft.Extensions.Localization.Abstractions.o4jp2hcm79.wasm. 
 Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://trusselbuilder.com/_framework/SixLabors.ImageSharp.0vj05gyy4o.wasm. 
-Failed to load resource: net::ERR_CONNECTION_RESET
-Fetch API cannot load https://trusselbuilder.com/_framework/System.AppContext.s1m5cqdrdd.wasm. 
-... and 173 more (see errors.log)
+Fetch API cannot load https://trusselbuilder.com/_framework/Microsoft.JSInterop.WebAssembly.ntyvhbvn6b.wasm. 
+... and 171 more (see errors.log)
 ```
 
 </details>
@@ -78,7 +78,7 @@ Fetch API cannot load https://trusselbuilder.com/_framework/System.AppContext.s1
 
 - Screenshot #1: page-loaded (6.0 KB)
 - No images found on page
-- axe-core: 1 violations (124ms)
+- axe-core: 1 violations (138ms)
 - htmlcheck: 6 violations (0ms)
 
 </details>
@@ -121,11 +121,11 @@ Fetch API cannot load https://trusselbuilder.com/_framework/System.AppContext.s1
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | button-name | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button type="button" id="cboxPrevious"></button>` |
-| 2 | document-title | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" style="--blazor-load-percentage: 59.40170...` |
-| 3 | skip-link | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 4 | landmark-one-main | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
-| 5 | landmark-nav | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 1 | [button-name](../../a11y-rules.md#button-name) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<button type="button" id="cboxPrevious"></button>` |
+| 2 | [document-title](../../a11y-rules.md#document-title) | 🟠 | 🟡 1/2 | ⚠️ | ✅ | `<html lang="en" style="--blazor-load-percentage: 59.82905...` |
+| 3 | [skip-link](../../a11y-rules.md#skip-link) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 4 | [landmark-one-main](../../a11y-rules.md#landmark-one-main) | 🟡 | 🟡 1/2 | ✅ | ⚠️ |  |
+| 5 | [landmark-nav](../../a11y-rules.md#landmark-nav) | 🔵 | 🟡 1/2 | ✅ | ⚠️ |  |
 
 </details>
 

@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://financialaid.wsu.edu/applying-for-work-study/  
-> **Captured:** 2026-02-18 18:32:52 UTC  
+> **Captured:** 2026-02-19 02:08:24 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -25,7 +25,7 @@
 | Title | Applying for Work Study | Student Financial Services | Washington State University |
 | Status | ✅ 200 |
 | HTML Size | 237.1 KB |
-| Screenshots | 1 (383.5 KB) |
+| Screenshots | 1 (374.7 KB) |
 | Images | 5 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
 | JS Errors | ✅ 0 |
@@ -37,17 +37,17 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-02-18T18:32:52.7825274Z |
+| Captured | 2026-02-19T02:08:24.9809712Z |
 
 ## 🔧 Actions
 
 <details>
 <summary><strong>4 action(s) performed</strong></summary>
 
-- Screenshot #1: page-loaded (383.5 KB)
+- Screenshot #1: page-loaded (374.7 KB)
 - Cataloged 5 images by URL (no download)
-- axe-core: 0 violations (343ms)
-- htmlcheck: 5 violations (0ms)
+- axe-core: 0 violations (328ms)
+- htmlcheck: 5 violations (1ms)
 
 </details>
 
@@ -60,7 +60,7 @@
 <img src="01-page-loaded.jpg" width="400" alt="page-loaded" />
 </a>
 <br /><strong>1. page-loaded</strong>
-<br /><sub>383.5 KB</sub>
+<br /><sub>374.7 KB</sub>
 </td>
 <td></td>
 </tr>
@@ -143,8 +143,8 @@
 
 | # | Rule | Sev | Confidence | axe | htmlcheck | Example |
 |--:|------|:---:|:----------:|:---:|:---:|---------|
-| 1 | image-alt | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
-| 2 | label | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
+| 1 | [image-alt](../../a11y-rules.md#image-alt) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<img height="1" width="1" style="display:none" src="https...` |
+| 2 | [label](../../a11y-rules.md#label) | 🟠 | 🟡 1/2 | ✅ | ⚠️ | `<input class="wsu-search-options__option-input" type="rad...` |
 
 </details>
 
@@ -154,7 +154,7 @@
 
 | File | Description |
 |------|-------------|
-| `01-page-loaded.jpg` | page-loaded (383.5 KB) |
+| `01-page-loaded.jpg` | page-loaded (374.7 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

@@ -5,7 +5,7 @@
   "Title": "Student Forms | Office of the Registrar",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 660632,
+  "HtmlSizeBytes": 660636,
   "ScreenshotSizeBytes": 254859,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
@@ -26,7 +26,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 3,
     "Critical": 1,
     "Serious": 2,
@@ -51,5 +53,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:43:52.6494543Z"
+  "CapturedAt": "2026-02-19T02:16:30.4525714Z"
 }

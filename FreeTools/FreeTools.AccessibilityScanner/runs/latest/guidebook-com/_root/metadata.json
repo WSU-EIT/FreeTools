@@ -5,8 +5,8 @@
   "Title": "Event Management Platform | Build An App, Manage Registration, Print Badges",
   "StatusCode": 0,
   "Success": false,
-  "HtmlSizeBytes": 290283,
-  "ScreenshotSizeBytes": 634012,
+  "HtmlSizeBytes": 290225,
+  "ScreenshotSizeBytes": 633303,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 0,
@@ -15,11 +15,11 @@
       "FileName": "01-page-loaded.jpg",
       "Label": "page-loaded",
       "StepNumber": 1,
-      "FileSize": 634012
+      "FileSize": 633303
     }
   ],
-  "ImageCount": 100,
-  "ImagesMissingAlt": 82,
+  "ImageCount": 101,
+  "ImagesMissingAlt": 83,
   "Images": [
     {
       "SourceUrl": "https://cdn-cookieyes.com/assets/images/revisit.svg",
@@ -350,7 +350,7 @@
       "AltText": "Young woman with glasses and a gray sweater resting her chin on her hand, attentively watching an event."
     },
     {
-      "SourceUrl": "https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fe24b20ef67e0549e8886e_6647ac978f69bd05b2dd3a6e_kristin-sargent-image--(1).avif",
+      "SourceUrl": "https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68b01d3952e6264d97325a48_placeholder-image.svg",
       "AltText": ""
     },
     {
@@ -362,12 +362,16 @@
       "AltText": "Smiling business people holding wine glasses at a lively indoor event with warm lighting."
     },
     {
-      "SourceUrl": "https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68b01d3952e6264d97325a48_placeholder-image.svg",
+      "SourceUrl": "https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/69145ca1984b7e277c126b82_Jose-Daniel-Mancera-Carrillo.avif",
       "AltText": ""
     },
     {
       "SourceUrl": "https://cdn.prod.website-files.com/68b01d3752e6264d97325944/68de964aa8d98d913a04bf62_u4866798417_Lively_event_with_business_people_--v_7_3013958a-56f2-4603-a664-a103f7100517_2.avif",
       "AltText": "Smiling businessman in suit and tie enjoying a lively networking event with blurred people and warm lighting in the background."
+    },
+    {
+      "SourceUrl": "https://cdn.prod.website-files.com/68dea673505c6b91b753ddb3/68fb9932894d85985e13452e_indiana-tech.avif",
+      "AltText": ""
     },
     {
       "SourceUrl": "https://cdn.prod.website-files.com/68b01d3752e6264d97325944/69023a8535ccce4b53f0c646_Frame.svg",
@@ -410,15 +414,15 @@
       "AltText": ""
     },
     {
-      "SourceUrl": "https://bat.bing.com/action/0?ti=5751707\u0026tm=gtm002\u0026Ver=2\u0026mid=ff3f4e3d-c00b-4f77-9914-7d64ad90784d\u0026bo=1\u0026sid=ee3b8b900cf911f1b1be55024b26c2bd\u0026vid=ee3bc0700cf911f1b80663f0ea0c1d58\u0026vids=1\u0026msclkid=N\u0026uach=pv%3D10.0\u0026pi=0\u0026lg=en-US\u0026sw=1280\u0026sh=720\u0026sc=24\u0026nwd=1\u0026tl=Event%20Management%20Platform%20%7C%20Build%20An%20App,%20Manage%20Registration,%20Print%20Badges\u0026p=https%3A%2F%2Fwww.guidebook.com%2F\u0026r=\u0026evt=pageLoad\u0026sv=2\u0026cdb=AQcT\u0026rn=968690",
+      "SourceUrl": "https://bat.bing.com/action/0?ti=5751707\u0026tm=gtm002\u0026Ver=2\u0026mid=f55540ca-b84d-41c2-bb73-4fad2f8edb5d\u0026bo=2\u0026sid=f7a348d00d3711f19da5557321814c42\u0026vid=f7a35b000d3711f1bc2ddbc6906c4d90\u0026vids=1\u0026msclkid=N\u0026uach=pv%3D10.0\u0026pi=0\u0026lg=en-US\u0026sw=1280\u0026sh=720\u0026sc=24\u0026nwd=1\u0026tl=Event%20Management%20Platform%20%7C%20Build%20An%20App,%20Manage%20Registration,%20Print%20Badges\u0026p=https%3A%2F%2Fwww.guidebook.com%2F\u0026r=\u0026lt=1738\u0026evt=pageLoad\u0026sv=2\u0026asc=G\u0026cdb=AQcD\u0026rn=858781",
       "AltText": ""
     },
     {
-      "SourceUrl": "https://cdn.bizible.com/ipv?_biz_r=\u0026_biz_h=-1719904874\u0026_biz_u=79832863ad7a44d1f177c347c2bffbbd\u0026_biz_l=https%3A%2F%2Fwww.guidebook.com%2F\u0026_biz_t=1771440301238\u0026_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges\u0026_biz_n=0\u0026rnd=761681\u0026cdn_o=a\u0026_biz_z=1771440301238",
+      "SourceUrl": "https://cdn.bizible.com/ipv?_biz_r=\u0026_biz_h=-1719904874\u0026_biz_u=41d7571cb6664191ce773d61639fd46d\u0026_biz_l=https%3A%2F%2Fwww.guidebook.com%2F\u0026_biz_t=1771466944593\u0026_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges\u0026_biz_n=0\u0026rnd=90540\u0026cdn_o=a\u0026_biz_z=1771466944593",
       "AltText": ""
     },
     {
-      "SourceUrl": "https://cdn.bizibly.com/u?_biz_u=79832863ad7a44d1f177c347c2bffbbd\u0026_biz_l=https%3A%2F%2Fwww.guidebook.com%2F\u0026_biz_t=1771440301239\u0026_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges\u0026rnd=695746\u0026cdn_o=a\u0026_biz_z=1771440301239",
+      "SourceUrl": "https://cdn.bizibly.com/u?_biz_u=41d7571cb6664191ce773d61639fd46d\u0026_biz_l=https%3A%2F%2Fwww.guidebook.com%2F\u0026_biz_t=1771466944594\u0026_biz_i=Event%20Management%20Platform%20%7C%20Build%20An%20App%2C%20Manage%20Registration%2C%20Print%20Badges\u0026rnd=146341\u0026cdn_o=a\u0026_biz_z=1771466944594",
       "AltText": ""
     }
   ],
@@ -427,7 +431,9 @@
       "axe",
       "htmlcheck"
     ],
-    "ToolsSkipped": [],
+    "ToolsSkipped": [
+      "wave"
+    ],
     "TotalViolations": 22,
     "Critical": 0,
     "Serious": 19,
@@ -452,5 +458,5 @@
   },
   "ErrorMessage": null,
   "Headers": null,
-  "CapturedAt": "2026-02-18T18:44:59.6163792Z"
+  "CapturedAt": "2026-02-19T02:09:02.3295692Z"
 }
