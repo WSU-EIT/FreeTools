@@ -44,6 +44,7 @@ internal class Program
         ConsoleOutput.PrintConfig("Timeout", $"{config.TimeoutMs}ms");
         ConsoleOutput.PrintConfig("Max concurrency", config.MaxConcurrency.ToString());
         ConsoleOutput.PrintConfig("Headless", config.Headless.ToString());
+        ConsoleOutput.PrintConfig("WAVE API", string.IsNullOrWhiteSpace(config.WaveApiKey) ? "disabled (no key)" : "enabled");
         ConsoleOutput.PrintDivider();
 
         // Show configured sites and page counts
@@ -127,6 +128,9 @@ internal class Program
 
             // Write run-level summary report
             await WriteRunReportAsync(runsDir, allResults);
+
+            // Write accessibility rules legend/index
+            await WriteRulesLegendAsync(runsDir, allResults);
 
             // Print summary
             Console.WriteLine();
@@ -423,9 +427,22 @@ internal class Program
                 var htmlCheckResult = RunHtmlCheck(htmlContent, fullUrl);
                 actions.Add($"htmlcheck: {htmlCheckResult.Issues.Count} violations ({htmlCheckResult.DurationMs}ms)");
 
-                result.A11ySummary = MergeA11yResults(axeResult, htmlCheckResult, pageDir);
+                // WAVE API (optional — requires API key in config or user secrets)
+                A11yToolResult waveResult;
+                if (!string.IsNullOrWhiteSpace(scannerConfig.WaveApiKey))
+                {
+                    waveResult = await RunWaveApiAsync(fullUrl, scannerConfig.WaveApiKey);
+                    actions.Add($"wave: {waveResult.Issues.Count} violations ({waveResult.DurationMs}ms) [{waveResult.Status}]");
+                    Console.WriteLine($"  [{siteUri.Host}] {pagePath} — WAVE: {waveResult.Issues.Count} issues ({waveResult.Status})");
+                }
+                else
+                {
+                    waveResult = new A11yToolResult { ToolName = "wave", Status = "skipped", ErrorMessage = "No WAVE API key configured" };
+                }
 
-                Console.WriteLine($"  [{siteUri.Host}] {pagePath} — A11y: {result.A11ySummary.TotalViolations} total violations (axe:{axeResult.Issues.Count} htmlcheck:{htmlCheckResult.Issues.Count})");
+                result.A11ySummary = MergeA11yResults(axeResult, htmlCheckResult, waveResult, pageDir);
+
+                Console.WriteLine($"  [{siteUri.Host}] {pagePath} — A11y: {result.A11ySummary.TotalViolations} total violations (axe:{axeResult.Issues.Count} htmlcheck:{htmlCheckResult.Issues.Count} wave:{waveResult.Issues.Count})");
             }
             catch (Exception a11yEx)
             {
@@ -871,7 +888,7 @@ internal class Program
                         ? $"`{Truncate(rule.ExampleSnippet.Replace("|", "\\|").Replace("`", "'"), 60)}`"
                         : "";
 
-                    reportSb.AppendLine($"| {rule.Rank} | {rule.CanonicalRuleId} | {emoji} | {confEmoji} {rule.Consensus} | {string.Join(" | ", toolCols)} | {snippet} |");
+                    reportSb.AppendLine($"| {rule.Rank} | {RuleLink(rule.CanonicalRuleId, "../../a11y-rules.md")} | {emoji} | {confEmoji} {rule.Consensus} | {string.Join(" | ", toolCols)} | {snippet} |");
                 }
 
                 if (a11y.RankedRules.Count > 30)
@@ -1231,7 +1248,7 @@ internal class Program
                 foreach (var r in allRanked)
                 {
                     rank++;
-                    sb.AppendLine($"| {rank} | {r.Rule} | {SeverityEmoji(r.Severity)} | {r.Pages}/{totalCount} | {r.Instances} |");
+                    sb.AppendLine($"| {rank} | {RuleLink(r.Rule, "../a11y-rules.md")} | {SeverityEmoji(r.Severity)} | {r.Pages}/{totalCount} | {r.Instances} |");
                 }
                 sb.AppendLine();
             }
@@ -1290,6 +1307,7 @@ internal class Program
         if (totalFailed > 0) sb.AppendLine("- [Failed Pages](#-failed-pages)");
         if (totalErrors > 0) sb.AppendLine("- [JavaScript Errors](#-javascript-errors)");
         sb.AppendLine("- [Accessibility Dashboard](#-accessibility-dashboard)");
+        sb.AppendLine("- [📖 A11y Rules Reference](a11y-rules.md)");
         sb.AppendLine("- [SSL Certificates](#-ssl-certificates)");
         sb.AppendLine();
         sb.AppendLine("---");
@@ -1557,7 +1575,7 @@ internal class Program
                 foreach (var r in allRunRanked)
                 {
                     rank++;
-                    sb.AppendLine($"| {rank} | {r.Rule} | {SeverityEmoji(r.Severity)} | {r.Sites}/{totalSites} | {r.Pages}/{totalPages} | {r.Instances:N0} | {r.WcagCriteria ?? "—"} |");
+                    sb.AppendLine($"| {rank} | {RuleLink(r.Rule)} | {SeverityEmoji(r.Severity)} | {r.Sites}/{totalSites} | {r.Pages}/{totalPages} | {r.Instances:N0} | {r.WcagCriteria ?? "—"} |");
                 }
                 sb.AppendLine();
 
@@ -1686,6 +1704,459 @@ internal class Program
         sb.AppendLine("**[FreeTools](https://github.com/WSU-EIT/FreeTools)** — Open source accessibility scanning tools for .NET projects");
 
         await File.WriteAllTextAsync(Path.Combine(runsDir, "report.md"), sb.ToString());
+    }
+
+    // ========================================================================
+    // A11y Rules Legend / Index (a11y-rules.md)
+    // ========================================================================
+
+    /// <summary>
+    /// Built-in knowledge base of accessibility rules.
+    /// Each entry provides human-readable explanation, WCAG criteria, severity,
+    /// and links to official documentation.
+    /// </summary>
+    private static readonly Dictionary<string, RuleInfo> RuleKnowledgeBase = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["image-alt"] = new("Images must have alternate text", "serious",
+            "Every `<img>` element must have an `alt` attribute that describes its content. Decorative images should use `alt=\"\"`.",
+            "1.1.1", "https://dequeuniversity.com/rules/axe/4.10/image-alt",
+            "Add a descriptive `alt` attribute. For decorative images, use `alt=\"\"`. For complex images, consider `aria-describedby` linking to a longer description."),
+
+        ["input-image-alt"] = new("Image buttons must have alternate text", "serious",
+            "`<input type=\"image\">` elements must have an `alt` attribute describing the button action.",
+            "1.1.1", "https://dequeuniversity.com/rules/axe/4.10/input-image-alt",
+            "Add `alt=\"Submit\"` or similar action description to the image input."),
+
+        ["label"] = new("Form elements must have labels", "serious",
+            "Every form input (`<input>`, `<select>`, `<textarea>`) must have a programmatically associated label via `<label for=\"id\">`, `aria-label`, or `aria-labelledby`.",
+            "1.3.1", "https://dequeuniversity.com/rules/axe/4.10/label",
+            "Add a `<label for=\"inputId\">` element, or add `aria-label=\"Description\"` to the input."),
+
+        ["select-name"] = new("Select elements must have accessible names", "serious",
+            "`<select>` elements must have an associated `<label>`, `aria-label`, or `aria-labelledby`.",
+            "1.3.1", "https://dequeuniversity.com/rules/axe/4.10/select-name",
+            "Add a `<label for=\"selectId\">` or `aria-label` attribute."),
+
+        ["heading-order"] = new("Heading levels should increase by one", "moderate",
+            "Headings should not skip levels (e.g., `<h2>` to `<h4>`). Screen readers use heading hierarchy to understand page structure.",
+            "1.3.1", "https://dequeuniversity.com/rules/axe/4.10/heading-order",
+            "Restructure headings so levels increase sequentially: h1 → h2 → h3, etc."),
+
+        ["page-has-heading-one"] = new("Page should contain a level-one heading", "moderate",
+            "Pages should have at least one `<h1>` element. The h1 typically matches the page title and helps screen reader users orient.",
+            "1.3.1", "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one",
+            "Add a single `<h1>` element that describes the main content of the page."),
+
+        ["td-has-header"] = new("Data table cells must have headers", "moderate",
+            "Non-empty `<td>` elements in a data table must have an associated `<th>` header, either via row/column position or explicit `headers` attribute.",
+            "1.3.1", "https://dequeuniversity.com/rules/axe/4.10/td-has-header",
+            "Add `<th>` elements in the first row or column. For complex tables, use `headers` and `id` attributes."),
+
+        ["color-contrast"] = new("Elements must have sufficient color contrast", "serious",
+            "Text must have a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text against its background.",
+            "1.4.3", "https://dequeuniversity.com/rules/axe/4.10/color-contrast",
+            "Increase the contrast ratio by darkening text or lightening the background (or vice versa). Use a contrast checker tool."),
+
+        ["color-contrast-enhanced"] = new("Elements must have enhanced color contrast", "moderate",
+            "For WCAG AAA, text must have a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.",
+            "1.4.6", "https://dequeuniversity.com/rules/axe/4.10/color-contrast-enhanced",
+            "Same as color-contrast but with stricter thresholds."),
+
+        ["meta-refresh"] = new("Page must not use meta refresh", "moderate",
+            "`<meta http-equiv=\"refresh\">` can disorient users, especially those using screen readers. Use server-side redirects instead.",
+            "2.2.1", "https://dequeuniversity.com/rules/axe/4.10/meta-refresh",
+            "Remove the meta refresh tag and use HTTP 301/302 redirects on the server."),
+
+        ["skip-link"] = new("Page should have a skip navigation link", "moderate",
+            "A \"Skip to main content\" link at the top of the page allows keyboard users to bypass repetitive navigation.",
+            "2.4.1", "https://dequeuniversity.com/rules/axe/4.10/skip-link",
+            "Add `<a href=\"#main-content\" class=\"skip-link\">Skip to main content</a>` as the first focusable element in the body."),
+
+        ["document-title"] = new("Document must have a title", "serious",
+            "Every page must have a non-empty `<title>` element. The title is the first thing announced by screen readers.",
+            "2.4.2", "https://dequeuniversity.com/rules/axe/4.10/document-title",
+            "Add a descriptive `<title>` element inside `<head>`."),
+
+        ["tabindex"] = new("Positive tabindex disrupts tab order", "moderate",
+            "`tabindex` values greater than 0 create a custom tab order that is confusing. Use `tabindex=\"0\"` or `tabindex=\"-1\"` instead.",
+            "2.4.3", "https://dequeuniversity.com/rules/axe/4.10/tabindex",
+            "Remove positive tabindex values. Rearrange DOM order to match desired tab sequence."),
+
+        ["link-name"] = new("Links must have discernible text", "serious",
+            "Every `<a>` element must have text content, an `aria-label`, or contain an `<img>` with alt text so screen readers can announce the link purpose.",
+            "2.4.4", "https://dequeuniversity.com/rules/axe/4.10/link-name",
+            "Add descriptive text inside the link, or add `aria-label=\"Description\"`."),
+
+        ["html-has-lang"] = new("HTML element must have a lang attribute", "serious",
+            "The `<html>` element must have a `lang` attribute (e.g., `lang=\"en\"`) so screen readers use the correct pronunciation.",
+            "3.1.1", "https://dequeuniversity.com/rules/axe/4.10/html-has-lang",
+            "Add `lang=\"en\"` (or appropriate language code) to the `<html>` element."),
+
+        ["html-lang-valid"] = new("HTML lang attribute must be valid", "serious",
+            "The `lang` attribute value must be a valid BCP 47 language tag (e.g., `en`, `en-US`, `fr`).",
+            "3.1.1", "https://dequeuniversity.com/rules/axe/4.10/html-lang-valid",
+            "Set `lang` to a valid BCP 47 code like `en` or `en-US`."),
+
+        ["button-name"] = new("Buttons must have discernible text", "serious",
+            "Every `<button>` element must have text content, `aria-label`, or `aria-labelledby` so screen readers can announce it.",
+            "4.1.2", "https://dequeuniversity.com/rules/axe/4.10/button-name",
+            "Add text inside the button, or add `aria-label=\"Action description\"`."),
+
+        ["div-button"] = new("Interactive divs should be buttons", "moderate",
+            "`<div>` elements with `onclick` handlers but no ARIA role are not keyboard-accessible. Use `<button>` instead.",
+            "4.1.2", "https://dequeuniversity.com/rules/axe/4.10/button-name",
+            "Replace `<div onclick=\"...\">` with `<button>`. If you must use a div, add `role=\"button\"`, `tabindex=\"0\"`, and keyboard event handlers."),
+
+        ["landmark-one-main"] = new("Page should have one main landmark", "moderate",
+            "Pages should have exactly one `<main>` landmark (or `role=\"main\"`) so screen reader users can quickly jump to the primary content.",
+            "1.3.1", "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main",
+            "Wrap your primary content in a `<main>` element."),
+
+        ["landmark-nav"] = new("Page should have a navigation landmark", "minor",
+            "Navigation sections should be wrapped in `<nav>` elements (or `role=\"navigation\"`) so screen readers can identify them.",
+            "1.3.1", "https://dequeuniversity.com/rules/axe/4.10/region",
+            "Wrap navigation links in a `<nav>` element."),
+
+        ["aria-allowed-attr"] = new("ARIA attributes must be allowed for the role", "serious",
+            "ARIA attributes used on an element must be valid for that element's role.",
+            "4.1.2", "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr",
+            "Check the WAI-ARIA spec for which attributes are allowed on each role."),
+
+        ["aria-valid-attr-value"] = new("ARIA attributes must have valid values", "serious",
+            "ARIA attribute values must conform to the spec (e.g., `aria-hidden` must be `true` or `false`).",
+            "4.1.2", "https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value",
+            "Correct the ARIA attribute value to match the specification."),
+
+        ["aria-required-children"] = new("ARIA roles must contain required children", "serious",
+            "Certain ARIA roles require specific child roles (e.g., `role=\"list\"` must contain `role=\"listitem\"`).",
+            "1.3.1", "https://dequeuniversity.com/rules/axe/4.10/aria-required-children",
+            "Add the required child elements/roles as specified by the ARIA spec."),
+
+        ["fieldset"] = new("Related form fields should be grouped with fieldset", "moderate",
+            "Groups of related checkboxes or radio buttons should be wrapped in `<fieldset>` with a `<legend>`.",
+            "1.3.1", "https://dequeuniversity.com/rules/axe/4.10/fieldset",
+            "Wrap related inputs in `<fieldset>` and add a `<legend>` describing the group."),
+
+        ["table-fake-caption"] = new("Tables should use caption instead of cells for titles", "moderate",
+            "Data tables should use `<caption>` for the table title rather than a merged row of cells.",
+            "1.3.1", "https://dequeuniversity.com/rules/axe/4.10/table-fake-caption",
+            "Replace title rows with a `<caption>` element inside the `<table>`."),
+
+        ["blink"] = new("Blinking content must not be used", "serious",
+            "The `<blink>` element causes content to flash, which can trigger seizures and is inaccessible.",
+            "2.2.2", "https://dequeuniversity.com/rules/axe/4.10/blink",
+            "Remove all `<blink>` elements. Use CSS animations with `prefers-reduced-motion` support if animation is needed."),
+
+        ["marquee"] = new("Marquee elements must not be used", "serious",
+            "The `<marquee>` element causes content to scroll automatically, which is disorienting and inaccessible.",
+            "2.2.2", "https://dequeuniversity.com/rules/axe/4.10/marquee",
+            "Remove `<marquee>` elements. Use CSS animations with pause controls if scrolling content is needed."),
+    };
+
+    /// <summary>
+    /// Generate the a11y-rules.md legend document at the run root.
+    /// Collects all unique rules found across all scanned pages and combines
+    /// them with the built-in knowledge base.
+    /// </summary>
+    private static async Task WriteRulesLegendAsync(string runsDir, IEnumerable<SiteResult> sites)
+    {
+        var siteList = sites.ToList();
+
+        // Collect all unique rules found in this run
+        var foundRules = new Dictionary<string, FoundRuleStats>(StringComparer.OrdinalIgnoreCase);
+
+        foreach (var site in siteList)
+        {
+            foreach (var page in site.Pages)
+            {
+                if (page.A11ySummary == null) continue;
+
+                foreach (var rule in page.A11ySummary.RankedRules)
+                {
+                    if (!foundRules.TryGetValue(rule.CanonicalRuleId, out var stats))
+                    {
+                        stats = new FoundRuleStats
+                        {
+                            CanonicalRuleId = rule.CanonicalRuleId,
+                            Severity = rule.Severity,
+                            Message = rule.Message,
+                            HelpUrl = rule.HelpUrl,
+                            WcagCriteria = rule.WcagCriteria,
+                            ExampleSnippet = rule.ExampleSnippet
+                        };
+                        foundRules[rule.CanonicalRuleId] = stats;
+                    }
+
+                    stats.TotalInstances += rule.TotalInstances;
+                    stats.PageCount++;
+                    stats.SiteUrls.Add(site.Url);
+
+                    foreach (var tool in rule.ToolsFound)
+                        stats.ToolsFound.Add(tool);
+                }
+            }
+        }
+
+        var sb = new StringBuilder();
+
+        sb.AppendLine("# ♿ Accessibility Rules Reference");
+        sb.AppendLine();
+        sb.AppendLine("> A complete reference of all accessibility rules checked by this scanner.");
+        sb.AppendLine("> Rules detected in this scan run are marked with instance counts.");
+        sb.AppendLine("> Click any rule name to jump to its detailed explanation.");
+        sb.AppendLine();
+        sb.AppendLine($"> **Generated:** {DateTime.UtcNow:yyyy-MM-dd HH:mm:ss} UTC  ");
+        sb.AppendLine($"> **Rules in this scan:** {foundRules.Count}  ");
+        sb.AppendLine($"> **Total rules documented:** {RuleKnowledgeBase.Count}  ");
+        sb.AppendLine();
+        sb.AppendLine("---");
+        sb.AppendLine();
+
+        // Severity legend
+        sb.AppendLine("## 🎨 Severity Levels");
+        sb.AppendLine();
+        sb.AppendLine("| Icon | Level | Meaning |");
+        sb.AppendLine("|:----:|-------|---------|");
+        sb.AppendLine("| 🔴 | **Critical** | Blocks access entirely for some users. Must fix immediately. |");
+        sb.AppendLine("| 🟠 | **Serious** | Causes significant difficulty. Should fix as high priority. |");
+        sb.AppendLine("| 🟡 | **Moderate** | Causes some difficulty. Fix as part of regular maintenance. |");
+        sb.AppendLine("| 🔵 | **Minor** | Annoying but doesn't block access. Fix when possible. |");
+        sb.AppendLine();
+
+        // Tool legend
+        sb.AppendLine("## 🔧 Tools");
+        sb.AppendLine();
+        sb.AppendLine("| Tool | Description |");
+        sb.AppendLine("|------|-------------|");
+        sb.AppendLine("| **axe** | [axe-core](https://github.com/dequelabs/axe-core) by Deque — industry-standard automated engine injected via Playwright |");
+        sb.AppendLine("| **htmlcheck** | Built-in HTML pattern scanner — regex-based structural checks (no browser needed) |");
+        sb.AppendLine("| **wave** | [WAVE API](https://wave.webaim.org/api/) by WebAIM — remote accessibility evaluation service |");
+        sb.AppendLine();
+
+        // Confidence legend
+        sb.AppendLine("## 📊 Confidence Scoring");
+        sb.AppendLine();
+        sb.AppendLine("When multiple tools check the same rule, confidence increases:");
+        sb.AppendLine();
+        sb.AppendLine("| Icon | Confidence | Meaning |");
+        sb.AppendLine("|:----:|:----------:|---------|");
+        sb.AppendLine("| 🟢 | **High** | 2+ tools agree this is a real issue (≥80% of capable tools) |");
+        sb.AppendLine("| 🟡 | **Medium** | Some tools found it, others didn't (50-79%) |");
+        sb.AppendLine("| 🔵 | **Low** | Only one tool flagged this — may be a false positive (<50%) |");
+        sb.AppendLine();
+        sb.AppendLine("---");
+        sb.AppendLine();
+
+        // Quick-reference table of ALL rules
+        sb.AppendLine("## 📋 Quick Reference");
+        sb.AppendLine();
+        sb.AppendLine("| Rule | Sev | WCAG | Found | Instances | Description |");
+        sb.AppendLine("|------|:---:|:----:|:-----:|:---------:|-------------|");
+
+        // Merge found rules with knowledge base for a complete list
+        var allRuleIds = new HashSet<string>(RuleKnowledgeBase.Keys, StringComparer.OrdinalIgnoreCase);
+        foreach (var id in foundRules.Keys)
+            allRuleIds.Add(id);
+
+        var sortedRules = allRuleIds
+            .OrderBy(id =>
+            {
+                if (foundRules.ContainsKey(id)) return 0; // Found rules first
+                return 1;
+            })
+            .ThenBy(id =>
+            {
+                var sev = RuleKnowledgeBase.TryGetValue(id, out var info) ? info.DefaultSeverity
+                    : foundRules.TryGetValue(id, out var fs) ? fs.Severity : "moderate";
+                return SeverityRank(sev);
+            })
+            .ThenBy(id => id)
+            .ToList();
+
+        foreach (var ruleId in sortedRules)
+        {
+            var kb = RuleKnowledgeBase.TryGetValue(ruleId, out var kbInfo) ? kbInfo : null;
+            var found = foundRules.TryGetValue(ruleId, out var stats) ? stats : null;
+
+            var sev = found?.Severity ?? kb?.DefaultSeverity ?? "moderate";
+            var wcag = found?.WcagCriteria ?? kb?.WcagCriteria ?? "—";
+            var desc = kb?.ShortDescription ?? found?.Message ?? "";
+            var instances = found != null ? found.TotalInstances.ToString("N0") : "—";
+            var foundBadge = found != null ? $"⚠️ {found.PageCount} pg" : "—";
+            var anchor = ruleId.ToLowerInvariant().Replace(".", "");
+
+            sb.AppendLine($"| [{ruleId}](#{anchor}) | {SeverityEmoji(sev)} | {wcag} | {foundBadge} | {instances} | {Truncate(desc, 60)} |");
+        }
+
+        sb.AppendLine();
+        sb.AppendLine("---");
+        sb.AppendLine();
+
+        // Detailed sections for each rule
+        sb.AppendLine("## 📖 Rule Details");
+        sb.AppendLine();
+
+        foreach (var ruleId in sortedRules)
+        {
+            var kb = RuleKnowledgeBase.TryGetValue(ruleId, out var kbInfo) ? kbInfo : null;
+            var found = foundRules.TryGetValue(ruleId, out var stats) ? stats : null;
+
+            var sev = found?.Severity ?? kb?.DefaultSeverity ?? "moderate";
+            var wcag = found?.WcagCriteria ?? kb?.WcagCriteria;
+            var anchor = ruleId.ToLowerInvariant().Replace(".", "");
+
+            sb.AppendLine($"### {SeverityEmoji(sev)} `{ruleId}` {{#{anchor}}}");
+            sb.AppendLine();
+
+            // Title
+            var title = kb?.ShortDescription ?? found?.Message ?? ruleId;
+            sb.AppendLine($"**{title}**");
+            sb.AppendLine();
+
+            // Metadata table
+            sb.AppendLine("| Field | Value |");
+            sb.AppendLine("|-------|-------|");
+            sb.AppendLine($"| Severity | {SeverityEmoji(sev)} **{sev}** |");
+            if (wcag != null)
+                sb.AppendLine($"| WCAG | [{wcag}](https://www.w3.org/WAI/WCAG21/Understanding/{FormatWcagUrl(wcag)}) |");
+
+            if (found != null)
+            {
+                sb.AppendLine($"| Instances in scan | **{found.TotalInstances:N0}** |");
+                sb.AppendLine($"| Pages affected | {found.PageCount} |");
+                sb.AppendLine($"| Sites affected | {found.SiteUrls.Count} |");
+                sb.AppendLine($"| Tools detecting | {string.Join(", ", found.ToolsFound.OrderBy(t => t))} |");
+            }
+            else
+            {
+                sb.AppendLine($"| Status in scan | ✅ Not detected |");
+            }
+
+            // Links
+            var helpUrl = found?.HelpUrl ?? kb?.HelpUrl;
+            if (helpUrl != null)
+                sb.AppendLine($"| Learn more | [{helpUrl}]({helpUrl}) |");
+
+            sb.AppendLine();
+
+            // Explanation
+            if (kb?.Explanation != null)
+            {
+                sb.AppendLine("**What this means:**");
+                sb.AppendLine();
+                sb.AppendLine($"> {kb.Explanation}");
+                sb.AppendLine();
+            }
+
+            // How to fix
+            if (kb?.HowToFix != null)
+            {
+                sb.AppendLine("**How to fix:**");
+                sb.AppendLine();
+                sb.AppendLine($"> {kb.HowToFix}");
+                sb.AppendLine();
+            }
+
+            // Example snippet from scan
+            if (found?.ExampleSnippet != null)
+            {
+                sb.AppendLine("**Example from scan:**");
+                sb.AppendLine();
+                sb.AppendLine("```html");
+                sb.AppendLine(found.ExampleSnippet.Length > 200
+                    ? found.ExampleSnippet[..200] + "..."
+                    : found.ExampleSnippet);
+                sb.AppendLine("```");
+                sb.AppendLine();
+            }
+
+            sb.AppendLine("---");
+            sb.AppendLine();
+        }
+
+        // WCAG reference section
+        sb.AppendLine("## 📚 WCAG Quick Reference");
+        sb.AppendLine();
+        sb.AppendLine("The rules above map to [WCAG 2.1 Level AA](https://www.w3.org/TR/WCAG21/) success criteria:");
+        sb.AppendLine();
+        sb.AppendLine("| WCAG | Principle | Guideline |");
+        sb.AppendLine("|:----:|-----------|-----------|");
+        sb.AppendLine("| 1.1.1 | Perceivable | Non-text Content — provide text alternatives |");
+        sb.AppendLine("| 1.3.1 | Perceivable | Info and Relationships — structure and relationships conveyed programmatically |");
+        sb.AppendLine("| 1.4.3 | Perceivable | Contrast (Minimum) — at least 4.5:1 ratio |");
+        sb.AppendLine("| 1.4.6 | Perceivable | Contrast (Enhanced) — at least 7:1 ratio (AAA) |");
+        sb.AppendLine("| 2.2.1 | Operable | Timing Adjustable — users can control time limits |");
+        sb.AppendLine("| 2.2.2 | Operable | Pause, Stop, Hide — moving content can be controlled |");
+        sb.AppendLine("| 2.4.1 | Operable | Bypass Blocks — skip repetitive content |");
+        sb.AppendLine("| 2.4.2 | Operable | Page Titled — descriptive page titles |");
+        sb.AppendLine("| 2.4.3 | Operable | Focus Order — logical tab sequence |");
+        sb.AppendLine("| 2.4.4 | Operable | Link Purpose — link text describes destination |");
+        sb.AppendLine("| 3.1.1 | Understandable | Language of Page — lang attribute on html |");
+        sb.AppendLine("| 4.1.2 | Robust | Name, Role, Value — UI components have accessible names |");
+        sb.AppendLine();
+
+        sb.AppendLine("---");
+        sb.AppendLine();
+        sb.AppendLine("*Generated by AccessibilityScanner (FreeTools) v1.0*");
+
+        await File.WriteAllTextAsync(Path.Combine(runsDir, "a11y-rules.md"), sb.ToString());
+    }
+
+    /// <summary>Format WCAG criteria "1.4.3" → URL segment "contrast-minimum"</summary>
+    private static string FormatWcagUrl(string criteria)
+    {
+        // Map common criteria to their Understanding doc slugs
+        return criteria switch
+        {
+            "1.1.1" => "non-text-content",
+            "1.3.1" => "info-and-relationships",
+            "1.4.3" => "contrast-minimum",
+            "1.4.6" => "contrast-enhanced",
+            "2.2.1" => "timing-adjustable",
+            "2.2.2" => "pause-stop-hide",
+            "2.4.1" => "bypass-blocks",
+            "2.4.2" => "page-titled",
+            "2.4.3" => "focus-order",
+            "2.4.4" => "link-purpose-in-context",
+            "3.1.1" => "language-of-page",
+            "4.1.2" => "name-role-value",
+            _ => criteria.Replace(".", "")
+        };
+    }
+
+    /// <summary>Rule knowledge base entry.</summary>
+    private record RuleInfo(
+        string ShortDescription,
+        string DefaultSeverity,
+        string Explanation,
+        string? WcagCriteria,
+        string? HelpUrl,
+        string? HowToFix);
+
+    /// <summary>Stats for a rule found during a scan run.</summary>
+    private class FoundRuleStats
+    {
+        public string CanonicalRuleId { get; set; } = "";
+        public string Severity { get; set; } = "moderate";
+        public string Message { get; set; } = "";
+        public string? HelpUrl { get; set; }
+        public string? WcagCriteria { get; set; }
+        public string? ExampleSnippet { get; set; }
+        public int TotalInstances { get; set; }
+        public int PageCount { get; set; }
+        public HashSet<string> SiteUrls { get; set; } = new(StringComparer.OrdinalIgnoreCase);
+        public HashSet<string> ToolsFound { get; set; } = new(StringComparer.OrdinalIgnoreCase);
+    }
+
+    /// <summary>
+    /// Format a rule ID as a clickable markdown link to the a11y-rules.md legend.
+    /// </summary>
+    /// <param name="ruleId">Canonical rule ID (e.g., "image-alt")</param>
+    /// <param name="legendRelPath">Relative path from the current .md file to a11y-rules.md</param>
+    private static string RuleLink(string ruleId, string legendRelPath = "a11y-rules.md")
+    {
+        var anchor = ruleId.ToLowerInvariant().Replace(".", "");
+        return $"[{ruleId}]({legendRelPath}#{anchor})";
     }
 
     private static string Truncate(string value, int maxLength)
@@ -2195,6 +2666,183 @@ internal class Program
     }
 
     // ========================================================================
+    // WAVE API integration
+    // ========================================================================
+
+    /// <summary>
+    /// WAVE API severity categories mapped to our severity levels.
+    /// WAVE reporttype=4 returns categories: error, contrast, alert.
+    /// </summary>
+    private static readonly Dictionary<string, string> WaveCategorySeverity = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["error"] = "serious",
+        ["contrast"] = "serious",
+        ["alert"] = "moderate"
+    };
+
+    /// <summary>
+    /// WAVE item IDs mapped to canonical axe-core rule IDs for cross-tool consensus.
+    /// See https://wave.webaim.org/api/docs
+    /// </summary>
+    private static readonly Dictionary<string, string> WaveToCanonical = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["alt_missing"] = "image-alt",
+        ["alt_spacer"] = "image-alt",
+        ["alt_link_missing"] = "image-alt",
+        ["alt_input_missing"] = "input-image-alt",
+        ["label_missing"] = "label",
+        ["label_empty"] = "label",
+        ["language_missing"] = "html-has-lang",
+        ["language_invalid"] = "html-lang-valid",
+        ["link_empty"] = "link-name",
+        ["button_empty"] = "button-name",
+        ["heading_missing"] = "page-has-heading-one",
+        ["heading_skipped"] = "heading-order",
+        ["contrast"] = "color-contrast",
+        ["title_invalid"] = "document-title",
+        ["th_empty"] = "td-has-header",
+        ["table_layout"] = "table-fake-caption",
+        ["aria_reference_broken"] = "aria-valid-attr-value",
+        ["aria_menu_broken"] = "aria-required-children",
+        ["fieldset_missing"] = "fieldset",
+        ["legend_missing"] = "fieldset",
+        ["select_missing_label"] = "select-name",
+        ["blink"] = "blink",
+        ["marquee"] = "marquee",
+        ["link_skip"] = "skip-link",
+        ["noscript"] = "meta-refresh",
+    };
+
+    /// <summary>
+    /// WAVE item IDs mapped to WCAG success criteria.
+    /// </summary>
+    private static readonly Dictionary<string, string> WaveToWcag = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["alt_missing"] = "1.1.1",
+        ["alt_spacer"] = "1.1.1",
+        ["alt_link_missing"] = "1.1.1",
+        ["alt_input_missing"] = "1.1.1",
+        ["label_missing"] = "1.3.1",
+        ["label_empty"] = "1.3.1",
+        ["language_missing"] = "3.1.1",
+        ["language_invalid"] = "3.1.1",
+        ["link_empty"] = "2.4.4",
+        ["button_empty"] = "4.1.2",
+        ["heading_skipped"] = "1.3.1",
+        ["contrast"] = "1.4.3",
+        ["title_invalid"] = "2.4.2",
+        ["fieldset_missing"] = "1.3.1",
+        ["select_missing_label"] = "1.3.1",
+    };
+
+    /// <summary>
+    /// Call the WAVE API for a given URL and return normalized results.
+    /// Requires a WAVE API key (https://wave.webaim.org/api/).
+    /// Uses reporttype=4 (JSON with categories + items).
+    /// </summary>
+    private static async Task<A11yToolResult> RunWaveApiAsync(string pageUrl, string apiKey)
+    {
+        var sw = System.Diagnostics.Stopwatch.StartNew();
+        var result = new A11yToolResult { ToolName = "wave" };
+
+        try
+        {
+            using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(60) };
+            var encodedUrl = Uri.EscapeDataString(pageUrl);
+            var requestUrl = $"https://wave.webaim.org/api/request?key={apiKey}&url={encodedUrl}&reporttype=4";
+
+            var response = await http.GetStringAsync(requestUrl);
+            var doc = JsonDocument.Parse(response);
+            var root = doc.RootElement;
+
+            // Check for API-level errors
+            if (root.TryGetProperty("status", out var statusProp) &&
+                statusProp.TryGetProperty("success", out var successProp) &&
+                !successProp.GetBoolean())
+            {
+                var errorMsg = "WAVE API returned failure";
+                if (root.TryGetProperty("status", out var st) &&
+                    st.TryGetProperty("error", out var errProp))
+                {
+                    errorMsg = errProp.GetString() ?? errorMsg;
+                }
+
+                result.Status = "error";
+                result.ErrorMessage = errorMsg;
+                sw.Stop();
+                result.DurationMs = sw.ElapsedMilliseconds;
+                return result;
+            }
+
+            // Parse categories: error, contrast, alert
+            if (root.TryGetProperty("categories", out var categories))
+            {
+                foreach (var category in categories.EnumerateObject())
+                {
+                    var catName = category.Name; // "error", "contrast", "alert"
+                    if (!WaveCategorySeverity.TryGetValue(catName, out var severity))
+                        continue; // skip "feature", "structure", "aria" categories
+
+                    if (!category.Value.TryGetProperty("items", out var items))
+                        continue;
+
+                    foreach (var item in items.EnumerateObject())
+                    {
+                        var itemId = item.Name; // e.g. "alt_missing", "contrast"
+                        var itemCount = 0;
+                        var description = "";
+
+                        if (item.Value.TryGetProperty("count", out var countProp))
+                            itemCount = countProp.GetInt32();
+                        if (item.Value.TryGetProperty("description", out var descProp))
+                            description = descProp.GetString() ?? "";
+
+                        // Map to canonical rule ID
+                        var canonicalId = WaveToCanonical.TryGetValue(itemId, out var c) ? c : itemId;
+                        var wcag = WaveToWcag.TryGetValue(itemId, out var w) ? w : null;
+
+                        // Create one issue per count (WAVE reports counts, not individual nodes)
+                        for (int i = 0; i < Math.Max(1, itemCount); i++)
+                        {
+                            result.Issues.Add(new A11yIssue
+                            {
+                                Tool = "wave",
+                                RuleId = itemId,
+                                CanonicalRuleId = canonicalId,
+                                Severity = severity,
+                                Message = description,
+                                HelpUrl = $"https://wave.webaim.org/a11y/{itemId}",
+                                WcagCriteria = wcag
+                            });
+                        }
+                    }
+                }
+            }
+
+            result.Status = "completed";
+        }
+        catch (HttpRequestException ex)
+        {
+            result.Status = "error";
+            result.ErrorMessage = $"WAVE API request failed: {ex.Message}";
+        }
+        catch (TaskCanceledException)
+        {
+            result.Status = "error";
+            result.ErrorMessage = "WAVE API request timed out";
+        }
+        catch (Exception ex)
+        {
+            result.Status = "error";
+            result.ErrorMessage = $"WAVE API error: {ex.Message}";
+        }
+
+        sw.Stop();
+        result.DurationMs = sw.ElapsedMilliseconds;
+        return result;
+    }
+
+    // ========================================================================
     // Accessibility: Consensus ranking + merge
     // ========================================================================
 
@@ -2214,6 +2862,20 @@ internal class Program
         ["landmark-main"] = "landmark-one-main",
         ["heading-missing-h1"] = "page-has-heading-one",
         ["table-header-missing"] = "td-has-header",
+        // wave → canonical (covers any WAVE IDs that flow through general normalization)
+        ["alt_missing"] = "image-alt",
+        ["alt_spacer"] = "image-alt",
+        ["alt_link_missing"] = "image-alt",
+        ["alt_input_missing"] = "input-image-alt",
+        ["label_missing"] = "label",
+        ["label_empty"] = "label",
+        ["language_missing"] = "html-has-lang",
+        ["language_invalid"] = "html-lang-valid",
+        ["heading_skipped"] = "heading-order",
+        ["heading_missing"] = "page-has-heading-one",
+        ["link_skip"] = "skip-link",
+        ["th_empty"] = "td-has-header",
+        ["select_missing_label"] = "select-name",
     };
 
     /// <summary>
@@ -2225,7 +2887,9 @@ internal class Program
             "aria-hidden-body", "aria-required-attr", "aria-roles", "aria-valid-attr",
             "aria-valid-attr-value", "focus-order-semantics", "target-size"],
         ["pa11y"] = ["skip-link", "landmark-one-main", "landmark-nav", "div-button",
-            "tabindex", "meta-refresh", "td-has-header"]
+            "tabindex", "meta-refresh", "td-has-header"],
+        ["wave"] = ["landmark-one-main", "landmark-nav", "div-button",
+            "tabindex", "meta-refresh", "focus-order-semantics", "target-size"]
     };
 
     private static string NormalizeRuleId(string ruleId)
@@ -2255,11 +2919,12 @@ internal class Program
     private static A11yPageSummary MergeA11yResults(
         A11yToolResult axeResult,
         A11yToolResult htmlResult,
+        A11yToolResult waveResult,
         string pageDir)
     {
         var summary = new A11yPageSummary();
         var allIssues = new List<A11yIssue>();
-        var toolResults = new[] { axeResult, htmlResult };
+        var toolResults = new[] { axeResult, htmlResult, waveResult };
 
         foreach (var tool in toolResults)
         {
@@ -2826,6 +3491,7 @@ internal class ScannerConfig
     public int MaxConcurrency { get; set; } = 5;
     public bool Headless { get; set; } = true;
     public string WcagLevel { get; set; } = "wcag21aa";
+    public string? WaveApiKey { get; set; }
     public string UserAgent { get; set; } = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
     public Dictionary<string, SiteConfig> Sites { get; set; } = new();
 }
