@@ -1,73 +1,103 @@
 ﻿# FreeTools — Workspace Analysis & Testing Suite
 
-This directory contains shared testing and utility tools for FreeTools.
+A collection of .NET CLI tools for analyzing, testing, and maintaining FreeCRM-based projects.
 
 ## Tools
 
+### Pipeline Tools (run via AppHost or standalone)
+
 | Tool | Purpose |
 |------|---------|
-| **FreeTools.AppHost** | Pipeline orchestrator - runs all tools against a target project |
-| **FreeTools.Docs** | Central output repository for all tool runs |
-| **FreeTools.Core** | Shared utilities (CLI args, console output, route parsing, path sanitization) |
-| **FreeTools.EndpointMapper** | Scans Blazor projects for `@page` directives and generates a CSV of routes |
-| **FreeTools.EndpointPoker** | Performs HTTP GET requests against routes and saves HTML responses |
-| **FreeTools.BrowserSnapshot** | Captures screenshots of each route using Playwright |
-| **FreeTools.WorkspaceInventory** | Inventories all files with metrics, classification, and metadata |
-| **FreeTools.WorkspaceReporter** | Generates markdown reports from tool outputs |
-| **FreeTools.Tests** | Unit tests for shared utilities |
+| **FreeTools.AppHost** | Aspire orchestrator — runs the full analysis pipeline against a target project |
+| **FreeTools.Core** | Shared library — CLI args, console output, route parsing, path utilities |
+| **FreeTools.EndpointMapper** | Scans Blazor projects for `@page` directives and generates a CSV of all routes |
+| **FreeTools.EndpointPoker** | Performs HTTP GET requests against all routes and saves HTML responses |
+| **FreeTools.BrowserSnapshot** | Captures full-page screenshots of each route using Playwright |
+| **FreeTools.WorkspaceInventory** | Scans a codebase and generates a CSV with file metrics, types, routes, and auth |
+| **FreeTools.WorkspaceReporter** | Aggregates all tool outputs into a markdown dashboard report |
+| **FreeTools.AccessibilityScanner** | Scans sites for accessibility issues using Playwright + optional WAVE API |
+
+### Standalone Tools
+
+| Tool | Purpose |
+|------|---------|
+| **FreeTools.AppExtractor** | Extracts your `.App.*` customization layer from a FreeCRM fork for safe backup/migration |
+| **FreeTools.ForkCRM** | Clones FreeCRM, removes modules, and renames the project via LibGit2Sharp |
+
+### Output
+
+| Tool | Purpose |
+|------|---------|
+| **FreeTools.Docs** | Content project — holds generated tool outputs under `runs/` and `latest/` |
+
+---
 
 ## Quick Start
 
 ### Run the Full Pipeline
 
 ```bash
-cd tools/FreeTools.AppHost
+cd FreeTools.AppHost
 dotnet run
 ```
 
 This will:
-1. Start FreeCRM-main on https://localhost:5001
-2. Run all tools in sequence
-3. Save outputs to `FreeTools.Docs/runs/{timestamp}/`
-4. Copy latest to `FreeTools.Docs/latest/`
+1. Start the target web app (BlazorApp1 by default)
+2. Run EndpointMapper + WorkspaceInventory in parallel
+3. Run EndpointPoker, BrowserSnapshot, WorkspaceReporter in sequence
+4. Write outputs to `Docs/runs/{Project}/{Branch}/latest/`
 
 ### View Results
 
 ```bash
 # Latest run outputs
-ls tools/FreeTools.Docs/latest/
+ls Docs/runs/BlazorApp1/main/latest/
 
-# Historical runs
-ls tools/FreeTools.Docs/runs/
+# Generated report
+cat Docs/runs/BlazorApp1/main/latest/BlazorApp1-Report.md
 ```
 
-## Pipeline Architecture
+### Run Against Your Project
+
+```bash
+cd FreeTools.AppHost
+dotnet run -- --target YourProjectName
+```
+
+---
+
+## Pipeline Architecture (v2.1)
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                         FreeTools Pipeline                                  │
+│                         FreeTools Pipeline v2.1                             │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
-│  Phase 0: Start Web App (FreeCRM-main)                                      │
+│  Phase 0: Start Web App                                                     │
+│  ┌─────────────────────┐                                                    │
+│  │  Target Web App     │ ◄─── BlazorApp1 or --target YourProject            │
+│  └─────────────────────┘                                                    │
 │           │                                                                 │
 │           ▼                                                                 │
-│  Phase 1: EndpointMapper ───────────────────► pages.csv                     │
-│           │                                                                 │
-│           ├──► Phase 2: WorkspaceInventory ─► workspace-inventory.csv       │
-│           │                                                                 │
-│           ▼                                                                 │
-│  Phase 3: EndpointPoker ────────────────────► snapshots/*.html              │
+│  Phase 1: Static Analysis (Parallel)                                        │
+│  ├─► EndpointMapper ────────────────────────► pages.csv                     │
+│  └─► WorkspaceInventory ────────────────────► workspace-inventory.csv       │
 │           │                                                                 │
 │           ▼                                                                 │
-│  Phase 4: BrowserSnapshot ──────────────────► snapshots/*.png               │
+│  Phase 2: EndpointPoker ────────────────────► snapshots/*.html              │
 │           │                                                                 │
 │           ▼                                                                 │
-│  Phase 5: WorkspaceReporter ────────────────► LatestReport.md               │
+│  Phase 3: BrowserSnapshot ──────────────────► snapshots/*.png               │
+│           │                                   snapshots/*/metadata.json     │
+│           ▼                                                                 │
+│  Phase 4: WorkspaceReporter ────────────────► {Project}-Report.md           │
 │                                                                             │
-│  All outputs → FreeTools.Docs/runs/{timestamp}/                             │
+│  Outputs: Docs/runs/{Project}/{Branch}/latest/                              │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
+
+---
 
 ## Shared Utilities (FreeTools.Core)
 
@@ -78,46 +108,65 @@ ls tools/FreeTools.Docs/runs/
 | `RouteParser.cs` | CSV route parsing, route parameter detection |
 | `PathSanitizer.cs` | Route-to-path conversion, byte formatting |
 
-## Running Individual Tools
+---
 
-### Standalone
+## Running Individual Tools
 
 ```bash
 # EndpointMapper
-dotnet run --project tools/FreeTools.EndpointMapper <rootToScan> <csvOutputPath> [--clean]
+cd FreeTools.EndpointMapper
+dotnet run -- <rootToScan> <csvOutputPath> [--clean]
 
 # EndpointPoker
-dotnet run --project tools/FreeTools.EndpointPoker <baseUrl> <csvPath> <outputDir> [maxThreads]
+cd FreeTools.EndpointPoker
+dotnet run -- <baseUrl> <csvPath> <outputDir> [maxThreads]
 
 # BrowserSnapshot
-dotnet run --project tools/FreeTools.BrowserSnapshot <baseUrl> <csvPath> <outputDir> [maxThreads]
+cd FreeTools.BrowserSnapshot
+dotnet run -- <baseUrl> <csvPath> <outputDir> [maxThreads]
 
 # WorkspaceInventory
-dotnet run --project tools/FreeTools.WorkspaceInventory <rootDir> <csvOutputPath> [--noCounts]
+cd FreeTools.WorkspaceInventory
+dotnet run -- <rootDir> <csvOutputPath> [--noCounts]
 
 # WorkspaceReporter
-dotnet run --project tools/FreeTools.WorkspaceReporter <repoRoot> <outputPath>
+cd FreeTools.WorkspaceReporter
+dotnet run -- <repoRoot> <outputPath>
+
+# AppExtractor
+cd FreeTools.AppExtractor
+dotnet run -- --source "C:\...\YourFreeCRMFork" --output "C:\...\extracted"
+dotnet run -- --source "..." --output "..." --dry-run true
+
+# ForkCRM
+cd FreeTools.ForkCRM
+dotnet run -- --name MyProject --modules all --output "C:\repos\MyProject"
+
+# AccessibilityScanner
+cd FreeTools.AccessibilityScanner
+dotnet run   # configure sites in appsettings.json
 ```
 
-## Environment Variables
+---
 
-All tools support configuration via environment variables:
+## Environment Variables
 
 ### EndpointMapper
 
 | Variable | Description |
 |----------|-------------|
-| `CLEAN_OUTPUT_DIRS` | Set to "true" to delete previous output before scanning |
-| `OUTPUT_DIR` | Directory to clean (default: "page-snapshots") |
+| `CLEAN_OUTPUT_DIRS` | Set to `true` to delete previous output before scanning |
+| `OUTPUT_DIR` | Directory to clean (default: `page-snapshots`) |
 
 ### EndpointPoker / BrowserSnapshot
 
 | Variable | Description |
 |----------|-------------|
 | `BASE_URL` | Base URL of the web application |
-| `CSV_PATH` | Path to pages.csv |
+| `CSV_PATH` | Path to `pages.csv` |
 | `OUTPUT_DIR` | Directory for output files |
-| `MAX_THREADS` | Maximum parallel requests (default: 100) |
+| `MAX_THREADS` | Maximum parallel requests (default: `100`) |
+| `PAGE_SETTLE_DELAY_MS` | Post-load wait before screenshot (BrowserSnapshot, default: `3000`) |
 
 ### WorkspaceInventory
 
@@ -125,7 +174,7 @@ All tools support configuration via environment variables:
 |----------|-------------|
 | `ROOT_DIR` | Directory to scan |
 | `CSV_PATH` | Output CSV path |
-| `NO_COUNTS` | Set to "true" to skip line/char counting |
+| `NO_COUNTS` | Set to `true` to skip line/char counting |
 
 ### WorkspaceReporter
 
@@ -134,21 +183,22 @@ All tools support configuration via environment variables:
 | `REPO_ROOT` | Repository root directory |
 | `OUTPUT_PATH` | Output markdown file path |
 
-## Solution
+---
+
+## Build
 
 ```bash
-cd tools
 dotnet build FreeTools.slnx
-dotnet test FreeTools.slnx
 ```
+
+---
 
 ## Changing Target Project
 
-Edit `FreeTools.AppHost/Program.cs`:
+Pass via CLI or edit `FreeTools.AppHost/Program.cs`:
 
-```csharp
-// Change this line to point to your project:
-var targetProjectRoot = Path.GetFullPath(Path.Combine(toolsRoot, "..", "YourProject"));
+```bash
+dotnet run -- --target YourProjectFolderName
 ```
 
 ---
