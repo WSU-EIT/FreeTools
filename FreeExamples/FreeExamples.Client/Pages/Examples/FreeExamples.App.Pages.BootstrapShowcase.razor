@@ -1,0 +1,177 @@
+@page "/Examples/BootstrapShowcase"
+@page "/{TenantCode}/Examples/BootstrapShowcase"
+@implements IDisposable
+@inject BlazorDataModel Model
+@inject Radzen.DialogService DialogService
+
+@if (Model.Loaded && Model.View == _pageName) {
+    @if (_loading) {
+        <h1 class="page-title">Bootstrap Showcase</h1>
+        <LoadingMessage />
+    } else {
+        <div class="@Model.StickyMenuClass">
+            <h1 class="page-title">
+                <i class="fa-solid fa-palette me-1"></i> Bootstrap Showcase
+                <StickyMenuIcon />
+            </h1>
+        </div>
+
+        <p class="text-muted mb-3">
+            Demonstrates common Bootstrap 5 patterns used across FreeCRM projects.
+            <br /><strong>Doc:</strong> <code>008_components.bootstrap_patterns.md</code>
+        </p>
+
+        @* Tabs Demo *@
+        <h5 class="mb-3">Tabs</h5>
+        <ul class="nav nav-tabs mb-3" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link @(_activeTab == "cards" ? "active" : "")" @onclick="@(() => _activeTab = "cards")">
+                    Status Cards
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link @(_activeTab == "badges" ? "active" : "")" @onclick="@(() => _activeTab = "badges")">
+                    Badges & Status
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link @(_activeTab == "modals" ? "active" : "")" @onclick="@(() => _activeTab = "modals")">
+                    Modals & Dialogs
+                </button>
+            </li>
+        </ul>
+
+        @if (_activeTab == "cards") {
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
+                @foreach (var item in _items.Take(6)) {
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-header bg-white border-bottom-0 py-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <h6 class="card-title mb-0 text-truncate" style="max-width:180px;">@item.Name</h6>
+                                    <span class="badge @GetBadge(item.Status)">@item.Status</span>
+                                </div>
+                            </div>
+                            <div class="card-body pt-0">
+                                <div class="small text-muted mb-1"><i class="fa fa-folder me-1"></i>@item.Category</div>
+                                <div class="small text-muted"><i class="fa fa-dollar-sign me-1"></i>@item.Amount.ToString("C")</div>
+                            </div>
+                            <div class="card-footer bg-white border-top-0 pt-0 pb-3">
+                                <button class="btn btn-sm btn-outline-primary"><i class="fa fa-edit"></i></button>
+                                <button class="btn btn-sm btn-outline-danger"><i class="fa fa-trash"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+
+        @if (_activeTab == "badges") {
+            <div class="mb-4">
+                <h6>Status Badges</h6>
+                <span class="badge bg-success me-1">Active</span>
+                <span class="badge bg-danger me-1">Failed</span>
+                <span class="badge bg-primary me-1">Running</span>
+                <span class="badge bg-warning text-dark me-1">Draft</span>
+                <span class="badge bg-secondary me-1">Archived</span>
+                <span class="badge bg-info me-1">Completed</span>
+            </div>
+            <div class="mb-4">
+                <h6>Priority Badges</h6>
+                @for (int i = 1; i <= 5; i++) {
+                    <span class="badge bg-primary me-1">Priority @i</span>
+                }
+            </div>
+            <div class="mb-4">
+                <h6>Boolean Icons</h6>
+                <div>Enabled: @Helpers.BooleanToIcon(true)</div>
+                <div>Disabled: @Helpers.BooleanToIcon(false)</div>
+            </div>
+        }
+
+        @if (_activeTab == "modals") {
+            <div class="mb-4">
+                <h6>Radzen Dialog</h6>
+                <p class="small text-muted">Click to open a modal dialog.</p>
+                <button class="btn btn-primary" @onclick="OpenDialog">
+                    <i class="fa-solid fa-window-restore me-1"></i> Open Dialog
+                </button>
+            </div>
+            <div class="mb-4">
+                <h6>Delete Confirmation</h6>
+                <p class="small text-muted">Two-click delete pattern: Delete → Confirm Delete.</p>
+                <DeleteConfirmation OnConfirmed="OnDeleteConfirmed"
+                    CancelText="@Helpers.ConfirmButtonTextCancel"
+                    DeleteText="@Helpers.ConfirmButtonTextDelete"
+                    ConfirmDeleteText="@Helpers.ConfirmButtonTextConfirmDelete" />
+            </div>
+        }
+    }
+}
+
+@code {
+    [Parameter] public string? TenantCode { get; set; }
+
+    private bool _loading = true;
+    private bool _loadedData = false;
+    private string _pageName = "bootstrapshowcase";
+    private string _activeTab = "cards";
+    private List<DataObjects.SampleItem> _items = new();
+
+    public void Dispose()
+    {
+        Model.OnChange -= OnDataModelUpdated;
+        Model.Subscribers_OnChange.Remove(_pageName);
+    }
+
+    protected override void OnInitialized()
+    {
+        Model.OnChange += OnDataModelUpdated;
+        Model.Subscribers_OnChange[_pageName] = true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender) Model.TenantCodeFromUrl = TenantCode;
+
+        if (Model.Loaded && Model.LoggedIn && !_loadedData) {
+            _loadedData = true;
+            await LoadData();
+        }
+    }
+
+    private void OnDataModelUpdated()
+    {
+        if (Model.View == _pageName) StateHasChanged();
+    }
+
+    private async Task LoadData()
+    {
+        var result = await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/GetSampleItems", new List<Guid>());
+        if (result != null) _items = result;
+
+        _loading = false;
+        StateHasChanged();
+    }
+
+    private async Task OpenDialog()
+    {
+        await DialogService.OpenAsync<GetInputDialog>(
+            "Example Dialog",
+            new Dictionary<string, object> { { "Message", "This is a Radzen DialogService example." } },
+            new Radzen.DialogOptions { Width = "400px", Height = "auto" });
+    }
+
+    private void OnDeleteConfirmed()
+    {
+        Model.ClearMessages();
+        Model.Message_Saved();
+    }
+
+    private static string GetBadge(DataObjects.SampleItemStatus status) => status switch {
+        DataObjects.SampleItemStatus.Active => "bg-success",
+        DataObjects.SampleItemStatus.Completed => "bg-info",
+        DataObjects.SampleItemStatus.Archived => "bg-secondary",
+        _ => "bg-warning text-dark",
+    };
+}

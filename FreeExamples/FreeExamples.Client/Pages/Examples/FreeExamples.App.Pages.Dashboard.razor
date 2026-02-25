@@ -1,0 +1,165 @@
+@page "/Examples/Dashboard"
+@page "/{TenantCode}/Examples/Dashboard"
+@implements IDisposable
+@inject BlazorDataModel Model
+
+@if (Model.Loaded && Model.View == _pageName) {
+    @if (_loading) {
+        <h1 class="page-title"><Language Tag="ExamplesDashboard" IncludeIcon="true" /></h1>
+        <LoadingMessage />
+    } else {
+        <div class="@Model.StickyMenuClass">
+            <h1 class="page-title">
+                <Icon Name="Home" /> Examples Dashboard
+                <StickyMenuIcon />
+            </h1>
+        </div>
+
+        @* Status Summary Cards *@
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 mb-4">
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <h3 class="text-primary">@_dashboard.TotalItems</h3>
+                        <div class="text-muted">Total Items</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <h3 class="text-success">@_dashboard.ActiveItems</h3>
+                        <div class="text-muted">Active</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <h3 class="text-info">@_dashboard.CompletedItems</h3>
+                        <div class="text-muted">Completed</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <h3 class="text-secondary">@_dashboard.DraftItems</h3>
+                        <div class="text-muted">Draft</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* Quick Links to All Example Pages *@
+        <h5 class="mb-3">Example Pages</h5>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
+            @foreach (var page in _examplePages) {
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                <a href="@Helpers.BuildUrl(page.Url)" class="text-decoration-none">
+                                    <i class="@page.Icon me-1"></i> @page.Title
+                                </a>
+                            </h6>
+                            <p class="card-text small text-muted mb-2">@page.Description</p>
+                            <span class="badge @page.PhaseBadge">@page.Phase</span>
+                            <span class="badge bg-secondary">@page.DocRef</span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        @* Category Breakdown Table *@
+        @if (_dashboard.ByCategory.Any()) {
+            <h5 class="mb-3">Sample Data by Category</h5>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th class="text-end">Count</th>
+                        <th class="text-end">Total Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var cat in _dashboard.ByCategory) {
+                        <tr>
+                            <td>@cat.Category</td>
+                            <td class="text-end">@cat.Count</td>
+                            <td class="text-end">@cat.TotalAmount.ToString("C")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    }
+}
+
+@code {
+    [Parameter] public string? TenantCode { get; set; }
+
+    private bool _loading = true;
+    private bool _loadedData = false;
+    private string _pageName = "examplesdashboard";
+    private DataObjects.SampleDashboard _dashboard = new();
+
+    private List<ExamplePageLink> _examplePages = new List<ExamplePageLink> {
+        new("Sample Items", "Examples/SampleItems", "fa-solid fa-list", "List + Edit with filter/pagination/CSV export.", "Phase 1", "bg-success", "007_patterns.filter_pagination"),
+        new("File Demo", "Examples/FileDemo", "fa-solid fa-file-arrow-up", "Upload, download, CSV round-trip.", "Phase 1", "bg-success", "007_patterns.file_operations"),
+        new("Bootstrap Showcase", "Examples/BootstrapShowcase", "fa-solid fa-palette", "Cards, tabs, modals, badges, view toggle.", "Phase 1", "bg-success", "008_components.bootstrap_patterns"),
+        new("Charts Dashboard", "Examples/ChartsDashboard", "fa-solid fa-chart-pie", "Highcharts pie + column with click drill-down.", "Phase 2", "bg-primary", "008_components.highcharts"),
+        new("Code Editor", "Examples/CodeEditor", "fa-solid fa-code", "Monaco editor with diff, languages, insert.", "Phase 2", "bg-primary", "008_components.monaco"),
+        new("SignalR Demo", "Examples/SignalRDemo", "fa-solid fa-tower-broadcast", "Live updates across browser tabs.", "Phase 2", "bg-primary", "007_patterns.signalr"),
+        new("Timer Demo", "Examples/TimerDemo", "fa-solid fa-stopwatch", "Countdown, debounce, auto-refresh.", "Phase 2", "bg-primary", "007_patterns.timers"),
+        new("Network Graph", "Examples/NetworkGraph", "fa-solid fa-diagram-project", "vis.js interactive node-edge graph.", "Phase 3", "bg-warning text-dark", "008_components.network_chart"),
+        new("Signature Demo", "Examples/SignatureDemo", "fa-solid fa-signature", "jSignature digital signature capture.", "Phase 3", "bg-warning text-dark", "008_components.signature"),
+        new("Wizard Demo", "Examples/WizardDemo", "fa-solid fa-hat-wizard", "Multi-step wizard with progress.", "Phase 3", "bg-warning text-dark", "008_components.wizard"),
+    };
+
+    public void Dispose()
+    {
+        Model.OnChange -= OnDataModelUpdated;
+        Model.Subscribers_OnChange.Remove(_pageName);
+    }
+
+    protected override void OnInitialized()
+    {
+        Model.OnChange += OnDataModelUpdated;
+        Model.Subscribers_OnChange[_pageName] = true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender) {
+            Model.TenantCodeFromUrl = TenantCode;
+        }
+
+        if (Model.Loaded && Model.LoggedIn && !_loadedData) {
+            _loadedData = true;
+            await LoadData();
+        }
+    }
+
+    private void OnDataModelUpdated()
+    {
+        if (Model.View == _pageName) {
+            StateHasChanged();
+        }
+    }
+
+    private async Task LoadData()
+    {
+        var result = await Helpers.GetOrPost<DataObjects.SampleDashboard>("api/Data/GetSampleDashboard");
+        if (result != null) {
+            _dashboard = result;
+        }
+
+        _loading = false;
+        StateHasChanged();
+    }
+
+    private record ExamplePageLink(string Title, string Url, string Icon, string Description, string Phase, string PhaseBadge, string DocRef);
+}

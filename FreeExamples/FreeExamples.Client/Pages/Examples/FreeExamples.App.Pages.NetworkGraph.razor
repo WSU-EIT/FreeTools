@@ -1,0 +1,84 @@
+@page "/Examples/NetworkGraph"
+@page "/{TenantCode}/Examples/NetworkGraph"
+@implements IDisposable
+@inject BlazorDataModel Model
+
+@if (Model.Loaded && Model.View == _pageName) {
+    @if (_loading) {
+        <h1 class="page-title">Network Graph</h1>
+        <LoadingMessage />
+    } else {
+        <div class="@Model.StickyMenuClass">
+            <h1 class="page-title">
+                <i class="fa-solid fa-diagram-project me-1"></i> Network Graph Demo
+                <StickyMenuIcon />
+            </h1>
+        </div>
+
+        <p class="text-muted mb-3">
+            Demonstrates vis.js network visualization with sample data nodes and relationships.
+            <br /><strong>Doc:</strong> <code>008_components.network_chart.md</code>
+            <br /><strong>Status:</strong> <span class="badge bg-warning text-dark">Phase 3 — Stub</span>
+            <br />Requires vis.js CDN and NetworkChart.razor component wiring.
+        </p>
+
+        @* Placeholder: will be replaced with <NetworkChart> component *@
+        <div class="card shadow-sm border-0 mb-4">
+            <div class="card-header bg-white"><h6 class="mb-0">Network Graph (Sample Data)</h6></div>
+            <div class="card-body">
+                <div class="border rounded p-4 text-center text-muted" style="min-height:400px; display:flex; align-items:center; justify-content:center;">
+                    <div>
+                        <i class="fa-solid fa-diagram-project fa-3x mb-3"></i>
+                        <div>NetworkChart component will render here.</div>
+                        <div class="small">@_items.Count nodes from sample data.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+
+@code {
+    [Parameter] public string? TenantCode { get; set; }
+
+    private bool _loading = true;
+    private bool _loadedData = false;
+    private string _pageName = "networkgraph";
+    private List<DataObjects.SampleItem> _items = new();
+
+    public void Dispose()
+    {
+        Model.OnChange -= OnDataModelUpdated;
+        Model.Subscribers_OnChange.Remove(_pageName);
+    }
+
+    protected override void OnInitialized()
+    {
+        Model.OnChange += OnDataModelUpdated;
+        Model.Subscribers_OnChange[_pageName] = true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender) Model.TenantCodeFromUrl = TenantCode;
+
+        if (Model.Loaded && Model.LoggedIn && !_loadedData) {
+            _loadedData = true;
+            await LoadData();
+        }
+    }
+
+    private void OnDataModelUpdated()
+    {
+        if (Model.View == _pageName) StateHasChanged();
+    }
+
+    private async Task LoadData()
+    {
+        var result = await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/GetSampleItems", new List<Guid>());
+        if (result != null) _items = result;
+
+        _loading = false;
+        StateHasChanged();
+    }
+}

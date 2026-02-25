@@ -1,0 +1,134 @@
+@page "/Examples/FileDemo"
+@page "/{TenantCode}/Examples/FileDemo"
+@implements IDisposable
+@inject BlazorDataModel Model
+
+@if (Model.Loaded && Model.View == _pageName) {
+    @if (_loading) {
+        <h1 class="page-title">File Operations Demo</h1>
+        <LoadingMessage />
+    } else {
+        <div class="@Model.StickyMenuClass">
+            <h1 class="page-title">
+                <i class="fa-solid fa-file-arrow-up me-1"></i> File Operations Demo
+                <StickyMenuIcon />
+            </h1>
+        </div>
+
+        <p class="text-muted mb-3">
+            Demonstrates file upload (MudBlazor drag-drop), download to browser, and CSV export/import.
+            <br /><strong>Doc:</strong> <code>007_patterns.file_operations.md</code>
+        </p>
+
+        @* CSV Export *@
+        <div class="card shadow-sm border-0 mb-4">
+            <div class="card-header bg-white"><h6 class="mb-0">CSV Export</h6></div>
+            <div class="card-body">
+                <p class="small text-muted">Exports all sample items to CSV and triggers a browser download.</p>
+                <button class="btn btn-primary" @onclick="ExportCsv">
+                    <i class="fa-solid fa-file-csv me-1"></i> Export @_items.Count Items to CSV
+                </button>
+            </div>
+        </div>
+
+        @* Download Demo *@
+        <div class="card shadow-sm border-0 mb-4">
+            <div class="card-header bg-white"><h6 class="mb-0">Download to Browser</h6></div>
+            <div class="card-body">
+                <p class="small text-muted">Generates a text file on the server and downloads it to the browser.</p>
+                <button class="btn btn-primary" @onclick="DownloadTextFile">
+                    <i class="fa-solid fa-download me-1"></i> Download Sample Text File
+                </button>
+            </div>
+        </div>
+
+        @* Uploaded Files Display *@
+        @if (_uploadedFiles.Any()) {
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-header bg-white"><h6 class="mb-0">Uploaded Files</h6></div>
+                <div class="card-body">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr><th>File Name</th><th>Extension</th><th>Size</th></tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var f in _uploadedFiles) {
+                                <tr>
+                                    <td>@f.FileName</td>
+                                    <td>@f.Extension</td>
+                                    <td>@Helpers.FormatFileSize(f.Bytes)</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+    }
+}
+
+@code {
+    [Parameter] public string? TenantCode { get; set; }
+
+    private bool _loading = true;
+    private bool _loadedData = false;
+    private string _pageName = "filedemo";
+    private List<DataObjects.SampleItem> _items = new();
+    private List<DataObjects.FileStorage> _uploadedFiles = new();
+
+    public void Dispose()
+    {
+        Model.OnChange -= OnDataModelUpdated;
+        Model.Subscribers_OnChange.Remove(_pageName);
+    }
+
+    protected override void OnInitialized()
+    {
+        Model.OnChange += OnDataModelUpdated;
+        Model.Subscribers_OnChange[_pageName] = true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender) Model.TenantCodeFromUrl = TenantCode;
+
+        if (Model.Loaded && Model.LoggedIn && !_loadedData) {
+            _loadedData = true;
+            await LoadData();
+        }
+    }
+
+    private void OnDataModelUpdated()
+    {
+        if (Model.View == _pageName) StateHasChanged();
+    }
+
+    private async Task LoadData()
+    {
+        var result = await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/GetSampleItems", new List<Guid>());
+        if (result != null) _items = result;
+
+        _loading = false;
+        StateHasChanged();
+    }
+
+    private async Task ExportCsv()
+    {
+        var csv = Helpers.GetCsvData(_items);
+        if (csv != null) {
+            await Helpers.DownloadFileToBrowser("SampleItems_" + Helpers.SafeFileDate() + ".csv", csv);
+        }
+    }
+
+    private async Task DownloadTextFile()
+    {
+        var content = "Sample file generated at " + DateTime.UtcNow.ToString("O") + "\n\nItems: " + _items.Count;
+        await Helpers.DownloadFileToBrowser("sample_" + Helpers.SafeFileDate() + ".txt", System.Text.Encoding.UTF8.GetBytes(content));
+    }
+
+    private void ProcessUploadedFiles(List<DataObjects.FileStorage> files)
+    {
+        _uploadedFiles.AddRange(files);
+        StateHasChanged();
+    }
+}

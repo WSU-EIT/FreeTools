@@ -1,0 +1,185 @@
+@page "/Examples/TimerDemo"
+@page "/{TenantCode}/Examples/TimerDemo"
+@implements IDisposable
+@inject BlazorDataModel Model
+
+@if (Model.Loaded && Model.View == _pageName) {
+    @if (_loading) {
+        <h1 class="page-title">Timer Demo</h1>
+        <LoadingMessage />
+    } else {
+        <div class="@Model.StickyMenuClass">
+            <h1 class="page-title">
+                <i class="fa-solid fa-stopwatch me-1"></i> Timer Demo
+                <StickyMenuIcon />
+            </h1>
+        </div>
+
+        <p class="text-muted mb-3">
+            Demonstrates debounce, countdown, and auto-refresh timer patterns.
+            <br /><strong>Doc:</strong> <code>007_patterns.timers.md</code>
+        </p>
+
+        <div class="row">
+            @* Countdown Timer *@
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-white"><h6 class="mb-0">Countdown Timer</h6></div>
+                    <div class="card-body">
+                        <div class="mb-2" style="font-size:3em; font-family:monospace; text-align:center;">
+                            @_secondsRemaining
+                        </div>
+                        @{
+                            var pct = ((double)_secondsRemaining / 60.0) * 100;
+                            string barClass = "progress-bar" + (_secondsRemaining <= 10 ? " bg-danger" : "");
+                        }
+                        <div class="progress" style="height:24px;">
+                            <div class="@barClass" style="width:@(pct)%">
+                                @_secondsRemaining s
+                            </div>
+                        </div>
+                        <div class="small text-muted mt-2">Refreshes every 60 seconds at the top of the minute.</div>
+                    </div>
+                </div>
+            </div>
+
+            @* Debounce Input *@
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-white"><h6 class="mb-0">Debounce Input (500ms)</h6></div>
+                    <div class="card-body">
+                        <input type="text" class="form-control mb-2" placeholder="Type something..."
+                               value="@_searchText" @oninput="OnSearchInput" />
+                        <div class="small text-muted">Debounced value: <strong>@_debouncedValue</strong></div>
+                        <div class="small text-muted">Keystrokes: @_keystrokeCount | API calls: @_apiCallCount</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* Auto-Refresh *@
+        <div class="card shadow-sm border-0 mb-4">
+            <div class="card-header bg-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h6 class="mb-0">Auto-Refresh (every 10s)</h6>
+                    <div class="form-check form-switch mb-0">
+                        <input type="checkbox" class="form-check-input" id="auto-refresh" @bind="_autoRefreshEnabled" @bind:after="ToggleAutoRefresh" />
+                        <label class="form-check-label" for="auto-refresh">Enabled</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="small text-muted">Last refresh: @_lastRefresh.ToString("HH:mm:ss") | Refresh count: @_refreshCount | Items: @_items.Count</div>
+            </div>
+        </div>
+    }
+}
+
+@code {
+    [Parameter] public string? TenantCode { get; set; }
+
+    private bool _loading = true;
+    private bool _loadedData = false;
+    private string _pageName = "timerdemo";
+
+    // Countdown
+    private int _secondsRemaining = 60;
+    private System.Timers.Timer _countdownTimer = new();
+
+    // Debounce
+    private string _searchText = "";
+    private string _debouncedValue = "";
+    private int _keystrokeCount = 0;
+    private int _apiCallCount = 0;
+    private System.Timers.Timer _debounceTimer = new();
+
+    // Auto-refresh
+    private bool _autoRefreshEnabled = true;
+    private DateTime _lastRefresh = DateTime.Now;
+    private int _refreshCount = 0;
+    private System.Timers.Timer _refreshTimer = new();
+    private List<DataObjects.SampleItem> _items = new();
+
+    public void Dispose()
+    {
+        Model.OnChange -= OnDataModelUpdated;
+        Model.Subscribers_OnChange.Remove(_pageName);
+        _countdownTimer.Stop(); _countdownTimer.Dispose();
+        _debounceTimer.Stop(); _debounceTimer.Dispose();
+        _refreshTimer.Stop(); _refreshTimer.Dispose();
+    }
+
+    protected override void OnInitialized()
+    {
+        Model.OnChange += OnDataModelUpdated;
+        Model.Subscribers_OnChange[_pageName] = true;
+
+        // Countdown: 1s ticks
+        _countdownTimer.Interval = 1000;
+        _countdownTimer.AutoReset = true;
+        _countdownTimer.Elapsed += (s, e) => {
+            _secondsRemaining = 59 - DateTime.UtcNow.Second;
+            InvokeAsync(StateHasChanged);
+        };
+
+        // Debounce: 500ms
+        _debounceTimer.Interval = 500;
+        _debounceTimer.AutoReset = false;
+        _debounceTimer.Elapsed += (s, e) => {
+            _debouncedValue = _searchText;
+            _apiCallCount++;
+            InvokeAsync(StateHasChanged);
+        };
+
+        // Auto-refresh: 10s
+        _refreshTimer.Interval = 10_000;
+        _refreshTimer.AutoReset = true;
+        _refreshTimer.Elapsed += async (s, e) => {
+            await InvokeAsync(async () => {
+                await RefreshData();
+                StateHasChanged();
+            });
+        };
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender) Model.TenantCodeFromUrl = TenantCode;
+
+        if (Model.Loaded && Model.LoggedIn && !_loadedData) {
+            _loadedData = true;
+            _countdownTimer.Start();
+            _refreshTimer.Start();
+            await RefreshData();
+            _loading = false;
+            StateHasChanged();
+        }
+    }
+
+    private void OnDataModelUpdated()
+    {
+        if (Model.View == _pageName) StateHasChanged();
+    }
+
+    private void OnSearchInput(ChangeEventArgs e)
+    {
+        _searchText = e.Value?.ToString() ?? "";
+        _keystrokeCount++;
+        _debounceTimer.Stop();
+        _debounceTimer.Start();
+    }
+
+    private void ToggleAutoRefresh()
+    {
+        if (_autoRefreshEnabled) _refreshTimer.Start();
+        else _refreshTimer.Stop();
+    }
+
+    private async Task RefreshData()
+    {
+        var result = await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/GetSampleItems", new List<Guid>());
+        if (result != null) _items = result;
+        _lastRefresh = DateTime.Now;
+        _refreshCount++;
+    }
+}

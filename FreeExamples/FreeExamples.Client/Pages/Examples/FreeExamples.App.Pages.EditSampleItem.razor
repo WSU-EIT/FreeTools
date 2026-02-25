@@ -1,0 +1,193 @@
+@page "/Examples/EditSampleItem/{itemid}"
+@page "/{TenantCode}/Examples/EditSampleItem/{itemid}"
+@page "/Examples/EditSampleItem/New"
+@page "/{TenantCode}/Examples/EditSampleItem/New"
+@implements IDisposable
+@inject BlazorDataModel Model
+
+@if (Model.Loaded && Model.View == _pageName) {
+    @if (_loading) {
+        <h1 class="page-title"><Icon Name="Files" /> @_title</h1>
+        <LoadingMessage />
+    } else {
+        <div class="@Model.StickyMenuClass">
+            <h1 class="page-title">
+                <Icon Name="Files" /> @_title
+                <StickyMenuIcon />
+            </h1>
+
+            <div class="btn-group mb-2" role="group">
+                <button type="button" class="btn btn-dark" @onclick="Back">
+                    <i class="fa-solid fa-arrow-left me-1"></i> Back
+                </button>
+                <button type="button" class="btn btn-success" @onclick="Save">
+                    <i class="fa-solid fa-floppy-disk me-1"></i> Save
+                </button>
+                @if (!_isNew) {
+                    <DeleteConfirmation OnConfirmed="Delete"
+                        CancelText="@Helpers.ConfirmButtonTextCancel"
+                        DeleteText="@Helpers.ConfirmButtonTextDelete"
+                        ConfirmDeleteText="@Helpers.ConfirmButtonTextConfirmDelete" />
+                }
+            </div>
+        </div>
+
+        <RequiredIndicator />
+
+        <div class="row">
+            <div class="col-md-6 mb-2">
+                <label for="edit-name"><Language Tag="Name" /> <span class="text-danger">*</span></label>
+                <input type="text" id="edit-name" class="form-control @Helpers.MissingValue(_item.Name)" @bind="_item.Name" />
+            </div>
+            <div class="col-md-6 mb-2">
+                <label for="edit-category">Category</label>
+                <select id="edit-category" class="form-select" @bind="_item.Category">
+                    <option value="">-- Select --</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Operations">Operations</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Support">Support</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-2">
+                <label for="edit-status">Status</label>
+                <select id="edit-status" class="form-select" @bind="_item.Status">
+                    @foreach (var s in Enum.GetValues<DataObjects.SampleItemStatus>()) {
+                        <option value="@s">@s</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-3 mb-2">
+                <label for="edit-priority">Priority</label>
+                <input type="number" id="edit-priority" class="form-control" @bind="_item.Priority" min="1" max="5" />
+            </div>
+            <div class="col-md-3 mb-2">
+                <label for="edit-amount">Amount</label>
+                <input type="number" id="edit-amount" class="form-control" @bind="_item.Amount" step="0.01" />
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <label for="edit-description">Description</label>
+            <textarea id="edit-description" class="form-control" rows="3" @bind="_item.Description"></textarea>
+        </div>
+
+        <div class="mb-2 form-check form-switch">
+            <input type="checkbox" role="switch" class="form-check-input" id="edit-enabled" @bind="_item.Enabled" />
+            <label for="edit-enabled" class="form-check-label">Enabled</label>
+        </div>
+
+        @if (!_isNew) {
+            <LastModifiedMessage Added="@_item.Added" AddedBy="@_item.AddedBy" LastModified="@_item.LastModified" LastModifiedBy="@_item.LastModifiedBy" />
+        }
+    }
+}
+
+@code {
+    [Parameter] public string? TenantCode { get; set; }
+    [Parameter] public string? itemid { get; set; }
+
+    private bool _loading = true;
+    private bool _loadedData = false;
+    private bool _isNew = false;
+    private string _title = "";
+    private string _pageName = "editsampleitem";
+    private DataObjects.SampleItem _item = new();
+
+    public void Dispose()
+    {
+        Model.OnChange -= OnDataModelUpdated;
+        Model.Subscribers_OnChange.Remove(_pageName);
+    }
+
+    protected override void OnInitialized()
+    {
+        Model.OnChange += OnDataModelUpdated;
+        Model.Subscribers_OnChange[_pageName] = true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender) {
+            Model.TenantCodeFromUrl = TenantCode;
+        }
+
+        if (Model.Loaded && Model.LoggedIn && !_loadedData) {
+            _loadedData = true;
+            await LoadData();
+        }
+    }
+
+    private void OnDataModelUpdated()
+    {
+        if (Model.View == _pageName) StateHasChanged();
+    }
+
+    private async Task LoadData()
+    {
+        _isNew = string.IsNullOrWhiteSpace(itemid) || Helpers.StringLower(itemid) == "new";
+
+        if (_isNew) {
+            _title = "Add Sample Item";
+            _item = new DataObjects.SampleItem {
+                Enabled = true,
+                Status = DataObjects.SampleItemStatus.Draft,
+                Priority = 3,
+            };
+        } else {
+            _title = "Edit Sample Item";
+            var id = Helpers.GuidValue(itemid);
+            var items = await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/GetSampleItems", new List<Guid> { id });
+            if (items != null && items.Any()) {
+                _item = items.First();
+            } else {
+                Helpers.NavigateTo("Examples/SampleItems");
+                return;
+            }
+        }
+
+        _loading = false;
+        StateHasChanged();
+    }
+
+    private async Task Save()
+    {
+        Model.ClearMessages();
+
+        if (Helpers.MissingRequiredField(_item.Name, "Name")) return;
+
+        _item.TenantId = Model.TenantId;
+
+        var saved = await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/SaveSampleItems", new List<DataObjects.SampleItem> { _item });
+        if (saved != null && saved.Any()) {
+            _item = saved.First();
+            _isNew = false;
+            _title = "Edit Sample Item";
+
+            Model.Message_Saved();
+        } else {
+            Model.UnknownError();
+        }
+    }
+
+    private async Task Delete()
+    {
+        Model.ClearMessages();
+
+        var result = await Helpers.GetOrPost<DataObjects.BooleanResponse>("api/Data/DeleteSampleItems", new List<Guid> { _item.SampleItemId });
+        if (result != null && result.Result) {
+            Helpers.NavigateTo("Examples/SampleItems");
+        } else {
+            Model.UnknownError();
+        }
+    }
+
+    private void Back()
+    {
+        Helpers.NavigateTo("Examples/SampleItems");
+    }
+}

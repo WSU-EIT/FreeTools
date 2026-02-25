@@ -1,0 +1,81 @@
+@page "/Examples/SignatureDemo"
+@page "/{TenantCode}/Examples/SignatureDemo"
+@implements IDisposable
+@inject BlazorDataModel Model
+
+@if (Model.Loaded && Model.View == _pageName) {
+    @if (_loading) {
+        <h1 class="page-title">Signature Demo</h1>
+        <LoadingMessage />
+    } else {
+        <div class="@Model.StickyMenuClass">
+            <h1 class="page-title">
+                <i class="fa-solid fa-signature me-1"></i> Digital Signature Demo
+                <StickyMenuIcon />
+            </h1>
+        </div>
+
+        <p class="text-muted mb-3">
+            Demonstrates jSignature digital signature capture with DotNetObjectReference callbacks.
+            <br /><strong>Doc:</strong> <code>008_components.signature.md</code>
+            <br /><strong>Status:</strong> <span class="badge bg-warning text-dark">Phase 3 — Stub</span>
+            <br />Requires jSignature JS library and Signature.razor component wiring.
+        </p>
+
+        <div class="card shadow-sm border-0 mb-4">
+            <div class="card-header bg-white"><h6 class="mb-0">Signature Pad</h6></div>
+            <div class="card-body">
+                <div class="border rounded p-4 text-center text-muted" style="min-height:200px; display:flex; align-items:center; justify-content:center;">
+                    <div>
+                        <i class="fa-solid fa-signature fa-3x mb-3"></i>
+                        <div>Signature component will render here.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm border-0 mb-4">
+            <div class="card-header bg-white"><h6 class="mb-0">Captured Value</h6></div>
+            <div class="card-body">
+                <pre class="border rounded p-2 bg-light small">@(string.IsNullOrWhiteSpace(_signatureValue) ? "(no signature captured)" : _signatureValue)</pre>
+            </div>
+        </div>
+    }
+}
+
+@code {
+    [Parameter] public string? TenantCode { get; set; }
+
+    private bool _loading = true;
+    private bool _loadedData = false;
+    private string _pageName = "signaturedemo";
+    private string _signatureValue = "";
+
+    public void Dispose()
+    {
+        Model.OnChange -= OnDataModelUpdated;
+        Model.Subscribers_OnChange.Remove(_pageName);
+    }
+
+    protected override void OnInitialized()
+    {
+        Model.OnChange += OnDataModelUpdated;
+        Model.Subscribers_OnChange[_pageName] = true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender) Model.TenantCodeFromUrl = TenantCode;
+
+        if (Model.Loaded && Model.LoggedIn && !_loadedData) {
+            _loadedData = true;
+            _loading = false;
+            StateHasChanged();
+        }
+    }
+
+    private void OnDataModelUpdated()
+    {
+        if (Model.View == _pageName) StateHasChanged();
+    }
+}

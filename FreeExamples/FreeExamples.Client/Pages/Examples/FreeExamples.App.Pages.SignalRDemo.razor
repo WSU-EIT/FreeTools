@@ -1,0 +1,158 @@
+@page "/Examples/SignalRDemo"
+@page "/{TenantCode}/Examples/SignalRDemo"
+@implements IDisposable
+@inject BlazorDataModel Model
+
+@if (Model.Loaded && Model.View == _pageName) {
+    @if (_loading) {
+        <h1 class="page-title">SignalR Demo</h1>
+        <LoadingMessage />
+    } else {
+        <div class="@Model.StickyMenuClass">
+            <h1 class="page-title">
+                <i class="fa-solid fa-tower-broadcast me-1"></i> SignalR Demo
+                <StickyMenuIcon />
+            </h1>
+        </div>
+
+        <p class="text-muted mb-3">
+            Open this page in two browser tabs. Save an item in one tab — the other updates live via SignalR.
+            <br /><strong>Doc:</strong> <code>007_patterns.signalr.md</code>
+        </p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 mb-3">
+                    <div class="card-header bg-white"><h6 class="mb-0">Send Update</h6></div>
+                    <div class="card-body">
+                        <div class="mb-2">
+                            <label for="signal-name">Item Name</label>
+                            <input type="text" id="signal-name" class="form-control" @bind="_newItemName" />
+                        </div>
+                        <button class="btn btn-primary" @onclick="SaveItem">
+                            <i class="fa-solid fa-floppy-disk me-1"></i> Save (Triggers SignalR)
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 mb-3">
+                    <div class="card-header bg-white">
+                        <h6 class="mb-0">
+                            Live Feed
+                            @if (_signalRUpdates.Any()) {
+                                <span class="badge bg-primary ms-2">@_signalRUpdates.Count</span>
+                            }
+                        </h6>
+                    </div>
+                    <div class="card-body" style="max-height:300px; overflow:auto;">
+                        @if (!_signalRUpdates.Any()) {
+                            <div class="text-muted small">No updates yet. Save an item from another tab.</div>
+                        }
+                        @foreach (var msg in _signalRUpdates) {
+                            <div class="small border-bottom py-1">
+                                <span class="text-muted">@msg.Time.ToString("HH:mm:ss")</span>
+                                <span class="ms-2">@msg.Message</span>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h6 class="mt-3">Current Items (@_items.Count)</h6>
+        <table class="table table-sm">
+            <thead><tr><th>Name</th><th>Status</th><th>Last Modified</th></tr></thead>
+            <tbody>
+                @foreach (var item in _items.Take(10)) {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td><span class="badge bg-success">@item.Status</span></td>
+                        <td>@item.LastModified.ToString("g")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+
+@code {
+    [Parameter] public string? TenantCode { get; set; }
+
+    private bool _loading = true;
+    private bool _loadedData = false;
+    private string _pageName = "signalrdemo";
+    private string _newItemName = "";
+    private List<DataObjects.SampleItem> _items = new();
+    private List<SignalRMessage> _signalRUpdates = new();
+
+    public void Dispose()
+    {
+        Model.OnChange -= OnDataModelUpdated;
+        Model.Subscribers_OnChange.Remove(_pageName);
+        Model.OnSignalRUpdate -= SignalRUpdate;
+        Model.Subscribers_OnSignalRUpdate.Remove(_pageName);
+    }
+
+    protected override void OnInitialized()
+    {
+        Model.OnChange += OnDataModelUpdated;
+        Model.Subscribers_OnChange[_pageName] = true;
+        Model.OnSignalRUpdate += SignalRUpdate;
+        Model.Subscribers_OnSignalRUpdate[_pageName] = true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender) Model.TenantCodeFromUrl = TenantCode;
+
+        if (Model.Loaded && Model.LoggedIn && !_loadedData) {
+            _loadedData = true;
+            await LoadData();
+        }
+    }
+
+    private void OnDataModelUpdated()
+    {
+        if (Model.View == _pageName) StateHasChanged();
+    }
+
+    private async void SignalRUpdate(DataObjects.SignalRUpdate update)
+    {
+        if (update.UpdateType == DataObjects.SignalRUpdateType.SampleItemSaved
+            && update.UserId != Model.User.UserId) {
+            _signalRUpdates.Insert(0, new SignalRMessage(DateTime.Now, "Item updated by another user: " + update.Message));
+            await LoadData();
+        }
+    }
+
+    private async Task LoadData()
+    {
+        var result = await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/GetSampleItems", new List<Guid>());
+        if (result != null) _items = result;
+
+        _loading = false;
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private async Task SaveItem()
+    {
+        if (string.IsNullOrWhiteSpace(_newItemName)) return;
+
+        var item = new DataObjects.SampleItem {
+            Name = _newItemName,
+            Status = DataObjects.SampleItemStatus.Active,
+            Enabled = true,
+            Category = "Engineering",
+            Priority = 3,
+        };
+
+        await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/SaveSampleItems", new List<DataObjects.SampleItem> { item });
+
+        _newItemName = "";
+        _signalRUpdates.Insert(0, new SignalRMessage(DateTime.Now, "You saved: " + item.Name));
+        await LoadData();
+    }
+
+    private record SignalRMessage(DateTime Time, string Message);
+}

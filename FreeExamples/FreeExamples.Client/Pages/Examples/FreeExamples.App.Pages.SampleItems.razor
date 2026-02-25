@@ -1,0 +1,180 @@
+@page "/Examples/SampleItems"
+@page "/{TenantCode}/Examples/SampleItems"
+@implements IDisposable
+@inject BlazorDataModel Model
+
+@if (Model.Loaded && Model.View == _pageName) {
+    @if (_loading) {
+        <h1 class="page-title"><Icon Name="Files" /> Sample Items</h1>
+        <LoadingMessage />
+    } else {
+        <div class="@Model.StickyMenuClass">
+            <h1 class="page-title">
+                <Icon Name="Files" /> Sample Items
+                <StickyMenuIcon />
+            </h1>
+
+            <div class="btn-group mb-2" role="group">
+                <button type="button" class="btn btn-success" @onclick="Add">
+                    <i class="fa-solid fa-plus me-1"></i> Add New
+                </button>
+                <button type="button" class="btn btn-dark" @onclick="Export">
+                    <i class="fa-solid fa-file-csv me-1"></i> Export CSV
+                </button>
+                <button type="button" class="btn btn-dark" @onclick="Refresh">
+                    <i class="fa-solid fa-refresh me-1"></i> Refresh
+                </button>
+            </div>
+        </div>
+
+        @* View toggle *@
+        <div class="btn-group mb-3" role="group">
+            <button class="btn @(_viewMode == "table" ? "btn-primary" : "btn-outline-primary")"
+                    @onclick="@(() => _viewMode = "table")">
+                <i class="fa fa-list"></i>
+            </button>
+            <button class="btn @(_viewMode == "card" ? "btn-primary" : "btn-outline-primary")"
+                    @onclick="@(() => _viewMode = "card")">
+                <i class="fa fa-th-large"></i>
+            </button>
+        </div>
+
+        <div class="mb-2 text-muted small">@_items.Count item(s)</div>
+
+        @if (_viewMode == "table") {
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Priority</th>
+                        <th class="text-end">Amount</th>
+                        <th>Enabled</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in _items) {
+                        <tr @onclick="@(() => Edit(item.SampleItemId))" style="cursor:pointer;">
+                            <td>@item.Name</td>
+                            <td>@item.Category</td>
+                            <td><span class="badge @GetStatusBadge(item.Status)">@item.Status</span></td>
+                            <td>@item.Priority</td>
+                            <td class="text-end">@item.Amount.ToString("C")</td>
+                            <td>@Helpers.BooleanToIcon(item.Enabled)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        } else {
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                @foreach (var item in _items) {
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0" @onclick="@(() => Edit(item.SampleItemId))" style="cursor:pointer;">
+                            <div class="card-header bg-white border-bottom-0 py-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <h6 class="card-title mb-0 text-truncate" style="max-width:200px;">@item.Name</h6>
+                                    <span class="badge @GetStatusBadge(item.Status)">@item.Status</span>
+                                </div>
+                            </div>
+                            <div class="card-body pt-0">
+                                <div class="small text-muted mb-1"><i class="fa fa-folder me-1"></i>@item.Category</div>
+                                <div class="small text-muted"><i class="fa fa-dollar-sign me-1"></i>@item.Amount.ToString("C")</div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    }
+}
+
+@code {
+    [Parameter] public string? TenantCode { get; set; }
+
+    private bool _loading = true;
+    private bool _loadedData = false;
+    private string _pageName = "sampleitems";
+    private string _viewMode = "table";
+    private List<DataObjects.SampleItem> _items = new();
+
+    public void Dispose()
+    {
+        Model.OnChange -= OnDataModelUpdated;
+        Model.Subscribers_OnChange.Remove(_pageName);
+        Model.OnSignalRUpdate -= SignalRUpdate;
+        Model.Subscribers_OnSignalRUpdate.Remove(_pageName);
+    }
+
+    protected override void OnInitialized()
+    {
+        Model.OnChange += OnDataModelUpdated;
+        Model.Subscribers_OnChange[_pageName] = true;
+        Model.OnSignalRUpdate += SignalRUpdate;
+        Model.Subscribers_OnSignalRUpdate[_pageName] = true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender) {
+            Model.TenantCodeFromUrl = TenantCode;
+        }
+
+        if (Model.Loaded && Model.LoggedIn && !_loadedData) {
+            _loadedData = true;
+            await LoadData();
+        }
+    }
+
+    private void OnDataModelUpdated()
+    {
+        if (Model.View == _pageName) StateHasChanged();
+    }
+
+    private async void SignalRUpdate(DataObjects.SignalRUpdate update)
+    {
+        if ((update.UpdateType == DataObjects.SignalRUpdateType.SampleItemSaved
+            || update.UpdateType == DataObjects.SignalRUpdateType.SampleItemDeleted)
+            && update.UserId != Model.User.UserId) {
+            await LoadData();
+        }
+    }
+
+    private async Task LoadData()
+    {
+        var result = await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/GetSampleItems", new List<Guid>());
+        if (result != null) {
+            _items = result;
+        }
+
+        _loading = false;
+        StateHasChanged();
+    }
+
+    private async Task Refresh() => await LoadData();
+
+    private void Add()
+    {
+        Helpers.NavigateTo("Examples/EditSampleItem/New");
+    }
+
+    private void Edit(Guid id)
+    {
+        Helpers.NavigateTo("Examples/EditSampleItem/" + id.ToString());
+    }
+
+    private async Task Export()
+    {
+        var csv = Helpers.GetCsvData(_items);
+        if (csv != null) {
+            await Helpers.DownloadFileToBrowser("SampleItems_" + Helpers.SafeFileDate() + ".csv", csv);
+        }
+    }
+
+    private static string GetStatusBadge(DataObjects.SampleItemStatus status) => status switch {
+        DataObjects.SampleItemStatus.Active => "bg-success",
+        DataObjects.SampleItemStatus.Completed => "bg-info",
+        DataObjects.SampleItemStatus.Archived => "bg-secondary",
+        _ => "bg-warning text-dark",
+    };
+}

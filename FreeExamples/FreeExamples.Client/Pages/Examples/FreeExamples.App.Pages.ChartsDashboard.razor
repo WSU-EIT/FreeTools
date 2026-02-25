@@ -1,0 +1,151 @@
+@page "/Examples/ChartsDashboard"
+@page "/{TenantCode}/Examples/ChartsDashboard"
+@implements IDisposable
+@inject BlazorDataModel Model
+
+@if (Model.Loaded && Model.View == _pageName) {
+    @if (_loading) {
+        <h1 class="page-title">Charts Dashboard</h1>
+        <LoadingMessage />
+    } else {
+        <div class="@Model.StickyMenuClass">
+            <h1 class="page-title">
+                <i class="fa-solid fa-chart-pie me-1"></i> Charts Dashboard
+                <StickyMenuIcon />
+            </h1>
+        </div>
+
+        <p class="text-muted mb-3">
+            Demonstrates Highcharts pie and column charts with data from the sample API.
+            <br /><strong>Doc:</strong> <code>008_components.highcharts.md</code>
+        </p>
+
+        @* Status Pie Chart *@
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-white"><h6 class="mb-0">Items by Status</h6></div>
+                    <div class="card-body">
+                        <div id="chart-status-pie" style="min-height:300px;">
+                            <Highcharts @ref="_pieChart"
+                                ElementId="chart-status-pie"
+                                ChartTitle="Items by Status"
+                                ChartType="Highcharts.ChartTypes.Pie"
+                                SeriesDataItems="@_pieData"
+                                OnItemClicked="@((int i) => OnPieClicked(i))" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-white"><h6 class="mb-0">Amount by Category</h6></div>
+                    <div class="card-body">
+                        <div id="chart-category-column" style="min-height:300px;">
+                            <Highcharts @ref="_columnChart"
+                                ElementId="chart-category-column"
+                                ChartTitle="Amount by Category"
+                                ChartType="Highcharts.ChartTypes.Column"
+                                yAxisText="Total Amount ($)"
+                                SeriesCategories="@_columnCategories"
+                                SeriesDataArrayItems="@_columnData" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @if (!string.IsNullOrWhiteSpace(_selectedSlice)) {
+            <div class="alert alert-info">
+                <strong>Clicked:</strong> @_selectedSlice
+            </div>
+        }
+    }
+}
+
+@code {
+    [Parameter] public string? TenantCode { get; set; }
+
+    private bool _loading = true;
+    private bool _loadedData = false;
+    private string _pageName = "chartsdashboard";
+    private DataObjects.SampleDashboard _dashboard = new();
+    private string _selectedSlice = "";
+
+    private Highcharts? _pieChart;
+    private Highcharts? _columnChart;
+    private Highcharts.SeriesData[]? _pieData;
+    private string[]? _columnCategories;
+    private Highcharts.SeriesDataArray[]? _columnData;
+
+    public void Dispose()
+    {
+        Model.OnChange -= OnDataModelUpdated;
+        Model.Subscribers_OnChange.Remove(_pageName);
+    }
+
+    protected override void OnInitialized()
+    {
+        Model.OnChange += OnDataModelUpdated;
+        Model.Subscribers_OnChange[_pageName] = true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender) Model.TenantCodeFromUrl = TenantCode;
+
+        if (Model.Loaded && Model.LoggedIn && !_loadedData) {
+            _loadedData = true;
+            await LoadData();
+        }
+    }
+
+    private void OnDataModelUpdated()
+    {
+        if (Model.View == _pageName) StateHasChanged();
+    }
+
+    private async Task LoadData()
+    {
+        var result = await Helpers.GetOrPost<DataObjects.SampleDashboard>("api/Data/GetSampleDashboard");
+        if (result != null) {
+            _dashboard = result;
+            BuildChartData();
+        }
+
+        _loading = false;
+        StateHasChanged();
+    }
+
+    private void BuildChartData()
+    {
+        // Pie: status breakdown
+        _pieData = new[] {
+            new Highcharts.SeriesData { name = "Active", data = _dashboard.ActiveItems },
+            new Highcharts.SeriesData { name = "Completed", data = _dashboard.CompletedItems },
+            new Highcharts.SeriesData { name = "Draft", data = _dashboard.DraftItems },
+            new Highcharts.SeriesData { name = "Archived", data = _dashboard.ArchivedItems },
+        };
+
+        // Column: category amounts
+        _columnCategories = _dashboard.ByCategory.Select(x => x.Category).ToArray();
+        _columnData = new[] {
+            new Highcharts.SeriesDataArray {
+                name = "Total Amount",
+                data = _dashboard.ByCategory.Select(x => x.TotalAmount).ToArray(),
+            },
+            new Highcharts.SeriesDataArray {
+                name = "Count",
+                data = _dashboard.ByCategory.Select(x => (decimal)x.Count).ToArray(),
+            },
+        };
+    }
+
+    private void OnPieClicked(int index)
+    {
+        if (_pieData != null && index >= 0 && index < _pieData.Length) {
+            _selectedSlice = _pieData[index].name + " (" + _pieData[index].data + " items)";
+            StateHasChanged();
+        }
+    }
+}
