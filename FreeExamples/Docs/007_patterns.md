@@ -12,6 +12,9 @@
 |----------|-------------|-------------|
 | [007_patterns.helpers.md](007_patterns.helpers.md) | Helpers static class reference | Using utility methods |
 | [007_patterns.signalr.md](007_patterns.signalr.md) | Real-time updates with SignalR | Implementing live updates |
+| [007_patterns.filter_pagination.md](007_patterns.filter_pagination.md) | Filter, pagination & sorting | Building list pages |
+| [007_patterns.file_operations.md](007_patterns.file_operations.md) | File upload, download & CSV export | File handling |
+| [007_patterns.timers.md](007_patterns.timers.md) | Debounce, countdown, BackgroundService | Timers & background work |
 | [007_patterns.playwright.md](007_patterns.playwright.md) | Playwright browser automation | Screenshots, page interaction, auth flows |
 
 ---

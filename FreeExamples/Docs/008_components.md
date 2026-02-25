@@ -11,6 +11,7 @@
 | Document | Description | When to Use |
 |----------|-------------|-------------|
 | [008_components.razor_templates.md](008_components.razor_templates.md) | Page structure templates | Creating new pages |
+| [008_components.bootstrap_patterns.md](008_components.bootstrap_patterns.md) | Cards, tabs, modals, badges | Common UI elements |
 | [008_components.highcharts.md](008_components.highcharts.md) | Charts and reporting | Building dashboards |
 | [008_components.wizard.md](008_components.wizard.md) | Multi-step wizard UI | Setup flows, onboarding |
 | [008_components.monaco.md](008_components.monaco.md) | Monaco code editor integration | Adding code editing |

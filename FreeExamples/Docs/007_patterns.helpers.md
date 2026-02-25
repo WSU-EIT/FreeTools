@@ -843,6 +843,78 @@ Projects often add helpers for:
 
 ---
 
+## File Operations Helpers
+
+### DownloadFileToBrowser
+
+Triggers a browser file download from a byte array using JS interop:
+
+```csharp
+// Download CSV export
+await Helpers.DownloadFileToBrowser(
+    "Assets_" + Helpers.SafeFileDate() + ".csv",
+    System.Text.Encoding.UTF8.GetBytes(csvString));
+
+// Download binary file from API
+var file = await Helpers.GetOrPost<DataObjects.FileStorage>("api/Data/GetFile/" + fileId);
+if (file != null && Helpers.ActionResponse(file.ActionResponse).Result) {
+    await Helpers.DownloadFileToBrowser(Helpers.StringValue(file.FileName), file.Value);
+}
+```
+
+**Under the hood:** Uses `DotNetStreamReference` → JS `DownloadFileFromStream()`.
+
+### GetCsvData / GetCsvFromData
+
+CSV serialization/deserialization using CsvHelper:
+
+```csharp
+// Export list to CSV bytes
+byte[]? csvBytes = Helpers.GetCsvData<DataObjects.AssetExport>(exportRecords);
+if (csvBytes != null) {
+    await Helpers.DownloadFileToBrowser("export.csv", csvBytes);
+}
+
+// Import CSV string to objects
+List<DataObjects.ImportRecord> records = Helpers.GetCsvFromData<DataObjects.ImportRecord>(csvString);
+```
+
+### Complete Export Pattern (from Helpdesk4)
+
+```csharp
+protected async Task Export()
+{
+    var postFilter = Helpers.DuplicateObject<DataObjects.FilterAssets>(Filter);
+    if (postFilter != null) {
+        postFilter.Records = null;  // Don't send records back to server
+
+        Model.ClearMessages();
+        Model.Message_Processing();
+
+        var results = await Helpers.GetOrPost<DataObjects.FilterAssets>(
+            "api/Data/GetAssetsFilteredExport", postFilter);
+
+        Model.ClearMessages();
+
+        if (results != null) {
+            if (Helpers.ActionResponse(results.ActionResponse).Result) {
+                await Helpers.DownloadFileToBrowser(
+                    "Assets_" + Helpers.SafeFileDate() + ".csv",
+                    System.Text.Encoding.UTF8.GetBytes(Helpers.StringValue(results.Export)));
+            } else {
+                Model.ErrorMessages(Helpers.ActionResponse(results.ActionResponse).Messages);
+            }
+        } else {
+            Model.UnknownError();
+        }
+    }
+}
+```
+
+**Source:** `_Repos/Helpdesk4` — Assets page export
+
+---
+
 ## Important Notes
 
 1. **Always use Helpers** - Don't roll your own navigation, HTTP, or validation logic
@@ -855,5 +927,5 @@ Projects often add helpers for:
 ---
 
 *Category: 007_patterns*
-*Last Updated: 2025-12-23*
-*Source: FreeCRM base template*
+*Last Updated: 2025-07-25*
+*Source: FreeCRM base template, Helpdesk4, nForm*
