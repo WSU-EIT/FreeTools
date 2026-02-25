@@ -61,7 +61,10 @@ public ActionResult<DataObjects.BooleanResponse> YourEndpoint()
 **Called:** N/A — this is an example template showing how to add endpoints.
 **Use for:** Delete this example and replace with your actual endpoints.
 
-**For new endpoints, use partial classes directly — no hook modification needed:**
+**For new endpoints, use partial classes directly — no hook modification needed.**
+
+> **Preferred pattern:** Three endpoints per entity — **GetMany**, **SaveMany**, **DeleteMany**.
+> See [007_patterns.crud_api.md](007_patterns.crud_api.md) for full details.
 
 ```csharp
 // In {ProjectName}.App.API.cs (your file — no hook file change):
@@ -69,18 +72,31 @@ namespace {ProjectName}.Server.Controllers;
 
 public partial class DataController
 {
-    [HttpPost("api/Data/GetSourceSystems")]
-    public async Task<ActionResult<DataObjects.SourceSystemFilterResult>> GetSourceSystems(
-        [FromBody] DataObjects.SourceSystemFilter filter)
+    // GetMany: null/empty → all, IDs → filtered
+    [HttpPost]
+    [Authorize]
+    [Route("~/api/Data/GetCategories")]
+    public async Task<ActionResult<List<DataObjects.Category>>> GetCategories(List<Guid>? ids)
     {
-        return Ok(await da.GetSourceSystemsAsync(filter));
+        return Ok(await da.GetCategories(ids, TenantId, CurrentUser));
     }
 
-    [HttpGet("api/Data/GetDashboardStats")]
-    [Authorize]
-    public async Task<ActionResult<DataObjects.DashboardStats>> GetDashboardStats()
+    // SaveMany: PK exists → update, empty/new PK → insert
+    [HttpPost]
+    [Authorize(Policy = Policies.Admin)]
+    [Route("~/api/Data/SaveCategories")]
+    public async Task<ActionResult<List<DataObjects.Category>>> SaveCategories(List<DataObjects.Category> items)
     {
-        return Ok(await da.GetDashboardStatsAsync());
+        return Ok(await da.SaveCategories(items, CurrentUser));
+    }
+
+    // DeleteMany: must provide IDs, null/empty → error
+    [HttpPost]
+    [Authorize(Policy = Policies.Admin)]
+    [Route("~/api/Data/DeleteCategories")]
+    public async Task<ActionResult<DataObjects.BooleanResponse>> DeleteCategories(List<Guid>? ids)
+    {
+        return Ok(await da.DeleteCategories(ids, CurrentUser));
     }
 }
 ```

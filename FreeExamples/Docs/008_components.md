@@ -24,6 +24,8 @@
 
 Component guides document specific UI components, their implementation patterns, and how to integrate them into your application.
 
+> **API Convention:** All data displayed in components should come from API endpoints, never faked in the browser. Use the three-endpoint CRUD pattern (GetMany/SaveMany/DeleteMany) per [007_patterns.crud_api.md](007_patterns.crud_api.md).
+
 ---
 
 ## Available Guides

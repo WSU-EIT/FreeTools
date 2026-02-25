@@ -10,69 +10,255 @@
     } else {
         <div class="@Model.StickyMenuClass">
             <h1 class="page-title">
-                <i class="fa-solid fa-tower-broadcast me-1"></i> SignalR Demo
+                <i class="fa-solid fa-tower-broadcast me-1"></i> SignalR Real-Time Demo
                 <StickyMenuIcon />
             </h1>
         </div>
 
-        <p class="text-muted mb-3">
-            Open this page in two browser tabs. Save an item in one tab — the other updates live via SignalR.
-            <br /><strong>Doc:</strong> <code>007_patterns.signalr.md</code>
-        </p>
+        <AboutSection Title="About SignalR Demo" Subtitle="See changes appear instantly across browser tabs — no refresh needed" IconClass="fa-solid fa-tower-broadcast">
+            <div class="row">
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-question-circle me-1"></i>What Is This Page?</h6>
+                    <p class="small text-muted mb-0">
+                        Normally, a web page only updates when you click something or refresh. <strong>SignalR</strong>
+                        changes that — it creates a live connection between the server and your browser so the server
+                        can <strong>push</strong> updates to you instantly. Imagine a group chat: when someone sends
+                        a message, everyone sees it immediately. That's what SignalR does for data.
+                        <em>Try opening this page in two browser tabs to see it in action.</em>
+                    </p>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-lightbulb me-1"></i>What You'll Learn</h6>
+                    <ul class="small text-muted mb-0 ps-3">
+                        <li><strong>Presence board</strong> — see who else is online and what page they're viewing</li>
+                        <li><strong>Activity feed</strong> — a live log of events (saves, deletes) with timestamps</li>
+                        <li><strong>Live table</strong> — rows update in-place when data changes on the server</li>
+                        <li><strong>Pending badge</strong> — a counter showing how many updates arrived since you last looked</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-road me-1"></i>How Does It Work?</h6>
+                    <p class="small text-muted mb-0">
+                        When the page loads, your browser opens a <strong>WebSocket</strong> — a persistent connection
+                        to the server (like a phone call that stays open). When anyone saves or deletes data, the server
+                        sends a message through that connection to <strong>every connected browser</strong>. Your page
+                        receives the message and updates the display without you doing anything.
+                    </p>
+                </div>
+            </div>
+        </AboutSection>
 
         <div class="row">
-            <div class="col-md-6">
-                <div class="card shadow-sm border-0 mb-3">
-                    <div class="card-header bg-white"><h6 class="mb-0">Send Update</h6></div>
-                    <div class="card-body">
-                        <div class="mb-2">
-                            <label for="signal-name">Item Name</label>
-                            <input type="text" id="signal-name" class="form-control" @bind="_newItemName" />
-                        </div>
-                        <button class="btn btn-primary" @onclick="SaveItem">
-                            <i class="fa-solid fa-floppy-disk me-1"></i> Save (Triggers SignalR)
-                        </button>
+            @* ================================================================
+               LEFT COLUMN: Active Users Presence Board
+               Pattern from: Helpdesk4 ActiveUsers page + FlexCRM call center
+               Shows who's online with real-time last-seen timestamps.
+               ================================================================ *@
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-header bg-white py-3">
+                        <h6 class="mb-0">
+                            <i class="fa-solid fa-users me-1"></i> Active Users
+                            @{ int onlineCount = Model.ActiveUsers.Count(x => x.LastAccess > DateTime.UtcNow.AddMinutes(-5)); }
+                            <span class="badge bg-success rounded-pill ms-1">@onlineCount online</span>
+                        </h6>
+                    </div>
+                    <div class="card-body p-0" style="max-height:400px; overflow:auto;">
+                        @if (Model.ActiveUsers.Any(x => x.LastAccess > DateTime.UtcNow.AddMinutes(-5))) {
+                            @foreach (var user in Model.ActiveUsers
+                                .Where(x => x.LastAccess > DateTime.UtcNow.AddMinutes(-5))
+                                .OrderBy(x => x.FirstName).ThenBy(x => x.LastName)) {
+                                bool isMe = user.UserId == Model.User.UserId;
+                                bool recentlyActive = user.LastAccess > DateTime.UtcNow.AddSeconds(-30);
+                                string statusColor = recentlyActive ? "text-success" : "text-warning";
+                                string statusLabel = recentlyActive ? "Active" : "Away";
+
+                                <div class="d-flex align-items-center px-3 py-2 border-bottom @(isMe ? "bg-light" : "")">
+                                    <div class="me-2">
+                                        <i class="fa-solid fa-circle @statusColor" style="font-size:0.6em;"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="fw-semibold small">
+                                            @user.FirstName @user.LastName
+                                            @if (isMe) { <span class="badge bg-primary ms-1" style="font-size:0.65em;">You</span> }
+                                        </div>
+                                        <div class="text-muted" style="font-size:0.75em;">
+                                            @if (!string.IsNullOrWhiteSpace(user.UserPreferences?.LastView)) {
+                                                <i class="fa-solid fa-location-dot me-1"></i>@user.UserPreferences.LastView
+                                            }
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge @(recentlyActive ? "bg-success" : "bg-warning text-dark")" style="font-size:0.65em;">@statusLabel</span>
+                                    </div>
+                                </div>
+                            }
+                        } else {
+                            <div class="text-muted small p-3">No users online.</div>
+                        }
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+
+            @* ================================================================
+               RIGHT COLUMN: Live Activity Feed + Inline Actions
+               Pattern from: Helpdesk4 Request page (in-place SignalR updates),
+               Helpdesk4 Index (pending updates badge, auto-refresh toggle)
+               ================================================================ *@
+            <div class="col-md-8 mb-4">
+                @* Quick-Add Item (triggers SignalR broadcast) *@
                 <div class="card shadow-sm border-0 mb-3">
-                    <div class="card-header bg-white">
-                        <h6 class="mb-0">
-                            Live Feed
-                            @if (_signalRUpdates.Any()) {
-                                <span class="badge bg-primary ms-2">@_signalRUpdates.Count</span>
-                            }
-                        </h6>
+                    <div class="card-header bg-white py-3">
+                        <h6 class="mb-0"><i class="fa-solid fa-bolt me-1"></i> Quick Add (Broadcasts to All Tabs)</h6>
                     </div>
-                    <div class="card-body" style="max-height:300px; overflow:auto;">
-                        @if (!_signalRUpdates.Any()) {
-                            <div class="text-muted small">No updates yet. Save an item from another tab.</div>
-                        }
-                        @foreach (var msg in _signalRUpdates) {
-                            <div class="small border-bottom py-1">
-                                <span class="text-muted">@msg.Time.ToString("HH:mm:ss")</span>
-                                <span class="ms-2">@msg.Message</span>
+                    <div class="card-body">
+                        <div class="row g-2 align-items-end">
+                            <div class="col-md-5">
+                                <label class="form-label small">Name</label>
+                                <input type="text" class="form-control" placeholder="Item name..." @bind="_newItemName"
+                                       @onkeydown="@(async (e) => { if (e.Key == "Enter") await SaveItem(); })" />
                             </div>
+                            <div class="col-md-3">
+                                <label class="form-label small">Category</label>
+                                <select class="form-select" @bind="_newItemCategory">
+                                    <option value="Engineering">Engineering</option>
+                                    <option value="Marketing">Marketing</option>
+                                    <option value="Operations">Operations</option>
+                                    <option value="Finance">Finance</option>
+                                    <option value="Support">Support</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label class="form-label small">Priority</label>
+                                <input type="number" class="form-control" min="1" max="5" @bind="_newItemPriority" />
+                            </div>
+                            <div class="col-md-2">
+                                <button class="btn btn-success w-100" @onclick="SaveItem" disabled="@_saving">
+                                    @if (_saving) {
+                                        <span class="spinner-border spinner-border-sm me-1"></span>
+                                    } else {
+                                        <i class="fa-solid fa-floppy-disk me-1"></i>
+                                    }
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @* Activity Feed — real-time log of all SignalR events *@
+                <div class="card shadow-sm border-0 mb-3">
+                    <div class="card-header bg-white py-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="mb-0">
+                                <i class="fa-solid fa-rss me-1"></i> Activity Feed
+                                @if (_activityLog.Any()) {
+                                    <span class="badge bg-primary rounded-pill ms-1">@_activityLog.Count</span>
+                                }
+                            </h6>
+                            @if (_activityLog.Any()) {
+                                <button class="btn btn-sm btn-outline-secondary" @onclick="@(() => { _activityLog.Clear(); StateHasChanged(); })">
+                                    <i class="fa-solid fa-eraser me-1"></i> Clear
+                                </button>
+                            }
+                        </div>
+                    </div>
+                    <div class="card-body p-0" style="max-height:250px; overflow:auto;">
+                        @if (!_activityLog.Any()) {
+                            <div class="text-muted small p-3 text-center">
+                                <i class="fa-solid fa-satellite-dish fa-2x mb-2 d-block"></i>
+                                Listening for SignalR events... Save an item or open another tab.
+                            </div>
+                        }
+                        @foreach (var entry in _activityLog) {
+                            string iconClass = entry.Type switch {
+                                "saved-self" => "fa-solid fa-floppy-disk text-success",
+                                "saved-other" => "fa-solid fa-arrow-down text-primary",
+                                "deleted-self" => "fa-solid fa-trash text-danger",
+                                "deleted-other" => "fa-solid fa-trash text-warning",
+                                _ => "fa-solid fa-circle-info text-muted",
+                            };
+
+                            <div class="d-flex align-items-start px-3 py-2 border-bottom">
+                                <div class="me-2 mt-1"><i class="@iconClass"></i></div>
+                                <div class="flex-grow-1">
+                                    <div class="small">@((MarkupString)entry.Message)</div>
+                                    <div class="text-muted" style="font-size:0.7em;">@entry.Time.ToString("HH:mm:ss.fff")</div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                @* Live Item Table — updates in-place via SignalR, like Helpdesk4 Request page *@
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-white py-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="mb-0">
+                                <i class="fa-solid fa-table me-1"></i> Live Items
+                                <span class="badge bg-secondary rounded-pill ms-1">@_items.Count</span>
+                                @if (_pendingUpdates > 0) {
+                                    <span class="badge bg-warning text-dark rounded-pill ms-1 animate__animated animate__pulse animate__infinite">
+                                        @_pendingUpdates pending
+                                    </span>
+                                }
+                            </h6>
+                            <div class="d-flex gap-2 align-items-center">
+                                <div class="form-check form-switch mb-0">
+                                    <input type="checkbox" class="form-check-input" id="auto-apply" @bind="_autoApply" />
+                                    <label class="form-check-label small" for="auto-apply">Auto-apply</label>
+                                </div>
+                                @if (!_autoApply && _pendingUpdates > 0) {
+                                    <button class="btn btn-sm btn-primary" @onclick="ApplyPendingUpdates">
+                                        <i class="fa-solid fa-download me-1"></i> Apply @_pendingUpdates
+                                    </button>
+                                }
+                                <button class="btn btn-sm btn-outline-secondary" @onclick="LoadData">
+                                    <i class="fa-solid fa-refresh"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table table-hover table-sm mb-0">
+                            <thead>
+                                <tr class="table-light">
+                                    <th>Name</th>
+                                    <th>Category</th>
+                                    <th>Status</th>
+                                    <th class="text-center">P</th>
+                                    <th class="text-end">Amount</th>
+                                    <th style="width:1%;"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in _items.Take(15)) {
+                                    bool justUpdated = _recentlyUpdatedIds.Contains(item.SampleItemId);
+                                    <tr class="@(justUpdated ? "table-info" : "")">
+                                        <td>
+                                            @item.Name
+                                            @if (justUpdated) { <i class="fa-solid fa-bolt text-primary ms-1" title="Updated via SignalR"></i> }
+                                        </td>
+                                        <td class="small">@item.Category</td>
+                                        <td><span class="badge @GetStatusBadge(item.Status)">@item.Status</span></td>
+                                        <td class="text-center">@item.Priority</td>
+                                        <td class="text-end small">@item.Amount.ToString("C")</td>
+                                        <td>
+                                            <button class="btn btn-xs btn-outline-danger" @onclick="@(() => DeleteItem(item.SampleItemId))" title="Delete">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        @if (_items.Count > 15) {
+                            <div class="small text-muted text-center py-2">Showing 15 of @_items.Count items.</div>
                         }
                     </div>
                 </div>
             </div>
         </div>
-
-        <h6 class="mt-3">Current Items (@_items.Count)</h6>
-        <table class="table table-sm">
-            <thead><tr><th>Name</th><th>Status</th><th>Last Modified</th></tr></thead>
-            <tbody>
-                @foreach (var item in _items.Take(10)) {
-                    <tr>
-                        <td>@item.Name</td>
-                        <td><span class="badge bg-success">@item.Status</span></td>
-                        <td>@item.LastModified.ToString("g")</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
     }
 }
 
@@ -81,10 +267,17 @@
 
     private bool _loading = true;
     private bool _loadedData = false;
+    private bool _saving = false;
+    private bool _autoApply = true;
+    private int _pendingUpdates = 0;
     private string _pageName = "signalrdemo";
     private string _newItemName = "";
+    private string _newItemCategory = "Engineering";
+    private int _newItemPriority = 3;
     private List<DataObjects.SampleItem> _items = new();
-    private List<SignalRMessage> _signalRUpdates = new();
+    private List<ActivityEntry> _activityLog = new();
+    private HashSet<Guid> _recentlyUpdatedIds = new();
+    private System.Timers.Timer _highlightTimer = new();
 
     public void Dispose()
     {
@@ -92,14 +285,25 @@
         Model.Subscribers_OnChange.Remove(_pageName);
         Model.OnSignalRUpdate -= SignalRUpdate;
         Model.Subscribers_OnSignalRUpdate.Remove(_pageName);
+        _highlightTimer.Stop();
+        _highlightTimer.Dispose();
     }
 
     protected override void OnInitialized()
     {
+        Model.View = _pageName;
         Model.OnChange += OnDataModelUpdated;
-        Model.Subscribers_OnChange[_pageName] = true;
+        if (!Model.Subscribers_OnChange.Contains(_pageName)) { Model.Subscribers_OnChange.Add(_pageName); }
         Model.OnSignalRUpdate += SignalRUpdate;
-        Model.Subscribers_OnSignalRUpdate[_pageName] = true;
+        if (!Model.Subscribers_OnSignalRUpdate.Contains(_pageName)) { Model.Subscribers_OnSignalRUpdate.Add(_pageName); }
+
+        // Timer to clear highlight flash after 3 seconds (like Helpdesk4 toast fade)
+        _highlightTimer.Interval = 3000;
+        _highlightTimer.AutoReset = false;
+        _highlightTimer.Elapsed += (s, e) => {
+            _recentlyUpdatedIds.Clear();
+            InvokeAsync(StateHasChanged);
+        };
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -117,12 +321,66 @@
         if (Model.View == _pageName) StateHasChanged();
     }
 
+    /// <summary>
+    /// Core SignalR handler — pattern from Helpdesk4 Request.razor.
+    /// Updates items in-place when another user saves/deletes, or queues pending updates.
+    /// </summary>
     private async void SignalRUpdate(DataObjects.SignalRUpdate update)
     {
-        if (update.UpdateType == DataObjects.SignalRUpdateType.SampleItemSaved
-            && update.UserId != Model.User.UserId) {
-            _signalRUpdates.Insert(0, new SignalRMessage(DateTime.Now, "Item updated by another user: " + update.Message));
-            await LoadData();
+        bool fromOtherUser = update.UserId != Model.User.UserId;
+        string who = fromOtherUser ? (update.UserDisplayName ?? "Another user") : "You";
+
+        if (update.UpdateType == DataObjects.SignalRUpdateType.SampleItemSaved) {
+            var saved = Helpers.DeserializeObject<DataObjects.SampleItem>(update.ObjectAsString);
+            string itemName = saved?.Name ?? "Unknown";
+
+            _activityLog.Insert(0, new ActivityEntry {
+                Time = DateTime.Now,
+                Type = fromOtherUser ? "saved-other" : "saved-self",
+                Message = $"<strong>{who}</strong> saved <em>{itemName}</em>",
+            });
+
+            if (saved != null) {
+                if (_autoApply || !fromOtherUser) {
+                    // In-place update (Helpdesk4 pattern: update the local record without re-fetching)
+                    var existing = _items.FindIndex(x => x.SampleItemId == saved.SampleItemId);
+                    if (existing >= 0) {
+                        _items[existing] = saved;
+                    } else {
+                        _items.Insert(0, saved);
+                    }
+
+                    // Flash highlight
+                    _recentlyUpdatedIds.Add(saved.SampleItemId);
+                    _highlightTimer.Stop();
+                    _highlightTimer.Start();
+                } else {
+                    _pendingUpdates++;
+                }
+            }
+
+            await InvokeAsync(StateHasChanged);
+        }
+
+        if (update.UpdateType == DataObjects.SignalRUpdateType.SampleItemDeleted) {
+            var deletedId = update.ItemId;
+
+            var deletedItem = _items.FirstOrDefault(x => x.SampleItemId == deletedId);
+            string itemName = deletedItem?.Name ?? deletedId.ToString() ?? "Unknown";
+
+            _activityLog.Insert(0, new ActivityEntry {
+                Time = DateTime.Now,
+                Type = fromOtherUser ? "deleted-other" : "deleted-self",
+                Message = $"<strong>{who}</strong> deleted <em>{itemName}</em>",
+            });
+
+            if (_autoApply || !fromOtherUser) {
+                _items.RemoveAll(x => x.SampleItemId == deletedId);
+            } else {
+                _pendingUpdates++;
+            }
+
+            await InvokeAsync(StateHasChanged);
         }
     }
 
@@ -130,29 +388,57 @@
     {
         var result = await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/GetSampleItems", new List<Guid>());
         if (result != null) _items = result;
+        _pendingUpdates = 0;
 
         _loading = false;
-        await InvokeAsync(StateHasChanged);
+        StateHasChanged();
+    }
+
+    private async Task ApplyPendingUpdates()
+    {
+        await LoadData();
     }
 
     private async Task SaveItem()
     {
         if (string.IsNullOrWhiteSpace(_newItemName)) return;
 
+        _saving = true;
+        StateHasChanged();
+
         var item = new DataObjects.SampleItem {
             Name = _newItemName,
+            Category = _newItemCategory,
+            Priority = _newItemPriority,
             Status = DataObjects.SampleItemStatus.Active,
             Enabled = true,
-            Category = "Engineering",
-            Priority = 3,
         };
 
-        await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/SaveSampleItems", new List<DataObjects.SampleItem> { item });
+        var saved = await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/SaveSampleItems", new List<DataObjects.SampleItem> { item });
+        if (saved != null && saved.Any()) {
+            _newItemName = "";
+        }
 
-        _newItemName = "";
-        _signalRUpdates.Insert(0, new SignalRMessage(DateTime.Now, "You saved: " + item.Name));
-        await LoadData();
+        _saving = false;
+        StateHasChanged();
     }
 
-    private record SignalRMessage(DateTime Time, string Message);
+    private async Task DeleteItem(Guid id)
+    {
+        await Helpers.GetOrPost<DataObjects.BooleanResponse>("api/Data/DeleteSampleItems", new List<Guid> { id });
+    }
+
+    private static string GetStatusBadge(DataObjects.SampleItemStatus status) => status switch {
+        DataObjects.SampleItemStatus.Active => "bg-success",
+        DataObjects.SampleItemStatus.Completed => "bg-info",
+        DataObjects.SampleItemStatus.Archived => "bg-secondary",
+        _ => "bg-warning text-dark",
+    };
+
+    private class ActivityEntry
+    {
+        public DateTime Time { get; set; }
+        public string Type { get; set; } = "";
+        public string Message { get; set; } = "";
+    }
 }

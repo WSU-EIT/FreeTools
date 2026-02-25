@@ -2,6 +2,9 @@
 
 > Skeleton templates and patterns for CRUD pages in FreeCRM-based Blazor applications.
 
+> **API Convention:** Pages should call API endpoints following the three-endpoint CRUD pattern (GetMany/SaveMany/DeleteMany).
+> See [007_patterns.crud_api.md](007_patterns.crud_api.md).
+
 ---
 
 ## Document Index

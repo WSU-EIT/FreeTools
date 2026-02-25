@@ -285,5 +285,18 @@ public static partial class PasswordGenerator { }
 
 ---
 
+## API Pattern
+
+> **Preferred:** Three DataAccess methods per entity — **GetMany**, **SaveMany**, **DeleteMany**.
+> See [007_patterns.crud_api.md](007_patterns.crud_api.md) for full pattern with DataAccess + Controller + Client examples.
+
+| Method | Signature | Behavior |
+|--------|-----------|----------|
+| `Get{Entity}s` | `(List<Guid>? ids) → List<T>` | `null`/empty → all; IDs → filtered |
+| `Save{Entity}s` | `(List<T> items, User) → List<T>` | PK exists → update; empty/new PK → insert |
+| `Delete{Entity}s` | `(List<Guid>? ids) → BooleanResponse` | Must provide IDs; `null`/empty → error |
+
+---
+
 *Category: 006_architecture*
 *Source: `ReferenceProjects/FreeCRM-main/CRM.DataAccess/DataAccess.App.cs`*

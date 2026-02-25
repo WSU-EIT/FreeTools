@@ -54,6 +54,8 @@ public class SourceSystemFilter
 
 **No hook file modification needed.** Partial classes merge at compile time.
 
+> **API Convention:** When following the three-endpoint CRUD pattern ([007_patterns.crud_api.md](007_patterns.crud_api.md)), each entity DTO is passed as `List<T>` to **SaveMany** and returned as `List<T>` from **GetMany**. Empty/new PK → insert; existing PK → update.
+
 **Custom files:**
 
 | Scenario | File Name |

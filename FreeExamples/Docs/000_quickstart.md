@@ -248,8 +248,27 @@ Auth__Key=...
 ## Next Steps
 
 1. **Read** docs 001-002 for team patterns and standards
-2. **Run** `sitrep` to see current state
-3. **Use** `plan [feature]` before starting work
+2. **Read** [007_patterns.crud_api.md](007_patterns.crud_api.md) for the **three-endpoint CRUD pattern** — our preferred API style
+3. **Run** `sitrep` to see current state
+4. **Use** `plan [feature]` before starting work
+
+---
+
+## Key Conventions
+
+### API Endpoint Pattern
+
+We use **three endpoints per entity** — not individual GET/POST/PUT/DELETE per operation:
+
+| Endpoint | Accepts | Behavior |
+|----------|---------|----------|
+| **GetMany** | `List<Guid>?` | `null`/empty → all; IDs → filtered |
+| **SaveMany** | `List<T>` | PK exists → update; empty/new PK → insert |
+| **DeleteMany** | `List<Guid>` | Must provide IDs; `null`/empty → error |
+
+Single-item convenience methods wrap the batch versions with single-item lists.
+
+**Full details:** [007_patterns.crud_api.md](007_patterns.crud_api.md)
 
 ---
 

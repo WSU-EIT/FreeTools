@@ -2,6 +2,8 @@
 
 > Patterns for building step-by-step wizard interfaces with visual progress in FreeCRM-based Blazor applications.
 
+> **API Convention:** Wizard save operations should use the three-endpoint CRUD pattern per [007_patterns.crud_api.md](007_patterns.crud_api.md).
+
 ---
 
 ## Document Index

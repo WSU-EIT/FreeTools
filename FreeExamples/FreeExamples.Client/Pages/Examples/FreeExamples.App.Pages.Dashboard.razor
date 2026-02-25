@@ -15,6 +15,38 @@
             </h1>
         </div>
 
+        <AboutSection Title="About FreeExamples" Subtitle="A learning playground — every pattern from 30+ real-world apps in one place" IconClass="fa-solid fa-book-open">
+            <div class="row">
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-question-circle me-1"></i>What Is This?</h6>
+                    <p class="small text-muted mb-0">
+                        This is a <strong>demo application</strong> — a safe place to explore how real web applications work.
+                        Each page below showcases one feature you'd find in a production app: uploading files, real-time
+                        updates, charts, digital signatures, code editors, and more. Think of it like a science museum
+                        where every exhibit is a working piece of software you can interact with.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-lightbulb me-1"></i>Why Does It Exist?</h6>
+                    <p class="small text-muted mb-0">
+                        Our team builds 30+ web applications (helpdesk systems, form builders, compliance trackers,
+                        and more). They all share the same coding patterns. Instead of digging through 30 separate
+                        codebases, this project collects every pattern in one place so you can <strong>see it working</strong>,
+                        <strong>read the code</strong>, and <strong>copy it</strong> into your own project.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-compass me-1"></i>How To Explore</h6>
+                    <ol class="small text-muted mb-0 ps-3">
+                        <li>Click any card below to visit that demo page</li>
+                        <li>Each page has an <strong>About</strong> section (click it to expand) explaining what you're seeing</li>
+                        <li>Look for <i class="fa-solid fa-circle-info text-info"></i> icons — click them for inline explanations with code</li>
+                        <li>The summary cards at the top show item counts from the sample database</li>
+                    </ol>
+                </div>
+            </div>
+        </AboutSection>
+
         @* Status Summary Cards *@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 mb-4">
             <div class="col">
@@ -55,18 +87,18 @@
         <h5 class="mb-3">Example Pages</h5>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
-            @foreach (var page in _examplePages) {
+            @foreach (var example in _examplePages) {
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0">
                         <div class="card-body">
                             <h6 class="card-title">
-                                <a href="@Helpers.BuildUrl(page.Url)" class="text-decoration-none">
-                                    <i class="@page.Icon me-1"></i> @page.Title
+                                <a href="@Helpers.BuildUrl(example.Url)" class="text-decoration-none">
+                                    <i class="@example.Icon me-1"></i> @example.Title
                                 </a>
                             </h6>
-                            <p class="card-text small text-muted mb-2">@page.Description</p>
-                            <span class="badge @page.PhaseBadge">@page.Phase</span>
-                            <span class="badge bg-secondary">@page.DocRef</span>
+                            <p class="card-text small text-muted mb-2">@example.Description</p>
+                            <span class="badge @example.PhaseBadge">@example.Phase</span>
+                            <span class="badge bg-secondary">@example.DocRef</span>
                         </div>
                     </div>
                 </div>
@@ -117,6 +149,8 @@
         new("Network Graph", "Examples/NetworkGraph", "fa-solid fa-diagram-project", "vis.js interactive node-edge graph.", "Phase 3", "bg-warning text-dark", "008_components.network_chart"),
         new("Signature Demo", "Examples/SignatureDemo", "fa-solid fa-signature", "jSignature digital signature capture.", "Phase 3", "bg-warning text-dark", "008_components.signature"),
         new("Wizard Demo", "Examples/WizardDemo", "fa-solid fa-hat-wizard", "Multi-step wizard with progress.", "Phase 3", "bg-warning text-dark", "008_components.wizard"),
+        new("Git Browser", "Examples/GitBrowser", "fa-solid fa-code-branch", "Clone a public repo and browse files with Monaco.", "Phase 4", "bg-info", "LibGit2Sharp + Monaco"),
+        new("API Key Middleware", "Examples/ApiKeyDemo", "fa-solid fa-key", "API key auth middleware with key management and test console.", "Phase 4", "bg-info", "FreeGLBA pattern"),
     };
 
     public void Dispose()
@@ -127,8 +161,9 @@
 
     protected override void OnInitialized()
     {
+        Model.View = _pageName;
         Model.OnChange += OnDataModelUpdated;
-        Model.Subscribers_OnChange[_pageName] = true;
+        if (!Model.Subscribers_OnChange.Contains(_pageName)) { Model.Subscribers_OnChange.Add(_pageName); }
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)

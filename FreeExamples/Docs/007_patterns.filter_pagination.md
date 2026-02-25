@@ -14,6 +14,9 @@ Every FreeCRM list page follows the same filter→API→render cycle:
 User changes filter → Filter object updated → POST to API → Server paginates/sorts → Response rendered
 ```
 
+> **Note:** For simple CRUD without pagination/sorting, prefer the three-endpoint pattern (GetMany/SaveMany/DeleteMany).
+> See [007_patterns.crud_api.md](007_patterns.crud_api.md). The filter pattern below is for advanced list pages that need server-side pagination and sorting.
+
 ---
 
 ## The Filter Base Class

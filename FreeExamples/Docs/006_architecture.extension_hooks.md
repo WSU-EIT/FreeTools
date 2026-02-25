@@ -229,6 +229,9 @@ Remember: Blazor converts dots to underscores in component class names.
 
 For adding new API endpoints, data access methods, or DTOs, you often don't need to modify any hook file at all. C# partial classes handle the merge:
 
+> **Preferred endpoint pattern:** Three endpoints per entity (GetMany/SaveMany/DeleteMany).
+> See [007_patterns.crud_api.md](007_patterns.crud_api.md).
+
 ```csharp
 // File: FreeGLBA.App.DataController.cs (Layer 3)
 // This extends the existing DataController without touching any framework file.

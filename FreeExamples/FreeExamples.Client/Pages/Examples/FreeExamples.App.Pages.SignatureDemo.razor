@@ -15,29 +15,80 @@
             </h1>
         </div>
 
-        <p class="text-muted mb-3">
-            Demonstrates jSignature digital signature capture with DotNetObjectReference callbacks.
-            <br /><strong>Doc:</strong> <code>008_components.signature.md</code>
-            <br /><strong>Status:</strong> <span class="badge bg-warning text-dark">Phase 3 — Stub</span>
-            <br />Requires jSignature JS library and Signature.razor component wiring.
-        </p>
+        <AboutSection Title="About Signature Demo" Subtitle="Draw your signature with a mouse or finger, just like signing a form" IconClass="fa-solid fa-signature">
+            <div class="row">
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-question-circle me-1"></i>What Is This Page?</h6>
+                    <p class="small text-muted mb-0">
+                        A <strong>digital signature pad</strong> lets you draw your signature using
+                        your mouse (on a computer) or your finger (on a phone/tablet). It captures
+                        the drawing as data that can be saved and displayed later — just like signing
+                        a paper form, but electronically. You can clear it and try again.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-lightbulb me-1"></i>What You'll Learn</h6>
+                    <ul class="small text-muted mb-0 ps-3">
+                        <li><strong>Canvas drawing</strong> — capturing mouse/touch movements and drawing lines</li>
+                        <li><strong>Data binding</strong> — the signature data syncs between JavaScript and C# automatically</li>
+                        <li><strong>Base30 encoding</strong> — a compact way to store drawing strokes as text</li>
+                        <li><strong>JS interop</strong> — C# and JavaScript working together in the same page</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-road me-1"></i>How Does It Work?</h6>
+                    <p class="small text-muted mb-0">
+                        The signature pad uses <strong>jSignature</strong>, a JavaScript library that creates
+                        an HTML <code>&lt;canvas&gt;</code> element (a drawing surface). When you draw, it records
+                        every stroke as a series of coordinates. Those coordinates are compressed into a "base30"
+                        string and sent back to C# via JS interop. The string can be saved to a database
+                        and rendered back as an image later.
+                    </p>
+                </div>
+            </div>
+        </AboutSection>
 
         <div class="card shadow-sm border-0 mb-4">
-            <div class="card-header bg-white"><h6 class="mb-0">Signature Pad</h6></div>
+            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                <h6 class="mb-0">Signature Pad</h6>
+                <div>
+                    <button type="button" class="btn btn-sm btn-outline-danger" @onclick="ClearSignature"
+                            disabled="@(string.IsNullOrWhiteSpace(_signatureValue))">
+                        <i class="fas fa-eraser me-1"></i> Clear
+                    </button>
+                </div>
+            </div>
             <div class="card-body">
-                <div class="border rounded p-4 text-center text-muted" style="min-height:200px; display:flex; align-items:center; justify-content:center;">
-                    <div>
-                        <i class="fa-solid fa-signature fa-3x mb-3"></i>
-                        <div>Signature component will render here.</div>
-                    </div>
+                <div role="region" aria-label="Signature drawing pad">
+                <Signature @ref="_signaturePad"
+                    @bind-Value="_signatureValue"
+                    Class="border rounded"
+                    Id="demo-signature" />
                 </div>
             </div>
         </div>
 
-        <div class="card shadow-sm border-0 mb-4">
-            <div class="card-header bg-white"><h6 class="mb-0">Captured Value</h6></div>
-            <div class="card-body">
-                <pre class="border rounded p-2 bg-light small">@(string.IsNullOrWhiteSpace(_signatureValue) ? "(no signature captured)" : _signatureValue)</pre>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="card-header bg-white"><h6 class="mb-0">Status</h6></div>
+                    <div class="card-body" aria-live="polite">
+                        @if (string.IsNullOrWhiteSpace(_signatureValue)) {
+                            <span class="badge bg-warning text-dark" role="status">No signature captured</span>
+                        } else {
+                            <span class="badge bg-success" role="status">Signature captured</span>
+                            <span class="text-muted ms-2 small">(@_signatureValue.Length characters)</span>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="card-header bg-white"><h6 class="mb-0">Raw Value (base30)</h6></div>
+                    <div class="card-body">
+                        <pre class="border rounded p-2 bg-light small mb-0" style="max-height:120px; overflow:auto;" aria-label="Signature data value">@(string.IsNullOrWhiteSpace(_signatureValue) ? "(draw a signature above)" : _signatureValue)</pre>
+                    </div>
+                </div>
             </div>
         </div>
     }
@@ -50,6 +101,7 @@
     private bool _loadedData = false;
     private string _pageName = "signaturedemo";
     private string _signatureValue = "";
+    private Signature? _signaturePad;
 
     public void Dispose()
     {
@@ -59,8 +111,9 @@
 
     protected override void OnInitialized()
     {
+        Model.View = _pageName;
         Model.OnChange += OnDataModelUpdated;
-        Model.Subscribers_OnChange[_pageName] = true;
+        if (!Model.Subscribers_OnChange.Contains(_pageName)) { Model.Subscribers_OnChange.Add(_pageName); }
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -77,5 +130,13 @@
     private void OnDataModelUpdated()
     {
         if (Model.View == _pageName) StateHasChanged();
+    }
+
+    private async Task ClearSignature()
+    {
+        if (_signaturePad != null) {
+            await _signaturePad.Clear();
+            Model.AddMessage("Signature cleared.", MessageType.Warning);
+        }
     }
 }

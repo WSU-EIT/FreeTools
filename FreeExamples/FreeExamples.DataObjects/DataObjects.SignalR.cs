@@ -7,6 +7,7 @@ public partial class DataObjects
         public const string Department = "Department";
         public const string DepartmentGroup = "DepartmentGroup";
         public const string File = "File";
+        public const string GitCloneProgress = "GitCloneProgress";
         public const string Language = "Language";
         public const string LastAccessTime = "LastAccessTime";
         public const string Setting = "Setting";

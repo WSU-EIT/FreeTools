@@ -1018,6 +1018,50 @@ public partial class DataController : ControllerBase
 
 ### Endpoint Patterns
 
+> **Preferred pattern:** Three endpoints per entity — **GetMany**, **SaveMany**, **DeleteMany**.
+> Full details: [007_patterns.crud_api.md](007_patterns.crud_api.md)
+
+#### Preferred: Three-Endpoint CRUD Pattern
+
+```csharp
+// GetMany: null/empty → all, IDs → filtered
+[HttpPost]
+[Authorize]
+[Route("~/api/Data/GetCategories")]
+public async Task<ActionResult<List<DataObjects.Category>>> GetCategories(List<Guid>? ids)
+{
+    return Ok(await da.GetCategories(ids, TenantId, CurrentUser));
+}
+
+// SaveMany: PK exists → update, empty/new PK → insert
+[HttpPost]
+[Authorize(Policy = Policies.Admin)]
+[Route("~/api/Data/SaveCategories")]
+public async Task<ActionResult<List<DataObjects.Category>>> SaveCategories(List<DataObjects.Category> items)
+{
+    return Ok(await da.SaveCategories(items, CurrentUser));
+}
+
+// DeleteMany: must provide IDs, null/empty → error
+[HttpPost]
+[Authorize(Policy = Policies.Admin)]
+[Route("~/api/Data/DeleteCategories")]
+public async Task<ActionResult<DataObjects.BooleanResponse>> DeleteCategories(List<Guid>? ids)
+{
+    return Ok(await da.DeleteCategories(ids, CurrentUser));
+}
+```
+
+Single-item convenience methods just wrap the batch versions:
+```csharp
+public DataObjects.Category Save(DataObjects.Category item, DataObjects.User user)
+    => SaveCategories(new List<DataObjects.Category> { item }, user).First();
+```
+
+#### Legacy: Individual Endpoints (existing projects)
+
+Older projects may still use individual endpoints. These are acceptable but the three-endpoint pattern is preferred for new work.
+
 #### GET - Single Item
 ```csharp
 [HttpGet]
@@ -1783,8 +1827,17 @@ Helpers.NavigateToLogin();
 ```
 
 ### API Calls
+
+> **Preferred:** Three-endpoint pattern. See [007_patterns.crud_api.md](007_patterns.crud_api.md).
+
 ```razor
-// GET or POST
+// Three-endpoint pattern (preferred for new work)
+var all = await Helpers.GetOrPost<List<DataObjects.Category>>("api/Data/GetCategories", new List<Guid>());
+var some = await Helpers.GetOrPost<List<DataObjects.Category>>("api/Data/GetCategories", new List<Guid> { id });
+var saved = await Helpers.GetOrPost<List<DataObjects.Category>>("api/Data/SaveCategories", new List<DataObjects.Category> { item });
+var deleted = await Helpers.GetOrPost<DataObjects.BooleanResponse>("api/Data/DeleteCategories", new List<Guid> { id });
+
+// Legacy individual endpoints (existing projects)
 var result = await Helpers.GetOrPost<DataObjects.Category>("api/Data/GetCategory/" + id);
 var saved = await Helpers.GetOrPost<DataObjects.Category>("api/Data/SaveCategory", _category);
 ```

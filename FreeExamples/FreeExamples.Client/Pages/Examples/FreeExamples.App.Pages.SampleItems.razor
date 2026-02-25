@@ -14,77 +14,159 @@
                 <StickyMenuIcon />
             </h1>
 
-            <div class="btn-group mb-2" role="group">
-                <button type="button" class="btn btn-success" @onclick="Add">
-                    <i class="fa-solid fa-plus me-1"></i> Add New
-                </button>
-                <button type="button" class="btn btn-dark" @onclick="Export">
-                    <i class="fa-solid fa-file-csv me-1"></i> Export CSV
-                </button>
-                <button type="button" class="btn btn-dark" @onclick="Refresh">
-                    <i class="fa-solid fa-refresh me-1"></i> Refresh
-                </button>
-            </div>
-        </div>
+            <AboutSection Title="About Sample Items" Subtitle="Learn how web apps show lists, search, filter, add, edit, and delete records" IconClass="fa-solid fa-list">
+                <div class="row">
+                    <div class="col-md-4 mb-2">
+                        <h6 class="text-info"><i class="fa-solid fa-question-circle me-1"></i>What Is This Page?</h6>
+                        <p class="small text-muted mb-0">
+                            This is the most common pattern in web development: a <strong>list of records</strong>.
+                            Think of it like a spreadsheet — you can see all your items, search for specific ones,
+                            filter by category or status, and click a row to edit it. You can also add new items,
+                            delete existing ones, and export everything to a CSV file (a spreadsheet format).
+                            This is called <strong>CRUD</strong>: Create, Read, Update, Delete.
+                        </p>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <h6 class="text-info"><i class="fa-solid fa-lightbulb me-1"></i>What You'll Learn</h6>
+                        <ul class="small text-muted mb-0 ps-3">
+                            <li><strong>Pagination</strong> — splitting a big list into pages (like pages of a book)</li>
+                            <li><strong>Filtering</strong> — narrowing results by typing keywords or selecting categories</li>
+                            <li><strong>Real-time sync</strong> — changes show up in other browser tabs instantly via SignalR</li>
+                            <li><strong>Two-click delete</strong> — preventing accidental deletions by requiring confirmation</li>
+                            <li><strong>CSV export</strong> — turning your data into a spreadsheet file</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <h6 class="text-info"><i class="fa-solid fa-road me-1"></i>How Does It Work?</h6>
+                        <p class="small text-muted mb-0">
+                            The page sends your search/filter choices to the server as a <strong>POST request</strong>
+                            (like filling out a form and clicking submit). The server queries the database, applies
+                            your filters, grabs just one page of results, and sends them back as <strong>JSON</strong>
+                            (a data format computers use to exchange information). Blazor then renders the table
+                            rows from that data — no full page reload needed.
+                        </p>
+                    </div>
+                </div>
+            </AboutSection>
 
-        @* View toggle *@
-        <div class="btn-group mb-3" role="group">
-            <button class="btn @(_viewMode == "table" ? "btn-primary" : "btn-outline-primary")"
-                    @onclick="@(() => _viewMode = "table")">
-                <i class="fa fa-list"></i>
-            </button>
-            <button class="btn @(_viewMode == "card" ? "btn-primary" : "btn-outline-primary")"
-                    @onclick="@(() => _viewMode = "card")">
-                <i class="fa fa-th-large"></i>
-            </button>
-        </div>
-
-        <div class="mb-2 text-muted small">@_items.Count item(s)</div>
-
-        @if (_viewMode == "table") {
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Category</th>
-                        <th>Status</th>
-                        <th>Priority</th>
-                        <th class="text-end">Amount</th>
-                        <th>Enabled</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in _items) {
-                        <tr @onclick="@(() => Edit(item.SampleItemId))" style="cursor:pointer;">
-                            <td>@item.Name</td>
-                            <td>@item.Category</td>
-                            <td><span class="badge @GetStatusBadge(item.Status)">@item.Status</span></td>
-                            <td>@item.Priority</td>
-                            <td class="text-end">@item.Amount.ToString("C")</td>
-                            <td>@Helpers.BooleanToIcon(item.Enabled)</td>
-                        </tr>
+            <div class="mb-2">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-success" @onclick="Add">
+                        <i class="fa-solid fa-plus me-1"></i> Add New
+                    </button>
+                    <button type="button" class="btn btn-dark" @onclick="Export" disabled="@Filter.Loading">
+                        <i class="fa-solid fa-file-csv me-1"></i> Export CSV
+                    </button>
+                    <button type="button" class="btn btn-warning" @onclick="ClearFilter" disabled="@Filter.Loading">
+                        <i class="fa-solid fa-eraser me-1"></i> Clear
+                    </button>
+                    @if (Filter.ShowFilters) {
+                        <button type="button" class="btn btn-dark" @onclick="ToggleShowFilter" disabled="@Filter.Loading">
+                            <i class="fa-solid fa-eye-slash me-1"></i> Hide Filter
+                        </button>
+                    } else {
+                        <button type="button" class="btn btn-dark" @onclick="ToggleShowFilter" disabled="@Filter.Loading">
+                            <i class="fa-solid fa-filter me-1"></i> Show Filter
+                        </button>
                     }
-                </tbody>
-            </table>
-        } else {
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-                @foreach (var item in _items) {
-                    <div class="col">
-                        <div class="card h-100 shadow-sm border-0" @onclick="@(() => Edit(item.SampleItemId))" style="cursor:pointer;">
-                            <div class="card-header bg-white border-bottom-0 py-3">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h6 class="card-title mb-0 text-truncate" style="max-width:200px;">@item.Name</h6>
-                                    <span class="badge @GetStatusBadge(item.Status)">@item.Status</span>
-                                </div>
-                            </div>
-                            <div class="card-body pt-0">
-                                <div class="small text-muted mb-1"><i class="fa fa-folder me-1"></i>@item.Category</div>
-                                <div class="small text-muted"><i class="fa fa-dollar-sign me-1"></i>@item.Amount.ToString("C")</div>
-                            </div>
+                    <button type="button" class="btn btn-dark" @onclick="Refresh" disabled="@Filter.Loading">
+                        <i class="fa-solid fa-refresh me-1"></i> Refresh
+                    </button>
+                </div>
+                <InfoTip Title="Action Buttons"
+                         Description="These buttons perform actions on your data. Add New opens a blank form for a new record. Export CSV downloads all your filtered data as a spreadsheet. Clear resets all your search filters. Show/Hide Filter toggles the search bar. Refresh reloads data from the server. Buttons turn grey (disabled) while loading to prevent double-clicks."
+                         Code="@_codeActionBtn" />
+
+                @if (Filter.ShowFilters && !Filter.Loading) {
+                    <div class="keyword-search mb-2">
+                        <label for="sampleitems-filter-keyword">Search</label>
+                        <div class="fixed-200">
+                            <input type="text"
+                                   id="sampleitems-filter-keyword"
+                                   class="form-control"
+                                   value="@Filter.Keyword"
+                                   @onchange="KeywordChanged"
+                                   placeholder="Search name, description, category..." />
                         </div>
                     </div>
                 }
             </div>
+        </div>
+
+        @if (Filter.ShowFilters) {
+            <div class="row mb-2">
+                <div class="col col-lg-2 col-md-3 col-sm-4 col-12 mb-2">
+                    <label for="sampleitems-filter-status">Status</label>
+                    <select class="form-select" size="5" id="sampleitems-filter-status" @bind="Filter.Status" @bind:after="LoadFilter">
+                        @if (string.IsNullOrWhiteSpace(Filter.Status)) {
+                            <option value="" selected>All</option>
+                        } else {
+                            <option value="">All</option>
+                        }
+                        <option value="Draft">Draft</option>
+                        <option value="Active">Active</option>
+                        <option value="Completed">Completed</option>
+                        <option value="Archived">Archived</option>
+                    </select>
+                </div>
+
+                <div class="col col-lg-2 col-md-3 col-sm-4 col-12 mb-2">
+                    <label for="sampleitems-filter-category">Category</label>
+                    <select class="form-select" size="5" id="sampleitems-filter-category" @bind="Filter.Category" @bind:after="LoadFilter">
+                        @if (string.IsNullOrWhiteSpace(Filter.Category)) {
+                            <option value="" selected>All</option>
+                        } else {
+                            <option value="">All</option>
+                        }
+                        @foreach (var cat in Filter.AvailableCategories) {
+                            <option value="@cat">@cat</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="col col-lg-2 col-md-3 col-sm-4 col-12 mb-2">
+                    <label for="sampleitems-filter-enabled">Enabled</label>
+                    <select class="form-select" size="3" id="sampleitems-filter-enabled" @bind="Filter.Enabled" @bind:after="LoadFilter">
+                        @if (string.IsNullOrWhiteSpace(Filter.Enabled)) {
+                            <option value="" selected>All</option>
+                        } else {
+                            <option value="">All</option>
+                        }
+                        <option value="enabled">Enabled Only</option>
+                        <option value="disabled">Disabled Only</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <div class="form-check form-switch">
+                    <input type="checkbox"
+                        id="sampleitems-filter-IncludeDeletedRecords"
+                        class="form-check-input"
+                        @bind="Filter.IncludeDeletedItems"
+                        @bind:after="LoadFilter" />
+                    <label for="sampleitems-filter-IncludeDeletedRecords" class="form-check-label">
+                        Include Deleted Records
+                    </label>
+                </div>
+            </div>
+        }
+
+        @if (Filter.Loading) {
+            <LoadingMessage />
+        } else {
+            if (Filter.RecordCount == 0) {
+                <div class="text-muted">No items to show.</div>
+            } else {
+                <PagedRecordset ActionHandlers="ActionHandlers"
+                    Configuration="Config"
+                    Formatters="Formatters"
+                    NavigationCallbackHander="NavigationCallbackHandler"
+                    NavigationLocation="PagedRecordset.NavLocation.Both"
+                    RecordData="Data"
+                    RowClasses="_rowClasses"
+                    UseBootstrap="true" />
+            }
         }
     }
 }
@@ -92,11 +174,17 @@
 @code {
     [Parameter] public string? TenantCode { get; set; }
 
+    private List<PagedRecordset.ActionHandler> ActionHandlers = [];
+    private PagedRecordset.Config Config = new();
+    private PagedRecordset.Recordset Data = new();
+    private DataObjects.FilterSampleItems Filter = new();
+    private List<PagedRecordset.Formatter> Formatters = [];
+    private List<string> _rowClasses = [];
+
     private bool _loading = true;
     private bool _loadedData = false;
     private string _pageName = "sampleitems";
-    private string _viewMode = "table";
-    private List<DataObjects.SampleItem> _items = new();
+    private string _codeActionBtn = "<button class=\"btn btn-success\" @onclick=\"Add\">\n    Add New\n</button>";
 
     public void Dispose()
     {
@@ -108,10 +196,11 @@
 
     protected override void OnInitialized()
     {
+        Model.View = _pageName;
         Model.OnChange += OnDataModelUpdated;
-        Model.Subscribers_OnChange[_pageName] = true;
+        if (!Model.Subscribers_OnChange.Contains(_pageName)) { Model.Subscribers_OnChange.Add(_pageName); }
         Model.OnSignalRUpdate += SignalRUpdate;
-        Model.Subscribers_OnSignalRUpdate[_pageName] = true;
+        if (!Model.Subscribers_OnSignalRUpdate.Contains(_pageName)) { Model.Subscribers_OnSignalRUpdate.Add(_pageName); }
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -119,6 +208,19 @@
         if (firstRender) {
             Model.TenantCodeFromUrl = TenantCode;
         }
+
+        Config = new PagedRecordset.Config {
+            TextFirstRecord = Helpers.Text("FirstRecord"),
+            TextLastRecord = Helpers.Text("LastRecord"),
+            TextNextRecord = Helpers.Text("NextRecord"),
+            TextOf = Helpers.Text("Of"),
+            TextPreviousRecord = Helpers.Text("PreviousRecord"),
+            TextRecord = Helpers.Text("Record"),
+            TextRecords = Helpers.Text("Records"),
+            TextRecordsPerPage = Helpers.Text("RecordsPerPage"),
+            TextShowing = Helpers.Text("Showing"),
+            TextShowingAllRecords = Helpers.Text("ShowingAllRecords"),
+        };
 
         if (Model.Loaded && Model.LoggedIn && !_loadedData) {
             _loadedData = true;
@@ -131,50 +233,209 @@
         if (Model.View == _pageName) StateHasChanged();
     }
 
+    private async Task KeywordChanged(ChangeEventArgs e)
+    {
+        Filter.Keyword = e.Value?.ToString();
+        await LoadFilter();
+    }
+
     private async void SignalRUpdate(DataObjects.SignalRUpdate update)
     {
         if ((update.UpdateType == DataObjects.SignalRUpdateType.SampleItemSaved
             || update.UpdateType == DataObjects.SignalRUpdateType.SampleItemDeleted)
             && update.UserId != Model.User.UserId) {
-            await LoadData();
+            await LoadFilter();
         }
     }
 
     private async Task LoadData()
     {
-        var result = await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/GetSampleItems", new List<Guid>());
-        if (result != null) {
-            _items = result;
-        }
+        ActionHandlers = [
+            new PagedRecordset.ActionHandler {
+                CallbackHandler = OnRecordSelected,
+                ActionElement =
+                    "<button type=\"button\" class=\"btn btn-xs btn-primary nowrap action-button\">" +
+                    "<i class=\"fa-solid fa-pen-to-square me-1\"></i>Edit" +
+                    "</button>",
+            },
+        ];
 
-        _loading = false;
-        StateHasChanged();
+        Formatters = [
+            new PagedRecordset.Formatter {
+                DataType = "decimal",
+                CallbackHandler = FormatCurrency,
+            },
+        ];
+
+        await LoadFilter();
     }
 
-    private async Task Refresh() => await LoadData();
+    private async Task LoadFilter()
+    {
+        if (!Model.LoggedIn) return;
+
+        Filter.Loading = true;
+        Filter.TenantId = Model.TenantId;
+
+        if (Filter.RecordsPerPage < 1) {
+            Filter.RecordsPerPage = 10;
+        }
+
+        var results = await Helpers.GetOrPost<DataObjects.FilterSampleItems>("api/Data/GetSampleItemsFiltered", Filter);
+        if (results != null) {
+            Filter = results;
+            Filter.Loading = false;
+            RenderTable();
+            _loading = false;
+            StateHasChanged();
+
+            if (Filter.ShowFilters) {
+                await Helpers.DelayedFocus("sampleitems-filter-keyword");
+            }
+        }
+    }
+
+    private async Task ClearFilter()
+    {
+        Filter.Keyword = null;
+        Filter.Status = null;
+        Filter.Category = null;
+        Filter.Enabled = null;
+        Filter.IncludeDeletedItems = false;
+        Filter.Sort = "name";
+        Filter.SortOrder = "ASC";
+        Filter.Page = 1;
+        await LoadFilter();
+    }
+
+    private void ToggleShowFilter()
+    {
+        Filter.ShowFilters = !Filter.ShowFilters;
+    }
+
+    private async Task Refresh() => await LoadFilter();
+
+    private async void NavigationCallbackHandler(string action, object? o)
+    {
+        switch (action.ToLower()) {
+            case "count":
+                int recordsPerPage = -1;
+                try { recordsPerPage = Convert.ToInt32(o); } catch { }
+                if (recordsPerPage > -1) {
+                    Filter.RecordsPerPage = recordsPerPage;
+                    await LoadFilter();
+                }
+                break;
+
+            case "page":
+                int page = -1;
+                try { page = Convert.ToInt32(o); } catch { }
+                if (page > -1) {
+                    Filter.Page = page;
+                    await LoadFilter();
+                }
+                break;
+
+            case "sort":
+                string dataElementName = string.Empty;
+                try { dataElementName += Convert.ToString(o); } catch { }
+                if (!string.IsNullOrWhiteSpace(dataElementName)) {
+                    string currentSort = Helpers.StringValue(Filter.Sort);
+                    string currentDirection = Helpers.StringValue(Filter.SortOrder);
+
+                    if (currentSort.Equals(dataElementName, StringComparison.OrdinalIgnoreCase)) {
+                        Filter.SortOrder = currentDirection.Equals("ASC", StringComparison.OrdinalIgnoreCase) ? "DESC" : "ASC";
+                    } else {
+                        Filter.Sort = dataElementName;
+                        Filter.SortOrder = "ASC";
+                    }
+                    await LoadFilter();
+                }
+                break;
+        }
+    }
+
+    private void OnRecordSelected(object? record)
+    {
+        if (record != null) {
+            try {
+                var id = Helpers.GetObjectPropertyValue<Guid>(record, "SampleItemId");
+                if (id != Guid.Empty) {
+                    Helpers.NavigateTo("Examples/EditSampleItem/" + id.ToString());
+                }
+            } catch { }
+        }
+    }
 
     private void Add()
     {
         Helpers.NavigateTo("Examples/EditSampleItem/New");
     }
 
-    private void Edit(Guid id)
-    {
-        Helpers.NavigateTo("Examples/EditSampleItem/" + id.ToString());
-    }
-
     private async Task Export()
     {
-        var csv = Helpers.GetCsvData(_items);
-        if (csv != null) {
-            await Helpers.DownloadFileToBrowser("SampleItems_" + Helpers.SafeFileDate() + ".csv", csv);
+        var all = await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/GetSampleItems", new List<Guid>());
+        if (all != null) {
+            var csv = Helpers.GetCsvData(all);
+            if (csv != null) {
+                await Helpers.DownloadFileToBrowser("SampleItems_" + Helpers.SafeFileDate() + ".csv", csv);
+                Model.AddMessage($"Exported {all.Count} item(s) to CSV.", MessageType.Success);
+            }
+        } else {
+            Model.AddMessage("Failed to export items.", MessageType.Danger);
         }
     }
 
-    private static string GetStatusBadge(DataObjects.SampleItemStatus status) => status switch {
-        DataObjects.SampleItemStatus.Active => "bg-success",
-        DataObjects.SampleItemStatus.Completed => "bg-info",
-        DataObjects.SampleItemStatus.Archived => "bg-secondary",
-        _ => "bg-warning text-dark",
-    };
+    private void RenderTable()
+    {
+        var columns = new List<PagedRecordset.Column>();
+        var updatedFilter = Helpers.UpdatePagedRecordsetColumnIcons(Filter);
+        if (updatedFilter.Columns != null && updatedFilter.Columns.Any()) {
+            foreach (var column in updatedFilter.Columns) {
+                columns.Add(new PagedRecordset.Column {
+                    Align = column.Align,
+                    BooleanIcon = column.BooleanIcon,
+                    Class = column.Class,
+                    DataElementName = column.DataElementName,
+                    DataType = column.DataType,
+                    Label = column.Label,
+                    Sortable = column.Sortable,
+                    TipText = column.TipText,
+                });
+            }
+        }
+
+        // Row classes for deleted/disabled items
+        _rowClasses = [];
+        if (Filter.Records != null) {
+            foreach (var record in Filter.Records) {
+                if (record.Deleted) {
+                    _rowClasses.Add("item-deleted");
+                } else if (!record.Enabled) {
+                    _rowClasses.Add("disabled");
+                } else {
+                    _rowClasses.Add("");
+                }
+            }
+        }
+
+        Data = new PagedRecordset.Recordset {
+            Columns = columns,
+            CurrentPage = Filter.Page,
+            TotalPages = Filter.PageCount,
+            TotalRecords = Filter.RecordCount,
+            Records = Filter.Records,
+            RecordsPerPage = Filter.RecordsPerPage,
+            Sort = Filter.Sort,
+            SortOrder = Filter.SortOrder,
+        };
+    }
+
+    private static string FormatCurrency(string? value)
+    {
+        if (!string.IsNullOrWhiteSpace(value) && decimal.TryParse(value, out var d)) {
+            return d.ToString("C");
+        }
+        return value ?? "";
+    }
 }

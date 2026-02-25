@@ -1,6 +1,7 @@
 using FreeExamples.Client.Pages;
 using FreeExamples.Components;
 using FreeExamples.Server.Hubs;
+using FreeExamples.Server.Middleware;
 using Microsoft.AspNetCore.Components;
 using Radzen;
 using System.Reflection;
@@ -104,6 +105,8 @@ namespace FreeExamples
             #endregion
 
             builder.Services.AddSingleton<IServiceProvider>(provider => provider);
+            builder.Services.AddSingleton<FreeExamples.Server.Services.GitBrowserService>();
+            builder.Services.AddSingleton<FreeExamples.Server.Services.ApiKeyDemoService>();
 
             bool backgroundServiceEnabled = builder.Configuration.GetValue<bool>("BackgroundService:Enabled");
             if (backgroundServiceEnabled) {
@@ -231,6 +234,9 @@ namespace FreeExamples
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            // API Key middleware for demo external endpoints (pattern from FreeGLBA)
+            app.UseApiKeyDemo();
 
             app.UseAntiforgery();
 

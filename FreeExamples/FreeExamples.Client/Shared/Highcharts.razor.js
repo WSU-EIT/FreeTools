@@ -37,22 +37,14 @@ function LoadCssResource(url, existingClass, callback) {
     // Only load if the existingClass to test for is not found
     var exists = false;
 
-    // Check to see if this script is already loaded.
-    var scriptName = FileNameFromUrl(url);
-    if (scriptName != undefined && scriptName != null && scriptName != "") {
-        // Check to see if this script is already loaded.
-        $("script").each(function () {
-            var source = $(this).attr("src");
-            if (source != undefined && source != null && source != "") {
-                var sourceScriptName = FileNameFromUrl(source);
-                if (sourceScriptName != undefined && sourceScriptName != null && sourceScriptName != "") {
-                    if (scriptName.toLowerCase() == sourceScriptName.toLowerCase()) {
-                        exists = true;
-                    }
-                }
-            }
-        });
-    }
+    // Check to see if this stylesheet is already loaded.
+    var links = document.querySelectorAll("link[rel='stylesheet']");
+    links.forEach(function (link) {
+        var href = link.getAttribute("href");
+        if (href && href.indexOf(FileNameFromUrl(url)) > -1) {
+            exists = true;
+        }
+    });
 
     if (exists) {
         if (callback != undefined && callback != null) {

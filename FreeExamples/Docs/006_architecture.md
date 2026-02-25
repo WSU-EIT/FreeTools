@@ -41,6 +41,9 @@ This documentation describes FreeCRM patterns. FreeCRM-main is the authoritative
 
 Architecture guides explain the high-level design decisions in FreeCRM, clarify what's custom vs standard .NET, and document the overall structure of the framework.
 
+> **API Convention:** We use a three-endpoint CRUD pattern — **GetMany**, **SaveMany**, **DeleteMany** — per entity.
+> See [007_patterns.crud_api.md](../007_patterns.crud_api.md) for the full pattern.
+
 ---
 
 ## Available Guides

@@ -314,6 +314,30 @@
         ValueHasChanged();
     }
 
+    /// <summary>
+    /// Sets the language of the editor at runtime.
+    /// </summary>
+    public async Task SetLanguage(string language)
+    {
+        Language = language;
+
+        if (String.IsNullOrWhiteSpace(ValueToDiff)) {
+            if (_editor != null) {
+                var model = await _editor.GetModel();
+                if (model != null) {
+                    await BlazorMonaco.Editor.Global.SetModelLanguage(jsRuntime, model, language);
+                }
+            }
+        } else {
+            if (_diffEditor != null) {
+                var model = await _diffEditor.ModifiedEditor.GetModel();
+                if (model != null) {
+                    await BlazorMonaco.Editor.Global.SetModelLanguage(jsRuntime, model, language);
+                }
+            }
+        }
+    }
+
     protected async void TimerElapsed(Object? source, System.Timers.ElapsedEventArgs e)
     {
         if (String.IsNullOrEmpty(ValueToDiff)) {

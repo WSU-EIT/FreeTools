@@ -13,4 +13,7 @@
   <Project Path="FreeExamples.EFModels/FreeExamples.EFModels.csproj" Id="7C90F2AB-0E9E-459C-9048-36AE53CD53F3" />
   <Project Path="FreeExamples.Plugins/FreeExamples.Plugins.csproj" Id="79631653-8FD4-450B-AAAB-4D9713903D33" />
   <Project Path="FreeExamples/FreeExamples.csproj" />
+  <Project Path="FreeExamples.NuGetClient/FreeExamples.NuGetClient.csproj" />
+  <Project Path="FreeExamples.NuGetClientPublisher/FreeExamples.NuGetClientPublisher.csproj" />
+  <Project Path="FreeExamples.TestClient/FreeExamples.TestClient.csproj" />
 </Solution>

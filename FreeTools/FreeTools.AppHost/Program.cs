@@ -15,8 +15,8 @@ var keepBackupsOption = new Option<int>(
 
 var targetOption = new Option<string>(
     name: "--target",
-    description: "Target project to analyze (default: 'BlazorApp1')",
-    getDefaultValue: () => "BlazorApp1");
+    description: "Target project to analyze (default: 'FreeExamples')",
+    getDefaultValue: () => "FreeExamples");
 
 var rootCommand = new RootCommand("FreeTools AppHost - Run analysis tools against Blazor web projects")
 {
@@ -27,7 +27,7 @@ var rootCommand = new RootCommand("FreeTools AppHost - Run analysis tools agains
 
 rootCommand.SetHandler((skipCleanup, keepBackups, target) =>
 {
-    AppHostRunner.Run(skipCleanup, keepBackups, target);
+    AppHostRunner.Run(args, skipCleanup, keepBackups, target);
 }, skipCleanupOption, keepBackupsOption, targetOption);
 
 await rootCommand.InvokeAsync(args);
@@ -42,9 +42,9 @@ static class AppHostRunner
     private const int ToolStartupDelayMs = 2000;        // Delay between tool launches
     private const int HttpToolDelayMs = 3000;           // Extra delay for HTTP-dependent tools
 
-    public static void Run(bool skipCleanup, int keepBackups, string target)
+    public static void Run(string[] hostArgs, bool skipCleanup, int keepBackups, string target)
     {
-        var builder = DistributedApplication.CreateBuilder();
+        var builder = DistributedApplication.CreateBuilder(hostArgs);
 
         // =============================================================================
         // Configuration
@@ -54,8 +54,8 @@ static class AppHostRunner
         var docsRoot = Path.Combine(toolsRoot, "Docs");
         var runsRoot = Path.Combine(docsRoot, "runs");
 
-        // Define repo root (BlazorApp1 is a sibling folder to FreeTools, not inside it)
-        // toolsRoot = .../FreeTools/FreeTools/  -> go up one level to find BlazorApp1 and .git
+        // Define repo root (FreeExamples is a sibling folder to FreeTools)
+        // toolsRoot = .../FreeTools/FreeTools/  -> go up one level to find FreeExamples and .git
         var repoRoot = Path.GetDirectoryName(toolsRoot) ?? toolsRoot;
         var projectRoot = Path.GetFullPath(Path.Combine(repoRoot, target));
 
@@ -75,12 +75,27 @@ static class AppHostRunner
         Console.WriteLine("------------------------------------------------------------");
 
         // =============================================================================
-        // Web App - Run BlazorApp1 for HTTP testing
+        // Web App - Run FreeExamples for HTTP testing
+        // Pin to the same HTTPS port as launchSettings.json so the database
+        // ApplicationURL stays consistent across runs.
+        // LocalModeUrl overrides the DB ApplicationURL setting — ensures App.razor
+        // builds correct absolute URLs for CSS/JS resources (_content/MudBlazor, etc.)
         // =============================================================================
-        var webApp = builder.AddProject<Projects.BlazorApp1>("blazorapp1-webapp")
-            .WithEnvironment("ASPNETCORE_ENVIRONMENT", "Development");
-        
-        Console.WriteLine("  [WebApp] BlazorApp1 - Development mode");
+        var webApp = builder.AddProject<Projects.FreeExamples>("freeexamples-webapp")
+            .WithEnvironment("ASPNETCORE_ENVIRONMENT", "Development")
+            .WithEnvironment("LocalModeUrl", "https://localhost:7271/")
+            .WithEndpoint("https", endpoint =>
+            {
+                endpoint.Port = 7271;
+                endpoint.IsProxied = false;
+            })
+            .WithEndpoint("http", endpoint =>
+            {
+                endpoint.Port = 5111;
+                endpoint.IsProxied = false;
+            });
+
+        Console.WriteLine("  [WebApp] FreeExamples - https://localhost:7271 (fixed port)");
 
         // =============================================================================
         // Static Analysis (no web app dependency)
@@ -131,6 +146,7 @@ static class AppHostRunner
             .WithEnvironment("CSV_PATH", projectConfig.PagesCsv)
             .WithEnvironment("OUTPUT_DIR", projectConfig.SnapshotsDir)
             .WithEnvironment("MAX_THREADS", "10")
+            .WithEnvironment("TENANT_CODE", "tenant1")
             .WithEnvironment("START_DELAY_MS", (WebAppStartupDelayMs + HttpToolDelayMs).ToString())
             .WaitFor(webApp)
             .WaitForCompletion(endpointMapper);
@@ -141,6 +157,7 @@ static class AppHostRunner
             .WithEnvironment("OUTPUT_DIR", projectConfig.SnapshotsDir)
             .WithEnvironment("SCREENSHOT_BROWSER", "chromium")
             .WithEnvironment("MAX_THREADS", "10")
+            .WithEnvironment("TENANT_CODE", "tenant1")
             .WithEnvironment("START_DELAY_MS", (WebAppStartupDelayMs + HttpToolDelayMs).ToString())
             .WaitFor(webApp)
             .WaitForCompletion(endpointMapper);

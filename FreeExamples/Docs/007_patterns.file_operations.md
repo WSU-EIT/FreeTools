@@ -4,6 +4,9 @@
 
 **Source:** nForm (UploadFile component), Helpdesk4 (CSV export), FreeCRM-main (DownloadFileToBrowser)
 
+> **API Convention:** File data should always come from API endpoints, never generated in the browser.
+> For CRUD operations, follow the three-endpoint pattern per [007_patterns.crud_api.md](007_patterns.crud_api.md).
+
 ---
 
 ## Pattern 1: File Upload with MudBlazor Drag-Drop

@@ -1,4 +1,4 @@
-Ôªøusing System.Collections.Concurrent;
+using System.Collections.Concurrent;
 using System.Text.Json;
 using FreeTools.Core;
 using Microsoft.Playwright;
@@ -35,7 +35,10 @@ internal class Program
         // Login credentials (configurable via environment)
         var loginUsername = Environment.GetEnvironmentVariable("LOGIN_USERNAME") ?? DefaultUsername;
         var loginPassword = Environment.GetEnvironmentVariable("LOGIN_PASSWORD") ?? DefaultPassword;
-        
+
+        // Tenant code for login (FreeCRM apps require a tenant code in the URL to authenticate)
+        var tenantCode = Environment.GetEnvironmentVariable("TENANT_CODE") ?? "tenant1";
+
         // P1: Configurable settle delay (default 3000ms, up from 1500ms)
         var settleDelayEnv = Environment.GetEnvironmentVariable("PAGE_SETTLE_DELAY_MS");
         var settleDelay = int.TryParse(settleDelayEnv, out var sd) && sd > 0 ? sd : 3000;
@@ -56,6 +59,7 @@ internal class Program
         ConsoleOutput.PrintConfig("MAX_THREADS", maxThreads.ToString());
         ConsoleOutput.PrintConfig("SETTLE_DELAY", $"{settleDelay}ms");
         ConsoleOutput.PrintConfig("LOGIN_USER", loginUsername);
+        ConsoleOutput.PrintConfig("TENANT_CODE", tenantCode);
         ConsoleOutput.PrintDivider();
 
         if (!File.Exists(csvPath))
@@ -64,8 +68,8 @@ internal class Program
             return 1;
         }
 
-        // Parse routes with auth info
-        var (routeInfos, skippedRoutes) = await ParseRoutesWithAuthAsync(csvPath);
+        // Parse routes with auth info, substituting {TenantCode} with the configured value
+        var (routeInfos, skippedRoutes) = await ParseRoutesWithAuthAsync(csvPath, tenantCode);
 
         foreach (var skipped in skippedRoutes)
         {
@@ -93,10 +97,10 @@ internal class Program
 
         try
         {
-            Console.WriteLine("[1/4] Ensuring Playwright browsers are installed...");
+            Console.WriteLine("[1/5] Ensuring Playwright browsers are installed...");
             await EnsurePlaywrightBrowsersInstalledAsync(browserName);
-            
-            Console.WriteLine("[2/4] Initializing Playwright...");
+
+            Console.WriteLine("[2/5] Initializing Playwright...");
             using var playwright = await Playwright.CreateAsync();
 
             var browserType = browserName switch
@@ -106,74 +110,36 @@ internal class Program
                 _ => playwright.Chromium
             };
 
-            Console.WriteLine($"[3/4] Launching {browserName} (headless)...");
+            Console.WriteLine($"[3/5] Launching {browserName} (headless)...");
             await using var browser = await browserType.LaunchAsync(new BrowserTypeLaunchOptions
             {
                 Headless = true
             });
 
-            Console.WriteLine("[4/4] Capturing screenshots for each route...");
+            // =================================================================
+            // PASS 1: Capture all pages UNAUTHENTICATED ? default.png
+            // =================================================================
+            Console.WriteLine("[4/5] Pass 1: Capturing all pages (unauthenticated)...");
             Console.WriteLine();
 
             var totalCount = routeInfos.Count;
-            var errorCount = 0;
-            var httpErrorCount = 0;
-            var successCount = 0;
-            var retryCount = 0;
-            var suspiciousCount = 0;
-            var authFlowCount = 0;
-
-            // Track results by index for ordered output
-            var results = new ConcurrentDictionary<int, ScreenshotResult>();
+            var pass1Results = new ConcurrentDictionary<int, ScreenshotResult>();
             var nextIndexToWrite = 0;
             var writeLock = new object();
 
             var semaphore = new SemaphoreSlim(maxThreads);
 
-            var tasks = routeInfos.Select((routeInfo, index) => Task.Run(async () =>
+            var pass1Tasks = routeInfos.Select((routeInfo, index) => Task.Run(async () =>
             {
                 await semaphore.WaitAsync();
                 try
                 {
-                    var result = await CaptureScreenshotAsync(
+                    var result = await CapturePublicScreenshotAsync(
                         browser, routeInfo, index, totalCount, baseUrl, outputDir,
-                        viewportWidth, viewportHeight, settleDelay,
-                        loginUsername, loginPassword);
+                        viewportWidth, viewportHeight, settleDelay);
 
-                    // Store result
-                    results[index] = result;
-
-                    // Update counters
-                    if (result.IsSuccess)
-                    {
-                        Interlocked.Increment(ref successCount);
-                    }
-                    else if (result.IsHttpError)
-                    {
-                        Interlocked.Increment(ref httpErrorCount);
-                    }
-                    else if (result.IsError)
-                    {
-                        Interlocked.Increment(ref errorCount);
-                    }
-                    
-                    if (result.RetryAttempted)
-                    {
-                        Interlocked.Increment(ref retryCount);
-                    }
-                    
-                    if (result.IsSuspiciouslySmall)
-                    {
-                        Interlocked.Increment(ref suspiciousCount);
-                    }
-                    
-                    if (result.AuthFlowCompleted)
-                    {
-                        Interlocked.Increment(ref authFlowCount);
-                    }
-
-                    // Try to write results in order
-                    WriteResultsInOrder(results, ref nextIndexToWrite, writeLock);
+                    pass1Results[index] = result;
+                    WriteResultsInOrder(pass1Results, ref nextIndexToWrite, writeLock, writeAction: WritePublicResult);
                 }
                 finally
                 {
@@ -181,31 +147,102 @@ internal class Program
                 }
             })).ToArray();
 
-            await Task.WhenAll(tasks);
+            await Task.WhenAll(pass1Tasks);
+            WriteResultsInOrder(pass1Results, ref nextIndexToWrite, writeLock, flush: true, writeAction: WritePublicResult);
 
-            // Write any remaining results
-            WriteResultsInOrder(results, ref nextIndexToWrite, writeLock, flush: true);
+            var pass1Success = pass1Results.Values.Count(r => r.IsSuccess);
+            var pass1Suspicious = pass1Results.Values.Count(r => r.IsSuspiciouslySmall);
+            Console.WriteLine();
+            Console.WriteLine($"  Pass 1 complete: {pass1Success}/{totalCount} successful, {pass1Suspicious} suspicious");
 
+            // =================================================================
+            // LOGIN: Authenticate once, save session for reuse
+            // =================================================================
+            Console.WriteLine();
+            Console.WriteLine("[5/5] Pass 2: Logging in and capturing all pages (authenticated)...");
+
+            var storageState = await PerformLoginAsync(
+                browser, baseUrl, settleDelay,
+                viewportWidth, viewportHeight,
+                loginUsername, loginPassword, outputDir,
+                tenantCode);
+
+            if (storageState == null)
+            {
+                Console.WriteLine("  ?? Login failed ó skipping authenticated pass.");
+                Console.WriteLine("     Authenticated screenshots will not be available.");
+            }
+            else
+            {
+                // =================================================================
+                // PASS 2: Capture all pages AUTHENTICATED ? logged-in.png
+                // =================================================================
+                Console.WriteLine();
+
+                var pass2Results = new ConcurrentDictionary<int, ScreenshotResult>();
+                var nextIndex2 = 0;
+                var writeLock2 = new object();
+
+                var pass2Tasks = routeInfos.Select((routeInfo, index) => Task.Run(async () =>
+                {
+                    await semaphore.WaitAsync();
+                    try
+                    {
+                        var result = await CaptureAuthenticatedScreenshotAsync(
+                            browser, routeInfo, index, totalCount, baseUrl, outputDir,
+                            viewportWidth, viewportHeight, settleDelay, storageState);
+
+                        pass2Results[index] = result;
+                        WriteResultsInOrder(pass2Results, ref nextIndex2, writeLock2, writeAction: WriteAuthenticatedResult);
+                    }
+                    finally
+                    {
+                        semaphore.Release();
+                    }
+                })).ToArray();
+
+                await Task.WhenAll(pass2Tasks);
+                WriteResultsInOrder(pass2Results, ref nextIndex2, writeLock2, flush: true, writeAction: WriteAuthenticatedResult);
+
+                var pass2Success = pass2Results.Values.Count(r => r.IsSuccess);
+                var pass2Suspicious = pass2Results.Values.Count(r => r.IsSuspiciouslySmall);
+                Console.WriteLine();
+                Console.WriteLine($"  Pass 2 complete: {pass2Success}/{totalCount} successful, {pass2Suspicious} suspicious");
+
+                // Merge pass 2 data into pass 1 results for metadata
+                foreach (var kvp in pass2Results)
+                {
+                    if (pass1Results.TryGetValue(kvp.Key, out var pass1Result))
+                    {
+                        pass1Result.LoggedInScreenshotPath = kvp.Value.ScreenshotPath;
+                        pass1Result.LoggedInFileSize = kvp.Value.FileSize;
+                        pass1Result.LoggedInIsSuspiciouslySmall = kvp.Value.IsSuspiciouslySmall;
+                        pass1Result.LoggedInStatusCode = kvp.Value.StatusCode;
+                        pass1Result.LoginRedirectPath = kvp.Value.LoginRedirectPath;
+                    }
+                }
+            }
+
+            // Write metadata for all routes (includes both pass results)
+            foreach (var kvp in pass1Results.OrderBy(k => k.Key))
+            {
+                var routeInfo = routeInfos[kvp.Key];
+                await WriteMetadataAsync(outputDir, routeInfo.Route, kvp.Value);
+            }
+
+            // Summary
             Console.WriteLine();
             ConsoleOutput.PrintDivider("Summary");
-            Console.WriteLine($"Screenshot capture complete. Processed {totalCount} routes:");
-            Console.WriteLine($"  ‚úÖ Successful (2xx/3xx): {successCount}");
-            Console.WriteLine($"  üîê Auth flows completed: {authFlowCount}");
-            Console.WriteLine($"  ‚ùå HTTP errors (4xx/5xx): {httpErrorCount}");
-            Console.WriteLine($"  ‚ö†Ô∏è Browser/timeout errors: {errorCount}");
-            Console.WriteLine($"  üîÑ Retried (small file): {retryCount}");
-            Console.WriteLine($"  ‚ö†Ô∏è Suspicious (<10KB): {suspiciousCount}");
-
-            if (errorCount > 0)
+            Console.WriteLine($"Two-pass screenshot capture complete for {totalCount} routes:");
+            Console.WriteLine($"  Pass 1 (public):  {pass1Success}/{totalCount} successful");
+            if (storageState != null)
             {
-                Console.WriteLine();
-                Console.WriteLine("WARNING: Some browser/timeout errors occurred (non-fatal).");
+                var p2s = pass1Results.Values.Count(r => r.LoggedInScreenshotPath != null);
+                Console.WriteLine($"  Pass 2 (auth):    {p2s}/{totalCount} successful");
             }
-            
-            if (suspiciousCount > 0)
+            else
             {
-                Console.WriteLine();
-                Console.WriteLine("WARNING: Some screenshots are suspiciously small and may be blank.");
+                Console.WriteLine($"  Pass 2 (auth):    SKIPPED (login failed)");
             }
 
             Console.WriteLine();
@@ -222,15 +259,17 @@ internal class Program
 
     /// <summary>
     /// Parse routes from CSV including the RequiresAuth flag.
+    /// Substitutes {TenantCode} with the actual tenant code before checking for parameters.
+    /// Deduplicates so tenant-code routes (e.g. /tenant1/About) replace bare routes (e.g. /About).
     /// CSV format: FilePath,Route,RequiresAuth,Project
     /// </summary>
-    private static async Task<(List<RouteInfo> routes, List<string> skipped)> ParseRoutesWithAuthAsync(string csvPath)
+    private static async Task<(List<RouteInfo> routes, List<string> skipped)> ParseRoutesWithAuthAsync(string csvPath, string tenantCode)
     {
-        var routes = new List<RouteInfo>();
+        var routeMap = new Dictionary<string, RouteInfo>(StringComparer.OrdinalIgnoreCase);
         var skipped = new List<string>();
-        
+
         var lines = await File.ReadAllLinesAsync(csvPath);
-        
+
         for (int i = 1; i < lines.Length; i++)
         {
             var line = lines[i];
@@ -241,27 +280,72 @@ internal class Program
             if (parts.Length < 3)
                 continue;
 
-            var route = parts[1].Trim('"').Trim();
-            if (string.IsNullOrWhiteSpace(route))
+            var rawRoute = parts[1].Trim('"').Trim();
+            if (string.IsNullOrWhiteSpace(rawRoute))
                 continue;
 
             var requiresAuth = parts.Length >= 3 && 
                 parts[2].Trim().Equals("true", StringComparison.OrdinalIgnoreCase);
 
+            // Substitute {TenantCode} with the actual tenant code value
+            var route = rawRoute;
+            bool hadTenantCode = false;
+            if (!string.IsNullOrWhiteSpace(tenantCode) && route.Contains("{TenantCode}", StringComparison.OrdinalIgnoreCase))
+            {
+                route = route.Replace("{TenantCode}", tenantCode, StringComparison.OrdinalIgnoreCase);
+                hadTenantCode = true;
+            }
+
+            // Skip routes that still have other parameters (e.g. {itemid}, {userid})
             if (RouteParser.HasParameter(route))
             {
-                skipped.Add(route);
+                skipped.Add(rawRoute);
+                continue;
             }
-            else
+
+            // Deduplicate: tenant-code routes take priority over bare routes.
+            // e.g. /tenant1/About wins over /About (same page, but tenant-code version
+            // ensures the app resolves the correct tenant).
+            if (hadTenantCode)
             {
-                routes.Add(new RouteInfo { Route = route, RequiresAuth = requiresAuth });
+                // This is a tenant-code route ó always add/overwrite
+                routeMap[route] = new RouteInfo { Route = route, RequiresAuth = requiresAuth };
+            }
+            else if (!routeMap.ContainsKey(route))
+            {
+                // Bare route ó only add if no tenant-code version exists yet.
+                // Also check if a tenant-prefixed version is already in the map.
+                var tenantPrefixed = $"/{tenantCode}{route}";
+                if (!routeMap.ContainsKey(tenantPrefixed))
+                {
+                    routeMap[route] = new RouteInfo { Route = route, RequiresAuth = requiresAuth };
+                }
             }
         }
 
+        // Second pass: remove bare routes that now have a tenant-code equivalent
+        var bareToRemove = new List<string>();
+        foreach (var kvp in routeMap)
+        {
+            var r = kvp.Key;
+            if (!string.IsNullOrWhiteSpace(tenantCode) && !r.StartsWith($"/{tenantCode}", StringComparison.OrdinalIgnoreCase))
+            {
+                var tenantVersion = $"/{tenantCode}{r}";
+                if (routeMap.ContainsKey(tenantVersion))
+                    bareToRemove.Add(r);
+            }
+        }
+        foreach (var key in bareToRemove)
+            routeMap.Remove(key);
+
+        var routes = routeMap.Values.OrderBy(r => r.Route).ToList();
         return (routes, skipped);
     }
 
-    private static async Task<ScreenshotResult> CaptureScreenshotAsync(
+    /// <summary>
+    /// Pass 1: Capture a single page unauthenticated ? default.png
+    /// </summary>
+    private static async Task<ScreenshotResult> CapturePublicScreenshotAsync(
         IBrowser browser,
         RouteInfo routeInfo,
         int index,
@@ -270,9 +354,7 @@ internal class Program
         string outputDir,
         int? viewportWidth,
         int? viewportHeight,
-        int settleDelay,
-        string loginUsername,
-        string loginPassword)
+        int settleDelay)
     {
         var result = new ScreenshotResult
         {
@@ -284,7 +366,10 @@ internal class Program
             CapturedAt = DateTime.UtcNow
         };
 
-        var contextOptions = new BrowserNewContextOptions();
+        var contextOptions = new BrowserNewContextOptions
+        {
+            IgnoreHTTPSErrors = true
+        };
         if (viewportWidth.HasValue && viewportHeight.HasValue)
         {
             contextOptions.ViewportSize = new ViewportSize
@@ -300,8 +385,7 @@ internal class Program
             var page = await context.NewPageAsync();
             var url = RouteParser.BuildUrl(baseUrl, routeInfo.Route);
             result.Url = url;
-            
-            // P2: Capture console errors
+
             List<string> consoleErrors = [];
             page.Console += (_, msg) =>
             {
@@ -311,7 +395,6 @@ internal class Program
 
             try
             {
-                // Navigate to the page
                 var response = await page.GotoAsync(url, new PageGotoOptions
                 {
                     WaitUntil = WaitUntilState.NetworkIdle,
@@ -319,51 +402,31 @@ internal class Program
                 });
 
                 result.StatusCode = response?.Status ?? 0;
+                result.IsSuccess = result.StatusCode >= 200 && result.StatusCode < 400;
+                result.IsHttpError = result.StatusCode >= 400;
 
-                if (result.StatusCode >= 200 && result.StatusCode < 400)
-                {
-                    result.IsSuccess = true;
-                }
-                else if (result.StatusCode >= 400)
-                {
-                    result.IsHttpError = true;
-                }
-
-                // Wait for page to settle
                 await page.WaitForTimeoutAsync(settleDelay);
 
-                // Check if this is an auth page and we need to do the login flow
-                // OR if we were redirected to a login page (common for [Authorize] pages)
-                if (routeInfo.RequiresAuth)
+                // Simple screenshot ó no auth flow, just capture what we see
+                var screenshotPath = PathSanitizer.GetOutputFilePath(outputDir, routeInfo.Route, "default.png");
+                PathSanitizer.EnsureDirectoryExists(screenshotPath);
+                await page.ScreenshotAsync(new PageScreenshotOptions { Path = screenshotPath, FullPage = true });
+
+                var fi = new FileInfo(screenshotPath);
+
+                // Retry if suspiciously small
+                if (fi.Length < SuspiciousFileSizeThreshold)
                 {
-                    // For auth-required pages, always try the auth flow
-                    // This handles redirects to login pages
-                    await CaptureAuthFlowAsync(page, routeInfo.Route, outputDir, settleDelay, 
-                        loginUsername, loginPassword, result);
-                }
-                else
-                {
-                    // For public pages, check if we somehow ended up on a login page
-                    // (e.g., session expired, unexpected redirect)
-                    var hasLoginForm = await HasLoginFormAsync(page);
-                    if (hasLoginForm)
-                    {
-                        // We got redirected to login unexpectedly - capture the auth flow
-                        result.AuthFlowNote = "Redirected to login (unexpected)";
-                        await CaptureAuthFlowAsync(page, routeInfo.Route, outputDir, settleDelay,
-                            loginUsername, loginPassword, result);
-                    }
-                    else
-                    {
-                        // Standard single screenshot for public pages
-                        await CaptureSingleScreenshotAsync(page, routeInfo.Route, outputDir, result);
-                    }
+                    result.RetryAttempted = true;
+                    await page.WaitForTimeoutAsync(RetryExtraDelayMs);
+                    await page.ScreenshotAsync(new PageScreenshotOptions { Path = screenshotPath, FullPage = true });
+                    fi = new FileInfo(screenshotPath);
                 }
 
+                result.ScreenshotPath = screenshotPath;
+                result.FileSize = fi.Length;
+                result.IsSuspiciouslySmall = fi.Length < SuspiciousFileSizeThreshold;
                 result.ConsoleErrors = consoleErrors;
-                
-                // Write metadata file for reporter
-                await WriteMetadataAsync(outputDir, routeInfo.Route, result);
             }
             catch (TimeoutException)
             {
@@ -387,77 +450,331 @@ internal class Program
     }
 
     /// <summary>
-    /// Capture a three-step auth flow: 1) Initial page, 2) Form filled, 3) After login
+    /// Perform login once and return the browser storage state for reuse.
+    /// Navigates to /Login, completes the login flow, returns the serialized storage state.
+    /// Returns null if login fails.
     /// </summary>
-    private static async Task CaptureAuthFlowAsync(
-        IPage page,
-        string route,
-        string outputDir,
+    private static async Task<string?> PerformLoginAsync(
+        IBrowser browser,
+        string baseUrl,
         int settleDelay,
+        int? viewportWidth,
+        int? viewportHeight,
         string username,
         string password,
-        ScreenshotResult result)
+        string outputDir,
+        string tenantCode)
     {
-        // Step 1: Screenshot the initial page (likely login form or redirect)
-        var step1Path = PathSanitizer.GetOutputFilePath(outputDir, route, "1-initial.png");
-        PathSanitizer.EnsureDirectoryExists(step1Path);
-        await page.ScreenshotAsync(new PageScreenshotOptions { Path = step1Path, FullPage = true });
-        result.AuthStep1Path = step1Path;
-
-        // Try to find and fill login form
-        var loginFormFound = await TryFillLoginFormAsync(page, username, password);
-        
-        if (loginFormFound)
+        var contextOptions = new BrowserNewContextOptions
         {
-            // Step 2: Screenshot with form filled (before submit)
-            await page.WaitForTimeoutAsync(500); // Brief pause to show filled form
-            var step2Path = PathSanitizer.GetOutputFilePath(outputDir, route, "2-filled.png");
-            await page.ScreenshotAsync(new PageScreenshotOptions { Path = step2Path, FullPage = true });
-            result.AuthStep2Path = step2Path;
-
-            // Submit the form
-            await SubmitLoginFormAsync(page);
-            
-            // Wait for navigation/response
-            await page.WaitForTimeoutAsync(settleDelay);
-            
-            // Step 3: Screenshot the result (either logged in page or error)
-            var step3Path = PathSanitizer.GetOutputFilePath(outputDir, route, "3-result.png");
-            await page.ScreenshotAsync(new PageScreenshotOptions { Path = step3Path, FullPage = true });
-            result.AuthStep3Path = step3Path; // Primary screenshot is the final result
-            
-            var fi = new FileInfo(step3Path);
-            result.FileSize = fi.Length;
-            result.IsSuspiciouslySmall = fi.Length < SuspiciousFileSizeThreshold;
-            result.AuthFlowCompleted = true;
+            IgnoreHTTPSErrors = true
+        };
+        if (viewportWidth.HasValue && viewportHeight.HasValue)
+        {
+            contextOptions.ViewportSize = new ViewportSize
+            {
+                Width = viewportWidth.Value,
+                Height = viewportHeight.Value
+            };
         }
-        else
+
+        var context = await browser.NewContextAsync(contextOptions);
+        try
         {
-            // No login form found - might already be redirected or different auth mechanism
-            // Just save the initial screenshot as the default
-            var defaultPath = PathSanitizer.GetOutputFilePath(outputDir, route, "default.png");
-            PathSanitizer.EnsureDirectoryExists(defaultPath);
-            await page.ScreenshotAsync(new PageScreenshotOptions { Path = defaultPath, FullPage = true });
-            result.ScreenshotPath = defaultPath;
-            
-            var fi = new FileInfo(defaultPath);
-            result.FileSize = fi.Length;
-            result.IsSuspiciouslySmall = fi.Length < SuspiciousFileSizeThreshold;
-            result.AuthFlowCompleted = false;
-            result.AuthFlowNote = "No login form detected";
+            var page = await context.NewPageAsync();
+
+            // Capture browser console messages ó critical for diagnosing WASM boot failures
+            List<string> consoleErrors = [];
+            page.Console += (_, msg) =>
+            {
+                if (msg.Type == "error" || msg.Type == "warning")
+                    consoleErrors.Add($"[{msg.Type}] {msg.Text}");
+            };
+
+            // Use tenant code in login URL ó FreeCRM apps need this to resolve the tenant
+            var loginRoute = string.IsNullOrWhiteSpace(tenantCode) ? "/Login" : $"/{tenantCode}/Login";
+            var loginUrl = RouteParser.BuildUrl(baseUrl, loginRoute);
+
+            Console.WriteLine($"  Navigating to {loginUrl}...");
+            var response = await page.GotoAsync(loginUrl, new PageGotoOptions
+            {
+                WaitUntil = WaitUntilState.NetworkIdle,
+                Timeout = 60000
+            });
+            Console.WriteLine($"  HTTP {response?.Status} {response?.StatusText}");
+
+            // Blazor WASM needs time to download assemblies, boot the runtime,
+            // resolve the tenant from the URL, and render the login component.
+            // Wait for the login page content to actually appear in the DOM.
+            Console.WriteLine("  Waiting for Blazor WASM to initialize...");
+            try
+            {
+                // Wait for the login-page div (wraps all login content) ó up to 30s for WASM cold start
+                await page.WaitForSelectorAsync(".login-page", new PageWaitForSelectorOptions { Timeout = 30000 });
+                Console.WriteLine("  ? Login page rendered");
+            }
+            catch (TimeoutException)
+            {
+                Console.WriteLine("  ?? Login page .login-page div not found after 30s, continuing anyway...");
+                await page.WaitForTimeoutAsync(settleDelay);
+            }
+
+            // Screenshot the login page (step 1: provider selection)
+            var loginBeforePath = PathSanitizer.GetOutputFilePath(outputDir, "_auth-flow", "1-initial.png");
+            PathSanitizer.EnsureDirectoryExists(loginBeforePath);
+            await page.ScreenshotAsync(new PageScreenshotOptions { Path = loginBeforePath, FullPage = true });
+            Console.WriteLine("  ?? Step 1: Captured login page");
+
+            // Fill and submit login form (handles two-step provider selection flow)
+            var filled = await TryFillLoginFormAsync(page, username, password);
+            if (!filled)
+            {
+                // Dump everything we can for diagnosis
+                Console.WriteLine($"  ? Could not find login form fields");
+
+                // Show visible text
+                var pageText = await page.InnerTextAsync("body");
+                Console.WriteLine($"  Visible text ({pageText.Length} chars): {(pageText.Length > 300 ? pageText[..300] + "..." : pageText)}");
+
+                // Show HTML source (check if Blazor markers are present)
+                var html = await page.ContentAsync();
+                var hasBlazorMarker = html.Contains("blazor", StringComparison.OrdinalIgnoreCase);
+                var hasFrameworkJs = html.Contains("_framework/blazor.web.js", StringComparison.OrdinalIgnoreCase);
+                Console.WriteLine($"  HTML size: {html.Length} chars, has blazor markers: {hasBlazorMarker}, has _framework/blazor.web.js: {hasFrameworkJs}");
+
+                // Show any browser console errors ó this reveals WASM boot failures
+                if (consoleErrors.Count > 0)
+                {
+                    Console.WriteLine($"  Browser console ({consoleErrors.Count} errors/warnings):");
+                    foreach (var err in consoleErrors.Take(10))
+                        Console.WriteLine($"    {err}");
+                }
+                else
+                {
+                    Console.WriteLine("  Browser console: no errors or warnings");
+                }
+
+                return null;
+            }
+
+            // Screenshot the filled form (step 2)
+            await page.WaitForTimeoutAsync(500);
+            var loginFilledPath = PathSanitizer.GetOutputFilePath(outputDir, "_auth-flow", "2-filled.png");
+            await page.ScreenshotAsync(new PageScreenshotOptions { Path = loginFilledPath, FullPage = true });
+            Console.WriteLine($"  ?? Step 2: Form filled with {username}");
+
+            // Submit the login form
+            await SubmitLoginFormAsync(page);
+
+            // Wait for Blazor to process the login and navigate away from the login page.
+            // After successful login, the .login-page div should disappear.
+            Console.WriteLine("  Waiting for login to complete...");
+            try
+            {
+                await page.WaitForSelectorAsync(".login-page", new PageWaitForSelectorOptions
+                {
+                    State = WaitForSelectorState.Hidden,
+                    Timeout = 15000
+                });
+                Console.WriteLine("  ? Login page disappeared ó login successful");
+            }
+            catch (TimeoutException)
+            {
+                Console.WriteLine("  ?? Login page still visible after 15s");
+            }
+            await page.WaitForTimeoutAsync(2000); // Extra settle for Blazor to finish rendering
+
+            // Screenshot the result (step 3: after login)
+            var loginResultPath = PathSanitizer.GetOutputFilePath(outputDir, "_auth-flow", "3-result.png");
+            await page.ScreenshotAsync(new PageScreenshotOptions { Path = loginResultPath, FullPage = true });
+            Console.WriteLine("  ?? Step 3: Captured post-login state");
+
+            // Check if we're still on the login page (login may have failed)
+            var stillOnLogin = await HasLoginFormAsync(page);
+            if (stillOnLogin)
+            {
+                Console.WriteLine("  ? Still on login page after submit ó credentials may be wrong");
+                return null;
+            }
+
+            // Save storage state (cookies + localStorage) for reuse
+            var storageState = await context.StorageStateAsync();
+            Console.WriteLine("  ? Login successful ó session saved for Pass 2");
+            return storageState;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"  ? Login failed: {ex.Message}");
+            return null;
+        }
+        finally
+        {
+            await context.CloseAsync();
         }
     }
 
     /// <summary>
+    /// Pass 2: Capture a single page using a pre-authenticated session ? logged-in.png
+    /// For auth-required pages, also captures the login redirect as login-redirect.png
+    /// </summary>
+    private static async Task<ScreenshotResult> CaptureAuthenticatedScreenshotAsync(
+        IBrowser browser,
+        RouteInfo routeInfo,
+        int index,
+        int totalCount,
+        string baseUrl,
+        string outputDir,
+        int? viewportWidth,
+        int? viewportHeight,
+        int settleDelay,
+        string storageState)
+    {
+        var result = new ScreenshotResult
+        {
+            Index = index,
+            Route = routeInfo.Route,
+            RequiresAuth = routeInfo.RequiresAuth,
+            Number = index + 1,
+            TotalCount = totalCount,
+            CapturedAt = DateTime.UtcNow
+        };
+
+        // For auth-required pages, capture the login redirect first (unauthenticated)
+        if (routeInfo.RequiresAuth)
+        {
+            try
+            {
+                var unauthContextOptions = new BrowserNewContextOptions
+                {
+                    IgnoreHTTPSErrors = true
+                };
+                if (viewportWidth.HasValue && viewportHeight.HasValue)
+                {
+                    unauthContextOptions.ViewportSize = new ViewportSize
+                    {
+                        Width = viewportWidth.Value,
+                        Height = viewportHeight.Value
+                    };
+                }
+
+                var unauthContext = await browser.NewContextAsync(unauthContextOptions);
+                try
+                {
+                    var unauthPage = await unauthContext.NewPageAsync();
+                    var url = RouteParser.BuildUrl(baseUrl, routeInfo.Route);
+
+                    await unauthPage.GotoAsync(url, new PageGotoOptions
+                    {
+                        WaitUntil = WaitUntilState.NetworkIdle,
+                        Timeout = 60000
+                    });
+
+                    await unauthPage.WaitForTimeoutAsync(settleDelay);
+
+                    var loginRedirectPath = PathSanitizer.GetOutputFilePath(outputDir, routeInfo.Route, "login-redirect.png");
+                    PathSanitizer.EnsureDirectoryExists(loginRedirectPath);
+                    await unauthPage.ScreenshotAsync(new PageScreenshotOptions { Path = loginRedirectPath, FullPage = true });
+                    result.LoginRedirectPath = loginRedirectPath;
+                }
+                finally
+                {
+                    await unauthContext.CloseAsync();
+                }
+            }
+            catch
+            {
+                // Non-critical ó continue with authenticated capture
+            }
+        }
+
+        // Authenticated capture
+        var contextOptions = new BrowserNewContextOptions
+        {
+            StorageState = storageState,
+            IgnoreHTTPSErrors = true
+        };
+        if (viewportWidth.HasValue && viewportHeight.HasValue)
+        {
+            contextOptions.ViewportSize = new ViewportSize
+            {
+                Width = viewportWidth.Value,
+                Height = viewportHeight.Value
+            };
+        }
+
+        var context = await browser.NewContextAsync(contextOptions);
+        try
+        {
+            var page = await context.NewPageAsync();
+            var url = RouteParser.BuildUrl(baseUrl, routeInfo.Route);
+            result.Url = url;
+
+            try
+            {
+                var response = await page.GotoAsync(url, new PageGotoOptions
+                {
+                    WaitUntil = WaitUntilState.NetworkIdle,
+                    Timeout = 60000
+                });
+
+                result.StatusCode = response?.Status ?? 0;
+                result.IsSuccess = result.StatusCode >= 200 && result.StatusCode < 400;
+                result.IsHttpError = result.StatusCode >= 400;
+
+                await page.WaitForTimeoutAsync(settleDelay);
+
+                var screenshotPath = PathSanitizer.GetOutputFilePath(outputDir, routeInfo.Route, "logged-in.png");
+                PathSanitizer.EnsureDirectoryExists(screenshotPath);
+                await page.ScreenshotAsync(new PageScreenshotOptions { Path = screenshotPath, FullPage = true });
+
+                var fi = new FileInfo(screenshotPath);
+
+                if (fi.Length < SuspiciousFileSizeThreshold)
+                {
+                    result.RetryAttempted = true;
+                    await page.WaitForTimeoutAsync(RetryExtraDelayMs);
+                    await page.ScreenshotAsync(new PageScreenshotOptions { Path = screenshotPath, FullPage = true });
+                    fi = new FileInfo(screenshotPath);
+                }
+
+                result.ScreenshotPath = screenshotPath;
+                result.FileSize = fi.Length;
+                result.IsSuspiciouslySmall = fi.Length < SuspiciousFileSizeThreshold;
+            }
+            catch (TimeoutException)
+            {
+                result.IsError = true;
+                result.ErrorMessage = "Navigation timed out";
+            }
+            catch (Exception ex)
+            {
+                result.IsError = true;
+                result.ErrorMessage = ex.Message;
+            }
+        }
+        finally
+        {
+            await context.CloseAsync();
+        }
+
+        return result;
+    }
+    /// <summary>
     /// Try to find and fill a login form on the page.
+    /// Handles two-step login flows where a provider selection page appears first.
     /// Returns true if a form was found and filled.
     /// </summary>
     private static async Task<bool> TryFillLoginFormAsync(IPage page, string username, string password)
     {
+        // Step 0: Check if we're on a login provider selection page (two-step flow)
+        // If so, click the local login button first to reveal the username/password form
+        await TrySelectLoginProviderAsync(page);
+
         // Common selectors for username/email fields
         // Note: Blazor Identity uses dots in IDs (Input.Email), CSS requires escaping or attribute selectors
         var usernameSelectors = new[]
         {
+            "input[id='login-email']",             // FreeCRM/FreeExamples local login
             "input[name='username']",
             "input[name='Username']",
             "input[name='email']",
@@ -480,6 +797,7 @@ internal class Program
         // Common selectors for password fields
         var passwordSelectors = new[]
         {
+            "input[id='login-password']",          // FreeCRM/FreeExamples local login
             "input[name='password']",
             "input[name='Password']",
             "input[name='Input.Password']",        // Blazor Identity (name attribute)
@@ -534,7 +852,59 @@ internal class Program
     }
 
     /// <summary>
-    /// Quick check if the current page has a login form (username + password fields visible).
+    /// Try to select the local login provider on a provider selection page.
+    /// Some apps (e.g., FreeCRM/FreeExamples) show a provider selection screen first
+    /// (Local, Google, Microsoft, etc.) before showing the actual username/password form.
+    /// </summary>
+    private static async Task TrySelectLoginProviderAsync(IPage page)
+    {
+        // First, wait for ANY login button to appear (Blazor WASM may still be rendering)
+        var providerSelectors = new[]
+        {
+            "#login-button-local",              // FreeCRM/FreeExamples local login button
+            "button:has-text('Local Account')", // Generic local account button
+            "button:has-text('local')",         // Case-insensitive local button
+        };
+
+        foreach (var selector in providerSelectors)
+        {
+            try
+            {
+                // Wait up to 10s for the button to appear in the DOM
+                var button = page.Locator(selector).First;
+                await button.WaitForAsync(new LocatorWaitForOptions
+                {
+                    State = WaitForSelectorState.Visible,
+                    Timeout = 10000
+                });
+
+                Console.WriteLine($"  Found provider button: {selector}");
+                await button.ClickAsync();
+
+                // Wait for the login form fields to appear after clicking
+                try
+                {
+                    await page.WaitForSelectorAsync("#login-email", new PageWaitForSelectorOptions { Timeout = 10000 });
+                    Console.WriteLine("  ? Login form appeared after provider selection");
+                }
+                catch (TimeoutException)
+                {
+                    // Form might use different IDs ó fall back to a fixed wait
+                    await page.WaitForTimeoutAsync(3000);
+                }
+                return;
+            }
+            catch (TimeoutException) { /* Button didn't appear, try next selector */ }
+            catch { /* Continue to next selector */ }
+        }
+
+        Console.WriteLine("  No provider selection button found (might be single-provider login)");
+    }
+
+
+    /// <summary>
+    /// Quick check if the current page has a login form (username + password fields visible)
+    /// OR a login provider selection page (buttons to choose login method before showing form).
     /// Used to detect unexpected redirects to login pages.
     /// </summary>
     private static async Task<bool> HasLoginFormAsync(IPage page)
@@ -568,6 +938,28 @@ internal class Program
                     catch { /* Continue */ }
                 }
             }
+
+            // Check for login provider selection page (two-step login flow)
+            // Some apps show a provider selection screen first before showing the actual form
+            var providerSelectors = new[]
+            {
+                "#login-button-local",              // FreeCRM/FreeExamples local login button
+                ".login-page #login-button-local",  // Scoped to login page
+                "button.login-button",              // Generic login button class
+            };
+
+            foreach (var selector in providerSelectors)
+            {
+                try
+                {
+                    var button = page.Locator(selector).First;
+                    if (await button.CountAsync() > 0 && await button.IsVisibleAsync())
+                    {
+                        return true;
+                    }
+                }
+                catch { /* Continue */ }
+            }
         }
         catch { /* Ignore errors */ }
 
@@ -580,10 +972,12 @@ internal class Program
     private static async Task SubmitLoginFormAsync(IPage page)
     {
         // Common selectors for submit buttons
+        // Note: Blazor apps often use type="button" with @onclick instead of type="submit"
         var submitSelectors = new[]
         {
             "button[type='submit']",
             "input[type='submit']",
+            "button:has-text('Log-In')",           // FreeCRM/FreeExamples (hyphenated)
             "button:has-text('Log in')",
             "button:has-text('Login')",
             "button:has-text('Sign in')",
@@ -619,51 +1013,11 @@ internal class Program
         catch { /* Ignore */ }
     }
 
-    /// <summary>
-    /// Capture a single screenshot for non-auth pages.
-    /// </summary>
-    private static async Task CaptureSingleScreenshotAsync(
-        IPage page,
-        string route,
-        string outputDir,
-        ScreenshotResult result)
-    {
-        var screenshotPath = PathSanitizer.GetOutputFilePath(outputDir, route, "default.png");
-        PathSanitizer.EnsureDirectoryExists(screenshotPath);
-
-        await page.ScreenshotAsync(new PageScreenshotOptions
-        {
-            Path = screenshotPath,
-            FullPage = true
-        });
-
-        var fi = new FileInfo(screenshotPath);
-        
-        // Retry if screenshot is suspiciously small
-        if (fi.Length < SuspiciousFileSizeThreshold)
-        {
-            result.RetryAttempted = true;
-            await page.WaitForTimeoutAsync(RetryExtraDelayMs);
-            
-            await page.ScreenshotAsync(new PageScreenshotOptions
-            {
-                Path = screenshotPath,
-                FullPage = true
-            });
-            
-            fi = new FileInfo(screenshotPath);
-        }
-        
-        result.ScreenshotPath = screenshotPath;
-        result.FileSize = fi.Length;
-        result.IsSuspiciouslySmall = fi.Length < SuspiciousFileSizeThreshold;
-    }
-    
     // Write metadata JSON for reporter to consume
     private static async Task WriteMetadataAsync(string outputDir, string route, ScreenshotResult result)
     {
         var metadataPath = PathSanitizer.GetOutputFilePath(outputDir, route, "metadata.json");
-        
+
         var metadata = new ScreenshotMetadata
         {
             Route = result.Route,
@@ -684,7 +1038,13 @@ internal class Program
             AuthStep1Path = result.AuthStep1Path != null ? Path.GetFileName(result.AuthStep1Path) : null,
             AuthStep2Path = result.AuthStep2Path != null ? Path.GetFileName(result.AuthStep2Path) : null,
             AuthStep3Path = result.AuthStep3Path != null ? Path.GetFileName(result.AuthStep3Path) : null,
-            AuthFlowNote = result.AuthFlowNote
+            AuthFlowNote = result.AuthFlowNote,
+            // Two-pass fields
+            LoggedInFileSize = result.LoggedInFileSize,
+            LoggedInIsSuspiciouslySmall = result.LoggedInIsSuspiciouslySmall,
+            LoggedInStatusCode = result.LoggedInStatusCode,
+            // Per-page login redirect
+            LoginRedirectPath = result.LoginRedirectPath != null ? Path.GetFileName(result.LoginRedirectPath) : null,
         };
         
         var json = JsonSerializer.Serialize(metadata, new JsonSerializerOptions 
@@ -699,65 +1059,62 @@ internal class Program
         ConcurrentDictionary<int, ScreenshotResult> results,
         ref int nextIndexToWrite,
         object writeLock,
-        bool flush = false)
+        bool flush = false,
+        Action<ScreenshotResult>? writeAction = null)
     {
+        writeAction ??= WritePublicResult;
+
         lock (writeLock)
         {
-            // Write all consecutive results starting from nextIndexToWrite
-            while (results.TryGetValue(nextIndexToWrite, out var result))
+            // Print results in order without removing them ó they're needed for
+            // summary counts and metadata writing after both passes complete.
+            while (results.ContainsKey(nextIndexToWrite))
             {
-                WriteResult(result);
-                results.TryRemove(nextIndexToWrite, out _);
+                writeAction(results[nextIndexToWrite]);
                 nextIndexToWrite++;
             }
 
-            // If flushing, write any remaining out-of-order results
-            if (flush && results.Count > 0)
+            if (flush)
             {
-                foreach (var kvp in results.OrderBy(k => k.Key))
+                // Print any remaining out-of-order results
+                var startFrom = nextIndexToWrite;
+                foreach (var kvp in results.Where(k => k.Key >= startFrom).OrderBy(k => k.Key))
                 {
-                    WriteResult(kvp.Value);
+                    writeAction(kvp.Value);
                 }
-                results.Clear();
             }
         }
     }
 
-    private static void WriteResult(ScreenshotResult result)
+    private static void WritePublicResult(ScreenshotResult result)
     {
-        var authLabel = result.RequiresAuth ? " üîê" : "";
-        Console.WriteLine($"[{result.Number}/{result.TotalCount}] {result.Route}{authLabel}");
-        Console.WriteLine($"  URL: {result.Url}");
-        
+        Console.WriteLine($"[{result.Number}/{result.TotalCount}] {result.Route}");
+
         if (result.IsError)
         {
             Console.WriteLine($"  !! {result.ErrorMessage}");
         }
-        else
+        else if (!string.IsNullOrEmpty(result.ScreenshotPath))
         {
-            Console.WriteLine($"  -> Status: {result.StatusCode}");
-            
-            if (result.AuthFlowCompleted)
-            {
-                Console.WriteLine($"  -> Auth flow: 3 screenshots captured");
-            }
-            else if (result.RequiresAuth && !string.IsNullOrEmpty(result.AuthFlowNote))
-            {
-                Console.WriteLine($"  -> Auth flow: {result.AuthFlowNote}");
-            }
-            
-            if (!string.IsNullOrEmpty(result.ScreenshotPath))
-            {
-                var sizeStr = PathSanitizer.FormatBytes(result.FileSize);
-                var warning = result.IsSuspiciouslySmall ? " ‚ö†Ô∏è SUSPICIOUS" : "";
-                var retry = result.RetryAttempted ? " (retried)" : "";
-                Console.WriteLine($"  -> Saved: {Path.GetFileName(result.ScreenshotPath)} ({sizeStr}){warning}{retry}");
-            }
-            
-            if (result.ConsoleErrors.Count > 0)
-            {
-                Console.WriteLine($"  -> JS Errors: {result.ConsoleErrors.Count}");
-            }
+            var sizeStr = PathSanitizer.FormatBytes(result.FileSize);
+            var warning = result.IsSuspiciouslySmall ? " ??" : " ?";
+            Console.WriteLine($"  -> default.png ({sizeStr}){warning}");
+        }
+    }
+
+    private static void WriteAuthenticatedResult(ScreenshotResult result)
+    {
+        Console.WriteLine($"[{result.Number}/{result.TotalCount}] {result.Route}");
+
+        if (result.IsError)
+        {
+            Console.WriteLine($"  !! {result.ErrorMessage}");
+        }
+        else if (!string.IsNullOrEmpty(result.ScreenshotPath))
+        {
+            var sizeStr = PathSanitizer.FormatBytes(result.FileSize);
+            var warning = result.IsSuspiciouslySmall ? " ??" : " ?";
+            Console.WriteLine($"  -> logged-in.png ({sizeStr}){warning}");
         }
         Console.WriteLine();
     }
@@ -833,6 +1190,15 @@ internal class ScreenshotResult
     public string? AuthStep2Path { get; set; }  // Form filled screenshot
     public string? AuthStep3Path { get; set; }  // After submit screenshot
     public string? AuthFlowNote { get; set; }   // Note if auth flow didn't complete
+
+    // Two-pass: logged-in capture data (merged from Pass 2)
+    public string? LoggedInScreenshotPath { get; set; }
+    public long LoggedInFileSize { get; set; }
+    public bool LoggedInIsSuspiciouslySmall { get; set; }
+    public int LoggedInStatusCode { get; set; }
+
+    // Per-page login redirect screenshot (captured for auth pages)
+    public string? LoginRedirectPath { get; set; }
 }
 
 // Metadata for reporter to consume
@@ -858,4 +1224,12 @@ internal class ScreenshotMetadata
     public string? AuthStep2Path { get; set; }
     public string? AuthStep3Path { get; set; }
     public string? AuthFlowNote { get; set; }
+
+    // Two-pass fields
+    public long LoggedInFileSize { get; set; }
+    public bool LoggedInIsSuspiciouslySmall { get; set; }
+    public int LoggedInStatusCode { get; set; }
+
+    // Per-page login redirect screenshot
+    public string? LoginRedirectPath { get; set; }
 }

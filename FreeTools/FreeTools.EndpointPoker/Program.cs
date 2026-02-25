@@ -18,7 +18,8 @@ internal class Program
         var baseUrl = CliArgs.GetEnvOrArg("BASE_URL", args, 0, "https://localhost:5001");
         var csvPath = CliArgs.GetEnvOrArg("CSV_PATH", args, 1, "pages.csv");
         var outputDir = CliArgs.GetEnvOrArg("OUTPUT_DIR", args, 2, "page-snapshots");
-        
+        var tenantCode = Environment.GetEnvironmentVariable("TENANT_CODE") ?? "";
+
         // Default to 10 threads for parallel processing
         var maxThreads = Math.Max(1, CliArgs.GetEnvOrArgInt("MAX_THREADS", args, 3, 10));
 
@@ -27,6 +28,8 @@ internal class Program
         ConsoleOutput.PrintConfig("CSV Path", csvPath);
         ConsoleOutput.PrintConfig("Output directory", outputDir);
         ConsoleOutput.PrintConfig("Max threads", maxThreads.ToString());
+        if (!string.IsNullOrWhiteSpace(tenantCode))
+            ConsoleOutput.PrintConfig("Tenant Code", tenantCode);
         ConsoleOutput.PrintDivider();
 
         if (!File.Exists(csvPath))
@@ -35,7 +38,8 @@ internal class Program
             return 1;
         }
 
-        var (routes, skippedRoutes) = await RouteParser.ParseRoutesFromCsvFileAsync(csvPath);
+        var (routes, skippedRoutes) = await RouteParser.ParseRoutesFromCsvFileAsync(
+            csvPath, tenantCode: string.IsNullOrWhiteSpace(tenantCode) ? null : tenantCode);
 
         foreach (var skipped in skippedRoutes)
         {

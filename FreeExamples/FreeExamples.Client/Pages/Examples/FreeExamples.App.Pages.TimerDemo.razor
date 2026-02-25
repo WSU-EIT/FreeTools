@@ -15,25 +15,52 @@
             </h1>
         </div>
 
-        <p class="text-muted mb-3">
-            Demonstrates debounce, countdown, and auto-refresh timer patterns.
-            <br /><strong>Doc:</strong> <code>007_patterns.timers.md</code>
-        </p>
+        <AboutSection Title="About Timer Demo" Subtitle="Learn how web apps handle time — countdowns, delays, and automatic refreshing" IconClass="fa-solid fa-stopwatch">
+            <div class="row">
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-question-circle me-1"></i>What Is This Page?</h6>
+                    <p class="small text-muted mb-0">
+                        Web apps often need to do things based on time: count down to a deadline,
+                        wait before processing a search (so you don't search after every keystroke),
+                        or refresh data automatically every few seconds. This page demonstrates
+                        all three patterns with live, interactive examples you can watch in real time.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-lightbulb me-1"></i>What You'll Learn</h6>
+                    <ul class="small text-muted mb-0 ps-3">
+                        <li><strong>Countdown timer</strong> — a 60-second cycle with a progress bar that turns red when time is running out</li>
+                        <li><strong>Debounce</strong> — waiting 500ms after you stop typing before doing something (prevents wasted work)</li>
+                        <li><strong>Auto-refresh</strong> — fetching new data from the server at a regular interval</li>
+                        <li><strong>Cleanup</strong> — properly stopping timers when you leave the page (so they don't keep running)</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-road me-1"></i>How Does It Work?</h6>
+                    <p class="small text-muted mb-0">
+                        C# has a <code>System.Timers.Timer</code> class that fires an event at a set interval
+                        (like an alarm going off every second). When the timer fires, we update variables
+                        (like the countdown number) and tell Blazor to re-render the page. The progress bar
+                        width is calculated as a percentage of time remaining — CSS handles the visual change.
+                    </p>
+                </div>
+            </div>
+        </AboutSection>
 
         <div class="row">
             @* Countdown Timer *@
             <div class="col-md-6 mb-4">
-                <div class="card shadow-sm border-0">
+                <div class="card shadow-sm border-0" role="region" aria-label="Countdown timer">
                     <div class="card-header bg-white"><h6 class="mb-0">Countdown Timer</h6></div>
                     <div class="card-body">
-                        <div class="mb-2" style="font-size:3em; font-family:monospace; text-align:center;">
+                        <div class="mb-2" style="font-size:3em; font-family:monospace; text-align:center;" aria-live="polite" aria-atomic="true" role="timer">
                             @_secondsRemaining
                         </div>
                         @{
                             var pct = ((double)_secondsRemaining / 60.0) * 100;
                             string barClass = "progress-bar" + (_secondsRemaining <= 10 ? " bg-danger" : "");
                         }
-                        <div class="progress" style="height:24px;">
+                        <div class="progress" style="height:24px;" role="progressbar" aria-valuenow="@_secondsRemaining" aria-valuemin="0" aria-valuemax="60" aria-label="Countdown progress">
                             <div class="@barClass" style="width:@(pct)%">
                                 @_secondsRemaining s
                             </div>
@@ -45,12 +72,13 @@
 
             @* Debounce Input *@
             <div class="col-md-6 mb-4">
-                <div class="card shadow-sm border-0">
+                <div class="card shadow-sm border-0" role="region" aria-label="Debounce input demo">
                     <div class="card-header bg-white"><h6 class="mb-0">Debounce Input (500ms)</h6></div>
                     <div class="card-body">
-                        <input type="text" class="form-control mb-2" placeholder="Type something..."
-                               value="@_searchText" @oninput="OnSearchInput" />
-                        <div class="small text-muted">Debounced value: <strong>@_debouncedValue</strong></div>
+                        <label for="debounce-input" class="visually-hidden">Debounce search input</label>
+                        <input type="text" id="debounce-input" class="form-control mb-2" placeholder="Type something..."
+                               value="@_searchText" @oninput="OnSearchInput" aria-describedby="debounce-desc" />
+                        <div id="debounce-desc" class="small text-muted" aria-live="polite">Debounced value: <strong>@_debouncedValue</strong></div>
                         <div class="small text-muted">Keystrokes: @_keystrokeCount | API calls: @_apiCallCount</div>
                     </div>
                 </div>
@@ -58,18 +86,18 @@
         </div>
 
         @* Auto-Refresh *@
-        <div class="card shadow-sm border-0 mb-4">
+        <div class="card shadow-sm border-0 mb-4" role="region" aria-label="Auto-refresh demo">
             <div class="card-header bg-white">
                 <div class="d-flex justify-content-between align-items-center">
                     <h6 class="mb-0">Auto-Refresh (every 10s)</h6>
                     <div class="form-check form-switch mb-0">
-                        <input type="checkbox" class="form-check-input" id="auto-refresh" @bind="_autoRefreshEnabled" @bind:after="ToggleAutoRefresh" />
+                        <input type="checkbox" class="form-check-input" id="auto-refresh" @bind="_autoRefreshEnabled" @bind:after="ToggleAutoRefresh" aria-label="Toggle auto-refresh" />
                         <label class="form-check-label" for="auto-refresh">Enabled</label>
                     </div>
                 </div>
             </div>
             <div class="card-body">
-                <div class="small text-muted">Last refresh: @_lastRefresh.ToString("HH:mm:ss") | Refresh count: @_refreshCount | Items: @_items.Count</div>
+                <div class="small text-muted" aria-live="polite">Last refresh: @_lastRefresh.ToString("HH:mm:ss") | Refresh count: @_refreshCount | Items: @_items.Count</div>
             </div>
         </div>
     }
@@ -111,8 +139,9 @@
 
     protected override void OnInitialized()
     {
+        Model.View = _pageName;
         Model.OnChange += OnDataModelUpdated;
-        Model.Subscribers_OnChange[_pageName] = true;
+        if (!Model.Subscribers_OnChange.Contains(_pageName)) { Model.Subscribers_OnChange.Add(_pageName); }
 
         // Countdown: 1s ticks
         _countdownTimer.Interval = 1000;

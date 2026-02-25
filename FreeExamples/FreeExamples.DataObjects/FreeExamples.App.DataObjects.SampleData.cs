@@ -22,6 +22,8 @@ public partial class DataObjects
         public string? AddedBy { get; set; }
         public DateTime LastModified { get; set; }
         public string? LastModifiedBy { get; set; }
+        public bool Deleted { get; set; }
+        public DateTime? DeletedAt { get; set; }
     }
 
     public enum SampleItemStatus
@@ -40,6 +42,8 @@ public partial class DataObjects
         public List<SampleItem>? Records { get; set; }
         public string? Status { get; set; }
         public string? Category { get; set; }
+        public string? Enabled { get; set; }
+        public List<string> AvailableCategories { get; set; } = [];
     }
 
     /// <summary>
@@ -48,6 +52,44 @@ public partial class DataObjects
     public class SampleDataResponse : ActionResponseObject
     {
         public List<SampleItem> Items { get; set; } = [];
+    }
+
+    /// <summary>
+    /// Response for server-side file generation endpoints.
+    /// </summary>
+    public class SampleFileResponse
+    {
+        public string FileName { get; set; } = "";
+        public byte[] FileData { get; set; } = [];
+    }
+
+    /// <summary>
+    /// Network graph node for the vis.js demo page.
+    /// </summary>
+    public class SampleGraphNode
+    {
+        public int Id { get; set; }
+        public string Label { get; set; } = "";
+        public string? Group { get; set; }
+    }
+
+    /// <summary>
+    /// Network graph edge for the vis.js demo page.
+    /// </summary>
+    public class SampleGraphEdge
+    {
+        public int From { get; set; }
+        public int To { get; set; }
+        public string? Label { get; set; }
+    }
+
+    /// <summary>
+    /// Full graph data for the network visualization demo.
+    /// </summary>
+    public class SampleGraphData
+    {
+        public List<SampleGraphNode> Nodes { get; set; } = [];
+        public List<SampleGraphEdge> Edges { get; set; } = [];
     }
 
     /// <summary>

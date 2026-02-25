@@ -791,14 +791,15 @@ internal partial class Program
         var authRequiredCount = entries.Count(e => e.RequiresAuth);
         var authFlowCompletedCount = entries.Count(e => e.AuthFlowCompleted);
         var publicCount = entries.Count - authRequiredCount;
+        var loggedInCount = entries.Count(e => e.LoggedInFileSize > 0);
+        var loggedInSuspiciousCount = entries.Count(e => e.LoggedInIsSuspiciouslySmall);
 
         sb.AppendLine("| Status | Count | Description |");
         sb.AppendLine("|--------|------:|-------------|");
-        sb.AppendLine($"| ✅ Success | {successCount} | Screenshots > 10KB |");
-        sb.AppendLine($"| 🔓 Public | {publicCount} | Single screenshot pages |");
-        sb.AppendLine($"| 🔐 Auth Required | {authRequiredCount} | Pages requiring login |");
-        sb.AppendLine($"| ✅ Auth Flow OK | {authFlowCompletedCount} | Login flow completed |");
-        sb.AppendLine($"| ⚠️ Suspicious | {suspiciousCount} | Screenshots < 10KB (possible blank) |");
+        sb.AppendLine($"| ✅ Public Success | {successCount} | Public screenshots > 10KB |");
+        sb.AppendLine($"| 🔐 Logged-In Captured | {loggedInCount} | Authenticated screenshots taken |");
+        sb.AppendLine($"| ⚠️ Public Suspicious | {suspiciousCount} | Public screenshots < 10KB (blank when not logged in) |");
+        sb.AppendLine($"| ⚠️ Logged-In Suspicious | {loggedInSuspiciousCount} | Auth screenshots < 10KB |");
         sb.AppendLine($"| 🔄 Retried | {retriedCount} | Required retry attempt |");
         sb.AppendLine($"| ❌ HTTP Error | {httpErrorCount} | 4xx/5xx responses |");
         sb.AppendLine($"| 💥 Failed | {errorCount} | Browser/timeout errors |");
@@ -938,199 +939,186 @@ internal partial class Program
             .ToList();
 
         // Split into public and auth-required pages
-        // Check for actual auth flow screenshots (1-initial.png exists), not just RequiresAuth flag
-        // This catches pages that redirect to login even if not marked [Authorize] in code
-        var authPages = allRoutes.Where(r => 
-            File.Exists(Path.Combine(r.Directory, "1-initial.png")) ||
-            r.Metadata?.RequiresAuth == true ||
-            r.Metadata?.AuthFlowCompleted == true
-        ).ToList();
-        var publicPages = allRoutes.Where(r => !authPages.Contains(r)).ToList();
-        
-        var totalRoutes = allRoutes.Count;
-        sb.AppendLine($"**{totalRoutes} page screenshots captured**");
+        // With the two-pass approach, all pages have default.png + logged-in.png.
+        // The _auth-flow directory has the global login screenshots.
+        var authFlowDir = allRoutes.FirstOrDefault(r => r.Route == "/_auth-flow");
+        var pageRoutes = allRoutes.Where(r => r.Route != "/_auth-flow").ToList();
+
+        var totalRoutes = pageRoutes.Count;
+        sb.AppendLine($"**{totalRoutes} pages captured** (public + authenticated views)");
         sb.AppendLine();
 
         // Quick status summary
         var successCount = routeMetadata.Values.Count(m => m.IsSuccess && !m.IsSuspiciouslySmall);
-        var authCount = authPages.Count;
+        var loggedInCount = routeMetadata.Values.Count(m => m.LoggedInFileSize > 0 && !m.LoggedInIsSuspiciouslySmall);
         var errorCount = routeMetadata.Values.Count(m => m.IsHttpError || m.IsError);
-        
+
         sb.AppendLine("### Quick Status");
         sb.AppendLine();
-        sb.AppendLine("| ✅ Success | 🔐 Auth Flow | ❌ Errors |");
+        sb.AppendLine("| ✅ Public OK | 🔐 Logged-In OK | ❌ Errors |");
         sb.AppendLine("|:----------:|:------------:|:---------:|");
-        sb.AppendLine($"| {successCount} | {authCount} | {errorCount} |");
+        sb.AppendLine($"| {successCount} | {loggedInCount} | {errorCount} |");
         sb.AppendLine();
+
+        // === AUTH FLOW SECTION (shown once, collapsed — per-page views shown below) ===
+        if (authFlowDir != null)
+        {
+            var afDir = authFlowDir.RelativeDir;
+            var hasStep1 = File.Exists(Path.Combine(authFlowDir.Directory, "1-initial.png"));
+            var hasStep2 = File.Exists(Path.Combine(authFlowDir.Directory, "2-filled.png"));
+            var hasStep3 = File.Exists(Path.Combine(authFlowDir.Directory, "3-result.png"));
+
+            if (hasStep1 || hasStep2 || hasStep3)
+            {
+                sb.AppendLine("<details>");
+                sb.AppendLine("<summary><strong>🔐 Login Flow</strong> (session captured once, reused for all authenticated pages)</summary>");
+                sb.AppendLine();
+                sb.AppendLine("<table><tr>");
+
+                if (hasStep1)
+                {
+                    sb.AppendLine("<td align=\"center\">");
+                    sb.AppendLine($"<a href=\"{afDir}/1-initial.png\">");
+                    sb.AppendLine($"<img src=\"{afDir}/1-initial.png\" width=\"250\" />");
+                    sb.AppendLine("</a>");
+                    sb.AppendLine("<br /><strong>① Login Page</strong>");
+                    sb.AppendLine("</td>");
+                }
+                if (hasStep2)
+                {
+                    sb.AppendLine("<td align=\"center\">");
+                    sb.AppendLine($"<a href=\"{afDir}/2-filled.png\">");
+                    sb.AppendLine($"<img src=\"{afDir}/2-filled.png\" width=\"250\" />");
+                    sb.AppendLine("</a>");
+                    sb.AppendLine("<br /><strong>② Credentials Filled</strong>");
+                    sb.AppendLine("</td>");
+                }
+                if (hasStep3)
+                {
+                    sb.AppendLine("<td align=\"center\">");
+                    sb.AppendLine($"<a href=\"{afDir}/3-result.png\">");
+                    sb.AppendLine($"<img src=\"{afDir}/3-result.png\" width=\"250\" />");
+                    sb.AppendLine("</a>");
+                    sb.AppendLine("<br /><strong>③ After Login</strong>");
+                    sb.AppendLine("</td>");
+                }
+
+                sb.AppendLine("</tr></table>");
+                sb.AppendLine();
+                sb.AppendLine("</details>");
+                sb.AppendLine();
+            }
+        }
+
         sb.AppendLine("---");
         sb.AppendLine();
 
-        // === PUBLIC PAGES SECTION ===
-        sb.AppendLine($"### 🔓 Public Pages ({publicPages.Count})");
+        // === ALL PAGES: Public vs Logged-In side by side ===
+        sb.AppendLine($"### 📸 All Pages — Public vs Login vs Logged-In ({pageRoutes.Count})");
         sb.AppendLine();
-        sb.AppendLine("Click on a screenshot to view full size.");
+        sb.AppendLine("Each page is shown in up to three states: **🔓 Public** (not logged in), **🔑 Login Redirect** (auth redirect), and **🔐 Logged In** (authenticated).");
         sb.AppendLine();
 
-        var publicByCategory = publicPages.GroupBy(r => r.Category).OrderBy(g => g.Key).ToList();
+        var byCategory = pageRoutes.GroupBy(r => r.Category).OrderBy(g => g.Key).ToList();
 
-        foreach (var group in publicByCategory)
+        foreach (var group in byCategory)
         {
             var categoryName = group.Key == "root" ? "Home" : group.Key;
             sb.AppendLine($"<details open>");
             sb.AppendLine($"<summary><strong>📁 {categoryName}</strong> ({group.Count()} pages)</summary>");
             sb.AppendLine();
             sb.AppendLine("<table>");
-            
+
             var routes = group.OrderBy(r => r.Route).ToList();
-            for (int i = 0; i < routes.Count; i += 3)
+            for (int i = 0; i < routes.Count; i++)
             {
                 sb.AppendLine("<tr>");
-                for (int j = 0; j < 3; j++)
-                {
-                    var idx = i + j;
-                    if (idx < routes.Count)
-                    {
-                        var routeScreenshot = routes[idx];
-                        var displayRoute = ShortenRoute(routeScreenshot.Route, 25);
-                        var defaultPng = Path.Combine(routeScreenshot.Directory, "default.png");
-                        string? imgPath = null;
-                        
-                        if (File.Exists(defaultPng))
-                            imgPath = $"{routeScreenshot.RelativeDir}/default.png";
-                        else
-                        {
-                            var anyPng = Directory.GetFiles(routeScreenshot.Directory, "*.png").FirstOrDefault();
-                            if (anyPng != null)
-                                imgPath = $"{routeScreenshot.RelativeDir}/{Path.GetFileName(anyPng)}";
-                        }
+                var routeScreenshot = routes[i];
+                var displayRoute = ShortenRoute(routeScreenshot.Route, 40);
+                var defaultPng = Path.Combine(routeScreenshot.Directory, "default.png");
+                var loginRedirectPng = Path.Combine(routeScreenshot.Directory, "login-redirect.png");
+                var loggedInPng = Path.Combine(routeScreenshot.Directory, "logged-in.png");
+                string? publicImgPath = null;
+                string? loginImgPath = null;
+                string? authImgPath = null;
 
-                        sb.AppendLine("<td align=\"center\" width=\"33%\">");
-                        if (imgPath != null)
-                        {
-                            sb.AppendLine($"<a href=\"{imgPath}\">");
-                            sb.AppendLine($"<img src=\"{imgPath}\" width=\"250\" alt=\"{routeScreenshot.Route}\" />");
-                            sb.AppendLine("</a>");
-                        }
-                        sb.AppendLine($"<br /><code>{displayRoute}</code>");
-                        sb.AppendLine("</td>");
-                    }
-                    else
-                        sb.AppendLine("<td></td>");
+                if (File.Exists(defaultPng))
+                    publicImgPath = $"{routeScreenshot.RelativeDir}/default.png";
+                else
+                {
+                    var anyPng = Directory.GetFiles(routeScreenshot.Directory, "*.png")
+                        .FirstOrDefault(f => !Path.GetFileName(f).StartsWith("logged-in") && !Path.GetFileName(f).StartsWith("login-redirect"));
+                    if (anyPng != null)
+                        publicImgPath = $"{routeScreenshot.RelativeDir}/{Path.GetFileName(anyPng)}";
                 }
+
+                if (File.Exists(loginRedirectPng))
+                    loginImgPath = $"{routeScreenshot.RelativeDir}/login-redirect.png";
+
+                if (File.Exists(loggedInPng))
+                    authImgPath = $"{routeScreenshot.RelativeDir}/logged-in.png";
+
+                sb.AppendLine("<td colspan=\"3\" align=\"center\">");
+                sb.AppendLine($"<strong><code>{displayRoute}</code></strong>");
+                sb.AppendLine("<table><tr>");
+
+                // Column 1: Public (not logged in)
+                sb.AppendLine("<td align=\"center\">");
+                if (publicImgPath != null)
+                {
+                    sb.AppendLine($"<a href=\"{publicImgPath}\">");
+                    sb.AppendLine($"<img src=\"{publicImgPath}\" width=\"200\" alt=\"{routeScreenshot.Route} (public)\" />");
+                    sb.AppendLine("</a>");
+                }
+                else
+                {
+                    sb.AppendLine("<sub><em>no capture</em></sub>");
+                }
+                sb.AppendLine("<br /><sub>🔓 Public</sub>");
+                sb.AppendLine("</td>");
+
+                // Column 2: Login Redirect (auth pages only)
+                sb.AppendLine("<td align=\"center\">");
+                if (loginImgPath != null)
+                {
+                    sb.AppendLine($"<a href=\"{loginImgPath}\">");
+                    sb.AppendLine($"<img src=\"{loginImgPath}\" width=\"200\" alt=\"{routeScreenshot.Route} (login redirect)\" />");
+                    sb.AppendLine("</a>");
+                    sb.AppendLine("<br /><sub>🔑 Login Redirect</sub>");
+                }
+                else if (routeScreenshot.Metadata?.RequiresAuth == true)
+                {
+                    sb.AppendLine("<sub><em>no redirect capture</em></sub>");
+                    sb.AppendLine("<br /><sub>🔑 Login Redirect</sub>");
+                }
+                else
+                {
+                    sb.AppendLine("<sub><em>public page</em></sub>");
+                    sb.AppendLine("<br /><sub>—</sub>");
+                }
+                sb.AppendLine("</td>");
+
+                // Column 3: Logged In
+                sb.AppendLine("<td align=\"center\">");
+                if (authImgPath != null)
+                {
+                    sb.AppendLine($"<a href=\"{authImgPath}\">");
+                    sb.AppendLine($"<img src=\"{authImgPath}\" width=\"200\" alt=\"{routeScreenshot.Route} (logged in)\" />");
+                    sb.AppendLine("</a>");
+                }
+                else
+                {
+                    sb.AppendLine("<sub><em>no auth capture</em></sub>");
+                }
+                sb.AppendLine("<br /><sub>🔐 Logged In</sub>");
+                sb.AppendLine("</td>");
+
+                sb.AppendLine("</tr></table>");
+                sb.AppendLine("</td>");
                 sb.AppendLine("</tr>");
             }
-            
+
             sb.AppendLine("</table>");
-            sb.AppendLine();
-            sb.AppendLine("</details>");
-            sb.AppendLine();
-        }
-
-        // === AUTH-REQUIRED PAGES (Grouped by Category like Public Pages) ===
-        if (authPages.Count > 0)
-        {
-            sb.AppendLine("---");
-            sb.AppendLine();
-            sb.AppendLine($"### 🔐 Auth-Required Pages ({authPages.Count})");
-            sb.AppendLine();
-            sb.AppendLine("These pages redirected to login. Showing **final result** after authentication.");
-            sb.AppendLine();
-            sb.AppendLine("> 💡 Click step numbers to view: **①** redirect → **②** fill form → **③** result");
-            sb.AppendLine();
-
-            // Group by category (same as public pages)
-            var authByCategory = authPages.GroupBy(r => r.Category).OrderBy(g => g.Key).ToList();
-
-            foreach (var group in authByCategory)
-            {
-                var categoryName = group.Key == "root" ? "Home" : group.Key;
-                sb.AppendLine($"<details open>");
-                sb.AppendLine($"<summary><strong>📁 {categoryName}</strong> ({group.Count()} pages)</summary>");
-                sb.AppendLine();
-                sb.AppendLine("<table>");
-                
-                var routes = group.OrderBy(r => r.Route).ToList();
-                for (int i = 0; i < routes.Count; i += 3)
-                {
-                    sb.AppendLine("<tr>");
-                    for (int j = 0; j < 3; j++)
-                    {
-                        var idx = i + j;
-                        if (idx < routes.Count)
-                        {
-                            var authRoute = routes[idx];
-                            var displayRoute = ShortenRoute(authRoute.Route, 20);
-                            var dir = authRoute.Directory;
-                            var relDir = authRoute.RelativeDir;
-                            
-                            // Check which steps exist
-                            var hasStep1 = File.Exists(Path.Combine(dir, "1-initial.png"));
-                            var hasStep2 = File.Exists(Path.Combine(dir, "2-filled.png"));
-                            var hasStep3 = File.Exists(Path.Combine(dir, "3-result.png"));
-                            var hasDefault = File.Exists(Path.Combine(dir, "default.png"));
-                            
-                            // Show the final result (3-result.png) as the main image
-                            string? imgPath = null;
-                            if (hasStep3)
-                                imgPath = $"{relDir}/3-result.png";
-                            else if (hasDefault)
-                                imgPath = $"{relDir}/default.png";
-
-                            sb.AppendLine("<td align=\"center\" width=\"33%\">");
-                            if (imgPath != null)
-                            {
-                                sb.AppendLine($"<a href=\"{imgPath}\">");
-                                sb.AppendLine($"<img src=\"{imgPath}\" width=\"250\" alt=\"{authRoute.Route}\" />");
-                                sb.AppendLine("</a>");
-                            }
-                            
-                            // Build step links: route 🔐 [①][②][③]
-                            var stepLinks = new StringBuilder();
-                            if (hasStep1)
-                                stepLinks.Append($"<a href=\"{relDir}/1-initial.png\" title=\"Step 1: Redirect\">①</a>");
-                            if (hasStep2)
-                                stepLinks.Append($"<a href=\"{relDir}/2-filled.png\" title=\"Step 2: Fill Form\">②</a>");
-                            if (hasStep3)
-                                stepLinks.Append($"<a href=\"{relDir}/3-result.png\" title=\"Step 3: Result\">③</a>");
-                            
-                            sb.AppendLine($"<br /><code>{displayRoute}</code> 🔐 {stepLinks}");
-                            sb.AppendLine("</td>");
-                        }
-                        else
-                            sb.AppendLine("<td></td>");
-                    }
-                    sb.AppendLine("</tr>");
-                }
-                
-                sb.AppendLine("</table>");
-                sb.AppendLine();
-                sb.AppendLine("</details>");
-                sb.AppendLine();
-            }
-
-            // Add a single expandable section showing the auth flow pattern
-            sb.AppendLine("<details>");
-            sb.AppendLine("<summary>🔍 <strong>View Auth Flow Pattern</strong> (same for all protected pages)</summary>");
-            sb.AppendLine();
-            sb.AppendLine("All protected pages follow this login flow:");
-            sb.AppendLine();
-            sb.AppendLine("| Step | Action | Screenshot |");
-            sb.AppendLine("|:----:|--------|:----------:|");
-            
-            // Use first auth route as example
-            var exampleRoute = authPages.First();
-            var exDir = exampleRoute.RelativeDir;
-            var hasEx1 = File.Exists(Path.Combine(exampleRoute.Directory, "1-initial.png"));
-            var hasEx2 = File.Exists(Path.Combine(exampleRoute.Directory, "2-filled.png"));
-            var hasEx3 = File.Exists(Path.Combine(exampleRoute.Directory, "3-result.png"));
-            
-            if (hasEx1)
-                sb.AppendLine($"| ① | **Redirect** — User hits protected route, sent to `/Account/Login` | <img src=\"{exDir}/1-initial.png\" width=\"150\"/> |");
-            if (hasEx2)
-                sb.AppendLine($"| ② | **Fill Form** — Enter credentials: `admin@test.com` | <img src=\"{exDir}/2-filled.png\" width=\"150\"/> |");
-            if (hasEx3)
-                sb.AppendLine($"| ③ | **Result** — Login successful, user sees protected content | <img src=\"{exDir}/3-result.png\" width=\"150\"/> |");
-            
             sb.AppendLine();
             sb.AppendLine("</details>");
             sb.AppendLine();
@@ -1287,5 +1275,13 @@ internal partial class Program
         public string? AuthStep2Path { get; set; }
         public string? AuthStep3Path { get; set; }
         public string? AuthFlowNote { get; set; }
+
+        // Two-pass fields
+        public long LoggedInFileSize { get; set; }
+        public bool LoggedInIsSuspiciouslySmall { get; set; }
+        public int LoggedInStatusCode { get; set; }
+
+        // Per-page login redirect screenshot
+        public string? LoginRedirectPath { get; set; }
     }
 }

@@ -237,7 +237,23 @@ This name was chosen to **mirror .NET Identity conventions** where `HttpContext.
 
 ## HTTP & API Patterns
 
-### FreeCRM Custom
+### Preferred: Three-Endpoint CRUD Pattern
+
+> See [007_patterns.crud_api.md](007_patterns.crud_api.md) for the full pattern.
+
+```csharp
+// GetMany: null/empty → all, IDs → filtered
+var all = await Helpers.GetOrPost<List<DataObjects.User>>("api/Data/GetUsers", new List<Guid>());
+var some = await Helpers.GetOrPost<List<DataObjects.User>>("api/Data/GetUsers", new List<Guid> { id1, id2 });
+
+// SaveMany: PK exists → update, empty/new PK → insert
+var saved = await Helpers.GetOrPost<List<DataObjects.User>>("api/Data/SaveUsers", new List<DataObjects.User> { user });
+
+// DeleteMany: must provide IDs, null/empty → error
+var result = await Helpers.GetOrPost<DataObjects.BooleanResponse>("api/Data/DeleteUsers", new List<Guid> { userId });
+```
+
+### FreeCRM Custom (legacy single-item pattern)
 
 ```csharp
 // Single method for all API calls

@@ -13,15 +13,19 @@ public static class RouteParser
 
     /// <summary>
     /// Parse routes from a CSV file. Returns testable routes and skipped routes with parameters.
+    /// When tenantCode is provided, substitutes {TenantCode} before checking for parameters
+    /// and deduplicates so tenant-code routes replace bare routes.
     /// CSV format expected: FilePath,Route,RequiresAuth,Project (header row + data rows)
     /// </summary>
     public static (List<string> routes, List<string> skipped) ParseRoutesFromCsv(
         string[] csvLines,
         int routeColumnIndex = 1,
-        bool skipParameterizedRoutes = true)
+        bool skipParameterizedRoutes = true,
+        string? tenantCode = null)
     {
-        var routes = new List<string>();
+        var routeSet = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase); // route -> route (for dedup)
         var skipped = new List<string>();
+        var hasTenantCode = !string.IsNullOrWhiteSpace(tenantCode);
 
         for (int i = 1; i < csvLines.Length; i++)
         {
@@ -33,20 +37,49 @@ public static class RouteParser
             if (parts.Length <= routeColumnIndex)
                 continue;
 
-            var route = parts[routeColumnIndex].Trim('"').Trim();
-            if (string.IsNullOrWhiteSpace(route))
+            var rawRoute = parts[routeColumnIndex].Trim('"').Trim();
+            if (string.IsNullOrWhiteSpace(rawRoute))
                 continue;
+
+            // Substitute {TenantCode} with the actual tenant code
+            var route = rawRoute;
+            bool wasTenantRoute = false;
+            if (hasTenantCode && route.Contains("{TenantCode}", StringComparison.OrdinalIgnoreCase))
+            {
+                route = route.Replace("{TenantCode}", tenantCode!, StringComparison.OrdinalIgnoreCase);
+                wasTenantRoute = true;
+            }
 
             if (skipParameterizedRoutes && HasParameter(route))
             {
-                skipped.Add(route);
+                skipped.Add(rawRoute);
+                continue;
             }
-            else
+
+            // Dedup: tenant-code routes win over bare routes
+            if (wasTenantRoute)
             {
-                routes.Add(route);
+                routeSet[route] = route;
+            }
+            else if (!routeSet.ContainsKey(route))
+            {
+                if (!hasTenantCode || !routeSet.ContainsKey($"/{tenantCode}{route}"))
+                    routeSet[route] = route;
             }
         }
 
+        // Remove bare routes that have a tenant-code equivalent
+        if (hasTenantCode)
+        {
+            var toRemove = routeSet.Keys
+                .Where(r => !r.StartsWith($"/{tenantCode}", StringComparison.OrdinalIgnoreCase)
+                          && routeSet.ContainsKey($"/{tenantCode}{r}"))
+                .ToList();
+            foreach (var key in toRemove)
+                routeSet.Remove(key);
+        }
+
+        var routes = routeSet.Values.OrderBy(r => r).ToList();
         return (routes, skipped);
     }
 
@@ -56,10 +89,11 @@ public static class RouteParser
     public static async Task<(List<string> routes, List<string> skipped)> ParseRoutesFromCsvFileAsync(
         string csvPath,
         int routeColumnIndex = 1,
-        bool skipParameterizedRoutes = true)
+        bool skipParameterizedRoutes = true,
+        string? tenantCode = null)
     {
         var lines = await File.ReadAllLinesAsync(csvPath);
-        return ParseRoutesFromCsv(lines, routeColumnIndex, skipParameterizedRoutes);
+        return ParseRoutesFromCsv(lines, routeColumnIndex, skipParameterizedRoutes, tenantCode);
     }
 
     /// <summary>

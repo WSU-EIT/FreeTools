@@ -10,7 +10,7 @@
 
 **FreeTools.AppHost** is an Aspire orchestrator that:
 
-1. **Starts** the target web application (BlazorApp1 by default)
+1. **Starts** the target web application (FreeExamples by default)
 2. **Runs** the tools pipeline in sequence
 3. **Collects** all outputs to `Docs/runs/{Project}/{Branch}/latest/`
 4. **Manages** backup retention (optional)
@@ -26,7 +26,7 @@
 │                                                                             │
 │  Phase 0: Start Web App                                                     │
 │  ┌─────────────────────┐                                                    │
-│  │  Target Web App     │ ◄─── BlazorApp1 or your project                    │
+│  │  Target Web App     │ ◄─── FreeExamples or your project                   │
 │  │  (https://5001)     │                                                    │
 │  └─────────────────────┘                                                    │
 │           │                                                                 │
@@ -62,9 +62,9 @@ dotnet run
 ```
 
 This will:
-1. Start BlazorApp1 on https://localhost (random port)
+1. Start FreeExamples on https://localhost (random port)
 2. Run all tools in sequence
-3. Write outputs to `Docs/runs/BlazorApp1/main/latest/`
+3. Write outputs to `Docs/runs/FreeExamples/main/latest/`
 
 ### Run Against Your Project
 
@@ -76,10 +76,10 @@ dotnet run -- --target YourProjectName
 
 ```bash
 # Latest run
-ls Docs/runs/BlazorApp1/main/latest/
+ls Docs/runs/FreeExamples/main/latest/
 
 # Generated report
-cat Docs/runs/BlazorApp1/main/latest/BlazorApp1-Report.md
+cat Docs/runs/FreeExamples/main/latest/FreeExamples-Report.md
 ```
 
 ---
@@ -90,7 +90,7 @@ cat Docs/runs/BlazorApp1/main/latest/BlazorApp1-Report.md
 dotnet run -- [options]
 
 Options:
-  --target <name>       Target project folder name (default: BlazorApp1)
+  --target <name>       Target project folder name (default: FreeExamples)
   --keep-backups <n>    Number of timestamped backups to keep (default: 0)
   --skip-cleanup        Skip cleanup of old run folders
 ```
@@ -136,7 +136,7 @@ The AppHost sets these for each tool:
 Each run creates:
 
 ```
-Docs/runs/BlazorApp1/main/latest/
+Docs/runs/FreeExamples/main/latest/
 ├── pages.csv                    # All Blazor routes
 ├── workspace-inventory.csv      # File inventory with metrics
 ├── snapshots/
@@ -148,7 +148,7 @@ Docs/runs/BlazorApp1/main/latest/
 │   │       ├── default.html
 │   │       └── default.png
 │   └── ...
-└── BlazorApp1-Report.md         # Summary report
+└── FreeExamples-Report.md       # Summary report
 ```
 
 ---

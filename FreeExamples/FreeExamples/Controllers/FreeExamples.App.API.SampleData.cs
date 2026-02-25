@@ -27,9 +27,23 @@ public partial class DataController
     [HttpPost]
     [Authorize]
     [Route("~/api/Data/SaveSampleItems")]
-    public ActionResult<List<DataObjects.SampleItem>> SaveSampleItems(List<DataObjects.SampleItem> items)
+    public async Task<ActionResult<List<DataObjects.SampleItem>>> SaveSampleItems(List<DataObjects.SampleItem> items)
     {
-        return Ok(da.SaveSampleItems(items, CurrentUser));
+        var saved = da.SaveSampleItems(items, CurrentUser);
+
+        // Broadcast each saved item via SignalR so other clients update in real time.
+        foreach (var item in saved) {
+            await da.SignalRUpdate(new DataObjects.SignalRUpdate {
+                TenantId = CurrentUser.TenantId,
+                ItemId = item.SampleItemId,
+                UserId = CurrentUser.UserId,
+                UpdateType = DataObjects.SignalRUpdateType.SampleItemSaved,
+                Message = "saved",
+                Object = item,
+            });
+        }
+
+        return Ok(saved);
     }
 
     /// <summary>
@@ -39,9 +53,24 @@ public partial class DataController
     [HttpPost]
     [Authorize]
     [Route("~/api/Data/DeleteSampleItems")]
-    public ActionResult<DataObjects.BooleanResponse> DeleteSampleItems(List<Guid>? ids)
+    public async Task<ActionResult<DataObjects.BooleanResponse>> DeleteSampleItems(List<Guid>? ids)
     {
-        return Ok(da.DeleteSampleItems(ids));
+        var result = da.DeleteSampleItems(ids);
+
+        // Broadcast each deleted ID via SignalR.
+        if (result.Result && ids != null) {
+            foreach (var id in ids) {
+                await da.SignalRUpdate(new DataObjects.SignalRUpdate {
+                    TenantId = CurrentUser.TenantId,
+                    ItemId = id,
+                    UserId = CurrentUser.UserId,
+                    UpdateType = DataObjects.SignalRUpdateType.SampleItemDeleted,
+                    Message = "deleted",
+                });
+            }
+        }
+
+        return Ok(result);
     }
 
     /// <summary>
@@ -54,5 +83,49 @@ public partial class DataController
     public ActionResult<DataObjects.SampleDashboard> GetSampleDashboard()
     {
         return Ok(da.GetSampleDashboard());
+    }
+
+    /// <summary>
+    /// Filtered, sorted, paginated list of sample items.
+    /// </summary>
+    [HttpPost]
+    [Authorize]
+    [Route("~/api/Data/GetSampleItemsFiltered")]
+    public ActionResult<DataObjects.FilterSampleItems> GetSampleItemsFiltered(DataObjects.FilterSampleItems filter)
+    {
+        return Ok(da.GetSampleItemsFiltered(filter));
+    }
+
+    /// <summary>
+    /// Server-side text file generation for download demo.
+    /// </summary>
+    [HttpGet]
+    [Authorize]
+    [Route("~/api/Data/GenerateSampleTextFile")]
+    public ActionResult<DataObjects.SampleFileResponse> GenerateSampleTextFile()
+    {
+        return Ok(da.GenerateSampleTextFile());
+    }
+
+    /// <summary>
+    /// Server-side CSV export for download demo.
+    /// </summary>
+    [HttpGet]
+    [Authorize]
+    [Route("~/api/Data/GenerateSampleCsvExport")]
+    public ActionResult<DataObjects.SampleFileResponse> GenerateSampleCsvExport()
+    {
+        return Ok(da.GenerateSampleCsvExport());
+    }
+
+    /// <summary>
+    /// Network graph nodes and edges from sample data for vis.js demo.
+    /// </summary>
+    [HttpGet]
+    [Authorize]
+    [Route("~/api/Data/GetSampleGraphData")]
+    public ActionResult<DataObjects.SampleGraphData> GetSampleGraphData()
+    {
+        return Ok(da.GetSampleGraphData());
     }
 }

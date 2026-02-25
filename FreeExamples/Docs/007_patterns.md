@@ -10,6 +10,7 @@
 
 | Document | Description | When to Use |
 |----------|-------------|-------------|
+| [007_patterns.crud_api.md](007_patterns.crud_api.md) | **Three-endpoint CRUD pattern (GetMany/SaveMany/DeleteMany)** | **Building any entity API — read this first** |
 | [007_patterns.helpers.md](007_patterns.helpers.md) | Helpers static class reference | Using utility methods |
 | [007_patterns.signalr.md](007_patterns.signalr.md) | Real-time updates with SignalR | Implementing live updates |
 | [007_patterns.filter_pagination.md](007_patterns.filter_pagination.md) | Filter, pagination & sorting | Building list pages |
@@ -26,6 +27,21 @@ Pattern guides document reusable code patterns that appear across multiple FreeC
 ---
 
 ## Available Guides
+
+### 007_patterns.crud_api.md - Three-Endpoint CRUD Pattern ⭐
+
+**Purpose:** Our preferred API pattern — three endpoints per entity instead of 6+.
+
+**Key Topics:**
+- **GetMany**: `List<Guid>?` → null/empty returns all, IDs returns filtered
+- **SaveMany**: `List<T>` → PK exists = update, empty/new PK = insert
+- **DeleteMany**: `List<Guid>` → must provide IDs, null/empty = error
+- Single-item convenience methods wrapping the batch versions
+- Full DataAccess, Controller, and Client examples
+
+**Use when:** Building any new entity with CRUD operations. **Read this first.**
+
+---
 
 ### 007_patterns.helpers.md - Helpers & Utilities
 

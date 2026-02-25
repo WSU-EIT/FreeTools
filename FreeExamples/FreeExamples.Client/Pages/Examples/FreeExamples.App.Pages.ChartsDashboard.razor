@@ -15,18 +15,45 @@
             </h1>
         </div>
 
-        <p class="text-muted mb-3">
-            Demonstrates Highcharts pie and column charts with data from the sample API.
-            <br /><strong>Doc:</strong> <code>008_components.highcharts.md</code>
-        </p>
+        <AboutSection Title="About Charts Dashboard" Subtitle="Learn how web apps turn numbers into visual charts you can interact with" IconClass="fa-solid fa-chart-pie">
+            <div class="row">
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-question-circle me-1"></i>What Is This Page?</h6>
+                    <p class="small text-muted mb-0">
+                        This page turns raw data into visual <strong>charts</strong> — pictures that make numbers
+                        easier to understand. A <strong>pie chart</strong> shows how a total is divided into parts
+                        (like slices of a pizza). A <strong>column chart</strong> (bar chart) compares amounts
+                        side by side. You can click on a pie slice to "drill down" and see the items in that slice.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-lightbulb me-1"></i>What You'll Learn</h6>
+                    <ul class="small text-muted mb-0 ps-3">
+                        <li><strong>Data visualization</strong> — turning numbers into pictures</li>
+                        <li><strong>Pie charts</strong> — showing proportions (e.g., 40% Active, 30% Completed)</li>
+                        <li><strong>Column charts</strong> — comparing values across categories</li>
+                        <li><strong>Click drill-down</strong> — clicking a chart element to see its details</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <h6 class="text-info"><i class="fa-solid fa-road me-1"></i>How Does It Work?</h6>
+                    <p class="small text-muted mb-0">
+                        The page loads data from the server (the same dashboard numbers). That data is passed
+                        to a <strong>Highcharts</strong> component — a JavaScript library that draws interactive
+                        charts in the browser. We give it the numbers and labels, and it handles all the drawing,
+                        animation, and click interaction. The chart redraws automatically when data changes.
+                    </p>
+                </div>
+            </div>
+        </AboutSection>
 
         @* Status Pie Chart *@
         <div class="row mb-4">
             <div class="col-md-6">
-                <div class="card shadow-sm border-0">
+                <div class="card shadow-sm border-0" role="region" aria-label="Items by Status chart">
                     <div class="card-header bg-white"><h6 class="mb-0">Items by Status</h6></div>
                     <div class="card-body">
-                        <div id="chart-status-pie" style="min-height:300px;">
+                        <div id="chart-status-pie" style="min-height:300px;" role="img" aria-label="Pie chart showing item counts by status">
                             <Highcharts @ref="_pieChart"
                                 ElementId="chart-status-pie"
                                 ChartTitle="Items by Status"
@@ -38,10 +65,10 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card shadow-sm border-0">
+                <div class="card shadow-sm border-0" role="region" aria-label="Amount by Category chart">
                     <div class="card-header bg-white"><h6 class="mb-0">Amount by Category</h6></div>
                     <div class="card-body">
-                        <div id="chart-category-column" style="min-height:300px;">
+                        <div id="chart-category-column" style="min-height:300px;" role="img" aria-label="Column chart showing amounts by category">
                             <Highcharts @ref="_columnChart"
                                 ElementId="chart-category-column"
                                 ChartTitle="Amount by Category"
@@ -54,12 +81,6 @@
                 </div>
             </div>
         </div>
-
-        @if (!string.IsNullOrWhiteSpace(_selectedSlice)) {
-            <div class="alert alert-info">
-                <strong>Clicked:</strong> @_selectedSlice
-            </div>
-        }
     }
 }
 
@@ -70,7 +91,6 @@
     private bool _loadedData = false;
     private string _pageName = "chartsdashboard";
     private DataObjects.SampleDashboard _dashboard = new();
-    private string _selectedSlice = "";
 
     private Highcharts? _pieChart;
     private Highcharts? _columnChart;
@@ -86,8 +106,9 @@
 
     protected override void OnInitialized()
     {
+        Model.View = _pageName;
         Model.OnChange += OnDataModelUpdated;
-        Model.Subscribers_OnChange[_pageName] = true;
+        if (!Model.Subscribers_OnChange.Contains(_pageName)) { Model.Subscribers_OnChange.Add(_pageName); }
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -111,6 +132,9 @@
         if (result != null) {
             _dashboard = result;
             BuildChartData();
+            Model.AddMessage($"Dashboard loaded: {_dashboard.TotalItems} total items.", MessageType.Success);
+        } else {
+            Model.AddMessage("Failed to load dashboard data.", MessageType.Danger);
         }
 
         _loading = false;
@@ -144,8 +168,7 @@
     private void OnPieClicked(int index)
     {
         if (_pieData != null && index >= 0 && index < _pieData.Length) {
-            _selectedSlice = _pieData[index].name + " (" + _pieData[index].data + " items)";
-            StateHasChanged();
+            Model.AddMessage($"Chart clicked: {_pieData[index].name} ({_pieData[index].data} items)", MessageType.Info);
         }
     }
 }

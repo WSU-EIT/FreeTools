@@ -2,6 +2,8 @@
 
 > Patterns for building interactive charts and reports using Highcharts in FreeCRM-based Blazor applications.
 
+> **API Convention:** Chart data should always come from API endpoints. Use the three-endpoint CRUD pattern per [007_patterns.crud_api.md](007_patterns.crud_api.md).
+
 ---
 
 ## Document Index

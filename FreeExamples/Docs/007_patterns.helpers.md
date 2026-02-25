@@ -233,10 +233,25 @@ The primary method for all API communication. Automatically handles:
 - JSON serialization/deserialization
 - Error logging
 
+> **Preferred:** Use with the three-endpoint CRUD pattern (GetMany/SaveMany/DeleteMany).
+> See [007_patterns.crud_api.md](007_patterns.crud_api.md) for the full pattern.
+
 ```csharp
 // Signature
 public static async Task<T?> GetOrPost<T>(string url, object? post = null, bool logResults = false)
 
+// ---- Preferred: Three-endpoint CRUD pattern ----
+// GetMany: null/empty → all, IDs → filtered
+var all = await Helpers.GetOrPost<List<DataObjects.Tag>>("api/Data/GetTags", new List<Guid>());
+var some = await Helpers.GetOrPost<List<DataObjects.Tag>>("api/Data/GetTags", new List<Guid> { id1, id2 });
+
+// SaveMany: PK exists → update, empty/new PK → insert
+var saved = await Helpers.GetOrPost<List<DataObjects.Tag>>("api/Data/SaveTags", new List<DataObjects.Tag> { tag });
+
+// DeleteMany: must provide IDs
+var deleted = await Helpers.GetOrPost<DataObjects.BooleanResponse>("api/Data/DeleteTags", new List<Guid> { tagId });
+
+// ---- Legacy: Individual endpoints ----
 // GET request
 var tag = await Helpers.GetOrPost<DataObjects.Tag>("api/Data/GetTag/" + id);
 

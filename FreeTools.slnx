@@ -5,7 +5,10 @@
     <Project Path="FreeExamples/FreeExamples.DataAccess/FreeExamples.DataAccess.csproj" />
     <Project Path="FreeExamples/FreeExamples.DataObjects/FreeExamples.DataObjects.csproj" />
     <Project Path="FreeExamples/FreeExamples.EFModels/FreeExamples.EFModels.csproj" />
+    <Project Path="FreeExamples/FreeExamples.NuGetClient/FreeExamples.NuGetClient.csproj" />
+    <Project Path="FreeExamples/FreeExamples.NuGetClientPublisher/FreeExamples.NuGetClientPublisher.csproj" />
     <Project Path="FreeExamples/FreeExamples.Plugins/FreeExamples.Plugins.csproj" />
+    <Project Path="FreeExamples/FreeExamples.TestClient/FreeExamples.TestClient.csproj" />
     <Project Path="FreeExamples/FreeExamples/FreeExamples.csproj" />
   </Folder>
   <Folder Name="/FreeTools/">
