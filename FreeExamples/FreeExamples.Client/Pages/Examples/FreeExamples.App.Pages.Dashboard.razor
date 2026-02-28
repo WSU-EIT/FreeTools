@@ -48,6 +48,11 @@
         </AboutSection>
 
         @* Status Summary Cards *@
+        <div class="d-flex align-items-center mb-2">
+            <InfoTip Title="Summary Cards"
+                     Description="These four cards show aggregate counts from the database. Each card displays a single number (Total, Active, Completed, Draft). The server runs a COUNT query for each status and returns the results as JSON. Blazor renders a card for each value."
+                     Code="@_codeSummaryCards" />
+        </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 mb-4">
             <div class="col">
                 <div class="card h-100 shadow-sm border-0">
@@ -84,7 +89,11 @@
         </div>
 
         @* Quick Links to All Example Pages *@
-        <h5 class="mb-3">Example Pages</h5>
+        <h5 class="mb-3">Example Pages
+            <InfoTip Title="Card Grid"
+                     Description="This grid uses Bootstrap's responsive column system. On a phone it shows 1 card per row; on a tablet, 2; on a desktop, 3. Each card links to a demo page. The row-cols-* classes control the layout breakpoints."
+                     Code="@_codeCardGrid" />
+        </h5>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
             @foreach (var example in _examplePages) {
@@ -99,6 +108,9 @@
                             <p class="card-text small text-muted mb-2">@example.Description</p>
                             <span class="badge @example.PhaseBadge">@example.Phase</span>
                             <span class="badge bg-secondary">@example.DocRef</span>
+                            <InfoTip Title="Phase Badge"
+                                     Description="Badges are small colored labels. The CSS class determines the color — bg-success makes it green, bg-warning makes it yellow. They give you a quick visual status at a glance without reading text."
+                                     Code="@_codePhaseBadge" />
                         </div>
                     </div>
                 </div>
@@ -107,7 +119,11 @@
 
         @* Category Breakdown Table *@
         @if (_dashboard.ByCategory.Any()) {
-            <h5 class="mb-3">Sample Data by Category</h5>
+            <h5 class="mb-3">Sample Data by Category
+                <InfoTip Title="Data Table"
+                         Description="This HTML table shows the same data the charts use. Each row is rendered by looping over the ByCategory list from the server. The ToString('C') formats numbers as currency ($1,234.56)."
+                         Code="@_codeDataTable" />
+            </h5>
             <table class="table table-hover">
                 <thead>
                     <tr>
@@ -136,6 +152,10 @@
     private bool _loading = true;
     private bool _loadedData = false;
     private string _pageName = "examplesdashboard";
+    private string _codeSummaryCards = "<h3 class=\"text-primary\">@_dashboard.TotalItems</h3>\n<div class=\"text-muted\">Total Items</div>";
+    private string _codeCardGrid = "<div class=\"row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3\">";
+    private string _codeDataTable = "@cat.TotalAmount.ToString(\"C\")";
+    private string _codePhaseBadge = "<span class=\"badge @example.PhaseBadge\">@example.Phase</span>";
     private DataObjects.SampleDashboard _dashboard = new();
 
     private List<ExamplePageLink> _examplePages = new List<ExamplePageLink> {

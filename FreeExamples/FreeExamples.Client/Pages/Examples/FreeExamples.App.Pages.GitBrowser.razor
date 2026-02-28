@@ -52,7 +52,11 @@
 
         @* Repo URL input *@
         <div class="mb-3">
-            <label for="git-repo-url" class="form-label fw-semibold">Repository URL</label>
+            <label for="git-repo-url" class="form-label fw-semibold">Repository URL
+                <InfoTip Title="Repository URL Input"
+                         Description="Paste the URL of any public Git repository here (e.g., from GitHub). When you click Browse, the server downloads just the latest snapshot (depth=1, no history) into memory, reads all files, then deletes the temp clone. Everything is served from memory after that."
+                         Code="@_codeRepoUrl" />
+            </label>
             <div class="input-group" style="max-width: 600px;">
                 <span class="input-group-text bg-white" aria-hidden="true"><i class="fa fa-code-branch text-muted"></i></span>
                 <input type="text" id="git-repo-url" class="form-control"
@@ -82,6 +86,9 @@
         @if (_cloned) {
             @* Breadcrumb navigation *@
             <nav aria-label="Repository path" class="mb-3">
+                <InfoTip Title="Breadcrumb Navigation"
+                         Description="This clickable path trail shows where you are in the repository folder tree. Each segment is a folder name — click any segment to jump back to that folder. Root takes you to the top level. The breadcrumb is built by splitting the current path on / and creating a link for each segment."
+                         Code="@_codeBreadcrumb" />
                 <ol class="breadcrumb mb-0 bg-light rounded-3 p-2 px-3 shadow-sm">
                     <li class="breadcrumb-item @(string.IsNullOrEmpty(_currentPath) ? "active" : "")">
                         @if (string.IsNullOrEmpty(_currentPath)) {
@@ -117,6 +124,9 @@
                             <i class="@GetFileIcon(_viewingFile.Extension)" aria-hidden="true"></i>
                             <span class="fw-semibold">@_viewingFile.Name</span>
                             <span class="badge bg-secondary">@FormatBytes(_viewingFile.Size)</span>
+                            <InfoTip Title="File Viewer"
+                                     Description="When you click a file, its contents load into a read-only Monaco editor with syntax highlighting. The editor language is auto-detected from the file extension — .cs files get C# coloring, .js gets JavaScript, etc. Binary files (images, compiled programs) show a placeholder message instead."
+                                     Code="@_codeFileViewer" />
                         </div>
                         <button class="btn btn-outline-light btn-sm" @onclick="CloseFile" aria-label="Close file viewer">
                             <i class="fa fa-times me-1" aria-hidden="true"></i> Close
@@ -147,6 +157,9 @@
                             <span>
                                 <i class="fa fa-folder-open me-1" aria-hidden="true"></i>
                                 @(string.IsNullOrEmpty(_currentPath) ? "/" : "/" + _currentPath)
+                                <InfoTip Title="Directory Listing"
+                                         Description="This list shows the folders and files in the current directory — folders first (with folder icons), then files (with type-specific icons). Click a folder to navigate into it; click a file to view its contents. The .. entry at the top takes you up one directory level."
+                                         Code="@_codeDirList" />
                             </span>
                             <span class="badge bg-secondary">@_entries.Count items</span>
                         </div>
@@ -196,6 +209,10 @@
     private bool _loading = true;
     private bool _loadedData = false;
     private string _pageName = "gitbrowser";
+    private string _codeRepoUrl = "git clone --depth 1 --single-branch --no-tags <url>";
+    private string _codeBreadcrumb = "<nav aria-label=\"Repository path\">\n    <ol class=\"breadcrumb\">...</ol>\n</nav>";
+    private string _codeDirList = "@foreach (var entry in _entries) {\n    <button @onclick=\"OnEntryClicked(entry)\">\n}";
+    private string _codeFileViewer = "<MonacoEditor Language=\"@_monacoLanguage\"\n    Value=\"@_viewingFile.Content\"\n    ReadOnly=\"true\" />";
 
     private string _repoUrl = "https://github.com/WSU-EIT/FreeTools";
     private bool _cloned = false;

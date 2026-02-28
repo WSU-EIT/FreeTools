@@ -56,10 +56,16 @@
                 Steps="@GetStepperInfo()"
                 CurrentStep="@_currentStep"
                 OnStepClick="@GoToStep" />
+            <InfoTip Title="Wizard Stepper"
+                     Description="The numbered circles at the top show your progress through the wizard. Completed steps are clickable — you can jump back to review or change answers. The current step is highlighted. Connector lines between circles show the flow."
+                     Code="@_codeStepper" />
 
             @* Selection Summary - Shows previous selections as badges *@
             @if (_currentStep > 0) {
                 <FreeExamples.Client.Shared.Wizard.WizardSummary Selections="@GetSelections()" />
+                <InfoTip Title="Selection Summary"
+                         Description="These colored badge pills show what you chose in previous steps — like breadcrumbs of your decisions. They remind you what you picked without going back. They appear between the stepper and the current step content."
+                         Code="@_codeSummary" />
             }
 
             @* Main Wizard Card *@
@@ -72,6 +78,9 @@
                             ShowNext="true"
                             NextDisabled="@(string.IsNullOrWhiteSpace(_selectedCategory))"
                             OnNext="@Next" />
+                        <InfoTip Title="Step Navigation"
+                                 Description="Back and Next buttons control movement through steps. Next is disabled (greyed out) until required fields are filled. The NextDisabled parameter is calculated from validation — for example, preventing advancing without picking a category."
+                                 Code="@_codeStepNav" />
                         break;
                     case 1:
                         <FreeExamples.Client.Shared.Wizard.WizardStepHeader
@@ -111,9 +120,12 @@
                             <fieldset>
                                 <legend class="visually-hidden">Step 1: Select a Category</legend>
                                 <div class="mb-3">
-                                    <label for="wizard-category" class="form-label fw-semibold">
-                                        Category <span class="text-danger" aria-hidden="true">*</span>
-                                    </label>
+                                        <label for="wizard-category" class="form-label fw-semibold">
+                                            Category <span class="text-danger" aria-hidden="true">*</span>
+                                            <InfoTip Title="Required Fields"
+                                                     Description="The red asterisk means this field must be filled in. If you click Next without selecting a value, the field turns red with an error message. The _attemptedNext flag tracks whether you have tried to advance — validation errors only show after your first attempt so the form does not start angry."
+                                                     Code="@_codeWizardRequired" />
+                                        </label>
                                     <select id="wizard-category"
                                             class="form-select @((_attemptedNext && string.IsNullOrWhiteSpace(_selectedCategory)) ? "is-invalid" : "")"
                                             @bind="_selectedCategory"
@@ -193,7 +205,11 @@
                         case 3:
                             <fieldset>
                                 <legend class="visually-hidden">Step 4: Review & Submit</legend>
-                                <h6 class="mb-3"><i class="fa fa-clipboard-check me-1" aria-hidden="true"></i> Review Your Selections</h6>
+                                <h6 class="mb-3"><i class="fa fa-clipboard-check me-1" aria-hidden="true"></i> Review Your Selections
+                                    <InfoTip Title="Review Step"
+                                             Description="The final step shows all your choices in a summary table before submitting. This is a common UX pattern — let users verify everything before committing. The Finish button replaces Next, signaling that this is the last step. No data is saved until you click Finish."
+                                             Code="@_codeReview" />
+                                </h6>
                                 <div class="table-responsive">
                                     <table class="table table-bordered mb-0" aria-label="Review of your wizard selections">
                                         <tbody>
@@ -240,6 +256,11 @@
     private bool _loading = true;
     private bool _loadedData = false;
     private string _pageName = "wizarddemo";
+    private string _codeStepper = "<WizardStepper Steps=\"@GetStepperInfo()\"\n    CurrentStep=\"@_currentStep\"\n    OnStepClick=\"@GoToStep\" />";
+    private string _codeSummary = "<WizardSummary Selections=\"@GetSelections()\" />";
+    private string _codeStepNav = "NextDisabled=\"@(string.IsNullOrWhiteSpace(_selectedCategory))\"";
+    private string _codeWizardRequired = "aria-required=\"true\"\naria-invalid=\"@(_attemptedNext && empty)\"";
+    private string _codeReview = "<WizardStepHeader ShowFinish=\"true\"\n    OnFinish=\"@Finish\" />";
     private int _currentStep = 0;
     private bool _attemptedNext = false;
 

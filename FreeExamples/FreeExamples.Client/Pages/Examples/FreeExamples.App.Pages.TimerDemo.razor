@@ -51,7 +51,11 @@
             @* Countdown Timer *@
             <div class="col-md-6 mb-4">
                 <div class="card shadow-sm border-0" role="region" aria-label="Countdown timer">
-                    <div class="card-header bg-white"><h6 class="mb-0">Countdown Timer</h6></div>
+                    <div class="card-header bg-white"><h6 class="mb-0">Countdown Timer
+                        <InfoTip Title="Countdown Timer"
+                                 Description="This large number counts down from 60 to 0, then resets. A C# Timer fires every 1 second, decrements the counter, and tells Blazor to re-render. At 10 seconds or less, the progress bar turns red (bg-danger) to signal urgency."
+                                 Code="@_codeCountdown" />
+                    </h6></div>
                     <div class="card-body">
                         <div class="mb-2" style="font-size:3em; font-family:monospace; text-align:center;" aria-live="polite" aria-atomic="true" role="timer">
                             @_secondsRemaining
@@ -65,6 +69,9 @@
                                 @_secondsRemaining s
                             </div>
                         </div>
+                        <InfoTip Title="Progress Bar"
+                                 Description="The progress bar width is calculated as a percentage: (secondsRemaining / 60) * 100. CSS handles the visual — the width style fills that percentage of the bar. The color class changes dynamically: blue normally, red when 10 seconds or less. aria-valuenow keeps screen readers updated."
+                                 Code="@_codeProgressBar" />
                         <div class="small text-muted mt-2">Refreshes every 60 seconds at the top of the minute.</div>
                     </div>
                 </div>
@@ -73,7 +80,11 @@
             @* Debounce Input *@
             <div class="col-md-6 mb-4">
                 <div class="card shadow-sm border-0" role="region" aria-label="Debounce input demo">
-                    <div class="card-header bg-white"><h6 class="mb-0">Debounce Input (500ms)</h6></div>
+                    <div class="card-header bg-white"><h6 class="mb-0">Debounce Input (500ms)
+                        <InfoTip Title="Debounce Input"
+                                 Description="Debouncing means wait until the user stops typing before doing something. Without debounce, every keystroke would trigger a server request. With a 500ms debounce, the code waits half a second after the last keystroke before processing. This saves server resources and feels smoother."
+                                 Code="@_codeDebounce" />
+                    </h6></div>
                     <div class="card-body">
                         <label for="debounce-input" class="visually-hidden">Debounce search input</label>
                         <input type="text" id="debounce-input" class="form-control mb-2" placeholder="Type something..."
@@ -89,7 +100,11 @@
         <div class="card shadow-sm border-0 mb-4" role="region" aria-label="Auto-refresh demo">
             <div class="card-header bg-white">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h6 class="mb-0">Auto-Refresh (every 10s)</h6>
+                    <h6 class="mb-0">Auto-Refresh (every 10s)
+                        <InfoTip Title="Auto-Refresh"
+                                 Description="This toggle starts or stops a repeating timer. When enabled, the page fetches fresh data from the server every 10 seconds automatically. When disabled, data only updates when you manually click Refresh. The IDisposable pattern ensures the timer is stopped when you leave the page."
+                                 Code="@_codeAutoRefresh" />
+                    </h6>
                     <div class="form-check form-switch mb-0">
                         <input type="checkbox" class="form-check-input" id="auto-refresh" @bind="_autoRefreshEnabled" @bind:after="ToggleAutoRefresh" aria-label="Toggle auto-refresh" />
                         <label class="form-check-label" for="auto-refresh">Enabled</label>
@@ -109,6 +124,10 @@
     private bool _loading = true;
     private bool _loadedData = false;
     private string _pageName = "timerdemo";
+    private string _codeCountdown = "timer.Elapsed += (s, e) => {\n    _secondsRemaining--;\n    InvokeAsync(StateHasChanged);\n}";
+    private string _codeProgressBar = "style=\"width:@(pct)%\"";
+    private string _codeDebounce = "Helpers.Debounce(async () => {\n    _debouncedValue = text;\n}, 500)";
+    private string _codeAutoRefresh = "<input type=\"checkbox\"\n    @bind=\"_autoRefreshEnabled\"\n    @bind:after=\"ToggleAutoRefresh\" />";
 
     // Countdown
     private int _secondsRemaining = 60;

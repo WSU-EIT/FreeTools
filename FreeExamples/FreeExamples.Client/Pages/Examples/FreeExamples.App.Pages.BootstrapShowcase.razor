@@ -51,7 +51,11 @@
         </AboutSection>
 
         @* Tabs Demo *@
-        <h5 class="mb-3" id="tabs-heading">Tabs</h5>
+        <h5 class="mb-3" id="tabs-heading">Tabs
+            <InfoTip Title="Tabs Navigation"
+                     Description="Tabs organize content into panels. Only one tab panel is visible at a time. When you click a tab, Blazor updates a _activeTab variable and re-renders to show the matching panel. The aria-selected attribute tells screen readers which tab is active."
+                     Code="@_codeTabs" />
+        </h5>
         <ul class="nav nav-tabs mb-3" role="tablist" aria-labelledby="tabs-heading">
             <li class="nav-item" role="presentation">
                 <button class="nav-link @(_activeTab == "cards" ? "active" : "")" @onclick="@(() => _activeTab = "cards")" role="tab" aria-selected="@(_activeTab == "cards")" aria-controls="tab-cards">
@@ -103,6 +107,9 @@
                             </div>
                             <div class="card-footer bg-white border-top-0 pt-0 pb-3">
                                 <button class="btn btn-sm btn-outline-primary" @onclick="@(() => OnEditClicked(item))" title="Edit @item.Name" aria-label="Edit @item.Name"><i class="fa fa-edit" aria-hidden="true"></i></button>
+                                    <InfoTip Title="Two-Click Delete (Card)"
+                                             Description="The trash icon starts the delete. When clicked, it changes to show Cancel and Confirm buttons. You must click Confirm to actually delete. This prevents accidents — especially important on touch screens where taps can be imprecise."
+                                             Code="@_codeTwoClickDelete" />
                                 @if (_confirmDeleteId == item.SampleItemId) {
                                     <button class="btn btn-sm btn-outline-secondary" @onclick="CancelDelete" title="Cancel delete" aria-label="Cancel delete">
                                         <i class="fa fa-times" aria-hidden="true"></i>
@@ -124,7 +131,11 @@
         @if (_activeTab == "badges") {
             <div id="tab-badges" role="tabpanel" aria-labelledby="tabs-heading">
             <div class="mb-4">
-                <h6>Status Badges</h6>
+                <h6>Status Badges
+                    <InfoTip Title="Status Badges"
+                             Description="A badge is a small colored label. The color communicates meaning at a glance: green = good/active, red = error/failed, yellow = warning/draft, grey = archived. The CSS class bg-success, bg-danger, etc. sets the color. Badges are used everywhere."
+                             Code="@_codeBadges" />
+                </h6>
                 <span class="badge bg-success me-1" role="status">Active</span>
                 <span class="badge bg-danger me-1" role="status">Failed</span>
                 <span class="badge bg-primary me-1" role="status">Running</span>
@@ -149,7 +160,11 @@
         @if (_activeTab == "modals") {
             <div id="tab-modals" role="tabpanel" aria-labelledby="tabs-heading">
             <div class="mb-4">
-                <h6>Radzen Dialog</h6>
+                <h6>Radzen Dialog
+                    <InfoTip Title="Modal Dialog"
+                             Description="A modal is a popup window that appears on top of the page and blocks interaction with everything behind it. It focuses your attention on one task (like confirming a delete or entering information). Clicking outside or pressing Escape closes it."
+                             Code="@_codeModal" />
+                </h6>
                 <p class="small text-muted">Click to open a modal dialog.</p>
                 <button class="btn btn-primary" @onclick="OpenDialog" aria-label="Open example dialog">
                     <i class="fa-solid fa-window-restore me-1" aria-hidden="true"></i> Open Dialog
@@ -172,7 +187,11 @@
 
             @* Search with Clear — FreeCICD FilterBar pattern *@
             <div class="mb-4">
-                <h6>Search with Clear Button</h6>
+                <h6>Search with Clear Button
+                    <InfoTip Title="Search with Clear"
+                             Description="This input has a search icon on the left and a clear (X) button on the right. The X only appears when you have typed something. Clicking it empties the search box instantly. The bind:event=oninput makes it update as you type, not just when you leave the field."
+                             Code="@_codeSearchClear" />
+                </h6>
                 <p class="small text-muted">Input group with search icon and dismissable clear button. Pattern from FreeCICD FilterBar.</p>
                 <div class="input-group" style="max-width: 400px;">
                     <span class="input-group-text bg-white border-end-0" aria-hidden="true">
@@ -198,7 +217,11 @@
 
             @* Toggle Switch — FreeCICD ViewControls pattern *@
             <div class="mb-4">
-                <h6>Toggle Switches</h6>
+                <h6>Toggle Switches
+                    <InfoTip Title="Toggle Switches"
+                             Description="A toggle switch is a styled checkbox that looks like a physical on/off switch. It is more intuitive than a checkbox for settings like Enable Notifications because the sliding action makes the on/off state visually obvious."
+                             Code="@_codeToggles" />
+                </h6>
                 <p class="small text-muted">Bootstrap switch toggles for boolean settings. Pattern from FreeCICD Dashboard.</p>
                 <div class="d-flex flex-column gap-2" style="max-width: 300px;">
                     <div class="form-check form-switch">
@@ -230,7 +253,11 @@
 
             @* Inline Required Field Validation — FreeGLBA/PluginPrompts pattern *@
             <div class="mb-4">
-                <h6>Required Field Validation (ADA)</h6>
+                <h6>Required Field Validation (ADA)
+                    <InfoTip Title="Form Validation"
+                             Description="When you click Validate, the code checks each required field. Empty fields get a red border (is-invalid), and an error message appears below them with role=alert so screen readers announce it. The aria-invalid attribute also communicates the error state programmatically."
+                             Code="@_codeFormValidation" />
+                </h6>
                 <p class="small text-muted">
                     Inline validation with <code>aria-required</code>, <code>aria-invalid</code>, and <code>role="alert"</code>.
                     Pattern from PluginPrompts and WizardDemo.
@@ -294,7 +321,11 @@
 
             @* Accordion / Collapsible Sections *@
             <div class="mb-4">
-                <h6>Accordion / Collapsible Sections</h6>
+                <h6>Accordion / Collapsible Sections
+                    <InfoTip Title="Accordion"
+                             Description="An accordion is a list of collapsible sections — click a header to expand its content, click again to collapse. Only one section is open at a time. This saves vertical space when you have lots of content. The expand/collapse is done by toggling an _openAccordion variable."
+                             Code="@_codeAccordion" />
+                </h6>
                 <p class="small text-muted">Bootstrap accordion for expandable content sections.</p>
                 <div class="accordion" id="demoAccordion">
                     @for (int i = 0; i < _accordionItems.Count; i++) {
@@ -322,7 +353,11 @@
 
             @* Card / Table View Toggle — FreeCICD ViewControls pattern *@
             <div class="mb-4">
-                <h6>Card / Table View Toggle</h6>
+                <h6>Card / Table View Toggle
+                    <InfoTip Title="View Toggle"
+                             Description="These buttons let you switch between two ways of viewing the same data: as visual cards or as a compact table. The _viewMode variable controls which is rendered. Both views show the same data — just laid out differently. Card view is scannable; table view is dense and sortable."
+                             Code="@_codeViewToggle" />
+                </h6>
                 <p class="small text-muted">Switch between card and table views. Pattern from FreeCICD Pipeline Dashboard.</p>
                 <div class="btn-group mb-3" role="group" aria-label="View mode">
                     <button type="button" class="btn @(_viewMode == "card" ? "btn-primary" : "btn-outline-primary")"
@@ -422,7 +457,11 @@
 
             @* Toast Notifications — ToastMessages pattern *@
             <div class="mb-4">
-                <h6>Toast Notifications</h6>
+                <h6>Toast Notifications
+                    <InfoTip Title="Toast Notifications"
+                             Description="A toast is a brief message that pops up at the top of the page and fades away after a few seconds (like bread popping out of a toaster). It confirms that an action worked (Saved!) or warns about a problem. The Model.AddMessage() method triggers the toast from anywhere in code."
+                             Code="@_codeToast" />
+                </h6>
                 <p class="small text-muted">Trigger toast messages using the framework's <code>Model.AddMessage()</code> pattern.</p>
                 <div class="d-flex flex-wrap gap-2">
                     <button class="btn btn-success btn-sm" @onclick="@(() => Model.AddMessage("Item saved successfully!", MessageType.Success))">
@@ -523,6 +562,16 @@
     private bool _loading = true;
     private bool _loadedData = false;
     private string _pageName = "bootstrapshowcase";
+    private string _codeTabs = "<button class=\"nav-link @(_activeTab == \"cards\" ? \"active\" : \"\")\" @onclick=\"...\">Status Cards</button>";
+    private string _codeTwoClickDelete = "@if (_confirmDeleteId == item.Id) {\n    <button class=\"btn-danger\">Confirm</button>\n}";
+    private string _codeBadges = "<span class=\"badge bg-success\">Active</span>";
+    private string _codeModal = "await DialogService.OpenAsync<GetInputDialog>(\"Dialog Title\", ...)";
+    private string _codeSearchClear = "@bind=\"_searchTerm\" @bind:event=\"oninput\"";
+    private string _codeToggles = "<input class=\"form-check-input\" type=\"checkbox\" role=\"switch\" @onchange=\"...\" />";
+    private string _codeFormValidation = "class=\"form-control @(_showFormValidation && empty ? \"is-invalid\" : \"\")\"";
+    private string _codeAccordion = "@onclick=\"@(() => _openAccordion = isOpen ? -1 : idx)\"";
+    private string _codeViewToggle = "<button class=\"btn @(_viewMode == \"card\" ? \"btn-primary\" : \"btn-outline-primary\")\" @onclick=\"...\">Cards</button>";
+    private string _codeToast = "Model.AddMessage(\"Saved!\", MessageType.Success)";
     private string _activeTab = "cards";
     private List<DataObjects.SampleItem> _items = new();
     private Guid? _confirmDeleteId;
