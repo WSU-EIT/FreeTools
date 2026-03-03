@@ -1,0 +1,26 @@
+@page "/Examples/BootstrapV5"
+@page "/{TenantCode}/Examples/BootstrapV5"
+@implements IDisposable
+@inject BlazorDataModel Model
+@if (Model.Loaded && Model.View == _pageName) {
+    @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-credit-card me-1"></i> Pricing Page</h1><LoadingMessage /> } else {
+        <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-credit-card me-1"></i> V5: Pricing Page <StickyMenuIcon /></h1></div>
+        <AboutSection Title="Bootstrap in Context: Pricing Page" Subtitle="Bootstrap cards and badges arranged as a SaaS pricing comparison — the Stripe / GitHub pattern" IconClass="fa-solid fa-credit-card">
+            <p class="small text-muted mb-0">Three-tier pricing cards with feature lists, badges, and CTA buttons. Every SaaS app has one of these.</p>
+        </AboutSection>
+        <div class="text-center mb-4"><h3>Choose Your Plan</h3><p class="text-muted">Start free, upgrade when you're ready</p></div>
+        <div class="row row-cols-1 row-cols-md-3 g-3 mb-3">
+            <div class="col"><div class="card shadow-sm border-0 h-100"><div class="card-body text-center py-4"><h5 class="text-muted">Free</h5><div class="display-6 fw-bold mb-1">$0</div><div class="small text-muted mb-3">forever</div><ul class="list-unstyled small mb-4"><li class="mb-1"><i class="fa-solid fa-check text-success me-1"></i> 3 projects</li><li class="mb-1"><i class="fa-solid fa-check text-success me-1"></i> 1 GB storage</li><li class="mb-1"><i class="fa-solid fa-check text-success me-1"></i> Community support</li><li class="mb-1 text-muted"><i class="fa-solid fa-times me-1"></i> Custom domains</li><li class="mb-1 text-muted"><i class="fa-solid fa-times me-1"></i> API access</li></ul><button class="btn btn-outline-primary w-100">Get Started</button></div></div></div>
+            <div class="col"><div class="card shadow border-primary border-2 h-100"><div class="card-body text-center py-4"><span class="badge bg-primary mb-2">Most Popular</span><h5 class="text-primary">Pro</h5><div class="display-6 fw-bold mb-1">$29</div><div class="small text-muted mb-3">/month</div><ul class="list-unstyled small mb-4"><li class="mb-1"><i class="fa-solid fa-check text-success me-1"></i> Unlimited projects</li><li class="mb-1"><i class="fa-solid fa-check text-success me-1"></i> 100 GB storage</li><li class="mb-1"><i class="fa-solid fa-check text-success me-1"></i> Priority support</li><li class="mb-1"><i class="fa-solid fa-check text-success me-1"></i> Custom domains</li><li class="mb-1"><i class="fa-solid fa-check text-success me-1"></i> API access</li></ul><button class="btn btn-primary w-100">Upgrade to Pro</button></div></div></div>
+            <div class="col"><div class="card shadow-sm border-0 h-100"><div class="card-body text-center py-4"><h5 class="text-muted">Enterprise</h5><div class="display-6 fw-bold mb-1">$99</div><div class="small text-muted mb-3">/month</div><ul class="list-unstyled small mb-4"><li class="mb-1"><i class="fa-solid fa-check text-success me-1"></i> Everything in Pro</li><li class="mb-1"><i class="fa-solid fa-check text-success me-1"></i> 1 TB storage</li><li class="mb-1"><i class="fa-solid fa-check text-success me-1"></i> Dedicated support</li><li class="mb-1"><i class="fa-solid fa-check text-success me-1"></i> SSO / SAML</li><li class="mb-1"><i class="fa-solid fa-check text-success me-1"></i> Audit logs</li></ul><button class="btn btn-outline-dark w-100">Contact Sales</button></div></div></div>
+        </div>
+    }
+}
+@code {
+    [Parameter] public string? TenantCode { get; set; }
+    private bool _loading = true, _loadedData = false;
+    private string _pageName = "bootstrapv5";
+    public void Dispose() { Model.OnChange -= StateHasChanged; Model.Subscribers_OnChange.Remove(_pageName); }
+    protected override void OnInitialized() { Model.View = _pageName; Model.OnChange += StateHasChanged; if (!Model.Subscribers_OnChange.Contains(_pageName)) Model.Subscribers_OnChange.Add(_pageName); }
+    protected override async Task OnAfterRenderAsync(bool firstRender) { if (firstRender) Model.TenantCodeFromUrl = TenantCode; if (Model.Loaded && Model.LoggedIn && !_loadedData) { _loadedData = true; _loading = false; StateHasChanged(); } }
+}

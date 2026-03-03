@@ -1,0 +1,19 @@
+﻿@page "/Examples/NetworkGraphV2"
+@page "/{TenantCode}/Examples/NetworkGraphV2"
+@implements IDisposable
+@inject BlazorDataModel Model
+@if (Model.Loaded && Model.View == _pageName) {
+    @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-diagram-project me-1"></i> V2: Dependency Map</h1><LoadingMessage /> } else {
+        <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-diagram-project me-1"></i> V2: Dependency Map <StickyMenuIcon /></h1></div>
+        <AboutSection Title="V2: Dependency Map" Subtitle="Package dependency visualization showing which libraries depend on which" IconClass="fa-solid fa-diagram-project"><p class="small text-muted mb-0">Package dependency visualization showing which libraries depend on which</p></AboutSection>
+        <div class='card shadow-sm border-0 mb-3'><div class='card-header bg-white py-2'><span class='small fw-semibold'>NuGet Package Dependencies</span></div><div class='card-body p-0'><div class='list-group list-group-flush'><div class='list-group-item py-2'><div class='small fw-semibold'>Microsoft.AspNetCore.App (8.0)</div><div class='small text-muted ps-3'>&#8627; Microsoft.Extensions.DependencyInjection (8.0.1)</div><div class='small text-muted ps-4'>&#8627; Microsoft.Extensions.DependencyInjection.Abstractions (8.0.2)</div><div class='small text-muted ps-3'>&#8627; Microsoft.Extensions.Logging (8.0.1)</div></div><div class='list-group-item py-2'><div class='small fw-semibold'>Entity Framework Core (8.0.4)</div><div class='small text-muted ps-3'>&#8627; Microsoft.Data.SqlClient (5.2.0)</div><div class='small text-muted ps-3'>&#8627; Microsoft.Extensions.Caching.Memory (8.0.1)</div></div></div></div></div>
+    }
+}
+@code {
+    [Parameter] public string? TenantCode { get; set; }
+    private bool _loading = true, _loadedData = false;
+    private string _pageName = "networkgraphv2";
+    public void Dispose() { Model.OnChange -= StateHasChanged; Model.Subscribers_OnChange.Remove(_pageName); }
+    protected override void OnInitialized() { Model.View = _pageName; Model.OnChange += StateHasChanged; if (!Model.Subscribers_OnChange.Contains(_pageName)) Model.Subscribers_OnChange.Add(_pageName); }
+    protected override async Task OnAfterRenderAsync(bool firstRender) { if (firstRender) Model.TenantCodeFromUrl = TenantCode; if (Model.Loaded && Model.LoggedIn && !_loadedData) { _loadedData = true; _loading = false; StateHasChanged(); } }
+}

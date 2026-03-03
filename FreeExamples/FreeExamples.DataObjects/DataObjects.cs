@@ -366,6 +366,7 @@ public partial class DataObjects
         public bool AppAdminOnly { get; set; }
         public int SortOrder { get; set; }
         public Delegate? OnClick { get; set; }
+        public List<MenuItem>? DropdownItems { get; set; }
     }
 
     public class ModuleAction

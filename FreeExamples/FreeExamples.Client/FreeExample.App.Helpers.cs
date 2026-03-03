@@ -128,6 +128,114 @@ public static partial class Helpers
                 AppAdminOnly = false,
             });
 
+            output.Add(new DataObjects.MenuItem {
+                Title = "Kanban Board",
+                Icon = "Settings",
+                PageNames = new List<string> { "kanbanboard" },
+                SortOrder = 1400,
+                url = Helpers.BuildUrl("Examples/KanbanBoard"),
+                AppAdminOnly = false,
+            });
+
+            output.Add(new DataObjects.MenuItem {
+                Title = "Code Playground",
+                Icon = "Settings",
+                PageNames = new List<string> { "codeplayground" },
+                SortOrder = 1500,
+                url = Helpers.BuildUrl("Examples/CodePlayground"),
+                AppAdminOnly = false,
+            });
+
+            output.Add(new DataObjects.MenuItem {
+                Title = "Comment Thread",
+                Icon = "Settings",
+                PageNames = new List<string> { "commentthread" },
+                SortOrder = 1600,
+                url = Helpers.BuildUrl("Examples/CommentThread"),
+                AppAdminOnly = false,
+            });
+
+            output.Add(new DataObjects.MenuItem {
+                Title = "Search & Autocomplete",
+                Icon = "Settings",
+                PageNames = new List<string> { "searchautocomplete" },
+                SortOrder = 1700,
+                url = Helpers.BuildUrl("Examples/SearchAutocomplete"),
+                AppAdminOnly = false,
+            });
+
+            output.Add(new DataObjects.MenuItem {
+                Title = "Pipeline Tracker",
+                Icon = "Settings",
+                PageNames = new List<string> { "pipelinetracker" },
+                SortOrder = 1800,
+                url = Helpers.BuildUrl("Examples/PipelineTracker"),
+                AppAdminOnly = false,
+            });
+
+            output.Add(new DataObjects.MenuItem {
+                Title = "Comparison Table",
+                Icon = "Settings",
+                PageNames = new List<string> { "comparisontable" },
+                SortOrder = 1900,
+                url = Helpers.BuildUrl("Examples/ComparisonTable"),
+                AppAdminOnly = false,
+            });
+
+            output.Add(new DataObjects.MenuItem {
+                Title = "Image Gallery",
+                Icon = "Settings",
+                PageNames = new List<string> { "imagegallery" },
+                SortOrder = 2000,
+                url = Helpers.BuildUrl("Examples/ImageGallery"),
+                AppAdminOnly = false,
+            });
+
+            output.Add(new DataObjects.MenuItem {
+                Title = "Chat View",
+                Icon = "Settings",
+                PageNames = new List<string> { "chatview" },
+                SortOrder = 2100,
+                url = Helpers.BuildUrl("Examples/ChatView"),
+                AppAdminOnly = false,
+            });
+
+            output.Add(new DataObjects.MenuItem {
+                Title = "Command Palette",
+                Icon = "Settings",
+                PageNames = new List<string> { "commandpalette" },
+                SortOrder = 2200,
+                url = Helpers.BuildUrl("Examples/CommandPalette"),
+                AppAdminOnly = false,
+            });
+
+            output.Add(new DataObjects.MenuItem {
+                Title = "Status Board",
+                Icon = "Settings",
+                PageNames = new List<string> { "statusboard" },
+                SortOrder = 2300,
+                url = Helpers.BuildUrl("Examples/StatusBoard"),
+                AppAdminOnly = false,
+            });
+
+            output.Add(new DataObjects.MenuItem {
+                Title = "Item Cards",
+                Icon = "Settings",
+                PageNames = new List<string> { "itemcards" },
+                SortOrder = 2400,
+                url = Helpers.BuildUrl("Examples/ItemCards"),
+                AppAdminOnly = false,
+            });
+
+            output.Add(new DataObjects.MenuItem {
+                Title = "Carousel",
+                Icon = "Settings",
+                PageNames = new List<string> { "carousel" },
+                SortOrder = 2500,
+                url = Helpers.BuildUrl("Examples/Carousel"),
+                AppAdminOnly = false,
+            });
+
             return output;
         }
     }

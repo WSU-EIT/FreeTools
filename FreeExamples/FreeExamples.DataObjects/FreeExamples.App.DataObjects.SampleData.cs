@@ -125,5 +125,7 @@ public partial class DataObjects
     {
         public const string SampleItemSaved = "SampleItemSaved";
         public const string SampleItemDeleted = "SampleItemDeleted";
+        public const string CommentSaved = "CommentSaved";
+        public const string CommentDeleted = "CommentDeleted";
     }
 }

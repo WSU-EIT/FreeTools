@@ -35,6 +35,43 @@
                                     itemClass += " app-admin-only";
                                 }
 
+                                if (item.DropdownItems != null && item.DropdownItems.Any()) {
+                                    <li class="nav-item dropdown">
+                                        <a class="@itemClass dropdown-toggle" href="#" id="navbarDropdown-@item.Title.Replace(" ", "")" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            @if (!String.IsNullOrWhiteSpace(item.Icon)) {
+                                                <Icon Name="@item.Icon" />
+                                            }
+                                            <span class="icon-text">
+                                                @((MarkupString)item.Title)
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown-@item.Title.Replace(" ", "")">
+                                            <li>
+                                                <a class="dropdown-item @(item.PageNames.Contains(Model.View, StringComparer.CurrentCultureIgnoreCase) ? "active" : "")" href="@item.url">
+                                                    @if (!String.IsNullOrWhiteSpace(item.Icon)) {
+                                                        <Icon Name="@item.Icon" />
+                                                    }
+                                                    <span class="icon-text">@item.Title (Default)</span>
+                                                </a>
+                                            </li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            @foreach(var subItem in item.DropdownItems) {
+                                                var subItemClass = "dropdown-item";
+                                                if (subItem.PageNames.Contains(Model.View, StringComparer.CurrentCultureIgnoreCase)) {
+                                                    subItemClass += " active";
+                                                }
+                                                <li>
+                                                    <a class="@subItemClass" href="@subItem.url">
+                                                        @if (!String.IsNullOrWhiteSpace(subItem.Icon)) {
+                                                            <Icon Name="@subItem.Icon" />
+                                                        }
+                                                        <span class="icon-text">@((MarkupString)subItem.Title)</span>
+                                                    </a>
+                                                </li>
+                                            }
+                                        </ul>
+                                    </li>
+                                } else {
                                 <li class="nav-item">
                                     @if (item.OnClick != null) {
                                         <a class="@itemClass" href="javascript:void('0');" @onclick="@(() => item.OnClick.DynamicInvoke())">
@@ -56,6 +93,7 @@
                                         </a>
                                     }
                                 </li>
+                                }
                             }
 
                             @if (Helpers.MenuItemsAdmin.Any()) {

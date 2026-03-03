@@ -107,6 +107,8 @@ namespace FreeExamples
             builder.Services.AddSingleton<IServiceProvider>(provider => provider);
             builder.Services.AddSingleton<FreeExamples.Server.Services.GitBrowserService>();
             builder.Services.AddSingleton<FreeExamples.Server.Services.ApiKeyDemoService>();
+            builder.Services.AddSingleton<FreeExamples.Server.Services.CodeSnippetService>();
+            builder.Services.AddSingleton<FreeExamples.Server.Services.CommentService>();
 
             bool backgroundServiceEnabled = builder.Configuration.GetValue<bool>("BackgroundService:Enabled");
             if (backgroundServiceEnabled) {
