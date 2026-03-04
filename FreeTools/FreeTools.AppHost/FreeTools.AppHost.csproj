@@ -27,6 +27,7 @@
     <ProjectReference Include="..\FreeTools.BrowserSnapshot\FreeTools.BrowserSnapshot.csproj" />
     <ProjectReference Include="..\FreeTools.WorkspaceInventory\FreeTools.WorkspaceInventory.csproj" />
     <ProjectReference Include="..\FreeTools.WorkspaceReporter\FreeTools.WorkspaceReporter.csproj" />
+    <ProjectReference Include="..\FreeTools.AccessibilityScanner\FreeTools.AccessibilityScanner.csproj" />
   </ItemGroup>
 
   <ItemGroup>

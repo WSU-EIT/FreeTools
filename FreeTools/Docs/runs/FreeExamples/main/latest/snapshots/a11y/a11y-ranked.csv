@@ -1,0 +1,5 @@
+Rank,Rule,Severity,Confidence,Sites,Pages,Instances,WCAG,Message
+1,"link-name","serious","high",1,120,480,"","Links must have discernible text"
+2,"skip-link","moderate","medium",1,120,120,"2.4.1","No skip-to-content link found near top of page"
+3,"landmark-one-main","moderate","medium",1,120,120,"1.3.1","Page has no <main> landmark"
+4,"page-has-heading-one","moderate","medium",1,2,2,"1.3.1","Page has headings but no <h1>"

@@ -6,7 +6,7 @@
   "IsSuspiciouslySmall": false,
   "RetryAttempted": false,
   "ConsoleErrors": [],
-  "CapturedAt": "2026-02-28T01:10:26.4487718Z",
+  "CapturedAt": "2026-03-04T18:30:12.8404062Z",
   "IsSuccess": true,
   "IsHttpError": false,
   "IsError": false,
@@ -17,8 +17,8 @@
   "AuthStep2Path": null,
   "AuthStep3Path": null,
   "AuthFlowNote": null,
-  "LoggedInFileSize": 0,
+  "LoggedInFileSize": 44827,
   "LoggedInIsSuspiciouslySmall": false,
-  "LoggedInStatusCode": 0,
+  "LoggedInStatusCode": 200,
   "LoginRedirectPath": null
 }

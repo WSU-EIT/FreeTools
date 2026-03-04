@@ -1,0 +1,65 @@
+{
+  "PagePath": "/tenant1/ChangePassword",
+  "Url": "https://localhost:7271/tenant1/ChangePassword",
+  "FinalUrl": null,
+  "Title": "FreeExamples",
+  "StatusCode": 200,
+  "Success": true,
+  "HtmlSizeBytes": 73793,
+  "ScreenshotSizeBytes": 16376,
+  "CredentialUsed": null,
+  "ConsoleErrorCount": 0,
+  "ConsoleWarningCount": 4,
+  "Screenshots": [
+    {
+      "FileName": "01-page-loaded.jpg",
+      "Label": "page-loaded",
+      "StepNumber": 1,
+      "FileSize": 16376
+    }
+  ],
+  "ImageCount": 0,
+  "ImagesMissingAlt": 0,
+  "Images": [],
+  "Accessibility": {
+    "ToolsRun": [
+      "axe",
+      "htmlcheck"
+    ],
+    "ToolsSkipped": [
+      "wave"
+    ],
+    "TotalViolations": 6,
+    "Critical": 0,
+    "Serious": 4,
+    "Moderate": 2,
+    "Minor": 0,
+    "ByTool": {
+      "axe": {
+        "Total": 2,
+        "Critical": 0,
+        "Serious": 2,
+        "Moderate": 0,
+        "Minor": 0
+      },
+      "htmlcheck": {
+        "Total": 4,
+        "Critical": 0,
+        "Serious": 2,
+        "Moderate": 2,
+        "Minor": 0
+      }
+    }
+  },
+  "ErrorMessage": null,
+  "Headers": {
+    "blazor-enhanced-nav": "allow",
+    "cache-control": "no-cache, no-store",
+    "content-security-policy": "frame-ancestors \u0027self\u0027 login.wsu.edu cms.em.wsu.edu futurecoug.wsu.edu",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Wed, 04 Mar 2026 18:29:11 GMT",
+    "pragma": "no-cache",
+    "server": "Kestrel"
+  },
+  "CapturedAt": "2026-03-04T18:29:11.4012297Z"
+}

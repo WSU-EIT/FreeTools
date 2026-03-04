@@ -163,6 +163,22 @@ static class AppHostRunner
             .WaitForCompletion(endpointMapper);
 
         // =============================================================================
+        // Accessibility Scanner (requires running web app + page list)
+        // =============================================================================
+        var a11y = builder.AddProject<Projects.FreeTools_AccessibilityScanner>("a11y-scanner")
+            .WithEnvironment("BASE_URL", webApp.GetEndpoint("https"))
+            .WithEnvironment("CSV_PATH", projectConfig.PagesCsv)
+            .WithEnvironment("OUTPUT_DIR", projectConfig.SnapshotsDir)
+            .WithEnvironment("TENANT_CODE", "tenant1")
+            .WithEnvironment("LOGIN_USERNAME", "admin")
+            .WithEnvironment("LOGIN_PASSWORD", "admin")
+            .WithEnvironment("START_DELAY_MS", (WebAppStartupDelayMs + HttpToolDelayMs).ToString())
+            .WaitFor(webApp)
+            .WaitForCompletion(endpointMapper);
+
+        Console.WriteLine("  [A11y] AccessibilityScanner - targeting localhost (AppHost mode)");
+
+        // =============================================================================
         // Report Generation
         // =============================================================================
         var reporter = builder.AddProject<Projects.FreeTools_WorkspaceReporter>("reporter")
@@ -176,7 +192,8 @@ static class AppHostRunner
             .WaitForCompletion(inventory)
             .WaitForCompletion(endpointMapper)
             .WaitForCompletion(poker)
-            .WaitForCompletion(browser);
+            .WaitForCompletion(browser)
+            .WaitForCompletion(a11y);
 
         Console.WriteLine("============================================================");
         Console.WriteLine();

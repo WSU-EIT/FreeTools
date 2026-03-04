@@ -19,25 +19,62 @@ internal class Program
 
     private static async Task<int> Main(string[] args)
     {
+        // Robustness: Optional startup delay (for AppHost orchestration)
+        var delayEnv = Environment.GetEnvironmentVariable("START_DELAY_MS");
+        var startupDelay = int.TryParse(delayEnv, out var delayMs) && delayMs > 0 ? delayMs : 0;
+        if (startupDelay > 0)
+        {
+            Console.WriteLine($"Waiting {startupDelay}ms for server to be ready...");
+            await Task.Delay(startupDelay);
+        }
+
         ConsoleOutput.PrintBanner("AccessibilityScanner (FreeTools)", "1.0");
 
-        // Load config from appsettings.json (next to the exe)
-        var config = await LoadConfigAsync();
-        if (config == null)
-        {
-            Console.Error.WriteLine("Failed to load appsettings.json — cannot continue.");
-            return 1;
-        }
+        // Check for AppHost mode: BASE_URL env var overrides appsettings.json
+        var baseUrlEnv = Environment.GetEnvironmentVariable("BASE_URL");
+        ScannerConfig? config;
+        string runsDir;
 
-        if (config.Sites.Count == 0)
+        if (!string.IsNullOrWhiteSpace(baseUrlEnv))
         {
-            Console.Error.WriteLine("No sites configured in appsettings.json → Scanner.Sites");
-            return 1;
-        }
+            // AppHost mode — build config from environment variables
+            config = await BuildConfigFromEnvAsync(baseUrlEnv);
+            if (config == null)
+            {
+                Console.Error.WriteLine("Failed to build config from environment variables.");
+                return 1;
+            }
 
-        // Output goes next to Program.cs source: runs/latest/{site-folder}
-        var projectDir = FindProjectDir(AppContext.BaseDirectory);
-        var runsDir = Path.Combine(projectDir, "runs", "latest");
+            var outputDir = Environment.GetEnvironmentVariable("OUTPUT_DIR");
+            if (!string.IsNullOrWhiteSpace(outputDir))
+            {
+                runsDir = Path.Combine(outputDir, "a11y");
+            }
+            else
+            {
+                var projectDir = FindProjectDir(AppContext.BaseDirectory);
+                runsDir = Path.Combine(projectDir, "runs", "latest");
+            }
+        }
+        else
+        {
+            // Standalone mode — load from appsettings.json
+            config = await LoadConfigAsync();
+            if (config == null)
+            {
+                Console.Error.WriteLine("Failed to load appsettings.json — cannot continue.");
+                return 1;
+            }
+
+            if (config.Sites.Count == 0)
+            {
+                Console.Error.WriteLine("No sites configured in appsettings.json → Scanner.Sites");
+                return 1;
+            }
+
+            var projectDir = FindProjectDir(AppContext.BaseDirectory);
+            runsDir = Path.Combine(projectDir, "runs", "latest");
+        }
         ConsoleOutput.PrintConfig("Output", runsDir);
         ConsoleOutput.PrintConfig("Sites", config.Sites.Count.ToString());
         ConsoleOutput.PrintConfig("Settle delay", $"{config.SettleDelayMs}ms");
@@ -3417,6 +3454,93 @@ internal class Program
     // ========================================================================
     // Config loading
     // ========================================================================
+
+    /// <summary>
+    /// Build a ScannerConfig from environment variables (AppHost mode).
+    /// Reads BASE_URL for the site, CSV_PATH for pages, TENANT_CODE for URL prefixes,
+    /// and LOGIN_USERNAME/LOGIN_PASSWORD for credentials.
+    /// </summary>
+    private static async Task<ScannerConfig?> BuildConfigFromEnvAsync(string baseUrl)
+    {
+        var csvPath = Environment.GetEnvironmentVariable("CSV_PATH") ?? "";
+        var tenantCode = Environment.GetEnvironmentVariable("TENANT_CODE") ?? "tenant1";
+        var loginUsername = Environment.GetEnvironmentVariable("LOGIN_USERNAME") ?? "admin";
+        var loginPassword = Environment.GetEnvironmentVariable("LOGIN_PASSWORD") ?? "admin";
+
+        Console.WriteLine($"  [AppHost Mode] BASE_URL: {baseUrl}");
+        Console.WriteLine($"  [AppHost Mode] CSV_PATH: {csvPath}");
+        Console.WriteLine($"  [AppHost Mode] TENANT_CODE: {tenantCode}");
+
+        // Build page list from CSV (same format as EndpointMapper output)
+        var pages = new List<string>();
+        if (!string.IsNullOrWhiteSpace(csvPath) && File.Exists(csvPath))
+        {
+            var lines = await File.ReadAllLinesAsync(csvPath);
+            for (int i = 1; i < lines.Length; i++)
+            {
+                var line = lines[i];
+                if (string.IsNullOrWhiteSpace(line)) continue;
+
+                var parts = line.Split(',');
+                if (parts.Length < 2) continue;
+
+                var rawRoute = parts[1].Trim('"').Trim();
+                if (string.IsNullOrWhiteSpace(rawRoute)) continue;
+
+                // Substitute {TenantCode}
+                var route = rawRoute;
+                bool hadTenantCode = false;
+                if (route.Contains("{TenantCode}", StringComparison.OrdinalIgnoreCase))
+                {
+                    route = route.Replace("{TenantCode}", tenantCode, StringComparison.OrdinalIgnoreCase);
+                    hadTenantCode = true;
+                }
+
+                // Skip routes that still have parameters
+                if (route.Contains('{')) continue;
+
+                // Prefer tenant-prefixed routes
+                if (hadTenantCode || !pages.Any(p => p.Equals($"/{tenantCode}{route}", StringComparison.OrdinalIgnoreCase)))
+                {
+                    // Remove bare route if tenant version is being added
+                    if (hadTenantCode)
+                    {
+                        var bareRoute = route.Replace($"/{tenantCode}", "", StringComparison.OrdinalIgnoreCase);
+                        pages.Remove(bareRoute);
+                    }
+                    if (!pages.Contains(route, StringComparer.OrdinalIgnoreCase))
+                    {
+                        pages.Add(route);
+                    }
+                }
+            }
+
+            Console.WriteLine($"  [AppHost Mode] Loaded {pages.Count} pages from CSV");
+        }
+        else
+        {
+            Console.WriteLine("  [AppHost Mode] No CSV found — scanning root page only");
+        }
+
+        // Build site config with credentials
+        var siteConfig = new SiteConfig
+        {
+            Pages = pages,
+            Credentials = [new SiteCredential { Username = loginUsername, Password = loginPassword }]
+        };
+
+        // Ensure base URL has trailing slash
+        if (!baseUrl.EndsWith('/')) baseUrl += "/";
+
+        return new ScannerConfig
+        {
+            Sites = new Dictionary<string, SiteConfig> { [baseUrl] = siteConfig },
+            SettleDelayMs = 3000,
+            TimeoutMs = 30000,
+            MaxConcurrency = 5,
+            Headless = true
+        };
+    }
 
     private static async Task<ScannerConfig?> LoadConfigAsync()
     {
