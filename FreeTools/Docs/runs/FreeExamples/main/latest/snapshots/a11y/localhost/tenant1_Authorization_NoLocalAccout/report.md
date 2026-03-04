@@ -1,7 +1,7 @@
 # 📄 Page Scan Report
 
 > **URL:** https://localhost:7271/tenant1/Authorization/NoLocalAccout  
-> **Captured:** 2026-03-04 18:30:28 UTC  
+> **Captured:** 2026-03-04 20:19:36 UTC  
 > **Status:** ✅ 200  
 
 ---
@@ -24,8 +24,8 @@
 | URL | https://localhost:7271/tenant1/Authorization/NoLocalAccout |
 | Title | FreeExamples |
 | Status | ✅ 200 |
-| HTML Size | 71.6 KB |
-| Screenshots | 1 (16.8 KB) |
+| HTML Size | 72.0 KB |
+| Screenshots | 14 (316.5 KB) |
 | Images | 0 (referenced by URL) |
 | Images Missing Alt | ✅ 0 |
 | JS Errors | ✅ 0 |
@@ -37,19 +37,32 @@
 | 🔵 Minor | 0 |
 | Tools Run | axe, htmlcheck |
 | Auth | none |
-| Captured | 2026-03-04T18:30:28.8973274Z |
+| Captured | 2026-03-04T20:19:36.8061941Z |
 
 ## 🔧 Actions
 
 <details>
-<summary><strong>6 action(s) performed</strong></summary>
+<summary><strong>19 action(s) performed</strong></summary>
 
 - Screenshot #1: page-loaded (16.8 KB)
 - Attempted login as 'admin'
 - No login form found for 'admin'
 - No images found on page
-- axe-core: 2 violations (190ms)
+- axe-core: 2 violations (179ms)
 - htmlcheck: 4 violations (0ms)
+- Screenshot #2: axe-overlay (19.2 KB)
+- Screenshot #3: wave-overlay (23.5 KB)
+- Screenshot #4: htmlcs-overlay (25.5 KB)
+- Screenshot #5: ibm-a11y-overlay (32.1 KB)
+- Screenshot #6: structure-overlay (33.6 KB)
+- Screenshot #7: cvd-protanopia (20.4 KB)
+- Screenshot #8: cvd-deuteranopia (20.9 KB)
+- Screenshot #9: cvd-tritanopia (20.3 KB)
+- Screenshot #10: cvd-achromatopsia (20.8 KB)
+- Screenshot #11: cvd-protanomaly (20.7 KB)
+- Screenshot #12: cvd-deuteranomaly (20.8 KB)
+- Screenshot #13: cvd-tritanomaly (20.3 KB)
+- Screenshot #14: screenreader-view (21.6 KB)
 
 </details>
 
@@ -64,7 +77,109 @@
 <br /><strong>1. page-loaded</strong>
 <br /><sub>16.8 KB</sub>
 </td>
-<td></td>
+<td align="center" width="50%">
+<a href="02-axe-overlay.jpg">
+<img src="02-axe-overlay.jpg" width="400" alt="axe-overlay" />
+</a>
+<br /><strong>2. axe-overlay</strong>
+<br /><sub>19.2 KB</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="03-wave-overlay.jpg">
+<img src="03-wave-overlay.jpg" width="400" alt="wave-overlay" />
+</a>
+<br /><strong>3. wave-overlay</strong>
+<br /><sub>23.5 KB</sub>
+</td>
+<td align="center" width="50%">
+<a href="04-htmlcs-overlay.jpg">
+<img src="04-htmlcs-overlay.jpg" width="400" alt="htmlcs-overlay" />
+</a>
+<br /><strong>4. htmlcs-overlay</strong>
+<br /><sub>25.5 KB</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="05-ibm-a11y-overlay.jpg">
+<img src="05-ibm-a11y-overlay.jpg" width="400" alt="ibm-a11y-overlay" />
+</a>
+<br /><strong>5. ibm-a11y-overlay</strong>
+<br /><sub>32.1 KB</sub>
+</td>
+<td align="center" width="50%">
+<a href="06-structure-overlay.jpg">
+<img src="06-structure-overlay.jpg" width="400" alt="structure-overlay" />
+</a>
+<br /><strong>6. structure-overlay</strong>
+<br /><sub>33.6 KB</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="07-cvd-protanopia.jpg">
+<img src="07-cvd-protanopia.jpg" width="400" alt="cvd-protanopia" />
+</a>
+<br /><strong>7. cvd-protanopia</strong>
+<br /><sub>20.4 KB</sub>
+</td>
+<td align="center" width="50%">
+<a href="08-cvd-deuteranopia.jpg">
+<img src="08-cvd-deuteranopia.jpg" width="400" alt="cvd-deuteranopia" />
+</a>
+<br /><strong>8. cvd-deuteranopia</strong>
+<br /><sub>20.9 KB</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="09-cvd-tritanopia.jpg">
+<img src="09-cvd-tritanopia.jpg" width="400" alt="cvd-tritanopia" />
+</a>
+<br /><strong>9. cvd-tritanopia</strong>
+<br /><sub>20.3 KB</sub>
+</td>
+<td align="center" width="50%">
+<a href="10-cvd-achromatopsia.jpg">
+<img src="10-cvd-achromatopsia.jpg" width="400" alt="cvd-achromatopsia" />
+</a>
+<br /><strong>10. cvd-achromatopsia</strong>
+<br /><sub>20.8 KB</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="11-cvd-protanomaly.jpg">
+<img src="11-cvd-protanomaly.jpg" width="400" alt="cvd-protanomaly" />
+</a>
+<br /><strong>11. cvd-protanomaly</strong>
+<br /><sub>20.7 KB</sub>
+</td>
+<td align="center" width="50%">
+<a href="12-cvd-deuteranomaly.jpg">
+<img src="12-cvd-deuteranomaly.jpg" width="400" alt="cvd-deuteranomaly" />
+</a>
+<br /><strong>12. cvd-deuteranomaly</strong>
+<br /><sub>20.8 KB</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<a href="13-cvd-tritanomaly.jpg">
+<img src="13-cvd-tritanomaly.jpg" width="400" alt="cvd-tritanomaly" />
+</a>
+<br /><strong>13. cvd-tritanomaly</strong>
+<br /><sub>20.3 KB</sub>
+</td>
+<td align="center" width="50%">
+<a href="14-screenreader-view.jpg">
+<img src="14-screenreader-view.jpg" width="400" alt="screenreader-view" />
+</a>
+<br /><strong>14. screenreader-view</strong>
+<br /><sub>21.6 KB</sub>
+</td>
 </tr>
 </table>
 
@@ -104,6 +219,19 @@
 | File | Description |
 |------|-------------|
 | `01-page-loaded.jpg` | page-loaded (16.8 KB) |
+| `02-axe-overlay.jpg` | axe-overlay (19.2 KB) |
+| `03-wave-overlay.jpg` | wave-overlay (23.5 KB) |
+| `04-htmlcs-overlay.jpg` | htmlcs-overlay (25.5 KB) |
+| `05-ibm-a11y-overlay.jpg` | ibm-a11y-overlay (32.1 KB) |
+| `06-structure-overlay.jpg` | structure-overlay (33.6 KB) |
+| `07-cvd-protanopia.jpg` | cvd-protanopia (20.4 KB) |
+| `08-cvd-deuteranopia.jpg` | cvd-deuteranopia (20.9 KB) |
+| `09-cvd-tritanopia.jpg` | cvd-tritanopia (20.3 KB) |
+| `10-cvd-achromatopsia.jpg` | cvd-achromatopsia (20.8 KB) |
+| `11-cvd-protanomaly.jpg` | cvd-protanomaly (20.7 KB) |
+| `12-cvd-deuteranomaly.jpg` | cvd-deuteranomaly (20.8 KB) |
+| `13-cvd-tritanomaly.jpg` | cvd-tritanomaly (20.3 KB) |
+| `14-screenreader-view.jpg` | screenreader-view (21.6 KB) |
 | `page.html` | Rendered HTML content |
 | `metadata.json` | Machine-readable scan data |
 | `errors.log` | JavaScript console errors |

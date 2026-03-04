@@ -1,7 +1,0 @@
-{
-  "ToolName": "wave",
-  "Status": "skipped",
-  "DurationMs": 0,
-  "ErrorMessage": "No WAVE API key configured",
-  "Issues": []
-}

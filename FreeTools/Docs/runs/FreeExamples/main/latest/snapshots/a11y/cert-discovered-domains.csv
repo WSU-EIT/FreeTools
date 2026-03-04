@@ -1,3 +1,0 @@
-Domain,FoundInCertFor,CertSubject
-"host.containers.internal","localhost","CN=localhost"
-"host.docker.internal","localhost","CN=localhost"
