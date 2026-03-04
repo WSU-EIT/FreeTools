@@ -10,7 +10,7 @@
         </AboutSection>
         <div class="d-flex flex-wrap gap-1 mb-3">
             <InfoTip Title="Notification Alert Types"
-                     Description="Each notification uses alert-@n.Type to set color: alert-info for general, alert-success for positive, alert-warning for warnings. The icon also varies by type. This auto-color pattern is used in production notification systems across all apps."
+                     Description="Each notification uses alert-(Type) to set color: alert-info for general, alert-success for positive, alert-warning for warnings. The icon also varies by type. This auto-color pattern is used in production notification systems across all apps."
                      Code="@_codeAlertTypes" />
             <InfoTip Title="Dismissible Notifications"
                      Description="Each notification has a btn-close that removes it from the list. The list is managed in C# (_notifications.Remove(n)). In production, dismissed notifications are marked as read via API. New ones push to the top with Insert(0, ...)."
