@@ -38,6 +38,18 @@
             </div>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Contract Builder Pattern"
+                     Description="A multi-section contract where the user fills in details (parties, terms, payment) and signs at the end. The progress bar shows completion across all sections. This is the DocuSign/HelloSign workflow where the contract is built step-by-step."
+                     Code="@_codeContractBuilder" />
+            <InfoTip Title="Section Progress Tracking"
+                     Description="A progress bar at the top shows how many sections are complete. Each section has a card with a green check when done. The Submit button enables only when all sections (including signature) are complete. This linear completion pattern ensures nothing is missed."
+                     Code="@_codeSectionProgress" />
+            <InfoTip Title="Date and Counter-Signature Fields"
+                     Description="Contract forms include auto-filled date fields (DateTime.Now) and placeholders for counter-signatures. The signed date locks when the signature is captured. In production, the server records the exact timestamp for legal compliance."
+                     Code="@_codeDateCounterSign" />
+        </div>
+
         @* Progress *@
         <div class="mb-3">
             <div class="d-flex justify-content-between small mb-1">
@@ -130,6 +142,9 @@
     [Parameter] public string? TenantCode { get; set; }
     private bool _loading = true, _loadedData = false, _executed = false;
     private string _pageName = "signaturev5";
+    private string _codeContractBuilder = "<div class=\"card\">\n  <h6>Section 1: Parties</h6>\n  <!-- party name fields -->\n</div>\n<div class=\"card\">\n  <h6>Section 2: Terms</h6>\n  <!-- term fields -->\n</div>";
+    private string _codeSectionProgress = "<div class=\"progress\">\n  <div class=\"progress-bar\" style=\"width:@(completed * 100 / total)%\">\n    @completed of @total\n  </div>\n</div>";
+    private string _codeDateCounterSign = "<div class=\"form-floating\">\n  <input type=\"date\" value=\"@DateTime.Now.ToString(\"yyyy-MM-dd\")\" disabled />\n  <label>Signed Date (auto-filled)</label>\n</div>";
     private string _printedName = "";
     private string _title = "";
     private Signature? _signaturePad;

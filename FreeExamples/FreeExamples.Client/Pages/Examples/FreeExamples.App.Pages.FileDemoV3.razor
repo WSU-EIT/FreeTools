@@ -17,6 +17,18 @@
             <p class="small text-muted mb-0">A required-document checklist where each document type has its own upload slot. All must be uploaded before submission. Used in admissions, HR onboarding, and grant applications.</p>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Progress Bar for Completion"
+                     Description="A progress bar shows how many required documents have been uploaded vs total. The width is calculated as (uploaded / total * 100)%. The bar turns green (bg-success) when all are uploaded. This is the onboarding/admissions completion pattern."
+                     Code="@_codeProgress" />
+            <InfoTip Title="Required Document Slots"
+                     Description="Each document type has its own card with an upload button. The card shows the document name, requirements, and upload status. A green check replaces the upload button when complete. This ensures every required document is collected."
+                     Code="@_codeDocSlots" />
+            <InfoTip Title="Submit Gate Pattern"
+                     Description="The Submit button is disabled until all required documents are uploaded. The disabled attribute binds to a check: _documents.All(d => d.Uploaded). This prevents incomplete submissions. A progress summary above gives context on what's missing."
+                     Code="@_codeSubmitGate" />
+        </div>
+
         @* Progress *@
         <div class="mb-3">
             <div class="d-flex justify-content-between small mb-1">
@@ -84,6 +96,9 @@
     [Parameter] public string? TenantCode { get; set; }
     private bool _loading = true, _loadedData = false;
     private string _pageName = "filedemov3";
+    private string _codeProgress = "<div class=\"progress\">\n  <div class=\"progress-bar bg-success\" style=\"width:@pct%\">\n    @uploaded of @total\n  </div>\n</div>";
+    private string _codeDocSlots = "<div class=\"card\">\n  <div class=\"card-body\">\n    @if (doc.Uploaded) { <i class=\"fa-solid fa-check text-success\"></i> }\n    else { <button>Upload</button> }\n  </div>\n</div>";
+    private string _codeSubmitGate = "<button disabled=\"@(!_documents.All(d => d.Uploaded))\">\n  Submit Application\n</button>";
 
     private List<RequiredDoc> _documents = new() {
         new("Resume / CV", "PDF or Word document, 2 pages max", true),

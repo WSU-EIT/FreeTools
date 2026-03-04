@@ -8,6 +8,17 @@
         <AboutSection Title="Code Editor in Context: Config Editor" Subtitle="Edit appsettings.json / YAML config files with validation feedback" IconClass="fa-solid fa-file-code">
             <p class="small text-muted mb-0">A code editor showing configuration files (JSON/YAML) with real-time validation. Edit appsettings.json and see parsed results — the Azure Portal config blade pattern.</p>
         </AboutSection>
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="JSON/YAML Config Editor"
+                     Description="Configuration editing uses a monospace pre/textarea with syntax highlighting colors. The editor shows key-value pairs in a structured format. A 'Validate' button checks for syntax errors before saving."
+                     Code="@_codeConfigEditor" />
+            <InfoTip Title="Environment Tabs"
+                     Description="nav-tabs switch between environments (Development, Staging, Production). Each tab loads different config values. This is the Azure App Configuration / appsettings.{env}.json pattern where each environment has its own overrides."
+                     Code="@_codeEnvTabs" />
+            <InfoTip Title="Save with Diff Preview"
+                     Description="Before saving, show what changed (added lines in green, removed in red). This diff preview prevents accidental config changes. The same pattern is used in Git commit views and Terraform plan output."
+                     Code="@_codeDiffPreview" />
+        </div>
         <div class="row">
             <div class="col-md-4 mb-3"><div class="card shadow-sm border-0"><div class="card-header bg-white py-2"><span class="small fw-semibold">Config Files</span></div><div class="card-body p-0"><div class="list-group list-group-flush">
                 @foreach (var f in new[] { "appsettings.json", "appsettings.Development.json", "launchSettings.json" }) {
@@ -25,6 +36,9 @@
     [Parameter] public string? TenantCode { get; set; }
     private bool _loading = true, _loadedData = false, _validated = false;
     private string _pageName = "codeeditorv3";
+    private string _codeConfigEditor = "<textarea class=\"form-control\" style=\"font-family:monospace\">\n{\n  \"ConnectionString\": \"Server=...\",\n  \"LogLevel\": \"Information\"\n}\n</textarea>";
+    private string _codeEnvTabs = "<ul class=\"nav nav-tabs\">\n  <li><button class=\"nav-link @(_env == \"dev\" ? \"active\" : \"\")\">Development</button></li>\n  <li><button>Staging</button></li>\n  <li><button>Production</button></li>\n</ul>";
+    private string _codeDiffPreview = "<div class=\"bg-success bg-opacity-10\">+ \"NewKey\": \"value\"</div>\n<div class=\"bg-danger bg-opacity-10\">- \"OldKey\": \"removed\"</div>";
     private string _activeFile = "appsettings.json";
     public void Dispose() { Model.OnChange -= StateHasChanged; Model.Subscribers_OnChange.Remove(_pageName); }
     protected override void OnInitialized() { Model.View = _pageName; Model.OnChange += StateHasChanged; if (!Model.Subscribers_OnChange.Contains(_pageName)) Model.Subscribers_OnChange.Add(_pageName); }

@@ -17,6 +17,18 @@
             <p class="small text-muted mb-0">Instead of listing individual items, this view shows aggregate stats: counts by status, category breakdown, amount distribution, priority summary. Same API, analytical perspective.</p>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="KPI Summary Cards"
+                     Description="Four KPI cards in a row-cols-2 row-cols-md-4 grid show aggregate metrics: count, total amount, average priority, enabled count. Each uses LINQ (.Count, .Sum, .Average) on the same data list. This is the standard dashboard header pattern in every production app."
+                     Code="@_codeKpiCards" />
+            <InfoTip Title="Progress Bar Breakdown"
+                     Description="Each status/category group gets a progress bar showing its percentage of the total. The bar width is calculated as (group.Count * 100 / total)%. The progress element uses Bootstrap's progress-bar class with a status-colored background. This is the Helpdesk dashboard pattern."
+                     Code="@_codeProgressBreakdown" />
+            <InfoTip Title="Top N Leaderboard"
+                     Description="A table-sm table-hover shows the top 5 items by amount. LINQ OrderByDescending + Take(5) does the work. A rank counter increments per row. This leaderboard pattern appears in sales dashboards and reporting pages across production apps."
+                     Code="@_codeTopN" />
+        </div>
+
         @* KPI Row *@
         <div class="row row-cols-2 row-cols-md-4 g-2 mb-3">
             <div class="col"><div class="card border-0 shadow-sm text-center py-2"><div class="h4 mb-0 text-primary">@_items.Count</div><div class="small text-muted">Total Items</div></div></div>
@@ -97,7 +109,9 @@
     private bool _loading = true, _loadedData = false;
     private string _pageName = "sampleitemsv5";
     private List<DataObjects.SampleItem> _items = new();
-
+    private string _codeKpiCards = "<div class=\"card text-center py-2\">\n  <div class=\"h4 text-primary\">@_items.Count</div>\n  <div class=\"small text-muted\">Total Items</div>\n</div>";
+    private string _codeProgressBreakdown = "<div class=\"progress\" style=\"height:6px\">\n  <div class=\"progress-bar bg-success\" style=\"width:@pct%\"></div>\n</div>";
+    private string _codeTopN = "@foreach (var item in _items.OrderByDescending(i => i.Amount).Take(5)) {\n  <tr><td>@rank</td><td>@item.Name</td></tr>\n}";
     public void Dispose() { Model.OnChange -= StateHasChanged; Model.Subscribers_OnChange.Remove(_pageName); }
     protected override void OnInitialized() { Model.View = _pageName; Model.OnChange += StateHasChanged; if (!Model.Subscribers_OnChange.Contains(_pageName)) Model.Subscribers_OnChange.Add(_pageName); }
     protected override async Task OnAfterRenderAsync(bool firstRender) {

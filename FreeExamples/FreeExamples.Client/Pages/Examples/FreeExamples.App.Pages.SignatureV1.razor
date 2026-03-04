@@ -38,9 +38,19 @@
             </div>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Form Sections with Dividers"
+                     Description="The application is divided into sections (Personal Info, Employment, Certification) using h6 headers with border-bottom. Each section has its own row/col grid of form fields. This organizes long forms into scannable blocks — the same pattern in Helpdesk ticket creation."
+                     Code="@_codeFormSections" />
+            <InfoTip Title="Signature as Submit Gate"
+                     Description="The Submit button is disabled until the signature pad has content. The _signatureData property is null/empty until the user signs. This ensures legal acknowledgment before submission — required in HR onboarding, GLBA compliance, and contract workflows."
+                     Code="@_codeSignGate" />
+            <InfoTip Title="Required Field Markers"
+                     Description="Required fields show a red asterisk (text-danger *) after the label. On validation failure, fields get is-invalid class with invalid-feedback messages. This matches Bootstrap's built-in validation styling used across all production forms."
+                     Code="@_codeRequired" />
+        </div>
+
         <div class="card shadow-sm border-0 mb-3">
-            <div class="card-header bg-primary text-white">
-                <i class="fa-solid fa-briefcase me-1"></i> Employment Application
             </div>
             <div class="card-body">
                 @* Section 1: Personal Info *@
@@ -145,6 +155,9 @@
     private bool _loadedData = false;
     private bool _submitted = false;
     private string _pageName = "signaturev1";
+    private string _codeFormSections = "<h6 class=\"text-primary border-bottom pb-2\">\n  <i class=\"fa-solid fa-user me-1\"></i> Personal Information\n</h6>\n<div class=\"row mb-3\">...</div>";
+    private string _codeSignGate = "<button disabled=\"@(string.IsNullOrEmpty(_signatureData))\">\n  Submit Application\n</button>";
+    private string _codeRequired = "<label>First Name <span class=\"text-danger\">*</span></label>\n<input class=\"form-control @(validated && empty ? \"is-invalid\" : \")\" />";
 
     private string _firstName = "";
     private string _lastName = "";

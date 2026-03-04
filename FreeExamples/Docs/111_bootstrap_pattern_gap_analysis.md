@@ -1,223 +1,124 @@
-# 111 — Bootstrap Pattern Gap Analysis
+# 111 - Bootstrap Pattern Gap Analysis
 
-> **Generated:** Research scan of `_Repos/` production systems (30 projects, 3,592 `.razor` + 622 `.cshtml` files)
-> vs. existing FreeExamples pages (68 `.razor` example pages).
-
----
-
-## 1. Production Bootstrap Usage Summary (Top Patterns by Count)
-
-| Pattern | `.razor` Count | `.cshtml` Count | Production Projects Using It |
-|---|---|---|---|
-| `form-control` | 4,876 | 2,912 | All |
-| `form-check-input` / `form-check` | 2,847 / 2,818 | 655 / 590 | All |
-| `form-switch` | 2,652 | — | All Blazor |
-| `form-check-label` | 2,416 | 173 | All |
-| `btn-dark` | 2,022 | 415 | All (primary action) |
-| `btn-success` | 1,814 | 224 | All (Save) |
-| `btn-sm` | 1,539 | 115 | All |
-| `form-select` | 1,536 | 151 | All |
-| `btn-primary` | 1,421 | 182 | All |
-| `btn-group` | 1,047 | 113 | Helpdesk, Credentials, Tasks |
-| `card-body` / `card-header` | 1,007 / 789 | 69 / 69 | All |
-| `btn-xs` | 885 | 79 | All (inline table actions) |
-| `table` / `table-sm` | 812 / 711 | 148 / 68 | All |
-| `alert-danger` | 718 | 43 | All (validation) |
-| `badge` | 693 | — | All |
-| `table-dark` (header row) | 486 | 51 | All |
-| `btn-warning` | 579 | 38 | All (Re-open, Process) |
-| `btn-danger` | 420 | 174 | All (Delete) |
-| `input-group` / `input-group-text` | 341 / 375 | 99 / 92 | All |
-| `tab-pane` / `nav-tabs` | 315 / 66 | 31 / — | Helpdesk Settings, Flex, Smartsheets |
-| `dropdown-item` / `dropdown-menu` | 309 / 141 | 124 / 16 | All (saved filters, menus) |
-| `spinner-border` | 139 | — | All Blazor |
-| `modal-*` | 89 each | — | Helpdesk, GLBA, CICD, Smartsheets |
-| `offcanvas-*` | 77 each | — | All Blazor (user menu, quick actions) |
-| `card-title` / `card-footer` | 85 / 41 | — | Multiple |
-| `list-group-item` / `list-group-flush` | 80 / 37 | — | Multiple |
-| `toast-*` | 41 each | — | All Blazor (MainLayout) |
-| `navbar-*` | 42–82 | — | All Blazor (MainLayout) |
-| `pagination` / `pagination-sm` | 20 / 16 | — | Smartsheets, Helpdesk |
-| `accordion-*` | 11–18 | — | Estimate, Smartsheets, Touchpoints |
-| `form-floating` | 26 | — | Identity/Auth pages |
-| `progress-bar` | 31 | — | Multiple |
-| `form-range` | 10 | — | Helpdesk, Flex |
-| `breadcrumb` | — | — | FileDemoV2, GitBrowser only |
-| `carousel` | — | — | Dashboard, Carousel only |
+> Research scan of _Repos/ production systems (30 projects) vs existing FreeExamples pages (68 .razor).
 
 ---
 
-## 2. Master Page Inventory — All Existing FreeExamples Pages
+## 2. Master Page Inventory - Polish Assessment (All 68 Pages)
 
 ### Legend
-- ✅ = Featured / primary focus
-- ◻ = Present but incidental
-- — = Not present
+- **Full** = AboutSection + InfoTips + StickyMenu + LoadingMessage + IDisposable + interactive + 200+ lines
+- **Good** = AboutSection + StickyMenu + LoadingMessage + IDisposable + interactive (no InfoTips) + 70+ lines
+- **Minimal** = Scaffolded but no InfoTips, limited interactivity
+- **Stub** = Under 40 lines, static display only
+- OK = no changes needed, TIPS = could add InfoTips, NEED = needs InfoTips + interactivity
 
-| # | Page Name | About / Title | form-control | form-select | form-check / switch | btn-group | modal | offcanvas | accordion | tabs | toast | pagination | progress | alerts | badges | dropdown | table | card | list-group | spinner | breadcrumb | input-group | form-floating | form-range | carousel | collapse | navbar |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Dashboard** | FreeExamples Home | — | — | — | — | ◻ | — | — | — | — | ◻ | ◻ | — | ◻ | — | ◻ | ◻ | — | — | — | — | — | — | ◻ | — | — |
-| 2 | **SampleItems** | CRUD List (main) | ✅ | ✅ | ✅ | ✅ | — | — | — | — | — | ✅ | — | — | — | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — |
-| 3 | **SampleItemsV1** | Card Grid View | — | ◻ | — | — | — | — | — | — | — | — | — | — | ◻ | — | ◻ | ✅ | — | — | — | — | — | — | — | — | — |
-| 4 | **SampleItemsV2** | Split Panel View | ✅ | — | — | — | — | — | — | — | — | — | — | — | ◻ | — | ◻ | ◻ | ✅ | — | — | — | — | — | — | — | — |
-| 5 | **SampleItemsV3** | Grouped Accordion View | — | — | — | — | — | — | ✅ | — | — | — | — | — | ◻ | — | ◻ | ◻ | — | — | — | — | — | — | — | ✅ | — |
-| 6 | **SampleItemsV4** | Timeline View | — | — | — | — | — | — | — | — | — | — | — | — | ◻ | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 7 | **SampleItemsV5** | Stats Dashboard View | — | — | — | — | — | — | — | — | — | — | ◻ | — | ◻ | — | ◻ | ✅ | — | — | — | — | — | — | — | — | — |
-| 8 | **EditSampleItem** | Single Item CRUD Form | ✅ | ✅ | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — |
-| 9 | **BootstrapShowcase** | All Bootstrap Components | ✅ | ✅ | ✅ | — | ✅ | — | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ | — | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | ✅ | — |
-| 10 | **BootstrapV1** | Email Template Builder | ✅ | ✅ | ✅ | — | — | — | — | — | — | — | — | ◻ | ◻ | — | ✅ | ✅ | — | — | — | — | — | — | — | — | — |
-| 11 | **BootstrapV2** | Settings Page | ✅ | ✅ | ✅ | ✅ | — | — | — | ✅ | — | — | — | ◻ | — | — | — | ◻ | — | — | — | ✅ | — | ✅ | — | — | — |
-| 12 | **BootstrapV3** | Error Pages | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — |
-| 13 | **BootstrapV4** | User Profile | — | — | — | — | — | — | — | ✅ | — | — | — | — | ◻ | ✅ | — | ✅ | ✅ | — | — | — | — | — | — | — | — |
-| 14 | **BootstrapV5** | Pricing Page | — | — | — | — | — | — | — | — | — | — | — | — | ◻ | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 15 | **FileDemo** | File Operations | — | — | — | ✅ | — | — | — | — | — | — | — | — | ◻ | — | ✅ | ✅ | — | — | — | — | — | — | — | — | — |
-| 16 | **FileDemoV1** | Profile Photo Upload | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 17 | **FileDemoV2** | Document Library | — | — | — | — | — | — | — | — | — | — | — | — | — | — | ✅ | ✅ | — | — | ✅ | — | — | — | — | — | — |
-| 18 | **FileDemoV3** | Application Checklist | — | — | — | — | — | — | — | — | — | — | ✅ | — | — | — | — | ✅ | — | — | — | — | — | — | — | — |
-| 19 | **FileDemoV4** | Bulk Data Import | — | — | — | — | — | — | — | — | — | — | — | ✅ | ◻ | — | ✅ | ✅ | — | — | — | — | — | — | — | — | — |
-| 20 | **FileDemoV5** | Ticket Attachments | — | — | — | — | — | — | — | — | — | — | ◻ | — | ◻ | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 21 | **SignatureDemo** | Signature Pad | — | — | — | — | — | — | — | — | — | — | — | — | ◻ | — | ◻ | ✅ | — | — | — | — | — | — | — | — | — |
-| 22 | **SignatureV1** | Job Application | ✅ | ✅ | ✅ | — | — | — | — | — | — | — | — | ✅ | — | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 23 | **SignatureV2** | Document Acknowledgment | ✅ | — | ✅ | — | — | — | — | — | — | — | — | ✅ | ◻ | — | ✅ | ✅ | — | — | — | — | — | — | — | — | — |
-| 24 | **SignatureV3** | Upload & Sign | ✅ | — | — | — | — | — | — | — | — | — | — | ✅ | — | — | — | ✅ | ✅ | — | — | ✅ | — | — | — | — | — |
-| 25 | **SignatureV4** | GLBA Compliance Gate | ✅ | ✅ | — | — | ✅ | — | — | — | — | — | — | ✅ | ◻ | — | ✅ | ✅ | — | — | — | — | — | — | — | — | — |
-| 26 | **SignatureV5** | Contract Section Initials | ✅ | — | — | — | — | — | — | — | — | — | ◻ | ✅ | ◻ | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 27 | **ChartsDashboard** | Charts Overview | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 28 | **ChartsV1** | Sales Analytics | — | — | — | — | — | — | — | — | — | — | — | — | ◻ | — | — | ✅ | ✅ | — | — | — | — | — | — | — | — |
-| 29 | **ChartsV2** | University Enrollment | — | — | — | — | — | — | — | — | — | — | ◻ | — | — | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 30 | **ChartsV3** | Infrastructure Monitoring | — | — | — | — | — | — | — | — | — | — | ◻ | — | ◻ | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 31 | **ChartsV4** | HR / People Analytics | — | — | — | — | — | — | — | — | — | — | ◻ | — | ◻ | — | — | ✅ | ✅ | — | — | — | — | — | — | — | — |
-| 32 | **ChartsV5** | Web Analytics | — | — | — | — | — | — | — | — | — | — | ◻ | — | — | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 33 | **CodeEditor** | Monaco Code Editor | — | ✅ | — | — | — | — | — | — | — | — | — | — | — | ✅ | — | — | — | — | — | — | — | — | — | — | — |
-| 34 | **CodeEditorV1** | SQL Query Builder | — | — | — | — | — | — | — | — | — | — | — | — | ◻ | — | ✅ | ✅ | — | — | — | — | — | — | — | — | — |
-| 35 | **CodeEditorV2** | API Tester | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — | ◻ | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 36 | **CodeEditorV3** | Config Editor | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | ✅ | ✅ | — | — | — | — | — | — | — | — |
-| 37 | **CodeEditorV4** | Diff Viewer | — | — | — | — | — | — | — | — | — | — | — | — | ◻ | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 38 | **CodeEditorV5** | Template Engine | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 39 | **SignalRDemo** | Real-time SignalR | ✅ | ✅ | ✅ | — | — | — | — | — | ✅ | — | — | — | ◻ | — | ✅ | ✅ | — | ✅ | — | — | — | — | — | — | — |
-| 40 | **SignalRV1** | Live Notifications | — | — | — | — | — | — | — | — | ✅ | — | — | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — |
-| 41 | **SignalRV2** | Online Presence | — | — | — | — | — | — | — | — | — | — | — | — | ◻ | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 42 | **SignalRV3** | Live Polling | — | — | — | — | — | — | — | — | — | — | ◻ | — | — | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 43 | **SignalRV4** | Activity Feed | — | — | — | — | — | — | — | — | — | — | — | — | ◻ | — | — | — | — | — | — | — | — | — | — | — | — |
-| 44 | **SignalRV5** | Live Scoreboard | — | — | — | — | — | — | — | — | — | — | ◻ | — | — | — | ✅ | ✅ | — | — | — | — | — | — | — | — | — |
-| 45 | **TimerDemo** | Timer/Debounce | ✅ | — | ✅ | — | — | — | — | — | — | — | ◻ | — | — | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 46 | **TimerV1** | Pomodoro Timer | — | — | — | — | — | — | — | — | — | — | — | — | ◻ | — | — | — | — | — | — | — | — | — | — | — | — |
-| 47 | **TimerV2** | Session Timeout | — | — | — | — | ✅ | — | — | — | — | — | — | ✅ | — | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 48 | **TimerV3** | Auto-Refresh | — | ✅ | — | — | — | — | — | — | — | — | ◻ | — | — | — | — | ✅ | — | ✅ | — | — | — | — | — | — | — |
-| 49 | **TimerV4** | Timed Quiz | — | — | ✅ | — | — | — | — | — | — | — | ◻ | — | ◻ | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 50 | **TimerV5** | Event Countdown | — | — | — | — | — | — | — | — | — | — | — | — | ◻ | — | — | — | — | — | — | — | — | — | — | — | — |
-| 51 | **NetworkGraph** | SVG Network | — | — | — | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — |
-| 52 | **NetworkGraphV1** | Org Chart | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 53 | **NetworkGraphV2** | Dependency Map | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | ✅ | ✅ | — | — | — | — | — | — | — | — |
-| 54 | **WizardDemo** | Multi-step Wizard | ✅ | ✅ | — | — | — | — | — | — | — | — | ◻ | — | ◻ | — | ✅ | ✅ | — | — | ✅ | — | — | — | — | — | — |
-| 55 | **KanbanBoard** | Drag & Drop Board | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — | ◻ | — | ◻ | ✅ | — | — | — | ✅ | — | — | — | — | — |
-| 56 | **SearchAutocomplete** | Typeahead Search | ✅ | — | — | — | — | — | — | — | — | — | — | — | ◻ | ✅ | — | ✅ | — | ✅ | — | ✅ | — | — | — | — | — |
-| 57 | **GitBrowser** | Git Repo Browser | ✅ | — | — | — | — | — | — | — | — | — | ◻ | — | ◻ | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | — | — | — | — | — |
-| 58 | **ApiKeyDemo** | API Key Middleware | ✅ | ✅ | — | — | — | — | — | — | ◻ | — | — | ✅ | ◻ | — | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — |
-| 59 | **Carousel** | Image Carousel | — | ✅ | — | — | — | — | — | — | — | — | — | — | ◻ | — | — | ✅ | — | — | — | — | — | — | ✅ | — | — |
-| 60 | **ChatView** | Chat Interface | ✅ | ✅ | — | — | — | — | — | — | — | — | ◻ | — | ◻ | — | — | ✅ | — | ✅ | — | ✅ | — | — | — | — | — |
-| 61 | **CommandPalette** | VS Code-style Palette | ✅ | — | — | — | ✅ | — | — | — | — | — | — | — | ◻ | ✅ | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — |
-| 62 | **CommentThread** | Threaded Comments | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — | ◻ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | — |
-| 63 | **ComparisonTable** | Side-by-side Compare | — | — | ✅ | — | — | — | — | — | — | — | — | — | ◻ | — | ✅ | ✅ | — | — | — | — | — | — | — | — | — |
-| 64 | **ImageGallery** | Image Gallery | — | — | — | ✅ | ✅ | — | — | — | — | — | — | — | ◻ | — | — | ✅ | — | — | — | — | — | — | — | — | — |
-| 65 | **ItemCards** | Item Card Layouts | — | — | ✅ | — | — | — | — | — | — | — | ◻ | — | ◻ | — | ◻ | ✅ | ✅ | — | — | — | — | — | — | — | — |
-| 66 | **PipelineTracker** | CI/CD Pipeline | — | ✅ | — | — | — | — | — | — | — | — | ✅ | ✅ | ✅ | — | — | ✅ | — | ✅ | — | — | — | — | — | — | — |
-| 67 | **StatusBoard** | System Status | — | ✅ | — | — | — | — | — | — | — | — | ◻ | — | ◻ | — | ✅ | ✅ | — | ✅ | — | — | — | — | — | — | — |
-| 68 | **CodePlayground** | Live Code Runner | — | ✅ | — | ✅ | — | — | — | ✅ | — | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | — | ✅ | — | — | — | — | — | — | — |
-
----
-
-## 3. Gap Analysis — Production Patterns Missing from FreeExamples
-
-### 3A. Bootstrap Components with ZERO or Minimal Coverage
-
-| Missing Pattern | Production Usage | Where in Production | Priority |
-|---|---|---|---|
-| **Offcanvas** (slide-out panel) | 77 instances | Helpdesk MainLayout (user menu, quick add user), all Blazor apps | 🔴 HIGH |
-| **Form-floating** (floating labels) | 26 instances | Identity/Auth pages (Login, Register, ChangePassword) | 🟡 MEDIUM |
-| **Nav-pills** (pill-style nav) | 66+ `nav-tabs` but 0 pills | Smartsheets, Flex5 | 🟡 MEDIUM |
-| **Navbar** (top navigation bar) | 42–82 instances | All Blazor MainLayouts | 🟡 MEDIUM |
-| **Modal with footer** (`modal-footer`, `modal-lg`) | 89 modal instances | Helpdesk, GLBA, CICD Import | 🟡 MEDIUM |
-| **Btn-toolbar** (button toolbar) | 10 instances | SAP pagination, Helpdesk | 🟢 LOW |
-| **Split-button dropdown** (`dropdown-toggle-split`) | Used in Helpdesk Save button | Helpdesk Request page (Save / Save Without Notification) | 🔴 HIGH |
-| **Date pickers in forms** | Pervasive | Helpdesk filters, Tasks, Credentials | 🟡 MEDIUM |
-| **Multi-select `<select multiple>` with categories** | Helpdesk, TouchPoints | Filter pages | 🟡 MEDIUM |
-
-### 3B. Functional Patterns with ZERO or Minimal Coverage
-
-| Missing Pattern | Production Example | Where in Production | Priority |
-|---|---|---|---|
-| **Advanced Filter Panel** (multi-field filter with saved filters dropdown) | Helpdesk Index, TouchPoints Search | Helpdesk, TouchPoints, SAP | 🔴 HIGH |
-| **Settings Page with Tabbed Sections** (admin-style tabs + form fields) | Helpdesk Settings (7+ tabs: General, Theme, Auth, Email, etc.) | All Blazor apps | 🔴 HIGH |
-| **Offcanvas Quick-Action Sidebar** (slide-out form for quick add) | Helpdesk MainLayout ("Add User" offcanvas) | Helpdesk, Credentials | 🔴 HIGH |
-| **Toast Notification System** (color-coded, auto-dismiss) | MainLayout toast container | All Blazor apps | 🟡 MEDIUM |
-| **Inline Table Actions** (Edit/Delete buttons per row with `btn-xs`) | DependencyManager, Helpdesk, Credentials | All data-management apps | 🟡 MEDIUM |
-| **Master-Detail with Edit/View Toggle** (readonly vs editable form) | Credentials EditCredential (AllowEdit toggle) | Credentials, DependencyManager | 🔴 HIGH |
-| **Bulk Select / Bulk Actions** (checkbox column + batch operations) | TouchPoints, Helpdesk | Multiple admin pages | 🟡 MEDIUM |
-| **Form Layout: Table-based Label/Value** (table with label column + input column) | Helpdesk NewRequest | Helpdesk, Tasks | 🟡 MEDIUM |
-| **Confirmation Delete Pattern** (`DeleteConfirmation` component) | Used across all apps | All CRUD pages | 🟢 Exists in EditSampleItem |
-| **UndeleteMessage Pattern** (soft-delete with undo) | Helpdesk, Tasks, Credentials | All CRUD apps | 🟡 MEDIUM |
-| **Saved Filters Dropdown** (common filters + custom saved filters) | Helpdesk Index | Helpdesk | 🟡 MEDIUM |
-| **User Lookup / Typeahead for entity references** | Helpdesk NewRequest (UserLookup component) | Helpdesk, Tasks | 🟢 Exists in SearchAutocomplete |
-| **Multi-step Import with Modal** (URL/File → Validate → Import → Done) | FreeCICD Import modal | FreeCICD | 🟡 MEDIUM |
-| **Accordion-based Financial/Data Sections** | Estimate (Financial Aid accordion) | Estimate | 🟢 Exists in SampleItemsV3 |
-| **Role-based UI visibility** (`if (Model.TechOrAdmin)`, `if (Model.User.Admin)`) | All production apps | Pervasive | 🟡 MEDIUM |
-
----
-
-## 4. Proposed New Example Pages
-
-Based on the gap analysis above, here are the recommended new pages to build, ordered by impact:
-
-| # | Proposed Page | Route | Mirrors Production Pattern From | Key Bootstrap Components | Key Functional Patterns |
+| # | Page | Title | Lines | Polish | Needs |
 |---|---|---|---|---|---|
-| 1 | **BootstrapV6** — Advanced Filter Panel | `/Examples/BootstrapV6` | Helpdesk Index, TouchPoints Search, SAP Filter | `form-control`, `form-select`, `form-check form-switch`, `btn-group`, `dropdown-menu`, `dropdown-item`, `input-group`, `badge` | Multi-field filters, saved filters dropdown, date range, keyword search, filter reset, record count display |
-| 2 | **BootstrapV7** — Settings Admin Panel | `/Examples/BootstrapV7` | Helpdesk Settings, all Blazor app Settings pages | `nav-tabs`, `tab-pane`, `form-control`, `form-select`, `form-check form-switch`, `form-floating`, `card`, `alert-info`, `btn-success` | Tabbed settings, toggle switches in sections, save all, required field validation, conditional tab visibility |
-| 3 | **BootstrapV8** — Offcanvas & Sidebar Actions | `/Examples/BootstrapV8` | Helpdesk MainLayout (Quick Add User, User Menu), all Blazor offcanvas | `offcanvas`, `offcanvas-end`, `offcanvas-header`, `offcanvas-body`, `offcanvas-title`, `btn-close`, `form-control`, `list-group`, `badge` | Right-side slide-out form, quick-add entity, user profile sidebar, language selector, tenant switcher simulation |
-| 4 | **BootstrapV9** — Master-Detail Edit Form | `/Examples/BootstrapV9` | Credentials EditCredential, DependencyManager EditDependency | `form-control`, `form-select`, `form-check form-switch`, `card-header`, `card-body`, `card-footer`, `alert-warning`, `alert-danger`, `btn-group`, `dropdown-toggle-split`, `table table-sm` | Read-only vs edit toggle, conditional field rendering, split-button save, inline table with add/remove rows, soft-delete/undelete message, card sections for grouping |
-| 5 | **BootstrapV10** — Modal Workflows & Toasts | `/Examples/BootstrapV10` | Helpdesk modals, FreeCICD Import wizard modal, MainLayout toasts | `modal`, `modal-dialog`, `modal-lg`, `modal-header`, `modal-body`, `modal-footer`, `toast`, `toast-container`, `alert-*`, `progress-bar`, `spinner-border`, `btn-toolbar` | Confirmation modal, large modal with steps (import flow), toast notification system with variants (success/danger/warning), auto-dismiss toasts, stacked toasts |
-| 6 | **BootstrapV11** — Data Table with Inline Actions | `/Examples/BootstrapV11` | Helpdesk Request list, DependencyManager table, Tasks list | `table`, `table-sm`, `table-dark`, `table-hover`, `table-striped`, `table-responsive`, `btn-xs`, `btn-group`, `badge`, `pagination`, `pagination-sm`, `form-check-input` | Sortable columns, row-level action buttons (Edit/Delete/Duplicate), bulk checkbox select, pagination with page-size selector, column header filters, export button, responsive wrapper |
-| 7 | **BootstrapV12** — Request Submission Form | `/Examples/BootstrapV12` | Helpdesk NewRequest, TouchPoints forms | `table` (label/value layout), `form-control`, `form-select`, `form-check form-switch`, `form-range`, `nav-pills`, `input-group`, `btn-success`, `btn-primary`, `alert-danger` | Table-based form layout (like Helpdesk), conditional fields based on selection, required field highlighting with CSS class, person-affected dropdown switching UI, file attachment area, urgent flag toggle |
+| 1 | Dashboard | FreeExamples Home | 233 | Full | OK |
+| 2 | SampleItems | CRUD List | 474 | Full | OK |
+| 3 | SampleItemsV1 | Card Grid | 86 | Good | TIPS |
+| 4 | SampleItemsV2 | Split Panel | 99 | Good | TIPS |
+| 5 | SampleItemsV3 | Accordion | 94 | Good | TIPS |
+| 6 | SampleItemsV4 | Timeline | 86 | Min | NEED |
+| 7 | SampleItemsV5 | Stats Dash | 114 | Min | NEED |
+| 8 | EditSampleItem | Single CRUD | 218 | Full | OK |
+| 9 | BootstrapShowcase | All Components | 686 | Full | OK |
+| 10 | BootstrapV1 | Email Builder | 85 | Good | TIPS |
+| 11 | BootstrapV2 | Settings | 76 | Good | TIPS |
+| 12 | BootstrapV3 | Error Pages | 26 | Stub | NEED |
+| 13 | BootstrapV4 | User Profile | 60 | Min | NEED |
+| 14 | BootstrapV5 | Pricing | 27 | Stub | NEED |
+| 15 | FileDemo | File Ops | 241 | Full | OK |
+| 16 | FileDemoV1 | Profile Photo | 76 | Good | TIPS |
+| 17 | FileDemoV2 | Doc Library | 112 | Good | TIPS |
+| 18 | FileDemoV3 | Checklist | 117 | Good | TIPS |
+| 19 | FileDemoV4 | Bulk Import | 98 | Good | TIPS |
+| 20 | FileDemoV5 | Attachments | 98 | Good | TIPS |
+| 21 | SignatureDemo | Signature Pad | 157 | Full | OK |
+| 22 | SignatureV1 | Job App | 183 | Good | TIPS |
+| 23 | SignatureV2 | Doc Ack | 139 | Good | TIPS |
+| 24 | SignatureV3 | Upload Sign | 143 | Good | TIPS |
+| 25 | SignatureV4 | GLBA Gate | 149 | Good | TIPS |
+| 26 | SignatureV5 | Contract | 166 | Good | TIPS |
+| 27 | ChartsDashboard | Charts | 189 | Full | OK |
+| 28 | ChartsV1 | Sales | 40 | Stub | NEED |
+| 29 | ChartsV2 | Enrollment | 39 | Stub | NEED |
+| 30 | ChartsV3 | Infra | 39 | Stub | NEED |
+| 31 | ChartsV4 | HR | 39 | Stub | NEED |
+| 32 | ChartsV5 | Web | 39 | Stub | NEED |
+| 33 | CodeEditor | Monaco | 164 | Full | OK |
+| 34 | CodeEditorV1 | SQL | 41 | Stub | NEED |
+| 35 | CodeEditorV2 | API Tester | 52 | Min | NEED |
+| 36 | CodeEditorV3 | Config | 39 | Stub | NEED |
+| 37 | CodeEditorV4 | Diff | 43 | Stub | NEED |
+| 38 | CodeEditorV5 | Template | 47 | Min | NEED |
+| 39 | SignalRDemo | SignalR | 476 | Full | OK |
+| 40 | SignalRV1 | Notifications | 34 | Stub | NEED |
+| 41 | SignalRV2 | Presence | 38 | Stub | NEED |
+| 42 | SignalRV3 | Polling | 35 | Stub | NEED |
+| 43 | SignalRV4 | Feed | 35 | Stub | NEED |
+| 44 | SignalRV5 | Scoreboard | 32 | Stub | NEED |
+| 45 | TimerDemo | Timer | 234 | Full | OK |
+| 46 | TimerV1 | Pomodoro | 37 | Stub | NEED |
+| 47 | TimerV2 | Session | 38 | Stub | NEED |
+| 48 | TimerV3 | AutoRefresh | 42 | Stub | NEED |
+| 49 | TimerV4 | Quiz | 41 | Stub | NEED |
+| 50 | TimerV5 | Countdown | 31 | Stub | NEED |
+| 51 | NetworkGraph | SVG Network | 240 | Full | OK |
+| 52 | NetworkGraphV1 | Org Chart | 34 | Stub | NEED |
+| 53 | NetworkGraphV2 | Dependencies | 19 | Stub | NEED |
+| 54 | WizardDemo | Wizard | 360 | Full | OK |
+| 55 | KanbanBoard | Kanban | 493 | Full | OK |
+| 56 | SearchAutocomplete | Search | 371 | Full | OK |
+| 57 | GitBrowser | Git | 453 | Full | OK |
+| 58 | ApiKeyDemo | API Key | 468 | Full | OK |
+| 59 | Carousel | Carousel | 280 | Full | OK |
+| 60 | ChatView | Chat | 338 | Full | OK |
+| 61 | CommandPalette | Palette | 356 | Full | OK |
+| 62 | CommentThread | Comments | 419 | Full | OK |
+| 63 | ComparisonTable | Compare | 301 | Full | OK |
+| 64 | ImageGallery | Gallery | 263 | Full | OK |
+| 65 | ItemCards | Cards | 265 | Full | OK |
+| 66 | PipelineTracker | Pipeline | 396 | Full | OK |
+| 67 | StatusBoard | Status | 346 | Full | OK |
+| 68 | CodePlayground | Playground | 521 | Full | OK |
 
----
+### Polish Summary
 
-## 5. Coverage Matrix After Proposed Pages
-
-| Bootstrap Component | Before (68 pages) | After (+7 pages) | Production Coverage |
-|---|---|---|---|
-| Offcanvas | ❌ 0 pages | ✅ BootstrapV8 | ✅ |
-| Form-floating | ❌ 0 pages | ✅ BootstrapV7 | ✅ |
-| Nav-pills | ❌ 0 pages | ✅ BootstrapV12 | ✅ |
-| Navbar | ❌ 0 pages | ◻ (not applicable — in MainLayout, not example pages) | N/A |
-| Modal with footer | ❌ 0 pages | ✅ BootstrapV10 | ✅ |
-| Modal-lg | ❌ 0 pages | ✅ BootstrapV10 | ✅ |
-| Btn-toolbar | ❌ 0 pages | ✅ BootstrapV10 | ✅ |
-| Split-button dropdown | ❌ 0 pages | ✅ BootstrapV9 | ✅ |
-| Table-hover / table-striped | ◻ incidental | ✅ BootstrapV11 | ✅ |
-| Table-responsive | ❌ 0 pages | ✅ BootstrapV11 | ✅ |
-| Pagination (dedicated) | ◻ Dashboard only | ✅ BootstrapV11 | ✅ |
-| Form-range | ◻ BootstrapV2 only | ✅ BootstrapV12 | ✅ |
-| Saved filters dropdown | ❌ 0 pages | ✅ BootstrapV6 | ✅ |
-| Offcanvas quick-action form | ❌ 0 pages | ✅ BootstrapV8 | ✅ |
-| Toast notification system | ◻ BootstrapShowcase only | ✅ BootstrapV10 | ✅ |
-| Edit/View toggle | ❌ 0 pages | ✅ BootstrapV9 | ✅ |
-| Inline table actions (btn-xs) | ❌ 0 pages | ✅ BootstrapV11 | ✅ |
-| Multi-field filter panel | ❌ 0 pages | ✅ BootstrapV6 | ✅ |
-| Tabbed settings page | ◻ BootstrapV2 light | ✅ BootstrapV7 (full) | ✅ |
-| Bulk select / batch ops | ❌ 0 pages | ✅ BootstrapV11 | ✅ |
-
----
-
-## 6. Source Production Files Referenced
-
-| Project | Key Files Examined | Patterns Found |
+| Polish Level | Count | Pages |
 |---|---|---|
-| **Helpdesk4** | `Request.razor`, `Index.razor`, `NewRequest.razor`, `Stats.razor`, `Settings.razor`, `MainLayout.razor` | Split-button save, saved filters, offcanvas, toasts, tabs, dropdowns, modals, table forms, pagination, date pickers, conditional rendering |
-| **Credentials** | `EditCredential.razor`, `MainLayout.razor` | Edit/view toggle, form-switch in alerts, card sections, file management, type-specific conditional fields |
-| **DependencyManager** | `EditDependency.razor` | Inline table add/remove, card with colored header, btn-xs actions |
-| **Tasks** | `EditTask.razor` | Status badges, form-switch, conditional buttons, processing flags |
-| **Estimate** | `Estimate.razor`, `SlateEstimate.razor` | Accordion sections, financial tables, modal for campus contacts |
-| **TouchPoints** | `_partialSearch.cshtml` | Multi-field filter, multi-select dropdowns, form-switch, btn-group, export, date pickers |
-| **SAP** | `_partialHome.cshtml` | Form-switch with scaled inputs, pagination, record count, filter apply |
-| **AcademicCalendarPetitions** | `FreeCICD.App.UI.Import.razor`, `Settings.razor`, `MainLayout.razor` | Import wizard modal, offcanvas, nav-tabs settings |
-| **FreeForm** | `_partialFormEditor.cshtml` | Complex form builder patterns |
+| **Full** | 27 | Dashboard, SampleItems, EditSampleItem, BootstrapShowcase, FileDemo, SignatureDemo, ChartsDashboard, CodeEditor, SignalRDemo, TimerDemo, NetworkGraph, WizardDemo, KanbanBoard, SearchAutocomplete, GitBrowser, ApiKeyDemo, Carousel, ChatView, CommandPalette, CommentThread, ComparisonTable, ImageGallery, ItemCards, PipelineTracker, StatusBoard, CodePlayground |
+| **Good** | 16 | SampleItemsV1-V3, BootstrapV1-V2, FileDemoV1-V5, SignatureV1-V5 |
+| **Minimal** | 5 | SampleItemsV4-V5, BootstrapV4, CodeEditorV2, CodeEditorV5 |
+| **Stub** | 20 | BootstrapV3, V5, ChartsV1-V5, CodeEditorV1, V3-V4, SignalRV1-V5, TimerV1-V5, NetworkGraphV1-V2 |
+
+---
+
+## 3. Gap Analysis - Production Patterns Missing
+
+| Missing Pattern | Production Usage | Priority |
+|---|---|---|
+| **Offcanvas** (slide-out panel) | 77 instances, all Blazor apps | HIGH |
+| **Form-floating** (floating labels) | 26 instances, Identity/Auth pages | MEDIUM |
+| **Modal with footer** (modal-footer, modal-lg) | 89 modal instances | MEDIUM |
+| **Split-button dropdown** | Helpdesk Save button | HIGH |
+| **Advanced Filter Panel** | Helpdesk Index, TouchPoints | HIGH |
+| **Settings with Tabbed Sections** | Helpdesk Settings (7+ tabs) | HIGH |
+| **Master-Detail Edit/View Toggle** | Credentials EditCredential | HIGH |
+| **Inline Table Actions** (btn-xs per row) | DependencyManager, Helpdesk | MEDIUM |
+| **Toast Notification System** | MainLayout all apps | MEDIUM |
+
+---
+
+## 4. Proposed New Pages (V6-V12)
+
+| Page | Route | Mirrors | Key Patterns |
+|---|---|---|---|
+| BootstrapV6 | /Examples/BootstrapV6 | Helpdesk Index filter | Multi-field filter, saved filters, date range, collapse |
+| BootstrapV7 | /Examples/BootstrapV7 | Helpdesk Settings | nav-tabs, form-floating, form-switch, validation |
+| BootstrapV8 | /Examples/BootstrapV8 | MainLayout offcanvas | offcanvas-end, list-group, quick-add form |
+| BootstrapV9 | /Examples/BootstrapV9 | Credentials Edit | Edit/view toggle, split-button save, soft-delete |
+| BootstrapV10 | /Examples/BootstrapV10 | CICD Import + toasts | modal-lg wizard, toast system, progress-bar |
+| BootstrapV11 | /Examples/BootstrapV11 | DependencyManager tables | table-hover, btn-xs, bulk select, pagination |
+| BootstrapV12 | /Examples/BootstrapV12 | Helpdesk NewRequest | Table-form layout, conditional fields, form-floating |

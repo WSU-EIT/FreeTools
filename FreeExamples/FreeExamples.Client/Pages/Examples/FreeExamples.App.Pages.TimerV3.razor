@@ -8,6 +8,17 @@
         <AboutSection Title="Timer in Context: Auto-Refresh" Subtitle="Data refreshes automatically every N seconds — the monitoring dashboard pattern" IconClass="fa-solid fa-spinner">
             <p class="small text-muted mb-0">A dashboard that auto-refreshes its data on an interval. Configurable refresh rate. Shows last-refresh timestamp and next-refresh countdown.</p>
         </AboutSection>
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Auto-Refresh Polling"
+                     Description="A timer periodically refreshes data from the server (e.g., every 30 seconds). The interval is configurable. A 'Last refreshed: X seconds ago' indicator shows data freshness. This is the dashboard auto-refresh pattern."
+                     Code="@_codeAutoRefresh" />
+            <InfoTip Title="Refresh Interval Selector"
+                     Description="A dropdown lets users choose the refresh interval (5s, 15s, 30s, 60s, Off). Changing the interval resets the timer. 'Off' stops auto-refresh entirely. This gives users control over update frequency vs performance."
+                     Code="@_codeIntervalSelector" />
+            <InfoTip Title="Loading Spinner During Refresh"
+                     Description="While data is refreshing, a small spinner (spinner-border spinner-border-sm) appears next to the last-refreshed text. This indicates background activity without blocking the UI. The data table stays visible and interactive during refresh."
+                     Code="@_codeRefreshSpinner" />
+        </div>
         <div class="d-flex justify-content-between align-items-center mb-3">
             <div class="small text-muted">Last refresh: <strong>@_lastRefresh?.ToString("h:mm:ss tt")</strong> · Refresh #@_refreshCount</div>
             <div class="d-flex gap-2 align-items-center">
@@ -28,6 +39,9 @@
     [Parameter] public string? TenantCode { get; set; }
     private bool _loading = true, _loadedData = false, _autoRefresh = false;
     private string _pageName = "timerv3";
+    private string _codeAutoRefresh = "_timer.Elapsed += async (s, e) => {\n  var data = await Http.GetFromJsonAsync<List<Item>>(\"api/items\");\n  await InvokeAsync(() => { _items = data; StateHasChanged(); });\n};";
+    private string _codeIntervalSelector = "<select @bind=\"_intervalSeconds\" @bind:after=\"ResetTimer\">\n  <option value=\"5\">5 seconds</option>\n  <option value=\"30\">30 seconds</option>\n  <option value=\"0\">Off</option>\n</select>";
+    private string _codeRefreshSpinner = "@if (_refreshing) {\n  <span class=\"spinner-border spinner-border-sm\"></span>\n}\n<span>Last refreshed: @_lastRefresh</span>";
     private int _intervalSeconds = 10, _refreshCount = 0, _cpu = 42, _memory = 68, _requests = 124, _latency = 89;
     private int _nextRefreshPct = 100;
     private DateTime? _lastRefresh;

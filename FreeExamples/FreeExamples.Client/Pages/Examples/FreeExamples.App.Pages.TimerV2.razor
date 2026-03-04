@@ -8,6 +8,17 @@
         <AboutSection Title="Timer in Context: Session Timeout" Subtitle="A countdown warning before your session expires — the banking / portal pattern" IconClass="fa-solid fa-clock">
             <p class="small text-muted mb-0">A 30-second countdown modal that appears when a session is about to expire. Click "Stay Logged In" to reset, or let it expire. Every banking site has this.</p>
         </AboutSection>
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Session Timeout Warning"
+                     Description="Web applications show a warning before session expires. A modal or alert appears at the warning threshold (e.g., 2 min left). The user can 'Extend Session' or let it expire. This is the banking/healthcare session timeout pattern."
+                     Code="@_codeTimeoutWarning" />
+            <InfoTip Title="Activity Detection"
+                     Description="The timer resets on user activity (mouse movement, keypress). JavaScript interop detects activity and calls a Blazor method to reset the countdown. This prevents timeout during active use while catching idle sessions."
+                     Code="@_codeActivityDetect" />
+            <InfoTip Title="Countdown Progress Bar"
+                     Description="A progress bar shows remaining session time visually. It starts at 100% (green) and decreases. At 25%, it turns yellow (bg-warning). At 10%, it turns red (bg-danger). This gives users urgency without reading numbers."
+                     Code="@_codeCountdownBar" />
+        </div>
         <div class="text-center py-4"><button class="btn btn-lg btn-warning" @onclick="TriggerTimeout"><i class="fa-solid fa-clock me-1"></i> Simulate Session Timeout</button></div>
         @if (_showWarning) {
             <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="z-index:9999; background:rgba(0,0,0,0.5);">
@@ -26,6 +37,9 @@
     [Parameter] public string? TenantCode { get; set; }
     private bool _loading = true, _loadedData = false, _showWarning = false, _expired = false, _stayedIn = false;
     private string _pageName = "timerv2";
+    private string _codeTimeoutWarning = "@if (_remaining <= _warningThreshold) {\n  <div class=\"alert alert-warning\">\n    Session expires in @_remaining seconds\n    <button @onclick=\"ExtendSession\">Extend</button>\n  </div>\n}";
+    private string _codeActivityDetect = "// JS: document.addEventListener('mousemove', () =>\n//   DotNet.invokeMethodAsync('ResetTimer'));\n// Blazor: void ResetTimer() => _remaining = _maxSeconds;";
+    private string _codeCountdownBar = "<div class=\"progress\">\n  <div class=\"progress-bar @(pct > 25 ? \"bg-success\" :\n    pct > 10 ? \"bg-warning\" : \"bg-danger\")\"\n    style=\"width:@pct%\"></div>\n</div>";
     private int _countdown = 30;
     private System.Timers.Timer? _timer;
     public void Dispose() { Model.OnChange -= StateHasChanged; Model.Subscribers_OnChange.Remove(_pageName); _timer?.Dispose(); }

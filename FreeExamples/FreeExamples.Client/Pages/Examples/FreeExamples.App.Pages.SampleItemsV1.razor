@@ -17,6 +17,18 @@
             <p class="small text-muted mb-0">Instead of a table, each item is a self-contained card with category badge, status indicator, and amount. Useful when visual scanning matters more than sorting columns.</p>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="row-cols Responsive Card Grid"
+                     Description="row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 creates a responsive card grid. On phones you get 1 column, tablets 2, desktops 3, wide screens 4. Combined with g-3 for gutters and h-100 for equal-height cards. This is the standard production card layout."
+                     Code="@_codeRowCols" />
+            <InfoTip Title="Status Badge Coloring"
+                     Description="Each item gets a badge colored by status — bg-success for Active, bg-primary for Completed, bg-dark for Archived, bg-secondary for Draft. The badge sits in the top-right of each card using d-flex justify-content-between. Same pattern used in every production list."
+                     Code="@_codeStatusBadge" />
+            <InfoTip Title="Client-Side Sorting"
+                     Description="The sort dropdown uses form-select-sm with @bind and @bind:after to re-sort the list instantly. No server call — just LINQ OrderBy on the existing list. This is the quick-sort pattern used in DependencyManager and TouchPoints."
+                     Code="@_codeSortSelect" />
+        </div>
+
         <div class="d-flex justify-content-between align-items-center mb-3">
             <span class="badge bg-secondary rounded-pill">@_items.Count items</span>
             <select class="form-select form-select-sm" style="width:auto;" @bind="_sortBy" @bind:after="SortItems">
@@ -60,6 +72,9 @@
     private bool _loading = true, _loadedData = false;
     private string _pageName = "sampleitemsv1";
     private string _sortBy = "name";
+    private string _codeRowCols = "<div class=\"row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3\">\n  <div class=\"col\">\n    <div class=\"card h-100\">...</div>\n  </div>\n</div>";
+    private string _codeStatusBadge = "<span class=\"badge @GetStatusBadge(item.Status)\">@item.Status</span>\n// bg-success for Active, bg-primary for Completed, bg-dark for Archived";
+    private string _codeSortSelect = "<select class=\"form-select form-select-sm\" @bind=\"_sortBy\" @bind:after=\"SortItems\">\n  <option value=\"name\">Sort: Name</option>\n</select>";
     private List<DataObjects.SampleItem> _items = new();
 
     public void Dispose() { Model.OnChange -= StateHasChanged; Model.Subscribers_OnChange.Remove(_pageName); }

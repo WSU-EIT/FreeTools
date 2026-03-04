@@ -17,6 +17,18 @@
             <p class="small text-muted mb-0">A support ticket where users attach screenshots, error logs, and evidence. Each attachment gets a note explaining what it shows. This is the Jira, Zendesk, or GitHub issue attachment pattern.</p>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Ticket Attachment Pattern"
+                     Description="Each attachment is a card with the file name, size, and a note explaining what it shows. An upload button adds new attachments. This is the Jira/Zendesk/GitHub issue attachment pattern where users provide evidence for support tickets."
+                     Code="@_codeAttachment" />
+            <InfoTip Title="Attachment Notes"
+                     Description="Each attachment has a textarea for notes explaining what the file shows (e.g. 'Screenshot of the 500 error after clicking Login'). In production, these notes help support agents understand the context without opening every file."
+                     Code="@_codeAttachmentNotes" />
+            <InfoTip Title="File Size Display"
+                     Description="File sizes are displayed in human-readable format (KB, MB). The badge next to the filename shows the file type. A remove button (btn-outline-danger btn-xs) lets users delete attachments before submitting the ticket."
+                     Code="@_codeFileSize" />
+        </div>
+
         @* Ticket Header *@
         <div class="card shadow-sm border-0 mb-3">
             <div class="card-header bg-danger text-white d-flex justify-content-between">
@@ -70,6 +82,9 @@
     [Parameter] public string? TenantCode { get; set; }
     private bool _loading = true, _loadedData = false;
     private string _pageName = "filedemov5";
+    private string _codeAttachment = "<div class=\"card\">\n  <div class=\"d-flex align-items-center gap-2\">\n    <i class=\"fa-solid fa-paperclip\"></i>\n    <span>screenshot.png</span>\n    <span class=\"badge\">PNG</span>\n  </div>\n</div>";
+    private string _codeAttachmentNotes = "<textarea class=\"form-control form-control-sm\" rows=\"2\"\n  placeholder=\"Describe what this file shows...\">\n</textarea>";
+    private string _codeFileSize = "<span class=\"small text-muted\">3.2 MB</span>\n<button class=\"btn btn-outline-danger btn-xs\">\n  <i class=\"fa-solid fa-times\"></i> Remove\n</button>";
     private int _counter = 0;
 
     private List<Attachment> _attachments = new() {

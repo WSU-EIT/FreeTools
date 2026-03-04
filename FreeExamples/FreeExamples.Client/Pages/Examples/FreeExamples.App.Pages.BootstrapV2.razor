@@ -12,6 +12,18 @@
             <p class="small text-muted mb-0">Bootstrap form components organized into tabbed settings sections. Demonstrates form groups, switches, range sliders, input groups, and validation feedback in a realistic admin panel context.</p>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="nav-tabs for Settings Sections"
+                     Description="Bootstrap nav-tabs create tabbed navigation without page reload. The active tab gets the 'active' class via @(_activeTab == tab). Clicking a tab sets _activeTab which controls which card-body content renders. This is the Helpdesk Settings pattern with 7+ tabs."
+                     Code="@_codeNavTabs" />
+            <InfoTip Title="form-switch Toggles"
+                     Description="form-check form-switch creates iOS-style toggle switches. They're used in every production settings page for boolean options (enable/disable features). Each switch binds to a bool. Group related switches with small labels for a clean admin panel."
+                     Code="@_codeFormSwitch" />
+            <InfoTip Title="input-group for Formatted Inputs"
+                     Description="input-group wraps an input with a prefix/suffix. Here the @@ symbol prefixes the email field. Production uses this for currency ($), URLs (https://), search (magnifying glass), and file paths. The input-group-text provides the visual prefix."
+                     Code="@_codeInputGroup" />
+        </div>
+
         <ul class="nav nav-tabs mb-3">
             @foreach (var tab in new[] { "General", "Notifications", "Security", "Appearance" }) {
                 <li class="nav-item"><a class="nav-link @(_activeTab == tab ? "active" : "")" href="#" @onclick="@(() => _activeTab = tab)" @onclick:preventDefault>@tab</a></li>
@@ -68,6 +80,9 @@
     private bool _loading = true, _loadedData = false;
     private string _pageName = "bootstrapv2";
     private string _activeTab = "General";
+    private string _codeNavTabs = "<ul class=\"nav nav-tabs\">\n  <li class=\"nav-item\">\n    <a class=\"nav-link @(_activeTab == tab ? \"active\" : \")\"\n      @onclick=\"() => _activeTab = tab\">@tab</a>\n  </li>\n</ul>";
+    private string _codeFormSwitch = "<div class=\"form-check form-switch\">\n  <input class=\"form-check-input\" type=\"checkbox\" @bind=\"_enabled\" />\n  <label class=\"form-check-label\">Enable Feature</label>\n</div>";
+    private string _codeInputGroup = "<div class=\"input-group input-group-sm\">\n  <span class=\"input-group-text\">@@</span>\n  <input type=\"email\" class=\"form-control\" />\n</div>";
 
     public void Dispose() { Model.OnChange -= StateHasChanged; Model.Subscribers_OnChange.Remove(_pageName); }
     protected override void OnInitialized() { Model.View = _pageName; Model.OnChange += StateHasChanged; if (!Model.Subscribers_OnChange.Contains(_pageName)) Model.Subscribers_OnChange.Add(_pageName); }

@@ -38,6 +38,18 @@
             </div>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Content Gate Pattern"
+                     Description="The main content is blurred/blocked behind an overlay until the user acknowledges and signs. The overlay uses position-absolute with a semi-transparent background. Once signed, the overlay fades and content becomes accessible. This is the GLBA compliance gate pattern."
+                     Code="@_codeContentGate" />
+            <InfoTip Title="Blur Overlay with CSS"
+                     Description="The content behind the gate uses filter:blur(4px) and pointer-events:none to prevent interaction. The overlay div sits on top with position-absolute and a centered card with the sign-in form. On completion, both the blur and overlay are removed."
+                     Code="@_codeBlurOverlay" />
+            <InfoTip Title="Compliance Acknowledgment Steps"
+                     Description="GLBA and FERPA compliance requires specific steps: 1) Read policy text, 2) Check acknowledgment box, 3) Sign. Each step must complete before the next enables. The UI guides users through this sequence with disabled states and visual cues."
+                     Code="@_codeComplianceSteps" />
+        </div>
+
         @* Blurred/blocked content behind the gate *@
         <div class="position-relative">
             @if (!_consentGranted) {
@@ -135,6 +147,9 @@
     [Parameter] public string? TenantCode { get; set; }
     private bool _loading = true, _loadedData = false, _consentGranted = false;
     private string _pageName = "signaturev4";
+    private string _codeContentGate = "<div class=\"position-relative\">\n  <div style=\"filter:blur(4px);pointer-events:none\">\n    <!-- protected content -->\n  </div>\n  <div class=\"position-absolute top-0\">\n    <!-- gate overlay -->\n  </div>\n</div>";
+    private string _codeBlurOverlay = "style=\"filter:blur(4px); pointer-events:none;\"\n// Removed after signing:\nstyle=\"filter:none; pointer-events:auto;\"";
+    private string _codeComplianceSteps = "// Step 1: Read policy\n// Step 2: Check acknowledgment\n// Step 3: Sign\n<button disabled=\"@(!_read || !_acknowledged || !_signed)\">\n  Access Content\n</button>";
     private string _accessReason = "";
     private string _studentId = "";
     private DateTime? _consentTime;

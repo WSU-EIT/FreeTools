@@ -17,6 +17,18 @@
             <p class="small text-muted mb-0">A user settings page where you upload a profile photo. Shows a circular preview, drag-drop zone, and file type validation. Same FileUpload API but in a realistic settings form context.</p>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Drag-Drop Upload Zone"
+                     Description="The dashed-border zone uses border-dashed with bg-light to create a visual drop target. A cloud-upload icon and 'Drag here' text tell users what to do. The 'Choose Photo' button triggers file selection. This is the same upload pattern used on every production profile page."
+                     Code="@_codeDragDrop" />
+            <InfoTip Title="Avatar Initials Preview"
+                     Description="The circular preview shows initials from the first/last name fields, updating live as you type. The rounded-circle with bg-primary and d-inline-flex creates the avatar. When a photo is uploaded, it would replace the initials. This is the standard user avatar component."
+                     Code="@_codeAvatarPreview" />
+            <InfoTip Title="File Type Validation"
+                     Description="The 'JPG, PNG, or GIF. Max 5MB.' text communicates file constraints. In production, the server validates MIME type and file size. The client-side InputFile component can filter with accept='.jpg,.png,.gif'. Rejected files show an alert-danger message."
+                     Code="@_codeFileValidation" />
+        </div>
+
         <div class="row">
             <div class="col-md-4 mb-3">
                 <div class="card shadow-sm border-0 text-center">
@@ -67,6 +79,9 @@
     private bool _loading = true, _loadedData = false, _photoUploaded = false;
     private string _pageName = "filedemov1";
     private string _firstName = "", _lastName = "", _email = "", _role = "", _bio = "";
+    private string _codeDragDrop = "<div class=\"border-dashed rounded p-3 bg-light\">\n  <i class=\"fa-solid fa-cloud-arrow-up fa-2x\"></i>\n  <div>Drag photo here or</div>\n  <button>Choose Photo</button>\n</div>";
+    private string _codeAvatarPreview = "<div class=\"rounded-circle bg-primary text-white\"\n  style=\"width:120px;height:120px\">\n  @(_firstName[0])@(_lastName[0])\n</div>";
+    private string _codeFileValidation = "<InputFile accept=\".jpg,.png,.gif\"\n  OnChange=\"HandleFile\" />\n// Server: check file.Size <= 5MB";
 
     public void Dispose() { Model.OnChange -= StateHasChanged; Model.Subscribers_OnChange.Remove(_pageName); }
     protected override void OnInitialized() { Model.View = _pageName; Model.OnChange += StateHasChanged; if (!Model.Subscribers_OnChange.Contains(_pageName)) Model.Subscribers_OnChange.Add(_pageName); }

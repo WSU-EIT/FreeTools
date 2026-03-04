@@ -17,6 +17,18 @@
             <p class="small text-muted mb-0">Upload a CSV, see a preview of what will be imported, review validation errors, then confirm. This is the Salesforce data import, GitHub issue import, or Azure DevOps bulk update pattern.</p>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Upload-Preview-Import Workflow"
+                     Description="The three-stage workflow: 1) Upload file (drag-drop zone), 2) Preview data in a table with validation warnings, 3) Confirm import. Each stage is gated on the previous. This is the Salesforce import wizard and Azure DevOps bulk update pattern."
+                     Code="@_codeWorkflow" />
+            <InfoTip Title="CSV Preview Table"
+                     Description="After upload, the data is shown in a table-bordered table-sm preview. Rows with validation errors get table-warning highlighting. An alert shows the total rows and error count. Users can fix issues before committing the import."
+                     Code="@_codePreviewTable" />
+            <InfoTip Title="Import Progress Bar"
+                     Description="During import, a progress-bar-striped progress-bar-animated shows progress. The percentage updates as rows are processed. On completion, an alert-success confirms the count. This feedback pattern prevents users from thinking the app is frozen."
+                     Code="@_codeImportProgress" />
+        </div>
+
         @if (!_fileUploaded) {
             <div class="card shadow-sm border-0 mb-3">
                 <div class="card-body text-center py-5">
@@ -72,6 +84,9 @@
     [Parameter] public string? TenantCode { get; set; }
     private bool _loading = true, _loadedData = false, _fileUploaded = false, _imported = false;
     private string _pageName = "filedemov4";
+    private string _codeWorkflow = "// Stage 1: Upload -> Stage 2: Preview -> Stage 3: Import\n@if (!_fileUploaded) { /* drop zone */ }\nelse if (!_imported) { /* preview table */ }\nelse { /* success */ }";
+    private string _codePreviewTable = "<table class=\"table table-bordered table-sm\">\n  <tr class=\"@(row.HasError ? \"table-warning\" : \"\")\">\n    <td>@row.Name</td>\n  </tr>\n</table>";
+    private string _codeImportProgress = "<div class=\"progress\">\n  <div class=\"progress-bar progress-bar-striped progress-bar-animated\"\n    style=\"width:@_progress%\">@_progress%</div>\n</div>";
     private List<PreviewRow> _previewRows = new();
 
     public void Dispose() { Model.OnChange -= StateHasChanged; Model.Subscribers_OnChange.Remove(_pageName); }
