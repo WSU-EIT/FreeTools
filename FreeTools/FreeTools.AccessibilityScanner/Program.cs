@@ -4759,20 +4759,33 @@ internal class Program
     {
         var usernameSelectors = new[]
         {
+            // ID-based selectors (FreeExamples, FreeCRM, FreeGLBA patterns)
+            "#login-email",
+            "#loginEmail",
+            // Name-based selectors
             "input[name='username']",
             "input[name='Username']",
             "input[name='email']",
             "input[name='Email']",
             "input[name='Input.Email']",
             "input[name='Input.Username']",
+            // Type-based selectors
             "input[type='email']",
+            // Attribute-based selectors
             "input[autocomplete='username']",
+            "input[autocomplete='email']",
             "input[placeholder*='user' i]",
-            "input[placeholder*='email' i]"
+            "input[placeholder*='email' i]",
+            // Fallback: first visible text input near a password field
+            "input[type='text'][id*='mail' i]",
+            "input[type='text'][id*='user' i]",
+            "input[type='text'][id*='login' i]",
         };
 
         var passwordSelectors = new[]
         {
+            "#login-password",
+            "#loginPassword",
             "input[name='password']",
             "input[name='Password']",
             "input[name='Input.Password']",
