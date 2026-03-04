@@ -89,7 +89,7 @@
                 var isDropTarget = _dragOverColumn == column.Status;
 
                 <div class="kanban-column @(isDropTarget ? "kanban-column-drop-target" : "")"
-                     @ondragover="HandleDragOver"
+                     @ondragover="@(() => HandleDragOver(column.Status))"
                      @ondragover:preventDefault="true"
                      @ondrop="@(() => HandleDrop(column.Status))"
                      @ondragleave="HandleDragLeave">
@@ -125,11 +125,10 @@
                                 var canMoveRight = colIdx < _columns.Count - 1;
 
                                 <div class="kanban-card @(isDragging ? "kanban-card-dragging" : "") @(isExpanded ? "kanban-card-expanded" : "") @(_recentlyMovedIds.Contains(item.SampleItemId) ? "kanban-card-just-moved" : "")"
-                                     draggable="@(!isExpanded)"
+                                     draggable="@(isExpanded ? "false" : "true")"
                                      @ondragstart="@(() => HandleDragStart(item))"
                                      @ondragend="HandleDragEnd"
-                                     @onclick="@(() => ToggleCardExpand(item.SampleItemId))"
-                                     @onclick:stopPropagation="true">
+                                     @onclick="@(() => ToggleCardExpand(item.SampleItemId))">
 
                                     @* Card Header — Name + Priority *@
                                     <div class="d-flex justify-content-between align-items-start mb-1">
@@ -330,6 +329,7 @@
 
     // Expand state — which card is currently expanded (clicked open)
     private Guid? _expandedCardId;
+    private bool _wasDragging;
 
     // Visual feedback
     private HashSet<Guid> _recentlyMovedIds = new();
@@ -468,12 +468,13 @@
     private void HandleDragStart(DataObjects.SampleItem item)
     {
         _draggedItemId = item.SampleItemId;
+        _expandedCardId = null; // Close any expanded card when starting a drag
+        _wasDragging = true;
     }
 
-    private void HandleDragOver()
+    private void HandleDragOver(DataObjects.SampleItemStatus columnStatus)
     {
-        // We track the column in HandleDragOverColumn via @ondragover on each column div.
-        // preventDefault is set via @ondragover:preventDefault="true" to allow drop.
+        _dragOverColumn = columnStatus;
     }
 
     private void HandleDragLeave()
@@ -547,6 +548,8 @@
 
     private void ToggleCardExpand(Guid itemId)
     {
+        // Skip if this click was actually the end of a drag operation
+        if (_wasDragging) { _wasDragging = false; return; }
         _expandedCardId = _expandedCardId == itemId ? null : itemId;
     }
 
