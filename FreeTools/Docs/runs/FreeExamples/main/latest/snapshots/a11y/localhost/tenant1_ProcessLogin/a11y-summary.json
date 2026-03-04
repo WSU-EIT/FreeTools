@@ -6,16 +6,16 @@
   "ToolsSkipped": [
     "wave"
   ],
-  "TotalViolations": 7,
+  "TotalViolations": 8,
   "Critical": 0,
-  "Serious": 4,
+  "Serious": 5,
   "Moderate": 3,
   "Minor": 0,
   "ByTool": {
     "axe": {
-      "Total": 2,
+      "Total": 3,
       "Critical": 0,
-      "Serious": 2,
+      "Serious": 3,
       "Moderate": 0,
       "Minor": 0
     },
@@ -43,10 +43,26 @@
       "Message": "Links must have discernible text",
       "HelpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI",
       "WcagCriteria": null,
-      "ExampleSnippet": "\u003Ca class=\u0022nav-link dropdown-toggle\u0022 href=\u0022#\u0022 id=\u0022themeDropdown\u0022 role=\u0022button\u0022 data-bs-toggle=\u0022dropdown\u0022 aria-expanded=\u0022false\u0022\u003E\u003C!--!--\u003E\u003Ci class=\u0022icon i..."
+      "ExampleSnippet": "\u003Ca class=\u0022nav-link dropdown-toggle show\u0022 href=\u0022#\u0022 id=\u0022themeDropdown\u0022 role=\u0022button\u0022 data-bs-toggle=\u0022dropdown\u0022 aria-expanded=\u0022true\u0022\u003E\u003C!--!--\u003E\u003Ci class=\u0022ic..."
     },
     {
       "Rank": 2,
+      "CanonicalRuleId": "color-contrast",
+      "Severity": "serious",
+      "Consensus": "1/1",
+      "ConfidenceScore": 1,
+      "Confidence": "high",
+      "ToolsFound": [
+        "axe"
+      ],
+      "TotalInstances": 1,
+      "Message": "Elements must meet minimum color contrast ratio thresholds",
+      "HelpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+      "WcagCriteria": "2.a.a",
+      "ExampleSnippet": "\u003Cspan class=\u0022icon-text\u0022\u003E\u003C!--!--\u003ETheme\u003C/span\u003E"
+    },
+    {
+      "Rank": 3,
       "CanonicalRuleId": "page-has-heading-one",
       "Severity": "moderate",
       "Consensus": "1/2",
@@ -62,7 +78,7 @@
       "ExampleSnippet": null
     },
     {
-      "Rank": 3,
+      "Rank": 4,
       "CanonicalRuleId": "skip-link",
       "Severity": "moderate",
       "Consensus": "1/2",
@@ -78,7 +94,7 @@
       "ExampleSnippet": null
     },
     {
-      "Rank": 4,
+      "Rank": 5,
       "CanonicalRuleId": "landmark-one-main",
       "Severity": "moderate",
       "Consensus": "1/2",

@@ -6,24 +6,24 @@
   "ToolsSkipped": [
     "wave"
   ],
-  "TotalViolations": 6,
+  "TotalViolations": 10,
   "Critical": 0,
-  "Serious": 4,
-  "Moderate": 2,
+  "Serious": 7,
+  "Moderate": 3,
   "Minor": 0,
   "ByTool": {
     "axe": {
-      "Total": 2,
+      "Total": 4,
       "Critical": 0,
-      "Serious": 2,
+      "Serious": 4,
       "Moderate": 0,
       "Minor": 0
     },
     "htmlcheck": {
-      "Total": 4,
+      "Total": 6,
       "Critical": 0,
-      "Serious": 2,
-      "Moderate": 2,
+      "Serious": 3,
+      "Moderate": 3,
       "Minor": 0
     }
   },
@@ -39,14 +39,46 @@
         "axe",
         "htmlcheck"
       ],
-      "TotalInstances": 4,
+      "TotalInstances": 6,
       "Message": "Links must have discernible text",
       "HelpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI",
       "WcagCriteria": null,
-      "ExampleSnippet": "\u003Ca class=\u0022nav-link dropdown-toggle\u0022 href=\u0022#\u0022 id=\u0022themeDropdown\u0022 role=\u0022button\u0022 data-bs-toggle=\u0022dropdown\u0022 aria-expanded=\u0022false\u0022\u003E\u003C!--!--\u003E\u003Ci class=\u0022icon i..."
+      "ExampleSnippet": "\u003Ca class=\u0022navbar-brand\u0022 href=\u0022\u0022\u003E\u003Cspan\u003E\u003C/span\u003E\u003C/a\u003E"
     },
     {
       "Rank": 2,
+      "CanonicalRuleId": "document-title",
+      "Severity": "serious",
+      "Consensus": "1/2",
+      "ConfidenceScore": 0.5,
+      "Confidence": "medium",
+      "ToolsFound": [
+        "axe"
+      ],
+      "TotalInstances": 1,
+      "Message": "Documents must have \u003Ctitle\u003E element to aid in navigation",
+      "HelpUrl": "https://dequeuniversity.com/rules/axe/4.10/document-title?application=axeAPI",
+      "WcagCriteria": null,
+      "ExampleSnippet": "\u003Chtml lang=\u0022en\u0022 style=\u0022--blazor-load-percentage: 100%; --blazor-load-percentage-text: \u0026quot;100%\u0026quot;;\u0022\u003E"
+    },
+    {
+      "Rank": 3,
+      "CanonicalRuleId": "page-has-heading-one",
+      "Severity": "moderate",
+      "Consensus": "1/2",
+      "ConfidenceScore": 0.5,
+      "Confidence": "medium",
+      "ToolsFound": [
+        "htmlcheck"
+      ],
+      "TotalInstances": 1,
+      "Message": "Page has headings but no \u003Ch1\u003E",
+      "HelpUrl": null,
+      "WcagCriteria": "1.3.1",
+      "ExampleSnippet": null
+    },
+    {
+      "Rank": 4,
       "CanonicalRuleId": "skip-link",
       "Severity": "moderate",
       "Consensus": "1/2",
@@ -62,7 +94,7 @@
       "ExampleSnippet": null
     },
     {
-      "Rank": 3,
+      "Rank": 5,
       "CanonicalRuleId": "landmark-one-main",
       "Severity": "moderate",
       "Consensus": "1/2",

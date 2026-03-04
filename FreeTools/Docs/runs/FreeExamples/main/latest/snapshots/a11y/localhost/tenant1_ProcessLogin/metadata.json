@@ -5,8 +5,8 @@
   "Title": "FreeExamples",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 73267,
-  "ScreenshotSizeBytes": 204864,
+  "HtmlSizeBytes": 73319,
+  "ScreenshotSizeBytes": 293771,
   "CredentialUsed": null,
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 3,
@@ -18,82 +18,88 @@
       "FileSize": 8983
     },
     {
-      "FileName": "02-axe-overlay.jpg",
-      "Label": "axe-overlay",
+      "FileName": "02-page-expanded.jpg",
+      "Label": "page-expanded",
       "StepNumber": 2,
-      "FileSize": 11411
+      "FileSize": 13775
     },
     {
-      "FileName": "03-wave-overlay.jpg",
-      "Label": "wave-overlay",
+      "FileName": "03-axe-overlay.jpg",
+      "Label": "axe-overlay",
       "StepNumber": 3,
-      "FileSize": 15775
+      "FileSize": 16673
     },
     {
-      "FileName": "04-htmlcs-overlay.jpg",
-      "Label": "htmlcs-overlay",
+      "FileName": "04-wave-overlay.jpg",
+      "Label": "wave-overlay",
       "StepNumber": 4,
-      "FileSize": 17820
+      "FileSize": 21229
     },
     {
-      "FileName": "05-ibm-a11y-overlay.jpg",
-      "Label": "ibm-a11y-overlay",
+      "FileName": "05-htmlcs-overlay.jpg",
+      "Label": "htmlcs-overlay",
       "StepNumber": 5,
-      "FileSize": 22513
+      "FileSize": 25089
     },
     {
-      "FileName": "06-structure-overlay.jpg",
-      "Label": "structure-overlay",
+      "FileName": "06-ibm-a11y-overlay.jpg",
+      "Label": "ibm-a11y-overlay",
       "StepNumber": 6,
-      "FileSize": 21330
+      "FileSize": 26144
     },
     {
-      "FileName": "07-cvd-protanopia.jpg",
-      "Label": "cvd-protanopia",
+      "FileName": "07-structure-overlay.jpg",
+      "Label": "structure-overlay",
       "StepNumber": 7,
-      "FileSize": 12262
+      "FileSize": 32500
     },
     {
-      "FileName": "08-cvd-deuteranopia.jpg",
-      "Label": "cvd-deuteranopia",
+      "FileName": "08-cvd-protanopia.jpg",
+      "Label": "cvd-protanopia",
       "StepNumber": 8,
-      "FileSize": 12636
+      "FileSize": 17328
     },
     {
-      "FileName": "09-cvd-tritanopia.jpg",
-      "Label": "cvd-tritanopia",
+      "FileName": "09-cvd-deuteranopia.jpg",
+      "Label": "cvd-deuteranopia",
       "StepNumber": 9,
-      "FileSize": 12223
+      "FileSize": 17643
     },
     {
-      "FileName": "10-cvd-achromatopsia.jpg",
-      "Label": "cvd-achromatopsia",
+      "FileName": "10-cvd-tritanopia.jpg",
+      "Label": "cvd-tritanopia",
       "StepNumber": 10,
-      "FileSize": 13140
+      "FileSize": 17251
     },
     {
-      "FileName": "11-cvd-protanomaly.jpg",
-      "Label": "cvd-protanomaly",
+      "FileName": "11-cvd-achromatopsia.jpg",
+      "Label": "cvd-achromatopsia",
       "StepNumber": 11,
-      "FileSize": 12515
+      "FileSize": 18004
     },
     {
-      "FileName": "12-cvd-deuteranomaly.jpg",
-      "Label": "cvd-deuteranomaly",
+      "FileName": "12-cvd-protanomaly.jpg",
+      "Label": "cvd-protanomaly",
       "StepNumber": 12,
-      "FileSize": 12628
+      "FileSize": 17544
     },
     {
-      "FileName": "13-cvd-tritanomaly.jpg",
-      "Label": "cvd-tritanomaly",
+      "FileName": "13-cvd-deuteranomaly.jpg",
+      "Label": "cvd-deuteranomaly",
       "StepNumber": 13,
-      "FileSize": 12120
+      "FileSize": 17707
     },
     {
-      "FileName": "14-screenreader-view.jpg",
-      "Label": "screenreader-view",
+      "FileName": "14-cvd-tritanomaly.jpg",
+      "Label": "cvd-tritanomaly",
       "StepNumber": 14,
-      "FileSize": 19508
+      "FileSize": 17148
+    },
+    {
+      "FileName": "15-screenreader-view.jpg",
+      "Label": "screenreader-view",
+      "StepNumber": 15,
+      "FileSize": 26753
     }
   ],
   "ImageCount": 0,
@@ -107,16 +113,16 @@
     "ToolsSkipped": [
       "wave"
     ],
-    "TotalViolations": 7,
+    "TotalViolations": 8,
     "Critical": 0,
-    "Serious": 4,
+    "Serious": 5,
     "Moderate": 3,
     "Minor": 0,
     "ByTool": {
       "axe": {
-        "Total": 2,
+        "Total": 3,
         "Critical": 0,
-        "Serious": 2,
+        "Serious": 3,
         "Moderate": 0,
         "Minor": 0
       },
@@ -135,9 +141,9 @@
     "cache-control": "no-cache, no-store",
     "content-security-policy": "frame-ancestors \u0027self\u0027 login.wsu.edu cms.em.wsu.edu futurecoug.wsu.edu",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 04 Mar 2026 20:19:43 GMT",
+    "date": "Wed, 04 Mar 2026 20:56:41 GMT",
     "pragma": "no-cache",
     "server": "Kestrel"
   },
-  "CapturedAt": "2026-03-04T20:19:43.5284207Z"
+  "CapturedAt": "2026-03-04T20:56:42.0814297Z"
 }

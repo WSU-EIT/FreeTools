@@ -5,9 +5,9 @@
   "Title": "FreeExamples",
   "StatusCode": 200,
   "Success": true,
-  "HtmlSizeBytes": 74211,
-  "ScreenshotSizeBytes": 310950,
-  "CredentialUsed": null,
+  "HtmlSizeBytes": 73650,
+  "ScreenshotSizeBytes": 414752,
+  "CredentialUsed": "admin",
   "ConsoleErrorCount": 0,
   "ConsoleWarningCount": 3,
   "Screenshots": [
@@ -18,82 +18,106 @@
       "FileSize": 16376
     },
     {
-      "FileName": "02-axe-overlay.jpg",
-      "Label": "axe-overlay",
+      "FileName": "02-auth-form-detected.jpg",
+      "Label": "auth-form-detected",
       "StepNumber": 2,
-      "FileSize": 18639
+      "FileSize": 16376
     },
     {
-      "FileName": "03-wave-overlay.jpg",
-      "Label": "wave-overlay",
+      "FileName": "03-auth-form-filled.jpg",
+      "Label": "auth-form-filled",
       "StepNumber": 3,
-      "FileSize": 23501
+      "FileSize": 17245
     },
     {
-      "FileName": "04-htmlcs-overlay.jpg",
-      "Label": "htmlcs-overlay",
+      "FileName": "04-auth-result.jpg",
+      "Label": "auth-result",
       "StepNumber": 4,
-      "FileSize": 24931
+      "FileSize": 14184
     },
     {
-      "FileName": "05-ibm-a11y-overlay.jpg",
-      "Label": "ibm-a11y-overlay",
+      "FileName": "05-page-expanded.jpg",
+      "Label": "page-expanded",
       "StepNumber": 5,
-      "FileSize": 29907
+      "FileSize": 18736
     },
     {
-      "FileName": "06-structure-overlay.jpg",
-      "Label": "structure-overlay",
+      "FileName": "06-axe-overlay.jpg",
+      "Label": "axe-overlay",
       "StepNumber": 6,
-      "FileSize": 34822
+      "FileSize": 21667
     },
     {
-      "FileName": "07-cvd-protanopia.jpg",
-      "Label": "cvd-protanopia",
+      "FileName": "07-wave-overlay.jpg",
+      "Label": "wave-overlay",
       "StepNumber": 7,
-      "FileSize": 19474
+      "FileSize": 26494
     },
     {
-      "FileName": "08-cvd-deuteranopia.jpg",
-      "Label": "cvd-deuteranopia",
+      "FileName": "08-htmlcs-overlay.jpg",
+      "Label": "htmlcs-overlay",
       "StepNumber": 8,
-      "FileSize": 20005
+      "FileSize": 29913
     },
     {
-      "FileName": "09-cvd-tritanopia.jpg",
-      "Label": "cvd-tritanopia",
+      "FileName": "09-ibm-a11y-overlay.jpg",
+      "Label": "ibm-a11y-overlay",
       "StepNumber": 9,
-      "FileSize": 19851
+      "FileSize": 31507
     },
     {
-      "FileName": "10-cvd-achromatopsia.jpg",
-      "Label": "cvd-achromatopsia",
+      "FileName": "10-structure-overlay.jpg",
+      "Label": "structure-overlay",
       "StepNumber": 10,
-      "FileSize": 19912
+      "FileSize": 39251
     },
     {
-      "FileName": "11-cvd-protanomaly.jpg",
-      "Label": "cvd-protanomaly",
+      "FileName": "11-cvd-protanopia.jpg",
+      "Label": "cvd-protanopia",
       "StepNumber": 11,
-      "FileSize": 19773
+      "FileSize": 21894
     },
     {
-      "FileName": "12-cvd-deuteranomaly.jpg",
-      "Label": "cvd-deuteranomaly",
+      "FileName": "12-cvd-deuteranopia.jpg",
+      "Label": "cvd-deuteranopia",
       "StepNumber": 12,
-      "FileSize": 19980
+      "FileSize": 22252
     },
     {
-      "FileName": "13-cvd-tritanomaly.jpg",
-      "Label": "cvd-tritanomaly",
+      "FileName": "13-cvd-tritanopia.jpg",
+      "Label": "cvd-tritanopia",
       "StepNumber": 13,
-      "FileSize": 19481
+      "FileSize": 21844
     },
     {
-      "FileName": "14-screenreader-view.jpg",
-      "Label": "screenreader-view",
+      "FileName": "14-cvd-achromatopsia.jpg",
+      "Label": "cvd-achromatopsia",
       "StepNumber": 14,
-      "FileSize": 24298
+      "FileSize": 22636
+    },
+    {
+      "FileName": "15-cvd-protanomaly.jpg",
+      "Label": "cvd-protanomaly",
+      "StepNumber": 15,
+      "FileSize": 22141
+    },
+    {
+      "FileName": "16-cvd-deuteranomaly.jpg",
+      "Label": "cvd-deuteranomaly",
+      "StepNumber": 16,
+      "FileSize": 22235
+    },
+    {
+      "FileName": "17-cvd-tritanomaly.jpg",
+      "Label": "cvd-tritanomaly",
+      "StepNumber": 17,
+      "FileSize": 21740
+    },
+    {
+      "FileName": "18-screenreader-view.jpg",
+      "Label": "screenreader-view",
+      "StepNumber": 18,
+      "FileSize": 28261
     }
   ],
   "ImageCount": 0,
@@ -107,16 +131,16 @@
     "ToolsSkipped": [
       "wave"
     ],
-    "TotalViolations": 6,
+    "TotalViolations": 7,
     "Critical": 0,
-    "Serious": 4,
+    "Serious": 5,
     "Moderate": 2,
     "Minor": 0,
     "ByTool": {
       "axe": {
-        "Total": 2,
+        "Total": 3,
         "Critical": 0,
-        "Serious": 2,
+        "Serious": 3,
         "Moderate": 0,
         "Minor": 0
       },
@@ -135,9 +159,9 @@
     "cache-control": "no-cache, no-store",
     "content-security-policy": "frame-ancestors \u0027self\u0027 login.wsu.edu cms.em.wsu.edu futurecoug.wsu.edu",
     "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 04 Mar 2026 20:21:53 GMT",
+    "date": "Wed, 04 Mar 2026 20:59:16 GMT",
     "pragma": "no-cache",
     "server": "Kestrel"
   },
-  "CapturedAt": "2026-03-04T20:21:53.293364Z"
+  "CapturedAt": "2026-03-04T20:59:16.5782211Z"
 }

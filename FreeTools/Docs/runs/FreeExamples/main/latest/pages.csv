@@ -146,6 +146,8 @@
 "FreeExamples.Client/Pages/Examples/FreeExamples.App.Pages.FileDemoV4.razor","/{TenantCode}/Examples/FileDemoV4",false,"FreeExamples.Client"
 "FreeExamples.Client/Pages/Examples/FreeExamples.App.Pages.FileDemoV5.razor","/Examples/FileDemoV5",false,"FreeExamples.Client"
 "FreeExamples.Client/Pages/Examples/FreeExamples.App.Pages.FileDemoV5.razor","/{TenantCode}/Examples/FileDemoV5",false,"FreeExamples.Client"
+"FreeExamples.Client/Pages/Examples/FreeExamples.App.Pages.FileDemoV6.razor","/Examples/FileDemoV6",false,"FreeExamples.Client"
+"FreeExamples.Client/Pages/Examples/FreeExamples.App.Pages.FileDemoV6.razor","/{TenantCode}/Examples/FileDemoV6",false,"FreeExamples.Client"
 "FreeExamples.Client/Pages/Examples/FreeExamples.App.Pages.GitBrowser.razor","/Examples/GitBrowser",false,"FreeExamples.Client"
 "FreeExamples.Client/Pages/Examples/FreeExamples.App.Pages.GitBrowser.razor","/{TenantCode}/Examples/GitBrowser",false,"FreeExamples.Client"
 "FreeExamples.Client/Pages/Examples/FreeExamples.App.Pages.ImageGallery.razor","/Examples/ImageGallery",false,"FreeExamples.Client"
