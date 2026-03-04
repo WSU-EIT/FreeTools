@@ -440,6 +440,30 @@ internal class Program
                 actions.Add("No interactions performed — page was captured as-is");
             }
 
+            // =================================================================
+            // Expand all collapsed/hidden content before a11y scanning
+            // =================================================================
+            // This ensures accordions, details, hidden tabs, and collapsed panels
+            // are open and visible for both the HTML snapshot and screenshots.
+            // Without this, axe-core can't reach hidden DOM content and screenshots
+            // miss entire sections.
+            try
+            {
+                Console.WriteLine($"  [{siteUri.Host}] {pagePath} — Expanding all collapsed content...");
+                var expandCount = await ExpandAllCollapsedContentAsync(page);
+                if (expandCount > 0)
+                {
+                    actions.Add($"Expanded {expandCount} collapsed section(s)");
+                    await page.WaitForTimeoutAsync(500); // Brief settle after expanding
+                    await TakeScreenshotAsync(page, pageDir, result, actions, "page-expanded");
+                }
+            }
+            catch (Exception expandEx)
+            {
+                Console.Error.WriteLine($"  [{siteUri.Host}] {pagePath} — Expand failed: {expandEx.Message}");
+                actions.Add($"Content expansion failed: {expandEx.Message}");
+            }
+
             // Save HTML content
             Console.WriteLine($"  [{siteUri.Host}] {pagePath} — Saving HTML...");
             var htmlContent = await page.ContentAsync();
@@ -2504,6 +2528,126 @@ internal class Program
     // ========================================================================
     // A11y Overlay Screenshots
     // ========================================================================
+
+    // ========================================================================
+    // Expand All Collapsed Content (pre-scan)
+    // ========================================================================
+
+    /// <summary>
+    /// Expand ALL collapsed content on the page so every element is visible for
+    /// accessibility scanning and screenshots. Handles:
+    /// - HTML &lt;details&gt; elements (open attribute)
+    /// - Bootstrap .collapse / .accordion-collapse (add .show, aria-expanded)
+    /// - Blazor-style conditional panels (click toggle buttons like AboutSection)
+    /// - Bootstrap nav-tabs (show all tab panes simultaneously)
+    /// - Elements with display:none that are inside expandable containers
+    /// - aria-expanded="false" buttons (click to expand)
+    /// Returns the count of items expanded.
+    /// </summary>
+    private static async Task<int> ExpandAllCollapsedContentAsync(IPage page)
+    {
+        var count = await page.EvaluateAsync<int>(@"
+            () => {
+                let expanded = 0;
+
+                // 1. HTML <details> elements — set open attribute
+                document.querySelectorAll('details:not([open])').forEach(el => {
+                    el.setAttribute('open', '');
+                    expanded++;
+                });
+
+                // 2. Bootstrap .collapse that aren't .show yet
+                document.querySelectorAll('.collapse:not(.show)').forEach(el => {
+                    el.classList.add('show');
+                    el.style.display = '';
+                    expanded++;
+                });
+
+                // 3. Bootstrap accordion — expand all collapsed panels
+                document.querySelectorAll('.accordion-collapse:not(.show)').forEach(el => {
+                    el.classList.add('show');
+                    el.classList.remove('collapsing');
+                    el.style.height = '';
+                    expanded++;
+                });
+                // Fix accordion buttons to show expanded state
+                document.querySelectorAll('.accordion-button.collapsed').forEach(btn => {
+                    btn.classList.remove('collapsed');
+                    btn.setAttribute('aria-expanded', 'true');
+                });
+
+                // 4. Bootstrap tab-pane — show ALL tab panes simultaneously
+                //    (so every tab's content is visible in the screenshot)
+                document.querySelectorAll('.tab-pane:not(.show)').forEach(el => {
+                    el.classList.add('show', 'active');
+                    el.style.display = '';
+                    expanded++;
+                });
+
+                // 5. Elements with aria-expanded=""false"" — click them to expand
+                //    This covers Blazor's AboutSection and similar toggle patterns
+                document.querySelectorAll('[aria-expanded=""false""]').forEach(el => {
+                    try {
+                        el.click();
+                        expanded++;
+                    } catch(e) { /* skip if click fails */ }
+                });
+
+                // 6. Blazor-specific: elements hidden by @if (conditional rendering)
+                //    These can't be expanded from JS — they don't exist in the DOM.
+                //    But we CAN click toggle-style elements to reveal them.
+                //    Look for common patterns: cursor-pointer headers that toggle content
+                document.querySelectorAll('.cursor-pointer, [role=""button""]').forEach(el => {
+                    // Only click if the next sibling isn't visible or doesn't exist
+                    const next = el.nextElementSibling;
+                    if (!next || next.offsetHeight === 0) {
+                        try {
+                            // Check if it looks like a toggle header
+                            const hasChevron = el.querySelector('.fa-chevron-down, .fa-chevron-right, .fa-caret-down, .fa-caret-right, .fa-plus');
+                            if (hasChevron) {
+                                el.click();
+                                expanded++;
+                            }
+                        } catch(e) { /* skip */ }
+                    }
+                });
+
+                // 7. MudBlazor panels — expand closed expansion panels
+                document.querySelectorAll('.mud-expand-panel:not(.mud-panel-expanded)').forEach(el => {
+                    const header = el.querySelector('.mud-expand-panel-header');
+                    if (header) {
+                        try { header.click(); expanded++; } catch(e) {}
+                    }
+                });
+
+                // 8. Ensure nothing is display:none that looks like content
+                //    (Skip script/style/meta elements)
+                document.querySelectorAll('[style*=""display: none""], [style*=""display:none""]').forEach(el => {
+                    const tag = el.tagName.toLowerCase();
+                    if (['script', 'style', 'meta', 'link', 'head', 'template', 'noscript'].includes(tag)) return;
+                    // Only expand if it's inside a known expandable container
+                    if (el.closest('.collapse, .accordion, .tab-content, details, .expandable, .toggle-content')) {
+                        el.style.display = '';
+                        expanded++;
+                    }
+                });
+
+                // 9. Scroll through the page to trigger lazy-loaded content
+                //    Some Blazor components only render when scrolled into view
+                const totalHeight = document.body.scrollHeight;
+                const viewportHeight = window.innerHeight;
+                for (let y = 0; y < totalHeight; y += viewportHeight) {
+                    window.scrollTo(0, y);
+                }
+                // Return to top
+                window.scrollTo(0, 0);
+
+                return expanded;
+            }
+        ");
+
+        return count;
+    }
 
     /// <summary>
     /// Inject axe-core highlight overlay onto the page — draws colored outlines and
@@ -4853,6 +4997,32 @@ internal class Program
         {
             Console.WriteLine("  [AppHost Mode] No CSV found — scanning root page only");
         }
+
+        // Append extra pages from EXTRA_PAGES env var (semicolon-separated)
+        // These cover pages the EndpointMapper can't auto-discover:
+        // parameterized routes, settings pages with specific IDs, etc.
+        var extraPagesEnv = Environment.GetEnvironmentVariable("EXTRA_PAGES") ?? "";
+        if (!string.IsNullOrWhiteSpace(extraPagesEnv))
+        {
+            var extraPages = extraPagesEnv.Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+            var addedCount = 0;
+            foreach (var extra in extraPages)
+            {
+                var route = extra;
+                if (route.Contains("{TenantCode}", StringComparison.OrdinalIgnoreCase))
+                {
+                    route = route.Replace("{TenantCode}", tenantCode, StringComparison.OrdinalIgnoreCase);
+                }
+                if (!pages.Contains(route, StringComparer.OrdinalIgnoreCase))
+                {
+                    pages.Add(route);
+                    addedCount++;
+                }
+            }
+            Console.WriteLine($"  [AppHost Mode] Added {addedCount} extra pages from EXTRA_PAGES env var");
+        }
+
+        Console.WriteLine($"  [AppHost Mode] Total pages to scan: {pages.Count}");
 
         // Build site config with credentials
         var siteConfig = new SiteConfig

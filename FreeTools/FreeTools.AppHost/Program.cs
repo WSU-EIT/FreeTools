@@ -165,6 +165,47 @@ static class AppHostRunner
         // =============================================================================
         // Accessibility Scanner (requires running web app + page list)
         // =============================================================================
+        // Extra pages that the EndpointMapper can't auto-discover:
+        // - Parameterized routes (EditSampleItem needs an actual ID)
+        // - Non-example pages (Settings, Profile, About, etc.)
+        // - Auth flow pages (Login, Logout, etc.)
+        // The EndpointMapper already finds all @page routes including V1-V12 variants,
+        // but routes with {parameters} get skipped. These fill that gap.
+        var extraPages = string.Join(";",
+            // Parameterized example pages — need concrete IDs
+            "/{TenantCode}/Examples/EditSampleItem/New",
+            // Non-example pages (app infrastructure)
+            "/{TenantCode}/About",
+            "/{TenantCode}/Profile",
+            "/{TenantCode}/ChangePassword",
+            // Settings pages (admin — scanner logs in as admin)
+            "/{TenantCode}/Settings/AppSettings",
+            "/{TenantCode}/Settings/Users",
+            "/{TenantCode}/Settings/AddUser",
+            "/{TenantCode}/Settings/UserGroups",
+            "/{TenantCode}/Settings/AddUserGroup",
+            "/{TenantCode}/Settings/Departments",
+            "/{TenantCode}/Settings/AddDepartment",
+            "/{TenantCode}/Settings/DepartmentGroups",
+            "/{TenantCode}/Settings/AddDepartmentGroup",
+            "/{TenantCode}/Settings/Tenants",
+            "/{TenantCode}/Settings/AddTenant",
+            "/{TenantCode}/Settings/Tags",
+            "/{TenantCode}/Settings/AddTag",
+            "/{TenantCode}/Settings/Language",
+            "/{TenantCode}/Settings/UDF",
+            "/{TenantCode}/Settings/Files",
+            "/{TenantCode}/Settings/DeletedRecords",
+            // Auth / error pages
+            "/Login",
+            "/not-found",
+            "/DatabaseOffline",
+            "/ServerUpdated",
+            "/Authorization/AccessDenied",
+            "/Authorization/InvalidUser",
+            "/Authorization/NoLocalAccount"
+        );
+
         var a11y = builder.AddProject<Projects.FreeTools_AccessibilityScanner>("a11y-scanner")
             .WithEnvironment("BASE_URL", webApp.GetEndpoint("https"))
             .WithEnvironment("CSV_PATH", projectConfig.PagesCsv)
@@ -172,6 +213,7 @@ static class AppHostRunner
             .WithEnvironment("TENANT_CODE", "tenant1")
             .WithEnvironment("LOGIN_USERNAME", "admin")
             .WithEnvironment("LOGIN_PASSWORD", "admin")
+            .WithEnvironment("EXTRA_PAGES", extraPages)
             .WithEnvironment("START_DELAY_MS", (WebAppStartupDelayMs + HttpToolDelayMs).ToString())
             .WaitFor(webApp)
             .WaitForCompletion(endpointMapper);
