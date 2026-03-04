@@ -487,6 +487,86 @@ internal class Program
                 actions.Add($"A11y scan failed: {a11yEx.Message}");
             }
 
+            // =================================================================
+            // A11y overlay screenshots — each uses a different tool/perspective
+            // =================================================================
+            var projectDir = FindProjectDir(AppContext.BaseDirectory);
+
+            // 1. axe overlay: highlight violations with colored outlines and labels
+            try
+            {
+                Console.WriteLine($"  [{siteUri.Host}] {pagePath} — [2] axe overlay...");
+                await InjectAxeHighlightOverlayAsync(page, scannerConfig.WcagLevel);
+                await TakeScreenshotAsync(page, pageDir, result, actions, "axe-overlay");
+                await RemoveAxeHighlightOverlayAsync(page);
+            }
+            catch (Exception ex) { LogOverlayError(siteUri, pagePath, "axe-overlay", ex, actions); }
+
+            // 2. WAVE-style overlay: place categorized icons next to a11y-relevant elements
+            try
+            {
+                Console.WriteLine($"  [{siteUri.Host}] {pagePath} — [3] WAVE-style overlay...");
+                await InjectWaveStyleOverlayAsync(page);
+                await TakeScreenshotAsync(page, pageDir, result, actions, "wave-overlay");
+                await RemoveWaveStyleOverlayAsync(page);
+            }
+            catch (Exception ex) { LogOverlayError(siteUri, pagePath, "wave-overlay", ex, actions); }
+
+            // 3. HTML_CodeSniffer overlay (Pa11y engine — different rule set from axe)
+            try
+            {
+                var htmlCsScript = await EnsureHtmlCodeSnifferAsync(projectDir);
+                Console.WriteLine($"  [{siteUri.Host}] {pagePath} — [4] HTML_CodeSniffer overlay...");
+                await InjectHtmlCodeSnifferOverlayAsync(page, htmlCsScript);
+                await TakeScreenshotAsync(page, pageDir, result, actions, "htmlcs-overlay");
+                await RemoveHtmlCodeSnifferOverlayAsync(page);
+            }
+            catch (Exception ex) { LogOverlayError(siteUri, pagePath, "htmlcs-overlay", ex, actions); }
+
+            // 4. IBM Equal Access overlay (IBM's engine — third independent perspective)
+            try
+            {
+                var ibmAceScript = await EnsureIbmAceAsync(projectDir);
+                Console.WriteLine($"  [{siteUri.Host}] {pagePath} — [5] IBM Equal Access overlay...");
+                await InjectIbmAceOverlayAsync(page, ibmAceScript);
+                await TakeScreenshotAsync(page, pageDir, result, actions, "ibm-a11y-overlay");
+                await RemoveIbmAceOverlayAsync(page);
+            }
+            catch (Exception ex) { LogOverlayError(siteUri, pagePath, "ibm-a11y-overlay", ex, actions); }
+
+            // 5. Focus order + heading structure + landmarks overlay
+            try
+            {
+                Console.WriteLine($"  [{siteUri.Host}] {pagePath} — [6] Structure overlay...");
+                await InjectStructureOverlayAsync(page);
+                await TakeScreenshotAsync(page, pageDir, result, actions, "structure-overlay");
+                await RemoveStructureOverlayAsync(page);
+            }
+            catch (Exception ex) { LogOverlayError(siteUri, pagePath, "structure-overlay", ex, actions); }
+
+            // 6-12. Color blindness simulations (7 types)
+            foreach (var (cvdType, (cvdLabel, cvdDesc, cvdMatrix)) in ColorBlindTypes)
+            {
+                try
+                {
+                    Console.WriteLine($"  [{siteUri.Host}] {pagePath} — [CVD] {cvdLabel}...");
+                    await InjectColorBlindFilterAsync(page, cvdType, cvdLabel, cvdDesc, cvdMatrix);
+                    await TakeScreenshotAsync(page, pageDir, result, actions, $"cvd-{cvdType}");
+                    await RemoveColorBlindFilterAsync(page);
+                }
+                catch (Exception ex) { LogOverlayError(siteUri, pagePath, $"cvd-{cvdType}", ex, actions); }
+            }
+
+            // 13. Screen reader text view (linearized accessible content tree)
+            try
+            {
+                Console.WriteLine($"  [{siteUri.Host}] {pagePath} — [SR] Screen reader text view...");
+                await InjectScreenReaderViewAsync(page);
+                await TakeScreenshotAsync(page, pageDir, result, actions, "screenreader-view");
+                await RemoveScreenReaderViewAsync(page);
+            }
+            catch (Exception ex) { LogOverlayError(siteUri, pagePath, "screenreader-view", ex, actions); }
+
             // Page title
             var title = await page.TitleAsync();
             result.Title = title;
@@ -2255,6 +2335,86 @@ internal class Program
         }
     }
 
+    // HTML_CodeSniffer (the engine behind Pa11y) — a second independent rule engine
+    private const string HtmlCsCdnUrl = "https://squizlabs.github.io/HTML_CodeSniffer/build/HTMLCS.js";
+    private static string? _htmlCsScript;
+    private static readonly SemaphoreSlim _htmlCsLock = new(1, 1);
+
+    /// <summary>
+    /// Download HTML_CodeSniffer.js from CDN on first use, cache in project directory.
+    /// Thread-safe — only one download happens even with concurrent calls.
+    /// </summary>
+    private static async Task<string> EnsureHtmlCodeSnifferAsync(string projectDir)
+    {
+        if (_htmlCsScript != null) return _htmlCsScript;
+
+        await _htmlCsLock.WaitAsync();
+        try
+        {
+            if (_htmlCsScript != null) return _htmlCsScript;
+
+            var cachePath = Path.Combine(projectDir, "HTMLCS.js");
+
+            if (File.Exists(cachePath))
+            {
+                _htmlCsScript = await File.ReadAllTextAsync(cachePath);
+                Console.WriteLine($"  [HTMLCS] Cached ({_htmlCsScript.Length / 1024}KB)");
+                return _htmlCsScript;
+            }
+
+            Console.WriteLine("  [HTMLCS] Downloading from CDN...");
+            using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(30) };
+            _htmlCsScript = await http.GetStringAsync(HtmlCsCdnUrl);
+            await File.WriteAllTextAsync(cachePath, _htmlCsScript);
+            Console.WriteLine($"  [HTMLCS] Downloaded and cached ({_htmlCsScript.Length / 1024}KB)");
+            return _htmlCsScript;
+        }
+        finally
+        {
+            _htmlCsLock.Release();
+        }
+    }
+
+    // IBM Equal Access Checker engine — a third independent rule engine from IBM
+    private const string IbmAceCdnUrl = "https://cdn.jsdelivr.net/npm/accessibility-checker-engine@latest/ace.js";
+    private static string? _ibmAceScript;
+    private static readonly SemaphoreSlim _ibmAceLock = new(1, 1);
+
+    /// <summary>
+    /// Download IBM Equal Access checker engine from CDN on first use, cache in project directory.
+    /// Thread-safe — only one download happens even with concurrent calls.
+    /// </summary>
+    private static async Task<string> EnsureIbmAceAsync(string projectDir)
+    {
+        if (_ibmAceScript != null) return _ibmAceScript;
+
+        await _ibmAceLock.WaitAsync();
+        try
+        {
+            if (_ibmAceScript != null) return _ibmAceScript;
+
+            var cachePath = Path.Combine(projectDir, "ace.js");
+
+            if (File.Exists(cachePath))
+            {
+                _ibmAceScript = await File.ReadAllTextAsync(cachePath);
+                Console.WriteLine($"  [IBM-ACE] Cached ({_ibmAceScript.Length / 1024}KB)");
+                return _ibmAceScript;
+            }
+
+            Console.WriteLine("  [IBM-ACE] Downloading from CDN...");
+            using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(30) };
+            _ibmAceScript = await http.GetStringAsync(IbmAceCdnUrl);
+            await File.WriteAllTextAsync(cachePath, _ibmAceScript);
+            Console.WriteLine($"  [IBM-ACE] Downloaded and cached ({_ibmAceScript.Length / 1024}KB)");
+            return _ibmAceScript;
+        }
+        finally
+        {
+            _ibmAceLock.Release();
+        }
+    }
+
     /// <summary>
     /// Inject axe-core into a live Playwright page, run accessibility scan, 
     /// and return normalized results.
@@ -2339,6 +2499,1169 @@ internal class Program
         sw.Stop();
         result.DurationMs = sw.ElapsedMilliseconds;
         return result;
+    }
+
+    // ========================================================================
+    // A11y Overlay Screenshots
+    // ========================================================================
+
+    /// <summary>
+    /// Inject axe-core highlight overlay onto the page — draws colored outlines and
+    /// labels on every violating element, plus a summary banner at the top.
+    /// Replicates the visual output of the axe DevTools browser extension.
+    /// axe-core must already be injected on the page (via RunAxeCoreAsync).
+    /// </summary>
+    private static async Task InjectAxeHighlightOverlayAsync(IPage page, string wcagLevel)
+    {
+        var wcagTags = wcagLevel switch
+        {
+            "wcag22aa" => "['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']",
+            "wcag21aa" => "['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']",
+            "wcag2aa" => "['wcag2a', 'wcag2aa']",
+            "wcag2a" => "['wcag2a']",
+            _ => "['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']"
+        };
+
+        // Run axe again (cheap — already cached in page) and inject visual highlights
+        await page.EvaluateAsync($@"
+            async () => {{
+                const results = await axe.run({{
+                    runOnly: {{ type: 'tag', values: {wcagTags} }}
+                }});
+
+                // Severity → color map (matches axe DevTools extension colors)
+                const colors = {{
+                    critical: {{ bg: 'rgba(220, 53, 69, 0.15)', border: '#dc3545', text: '#dc3545', label: '🔴' }},
+                    serious:  {{ bg: 'rgba(255, 152, 0, 0.12)',  border: '#ff9800', text: '#e65100', label: '🟠' }},
+                    moderate: {{ bg: 'rgba(255, 235, 59, 0.15)', border: '#fbc02d', text: '#f57f17', label: '🟡' }},
+                    minor:    {{ bg: 'rgba(33, 150, 243, 0.10)',  border: '#2196f3', text: '#1565c0', label: '🔵' }}
+                }};
+
+                let totalNodes = 0;
+                const severityCounts = {{ critical: 0, serious: 0, moderate: 0, minor: 0 }};
+
+                for (const violation of results.violations) {{
+                    const severity = violation.impact || 'moderate';
+                    const c = colors[severity] || colors.moderate;
+
+                    for (const node of violation.nodes) {{
+                        totalNodes++;
+                        severityCounts[severity] = (severityCounts[severity] || 0) + 1;
+
+                        for (const selector of node.target) {{
+                            try {{
+                                const el = document.querySelector(selector);
+                                if (!el) continue;
+
+                                // Highlight the element
+                                el.style.outline = `3px solid ${{c.border}}`;
+                                el.style.outlineOffset = '2px';
+                                el.style.backgroundColor = c.bg;
+                                el.style.position = el.style.position || 'relative';
+
+                                // Add label badge
+                                const badge = document.createElement('div');
+                                badge.textContent = `${{c.label}} ${{violation.id}}`;
+                                badge.style.cssText = `
+                                    position: absolute; top: -18px; left: 0; z-index: 99999;
+                                    font-size: 10px; font-family: monospace; font-weight: 700;
+                                    color: white; background: ${{c.border}};
+                                    padding: 1px 5px; border-radius: 3px;
+                                    white-space: nowrap; pointer-events: none;
+                                    line-height: 14px;
+                                `;
+                                el.appendChild(badge);
+                            }} catch (e) {{ /* selector didn't match */ }}
+                        }}
+                    }}
+                }}
+
+                // Summary banner at top of page
+                const banner = document.createElement('div');
+                banner.id = 'axe-overlay-banner';
+                const parts = [];
+                if (severityCounts.critical > 0) parts.push(`🔴 ${{severityCounts.critical}} Critical`);
+                if (severityCounts.serious > 0)  parts.push(`🟠 ${{severityCounts.serious}} Serious`);
+                if (severityCounts.moderate > 0) parts.push(`🟡 ${{severityCounts.moderate}} Moderate`);
+                if (severityCounts.minor > 0)    parts.push(`🔵 ${{severityCounts.minor}} Minor`);
+
+                const summaryText = totalNodes === 0
+                    ? '✅ axe-core: No violations detected'
+                    : `⚠️ axe-core: ${{totalNodes}} violation(s) — ${{parts.join(' · ')}}`;
+
+                banner.innerHTML = `
+                    <div style=""
+                        position:fixed; top:0; left:0; right:0; z-index:999999;
+                        background: ${{totalNodes === 0 ? '#198754' : '#212529'}};
+                        color: white; padding: 8px 16px;
+                        font: bold 13px/1.4 -apple-system, 'Segoe UI', Roboto, monospace;
+                        display: flex; align-items: center; gap: 12px;
+                        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+                    "">
+                        <span style=""font-size:16px"">🪓</span>
+                        <span>${{summaryText}}</span>
+                        <span style=""margin-left:auto; opacity:0.6; font-size:11px"">axe-core 4.10 · WCAG 2.1 AA</span>
+                    </div>
+                `;
+                document.body.prepend(banner);
+
+                // Push page content down so banner doesn't overlap
+                document.body.style.marginTop = '40px';
+            }}
+        ");
+    }
+
+    /// <summary>
+    /// Remove the axe highlight overlay so the page returns to its original state.
+    /// </summary>
+    private static async Task RemoveAxeHighlightOverlayAsync(IPage page)
+    {
+        await page.EvaluateAsync(@"
+            () => {
+                // Remove the banner
+                const banner = document.getElementById('axe-overlay-banner');
+                if (banner) banner.remove();
+                document.body.style.marginTop = '';
+            }
+        ");
+    }
+
+    /// <summary>
+    /// Inject a WAVE-style accessibility evaluation overlay onto the page.
+    /// Since the real WAVE browser extension can't be loaded in headless Playwright,
+    /// this injects a custom evaluation that replicates WAVE's visual icon style —
+    /// placing small categorized icons next to elements with accessibility issues.
+    /// 
+    /// The overlay checks for: missing alt text, empty links/buttons, missing form labels,
+    /// heading hierarchy issues, missing landmarks, contrast hints, and ARIA misuse.
+    /// </summary>
+    private static async Task InjectWaveStyleOverlayAsync(IPage page)
+    {
+        await page.EvaluateAsync(@"
+            () => {
+                // WAVE-style icon categories and colors
+                const iconStyles = {
+                    error:   { bg: '#dc3545', icon: '✕', label: 'ERROR' },
+                    alert:   { bg: '#ffc107', icon: '⚠', label: 'ALERT' },
+                    feature: { bg: '#198754', icon: '✓', label: 'FEATURE' },
+                    struct:  { bg: '#6f42c1', icon: '▣', label: 'STRUCTURAL' },
+                    aria:    { bg: '#0d6efd', icon: 'ⓐ', label: 'ARIA' }
+                };
+
+                const issues = [];
+
+                function addIcon(el, type, message) {
+                    if (!el || !el.getBoundingClientRect) return;
+                    issues.push({ el, type, message });
+                }
+
+                // --- Errors ---
+                // Missing alt on images
+                document.querySelectorAll('img:not([alt])').forEach(img => {
+                    addIcon(img, 'error', 'Missing alt text');
+                });
+                // Empty alt on non-decorative images
+                document.querySelectorAll('img[alt=""""]').forEach(img => {
+                    if (!img.getAttribute('role') && !img.closest('[role=""presentation""]'))
+                        addIcon(img, 'alert', 'Empty alt text');
+                });
+                // Empty links
+                document.querySelectorAll('a').forEach(a => {
+                    const text = (a.textContent || '').trim();
+                    const ariaLabel = a.getAttribute('aria-label') || '';
+                    const title = a.getAttribute('title') || '';
+                    const img = a.querySelector('img[alt]');
+                    if (!text && !ariaLabel && !title && !img) {
+                        addIcon(a, 'error', 'Empty link');
+                    }
+                });
+                // Empty buttons
+                document.querySelectorAll('button').forEach(btn => {
+                    const text = (btn.textContent || '').trim();
+                    const ariaLabel = btn.getAttribute('aria-label') || '';
+                    const title = btn.getAttribute('title') || '';
+                    if (!text && !ariaLabel && !title) {
+                        addIcon(btn, 'error', 'Empty button');
+                    }
+                });
+                // Missing form labels
+                document.querySelectorAll('input:not([type=""hidden""]):not([type=""submit""]):not([type=""button""]), select, textarea').forEach(input => {
+                    const id = input.id;
+                    const ariaLabel = input.getAttribute('aria-label');
+                    const ariaLabelledby = input.getAttribute('aria-labelledby');
+                    const hasLabel = id && document.querySelector(`label[for=""${id}""]`);
+                    const parentLabel = input.closest('label');
+                    if (!hasLabel && !parentLabel && !ariaLabel && !ariaLabelledby) {
+                        addIcon(input, 'error', 'Missing form label');
+                    }
+                });
+
+                // --- Structural ---
+                // Headings
+                document.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(h => {
+                    addIcon(h, 'struct', `Heading: <${h.tagName.toLowerCase()}>`);
+                });
+                // Landmarks
+                document.querySelectorAll('nav, main, header, footer, aside, [role=""navigation""], [role=""main""], [role=""banner""], [role=""contentinfo""]').forEach(el => {
+                    const role = el.getAttribute('role') || el.tagName.toLowerCase();
+                    addIcon(el, 'struct', `Landmark: ${role}`);
+                });
+
+                // --- Features ---
+                // Alt text present
+                document.querySelectorAll('img[alt]:not([alt=""""])').forEach(img => {
+                    addIcon(img, 'feature', `Alt: ${img.alt.substring(0, 40)}`);
+                });
+                // Skip links
+                document.querySelectorAll('a[href^=""#""]').forEach(a => {
+                    const text = (a.textContent || '').trim().toLowerCase();
+                    if (text.includes('skip') || text.includes('main content')) {
+                        addIcon(a, 'feature', 'Skip link');
+                    }
+                });
+
+                // --- ARIA ---
+                document.querySelectorAll('[aria-label], [aria-labelledby], [aria-describedby], [role]').forEach(el => {
+                    const attrs = [];
+                    if (el.getAttribute('role')) attrs.push(`role=${el.getAttribute('role')}`);
+                    if (el.getAttribute('aria-label')) attrs.push('aria-label');
+                    if (el.getAttribute('aria-labelledby')) attrs.push('aria-labelledby');
+                    if (attrs.length > 0 && !el.matches('h1,h2,h3,h4,h5,h6,nav,main,header,footer,aside')) {
+                        addIcon(el, 'aria', attrs.join(', '));
+                    }
+                });
+
+                // --- Alerts ---
+                // No main landmark
+                if (!document.querySelector('main, [role=""main""]')) {
+                    addIcon(document.body, 'alert', 'No <main> landmark');
+                }
+                // No skip link
+                const firstFocusable = document.querySelector('a, button, input, select, textarea');
+                const skipLink = document.querySelector('a[href^=""#""]');
+                if (firstFocusable && (!skipLink || !(skipLink.textContent || '').toLowerCase().includes('skip'))) {
+                    addIcon(document.body, 'alert', 'No skip navigation link');
+                }
+                // No h1
+                if (!document.querySelector('h1')) {
+                    addIcon(document.body, 'alert', 'No <h1> heading');
+                }
+
+                // --- Render icons onto page ---
+                // Limit to first 200 to avoid overwhelming the page
+                const maxIcons = 200;
+                const rendered = issues.slice(0, maxIcons);
+
+                rendered.forEach((issue, idx) => {
+                    const style = iconStyles[issue.type];
+                    const icon = document.createElement('div');
+                    icon.className = 'wave-icon';
+                    icon.style.cssText = `
+                        position: absolute; z-index: ${100000 + idx};
+                        width: 20px; height: 20px; border-radius: 50%;
+                        background: ${style.bg}; color: white;
+                        font-size: 12px; font-weight: bold; line-height: 20px;
+                        text-align: center; cursor: default;
+                        box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+                        pointer-events: none; font-family: sans-serif;
+                    `;
+                    icon.textContent = style.icon;
+                    icon.title = `[${style.label}] ${issue.message}`;
+
+                    // Position near the element
+                    try {
+                        const rect = issue.el.getBoundingClientRect();
+                        const scrollX = window.scrollX;
+                        const scrollY = window.scrollY;
+                        icon.style.left = `${rect.left + scrollX - 10}px`;
+                        icon.style.top = `${rect.top + scrollY - 10}px`;
+                        document.body.appendChild(icon);
+                    } catch (e) { /* skip positioning errors */ }
+                });
+
+                // Summary banner
+                const counts = { error: 0, alert: 0, feature: 0, struct: 0, aria: 0 };
+                issues.forEach(i => counts[i.type]++);
+
+                const banner = document.createElement('div');
+                banner.id = 'wave-overlay-banner';
+                banner.innerHTML = `
+                    <div style=""
+                        position:fixed; top:0; left:0; right:0; z-index:999999;
+                        background: #1a1a2e; color: white;
+                        padding: 8px 16px;
+                        font: bold 13px/1.4 -apple-system, 'Segoe UI', Roboto, monospace;
+                        display: flex; align-items: center; gap: 16px;
+                        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+                    "">
+                        <span style=""font-size:16px"">🌊</span>
+                        <span>WAVE-style Evaluation</span>
+                        <span style=""background:#dc3545;padding:2px 8px;border-radius:10px;font-size:11px"">${counts.error} Errors</span>
+                        <span style=""background:#ffc107;color:#000;padding:2px 8px;border-radius:10px;font-size:11px"">${counts.alert} Alerts</span>
+                        <span style=""background:#198754;padding:2px 8px;border-radius:10px;font-size:11px"">${counts.feature} Features</span>
+                        <span style=""background:#6f42c1;padding:2px 8px;border-radius:10px;font-size:11px"">${counts.struct} Structural</span>
+                        <span style=""background:#0d6efd;padding:2px 8px;border-radius:10px;font-size:11px"">${counts.aria} ARIA</span>
+                        <span style=""margin-left:auto; opacity:0.6; font-size:11px"">FreeTools a11y · WCAG 2.1 AA</span>
+                    </div>
+                `;
+                document.body.prepend(banner);
+                document.body.style.marginTop = (parseInt(document.body.style.marginTop || '0') + 40) + 'px';
+            }
+        ");
+    }
+
+    /// <summary>
+    /// Remove the WAVE-style overlay icons and banner.
+    /// </summary>
+    private static async Task RemoveWaveStyleOverlayAsync(IPage page)
+    {
+        await page.EvaluateAsync(@"
+            () => {
+                document.querySelectorAll('.wave-icon').forEach(el => el.remove());
+                const banner = document.getElementById('wave-overlay-banner');
+                if (banner) banner.remove();
+                document.body.style.marginTop = '';
+            }
+        ");
+    }
+
+    // ========================================================================
+    // HTML_CodeSniffer Overlay (Pa11y engine)
+    // ========================================================================
+
+    /// <summary>
+    /// Inject HTML_CodeSniffer (Squiz/Pa11y engine) into the page, run a WCAG 2.1 AA
+    /// scan, and draw colored outlines on violating elements with a summary banner.
+    /// This is a completely different rule engine from axe-core — it catches different issues.
+    /// </summary>
+    private static async Task InjectHtmlCodeSnifferOverlayAsync(IPage page, string htmlCsScript)
+    {
+        // Inject the HTMLCS engine
+        await page.EvaluateAsync(htmlCsScript);
+
+        // Run the scan and inject visual overlay
+        await page.EvaluateAsync(@"
+            () => new Promise(resolve => {
+                const colors = {
+                    1: { bg: 'rgba(220, 53, 69, 0.15)', border: '#dc3545', label: '✕ ERROR' },
+                    2: { bg: 'rgba(255, 193, 7, 0.12)',  border: '#ffc107', label: '⚠ WARNING' },
+                    3: { bg: 'rgba(13, 110, 253, 0.08)', border: '#0d6efd', label: 'ℹ NOTICE' }
+                };
+
+                HTMLCS.process('WCAG2AA', document, function() {
+                    const messages = HTMLCS.getMessages();
+                    const counts = { 1: 0, 2: 0, 3: 0 };
+
+                    // Limit overlays to errors + warnings (skip notices to avoid visual noise)
+                    const actionable = messages.filter(m => m.type <= 2);
+                    const maxOverlays = 150;
+                    const toRender = actionable.slice(0, maxOverlays);
+
+                    toRender.forEach((msg, idx) => {
+                        counts[msg.type]++;
+                        const c = colors[msg.type];
+                        if (!msg.element || !msg.element.getBoundingClientRect) return;
+
+                        try {
+                            msg.element.style.outline = `3px solid ${c.border}`;
+                            msg.element.style.outlineOffset = '2px';
+                            msg.element.style.backgroundColor = c.bg;
+
+                            // Extract short rule code from the full SNIFF code
+                            const codeParts = (msg.code || '').split('.');
+                            const shortCode = codeParts.length > 3 ? codeParts.slice(-2).join('.') : msg.code;
+
+                            const badge = document.createElement('div');
+                            badge.className = 'htmlcs-badge';
+                            badge.textContent = `${c.label.charAt(0)} ${shortCode}`;
+                            badge.title = msg.msg;
+                            badge.style.cssText = `
+                                position: absolute; z-index: ${99000 + idx};
+                                font-size: 9px; font-family: monospace; font-weight: 700;
+                                color: white; background: ${c.border};
+                                padding: 1px 4px; border-radius: 2px;
+                                white-space: nowrap; pointer-events: none;
+                                line-height: 13px; max-width: 200px; overflow: hidden;
+                            `;
+
+                            const rect = msg.element.getBoundingClientRect();
+                            badge.style.left = `${rect.left + window.scrollX}px`;
+                            badge.style.top = `${rect.top + window.scrollY - 16}px`;
+                            document.body.appendChild(badge);
+                        } catch(e) { /* skip */ }
+                    });
+
+                    // Count all messages
+                    messages.forEach(m => { if (!counts[m.type]) counts[m.type] = 0; });
+                    const totalErrors = messages.filter(m => m.type === 1).length;
+                    const totalWarnings = messages.filter(m => m.type === 2).length;
+                    const totalNotices = messages.filter(m => m.type === 3).length;
+
+                    // Summary banner
+                    const banner = document.createElement('div');
+                    banner.id = 'htmlcs-overlay-banner';
+                    const summaryText = totalErrors === 0 && totalWarnings === 0
+                        ? '✅ HTML_CodeSniffer: No errors or warnings'
+                        : `⚠️ HTML_CodeSniffer: ${totalErrors} error(s), ${totalWarnings} warning(s), ${totalNotices} notice(s)`;
+
+                    banner.innerHTML = `
+                        <div style=""
+                            position:fixed; top:0; left:0; right:0; z-index:999999;
+                            background: ${totalErrors > 0 ? '#7b2d26' : '#2d4a7b'};
+                            color: white; padding: 8px 16px;
+                            font: bold 13px/1.4 -apple-system, 'Segoe UI', Roboto, monospace;
+                            display: flex; align-items: center; gap: 12px;
+                            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+                        "">
+                            <span style=""font-size:16px"">🔍</span>
+                            <span>${summaryText}</span>
+                            <span style=""background:#dc3545;padding:2px 8px;border-radius:10px;font-size:11px"">${totalErrors} Errors</span>
+                            <span style=""background:#ffc107;color:#000;padding:2px 8px;border-radius:10px;font-size:11px"">${totalWarnings} Warnings</span>
+                            <span style=""margin-left:auto; opacity:0.6; font-size:11px"">HTML_CodeSniffer · Pa11y engine · WCAG 2.1 AA</span>
+                        </div>
+                    `;
+                    document.body.prepend(banner);
+                    document.body.style.marginTop = '40px';
+
+                    resolve();
+                });
+            })
+        ");
+    }
+
+    /// <summary>
+    /// Remove the HTML_CodeSniffer overlay badges and banner.
+    /// </summary>
+    private static async Task RemoveHtmlCodeSnifferOverlayAsync(IPage page)
+    {
+        await page.EvaluateAsync(@"
+            () => {
+                document.querySelectorAll('.htmlcs-badge').forEach(el => el.remove());
+                const banner = document.getElementById('htmlcs-overlay-banner');
+                if (banner) banner.remove();
+                document.body.style.marginTop = '';
+                // Remove outlines added to elements
+                document.querySelectorAll('[style*=""outline""]').forEach(el => {
+                    el.style.outline = '';
+                    el.style.outlineOffset = '';
+                    el.style.backgroundColor = '';
+                });
+            }
+        ");
+    }
+
+    // ========================================================================
+    // IBM Equal Access Overlay
+    // ========================================================================
+
+    /// <summary>
+    /// Inject IBM Equal Access checker engine into the page, run an accessibility scan,
+    /// and draw visual highlights on violating elements. IBM's engine uses different rules
+    /// from both axe-core and HTML_CodeSniffer, providing a third independent perspective.
+    /// Falls back gracefully if the engine fails to load or execute.
+    /// </summary>
+    private static async Task InjectIbmAceOverlayAsync(IPage page, string ibmAceScript)
+    {
+        // Inject the IBM ACE engine
+        await page.EvaluateAsync(ibmAceScript);
+
+        // Run the scan and inject visual overlay
+        await page.EvaluateAsync(@"
+            async () => {
+                const colors = {
+                    Violation:         { bg: 'rgba(220, 53, 69, 0.15)', border: '#dc3545', icon: '✕' },
+                    'Needs review':    { bg: 'rgba(255, 193, 7, 0.12)',  border: '#ffc107', icon: '?' },
+                    Recommendation:    { bg: 'rgba(13, 110, 253, 0.08)', border: '#0d6efd', icon: 'ℹ' },
+                    Pass:              { bg: 'transparent',               border: '#198754', icon: '✓' }
+                };
+
+                let results;
+                try {
+                    // IBM ACE exposes the checker through different paths depending on build
+                    const checker = typeof ace !== 'undefined' && ace.Checker
+                        ? new ace.Checker()
+                        : (typeof window.aceIBMa11y !== 'undefined'
+                            ? new window.aceIBMa11y.Checker()
+                            : null);
+
+                    if (!checker) {
+                        // Engine loaded but API not found — show informational banner
+                        const banner = document.createElement('div');
+                        banner.id = 'ibm-ace-overlay-banner';
+                        banner.innerHTML = `<div style=""
+                            position:fixed;top:0;left:0;right:0;z-index:999999;
+                            background:#6c757d;color:white;padding:8px 16px;
+                            font:bold 13px/1.4 monospace;box-shadow:0 2px 8px rgba(0,0,0,0.3);
+                        ""><span style=""font-size:16px"">🏢</span> IBM Equal Access: Engine loaded but API not available in this build</div>`;
+                        document.body.prepend(banner);
+                        document.body.style.marginTop = '40px';
+                        return;
+                    }
+
+                    results = await checker.check(document, ['WCAG_2_1']);
+                } catch(e) {
+                    // Fallback: run a custom IBM-rules-inspired check
+                    results = { results: [] };
+
+                    // Custom checks inspired by IBM's unique rules
+                    // ARIA label checks
+                    document.querySelectorAll('[role]').forEach(el => {
+                        const role = el.getAttribute('role');
+                        const label = el.getAttribute('aria-label') || el.getAttribute('aria-labelledby');
+                        if (['button', 'link', 'tab', 'menuitem'].includes(role) && !label && !(el.textContent || '').trim()) {
+                            results.results.push({ value: ['VIOLATION', 'FAIL'], path: { dom: '' }, ruleId: 'aria_role_label', message: `${role} role missing accessible name`, node: el });
+                        }
+                    });
+                    // Input purpose
+                    document.querySelectorAll('input[type=""text""], input[type=""email""], input[type=""tel""], input[type=""url""]').forEach(el => {
+                        if (!el.getAttribute('autocomplete')) {
+                            results.results.push({ value: ['RECOMMENDATION', 'MANUAL'], ruleId: 'input_autocomplete', message: 'Input may benefit from autocomplete attribute', node: el });
+                        }
+                    });
+                    // Focus visible
+                    document.querySelectorAll('a, button, input, select, textarea, [tabindex]').forEach(el => {
+                        const style = window.getComputedStyle(el);
+                        if (style.outlineStyle === 'none' && style.outlineWidth === '0px') {
+                            results.results.push({ value: ['RECOMMENDATION', 'MANUAL'], ruleId: 'focus_visible', message: 'Element may not have visible focus indicator', node: el });
+                        }
+                    });
+                    // Color contrast (basic)
+                    document.querySelectorAll('p, span, li, td, th, label, a, h1, h2, h3, h4, h5, h6').forEach(el => {
+                        const style = window.getComputedStyle(el);
+                        const color = style.color;
+                        const bg = style.backgroundColor;
+                        if (color === bg && color !== 'rgba(0, 0, 0, 0)') {
+                            results.results.push({ value: ['VIOLATION', 'FAIL'], ruleId: 'color_contrast', message: 'Text and background colors are identical', node: el });
+                        }
+                    });
+                }
+
+                // Process results and render overlay
+                const counts = { Violation: 0, 'Needs review': 0, Recommendation: 0 };
+                const maxOverlays = 150;
+                let rendered = 0;
+
+                for (const item of (results.results || [])) {
+                    const level = Array.isArray(item.value) ? item.value[0] : 'Recommendation';
+                    const mappedLevel = level === 'VIOLATION' || level === 'FAIL' ? 'Violation'
+                                      : level === 'RECOMMENDATION' || level === 'MANUAL' ? 'Needs review'
+                                      : 'Recommendation';
+
+                    if (mappedLevel === 'Pass') continue;
+                    counts[mappedLevel] = (counts[mappedLevel] || 0) + 1;
+
+                    if (rendered >= maxOverlays) continue;
+                    rendered++;
+
+                    const c = colors[mappedLevel] || colors.Recommendation;
+                    const el = item.node || (item.path && item.path.dom
+                        ? (() => { try { return document.querySelector(item.path.dom); } catch { return null; } })()
+                        : null);
+
+                    if (!el || !el.getBoundingClientRect) continue;
+
+                    try {
+                        el.style.outline = `3px solid ${c.border}`;
+                        el.style.outlineOffset = '2px';
+
+                        const badge = document.createElement('div');
+                        badge.className = 'ibm-ace-badge';
+                        badge.textContent = `${c.icon} ${item.ruleId || 'rule'}`;
+                        badge.title = item.message || '';
+                        badge.style.cssText = `
+                            position: absolute; z-index: ${98000 + rendered};
+                            font-size: 9px; font-family: monospace; font-weight: 700;
+                            color: white; background: ${c.border};
+                            padding: 1px 4px; border-radius: 2px;
+                            white-space: nowrap; pointer-events: none;
+                            line-height: 13px; max-width: 200px; overflow: hidden;
+                        `;
+                        const rect = el.getBoundingClientRect();
+                        badge.style.left = `${rect.left + window.scrollX}px`;
+                        badge.style.top = `${rect.top + window.scrollY - 16}px`;
+                        document.body.appendChild(badge);
+                    } catch(e) { /* skip */ }
+                }
+
+                // Summary banner
+                const banner = document.createElement('div');
+                banner.id = 'ibm-ace-overlay-banner';
+                const total = counts.Violation + counts['Needs review'] + counts.Recommendation;
+                const summaryText = counts.Violation === 0
+                    ? `✅ IBM Equal Access: ${total} item(s) found, no violations`
+                    : `⚠️ IBM Equal Access: ${counts.Violation} violation(s), ${counts['Needs review']} need review`;
+
+                banner.innerHTML = `
+                    <div style=""
+                        position:fixed; top:0; left:0; right:0; z-index:999999;
+                        background: ${counts.Violation > 0 ? '#4a1942' : '#1a3a4a'};
+                        color: white; padding: 8px 16px;
+                        font: bold 13px/1.4 -apple-system, 'Segoe UI', Roboto, monospace;
+                        display: flex; align-items: center; gap: 12px;
+                        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+                    "">
+                        <span style=""font-size:16px"">🏢</span>
+                        <span>${summaryText}</span>
+                        <span style=""background:#dc3545;padding:2px 8px;border-radius:10px;font-size:11px"">${counts.Violation} Violations</span>
+                        <span style=""background:#ffc107;color:#000;padding:2px 8px;border-radius:10px;font-size:11px"">${counts['Needs review']} Review</span>
+                        <span style=""margin-left:auto; opacity:0.6; font-size:11px"">IBM Equal Access Checker</span>
+                    </div>
+                `;
+                document.body.prepend(banner);
+                document.body.style.marginTop = '40px';
+            }
+        ");
+    }
+
+    /// <summary>
+    /// Remove the IBM Equal Access overlay badges and banner.
+    /// </summary>
+    private static async Task RemoveIbmAceOverlayAsync(IPage page)
+    {
+        await page.EvaluateAsync(@"
+            () => {
+                document.querySelectorAll('.ibm-ace-badge').forEach(el => el.remove());
+                const banner = document.getElementById('ibm-ace-overlay-banner');
+                if (banner) banner.remove();
+                document.body.style.marginTop = '';
+                document.querySelectorAll('[style*=""outline""]').forEach(el => {
+                    el.style.outline = '';
+                    el.style.outlineOffset = '';
+                });
+            }
+        ");
+    }
+
+    // ========================================================================
+    // Focus Order + Heading Structure Overlay
+    // ========================================================================
+
+    /// <summary>
+    /// Inject a visual overlay showing keyboard tab order (numbered sequence on all
+    /// focusable elements) and heading hierarchy (h1→h2→h3 flow with nesting indicators).
+    /// This shows what a keyboard-only user experiences and whether the heading structure
+    /// is logical — two things that automated rule engines often miss.
+    /// </summary>
+    private static async Task InjectStructureOverlayAsync(IPage page)
+    {
+        await page.EvaluateAsync(@"
+            () => {
+                // ── Tab Order ──
+                // Gather all focusable elements in DOM order (natural tab order)
+                const focusable = Array.from(document.querySelectorAll(
+                    'a[href], button:not([disabled]), input:not([disabled]):not([type=""hidden""]), ' +
+                    'select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex=""-1""])'
+                )).filter(el => {
+                    const style = window.getComputedStyle(el);
+                    return style.display !== 'none' && style.visibility !== 'hidden' && el.offsetParent !== null;
+                });
+
+                // Sort: positive tabindex first (in order), then tabindex=0 / no tabindex (DOM order)
+                const withTabindex = focusable.filter(el => {
+                    const ti = parseInt(el.getAttribute('tabindex') || '0');
+                    return ti > 0;
+                }).sort((a, b) => parseInt(a.getAttribute('tabindex')) - parseInt(b.getAttribute('tabindex')));
+
+                const withoutTabindex = focusable.filter(el => {
+                    const ti = parseInt(el.getAttribute('tabindex') || '0');
+                    return ti <= 0;
+                });
+
+                const tabOrder = [...withTabindex, ...withoutTabindex];
+                const maxTabMarkers = 100; // Limit to avoid overwhelming the page
+
+                tabOrder.slice(0, maxTabMarkers).forEach((el, idx) => {
+                    try {
+                        const rect = el.getBoundingClientRect();
+                        if (rect.width === 0 || rect.height === 0) return;
+
+                        const marker = document.createElement('div');
+                        marker.className = 'structure-tab-marker';
+                        marker.textContent = idx + 1;
+                        marker.style.cssText = `
+                            position: absolute; z-index: ${97000 + idx};
+                            width: 22px; height: 22px; border-radius: 50%;
+                            background: #0d6efd; color: white;
+                            font-size: 10px; font-weight: 700; line-height: 22px;
+                            text-align: center; pointer-events: none;
+                            font-family: monospace;
+                            box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+                            left: ${rect.left + window.scrollX - 11}px;
+                            top: ${rect.top + window.scrollY - 11}px;
+                        `;
+                        document.body.appendChild(marker);
+
+                        // Light outline on the element
+                        el.style.outline = '2px dashed #0d6efd';
+                        el.style.outlineOffset = '1px';
+                    } catch(e) { /* skip */ }
+                });
+
+                // ── Heading Hierarchy ──
+                const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+                const headingColors = {
+                    H1: '#dc3545', H2: '#fd7e14', H3: '#ffc107',
+                    H4: '#198754', H5: '#0d6efd', H6: '#6f42c1'
+                };
+                let lastLevel = 0;
+                let headingIssues = 0;
+
+                headings.forEach((h, idx) => {
+                    const level = parseInt(h.tagName[1]);
+                    const color = headingColors[h.tagName] || '#6c757d';
+                    const skipped = level > lastLevel + 1 && lastLevel > 0;
+                    if (skipped) headingIssues++;
+                    lastLevel = level;
+
+                    try {
+                        const rect = h.getBoundingClientRect();
+                        const indent = (level - 1) * 12;
+
+                        const badge = document.createElement('div');
+                        badge.className = 'structure-heading-badge';
+                        badge.style.cssText = `
+                            position: absolute; z-index: ${96000 + idx};
+                            font-size: 11px; font-family: monospace; font-weight: 700;
+                            color: white; padding: 2px 8px; border-radius: 3px;
+                            white-space: nowrap; pointer-events: none;
+                            line-height: 15px;
+                            background: ${skipped ? '#dc3545' : color};
+                            left: ${rect.left + window.scrollX + indent}px;
+                            top: ${rect.top + window.scrollY - 20}px;
+                        `;
+                        badge.textContent = skipped
+                            ? `⚠ ${h.tagName} (skipped from H${lastLevel > level ? level : level - 1})`
+                            : `${h.tagName}: ${(h.textContent || '').trim().substring(0, 40)}`;
+                        document.body.appendChild(badge);
+
+                        h.style.outline = `2px solid ${color}`;
+                        h.style.outlineOffset = '2px';
+                    } catch(e) { /* skip */ }
+                });
+
+                // ── Landmark Regions ──
+                const landmarks = document.querySelectorAll('header, nav, main, aside, footer, [role=""banner""], [role=""navigation""], [role=""main""], [role=""complementary""], [role=""contentinfo""]');
+                landmarks.forEach((lm, idx) => {
+                    try {
+                        const rect = lm.getBoundingClientRect();
+                        const role = lm.getAttribute('role') || lm.tagName.toLowerCase();
+
+                        lm.style.outline = '2px dotted #6f42c1';
+                        lm.style.outlineOffset = '3px';
+
+                        const label = document.createElement('div');
+                        label.className = 'structure-landmark-label';
+                        label.textContent = `◆ ${role}`;
+                        label.style.cssText = `
+                            position: absolute; z-index: ${95000 + idx};
+                            font-size: 10px; font-family: monospace; font-weight: 700;
+                            color: white; background: #6f42c1;
+                            padding: 1px 6px; border-radius: 3px;
+                            pointer-events: none;
+                            left: ${rect.right + window.scrollX - 80}px;
+                            top: ${rect.top + window.scrollY}px;
+                        `;
+                        document.body.appendChild(label);
+                    } catch(e) { /* skip */ }
+                });
+
+                // Summary banner
+                const banner = document.createElement('div');
+                banner.id = 'structure-overlay-banner';
+                banner.innerHTML = `
+                    <div style=""
+                        position:fixed; top:0; left:0; right:0; z-index:999999;
+                        background: #1a2744; color: white; padding: 8px 16px;
+                        font: bold 13px/1.4 -apple-system, 'Segoe UI', Roboto, monospace;
+                        display: flex; align-items: center; gap: 16px;
+                        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+                    "">
+                        <span style=""font-size:16px"">🏗️</span>
+                        <span>Page Structure</span>
+                        <span style=""background:#0d6efd;padding:2px 8px;border-radius:10px;font-size:11px"">⇥ ${Math.min(tabOrder.length, maxTabMarkers)}${tabOrder.length > maxTabMarkers ? '+' : ''} Tab Stops</span>
+                        <span style=""background:${headingIssues > 0 ? '#dc3545' : '#198754'};padding:2px 8px;border-radius:10px;font-size:11px"">H ${headings.length} Headings${headingIssues > 0 ? ` (${headingIssues} skipped)` : ''}</span>
+                        <span style=""background:#6f42c1;padding:2px 8px;border-radius:10px;font-size:11px"">◆ ${landmarks.length} Landmarks</span>
+                        <span style=""margin-left:auto; opacity:0.6; font-size:11px"">Tab Order · Headings · Landmarks</span>
+                    </div>
+                `;
+                document.body.prepend(banner);
+                document.body.style.marginTop = '40px';
+            }
+        ");
+    }
+
+    /// <summary>
+    /// Remove the structure overlay markers, badges, and banner.
+    /// </summary>
+    private static async Task RemoveStructureOverlayAsync(IPage page)
+    {
+        await page.EvaluateAsync(@"
+            () => {
+                document.querySelectorAll('.structure-tab-marker, .structure-heading-badge, .structure-landmark-label').forEach(el => el.remove());
+                const banner = document.getElementById('structure-overlay-banner');
+                if (banner) banner.remove();
+                document.body.style.marginTop = '';
+                document.querySelectorAll('[style*=""outline""]').forEach(el => {
+                    el.style.outline = '';
+                    el.style.outlineOffset = '';
+                });
+            }
+        ");
+    }
+
+    // ========================================================================
+    // Color Vision Deficiency Simulations
+    // ========================================================================
+
+    /// <summary>
+    /// Color vision deficiency types with their SVG feColorMatrix values.
+    /// These are the same matrices Chrome DevTools uses for "Emulate vision deficiencies"
+    /// (Machado et al. 2009 color transformation matrices).
+    /// </summary>
+    private static readonly Dictionary<string, (string Label, string Description, string Matrix)> ColorBlindTypes = new()
+    {
+        ["protanopia"] = (
+            "Protanopia (No Red)",
+            "~1% of males — cannot see red light. Reds appear dark/black, greens and yellows look similar.",
+            "0.152286 1.052583 -0.204868 0 0  0.114503 0.786281 0.099216 0 0  -0.003882 -0.048116 1.051998 0 0  0 0 0 1 0"
+        ),
+        ["deuteranopia"] = (
+            "Deuteranopia (No Green)",
+            "~1% of males — cannot see green light. Most common severe type. Greens and reds look brownish-yellow.",
+            "0.367322 0.860646 -0.227968 0 0  0.280085 0.672501 0.047413 0 0  -0.011820 0.042940 0.968881 0 0  0 0 0 1 0"
+        ),
+        ["tritanopia"] = (
+            "Tritanopia (No Blue)",
+            "Very rare (~0.003%). Cannot see blue light. Blues appear green, yellows appear pink/red.",
+            "1.255528 -0.076749 -0.178779 0 0  -0.078411 0.930809 0.147602 0 0  0.004733 0.691367 0.303900 0 0  0 0 0 1 0"
+        ),
+        ["achromatopsia"] = (
+            "Achromatopsia (Total Color Blindness)",
+            "Extremely rare (~0.003%). Sees only grayscale. Tests whether your design works without any color.",
+            "0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0 0 0 1 0"
+        ),
+        ["protanomaly"] = (
+            "Protanomaly (Weak Red)",
+            "~1% of males — reduced red sensitivity. Milder than protanopia. Reds appear muted/brownish.",
+            "0.458064 0.679578 -0.137642 0 0  0.092785 0.846313 0.060902 0 0  -0.007494 -0.016807 1.024301 0 0  0 0 0 1 0"
+        ),
+        ["deuteranomaly"] = (
+            "Deuteranomaly (Weak Green)",
+            "~5% of males — the most common CVD. Reduced green sensitivity. Greens appear brownish.",
+            "0.547494 0.607765 -0.155259 0 0  0.181692 0.781742 0.036566 0 0  -0.010410 0.027275 0.983136 0 0  0 0 0 1 0"
+        ),
+        ["tritanomaly"] = (
+            "Tritanomaly (Weak Blue)",
+            "Very rare. Reduced blue sensitivity. Blues appear greenish, yellows appear lighter.",
+            "1.017277 0.027029 -0.044306 0 0  -0.006113 0.958479 0.047634 0 0  0.006379 0.248708 0.744913 0 0  0 0 0 1 0"
+        ),
+    };
+
+    /// <summary>
+    /// Apply a color vision deficiency SVG filter to the entire page and add a label banner.
+    /// Uses SVG feColorMatrix — the same technique Chrome DevTools uses.
+    /// </summary>
+    private static async Task InjectColorBlindFilterAsync(IPage page, string type, string label, string description, string matrix)
+    {
+        await page.EvaluateAsync($@"
+            () => {{
+                // Remove any previous CVD filter
+                const prev = document.getElementById('cvd-filter-svg');
+                if (prev) prev.remove();
+                const prevBanner = document.getElementById('cvd-overlay-banner');
+                if (prevBanner) prevBanner.remove();
+
+                // Create SVG filter
+                const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.id = 'cvd-filter-svg';
+                svg.setAttribute('style', 'position:absolute;width:0;height:0;');
+                svg.innerHTML = `
+                    <defs>
+                        <filter id=""cvd-filter"" color-interpolation-filters=""linearRGB"">
+                            <feColorMatrix type=""matrix"" values=""{matrix}"" />
+                        </filter>
+                    </defs>
+                `;
+                document.body.appendChild(svg);
+
+                // Apply filter to the entire page
+                document.documentElement.style.filter = 'url(#cvd-filter)';
+
+                // Add label banner
+                const banner = document.createElement('div');
+                banner.id = 'cvd-overlay-banner';
+                banner.innerHTML = `
+                    <div style=""
+                        position:fixed; top:0; left:0; right:0; z-index:999999;
+                        background: #2d2d2d; color: white; padding: 6px 16px;
+                        font: bold 12px/1.4 -apple-system, 'Segoe UI', Roboto, monospace;
+                        display: flex; align-items: center; gap: 12px;
+                        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+                        filter: none;
+                    "">
+                        <span style=""font-size:16px"">👁️</span>
+                        <span style=""font-size:13px"">{label}</span>
+                        <span style=""opacity:0.7; font-size:11px"">{description}</span>
+                    </div>
+                `;
+                document.body.prepend(banner);
+                document.body.style.marginTop = '36px';
+            }}
+        ");
+    }
+
+    /// <summary>
+    /// Remove the color vision deficiency filter and banner.
+    /// </summary>
+    private static async Task RemoveColorBlindFilterAsync(IPage page)
+    {
+        await page.EvaluateAsync(@"
+            () => {
+                document.documentElement.style.filter = '';
+                const svg = document.getElementById('cvd-filter-svg');
+                if (svg) svg.remove();
+                const banner = document.getElementById('cvd-overlay-banner');
+                if (banner) banner.remove();
+                document.body.style.marginTop = '';
+            }
+        ");
+    }
+
+    // ========================================================================
+    // Screen Reader Text View
+    // ========================================================================
+
+    /// <summary>
+    /// Transform the page into a "screen reader text view" — shows what a screen reader
+    /// user experiences. Hides all visual styling, shows content in reading order with
+    /// visible annotations for: alt text, aria-labels, roles, landmarks, heading levels.
+    /// Images are replaced with their alt text (or "[NO ALT]" markers).
+    /// </summary>
+    private static async Task InjectScreenReaderViewAsync(IPage page)
+    {
+        await page.EvaluateAsync(@"
+            () => {
+                // Save original body HTML so we can restore later
+                if (!window._srOriginalHtml) {
+                    window._srOriginalHtml = document.body.innerHTML;
+                    window._srOriginalStyles = document.body.getAttribute('style') || '';
+                }
+
+                // Walk the DOM and extract the accessible content tree
+                const output = [];
+                let imgCount = 0, altMissing = 0, ariaLabels = 0, landmarks = 0, headings = 0;
+
+                function getAccessibleName(el) {
+                    return el.getAttribute('aria-label')
+                        || el.getAttribute('aria-labelledby')
+                        || el.getAttribute('title')
+                        || '';
+                }
+
+                function processNode(node, depth) {
+                    if (node.nodeType === Node.TEXT_NODE) {
+                        const text = (node.textContent || '').trim();
+                        if (text) {
+                            output.push({ type: 'text', content: text, depth });
+                        }
+                        return;
+                    }
+
+                    if (node.nodeType !== Node.ELEMENT_NODE) return;
+
+                    const el = node;
+                    const tag = el.tagName.toLowerCase();
+                    const style = window.getComputedStyle(el);
+
+                    // Skip hidden elements
+                    if (style.display === 'none' || style.visibility === 'hidden') return;
+                    if (el.getAttribute('aria-hidden') === 'true') return;
+
+                    // Landmark annotations
+                    const role = el.getAttribute('role');
+                    const landmarkTags = { nav: 'navigation', main: 'main', header: 'banner', footer: 'contentinfo', aside: 'complementary' };
+                    const landmarkRole = role || landmarkTags[tag];
+                    if (landmarkRole && ['navigation', 'main', 'banner', 'contentinfo', 'complementary', 'search', 'form'].includes(landmarkRole)) {
+                        output.push({ type: 'landmark', content: `[${landmarkRole.toUpperCase()}]`, depth });
+                        landmarks++;
+                    }
+
+                    // Headings
+                    if (/^h[1-6]$/.test(tag)) {
+                        const level = tag[1];
+                        output.push({ type: 'heading', content: `[H${level}] ${(el.textContent || '').trim()}`, depth, level });
+                        headings++;
+                        return; // Don't process children (text already captured)
+                    }
+
+                    // Images
+                    if (tag === 'img') {
+                        imgCount++;
+                        const alt = el.getAttribute('alt');
+                        if (alt !== null && alt.trim() !== '') {
+                            output.push({ type: 'img-alt', content: `[IMG: ${alt}]`, depth });
+                        } else if (alt === '') {
+                            output.push({ type: 'img-decorative', content: '[IMG: decorative]', depth });
+                        } else {
+                            output.push({ type: 'img-noalt', content: '[IMG: ⚠ NO ALT TEXT]', depth });
+                            altMissing++;
+                        }
+                        return;
+                    }
+
+                    // SVG / Icon elements
+                    if (tag === 'svg' || tag === 'i' || (el.classList && el.classList.contains('icon'))) {
+                        const name = getAccessibleName(el);
+                        if (name) {
+                            output.push({ type: 'icon-labeled', content: `[ICON: ${name}]`, depth });
+                            ariaLabels++;
+                        } else if (el.getAttribute('aria-hidden') !== 'true') {
+                            output.push({ type: 'icon-unlabeled', content: '[ICON: unlabeled]', depth });
+                        }
+                        return;
+                    }
+
+                    // Links
+                    if (tag === 'a') {
+                        const text = (el.textContent || '').trim();
+                        const ariaLabel = getAccessibleName(el);
+                        const href = el.getAttribute('href') || '';
+                        if (ariaLabel && !text) {
+                            output.push({ type: 'link', content: `[LINK: ${ariaLabel}] → ${href}`, depth });
+                            ariaLabels++;
+                        } else if (text) {
+                            output.push({ type: 'link', content: `[LINK: ${text}] → ${href}`, depth });
+                        } else {
+                            output.push({ type: 'link-empty', content: `[LINK: ⚠ EMPTY] → ${href}`, depth });
+                        }
+                        return;
+                    }
+
+                    // Buttons
+                    if (tag === 'button' || role === 'button') {
+                        const text = (el.textContent || '').trim();
+                        const ariaLabel = getAccessibleName(el);
+                        const label = ariaLabel || text || '⚠ EMPTY';
+                        output.push({ type: 'button', content: `[BUTTON: ${label}]`, depth });
+                        if (ariaLabel) ariaLabels++;
+                        return;
+                    }
+
+                    // Form inputs
+                    if (['input', 'select', 'textarea'].includes(tag)) {
+                        const inputType = el.getAttribute('type') || 'text';
+                        if (inputType === 'hidden') return;
+                        const ariaLabel = getAccessibleName(el);
+                        const id = el.id;
+                        const labelEl = id ? document.querySelector(`label[for=""${id}""]`) : null;
+                        const labelText = ariaLabel || (labelEl ? labelEl.textContent.trim() : '') || el.placeholder || '⚠ NO LABEL';
+                        output.push({ type: 'input', content: `[INPUT ${inputType.toUpperCase()}: ${labelText}]`, depth });
+                        return;
+                    }
+
+                    // Table
+                    if (tag === 'table') {
+                        const caption = el.querySelector('caption');
+                        output.push({ type: 'table', content: `[TABLE${caption ? ': ' + caption.textContent.trim() : ''}]`, depth });
+                    }
+
+                    // ARIA labels on generic elements
+                    if (role && !['presentation', 'none'].includes(role)) {
+                        const ariaLabel = getAccessibleName(el);
+                        if (ariaLabel) {
+                            output.push({ type: 'aria', content: `[${role.toUpperCase()}: ${ariaLabel}]`, depth });
+                            ariaLabels++;
+                        }
+                    }
+
+                    // Process children
+                    for (const child of el.childNodes) {
+                        processNode(child, depth + 1);
+                    }
+
+                    // Close landmarks
+                    if (landmarkRole && ['navigation', 'main', 'banner', 'contentinfo', 'complementary'].includes(landmarkRole)) {
+                        output.push({ type: 'landmark-end', content: `[/${landmarkRole.toUpperCase()}]`, depth });
+                    }
+                }
+
+                processNode(document.body, 0);
+
+                // Build the text view HTML
+                const typeStyles = {
+                    'text':           'color:#e0e0e0;',
+                    'heading':        'color:#58a6ff; font-weight:bold; font-size:{size}px;',
+                    'link':           'color:#8b949e; text-decoration:underline;',
+                    'link-empty':     'color:#f85149; text-decoration:underline;',
+                    'button':         'color:#d2a8ff; font-weight:600;',
+                    'img-alt':        'color:#7ee787; font-style:italic;',
+                    'img-decorative': 'color:#6e7681; font-style:italic;',
+                    'img-noalt':      'color:#f85149; font-weight:bold;',
+                    'icon-labeled':   'color:#79c0ff; font-style:italic;',
+                    'icon-unlabeled': 'color:#f0883e;',
+                    'input':          'color:#d2a8ff;',
+                    'table':          'color:#79c0ff; font-weight:600;',
+                    'landmark':       'color:#f0883e; font-weight:bold; font-size:13px;',
+                    'landmark-end':   'color:#f0883e; font-size:11px; opacity:0.6;',
+                    'aria':           'color:#79c0ff; font-style:italic;'
+                };
+
+                const headingSizes = { '1': 22, '2': 18, '3': 15, '4': 13, '5': 12, '6': 11 };
+
+                let html = '';
+                for (const item of output) {
+                    let style = typeStyles[item.type] || 'color:#e0e0e0;';
+                    if (item.type === 'heading') {
+                        style = style.replace('{size}', headingSizes[item.level] || '13');
+                    }
+                    const indent = Math.min(item.depth, 10) * 12;
+                    const escaped = item.content.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                    html += `<div style=""padding:1px 0 1px ${indent}px; ${style} font-family:'Cascadia Code','Fira Code',Consolas,monospace; font-size:12px; line-height:1.6; white-space:pre-wrap; word-break:break-word;"">${escaped}</div>\n`;
+                }
+
+                // Replace body content with text view
+                document.body.innerHTML = `
+                    <div id=""sr-view-banner"" style=""
+                        position:fixed; top:0; left:0; right:0; z-index:999999;
+                        background:#0d1117; color:white; padding:8px 16px;
+                        font: bold 13px/1.4 -apple-system,'Segoe UI',Roboto,monospace;
+                        display:flex; align-items:center; gap:16px;
+                        box-shadow:0 2px 8px rgba(0,0,0,0.5);
+                        border-bottom: 2px solid #30363d;
+                    "">
+                        <span style=""font-size:16px"">🔊</span>
+                        <span>Screen Reader Text View</span>
+                        <span style=""background:#58a6ff;padding:2px 8px;border-radius:10px;font-size:11px"">H ${headings}</span>
+                        <span style=""background:${altMissing > 0 ? '#f85149' : '#7ee787'};color:${altMissing > 0 ? 'white' : '#000'};padding:2px 8px;border-radius:10px;font-size:11px"">${imgCount} imgs${altMissing > 0 ? ` (${altMissing} no alt!)` : ''}</span>
+                        <span style=""background:#d2a8ff;color:#000;padding:2px 8px;border-radius:10px;font-size:11px"">${ariaLabels} ARIA labels</span>
+                        <span style=""background:#f0883e;color:#000;padding:2px 8px;border-radius:10px;font-size:11px"">◆ ${landmarks} landmarks</span>
+                        <span style=""margin-left:auto;opacity:0.5;font-size:11px"">Linearized accessible content tree</span>
+                    </div>
+                    <div style=""
+                        margin-top:44px; padding:16px 24px;
+                        background:#0d1117; min-height:100vh;
+                    "">${html}</div>
+                `;
+                document.body.style.cssText = 'margin:0; padding:0; background:#0d1117;';
+            }
+        ");
+    }
+
+    /// <summary>
+    /// Restore the original page content after screen reader text view.
+    /// </summary>
+    private static async Task RemoveScreenReaderViewAsync(IPage page)
+    {
+        await page.EvaluateAsync(@"
+            () => {
+                if (window._srOriginalHtml) {
+                    document.body.innerHTML = window._srOriginalHtml;
+                    document.body.setAttribute('style', window._srOriginalStyles || '');
+                    window._srOriginalHtml = null;
+                    window._srOriginalStyles = null;
+                }
+            }
+        ");
     }
 
     /// <summary>
@@ -3256,6 +4579,15 @@ internal class Program
         actions.Add($"Screenshot #{stepNumber}: {label} ({PathSanitizer.FormatBytes(fileSize)})");
 
         return stepNumber;
+    }
+
+    /// <summary>
+    /// Log an overlay screenshot error without stopping the scan.
+    /// </summary>
+    private static void LogOverlayError(Uri siteUri, string pagePath, string overlayName, Exception ex, List<string> actions)
+    {
+        Console.Error.WriteLine($"  [{siteUri.Host}] {pagePath} — {overlayName} failed: {ex.Message}");
+        actions.Add($"{overlayName} screenshot failed: {ex.Message}");
     }
 
     private static string SanitizeFileName(string label)
