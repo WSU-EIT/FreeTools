@@ -6,238 +6,151 @@ public static partial class Helpers
 {
     public static List<DataObjects.MenuItem> MyMenuItemsApp {
         get {
-            // Add any app-specific top-level menu items here.
             var output = new List<DataObjects.MenuItem>();
 
-
-
+            // ── 1. Dashboard & Data ──
             output.Add(new DataObjects.MenuItem {
-                Title = "Examples Dashboard",
+                Title = "Dashboard & Data",
                 Icon = "Home",
-                PageNames = new List<string> { "examplesdashboard" },
+                PageNames = new List<string> { "examplesdashboard", "sampleitems", "editsampleitem", "sampleitemsv1", "sampleitemsv2", "sampleitemsv3", "sampleitemsv4", "sampleitemsv5", "searchautocomplete", "comparisontable", "itemcards" },
                 SortOrder = 100,
                 url = Helpers.BuildUrl("Examples/Dashboard"),
                 AppAdminOnly = false,
+                DropdownItems = new List<DataObjects.MenuItem> {
+                    MakeSubItem("Sample Items", "sampleitems", "Examples/SampleItems", "Files"),
+                    MakeSubItem("V1: Card View", "sampleitemsv1", "Examples/SampleItemsV1"),
+                    MakeSubItem("V2: Split Panel", "sampleitemsv2", "Examples/SampleItemsV2"),
+                    MakeSubItem("V3: Grouped View", "sampleitemsv3", "Examples/SampleItemsV3"),
+                    MakeSubItem("V4: Timeline", "sampleitemsv4", "Examples/SampleItemsV4"),
+                    MakeSubItem("V5: Stats Dashboard", "sampleitemsv5", "Examples/SampleItemsV5"),
+                    MakeSubItem("Search & Autocomplete", "searchautocomplete", "Examples/SearchAutocomplete"),
+                    MakeSubItem("Comparison Table", "comparisontable", "Examples/ComparisonTable"),
+                    MakeSubItem("Item Cards", "itemcards", "Examples/ItemCards"),
+                },
             });
 
+            // ── 2. Files & Media ──
             output.Add(new DataObjects.MenuItem {
-                Title = "Sample Items",
+                Title = "Files & Media",
                 Icon = "Files",
-                PageNames = new List<string> { "sampleitems", "editsampleitem" },
+                PageNames = new List<string> { "filedemo", "filedemov1", "filedemov2", "filedemov3", "filedemov4", "filedemov5", "filedemov6", "imagegallery", "carousel", "signaturedemo", "signaturev1", "signaturev2", "signaturev3", "signaturev4", "signaturev5" },
                 SortOrder = 200,
-                url = Helpers.BuildUrl("Examples/SampleItems"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "File Demo",
-                Icon = "Files",
-                PageNames = new List<string> { "filedemo" },
-                SortOrder = 300,
                 url = Helpers.BuildUrl("Examples/FileDemo"),
                 AppAdminOnly = false,
+                DropdownItems = new List<DataObjects.MenuItem> {
+                    MakeSubItem("V1: Profile Photo", "filedemov1", "Examples/FileDemoV1"),
+                    MakeSubItem("V2: Document Library", "filedemov2", "Examples/FileDemoV2"),
+                    MakeSubItem("V3: Resume Upload", "filedemov3", "Examples/FileDemoV3"),
+                    MakeSubItem("V4: Bulk Import", "filedemov4", "Examples/FileDemoV4"),
+                    MakeSubItem("V5: Case Attachments", "filedemov5", "Examples/FileDemoV5"),
+                    MakeSubItem("V6: Upload Policy", "filedemov6", "Examples/FileDemoV6"),
+                    MakeSubItem("Image Gallery", "imagegallery", "Examples/ImageGallery"),
+                    MakeSubItem("Carousel", "carousel", "Examples/Carousel"),
+                    MakeSubItem("Signature Demo", "signaturedemo", "Examples/SignatureDemo"),
+                    MakeSubItem("Sig V1: Job Application", "signaturev1", "Examples/SignatureV1"),
+                    MakeSubItem("Sig V2: Doc Acknowledgment", "signaturev2", "Examples/SignatureV2"),
+                    MakeSubItem("Sig V3: Upload & Sign", "signaturev3", "Examples/SignatureV3"),
+                    MakeSubItem("Sig V4: GLBA Consent", "signaturev4", "Examples/SignatureV4"),
+                    MakeSubItem("Sig V5: Contract Signing", "signaturev5", "Examples/SignatureV5"),
+                },
             });
 
+            // ── 3. UI Components ──
             output.Add(new DataObjects.MenuItem {
-                Title = "Bootstrap Showcase",
+                Title = "UI Components",
                 Icon = "Settings",
-                PageNames = new List<string> { "bootstrapshowcase" },
-                SortOrder = 400,
+                PageNames = new List<string> { "bootstrapshowcase", "bootstrapv1", "bootstrapv2", "bootstrapv3", "bootstrapv4", "bootstrapv5", "bootstrapv6", "bootstrapv7", "bootstrapv8", "bootstrapv9", "bootstrapv10", "bootstrapv11", "bootstrapv12", "kanbanboard", "statusboard", "pipelinetracker", "wizarddemo", "commandpalette", "commentthread", "chatview" },
+                SortOrder = 300,
                 url = Helpers.BuildUrl("Examples/BootstrapShowcase"),
                 AppAdminOnly = false,
+                DropdownItems = new List<DataObjects.MenuItem> {
+                    MakeSubItem("V1: Email Builder", "bootstrapv1", "Examples/BootstrapV1"),
+                    MakeSubItem("V2: Settings Page", "bootstrapv2", "Examples/BootstrapV2"),
+                    MakeSubItem("V3: Error Pages", "bootstrapv3", "Examples/BootstrapV3"),
+                    MakeSubItem("V4: User Profile", "bootstrapv4", "Examples/BootstrapV4"),
+                    MakeSubItem("V5: Pricing Page", "bootstrapv5", "Examples/BootstrapV5"),
+                    MakeSubItem("V6: Filter Panel", "bootstrapv6", "Examples/BootstrapV6"),
+                    MakeSubItem("V7: Settings Admin", "bootstrapv7", "Examples/BootstrapV7"),
+                    MakeSubItem("V8: Offcanvas Sidebar", "bootstrapv8", "Examples/BootstrapV8"),
+                    MakeSubItem("V9: Master-Detail", "bootstrapv9", "Examples/BootstrapV9"),
+                    MakeSubItem("V10: Modals & Toasts", "bootstrapv10", "Examples/BootstrapV10"),
+                    MakeSubItem("V11: Data Table", "bootstrapv11", "Examples/BootstrapV11"),
+                    MakeSubItem("V12: Request Form", "bootstrapv12", "Examples/BootstrapV12"),
+                    MakeSubItem("Kanban Board", "kanbanboard", "Examples/KanbanBoard"),
+                    MakeSubItem("Status Board", "statusboard", "Examples/StatusBoard"),
+                    MakeSubItem("Pipeline Tracker", "pipelinetracker", "Examples/PipelineTracker"),
+                    MakeSubItem("Wizard Demo", "wizarddemo", "Examples/WizardDemo"),
+                    MakeSubItem("Command Palette", "commandpalette", "Examples/CommandPalette"),
+                    MakeSubItem("Comment Thread", "commentthread", "Examples/CommentThread"),
+                    MakeSubItem("Chat View", "chatview", "Examples/ChatView"),
+                },
             });
 
+            // ── 4. Charts & Visualizations ──
             output.Add(new DataObjects.MenuItem {
-                Title = "Charts Dashboard",
+                Title = "Charts & Viz",
                 Icon = "Home",
-                PageNames = new List<string> { "chartsdashboard" },
-                SortOrder = 500,
+                PageNames = new List<string> { "chartsdashboard", "chartsv1", "chartsv2", "chartsv3", "chartsv4", "chartsv5", "networkgraph", "networkgraphv1", "networkgraphv2" },
+                SortOrder = 400,
                 url = Helpers.BuildUrl("Examples/ChartsDashboard"),
                 AppAdminOnly = false,
+                DropdownItems = new List<DataObjects.MenuItem> {
+                    MakeSubItem("V1: Sales Analytics", "chartsv1", "Examples/ChartsV1"),
+                    MakeSubItem("V2: Enrollment Stats", "chartsv2", "Examples/ChartsV2"),
+                    MakeSubItem("V3: System Health", "chartsv3", "Examples/ChartsV3"),
+                    MakeSubItem("V4: HR Analytics", "chartsv4", "Examples/ChartsV4"),
+                    MakeSubItem("V5: Web Analytics", "chartsv5", "Examples/ChartsV5"),
+                    MakeSubItem("Network Graph", "networkgraph", "Examples/NetworkGraph"),
+                    MakeSubItem("Net V1: Org Chart", "networkgraphv1", "Examples/NetworkGraphV1"),
+                    MakeSubItem("Net V2: Dependency Map", "networkgraphv2", "Examples/NetworkGraphV2"),
+                },
             });
 
+            // ── 5. Code & Real-Time ──
             output.Add(new DataObjects.MenuItem {
-                Title = "Code Editor",
+                Title = "Code & Real-Time",
                 Icon = "Settings",
-                PageNames = new List<string> { "codeeditor" },
-                SortOrder = 600,
+                PageNames = new List<string> { "codeeditor", "codeeditorv1", "codeeditorv2", "codeeditorv3", "codeeditorv4", "codeeditorv5", "codeplayground", "signalrdemo", "signalrv1", "signalrv2", "signalrv3", "signalrv4", "signalrv5", "timerdemo", "timerv1", "timerv2", "timerv3", "timerv4", "timerv5", "gitbrowser", "apikeydemo" },
+                SortOrder = 500,
                 url = Helpers.BuildUrl("Examples/CodeEditor"),
                 AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "SignalR Demo",
-                Icon = "Settings",
-                PageNames = new List<string> { "signalrdemo" },
-                SortOrder = 700,
-                url = Helpers.BuildUrl("Examples/SignalRDemo"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Timer Demo",
-                Icon = "Settings",
-                PageNames = new List<string> { "timerdemo" },
-                SortOrder = 800,
-                url = Helpers.BuildUrl("Examples/TimerDemo"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Network Graph",
-                Icon = "Settings",
-                PageNames = new List<string> { "networkgraph" },
-                SortOrder = 900,
-                url = Helpers.BuildUrl("Examples/NetworkGraph"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Signature Demo",
-                Icon = "Settings",
-                PageNames = new List<string> { "signaturedemo" },
-                SortOrder = 1000,
-                url = Helpers.BuildUrl("Examples/SignatureDemo"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Wizard Demo",
-                Icon = "Settings",
-                PageNames = new List<string> { "wizarddemo" },
-                SortOrder = 1100,
-                url = Helpers.BuildUrl("Examples/WizardDemo"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Git Browser",
-                Icon = "Settings",
-                PageNames = new List<string> { "gitbrowser" },
-                SortOrder = 1200,
-                url = Helpers.BuildUrl("Examples/GitBrowser"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "API Key Demo",
-                Icon = "Settings",
-                PageNames = new List<string> { "apikeydemo" },
-                SortOrder = 1300,
-                url = Helpers.BuildUrl("Examples/ApiKeyDemo"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Kanban Board",
-                Icon = "Settings",
-                PageNames = new List<string> { "kanbanboard" },
-                SortOrder = 1400,
-                url = Helpers.BuildUrl("Examples/KanbanBoard"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Code Playground",
-                Icon = "Settings",
-                PageNames = new List<string> { "codeplayground" },
-                SortOrder = 1500,
-                url = Helpers.BuildUrl("Examples/CodePlayground"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Comment Thread",
-                Icon = "Settings",
-                PageNames = new List<string> { "commentthread" },
-                SortOrder = 1600,
-                url = Helpers.BuildUrl("Examples/CommentThread"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Search & Autocomplete",
-                Icon = "Settings",
-                PageNames = new List<string> { "searchautocomplete" },
-                SortOrder = 1700,
-                url = Helpers.BuildUrl("Examples/SearchAutocomplete"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Pipeline Tracker",
-                Icon = "Settings",
-                PageNames = new List<string> { "pipelinetracker" },
-                SortOrder = 1800,
-                url = Helpers.BuildUrl("Examples/PipelineTracker"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Comparison Table",
-                Icon = "Settings",
-                PageNames = new List<string> { "comparisontable" },
-                SortOrder = 1900,
-                url = Helpers.BuildUrl("Examples/ComparisonTable"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Image Gallery",
-                Icon = "Settings",
-                PageNames = new List<string> { "imagegallery" },
-                SortOrder = 2000,
-                url = Helpers.BuildUrl("Examples/ImageGallery"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Chat View",
-                Icon = "Settings",
-                PageNames = new List<string> { "chatview" },
-                SortOrder = 2100,
-                url = Helpers.BuildUrl("Examples/ChatView"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Command Palette",
-                Icon = "Settings",
-                PageNames = new List<string> { "commandpalette" },
-                SortOrder = 2200,
-                url = Helpers.BuildUrl("Examples/CommandPalette"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Status Board",
-                Icon = "Settings",
-                PageNames = new List<string> { "statusboard" },
-                SortOrder = 2300,
-                url = Helpers.BuildUrl("Examples/StatusBoard"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Item Cards",
-                Icon = "Settings",
-                PageNames = new List<string> { "itemcards" },
-                SortOrder = 2400,
-                url = Helpers.BuildUrl("Examples/ItemCards"),
-                AppAdminOnly = false,
-            });
-
-            output.Add(new DataObjects.MenuItem {
-                Title = "Carousel",
-                Icon = "Settings",
-                PageNames = new List<string> { "carousel" },
-                SortOrder = 2500,
-                url = Helpers.BuildUrl("Examples/Carousel"),
-                AppAdminOnly = false,
+                DropdownItems = new List<DataObjects.MenuItem> {
+                    MakeSubItem("V1: SQL Query Builder", "codeeditorv1", "Examples/CodeEditorV1"),
+                    MakeSubItem("V2: API Tester", "codeeditorv2", "Examples/CodeEditorV2"),
+                    MakeSubItem("V3: Config Editor", "codeeditorv3", "Examples/CodeEditorV3"),
+                    MakeSubItem("V4: Diff Viewer", "codeeditorv4", "Examples/CodeEditorV4"),
+                    MakeSubItem("V5: Template Engine", "codeeditorv5", "Examples/CodeEditorV5"),
+                    MakeSubItem("Code Playground", "codeplayground", "Examples/CodePlayground"),
+                    MakeSubItem("SignalR Demo", "signalrdemo", "Examples/SignalRDemo"),
+                    MakeSubItem("SR V1: Live Notifications", "signalrv1", "Examples/SignalRV1"),
+                    MakeSubItem("SR V2: Online Users", "signalrv2", "Examples/SignalRV2"),
+                    MakeSubItem("SR V3: Live Poll", "signalrv3", "Examples/SignalRV3"),
+                    MakeSubItem("SR V4: Activity Feed", "signalrv4", "Examples/SignalRV4"),
+                    MakeSubItem("SR V5: Live Scoreboard", "signalrv5", "Examples/SignalRV5"),
+                    MakeSubItem("Timer Demo", "timerdemo", "Examples/TimerDemo"),
+                    MakeSubItem("Timer V1: Pomodoro", "timerv1", "Examples/TimerV1"),
+                    MakeSubItem("Timer V2: Session Timeout", "timerv2", "Examples/TimerV2"),
+                    MakeSubItem("Timer V3: Auto-Refresh", "timerv3", "Examples/TimerV3"),
+                    MakeSubItem("Timer V4: Quiz Timer", "timerv4", "Examples/TimerV4"),
+                    MakeSubItem("Timer V5: Event Countdown", "timerv5", "Examples/TimerV5"),
+                    MakeSubItem("Git Browser", "gitbrowser", "Examples/GitBrowser"),
+                    MakeSubItem("API Key Demo", "apikeydemo", "Examples/ApiKeyDemo"),
+                },
             });
 
             return output;
         }
+    }
+
+    private static DataObjects.MenuItem MakeSubItem(string title, string pageName, string route, string? icon = null)
+    {
+        return new DataObjects.MenuItem {
+            Title = title,
+            Icon = icon ?? "",
+            PageNames = new List<string> { pageName },
+            url = Helpers.BuildUrl(route),
+            AppAdminOnly = false,
+        };
     }
 
 }

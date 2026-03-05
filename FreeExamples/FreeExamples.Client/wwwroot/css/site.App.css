@@ -3,6 +3,15 @@
 */
 
 /* ══════════════════════════════════════════════════════
+   Navbar Dropdown — scrollable for long menus
+   ══════════════════════════════════════════════════════ */
+
+.navbar .dropdown-menu {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+/* ══════════════════════════════════════════════════════
    Kanban Board — FreeExamples.App.Pages.KanbanBoard
    ══════════════════════════════════════════════════════ */
 
