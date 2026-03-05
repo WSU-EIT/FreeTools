@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-credit-card me-1"></i> Pricing Page</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-credit-card me-1"></i> V5: Pricing Page <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Bootstrap in Context: Pricing Page" Subtitle="Bootstrap cards and badges arranged as a SaaS pricing comparison — the Stripe / GitHub pattern" IconClass="fa-solid fa-credit-card">
             <p class="small text-muted mb-0">Three-tier pricing cards with feature lists, badges, and CTA buttons. Every SaaS app has one of these.</p>
         </AboutSection>

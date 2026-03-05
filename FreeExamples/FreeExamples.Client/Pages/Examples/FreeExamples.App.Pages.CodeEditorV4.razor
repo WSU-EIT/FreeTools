@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-code-compare me-1"></i> Diff Viewer</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-code-compare me-1"></i> V4: Code Diff Viewer <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Code Editor in Context: Diff Viewer" Subtitle="Side-by-side code comparison — the GitHub PR / VS Code diff pattern" IconClass="fa-solid fa-code-compare">
             <p class="small text-muted mb-0">View changes between two versions of a file side-by-side with added/removed line highlighting. The GitHub pull request review pattern.</p>
         </AboutSection>

@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-graduation-cap me-1"></i> Enrollment Stats</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-graduation-cap me-1"></i> V2: Enrollment Analytics <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Charts in Context: University Enrollment" Subtitle="Student enrollment KPIs, department breakdown, and retention metrics" IconClass="fa-solid fa-graduation-cap">
             <p class="small text-muted mb-0">Charts applied to a university enrollment context — headcounts, department distribution, retention rates, and admit-to-enroll funnel.</p>
         </AboutSection>

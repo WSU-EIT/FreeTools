@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-stopwatch me-1"></i> Pomodoro</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-stopwatch me-1"></i> V1: Pomodoro Timer <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Timer in Context: Pomodoro Timer" Subtitle="25-minute focus sessions with 5-minute breaks — the Pomodoro technique" IconClass="fa-solid fa-stopwatch">
             <p class="small text-muted mb-0">Same System.Timers.Timer concept from Timer Demo, but in a Pomodoro productivity context. Work sessions, break sessions, and a session counter.</p>
         </AboutSection>

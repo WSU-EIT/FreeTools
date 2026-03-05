@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-calendar-check me-1"></i> Event Countdown</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-calendar-check me-1"></i> V5: Event Countdown <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Timer in Context: Event Countdown" Subtitle="Days/hours/minutes/seconds countdown to a future event" IconClass="fa-solid fa-calendar-check">
             <p class="small text-muted mb-0">A large-format countdown timer to a future event. Shows days, hours, minutes, and seconds. Common on product launch pages and conference sites.</p>
         </AboutSection>

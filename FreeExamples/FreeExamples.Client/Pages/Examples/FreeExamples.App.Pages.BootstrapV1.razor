@@ -8,6 +8,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-envelope-open-text me-1"></i> Email Builder</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-envelope-open-text me-1"></i> V1: Email Template Builder <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Bootstrap in Context: Email Template Builder" Subtitle="Build a notification email using Bootstrap components" IconClass="fa-solid fa-envelope-open-text">
             <p class="small text-muted mb-0">Same Bootstrap components (alerts, badges, cards, buttons) used to compose a notification email template. Toggle components on/off to see how they compose together.</p>
         </AboutSection>

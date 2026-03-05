@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-bell me-1"></i> Live Notifications</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-bell me-1"></i> V1: Live Notification Feed <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="SignalR in Context: Live Notifications" Subtitle="Real-time notification toasts and a notification center — the Slack/Teams pattern" IconClass="fa-solid fa-bell">
             <p class="small text-muted mb-0">SignalR pushes notification events that appear as toast messages and accumulate in a notification center panel. Same real-time messaging, but in a notification UX context.</p>
         </AboutSection>

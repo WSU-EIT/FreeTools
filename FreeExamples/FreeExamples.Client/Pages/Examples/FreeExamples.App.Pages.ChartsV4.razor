@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-people-group me-1"></i> HR Analytics</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-people-group me-1"></i> V4: HR Analytics Dashboard <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Charts in Context: HR / People Analytics" Subtitle="Headcount, department distribution, turnover, and hiring pipeline" IconClass="fa-solid fa-people-group">
             <p class="small text-muted mb-0">Charts in a human resources context — workforce demographics, department headcount, hiring pipeline, and turnover metrics.</p>
         </AboutSection>

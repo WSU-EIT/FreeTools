@@ -13,6 +13,8 @@
         <div class="@Model.StickyMenuClass">
             <h1 class="page-title"><i class="fa-solid fa-shield-halved me-1"></i> V6: File Type Policy Manager <StickyMenuIcon /></h1>
         </div>
+
+        <ExampleNav />
         <AboutSection Title="File Upload in Context: Upload Policy" Subtitle="Manage which file types are allowed or blocked, then see the upload component reflect the changes instantly" IconClass="fa-solid fa-shield-halved">
             <p class="small text-muted mb-0">An admin settings page where you configure which file types users are allowed to upload. Add or remove extensions from the approved list, toggle between allow/block mode, and click "Apply Policy" to force the upload component to re-render with the new rules. This demonstrates the Blazor equivalent of Knockout's <code>if: true → if: false</code> trick — changing a component's <code>@@key</code> forces Blazor to destroy and recreate it.</p>
         </AboutSection>

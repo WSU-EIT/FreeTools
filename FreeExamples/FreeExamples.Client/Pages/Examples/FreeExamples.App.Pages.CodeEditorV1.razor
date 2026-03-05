@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-terminal me-1"></i> SQL Query Builder</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-terminal me-1"></i> V1: SQL Query Builder <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Code Editor in Context: SQL Query Builder" Subtitle="Write SQL queries, see results in a table — the SSMS / Azure Data Studio pattern" IconClass="fa-solid fa-terminal">
             <p class="small text-muted mb-0">A code editor configured for SQL with a mock "Run Query" button and tabular results. Same editor component, database context.</p>
         </AboutSection>

@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-triangle-exclamation me-1"></i> Error Pages</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-triangle-exclamation me-1"></i> V3: Error Pages <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Bootstrap in Context: Error Pages" Subtitle="404, 403, and 500 error pages — Bootstrap layout for the pages users hope they never see" IconClass="fa-solid fa-triangle-exclamation">
             <p class="small text-muted mb-0">Standard HTTP error pages (404, 403, 500) built with Bootstrap typography, icons, and buttons. Every app needs these.</p>
         </AboutSection>

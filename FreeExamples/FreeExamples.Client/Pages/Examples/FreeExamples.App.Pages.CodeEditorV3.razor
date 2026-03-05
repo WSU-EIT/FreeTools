@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-file-code me-1"></i> Config Editor</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-file-code me-1"></i> V3: Configuration File Editor <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Code Editor in Context: Config Editor" Subtitle="Edit appsettings.json / YAML config files with validation feedback" IconClass="fa-solid fa-file-code">
             <p class="small text-muted mb-0">A code editor showing configuration files (JSON/YAML) with real-time validation. Edit appsettings.json and see parsed results — the Azure Portal config blade pattern.</p>
         </AboutSection>

@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-hourglass-half me-1"></i> Quiz Timer</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-hourglass-half me-1"></i> V4: Timed Quiz <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Timer in Context: Timed Quiz" Subtitle="A countdown timer with per-question time limits — the online exam pattern" IconClass="fa-solid fa-hourglass-half">
             <p class="small text-muted mb-0">Timer creates urgency in an exam context. Each question has a time limit. When it expires, auto-advance to the next question.</p>
         </AboutSection>

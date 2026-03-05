@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-id-card me-1"></i> User Profile</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-id-card me-1"></i> V4: User Profile Card <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Bootstrap in Context: User Profile" Subtitle="A social-media-style profile card with tabs and activity feed" IconClass="fa-solid fa-id-card">
             <p class="small text-muted mb-0">Bootstrap cards, badges, nav-tabs, and list-groups composed into a profile page like GitHub, LinkedIn, or Slack.</p>
         </AboutSection>

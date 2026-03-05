@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-rss me-1"></i> Activity Feed</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-rss me-1"></i> V4: Live Activity Feed <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="SignalR in Context: Activity Feed" Subtitle="Real-time activity stream — the GitHub activity, Jira board update pattern" IconClass="fa-solid fa-rss">
             <p class="small text-muted mb-0">SignalR pushes user activity events (created, updated, deleted items) into a scrolling feed. New events animate in at the top.</p>
         </AboutSection>

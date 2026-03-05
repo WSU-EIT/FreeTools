@@ -11,7 +11,7 @@ public static partial class Helpers
             // ── 1. Dashboard & Data ──
             output.Add(new DataObjects.MenuItem {
                 Title = "Dashboard & Data",
-                Icon = "Home",
+                Icon = "DashboardData",
                 PageNames = new List<string> { "examplesdashboard", "sampleitems", "editsampleitem", "sampleitemsv1", "sampleitemsv2", "sampleitemsv3", "sampleitemsv4", "sampleitemsv5", "searchautocomplete", "comparisontable", "itemcards" },
                 SortOrder = 100,
                 url = Helpers.BuildUrl("Examples/Dashboard"),
@@ -32,7 +32,7 @@ public static partial class Helpers
             // ── 2. Files & Media ──
             output.Add(new DataObjects.MenuItem {
                 Title = "Files & Media",
-                Icon = "Files",
+                Icon = "FilesMedia",
                 PageNames = new List<string> { "filedemo", "filedemov1", "filedemov2", "filedemov3", "filedemov4", "filedemov5", "filedemov6", "imagegallery", "carousel", "signaturedemo", "signaturev1", "signaturev2", "signaturev3", "signaturev4", "signaturev5" },
                 SortOrder = 200,
                 url = Helpers.BuildUrl("Examples/FileDemo"),
@@ -58,7 +58,7 @@ public static partial class Helpers
             // ── 3. UI Components ──
             output.Add(new DataObjects.MenuItem {
                 Title = "UI Components",
-                Icon = "Settings",
+                Icon = "UIComponents",
                 PageNames = new List<string> { "bootstrapshowcase", "bootstrapv1", "bootstrapv2", "bootstrapv3", "bootstrapv4", "bootstrapv5", "bootstrapv6", "bootstrapv7", "bootstrapv8", "bootstrapv9", "bootstrapv10", "bootstrapv11", "bootstrapv12", "kanbanboard", "statusboard", "pipelinetracker", "wizarddemo", "commandpalette", "commentthread", "chatview" },
                 SortOrder = 300,
                 url = Helpers.BuildUrl("Examples/BootstrapShowcase"),
@@ -89,7 +89,7 @@ public static partial class Helpers
             // ── 4. Charts & Visualizations ──
             output.Add(new DataObjects.MenuItem {
                 Title = "Charts & Viz",
-                Icon = "Home",
+                Icon = "ChartsViz",
                 PageNames = new List<string> { "chartsdashboard", "chartsv1", "chartsv2", "chartsv3", "chartsv4", "chartsv5", "networkgraph", "networkgraphv1", "networkgraphv2" },
                 SortOrder = 400,
                 url = Helpers.BuildUrl("Examples/ChartsDashboard"),
@@ -109,7 +109,7 @@ public static partial class Helpers
             // ── 5. Code & Real-Time ──
             output.Add(new DataObjects.MenuItem {
                 Title = "Code & Real-Time",
-                Icon = "Settings",
+                Icon = "CodeRealTime",
                 PageNames = new List<string> { "codeeditor", "codeeditorv1", "codeeditorv2", "codeeditorv3", "codeeditorv4", "codeeditorv5", "codeplayground", "signalrdemo", "signalrv1", "signalrv2", "signalrv3", "signalrv4", "signalrv5", "timerdemo", "timerv1", "timerv2", "timerv3", "timerv4", "timerv5", "gitbrowser", "apikeydemo" },
                 SortOrder = 500,
                 url = Helpers.BuildUrl("Examples/CodeEditor"),

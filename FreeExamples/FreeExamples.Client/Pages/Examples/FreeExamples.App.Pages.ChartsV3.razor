@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-server me-1"></i> System Health</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-server me-1"></i> V3: System Health Dashboard <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Charts in Context: Infrastructure Monitoring" Subtitle="CPU, memory, disk, and uptime metrics — the Azure Monitor / Grafana pattern" IconClass="fa-solid fa-server">
             <p class="small text-muted mb-0">Charts applied to server health monitoring — CPU gauges, memory bars, disk usage, and service status indicators.</p>
         </AboutSection>

@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-code me-1"></i> API Tester</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-code me-1"></i> V2: REST API Tester <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Code Editor in Context: API Tester" Subtitle="Postman-style API request builder with JSON response viewer" IconClass="fa-solid fa-code">
             <p class="small text-muted mb-0">Build an API request (method, URL, headers, body), send it, and view the JSON response — the Postman / Insomnia pattern.</p>
         </AboutSection>

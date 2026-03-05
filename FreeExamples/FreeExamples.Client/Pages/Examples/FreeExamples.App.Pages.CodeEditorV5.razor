@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-wand-magic-sparkles me-1"></i> Template Engine</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-wand-magic-sparkles me-1"></i> V5: Template Engine <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Code Editor in Context: Template Engine" Subtitle="Write a template with variables, see the rendered output live" IconClass="fa-solid fa-wand-magic-sparkles">
             <p class="small text-muted mb-0">Write an email template with placeholders like {{Name}}, fill in variable values, see the rendered preview update live. The Mailchimp / SendGrid template pattern.</p>
         </AboutSection>

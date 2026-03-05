@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-users me-1"></i> Online Users</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-users me-1"></i> V2: Online Presence Tracker <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="SignalR in Context: Online Presence" Subtitle="See who's online and what they're viewing — the Google Docs / Figma pattern" IconClass="fa-solid fa-users">
             <p class="small text-muted mb-0">SignalR tracks which users are online and what page they're on. Shows colored presence indicators and live user counts. The Google Docs collaborator list pattern.</p>
         </AboutSection>

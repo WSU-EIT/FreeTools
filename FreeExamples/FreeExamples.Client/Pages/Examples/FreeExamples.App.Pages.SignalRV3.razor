@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-chart-bar me-1"></i> Live Poll</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-chart-bar me-1"></i> V3: Live Voting / Poll <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="SignalR in Context: Live Polling" Subtitle="Vote and see results update in real-time — the Slido / Mentimeter pattern" IconClass="fa-solid fa-chart-bar">
             <p class="small text-muted mb-0">SignalR broadcasts vote events so everyone sees the bar chart update live. Click a choice to vote. Results animate as votes come in.</p>
         </AboutSection>

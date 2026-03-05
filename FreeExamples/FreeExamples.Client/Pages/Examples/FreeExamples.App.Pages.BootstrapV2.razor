@@ -8,6 +8,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-gear me-1"></i> Settings Page</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-gear me-1"></i> V2: Application Settings <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Bootstrap in Context: Settings Page" Subtitle="Form controls, switches, selects, and validation in a real settings page" IconClass="fa-solid fa-gear">
             <p class="small text-muted mb-0">Bootstrap form components organized into tabbed settings sections. Demonstrates form groups, switches, range sliders, input groups, and validation feedback in a realistic admin panel context.</p>
         </AboutSection>

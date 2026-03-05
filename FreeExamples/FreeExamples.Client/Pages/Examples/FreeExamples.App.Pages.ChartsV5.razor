@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-globe me-1"></i> Web Analytics</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-globe me-1"></i> V5: Web Analytics Dashboard <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Charts in Context: Web Analytics" Subtitle="Page views, bounce rate, referrers — the Google Analytics pattern" IconClass="fa-solid fa-globe">
             <p class="small text-muted mb-0">Charts in a web analytics context. Page views, unique visitors, bounce rate, top pages, and referral sources — the Google Analytics / Plausible pattern.</p>
         </AboutSection>

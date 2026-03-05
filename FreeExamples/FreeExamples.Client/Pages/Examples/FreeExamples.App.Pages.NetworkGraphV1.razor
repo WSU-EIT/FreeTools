@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-sitemap me-1"></i> Org Chart</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-sitemap me-1"></i> V1: Organization Chart <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Network Graph in Context: Org Chart" Subtitle="Hierarchical org chart showing reporting structure — the HR portal pattern" IconClass="fa-solid fa-sitemap">
             <p class="small text-muted mb-0">Same node-and-edge visualization, but as an organizational chart showing people and their reporting relationships.</p>
         </AboutSection>

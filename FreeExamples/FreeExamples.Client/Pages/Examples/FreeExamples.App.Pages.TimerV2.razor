@@ -5,6 +5,8 @@
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-clock me-1"></i> Session Timeout</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-clock me-1"></i> V2: Session Timeout Warning <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="Timer in Context: Session Timeout" Subtitle="A countdown warning before your session expires — the banking / portal pattern" IconClass="fa-solid fa-clock">
             <p class="small text-muted mb-0">A 30-second countdown modal that appears when a session is about to expire. Click "Stay Logged In" to reset, or let it expire. Every banking site has this.</p>
         </AboutSection>

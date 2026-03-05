@@ -1,10 +1,12 @@
-﻿@page "/Examples/NetworkGraphV2"
+@page "/Examples/NetworkGraphV2"
 @page "/{TenantCode}/Examples/NetworkGraphV2"
 @implements IDisposable
 @inject BlazorDataModel Model
 @if (Model.Loaded && Model.View == _pageName) {
     @if (_loading) { <h1 class="page-title"><i class="fa-solid fa-diagram-project me-1"></i> V2: Dependency Map</h1><LoadingMessage /> } else {
         <div class="@Model.StickyMenuClass"><h1 class="page-title"><i class="fa-solid fa-diagram-project me-1"></i> V2: Dependency Map <StickyMenuIcon /></h1></div>
+
+        <ExampleNav />
         <AboutSection Title="V2: Dependency Map" Subtitle="Package dependency visualization showing which libraries depend on which" IconClass="fa-solid fa-diagram-project"><p class="small text-muted mb-0">Package dependency visualization showing which libraries depend on which</p></AboutSection>
         <div class="d-flex flex-wrap gap-1 mb-3">
             <InfoTip Title="Indented Dependency Tree"
