@@ -118,6 +118,21 @@
     transform: none;
 }
 
+/* Drop slots — thin gaps between cards that expand when dragging over them */
+.kanban-drop-slot {
+    height: 4px;
+    transition: height 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+    border-radius: 0.25rem;
+    margin: 0 0.25rem;
+}
+
+.kanban-drop-slot-active {
+    height: 36px;
+    background-color: #e8f0fe;
+    border: 2px dashed #0d6efd;
+    margin: 0.25rem;
+}
+
 @keyframes kanban-flash {
     0% {
         background-color: #9ec5fe;

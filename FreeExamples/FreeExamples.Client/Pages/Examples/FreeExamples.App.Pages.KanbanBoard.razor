@@ -117,7 +117,18 @@
                                 <div class="small text-muted">No items</div>
                             </div>
                         } else {
-                            @foreach (var item in colItems.OrderByDescending(i => i.Priority).ThenBy(i => i.Name)) {
+                            var slotIdx = 0;
+                            {
+                                var si = slotIdx;
+                                var isSlotActive = _activeDropSlot?.Column == column.Status && _activeDropSlot?.Index == si;
+                                <div class="kanban-drop-slot @(isSlotActive ? "kanban-drop-slot-active" : "")"
+                                     @ondragover="@(() => HandleSlotDragOver(column.Status, si))"
+                                     @ondragover:preventDefault="true"
+                                     @ondrop="@(() => HandleSlotDrop(column.Status, si))"
+                                     @ondragleave="HandleSlotDragLeave"></div>
+                            }
+                            @foreach (var item in GetOrderedItems(column.Status, colItems)) {
+                                slotIdx++;
                                 var isDragging = _draggedItemId == item.SampleItemId;
                                 var isExpanded = _expandedCardId == item.SampleItemId;
                                 var colIdx = _columns.FindIndex(c => c.Status == column.Status);
@@ -233,6 +244,17 @@
                                         </div>
                                     }
                                 </div>
+
+                                @* Drop slot after this card *@
+                                {
+                                    var si = slotIdx;
+                                    var isSlotActive = _activeDropSlot?.Column == column.Status && _activeDropSlot?.Index == si;
+                                    <div class="kanban-drop-slot @(isSlotActive ? "kanban-drop-slot-active" : "")"
+                                         @ondragover="@(() => HandleSlotDragOver(column.Status, si))"
+                                         @ondragover:preventDefault="true"
+                                         @ondrop="@(() => HandleSlotDrop(column.Status, si))"
+                                         @ondragleave="HandleSlotDragLeave"></div>
+                                }
                             }
                         }
                     </div>
@@ -330,6 +352,12 @@
     // Expand state — which card is currently expanded (clicked open)
     private Guid? _expandedCardId;
     private bool _wasDragging;
+
+    // Drop-slot state
+    private (DataObjects.SampleItemStatus Column, int Index)? _activeDropSlot;
+
+    // Manual card order per column
+    private Dictionary<DataObjects.SampleItemStatus, List<Guid>> _columnOrders = new();
 
     // Visual feedback
     private HashSet<Guid> _recentlyMovedIds = new();
@@ -486,6 +514,141 @@
     {
         _draggedItemId = null;
         _dragOverColumn = null;
+        _activeDropSlot = null;
+    }
+
+    // -- Drop Slot (within-column reorder) --
+
+    private void HandleSlotDragOver(DataObjects.SampleItemStatus column, int index)
+    {
+        _activeDropSlot = (column, index);
+        _dragOverColumn = column;
+    }
+
+    private void HandleSlotDragLeave()
+    {
+        _activeDropSlot = null;
+    }
+
+    private async Task HandleSlotDrop(DataObjects.SampleItemStatus targetColumn, int slotIndex)
+    {
+        _activeDropSlot = null;
+        _dragOverColumn = null;
+        _expandedCardId = null;
+
+        if (_draggedItemId == null) return;
+
+        var item = _allItems.FirstOrDefault(i => i.SampleItemId == _draggedItemId.Value);
+        _draggedItemId = null;
+
+        if (item == null) return;
+
+        var oldStatus = item.Status;
+        var isCrossColumn = oldStatus != targetColumn;
+
+        // Get or initialize the order for both source and target columns
+        EnsureColumnOrder(oldStatus);
+        if (isCrossColumn) EnsureColumnOrder(targetColumn);
+
+        // Remove from source column order
+        _columnOrders[oldStatus].Remove(item.SampleItemId);
+
+        // Change status if moving between columns
+        if (isCrossColumn)
+        {
+            item.Status = targetColumn;
+        }
+
+        // Insert at the target slot position
+        var targetOrder = _columnOrders[targetColumn];
+        // Safety: remove item if still present (same-column reorder)
+        targetOrder.Remove(item.SampleItemId);
+        var insertIdx = Math.Min(slotIndex, targetOrder.Count);
+        targetOrder.Insert(insertIdx, item.SampleItemId);
+
+        // Record move if cross-column
+        if (isCrossColumn)
+        {
+            _moveHistory.Insert(0, new MoveEntry {
+                Time = DateTime.Now,
+                ItemName = item.Name,
+                FromStatus = oldStatus,
+                ToStatus = targetColumn,
+            });
+        }
+
+        ApplyFilter();
+        _recentlyMovedIds.Add(item.SampleItemId);
+        StateHasChanged();
+
+        // Save to server if status changed
+        if (isCrossColumn)
+        {
+            _saving = true;
+            var result = await Helpers.GetOrPost<List<DataObjects.SampleItem>>("api/Data/SaveSampleItems", new List<DataObjects.SampleItem> { item });
+            _saving = false;
+
+            if (result == null || !result.Any()) {
+                item.Status = oldStatus;
+                _moveHistory.RemoveAt(0);
+                EnsureColumnOrder(oldStatus);
+                _columnOrders[oldStatus].Add(item.SampleItemId);
+                _columnOrders[targetColumn].Remove(item.SampleItemId);
+                Model.AddMessage("Failed to save status change.", MessageType.Danger);
+            } else {
+                var saved = result.First();
+                var idx = _allItems.IndexOf(item);
+                if (idx >= 0) _allItems[idx] = saved;
+            }
+
+            ApplyFilter();
+            StateHasChanged();
+        }
+
+        var movedId = item.SampleItemId;
+        await Task.Delay(2000);
+        _recentlyMovedIds.Remove(movedId);
+        StateHasChanged();
+    }
+
+    private List<DataObjects.SampleItem> GetOrderedItems(DataObjects.SampleItemStatus status, List<DataObjects.SampleItem> colItems)
+    {
+        if (!_columnOrders.TryGetValue(status, out var order) || order.Count == 0)
+        {
+            var sorted = colItems.OrderByDescending(i => i.Priority).ThenBy(i => i.Name).ToList();
+            _columnOrders[status] = sorted.Select(i => i.SampleItemId).ToList();
+            return sorted;
+        }
+
+        var lookup = colItems.ToDictionary(i => i.SampleItemId);
+        var result = new List<DataObjects.SampleItem>();
+
+        foreach (var id in order)
+        {
+            if (lookup.TryGetValue(id, out var item))
+            {
+                result.Add(item);
+                lookup.Remove(id);
+            }
+        }
+
+        // Append any items not in the order (newly added)
+        foreach (var item in lookup.Values.OrderByDescending(i => i.Priority).ThenBy(i => i.Name))
+        {
+            result.Add(item);
+            order.Add(item.SampleItemId);
+        }
+
+        return result;
+    }
+
+    private void EnsureColumnOrder(DataObjects.SampleItemStatus status)
+    {
+        if (_columnOrders.ContainsKey(status)) return;
+        var items = _filteredItems.Where(i => i.Status == status)
+            .OrderByDescending(i => i.Priority).ThenBy(i => i.Name)
+            .Select(i => i.SampleItemId).ToList();
+        _columnOrders[status] = items;
     }
 
     private async Task HandleDrop(DataObjects.SampleItemStatus newStatus)
