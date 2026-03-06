@@ -1,15 +1,16 @@
 using System.Collections.Concurrent;
-using System.Diagnostics;
+using System.Net.Http.Headers;
 using System.Text;
+using System.Text.Json;
 using FreeExamples.Server.Hubs;
 using Microsoft.AspNetCore.SignalR;
 
 namespace FreeExamples.Server.Services;
 
 /// <summary>
-/// Service that clones public git repositories and loads their entire contents into memory.
-/// Shallow-clones via git CLI (depth=1), reads all files into an in-memory tree, then
-/// immediately deletes the temp directory. Nothing stays on disk.
+/// Service that browses public git repositories entirely via the GitHub REST API.
+/// Nothing is ever cloned or written to disk. Repository trees and file contents
+/// are fetched over HTTP and cached in memory as C# objects.
 /// Emits real-time progress via SignalR so the client can show each step.
 /// </summary>
 public class GitBrowserService : IDisposable
@@ -27,40 +28,83 @@ public class GitBrowserService : IDisposable
         public bool IsBinary { get; set; }
         public string? Content { get; set; }
 
+        /// <summary>SHA blob hash for lazy-loading file content from the API.</summary>
+        public string? Sha { get; set; }
+
         /// <summary>Children keyed by name (only populated for directories).</summary>
         public Dictionary<string, MemoryNode>? Children { get; set; }
     }
 
     private readonly ConcurrentDictionary<string, MemoryNode> _repos = new(StringComparer.OrdinalIgnoreCase);
-    private readonly SemaphoreSlim _cloneLock = new(1, 1);
+    private readonly SemaphoreSlim _loadLock = new(1, 1);
     private readonly IHubContext<freeexamplesHub, IsrHub> _signalR;
+    private readonly HttpClient _http;
     private bool _disposed;
+    private DateTime _lastProgressTime = DateTime.MinValue;
 
-    private const long MaxFileSize = 512 * 1024; // 512 KB — skip larger files
+    private const long MaxFileSize = 512 * 1024; // 512 KB
+    private const int MinProgressGapMs = 400; // minimum ms between progress messages
 
     public GitBrowserService(IHubContext<freeexamplesHub, IsrHub> signalR)
     {
         _signalR = signalR;
+        _http = new HttpClient();
+        _http.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("FreeExamples-GitBrowser", "1.0"));
+        _http.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
     }
 
     /// <summary>
-    /// Sends a clone progress update to all clients via SignalR.
+    /// Sends a progress update to all clients via SignalR.
+    /// Waits at least MinProgressGapMs between messages so humans can read them.
     /// </summary>
     private async Task SendProgress(string message)
     {
         try {
+            var elapsed = (DateTime.UtcNow - _lastProgressTime).TotalMilliseconds;
+            if (elapsed < MinProgressGapMs)
+                await Task.Delay((int)(MinProgressGapMs - elapsed));
+
+            _lastProgressTime = DateTime.UtcNow;
+
             await _signalR.Clients.All.SignalRUpdate(new DataObjects.SignalRUpdate {
                 UpdateType = DataObjects.SignalRUpdateType.GitCloneProgress,
                 Message = message,
             });
         } catch {
-            // Best-effort — don't let SignalR failures break the clone
+            // Best-effort
         }
     }
 
     /// <summary>
-    /// Ensures a repo is loaded into memory. Shallow-clones to a temp dir, reads everything
-    /// into an in-memory tree, then deletes the temp dir immediately.
+    /// Parses a GitHub URL into (owner, repo). Supports:
+    ///   https://github.com/owner/repo
+    ///   https://github.com/owner/repo.git
+    ///   https://github.com/owner/repo/tree/branch/path
+    /// </summary>
+    private static (string Owner, string Repo)? ParseGitHubUrl(string url)
+    {
+        url = url.Trim().TrimEnd('/');
+
+        // Remove .git suffix
+        if (url.EndsWith(".git", StringComparison.OrdinalIgnoreCase))
+            url = url[..^4];
+
+        if (!url.Contains("github.com", StringComparison.OrdinalIgnoreCase))
+            return null;
+
+        // Extract path after github.com
+        var uri = new Uri(url.StartsWith("http", StringComparison.OrdinalIgnoreCase) ? url : "https://" + url);
+        var segments = uri.AbsolutePath.Trim('/').Split('/');
+
+        if (segments.Length < 2)
+            return null;
+
+        return (segments[0], segments[1]);
+    }
+
+    /// <summary>
+    /// Ensures a repo tree is loaded into memory via the GitHub API.
+    /// Uses the Git Trees API with recursive=1 to get the entire tree in one call.
     /// </summary>
     private async Task<MemoryNode> EnsureLoadedAsync(string repoUrl)
     {
@@ -70,7 +114,7 @@ public class GitBrowserService : IDisposable
             return cached;
         }
 
-        await _cloneLock.WaitAsync();
+        await _loadLock.WaitAsync();
         try
         {
             // Double-check after acquiring lock
@@ -80,146 +124,158 @@ public class GitBrowserService : IDisposable
                 return cached;
             }
 
-            var tempDir = Path.Combine(Path.GetTempPath(), "FreeExamples-GitBrowser", Guid.NewGuid().ToString("N")[..12]);
-            Directory.CreateDirectory(tempDir);
-
-            try
+            var parsed = ParseGitHubUrl(repoUrl);
+            if (parsed == null)
             {
-                // ── Step 1: Shallow clone ──
-                await SendProgress("Starting shallow clone (depth=1, single branch, no tags)...");
-
-                var sw = Stopwatch.StartNew();
-                var (exitCode, output) = await RunGitAsync(
-                    $"clone --depth 1 --single-branch --no-tags \"{repoUrl}\" \"{tempDir}\"",
-                    onStdErr: async line => {
-                        if (!string.IsNullOrWhiteSpace(line))
-                            await SendProgress(line.Trim());
-                    });
-
-                sw.Stop();
-
-                if (exitCode != 0)
-                {
-                    await SendProgress($"Clone failed (exit code {exitCode}). Is the URL a valid public repo?");
-                    throw new InvalidOperationException($"git clone failed with exit code {exitCode}: {output}");
-                }
-
-                await SendProgress($"Clone finished in {sw.Elapsed.TotalSeconds:F1}s — reading files into memory...");
-
-                // ── Step 2: Read entire tree into memory ──
-                var root = new MemoryNode
-                {
-                    Name = "",
-                    RelativePath = "",
-                    IsDirectory = true,
-                    Children = new(StringComparer.OrdinalIgnoreCase),
-                };
-
-                // counters: [0]=fileCount, [1]=dirCount, [2]=totalBytes
-                var counters = new long[3];
-
-                await ReadDirectoryIntoMemory(tempDir, tempDir, root, counters);
-
-                await SendProgress($"Loaded {counters[0]:N0} files, {counters[1]:N0} folders ({FormatBytes(counters[2])}) into memory.");
-
-                // ── Step 3: Delete temp dir ──
-                await SendProgress("Cleaning up temp directory...");
-                DeleteDirectoryBestEffort(tempDir);
-                await SendProgress("Done — serving entirely from memory.");
-
-                _repos[repoUrl] = root;
-                return root;
+                await SendProgress("Only GitHub repositories are supported. URL must contain github.com/owner/repo.");
+                throw new InvalidOperationException("Only GitHub repositories are supported.");
             }
-            catch
+
+            var (owner, repo) = parsed.Value;
+            await SendProgress($"Fetching repository info for {owner}/{repo}...");
+
+            // Step 1: Get default branch
+            var repoInfoUrl = $"https://api.github.com/repos/{owner}/{repo}";
+            var repoResponse = await _http.GetAsync(repoInfoUrl);
+
+            if (!repoResponse.IsSuccessStatusCode)
             {
-                // Always clean up on failure
-                DeleteDirectoryBestEffort(tempDir);
-                throw;
+                var status = repoResponse.StatusCode;
+                await SendProgress($"Failed to access repository ({status}). Is it a valid public GitHub repo?");
+                throw new InvalidOperationException($"GitHub API returned {status} for {repoInfoUrl}");
             }
-        }
-        finally
-        {
-            _cloneLock.Release();
-        }
-    }
 
-    /// <summary>
-    /// Recursively reads a directory into the in-memory tree.
-    /// </summary>
-    private async Task ReadDirectoryIntoMemory(string rootPath, string currentPath, MemoryNode parentNode,
-        long[] counters)
-    {
-        // Directories first
-        foreach (var dir in Directory.GetDirectories(currentPath).OrderBy(d => Path.GetFileName(d), StringComparer.OrdinalIgnoreCase))
-        {
-            var name = Path.GetFileName(dir);
-            if (name.StartsWith('.'))
-                continue; // Skip .git etc.
+            var repoJson = await repoResponse.Content.ReadAsStringAsync();
+            using var repoDoc = JsonDocument.Parse(repoJson);
+            var defaultBranch = repoDoc.RootElement.GetProperty("default_branch").GetString() ?? "main";
 
-            var relativePath = Path.GetRelativePath(rootPath, dir).Replace('\\', '/');
-            var dirNode = new MemoryNode
+            await SendProgress($"Default branch: {defaultBranch}. Fetching full file tree...");
+
+            // Step 2: Get the full tree recursively (single API call)
+            var treeUrl = $"https://api.github.com/repos/{owner}/{repo}/git/trees/{defaultBranch}?recursive=1";
+            var treeResponse = await _http.GetAsync(treeUrl);
+
+            if (!treeResponse.IsSuccessStatusCode)
             {
-                Name = name,
-                RelativePath = relativePath,
+                await SendProgress($"Failed to fetch tree ({treeResponse.StatusCode}).");
+                throw new InvalidOperationException($"GitHub API returned {treeResponse.StatusCode} for tree request");
+            }
+
+            var treeJson = await treeResponse.Content.ReadAsStringAsync();
+            using var treeDoc = JsonDocument.Parse(treeJson);
+
+            var truncated = treeDoc.RootElement.TryGetProperty("truncated", out var truncProp) && truncProp.GetBoolean();
+            var treeArray = treeDoc.RootElement.GetProperty("tree");
+
+            // Step 3: Build in-memory tree from the flat list
+            var root = new MemoryNode
+            {
+                Name = "",
+                RelativePath = "",
                 IsDirectory = true,
                 Children = new(StringComparer.OrdinalIgnoreCase),
             };
 
-            parentNode.Children![name] = dirNode;
-            counters[1]++;
+            int fileCount = 0;
+            int dirCount = 0;
+            long totalSize = 0;
 
-            await ReadDirectoryIntoMemory(rootPath, dir, dirNode, counters);
+            foreach (var item in treeArray.EnumerateArray())
+            {
+                var path = item.GetProperty("path").GetString() ?? "";
+                var type = item.GetProperty("type").GetString() ?? "";
+                var sha = item.TryGetProperty("sha", out var shaProp) ? shaProp.GetString() : null;
+                var size = item.TryGetProperty("size", out var sizeProp) ? sizeProp.GetInt64() : 0;
+
+                // Skip dot-directories (like .github, .gitignore is fine as a file)
+                var topSegment = path.Split('/')[0];
+                if (type == "tree" && topSegment.StartsWith('.'))
+                    continue;
+                if (type == "blob" && path.Contains('/'))
+                {
+                    var parentSegment = path.Split('/')[0];
+                    if (parentSegment.StartsWith('.'))
+                        continue;
+                }
+
+                if (type == "tree")
+                {
+                    EnsureDirectoryPath(root, path);
+                    dirCount++;
+                }
+                else if (type == "blob")
+                {
+                    var name = Path.GetFileName(path);
+                    var ext = Path.GetExtension(name).ToLowerInvariant();
+                    var parentNode = EnsureDirectoryPath(root, Path.GetDirectoryName(path)?.Replace('\\', '/') ?? "");
+
+                    var fileNode = new MemoryNode
+                    {
+                        Name = name,
+                        RelativePath = path,
+                        IsDirectory = false,
+                        Size = size,
+                        Extension = ext,
+                        Sha = sha,
+                    };
+
+                    parentNode.Children![name] = fileNode;
+                    fileCount++;
+                    totalSize += size;
+                }
+            }
+
+            await SendProgress($"Tree loaded: {fileCount:N0} files, {dirCount:N0} folders ({FormatBytes(totalSize)}) in memory.");
+
+            if (truncated)
+                await SendProgress("Note: Repository is very large. Some files may be missing from the tree.");
+
+            await SendProgress("Done. Serving entirely from memory (no files on disk).");
+
+            _repos[repoUrl] = root;
+            return root;
         }
-
-        // Files
-        foreach (var file in Directory.GetFiles(currentPath).OrderBy(f => Path.GetFileName(f), StringComparer.OrdinalIgnoreCase))
+        finally
         {
-            var name = Path.GetFileName(file);
-            var relativePath = Path.GetRelativePath(rootPath, file).Replace('\\', '/');
-            var fi = new FileInfo(file);
-            var ext = fi.Extension.ToLowerInvariant();
-
-            var fileNode = new MemoryNode
-            {
-                Name = name,
-                RelativePath = relativePath,
-                IsDirectory = false,
-                Size = fi.Length,
-                Extension = ext,
-            };
-
-            if (fi.Length > MaxFileSize)
-            {
-                fileNode.IsBinary = true;
-                fileNode.Content = $"[File too large to display: {fi.Length:N0} bytes]";
-            }
-            else
-            {
-                var bytes = await File.ReadAllBytesAsync(file);
-
-                // Binary detection: check for null bytes in the first 8KB
-                var checkLen = Math.Min(bytes.Length, 8192);
-                bool isBinary = false;
-                for (int i = 0; i < checkLen; i++)
-                {
-                    if (bytes[i] == 0) { isBinary = true; break; }
-                }
-
-                if (isBinary)
-                {
-                    fileNode.IsBinary = true;
-                    fileNode.Content = $"[Binary file: {fi.Length:N0} bytes]";
-                }
-                else
-                {
-                    fileNode.Content = Encoding.UTF8.GetString(bytes);
-                }
-            }
-
-            parentNode.Children![name] = fileNode;
-            counters[0]++;
-            counters[2] += fi.Length;
+            _loadLock.Release();
         }
+    }
+
+    /// <summary>
+    /// Ensures all directory nodes along a path exist and returns the deepest one.
+    /// </summary>
+    private static MemoryNode EnsureDirectoryPath(MemoryNode root, string dirPath)
+    {
+        if (string.IsNullOrEmpty(dirPath))
+            return root;
+
+        var current = root;
+        var runningPath = "";
+
+        foreach (var segment in dirPath.Split('/'))
+        {
+            if (string.IsNullOrEmpty(segment)) continue;
+
+            runningPath = string.IsNullOrEmpty(runningPath) ? segment : runningPath + "/" + segment;
+
+            current.Children ??= new(StringComparer.OrdinalIgnoreCase);
+
+            if (!current.Children.TryGetValue(segment, out var child))
+            {
+                child = new MemoryNode
+                {
+                    Name = segment,
+                    RelativePath = runningPath,
+                    IsDirectory = true,
+                    Children = new(StringComparer.OrdinalIgnoreCase),
+                };
+                current.Children[segment] = child;
+            }
+
+            current = child;
+        }
+
+        return current;
     }
 
     /// <summary>
@@ -242,7 +298,87 @@ public class GitBrowserService : IDisposable
     }
 
     /// <summary>
-    /// Lists entries (files/folders) at a given path within the repo — from memory.
+    /// Lazy-loads a file's content from the GitHub Blobs API when first accessed.
+    /// </summary>
+    private async Task EnsureFileContentLoaded(MemoryNode node, string repoUrl)
+    {
+        // Already loaded
+        if (node.Content != null)
+            return;
+
+        if (node.Size > MaxFileSize)
+        {
+            node.IsBinary = true;
+            node.Content = $"[File too large to display: {node.Size:N0} bytes]";
+            return;
+        }
+
+        if (string.IsNullOrEmpty(node.Sha))
+        {
+            node.Content = "[Unable to load: no SHA reference]";
+            return;
+        }
+
+        var parsed = ParseGitHubUrl(repoUrl);
+        if (parsed == null)
+        {
+            node.Content = "[Unable to load: invalid repo URL]";
+            return;
+        }
+
+        var (owner, repo) = parsed.Value;
+        var blobUrl = $"https://api.github.com/repos/{owner}/{repo}/git/blobs/{node.Sha}";
+
+        try
+        {
+            var response = await _http.GetAsync(blobUrl);
+            if (!response.IsSuccessStatusCode)
+            {
+                node.Content = $"[Failed to fetch file: {response.StatusCode}]";
+                return;
+            }
+
+            var json = await response.Content.ReadAsStringAsync();
+            using var doc = JsonDocument.Parse(json);
+            var encoding = doc.RootElement.GetProperty("encoding").GetString();
+            var contentRaw = doc.RootElement.GetProperty("content").GetString() ?? "";
+
+            if (encoding == "base64")
+            {
+                var bytes = Convert.FromBase64String(contentRaw.Replace("\n", ""));
+
+                // Binary detection: check for null bytes in the first 8KB
+                var checkLen = Math.Min(bytes.Length, 8192);
+                bool isBinary = false;
+                for (int i = 0; i < checkLen; i++)
+                {
+                    if (bytes[i] == 0) { isBinary = true; break; }
+                }
+
+                if (isBinary)
+                {
+                    node.IsBinary = true;
+                    node.Content = $"[Binary file: {bytes.Length:N0} bytes]";
+                }
+                else
+                {
+                    node.Content = Encoding.UTF8.GetString(bytes);
+                }
+            }
+            else
+            {
+                // utf-8 encoding returned directly
+                node.Content = contentRaw;
+            }
+        }
+        catch (Exception ex)
+        {
+            node.Content = $"[Error loading file: {ex.Message}]";
+        }
+    }
+
+    /// <summary>
+    /// Lists entries (files/folders) at a given path within the repo from memory.
     /// </summary>
     public async Task<List<DataObjects.GitRepoEntry>> BrowseAsync(string repoUrl, string? path)
     {
@@ -254,8 +390,8 @@ public class GitBrowserService : IDisposable
 
         var entries = new List<DataObjects.GitRepoEntry>();
 
-        // Directories first, then files (already sorted during load)
-        foreach (var child in node.Children.Values.Where(c => c.IsDirectory))
+        // Directories first, then files
+        foreach (var child in node.Children.Values.Where(c => c.IsDirectory).OrderBy(c => c.Name, StringComparer.OrdinalIgnoreCase))
         {
             entries.Add(new DataObjects.GitRepoEntry
             {
@@ -265,7 +401,7 @@ public class GitBrowserService : IDisposable
             });
         }
 
-        foreach (var child in node.Children.Values.Where(c => !c.IsDirectory))
+        foreach (var child in node.Children.Values.Where(c => !c.IsDirectory).OrderBy(c => c.Name, StringComparer.OrdinalIgnoreCase))
         {
             entries.Add(new DataObjects.GitRepoEntry
             {
@@ -281,7 +417,7 @@ public class GitBrowserService : IDisposable
     }
 
     /// <summary>
-    /// Reads the content of a single file from the in-memory tree.
+    /// Reads the content of a single file. Lazy-loads from the GitHub Blobs API on first access.
     /// </summary>
     public async Task<DataObjects.GitFileContent> GetFileAsync(string repoUrl, string filePath)
     {
@@ -301,61 +437,13 @@ public class GitBrowserService : IDisposable
             return result;
         }
 
+        // Lazy-load content from API on first access
+        await EnsureFileContentLoaded(node, repoUrl);
+
         result.Size = node.Size;
         result.IsBinary = node.IsBinary;
         result.Content = node.Content ?? "";
         return result;
-    }
-
-    /// <summary>
-    /// Runs a git command and returns the exit code and combined output.
-    /// Streams stderr lines to the caller for real-time progress.
-    /// </summary>
-    private static async Task<(int ExitCode, string Output)> RunGitAsync(string arguments, Func<string, Task>? onStdErr = null)
-    {
-        var psi = new ProcessStartInfo
-        {
-            FileName = "git",
-            Arguments = arguments,
-            RedirectStandardOutput = true,
-            RedirectStandardError = true,
-            UseShellExecute = false,
-            CreateNoWindow = true,
-        };
-
-        using var process = new Process { StartInfo = psi };
-        var outputBuilder = new StringBuilder();
-
-        process.Start();
-
-        // Read stdout in background
-        var stdoutTask = Task.Run(async () => {
-            while (await process.StandardOutput.ReadLineAsync() is { } line)
-                outputBuilder.AppendLine(line);
-        });
-
-        // Read stderr line-by-line for progress
-        while (await process.StandardError.ReadLineAsync() is { } line)
-        {
-            outputBuilder.AppendLine(line);
-            if (onStdErr != null)
-                await onStdErr(line);
-        }
-
-        await stdoutTask;
-        await process.WaitForExitAsync();
-
-        return (process.ExitCode, outputBuilder.ToString());
-    }
-
-    private static void DeleteDirectoryBestEffort(string path)
-    {
-        try
-        {
-            if (Directory.Exists(path))
-                Directory.Delete(path, recursive: true);
-        }
-        catch { /* Best-effort cleanup */ }
     }
 
     private static string FormatBytes(long bytes)
@@ -370,6 +458,7 @@ public class GitBrowserService : IDisposable
         if (_disposed) return;
         _disposed = true;
         _repos.Clear();
-        _cloneLock.Dispose();
+        _loadLock.Dispose();
+        _http.Dispose();
     }
 }

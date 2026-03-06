@@ -24,15 +24,15 @@
                     <p class="small text-muted mb-0">
                         <strong>Git</strong> is a version control system — it tracks every change ever made to a
                         set of files (like a time machine for code). A <strong>repository</strong> ("repo") is a
-                        folder of files managed by Git. This page lets you paste a public repo URL, and the server
-                        downloads ("clones") the repo so you can browse its folders and view files with
-                        syntax highlighting — all without installing anything.
+                        folder of files managed by Git. This page lets you paste a public GitHub repo URL and
+                        browse its folders and view files with syntax highlighting — all without installing
+                        anything. Nothing is ever cloned or downloaded to disk.
                     </p>
                 </div>
                 <div class="col-md-4 mb-2">
                     <h6 class="text-info"><i class="fa-solid fa-lightbulb me-1"></i>What You'll Learn</h6>
                     <ul class="small text-muted mb-0 ps-3">
-                        <li><strong>Repository cloning</strong> — downloading a repo's files to the server</li>
+                        <li><strong>GitHub API browsing</strong> — fetching a repo's file tree via REST API, no cloning</li>
                         <li><strong>Directory browsing</strong> — clicking folders to navigate, just like File Explorer</li>
                         <li><strong>Breadcrumb navigation</strong> — a clickable path trail showing where you are</li>
                         <li><strong>File viewing</strong> — reading source code with syntax-colored highlighting</li>
@@ -42,11 +42,11 @@
                 <div class="col-md-4 mb-2">
                     <h6 class="text-info"><i class="fa-solid fa-road me-1"></i>How Does It Work?</h6>
                     <p class="small text-muted mb-0">
-                        When you click Clone, the server uses <strong>LibGit2Sharp</strong> (a C# Git library)
-                        to download the repo into a temporary folder. It then builds a list of files and folders.
-                        When you click a folder, it sends that path to the server and gets the contents back.
-                        When you click a file, it reads the file content and shows it in the Monaco code editor
-                        with the right language coloring based on the file extension (.cs = C#, .js = JavaScript, etc.).
+                        When you click Browse, the server calls the <strong>GitHub REST API</strong> to
+                        fetch the repo's file tree — nothing is cloned or saved to disk. The tree is cached
+                        in memory as C# objects. When you click a folder, it reads from that in-memory tree.
+                        When you click a file, the server fetches its content from the GitHub Blobs API and
+                        displays it in the Monaco editor with language coloring based on file extension.
                     </p>
                 </div>
             </div>
@@ -56,8 +56,8 @@
         <div class="mb-3">
             <label for="git-repo-url" class="form-label fw-semibold">Repository URL
                 <InfoTip Title="Repository URL Input"
-                         Description="Paste the URL of any public Git repository here (e.g., from GitHub). When you click Browse, the server downloads just the latest snapshot (depth=1, no history) into memory, reads all files, then deletes the temp clone. Everything is served from memory after that."
-                         Code="@_codeRepoUrl" />
+                        Description="Paste the URL of any public GitHub repository here. When you click Browse, the server fetches the repo's file tree via the GitHub REST API — nothing is cloned or written to disk. The tree is cached in memory and file contents are fetched on demand."
+                        Code="@_codeRepoUrl" />
             </label>
             <div class="input-group" style="max-width: 600px;">
                 <span class="input-group-text bg-white" aria-hidden="true"><i class="fa fa-code-branch text-muted"></i></span>
@@ -66,12 +66,12 @@
                        placeholder="https://github.com/user/repo"
                        aria-label="Git repository URL" />
                 <button class="btn btn-primary" @onclick="CloneAndBrowse" disabled="@_loadingEntries"
-                        aria-label="Clone and browse repository">
+                        aria-label="Browse repository">
                     @if (_loadingEntries) {
                         <span class="spinner-border spinner-border-sm me-1" aria-hidden="true"></span>
-                        <span>Cloning...</span>
+                        <span>Loading...</span>
                     } else {
-                        <i class="fa fa-download me-1" aria-hidden="true"></i>
+                        <i class="fa fa-code-branch me-1" aria-hidden="true"></i>
                         <span>Browse</span>
                     }
                 </button>
@@ -211,7 +211,7 @@
     private bool _loading = true;
     private bool _loadedData = false;
     private string _pageName = "gitbrowser";
-    private string _codeRepoUrl = "git clone --depth 1 --single-branch --no-tags <url>";
+    private string _codeRepoUrl = "await _http.GetAsync($\"https://api.github.com/repos/{owner}/{repo}/git/trees/{branch}?recursive=1\");";
     private string _codeBreadcrumb = "<nav aria-label=\"Repository path\">\n    <ol class=\"breadcrumb\">...</ol>\n</nav>";
     private string _codeDirList = "@foreach (var entry in _entries) {\n    <button @onclick=\"OnEntryClicked(entry)\">\n}";
     private string _codeFileViewer = "<MonacoEditor Language=\"@_monacoLanguage\"\n    Value=\"@_viewingFile.Content\"\n    ReadOnly=\"true\" />";
@@ -225,6 +225,16 @@
     private string _monacoLanguage = MonacoEditor.MonacoLanguage.plaintext;
     private MonacoEditor? _editor;
     private List<string> _progressMessages = new();
+
+    private const int MinLoadingMs = 400;
+    private System.Diagnostics.Stopwatch _loadTimer = new();
+
+    private async Task EnsureMinLoadingTime()
+    {
+        var elapsed = _loadTimer.ElapsedMilliseconds;
+        if (elapsed < MinLoadingMs)
+            await Task.Delay((int)(MinLoadingMs - elapsed));
+    }
 
     public void Dispose()
     {
@@ -265,14 +275,17 @@
     private void OnSignalRUpdate(DataObjects.SignalRUpdate update)
     {
         if (update.UpdateType == DataObjects.SignalRUpdateType.GitCloneProgress && !string.IsNullOrWhiteSpace(update.Message)) {
-            _progressMessages.Add(update.Message);
-            InvokeAsync(StateHasChanged);
+            // Deduplicate — skip if the last message is identical
+            if (_progressMessages.Count == 0 || _progressMessages[^1] != update.Message) {
+                _progressMessages.Add(update.Message);
+                InvokeAsync(StateHasChanged);
+            }
         }
     }
 
     private async Task CloneAndBrowse()
     {
-        if (string.IsNullOrWhiteSpace(_repoUrl)) return;
+        if (string.IsNullOrWhiteSpace(_repoUrl) || _loadingEntries) return;
 
         _loadingEntries = true;
         _cloned = false;
@@ -280,7 +293,8 @@
         _currentPath = "";
         _entries.Clear();
         _progressMessages.Clear();
-        _progressMessages.Add("Requesting clone...");
+        _progressMessages.Add("Fetching repository tree...");
+        _loadTimer.Restart();
         StateHasChanged();
 
         var result = await Helpers.GetOrPost<List<DataObjects.GitRepoEntry>>(
@@ -291,11 +305,13 @@
             _entries = result;
             _cloned = true;
             _progressMessages.Add($"Done — {result.Count} items loaded.");
+            StateHasChanged();
         } else {
-            _progressMessages.Add("Failed to clone repository.");
-            Model.AddMessage("Failed to clone repository. Ensure the URL is a valid public git repo.", MessageType.Danger);
+            _progressMessages.Add("Failed to fetch repository.");
+            Model.AddMessage("Failed to fetch repository. Ensure the URL is a valid public GitHub repo.", MessageType.Danger);
         }
 
+        await EnsureMinLoadingTime();
         _loadingEntries = false;
         StateHasChanged();
     }
@@ -305,6 +321,7 @@
         _viewingFile = null;
         _currentPath = path;
         _loadingEntries = true;
+        _loadTimer.Restart();
         StateHasChanged();
 
         var result = await Helpers.GetOrPost<List<DataObjects.GitRepoEntry>>(
@@ -312,6 +329,7 @@
             new DataObjects.GitBrowseRequest { RepoUrl = _repoUrl, Path = path });
 
         _entries = result ?? new();
+        await EnsureMinLoadingTime();
         _loadingEntries = false;
         StateHasChanged();
     }
@@ -336,6 +354,7 @@
     private async Task ViewFile(string filePath)
     {
         _loadingEntries = true;
+        _loadTimer.Restart();
         StateHasChanged();
 
         var result = await Helpers.GetOrPost<DataObjects.GitFileContent>(
@@ -352,6 +371,7 @@
             _currentPath = filePath;
         }
 
+        await EnsureMinLoadingTime();
         _loadingEntries = false;
         StateHasChanged();
     }
