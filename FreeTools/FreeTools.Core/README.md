@@ -2,7 +2,7 @@
 
 > **Purpose:** Common utilities shared across all FreeTools CLI applications.  
 > **Version:** 1.0  
-> **Last Updated:** 2025-12-19
+> **Last Updated:** 2025-07-26
 
 ---
 

@@ -1,7 +1,7 @@
 ﻿# FreeTools.EndpointMapper — Route Discovery Tool
 
 > **Purpose:** Scans Blazor projects for @page directives and [Authorize] attributes, generating a CSV file of all routes for testing tools.  
-> **Last Reviewed:** 2025-12-19  
+> **Last Reviewed:** 2025-07-26  
 > **Version:** 2.2
 
 ---

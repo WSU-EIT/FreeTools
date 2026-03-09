@@ -1,8 +1,8 @@
 ﻿# FreeTools.AppHost — Aspire Pipeline Orchestrator
 
 > **Purpose:** Orchestrates the FreeTools pipeline using .NET Aspire to test web applications.  
-> **Version:** 2.1  
-> **Last Updated:** 2025-12-30
+> **Version:** 2.2  
+> **Last Updated:** 2025-07-26
 
 ---
 
@@ -62,7 +62,7 @@ dotnet run
 ```
 
 This will:
-1. Start FreeExamples on https://localhost (random port)
+1. Start FreeExamples on https://localhost:7271 (fixed port)
 2. Run all tools in sequence
 3. Write outputs to `Docs/runs/FreeExamples/main/latest/`
 

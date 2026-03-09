@@ -2,7 +2,7 @@
 
 > **Purpose:** Clones FreeCRM from GitHub, removes selected optional modules, renames the project to your chosen name, and writes a ready-to-build output directory.  
 > **Version:** 1.0  
-> **Last Updated:** 2025-07-25
+> **Last Updated:** 2025-07-26
 
 ---
 

@@ -1,8 +1,8 @@
 ﻿# FreeTools.EndpointPoker — HTTP Route Testing Tool
 
 > **Purpose:** Performs HTTP GET requests against all routes discovered by EndpointMapper, saving responses for comparison and regression testing.  
-> **Last Reviewed:** 2025-12-19  
-> **Version:** 2.2
+> **Last Reviewed:** 2025-07-26  
+> **Version:** 2.3
 
 ---
 
@@ -51,8 +51,9 @@ dotnet run [baseUrl] [csvPath] [outputDir] [maxThreads]
 | `BASE_URL` | Base URL of the web app | `https://localhost:5001` |
 | `CSV_PATH` | Path to pages.csv | `pages.csv` |
 | `OUTPUT_DIR` | Directory for HTML output | `page-snapshots` |
-| `START_DELAY_MS` | Delay before starting (ms) | `0` |
-| `MAX_THREADS` | Maximum parallel requests | `100` |
+| `START_DELAY_MS` | Delay before starting (ms) | `5000` |
+| `MAX_THREADS` | Maximum parallel requests | `10` |
+| `TENANT_CODE` | Tenant code for `{TenantCode}` route substitution | *(empty)* |
 
 ---
 

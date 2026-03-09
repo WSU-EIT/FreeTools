@@ -1,7 +1,7 @@
 ﻿# WorkspaceInventory — Codebase Analysis Tool
 
 > **Purpose:** Scans a workspace/repository and generates a CSV inventory of files with metrics, semantic classification, and optional Azure DevOps integration.  
-> **Last Reviewed:** 2025-12-14 @ 10:00 PM PST  
+> **Last Reviewed:** 2025-07-26  
 > **Version:** 2.0
 
 ---

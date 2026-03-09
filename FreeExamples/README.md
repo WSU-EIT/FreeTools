@@ -1,117 +1,133 @@
-# FreeCRM 
+# FreeExamples
 
-An open-source CRM solution built in C# Blazor WebAssembly using .NET 10. You can use this project as-is,
-or customize it to fit your needs. Or, just grab code that you need to use in your project.
+> Open-source Blazor WebAssembly examples application built with .NET 10 — demonstrates real-world patterns for dashboards, file management, authentication, plugins, API clients, and more.
 
-## Step 1 - Rename the Solution
+---
 
-If you want to rename things, you can use the "Rename FreeCRM.exe" console application.
-This will rename the project files, create new GUIDs for each project in the solution,
-and rename namespaces to match your project name.
+## What Is This?
 
-The rename tool now supports adding the rename value as a command-line argument. For example:
+**FreeExamples** is a full-featured Blazor WebAssembly application that serves as both a working reference implementation and a collection of interactive examples. It's based on the [FreeCRM](https://github.com/WSU-EIT/FreeCRM) architecture and demonstrates how to build production-ready Blazor apps with:
 
-`"Rename FreeCRM.exe" MyNewProjectName`
+- Multi-tenant architecture with tenant-scoped data
+- Custom authentication (local, LDAP, OAuth providers)
+- Plugin system with runtime compilation
+- Background processing service
+- File storage and management
+- API key middleware and NuGet client pattern
+- SignalR real-time features
+- Code playground with in-browser C#/Razor compilation
 
-## Step 2 - Remove Unneeded Modules
+---
 
-If you want to remove one or more of the optional components from the application
-(Appointments, EmailTemplates, Invoices, Locations, Payments, Services, or Tags)
-you can use the "Remove Modules from FreeCRM.exe" console application.
-This utility may still leave remnants of the removed modules in the code.
-If you find any items that are not removed that you believe should be,
-please open an issue on GitHub. Please include the name of the file and the line number
-where the item is located.
+## Project Structure
 
-The removal tool now supports two command-line options. They are:
+```
+FreeExamples/
+├── FreeExamples/                  ← Server (ASP.NET Core host)
+├── FreeExamples.Client/           ← Blazor WebAssembly client
+├── FreeExamples.DataAccess/       ← Data access layer (EF Core, Graph, LDAP)
+├── FreeExamples.DataObjects/      ← Shared DTOs and models
+├── FreeExamples.EFModels/         ← EF Core DbContext and entity models
+├── FreeExamples.Plugins/          ← Plugin runtime compiler
+├── FreeExamples.NuGetClient/      ← NuGet-publishable API client library
+├── FreeExamples.NuGetClientPublisher/ ← Tool to pack & push the NuGet package
+├── FreeExamples.TestClient/       ← Console app to test the NuGet client
+├── FreeExamples.DatabaseMigration/ ← Database copy/migration tool
+└── Docs/                          ← Documentation
+```
 
-`remove:Module1,Module2,etc.`
+| Project | Type | Purpose |
+|---------|------|---------|
+| **FreeExamples** | ASP.NET Core Server | Host, API controllers, middleware, SignalR hub, background service |
+| **FreeExamples.Client** | Blazor WASM | UI pages, components, code playground, dynamic Blazor support |
+| **FreeExamples.DataAccess** | Class Library | EF Core queries, Microsoft Graph, LDAP, PDF generation (QuestPDF) |
+| **FreeExamples.DataObjects** | Class Library | Shared DTOs, request/response models, caching |
+| **FreeExamples.EFModels** | Class Library | EF Core `EFDataModel` DbContext, entity classes, multi-provider support |
+| **FreeExamples.Plugins** | Class Library | Runtime C# compilation for plugin loading |
+| **FreeExamples.NuGetClient** | NuGet Package | Strongly-typed API client with retry, DI support, typed exceptions |
+| **FreeExamples.NuGetClientPublisher** | Console Tool | Interactive pack & push tool for the NuGet package |
+| **FreeExamples.TestClient** | Console Tool | Exercises the NuGet client against API key-protected endpoints |
+| **FreeExamples.DatabaseMigration** | Console Tool | Same-schema database copy with bulk insert, EF schema management |
 
-This removes any named modules.
+---
 
-`keep:Module1,Module2,etc.`
+## Quick Start
 
-This removes any modules not named. For example, to remove all optional modules except
-the Tags module, you would use:
+```bash
+# 1. Clone and restore
+git clone https://github.com/WSU-EIT/FreeTools.git
+cd FreeTools/FreeExamples
+dotnet restore
 
-`keep:Tags`
+# 2. Run the server (launches Blazor WASM client)
+dotnet run --project FreeExamples
+```
 
-You can also remove all optional modules without having to list them all by using:
+The app starts at `https://localhost:7271` with an in-memory database by default.
 
-`remove:all`
+---
 
-Do not use any spaces in the command line options. The names of the modules that can be
-kept or removed are:
-
-- Appointments
-- EmailTemplates
-- Invoices
-- Locations
-- Payments
-- Services
-- Tags
-
-## Details
+## Key Features
 
 ### Plugins
 
-FreeCRM supports a plugin architecture that allows you to extend the functionality
-of the software. See the example files in the Plugins folder for examples of how
-to use the various plugin types. You can easily add support for more plugin types
-to support your custom application changes by following the various examples
-already built into the application. The types built in out of the box are:
-"Auth", "BackgroundProcess", "Example", and "UserUpdate".
+FreeExamples supports a plugin architecture with runtime C# compilation. Plugin types include `Auth`, `BackgroundProcess`, `Example`, and `UserUpdate`. Plugins can be `.cs` source files or `.plugin` files with external assembly references.
 
-Plugins can have a .cs file extension and be included in your project as source code,
-or they can have the .plugin extension for files that may provide build conflicts
-with your solution. For example, the HelloWorld sample plugin uses an external dll
-file that would cause build issues if it were included as a .cs file.
-See the .assemblies file used with that plugin to see how external files can be included.
-These external references can be paths to files or can be statements that evaluate
-to the location of the files at runtime, like:
-
-```
-.\HelloWorld\HelloWorld.dll
-typeof(SomeNameSpace.SomeProperty).Assembly.Location
-```
+See the `PluginFiles/` folder for examples.
 
 ### Background Service
 
-FreeCRM includes a background service that can be started when your application starts
-to perform periodic tasks. This is controlled by the settings in the BackgroundService
-section of appsettings.json. By default, the background service is enabled and configured
-to run every 60 seconds.
+A configurable background service runs periodic tasks (controlled by `BackgroundService` section in `appsettings.json`). Supports:
+- Configurable interval (default: 60 seconds)
+- Start-on-load or delayed start
+- Plugin-based task registration
+- Load balancing filter for multi-instance deployments
+- File-based logging
 
-For tenants that are configured to mark records as deleted instead of deleting them immediately,
-this background service will take care of permanently deleting those records after the
-specified retention period has passed.
+For IIS hosting, set Application Pool Start Mode to `AlwaysRunning` and enable Preload.
 
-If you want detailed logging for the background service then set the LogFilePath with
-the path to the folder where you want the logs to be stored. The application will need
-to be running under credentials that have write access to that folder.
+### API Key Middleware
 
-The StartOnLoad flag indicates if the tasks to be run should be started immediately,
-or if they should wait until the first timer interval to start. For example, if this
-is set to false and the IntervalSeconds is set to 60, then the first time the tasks
-will run is 60 seconds after the application starts. If you have something that needs
-to be run as soon as the application starts, then set this to true.
+Demonstrates a SHA-256 hashed API key pattern with:
+- Bearer token authentication
+- Key generation UI (API Key Demo page)
+- Middleware-protected endpoints
+- NuGet client library for consumers
 
-There are two methods to tie into the background service to run your own tasks.
-First, you can modify the ProcessBackgroundTasksApp method in the DataAccess.App.cs file
-to run methods in there. The second method is to build plugins using the new
-"BackgroundProcess" plugin type. See the ExampleBackgroundProcess.cs file in the
-Plugins folder for an example of how to build a background process plugin.
-The example plugin will simple log a message to the console each time it runs,
-and to the logging file if you have one configured.
+### Database Providers
 
-If you are running in a load balanced environment with multiple instances of the application
-and you only want the background service to run on a specific instance, you can set the
-LoadBalancingFilter value in the BackgroundService section of appsettings.json to a value
-that must be matched in the name of the current System.Environment.MachineName.
+The EFModels project supports multiple providers:
+- SQL Server
+- SQLite
+- MySQL
+- PostgreSQL
+- In-Memory (default for development)
 
-### IIS Configuration for the Background Service
+---
 
-If you are hosting on IIS and want to ensure that the background service is always running,
-set the Application Pool Start Mode to "AlwaysRunning" and set the Preload Enabled flag
-for the application settings to true. The Preload Enabled flag is only available
-if you have installed the Application Initialization feature for IIS.
+## Customization
+
+### Renaming the Project
+
+Use the [ForkCRM tool](../FreeTools/FreeTools.ForkCRM/) to clone, remove modules, and rename:
+
+```bash
+cd FreeTools/FreeTools.ForkCRM
+dotnet run -- --name MyProject --modules remove:all --output "C:\repos\MyProject"
+```
+
+### Removing Optional Modules
+
+Optional modules (Tags, etc.) can be stripped using the FreeCRM utilities or the ForkCRM tool.
+
+### Adding Custom Data Access
+
+Add application-specific methods to `DataAccess.App.cs` and `IDataAccess` partial interface.
+
+### Adding Custom Language Tags
+
+Override built-in language tags or add custom ones in the `AppLanguage` dictionary in `DataAccess.App.cs`.
+
+---
+
+*Part of the [FreeTools](https://github.com/WSU-EIT/FreeTools) suite — developed by [Enrollment Information Technology](https://em.wsu.edu/eit/meet-our-staff/) at Washington State University.*

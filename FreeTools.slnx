@@ -3,6 +3,7 @@
     <Project Path="FreeExamples/Docs/Docs.csproj" />
     <Project Path="FreeExamples/FreeExamples.Client/FreeExamples.Client.csproj" />
     <Project Path="FreeExamples/FreeExamples.DataAccess/FreeExamples.DataAccess.csproj" />
+    <Project Path="FreeExamples/FreeExamples.DatabaseMigration/FreeExamples.DatabaseMigration.csproj" />
     <Project Path="FreeExamples/FreeExamples.DataObjects/FreeExamples.DataObjects.csproj" />
     <Project Path="FreeExamples/FreeExamples.EFModels/FreeExamples.EFModels.csproj" />
     <Project Path="FreeExamples/FreeExamples.NuGetClient/FreeExamples.NuGetClient.csproj" />

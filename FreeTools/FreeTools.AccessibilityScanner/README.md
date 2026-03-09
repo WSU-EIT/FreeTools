@@ -2,7 +2,7 @@
 
 > **Purpose:** Scans one or more websites for accessibility issues using Playwright for browser rendering and optional WAVE API for WCAG analysis.  
 > **Version:** 1.0  
-> **Last Updated:** 2025-07-25
+> **Last Updated:** 2025-07-26
 
 ---
 

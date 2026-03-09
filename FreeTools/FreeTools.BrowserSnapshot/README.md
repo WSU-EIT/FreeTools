@@ -1,8 +1,8 @@
 ﻿# FreeTools.BrowserSnapshot — Screenshot Capture Tool
 
-> **Purpose:** Captures full-page screenshots of all routes discovered by EndpointMapper using Playwright, with smart timing for SPAs and automatic retry for reliability.  
-> **Last Reviewed:** 2025-12-30  
-> **Version:** 2.1
+> **Purpose:** Captures full-page screenshots of all routes discovered by EndpointMapper using Playwright, with two-pass capture (public + authenticated), smart timing for SPAs, and automatic retry for reliability.  
+> **Last Reviewed:** 2025-07-26  
+> **Version:** 3.0
 
 ---
 
@@ -22,10 +22,13 @@ The **BrowserSnapshot** tool is a development utility that:
 
 ---
 
-## What's New in v2.1
+## What's New in v3.0
 
 | Feature | Description |
 |---------|-------------|
+| **Two-pass capture** | Pass 1: all pages unauthenticated (default.png) → Pass 2: all pages authenticated (logged-in.png) |
+| **Auto-login** | Authenticates via configurable credentials and saves session for reuse |
+| **Tenant code support** | Substitutes `{TenantCode}` in routes before capture |
 | **NetworkIdle wait** | Waits for network to go quiet instead of just HTML load — fixes blank screenshots on SPAs |
 | **Configurable settle delay** | `PAGE_SETTLE_DELAY_MS` env var (default 3000ms) for post-load wait time |
 | **Auto-retry** | Screenshots < 10KB are automatically retried with extra delay |
@@ -40,7 +43,7 @@ The **BrowserSnapshot** tool is a development utility that:
 | Technology | Version | Purpose |
 |------------|---------|---------|
 | .NET | 10.0 | Runtime framework |
-| Microsoft.Playwright | 1.49.0 | Browser automation |
+| Microsoft.Playwright | 1.56.0 | Browser automation |
 
 ---
 
@@ -76,6 +79,9 @@ dotnet run [baseUrl] [csvPath] [outputDir] [maxThreads]
 | `MAX_THREADS` | Maximum parallel captures | `10` |
 | `PAGE_SETTLE_DELAY_MS` | Wait time after NetworkIdle before screenshot | `3000` |
 | `START_DELAY_MS` | Startup delay for server warmup | `5000` |
+| `LOGIN_USERNAME` | Username for authenticated pass | `admin` |
+| `LOGIN_PASSWORD` | Password for authenticated pass | `admin` |
+| `TENANT_CODE` | Tenant code for login URL and route substitution | `tenant1` |
 
 ---
 
