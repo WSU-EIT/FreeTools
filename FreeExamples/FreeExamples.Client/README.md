@@ -30,10 +30,12 @@
 | `BlazorSortableList` | Drag-and-drop sortable lists |
 | `Blazored.LocalStorage` | Browser local storage access |
 | `FreeBlazor` | Custom Blazor component library |
+| `FluentValidation` | Model validation rules |
 | `CsvHelper` | CSV parsing/generation |
 | `HtmlAgilityPack` | HTML parsing |
 | `Humanizer` | String humanization (pluralization, casing, etc.) |
 | `Microsoft.CodeAnalysis.CSharp` | Roslyn C# compiler for code playground |
+| `Microsoft.CodeAnalysis.CSharp.Features` | Roslyn code analysis features (completions, diagnostics) |
 | `Microsoft.AspNetCore.SignalR.Client` | SignalR client for real-time features |
 | `MetadataReferenceService.BlazorWasm` | Assembly metadata resolution in WASM |
 

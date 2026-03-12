@@ -21,13 +21,13 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                         FreeTools Pipeline v2.1                             │
+│                         FreeTools Pipeline v2.2                             │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
 │  Phase 0: Start Web App                                                     │
 │  ┌─────────────────────┐                                                    │
 │  │  Target Web App     │ ◄─── FreeExamples or your project                   │
-│  │  (https://5001)     │                                                    │
+│  │  (https://7271)     │                                                    │
 │  └─────────────────────┘                                                    │
 │           │                                                                 │
 │           ▼                                                                 │
@@ -39,7 +39,7 @@
 │  Phase 2: EndpointPoker ────────────────────► snapshots/*.html              │
 │           │                                                                 │
 │           ▼                                                                 │
-│  Phase 3: BrowserSnapshot (v2.1) ───────────► snapshots/*.png               │
+│  Phase 3: BrowserSnapshot (v3.0) ───────────► snapshots/*.png               │
 │           │                                   snapshots/*/metadata.json     │
 │           ▼                                                                 │
 │  Phase 4: WorkspaceReporter (v2.0) ─────────► {Project}-Report.md           │
@@ -101,21 +101,19 @@ Options:
 
 ### Change Target Project
 
-Edit `Program.cs` to point to a different project:
+Use the `--target` flag to analyze a different sibling project folder:
 
-```csharp
-// Change this line:
-var targetProjectRoot = Path.GetFullPath(Path.Combine(toolsRoot, "..", "FreeCRM-main"));
-
-// To your project:
-var targetProjectRoot = Path.GetFullPath(Path.Combine(toolsRoot, "..", "MyProject"));
+```bash
+dotnet run -- --target YourProjectName
 ```
 
-Also update the project reference in `.csproj`:
+The target is resolved as a sibling folder next to `FreeTools/` in the repo root. Also add a project reference in `.csproj`:
 
 ```xml
-<ProjectReference Include="..\..\MyProject\MyProject.csproj" />
+<ProjectReference Include="..\..\YourProjectName\YourProjectName.csproj" />
 ```
+
+And update the `AddProject<>` call in `Program.cs` to register the web app.
 
 ### Environment Variables
 
@@ -126,8 +124,9 @@ The AppHost sets these for each tool:
 | EndpointMapper | args: `[targetRoot, pagesCsv]` |
 | WorkspaceInventory | args: `[targetRoot, inventoryCsv]` |
 | EndpointPoker | `BASE_URL`, `CSV_PATH`, `OUTPUT_DIR`, `MAX_THREADS`, `START_DELAY_MS` |
-| BrowserSnapshot | `BASE_URL`, `CSV_PATH`, `OUTPUT_DIR`, `SCREENSHOT_BROWSER`, `MAX_THREADS` |
-| WorkspaceReporter | `REPO_ROOT`, `OUTPUT_PATH`, `WORKSPACE_CSV`, `PAGES_CSV`, `SNAPSHOTS_DIR` |
+| BrowserSnapshot | `BASE_URL`, `CSV_PATH`, `OUTPUT_DIR`, `SCREENSHOT_BROWSER`, `MAX_THREADS`, `TENANT_CODE` |
+| AccessibilityScanner | `BASE_URL`, `CSV_PATH`, `OUTPUT_DIR`, `TENANT_CODE`, `START_DELAY_MS`, `EXTRA_PAGES` |
+| WorkspaceReporter | `REPO_ROOT`, `OUTPUT_PATH`, `WORKSPACE_CSV`, `PAGES_CSV`, `SNAPSHOTS_DIR`, `TARGET_PROJECT` |
 
 ---
 
@@ -140,13 +139,18 @@ Docs/runs/FreeExamples/main/latest/
 ├── pages.csv                    # All Blazor routes
 ├── workspace-inventory.csv      # File inventory with metrics
 ├── snapshots/
-│   ├── /
+│   ├── root/
 │   │   ├── default.html        # HTTP response
-│   │   └── default.png         # Screenshot
+│   │   ├── default.png         # Screenshot (unauthenticated)
+│   │   ├── logged-in.png       # Screenshot (authenticated)
+│   │   └── metadata.json       # Capture metadata
 │   ├── Account/
 │   │   └── Login/
 │   │       ├── default.html
-│   │       └── default.png
+│   │       ├── default.png
+│   │       └── metadata.json
+│   ├── a11y/                   # Accessibility scanner output
+│   │   └── ...
 │   └── ...
 └── FreeExamples-Report.md       # Summary report
 ```
@@ -168,9 +172,9 @@ Docs/runs/FreeExamples/main/latest/
 
 ### Adding a New Target Project
 
-1. Add project reference to `.csproj`
-2. Update `targetProjectRoot` in `Program.cs`
-3. Update the `AddProject<>` call for the web app
+1. Add the project reference to `FreeTools.AppHost.csproj`
+2. Run with `--target YourProjectName` (resolves as a sibling folder to `FreeTools/`)
+3. Update the `AddProject<>` call in `Program.cs` for the web app
 
 ### Changing Tool Order
 

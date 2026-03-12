@@ -42,6 +42,7 @@ dotnet run
 | **L** | Lookup existing versions on NuGet.org |
 | **V** | Change version number |
 | **D** | Toggle DRY RUN mode |
+| **0** | Exit |
 
 ### CLI Version Override
 

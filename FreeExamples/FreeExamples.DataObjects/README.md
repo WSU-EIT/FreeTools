@@ -27,7 +27,7 @@
 
 ## Design Notes
 
-This project has **no dependency** on EF Core, ASP.NET Core, or Blazor — it contains only plain C# classes that can be referenced from any layer. Both the server (`FreeExamples`) and client (`FreeExamples.Client`) reference this project for shared type definitions.
+This project contains plain C# classes shared between the server and client layers. It references `FreeExamples.Plugins` for plugin interface types and `System.Runtime.Caching` for in-memory caching. Both the server (`FreeExamples`) and client (`FreeExamples.Client`) reference this project for shared type definitions.
 
 ---
 
