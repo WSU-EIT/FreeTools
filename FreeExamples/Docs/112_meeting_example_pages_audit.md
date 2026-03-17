@@ -6,7 +6,7 @@
 > **Audience:** CTO, devs, contributors.  
 > **Predicted Outcome:** Identify any stubbed, placeholder, or incomplete example pages.  
 > **Actual Outcome:** ✅ All 74 pages fully implemented. One minor polish gap found and fixed.  
-> **Resolution:** Fix implemented in SampleItemsV1. Proposal doc created for 10 new categories.
+> **Resolution:** Fix implemented in SampleItemsV1. Proposal doc created for 10 new categories. Storage architecture decided (doc 113).
 
 ---
 
@@ -129,6 +129,12 @@ Created `ProposedExamplePages.md` with 10 new entity-driven categories. Each fol
 | 10 | Employee Onboarding | Checklist completion | Multi-party task tracking |
 
 **Full details:** See `ProposedExamplePages.md`
+
+### Storage Decision
+
+All new entity types will use a **generic JSON envelope store** — no EF migrations, no new database tables. Each entity is a typed C# class that serializes into a `JsonRecord` envelope with version metadata. One shared `ConcurrentDictionary` holds everything.
+
+**Full design:** See [113_decision_json_record_store.md](113_decision_json_record_store.md)
 
 ### Decision Needed
 

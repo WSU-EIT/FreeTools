@@ -1,6 +1,6 @@
 ﻿# Proposed Example Page Categories
 
-> 10 new entity-driven example categories, each with its own data object, CRUD endpoints, and multiple page variants — following the same `SampleItems` pattern but covering **different real-world university scenarios** with **different field types, form patterns, and UI layouts**.
+> 10 new entity-driven example categories — half are **Jira-like project management features** (hierarchical projects, tickets, boards, sprints, backlogs) and half are **domain-specific workflows** (work orders, budgets, etc.). Each category still serves as a reusable starting-point example with its own data object, CRUD endpoints, and multiple page variants.
 
 ---
 
@@ -14,117 +14,249 @@
 | Charts & Viz | Charts + V1–V5, NetworkGraph + V1–V2 | Bar, line, pie, radar, org chart, dependency map |
 | Code & Real-Time | CodeEditor + V1–V5, Playground, SignalR + V1–V5, Timer + V1–V5, Git Browser, API Keys | Monaco, real-time push, countdown/polling |
 
-**What's missing:** More entity types with forms that collect information, store it in the database, and transform it later. Different data shapes, different form complexity levels, different workflow patterns — things someone at a university could copy and adapt for real projects.
+### What's Missing
+
+The existing KanbanBoard drags SampleItems between status columns — it demonstrates the **drag-and-drop pattern** but doesn't model real project management. There's no concept of:
+- Projects that contain sub-projects that contain tickets
+- Sprints with start/end dates scoping which tickets are active
+- A backlog you groom and pull from
+- Ticket types (bug vs. story vs. task) with different workflows
+- Assignment, story points, or capacity planning
+- Timeline/roadmap views across projects
+
+The existing pages also lack **domain-specific entity examples** — forms someone could copy for facilities work orders, budget approvals, or equipment lending.
 
 ---
 
-## Proposed Categories
+## Design Philosophy
 
-### 1. Work Orders (Facilities Maintenance)
+Categories 1–5 build a **lightweight Jira-like system** — each category is a distinct feature area with its own entity, but they share a common project/ticket data model. Categories 6–10 are **standalone domain workflows** that showcase form patterns the Jira categories don't cover (cascading dropdowns, multi-line-item forms, dynamic form rendering, etc.).
 
-**Why it's different:** Status-machine workflow with assignment. Every university has a facilities team — "the toilet on floor 3 is broken" needs to become a tracked, assigned, completed record. Introduces a **multi-party workflow** (requester → dispatcher → technician → closer) that SampleItems doesn't have.
+Together they give someone 10 genuinely different starting points to copy from.
+
+---
+
+## Categories 1–5: Project Management (Jira-Like)
+
+### 1. Projects & Hierarchy
+
+**What it is:** The container everything else lives in. A project can have sub-projects, and sub-projects can have sub-sub-projects — unlimited nesting. This is how you break "Website Redesign" into "Frontend," "Backend," "Database," then break "Frontend" into "Navigation," "Forms," "Dashboard."
+
+**Why it's a good example:** Demonstrates **recursive/hierarchical data** — a pattern that comes up constantly (org charts, folder structures, category trees, menu systems) but that SampleItems doesn't touch. The tree view component alone is worth having.
+
+**Data shape:**
+- `ProjectId` (Guid), `TenantId` (Guid)
+- `ParentProjectId` (Guid? — null = top-level, set = nested under parent)
+- `Name` (string), `Description` (string?)
+- `ProjectKey` (string — short prefix like "WEB", "HR", "FAC" — used in ticket numbers)
+- `LeadName` (string), `LeadEmail` (string?)
+- `Department` (string?)
+- `Status` (enum: Planning, Active, OnHold, Completed, Archived)
+- `StartDate` (DateTime?), `TargetEndDate` (DateTime?)
+- `Color` (string? — hex color for board/timeline display)
+- `SortOrder` (int — ordering among siblings)
+- Audit fields (Added, LastModified, Deleted, etc.)
+
+**Computed/display fields:**
+- `Depth` (int — 0 = top-level, 1 = sub-project, etc.)
+- `FullPath` (string — "Website Redesign → Frontend → Navigation")
+- `TicketCount` (int — total tickets in this project + descendants)
+- `OpenTicketCount` (int)
+- `CompletionPercentage` (int — closed tickets / total tickets across descendants)
+
+**Page variants:**
+- **Projects** — Main list: tree view showing hierarchy with expand/collapse, status badges, ticket count per node, progress bars, drag-to-reorder siblings
+- **V1: Project Tree** — Full interactive tree: expand/collapse all, indent levels visually, click node to see details in side panel, breadcrumb trail showing "Home → Web Redesign → Frontend → Nav"
+- **V2: Project Form** — Create/edit: name, key, description, parent selector (dropdown showing indented tree), lead assignment, date range, color picker. Changing parent moves the entire subtree
+- **V3: Project Cards** — Top-level projects as dashboard cards: name, lead, status badge, progress donut, open ticket count, nested sub-project count. Click to drill in
+- **V4: Project Comparison** — Side-by-side: select 2–3 projects, compare ticket velocity, completion %, assignment distribution, timeline overlap
+
+**Bootstrap patterns showcased:** Tree view with expand/collapse, breadcrumb drill-down, color picker, nested dropdown selectors, progress donuts, drag-to-reorder
+
+---
+
+### 2. Tickets
+
+**What it is:** The core work item — bugs, stories, tasks, epics. Every ticket belongs to a project, has a type and status, can be assigned to someone, estimated with story points, labeled, and linked to other tickets. This is the Jira "issue" equivalent.
+
+**Why it's a good example:** Demonstrates **complex multi-field forms** with rich enums, markdown descriptions, linked records, and a status workflow that varies by ticket type. The edit form alone has 15+ fields across multiple sections — the most complex form in the entire example suite.
+
+**Data shape:**
+- `TicketId` (Guid), `TenantId` (Guid)
+- `ProjectId` (Guid — FK to Projects)
+- `TicketNumber` (string — auto-generated: "{ProjectKey}-{sequence}" like "WEB-42")
+- `Title` (string), `Description` (string? — markdown-enabled)
+- `TicketType` (enum: Epic, Story, Task, Bug, Improvement, SubTask)
+- `Status` (enum: Backlog, ToDo, InProgress, InReview, Testing, Done, Closed, Wontfix)
+- `Priority` (enum: Critical, High, Medium, Low, Trivial)
+- `AssignedTo` (string?), `ReporterName` (string)
+- `StoryPoints` (int? — 1, 2, 3, 5, 8, 13, 21)
+- `Labels` (string? — comma-separated: "frontend,urgent,accessibility")
+- `SprintId` (Guid? — null = backlog, set = in a sprint)
+- `ParentTicketId` (Guid? — for sub-tasks under a story/epic)
+- `DueDate` (DateTime?)
+- `StartedDate` (DateTime?), `CompletedDate` (DateTime?)
+- `SortOrder` (int — ordering within a column/sprint)
+- Audit fields
+
+**Comment sub-record:**
+- `CommentId`, `TicketId`, `AuthorName`, `Body` (string — markdown), `IsInternal` (bool), `CreatedDate`, `EditedDate`
+
+**Page variants:**
+- **Tickets** — Main CRUD table: project filter, status filter, type filter, priority filter, assignee filter, label filter. Sortable by priority, date, story points. Keyword search across title + description. PagedRecordset with server-side pagination
+- **V1: Ticket Form** — Full create/edit form: type selector (icon per type), title, markdown description with preview toggle, project dropdown (shows tree), parent ticket selector (for sub-tasks), priority radio with color indicators, story point fibonacci selector (button group: 1/2/3/5/8/13/21), assignee dropdown, labels as tag input (type to add, x to remove), due date picker, sprint dropdown. Status shown as a step indicator across the top
+- **V2: Ticket Detail** — Read view + activity: ticket header (number, type icon, status badge, priority), description rendered as markdown, metadata sidebar (assignee, reporter, sprint, points, labels, dates), linked tickets section, comments thread with markdown support, activity log (status changes, reassignments, edits with timestamps)
+- **V3: Quick Create** — Lightweight modal/offcanvas: just title + type + project + priority. Creates ticket in Backlog status. Useful from board views where you want to quickly add without leaving the page
+- **V4: Bulk Edit** — Multi-select table: checkbox column, select multiple tickets, bulk assign, bulk change priority, bulk move to sprint, bulk add label. Shows count of selected and preview of changes before applying
+
+**Bootstrap patterns showcased:** Markdown preview toggle, Fibonacci button group selector, tag input for labels, step indicator for status, activity timeline, offcanvas quick-create, bulk select with action bar
+
+---
+
+### 3. Board Views
+
+**What it is:** Kanban and Scrum boards — the visual heart of project management. Tickets shown as cards in columns by status, with drag-and-drop to move between columns. Can be scoped to a sprint or show all work. Swimlanes group cards by assignee, priority, or ticket type.
+
+**Why it's a good example:** The existing KanbanBoard demonstrates drag-and-drop with SampleItems. This takes it further with **configurable columns**, **swimlanes**, **WIP limits**, and **board filtering** — patterns needed anytime you build a workflow visualization. The board configuration form itself is a good example of a settings UI.
+
+**Data shape (board configuration — persisted per user/project):**
+- `BoardConfigId` (Guid), `TenantId` (Guid)
+- `ProjectId` (Guid — which project this board is for)
+- `BoardName` (string — e.g. "Dev Board", "QA Board")
+- `BoardType` (enum: Kanban, Sprint)
+- `ColumnConfig` (string — JSON: which statuses map to which columns, column order)
+- `SwimlaneField` (string? — null = no swimlanes, "assignee" / "priority" / "type")
+- `WipLimits` (string? — JSON: max cards per column, e.g. `{"InProgress": 5, "InReview": 3}`)
+- `FilterPreset` (string? — JSON: default filters applied to this board)
+- `CreatedBy` (string)
+- Audit fields
+
+**Page variants:**
+- **Board Views** — Default Kanban board for selected project: columns by status, ticket cards showing type icon + number + title + assignee avatar + priority dot + story points badge. Drag card to change status. Header shows project name + sprint selector (if sprint board) + filter bar
+- **V1: Kanban Board** — Full kanban: columns for each status, cards with condensed info, drag between columns saves status immediately, WIP limit warnings (column header turns red when over limit), collapse/expand columns, card count per column
+- **V2: Sprint Board** — Same column layout but scoped to a single sprint. Sprint selector dropdown in header. "Backlog" column on the left for unplanned items that can be pulled in. Sprint goal displayed at top. Burndown mini-chart in corner
+- **V3: Swimlane Board** — Board with horizontal swimlanes: toggle between grouping by assignee (see each person's cards across statuses), by priority (Critical lane at top), or by ticket type (Bugs vs Stories vs Tasks). Collapse individual swimlanes
+- **V4: Board Settings** — Configuration form: select which statuses become columns and in what order, set WIP limits per column, choose default swimlane grouping, set default filters, choose card display density (compact/normal/detailed), save as named board configuration
+
+**Bootstrap patterns showcased:** Drag-and-drop columns with persistence, WIP limit badges, swimlane horizontal sections, collapsible lanes, board configuration form with sortable column list, density toggle (compact/normal)
+
+---
+
+### 4. Sprint Planning
+
+**What it is:** Sprint lifecycle management — create a sprint, set dates, drag tickets from backlog into the sprint, track capacity, start the sprint, then complete it (moving unfinished tickets to the next sprint or back to backlog). This is the planning ceremony in a UI.
+
+**Why it's a good example:** Demonstrates **time-boxed container management** — a parent entity (sprint) that temporarily "owns" child entities (tickets) for a duration. Also shows **capacity planning** (how much work can the team handle) and **velocity tracking** (how much did they actually finish). These patterns apply to any time-boxed process (semesters, fiscal quarters, event planning phases).
+
+**Data shape:**
+- `SprintId` (Guid), `TenantId` (Guid)
+- `ProjectId` (Guid — FK to Projects)
+- `Name` (string — e.g. "Sprint 14", "June 2025")
+- `Goal` (string? — one-sentence sprint objective)
+- `StartDate` (DateTime?), `EndDate` (DateTime?)
+- `Status` (enum: Planning, Active, Completed, Cancelled)
+- `CapacityPoints` (int? — team's estimated capacity in story points)
+- Audit fields
+
+**Computed/display fields:**
+- `PlannedPoints` (int — sum of story points for tickets in this sprint)
+- `CompletedPoints` (int — sum of points for Done/Closed tickets)
+- `RemainingPoints` (int — planned minus completed)
+- `TicketCount` (int), `CompletedTicketCount` (int)
+- `DaysRemaining` (int — countdown from today to EndDate)
+- `Velocity` (decimal — historical average completed points per sprint)
+
+**Page variants:**
+- **Sprint Planning** — Sprint list for a project: current/upcoming/past tabs, name, date range, goal, planned vs. capacity gauge, completion %, status badge. Create new sprint button
+- **V1: Planning View** — Split panel: left = backlog (tickets not in any sprint, ordered by priority), right = current sprint. Drag tickets from backlog to sprint. Running total of story points vs. capacity. Warning when over capacity. Quick-estimate: click a ticket's story points to change inline
+- **V2: Active Sprint** — Dashboard for the in-progress sprint: sprint goal at top, days remaining countdown, burndown chart (ideal line vs. actual), ticket status breakdown (pie: backlog/in-progress/done), list of committed tickets with status badges, "Complete Sprint" button
+- **V3: Sprint Retrospective** — Completed sprint summary: goal achieved? (yes/no), planned vs. delivered points, velocity trend (line chart of last 5–10 sprints), carried-over tickets list, "what went well / what didn't / action items" simple form
+- **V4: Velocity Report** — Cross-sprint analytics: velocity trend chart, average/median/best/worst sprints, points committed vs. delivered per sprint (grouped bar chart), scope change tracking (tickets added mid-sprint), team-level velocity comparison
+
+**Bootstrap patterns showcased:** Split-panel drag-to-assign, capacity gauge with warning threshold, burndown chart, countdown badges, velocity trend lines, sprint comparison grouped bars
+
+---
+
+### 5. Backlog & Grooming
+
+**What it is:** The prioritized queue of all work not yet in a sprint. Drag to reorder priority, inline-edit fields without opening the full form, bulk-select and assign/label/move, save filter views. This is where the team grooms and refines upcoming work.
+
+**Why it's a good example:** Demonstrates **sortable/reorderable lists** with persistence, **inline editing** (click a cell to edit without navigating away), and **bulk operations** with a floating action bar. These patterns apply anywhere you have a prioritized queue (support ticket triage, application review, content publishing pipelines).
+
+**Data shape:**
+This category doesn't have its own entity — it's a **view layer** over Tickets, filtered to `SprintId == null` (not in any sprint). The "data" it manages is:
+- Ticket sort order in the backlog (`SortOrder` field on Ticket)
+- Saved filter/view configurations (could be in-memory or persisted)
+
+**Saved View (optional persistence):**
+- `SavedViewId` (Guid), `TenantId` (Guid)
+- `Name` (string — e.g. "My High-Priority Bugs", "Unestimated Stories")
+- `ProjectId` (Guid?)
+- `FilterJson` (string — serialized filter criteria)
+- `SortJson` (string — serialized sort rules)
+- `GroupByField` (string? — "type", "priority", "assignee", "label")
+- `CreatedBy` (string)
+
+**Page variants:**
+- **Backlog** — Full prioritized list: tickets ordered by SortOrder, drag handle to reorder, columns for type icon, ticket number, title, priority, story points, assignee, labels. Inline-click-to-edit on priority, points, and assignee. Filter bar across top
+- **V1: Grooming View** — Split panel: left = backlog list with condensed rows, right = selected ticket detail panel (full description, comments, linked tickets). Click a row on the left to see detail on the right. Add/update story points from the detail panel. Mark as "refined" (ready for sprint)
+- **V2: Bulk Operations** — Checkbox column for multi-select, floating action bar appears when ≥1 selected: "Assign to..." dropdown, "Set Priority..." dropdown, "Add Label..." input, "Move to Sprint..." dropdown, "Delete" with confirmation. Shows count selected. Select-all checkbox in header
+- **V3: Grouped Backlog** — Same ticket data but grouped: toggle between group-by-type (Epics with their stories nested underneath), group-by-priority (Critical section at top), group-by-assignee (unassigned section highlighted), group-by-label. Collapse/expand groups, ticket count per group
+- **V4: Saved Views** — Manage saved filters: create a filter (type = Bug AND priority ≥ High AND assignee = unassigned), save with a name, see list of saved views as tabs across the top. Click a tab to apply that filter. Edit/delete saved views. "Share with team" toggle
+
+**Bootstrap patterns showcased:** Drag-to-reorder with handle icons, inline click-to-edit cells, floating multi-select action bar, split-panel grooming, collapsible group headers, saved filter tabs
+
+---
+
+## Categories 6–10: Domain Workflows
+
+### 6. Work Orders (Facilities Maintenance)
+
+**What it is:** "The toilet on floor 3 is broken" → tracked, assigned, completed. Every university has a facilities team processing these. This is a domain-specific ticket type with its own workflow, distinct from project management tickets.
+
+**Why it's a good example:** Demonstrates **cascading dependent dropdowns** (Building → Floor → Room), a **multi-party status workflow** (requester → dispatcher → technician → closer), and **location-based data** — patterns that don't appear in the Jira categories. Also shows how to build a domain-specific system that could optionally integrate with the project management tools.
 
 **Data shape:**
 - `WorkOrderId` (Guid), `TenantId` (Guid)
 - `Title` (string), `Description` (string, multiline)
-- `Building` (string — dropdown), `Floor` (string), `RoomNumber` (string)
+- `Building` (string — dropdown), `Floor` (string — dependent on Building), `RoomNumber` (string — dependent on Floor)
 - `Category` (enum: Plumbing, Electrical, HVAC, Custodial, Grounds, Locksmith, Other)
 - `Urgency` (enum: Low, Normal, High, Emergency)
 - `Status` (enum: Submitted → Assigned → InProgress → OnHold → Completed → Closed)
-- `AssignedTo` (string — worker name/team)
-- `RequestedBy` (string), `RequestedDate` (DateTime)
+- `AssignedTo` (string?), `AssignedTeam` (string?)
+- `RequestedBy` (string), `RequestedByEmail` (string), `RequestedDate` (DateTime)
 - `CompletedDate` (DateTime?), `CompletionNotes` (string?)
 - `EstimatedHours` (decimal?), `ActualHours` (decimal?)
-- Audit fields (Added, LastModified, Deleted, etc.)
-
-**Page variants:**
-- **Work Orders** — Main CRUD table with status/urgency/building filters, sortable columns
-- **V1: Submission Form** — Public-facing form with building/floor/room cascading dropdowns, photo attachment, urgency selector with color-coded descriptions
-- **V2: Dispatch Board** — Kanban-style board grouped by status, drag to assign/advance, worker assignment dropdown per card
-- **V3: Technician View** — Mobile-friendly card list filtered to "my assignments," swipe-to-complete, timer for hours tracking
-- **V4: Metrics Dashboard** — Avg time-to-completion by category, open vs. closed trends, busiest buildings chart, overdue count
-
-**Bootstrap patterns showcased:** Cascading dropdowns, status badge pipeline, responsive card actions, color-coded urgency indicators
-
----
-
-### 2. Event Registration
-
-**Why it's different:** Date/time-heavy with capacity management. Introduces **RSVP/attendance tracking** — a record that references another record. The core challenge is "how many seats are left" and "who actually showed up," which is a different data transformation than simple CRUD.
-
-**Data shape:**
-- `EventId` (Guid), `TenantId` (Guid)
-- `Title` (string), `Description` (string, multiline/rich text)
-- `EventType` (enum: Workshop, Seminar, Social, Meeting, Training, Conference)
-- `Location` (string), `RoomCapacity` (int)
-- `StartDate` (DateTime), `EndDate` (DateTime)
-- `IsRecurring` (bool), `RecurrencePattern` (string?)
-- `RegistrationDeadline` (DateTime?)
-- `MaxAttendees` (int), `CurrentRegistrations` (int — computed)
-- `RequiresApproval` (bool), `IsPublic` (bool)
-- `ContactName` (string), `ContactEmail` (string)
-- `Status` (enum: Draft, Published, Full, InProgress, Completed, Cancelled)
 - Audit fields
 
-**Attendee sub-record:**
-- `AttendeeId`, `EventId`, `Name`, `Email`, `Department`, `DietaryNeeds` (string?), `AccessibilityNeeds` (string?), `Status` (Registered, Waitlisted, Confirmed, Attended, NoShow, Cancelled), `RegisteredDate`, `CheckedInDate`
-
 **Page variants:**
-- **Event Registration** — Main list with date range filter, type filter, status badges, upcoming/past toggle
-- **V1: Event Detail & RSVP** — Public event page with countdown to start, capacity progress bar, RSVP form with dietary/accessibility fields, waitlist indicator
-- **V2: Calendar View** — Month/week/day grid showing events as colored blocks, click to expand detail, filter by event type
-- **V3: Attendee Manager** — Table of registrants per event, check-in toggle, bulk email, export to CSV, attendance rate gauge
-- **V4: Event Builder** — Multi-section form to create/edit event: basics → schedule → capacity → registration options → notifications, with live preview card
+- **Work Orders** — Main CRUD table: status/urgency/building/category filters, sortable columns, SLA-style urgency color coding
+- **V1: Submit Request** — Public-facing form: building dropdown → floor cascading dropdown → room cascading dropdown, category selector with icons, urgency with color-coded descriptions ("Emergency: safety hazard, response within 1 hour"), description textarea, optional photo upload
+- **V2: Dispatch Board** — Dispatcher view: Kanban columns by status, cards show building/room/category/urgency, drag to assign (drop on "Assigned" prompts worker selection modal), unassigned queue highlighted, urgency badges
+- **V3: Technician View** — Mobile-friendly card list filtered to "my assignments": current jobs with tap-to-update-status, hours timer (start/stop), completion notes form, photo of completed work, tap to mark complete
+- **V4: Facilities Dashboard** — Metrics: avg time-to-completion by category, open vs. closed trend line, busiest buildings bar chart, overdue count with drill-down, worker utilization (assigned hours vs. capacity)
 
-**Bootstrap patterns showcased:** Date/time pickers, progress bars for capacity, calendar grid layout, multi-section accordion forms, countdown components
+**Bootstrap patterns showcased:** Cascading dependent dropdowns (3 levels), urgency color coding, mobile-optimized card actions, start/stop timer, completion photo capture
 
 ---
 
-### 3. Equipment Checkout
+### 7. Budget & Approvals
 
-**Why it's different:** Lending/borrowing lifecycle with due dates and overdue tracking. Introduces a **transaction log** pattern — the same item gets checked out and returned repeatedly, building history. The "is it available right now?" question requires querying current state from transaction history.
+**What it is:** Purchase requests with line items, calculated totals, and a multi-step approval chain. "I need to buy 10 laptops for the new lab" → line items with quantities and prices → supervisor approves → finance approves → purchase order issued.
 
-**Data shape:**
-- `EquipmentId` (Guid), `TenantId` (Guid)
-- `Name` (string), `Description` (string?)
-- `Category` (enum: Laptop, Projector, Camera, Microphone, Tablet, Hotspot, Adapter, Other)
-- `SerialNumber` (string?), `AssetTag` (string)
-- `Location` (string — where it lives when not checked out)
-- `Condition` (enum: New, Good, Fair, NeedsRepair, Retired)
-- `PurchaseDate` (DateTime?), `PurchasePrice` (decimal?)
-- `IsAvailable` (bool — computed from checkout history)
-- `PhotoUrl` (string?)
-- Audit fields
-
-**Checkout sub-record:**
-- `CheckoutId`, `EquipmentId`, `BorrowerName`, `BorrowerEmail`, `BorrowerDepartment`, `CheckoutDate` (DateTime), `DueDate` (DateTime), `ReturnDate` (DateTime?), `ConditionAtCheckout` (enum), `ConditionAtReturn` (enum?), `Notes` (string?)
-
-**Page variants:**
-- **Equipment Checkout** — Main inventory table with availability filter (Available/Checked Out/In Repair/Retired), category filter, sortable columns
-- **V1: Checkout Form** — Borrower lookup (autocomplete by name/email), equipment selector with availability indicator, date picker for due date, condition assessment radio buttons, terms acknowledgment checkbox
-- **V2: My Checkouts** — Borrower's view: current checkouts with due-date countdown badges (green/yellow/red), return button, checkout history accordion
-- **V3: Overdue Report** — Filtered list of overdue items, days overdue calculated column, borrower contact info, bulk reminder email, sorted by most overdue first
-- **V4: Asset Detail** — Single equipment page: photo, specs, full checkout history timeline, condition change log, maintenance notes
-
-**Bootstrap patterns showcased:** Availability badges, countdown-to-due-date indicators, condition radio button groups, before/after comparison, history timeline
-
----
-
-### 4. Budget Requests (Purchase/Procurement)
-
-**Why it's different:** Multi-line-item forms with calculated totals. Introduces **dynamic row add/remove** inside a form — a parent record with N child line items. Also introduces an **approval chain** (requestor → supervisor → finance) which is a different workflow than the single-status-field approach.
+**Why it's a good example:** Demonstrates **dynamic row add/remove** inside a form (line items), **auto-calculated fields** (line totals, grand total), and a **multi-step approval workflow** with different roles at each step. None of the Jira categories or other examples show a form where you add/remove child rows with running calculations.
 
 **Data shape:**
 - `BudgetRequestId` (Guid), `TenantId` (Guid)
 - `Title` (string), `Justification` (string, multiline)
-- `Department` (string), `FiscalYear` (string — e.g. "FY2025")
+- `Department` (string), `FiscalYear` (string — "FY2025")
+- `ProjectId` (Guid? — optional link to a Project from category 1)
 - `RequestedBy` (string), `RequestedDate` (DateTime)
 - `Status` (enum: Draft, Submitted, SupervisorApproved, FinanceReview, Approved, Denied, Completed)
 - `TotalAmount` (decimal — computed sum of line items)
-- `ApprovedAmount` (decimal?)
-- `SupervisorName` (string?), `SupervisorApprovedDate` (DateTime?)
-- `FinanceReviewerName` (string?), `FinanceDecisionDate` (DateTime?)
-- `DenialReason` (string?)
+- `ApprovedAmount` (decimal?), `DenialReason` (string?)
+- `SupervisorName` (string?), `SupervisorDate` (DateTime?)
+- `FinanceReviewerName` (string?), `FinanceDate` (DateTime?)
 - `AccountCode` (string — GL account)
 - Audit fields
 
@@ -132,176 +264,86 @@
 - `LineItemId`, `BudgetRequestId`, `Description` (string), `Vendor` (string?), `Quantity` (int), `UnitPrice` (decimal), `LineTotal` (decimal — computed), `Category` (enum: Supplies, Equipment, Software, Travel, Services, Other), `Notes` (string?)
 
 **Page variants:**
-- **Budget Requests** — Main list with fiscal year filter, status filter, department filter, total column with currency formatting, status badge pipeline
-- **V1: Request Builder** — Multi-line item form: add/remove rows, auto-calculated line totals and grand total, vendor autocomplete, GL account picker, justification textarea, running total in sticky footer
-- **V2: Approval Queue** — Supervisor/finance view: pending requests sorted by date, expandable to see line items, approve/deny buttons with comment modal, batch approve checkbox
-- **V3: Budget Overview** — Department-level summary: requested vs. approved vs. spent, bar chart by category, fiscal year comparison, burn rate gauge
-- **V4: Request Detail** — Full view of a single request: line item table, approval timeline (who approved when with comments), attached receipts, print-friendly layout
+- **Budget Requests** — Main list: fiscal year filter, status filter, department filter, total column with currency formatting, approval status step indicator per row
+- **V1: Request Builder** — Multi-line item form: add row button, remove row button per line, description + vendor + quantity + unit price fields per row, auto-calculated line total, running grand total in sticky footer. Justification textarea, GL code picker, submit for approval
+- **V2: Approval Queue** — Supervisor/finance view: pending requests sorted by date, expand row to see line items inline, approve/deny buttons with comment modal, batch approve with checkboxes, "approved X of Y" counter
+- **V3: Budget Overview** — Department dashboard: requested vs. approved vs. spent (stacked bar chart), by-category breakdown, fiscal year comparison, burn rate gauge, remaining budget
+- **V4: Request Detail** — Print-friendly full view: header with request info, line item table, approval timeline (who approved when with comments), attached receipts, total with approved amount comparison
 
-**Bootstrap patterns showcased:** Dynamic row add/remove, calculated input fields, currency formatting, approval step indicator, sticky footer totals, print stylesheet
+**Bootstrap patterns showcased:** Dynamic row add/remove, auto-calculated fields, currency formatting, sticky footer totals, approval step indicator, expandable inline detail, print-friendly layout
 
 ---
 
-### 5. Room Reservations
+### 8. Equipment Checkout
 
-**Why it's different:** Time-slot-based booking with conflict detection. Introduces a **calendar-driven UI** where the primary interaction isn't a form but clicking on a time grid. The key data challenge is "does this overlap with an existing booking?" — a constraint validation that goes beyond simple field-level validation.
+**What it is:** Library/lab equipment lending — laptops, projectors, cameras. Check out, track due dates, check back in, track condition. "Is this projector available right now?" requires looking at the current checkout state.
+
+**Why it's a good example:** Demonstrates a **transaction log pattern** — the same equipment record accumulates checkout/return transactions over time, and current availability is derived from the latest transaction. Also shows **condition tracking** (before/after comparison) and **due date countdown** patterns. This is fundamentally different from the project management categories where records have a single status.
 
 **Data shape:**
-- `ReservationId` (Guid), `TenantId` (Guid)
-- `RoomId` (Guid — FK), `RoomName` (string)
-- `Title` (string — what the meeting/event is for)
-- `ReservedBy` (string), `Department` (string)
-- `StartTime` (DateTime), `EndTime` (DateTime)
-- `IsRecurring` (bool), `RecurrenceRule` (string?)
-- `AttendeesCount` (int)
-- `SetupRequested` (flags/list: Projector, Whiteboard, VideoConference, Catering, Podium)
-- `Status` (enum: Confirmed, Tentative, Cancelled)
-- `Notes` (string?)
+- `EquipmentId` (Guid), `TenantId` (Guid)
+- `Name` (string), `Description` (string?)
+- `Category` (enum: Laptop, Projector, Camera, Microphone, Tablet, Hotspot, Adapter, Other)
+- `SerialNumber` (string?), `AssetTag` (string — "EQ-2025-0042")
+- `Location` (string — home location when not checked out)
+- `Condition` (enum: New, Good, Fair, NeedsRepair, Retired)
+- `PurchaseDate` (DateTime?), `PurchasePrice` (decimal?)
+- `IsAvailable` (bool — computed: true if no open checkout exists)
 - Audit fields
 
-**Room sub-record:**
-- `RoomId`, `Name`, `Building`, `Floor`, `Capacity` (int), `HasProjector` (bool), `HasVideoConference` (bool), `HasWhiteboard` (bool), `IsActive` (bool)
+**Checkout sub-record:**
+- `CheckoutId`, `EquipmentId`, `BorrowerName`, `BorrowerEmail`, `BorrowerDepartment`, `CheckoutDate` (DateTime), `DueDate` (DateTime), `ReturnDate` (DateTime?), `ConditionAtCheckout` (enum), `ConditionAtReturn` (enum?), `Notes` (string?)
 
 **Page variants:**
-- **Room Reservations** — Main list of upcoming reservations, filter by room/building/date, conflict indicators
-- **V1: Weekly Calendar** — Week-at-a-glance grid: rooms on Y-axis, hours on X-axis, reservations as colored blocks, click empty slot to book, hover for details popover
-- **V2: Booking Form** — Room finder: filter by capacity + equipment needs → available rooms list → select time slot → confirm. Live conflict check on date/time change
-- **V3: Room Directory** — All rooms as cards: photo, capacity, equipment icons, today's schedule mini-timeline, "Book Now" button
-- **V4: My Reservations** — User's upcoming and past bookings, cancel/edit buttons, recurring series management, iCal export
+- **Equipment Checkout** — Main inventory table: availability filter (Available/Checked Out/In Repair/Retired), category filter, sortable columns, availability badge per row
+- **V1: Checkout Form** — Borrower autocomplete (name/email), equipment selector with real-time availability indicator, due date picker, condition assessment radio group, terms acknowledgment checkbox, signature capture (reusing existing Signature component)
+- **V2: My Checkouts** — Borrower's view: current checkouts with due-date countdown badges (green >3 days, yellow 1–3 days, red overdue), return button, checkout history accordion per item
+- **V3: Overdue Report** — Filtered to overdue only: days overdue calculated column (sorted most overdue first), borrower contact info, "send reminder" button per row, bulk reminder, escalation indicator (>7 days, >14 days, >30 days)
+- **V4: Asset Detail** — Single equipment page: photo placeholder, specs sidebar, full checkout history as timeline (who, when, condition before/after), current status hero badge, maintenance notes log
 
-**Bootstrap patterns showcased:** Time-slot grid, equipment checkbox/toggle group, conflict alert banners, popover detail cards, room capacity badges
+**Bootstrap patterns showcased:** Availability badges (green/red), due-date countdown (color-coded), condition radio groups, before/after comparison, escalation tier indicators, timeline history
 
 ---
 
-### 6. Course Evaluations (Surveys)
+### 9. Course Evaluations (Dynamic Surveys)
 
-**Why it's different:** Dynamic form rendering from stored question definitions. Introduces a **form builder/renderer** pattern where the form structure itself is data. The same page renders completely differently depending on which evaluation template is loaded. Aggregated results transform individual responses into statistical summaries.
+**What it is:** End-of-semester student evaluations — but the form is different for every course because the questions are stored as data. An admin defines a question template (5 Likert questions + 2 free text), attaches it to a course, students fill it out, results are aggregated into averages and distributions.
+
+**Why it's a good example:** Demonstrates **dynamic form rendering** — the page reads question definitions from the database and renders the appropriate input for each (radio buttons for Likert, textarea for free text, star widget for ratings). This "form from data" pattern is completely unique among the examples. Also demonstrates **aggregate computation** (individual responses → per-question averages) and **anonymous submission** patterns.
 
 **Data shape:**
 - `EvaluationId` (Guid), `TenantId` (Guid)
-- `Title` (string — e.g. "Fall 2025 — CS 101 — Dr. Smith")
+- `Title` (string — "Fall 2025 — CS 101 — Dr. Smith")
 - `CourseCode` (string), `CourseName` (string), `InstructorName` (string)
-- `Term` (string — e.g. "Fall 2025"), `Department` (string)
+- `Term` (string), `Department` (string)
 - `OpenDate` (DateTime), `CloseDate` (DateTime)
 - `IsAnonymous` (bool), `IsOpen` (bool — computed from dates)
 - `ResponseCount` (int), `EnrollmentCount` (int)
-- `TemplateId` (Guid — which question set to use)
+- `TemplateId` (Guid)
 - Audit fields
 
 **Question sub-record:**
-- `QuestionId`, `TemplateId`, `QuestionText` (string), `QuestionType` (enum: Likert5, Likert7, MultipleChoice, YesNo, FreeText, Rating10), `IsRequired` (bool), `DisplayOrder` (int), `Options` (string? — JSON for MC choices)
+- `QuestionId`, `TemplateId`, `QuestionText`, `QuestionType` (enum: Likert5, Likert7, MultipleChoice, YesNo, FreeText, Rating10), `IsRequired` (bool), `DisplayOrder` (int), `Options` (string? — JSON for MC choices)
 
 **Response sub-record:**
 - `ResponseId`, `EvaluationId`, `SubmittedDate`, `Answers` (list of `{ QuestionId, Value }`)
 
 **Page variants:**
-- **Course Evaluations** — Admin list: term/department filter, response rate column with progress bar, open/closed status, bulk open/close
-- **V1: Take Evaluation** — Student-facing: renders questions dynamically by type (radio buttons for Likert, textareas for free text, star rating for Rating10), progress indicator, submit with confirmation
-- **V2: Results Summary** — Instructor/admin view: per-question averages with horizontal bar charts, distribution histograms, free-text comments list, comparison to department average
-- **V3: Template Builder** — Drag-and-drop question ordering, add/remove questions, question type selector, preview rendered form, save as template
-- **V4: Response Rate Tracker** — Dashboard showing response rates by course, department rollup, reminder scheduling, completion trends over time
+- **Course Evaluations** — Admin list: term/department filter, response rate progress bar per row, open/closed badge, bulk open/close actions
+- **V1: Take Evaluation** — Student-facing: dynamically renders each question by type (radio group for Likert, textarea for free text, star rating for Rating10, checkbox group for MultipleChoice), progress bar showing "question 3 of 8", submit with confirmation
+- **V2: Results Summary** — Instructor/admin view per evaluation: per-question average with horizontal bar, distribution histogram (how many chose 1/2/3/4/5), free-text comments listed, response rate gauge, comparison to department average where applicable
+- **V3: Template Builder** — Create/edit question templates: add question (type selector + text), drag-and-drop reorder, delete question, preview how the rendered form will look, save template with name
+- **V4: Department Report** — Cross-evaluation analytics: average scores by instructor, by course, by term. Trend lines over semesters, response rate trends, lowest-rated areas flagged
 
-**Bootstrap patterns showcased:** Dynamic form rendering, star rating inputs, horizontal bar charts for Likert averages, drag-and-drop ordering, progress stepper
-
----
-
-### 7. Scholarship Applications
-
-**Why it's different:** Multi-step wizard with eligibility gating. Introduces a **wizard/stepper pattern** where Step 2 isn't even visible until Step 1 passes validation. Also introduces **review committee scoring** — multiple reviewers independently score the same application, then scores are aggregated for batch decisions.
-
-**Data shape:**
-- `ApplicationId` (Guid), `TenantId` (Guid)
-- `ScholarshipId` (Guid — which scholarship), `ScholarshipName` (string)
-- `ApplicantName` (string), `ApplicantEmail` (string), `StudentId` (string)
-- `GPA` (decimal), `Major` (string), `ClassYear` (enum: Freshman, Sophomore, Junior, Senior, Graduate)
-- `FinancialNeed` (bool), `IsFirstGeneration` (bool)
-- `EssayText` (string, multiline — 500 word max)
-- `ResumeFileId` (Guid?), `TranscriptFileId` (Guid?)
-- `ReferenceName` (string), `ReferenceEmail` (string), `ReferenceRelationship` (string)
-- `Status` (enum: InProgress, Submitted, UnderReview, Awarded, Denied, Withdrawn)
-- `SubmittedDate` (DateTime?)
-- Audit fields
-
-**Review sub-record:**
-- `ReviewId`, `ApplicationId`, `ReviewerName`, `AcademicScore` (int 1-5), `EssayScore` (int 1-5), `NeedScore` (int 1-5), `OverallScore` (int 1-5), `Comments` (string?), `Recommendation` (enum: StrongYes, Yes, Maybe, No), `ReviewedDate`
-
-**Page variants:**
-- **Scholarship Applications** — Admin list: scholarship filter, status filter, average score column, sortable by GPA/score/date
-- **V1: Application Wizard** — Multi-step form: Eligibility Check (GPA + class year gate) → Personal Info → Essay → Documents (file upload) → References → Review & Submit. Progress bar across top, step validation before advancing
-- **V2: Review Portal** — Reviewer interface: assigned applications queue, read-only view of application, scoring rubric form (1-5 per criteria), recommendation dropdown, comments, submit review
-- **V3: Committee Dashboard** — All applications with aggregated scores: avg overall, score distribution, reviewer agreement indicator, side-by-side comparison of top candidates, batch award/deny checkboxes
-- **V4: Applicant Status** — Applicant's view: application progress stepper, status updates, notification preferences, withdraw button
-
-**Bootstrap patterns showcased:** Multi-step wizard with validation gates, rubric scoring grid, side-by-side comparison layout, progress stepper, file upload integration
+**Bootstrap patterns showcased:** Dynamic form rendering by type, star rating widget, Likert radio group styling, horizontal result bars, drag-to-reorder question builder, response rate gauges
 
 ---
 
-### 8. Parking Permits
+### 10. Employee Onboarding (Checklist Tracking)
 
-**Why it's different:** Renewal-cycle entity with vehicle sub-records and violation tracking. Introduces **permit generation** (a read-only formatted output from stored data) and **violation/appeal workflow** — a record spawning child dispute records. Also shows seasonal/annual renewal patterns.
+**What it is:** New hire → checklist of tasks across multiple departments (HR files paperwork, IT provisions laptop, Facilities assigns office, Training schedules orientation). Each task is independently completable by different people. "How far along is this new hire?" = percentage of checklist completed.
 
-**Data shape:**
-- `PermitId` (Guid), `TenantId` (Guid)
-- `PermitNumber` (string — auto-generated display number like "P-2025-0042")
-- `HolderName` (string), `HolderEmail` (string), `HolderType` (enum: Student, Faculty, Staff, Visitor)
-- `LotPreference` (string — dropdown of lot names)
-- `PermitType` (enum: Annual, Semester, Monthly, Daily, ADA)
-- `VehicleMake` (string), `VehicleModel` (string), `VehicleYear` (int), `VehicleColor` (string), `LicensePlate` (string), `State` (string)
-- `StartDate` (DateTime), `EndDate` (DateTime)
-- `Fee` (decimal), `PaymentStatus` (enum: Pending, Paid, Waived, Refunded)
-- `Status` (enum: Active, Expired, Suspended, Revoked, PendingRenewal)
-- Audit fields
-
-**Violation sub-record:**
-- `ViolationId`, `PermitId`, `ViolationDate`, `ViolationType` (enum: Expired, WrongLot, NoPermit, FireLane, ADAViolation, Other), `FineAmount` (decimal), `Location` (string), `Description` (string?), `Status` (enum: Issued, Appealed, Upheld, Dismissed, Paid), `AppealText` (string?), `AppealDate` (DateTime?), `ResolutionNotes` (string?)
-
-**Page variants:**
-- **Parking Permits** — Main list: type/status/lot filters, expiration date highlighting (red if <30 days), payment status badges
-- **V1: Permit Application** — Multi-section form: holder info → vehicle info (make/model/year/color/plate) → lot selection with availability indicator → permit type with fee display → payment confirmation
-- **V2: My Permit** — Permit holder view: permit card (printable, styled like a real parking pass), vehicle info, renewal button when within 30 days of expiration, violation history
-- **V3: Violation Manager** — Enforcement view: issue new violation form, violation list with appeal status, appeal review with approve/dismiss, fine payment tracking
-- **V4: Lot Utilization** — Dashboard: permits per lot vs. capacity, revenue by permit type, violation trends, expiring-soon count, renewal rate
-
-**Bootstrap patterns showcased:** Auto-generated display numbers, printable permit card layout, expiration countdown badges, appeal workflow, lot capacity gauges
-
----
-
-### 9. Help Desk Tickets
-
-**Why it's different:** Threaded conversation with internal vs. public visibility. Introduces **cascading category/subcategory dropdowns**, **SLA timer tracking** (time elapsed since submission), and **canned response templates**. The conversation pattern is fundamentally different from simple CRUD — each ticket accumulates replies over time.
-
-**Data shape:**
-- `TicketId` (Guid), `TenantId` (Guid)
-- `TicketNumber` (string — auto-generated like "HD-2025-1234")
-- `Subject` (string), `Description` (string, multiline)
-- `Category` (enum: Hardware, Software, Network, Access, Email, Printing, Other)
-- `SubCategory` (string — dependent on Category)
-- `Priority` (enum: Low, Medium, High, Critical)
-- `Status` (enum: New, Open, AwaitingUser, AwaitingStaff, Resolved, Closed)
-- `SubmittedBy` (string), `SubmittedByEmail` (string), `Department` (string)
-- `AssignedTo` (string?), `AssignedGroup` (string?)
-- `SlaDeadline` (DateTime — computed from priority: Critical=4hrs, High=8hrs, Medium=24hrs, Low=72hrs)
-- `ResolvedDate` (DateTime?), `ClosedDate` (DateTime?)
-- `SatisfactionRating` (int? — 1-5 after resolution)
-- Audit fields
-
-**Reply sub-record:**
-- `ReplyId`, `TicketId`, `AuthorName`, `Body` (string), `IsInternal` (bool — staff-only note vs. public reply), `CreatedDate`, `Attachments` (list?)
-
-**Page variants:**
-- **Help Desk Tickets** — Main queue: status/priority/category filters, SLA countdown column (green/yellow/red), assigned-to filter, bulk assign
-- **V1: Submit Ticket** — User-facing form: category dropdown → subcategory cascading dropdown, priority selector with SLA expectation display, rich text description, file attachment, similar-tickets suggestion (knowledge base)
-- **V2: Ticket Detail** — Threaded conversation view: alternating bubbles for user vs. staff replies, internal notes in yellow background (staff only), reply box with canned response dropdown, status change buttons, SLA countdown timer in header
-- **V3: Agent Dashboard** — Support staff view: my open tickets, unassigned queue, SLA breaches highlighted, quick-reply from list, satisfaction scores
-- **V4: Reports** — Metrics: avg resolution time by category, SLA compliance %, tickets by category pie chart, satisfaction rating distribution, busiest hours heatmap
-
-**Bootstrap patterns showcased:** Cascading dependent dropdowns, chat-bubble conversation threading, internal-note highlighting, SLA countdown timers, satisfaction star rating, canned response selector
-
----
-
-### 10. Employee Onboarding
-
-**Why it's different:** Checklist/task-completion pattern with multi-party responsibility. Introduces **progress tracking across a set of required tasks** where different people are responsible for different items. The data shape is a parent record (the new hire) with N checklist items, each independently completable. Shows "percentage done" aggregation.
+**Why it's a good example:** Demonstrates **checklist/task-completion tracking** with multi-party responsibility — a pattern that applies to any process with distributed ownership (compliance audits, software releases, event planning, accreditation reviews). The **progress aggregation** ("65% complete, blocked on IT") is a different computation from anything in the Jira categories.
 
 **Data shape:**
 - `OnboardingId` (Guid), `TenantId` (Guid)
@@ -310,53 +352,105 @@
 - `SupervisorName` (string), `MentorName` (string?)
 - `EmploymentType` (enum: FullTime, PartTime, Temporary, GradAssistant, StudentWorker)
 - `Status` (enum: Pending, InProgress, Completed, Withdrawn)
-- `CompletionPercentage` (int — computed from checklist)
+- `CompletionPercentage` (int — computed)
 - `Notes` (string?)
 - Audit fields
 
 **Checklist item sub-record:**
-- `ChecklistItemId`, `OnboardingId`
-- `TaskName` (string), `Description` (string?)
+- `ChecklistItemId`, `OnboardingId`, `TaskName`, `Description` (string?)
 - `Category` (enum: HR, IT, Facilities, Department, Training, Compliance)
-- `AssignedTo` (string — who's responsible: HR, IT, Supervisor, Employee)
+- `AssignedTo` (string — who's responsible)
 - `DueDate` (DateTime?), `CompletedDate` (DateTime?)
 - `IsRequired` (bool), `IsCompleted` (bool)
-- `CompletedBy` (string?), `Notes` (string?)
-- `DisplayOrder` (int)
+- `CompletedBy` (string?), `Notes` (string?), `DisplayOrder` (int)
 
 **Page variants:**
-- **Employee Onboarding** — Main list: department filter, status filter, completion % progress bar column, start date sorting, overdue task count badge
-- **V1: Onboarding Wizard** — HR creates new onboarding: employee info → select checklist template → customize tasks → assign due dates → activate. Auto-generates standard checklist items
-- **V2: Task Tracker** — Checklist view for a single employee: grouped by category (HR / IT / Facilities / Training), checkbox to mark complete, overdue items highlighted red, overall progress bar, responsible party shown per task
-- **V3: My Onboarding** — New employee's self-service view: their personal checklist with only their tasks, document upload slots (I-9, W-4, direct deposit form, emergency contacts), training module links, mentor contact card
-- **V4: Department Overview** — Manager/HR dashboard: all active onboardings in department, completion heatmap, bottleneck identification (which category has the most overdue items), average days-to-complete
+- **Employee Onboarding** — Main list: department filter, status filter, completion % progress bar per row, overdue task count badge, start date sorting
+- **V1: Onboarding Setup** — HR creates onboarding: employee info form → select checklist template (standard set of tasks) → customize (add/remove/reorder tasks) → assign due dates → assign responsible parties → activate
+- **V2: Task Tracker** — Single-employee checklist: grouped by category (HR / IT / Facilities / Training), checkbox per task, overdue items highlighted, overall progress bar at top, responsible party shown per task, notes field per task
+- **V3: My Onboarding** — New employee's self-service: personal checklist filtered to their tasks only, document upload slots (I-9, W-4, direct deposit, emergency contact), training module links with completion checkmarks, mentor contact card, "what to bring on Day 1" section
+- **V4: Department Dashboard** — Manager/HR overview: all active onboardings, completion heatmap (rows = employees, columns = categories, cells = green/yellow/red), bottleneck identification (which category has the most overdue tasks), average days-to-complete trend
 
-**Bootstrap patterns showcased:** Checklist with progress bars, grouped task categories, completion percentage badges, document collection slots, heatmap-style overview, mentor/contact cards
+**Bootstrap patterns showcased:** Checklist with grouped categories, progress bar aggregation, completion heatmap, document upload slots, category-based grouping with collapse, mentor/contact cards
 
 ---
 
 ## Summary Grid
 
-| # | Category | Core Data Challenge | Key Form Pattern | Key UI Pattern | Unique Bootstrap Feature |
+| # | Category | Type | Core Data Pattern | Key UI Innovation | Unique Bootstrap Feature |
 |---|---|---|---|---|---|
-| 1 | Work Orders | Status workflow + assignment | Cascading location dropdowns | Dispatch kanban board | Status badge pipeline |
-| 2 | Event Registration | Date/time + capacity constraints | Multi-section event builder | Calendar grid view | Capacity progress bars |
-| 3 | Equipment Checkout | Lending lifecycle + availability | Condition assessment radios | Overdue countdown badges | Before/after comparison |
-| 4 | Budget Requests | Multi-line items + calculated totals | Dynamic row add/remove | Approval step indicator | Sticky footer totals |
-| 5 | Room Reservations | Time-slot conflicts | Equipment checkbox toggles | Weekly time grid | Conflict alert banners |
-| 6 | Course Evaluations | Dynamic form from question definitions | Rendered Likert/rating/text inputs | Distribution bar charts | Star rating inputs |
-| 7 | Scholarship Applications | Multi-step with eligibility gating | Wizard with validation gates | Rubric scoring grid | Side-by-side comparison |
-| 8 | Parking Permits | Renewal cycles + violations | Vehicle info multi-field | Printable permit card | Auto-generated display # |
-| 9 | Help Desk Tickets | Threaded conversation + SLA | Cascading category/subcategory | Chat-bubble threading | SLA countdown timer |
-| 10 | Employee Onboarding | Checklist completion tracking | Document collection slots | Grouped task progress | Completion heatmap |
+| 1 | Projects & Hierarchy | 🔧 Jira | Recursive parent-child tree | Tree view with drill-down | Nested expand/collapse + breadcrumbs |
+| 2 | Tickets | 🔧 Jira | Complex multi-field entity | 15+ field multi-section form | Fibonacci selector + tag input + markdown |
+| 3 | Board Views | 🔧 Jira | Configurable view over tickets | Kanban + swimlanes + WIP | Configurable columns + density toggle |
+| 4 | Sprint Planning | 🔧 Jira | Time-boxed container | Drag-from-backlog + burndown | Capacity gauge + velocity trend |
+| 5 | Backlog & Grooming | 🔧 Jira | Prioritized queue | Inline edit + bulk ops | Floating action bar + saved filter tabs |
+| 6 | Work Orders | 🏢 Domain | Status workflow + assignment | Cascading 3-level dropdowns | Urgency color coding + dispatch board |
+| 7 | Budget & Approvals | 🏢 Domain | Parent + N line items + totals | Dynamic row add/remove | Sticky footer totals + approval steps |
+| 8 | Equipment Checkout | 🏢 Domain | Transaction log + availability | Due-date countdown badges | Condition before/after + escalation tiers |
+| 9 | Course Evaluations | 🏢 Domain | Dynamic form from question data | Form renderer by question type | Star rating + Likert bars + drag builder |
+| 10 | Employee Onboarding | 🏢 Domain | Checklist with multi-party owners | Progress aggregation + heatmap | Category-grouped checklist + upload slots |
+
+---
+
+## How They Connect
+
+```
+┌─────────────────────────────────────────────────────┐
+│                 JIRA-LIKE SYSTEM                     │
+│                                                      │
+│  Projects ──┬── Tickets ──── Board Views             │
+│     └── Sub-Projects   │                             │
+│                        ├── Sprint Planning            │
+│                        └── Backlog & Grooming         │
+│                                                      │
+│  Optional links:                                     │
+│  - Budget Request → Project (fund a project)         │
+│  - Work Order → Ticket (escalate to dev team)        │
+└─────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────┐
+│              STANDALONE WORKFLOWS                     │
+│                                                      │
+│  Work Orders       (facilities — their own workflow) │
+│  Budget & Approvals (finance — line items + chain)   │
+│  Equipment Checkout (lending — transaction history)  │
+│  Course Evaluations (surveys — dynamic forms)        │
+│  Employee Onboarding (checklists — multi-party)      │
+└─────────────────────────────────────────────────────┘
+```
+
+Categories 1–5 share the Project and Ticket data model. Categories 6–10 are independent entities. Optionally, Budget Requests can link to a Project (funding the work), and Work Orders can generate a Ticket (when facilities needs dev work).
+
+---
 
 ## Implementation Notes
 
-Each category follows the established pattern:
-- **DataObjects:** New class in `FreeExamples.DataObjects` (like `SampleItem`)
-- **Filter DTO:** New filter class extending `Filter` (like `FilterSampleItems`)
-- **DataAccess:** New CRUD methods in `FreeExamples.DataAccess` (GetMany/SaveMany/DeleteMany)
-- **API Endpoints:** Three endpoints per entity per `copilot-instructions.md`
-- **Pages:** Hub page + V1–V4 variants, each with `ExampleNav`, `InfoTip`, `AboutSection`
-- **Seed Data:** Realistic sample records generated on first load (like existing SampleItems seed)
-- **No external dependencies:** Everything built with Bootstrap 5 + Font Awesome + vanilla Blazor
+### Storage: Generic JSON Record Store (doc 113)
+
+**No EF migrations. No new database tables.** All entities use the generic `JsonRecord` envelope store — a single in-memory `ConcurrentDictionary<Guid, JsonRecord>` shared by every entity type.
+
+Each entity is a strongly typed C# class implementing `IJsonEntity`. When saved, it's JSON-serialized into the `Contents` field of a `JsonRecord` envelope that carries metadata (`RecordType`, `SchemaVersion`, `Format`). When read, metadata is checked first (two-phase parse), then `Contents` is deserialized into the typed entity.
+
+**Schema changes are free:** Update the C# class, bump `CurrentSchemaVersion`. Old blobs with missing fields just default to null/0/false. Blobs from a future version are skipped gracefully.
+
+**Sub-records (comments, line items, checklist items) are embedded** in the parent entity's JSON — not stored as separate records. One store read = one complete entity with all its children.
+
+**Full design:** See [113_decision_json_record_store.md](Docs/113_decision_json_record_store.md)
+
+### File Naming Convention
+
+Each category follows the established patterns:
+- **DataObjects:** `FreeExamples.App.DataObjects.{Category}.cs` — entity class implementing `IJsonEntity`, enums, filter DTO
+- **DataAccess:** `FreeExamples.App.DataAccess.JsonStore.cs` — one file for all generic CRUD (shared)
+- **DataAccess Seed:** `FreeExamples.App.DataAccess.JsonStore.Seed.cs` — seed methods for all entity types
+- **API Endpoints:** `FreeExamples.App.API.JsonStore.cs` — three endpoints per entity (thin wrappers over generic CRUD)
+- **Pages:** `FreeExamples.App.Pages.{Category}.razor` + V1–V4 variants, each with `ExampleNav`, `InfoTip`, `AboutSection`
+- **No external dependencies:** Bootstrap 5 + Font Awesome + vanilla Blazor
+
+### Build Order Recommendation
+
+**Phase 1 — Foundation:** Projects (#1) + Tickets (#2) — the core data model everything else references
+**Phase 2 — Visualization:** Board Views (#3) + Backlog (#5) — the most-requested Jira features
+**Phase 3 — Planning:** Sprint Planning (#4) — completes the Jira-like system
+**Phase 4 — Domain:** Work Orders (#6) + Budget (#7) — highest-value standalone workflows
+**Phase 5 — Specialty:** Equipment (#8) + Evaluations (#9) + Onboarding (#10) — unique form patterns
