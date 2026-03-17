@@ -1,4 +1,4 @@
-@page "/Examples/SampleItemsV1"
+﻿@page "/Examples/SampleItemsV1"
 @page "/{TenantCode}/Examples/SampleItemsV1"
 @implements IDisposable
 @inject BlazorDataModel Model
@@ -38,6 +38,8 @@
                 <option value="amount">Sort: Amount</option>
                 <option value="priority">Sort: Priority</option>
                 <option value="category">Sort: Category</option>
+                <option value="status">Sort: Status</option>
+                <option value="enabled">Sort: Enabled</option>
             </select>
         </div>
 
@@ -95,6 +97,8 @@
             "amount" => _items.OrderByDescending(i => i.Amount).ToList(),
             "priority" => _items.OrderBy(i => i.Priority).ToList(),
             "category" => _items.OrderBy(i => i.Category).ThenBy(i => i.Name).ToList(),
+            "status" => _items.OrderBy(i => i.Status).ThenBy(i => i.Name).ToList(),
+            "enabled" => _items.OrderByDescending(i => i.Enabled).ThenBy(i => i.Name).ToList(),
             _ => _items.OrderBy(i => i.Name).ToList(),
         };
     }
