@@ -8,11 +8,11 @@ public static partial class Helpers
         get {
             Dictionary<string, List<string>> icons = new Dictionary<string, List<string>> {
                 // Dashboard & Data
-                { "fa:fa-solid fa-table-columns",      new List<string> { "ExamplesDashboard", "DashboardData" }},
+                { "fa:fa-solid fa-table-columns",      new List<string> { "ExamplesDashboard", "DashboardData", "BoardViews" }},
                 { "fa:fa-solid fa-list",                new List<string> { "SampleItems", "EditSampleItem" }},
                 { "fa:fa-solid fa-grip",                new List<string> { "SampleItemsV1" }},
                 { "fa:fa-solid fa-columns",             new List<string> { "SampleItemsV2" }},
-                { "fa:fa-solid fa-layer-group",         new List<string> { "SampleItemsV3", "ItemCards" }},
+                { "fa:fa-solid fa-layer-group",         new List<string> { "SampleItemsV3", "ItemCards", "BacklogV3" }},
                 { "fa:fa-solid fa-timeline",            new List<string> { "SampleItemsV4" }},
                 { "fa:fa-solid fa-chart-bar",           new List<string> { "SampleItemsV5" }},
                 { "fa:fa-solid fa-magnifying-glass",    new List<string> { "SearchAutocomplete" }},
@@ -22,7 +22,7 @@ public static partial class Helpers
                 { "fa:fa-solid fa-file-arrow-up",       new List<string> { "FileDemo", "FilesMedia" }},
                 { "fa:fa-solid fa-camera",              new List<string> { "FileDemoV1" }},
                 { "fa:fa-solid fa-folder-open",         new List<string> { "FileDemoV2" }},
-                { "fa:fa-solid fa-file-lines",          new List<string> { "FileDemoV3" }},
+                { "fa:fa-solid fa-file-lines",          new List<string> { "FileDemoV3", "TicketsV1" }},
                 { "fa:fa-solid fa-file-import",         new List<string> { "FileDemoV4" }},
                 { "fa:fa-solid fa-paperclip",           new List<string> { "FileDemoV5" }},
                 { "fa:fa-solid fa-shield-halved",       new List<string> { "FileDemoV6" }},
@@ -63,7 +63,7 @@ public static partial class Helpers
                 { "fa:fa-solid fa-heartbeat",           new List<string> { "ChartsV3" }},
                 { "fa:fa-solid fa-users",               new List<string> { "ChartsV4" }},
                 { "fa:fa-solid fa-globe",               new List<string> { "ChartsV5" }},
-                { "fa:fa-solid fa-diagram-project",     new List<string> { "NetworkGraph" }},
+                { "fa:fa-solid fa-diagram-project",     new List<string> { "NetworkGraph", "Projects", "ProjectManagement" }},
                 { "fa:fa-solid fa-sitemap",             new List<string> { "NetworkGraphV1" }},
                 { "fa:fa-solid fa-share-nodes",         new List<string> { "NetworkGraphV2" }},
 
@@ -72,7 +72,7 @@ public static partial class Helpers
                 { "fa:fa-solid fa-database",            new List<string> { "CodeEditorV1" }},
                 { "fa:fa-solid fa-vial",                new List<string> { "CodeEditorV2" }},
                 { "fa:fa-solid fa-file-code",           new List<string> { "CodeEditorV3" }},
-                { "fa:fa-solid fa-code-compare",        new List<string> { "CodeEditorV4" }},
+                { "fa:fa-solid fa-code-compare",        new List<string> { "CodeEditorV4", "ProjectsV4" }},
                 { "fa:fa-solid fa-wand-magic-sparkles", new List<string> { "CodeEditorV5" }},
                 { "fa:fa-solid fa-laptop-code",         new List<string> { "CodePlayground" }},
                 { "fa:fa-solid fa-tower-broadcast",     new List<string> { "SignalRDemo" }},
@@ -91,17 +91,13 @@ public static partial class Helpers
                 { "fa:fa-solid fa-key",                 new List<string> { "ApiKeyDemo" }},
 
                 // Project Management
-                { "fa:fa-solid fa-diagram-project",     new List<string> { "Projects", "ProjectManagement" }},
                 { "fa:fa-solid fa-folder-tree",         new List<string> { "ProjectsV1" }},
                 { "fa:fa-solid fa-pen-ruler",           new List<string> { "ProjectsV2" }},
                 { "fa:fa-solid fa-rectangle-list",      new List<string> { "ProjectsV3" }},
-                { "fa:fa-solid fa-code-compare",        new List<string> { "ProjectsV4" }},
                 { "fa:fa-solid fa-ticket",              new List<string> { "Tickets" }},
-                { "fa:fa-solid fa-file-lines",          new List<string> { "TicketsV1" }},
                 { "fa:fa-solid fa-clipboard-check",     new List<string> { "TicketsV2" }},
                 { "fa:fa-solid fa-bolt",                new List<string> { "TicketsV3" }},
                 { "fa:fa-solid fa-list-check",          new List<string> { "TicketsV4" }},
-                { "fa:fa-solid fa-table-columns",       new List<string> { "BoardViews" }},
                 { "fa:fa-solid fa-grip-vertical",       new List<string> { "BoardViewsV1" }},
                 { "fa:fa-solid fa-person-running",      new List<string> { "BoardViewsV2" }},
                 { "fa:fa-solid fa-water",               new List<string> { "BoardViewsV3" }},
@@ -114,7 +110,6 @@ public static partial class Helpers
                 { "fa:fa-solid fa-inbox",               new List<string> { "Backlog" }},
                 { "fa:fa-solid fa-broom",               new List<string> { "BacklogV1" }},
                 { "fa:fa-solid fa-object-group",        new List<string> { "BacklogV2" }},
-                { "fa:fa-solid fa-layer-group",         new List<string> { "BacklogV3" }},
                 { "fa:fa-solid fa-bookmark",            new List<string> { "BacklogV4" }},
 
                 // Domain Workflows
