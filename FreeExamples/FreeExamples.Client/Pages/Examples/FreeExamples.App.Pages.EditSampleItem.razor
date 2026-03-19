@@ -1,4 +1,4 @@
-@page "/Examples/EditSampleItem/{itemid}"
+﻿@page "/Examples/EditSampleItem/{itemid}"
 @page "/{TenantCode}/Examples/EditSampleItem/{itemid}"
 @page "/Examples/EditSampleItem/New"
 @page "/{TenantCode}/Examples/EditSampleItem/New"
@@ -37,6 +37,10 @@
                 }
             </div>
         </div>
+
+        <AboutSection Title="Edit Form Pattern" Subtitle="Single-record edit with save, delete, and validation — the standard CRUD detail page" IconClass="fa-solid fa-pen-to-square">
+            <p class="small text-muted mb-0">This page shows the standard edit form used across all projects. Navigate here from a list page, edit fields, and Save. The same endpoint handles both new records (insert) and existing records (update). Required fields highlight red when empty. Delete uses a two-click confirmation to prevent accidents.</p>
+        </AboutSection>
 
         <RequiredIndicator />
         <InfoTip Title="Required Fields"

@@ -1,4 +1,4 @@
-@page "/Examples/Dashboard"
+﻿@page "/Examples/Dashboard"
 @page "/{TenantCode}/Examples/Dashboard"
 @implements IDisposable
 @inject BlazorDataModel Model
@@ -44,6 +44,18 @@
                 </div>
             </div>
         </AboutSection>
+
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Search & Category Filter"
+                     Description="The search box uses Blazor bind with oninput for instant filtering. MatchesSearch() checks the title, description, and variant titles against the search term. Category pill buttons set _categoryFilter which narrows FilteredCategories via LINQ Where(). Both filters combine — search within a category."
+                     Code="@_codeSearchFilter" />
+            <InfoTip Title="Variant Cards with Latest Highlight"
+                     Description="Each feature can have variant cards showing different approaches. The last variant is highlighted with a gold border and star icon (border-warning + fa-star) to mark it as the latest/best version. This helps users find the most current implementation."
+                     Code="@_codeVariantCards" />
+            <InfoTip Title="Dynamic Category Registry"
+                     Description="All dashboard data is defined in a single _categories list of DashboardCategory objects. Each category has a title, icon, header class, and list of FeatureEntry items with optional variants. Adding a new example page means adding one line here — no other wiring needed."
+                     Code="@_codeCategoryRegistry" />
+        </div>
 
         @* Quick Stats *@
         <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3 mb-4">
@@ -236,6 +248,48 @@
     // Filter state
     private string _searchTerm = "";
     private string _categoryFilter = "";
+
+    private string _codeSearchFilter = @"<input type=""text"" @bind=""_searchTerm""
+       @bind:event=""oninput"" />
+
+bool MatchesSearch(FeatureEntry f) {
+  var term = _searchTerm.ToLower();
+  return f.Title.ToLower().Contains(term)
+      || f.Description.ToLower().Contains(term)
+      || f.Variants?.Any(v =>
+           v.Title.ToLower().Contains(term));
+}";
+
+    private string _codeVariantCards = @"@for (var i = 0; i < feature.Variants.Count; i++) {
+  var v = feature.Variants[i];
+  var isLast = i == feature.Variants.Count - 1;
+  <div class=""card @(isLast
+    ? ""border-warning"" : ""border-light"")"">
+    @if (isLast) {
+      <i class=""fa-solid fa-star text-warning"" />
+    }
+    <a href=""@v.Route"">View</a>
+  </div>
+}";
+
+    private string _codeCategoryRegistry = @"List<DashboardCategory> _categories = new() {
+  new(""Dashboard & Data"",
+      ""fa-solid fa-table-columns"",
+      ""bg-dark"",
+      ""Data tables, CRUD, search..."") {
+    Features = new() {
+      new(""Sample Items"",
+          ""Examples/SampleItems"",
+          ""fa-solid fa-list"",
+          ""List + Edit with filter..."") {
+        Variants = new() {
+          new(""V1: Card View"",
+              ""Examples/SampleItemsV1""),
+        }
+      },
+    }
+  },
+};";
 
     private int _totalPages => _categories.Sum(c => c.Features.Count + c.Features.Sum(f => f.Variants?.Count ?? 0));
 
