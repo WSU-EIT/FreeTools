@@ -1,4 +1,4 @@
-using System.Net.NetworkInformation;
+﻿using System.Net.NetworkInformation;
 
 namespace FreeExamples.Client;
 
@@ -135,6 +135,80 @@ public static partial class Helpers
                     MakeSubItem("Timer V5: Event Countdown", "timerv5", "Examples/TimerV5"),
                     MakeSubItem("Git Browser", "gitbrowser", "Examples/GitBrowser"),
                     MakeSubItem("API Key Demo", "apikeydemo", "Examples/ApiKeyDemo"),
+                },
+            });
+
+            // ── 6. Project Management ──
+            output.Add(new DataObjects.MenuItem {
+                Title = "Project Management",
+                Icon = "ProjectManagement",
+                PageNames = new List<string> { "projects", "projectsv1", "projectsv2", "projectsv3", "projectsv4", "tickets", "ticketsv1", "ticketsv2", "ticketsv3", "ticketsv4", "boardviews", "boardviewsv1", "boardviewsv2", "boardviewsv3", "boardviewsv4", "sprintplanning", "sprintplanningv1", "sprintplanningv2", "sprintplanningv3", "sprintplanningv4", "backlog", "backlogv1", "backlogv2", "backlogv3", "backlogv4" },
+                SortOrder = 600,
+                url = Helpers.BuildUrl("Examples/Projects"),
+                AppAdminOnly = false,
+                DropdownItems = new List<DataObjects.MenuItem> {
+                    MakeSubItem("Projects", "projects", "Examples/Projects"),
+                    MakeSubItem("V1: Project Tree", "projectsv1", "Examples/ProjectsV1"),
+                    MakeSubItem("V2: Project Form", "projectsv2", "Examples/ProjectsV2"),
+                    MakeSubItem("V3: Project Cards", "projectsv3", "Examples/ProjectsV3"),
+                    MakeSubItem("V4: Project Comparison", "projectsv4", "Examples/ProjectsV4"),
+                    MakeSubItem("Tickets", "tickets", "Examples/Tickets"),
+                    MakeSubItem("V1: Ticket Form", "ticketsv1", "Examples/TicketsV1"),
+                    MakeSubItem("V2: Ticket Detail", "ticketsv2", "Examples/TicketsV2"),
+                    MakeSubItem("V3: Quick Create", "ticketsv3", "Examples/TicketsV3"),
+                    MakeSubItem("V4: Bulk Edit", "ticketsv4", "Examples/TicketsV4"),
+                    MakeSubItem("Board Views", "boardviews", "Examples/BoardViews"),
+                    MakeSubItem("V1: Kanban Board", "boardviewsv1", "Examples/BoardViewsV1"),
+                    MakeSubItem("V2: Sprint Board", "boardviewsv2", "Examples/BoardViewsV2"),
+                    MakeSubItem("V3: Swimlane Board", "boardviewsv3", "Examples/BoardViewsV3"),
+                    MakeSubItem("V4: Board Settings", "boardviewsv4", "Examples/BoardViewsV4"),
+                    MakeSubItem("Sprint Planning", "sprintplanning", "Examples/SprintPlanning"),
+                    MakeSubItem("V1: Planning View", "sprintplanningv1", "Examples/SprintPlanningV1"),
+                    MakeSubItem("V2: Active Sprint", "sprintplanningv2", "Examples/SprintPlanningV2"),
+                    MakeSubItem("V3: Retrospective", "sprintplanningv3", "Examples/SprintPlanningV3"),
+                    MakeSubItem("V4: Velocity Report", "sprintplanningv4", "Examples/SprintPlanningV4"),
+                    MakeSubItem("Backlog", "backlog", "Examples/Backlog"),
+                    MakeSubItem("V1: Grooming View", "backlogv1", "Examples/BacklogV1"),
+                    MakeSubItem("V2: Bulk Operations", "backlogv2", "Examples/BacklogV2"),
+                    MakeSubItem("V3: Grouped Backlog", "backlogv3", "Examples/BacklogV3"),
+                    MakeSubItem("V4: Saved Views", "backlogv4", "Examples/BacklogV4"),
+                },
+            });
+
+            // ── 7. Domain Workflows ──
+            output.Add(new DataObjects.MenuItem {
+                Title = "Domain Workflows",
+                Icon = "DomainWorkflows",
+                PageNames = new List<string> { "workorders", "workordersv1", "workordersv2", "workordersv3", "workordersv4", "budgetrequests", "budgetrequestsv1", "budgetrequestsv2", "budgetrequestsv3", "budgetrequestsv4", "equipmentcheckout", "equipmentcheckoutv1", "equipmentcheckoutv2", "equipmentcheckoutv3", "equipmentcheckoutv4", "courseevaluations", "courseevaluationsv1", "courseevaluationsv2", "courseevaluationsv3", "courseevaluationsv4", "employeeonboarding", "employeeonboardingv1", "employeeonboardingv2", "employeeonboardingv3", "employeeonboardingv4" },
+                SortOrder = 700,
+                url = Helpers.BuildUrl("Examples/WorkOrders"),
+                AppAdminOnly = false,
+                DropdownItems = new List<DataObjects.MenuItem> {
+                    MakeSubItem("Work Orders", "workorders", "Examples/WorkOrders"),
+                    MakeSubItem("V1: Submit Request", "workordersv1", "Examples/WorkOrdersV1"),
+                    MakeSubItem("V2: Dispatch Board", "workordersv2", "Examples/WorkOrdersV2"),
+                    MakeSubItem("V3: Technician View", "workordersv3", "Examples/WorkOrdersV3"),
+                    MakeSubItem("V4: Facilities Dashboard", "workordersv4", "Examples/WorkOrdersV4"),
+                    MakeSubItem("Budget Requests", "budgetrequests", "Examples/BudgetRequests"),
+                    MakeSubItem("V1: Request Builder", "budgetrequestsv1", "Examples/BudgetRequestsV1"),
+                    MakeSubItem("V2: Approval Queue", "budgetrequestsv2", "Examples/BudgetRequestsV2"),
+                    MakeSubItem("V3: Budget Overview", "budgetrequestsv3", "Examples/BudgetRequestsV3"),
+                    MakeSubItem("V4: Request Detail", "budgetrequestsv4", "Examples/BudgetRequestsV4"),
+                    MakeSubItem("Equipment Checkout", "equipmentcheckout", "Examples/EquipmentCheckout"),
+                    MakeSubItem("V1: Checkout Form", "equipmentcheckoutv1", "Examples/EquipmentCheckoutV1"),
+                    MakeSubItem("V2: My Checkouts", "equipmentcheckoutv2", "Examples/EquipmentCheckoutV2"),
+                    MakeSubItem("V3: Overdue Report", "equipmentcheckoutv3", "Examples/EquipmentCheckoutV3"),
+                    MakeSubItem("V4: Asset Detail", "equipmentcheckoutv4", "Examples/EquipmentCheckoutV4"),
+                    MakeSubItem("Course Evaluations", "courseevaluations", "Examples/CourseEvaluations"),
+                    MakeSubItem("V1: Take Evaluation", "courseevaluationsv1", "Examples/CourseEvaluationsV1"),
+                    MakeSubItem("V2: Results Summary", "courseevaluationsv2", "Examples/CourseEvaluationsV2"),
+                    MakeSubItem("V3: Template Builder", "courseevaluationsv3", "Examples/CourseEvaluationsV3"),
+                    MakeSubItem("V4: Department Report", "courseevaluationsv4", "Examples/CourseEvaluationsV4"),
+                    MakeSubItem("Employee Onboarding", "employeeonboarding", "Examples/EmployeeOnboarding"),
+                    MakeSubItem("V1: Onboarding Setup", "employeeonboardingv1", "Examples/EmployeeOnboardingV1"),
+                    MakeSubItem("V2: Task Tracker", "employeeonboardingv2", "Examples/EmployeeOnboardingV2"),
+                    MakeSubItem("V3: My Onboarding", "employeeonboardingv3", "Examples/EmployeeOnboardingV3"),
+                    MakeSubItem("V4: Department Dashboard", "employeeonboardingv4", "Examples/EmployeeOnboardingV4"),
                 },
             });
 

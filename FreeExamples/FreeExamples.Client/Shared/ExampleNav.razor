@@ -1,4 +1,4 @@
-@inject BlazorDataModel Model
+﻿@inject BlazorDataModel Model
 
 @{
     var info = FindCurrentPage();
@@ -142,5 +142,75 @@
         new("Code & Real-Time", "timerv5", "V5: Event Countdown", "Examples/TimerV5", "Timer Demo", "Examples/TimerDemo"),
         new("Code & Real-Time", "gitbrowser", "Git Browser", "Examples/GitBrowser"),
         new("Code & Real-Time", "apikeydemo", "API Key Demo", "Examples/ApiKeyDemo"),
+
+        // Project Management — Projects & Hierarchy
+        new("Project Management", "projects", "Projects", "Examples/Projects"),
+        new("Project Management", "projectsv1", "V1: Project Tree", "Examples/ProjectsV1", "Projects", "Examples/Projects"),
+        new("Project Management", "projectsv2", "V2: Project Form", "Examples/ProjectsV2", "Projects", "Examples/Projects"),
+        new("Project Management", "projectsv3", "V3: Project Cards", "Examples/ProjectsV3", "Projects", "Examples/Projects"),
+        new("Project Management", "projectsv4", "V4: Project Comparison", "Examples/ProjectsV4", "Projects", "Examples/Projects"),
+
+        // Project Management — Tickets
+        new("Project Management", "tickets", "Tickets", "Examples/Tickets"),
+        new("Project Management", "ticketsv1", "V1: Ticket Form", "Examples/TicketsV1", "Tickets", "Examples/Tickets"),
+        new("Project Management", "ticketsv2", "V2: Ticket Detail", "Examples/TicketsV2", "Tickets", "Examples/Tickets"),
+        new("Project Management", "ticketsv3", "V3: Quick Create", "Examples/TicketsV3", "Tickets", "Examples/Tickets"),
+        new("Project Management", "ticketsv4", "V4: Bulk Edit", "Examples/TicketsV4", "Tickets", "Examples/Tickets"),
+
+        // Project Management — Board Views
+        new("Project Management", "boardviews", "Board Views", "Examples/BoardViews"),
+        new("Project Management", "boardviewsv1", "V1: Kanban Board", "Examples/BoardViewsV1", "Board Views", "Examples/BoardViews"),
+        new("Project Management", "boardviewsv2", "V2: Sprint Board", "Examples/BoardViewsV2", "Board Views", "Examples/BoardViews"),
+        new("Project Management", "boardviewsv3", "V3: Swimlane Board", "Examples/BoardViewsV3", "Board Views", "Examples/BoardViews"),
+        new("Project Management", "boardviewsv4", "V4: Board Settings", "Examples/BoardViewsV4", "Board Views", "Examples/BoardViews"),
+
+        // Project Management — Sprint Planning
+        new("Project Management", "sprintplanning", "Sprint Planning", "Examples/SprintPlanning"),
+        new("Project Management", "sprintplanningv1", "V1: Planning View", "Examples/SprintPlanningV1", "Sprint Planning", "Examples/SprintPlanning"),
+        new("Project Management", "sprintplanningv2", "V2: Active Sprint", "Examples/SprintPlanningV2", "Sprint Planning", "Examples/SprintPlanning"),
+        new("Project Management", "sprintplanningv3", "V3: Retrospective", "Examples/SprintPlanningV3", "Sprint Planning", "Examples/SprintPlanning"),
+        new("Project Management", "sprintplanningv4", "V4: Velocity Report", "Examples/SprintPlanningV4", "Sprint Planning", "Examples/SprintPlanning"),
+
+        // Project Management — Backlog & Grooming
+        new("Project Management", "backlog", "Backlog", "Examples/Backlog"),
+        new("Project Management", "backlogv1", "V1: Grooming View", "Examples/BacklogV1", "Backlog", "Examples/Backlog"),
+        new("Project Management", "backlogv2", "V2: Bulk Operations", "Examples/BacklogV2", "Backlog", "Examples/Backlog"),
+        new("Project Management", "backlogv3", "V3: Grouped Backlog", "Examples/BacklogV3", "Backlog", "Examples/Backlog"),
+        new("Project Management", "backlogv4", "V4: Saved Views", "Examples/BacklogV4", "Backlog", "Examples/Backlog"),
+
+        // Domain Workflows — Work Orders
+        new("Domain Workflows", "workorders", "Work Orders", "Examples/WorkOrders"),
+        new("Domain Workflows", "workordersv1", "V1: Submit Request", "Examples/WorkOrdersV1", "Work Orders", "Examples/WorkOrders"),
+        new("Domain Workflows", "workordersv2", "V2: Dispatch Board", "Examples/WorkOrdersV2", "Work Orders", "Examples/WorkOrders"),
+        new("Domain Workflows", "workordersv3", "V3: Technician View", "Examples/WorkOrdersV3", "Work Orders", "Examples/WorkOrders"),
+        new("Domain Workflows", "workordersv4", "V4: Facilities Dashboard", "Examples/WorkOrdersV4", "Work Orders", "Examples/WorkOrders"),
+
+        // Domain Workflows — Budget & Approvals
+        new("Domain Workflows", "budgetrequests", "Budget Requests", "Examples/BudgetRequests"),
+        new("Domain Workflows", "budgetrequestsv1", "V1: Request Builder", "Examples/BudgetRequestsV1", "Budget Requests", "Examples/BudgetRequests"),
+        new("Domain Workflows", "budgetrequestsv2", "V2: Approval Queue", "Examples/BudgetRequestsV2", "Budget Requests", "Examples/BudgetRequests"),
+        new("Domain Workflows", "budgetrequestsv3", "V3: Budget Overview", "Examples/BudgetRequestsV3", "Budget Requests", "Examples/BudgetRequests"),
+        new("Domain Workflows", "budgetrequestsv4", "V4: Request Detail", "Examples/BudgetRequestsV4", "Budget Requests", "Examples/BudgetRequests"),
+
+        // Domain Workflows — Equipment Checkout
+        new("Domain Workflows", "equipmentcheckout", "Equipment Checkout", "Examples/EquipmentCheckout"),
+        new("Domain Workflows", "equipmentcheckoutv1", "V1: Checkout Form", "Examples/EquipmentCheckoutV1", "Equipment Checkout", "Examples/EquipmentCheckout"),
+        new("Domain Workflows", "equipmentcheckoutv2", "V2: My Checkouts", "Examples/EquipmentCheckoutV2", "Equipment Checkout", "Examples/EquipmentCheckout"),
+        new("Domain Workflows", "equipmentcheckoutv3", "V3: Overdue Report", "Examples/EquipmentCheckoutV3", "Equipment Checkout", "Examples/EquipmentCheckout"),
+        new("Domain Workflows", "equipmentcheckoutv4", "V4: Asset Detail", "Examples/EquipmentCheckoutV4", "Equipment Checkout", "Examples/EquipmentCheckout"),
+
+        // Domain Workflows — Course Evaluations
+        new("Domain Workflows", "courseevaluations", "Course Evaluations", "Examples/CourseEvaluations"),
+        new("Domain Workflows", "courseevaluationsv1", "V1: Take Evaluation", "Examples/CourseEvaluationsV1", "Course Evaluations", "Examples/CourseEvaluations"),
+        new("Domain Workflows", "courseevaluationsv2", "V2: Results Summary", "Examples/CourseEvaluationsV2", "Course Evaluations", "Examples/CourseEvaluations"),
+        new("Domain Workflows", "courseevaluationsv3", "V3: Template Builder", "Examples/CourseEvaluationsV3", "Course Evaluations", "Examples/CourseEvaluations"),
+        new("Domain Workflows", "courseevaluationsv4", "V4: Department Report", "Examples/CourseEvaluationsV4", "Course Evaluations", "Examples/CourseEvaluations"),
+
+        // Domain Workflows — Employee Onboarding
+        new("Domain Workflows", "employeeonboarding", "Employee Onboarding", "Examples/EmployeeOnboarding"),
+        new("Domain Workflows", "employeeonboardingv1", "V1: Onboarding Setup", "Examples/EmployeeOnboardingV1", "Employee Onboarding", "Examples/EmployeeOnboarding"),
+        new("Domain Workflows", "employeeonboardingv2", "V2: Task Tracker", "Examples/EmployeeOnboardingV2", "Employee Onboarding", "Examples/EmployeeOnboarding"),
+        new("Domain Workflows", "employeeonboardingv3", "V3: My Onboarding", "Examples/EmployeeOnboardingV3", "Employee Onboarding", "Examples/EmployeeOnboarding"),
+        new("Domain Workflows", "employeeonboardingv4", "V4: Department Dashboard", "Examples/EmployeeOnboardingV4", "Employee Onboarding", "Examples/EmployeeOnboarding"),
     };
 }

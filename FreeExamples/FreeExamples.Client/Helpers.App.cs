@@ -1,4 +1,4 @@
-using System.Net.NetworkInformation;
+﻿using System.Net.NetworkInformation;
 
 namespace FreeExamples.Client;
 
@@ -89,6 +89,60 @@ public static partial class Helpers
                 { "fa:fa-solid fa-calendar-day",        new List<string> { "TimerV5" }},
                 { "fa:fa-solid fa-code-branch",         new List<string> { "GitBrowser" }},
                 { "fa:fa-solid fa-key",                 new List<string> { "ApiKeyDemo" }},
+
+                // Project Management
+                { "fa:fa-solid fa-diagram-project",     new List<string> { "Projects", "ProjectManagement" }},
+                { "fa:fa-solid fa-folder-tree",         new List<string> { "ProjectsV1" }},
+                { "fa:fa-solid fa-pen-ruler",           new List<string> { "ProjectsV2" }},
+                { "fa:fa-solid fa-rectangle-list",      new List<string> { "ProjectsV3" }},
+                { "fa:fa-solid fa-code-compare",        new List<string> { "ProjectsV4" }},
+                { "fa:fa-solid fa-ticket",              new List<string> { "Tickets" }},
+                { "fa:fa-solid fa-file-lines",          new List<string> { "TicketsV1" }},
+                { "fa:fa-solid fa-clipboard-check",     new List<string> { "TicketsV2" }},
+                { "fa:fa-solid fa-bolt",                new List<string> { "TicketsV3" }},
+                { "fa:fa-solid fa-list-check",          new List<string> { "TicketsV4" }},
+                { "fa:fa-solid fa-table-columns",       new List<string> { "BoardViews" }},
+                { "fa:fa-solid fa-grip-vertical",       new List<string> { "BoardViewsV1" }},
+                { "fa:fa-solid fa-person-running",      new List<string> { "BoardViewsV2" }},
+                { "fa:fa-solid fa-water",               new List<string> { "BoardViewsV3" }},
+                { "fa:fa-solid fa-sliders",             new List<string> { "BoardViewsV4" }},
+                { "fa:fa-solid fa-flag-checkered",      new List<string> { "SprintPlanning" }},
+                { "fa:fa-solid fa-arrows-left-right",   new List<string> { "SprintPlanningV1" }},
+                { "fa:fa-solid fa-fire",                new List<string> { "SprintPlanningV2" }},
+                { "fa:fa-solid fa-rotate-left",         new List<string> { "SprintPlanningV3" }},
+                { "fa:fa-solid fa-gauge-high",          new List<string> { "SprintPlanningV4" }},
+                { "fa:fa-solid fa-inbox",               new List<string> { "Backlog" }},
+                { "fa:fa-solid fa-broom",               new List<string> { "BacklogV1" }},
+                { "fa:fa-solid fa-object-group",        new List<string> { "BacklogV2" }},
+                { "fa:fa-solid fa-layer-group",         new List<string> { "BacklogV3" }},
+                { "fa:fa-solid fa-bookmark",            new List<string> { "BacklogV4" }},
+
+                // Domain Workflows
+                { "fa:fa-solid fa-wrench",              new List<string> { "WorkOrders", "DomainWorkflows" }},
+                { "fa:fa-solid fa-paper-plane",         new List<string> { "WorkOrdersV1" }},
+                { "fa:fa-solid fa-truck-fast",          new List<string> { "WorkOrdersV2" }},
+                { "fa:fa-solid fa-screwdriver-wrench",  new List<string> { "WorkOrdersV3" }},
+                { "fa:fa-solid fa-chart-simple",        new List<string> { "WorkOrdersV4" }},
+                { "fa:fa-solid fa-money-check-dollar",  new List<string> { "BudgetRequests" }},
+                { "fa:fa-solid fa-calculator",          new List<string> { "BudgetRequestsV1" }},
+                { "fa:fa-solid fa-check-double",        new List<string> { "BudgetRequestsV2" }},
+                { "fa:fa-solid fa-piggy-bank",          new List<string> { "BudgetRequestsV3" }},
+                { "fa:fa-solid fa-receipt",             new List<string> { "BudgetRequestsV4" }},
+                { "fa:fa-solid fa-laptop",              new List<string> { "EquipmentCheckout" }},
+                { "fa:fa-solid fa-hand-holding",        new List<string> { "EquipmentCheckoutV1" }},
+                { "fa:fa-solid fa-cart-shopping",       new List<string> { "EquipmentCheckoutV2" }},
+                { "fa:fa-solid fa-exclamation-triangle", new List<string> { "EquipmentCheckoutV3" }},
+                { "fa:fa-solid fa-circle-info",         new List<string> { "EquipmentCheckoutV4" }},
+                { "fa:fa-solid fa-star-half-stroke",    new List<string> { "CourseEvaluations" }},
+                { "fa:fa-solid fa-pen",                 new List<string> { "CourseEvaluationsV1" }},
+                { "fa:fa-solid fa-square-poll-horizontal", new List<string> { "CourseEvaluationsV2" }},
+                { "fa:fa-solid fa-puzzle-piece",        new List<string> { "CourseEvaluationsV3" }},
+                { "fa:fa-solid fa-building-columns",    new List<string> { "CourseEvaluationsV4" }},
+                { "fa:fa-solid fa-user-plus",           new List<string> { "EmployeeOnboarding" }},
+                { "fa:fa-solid fa-clipboard-list",      new List<string> { "EmployeeOnboardingV1" }},
+                { "fa:fa-solid fa-tasks",               new List<string> { "EmployeeOnboardingV2" }},
+                { "fa:fa-solid fa-id-badge",            new List<string> { "EmployeeOnboardingV3" }},
+                { "fa:fa-solid fa-chart-gantt",         new List<string> { "EmployeeOnboardingV4" }},
             };
 
             return icons;
