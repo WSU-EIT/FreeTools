@@ -19,6 +19,18 @@
             <p class="small text-muted mb-0">Review a completed sprint: goal achieved?, points planned vs. delivered, velocity trend across recent sprints, and a simple retro form for notes.</p>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Goal-Met Threshold"
+                     Description="The sprint is considered 'goal met' when delivered ≥ 80% of planned points (delivered >= planned * 0.8m). The summary card and the sprint goal alert both change color and icon based on this threshold. A practical pattern for any pass/fail KPI display."
+                     Code="@_codeGoalMet" />
+            <InfoTip Title="CSS-Only Velocity Trend Chart"
+                     Description="A grouped bar chart built entirely with CSS flexbox. Each sprint gets two bars (planned/delivered) whose heights are calculated as a percentage of the max value. No chart library needed — just div heights and bg-primary/bg-success classes."
+                     Code="@_codeVelocityChart" />
+            <InfoTip Title="Three-Column Retro Form"
+                     Description="A row with three col-md-4 columns creates the classic retrospective layout: What went well (green), What didn't (red), Action items (blue). Each column has a color-coded label and a textarea bound to a field. Simple and effective for sprint reviews."
+                     Code="@_codeRetroForm" />
+        </div>
+
         @* Sprint selector *@
         <div class="d-flex align-items-center gap-2 mb-3">
             <label class="form-label mb-0 small fw-semibold">Sprint:</label>
@@ -178,4 +190,58 @@
             return (s.Name, p, d);
         }).ToList();
     }
+
+    private string _codeGoalMet = @"var planned = tickets
+  .Where(t => t.StoryPoints.HasValue)
+  .Sum(t => t.StoryPoints!.Value);
+var delivered = tickets
+  .Where(t => t.Status == Done && t.StoryPoints.HasValue)
+  .Sum(t => t.StoryPoints!.Value);
+var goalMet = planned > 0
+  && delivered >= planned * 0.8m;
+
+<div class=""@(goalMet ? ""text-success"" : ""text-danger"")"">
+  <i class=""fa-solid @(goalMet
+    ? ""fa-check-circle"" : ""fa-times-circle"")""/>
+  @(goalMet ? ""Yes"" : ""No"")
+</div>";
+
+    private string _codeVelocityChart = @"<div class=""d-flex align-items-end gap-2""
+     style=""height:120px;"">
+  @foreach (var v in _velocityData) {
+    var max = _velocityData.Max(x =>
+      Math.Max(x.Planned, x.Delivered));
+    var hP = max > 0
+      ? (int)(v.Planned * 100.0 / max) : 0;
+    var hD = max > 0
+      ? (int)(v.Delivered * 100.0 / max) : 0;
+    <div class=""d-flex gap-1 align-items-end"">
+      <div class=""bg-primary bg-opacity-25""
+           style=""width:14px; height:@(hP)px;""/>
+      <div class=""bg-success""
+           style=""width:14px; height:@(hD)px;""/>
+    </div>
+  }
+</div>";
+
+    private string _codeRetroForm = @"<div class=""row g-3"">
+  <div class=""col-md-4"">
+    <label class=""text-success"">
+      What went well
+    </label>
+    <textarea @bind=""_retroGood""/>
+  </div>
+  <div class=""col-md-4"">
+    <label class=""text-danger"">
+      What didn't
+    </label>
+    <textarea @bind=""_retroBad""/>
+  </div>
+  <div class=""col-md-4"">
+    <label class=""text-primary"">
+      Action items
+    </label>
+    <textarea @bind=""_retroActions""/>
+  </div>
+</div>";
 }

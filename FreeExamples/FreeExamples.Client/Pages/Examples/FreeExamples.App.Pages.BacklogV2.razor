@@ -19,6 +19,18 @@
             <p class="small text-muted mb-0">Checkbox column for selecting multiple backlog tickets. When ≥1 is selected, a floating action bar appears at the bottom for bulk assign, set priority, add label, or move to sprint.</p>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Select-All Checkbox with HashSet"
+                     Description="@_descSelectAll"
+                     Code="@_codeSelectAll" />
+            <InfoTip Title="Floating Position-Fixed Action Bar"
+                     Description="When _selected.Count > 0, a position-fixed div appears at the bottom of the viewport (bottom-0 start-0 end-0) with z-index:1040. It contains inline input groups for bulk assign, priority, label, and sprint. The bar auto-hides when selection is cleared."
+                     Code="@_codeFloatingBar" />
+            <InfoTip Title="Batch Save via SaveMany API"
+                     Description="ApplyBulk() filters _backlog to selected items, applies all field changes in a loop, then saves the whole batch in one API call. If a sprint was assigned, those tickets are removed from the backlog list since they're no longer unassigned. One round-trip for N updates."
+                     Code="@_codeBatchSave" />
+        </div>
+
         <div class="card border-0 shadow-sm">
             <div class="card-body p-0">
                 <table class="table table-sm table-hover mb-0 small">
@@ -83,6 +95,8 @@
     private HashSet<Guid> _selected = new();
     private string _bulkAssign = "", _bulkPriority = "", _bulkLabel = "", _bulkSprint = "";
 
+    private string _descSelectAll = "A HashSet<Guid> _selected tracks checked rows. The header checkbox uses checked=@(_selected.Count == _backlog.Count) for the 'all' state. ToggleAll() either clears or fills the set. Individual Toggle(id) uses HashSet.Remove \u2014 if it returns false, the item wasn't there so we Add it.";
+
     public void Dispose() { Model.OnChange -= StateHasChanged; Model.Subscribers_OnChange.Remove(_pageName); }
     protected override void OnInitialized() { Model.View = _pageName; Model.OnChange += StateHasChanged; if (!Model.Subscribers_OnChange.Contains(_pageName)) Model.Subscribers_OnChange.Add(_pageName); }
     protected override async Task OnAfterRenderAsync(bool firstRender) {
@@ -114,4 +128,54 @@
     }
 
     private static string GetPriorityBadge(DataObjects.TicketPriority p) => p switch { DataObjects.TicketPriority.Critical => "bg-danger", DataObjects.TicketPriority.High => "bg-warning text-dark", DataObjects.TicketPriority.Medium => "bg-info", _ => "bg-secondary" };
+
+    private string _codeSelectAll = @"HashSet<Guid> _selected = new();
+
+void Toggle(Guid id) {
+  if (!_selected.Remove(id))
+    _selected.Add(id);
+}
+
+void ToggleAll() {
+  if (_selected.Count == _backlog.Count)
+    _selected.Clear();
+  else
+    _selected = new(_backlog.Select(t => t.RecordId));
+}
+
+<th>
+  <input type=""checkbox""
+    checked=""@(_selected.Count == _backlog.Count)""
+    @onchange=""ToggleAll"" />
+</th>";
+
+    private string _codeFloatingBar = @"@if (_selected.Count > 0) {
+  <div class=""position-fixed bottom-0 start-0 end-0
+       bg-dark text-white p-2""
+       style=""z-index:1040;"">
+    <span class=""badge bg-primary rounded-pill"">
+      @_selected.Count selected
+    </span>
+    <input @bind=""_bulkAssign"" placeholder=""Name"" />
+    <select @bind=""_bulkPriority"">...</select>
+    <button @onclick=""ApplyBulk"">Apply</button>
+    <button @onclick=""() => _selected.Clear()"">
+      Clear
+    </button>
+  </div>
+}";
+
+    private string _codeBatchSave = @"async Task ApplyBulk() {
+  var toSave = _backlog
+    .Where(t => _selected.Contains(t.RecordId))
+    .ToList();
+  foreach (var t in toSave) {
+    if (!string.IsNullOrEmpty(_bulkAssign))
+      t.AssignedTo = _bulkAssign;
+    if (Enum.TryParse(_bulkPriority, out var p))
+      t.Priority = p;
+  }
+  // One API call saves all selected tickets
+  await SaveTickets(toSave);
+}";
 }

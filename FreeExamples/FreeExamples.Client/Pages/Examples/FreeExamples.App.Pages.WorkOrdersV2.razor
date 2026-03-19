@@ -19,6 +19,18 @@
             <p class="small text-muted mb-0">Work order cards organized by status. Drag a card to a new column to change its status. Urgency badges and building/room info visible on each card.</p>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Drag-and-Drop Status Board"
+                     Description="@_descDragBoard"
+                     Code="@_codeDragBoard" />
+            <InfoTip Title="Drop Target Highlighting"
+                     Description="@_descDropHighlight"
+                     Code="@_codeDropHighlight" />
+            <InfoTip Title="Urgency Color-Coded Cards"
+                     Description="GetUrgencyColor() returns a hex color based on urgency level (Emergency=#dc3545, High=#fd7e14, Normal=#0d6efd, Low=#6c757d). The color is used for the left border (border-left:3px solid) and the urgency badge background. Inline styles handle the dynamic color."
+                     Code="@_codeUrgencyColor" />
+        </div>
+
         <div class="d-flex gap-2 overflow-auto pb-3">
             @foreach (var status in _columns) {
                 var colItems = _all.Where(w => w.Status == status).OrderByDescending(w => w.Urgency).ToList();
@@ -63,6 +75,10 @@
     private List<DataObjects.WorkOrder> _all = new();
     private DataObjects.WorkOrder? _dragging;
     private DataObjects.WorkOrderStatus? _dragOverCol;
+
+    private string _descDragBoard = "Each card has draggable='true' and @ondragstart to capture the work order being dragged. Each column uses @ondragover:preventDefault, @ondrop to call HandleDrop(status), and @ondragleave to clear the highlight. When dropped, the work order's Status is updated and saved via API.";
+    private string _descDropHighlight = "_dragOverCol tracks which column the user is hovering over. When it matches, the column card gets 'border-primary border-2' classes added dynamically. @ondragleave resets it to null. This gives the user clear visual feedback about where they're dropping.";
+
     private static readonly DataObjects.WorkOrderStatus[] _columns = [DataObjects.WorkOrderStatus.Submitted, DataObjects.WorkOrderStatus.Assigned, DataObjects.WorkOrderStatus.InProgress, DataObjects.WorkOrderStatus.OnHold, DataObjects.WorkOrderStatus.Completed, DataObjects.WorkOrderStatus.Closed];
 
     public void Dispose() { Model.OnChange -= StateHasChanged; Model.Subscribers_OnChange.Remove(_pageName); }
@@ -85,4 +101,51 @@
     }
 
     private static string GetUrgencyColor(DataObjects.WorkOrderUrgency u) => u switch { DataObjects.WorkOrderUrgency.Emergency => "#dc3545", DataObjects.WorkOrderUrgency.High => "#fd7e14", DataObjects.WorkOrderUrgency.Normal => "#0d6efd", _ => "#6c757d" };
+
+    private string _codeDragBoard = @"<div class=""card"" draggable=""true""
+     @ondragstart=""() => _dragging = w""
+     @ondragend=""() => _dragging = null"">
+  @w.Title
+</div>
+
+<div @ondragover=""() => _dragOverCol = status""
+     @ondragover:preventDefault=""true""
+     @ondrop=""() => HandleDrop(status)""
+     @ondragleave=""() => _dragOverCol = null"">
+  @* Column drop target *@
+</div>
+
+async Task HandleDrop(WorkOrderStatus status) {
+  _dragging.Status = status;
+  await SaveWorkOrders(new[] { _dragging });
+  _dragging = null;
+}";
+
+    private string _codeDropHighlight = @"@* Dynamic highlight on the drop target *@
+WorkOrderStatus? _dragOverCol;
+
+<div class=""card @(isTarget
+  ? ""border-primary border-2"" : """")"">
+  @* Column content *@
+</div>
+
+@* Set on hover, clear on leave *@
+@ondragover=""() => _dragOverCol = status""
+@ondragleave=""() => _dragOverCol = null""";
+
+    private string _codeUrgencyColor = @"static string GetUrgencyColor(
+    WorkOrderUrgency u) => u switch {
+  Emergency => ""#dc3545"",  // red
+  High      => ""#fd7e14"",  // orange
+  Normal    => ""#0d6efd"",  // blue
+  _         => ""#6c757d""   // gray
+};
+
+@* Used for left border and badge *@
+<div style=""border-left:3px solid
+  @GetUrgencyColor(w.Urgency) !important;"">
+<span class=""badge"" style=""background-color:
+  @GetUrgencyColor(w.Urgency);"">
+  @w.Urgency
+</span>";
 }

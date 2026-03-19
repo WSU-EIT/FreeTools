@@ -19,6 +19,18 @@
             <p class="small text-muted mb-0">Toggle between groupings: by assignee (see each person's cards across statuses), by priority (Critical lane at top), or by ticket type.</p>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Dynamic Swimlane Grouping"
+                     Description="@_descGetLanes"
+                     Code="@_codeGetLanes" />
+            <InfoTip Title="Collapsible Swimlane Rows"
+                     Description="@_descCollapseLane"
+                     Code="@_codeCollapseLane" />
+            <InfoTip Title="Status × Lane Grid"
+                     Description="@_descGridCell"
+                     Code="@_codeGridCell" />
+        </div>
+
         <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
             <span class="small fw-semibold">Group by:</span>
             <div class="btn-group btn-group-sm">
@@ -74,6 +86,11 @@
     private string _groupBy = "assignee";
     private List<DataObjects.Ticket> _tickets = new();
     private HashSet<string> _collapsedLanes = new();
+
+    private string _descGetLanes = "GetLanes() uses a switch expression on _groupBy to return LaneGroup records. Changing the grouping mode just re-calls the method \u2014 no API round-trip. The same @foreach renders any grouping because the data shape (Key, Count, Tickets) is identical.";
+    private string _descCollapseLane = "A HashSet<string> _collapsedLanes tracks which lanes are collapsed. Clicking the header toggles the key in the set. The card body is conditionally rendered with @if (!isCollapsed). This gives each lane independent collapse state.";
+    private string _descGridCell = "Inside each swimlane, a d-flex row iterates over the status columns. For each status, tickets are filtered from lane.Tickets to create a grid cell. This creates a 2D grid: rows are swimlanes, columns are statuses \u2014 built entirely with flex and @foreach.";
+
     private static readonly DataObjects.TicketStatus[] _columns = [DataObjects.TicketStatus.Backlog, DataObjects.TicketStatus.ToDo, DataObjects.TicketStatus.InProgress, DataObjects.TicketStatus.InReview, DataObjects.TicketStatus.Done];
 
     public void Dispose() { Model.OnChange -= StateHasChanged; Model.Subscribers_OnChange.Remove(_pageName); }
@@ -95,4 +112,52 @@
         "type" => Enum.GetValues<DataObjects.TicketType>().Select(tt => new LaneGroup(tt.ToString(), _tickets.Count(t => t.Type == tt), _tickets.Where(t => t.Type == tt).ToList())).Where(l => l.Count > 0).ToList(),
         _ => _tickets.GroupBy(t => t.AssignedTo ?? "Unassigned").OrderBy(g => g.Key).Select(g => new LaneGroup(g.Key, g.Count(), g.ToList())).ToList(),
     };
+
+    private string _codeGetLanes = @"record LaneGroup(string Key, int Count,
+                    List<Ticket> Tickets);
+
+List<LaneGroup> GetLanes() => _groupBy switch {
+  ""priority"" => Enum.GetValues<TicketPriority>()
+    .Select(p => new LaneGroup(p.ToString(),
+      _tickets.Count(t => t.Priority == p),
+      _tickets.Where(t => t.Priority == p).ToList()))
+    .Where(l => l.Count > 0).ToList(),
+  ""type"" => /* same pattern for TicketType */,
+  _ => _tickets.GroupBy(t => t.AssignedTo)
+    .Select(g => new LaneGroup(g.Key, g.Count(),
+      g.ToList())).ToList(),
+};";
+
+    private string _codeCollapseLane = @"HashSet<string> _collapsedLanes = new();
+
+void ToggleLane(string key) {
+  if (!_collapsedLanes.Remove(key))
+    _collapsedLanes.Add(key);
+}
+
+@foreach (var lane in GetLanes()) {
+  var isCollapsed = _collapsedLanes.Contains(lane.Key);
+  <div @onclick=""() => ToggleLane(lane.Key)"">
+    <i class=""fa-solid @(isCollapsed
+      ? ""fa-chevron-right"" : ""fa-chevron-down"")"" />
+    @lane.Key (@lane.Count)
+  </div>
+  @if (!isCollapsed) { /* lane content */ }
+}";
+
+    private string _codeGridCell = @"@* Inside each swimlane row *@
+<div class=""d-flex gap-1"">
+  @foreach (var status in _columns) {
+    var cellTickets = lane.Tickets
+      .Where(t => t.Status == status).ToList();
+    <div style=""width:160px; min-height:60px;"">
+      @foreach (var t in cellTickets) {
+        <div class=""card mb-1"">
+          <code>@t.TicketNumber</code>
+          <div>@t.Title</div>
+        </div>
+      }
+    </div>
+  }
+</div>";
 }

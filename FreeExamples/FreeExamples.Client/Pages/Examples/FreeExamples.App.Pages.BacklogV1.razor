@@ -19,6 +19,18 @@
             <p class="small text-muted mb-0">Click a row on the left to see full details on the right: description, comments, linked tickets. Update story points and mark as "refined" from the detail panel.</p>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Fibonacci Point Selector"
+                     Description="A static int array [1,2,3,5,8,13,21] renders as a btn-group. Clicking a value calls SetPoints(pts) which saves the ticket via API immediately. The active button uses btn-primary vs btn-outline-secondary. This is the standard estimation UI."
+                     Code="@_codeFibButtons" />
+            <InfoTip Title="Refined vs. Needs Estimation Badge"
+                     Description="A conditional badge shows green 'Refined (has estimate)' when StoryPoints > 0, or yellow 'Needs estimation' when null or zero. This visual cue helps the team spot ungroomed tickets at a glance during backlog grooming sessions."
+                     Code="@_codeRefinedBadge" />
+            <InfoTip Title="Condensed List with Priority + Points"
+                     Description="Each list item packs ticket number, title, priority badge, and story points into a single compact row using d-flex justify-content-between. Badges use font-size:0.45rem to stay tiny. The active item gets the Bootstrap 'active' class."
+                     Code="@_codeCondensedRow" />
+        </div>
+
         <div class="row g-3">
             @* Left: Condensed list *@
             <div class="col-md-5">
@@ -144,4 +156,50 @@
     }
 
     private static string GetPriorityBadge(DataObjects.TicketPriority p) => p switch { DataObjects.TicketPriority.Critical => "bg-danger", DataObjects.TicketPriority.High => "bg-warning text-dark", DataObjects.TicketPriority.Medium => "bg-info", _ => "bg-secondary" };
+
+    private string _codeFibButtons = @"static readonly int[] _fib = [1,2,3,5,8,13,21];
+
+<div class=""btn-group btn-group-sm"">
+  @foreach (var pts in _fib) {
+    <button class=""btn @(_selected.StoryPoints == pts
+      ? ""btn-primary"" : ""btn-outline-secondary"")""
+      @onclick=""() => SetPoints(pts)"">@pts</button>
+  }
+</div>
+
+async Task SetPoints(int pts) {
+  _selected.StoryPoints = pts;
+  await SaveTickets(new[] { _selected });
+}";
+
+    private string _codeRefinedBadge = @"@if (_selected.StoryPoints.HasValue
+    && _selected.StoryPoints > 0) {
+  <span class=""badge bg-success"">
+    <i class=""fa-solid fa-check me-1""/>
+    Refined (has estimate)
+  </span>
+} else {
+  <span class=""badge bg-warning text-dark"">
+    <i class=""fa-solid fa-question me-1""/>
+    Needs estimation
+  </span>
+}";
+
+    private string _codeCondensedRow = @"<button class=""list-group-item
+  list-group-item-action
+  @(isSelected ? ""active"" : """")"">
+  <div class=""d-flex justify-content-between small"">
+    <span>
+      <code>@t.TicketNumber</code> @t.Title
+    </span>
+    <span>
+      <span class=""badge @GetPriorityBadge(t.Priority)""
+            style=""font-size:0.45rem;"">@t.Priority</span>
+      <span class=""badge bg-secondary rounded-pill""
+            style=""font-size:0.45rem;"">
+        @(t.StoryPoints?.ToString() ?? ""?"")pts
+      </span>
+    </span>
+  </div>
+</button>";
 }

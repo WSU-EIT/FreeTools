@@ -19,6 +19,18 @@
             <p class="small text-muted mb-0">Analyze team velocity across sprints. Grouped bar chart shows committed vs. delivered per sprint. Summary stats include average, median, best, and worst sprints.</p>
         </AboutSection>
 
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            <InfoTip Title="Computed Summary Properties"
+                     Description="VelocityAvg, VelocityBest, VelocityWorst are computed properties (not fields). They recalculate from _velocityData on every render. This avoids stale state — the stat cards are always in sync with the data. A clean pattern for derived display values."
+                     Code="@_codeComputedStats" />
+            <InfoTip Title="CSS Grouped Bar Chart"
+                     Description="Each sprint gets two side-by-side divs: committed (bg-primary bg-opacity-25) and delivered (bg-success). Heights are calculated as a ratio of VelocityMaxBar. Values are printed above each bar. A legend row sits below. Zero JS, zero chart libraries."
+                     Code="@_codeGroupedBars" />
+            <InfoTip Title="Inline Progress Completion %"
+                     Description="Each sprint row shows a mini progress bar with conditional coloring: ≥ 80% = green, ≥ 50% = yellow, below = red. The percentage text sits below the bar. Bootstrap progress + ternary class expression is all it takes."
+                     Code="@_codeProgressBar" />
+        </div>
+
         @* Summary stats *@
         <div class="row g-3 mb-3">
             <div class="col-6 col-md-3">
@@ -128,4 +140,56 @@
     private int VelocityMaxBar => _velocityData.Any() ? _velocityData.Max(d => Math.Max(d.Planned, d.Delivered)) : 1;
 
     private static string GetSprintBadge(DataObjects.SprintStatus s) => s switch { DataObjects.SprintStatus.Active => "bg-success", DataObjects.SprintStatus.Completed => "bg-primary", DataObjects.SprintStatus.Cancelled => "bg-dark", _ => "bg-secondary" };
+
+    private string _codeComputedStats = @"@* Computed properties — always in sync *@
+int VelocityAvg => _velocityData.Any()
+  ? (int)_velocityData.Average(d => d.Delivered) : 0;
+int VelocityBest => _velocityData.Any()
+  ? _velocityData.Max(d => d.Delivered) : 0;
+int VelocityWorst => _velocityData.Any()
+  ? _velocityData.Min(d => d.Delivered) : 0;
+int VelocityMaxBar => _velocityData.Any()
+  ? _velocityData.Max(d =>
+      Math.Max(d.Planned, d.Delivered)) : 1;
+
+<div class=""fs-4 fw-bold text-primary"">
+  @VelocityAvg
+</div>";
+
+    private string _codeGroupedBars = @"@foreach (var d in _velocityData) {
+  var hP = VelocityMaxBar > 0
+    ? (int)(d.Planned * 150.0 / VelocityMaxBar) : 0;
+  var hD = VelocityMaxBar > 0
+    ? (int)(d.Delivered * 150.0 / VelocityMaxBar) : 0;
+  <div class=""d-flex flex-column align-items-center"">
+    <div class=""d-flex gap-1 align-items-end"">
+      <div>  @* Committed bar *@
+        <span>@d.Planned</span>
+        <div class=""bg-primary bg-opacity-25""
+             style=""width:22px; height:@(hP)px;""/>
+      </div>
+      <div>  @* Delivered bar *@
+        <span>@d.Delivered</span>
+        <div class=""bg-success""
+             style=""width:22px; height:@(hD)px;""/>
+      </div>
+    </div>
+    <div>@d.Name</div>
+  </div>
+}";
+
+    private string _codeProgressBar = @"@foreach (var d in _velocityData) {
+  var pct = d.Planned > 0
+    ? (int)(d.Delivered * 100.0 / d.Planned) : 0;
+  <td>
+    <div class=""progress"" style=""height:6px;"">
+      <div class=""progress-bar
+           @(pct >= 80 ? ""bg-success""
+           : pct >= 50 ? ""bg-warning""
+           : ""bg-danger"")""
+           style=""width:@pct%""></div>
+    </div>
+    <span>@pct%</span>
+  </td>
+}";
 }
