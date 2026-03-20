@@ -8,11 +8,11 @@ export function LoadHighchartsResources() {
     if(typeof(Highcharts) == "object"){
         dotNetHelper.invokeMethodAsync("OnHighchartsLoaded");
     } else {
-        LoadCssResource("https://code.highcharts.com/css/highcharts.css", "highcharts-light", () => {
-            LoadScriptResource("https://code.highcharts.com/highcharts.js", () => {
-                LoadScriptResource("https://code.highcharts.com/modules/exporting.js", () => {
-                    LoadScriptResource("https://code.highcharts.com/modules/export-data.js", () => {
-                        LoadScriptResource("https://code.highcharts.com/modules/accessibility.js", () => {
+        LoadCssResource("js/highcharts/css/highcharts.css", "highcharts-light", () => {
+            LoadScriptResource("js/highcharts/highcharts.js", () => {
+                LoadScriptResource("js/highcharts/modules/exporting.js", () => {
+                    LoadScriptResource("js/highcharts/modules/export-data.js", () => {
+                        LoadScriptResource("js/highcharts/modules/accessibility.js", () => {
                             dotNetHelper.invokeMethodAsync("OnHighchartsLoaded");
                         });
                     });
